@@ -1,0 +1,4 @@
+/* 幅が狭いと横にスクロール出来てしまう問題 */
+a, code {
+  word-wrap: break-word;
+}
