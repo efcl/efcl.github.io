@@ -12,15 +12,11 @@
   padding: 2rem 1rem;
   color: rgba(255, 255, 255, .5);
   background-color: #202020;
+  .recent ul {
+    padding-left: 0;
+  }
   @include hasSmall {
     padding: 1rem;
-    .categories-list-title {
-      font-size: 1rem;
-      margin: 0;
-      &:before {
-        content: "▶";
-      }
-    }
   }
 }
 
@@ -45,12 +41,15 @@
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 3.25em;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
+  @media (max-height: 820px) {
+    font-size: 90%;
+  }
 }
 
 .sidebar-nav-item {
@@ -75,15 +74,32 @@ a.sidebar-nav-item:focus {
 @include hasWide {
   .sidebar-sticky {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
   }
 }
 
+@include hasWide {
+  .recent-posts {
+    font-size: 80%;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+// モバイルの時は最近の投稿とカテゴリ一覧は隠す
 @include hasSmall {
-  .categories-list, .related {
+  .categories-list, .recent-posts {
     display: none;
+  }
+  .recent-posts-list-title, .categories-list-title {
+    font-size: 1rem;
+    margin: 0;
+    &:before {
+      content: "▶";
+    }
   }
 }
 
@@ -97,9 +113,11 @@ a.sidebar-nav-item:focus {
 
 .profile {
   img {
-    width: 256px;
-    height: 256px;
-    border-radius: 128px;
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    border-radius: 64px;
   }
   h2 {
     color: #ffffff;

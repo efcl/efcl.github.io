@@ -9,6 +9,9 @@
                 <span class="category-count">[{{ category_tuple | last | size }}]</span>
             </li>
             {% endfor %}
+            <li><a href="{{ site.baseurl }}/categories/">
+                <img src="{{ site.baseurl }}/public/svg/dotw-thr.svg" width="32" height="32"/>=>残りのカテゴリ
+            </a></li>
         </ul>
     </div>
 </div>

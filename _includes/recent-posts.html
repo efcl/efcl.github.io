@@ -1,14 +1,15 @@
 <div class="recent">
-    <h2>Recent Posts</h2>
+    <h3 class="recent-posts-list-title">
+        <a href="{{ site.baseurl }}/">
+            最近の投稿
+        </a>
+    </h3>
     <ul class="recent-posts">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:4 %}
         <li>
-            <h5>
-                <a href="{{ post.url }}">
-                    {{ post.title }}
-                    <small>{{ post.date | date_to_string }}</small>
-                </a>
-            </h5>
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
         </li>
         {% endfor %}
     </ul>

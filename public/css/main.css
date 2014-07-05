@@ -813,14 +813,11 @@ a.pagination-item:hover {
   padding: 2rem 1rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020; }
+  .sidebar .recent ul {
+    padding-left: 0; }
   @media (max-width: 48em) {
     .sidebar {
-      padding: 1rem; }
-      .sidebar .categories-list-title {
-        font-size: 1rem;
-        margin: 0; }
-        .sidebar .categories-list-title:before {
-          content: "▶"; } }
+      padding: 1rem; } }
 
 @media (min-width: 48em) {
   .sidebar {
@@ -839,11 +836,14 @@ a.pagination-item:hover {
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem; }
+  font-size: 3.25em; }
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem; }
+  margin-bottom: 1em; }
+  @media (max-height: 820px) {
+    .sidebar-nav {
+      font-size: 90%; } }
 
 .sidebar-nav-item {
   display: block; }
@@ -863,12 +863,23 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem; } }
+    right: 1em;
+    bottom: 1em;
+    left: 1em; } }
+@media (min-width: 48em) {
+  .recent-posts {
+    font-size: 80%; }
+    .recent-posts li {
+      margin: 0.5em 0; } }
 @media (max-width: 48em) {
-  .categories-list, .related {
-    display: none; } }
+  .categories-list, .recent-posts {
+    display: none; }
+
+  .recent-posts-list-title, .categories-list-title {
+    font-size: 1rem;
+    margin: 0; }
+    .recent-posts-list-title:before, .categories-list-title:before {
+      content: "▶"; } }
 /* Sidebar links */
 .sidebar a {
   color: white; }
@@ -876,9 +887,11 @@ a.sidebar-nav-item:focus {
     color: #31497c; }
 
 .profile img {
-  width: 256px;
-  height: 256px;
-  border-radius: 128px; }
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  border-radius: 64px; }
 .profile h2 {
   color: #ffffff;
   margin: 0;

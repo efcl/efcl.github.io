@@ -1,12 +1,13 @@
 ---
 layout: default
+title: カテゴリ一覧
 ---
 <div class="categories-index">
     <ul>
         {% for category_tuple in site.sorted_categories %}
         <li>
             <a href="#{{ category_tuple | first }}">{{ category_tuple | first }}</a>
-
+            <span class="category-count">[{{ category_tuple | last | size }}]</span>
         </li>
         {% endfor %}
     </ul>
