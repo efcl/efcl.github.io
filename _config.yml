@@ -1,7 +1,14 @@
 # Site settings
 title: Web Scratch
 email: info@efcl.info
-description: "ブラウザ/JavaScript等について書いてるブログです"
+description: "ブラウザ/JavaScript等についてのブログ"
+keywords:
+  - "JavaScript"
+  - "ブラウザ"
+  - "ECMAScript"
+  - "Objective-C"
+  - "Firefox"
+  - "拡張機能"
 url: "http://efcl.info"
 baseurl: ""
 timezone: Asia/Tokyo

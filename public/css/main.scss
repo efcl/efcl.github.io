@@ -25,4 +25,10 @@ a {
 
 .content {
   color: $base-color - 180;
+  a:visited {
+    color: #551A8B;
+  }
+  a:hover {
+    color: $link-color + 100;
+  }
 }

@@ -94,7 +94,7 @@ a.sidebar-nav-item:focus {
 .sidebar a {
   color: white;
   &:hover {
-    color: $link-color;
+    color: $link-color + 100;
   }
 }
 
@@ -166,6 +166,7 @@ a.sidebar-nav-item:focus {
       background: orange;
     }
     color: #000;
+    text-decoration: none;
     border: 1px solid #000;
     &:hover {
       background: $link-color;
@@ -176,7 +177,7 @@ a.sidebar-nav-item:focus {
 // モバイルの時は最近の投稿とカテゴリ一覧は隠す
 @include hasSmall {
   .sidebar > .container {
-    padding: 0;// 余計なマージは削る
+    padding: 0; // 余計なマージは削る
   }
   .profile {
     float: left;

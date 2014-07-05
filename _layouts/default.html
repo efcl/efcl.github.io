@@ -3,9 +3,12 @@
 {% include head.html %}
 
 <body class="layout-reverse theme-base-0d">
-{% include header.html %}
-
-{% include sidebar.html %}
+<header>
+    {% include header.html %}
+</header>
+<aside>
+    {% include sidebar.html %}
+</aside>
 <div class="content container">
     {{ content }}
 </div>
