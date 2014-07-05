@@ -1,0 +1,56 @@
+@import "util";
+@import "color-map";
+
+.site-title {
+  margin: 0;
+  a {
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+  }
+}
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+.header-logo {
+  float: left;
+}
+
+.site-header {
+  clear: both;
+  background: $main-color;
+}
+
+@include hasWide {
+  $default-header-height: 167px;
+  .site-title {
+    padding: 1em 1em 0.5em 0;
+  }
+  .header-logo {
+    margin-right: 30px;
+    height: $default-header-height;
+  }
+  .site-header {
+    height: $default-header-height;
+  }
+
+}
+
+@include hasSmall {
+  $small-header-height: 120px;
+  .lead {
+    display: none;
+  }
+  .site-title {
+    padding: 0.5em 0 0.5em 0;
+  }
+  .header-logo {
+    margin-right: 10px;
+    height: $small-header-height;
+  }
+  .site-header {
+    height: $small-header-height;
+  }
+}

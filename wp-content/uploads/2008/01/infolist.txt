@@ -1,0 +1,136 @@
+# This is a list of links to XPIs for installed items.
+# I believe you can use it with Mass Installer.
+# It's not possible to find XPIs for some extensions.
+# If InfoLister cannot find a link, it usually means 
+# that the extension doesn't have a valid update manifest.
+# Fri, 25 Jan 2008 14:13:39 GMT
+# Mozilla/5.0 (Windows; U; Windows NT 6.0; ja; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+
+#### Extensions
+#All-in-One Gestures 0.18.0 
+http://releases.mozilla.org/pub/mozilla.org/addons/12/all-in-one_gestures-0.18.0-fx.xpi 
+#asdf 0.2 
+ 
+#Autohide 1.1.5 
+http://www.krickelkrackel.de/autohide/autohide.xpi 
+#bbs2chreader 0.4.9++ 
+http://releases.mozilla.org/pub/mozilla.org/addons/1560/bbs2chreader-0.4.6-fx.xpi 
+#Boox 1.1.0.0 
+http://releases.mozilla.org/pub/mozilla.org/addons/2615/boox-1.0.4.0-fx.xpi 
+#Brief 1.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/4578/brief-1.1-fx.xpi 
+#BugMeNot 1.3 
+http://extensions.roachfiend.com/bugmenot.xpi 
+#CacheViewer 0.4.4 
+http://releases.mozilla.org/pub/mozilla.org/addons/2489/cacheviewer-0.4.3-fx.xpi 
+#ChatZilla 0.9.80 
+http://releases.mozilla.org/pub/mozilla.org/addons/16/chatzilla-0.9.78.1-fx+mz+sm+fl.xpi 
+#coComment 0.2.3.7 
+http://www.cocomment.com/extension/download/cocomment-0.2.3.7.xpi 
+#ColorZilla 1.9 [disabled]
+http://www.iosart.com/firefox/colorzilla/ColorZilla_1.0.xpi 
+#Compact Menu 2 2.0.3 [disabled]
+http://releases.mozilla.org/pub/mozilla.org/addons/4550/compact_menu_2-2.0.2-fx+tb.xpi 
+#ConQuery mod 2.0.8 
+http://bushwhacker.up.seesaa.net/Firefox_extention/conquery.mod-2.0.8.xpi 
+#Custom Buttons² 2.0.5.14 
+http://releases.mozilla.org/pub/mozilla.org/addons/5066/custom_buttons__-2.0.5.11-fx+tb+fl.xpi 
+#del.icio.us Complete 1.3 
+http://releases.mozilla.org/pub/mozilla.org/addons/2354/del.icio.us_complete-1.3-fx.xpi 
+#dragdropupload 1.5.23 
+http://releases.mozilla.org/pub/mozilla.org/addons/2190/dragdropupload-1.5.23-fx.xpi 
+#Fasterfox 2.0.0 
+http://releases.mozilla.org/pub/mozilla.org/addons/1269/fasterfox-2.0.0-fx.xpi 
+#Favicon Picker 2 0.3.4.3 
+http://releases.mozilla.org/pub/mozilla.org/addons/3176/favicon_picker_2-0.3.4.3-fx+fl.xpi 
+#FireFTP 0.97.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/684/fireftp-0.97.1-fx.xpi 
+#Flat Bookmark Editing 0.8.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/117/flat_bookmark_editing-0.8.1-fx.xpi 
+#Foxage2ch 2.6.2 
+http://www.xuldev.org/foxage2ch/foxage2ch.xpi?ver=2.5.7 
+#Foxmarks Bookmark Synchronizer 2.0.41 
+http://releases.mozilla.org/pub/mozilla.org/addons/2410/foxmarks_bookmark_synchronizer-1.0.1-fx.xpi 
+#Gmail Notifier 0.6.2.2 
+http://releases.mozilla.org/pub/mozilla.org/addons/173/gmail_notifier-0.6.2.2-fx.xpi 
+#Greasemonkey 0.7.20080121.0 
+http://releases.mozilla.org/pub/mozilla.org/addons/748/greasemonkey-0.7.20070607.0-fx.xpi 
+#GrepSidebar 0.0.8.0801040200 
+http://space.geocities.jp/alice0775/STORE/grepsidebar-0.0.8.0801040200.xpi 
+#Hit-a-Hint 0.9.1 [disabled]
+http://releases.mozilla.org/pub/mozilla.org/addons/1341/hit-a-hint-0.9.1-fx.xpi 
+#IE Tab 1.3.3.20070528 
+http://releases.mozilla.org/pub/mozilla.org/addons/1419/ie_tab-1.3.3.20070528-fx+mz+sm+fl-win.xpi 
+#InfoLister 0.9f.2 
+http://mozilla.doslash.org/infolister/infolister-0.9f.xpi 
+#Japanize 0.8.11 
+http://japanize.31tools.com/download/japanize-0.8.11.xpi 
+#Java Console 6.0.01 [disabled]
+http://releases.mozilla.org/pub/mozilla.org/addons/5661/java_console_6.0.01-6.0.01-fx.xpi 
+#Locationbar² 0.9.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/4014/locationbar__-0.9.1-fx.xpi 
+#MediaMarker Add Binder Tab 0.1 
+ 
+#MediaMarker Search Amazon Tab 0.1 
+ 
+#My Portal 1.0.7 
+http://releases.mozilla.org/pub/mozilla.org/addons/1217/my_portal-1.0.7-fx.xpi 
+#OpenBook 1.3.4.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/42/openbook-1.3.4.1-fx.xpi 
+#OpenSearchFox 0.1.5 
+http://releases.mozilla.org/pub/mozilla.org/addons/3698/opensearchfox-0.1.5-fx.xpi 
+#pastego 2.0.2 
+http://releases.mozilla.org/pub/mozilla.org/addons/3201/pastego-2.0.2-fx.xpi 
+#Pearl Crescent Page Saver Basic 1.7 [disabled]
+https://pearlcrescent.com/products/pagesaver/pagesaverbasic-1.6.xpi 
+#Popup ALT Attribute 1.3.2005092702 
+http://releases.mozilla.org/pub/mozilla.org/addons/1933/popup_alt_attributes-1.3.2005092702-fx.xpi 
+#Restart Firefox 0.3.1mod3 
+http://releases.mozilla.org/pub/mozilla.org/addons/1249/restart_firefox-0.3-fx.xpi 
+#Sage 1.3.10 
+http://releases.mozilla.org/pub/mozilla.org/addons/77/sage-1.3.10-fx.xpi 
+#ScrapBook 1.3.2.6 
+http://releases.mozilla.org/pub/mozilla.org/addons/427/scrapbook-1.2.0.8-fx+fl.xpi 
+#ScrapBook AutoSave 1.3.1 [disabled]
+http://amb.vis.ne.jp/mozilla/scrapbook/module/sbautosave.xpi?ver=1.3.0.3 
+#ScrapBox.net 1.2.0.4 [disabled]
+http://amb.vis.ne.jp/mozilla/scrapbook/module/sbboxnet.xpi?ver=1.2.0.4 
+#ScribeFire 1.4.2 [disabled]
+http://releases.mozilla.org/pub/mozilla.org/addons/1730/scribefire-1.4.2-fx+fl.xpi 
+#Searchbar Autosizer 1.3.7 
+http://releases.mozilla.org/pub/mozilla.org/addons/1172/searchbar_autosizer-1.3.7-fx.xpi 
+#swimmie 通知専用アドオン 0.0.1 
+http://swimmie.jp/archive/xpi/swimmie1.1.1.xpi 
+#Talkback 2.0.0.11 [disabled]
+ 
+#TiddlySnip 1.0 RC1 
+http://tiddlysnip.com/tiddlysnip1.0RC1.xpi 
+#Toolbar Enhancements 0.17 
+ 
+#Veoh Browser Plug-in 1.2 [disabled]
+ 
+#ViewSourceWith 0.0.9.1 
+http://releases.mozilla.org/pub/mozilla.org/addons/394/viewsourcewith-0.0.9.1-fx+mz+tb+nvu+ns+sm+fl.xpi 
+#Wired-Marker 1.5.08011400 [disabled]
+ 
+#Youtube Encoder 3.32 
+http://www.doi.ics.keio.ac.jp/~takanori/firefox/youtubeencoder.xpi 
+#Zotero 1.0.2 [disabled]
+http://www.zotero.org/download/zotero-1.0.2.xpi 
+#テキストリンク 2.0.2007111301 
+http://releases.mozilla.org/pub/mozilla.org/addons/1939/text_link-1.3.2007103002-fx.xpi 
+#巻き戻し/早送りボタン 2.0.2007120901 
+http://releases.mozilla.org/pub/mozilla.org/addons/1934/rewind_fastforward_buttons-1.4.2007061801-fx.xpi 
+#翻訳パネル 1.4.14.7 
+http://releases.mozilla.org/pub/mozilla.org/addons/4698/translation panel-1.4.14.5-firefox+.xpi 
+
+#### Themes
+#Blue Ice 1.2.4 
+http://releases.mozilla.org/pub/mozilla.org/addons/3085/blue_ice-1.2.4-fx.jar 
+#BlueQute 2.0.3 
+http://releases.mozilla.org/pub/mozilla.org/addons/1789/bluequte-2.0.3-fx.jar 
+#Firefox (default) 2.0 [selected]
+ 
+#rein 2.0.0.7 
+ 
+

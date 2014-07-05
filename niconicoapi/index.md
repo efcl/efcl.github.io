@@ -1,0 +1,490 @@
+---
+title: ニコニコ動画のAPIまとめ
+author: azu
+layout: page
+aktt_notify_twitter:
+  - no
+SBM_count:
+  - '00168<>1355445470<>162<>0<>4<>2<>0'
+dsq_thread_id:
+  - 300802311
+---
+ニコニコのマイリスト周りにAPIがいろいろ増えていたので、列挙してみる。   
+使い方は http://res.nimg.jp/js/nicoapi.js をよく読む。   
+見方としては
+
+<pre>分別
+    メソッド名
+        URL(http://www.nicovideo.jp/api/foo/bar　という感じで使う)
+            クエリー(それぞれの要素を&でつなげて指定)
+    返ってくるもの
+</pre>
+
+という感じで書いている。
+
+**Cathode Music: ニコニコ動画(9)APIを纏めた**
+:   [http://tewi.blogspot.com/2009/11/9api.html][1]
+
+も併せて読む。
+
+書き方の一例(testという名前のマイリストを新規作成する)
+
+<a id="ctl00_ContentPlaceHolder1_fvDownloadResults_Hyperlink5" href="javascript:(function(){var%20token=NicoAPI.token;location.href=&quot;http://www.nicovideo.jp/api/mylistgroup/add?name=test&description=&public=1&default_sort=1&icon_id=0&token=&quot;+token;})()">Nico make mylist </a>←のブックマークレットをニコニコ動画上のトークンがあるページで実行する<a id="ctl00_ContentPlaceHolder1_fvDownloadResults_Hyperlink5" href="javascript:(function(){var%20token=NicoAPI.token;location.href=&quot;http://www.nicovideo.jp/api/mylistgroup/add?name=test&description=&public=1&default_sort=1&icon_id=0&token=&quot;+token;})()"><br /> </a>
+
+var token = NicoAPI.token;  
+location.href = &#8220;http://www.nicovideo.jp/api/mylistgroup/add?name=test&description=&public=1&default\_sort=1&icon\_id=0&token=&#8221;+token;
+
+APIのURLに引数となるクエリーを&区切りでつなげていったURLにアクセスすると正否を表すjsonが返ってくる。  
+書き込み権限が必要なAPIにはtokenも必要となる。  
+tokenはNicoAPI.token = &#8220;xxxxx-xxxxx-xxxxxxxxxxxx&#8221;という感じでページに埋め込まれているので、  
+Greasemonkeyからならvar  token = unsafeWindow.NicoAPI.token で取得できるはず。
+
+基本的に返ってくるものはjson形式
+
+適当にパラメータの説明
+
+*   item_typeは<span style="text-decoration: line-through;">0であることがほとんどらしい。</span>動画が0、静画が5。
+*   item_idは接頭辞のない数字だけの動画番号を指定する
+*   id\_listは id\_list\[0\]\[\]=item_id という感じのパラメータになる
+
+<pre>NicoAPI.Deflist
+とりあえずマイリスト
+    list
+    とりあえずマイリストの一覧を取得
+        "/api/deflist/list"
+	jsonフォーマットで返ってくる
+
+    add
+    とりあえずマイリストに追加
+        "/api/deflist/add",
+    			{ "item_type": item_type,
+    			  "item_id": item_id,
+    			  "description": description }
+	item_typeは接頭辞のない数字だけの動画番号を指定する
+
+    update
+    とりあえずマイリストを更新
+    	"/api/deflist/update",
+    		{ "item_type": item_type,
+    		  "item_id": item_id,
+    		  "description": description }
+
+    remove
+    とりあえずマイリストから削除
+        "/api/deflist/delete",
+            { "id_list": id_list }
+    move
+    とりあえずマイリストから移動
+        "/api/deflist/move"
+    			{ "target_group_id": target_group_id,
+    			  "id_list": id_list }
+    copy
+    とりあえずマイリストからコピー
+        "/api/deflist/copy"
+            { "target_group_id": target_group_id,
+    			  "id_list": id_list }
+</pre>
+
+<pre>NicoAPI.MylistGroup
+マイリスト
+    list
+    jsonフォーマットでマイリスト一覧を取得
+    マイリストの名前やidなど(中身はNicoAPI.Mylistで)
+        "/api/mylistgroup/list"
+    get
+    指定したマイリストIDの詳細を取得
+    listに含まれてるのと同じ内容?
+        "/api/mylistgroup/get"
+            { "group_id": group_id }
+    add
+    マイリストを新規作成
+        "/api/mylistgroup/add"
+			{ "name": name,
+			  "description": description,
+			  "public": is_public,// 0:非公開 1:公開
+			  "default_sort": default_sort,
+			  "icon_id": icon_id }
+    update
+    マイリスト情報を更新
+         "/api/mylistgroup/update",
+			{ "name": name,
+			  "description": description,
+			  "public": is_public,
+			  "default_sort": default_sort,
+			  "icon_id": icon_id }
+    remove
+    マイリストを削除する
+	    "/api/mylistgroup/delete",
+	        { "group_id": group_id }
+	sort
+	マイリストのソートの実行
+	マイリスト情報の"default_sort"で指定したソート法でソートし直す
+	    "/api/mylistgroup/sort"
+	        { "group_id_list": group_id_list }
+</pre>
+
+icon_idの指定
+
+[<img class="alignnone size-medium wp-image-1453" title="ss-2009-11-12-20-25-10" src="http://wordpress.local/wp-content/uploads/2009/11/ss-2009-11-12-20-25-10-300x48.png" alt="ss-2009-11-12-20-25-10" width="300" height="48" />][2]
+
+左から順に0,1,2,3となっていて 数字で指定
+
+default_sortのソート法の指定
+
+<table style="border-collapse: collapse; height: 354px;" border="0" cellspacing="0" cellpadding="0" width="235">
+  <col style="width: 107pt;" width="143"></col> <col style="width: 54pt;" width="72"></col> <tr style="height: 15pt;" height="20">
+    <td class="xl67" style="height: 15pt; width: 107pt;" width="143" height="20">
+      ソート方法<span> </span>
+    </td>
+    
+    <td class="xl68" style="width: 54pt;" width="72">
+      <span> </span>ID<span> </span>
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl66" style="height: 13.5pt;" height="18">
+      登録が古い順<span> </span>
+    </td>
+    
+    <td class="xl66" style="border-left: medium none;" align="right">
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      登録が新しい順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      1
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      メモ昇順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      2
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      メモ降順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      3
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      タイトル昇順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      4
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      タイトル降順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      5
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      投稿が新しい順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      6
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      投稿が古い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      7
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      再生が多い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      8
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      再生が少ない順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      9
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      コメントが新しい順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      10
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      コメントが古い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      11
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      コメントが多い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      12
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      コメントが少ない順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      13
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      マイリスト登録が多い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      14
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      マイリスト登録が少ない順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      15
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      時間が長い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      16
+    </td>
+  </tr>
+  
+  <tr style="height: 13.5pt;" height="18">
+    <td class="xl65" style="border-top: medium none; height: 13.5pt;" height="18">
+      時間が短い順<span> </span>
+    </td>
+    
+    <td class="xl65" style="border-top: medium none; border-left: medium none;" align="right">
+      17
+    </td>
+  </tr>
+</table>
+
+<pre>NicoAPI.Mylist
+マイリストの動画操作
+	list
+	指定したマイリストの動画一覧を取得
+		"/api/mylist/list",
+			{ "group_id": group_id }
+
+	add
+	指定したマイリストの動画を加える
+		"/api/mylist/add",
+			{ "group_id": group_id,
+			  "item_type": item_type,
+			  "item_id": item_id,
+			  "description": description }
+
+	update
+	指定したマイリストの動画情報を更新
+		"/api/mylist/update",
+			{ "group_id": group_id,
+			  "item_type": item_type,
+			  "item_id": item_id,
+			  "description": description }
+
+	remove
+	指定したマイリストの動画を削除
+		"/api/mylist/delete",
+			{ "group_id": group_id,
+			  "id_list": id_list }
+	id_listの形式
+		function make_id_list(item_type, item_id) {
+			var id_list = {};
+			id_list&#91;item_type&#93; = jQuery.makeArray(item_id);
+			return id_list;
+		}
+
+	move
+	指定したマイリストの動画を別のマイリストに移動
+		"/api/mylist/move",
+			{ "group_id": group_id,
+			  "target_group_id": target_group_id,
+			  "id_list": id_list }
+	例)
+
+http://www.nicovideo.jp/api/deflist/move?id_list%5B0%5D%5B%5D=動画番号&#038;target_group_id=マイリスト番号&#038;token=トークン
+
+	指定したマイリストの動画を別のマイリストにコピー
+	copy
+		"/api/mylist/copy",
+			{ "group_id": group_id,
+			  "target_group_id": target_group_id,
+			  "id_list": id_list }</pre>
+
+<pre>NicoAPI.Watchitem
+ウォッチリスト
+	list
+	ウォッチリストの一覧を取得
+		"/api/watchitem/list"
+	watchitem配列にウォッチリストに登録したユーザー名やIDが入っている
+
+	exist
+	ウォッチリストのitem確認
+		"/api/watchitem/exist",
+			{ "item_type": item_type,
+			  "item_id": item_id }
+
+	add
+	ウォッチリストに加える
+		"/api/watchitem/add",
+			{ "item_type": item_type,
+			  "item_id": item_id }
+
+	remove
+	ウォッチリストから削除する
+		"/api/watchitem/delete",
+			{ "id_list": id_list }
+</pre>
+
+<pre>NicoAPI.Mymemory
+マイメモリー
+	list
+	マイメモリーに入れている動画一覧を取得
+		"/api/mymemory/list"
+
+	remove
+	マイメモリーからid_listで指定した動画を削除
+		"/api/mymemory/delete",
+			{ "id_list": id_list }
+
+NicoAPI.Friendlist
+フレンドリスト
+	list
+		"/api/friendlist/list",
+			{ "sort": options.sort,
+			  "order": options.order,
+			  "offset": options.offset,
+			  "count": options.count }
+
+	remove
+		"/api/friendlist/delete",
+			{ "target_user_id": target_user_id }
+</pre>
+
+<pre>NicoAPI.Mylistcomment
+マイリストコメント
+	list
+		"/api/mylistcomment/list"
+			{ "item_type": item_type,
+			  "item_id": item_id }
+	nicoapi.jsには書いてないので、この指定方法が正しいか分からない。
+	json形式でマイリストが返ってくる
+</pre>
+
+<span style="text-decoration: line-through;">実際にこのAPIを叩くと<br /> {&#8220;mylistcomment&#8221;:&#91;&#93;,&#8221;status&#8221;:&#8221;ok&#8221;}<br /> のような空が返ってきてしまう。正しく取得する方法があればお知らせ下さい。</span>
+
+<pre>例) sm9 のマイリストコメントを取得
+
+http://www.nicovideo.jp/api/mylistcomment/list?item_type=0&#038;item_id=1173108780
+
+	item_typeは0でないといけないらしい。(動画が0で、静画が5だそうです)
+	item_idには接頭辞のない動画番号を指定。
+</pre>
+
+例)Greasemonkeyからマイリストコメントのコメントを取得
+
+<pre class="brush:javascript;">getMylistcomments(function(res){
+	console.log(res)
+});
+
+function getMylistcomments(callback){  
+	var itemId = document.getElementsByName("thread_id")&#91;0&#93;.value;
+	GM_xmlhttpRequest( {
+		method : 'GET',
+		url : "http://www.nicovideo.jp/api/mylistcomment/list?item_type=0&item_id=" + itemId,
+		headers :  {
+			'User-Agent' : 'Mozilla/5.0 Greasemonkey; Nico MylistComments'
+		},
+		onload : function (res) {
+			var jsObject = JSON.parse(res.responseText);
+			var l = jsObject.mylistcomment.length;
+			var result = &#91;&#93;;
+			if (jsObject.status == "ok" && l &#62; 0) {
+				for(var i =0;i&#60;l;i++){
+					result.push(jsObject.mylistcomment&#91;i&#93;.description)
+				}
+				callback(result)
+			}
+		}
+	});
+}
+</pre>
+
+<pre>remove
+		"/api/mylistcomment/delete",
+			{ "item_type": item_type,
+			  "item_id": item_id,
+			  "comment_user_id": comment_user_id }
+</pre>
+
+静画関係のAPIはこちらを見た方がよいです。
+
+**ニコ動マイリスト系APIまとめ &#8211; あたご型護衛艦日記**
+:   [http://d.hatena.ne.jp/aTaGo/20100811/1281552243][3]
+
+ [1]: http://tewi.blogspot.com/2009/11/9api.html "Cathode Music: ニコニコ動画(9)APIを纏めた"
+ [2]: http://wordpress.local/wp-content/uploads/2009/11/ss-2009-11-12-20-25-10.png
+ [3]: http://d.hatena.ne.jp/aTaGo/20100811/1281552243 "ニコ動マイリスト系APIまとめ - あたご型護衛艦日記"

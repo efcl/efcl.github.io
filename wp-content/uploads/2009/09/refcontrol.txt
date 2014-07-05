@@ -1,0 +1,6 @@
+[RefControl]
+blogs.yahoo.co.jp=
+fc2.com=
+image.itmedia.co.jp=@FORGE
+plusd.itmedia.co.jp=
+www.amazon.co.jp=

@@ -1,0 +1,23 @@
+<div class="sidebar">
+    <div class="container">
+        <div class="profile">
+            <img src="{{ site.baseurl }}/public/img/azu.png" alt="Profile Picture">
+
+            <h2>azu</h2>
+        </div>
+        <div class="social">
+            <a class="twitter" href="http://twitter.com/{{site.author.twitter}}" title="Twitter">
+                <img src="{{ site.baseurl }}/public/svg/twitter.svg" width="32" height="32"/>
+            </a>
+            <a class="github" href="https://github.com/{{site.author.github}}" title="GitHub">
+                <img src="{{ site.baseurl }}/public/svg/github.svg" width="32" height="32"/>
+            </a>
+            <a class="rss" href="/feed/" title="RSS Feed">
+                <img src="{{ site.baseurl }}/public/svg/feed.svg" width="32" height="32"/>
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            {% include recent-categories.html %}
+        </nav>
+    </div>
+</div>

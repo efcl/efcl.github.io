@@ -1,0 +1,50 @@
+@-moz-document domain("twitter.com") {
+/* Twitter */
+
+  /* 吹き出し */
+  .content-bubble-arrow {
+    display:none;
+  }
+  /* ヘッダー */
+  #navigation:hover { height : auto !important; overflow : visible !important; }
+  #navigation { position : absolute !important; left : 0px !important; top : 1px !important; overflow : hidden !important; z-index : 3 !important; font-size : 16px !important; line-height : 22px !important; padding: 0 !important; height: 0px !important; width: 100%; color: #000000 !important; background-image: url(http://image.livedoor.com/img/top/11/title_bg_normal.gif) !important; border-bottom: 2px solid #999 !important ;-moz-opacity:0.5;  }
+  #profile:hover > #navigation{
+    display:block!important;
+  }
+  #header{
+    display:none;
+  }
+  #container{
+   margin-top:0!important;
+  }
+  /* 広告 */
+  #side_ad_base{
+    display:none;
+  }
+  #side .promotion{
+    display:none;
+  }
+
+  /* スペース確保 文字数カウント*/
+  .bar h3 {
+    display:none!important;
+  }
+  #chars_left_notice {
+    font-size:11pt !important;
+  }
+  .bar span {
+    right:20px!important;
+    top:25px!important;
+  }
+  /* 投稿ボタン */
+  .status-btn{
+    display:none;
+  }
+  #currently {
+      width:500px!important;
+  }
+  /* 発言のスペース拡張 
+  ol.statuses span.status-body {
+      width:450px!important;
+  }*/
+}

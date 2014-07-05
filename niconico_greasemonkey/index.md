@@ -1,0 +1,399 @@
+---
+title: ニコニコ動画用Greasemonkeyスクリプトのまとめ
+author: azu
+layout: page
+SBM_count:
+  - '00178<>1355445836<>157<>7<>7<>7<>0'
+dsq_thread_id:
+  - 300801393
+---
+<p>GreasemonkeyとはFirefoxで利用できるアドオン。<br /> ニコニコ動画利用できるGreasemonkeyスクリプトのまとめたものです。</p>
+<ul>
+<li><a rel="nofollow" href="http://blog.fulltext-search.biz/pages/visualize-comments-upsurge-greasemonkey-script-for-nicovideo">ニコニコ動画のコメント熱狂度を可視化するGreasemonkeyスクリプト</a></li>
+</ul>
+<p>ニコニコ動画の各動画に、コメントの盛り上がり度合いをサーモグラフィーの色合いで表示するGreasemonkeyスクリプトです。 弾幕やコメント職人の出現位置が一目で分かります。 Wrapperと併用版もあります。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://cureblack.com/20070810.html#p01">ニコニコ動画にアクセスしている時間をカウントするGreasemonkeyスクリプト</a></li>
+</ul>
+<p><a href="http://cureblack.com/20070810.html#p01"> </a>タイトル通りの機能を持ちます。 画面右下に時間のカウントを表示します。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://d.hatena.ne.jp/togeinu/20070907">NicoCommandButton ニコニコ動画コマンド入力ボタン</a></li>
+</ul>
+<p>動画の下にコメント色変更ボタンを追加します。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://d.hatena.ne.jp/kotas/20070925/playlist">ニコニコ動画でプレイリストが使える Greasemonkey スクリプト</a></li>
+</ul>
+<p>ニコニコ動画でプレイリストが使える Greasemonkey スクリプト。 <br /> ランキングの動画を連続再生したり、きまぐれ検索でランダム再生したりできます。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://d.hatena.ne.jp/kotas/20080110/favlist">ニコニコ動画でマイリストの新着を知る Greasemonkey スクリプト</a></li>
+</ul>
+<p>ニコニコ動画のトップページに、好きなマイリストの新着動画を表示します。 <br /> 投稿者の公開マイリストに登録ボタンがあります。 マイリストのRSSリーダーみたいなものです。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://m035.blog61.fc2.com/blog-entry-66.html">ニコニコ動画サイズ変更+画質向上ブックマークレット</a></li>
+</ul>
+<p>動画サイズ変更、および低画質動画の画質を向上します。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://castor.s26.xrea.com/products/greasemonkey/nicovideo_additional_mylist.html">ニコニコ動画に拡張マイリストを追加するGreasemonkeyスクリプト</a></li>
+</ul>
+<p>ニコニコ動画で登録数に制限のないマイリストを利用可能にするGreasemonkeyスクリプトです。 <br /> とても便利なGreasemonkeyスクリプトで、動画再生画面に拡張マイリストへの追加ボタンが現れます。 <br /> 拡張マイリストは<strong>タグ</strong>で管理でき、動画へのメモ書きもできます。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://d.hatena.ne.jp/spiritloose/20071116/1195220145">ニコニコ動画の一覧画面でポチポチとマイリストに追加するGreasemonkey</a></li>
+</ul>
+<p>ニコニコ動画の一覧画面でマイリストへの一発登録ボタンが表示されます。 動画再生画面にいかなくてマイリストへの追加ができます。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://d.hatena.ne.jp/authorNari/20071007/1191751102">にこ☆さうんどでMP3抽出ずみキャッシュを表示するブックマークレット</a></li>
+</ul>
+<p>にこ☆さうんど経由でニコニコ動画のMP3抽出ずみキャッシュを表示するブックマークレット。 <a href="http://nicosound.dip.jp/help.aspx#bookmarklet">変換ブックマークレット版</a></p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a rel="nofollow" href="http://wktklabs.blog98.fc2.com/blog-entry-1.html">NicoWatch Tools　-　けっこう多機能なスクリプト。</a></li>
+</ul>
+<p>ニコニコ動画観覧ページに以下の機能を追加します。<br /> ①FLVファイルダウンロード ②MP3ダウンロード(<a href="http://www.nicomimi.com/">nicomimi &#8211; にこみみ -</a>との連携) ③XML(コメントデータ)ダウンロード ④コメント内キーワード/ユーザーID検索 ⑤コメント内リンク抽出 ⑥フィルター逆探知(フィルターによって変わるワードが分かります。)</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://blog.fulltext-search.biz/articles/2008/01/29/re-mata-samune">twitterに張られたニコニコのリンクをサムネ(というかiframe)展開するぐりもん </a></li>
+</ul>
+<p>タイトルそのままなぐりもん</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://blog.fulltext-search.biz/articles/2007/12/29/nicomment-cloud">ニコニコ動画のコメントをタグクラウドっぽく表示するぐりもん「Nicomment Cloud」をつくりました</a></li>
+</ul>
+<p><a href="http://blog.fulltext-search.biz/articles/2007/12/29/nicomment-cloud"> </a>タグクラウドを追加する<br /> <a title="tagnico.jpg" href="http://wordpress.local/wp-content/uploads/2008/02/tagnico.jpg"><img src="http://wordpress.local/wp-content/uploads/2008/02/tagnico.thumbnail.jpg" alt="tagnico.jpg" /></a></p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a class="title" href="http://script41self.seesaa.net/article/80648996.html">nicovideo taglinker<br /> </a></li>
+</ul>
+<p><span class="title">ニコニコのタグに他の動画のIDが入ってるときにそのタグをクリックすると、</span>「もしかしてsm******をお探しですか？」とステップをとばして 直接飛ぶグリモン。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a class="title" href="http://script41self.seesaa.net/article/73226087.html">Nico Nickname </a></li>
+</ul>
+<p>動画のうｐ主のニックネームを表示するGMスクリプト 修正して、<a rel="nofollow" href="http://www.nicochart.jp/">ニコニコチャート</a>と連携させているバージョン →<a title="Permalink to  [Greasemonkey]ニコニコ動画でニックネームを表示" rel="bookmark" href="http://efcl.info/2007/1229/res14/">ニコニコ動画でニックネームを表示</a></p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://maps.smartnetwork.co.jp/blog/taxonomy/term/4">だれでもコメ職人</a></li>
+</ul>
+<p>コメントをコマンド的に増やす事ができます。 だれでもコメ職人は、ニコニコ動画に投稿するコメントを装飾するツールです。</p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://muumoo.jp/news/2007/09/08/0nicommentlinks.html">ニコニコ動画のコメントの中から、動画IDやURLっぽいやつを抽出するGreasemonkeyスクリプト</a></li>
+</ul>
+<p>タイトルそのままのグリモンです。 サムネ表示と表示位置を少しかえたバージョン <a title="Permalink to  ニコニコ動画のコメントの中から、動画IDやURLっぽいやつを抽出するGreasemonkeyスクリプト(自分仕様)" rel="bookmark" href="http://efcl.info/2008/0119/res20/">→ニコニコ動画のコメントの中から、動画IDやURLっぽいやつを抽出するGreasemonkeyスクリプト(自分仕様)</a></p>
+<ul class="list1" style="padding-left: 16px; margin-left: 16px;">
+<li><a href="http://d.hatena.ne.jp/Sore_0/20080127/1201444608">ニコニコ動画の一覧ページで強調表示するGreasemonkey + ニコニコ動画プレイリスト追加機能</a></li>
+</ul>
+<p>マーキングとプレイリスト機能のグリモン</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/kotas/20080306/customtabs">カテゴリタブを好きな順番にする Greasemonkey スクリプト</a></li>
+</ul>
+<p>カテゴリの順番を自分の好みで変える。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Sore_0/20080305#1204738095">はてブページの動画に付加情報を入れる</a></li>
+</ul>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Sore_0/searchdiary?word=%2a%5bGreasemonkey%5d">ニコニコ動画へのリンクからサムネイル情報を取得するGreasemonkey </a></li>
+</ul>
+<p>ニコニコの動画へのリンク(sm～～)の上のマウスを乗せると動画情報をポップアップする。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/AOI-CAT/20080226/1204035593">選択範囲内にあるニコニコ動画の情報を取得するGreasemonkey</a></li>
+</ul>
+<p>上のグリモンに似ていて、選択範囲で指定すると同じように情報をポップアップする。</p>
+<ul>
+<li><a href="http://togeinu.googlepages.com/nicocolorfilter">NicoColorFilter 0.0.1 ニコニコ動画色コメフィルタ</a></li>
+</ul>
+<p><a href="http://togeinu.googlepages.com/nicocolorfilter"> </a>ニコニコ動画の動画の下に色つきコメントを削除するボタンを追加します。 shita +水色など色とコマンドを組み合わせたものをフィルタする事ができる。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/togeinu/20070907/1189098100">NicoCommandButton ニコニコ動画コマンド入力ボタン &#8211; アンビバノンノン</a></li>
+</ul>
+<p>再生画面の下にコマンドを補助するボタンが追加されます。</p>
+<ul>
+<li><a href="http://www.oti-orz.mydns.jp/%7Ekhiker/">ニコニコ動画に動画の FLV ファイルとコメントをダウンロードするリンクを付与 &amp; コメントをその場で表示</a></li>
+</ul>
+<p>FLV&amp;XMLダウンロードと再生画面で   コメントをその場で表示することもできる。というか,<br /> この表示の方が力を入れてる. コメント表示で表示されるのは,<br /> No., 書込時刻, 暗号化されたユーザID, コメント それぞれの項目はソートして表示することができる(ユーザIDでソートなど)</p>
+<ul>
+<li><a href="http://andre-garden.com/blog/2008/03/greasemonkey_1.html">Andre&#8217;s garden &#8211; ニュータイプっぽくニコニコ動画の一覧から動画を先読みするGreasemonkey</a></li>
+</ul>
+<p>動画リンク横にできるボタンをクリックすると画面遷移することなしに動画をポップアップで起動できるようになります。 そのページを見ながら動画を見ることができる。</p>
+<ul>
+<li><a href="http://script41self.seesaa.net/article/90974190.html"> ニコニコ動画のコメントのネタバレの可能性を表示するスクリプト</a></li>
+</ul>
+<p>&#8220;ネタバレ&#8221;,&#8221;ねたばれ&#8221;などの文字列がコメントに存在するときに、それを促すメッセージを出す。</p>
+<ul>
+<li><a href="http://script41self.seesaa.net/article/90503970.html"> 悪質な投稿者の動画を検索結果から消す(非表示にする)スクリプト</a></li>
+</ul>
+<p>検索結果をフィルタリングする。ただニックネームのみの判断なので被っていた場合もフィルタされる。</p>
+<ul>
+<li><a href="http://note.openvista.jp/247/#tea0d5e">RSS Link for ニコニコ動画</a></li>
+</ul>
+<p>タグなどの検索ページに<a href="http://zio3.net/nicoRss/">ニコRSS ニコニコ動画/RSS配信</a>を利用したRSSへのリンクを追加する。</p>
+<ul>
+<li><a href="http://www.copytr.net/wikis/16">GreaseMonkey スクリプト &#8211; Wiki &#8211; コピトレ</a></li>
+</ul>
+<p>ニコニコ動画の動画ページのタイトル近くに、該当するコピトレの情報ページへのリンクを追加するスクリプト</p>
+<ul>
+<li><a href="http://22century.cute.bz/app/">thumbcatch.user.js</a></li>
+</ul>
+<p>ランキングでサムネイルだけを表示する<br /> 。 <a title="thumbcatch.jpg" href="http://wordpress.local/wp-content/uploads/2008/04/thumbcatch.jpg"><img src="http://wordpress.local/wp-content/uploads/2008/04/thumbcatch.thumbnail.jpg" alt="thumbcatch.jpg" /></a></p>
+<ul>
+<li><a href="http://blog.libelabo.jp/2008/01/29/niconico-sample-inserter/">Libelablog » どこでもニコニコ動画のサンプルを貼り付けるGreasemonkeyスクリプト（Autopagerize対応）</a></li>
+<li><a href="http://userscripts.org/scripts/show/21909">Google Reader Subscribers Count – Userscripts.org</a></li>
+</ul>
+<p>マイリストのところにgoogle readerの登録数を表示する。</p>
+<ul>
+<li><a href="http://eclipse.cspc.jp/perma/000263/">ニコニコ動画の再生画面で登録済みマイリストを表示するGreaseMonkey | METAMATE</a></li>
+</ul>
+<p>マイリストにすでに登録してある場合にそれを示唆する表示をする。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/shiroica/20080331/1206991712">ニコニコ動画のコメントのランダム方向スクロール用グリモンスクリプト &#8211; shiroicaの日記</a></li>
+</ul>
+<p>エープリルフールを味わう。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Constellation/20080405/1207403013">GetNicovideoInfoCommand &#8211; 枕をそばだてて聴く</a></li>
+</ul>
+<p>MinibufferのCommandを追加する。 up主の名前を表示とミニプレーヤを利用したもの</p>
+<ul>
+<li><a href="http://nicovideo.g.hatena.ne.jp/snsn9pan/20080226/1204002367">アッハ計測グリモン</a></li>
+</ul>
+<p><a href="http://www.nicograph.jp/">にこぐらふ</a>に似ている機能をグリモンで [w]をカウントする</p>
+<ul>
+<li><a href="http://itmst.blog71.fc2.com/blog-entry-90.html">Electronic Genome &#8211; ニコ動でプレーヤ部分まで自動スクロールさせるスクリプト</a></li>
+</ul>
+<p>プレイヤーの位置まで画面をスクロールさせる。</p>
+<ul>
+<li><a href="http://cureblack.com/20070831.html">野ログはノロキュアMaxHeart &#8211; twitterをGreasemonkeyから使いやすくするCGI , ニコニコ動画の最近見た動画を超パワーアップさせるGreasemonkey</a></li>
+</ul>
+<p>Twitteに自動で見た動画をつぶやく。普段とは別のIDにもログインしないで利用できます。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/25917">nicovideo Add Stars to Tags &#8211; Userscripts.org </a></li>
+</ul>
+<p>ニコニコ動画の動画再生ページで、アップロード者がロックしたタグに★をつけます。 タグの更新ボタンもつきます。</p>
+<ul>
+<li><a href="http://blog.endflow.net/?p=62&amp;lang=ja">NicoVideo Auto Play: ニコニコ動画で次の動画を自動再生するGreasemonkeyスクリプト | endflow.net blog</a></li>
+</ul>
+<p>「～Part2」「～その5」みたいにシリーズ化されている動画を次々と自動再生してくれるグリモンです。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/gifnksm/20080523/1211570361">ニコニコ動画で，タグ荒らしからの復旧を補助するGreasemonkeyスクリプト</a></li>
+</ul>
+<p><a href="http://www.nicotag.jp/">ニコタグ</a>からのデータを使い荒らされたタグを復旧できる。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/26307">nicovideo Add nicotag link </a></li>
+</ul>
+<p><a href="http://www.nicotag.jp/">ニコタグ</a>へのリンクをニコニコ動画の動画再生ページと検索画面上に表示します。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/28910">nicovideo Thumbinfo popup</a></li>
+</ul>
+<p>動画へリンク上にマウスオーバーしたときに動画情報をポップアップする。<a href="http://d.hatena.ne.jp/Sore_0/searchdiary?word=%2a%5bGreasemonkey%5d">ニコニコ動画へのリンクからサムネイル情報を取得するGreasemonkey</a>とほとんど同じですが、ポップアップのサイズをその場で変えられるなど細かな違いがあります。  <a name="1204889784" href="http://subtech.g.hatena.ne.jp/motemen/20080307/1204889784"></a></p>
+<ul>
+<li><a name="1204889784" href="http://subtech.g.hatena.ne.jp/motemen/20080307/1204889784">ニコニコ動画のサムネイルをクリックしたらその場にプレーヤーを表示する</a></li>
+</ul>
+<ul> <a href="http://coderepos.org/share/browser/lang/javascript/userscripts/add-nicovideo-thumbnail-and-player-to-delicious.user.js?">add-nicovideo-thumbnail-and-player-to-delicious.user.js</a>を使えばdeliciousでもサムネクリックで見ることができる。</p>
+<p><br class="spacer_" /></p>
+<p><br class="spacer_" /></p>
+<p><br class="spacer_" /></p>
+<p><br class="spacer_" /></p>
+<li><a href="http://userscripts.org/scripts/show/27771">NicoDic Link Editor Names</a></li>
+</ul>
+<p>ニコニコ大百科の編集履歴画面で，編集者の投稿した動画一覧(ニコチャート)へのリンクを張ります。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/29801">NicoVideo Stats – Userscripts.org</a></li>
+</ul>
+<p>再生ページにコメント率とマイリスト率を表示する。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/30237">nicovideo Synchronized Fullscreen – Userscripts.org</a></li>
+</ul>
+<p>ブラウザのウインドウを全画面表示にしたとき，同時に動画プレイヤーも全画面表示にします。 Firefox3専用。</p>
+<ul>
+<li><a href="http://subtech.g.hatena.ne.jp/mala/20080615/1213492297">ニコニコ動画で日本語入力できない人のためのGreasemonkeyスクリプト</a></li>
+</ul>
+<p>プレイヤーとは別にコメント入力欄を追加します。(Macで入力できなくなるバグ向けに作成?)</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/gifnksm/20080625/1214358591">ニコニコ動画で動画説明文を改行したりリンクを張ったりするスクリプト </a></li>
+</ul>
+<p>動画説明文で，スペースが連続しているところで改行する 動画説明文中のURLにリンクを張る</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/nastack/20080727/1217172263">「音量注意」タグのついた動画の音量を下げておくuser.js</a></li>
+</ul>
+<p>タグに「音量注意」が含まれていた場合に音量を下げてくれます。</p>
+<ul>
+<li><a href="http://fuktommy.com/niconico/">JKScroll</a></li>
+</ul>
+<p>タグ検索などの動画一覧画面でキーボードでスクロールします。 LDRIZEの簡易版といった感じ。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/31426">nicovideo Show All Ranks</a></li>
+</ul>
+<p>ニコニコ動画のランキングページで、マイリスト・コメント・再生数のランキングを同時に表示</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/32955">delicious video thumbnail – Userscripts.org</a></li>
+</ul>
+<p>delicious に youtube とニコニコ動画のサムネイルを表示します。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/yuyarin/20080830/1220057085">ニコニコ動画のランキング内でソートするGreasemonkeyスクリプト &#8211; yuyarinの日記</a></li>
+</ul>
+<p><a href="http://www.nicovideo.jp/ranking/view/hourly/all" target="_blank">ニコニコ動画(夏)のランキングページ</a>で結果の動画を、順位、動画の長さ、投稿日時、再生数、コメント数、マイリスト数、でソート</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/tumo300-500/20080811/1218457236">Greasemonkey &#8211; だらだらとだらだら</a></li>
+</ul>
+<p>NiconicoRankingNew ニコニコのランキングで指定した時間以内に投稿された動画を優先して表示する  NiconicoMylistDiff マイリストで表示される動画に、前回マイリストでその動画を見たときとの差を表示するスクリプト。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/32512">nicodanmakudic – Userscripts.org</a></li>
+</ul>
+<p>コメント入力を補助するGreasemonkey。 定型文を登録して入力欄に選択したものを入力できる。</p>
+<ul>
+<li><a href="http://script41self.seesaa.net/article/106627828.html">++ Script for oneself ++: ニコニコ動画のメニューバーに、mylistへのリンクを追加するGreasemonkeyスクリプト</a></li>
+</ul>
+<p>マイリストのプルダウンが追加される。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/nokturnalmortum/20080802/1217633913">ニコニコ動画のプレイヤーにフォーカスしないようにするグリモン。 &#8211; 地獄の猫日記</a></li>
+</ul>
+<p>Flashのプレイヤーにフォーカスしないようになる。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/30845">NicoVideo Quality Config – Userscripts.org</a></li>
+</ul>
+<p><span class="external text">Flashプレーヤーの画質設定を自動変更する</span></p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/yuyarin/20081004/1223124531">ニコニコ動画のランキング内でソートできるGreasemonkeyスクリプトに絞り込み機能をつけてみた &#8211; yuyarinの日記</a></li>
+</ul>
+<p>ランキングで絞り込み検索ができる。</p>
+<ul>
+<li><a href="http://orera.g.hatena.ne.jp/miya2000/20081005/p0">ニコニコ動画のプレイヤーをキーボードで操作する user.js &#8211; m2O &#8211; チーム俺等</a></li>
+</ul>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Azr_pp/20090101/1230755467">詳細情報・メニューを表示したり、タグを編集しても、プレイヤーの位置がズレないようにするニコニコ動画用Greasemonkeyスクリプト &#8211; (ββ)対応版 &#8211; Az++.log</a></li>
+</ul>
+<p>*  動画のタイトルを最初からすべて表示する * 詳細情報・メニューが以下のように動画の右側に表示される  <strong> </strong></p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Cyario/20081225/1230214551">NicoStopper</a></li>
+</ul>
+<p>・ニコニコ動画を見ている間ブラウザの左下にカウンタが付きます。<br /> ・1日1時間しかニコニコ動画を見る事ができなくなり、時間を有意義に使えるようになります。</p>
+<ul>
+<li><a href="http://script41self.seesaa.net/article/106627828.html">ニコニコ動画のメニューバーに、mylistへのリンクを追加するGreasemonkeyスクリプト</a></li>
+</ul>
+<p>ニコニコ動画のメニューバーの位置に自分の全てマイリストをセレクトボックスから直接移動できるようになります。<br /> マイリストページでは5つまでしか一覧に表示されないので多数のマイリストを保持している方には便利。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/15048">ニコニコ動画 タイトル書き換え(タブブラウザ用)</a></li>
+</ul>
+<p>ニコニコ動画のWebページタイトルを変更します。<br /> トップページは「ニコ」に変更し，その他は「ニコニコ動画(*)-」の表示を消します。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/41650">NicoVideo Multiple Tag Search Tool</a></li>
+</ul>
+<p>ニコニコの再生ページでタグにチェックボックスを付けて複数のタグについて組み合わせ検索が行えます。</p>
+<ul>
+<li><a href="http://tetetep.blog112.fc2.com/blog-entry-449.html">ニコニコのマイページにもニコニコ広告を反映させるグリモン</a></li>
+</ul>
+<p>マイページの投稿動画一覧に広告を反映させるGreasemonkeyスクリプト</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/44343">Niconico Economy Quality</a></li>
+</ul>
+<p>常にエコノミーになるGreasemonkey</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/compartmentism/20090414/1239718308">NicoRankingKidokuDelete</a></li>
+</ul>
+<p>ランキングページで，任意の動画を縮小、訪問済みを判定、宣伝コメント部分を省略</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Azr_pp/20090624/1245847072">プレイヤーの位置に関するニコ動ββ用Greasemonkeyスクリプト with jQuery &#8211; Az++.log</a></li>
+</ul>
+<p>自動スクロール</p>
+<ul>
+<li><a href="http://script41self.seesaa.net/article/122132932.html">++ Script for oneself ++: ニコニコ動画のマイリスト検索をしやすくするGreasemonkeyスクリプト</a></li>
+</ul>
+<p>公開マイリストを検索するフォームを設置する。<br /> 仕組み:<a href="http://d.hatena.ne.jp/favril/20090624/1245821161">ニコニコ動画の公開マイリスト検索(/openlist/sm****)は、AND検索もOR検索もNOT検索もできるっぽい &#8211; 超自己満足プログラミング</a></p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/48046">NicoVideo Post to SBM with selected tags for Greasemonkey</a></li>
+</ul>
+<p>再生ページでタグを選択して、コメント付けてはてなブックマークかdeliciousにポストする。(クロスポストも可能)                 <br /> 選択したタグを検索</p>
+<ul>
+<li><a href="http://hextomino.tsukuba.ch/e25795.html">ニコニコのタグをプレビューするスクリプト | Hextomino</a></li>
+</ul>
+<p>リンク上にマウスオーバーでタグをプレビューする</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/48300">Popup Nico Dict for Greasemonkey</a></li>
+</ul>
+<p>ニコニコ大百科のキーワードをマウスオーバーでポップアップ</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/50859">Nico load ratio for Greasemonkey</a></li>
+</ul>
+<p>ページタイトルに動画のロード量を表示します。                 <br /> wrapperのタイトルをいじると同様の機能</p>
+<ul>
+<li><a href="http://itmst.blog71.fc2.com/blog-entry-175.html">Electronic Genome &#8211; ニコニコ動画でプレーヤ部分まで自動スクロールするスクリプト改良版『nicoscroll2』</a></li>
+</ul>
+<p>再生ページで自動的にスクロールする<br /> Firefox+Greasemonkey / Chrome / Sleipnir+SeaHorse / Opera / IE+Trixie / IE+IE7Pro / Safari(Mac)+GreaseKitに対応</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/51762">NicoVideo MyList RSS</a></li>
+</ul>
+<p>現在見ている動画ページ内にある全てのマイリストの RSS フィードを動的にページ内に挿入します。<br /> マイリストページに移動しなくてもその場で RSS 登録できます。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/50639">NicoNicoPlaylist mod</a></li>
+</ul>
+<p><a href="http://d.hatena.ne.jp/Sore_0/20080127/1201444608">マーキング　＋　プレイリスト</a>のmodバージョン。<br /> マルチプレイリスト、自動再生など様々な機能が追加されている。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/33754">nicovideo Show registrated message</a></li>
+</ul>
+<p>現在動画を見ているアカウントのマイリストへの登録状況をチェックできます。             <br /> 他のアカウントのマイリストもチェック対象に追加可能。</p>
+<ul>
+<li><a href="http://blog.guron.net/2009/09/13/680.php">GRN blog » 新プレイヤー対応ニコニコ動画補助スクリプト</a></li>
+</ul>
+<p>コメント入力の補助、動画のダウンロード、投稿者名の表示</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/58168">nicovideo comment modify</a></li>
+</ul>
+<p>ニコニコ動画の動画再生ページやランキング、検索結果などに表示される動画説明文中の連続するスペースを改行や削除します。<br /> またURLやメールアドレス、動画ページ（ID+数字）などを示す文字列があった場合にそれをリンクにします。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/57753">Nico search filter</a></li>
+</ul>
+<p>ニコニコのキーワード/タグ検索の結果をフィルタリングする。<br /> 投稿者説明文の全文と投稿者名を取得し、検索結果の情報にそれを付け加える。             <br /> 上で取得した情報に対して正規表現を用いたフィルタリングを行う。</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/57388">Nico play length coloring</a></li>
+</ul>
+<p>ニコニコ動画の検索結果の再生時間をカラーリングして分ける。</p>
+<ul>
+<li><a href="http://orera.g.hatena.ne.jp/miya2000/20091010/p0">nicovideo_wnp<br /> </a></li>
+</ul>
+<p>高機能な連続再生プレイヤー。<br /> wnp はニコニコ動画をポップアップウィンドウで再生するプレイヤーです。<br /> 全画面表示やプレイリストの連続再生を行うことができます。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/kenmaz/20100210/1265818897">すでに見たランキング動画をかくす君</a></li>
+</ul>
+<p>ニコ動のランキングページから既に見た動画を隠すユーザスクリプト</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/ronekko/20100131/1264933532">Nicovideo &#8211; Direct Link from Tag</a></li>
+</ul>
+<p>ニコニコ動画でタグがsm******やURLを含む場合に直接開けるようにするGreasemonkey</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/favril/20100127/1264570618">nico_sort.user.js</a></li>
+</ul>
+<p>ニコ動の検索設定(ソート順)を保存するGreasemonkeyスクリプト</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/aTaGo/20100112/1263285275">ニコニコ動画の検索ページに共起タグクラウドを表示するChrome用ユーザスクリプト</a></li>
+<li><a href="../2010/0113/res1531/">ニコニコ動画のマイリストページに共起タグクラウドを表示するGreasemonkey</a></li>
+</ul>
+<p>ページ内の動画についている全ての<span class="keyword">タグ</span>を収集し、<span class="keyword">タグクラウド</span>状に表示</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/h1mesuke/20100108/p1">ニコニコ動画の検索結果をフィルタリングする Greasemonkeyスクリプト</a></li>
+</ul>
+<p>正規表現や閾値をもちいたフィルタリングを行うGreasemonkey</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/mount-root-yy/20091129/1259490349">ニコニコ動画外部プレイヤーとYouTube埋め込みプレイヤーをテキストリンクに変換するGreasemonkey</a></li>
+</ul>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/80942">Nico Comment Viewer for Greasemonkey</a></li>
+</ul>
+<p>ニコニコ動画のプレイヤーからコメントを取得して表示</p>
+<ul>
+<li><a href="http://userscripts.org/scripts/show/58168">nicovideo comment modify for Greasemonkey</a></li>
+</ul>
+<p>ニコニコ動画の動画説明文などに含まれる連続するスペースを改行にURLをリンクへ変換</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/shibason/20100315/1268655146">ニコニコ大百科とピクペディアで相互にリンクをはるGreasemonkeyスクリプト &#8211; しばそんノート</a></li>
+</ul>
+<ul>
+<li><a href="http://d.hatena.ne.jp/ronekko/20100131/1264933532">ニコニコ動画でタグがsm******やURLを含む場合に直接開けるようにするGreasemonkeyスクリプト &#8211; ろ日記</a></li>
+</ul>
+<p>タグにURLがある場合は直接リンクにする</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/h1mesuke/20100108/p1">ニコニコ動画の検索結果をフィルタリングする Greasemonkeyスクリプト &#8211; Alone Like a Rhinoceros Horn</a></li>
+</ul>
+<p>検索結果をいろいろなパターンでフィルタリング。</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/hecomi/20100730/1280499442">ニコニコ動画でキーボードショートカットを使えるようにするgreasemonkeyスクリプト &#8211; 凹みTips</a></li>
+</ul>
+<p>LDRizeのようなキーボード操作をする</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/gifnksm/20100729/1280429284">ニコニコ動画の「キーワードを含むタグ検索」に大百科アイコンを表示させるGreasemonkeyスクリプト &#8211; なんとなく目記</a></li>
+</ul>
+<ul>
+<li><a href="http://d.hatena.ne.jp/aTaGo/20100712/1278915935">ニコニコ動画の検索画面に「もしかして：」を表示するユーザスクリプト &#8211; あたご型護衛艦日記</a></li>
+</ul>
+<p>検索にGoogleのもしかしての結果も表示</p>
+<div id="_mcePaste" style="overflow: hidden; position: absolute; left: -10000px; top: 6198px; width: 1px; height: 1px;">ニコ動のランキングページから既に見た動画を隠すユーザスクリプト</div>

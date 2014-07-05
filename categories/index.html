@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="categories-index">
+    <ul>
+        {% for category_tuple in site.sorted_categories %}
+        <li>
+            <a href="#{{ category_tuple | first }}">{{ category_tuple | first }}</a>
+
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="article-by-categories">
+    <ul>
+        {% for category_tuple in site.sorted_categories %}
+        <li><a name="{{ category_tuple | first }}">{{ category_tuple | first }}</a>
+            <ul>
+                {% for posts in category_tuple %}
+                {% for post in posts %}
+                {% if post.url %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

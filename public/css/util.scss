@@ -1,0 +1,23 @@
+@mixin smaller-than($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin larger-than($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin hasSmall() {
+  @include smaller-than(48em) {
+    @content;
+  }
+}
+
+@mixin hasWide() {
+  @include larger-than(48em) {
+    @content;
+  }
+}

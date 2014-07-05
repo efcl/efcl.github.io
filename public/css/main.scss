@@ -1,0 +1,27 @@
+@import "hyde";
+@import "poole";
+@import "syntax";
+@import "color-map";
+@import "categories";
+@import "header";
+@import "sidebar";
+
+body {
+  background: $base-color;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-color + 100;
+  }
+}
+
+.content {
+  color: $base-color - 180;
+}

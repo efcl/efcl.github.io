@@ -1,0 +1,23 @@
+# Site settings
+title: Web Scratch
+email: info@efcl.info
+description: "ブラウザ/JavaScript等について書いてるブログです"
+url: "http://efcl.info"
+baseurl: ""
+timezone: Asia/Tokyo
+encoding: utf-8
+# Setup
+author:
+  name: 'azu'
+  url:  http://efcl.info/
+  twitter: azu_re
+  github:  azu
+
+
+paginate: 5
+paginate_path: "page/:num"
+permalink: /:year/:month/:day/:title/
+# Build settings
+markdown: redcarpet
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "with_toc_data"]

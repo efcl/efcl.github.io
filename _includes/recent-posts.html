@@ -1,0 +1,15 @@
+<div class="recent">
+    <h2>Recent Posts</h2>
+    <ul class="recent-posts">
+        {% for post in site.posts limit:3 %}
+        <li>
+            <h5>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                    <small>{{ post.date | date_to_string }}</small>
+                </a>
+            </h5>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

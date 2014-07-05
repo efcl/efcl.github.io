@@ -1,0 +1,168 @@
+@import "util";
+@import "color-map";
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  padding: 2rem 1rem;
+  color: rgba(255, 255, 255, .5);
+  background-color: #202020;
+  @include hasSmall {
+    padding: 1rem;
+    .categories-list-title {
+      font-size: 1rem;
+      margin: 0;
+      &:before {
+        content: "▶";
+      }
+    }
+  }
+}
+
+@include hasWide {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav-item {
+  display: block;
+}
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@include hasWide {
+  .sidebar-sticky {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+@include hasSmall {
+  .categories-list, .related {
+    display: none;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: white;
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.profile {
+  img {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+  }
+  h2 {
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 1px 1px #000;
+  }
+  @include hasWide {
+    h2 {
+      text-align: center;
+    }
+  }
+  @include hasSmall {
+    & {
+      display: inline-table;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      margin-right: 16px
+    }
+    h2 {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+
+}
+
+.social {
+  text-align: center;
+  padding: 10px;
+  a, img {
+    width: 32px;
+    height: 32px;
+  }
+  img {
+    margin: 0 1rem;
+  }
+  a {
+    &.twitter {
+      &:hover {
+        background: lighten(skyblue, 10%);
+      }
+      background: skyblue;
+    }
+    &.github {
+      &:hover {
+        background: lighten(black, 30%);
+      }
+      background: black;
+    }
+    &.rss {
+      &:hover {
+        background: lighten(orange, 20%);
+      }
+      background: orange;
+    }
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    &:hover {
+      background: $link-color;
+    }
+  }
+}
