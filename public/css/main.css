@@ -370,9 +370,6 @@ tbody tr:nth-child(odd) th {
 
 /* Meta data line below post title */
 .post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
   color: #9a9a9a; }
 
 /* Related posts */
@@ -919,6 +916,24 @@ a.sidebar-nav-item:focus {
 /* 幅が狭いと横にスクロール出来てしまう問題 */
 a, code {
   word-wrap: break-word; }
+
+.github-left-icon, .pre-post-toolbar .edit-on-github, .post-post-toolbar .edit-on-github {
+  left: 0;
+  top: 0;
+  background: #cac5be url("../svg/github.svg") no-repeat left center;
+  background-size: 1em 1em;
+  padding-left: 1em; }
+
+.pre-post-toolbar {
+  margin-bottom: 1em; }
+
+.post-post-toolbar {
+  background: #cac5be;
+  margin-top: 1em; }
+  .post-post-toolbar .edit-on-github {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 1em; }
 
 body {
   background: #e0e4cc; }

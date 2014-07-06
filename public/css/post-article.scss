@@ -1,0 +1,26 @@
+$toolbar-background-color: rgb(202, 197, 190);
+.github-left-icon {
+  left: 0;
+  top: 0;
+  background: $toolbar-background-color url("../svg/github.svg") no-repeat left center;
+  background-size: 1em 1em;
+  padding-left: 1em;
+}
+
+.pre-post-toolbar {
+  margin-bottom: 1em;
+  .edit-on-github {
+    @extend .github-left-icon
+  }
+}
+
+.post-post-toolbar {
+  background: $toolbar-background-color;
+  margin-top: 1em;
+  .edit-on-github {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 1em;
+    @extend .github-left-icon
+  }
+}

@@ -3,9 +3,17 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="pre-post-toolbar">
+        <span class="post-date">{{ page.date | date_to_string }}</span>
+        {% include edit-on-github.html %}
+    </div>
+    <div class="post-content">
+        {{ content }}
+    </div>
+    <div class="post-post-toolbar">
+        <a class="btn edit-on-github" href="https://github.com/azu/azu.github.io/edit/master/{{page.path | cgi_escape}}"><span class="edit-on-github-label"></span>修正リクエストをする</a>
+    </div>
 </div>
 <div class="zenback-embed">
     {% include zenback.html %}
