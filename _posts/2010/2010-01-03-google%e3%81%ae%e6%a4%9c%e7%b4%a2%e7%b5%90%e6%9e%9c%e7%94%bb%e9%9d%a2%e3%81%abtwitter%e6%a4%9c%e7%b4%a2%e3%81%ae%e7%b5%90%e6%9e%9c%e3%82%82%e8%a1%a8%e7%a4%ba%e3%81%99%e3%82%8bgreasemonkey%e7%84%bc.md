@@ -26,7 +26,7 @@ Googleの検索結果画面に[Twitter検索][1]の結果も表示するGreasemo
 
 また一から書き直してみた。  
 機能はほとんど変わってません。  
-[<img class="alignnone size-medium wp-image-1523" title="sshot-2010-01-03-1" src="http://wordpress.local/wp-content/uploads/2010/01/sshot-2010-01-03-1-300x120.png" alt="" width="300" height="120" />][2]
+[<img class="alignnone size-medium wp-image-1523" title="sshot-2010-01-03-1" src="http://efcl.infol/wp-content/uploads/2010/01/sshot-2010-01-03-1-300x120.png" alt="" width="300" height="120" />][2]
 
 少し似た目が変わったのと、その場でTwitter検索の結果を継ぎ足せるようにしたぐらいです。  
 インストールは[こちら][3]から
@@ -35,6 +35,6 @@ Googleの検索結果画面に[Twitter検索][1]の結果も表示するGreasemo
 :   [http://userscripts.org/scripts/show/65540][4]
 
  [1]: http://pcod.no-ip.org/yats/
- [2]: http://wordpress.local/wp-content/uploads/2010/01/sshot-2010-01-03-1.png
+ [2]: http://efcl.infol/wp-content/uploads/2010/01/sshot-2010-01-03-1.png
  [3]: http://userscripts.org/scripts/show/65540
  [4]: http://userscripts.org/scripts/show/65540 "Twitter search(ja) result on Google for Greasemonkey"

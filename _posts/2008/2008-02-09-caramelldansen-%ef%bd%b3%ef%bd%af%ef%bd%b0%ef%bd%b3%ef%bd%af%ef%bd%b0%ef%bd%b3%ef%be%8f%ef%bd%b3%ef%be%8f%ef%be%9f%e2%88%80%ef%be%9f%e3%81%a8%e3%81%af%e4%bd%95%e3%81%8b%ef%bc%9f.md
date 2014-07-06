@@ -74,9 +74,9 @@ youtubeでは少し前に、はやっていて海外での人気もまあまあ�
  [2]: http://www.caramelldansen.com/node/53
  [3]: http://d.hatena.ne.jp/suikyo/20080212/p1
  [4]: http://www.lyrics007.com/Caramell%20Lyrics/Caramelldansen%20Lyrics.html
- [5]: http://wordpress.local/wp-content/uploads/2008/02/wewonderisyoureadytolastwith.txt "英訳した歌詞サビまで"
+ [5]: http://efcl.infol/wp-content/uploads/2008/02/wewonderisyoureadytolastwith.txt "英訳した歌詞サビまで"
  [6]: http://www.caramelldansen.com/node/71
- [7]: http://wordpress.local/wp-content/uploads/2008/02/caramelldansen_ja.txt "caramelldansen_ja.txt"
+ [7]: http://efcl.infol/wp-content/uploads/2008/02/caramelldansen_ja.txt "caramelldansen_ja.txt"
  [8]: http://www.caramelldansen.com/
  [9]: http://www.new-akiba.com/archives/2007/03/loituma_8.html
  [10]: http://d.hatena.ne.jp/pikayan/20080201/p2

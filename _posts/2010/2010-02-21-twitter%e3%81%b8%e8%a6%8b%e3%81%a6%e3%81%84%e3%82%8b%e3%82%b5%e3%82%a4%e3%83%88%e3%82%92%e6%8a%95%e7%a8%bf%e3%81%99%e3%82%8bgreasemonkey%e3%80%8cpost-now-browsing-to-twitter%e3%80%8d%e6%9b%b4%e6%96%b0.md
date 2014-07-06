@@ -25,7 +25,7 @@ tags:
 
 *   入力UIの変更
 
-[<img class="size-medium wp-image-1570 alignnone" title="sshot-2010-02-21-1" src="http://wordpress.local/wp-content/uploads/2010/02/sshot-2010-02-21-1-300x58.png" alt="" width="300" height="58" />][3]
+[<img class="size-medium wp-image-1570 alignnone" title="sshot-2010-02-21-1" src="http://efcl.infol/wp-content/uploads/2010/02/sshot-2010-02-21-1-300x58.png" alt="" width="300" height="58" />][3]
 
 今まではコメントの入力を通常のプロンプトで行っていましたが、入力用のテキストエリアをショートカットを押した際に表示する用にしました。  
 コメントするUIとポストした際の並びに統一感がでたのと、コメントの入力に対してリアルタイムで合計の文字数をカウントアップします。(140文字をオーバーしても自動でタイトルを切って140文字に納めるのでカウントアップにしてます。)  
@@ -42,6 +42,6 @@ tags:
 
  [1]: http://userscripts.org/scripts/show/46441
  [2]: http://efcl.info/2009/0929/res1369/ "今見ているサイトをTwitterに投稿する「Post Now browsing to Twitter」 | Web scratch"
- [3]: http://wordpress.local/wp-content/uploads/2010/02/sshot-2010-02-21-1.png
+ [3]: http://efcl.infol/wp-content/uploads/2010/02/sshot-2010-02-21-1.png
  [4]: http://e-words.jp/w/E383A2E383BCE38380E383ABE38380E382A4E382A2E383ADE382B0.html
  [5]: http://userscripts.org/scripts/show/46441 "Post Now browsing to Twitter"

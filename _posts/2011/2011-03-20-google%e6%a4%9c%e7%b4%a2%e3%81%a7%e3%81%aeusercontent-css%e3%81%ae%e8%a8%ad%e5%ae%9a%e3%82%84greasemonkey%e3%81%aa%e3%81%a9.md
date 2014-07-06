@@ -145,13 +145,13 @@ Google検索自体が結構高機能なので、そこまで機能を付け加�
 今はこんな感じで、結果欄の横幅拡張、検索バーを固定、サイトの背景色を奇数で色分けなどを行っています。  
 スクリーンショットで見ると以下のような感じになります。
 
-[<img class="alignnone size-medium wp-image-2384" title="ss-2011-03-19-2" src="http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-2-300x205.png" alt="" width="300" height="205" />][9]
+[<img class="alignnone size-medium wp-image-2384" title="ss-2011-03-19-2" src="http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-2-300x205.png" alt="" width="300" height="205" />][9]
 
-[<img class="alignnone size-medium wp-image-2381" title="ss-2011-03-19-5" src="http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-5-300x207.png" alt="" width="300" height="207" />][10]
+[<img class="alignnone size-medium wp-image-2381" title="ss-2011-03-19-5" src="http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-5-300x207.png" alt="" width="300" height="207" />][10]
 
-[<img class="alignnone size-medium wp-image-2383" title="ss-2011-03-19-3" src="http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-3-300x205.png" alt="" width="300" height="205" />][11]
+[<img class="alignnone size-medium wp-image-2383" title="ss-2011-03-19-3" src="http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-3-300x205.png" alt="" width="300" height="205" />][11]
 
-[<img class="alignnone size-medium wp-image-2382" title="ss-2011-03-19-4" src="http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-4-300x206.png" alt="" width="300" height="206" />][12]
+[<img class="alignnone size-medium wp-image-2382" title="ss-2011-03-19-4" src="http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-4-300x206.png" alt="" width="300" height="206" />][12]
 
 また、先ほどGoogleのTwitter検索である&#8221;Google Realtime Search&#8221;のSITEINFOをwedataに書いておいたのでかなり快適になりました。  
 (各種AutopagerizeでSITEINFOの更新を行えば適応されると思います)
@@ -169,9 +169,9 @@ Google検索自体が結構高機能なので、そこまで機能を付け加�
  [6]: https://addons.mozilla.org/ja/firefox/addon/stylish/ "Stylish"
  [7]: http://efcl.info/2010/0512/res1692/ "userChrome.jsでメニュー拡張を追加できる「userMenu.js」"
  [8]: https://gist.github.com/877459 "Googleの設定 — Gist"
- [9]: http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-2.png
- [10]: http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-5.png
- [11]: http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-3.png
- [12]: http://wordpress.local/wp-content/uploads/2011/03/ss-2011-03-19-4.png
+ [9]: http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-2.png
+ [10]: http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-5.png
+ [11]: http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-3.png
+ [12]: http://efcl.infol/wp-content/uploads/2011/03/ss-2011-03-19-4.png
  [13]: http://wedata.net/items/48597 "アイテム: Google Realtime Search - データベース: AutoPagerize - wedata"
  [14]: http://userscripts.org/scripts/show/59333 "Google++ for Greasemonkey"

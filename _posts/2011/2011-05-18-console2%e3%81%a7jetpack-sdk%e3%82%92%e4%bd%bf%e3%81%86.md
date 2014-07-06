@@ -47,12 +47,12 @@ ConsoleのTabsでシェルにcmd+activateの実行をさせる
 </table>
 
 <div style="direction: ltr">
-  <a class="thickbox" href="http://wordpress.local/wp-content/uploads/2011/05/clip_image001.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="clip_image001" border="0" alt="clip_image001" src="http://wordpress.local/wp-content/uploads/2011/05/clip_image001_thumb.png" width="202" height="244" /></a>
+  <a class="thickbox" href="http://efcl.infol/wp-content/uploads/2011/05/clip_image001.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="clip_image001" border="0" alt="clip_image001" src="http://efcl.infol/wp-content/uploads/2011/05/clip_image001_thumb.png" width="202" height="244" /></a>
 </div>
 
 こうすれば、タブを開くだけでJetpackのコマンドが読み込まれて便利。
 
-<a class="thickbox" href="http://wordpress.local/wp-content/uploads/2011/05/clip_image002.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="clip_image002" border="0" alt="clip_image002" src="http://wordpress.local/wp-content/uploads/2011/05/clip_image002_thumb.png" width="195" height="118" /></a>
+<a class="thickbox" href="http://efcl.infol/wp-content/uploads/2011/05/clip_image002.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="clip_image002" border="0" alt="clip_image002" src="http://efcl.infol/wp-content/uploads/2011/05/clip_image002_thumb.png" width="195" height="118" /></a>
 
 Shellにnyaosとかを使う方法はよく分からない。
 

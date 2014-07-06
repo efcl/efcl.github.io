@@ -19,7 +19,7 @@ tags:
 Power Assertとは`assert(a === b);` のような単純なアサーションでも、  
 Assert失敗時(テストが通らなかった時)に分かりやすい情報を表示できるようにする機能の事を言います。
 
-<img src="http://wordpress.local/wp-content/uploads/2014/04/power-assert.png" alt="Power assert" title="power-assert.png" border="0" width="557" height="234" />
+<img src="http://efcl.infol/wp-content/uploads/2014/04/power-assert.png" alt="Power assert" title="power-assert.png" border="0" width="557" height="234" />
 
 [Jasmine][2]や[Chai][3]が持つ`should`や`expect`等言った豊富なアサーションを覚える必要なく、  
 シンプルに[assert()][4]を使うだけでも十分な失敗時の情報が得られるため、沢山のアサーションを使い分けしなくていいというメリットがあります。
@@ -100,7 +100,7 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 
 *   [azu/power-assert-node-seed][20]
 
-<img src="http://wordpress.local/wp-content/uploads/2014/04/power-assert-node-seed-2014-04-06-22-50-36-2014-04-06-22-51-51.png" alt="Power assert node seed 2014 04 06 22 50 36 2014 04 06 22 51 51" title="power-assert-node-seed] 2014-04-06 22-50-36 2014-04-06 22-51-51.png" border="0" width="392" height="145" />
+<img src="http://efcl.infol/wp-content/uploads/2014/04/power-assert-node-seed-2014-04-06-22-50-36-2014-04-06-22-51-51.png" alt="Power assert node seed 2014 04 06 22 50 36 2014 04 06 22 51 51" title="power-assert-node-seed] 2014-04-06 22-50-36 2014-04-06 22-51-51.png" border="0" width="392" height="145" />
 
 power-assertを使いたいプロジェクトに[power-assert][5]と[intelli-espower-loader][19]をインストールします。
 
@@ -139,7 +139,7 @@ power-assertを使いたいプロジェクトに[power-assert][5]と[intelli-esp
     $ mocha --require intelli-espower-loader
     
 
-<img src="http://wordpress.local/wp-content/uploads/2014/04/power-assert-node-seed-zsh-2014-04-06-22-58-57-2014-04-06-22-59-07.png" alt="Power assert node seed  zsh 2014 04 06 22 58 57 2014 04 06 22 59 07" title="power-assert-node-seed (zsh) 2014-04-06 22-58-57 2014-04-06 22-59-07.png" border="0" width="600" height="233" />
+<img src="http://efcl.infol/wp-content/uploads/2014/04/power-assert-node-seed-zsh-2014-04-06-22-58-57-2014-04-06-22-59-07.png" alt="Power assert node seed  zsh 2014 04 06 22 58 57 2014 04 06 22 59 07" title="power-assert-node-seed (zsh) 2014-04-06 22-58-57 2014-04-06 22-59-07.png" border="0" width="600" height="233" />
 
 毎回`--require`を指定するのが面倒な場合は[mocha.opts][22]ファイルを作って書いておくことでも同様の効果が得られます。
 

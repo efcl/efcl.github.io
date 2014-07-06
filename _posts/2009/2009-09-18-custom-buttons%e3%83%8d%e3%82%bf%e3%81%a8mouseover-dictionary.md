@@ -18,7 +18,7 @@ tags:
 [Mouseover Dictionary][1]というローカルの辞書をマウスオーバーで検索できるアドオンが便利そうなので導入してみたら、  
 毎回メニューからサイドバーを表示しないといけないのが面倒なので、Custom Buttonsでそれ用のボタンを作った。
 
-*   [<img class="alignnone size-full wp-image-1324" title="19unei315" src="http://wordpress.local/wp-content/uploads/2009/09/19unei315.png" alt="19unei315" width="26" height="24" />][2] クリックでインストール
+*   [<img class="alignnone size-full wp-image-1324" title="19unei315" src="http://efcl.infol/wp-content/uploads/2009/09/19unei315.png" alt="19unei315" width="26" height="24" />][2] クリックでインストール
 
 もうひとつ、サイドバーで特定のURLを開くボタンを作成するときに、 すでにサイドバーを開いていたらサイドバーをトグルしないで、そのままサイドバーのURLを変えるようにするには
 
