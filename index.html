@@ -17,11 +17,11 @@ title: Home
     <!-- Pagination links -->
     <div class="pagination">
         {% if paginator.previous_page %}
-        <a href="/_posts/page/{{ paginator.previous_page }}/" class="previous">新しい記事へ</a>
+        <a href="/page/{{ paginator.previous_page }}/" class="previous">新しい記事へ</a>
         {% endif %}
         <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
         {% if paginator.next_page %}
-        <a href="/_posts/page/{{ paginator.next_page }}/" class="next" rel="next">古い記事へ</a>
+        <a href="/page/{{ paginator.next_page }}/" class="next" rel="next">古い記事へ</a>
         {% endif %}
     </div>
 </div>
