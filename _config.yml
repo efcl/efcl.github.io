@@ -20,10 +20,12 @@ author:
   twitter: azu_re
   github:  azu
 
-
 paginate: 5
 paginate_path: "page/:num"
 permalink: /:year/:month/:day/:title/
+# Github equal
+safe: true
+lsi: false
 # Build settings
 markdown: redcarpet
 redcarpet:
