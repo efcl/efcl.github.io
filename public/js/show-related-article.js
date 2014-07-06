@@ -25,6 +25,9 @@
             var filerByRelated = postObjects.filter(function (object) {
                 return object.url !== postUrl;
             });
+            if (filerByRelated.length === 0) {
+                return renderEmpty();
+            }
             // 最大でも5つ
             renderResult(filerByRelated.slice(0, 5));
         });
