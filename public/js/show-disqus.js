@@ -8,7 +8,7 @@
         var disqusContainer = document.createElement('div'),
             disqus_shortname = 'test',
             dsq = document.createElement('script');
-        disqusContainer.setAttribute('id', 'disqus_thread');
+        disqusContainer.setAttribute('id', 'webscratch');
         // Disqus
         dsq.type = 'text/javascript';
         dsq.async = true;
