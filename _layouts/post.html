@@ -34,9 +34,10 @@ layout: default
 <div class="zenback-embed">
     {% include zenback.html %}
 </div>
-<div class="disqus-embed">
-    {% include disqus.html %}
+<div class="disqus-embed" id="js-disqus-embed">
+    <button class="comment-button" id="js-comment-button">コメントを表示</button>
 </div>
 
 <script type="text/javascript" src="{{ site.baseurl }}/public/js/tag-fetcher.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/public/js/show-related-article.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/public/js/show-disqus.js"></script>

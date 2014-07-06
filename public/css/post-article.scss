@@ -1,3 +1,4 @@
+@import "color-map";
 $toolbar-background-color: rgb(202, 197, 190);
 .github-left-icon {
   left: 0;
@@ -29,4 +30,21 @@ $toolbar-background-color: rgb(202, 197, 190);
   li {
     display: inline;
   }
+}
+
+.comments-button {
+  background-color: #60b044;
+  border: none;
+  border-radius: .313em;
+  color: white;
+  padding: 1em;
+}
+
+.comment-button {
+  background-color: $accent-color;
+  border: none;
+  font-size: 1rem;
+  border-radius: .313em;
+  color: white;
+  padding: 1em;
 }

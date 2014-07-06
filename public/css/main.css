@@ -941,6 +941,21 @@ a, code {
 .content .tags li {
   display: inline; }
 
+.comments-button {
+  background-color: #60b044;
+  border: none;
+  border-radius: .313em;
+  color: white;
+  padding: 1em; }
+
+.comment-button {
+  background-color: #fa6900;
+  border: none;
+  font-size: 1rem;
+  border-radius: .313em;
+  color: white;
+  padding: 1em; }
+
 body {
   background: #e0e4cc; }
 

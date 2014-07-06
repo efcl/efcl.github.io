@@ -4,7 +4,7 @@ title: カテゴリ一覧
 ---
 <div class="categories-index">
     <ul>
-        {% for category_tuple in site.sorted_categories %}
+        {% for category_tuple in site.categories %}
         <li>
             <a href="#{{ category_tuple | first }}">{{ category_tuple | first }}</a>
             <span class="category-count">[{{ category_tuple | last | size }}]</span>
@@ -14,7 +14,7 @@ title: カテゴリ一覧
 </div>
 <div class="article-by-categories">
     <ul>
-        {% for category_tuple in site.sorted_categories %}
+        {% for category_tuple in site.categories %}
         <li><a name="{{ category_tuple | first }}">{{ category_tuple | first }}</a>
             <ul>
                 {% for posts in category_tuple %}
