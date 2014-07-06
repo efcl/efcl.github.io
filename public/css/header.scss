@@ -40,6 +40,9 @@
 
 @include hasSmall {
   $small-header-height: 120px;
+  .github-ribbon {
+    display: none;
+  }
   .lead {
     display: none;
   }

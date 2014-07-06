@@ -716,6 +716,9 @@ a.pagination-item:hover {
   .site-header {
     height: 167px; } }
 @media (max-width: 48em) {
+  .github-ribbon {
+    display: none; }
+
   .lead {
     display: none; }
 

@@ -12,6 +12,7 @@ keywords:
 url: "http://efcl.info"
 baseurl: ""
 production_url : http://azu.github.io
+github_repo_url : https://github.com/azu/azu.github.io/
 timezone: Asia/Tokyo
 encoding: utf-8
 # Setup
