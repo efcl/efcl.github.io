@@ -844,7 +844,7 @@ a.sidebar-nav-item:focus {
   .social a {
     color: #000;
     text-decoration: none;
-    border: 1px solid #000; }
+    border: 1px solid #5b5b5b; }
     .social a.twitter {
       background: skyblue; }
       .social a.twitter:hover {

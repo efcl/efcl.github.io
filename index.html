@@ -5,10 +5,14 @@ title: Home
 <div class="home">
     {% for post in paginator.posts %}
     <article>
-        <p class="date">{{ post.date | date: "%Y年%m月%d日" }}</p>
+        <div class="article">
 
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        {{ post.content }}
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+            <div class="pre-post-toolbar">
+                <span class="post-date">{{ page.date | date: "%Y年%m月%d日" }}</span>
+            </div>
+        </div>
     </article>
     {% endfor %}
     <!-- Pagination links -->
