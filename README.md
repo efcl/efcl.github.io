@@ -1,5 +1,6 @@
-# Web Scratch [![Build Status](https://travis-ci.org/azu/azu.github.io.svg?branch=master)](https://travis-ci.org/azu/azu.github.io)
+# Web Scratch [![Build Status](https://travis-ci.org/efcl/efcl.github.io.svg?branch=master)](https://travis-ci.org/efcl/efcl.github.io)
 
+http://efcl.info/ の ブログです
 
 ## Color
 
