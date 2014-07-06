@@ -11,7 +11,7 @@ keywords:
   - "拡張機能"
 url: "http://efcl.info"
 baseurl: ""
-production_url : http://azu.github.io
+production_url : "http://efcl.info"
 github_repo_url : https://github.com/azu/azu.github.io/
 timezone: Asia/Tokyo
 encoding: utf-8
