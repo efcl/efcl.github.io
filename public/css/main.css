@@ -740,7 +740,8 @@ a.pagination-item:hover {
 .sidebar {
   padding: 2rem 1rem;
   color: rgba(255, 255, 255, 0.5);
-  background-color: #202020; }
+  background-color: #202020;
+  height: 100%; }
   .sidebar .recent ul {
     padding-left: 0;
     list-style: none; }
