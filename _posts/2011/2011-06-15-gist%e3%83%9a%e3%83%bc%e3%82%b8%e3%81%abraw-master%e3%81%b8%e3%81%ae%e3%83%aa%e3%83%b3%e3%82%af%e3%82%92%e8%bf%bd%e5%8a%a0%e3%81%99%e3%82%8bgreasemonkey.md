@@ -25,7 +25,7 @@ gistに置いたファイルの最新版を常に参照するraw masterなURLが
 gistのページのファイル名の横にraw master URLへのリンクを追加するGreasemonkeyです。   
 Scriptishの場合は、リンクをクリックするだけでクリップボードにURLをコピーします。
 
-`<a href="http://efcl.infol/wp-content/uploads/2011/06/2011-06-14-ss1.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-06-14-ss1" border="0" alt="2011-06-14-ss1" src="http://efcl.infol/wp-content/uploads/2011/06/2011-06-14-ss1_thumb.png" width="240" height="209" /></a>`
+`<a href="http://efcl.info/wp-content/uploads/2011/06/2011-06-14-ss1.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-06-14-ss1" border="0" alt="2011-06-14-ss1" src="http://efcl.info/wp-content/uploads/2011/06/2011-06-14-ss1_thumb.png" width="240" height="209" /></a>`
 
 *   [gist: raw master URL for Greasemonkey][2] 
 この仕様変更により、Greasemonkeyで.txtでrequireしてたりするスクリプトは新しくインストールすると死んでいると思うので確認が必要になるかもしれません。

@@ -99,7 +99,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 
 多くの書籍では、紙面のスペースの都合等もありますが、以下のように実行結果を横にコメントで書くようなケースが多いと思います。
 
-<img src="http://efcl.infol/wp-content/uploads/2013/12/effective_javascript-2013-12-01-21-43-23.jpg" alt="Effective javascript 2013 12 01 21 43 23" title="effective_javascript 2013-12-01 21-43-23.jpg" border="0" width="600" height="217" />
+<img src="http://efcl.info/wp-content/uploads/2013/12/effective_javascript-2013-12-01-21-43-23.jpg" alt="Effective javascript 2013 12 01 21 43 23" title="effective_javascript 2013-12-01 21-43-23.jpg" border="0" width="600" height="217" />
 
 これを写経して試す際には、ブラウザやNodeのREPLなどで試す必要があってエディタから離れないと行けないので不便な感じです。
 
@@ -112,7 +112,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 
 というのが、そのままテストとして実行されるようになっています。
 
-<img src="http://efcl.infol/wp-content/uploads/2013/12/Effective_JavaScript-2013-12-01-21-49-24.jpg" alt="Effective JavaScript 2013 12 01 21 49 24" title="Effective_JavaScript] 2013-12-01 21-49-24.jpg" border="0" width="600" height="304" />
+<img src="http://efcl.info/wp-content/uploads/2013/12/Effective_JavaScript-2013-12-01-21-49-24.jpg" alt="Effective JavaScript 2013 12 01 21 49 24" title="Effective_JavaScript] 2013-12-01 21-49-24.jpg" border="0" width="600" height="304" />
 
 ![ScreenShot][3]
 

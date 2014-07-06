@@ -31,5 +31,5 @@ Firefoxでも使えるようにしたソースを見つけたので、それの�
 
  [1]: http://endoh-namazu.tierra.ne.jp/diary/?date=20051217
  [2]: http://www.trishan.org/index.php?%E3%81%82%E3%81%97%E3%81%82%E3%81%A8%2F2007-03-14%2F%E3%81%AA%E3%81%BE%E3%81%9A%20IME%20%E3%82%92%20Firefox%20%E3%82%84%20Thunderbird%20%E3%81%A7%E3%82%82%E4%BD%BF%E3%81%86%E3%81%9F%E3%82%81%E3%81%AB "あしあと/2007-03-14/なまず IME を Firefox や Thunderbird でも使うために - trishan.org"
- [3]: http://efcl.infol/wp-content/uploads/2009/01/namazu_ime_scr_v10201.zip
+ [3]: http://efcl.info/wp-content/uploads/2009/01/namazu_ime_scr_v10201.zip
  [4]: http://endoh-namazu.tierra.ne.jp/diary/?date=20051204#p01

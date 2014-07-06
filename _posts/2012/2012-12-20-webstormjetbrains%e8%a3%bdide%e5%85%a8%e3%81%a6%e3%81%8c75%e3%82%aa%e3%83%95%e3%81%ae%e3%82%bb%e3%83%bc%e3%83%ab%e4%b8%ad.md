@@ -18,7 +18,7 @@ tags:
 <!--more-->
 
 <div>
-  <a href="http://www.jetbrains.com/webstorm/buy/"><img title="WebStorm __ Licensing-1.png" src="http://efcl.infol/wp-content/uploads/2012/12/WebStorm-__-Licensing-1.png" border="0" alt="WebStorm  Licensing 1" width="449" height="520" /></a>
+  <a href="http://www.jetbrains.com/webstorm/buy/"><img title="WebStorm __ Licensing-1.png" src="http://efcl.info/wp-content/uploads/2012/12/WebStorm-__-Licensing-1.png" border="0" alt="WebStorm  Licensing 1" width="449" height="520" /></a>
 </div>
 
 [WebStorm][3]の場合、新規個人ライセンスが **$12** で、珍しくアップグレードにもセールが適応されて **$7** でアップグレードできます。

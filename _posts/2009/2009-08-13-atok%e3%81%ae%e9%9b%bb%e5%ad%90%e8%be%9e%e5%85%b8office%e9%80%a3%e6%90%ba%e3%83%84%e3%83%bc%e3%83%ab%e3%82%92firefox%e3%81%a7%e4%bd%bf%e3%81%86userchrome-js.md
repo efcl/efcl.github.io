@@ -31,13 +31,13 @@ ATOKアップデートか[［949-P ATOK 2009 for Windows］サポート・ダウ
 そしてFirefoxを再起動すれば、文字列を選択したときにコンテキストメニューに&#8221;ATOKで検索&#8221;とでるので、実行するとGetTextOperaLClick.exeによって  
 電子辞典を引くことができます。<figure id="attachment_1254" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-1254" title="sshot-2009-08-13-[21-10-00]" src="http://efcl.infol/wp-content/uploads/2009/08/sshot-2009-08-13-21-10-00-300x181.png" alt="実行例" width="300" height="181" />][4]<figcaption class="wp-caption-text">実行例</figcaption></figure> 
+[<img class="size-medium wp-image-1254" title="sshot-2009-08-13-[21-10-00]" src="http://efcl.info/wp-content/uploads/2009/08/sshot-2009-08-13-21-10-00-300x181.png" alt="実行例" width="300" height="181" />][4]<figcaption class="wp-caption-text">実行例</figcaption></figure> 
 GetTextOperaLClickは他のソフトでもつかえるので、詳しい使い方は[Opera, Firefox, 秀丸, Janeで電子辞典(for Windows)を使う][5]をみるのがいいと思います。
 
 &nbsp;
 
  [1]: http://support.justsystems.com/jp/app/servlet/product?pid=949
  [2]: http://sites.google.com/site/jsmatome/atok/option/tool "Opera, Firefox, 秀丸, Janeで電子辞典(for Windows)を使う (JustSystems まとめ)"
- [3]: http://efcl.infol/wp-content/uploads/2009/08/Search-Atok.uc_.js
- [4]: http://efcl.infol/wp-content/uploads/2009/08/sshot-2009-08-13-21-10-00.png
+ [3]: http://efcl.info/wp-content/uploads/2009/08/Search-Atok.uc_.js
+ [4]: http://efcl.info/wp-content/uploads/2009/08/sshot-2009-08-13-21-10-00.png
  [5]: http://sites.google.com/site/jsmatome/atok/option/tool

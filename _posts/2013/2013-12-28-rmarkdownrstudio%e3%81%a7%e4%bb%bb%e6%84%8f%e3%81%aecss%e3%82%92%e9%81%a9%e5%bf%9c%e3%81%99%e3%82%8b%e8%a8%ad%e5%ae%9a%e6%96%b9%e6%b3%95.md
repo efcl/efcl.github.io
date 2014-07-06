@@ -32,7 +32,7 @@ RStudioからのRmd(RMarkdown)のプレビューのカスタム方法は以下�
 コンソールに上記の設定をすれば、次回のプレビューから反映されますが永続化されないので、  
 `.Rprofile` に追加すれば毎回実行されるようになります。
 
-<img src="http://efcl.infol/wp-content/uploads/2013/12/RStudio-Preview-HTML-2013-12-28-16-43-21.jpg" alt="RStudio Preview HTML 2013 12 28 16 43 21" title="RStudio: Preview HTML 2013-12-28 16-43-21.jpg" border="0" width="600" height="383" />
+<img src="http://efcl.info/wp-content/uploads/2013/12/RStudio-Preview-HTML-2013-12-28-16-43-21.jpg" alt="RStudio Preview HTML 2013 12 28 16 43 21" title="RStudio: Preview HTML 2013-12-28 16-43-21.jpg" border="0" width="600" height="383" />
 
 ## markdownパッケージの場合
 

@@ -47,7 +47,7 @@ container.obj = (function(){
 })();</pre>
 
 というコードの場合`container.obj.pu と書くと``ちゃんとpublicMethodも補完候補に表示されます。<br /> さらに``publicMethodはメソッドなので``container.obj.``publicMethod()`という形で補完されて、今は仮引数がないのでカーソルの位置は)の→になります。仮引数があると()の中にカーソルが置かれます。  
-`<a href="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-4.png"><img class="alignnone size-medium wp-image-2025" title="ss-2010-10-27-4" src="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-4-300x193.png" alt="" width="300" height="193" /></a>`
+`<a href="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-4.png"><img class="alignnone size-medium wp-image-2025" title="ss-2010-10-27-4" src="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-4-300x193.png" alt="" width="300" height="193" /></a>`
 
 ネイティブの補完候補もHTML5,ECMA,DOMCoreや結構細かいものも対応していて補完でアレが出てこないって事はかなり少ないです(ブラウザ拡張開発用とかは除いて)  
 補完候補は開いているディレクトリ以下のファイルを全部解析して表示してくれるので、ファイルをまたいだメソッドなども候補に表示されます。  
@@ -59,12 +59,12 @@ JavaScript以外のHTMLタグやCSSも補完を行え、1つのファイルにHT
 
 &nbsp;<figure id="attachment_2028" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-2028" title="ss-2010-10-27-7" src="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-7-300x146.png" alt="右サイドに警告レベル毎の表示" width="300" height="146" />][7]<figcaption class="wp-caption-text">右サイドに警告レベル毎の表示</figcaption></figure> 
+[<img class="size-medium wp-image-2028" title="ss-2010-10-27-7" src="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-7-300x146.png" alt="右サイドに警告レベル毎の表示" width="300" height="146" />][7]<figcaption class="wp-caption-text">右サイドに警告レベル毎の表示</figcaption></figure> 
 &nbsp;
 
 上でコ－ド解析してるのでインテリセンスみたいな事が凄くできるよと書きましたが、  
 他にもCtrl+クリックで関数宣言にジャンプ(Tipsで設定の変更方法が記載してあります)する機能や、リファクタリングで特定の変数名や関数名をリネームする機能(その名前を使ってるもの全部を変えてくれる)、Structureパネルでコードのアウトラインを表示できたりします。  
-[<img class="alignnone size-medium wp-image-2027" title="ss-2010-10-27-6" src="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-6-204x300.png" alt="" width="204" height="300" />][8]  
+[<img class="alignnone size-medium wp-image-2027" title="ss-2010-10-27-6" src="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-6-204x300.png" alt="" width="204" height="300" />][8]  
 後、文法が間違ってる場合などは警告なども表示できその設定も警告レベルから決められてかなり細かな指定が行えます。(JSLintみたいなもの?)
 
 #### 自動整形機能
@@ -74,7 +74,7 @@ JavaScript以外のHTMLタグやCSSも補完を行え、1つのファイルにHT
 
 &nbsp;<figure id="attachment_2026" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-2026" title="ss-2010-10-27-5" src="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-5-300x160.png" alt="他にもページがあるぐらい多い" width="300" height="160" />][9]<figcaption class="wp-caption-text">他にもページがあるぐらい多い</figcaption></figure> 
+[<img class="size-medium wp-image-2026" title="ss-2010-10-27-5" src="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-5-300x160.png" alt="他にもページがあるぐらい多い" width="300" height="160" />][9]<figcaption class="wp-caption-text">他にもページがあるぐらい多い</figcaption></figure> 
 &nbsp;
 
 ショートカットキーはkeymap>Reformat codeで変更できます
@@ -94,7 +94,7 @@ Firefox向けのコード、Greasemonkeyなどを書く人に使ってもらい�
 
 &nbsp;<figure id="attachment_2045" style="width: 248px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-2045" title="ss-2010-10-28-1" src="http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-28-1-248x300.png" alt="Gitのメニュー" width="248" height="300" />][10]<figcaption class="wp-caption-text">Gitのメニュー</figcaption></figure> 
+[<img class="size-medium wp-image-2045" title="ss-2010-10-28-1" src="http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-28-1-248x300.png" alt="Gitのメニュー" width="248" height="300" />][10]<figcaption class="wp-caption-text">Gitのメニュー</figcaption></figure> 
 &nbsp;
 
 &nbsp;
@@ -198,10 +198,10 @@ UIが完全に英語ですが、設定は検索機能が優秀なので適当な
  [4]: http://efcl.info/2012/0909/res3111/ "改めて最強のJavaScript IDE 「WebStorm」についてまとめてみた(改訂版)"
  [5]: http://d.hatena.ne.jp/teramako/20090205/p1
  [6]: http://www.jetbrains.com/webstorm/features/
- [7]: http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-7.png
- [8]: http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-6.png
- [9]: http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-27-5.png
- [10]: http://efcl.infol/wp-content/uploads/2010/10/ss-2010-10-28-1.png
+ [7]: http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-7.png
+ [8]: http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-6.png
+ [9]: http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-27-5.png
+ [10]: http://efcl.info/wp-content/uploads/2010/10/ss-2010-10-28-1.png
  [11]: http://plugins.intellij.net/plugin/?webide&id=4624
  [12]: http://www.jetbrains.com/webstorm/documentation/index.html
  [13]: http://plugins.intellij.net/plugin/?webide&id=164

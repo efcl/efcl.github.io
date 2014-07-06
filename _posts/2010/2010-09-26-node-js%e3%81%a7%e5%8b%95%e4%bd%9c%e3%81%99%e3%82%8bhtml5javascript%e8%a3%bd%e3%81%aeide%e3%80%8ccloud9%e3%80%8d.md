@@ -31,7 +31,7 @@ Win/Linux/Macで動作するようです。
 するとcloud9のディレクトリができるので、binフォルダに入っている**cloud9-win32.bat**を実行すると必要なファイルをどんどんダウンロードしてくれます。(インストーラーみたいで面白い)  
 ダウンロードが終わってもう一度cloud9-win32.batを実行すると <http://localhost:3000> にアクセスするように促されるので、FirefoxやChromeなどでhttp://localhost:3000にアクセスすればCloud9 IDEが使用できます。(別途にNode.jsをインストールしてなくても動作した)
 
-[][3][<img class="alignnone size-medium wp-image-1961" title="4131eae1696573feef9fe1e72bf86c80" src="http://efcl.infol/wp-content/uploads/2010/09/4131eae1696573feef9fe1e72bf86c80-300x221.png" alt="" width="300" height="221" />][3]
+[][3][<img class="alignnone size-medium wp-image-1961" title="4131eae1696573feef9fe1e72bf86c80" src="http://efcl.info/wp-content/uploads/2010/09/4131eae1696573feef9fe1e72bf86c80-300x221.png" alt="" width="300" height="221" />][3]
 
 まだα版なので、ファイル管理とエディタとコンソールぐらいしかありませんが、ブラウザ上でこういうものが動いてるのは面白いです。エディタはBespinとかと同じく日本語入力が残念仕様です。  
 最近Bespinは<span id="text25572274759" class="status">Skywriterというプロジェクトへと移行したので、そのうちエディタに変化が起きるかも知れませんね。<br />入力したコードはNode.js上で実行されてるような気がします。JavaScriptを書いてその場で実行やデバッグができるのは普通のIDEとしてはよくありますが、JavaScriptなIDEとしては面白いですね。</span>
@@ -44,6 +44,6 @@ Win/Linux/Macで動作するようです。
 
  [1]: http://www.cloud9ide.com/
  [2]: http://github.com/ajaxorg/cloud9
- [3]: http://efcl.infol/wp-content/uploads/2010/09/4131eae1696573feef9fe1e72bf86c80.png
+ [3]: http://efcl.info/wp-content/uploads/2010/09/4131eae1696573feef9fe1e72bf86c80.png
  [4]: http://efcl.info/2010/0920/res1952/
  [5]: http://www.jetbrains.com/webstorm/index.html
