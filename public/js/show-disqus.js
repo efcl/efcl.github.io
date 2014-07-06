@@ -6,9 +6,9 @@
 
         // Create comments container
         var disqusContainer = document.createElement('div'),
-            disqus_shortname = 'test',
+            disqus_shortname = 'webscratch',
             dsq = document.createElement('script');
-        disqusContainer.setAttribute('id', 'webscratch');
+        disqusContainer.setAttribute('id', 'disqus_thread');
         // Disqus
         dsq.type = 'text/javascript';
         dsq.async = true;
