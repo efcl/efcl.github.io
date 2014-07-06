@@ -47,7 +47,7 @@
             var postObject = postObjects[i];
             var liTag = document.createElement("li");
             var aTag = document.createElement("a");
-            aTag.href = "/" + postObject.url;
+            aTag.href = postObject.url;
             aTag.textContent = postObject.title;
             liTag.appendChild(aTag);
             ulTag.appendChild(liTag);

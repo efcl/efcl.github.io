@@ -24,3 +24,9 @@ $toolbar-background-color: rgb(202, 197, 190);
     @extend .github-left-icon
   }
 }
+
+.content .tags {
+  li {
+    display: inline;
+  }
+}

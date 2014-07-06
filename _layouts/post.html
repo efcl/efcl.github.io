@@ -4,6 +4,7 @@ layout: default
 
 <div class="post">
     <h1 class="post-title">{{ page.title }}</h1>
+
     <div class="pre-post-toolbar">
         <span class="post-date">{{ page.date | date_to_string }}</span>
         {% include edit-on-github.html %}
@@ -12,7 +13,17 @@ layout: default
         {{ content }}
     </div>
     <div class="post-post-toolbar">
-        <a class="btn edit-on-github" href="https://github.com/azu/azu.github.io/edit/master/{{page.path | cgi_escape}}"><span class="edit-on-github-label"></span>修正リクエストをする</a>
+        <a class="btn edit-on-github"
+           href="https://github.com/azu/azu.github.io/edit/master/{{page.path | cgi_escape}}"><span
+                class="edit-on-github-label"></span>修正リクエストをする</a>
+        <nav class="tags">
+            <span>タグ:</span>
+            <ul>
+                {% for tag in page.tags %}
+                <li><a href="{{ site.baseurl }}/tags/?q={{ tag }}">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
     </div>
 </div>
 <div class="zenback-embed">

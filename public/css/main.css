@@ -938,6 +938,9 @@ a, code {
     padding-bottom: 3px;
     padding-right: 1em; }
 
+.content .tags li {
+  display: inline; }
+
 body {
   background: #e0e4cc; }
 
