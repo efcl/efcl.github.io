@@ -2,8 +2,7 @@
 title: ニコニコ動画上で開発されてるソフトのまとめ
 author: azu
 layout: page
-SBM_count:
-  - '00008<>1355438775<>2<>4<>1<>1<>0'
+permalink: /nico_soft/
 dsq_thread_id:
   - 300801543
 ---

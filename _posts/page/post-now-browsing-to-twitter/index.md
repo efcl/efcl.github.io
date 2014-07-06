@@ -2,8 +2,7 @@
 title: Post Now browsing to Twitterの解説
 author: azu
 layout: page
-SBM_count:
-  - '00013<>1355441518<>10<>0<>1<>2<>0'
+permalink: /post-now-browsing-to-twitter/
 dsq_thread_id:
   - 300802656
 ---

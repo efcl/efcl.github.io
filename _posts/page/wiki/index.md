@@ -2,8 +2,7 @@
 title: まとめ記事一覧
 author: azu
 layout: page
-SBM_count:
-  - '00003<>1355447385<>1<>1<>0<>1<>0'
+permalink: /wiki/
 dsq_thread_id:
   - 301318992
 ---

@@ -2,8 +2,7 @@
 title: ニコニコ動画用Greasemonkeyスクリプトのまとめ
 author: azu
 layout: page
-SBM_count:
-  - '00178<>1355445836<>157<>7<>7<>7<>0'
+permalink: /niconico_greasemonkey/
 dsq_thread_id:
   - 300801393
 ---

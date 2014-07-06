@@ -4,8 +4,7 @@ author: azu
 layout: page
 aktt_notify_twitter:
   - no
-SBM_count:
-  - '00168<>1355445470<>162<>0<>4<>2<>0'
+permalink: /niconicoapi/
 dsq_thread_id:
   - 300802311
 ---

@@ -2,8 +2,7 @@
 title: ニコニコ動画とflvplayer_wrapperの履歴
 author: azu
 layout: page
-SBM_count:
-  - '00001<>1355441526<>1<>0<>0<>0<>0'
+permalink: /flvplayer_wrapper/
 dsq_thread_id:
   - 300975935
 ---
