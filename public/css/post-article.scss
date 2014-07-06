@@ -48,3 +48,13 @@ $toolbar-background-color: rgb(202, 197, 190);
   color: white;
   padding: 1em;
 }
+
+.announce-area{
+  border-top: 2px dotted $accent-color;
+  border-bottom: 2px dotted $accent-color;
+  padding-bottom: 1em;
+  .announce-text{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

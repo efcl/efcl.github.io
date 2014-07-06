@@ -957,6 +957,14 @@ a, code {
   color: white;
   padding: 1em; }
 
+.announce-area {
+  border-top: 2px dotted #fa6900;
+  border-bottom: 2px dotted #fa6900;
+  padding-bottom: 1em; }
+  .announce-area .announce-text {
+    padding-left: 1em;
+    padding-right: 1em; }
+
 body {
   background: #e0e4cc; }
 
