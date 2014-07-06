@@ -7,3 +7,9 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
+<div class="zenback-embed">
+    {% include zenback.html %}
+</div>
+<div class="disqus-embed">
+    {% include disqus.html %}
+</div>
