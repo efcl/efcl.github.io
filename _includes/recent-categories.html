@@ -1,17 +1,38 @@
 <div class="recent">
     <h3 class="categories-list-title"><a href="{{ site.baseurl }}/categories">カテゴリ一覧</a></h3>
 
-    <div class="categories-list">
-        <ul>
-            {% for category_tuple in site.sorted_categories limit:3 %}
-            <li>
-                <a href="{{ site.baseurl }}/categories#{{ category_tuple | first }}">{{ category_tuple | first }}</a>
-                <span class="category-count">[{{ category_tuple | last | size }}]</span>
-            </li>
-            {% endfor %}
-            <li><a href="{{ site.baseurl }}/categories/">
-                残りのカテゴリ...
-            </a></li>
-        </ul>
+    <div class="categories-list" id="js-categories-list">
+
     </div>
+    <script>
+        (function () {
+            var categoriesList = window.blog_categories;
+            var appendPoint = document.getElementById("js-categories-list");
+            // big ... small
+            var sortedCategories = categoriesList.sort(function (a, b) {
+                return a.count < b.count ? 1 : -1;
+            });
+            var ulTag = document.createElement("ul");
+            var displayCount = sortedCategories.length < 3 ? sortedCategories.length : 3;
+            for (var i = 0; i < displayCount; i++) {
+                var category = sortedCategories[i];
+                var liTag = document.createElement("li");
+                var aTag = document.createElement("a");
+                aTag.href = "{{ site.baseurl }}/categories#" + category.title;
+                aTag.textContent = category.title;
+                var spanTag = document.createElement("span");
+                spanTag.appendChild(document.createTextNode("[" + category.count + "]"));
+                liTag.appendChild(aTag);
+                liTag.appendChild(spanTag);
+                ulTag.appendChild(liTag);
+            }
+            var lastLiTag = document.createElement("li");
+            var lastATag = document.createElement("a");
+            lastATag.href = "{{ site.baseurl }}/categories";
+            lastATag.textContent = "その他のタグ…";
+            lastLiTag.appendChild(lastATag);
+            ulTag.appendChild(lastATag);
+            appendPoint.appendChild(ulTag)
+        })();
+    </script>
 </div>

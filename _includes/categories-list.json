@@ -1,0 +1,6 @@
+[
+{% for category in site.categories %}{
+    "title" : "{{category | first | escape}}",
+    "count" : {{category | last | size}}
+}{% unless forloop.last %},{% endunless %}{% endfor %}
+]
