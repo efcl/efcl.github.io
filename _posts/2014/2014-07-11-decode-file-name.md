@@ -1,5 +1,5 @@
 ---
-title: WordpressからJekyllに移行した時のファイル名がエンコードされてしまう件
+title: WordpressからJekyllに移行した時に、ファイル名がエンコードされてしまう件
 author: azu
 layout: post
 categories:
