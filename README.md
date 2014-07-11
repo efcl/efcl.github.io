@@ -1,5 +1,4 @@
-# Web Scratch [![Build Status](https://travis-ci.org/efcl/efcl.github.io.svg?branch=master)](https://travis-ci.org/efcl/efcl.github.io) [![Gitter chat](https://badges.gitter.im/efcl.png)](https://gitter.im/efcl)
-
+# Web Scratch [![Build Status](https://travis-ci.org/efcl/efcl.github.io.svg?branch=master)](https://travis-ci.org/efcl/efcl.github.io) [![Gitter chat](https://badges.gitter.im/efcl/efcl.github.io.png)](https://gitter.im/efcl/efcl.github.io)
 http://efcl.info/ のブログ用のリポジトリです。
 
 ## Installation
@@ -15,7 +14,7 @@ http://efcl.info/ のブログ用のリポジトリです。
 
 また、Gitterを使ったチャットで伝えてもらっても問題ありません。
 
-[![Gitter chat](https://badges.gitter.im/efcl.png)](https://gitter.im/efcl)
+[![Gitter chat](https://badges.gitter.im/efcl/efcl.github.io.png)](https://gitter.im/efcl/efcl.github.io)
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
