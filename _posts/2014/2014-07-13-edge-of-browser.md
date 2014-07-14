@@ -22,6 +22,10 @@ tags:
 
 途中から参加なのでServoの話は途中からです。
 
+Twitterのログはこちら
+
+* [ブラウザエンジン先端観測会 #1 - Togetterまとめ](http://togetter.com/li/692648 "ブラウザエンジン先端観測会 #1 - Togetterまとめ")
+
 ---
 
 ## Servo (by Tetsuharu OHZEKI a.k.a @saneyuki_s)
