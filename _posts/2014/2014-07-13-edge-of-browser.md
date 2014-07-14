@@ -65,7 +65,7 @@ Twitterのログはこちら
 
 ## アクセシビリティオブジェクトが作られない場合（by @Takenspc）
 
-> [アクセシビリティオブジェクトについて](http://www.slideshare.net/takenspc/20140713-accessibility-object "アクセシビリティオブジェクトについて")
+- スライド: [アクセシビリティオブジェクトについて](http://www.slideshare.net/takenspc/20140713-accessibility-object "アクセシビリティオブジェクトについて")
 
 - ブラウザのHTML5対応コンテキスト
 - アクセシビリティAPIについて
