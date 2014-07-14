@@ -44,9 +44,9 @@ tags:
          - assign-widthの時に仮定を指定widthをやっていく
          - 大体でやっていく、Blockとしてやれると仮定
 - DOMのライフサイクル管理の一本化
-    - DOM.js
+    - 過去の事例 - DOM.js
          - DOM.jsというJavaScriptでDOMかいていいじゃね => メモリバカ食い遅い => 失敗
-    - SpiderMonkeyのGCに任せて管理
+    - 現在 - SpiderMonkeyのGCに任せて管理
     - GPUでのセレクタマッチング
     - Intelの一時メモキャッシュ早いということがわかった
 - まとめ
