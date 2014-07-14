@@ -146,6 +146,8 @@ Twitterのログはこちら
 
 ## CSS JIT (by @Constellation)
 
+> 関連 : [Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler](https://www.webkit.org/blog/3271/webkit-css-selector-jit-compiler/ "Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler")
+
 - WebKitコミッター
 - モチベーション
     - CSSセレクタはものすごい回数が実行される
