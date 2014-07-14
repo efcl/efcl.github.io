@@ -65,6 +65,8 @@ Twitterのログはこちら
 
 ## アクセシビリティオブジェクトが作られない場合（by @Takenspc）
 
+> [アクセシビリティオブジェクトについて](http://www.slideshare.net/takenspc/20140713-accessibility-object "アクセシビリティオブジェクトについて")
+
 - ブラウザのHTML5対応コンテキスト
 - アクセシビリティAPIについて
 - アクセシビリティオブジェクトとは何か
@@ -146,7 +148,8 @@ Twitterのログはこちら
 
 ## CSS JIT (by @Constellation)
 
-> 関連 : [Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler](https://www.webkit.org/blog/3271/webkit-css-selector-jit-compiler/ "Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler")
+- > スライド : [CSS JIT: Optimizing CSS Selector Matching with Just-in-Time Compilation // Speaker Deck](https://speakerdeck.com/constellation/css-jit-optimizing-css-selector-matching-with-just-in-time-compilation "CSS JIT: Optimizing CSS Selector Matching with Just-in-Time Compilation // Speaker Deck")
+- > 関連記事 : [Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler](https://www.webkit.org/blog/3271/webkit-css-selector-jit-compiler/ "Surfin&#39; Safari - Blog Archive » Little overview of WebKit’s CSS JIT Compiler")
 
 - WebKitコミッター
 - モチベーション
