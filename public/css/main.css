@@ -19,7 +19,7 @@ html {
  * with a 25%-wide `.sidebar`.
  */
 .content {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem; }
 
 @media (min-width: 48em) {
@@ -715,7 +715,7 @@ a.pagination-item:hover {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 .sidebar {
-  padding: 2rem 1rem;
+  padding: 1rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
   height: 100%; }
