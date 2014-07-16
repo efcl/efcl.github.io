@@ -30,6 +30,8 @@ Twitterのログはこちら
 
 ## Servo (by Tetsuharu OHZEKI a.k.a @saneyuki_s)
 
+- スライド: [Servo parallelism](http://www.slideshare.net/saneyuki/servo-parallelism "Servo parallelism")
+
 - ACID2は通った
 - Servoのレイアウトの計算
     - ボトムアップの場合
