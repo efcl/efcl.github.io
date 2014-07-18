@@ -82,7 +82,7 @@ Cheers
 
 - [Github Name Squatting Policy – Kumarcode](http://kumarcode.com/Github-Name-Squatting-Policy/ "Github Name Squatting Policy – Kumarcode")
 
-使いたいアカウントが放置アカウントだった場合は、一度[問い合わせ](https://github.com/contact "Contact GitHub")てみるといいのかもしれません。
+使いたいアカウントが放置アカウントだった場合は、一度[問い合わせ](https://github.com/contact "Contact GitHub")してみるといいのかもしれません。
 
 ### Bitbucket
 
