@@ -201,7 +201,8 @@ typoについては正直諦めていて、アウトライン的なメモだと�
 
 またこのブログだと、GitHubから <a class="btn edit-on-github"
    href="https://github.com/efcl/efcl.github.io/edit/master/{{page.path | cgi_escape}}"><span
-        class="edit-on-github-label">修正リクエスト</span></a> を送れるで細かいことはやる気がある人が修正を送ってくれるかもしれません。
+        class="edit-on-github-label">修正リクエスト</span></a>
+を送れるので細かいことはやる気がある人が修正を送ってくれるかもしれません。
 
 後、メモを公開すると参加者や発表者がメモに対して補足等してくれることがあります。
 そういうのが得られるのはメモを公開する利点といえると思います。
