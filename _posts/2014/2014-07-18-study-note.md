@@ -46,6 +46,11 @@ tags:
 - リストマークの自動入力が大事
 ```
 
+上に載せてないですが、[Day One](http://dayoneapp.com/ "Day One")とかがこのリスト周りの動きの出来がいいと思います。
+(iOS版もアウトラインに絞ると中々いい感じ)
+
+![dayone](http://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
+
 今だとMouの後継を目指して開発して[MacDown](http://macdown.uranusjr.com/ "MacDown")とか面白いと思います。
 
 この辺は慣れてる/好きなエディタを使えばいいと思います。
