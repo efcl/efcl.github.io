@@ -94,7 +94,7 @@ opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変�
 
 * [azu/opml-to-markdown](https://github.com/azu/opml-to-markdown "azu/opml-to-markdown")
 
-これを使って作ったMarkdownファイルで[Cleaver](https://github.com/jdan/cleaver "Cleaver")のスライドを作ったりもしれます。
+これを使って作ったMarkdownファイルで[Cleaver](https://github.com/jdan/cleaver "Cleaver")のスライドを作ったりもします。
 
 生成したMarkdownを直接整えてブログとして公開するため、OmniOutlinerのファイル自体は使い捨てです。
 
@@ -126,6 +126,8 @@ opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変�
 忘れないためにメモるというのがあると思います。
 
 聞きながらメモって手を動かした方が感覚的に覚えていられる気がするし、後から見られるのが便利です。
+
+### Twitterとメモ
 
 一言にメモといっても、上記のようにアウトラインで書くのが一応メインですが、
 発表中にハッシュタグをつけてTwitterに投げるのもメモの一つだと思います。
@@ -159,7 +161,7 @@ opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変�
 デモが中心だとあんまりメモる事がなくなりますが、
 写真とか動画とかとっておくと便利なのかもしれないですね(あんまりしないですが、やっぱり後から見ると情報量が違う)。
 
-### 記憶からのメモ
+## 記憶からのメモ
 
 勉強会だとPCを開いているので普通にメモればいいですが、
 飲み会とか懇談会的なものは皆PC閉じてる事が多いためメモしてないです。
@@ -185,3 +187,31 @@ opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変�
 飲み会的なものだと「〜のはなし」みたいな[区切りのTweet](https://twitter.com/azu_re/status/451323593104707584)を書いたりしてる事が多いです。
 
 こういう目印的な区切りがあると後から整理しやすいと思います。
+
+## なぜ公開するのか
+
+基本的に非公開なイベントじゃなければ、公開しない理由は特にないので公開してる感じです。
+
+勢いでメモを書いて、大して整理しないで公開するので大量の誤字/脱字とか間違いもありますが、
+公開して間違いの指摘がきたら直せばいいと思います。
+(そこまで間違って深刻になる内容について勉強会だと話さないと思うので)
+
+typoについては正直諦めていて、アウトライン的なメモだとそこまでしっかり読む人もいないと思うので、
+まあ気にしないほうがいいのではないかと考えています。
+
+またこのブログだと、GitHubから <a class="btn edit-on-github"
+   href="https://github.com/efcl/efcl.github.io/edit/master/{{page.path | cgi_escape}}"><span
+        class="edit-on-github-label">修正リクエスト</span></a> を送れるで細かいことはやる気がある人が修正を送ってくれるかもしれません。
+
+後、メモを公開すると参加者や発表者がメモに対して補足等してくれることがあります。
+そういうのが得られるのはメモを公開する利点といえると思います。
+
+レポートとかそういう写真がいっぱいでキレイな感じの内容は[本職の人](http://gihyo.jp/news/report "レポート")に任せればいいので、
+雑なメモでも公開する意味はあるんじゃなかと思います。
+
+ブログ書くまでが勉強会なのでもっとメモを積極的に公開していくといいですね。
+
+以上でメモ終了です。
+
+- メモ
+    - WebStorm
