@@ -33,11 +33,12 @@ tags:
 - [Texts](http://www.texts.io/ "Texts — Markdown Word Processor for Mac OS X and Windows")
 - [OmniOutliner](http://www.omnigroup.com/omnioutliner "OmniOutliner")
 
-
 アウトライン的に使う場合、Markdownエディタだと[Mou](http://mouapp.com/ "Mou")が安定して使いやすい方だと思います。
 
+今だとMouの後継を目指して開発してる[MacDown](http://macdown.uranusjr.com/ "MacDown")とか面白いと思います。
+
 基本的にリストで書いていくので、`-`が自動で入るとか、Tabを押した時にリストもインデントしてくれるかが、
-入力のテンポの大きく関わってきます。
+入力のテンポの大きく関わってくるのでエディタは馴染むものを選ぶといいかと思います。
 
 ``` markdown
 - リスト
@@ -51,12 +52,20 @@ tags:
 
 ![dayone](http://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
 
-今だとMouの後継を目指して開発して[MacDown](http://macdown.uranusjr.com/ "MacDown")とか面白いと思います。
+後、最初の頃は[Qute for PC/Mac](http://www.inkcode.net/qute "Qute for PC/Mac")というのを使っていて、
+このアプリは幻の[Chromeless Browser](https://mozillalabs.com/en-US/chromeless/ "Chromeless Browser")を使ったHTML/CSS/JSのアプリです。
 
-この辺は慣れてる/好きなエディタを使えばいいと思います。
+普通のエディタとちょっと違って改行でそれぞれブロックが別れる感じになっていて、
+カチッとハマると見た目もキレイで結構良かった記憶があります。(ものすごく癖があるので使いやすくはない)
+
+![Qute](https://skitch-img.s3.amazonaws.com/20111227-cm4qpnpk4f9fcnh7j6ieh76csx.png)
+
+この辺は慣れてる/好きなエディタを使えばいいと思います。(普通にAtomとかVimとかの方が何だかんだ自由度高い)
 
 最近になって、そもそもアウトライン的に書いてるんだからアウトライナーを使って書けばいいじゃんという事に気づいて、
 [OmniOutliner](http://www.omnigroup.com/omnioutliner "OmniOutliner") を使い始めました。
+
+### OmniOutliner
 
 ![omnioutliner](http://efcl.info/wp-content/uploads/2014/07/2014-07-18_20-02-33.jpg)
 
