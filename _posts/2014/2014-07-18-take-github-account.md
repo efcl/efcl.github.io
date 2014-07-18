@@ -98,7 +98,7 @@ GitHubみたいにサクッとやるのは難しいので妥当な感じがし�
 
 ## おわりに
 
-JSer.info の方は下記に詳細を書きましたがJekyllに移行していく予定です。
+JSer.info の方は下記に詳細を書きましたが、今後Jekyllに移行していく予定です。
 
 * [Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info](https://github.com/azu/jser.info/issues/21#issuecomment-49267328 "Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info")
 
