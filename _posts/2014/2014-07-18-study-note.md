@@ -88,6 +88,10 @@ OPMLとしてエクスポートしてそれをMarkdownに変換して使って�
 
 OPMLをパースして(JSONにしてから)、Markdownに変換するNodeで書いたコマンドラインツールを使っています。
 
+``` console
+opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変換される
+```
+
 * [azu/opml-to-markdown](https://github.com/azu/opml-to-markdown "azu/opml-to-markdown")
 
 これを使って作ったMarkdownファイルで[Cleaver](https://github.com/jdan/cleaver "Cleaver")のスライドを作ったりもしれます。
