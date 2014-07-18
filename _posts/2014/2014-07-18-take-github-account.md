@@ -23,7 +23,7 @@ tags:
 * [Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info](https://github.com/azu/jser.info/issues/21 "Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info")
 
 GitHub Pagesに独自ドメインを当てる場合、GitHubのorganizationアカウントを取ってそこでやるのが楽だという事はわかっていたので、
-[JSer.info](http://jser.info/ "JSer.info") のように `jser` というGitHubアカウントを取ろうとしていましたが、既にアカウントは取られていた状態でした。
+[JSer.info](http://jser.info/ "JSer.info") むけに `jser` というGitHubアカウントを取ろうとしていましたが、既にアカウントは取られていた状態でした。
 
 ![元のjserアカウント](http://efcl.info/wp-content/uploads/2014/07/2014-07-18_10-06-19.jpg)
 
