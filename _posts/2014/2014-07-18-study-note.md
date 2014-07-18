@@ -40,7 +40,7 @@ tags:
 基本的にリストで書いていくので、`-`が自動で入るとか、Tabを押した時にリストもインデントしてくれるかが、
 入力のテンポの大きく関わってくるのでエディタは馴染むものを選ぶといいかと思います。
 
-``` markdown
+```
 - リスト
     - 書いていく
     - と思うので
@@ -70,7 +70,27 @@ tags:
 ![omnioutliner](http://efcl.info/wp-content/uploads/2014/07/2014-07-18_20-02-33.jpg)
 
 OmniOutlinerはアウトライナーなので当たり前ですが、タブでインデントレベルの変更ができることや、
-**CONTENTS**に表示されるアウトラインで表示するレベルだけ選択できたりするので入力は結構快適です。
+**CONTENTS**に表示する部分をフィルターしたり、入力は結構快適です。
 
 ![gif](http://gyazo.com/8b401092165dcb4dbb7681dcbcc56b02.gif)
+
+#### 欠点
+
+[OmniOutliner](http://www.omnigroup.com/omnioutliner "OmniOutliner")は、
+Markdownに対応してない以外は使いやすいですが、そもそもMarkdownのエクスポートに対応していません。
+
+[fletcher/Markdown.ooxsl](https://github.com/fletcher/Markdown.ooxsl "fletcher/Markdown.ooxsl")
+というプラグインが一応あるのですが、ちゃんと動いてな気がします。
+
+HTMLやtxtやwordなどエクスポートできるのですが、機械に優しいフォーマットがOPMLしかないため、
+OPMLとしてエクスポートしてそれをMarkdownに変換して使っています。
+(一応OmniOutlinerのファイル自体がXMLなのでそれを見るという手段もある)
+
+OPMLをパースして(JSONにしてから)、Markdownに変換するNodeで書いたコマンドラインツールを使っています。
+
+* [azu/opml-to-markdown](https://github.com/azu/opml-to-markdown "azu/opml-to-markdown")
+
+これを使って作ったMarkdownファイルで[Cleaver](https://github.com/jdan/cleaver "Cleaver")のスライドを作ったりもしれます。
+
+生成したMarkdownを直接整えるため、OmniOutlinerのファイル自体は使い捨てです。
 
