@@ -42,6 +42,20 @@ release-changelog <increment> [options]
 
 npmのものしか対応してないので、もっといろんなものに柔軟に拡張して対応できるものが欲しい…
 
+### その他
+
+CHANGELOGを自動生成するツールは他にも幾つかあります
+
+* [infews/anchorman](https://github.com/infews/anchorman "infews/anchorman")
+    * jasmine [jasmine/release_notes at v2.0.0 · pivotal/jasmine](https://github.com/pivotal/jasmine/tree/v2.0.0/release_notes "jasmine/release_notes at v2.0.0 · pivotal/jasmine") で使われてる
+* [lalitkapoor/github-changes](https://github.com/lalitkapoor/github-changes "lalitkapoor/github-changes")
+    * コミットメッセージやマージメッセージから生成
+* [olivierlacan/keep-a-changelog](https://github.com/olivierlacan/keep-a-changelog "olivierlacan/keep-a-changelog")
+* [ChangelogHQ - Hosted Changelog for Your Company](https://changeloghq.com/ "ChangelogHQ - Hosted Changelog for Your Company")
+    * changelogを作るサービス
+* [defunctzombie/changelog](https://github.com/defunctzombie/changelog "defunctzombie/changelog")
+    * リリースとChangelog生成
+
 ## おわりに
 
 最近では多くのソフトウェアやライブラリがリリースしてもGitHubだけで完結しているものが増えました。
