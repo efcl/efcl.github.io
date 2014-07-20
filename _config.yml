@@ -53,7 +53,7 @@ prose:
           type: "text"
       - name: "author"
         field:
-          element: "text"
+          element: "hidden"
           label: "Author"
           value: "azu"
           placeholder: "Trunk Botterson"
@@ -62,5 +62,11 @@ prose:
         field:
           element: "multiselect"
           label: "Post Category"
+          placeholder: "Create or choose"
+          alterable: true
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Post Tag"
           placeholder: "Create or choose"
           alterable: true
