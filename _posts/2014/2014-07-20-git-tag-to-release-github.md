@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git tagとGithub ReleasesとCHANGELOG.mdの自動化について
+title: git tagとGitHub ReleasesとCHANGELOG.mdの自動化について
 author: azu
 categories: 
     - github
@@ -10,9 +10,9 @@ tags:
     - tools
 ---
 
-# Github Releases
+# GitHub Releases
 
-Githubには **Releases** という機能があります。
+GitHubには **Releases** という機能があります。
 
 * [Release Your Software](https://github.com/blog/1547-release-your-software "Release Your Software")
 * [Creating Releases · GitHub Help](https://help.github.com/articles/creating-releases "Creating Releases · GitHub Help")
@@ -28,7 +28,7 @@ Githubには **Releases** という機能があります。
 * RSS Feedsが自動的に生成される(TagとReleaseの2種類がある)
 * ライブラリ等にtagがついてると利用しやすい。
 
-## git tagとGithub Rleases
+## git tagとGitHub Rleases
 
 git tagでつけたものが自動的にReleaseになるのは知ってる人が多いと思いますが、
 この時にメッセージも自動的に入れることも出来ます。
@@ -48,7 +48,7 @@ git tag -a "annotation title" -m "release message body"
 
 ![demo](http://take.ms/UBT0G)
 
-Github Releasesのページは自動的にtagについてるメッセージを読み取って表示してくれます。
+GitHub Releasesのページは自動的にtagについてるメッセージを読み取って表示してくれます。
 
 ### NOTE
 
