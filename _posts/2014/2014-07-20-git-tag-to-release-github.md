@@ -65,6 +65,8 @@ Github Releasesのページは自動的にtagについてるメッセージを�
 release-changelog <increment> [options]
 ```
 
+![gif](http://gyazo.com/71c704db8a5811fb5faffc7858c89867.gif)
+
 このツールは[webpro/release-it](https://github.com/webpro/release-it "webpro/release-it")と[ajoslin/conventional-changelog](https://github.com/ajoslin/conventional-changelog "ajoslin/conventional-changelog")をラップしたツールです。
 
 [webpro/release-it](https://github.com/webpro/release-it "webpro/release-it") はpackage.json等のversion更新とgit tagとnpm publish等を一括で行ってくれます。
