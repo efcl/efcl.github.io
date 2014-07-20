@@ -12,7 +12,7 @@ tags:
 
 # Github Releases
 
-Githubには**Releases**という機能があります。
+Githubには **Releases** という機能があります。
 
 * [Release Your Software](https://github.com/blog/1547-release-your-software "Release Your Software")
 * [Creating Releases · GitHub Help](https://help.github.com/articles/creating-releases "Creating Releases · GitHub Help")
