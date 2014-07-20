@@ -1,3 +1,52 @@
+---
+layout: post
+title: git tagとGithub ReleasesとCHANGELOG.mdの自動化について
+author: azu
+categories: 
+    - github
+tags:
+    - github
+    - git
+    - tools
+---
+
+# Github Releases
+
+Githubには **Releases** という機能があります。
+
+* [Release Your Software](https://github.com/blog/1547-release-your-software "Release Your Software")
+* [Creating Releases · GitHub Help](https://help.github.com/articles/creating-releases "Creating Releases · GitHub Help")
+
+簡単に言えば、gitのtagに文章や添付ファイルを追加して公開出来るページです。
+基本的にはgit tagと連携してるので、tagを付けて`git push --tags`をしていれば、自動的に追加されます。
+
+メリットとしては以下のような事が行えます。
+
+* git tagにパーマネントリンクがつく(重要!)
+* メッセージ(リリースノート等)が書ける
+* 添付ファイル(zip)をアップロード出来る(配布するバイナリとか)
+* RSS Feedsが自動的に生成される(TagとReleaseの2種類がある)
+* ライブラリ等にtagがついてると利用しやすい。
+
+## git tagとGithub Rleases
+
+git tagでつけたものが自動的にReleaseになるのは知ってる人が多いと思いますが、
+この時にメッセージも自動的に入れることも出来ます。
+
+以下にサンプルのリポジトリを用意してあります。
+
+* [azu/github-release-annotation-example](https://github.com/azu/github-release-annotation-example "azu/github-release-annotation-example")
+
+具体的にはgit tagを付けるときに`-a`と`-m`オプションでそれぞれタイトルとメッセージを指定出来ます。
+
+``` console
+git tag -a "annotation title" -m "release message body"
+```
+
+* `-a` リリースのタイトル
+* `-m` リリースのメッセージボディ
+
+![demo](http://take.ms/UBT0G)
 
 Github Releasesのページは自動的にtagについてるメッセージを読み取って表示してくれます。
 
