@@ -45,3 +45,22 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: "azu"
+          placeholder: "Trunk Botterson"
+          type: "text"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Post Category"
+          placeholder: "Create or choose"
+          alterable: true
