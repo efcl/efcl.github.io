@@ -18,6 +18,7 @@ GitHubには **Releases** という機能があります。
 
 * [Release Your Software](https://github.com/blog/1547-release-your-software "Release Your Software")
 * [Creating Releases · GitHub Help](https://help.github.com/articles/creating-releases "Creating Releases · GitHub Help")
+* [GitHubのリリース機能を使う - Qiita](http://qiita.com/todogzm/items/db9f5f2cedf976379f84 "GitHubのリリース機能を使う - Qiita")
 
 簡単に言えば、gitのtagに文章や添付ファイルを追加して公開出来るページです。
 基本的にはgit tagと連携してるので、tagを付けて`git push --tags`をしていれば、自動的に追加されます。
