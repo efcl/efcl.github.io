@@ -55,8 +55,8 @@ Greasemonkey2.0ではFirefoxの変更に合わせて、セキュリティ周り�
 
 のように列挙する必要があります。
 
-つかってるAPIを列挙するのが面倒なので、
-既存のスクリプトからこのメタ情報のコメントを取得するコマンドラインツールを作りました。
+そのスクリプトで使っているAPIを列挙するのが面倒なので、
+既存のスクリプトから、メタ情報のコメントを取得するコマンドラインツールを作りました。
 
 * [azu/greasemonkey_grant_cli](https://github.com/azu/greasemonkey_grant_cli "azu/greasemonkey_grant_cli")
 
@@ -82,12 +82,12 @@ greasemonkey_grant file.user.js
 データの読み書き(localstorage)、GM_xmlhttpRequest(クロスドメインはそのままXHRと同じ)、GM_addStyleについてのshimライブラリが
 [Greasemonkey &#34;@grant none&#34; compatibility shim.](https://gist.github.com/arantius/3123124 "Greasemonkey &#34;@grant none&#34; compatibility shim.") に用意されいます。
 
-なので、サイト間をまたいだりしないGreasemonkeyはこれをつかって `@grant none` で動かせるケースが多いでしょう。
+そのためサイト間をまたいだりしないGreasemonkeyは、これをつかって `@grant none` で動かせるケースが多いでしょう。
 (APIを叩く場合は大抵クロスドメイン跨ぐので無理かも)
 
 #### 実例
 
-[livedoor Reader で NG word フィルター を実現する Greasemonkey - zaknakの日記](http://d.hatena.ne.jp/zaknak/20080909/1220936155 "livedoor Reader で NG word フィルター を実現する Greasemonkey - zaknakの日記") で公開されたいた
+[livedoor Reader で NG word フィルター を実現する Greasemonkey - zaknakの日記](http://d.hatena.ne.jp/zaknak/20080909/1220936155 "livedoor Reader で NG word フィルター を実現する Greasemonkey - zaknakの日記") で公開されていた
 LDRのNGフィルタをするGreasemonkeyは`GM_*関数`が必要なかったので、 `@grant none`で動くように修正しました
 
 * [azu/LDR-NG](https://github.com/azu/LDR-NG "azu/LDR-NG")
@@ -166,9 +166,9 @@ ldr_keyhack_jkc+nとLDRFullFeedはこの `exportFunction` を使って修正し�
 * 代わりに [Greasy Fork](https://greasyfork.org/ "Greasy Fork - safe and useful user scripts") が動いています。
 * [Greasy Fork](https://greasyfork.org/ "Greasy Fork - safe and useful user scripts")は活発なのでこちらに移行するといいのでは
 * GitHubにスクリプトを置いて自動的に同期する仕組みなどもある。
-* [Greasy Fork](https://greasyfork.org/ "Greasy Fork - safe and useful user scripts")はスクリプトレビュー方式取ってるので動的にスクリプト更新するものはおけない
+* [Greasy Fork](https://greasyfork.org/ "Greasy Fork - safe and useful user scripts")は外部スクリプトの読み込みに一部制限がある
 
-最後のやつは外部スクリプトを使う場所が制限されています(条件から外れた場合はインストールボタンが押せなくなる)
+最後のやつは外部スクリプトを置ける場所が制限されています(条件から外れた場合はインストールボタンが押せなくなる)
 
 [Greasy Fork policy on external scripts](https://greasyfork.org/help/external-scripts "Greasy Fork policy on external scripts")に書いてある
 CDNやGreasy Forkにおいてあるスクリプトは`@require`で読み込んで使うことが出来ます。
