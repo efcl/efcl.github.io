@@ -38,7 +38,7 @@ Greasemonkey2.0ではFirefoxの変更に合わせて、セキュリティ周り�
 * [@grant - GreaseSpot Wiki](http://wiki.greasespot.net/@grant "@grant - GreaseSpot Wiki")
 * [UserScriptのGreasemonkey 2.0対応 | monoの開発ブログ](http://blog.monoweb.info/blog/2014/07/13/greasemonkey-2-dot-0/ "UserScriptのGreasemonkey 2.0対応 | monoの開発ブログ")
 
-に詳しい書いてあります。
+に詳しい解説が書いてあります。
 
 簡単にいうと、今までそのまま使えていたGM_*関数は特権関数なので、Greasemonkeyで使う場合は、
 事前にスクリプトのメタ情報で
