@@ -1,15 +1,16 @@
 ---
+author: azu
 layout: post
 title: git tagとGitHub ReleasesとCHANGELOG.mdの自動化について
-author: azu
 categories: 
-    - github
-tags:
-    - github
-    - git
-    - tools
-    - node.js
-    - npm
+  - github
+tags: 
+  - github
+  - git
+  - tools
+  - node.js
+  - npm
+published: true
 ---
 
 # GitHub Releases
@@ -90,7 +91,7 @@ release-changelog <increment> [options]
 * [Releases · azu/release-changelog](https://github.com/azu/release-changelog/releases "Releases · azu/release-changelog")
 * [Releases · azu/promises-book](https://github.com/azu/promises-book/releases "Releases · azu/promises-book")
 
-先ほど書いたように自動的にレンダリング部分があったりするのは若干微妙ですが、RSSなどはちゃんとレンダリングされた状態で出てくるので何もしないよりはいい感じです。
+先ほど書いたように自動的にレンダリングされない部分があったりするのは若干微妙ですが、RSSなどはちゃんとレンダリングされた状態で出てくるので何もしないよりはいい感じです。
 
 npmのものしか対応してないので、もっといろんなものに柔軟に拡張して対応できるものが欲しい…
 
