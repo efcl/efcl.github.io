@@ -1,7 +1,7 @@
 ---
 author: azu
 layout: post
-title: "Browserify 5.0から--standaloneでdeqrequireはされなくなった"
+title: "Browserify 5.0から--standaloneでderequireはされなくなった"
 categories: 
   - JavaScript
 tags: 
