@@ -14,7 +14,7 @@ tags:
 Broserify [5.0.0](https://github.com/substack/node-browserify/blob/master/changelog.markdown#500 "5.0.0")からで、
 基盤となる変換の部分で色々変更がありました。(特にtransform周りが大きく変わって変換にhookする処理が色々できるようになった)
 
-* [node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify](https://github.com/substack/node-browserify/blob/master/doc/changelog/5_0.markdown "node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify)
+* [node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify](https://github.com/substack/node-browserify/blob/master/doc/changelog/5_0.markdown "node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify")
 
 
 ChangeLogの一番下にちょこっと書いてありますが、`--standalone`を付けて単体のライブラリとして配布向けにビルドするときに、
