@@ -88,7 +88,7 @@ module.exports = getHTMLTitle;
 
 `require`がそのまま残っていることがわかると思います。
 
-### なぜderequireするのか
+### なぜderequireしていたのか
 
 `require` という関数を持つライブラリなどと衝突するのを回避するため(require.jsとか?)
 
