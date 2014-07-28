@@ -23,7 +23,7 @@ derequireがされなくなりました。
 > derequire has been taken out of core, which should speed up --standalone.
 
 そもそも[derequire](https://github.com/calvinmetcalf/derequire "derequire")とは何かという、
-requireという関数を使うライブラリ等との衝突を避けるためにリネームする処理をするモジュールのことです。
+requireという関数を使うライブラリ等との衝突を避けるためにリネーム処理をするモジュールのことです。
 
 ## v4とv5のstandaloneオプションの違い
 
