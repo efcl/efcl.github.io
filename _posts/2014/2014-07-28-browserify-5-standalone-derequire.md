@@ -11,7 +11,7 @@ tags:
   - require
 ---
 
-Broserify [5.0.0](https://github.com/substack/node-browserify/blob/master/changelog.markdown#500 "5.0.0")からで、
+Browserify [5.0.0](https://github.com/substack/node-browserify/blob/master/changelog.markdown#500 "5.0.0")からで、
 基盤となる変換の部分で色々変更がありました。(特にtransform周りが大きく変わって変換にhookする処理が色々できるようになった)
 
 * [node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify](https://github.com/substack/node-browserify/blob/master/doc/changelog/5_0.markdown "node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify")
@@ -22,7 +22,7 @@ derequireがされなくなりました。
 
 > derequire has been taken out of core, which should speed up --standalone.
 
-そもそも[derequire](https://github.com/calvinmetcalf/derequire "derequire")とは何かという、
+そもそも[derequire](https://github.com/calvinmetcalf/derequire "derequire")とは何かというと、
 requireという関数を使うライブラリ等との衝突を避けるためにリネーム処理をするモジュールのことです。
 
 ## v4とv5のstandaloneオプションの違い
