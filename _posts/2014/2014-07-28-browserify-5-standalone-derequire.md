@@ -105,7 +105,7 @@ module.exports = getHTMLTitle;
 * [substack/node-browserify](https://github.com/substack/node-browserify "substack/node-browserify")
 
 に書いてあるように、別途[derequire](https://github.com/calvinmetcalf/derequire "derequire")をいれて、
-ビルドしたもの対してderequireをかける
+ビルドしたものに対してderequireをかける
 
 ``` sh
 $ npm install -g derequire
