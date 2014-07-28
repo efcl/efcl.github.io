@@ -11,7 +11,7 @@ tags:
   - require
 ---
 
-Browserify [5.0.0](https://github.com/substack/node-browserify/blob/master/changelog.markdown#500 "5.0.0")からで、
+Browserify [5.0.0](https://github.com/substack/node-browserify/blob/master/changelog.markdown#500 "5.0.0")では、
 基盤となる変換の部分で色々変更がありました。(特にtransform周りが大きく変わって変換にhookする処理が色々できるようになった)
 
 * [node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify](https://github.com/substack/node-browserify/blob/master/doc/changelog/5_0.markdown "node-browserify/doc/changelog/5_0.markdown at master · substack/node-browserify")
