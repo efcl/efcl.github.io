@@ -92,7 +92,7 @@ Redis版の実装を書きました。
 せっかくなので、LevelDB,Redisの上にもう一層軽いラッパを作って
 同じAPIで同じように扱えるようにして、LevelDB、Redisどちらでもうごかせるようにしてました。
 
-![api-wrapper](http://efcl.info/uploads/2014/07/redis-leveldb-api.png)
+![api-wrapper](http://efcl.info/wp-content/uploads/2014/07/redis-leveldb-api.png)
 
 * [voting-badge/lib/backend at master · azu/voting-badge](https://github.com/azu/voting-badge/tree/master/lib/backend "voting-badge/lib/backend at master · azu/voting-badge")
 
