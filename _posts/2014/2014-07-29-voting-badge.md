@@ -19,7 +19,7 @@ tags:
 GitHub Issueで賛成などを `:+1:` と書いてコメントすることが良くあります。
 投票ボタン的な機能としてそういうのが欲しかったので、Travis CIのバッジのように表示+投票できるボタンを作りました。
 
-- [:1: Voting Badge](http://azu.github.io/voting-badge/ ":1: Voting Badge")
+- [:+1: Voting Badge](http://azu.github.io/voting-badge/ ":1: Voting Badge")
 
 上記にアクセスしてURL(実はキーなら何でもいい)を書くとバッジのURLを作ってくれます。
 
