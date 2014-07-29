@@ -140,3 +140,5 @@ Herokuで動かす設定も載っていたので、自分でバッジを作成�
     * 👍を表示したいけどsvgだと表示環境依存になって不便
 
 サンプルボタン => [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+
+ソースコードは[azu/voting-badge](https://github.com/azu/voting-badge/ "azu/voting-badge")に公開してあるので、修正等送ってくださると嬉しいです。
