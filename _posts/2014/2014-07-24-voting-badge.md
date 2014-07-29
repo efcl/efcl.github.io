@@ -1,22 +1,21 @@
 ---
-title: GitHubなどで使える:+1:するバッジサービスを作った
+title: "GitHubなどで使える:+1:するバッジサービスを作った"
 author: azu
 layout: post
 categories:
-    - webサービス
+  - webサービス
 tags:
-    - GitHub
-    - Issue
-    - WebService
-    - Node.js
-    - Heroku
-
+  - GitHub
+  - Issue
+  - WebService
+  - Node.js
+  - Heroku
 ---
 
 # [Voting Badge](http://azu.github.io/voting-badge/ "Voting Badge")
 
 [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
- 
+
 GitHub Issueで賛成などを :+1: と書いてコメントすることが良くありますが、
 投票ボタン的なものとしてそういうのが欲しかったので、Travis CIのバッジのように表示+投票できるボタンを作りました。
 
@@ -95,16 +94,16 @@ Redis版の実装を書きました。
 
 * [voting-badge/lib/backend at master · azu/voting-badge](https://github.com/azu/voting-badge/tree/master/lib/backend "voting-badge/lib/backend at master · azu/voting-badge")
 
-これでpushして永続化ができたので、完成！ 
+これでpushして永続化ができたので、完成！
 
-ではなく、GitHub特有の問題に遭遇しました
+ではなく、キャッシュ時間が異様に長いというGitHub特有の問題に遭遇しました。
 
 ## キャッシュ
 
 * [Aggressive image caching breaks image badges · Issue #224 · github/markup](https://github.com/github/markup/issues/224 "Aggressive image caching breaks image badges · Issue #224 · github/markup")
 * [Proxying User Images](https://github.com/blog/1766-proxying-user-images "Proxying User Images")
 
-GitHubのREADMEやIssue等に貼った画像は基本的にキャッシュされた画像になります。
+GitHubのREADMEやIssue等に貼った画像は基本的にキャッシュされた画像に差し替えされて表示されます。
 
 shields.ioのカスタムバッジだと、普通にキャッシュされてしまって全然更新されないバッジが出来上がります。
 (1日ぐらいキャッシュされる?)
@@ -121,13 +120,22 @@ shields.ioのリポジトリを見ていたら、バッジを作成するモジ�
 
 * [badges/shields](https://github.com/badges/shields "badges/shields")
 
-node-canvas (cairo)を使ったインストールが結構辛い感じでしたが、
+[node-canvas](https://github.com/Automattic/node-canvas "node-canvas") (cairo)のインストールが結構辛い感じでしたが、
 Herokuで動かす設定も載っていたので、自分でバッジを作成するように切り替えました。
+
+* [Installation on Heroku · Automattic/node-canvas Wiki](https://github.com/Automattic/node-canvas/wiki/Installation-on-Heroku "Installation on Heroku · Automattic/node-canvas Wiki")
 
 これで自分のところのコンテンツを返すので、レスポンスヘッダでキャッシュコントールもできるようになりました。
 
 
-## 終わり
+## おわりに
+
+まだ、何か以下の心配点がありますが、一応 +1 バッジを作ることが出来ました。
 
 * Herokuの無料サーバで上手く動き続けるの分からない。
-* 何かまだGitHubにキャッシュされてる気がする…
+* 何か微妙にGitHubにキャッシュされてる気がする…
+* DejaVu SansをHerokuにおいていいのかよく分からないため、適応してない
+    * そのためレイアウトが怪しい感じ
+    * 👍を表示したかったけどsvgだと表示環境依存になって不便
+
+サンプルボタン => [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
