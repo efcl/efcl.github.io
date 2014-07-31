@@ -30,6 +30,10 @@ JavaScriptのライブラリ等のリリース情報をどう追っていくか�
 
 * [最近のJavaScript情報の探し方 · Issue #2 · jser/jser.info](https://github.com/jser/jser.info/issues/2 "最近のJavaScript情報の探し方 · Issue #2 · jser/jser.info")
 
+自分用のツールが中心なので分かりやすさは二の次です。
+
+そのため、流れだけを見たい人はさいごの**まとめ**を見るといいでしょう。
+
 ## リポジトリをWatchする
 
 GitHubではリポジトリをStar/Watchすることが出来ます。
@@ -71,8 +75,6 @@ GitHubではTwitterのように人をフォローすることができるので�
 Starに関しては[starseeker](http://starseeker.so/ "starseeker")を利用すると、フォローしてる人のStarを一覧できるので便利だと思います。
 
 ここから先はGitHubのReleaseの追い方、つまりライブラリのリリースとかの追い方の話です。
-
-主に自分用に書いたツールが出てくるので使い勝手はお察し下さい。
 
 ## GitHub RelaseをRSSで見る
 
@@ -168,3 +170,21 @@ GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取
 
 # まとめ
 
+だらだら書いたので分かりにくいですがまとめると以下のような感じです。
+
+* リポジトリのWatch
+    * [azu/github-reader](https://github.com/azu/github-reader "azu/github-reader")
+* タイムライン
+    * [azu/github-reader](https://github.com/azu/github-reader "azu/github-reader")
+* Star
+    * [starseeker](http://starseeker.so/ "starseeker")
+* GitHub ReleaseのRSS購読
+    * [azu/github-releases-to-feedly](https://github.com/azu/github-releases-to-feedly "azu/github-releases-to-feedly")
+* Feedly -> any
+    * [IFTTT](https://ifttt.com/myrecipes/personal "My Recipes - IFTTT")
+* GitHub Release -> CHANGELOG
+    * [azu/check_changelog_from_release](https://github.com/azu/check_changelog_from_release "azu/check_changelog_from_release")
+* GitHub Release -> compare tags
+    * [azu/show-diff-from-release](https://github.com/azu/show-diff-from-release "azu/show-diff-from-release")
+
+この辺をうまくまとめたTwitterクライアントのようなGitHubクライアントがでてくるといいですね。
