@@ -38,7 +38,7 @@ JavaScriptのライブラリ等のリリース情報をどう追っていくか�
 
 GitHubではリポジトリをStar/Watchすることが出来ます。
 
-Starは単純なブックマークですが、Watchは登録したリポジトリに関係ある通知(イベントといわれる)がNotification画面に表示されます。
+Starは単純なブックマークですが、Watchは登録したリポジトリに関係ある通知(イベントといわれる)が[Notifications](https://github.com/notifications "Notifications")画面に表示されます。
 
 またデフォルトでは、登録したメールアドレスにWatchの通知メールが流れてきます。
 
@@ -59,7 +59,7 @@ Growlにひたすら流して気になったものが見えたら見に行くと
 
 GitHubではTwitterのように人をフォローすることができるので、気になるリポジトリのOwnerをフォローするといいでしょう。
 
-ただしGitHubの場合はタイムラインに流れてくるのは、コミットやStar、Watchなど人に関するイベントです。
+ただしGitHubの場合はタイムラインに流れてくるのは、コミットやStar、Watchなどに関するイベントです。
 
 また、GitHubのタイムライン表示はまともに追うことが困難なUIとなっています。
 そのため自分は[github-reader](https://github.com/azu/github-reader "azu/github-reader")を通して見ています。
@@ -71,21 +71,21 @@ GitHubではTwitterのように人をフォローすることができるので�
 
 人のイベントは先ほども書いたようにコミット等の細かいものから、Starを付けたリポジトリなど多種多様です。
 
-新しいものを見つけるという点では**star**だけ見ていけば十分と言えるので、
+新しいものを見つけるという点では**Star**だけ見ていけば十分と言えるので、
 Starに関しては[starseeker](http://starseeker.so/ "starseeker")を利用すると、フォローしてる人のStarを一覧できるので便利だと思います。
 
-ここから先はGitHubのReleaseの追い方、つまりライブラリのリリースとかの追い方の話です。
+ここから先はGitHubのReleaseの追い方、つまりライブラリのリリースの追い方の話です。
 
 ## GitHub RelaseをRSSで見る
 
-GitHubの**Watch**機能でリポジトリのイベント通知が来ることを紹介しましたが、
-このイベントに[ReleaseEvent](https://developer.github.com/v3/activity/events/types/#releaseevent "ReleaseEvent")も含まれていますがリリースが他のイベントに埋もれてしまいます。
+先ほどGitHubの**Watch**機能でリポジトリのイベント通知が来ることを紹介しました。
+このイベントには[ReleaseEvent](https://developer.github.com/v3/activity/events/types/#releaseevent "ReleaseEvent")も含まれていますが、大量のイベントの一つなので埋もれてしまいます。
 
-また、おそらくtagをつけただけではReleaseEventはこなかったと思うので、リリースに気づきにくいと思います
+またtagをつけただけではReleaseEventはこなかったと思うので、リリースには気づきにくいと思います
 
 そのため、気になるライブラリ等のリリースを追いたい場合はRSSを使うのが確実だと思います。
 
-Github ReleaseのページにはtagとReleaseのRSSの2つが用意されています。
+GitHub ReleaseのページにはtagとReleaseのRSSの2つが用意されています。
 
 例えば以下のようなReleaseページを見てみると、それぞれのRSSが用意されていることが分かります。
 
@@ -150,7 +150,7 @@ Releaseには書いてないけど、CHANGELOGは書いてるようなタイプ�
 
 ![check_changelog_from_release](/wp-content/uploads/2014/07/2014-07-31_34fd020.png)
 
-ReleaseページにCHANGELOGファイルがあるならリンクを表示するというシンプルなものです。
+CHANGELOGファイルがあるなら、Releaseページにリンクを表示するというシンプルなものです。
 
 ## Releaseから前回のバージョンとのDiffをみる
 
@@ -158,9 +158,13 @@ ReleaseページにCHANGELOGファイルがあるならリンクを表示する�
 
 そのようなときに、見ているバージョンと他のバージョンの`compare`画面へのリンクを表示するGreasemonkeyを使っています。
 
+* [Comparing commits across time · GitHub Help](https://help.github.com/articles/comparing-commits-across-time "Comparing commits across time · GitHub Help")
 * [azu/show-diff-from-release](https://github.com/azu/show-diff-from-release "azu/show-diff-from-release")
 
 ![show-diff-from-release](/wp-content/uploads/2014/07/2014-07-31_be9f906cb.png)
+
+[azu/show-diff-from-release](https://github.com/azu/show-diff-from-release "azu/show-diff-from-release")
+ではtag同士のcompare画面へのリンクをまとめて作ってくれます。
 
 GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取得するAPIが見つからなかったため、タグ名が不規則だとcompareのリンクが上手くいかない場合があります。
 
@@ -170,7 +174,7 @@ GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取
 
 # まとめ
 
-だらだら書いたので分かりにくいですがまとめると以下のような感じです。
+だらだら書いたので分かりにくいですが、まとめると以下のような感じです。
 
 * リポジトリのWatch
     * [azu/github-reader](https://github.com/azu/github-reader "azu/github-reader")
