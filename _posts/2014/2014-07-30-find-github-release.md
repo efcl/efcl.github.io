@@ -68,4 +68,103 @@ GitHubではTwitterのように人をフォローすることができるので�
 人のイベントは先ほども書いたようにコミット等の細かいものから、Starを付けたリポジトリなど多種多様です。
 
 新しいものを見つけるという点では**star**だけ見ていけば十分と言えるので、
-Starに関しては~~~~~を利用すると、フォローしてる人のStarを一覧できるので便利だと思います。
+Starに関しては[starseeker](http://starseeker.so/ "starseeker")を利用すると、フォローしてる人のStarを一覧できるので便利だと思います。
+
+ここから先はGitHubのReleaseの追い方、つまりライブラリのリリースとかの追い方の話です。
+
+主に自分用に書いたツールが出てくるので使い勝手はお察し下さい。
+
+## GitHub RelaseをRSSで見る
+
+GitHubの**Watch**機能でリポジトリのイベント通知が来ることを紹介しましたが、
+このイベントに[ReleaseEvent](https://developer.github.com/v3/activity/events/types/#releaseevent "ReleaseEvent")も含まれていますがリリースが他のイベントに埋もれてしまいます。
+
+また、おそらくtagをつけただけではReleaseEventはこなかったと思うので、リリースに気づきにくいと思います
+
+そのため、気になるライブラリ等のリリースを追いたい場合はRSSを使うのが確実だと思います。
+
+Github ReleaseのページにはtagとReleaseのRSSの2つが用意されています。
+
+例えば以下のようなReleaseページを見てみると、それぞれのRSSが用意されていることが分かります。
+
+- [Releases · azu/promises-book](https://github.com/azu/promises-book/releases "Releases · azu/promises-book")
+    - ReleaseのRSS
+    - https://github.com/azu/promises-book/releases.atom
+    - TagのRSS
+    - https://github.com/azu/promises-book/tags.atom
+
+tagが付けられるとReleaseが自動的に作られるので、基本的にどちらも同じです。
+しかし、Releaseの方はリリースノートを本文に含めてくれるので、基本的に`releases.atom`を購読するほうがいいでしょう。
+
+### Releaseをワンクリックで購読
+
+GitHubのWatchとStarはワンクリックで出来るので、Greasemonkeyを使ってRSSもワンクリックで購読出来るようにしています。
+
+* [azu/github-releases-to-feedly](https://github.com/azu/github-releases-to-feedly "azu/github-releases-to-feedly")
+
+![feedly-rss](/wp-content/uploads/2014/07/2014-07-31-reader.png)
+
+[azu/github-releases-to-feedly](https://github.com/azu/github-releases-to-feedly "azu/github-releases-to-feedly")はFeedlyにReleaseのRSSを購読させるボタンを追加するGreasemonkeyです。
+
+手動でOAuthトークンを取得して使うので手順がややこしいですが、[Usage](https://github.com/azu/github-releases-to-feedly#usage "Usage")を参照して下さい。
+
+1. [Sign in | feedly cloud](https://cloud.feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=http://localhost&scope=https://cloud.feedly.com/subscriptions&response_type=code&migrate=false "Sign in | feedly cloud") から好きなやつでログイン
+2. URL の `?code=XXX&state=` から `XXX` をコピー
+3. リポジトリにあるツールでトークンを取得
+    ``` console
+    git clone https://github.com/azu/github-releases-to-feedly.git
+    cd github-releases-to-feedly
+    node get_token.js XXX | pbcopy
+    ```
+4. [github-releases-to-feedly.user.js](https://raw.githubusercontent.com/azu/github-releases-to-feedly/master/github-releases-to-feedly.user.js) をインストール
+5. UserScript Command -> github-releases-to-feedly からpbcopyしておいたJSONをペースト
+
+というややこしい手順です…
+
+#### GitHub専用Feedly
+
+普段使ってるRSSリーダで購読していってもいいのですが、リリースノート書いてるリポジトリは少ないので、バージョン番号ばかりが流れてくるRSSが殆どです。
+
+そのため、自分は直接RSSを見るのではなく、FeedlyをRSSの貯める場所として使っています。
+GitHub Releaseを購読する専用のFeedlyアカウントを作ってそこにRSSを追加していっています。
+
+そして、[IFTTT](https://ifttt.com/myrecipes/personal "My Recipes - IFTTT")を使って、TwitterやEmail Digest(1日や1週間でまとめたメールを送ってくれる)に流す感じで使っています。
+
+GitHub -> RSS -> Feedly -> IFTTT -> Twitter / Email / Slack
+
+という感じにしています。
+
+これなら適当な流量で流れてくるので、リポジトリのイベントだけをみてた時に比べるとかなり見落としは減った気がします。
+
+## ReleaseからCHANGELOGを見る
+
+先ほども書いていたように、GitHub Releaseにリリースノートをちゃんと書いてくれるリポジトリはまだまだ少ないです。
+
+リリースノートは書かないで、`CHANGELOG.md`といったファイルに更新内容を書いていくリポジトリもあります。
+
+Releaseには書いてないけど、CHANGELOGは書いてるようなタイプを見るために以下のようなGreasemonkeyを使っています。
+
+* [azu/check_changelog_from_release](https://github.com/azu/check_changelog_from_release "azu/check_changelog_from_release")
+
+![check_changelog_from_release](/wp-content/uploads/2014/07/2014-07-31_34fd020.png)
+
+ReleaseページにCHANGELOGファイルがあるならリンクを表示するというシンプルなものです。
+
+## Releaseから前回のバージョンとのDiffをみる
+
+リリースノートもない、CHANGELOGファイルもないというパターンは、どういうコミットがあったのかを見るぐらいしかありません(Issue等に書いてあることもありますが)
+
+そのようなときに、見ているバージョンと他のバージョンの`compare`画面へのリンクを表示するGreasemonkeyを使っています。
+
+* [azu/show-diff-from-release](https://github.com/azu/show-diff-from-release "azu/show-diff-from-release")
+
+![show-diff-from-release](/wp-content/uploads/2014/07/2014-07-31_be9f906cb.png)
+
+GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取得するAPIが見つからなかったため、タグ名が不規則だとcompareのリンクが上手くいかない場合があります。
+
+* [List Tags](https://developer.github.com/v3/repos/#list-tags "List Tags")
+
+---
+
+# まとめ
+
