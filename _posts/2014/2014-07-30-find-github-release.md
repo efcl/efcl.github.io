@@ -20,8 +20,8 @@ tags:
 
 * [git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](http://efcl.info/2014/07/20/git-tag-to-release-github/ "git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")
 
-今度は、リリースを見る側 - いわゆるライブラリユーザーだったりソフトウェアの利用者側から、
-GitHubでのReleaseをどう追っていくかについて書いていきたいと思います。
+今度は、いわゆるライブラリユーザーだったりソフトウェアの利用者側から、
+GitHubでリリースされるライブラリ等をどう追っていくかについて書いていきたいと思います。
 
 自分は、[JSer.info](http://jser.info/ "JSer.info")というJavaScriptの情報を見ていくサイトをやっているので、
 JavaScriptのライブラリ等のリリース情報をどう追っていくかが中心になりますが、基本的にGitHubでリリースされてるならやり方は大きな違いはありません。
