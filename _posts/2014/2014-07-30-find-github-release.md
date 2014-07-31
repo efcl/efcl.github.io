@@ -1,5 +1,5 @@
 ---
-title: GitHubでライブラリのリリースを見ていくためのツール集
+title: GitHubでライブラリのリリースを見ていくためのツールや方法
 author: azu
 layout: post
 categories:
