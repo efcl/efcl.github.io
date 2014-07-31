@@ -1,3 +1,6 @@
 <script>
 var blog_categories = {% include categories-list.json %};
+    blog_categories = blog_categories.filter(function(categoryObject){
+        return !/^\d+$/.test(categoryObject.title);
+    });
 </script>
