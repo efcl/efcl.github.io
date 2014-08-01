@@ -61,7 +61,7 @@ GitHubではTwitterのように人をフォローすることができるので�
 
 ただしGitHubの場合はタイムラインに流れてくるのは、コミットやStar、Watchなどに関するイベントです。
 
-また、GitHubのタイムライン表示はまともに追うことが困難なUIとなっています。
+また、GitHubのタイムライン表示は量が増えるとまともに追うことが困難です。
 そのため自分は[github-reader](https://github.com/azu/github-reader "azu/github-reader")を通して見ています。
 
 [github-reader](https://github.com/azu/github-reader "azu/github-reader") はWatchしたリポジトリのイベントと
