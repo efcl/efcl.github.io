@@ -1,7 +1,7 @@
 ---
 author: azu
 layout: post
-title: git tagとGitHub ReleasesとCHANGELOG.mdの自動化について
+title: Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について
 categories: 
   - github
 tags: 
