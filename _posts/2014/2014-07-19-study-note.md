@@ -200,7 +200,7 @@ typoについては正直諦めていて、アウトライン的なメモだと�
 まあ気にしないほうがいいのではないかと考えています。
 
 またこのブログだと、GitHubから <a class="btn edit-on-github"
-   href="https://github.com/efcl/efcl.github.io/edit/master/{{page.path | cgi_escape}}"><span
+   href="https://github.com/efcl/efcl.github.io/edit/master/{{page.path | uri_escape}}"><span
         class="edit-on-github-label">修正リクエスト</span></a>
 を送れるので細かいことはやる気がある人が修正を送ってくれるかもしれません。
 
