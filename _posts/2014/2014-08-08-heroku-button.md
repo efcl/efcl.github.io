@@ -58,7 +58,7 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 Heroku Buttonはリファラーをみて、どのアプリかを判断してるのでGitHubのREADMEに貼ったときのみ、
 以下のようにパラメータがないボタンを貼ることで動作します。
 
-``` markdown
+``` 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/node-js-sample)
 ```
 
