@@ -54,6 +54,11 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/azu/voting-badge)
 
 
+`BUILDPACK_URL` やaddonなどを使ってる場合は`app.json`にもその情報を書く必要があることに注意してください。
+詳しくは以下で解説されています。(書かないとforkしたときにエラーがでる)
+
+- [app.json Schema | Heroku Dev Center](https://devcenter.heroku.com/articles/app-json-schema "app.json Schema | Heroku Dev Center")
+ 
 ### 注意
 
 Heroku Buttonはリファラーをみて、どのアプリかを判断してるのでGitHubのREADMEに貼ったときのみ、
