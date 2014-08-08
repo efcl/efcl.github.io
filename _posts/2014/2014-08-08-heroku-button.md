@@ -45,7 +45,7 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 2. アドオンなどを使ってる場合はapp.jsonに [その情報を追加](https://github.com/azu/voting-badge/commit/d0cad65cfeb48d04859e5f25a3fae8cad7056a11 "update app.json · d0cad65 · azu/voting-badge")
 3. [ add deploy button ](https://github.com/azu/voting-badge/commit/b766bd1555483ca025483ca477f8392da90e1736 " add deploy button ") 
 
-最終的な `app.json` は以下のような感じでアプリのメタ情報が入ったnpmのpackage.jsonみたいなものであることが分かります。
+最終的な `app.json` は以下のような感じで、アプリのメタ情報が入ったnpmのpackage.jsonみたいなものであることが分かります。
 
 ``` json
 {
