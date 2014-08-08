@@ -45,7 +45,23 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 2. アドオンなどを使ってる場合はapp.jsonに [その情報を追加](https://github.com/azu/voting-badge/commit/d0cad65cfeb48d04859e5f25a3fae8cad7056a11 "update app.json · d0cad65 · azu/voting-badge")
 3. [ add deploy button ](https://github.com/azu/voting-badge/commit/b766bd1555483ca025483ca477f8392da90e1736 " add deploy button ") 
 
-これで以下のようにボタンが追加できました。
+最終的な `app.json` は以下のような感じでアプリのメタ情報が入ったnpmのpackage.jsonみたいなものであることが分かります。
+
+``` json
+{
+    "name": "voting-badge",
+    "description": "Voting badge like Travis CI",
+    "website": "https://github.com/azu/voting-badge",
+    "repository": "https://github.com/azu/voting-badge",
+    "keywords": ["node", "badge", "canvas", "node-canvas", "GitHub"],
+    "env": {
+        "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env"
+    },
+    "addons": ["redistogo:nano"]
+}
+```
+
+これで以下のようにボタンが追加できて、ボタンを押すとHerokuにforkすることが出来ます。
 
 ![img](http://efcl.info/wp-content/uploads/2014/08/08-1407471632.png)
 
