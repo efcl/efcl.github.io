@@ -78,3 +78,12 @@ Heroku Buttonはリファラーをみて、どのアプリかを判断してる�
 - [Creating a &#39;Deploy to Heroku&#39; Button | Heroku Dev Center](https://devcenter.heroku.com/articles/heroku-button "Creating a &#39;Deploy to Heroku&#39; Button | Heroku Dev Center")
 
 GitHubからでもリファラーを無効にしてるブラウザだと動かなくなるので、通常はパラメータを入れてたほうが安全そうな気がします。
+
+## おわりに
+
+Herokuに追加されたHeroku Buttonについて解説しました。
+
+Herokuで公開してるアプリを簡単に試せるのでとても便利だと思います。
+
+
+- [Heroku | Introducing Heroku Button](https://blog.heroku.com/archives/2014/8/7/heroku-button "Heroku | Introducing Heroku Button")
