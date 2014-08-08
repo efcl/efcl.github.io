@@ -1,2 +1,3 @@
 language: ruby
-script: "bundle exec jekyll build"
+script: "bundle exec jekyll build --trace"
+cache: bundler
