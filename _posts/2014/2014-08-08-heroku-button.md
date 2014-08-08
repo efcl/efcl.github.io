@@ -42,7 +42,8 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 `app.json`を追加してHeroku Buttonを追加しただけです。
 
 1. [ add app.json ](https://github.com/azu/voting-badge/commit/e8569c739eac47f5739417a4aaaa43fe49047e38 " add app.json ")
-2. [ add deploy button ](https://github.com/azu/voting-badge/commit/b766bd1555483ca025483ca477f8392da90e1736 " add deploy button ") 
+2. アドオンなどを使ってる場合はapp.jsonにその情報を追加
+3. [ add deploy button ](https://github.com/azu/voting-badge/commit/b766bd1555483ca025483ca477f8392da90e1736 " add deploy button ") 
 
 これで以下のようにボタンが追加できました。
 
@@ -59,7 +60,7 @@ Heroku Buttonはリファラーをみて、どのアプリかを判断してる�
 以下のようにパラメータがないボタンを貼ることで動作します。
 
 ``` 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/node-js-sample)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 ```
 
 もちろん、パラメータをつけたボタンも作ることができるため、GitHub以外から動くボタンも作れます。
