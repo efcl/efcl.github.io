@@ -112,3 +112,4 @@ Herokuで公開してるアプリを簡単に試せるのでとても便利だ�
 
 
 - [Heroku | Introducing Heroku Button](https://blog.heroku.com/archives/2014/8/7/heroku-button "Heroku | Introducing Heroku Button")
+- [Creating a &#39;Deploy to Heroku&#39; Button | Heroku Dev Center](https://devcenter.heroku.com/articles/heroku-button "Creating a &#39;Deploy to Heroku&#39; Button | Heroku Dev Center")
