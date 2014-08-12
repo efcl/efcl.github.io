@@ -51,7 +51,7 @@ Nodeアプリの再起動的な事をやってくれるみたいです。
 
 今回このspy-jsがNode.jsのコードにも対応したので、Nodeで書いたコードのパフォーマンスみたり、デバッグ等にも役立てる事ができます。
 
-実行がかなり手軽で、Run Configurationで実行したNode.jsファイルを選ぶだけです。(ブラウザの時と違ってproxyを刺す必要もないです)
+実行がかなり手軽で、Run Configurationで実行したいNode.jsファイルを選ぶだけです。(ブラウザの時と違ってproxyを刺す必要もないです)
 
 ![configuration](http://efcl.info/wp-content/uploads/2014/08/12-1407819988.png)
 
