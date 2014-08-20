@@ -48,6 +48,7 @@ tags:
 ## Swiftのライブラリの作成/利用しよう - tokorom
 
 > [potatotips#8 Swiftのライブラリを作成/利用しよう // Speaker Deck](https://speakerdeck.com/tokorom/li-yong-siyou "potatotips#8 Swiftのライブラリを作成/利用しよう // Speaker Deck")
+
 - Swiftで書かれたライブラリを使う方法
     - Quick - BDDテストフレームワーク
 
@@ -67,6 +68,8 @@ tags:
 ## †黒魔術† - kaiinui
 
 > [Black Magic in Java // Speaker Deck](https://speakerdeck.com/kaiinui/black-magic-in-java "Black Magic in Java // Speaker Deck")
+
+
 - Javaの黒魔術 : Annotation
     - 宣言的
     - コードと宣言を分離出来る
