@@ -18,6 +18,7 @@ tags:
 
 自分は[Objective-CでのPromiseと非同期処理](http://azu.github.io/slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")について発表しました。
 
+----
 
 ## Xcode で gulp を使うお話 - saku2saku
 
@@ -51,8 +52,7 @@ tags:
 
 - Swiftで書かれたライブラリを使う方法
     - Quick - BDDテストフレームワーク
-
-[Quick/Quick](https://github.com/Quick/Quick "Quick/Quick")
+      [Quick/Quick](https://github.com/Quick/Quick "Quick/Quick")
     - xcodeprojファイルを自分のプロジェクトに追加してLinkの設定
     - Link Binary With librariesに追加する
 - CocoaPodsが使えない
