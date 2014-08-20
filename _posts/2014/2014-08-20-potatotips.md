@@ -148,6 +148,8 @@ tags:
 ## アプリのリリースしてますか - __gfx__
 
 > [Androidアプリのリリースしてますか #potatotips // Speaker Deck](https://speakerdeck.com/gfx/androidapurifalseririsusitemasuka-number-potatotips "Androidアプリのリリースしてますか #potatotips // Speaker Deck")
+
+
 - リリースエンジニアリングのタスクは複雑
     - やることが多くて大変
     - 限定公開リリースをするともっと増える
