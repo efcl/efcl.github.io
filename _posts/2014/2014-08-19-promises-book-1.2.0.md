@@ -21,7 +21,7 @@ tags:
 そのため、[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") も
 semverな感じでアップデートしていっています。
 
-どのような変更があったからはGitHub Releaseにかかれているのでそちらを参考にして下さい。(RSSで購読も出来ます)
+どのような変更があったかはGitHub Releaseにかかれているのでそちらを参考にして下さい。(RSSで購読も出来ます)
 
 - [Releases · azu/promises-book](https://github.com/azu/promises-book/releases "Releases · azu/promises-book")
 
@@ -82,7 +82,7 @@ Promise本も幾つか問題が起きていたので以下で対処していま�
 
 - [Asciidoctor 1.5.0対応 · Issue #182 · azu/promises-book](https://github.com/azu/promises-book/issues/182 "Asciidoctor 1.5.0対応 · Issue #182 · azu/promises-book")
 
-DocBook 5がデフォルトになった影響で `[[id]]` という誤認されて[asciidoctor-fopub](https://github.com/asciidoctor/asciidoctor-fopub "asciidoctor-fopub")で[PDFがビルドできない問題](https://github.com/azu/promises-book/commit/3e57e37f89af50cd01dca4c4ada30afc05c3c5df "PDFがビルドできない問題")や、テーマのrevert的な対処をしています。
+DocBook 5がデフォルトになった影響で `[[id]]` が誤認されて[asciidoctor-fopub](https://github.com/asciidoctor/asciidoctor-fopub "asciidoctor-fopub")で[PDFがビルドできない問題](https://github.com/azu/promises-book/commit/3e57e37f89af50cd01dca4c4ada30afc05c3c5df "PDFがビルドできない問題")や、テーマのrevert的な対処をしています。
 
 Asciidoctor 1.5のデフォルトテーマは[Use open source fonts in the default stylesheet · Issue #879 · asciidoctor/asciidoctor](https://github.com/asciidoctor/asciidoctor/issues/879 "Use open source fonts in the default stylesheet · Issue #879 · asciidoctor/asciidoctor")のIssueで上げられているようにオープンソースのCJKフォントをデフォルトに指定してきます。
 
