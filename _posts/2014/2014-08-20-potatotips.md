@@ -86,6 +86,7 @@ tags:
 ## モバイルアプリ開発者のためのmitmproxy入門- hydrakecat
 
 > [モバイルアプリ開発者のための mitmproxy 入門 // Speaker Deck](https://speakerdeck.com/hkurokawa/mobairuapurikai-fa-zhe-falsetamefalse-mitmproxy-ru-men "モバイルアプリ開発者のための mitmproxy 入門 // Speaker Deck")
+
 - mitmproxy
     - MITM型のプロキシ
     - SSHをサポートしてる
@@ -267,6 +268,7 @@ tags:
 ## Objective-CでのPromiseと非同期処理 - azu
 
 > [Objective-CでのPromiseと非同期処理](http://azu.github.io/slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")
+
 - PromiseKitとPromiseについて
 - Boltsは中でロックをしていて、Promiseは基本的にロックしない
 - PromiseKitはJavaScriptのPromises A/+を参照してる
