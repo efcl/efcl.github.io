@@ -204,6 +204,7 @@ tags:
     - 独自のSQL関数を作れる
     - `match_info()` からマッチスコアを返す関数を作る
     - C言語で拡張を書く
+    - [rads/sqlite-okapi-bm25](https://github.com/rads/sqlite-okapi-bm25 "rads/sqlite-okapi-bm25")
 - Likeは小さいものだといける
 
 ---
