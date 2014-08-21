@@ -340,10 +340,10 @@ tags:
 - 動かなくなったら
     - iCloudをすべてのデバイスをサインアウト
     - FaceTime, iMessageのサインアウト
-- サイトイン
-    - Macからサイトインする
-    - iCloud -> FaceTime -> iMessageの順でサイトインする
-    - iOSの方もiCloudにサイトインする
+- サインイン
+    - Macからサインインする
+    - iCloud -> FaceTime -> iMessageの順でサインインする
+    - iOSの方もiCloudにサインインする
 - 独自アプリ
     - 独自アプリ間はAppStore用の署名しないと動かない
     - ブラウザからのhandoffにはSSLの証明書が必要
