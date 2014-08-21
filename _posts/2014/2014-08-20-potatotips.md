@@ -126,6 +126,8 @@ tags:
 
 ## GooglePlay Developer APIを使ってみた - sakebook
 
+> [Google Play Developer APIを使ってみた](http://www.slideshare.net/sakebook/google-play-developer-api "Google Play Developer APIを使ってみた")
+
 - Publishing APIを試す
     - OAuth2.0認証
     - APKのアップロードができる
@@ -152,7 +154,6 @@ tags:
 ## アプリのリリースしてますか - __gfx__
 
 > [Androidアプリのリリースしてますか #potatotips // Speaker Deck](https://speakerdeck.com/gfx/androidapurifalseririsusitemasuka-number-potatotips "Androidアプリのリリースしてますか #potatotips // Speaker Deck")
-
 
 - リリースエンジニアリングのタスクは複雑
     - やることが多くて大変
@@ -182,6 +183,8 @@ tags:
 
 ## SQLiteで高速全文検索 〜日本語編〜 - shoby
 
+> [SQLiteで高速全文検索〜日本語編〜 // Speaker Deck](https://speakerdeck.com/shoby/sqlitedegao-su-quan-wen-jian-suo-ri-ben-yu-bian "SQLiteで高速全文検索〜日本語編〜 // Speaker Deck")
+
 - iOSアプリで日本語を全文検索
 - SQLiteの全文検索拡張
     - iOS6から普通に使える
@@ -206,6 +209,8 @@ tags:
 ---
 
 ## Picassoを半年使ってみた - ninjinkun
+
+> [Picassoを半年使ってみた // Speaker Deck](https://speakerdeck.com/ninjinkun/picassowoban-nian-shi-tutemita "Picassoを半年使ってみた // Speaker Deck")
 
 - AndroidのWeb画像ローダー
     - Volley
@@ -254,14 +259,18 @@ tags:
 
 ## 誰もしたがらない話をしたい 翻訳リソース編 - __chocomelon
 
+> [誰も話たがらない話をしたい 翻訳リソース編 // Speaker Deck](https://speakerdeck.com/chocomelonchan/shui-mohua-tagaranaihua-wositai-fan-yi-risosubian "誰も話たがらない話をしたい 翻訳リソース編 // Speaker Deck")
+
 - pixivは海外ユーザーが多い
-- 半分ぐらいは海外ユーザー
+    - 新規登録の半分ぐらいは海外ユーザー
 - pixivの翻訳フローの改善
-    - それぞれの言語のシートがきてた
+    - 今まではそれぞれの言語のシートがあった
 - 解決方法
     - 翻訳者がコミット
     - 一元のスプレットシート管理
     - 外部に丸投げ
+- 一元管理のシートを作成
+    - rubyでパースして利用
 
 ---
 
@@ -291,6 +300,8 @@ tags:
 ---
 
 ## Introducing CloudKit - nakajijapan
+
+> [Introducing CloudKit // Speaker Deck](https://speakerdeck.com/nakajijapan/introducing-cloudkit "Introducing CloudKit // Speaker Deck")
 
 - CloudKit
     - iCloud serverへのデータ転送を管理
