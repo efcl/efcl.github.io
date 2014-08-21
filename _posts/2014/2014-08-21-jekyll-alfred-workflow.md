@@ -127,3 +127,11 @@ Alfred workflowで色々組み合わせれば、ツールを新たにつくら�
 ユーザー固有の情報とかがそのまま混じってるのがイマイチですが、Jekyllでも大体更新しやすくなってきた気がします。
 
 - [efcl/my-alfred-workflow](https://github.com/efcl/my-alfred-workflow "efcl/my-alfred-workflow")
+
+まだブログエディタがいまいち決まってなくて[MacDown](http://macdown.uranusjr.com/ "MacDown")とかWebStormを使って書いています。
+
+今のところだと[Markdown-Writer for Atom](https://atom.io/packages/markdown-writer " Markdown-Writer for Atom")あたりが一番良く出来てる感じがします。
+カテゴリやタグを既存のデータから選んだり、記事投稿の補助機能が色々入っています。
+
+Atomは日本語のsoft-wrapが壊滅的だったのが問題でしたが、[raccy/japanese-wrap](https://github.com/raccy/japanese-wrap "raccy/japanese-wrap")を使うと少しマシになります。
+(プレビュー機能は優れてるので結構良さそうな感じがします)
