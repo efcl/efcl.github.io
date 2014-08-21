@@ -122,7 +122,7 @@ $ podspec-bump --dump-version
 という感じのは、以下みたいにかけますね。
 
 
-``` shell
+``` sh
 podspec-bump -w # update version
 git commit -am "bump `podspec-bump --dump-version`" 
 git tag "`podspec-bump --dump-version`"
