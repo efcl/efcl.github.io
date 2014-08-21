@@ -242,6 +242,8 @@ tags:
 
 ## Run Script Tips - hosokawa
 
+> [Run Script Tips](http://hosokawa0825.github.io/slides/RunScriptTips/#/ "Run Script Tips")
+
 - XcodeのRun Scriptをレビューしやすくする
     - そのまま入れるとpbxprojに一行で入る
     - 独立したスクリプトファイルを作って、intermmediatesフォルダにいれる
