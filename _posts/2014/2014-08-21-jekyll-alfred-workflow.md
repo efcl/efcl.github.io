@@ -87,7 +87,7 @@ git pushはそのままなので省略
 brew install pngpaste
 ```
 
-``` shell
+``` sh
 # baseDirからyyyy/mm/ファイル名 に配置される
 baseDir="/Users/azu/Dropbox/workspace/blogs/efcl/wp-content/uploads/"
 baseURL="http://efcl.info/wp-content/uploads/"
