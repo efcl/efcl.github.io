@@ -8,6 +8,7 @@ tags:
     - イベント
     - iOS
     - Android
+    - promise
 
 ---
 
