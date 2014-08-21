@@ -22,6 +22,8 @@ tags:
 
 ## Xcode で gulp を使うお話 - saku2saku
 
+> [Xcode で gulp を使うお話](http://www.slideshare.net/ganbit1021/xcode-gulp "Xcode で gulp を使うお話")
+
 - gulpを使った話
     - RettyはWebViewを使ったハイブリッドで利用
 - ターミナルから毎回コマンド打つのが面倒
