@@ -1,5 +1,5 @@
 ---
-title: "podspec(cocoapods)のリリースバージョンを更新するコマンドラインツールを書いた"
+title: "podspec(cocoapods)のバージョンを更新するコマンドラインツールを書いた"
 author: azu
 layout: post
 categories:
