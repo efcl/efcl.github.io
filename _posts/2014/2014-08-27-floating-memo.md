@@ -42,7 +42,7 @@ node-webkitは[node-webkitとは何か](http://azu.github.io/slide/udonjs/node-w
 詳しくは[Manifest format · rogerwang/node-webkit Wiki](https://github.com/rogerwang/node-webkit/wiki/Manifest-format "Manifest format · rogerwang/node-webkit Wiki")に書いてありますが、node-webkitアプリのpackage.jsonでは`main`の他に`node-main`というプロパティを指定することが出来ます。
 
 - `main` はブラウザでcontextで動くHTMLを指定します
-	- `main` から node.js contextで実行するのも可能です(これがややこしい原因ですが)
+	- mainから node.js contextで実行するのも可能です(これがややこしい原因ですが)
 - `node-main` は node.jsのcontextで動くjsを指定します
 
 普通の考えなら、`main` <-> `node-main`のやり取りは通信やメッセージングを使いますが(むしろそうした方がいい気がする)、node-webkitの場合はこのcontextの境界が薄いので、普通にglobal.windowに関数を貼ったりすれば相互に呼び出し出来てしまいます!
