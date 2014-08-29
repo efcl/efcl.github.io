@@ -93,7 +93,7 @@ Stringがstructのままだけどそんなもんなのかな?
 
 ### トラブルシューティング
 
-liteideでビルド仕様としてもエラーが動かない
+liteideでビルドしようとしてもエラーがでて動かない
 
 > go: cannot find GOROOT directory: /usr/local/go
 
@@ -109,12 +109,13 @@ liteideの使い方は以下を参照した。
 ###感想
 
 `GOROOT` と `GOPATH` などの設定についての記事があふれていて、ものすごく検索しても分かりにくいと思いました。
+(この記事もそれになりそう)
 
 The Right Way的な常に更新してて、検索からたどり着きやすいものが欲しい気がしました。
 
 翻訳についても色々な所に同じものがあったりして(ついで更新止まってる)、どれ参照すればいいのかよく分からない感じがしました。
 
-http://golang-jp.org/ という公式サイトの翻訳サイトもあり、こちらはGitHubからpull requestして更新受け付けているそうなので期待しています。
+http://golang-jp.org/ という公式サイトの翻訳サイトもあり、こちらはGitHubからpull requestを受け付けているそうなので期待しています。
 
 - [The Go Programming Language](http://golang-jp.org/ "The Go Programming Language")
 - [gophersjp/go](https://github.com/gophersjp/go "gophersjp/go")
