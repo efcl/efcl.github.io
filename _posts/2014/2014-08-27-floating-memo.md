@@ -63,6 +63,26 @@ node-webkitでアプリを最前面にするのは簡単で[Window.setAlwaysOnTo
 
 ウィンドウの透過はまだないようです。
 
+####Macのネイティブメニュー
+
+node-webkit 0.10からMacのネイティブメニューは自動では作られなくなりました。
+![menu](http://efcl.info/wp-content/uploads/2014/08/30-1409390312.png)
+
+これで何が困るかというと、MacだとCmd+QやCmd+a等のショートカットはメニューに定義されているため、どのアプリも共通にあるショートカットが効かなくなってしまう点です。
+
+そのため、以下のように[Menu.createMacBuiltin(appname)](https://github.com/rogerwang/node-webkit/wiki/Menu "Menu.createMacBuiltin(appname)")を使って明示的にデフォルトのメニューを追加する必要があります。
+
+```javascript
+var gui = require('nw.gui');
+var win = gui.Window.get();
+if (process.platform == 'darwin') {
+    var mb = new gui.Menu({type: "menubar"});
+    mb.createMacBuiltin(require("../package.json").name);
+    win.menu = mb;
+}
+```
+
+
 ### CodeMirror
 
 メインのエディタとなる部分には[CodeMirror](http://codemirror.net/ "CodeMirror")を使っています。

@@ -7,8 +7,7 @@ category: golang
 tags: 
     - golang
     - 設定
-    - インストール
-    - Mac
+    - いんs
 
 ---
 
