@@ -7,7 +7,7 @@ category: golang
 tags: 
     - golang
     - 設定
-    - いんs
+    - インストール
 
 ---
 
