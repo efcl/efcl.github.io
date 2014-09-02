@@ -109,7 +109,7 @@ HTMLやCSSといったかなり大雑把なカテゴリが用意されている�
 - [Name #663399 "Becca Purple"in CSS4 Color? - Specifiction](http://discourse.specifiction.org/t/name-663399-becca-purple-in-css4-color/225 "Name #663399 &#34;Becca Purple&#34; in CSS4 Color? - Specifiction")
 - [本の虫: rebeccapurpleがCSS 4 colorに提案された経緯](http://cpplover.blogspot.jp/2014/06/rebeccapurplecss-4-color.html "本の虫: rebeccapurpleがCSS 4 colorに提案された経緯")
 
-このような "誰に or どこにいいのか分からない"という意見を言うと言うのは、何もウェブ標準についてだけではなく、ウェブサイトのブラウザ間での互換性についてもコニュニティが存在します。
+このような "誰に or どこに言えばいいのか分からない"ような意見の場としては、ウェブ標準についてだけではなくウェブサイトのブラウザ間での互換性についてもコミュニティが存在します。
 
 [webcompat.com](http://webcompat.com/ "webcompat.com") はMozilla Web Compatibility teamが始めたサイト(GitHub Issue)で"Bug reporting for the internet."と書かれているように、通常のウェブサイトの問題やウェブブラウザの問題について報告できる場所です。
 
