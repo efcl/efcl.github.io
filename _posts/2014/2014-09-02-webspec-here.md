@@ -60,7 +60,7 @@ ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esd
 
 実際に使えるPolyfillを作りながら仕様も策定していってるスタイルだと[WebComponents](http://webcomponents.org/ "WebComponents")が有名どころです。
 
-[WebComponents](http://webcomponents.org/ "WebComponents")や[Service Workers](http://www.w3.org/TR/service-workers/ "Service Workers")は[platform.js](http://www.polymer-project.org/docs/start/platform.html "platform.js")(polymerの内部で使われる)というpolyfillが既に公開されています。
+[WebComponents](http://webcomponents.org/ "WebComponents")では[platform.js](http://www.polymer-project.org/docs/start/platform.html "platform.js")(polymerの内部で使われる)というpolyfillが既に公開されています。
 
 この実際に動かせるpolyfillを用意するというスタイルは[The Extensible Web Manifesto](http://extensiblewebmanifesto.org/ "The Extensible Web Manifesto")というポリシーが掲げられていて、これに基づいた行動といえると思います。
 
