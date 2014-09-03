@@ -35,9 +35,9 @@ tags:
 
 GitHubにおいてあるので、当たり前のように**仕様**に対してPull Requestして修正等も行われています。
 
-また、最近のJavaScriptの仕様で特徴的なので、仕様とともPolyfillやリファンレス実装を一緒に作るケースが見られます。
+また、最近のJavaScript仕様策定では仕様とともPolyfillやリファンレス実装を一緒に作るケースが見られます。
 
-domenicさんが担当する[ES6 promises](https://github.com/domenic/promises-unwrapping "ES6 promises")と[Streams API](https://github.com/whatwg/streams "Streams API")(https://github.com/whatwg/streams)は[Especially](https://github.com/domenic/especially "Especially")というモジュールを使ったリファレンス実装が公開されています。
+domenicさんが担当する[ES6 promises](https://github.com/domenic/promises-unwrapping "ES6 promises")と[Streams API](https://github.com/whatwg/streams "Streams API")では、[Especially](https://github.com/domenic/especially "Especially")というモジュールを使ったリファレンス実装が公開されています。
 
 [Especially](https://github.com/domenic/especially "Especially")はECMAScriptの仕様内部で表現操作をコードで表現するためのものなので、リファレンス実装も仕様書のStepに沿うようなコードになっています。
 
