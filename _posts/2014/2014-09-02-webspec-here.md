@@ -42,7 +42,7 @@ domenicさんが担当する[ES6 promises](https://github.com/domenic/promises-u
 [Especially](https://github.com/domenic/especially "Especially")はECMAScriptの仕様内部で表現操作をコードで表現するためのものなので、リファレンス実装も仕様書のStepに沿うようなコードになっています。
 
 ----
-#### ECMAScriptはどこに?
+### ECMAScriptはどこに?
 
 ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esdiscuss.org/ "es-discuss")という専用のサイトでアーカイブを見られます。
 また、定期的に行われている[ECMAのTC39ミーティングのノート](https://github.com/rwaldron/tc39-notes "rwaldron/tc39-notes")がGitHubで公開されています。
@@ -66,7 +66,9 @@ ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esd
 
 これ以外にも最近の仕様は大体GitHubにリポジトリを持つのが一般的と言えるぐらい最近の仕様はGitHub上に置かれていることが多いです。
 
-#### GitHub上の仕様とアカウント
+### GitHub上の仕様とアカウント
+
+仕様関係のGitHubアカウントを適当にまとめてみました。
 
 W3C/WAHTWG 組織アカウント
 
