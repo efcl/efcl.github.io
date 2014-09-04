@@ -43,6 +43,8 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 ![multiple-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
 
 例えば、CoffeeScriptで書いて(Original)、それをJavaScriptに変換して(Generated)、さらにそれを圧縮した(Minified)時などが該当します。
+このように変換とSourceMapの生成を複数回繰り返して行った場合の事を多段SourceMapと呼んでると思います。
+
 
 この場合、圧縮したコードから、元のCoffeeScriptのコードの対応関係をそのままだと見ることが出来ません。
 (例としてMinifiedなどとしていますが、これはSourceMapを生成する変換なら何でもいいです。テンプレートの変換やConcatも同じです)
