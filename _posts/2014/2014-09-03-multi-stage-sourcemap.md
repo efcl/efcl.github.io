@@ -45,7 +45,7 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 例えば、CoffeeScriptで書いて(Original)、それをJavaScriptに変換して(Generated)、さらにそれを圧縮した(Minified)時などが該当します。
 
 この場合、圧縮したコードから、元のCoffeeScriptのコードの対応関係をそのままだと見ることが出来ません。
-(例としてMinifiedなどとしていますが、これは変換なら何でもいいです。テンプレートの変換やConcatも同じです)
+(例としてMinifiedなどとしていますが、これはSourceMapを生成する変換なら何でもいいです。テンプレートの変換やConcatも同じです)
 
 多段SourceMapについては仕様上のサポートがないので、現状をまとめると以下のような感じですね。
 
