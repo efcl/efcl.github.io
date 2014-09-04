@@ -69,9 +69,9 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 
 これは、仕様書のNOTEで中間地点の情報は失うけど簡単な方法として書かれています。
 
-> The easy but lossy way is to ignore the intermediate steps in the process for the purposes of debugging, the source location information from the translation is either ignored (the intermediate translation is considered the “Original Source”) or the source location information is carried through (the intermediate translation hidden). 
+> The easy but lossy way is to ignore the intermediate steps in the process for the purposes of debugging, the source location information from the translation is either ignored (the intermediate translation is considered the “Original Source”) or the source location information is carried through (the intermediate translation hidden).  - [Source Map Revision 3 Proposal ](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit# "Source Map Revision 3 Proposal - Google ドキュメント")
 
-自分も仕様見る前に[多分出来るんだと思ってた](http://twitter.com/azu_re/status/453839139348041728)ので、それの[Proof of concept](http://ja.wikipedia.org/wiki/%E6%A6%82%E5%BF%B5%E5%AE%9F%E8%A8%BC "Proof of concept")的に作りました。([探した](http://efcl.info/2014/0622/res3933/ "Source Mapを扱う関連ライブラリのまとめ")のですが何故か汎用的なものがなかった)
+自分も仕様見る前に[多分出来るんだと思ってた](http://twitter.com/azu_re/status/453839139348041728)ので、それの[Proof of concept](http://ja.wikipedia.org/wiki/%E6%A6%82%E5%BF%B5%E5%AE%9F%E8%A8%BC "Proof of concept")として作りました。([探した](http://efcl.info/2014/0622/res3933/ "Source Mapを扱う関連ライブラリのまとめ")のですが何故か汎用的なものがなかった)
 
 先ほどの例であげている圧縮に関しては[UglifyJS2](http://www.thecssninja.com/JavaScript/multi-level-sourcemaps ". UglifyJS2")が同様の実装をしています。
 
