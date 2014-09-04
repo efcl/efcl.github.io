@@ -98,11 +98,27 @@ WG
 
 GitHubにある仕様はJavaScript関係のものだけではなく、[HTTP/2](https://github.com/http2 "HTTP/2")も同様にGitHubにリポジトリを持って管理されていたりします。
 
-(仕様関係のGitHubアカウント/リポジトリ どこかにまとめないのかな?)
+(仕様関係のGitHubアカウント どこかにまとめないのかな?)
+
+----
+
+### リポジトリ
+
+上記で紹介しているGitHubリポジトリは必ずしもそこがメインのリポジトリとして使われているわけではありません。
+
+例えば、[w3c/csswg-drafts](https://github.com/w3c/csswg-drafts "w3c/csswg-drafts")は[csswg: Summary](https://dvcs.w3.org/hg/csswg "csswg: Summary")のミラーとして置かれています。
+
+W3Cの場合は、バージョン管理+ファイル置き場としては[dvcs.w3.org](https://dvcs.w3.org/hg?sort=lastchange "Mercurial repositories index")と[GitHub](https://github.com/w3c "World Wide Web Consortium")のどちらも使われているようです。
+
+そのため、単純に仕様がどこにあるのかを見たい場合は、最初に紹介した公式サイト[W3C](http://www.w3.org/TR/ "W3C Open Source Software")や[WHATWG](http://www.whatwg.org/specs/ "WHATWG")から該当する仕様を探すのがいいと思います。
+
+----
+
 
 ### コミュニティ
 
-上記で紹介してるようにウェブでの仕様はGitHubに移動(メーリングリスト等も併用する)したことで、その頃に比べると変更を見たり、疑問や問題をIssueにしたり、Pull Requestによって変更を送ったりがしやすくなりました。
+ウェブの仕様の策定作業等がGitHubに移動(メーリングリスト等も併用する)したケースだと、
+以前に比べると変更を見たり、疑問や問題をIssueにしたり、Pull Requestによって変更を送りやすくなりました。
 
 ただ、それでも仕様に対するContributingは難しいという印象があるかもしれません。
 例えば、どこに仕様があるのか分からなかったり、過去ログを見ないと言いたいことが既出なのか分からない等、意見するのに壁があるかもしれません。
