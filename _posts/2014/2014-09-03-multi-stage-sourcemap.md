@@ -1,5 +1,5 @@
 ---
-title: "多段SourceMapの実現方法とライブラリ"
+title: "多段SourceMapの対応方法とライブラリ"
 author: azu
 layout: post
 date : 2014-09-03T08:04
