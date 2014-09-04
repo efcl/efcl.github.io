@@ -75,6 +75,15 @@ W3C/WAHTWG 組織アカウント
 - [World Wide Web Consortium](https://github.com/w3c "World Wide Web Consortium")
 - [whatwg](https://github.com/whatwg "whatwg")
 
+Wiki
+
+W3CとWAHTWGにはGitHubの利用についてかかれたページがあります。
+(このページがどれくらい参照されてるのかよく分からないですが)
+
+- [GitHub - W3C Wiki](http://www.w3.org/wiki/GitHub "GitHub - W3C Wiki")
+    - [Guide/GitHub - W3C Wiki](http://www.w3.org/wiki/Guide/GitHub "Guide/GitHub - W3C Wiki")
+- [GitHub - WHATWG Wiki](http://wiki.whatwg.org/wiki/GitHub#Makefile "GitHub - WHATWG Wiki")
+
 WG
 
 - [W3C Technical Architecture Group](https://github.com/w3ctag/ "W3C Technical Architecture Group")
