@@ -17,7 +17,7 @@ tags:
 
 ## Webの仕様
 
-ウェブの仕様といえば、[W3C](http://www.w3.org/Status "W3C Open Source Software")や[WHATWG](http://www.whatwg.org/specs/ "WHATWG")、[IETF](https://www.ietf.org/ "IETF")とかが思い浮かぶかもしれません。
+ウェブの仕様といえば、[W3C](http://www.w3.org/TR/ "W3C Open Source Software")や[WHATWG](http://www.whatwg.org/specs/ "WHATWG")、[IETF](https://www.ietf.org/ "IETF")とかが思い浮かぶかもしれません。
 
 これらの仕様が最近ではメーリングリストやIRCといった旧来のところだけではなく、GitHub上で議論されて策定が進められている事が増えています。(両方使ってるという話)
 
@@ -77,11 +77,10 @@ W3C/WHATWG 組織アカウント
 
 Wiki
 
-W3CとWHATWGにはGitHubの利用についてかかれたページがあります。
-(このページがどれくらい参照されてるのかよく分からないですが)
+W3CとWHATWGにはGitHubの利用についてかかれたページがあります。(このページがどれくらい参照されてるのかよく分からないですが)
 
 - [GitHub - W3C Wiki](http://www.w3.org/wiki/GitHub "GitHub - W3C Wiki")
-    - [Guide/GitHub - W3C Wiki](http://www.w3.org/wiki/Guide/GitHub "Guide/GitHub - W3C Wiki")
+	-  [Guide/GitHub - W3C Wiki](http://www.w3.org/wiki/Guide/GitHub "Guide/GitHub - W3C Wiki")
 - [GitHub - WHATWG Wiki](http://wiki.whatwg.org/wiki/GitHub#Makefile "GitHub - WHATWG Wiki")
 
 WG
