@@ -69,6 +69,12 @@ via [#JSオジサンで Source Map について話してきました : document]
 
 ## Utility
 
+*   [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "multi-stage-sourcemap")
+
+多段SourceMapの対応を行うモジュール。
+詳しくは[多段SourceMapの対応方法とライブラリ | Web Scratch](http://efcl.info/2014/09/03/multi-stage-sourcemap/ "多段SourceMapの対応方法とライブラリ | Web Scratch")にて解説しています。
+
+
 *   [lydell/source-map-resolve][11] 
     *   sourceMappingURL(コードに含まれているsource mapの定義ファイル/データURL)コメントから詳細な情報を取得するモジュール
 
