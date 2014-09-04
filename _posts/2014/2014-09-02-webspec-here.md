@@ -64,7 +64,7 @@ ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esd
 
 この実際に動かせるpolyfillを用意するというスタイルは[The Extensible Web Manifesto](http://extensiblewebmanifesto.org/ "The Extensible Web Manifesto")というポリシーが掲げられていて、これに基づいた行動といえると思います。
 
-これ以外にも最近の仕様は大体GitHubにリポジトリを持つのが一般的と言えるぐらい最近の仕様はGitHub上に置かれていることが多いです。
+これ以外にも最近の仕様は大体GitHubにリポジトリを持つのが一般的と言えるぐらいGitHub上に置かれていることが多いです。
 
 ### GitHub上の仕様とアカウント
 
