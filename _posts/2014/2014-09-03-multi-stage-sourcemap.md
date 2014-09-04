@@ -42,11 +42,12 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 
 ![multiple-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
 
-例えば、CoffeeScriptで書いて(Original)、それをJavaScriptに変換して(Generated)、さらにそれを圧縮した(Minified)時に、
-圧縮したコードから、元のCoffeeScriptのコードの対応関係をそのままだと見ることが出来ません。
-(例として、Minifiedなどとしていますがこれは変換なら何でもいいです。テンプレートの変換も同じです)
+例えば、CoffeeScriptで書いて(Original)、それをJavaScriptに変換して(Generated)、さらにそれを圧縮した(Minified)時などが該当します。
 
-仕様上のサポートがないので、現状をまとめると以下のような感じですね
+この場合、圧縮したコードから、元のCoffeeScriptのコードの対応関係をそのままだと見ることが出来ません。
+(例としてMinifiedなどとしていますが、これは変換なら何でもいいです。テンプレートの変換やConcatも同じです)
+
+多段SourceMapについては仕様上のサポートがないので、現状をまとめると以下のような感じですね。
 
 - 圧縮したコード(Minified)から、変換されたJS(Generated)のSourceMapはある
 - 変換されたJS(Generated)からCoffeeScript(Original)のSourceMapはある
@@ -56,11 +57,11 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 
 > 圧縮したコード(Minified)からCoffeeScript(Original)のSourceMapがない
 
-という状態ですが、想像できると思いますが中間のそれぞれのSourceMapは存在しているため、Minified -> OriginalというSourceMapを作ることは容易だと分かりますね。
+先ほどの図から想像できると思いますが、中間のそれぞれのSourceMapは存在しているため、Minified -> Original というSourceMapを作ることは容易だと分かりますね。
 
-これを行うのモジュールとして [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "multi-stage-sourcemap")というものを作りました。
+これを行うのモジュールとして [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "multi-stage-sourcemap") というものを作りました。
 
-中間のSourceMapを使って、Minified -> OriginalというジャンプしたSourceMapを作ることが出来ます。
+中間の2つのSourceMapを使って、Minified -> OriginalというジャンプしたSourceMapを作ることが出来ます。
 
 つまり、最初と最後だけを繋いだSourceMapを作り直すだけです。
 
@@ -96,7 +97,7 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 	- 思いついただけ
 - テンプレート + JS -> 圧縮
 	- 一般的にはテンプレートとJSを一緒に変換する(BrowserifyやWebPack等)ので、問題ない
-	- ただ、テンプレートをJSとして変換済みのものを用意して、それを圧縮したいとなった場合、元のテンプレートへの参照には多段SourceMapが必要。
+	- ただ、テンプレートをJSとして変換済みのものを用意して、concatして、それを圧縮したいとなった場合、元のテンプレートへの参照には多段SourceMapが必要かも
 
 ## おわりに
 
