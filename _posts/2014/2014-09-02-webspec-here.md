@@ -35,9 +35,9 @@ tags:
 
 GitHubにおいてあるので、当たり前のように**仕様**に対してPull Requestして修正等も行われています。
 
-また、最近のJavaScript仕様策定では仕様とともPolyfillやリファンレス実装を一緒に作るケースが見られます。
+また、最近のJavaScript仕様策定では仕様と共にPolyfillやリファンレス実装を一緒に作るケースが見られます。
 
-domenicさんが担当する[ES6 promises](https://github.com/domenic/promises-unwrapping "ES6 promises")と[Streams API](https://github.com/whatwg/streams "Streams API")では、[Especially](https://github.com/domenic/especially "Especially")というモジュールを使ったリファレンス実装が公開されています。
+domenicさんが担当する[ES6 Promises](https://github.com/domenic/promises-unwrapping "ES6 promises")と[Streams API](https://github.com/whatwg/streams "Streams API")では、[Especially](https://github.com/domenic/especially "Especially")というモジュールを使ったリファレンス実装が公開されています。
 
 [Especially](https://github.com/domenic/especially "Especially")はECMAScriptの仕様内部で表現操作をコードで表現するためのものなので、リファレンス実装も仕様書のStepに沿うようなコードになっています。
 
@@ -51,18 +51,18 @@ ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esd
 - [es-discuss summaries (esdiscuss) on Twitter](https://twitter.com/esdiscuss "es-discuss summaries (esdiscuss) on Twitter")
 - [rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes "rwaldron/tc39-notes")
 
-現在策定中のECMAScript6については上記などで議論された内容を反映したものが、[Draft Specification for ES.next (Ecma-262 Edition 6)](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts "Draft Specification for ES.next (Ecma-262 Edition 6)")にてドラフト版として公開されています。
+現在策定中のECMAScript 6thについては上記などで議論された内容を反映したものが、[Draft Specification for ES.next (Ecma-262 Edition 6)](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts "Draft Specification for ES.next (Ecma-262 Edition 6)")にてドラフト版として公開されています。
 (HTML版も[ECMAScript Language Specification ECMA-262 6th Edition – DRAFT](http://people.mozilla.org/~jorendorff/es6-draft.html "ECMAScript Language Specification ECMA-262 6th Edition – DRAFT"))
 
 ----
 
 ### [The Extensible Web Manifesto](http://extensiblewebmanifesto.org/ "The Extensible Web Manifesto")
 
-実際に使えるPolyfillを作りながら仕様も策定していってるスタイルだと[WebComponents](http://webcomponents.org/ "WebComponents")が有名どころです。
+実際に使えるPolyfillを作りながら仕様も策定していってるスタイルだと[Web Components](http://webcomponents.org/ "Web Components")が有名どころです。
 
-[WebComponents](http://webcomponents.org/ "WebComponents")では[platform.js](http://www.polymer-project.org/docs/start/platform.html "platform.js")(polymerの内部で使われる)というpolyfillが既に公開されています。
+[Web Components](http://webcomponents.org/ "Web Components")では[platform.js](http://www.polymer-project.org/docs/start/platform.html "platform.js")(Polymerの内部で使われる)というPolyfillが既に公開されています。
 
-この実際に動かせるpolyfillを用意するというスタイルは[The Extensible Web Manifesto](http://extensiblewebmanifesto.org/ "The Extensible Web Manifesto")というポリシーが掲げられていて、これに基づいた行動といえると思います。
+この実際に動かせるPolyfillを用意するというスタイルは[The Extensible Web Manifesto](http://extensiblewebmanifesto.org/ "The Extensible Web Manifesto")というポリシーが掲げられていて、これに基づいた行動といえると思います。
 
 これ以外にも最近の仕様は大体GitHubにリポジトリを持つのが一般的と言えるぐらいGitHub上に置かれていることが多いです。
 
@@ -70,14 +70,14 @@ ECMAScript自体の議論の場としてはMLがあり、[es-discuss](http://esd
 
 仕様関係のGitHubアカウントを適当にまとめてみました。
 
-W3C/WAHTWG 組織アカウント
+W3C/WHATWG 組織アカウント
 
 - [World Wide Web Consortium](https://github.com/w3c "World Wide Web Consortium")
 - [whatwg](https://github.com/whatwg "whatwg")
 
 Wiki
 
-W3CとWAHTWGにはGitHubの利用についてかかれたページがあります。
+W3CとWHATWGにはGitHubの利用についてかかれたページがあります。
 (このページがどれくらい参照されてるのかよく分からないですが)
 
 - [GitHub - W3C Wiki](http://www.w3.org/wiki/GitHub "GitHub - W3C Wiki")
@@ -86,7 +86,7 @@ W3CとWAHTWGにはGitHubの利用についてかかれたページがありま�
 
 WG
 
-- [W3C Technical Architecture Group](https://github.com/w3ctag/ "W3C Technical Architecture Group")
+- [W3C Technical Architecture Group](https://github.com/w3ctag "W3C Technical Architecture Group")
 - [W3C System Applications Working Group](https://github.com/sysapps "W3C System Applications Working Group")
 - [W3C Audio Working Group](https://github.com/WebAudio "W3C Audio Working Group")
 
@@ -123,7 +123,7 @@ HTMLやCSSといったかなり大雑把なカテゴリが用意されている�
 
 このような "誰に or どこに言えばいいのか分からない"ような意見の場としては、ウェブ標準についてだけではなくウェブサイトのブラウザ間での互換性についてもコミュニティが存在します。
 
-[webcompat.com](http://webcompat.com/ "webcompat.com") はMozilla Web Compatibility teamが始めたサイト(GitHub Issue)で"Bug reporting for the internet."と書かれているように、通常のウェブサイトの問題やウェブブラウザの問題について報告できる場所です。
+[webcompat.com](http://webcompat.com/ "webcompat.com")はMozilla Web Compatibility teamが始めたサイト(GitHub Issue)で"Bug reporting for the internet."と書かれているように、通常のウェブサイトの問題やウェブブラウザの問題について報告できる場所です。
 
 報告された問題に対して、ボランティアの人等が調べて、サイトの持ち主やブラウザベンダに報告してくれるという形です。
 
@@ -135,8 +135,7 @@ MSも[webcompat.com](http://webcompat.com/ "webcompat.com")からのバグ報告
 
 最近よく見るウェブの仕様について簡単に紹介しました。
 
-今までのメーリングリストというような見えにくい所だけではなく、GitHub上や[Specifiction](http://discourse.specifiction.org/ "Specifiction")
-といったより見やすく、参加しやすい形へと変化していってると思います。
+今までのメーリングリストというような見えにくい所だけではなく、GitHub上や[Specifiction](http://discourse.specifiction.org/ "Specifiction")といったより見やすく、参加しやすい形へと変化していってると思います。
 
 ----
 
