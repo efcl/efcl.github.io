@@ -49,7 +49,7 @@ SourceMapはAltJS等からJavaScriptへの変換など、Original Code -> Genera
 
 多段SourceMapについては仕様上のサポートがないので、現状をまとめると以下のような感じですね。
 
-- 圧縮したコード(Minified)から、変換されたJS(Generated)のSourceMapはある
+- 圧縮したコード(Minified)から変換されたJS(Generated)のSourceMapはある
 - 変換されたJS(Generated)からCoffeeScript(Original)のSourceMapはある
 - 圧縮したコード(Minified)からCoffeeScript(Original)のSourceMapがない
 
