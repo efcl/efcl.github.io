@@ -119,9 +119,9 @@ deploy:
 
 Travis CIの[Deployment](http://docs.travis-ci.com/user/deployment/ "Deployment")を使ってGitHub Releaseにnode-webkitアプリのバイナリを登録する方法について紹介しました。
 
-node-webkitアプリはランタイムも含む都合上(含めない方法もありnwファイルがそれです)、ファイルサイズが数十MBとなったりします。
+node-webkitアプリはランタイムも含む都合上(含めない方法もありnwファイルがそれです)、ファイルサイズが数十から数百MBとなったりします。
 
-GitHubにはpush出来るファイルにサイズ制限があるため、node-webkitアプリのバイナリをリポジトリに置くのはむりだと思います。
+GitHubにはpush出来るファイルにサイズ制限があるため、node-webkitアプリのバイナリをリポジトリに置くのは難しいと思います。
 
 - [What is my disk quota? · GitHub Help](https://help.github.com/articles/what-is-my-disk-quota "What is my disk quota? · GitHub Help")
 
