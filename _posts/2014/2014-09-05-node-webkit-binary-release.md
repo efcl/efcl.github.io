@@ -115,6 +115,14 @@ deploy:
 
 このように設定したら後は`git tag`をはってpushするだけで、自動的に[最新のタグ](https://github.com/azu/github-reader/releases/latest)にバイナリが登録されます。(Travis CIの回線結構早いのでローカルでやるより楽な気がします)
 
+### Tips
+
+GitHub Releasesでは最新のタグにリンクを貼る方法が存在します。
+
+https://github.com/azu/github-reader/releases/latest
+
+という感じでバージョンではなく、`latest`という指定をすると最新バージョンへリダイレクトされます。(添付したダウンロードファイルでは使えないのが不便…)
+
 ## おわりに
 
 Travis CIの[Deployment](http://docs.travis-ci.com/user/deployment/ "Deployment")を使ってGitHub Releaseにnode-webkitアプリのバイナリを登録する方法について紹介しました。
