@@ -155,9 +155,12 @@ MSも[webcompat.com](http://webcompat.com/ "webcompat.com")からのバグ報告
 ----
 
 
-## 専門家の見解
+## 識者の見解
 
-＜ ここには、仕様策定に詳しい専門家からの見解が掲載されます ＞
+[ウェブの仕様は今どこにあるのか？を分かる範囲で追補 - 血統の森+はてな](http://d.hatena.ne.jp/momdo/20140905/p1 "ウェブの仕様は今どこにあるのか？を分かる範囲で追補 - 血統の森+はてな")
+
+> 古典的なものの見方で、W3C HTML5仕様を軸にW3C仕様の現状を分かる範囲でごく簡単に
+
 
 ＜ Pull Request は   [こちらからです！](https://github.com/efcl/efcl.github.io/edit/master/_posts/2014/2014-09-02-webspec-here.md "efcl/efcl.github.io")＞
 
