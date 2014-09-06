@@ -162,6 +162,9 @@ MSも[webcompat.com](http://webcompat.com/ "webcompat.com")からのバグ報告
 > 古典的なものの見方で、W3C HTML5仕様を軸にW3C仕様の現状を分かる範囲でごく簡単に
 
 
+----
+より詳しい(正しい)見方などがありましたらPull Requestよろしくお願いします。
+
 ＜ Pull Request は   [こちらからです！](https://github.com/efcl/efcl.github.io/edit/master/_posts/2014/2014-09-02-webspec-here.md "efcl/efcl.github.io")＞
 
 
