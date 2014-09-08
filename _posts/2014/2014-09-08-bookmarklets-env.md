@@ -24,7 +24,7 @@ Node.jsで書かれているので、npmからインストールできます。
 npm install bookmarkletter -g
 ```
 
-## Usage
+## 使い方
 
 使い方は簡単で、ファイル名を渡すかパイプでJavaScriptコードを渡せば、`javascript:` から始まるブックマークレットとして使える文字列を返してくれます。
 
@@ -139,7 +139,7 @@ escodegen.generate(result, {
 npm install bookmarkletter
 ```
 
-### 使い方
+### モジュールとして使う
 
 モジュールとして使う場合は単純にコード文字列を渡せば、ブックマークレット化したコードを返してくれます。
 
@@ -168,7 +168,7 @@ var result = bookmarkletter(code, options);
 assert.equal(result, "javascript:(function(){var%20a=1}())");
 ```
 
-## License
+## ライセンス
 
 [azu/bookmarkletter](https://github.com/azu/bookmarkletter "azu/bookmarkletter") のライセンスはMITです
 
