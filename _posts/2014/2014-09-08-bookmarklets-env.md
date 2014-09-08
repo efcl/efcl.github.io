@@ -9,7 +9,7 @@ tags:
     - Bookmarklets
     - CLI
     - node.js
-issue: https://github.com/efcl/efcl.github.io/pull/30
+issue: "https://github.com/efcl/efcl.github.io/pull/30"
 
 ---
 
