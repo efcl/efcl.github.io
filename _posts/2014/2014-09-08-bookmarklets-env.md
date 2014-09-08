@@ -8,6 +8,7 @@ tags:
     - JavaScript
     - Bookmarklets
     - CLI
+    - node.js
 
 ---
 
@@ -94,19 +95,19 @@ ast-typesは以下のような機能を持ったASTを扱う補助ライブラ�
 	- 独自の型も定義できます
 	- これによりJSXやfb-harmony、ES7等Parser APIで標準化されてない部分も定義されています。
 
-このDSLを使うメリットとして、型のように定義を持っているためASTに間違ったものを入れると`check`関数によりassertionで例外が出るようになります。
+このDSLを使うメリットとして、型のように定義を持っているためASTに間違ったものを入れると`check`関数によるassertionで例外が出るようになります。
 
 JavaScript ASTの実体はただのオブジェクトで、普通にオブジェクトだけで組み立てると難しくなると思うので、こういうアプローチは面白いです。
 
 ただ、現在普通のエディタは補完とか特にできないので、扱いにくいと思います。
-[ast-types/core.js at master · benjamn/ast-types](https://github.com/benjamn/ast-types/blob/master/def/core.js "ast-types/core.js at master · benjamn/ast-types") みたいな定義ファイルからTypeScriptのd.tsを吐き出せたら大分幸せになれそう。。
+[ast-types/core.js at master · benjamn/ast-types](https://github.com/benjamn/ast-types/blob/master/def/core.js "ast-types/core.js at master · benjamn/ast-types") の定義ファイルからTypeScriptのd.tsを吐き出せたら大分幸せになれそう。。
 
 
 ### ASTを圧縮
 
 [esmangle](https://github.com/Constellation/esmangle "esmangle") は [UglifyJS](https://github.com/mishoo/UglifyJS2 "UglifyJS") と同じようにJavaScriptのコードを圧縮するライブラリです。
 
-[esmangle](https://github.com/Constellation/esmangle "esmangle")は[Parser API](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API "Parser API")のASTに対して処理をして圧縮したASTを生成します。Nodeモジュールとして扱う場合は[esmangle](https://github.com/Constellation/esmangle "esmangle")の方がいわゆるJavaScript ASTを扱うものと共通のやり方なので扱いやすいと思います。
+[esmangle](https://github.com/Constellation/esmangle "esmangle")は[Parser API](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API "Parser API")のASTに対して処理をして、圧縮したASTを生成します。Nodeモジュールとして扱う場合は[esmangle](https://github.com/Constellation/esmangle "esmangle")の方がいわゆるJavaScript ASTを扱うものと共通のやり方なので扱いやすいと思います。
 
 [esmangle](https://github.com/Constellation/esmangle "esmangle")は変数名を短くしたり、短絡評価に置き換えたり、使ってないラベルを削除したりと色々です。
 
