@@ -176,3 +176,5 @@ assert.equal(result, "javascript:(function(){var%20a=1}())");
 ## 参考にしたもの
 
 無名関数で囲んだり、URLエンコードする文字などは[chriszarate/bookmarkleter](https://github.com/chriszarate/bookmarkleter "chriszarate/bookmarkleter")を参考にしました。
+
+ブラウザ上で使いたい場合は、[http://chriszarate.github.io/bookmarkleter/](http://chriszarate.github.io/bookmarkleter/ "Bookmarkleter")が殆ど同じ機能なのでこちらを利用したほうが早いかもしれません。
