@@ -5,8 +5,6 @@ layout: post
 permalink: /2011/0527/res2764/
 dsq_thread_id:
   - 315276540
-SBM_count:
-  - '01337<>1355442479<>1285<>0<>43<>9<>0'
 categories:
   - javascript
 tags:
@@ -22,21 +20,32 @@ JavaScriptの書き方はJavaScript自体がある程度自由なためいろい
 Mozilla/Firefox向けのものなので、一部ECMAScriptの範囲を超えたものも含まれています。   
 多くの人が見ていると思うので、見たことない人は一度読んでみるといいです。
 
+[jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
+
 #### [Google JavaScript Style Guide][2]
 
 [Google JavaScript Style Guide 和訳 — Google JavaScript Style Guide 和訳][3](日本語版)   
 Googleのコーディングルールですが、ルールを並べるだけではなくなぜ悪いのかについても触れているので、一読をお勧めします。   
 [Closure Linter][4]というチェックツールもあるため、採用しやすいかもしれない。
 
+[jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
+
 #### [JQuery Core Style Guidelines &#8211; jQuery JavaScript Library][5]
 
-jQuery Coreのもの。   
+jQuery Coreのコーディングルール。   
 Typeチェックの仕方についても触れている。
 
-#### [Dojo Style Guide &#8211; The Dojo Toolkit][6]
+[jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
-Dojoのコーディングルール。   
-コード例が豊富で、命名規則やホワイトスペースの扱いなど細かいところまで入ってる。
+#### [airbnb/javascript](https://github.com/airbnb/javascript "airbnb/javascript")
+
+[mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide "mitsuruog/javacript-style-guide") (日本語訳)
+
+[Airbnb](https://www.airbnb.jp/ "Airbnb")によるコーディングルール。
+ブラウザのバグや誤解しにくい書き方、なぜそのような書き方するのかについて書かれています。
+またパフォーマンスについての注記も多く含まれているため、一読をお勧めします。
+
+[jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
 #### [Felix&#8217;s Node.js Style Guide][7]
 
@@ -100,16 +109,6 @@ amachangによるもの。
   </div>
 </div>
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 この書籍の[Chapter 2. Essentials][19]において、JavaScriptのコーディングルールが紹介されています。   
 また避けるべき事やどう書くべきなのかについてもかなり深く書かれています。
 
@@ -120,8 +119,8 @@ amachangによるもの。
 #### おまけ
 
 自分の場合は[WebStorm][20]の[自動整形][21]に任せている(といっても膨大なルール設定があるため、上記で紹介したコーディングルールを自動化できる)ので、基本的にはIDE任せという書き方にしています。   
-セミコロン忘れなどについてはcomplete current statement機能([ [WebStorm]Complete Current Statementがとても便利な件(・∀・)][22])を使ったり、[WebStorm][20]のシンタックスチェックはかなり優秀なのでエラーも書いてる途中で発見しやすいです。(シンタックスチェックも細かく制御できる)   
-そのため、やっぱり道具任せといった感じではありますが、WebStormを使用していない場合も同じコードが書けるようにある程度のルールは持っています。   
+セミコロン忘れなどについてはcomplete current statement機能([ [WebStorm]Complete Current Statementがとても便利な件(・∀・)][22])を使ったり、[WebStorm][20]のシンタックスチェックはかなり優秀なのでエラーも書いてる途中で発見しやすいです。   
+そのため、基本は道具任せといった感じではありますが、WebStormを使用していない場合も同じコードが書けるようにある程度のルールは持っています。   
 [Google JavaScript Style Guide][2] + [WebKit Coding Style Guidelines][15] に近いですが、ホワイトスペースなど見た目的なちょっとした違いにはそこまで厳しくしない感じで書いています。   
 if, for, while, doなどの{}は省略しない([WebStormの自動整形で中括弧を強制的につける][23])、誰が見てもある程度読める感じにする、ブレークポイントを打ちやすい空間を作るように配慮するなどなどで、他のコーディングルールに書いてある事と同じようなものだと思います。
 
@@ -148,3 +147,4 @@ if, for, while, doなどの{}は省略しない([WebStormの自動整形で中�
  [21]: http://efcl.info/2010/1027/res2023/
  [22]: http://blog.livedoor.jp/okashi1/archives/51751259.html
  [23]: http://www.memetodo.co.cc/2011/05/webstorm_29.html
+ [jscs]: https://github.com/jscs-dev/node-jscs#preset  "jscs-dev/node-jscs"
