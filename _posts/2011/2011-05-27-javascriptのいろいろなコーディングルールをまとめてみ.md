@@ -15,14 +15,14 @@ JavaScriptの書き方はJavaScript自体がある程度自由なためいろい
 
 有名な企業やライブラリはコーディングルールも公開している事が多いので適当にまとめてみました
 
-#### [JavaScript style guide &#8211; MDC Docs][1]
+### [JavaScript style guide &#8211; MDC Docs][1]
 
 Mozilla/Firefox向けのものなので、一部ECMAScriptの範囲を超えたものも含まれています。   
 多くの人が見ていると思うので、見たことない人は一度読んでみるといいです。
 
 [jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
-#### [Google JavaScript Style Guide][2]
+### [Google JavaScript Style Guide][2]
 
 [Google JavaScript Style Guide 和訳 — Google JavaScript Style Guide 和訳][3](日本語版)   
 Googleのコーディングルールですが、ルールを並べるだけではなくなぜ悪いのかについても触れているので、一読をお勧めします。   
@@ -30,14 +30,14 @@ Googleのコーディングルールですが、ルールを並べるだけで�
 
 [jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
-#### [JQuery Core Style Guidelines &#8211; jQuery JavaScript Library][5]
+### [JQuery Core Style Guidelines &#8211; jQuery JavaScript Library][5]
 
 jQuery Coreのコーディングルール。   
 Typeチェックの仕方についても触れている。
 
 [jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
-#### [airbnb/javascript](https://github.com/airbnb/javascript "airbnb/javascript")
+### [airbnb/javascript](https://github.com/airbnb/javascript "airbnb/javascript")
 
 [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide "mitsuruog/javacript-style-guide") (日本語訳)
 
@@ -47,29 +47,29 @@ Typeチェックの仕方についても触れている。
 
 [jscs][]にこのコーディングルールをチェックするプリセットが用意されています。
 
-#### [Felix&#8217;s Node.js Style Guide][7]
+### [Felix&#8217;s Node.js Style Guide][7]
 
 [Felix&#8217;s Node.js Style Guide(和訳)][8](日本語版)   
 Node.jsにおけるコーディングルール。(公式なものではない。no official document)   
 Node.jsに限らず、クライアントサイドJavaScriptに置いても参考になる部分は多い。
 
-#### [Code Conventions for the JavaScript Programming Language][9]
+### [Code Conventions for the JavaScript Programming Language][9]
 
 Douglas Crockfordによるもの。   
 コーディングルールというよりは慣習的なもの。   
 同作者による[JSLint][10]も併用しましょう。([JSLint][10] or [JSHint][11]は他のコーディングルールであっても採用してよいもの)
 
-#### [Code Guidelines for Rich Internet Application Development][12]
+### [Code Guidelines for Rich Internet Application Development][12]
 
 コーディングルールではなくてガイドライン的なものです、HTMLやCSS、JavaScriptについてのガイドラインを書かれている。
 
-#### [Introduction to Apple JavaScript Coding Guidelines][13]
+### [Introduction to Apple JavaScript Coding Guidelines][13]
 
 [JavaScript Coding Guidelines for Mac OS X][14](日本語版)   
 Appleによるコーディングのガイドライン。   
 &#8220;JavaScriptのベストプラクティス&#8221;でコーディングで気をつける事について触れている。
 
-#### [The WebKit Open Source Project &#8211; WebKit Coding Style Guidelines][15]
+### [The WebKit Open Source Project &#8211; WebKit Coding Style Guidelines][15]
 
 JavaScriptではありませんが、Webkitにおけるコーディングルール。   
 ホワイトスペースやLine breakingの所はJavaScriptの場合でも参考になる。   
@@ -77,15 +77,13 @@ uupaaさんがこれをベースに一部分を変更した感じで使ってる
 
 *   [CodingStyle &#8211; uupaa-js &#8211; JavaScript Coding Style Guide &#8211; JavaScript Library for Casual Creator &#8211; Google Project Hosting][16]
 
-#### [サイボウズで学んだこと &#8211; IT戦記][17]
+### [サイボウズで学んだこと &#8211; IT戦記][17]
 
 amachangによるもの。   
 大規模 JavaScript 開発におけるルールや命名規則、デバッグ、パフォーマンスについて触れています。   
 コーディングルールを整えてどのように実践したかについて参考になります。
 
-#### [JavaScriptパターン][18] (オライリー本)
-
-#### 
+### [JavaScriptパターン][18] (オライリー本)
 
 <div class="azlink-box" style="margin-bottom: 0px;">
   <div class="azlink-image" style="float: left;">
@@ -116,7 +114,7 @@ amachangによるもの。
 そのため、書き方に不安を持ってる人はなぜダメなのかについても触れている[Google JavaScript Style Guide 和訳][3]を読むのがよいと思います。(読みやすい日本語版もあるしね)   
 コーディングルールはコードに一貫性を持つためにあると思います。頻繁にルールを変える必要はないと思いますが、必ずしもそのルールが、その時の(実行環境|JavaScript)において最適な書き方ではない場合もあります。そういうときはルールの更新をしましょう。
 
-#### おまけ
+### おまけ
 
 自分の場合は[WebStorm][20]の[自動整形][21]に任せている(といっても膨大なルール設定があるため、上記で紹介したコーディングルールを自動化できる)ので、基本的にはIDE任せという書き方にしています。   
 セミコロン忘れなどについてはcomplete current statement機能([ [WebStorm]Complete Current Statementがとても便利な件(・∀・)][22])を使ったり、[WebStorm][20]のシンタックスチェックはかなり優秀なのでエラーも書いてる途中で発見しやすいです。   
