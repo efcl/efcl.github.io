@@ -85,28 +85,6 @@ amachangによるもの。
 
 ### [JavaScriptパターン][18] (オライリー本)
 
-<div class="azlink-box" style="margin-bottom: 0px;">
-  <div class="azlink-image" style="float: left;">
-    <a name="azlinklink" href="http://www.amazon.co.jp/exec/obidos/ASIN/4873114888/book042-22/ref=nosim/" target="_blank"></a><img style="border-style: none;" src="http://ecx.images-amazon.com/images/I/51ZoMJ%2BrLhL._SL160_.jpg" alt="JavaScriptパターン ―優れたアプリケーションのための作法" />
-  </div>
-  
-  <div class="azlink-info" style="line-height: 120%; float: left; margin-left: 15px;">
-    <div class="azlink-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a name="azlinklink" href="http://www.amazon.co.jp/exec/obidos/ASIN/4873114888/book042-22/ref=nosim/" target="_blank"></a>JavaScriptパターン ―優れたアプリケーションのための作法</p> <div class="azlink-powered-date" style="line-height: 120%; margin-top: 5px; font-family: verdana; font-size: 7pt;">
-        posted with <a href="http://sakuratan.biz/azlink/dp/JavaScript%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%20%E2%80%95%E5%84%AA%E3%82%8C%E3%81%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%BD%9C%E6%B3%95/4873114888/book042-22" target="_blank">AZlink</a> at 2011.5.27
-      </div>
-    </div>
-    
-    <div class="azlink-detail">
-      Stoyan Stefanov,豊福 剛 <br />オライリージャパン <br />売り上げランキング: 8213
-    </div>
-    
-    <div class="azlink-link" style="margin-top: 5px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873114888/book042-22/ref=nosim/" target="_blank">Amazon.co.jp で詳細を見る</a>
-    </div>
-  </div>
-</div>
-
 この書籍の[Chapter 2. Essentials][19]において、JavaScriptのコーディングルールが紹介されています。   
 また避けるべき事やどう書くべきなのかについてもかなり深く書かれています。
 
