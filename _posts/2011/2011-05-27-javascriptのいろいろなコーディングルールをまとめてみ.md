@@ -122,5 +122,5 @@ if, for, while, doなどの{}は省略しない([WebStormの自動整形で中�
  [20]: http://www.jetbrains.com/webstorm/
  [21]: http://efcl.info/2010/1027/res2023/
  [22]: http://blog.livedoor.jp/okashi1/archives/51751259.html
- [23]: http://www.memetodo.co.cc/2011/05/webstorm_29.html
+ [23]: http://meme.efcl.info/2011/05/webstorm_29.html
  [jscs]: https://github.com/jscs-dev/node-jscs#preset  "jscs-dev/node-jscs"
