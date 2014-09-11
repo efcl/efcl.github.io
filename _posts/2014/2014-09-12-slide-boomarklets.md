@@ -1,5 +1,5 @@
 ---
-title: "SlideShareやSpeackerDeckで現在ページのパーマネントリンクを取得するブックマークレット"
+title: "SlideShareやSpeackerDeckで現在ページを取得するブックマークレット"
 author: azu
 layout: post
 date : 2014-09-12T08:00
@@ -62,8 +62,8 @@ SlideShareやSpeackerDeck等で現在表示してるページのパーマネン�
 <p>Drop & Drop <a href="javascript:..." rel="bookmarklets">where-page-in-slide</a> to bookmark toolbar.</p>
 ```
 
-これで、ブックマークレットファイルだけを更新すれば配布ページも自動的に更新されるという形にしてます。
+これで、ブックマークレットファイルだけを更新すれば配布ページも自動的に更新されるようになります。
 
 ブックマークレットの配布は[let.hatelabo.jp](http://let.hatelabo.jp/ "let.hatelabo.jp")を使うのが楽なのですが、httpsに対応してないためこういう配布方法にしました。
-他のメリットとしては一つのファイルにまとめて非同期ロードを無くす事でポップアップブロックの制限が外れることがあります。
-Browserifyを使えば気軽にライブラリもインライン化して入れられるのでべんりです。
+他のメリットとしては一つのファイルにまとめる事(ブックマークレット内で`<script>`ロードしないこと)でポップアップブロックの制限にかからなくなることあげられます。
+Browserifyを使えば気軽にライブラリもインライン化して入れられるので便利です。
