@@ -1,5 +1,5 @@
 ---
-title: "SlideShareやSpeackerDeckで現在ページを取得するブックマークレット"
+title: "SlideShareや SpeakerDeckで現在ページを取得するブックマークレット"
 author: azu
 layout: post
 date : 2014-09-12T08:00
@@ -10,7 +10,7 @@ tags:
     - GitHub
 
 ---
-SlideShareやSpeackerDeck等で現在表示してるページのパーマネントにURLを書き換えるブックマークレットを書きました。
+SlideShareやSpeakerDeck等で現在表示してるページのパーマネントにURLを書き換えるブックマークレットを書きました。
 
 - [where-page-in-slide](http://azu.github.io/where-page-in-slide/ "where-page-in-slide")
 
