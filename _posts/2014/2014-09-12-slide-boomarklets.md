@@ -1,5 +1,5 @@
 ---
-title: "SlideShareやSpeakerDeckで現在ページを取得するブックマークレット"
+title: "SlideShareやSpeakerDeckでページのパーマネントリンクを作るブックマークレット"
 author: azu
 layout: post
 date : 2014-09-12T08:00
