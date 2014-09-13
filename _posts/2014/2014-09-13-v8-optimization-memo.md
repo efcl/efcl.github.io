@@ -64,8 +64,9 @@ p2.name = "BREAK"; // <= これで最適化は壊れる
 
 ### [IRHydra2 ](http://mrale.ph/irhydra/2/# "IRHydra2 ")
 
-IRHydraは、Chrome/V8のデバッグオプションでIR(中間表現)やインライン化等のログを元に**最適化がされていない**(de-opt)な部分を可視化したり、ディスアセンブリ、コントールフローの表示等をしてくれるツールです。
+IRHydraは、Chrome/V8のデバッグオプションでIR(中間表現)やインライン化等のログを元に**最適化がされていない**(de-opt)な部分を可視化したり、ディスアセンブリ(コードと並べて表示も出来る)、コントールフローの表示等をしてくれるツールです。
 (Dart VMにも対応してます)
+
 
 - [Release the IRHydra!](http://mrale.ph/blog/2013/02/17/release-the-irhydra.html "Release the IRHydra!") v1 
 -  [(Pre)release IRHydra 2.0](http://mrale.ph/blog/2014/01/28/prerelease-irhydra2.html "(Pre)release IRHydra 2.0") v2- この動画でdemoを扱ってるので見ておくといいです。
