@@ -41,7 +41,7 @@ function Point(x, y) {
 }
 ```
 
-のようなコンストラクタで、これを`new`したインスタンスの形(プロパティが名前、種類とか)が同じなら、プロパティのアクセスが高速になるやつ。
+のようなコンストラクタで、これを`new`したインスタンスの形(プロパティの名前、種類とか)が同じなら、プロパティのアクセスが高速になるやつ。
 
 - [JIT compilation - TechTalksNSU - March 2014](http://mrale.ph/talks/techtalksnsu2014/#/31 "JIT compilation - TechTalksNSU - March 2014") 図だとこれ面白い
 
