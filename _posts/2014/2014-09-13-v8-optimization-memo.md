@@ -221,7 +221,7 @@ for(var i = 0; i < 10000; i++) {
 - Dead code elimination (DCE)
 - [v8-perf/compiler.md at master · thlorenz/v8-perf](https://github.com/thlorenz/v8-perf/blob/master/compiler.md#optimizing-compiler "v8-perf/compiler.md at master · thlorenz/v8-perf")
 
-[最適化を無効化する方法はありますが](http://kolodny.github.io/blog/blog/2014/05/19/unoptimize-devtools-for-easy-debugging/ "Unoptimize V8 for Easy Debugging - Moshe&#39;s Blog")、ベンチマークを取りたい時は最適化自体は有効あってもいいと思うので、それが意図したもの以外も最適化されてるケースがあるかもというのが正しいベンチマークを取る難しさかも知れません。
+[最適化を無効にする方法はありますが](http://kolodny.github.io/blog/blog/2014/05/19/unoptimize-devtools-for-easy-debugging/ "Unoptimize V8 for Easy Debugging - Moshe&#39;s Blog")、ベンチマークを取りたい時は最適化自体は有効あってもいいと思うので、それが意図したもの以外も最適化されてるケースがあるかもというのが正しいベンチマークを取る難しさかも知れません。
 
 ## 意識できるレベルの最適化
 
