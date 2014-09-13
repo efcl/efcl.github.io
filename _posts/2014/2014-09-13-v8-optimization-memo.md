@@ -215,7 +215,7 @@ for(var i = 0; i < 10000; i++) {
 
 `multiply()` という計算を沢山するのを計測したいわけですが、この結果は結局使われていないため、この`multiply(a,b);`という部分は無意味なコードとみなされてるかもしれません。
 
-そのような無意味なコードであるため取り除かれる(Dead code elimination (DCE))可能性があります。(どれくらい行われるのか細かい話は分からない)
+そのような無意味なコードは取り除かれる(Dead code elimination (DCE))可能性があります。(どれくらい行われるのか細かい話は分からない)
 
 - LICM(loop-invariant code motion)
 - Dead code elimination (DCE)
