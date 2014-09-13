@@ -11,7 +11,7 @@ tags:
     - 最適化
 
 ---
-V8 の最適化について 色々(主に[Vyacheslav Egorov](http://mrale.ph/ "Vyacheslav Egorov")さんの記事や[スライド](http://mrale.ph/talks/ "My Talks"))読んでてたのでそれのメモ。
+V8 の最適化について 色々(主に[Vyacheslav Egorov](http://mrale.ph/ "Vyacheslav Egorov")さんの記事や[スライド](http://mrale.ph/talks/ "My Talks"))読んでたのでそれのメモ。
 
 この文章は2014年9月13日に書かれて最適化されていないため、この文章を元に最適化をすると失敗すると思います。
 
