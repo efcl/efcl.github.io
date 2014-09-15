@@ -111,6 +111,22 @@ W3Cの場合は、バージョン管理+ファイル置き場としては[dvcs.w
 
 そのため、単純に仕様がどこにあるのかを見たい場合は、最初に紹介した公式サイト[W3C](http://www.w3.org/TR/ "W3C Open Source Software")や[WHATWG](http://www.whatwg.org/specs/ "WHATWG")から該当する仕様を探すのがいいと思います。
 
+**追記**: 仕様のURL等やメタ情報が[tobie/specref](https://github.com/tobie/specref "tobie/specref")にてまとめられています。
+
+JSONファイルで仕様書のバージョン毎のURLや作者などがまとめられていて、
+`http://specref.jit.su/bibrefs?refs=SVG,REX,DAHUT` のようにAPIとして使うことも出来ます。
+
+- W3C
+- WHATWG
+- ECMA
+- IETF
+
+など殆どの仕様がまとめられているのでこれを参照するのが簡単だと思います。
+
+これを元に仕様書をまとめてダウンロードするものを作りました
+
+- [azu/webspec-downloader](https://github.com/azu/webspec-downloader "azu/webspec-downloader")
+
 ----
 
 
