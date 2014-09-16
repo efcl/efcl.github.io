@@ -137,7 +137,7 @@ via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](ht
 
 [Web NFC API](http://w3c.github.io/nfc/proposals/common/nfc.html "Web NFC API")など最近かかれてGitHubに公開されている仕様には
 [ReSpec](http://www.w3.org/respec/ "ReSpec")というバッジが付いている事があります。
-これは仕様の検索やチェック機能が入っていますが、これはspecrefのAPIを使って実装されています。
+仕様の検索やチェック機能が入っていますが、これはspecrefのAPIを使って実装されています。
 
 - [ReSpec](http://www.w3.org/respec/ "ReSpec")
 - [darobin/respec](https://github.com/darobin/respec "darobin/respec")
