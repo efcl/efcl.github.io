@@ -31,6 +31,8 @@ JavaScriptにおけるPromiseの仕様といえば、次期ECMAScriptの[ECMAScr
 
 実際に見ていくと以下のような仕様がPromiseを参照しています。
 
+＊ 時期によってDOM PromiseとES6 Promiseが混ざっています(今回は両方の一覧を出しています)
+
 ---
 
 ### Fetch Standard
