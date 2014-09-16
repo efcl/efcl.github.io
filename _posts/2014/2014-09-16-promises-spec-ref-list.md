@@ -135,8 +135,9 @@ via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](ht
 
 [![nfc](http://monosnap.com/image/Vq6q1xOoXpgYyvfj5P06RY1GuLMdo5.png)](http://w3c.github.io/nfc/proposals/common/nfc.html)
 
-[Web NFC API](http://w3c.github.io/nfc/proposals/common/nfc.html "Web NFC API")など最近かかれてGitHubに公開されている仕様についている、
-[ReSpec](http://www.w3.org/respec/ "ReSpec")というクロスリファレンスの機能はこのAPIを使って実装されています。
+[Web NFC API](http://w3c.github.io/nfc/proposals/common/nfc.html "Web NFC API")など最近かかれてGitHubに公開されている仕様には
+[ReSpec](http://www.w3.org/respec/ "ReSpec")というバッジが付いている事があります。
+これは仕様の検索やチェック機能が入っていますが、これはspecrefのAPIを使って実装されています。
 
 - [ReSpec](http://www.w3.org/respec/ "ReSpec")
 - [darobin/respec](https://github.com/darobin/respec "darobin/respec")
