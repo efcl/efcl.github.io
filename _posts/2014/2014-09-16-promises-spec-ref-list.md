@@ -115,15 +115,28 @@ f.load().then(function (loadedFace) {
 
 via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](http://sadah.hatenablog.com/entry/2014/06/30/211944 "CSS Font Loading Module Level 3を試してみた - console.blog(self);")
 
-このように、現状でも結構の仕様がPromiseを使っています。
-そのため、今後出てくるAPIを使う際には若干Promiseの基本的な知識は必要になってくると思います。
+このように、策定中の仕様も多いですが、色々な仕様がPromiseを使っています。
+そのため、今後出てくるAPIを使う際にはPromiseの基本的な知識は必要になってくると思います。
 
 - [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")
 
 ## どうやって調べたか
 
-[ウェブの仕様は今どこにあるのか？ | Web Scratch](http://efcl.info/2014/09/02/webspec-here/ "ウェブの仕様は今どこにあるのか？ | Web Scratch")という記事でも、色々書いたましたが、仕様のURLを調べるには[tobie/specref](https://github.com/tobie/specref "tobie/specref")を使うのが簡単です。
+[ウェブの仕様は今どこにあるのか？ | Web Scratch](http://efcl.info/2014/09/02/webspec-here/ "ウェブの仕様は今どこにあるのか？ | Web Scratch")という記事でも、色々書きましたが仕様のURLを調べるには[tobie/specref](https://github.com/tobie/specref "tobie/specref")を使うのが簡単です。
 
-JSONで仕様の一覧(W3C,WHATWG,IETFは大体あるはず)を取得できるので、これを使って仕様をまとめてダウンロードする[azu/webspec-downloader](https://github.com/azu/webspec-downloader "azu/webspec-downloader")というものを書いてダウンロードしまして調べました。
+[tobie/specref](https://github.com/tobie/specref "tobie/specref")からJSONで仕様の一覧(W3C,WHATWG,IETFは大体あるはず)を取得できます。
+これのデータを使って仕様をまとめてダウンロードする[azu/webspec-downloader](https://github.com/azu/webspec-downloader "azu/webspec-downloader")というものを書きました。
 
 ダウンロードしたhtml等をgrepして目視でまとめました。[azu/reference-promises-spec](https://github.com/azu/reference-promises-spec "azu/reference-promises-spec")にもう少し詳しく書いてあります)
+
+[tobie/specref](https://github.com/tobie/specref "tobie/specref") はWeb APIとしても使えるので、
+もっと色々な使い道があるかもしれません。
+
+
+[![nfc](http://monosnap.com/image/Vq6q1xOoXpgYyvfj5P06RY1GuLMdo5.png)](http://w3c.github.io/nfc/proposals/common/nfc.html)
+
+[Web NFC API](http://w3c.github.io/nfc/proposals/common/nfc.html "Web NFC API")など最近かかれてGitHubに公開されている仕様についている、
+[ReSpec](http://www.w3.org/respec/ "ReSpec")というクロスリファレンスの機能はこのAPIを使って実装されています。
+
+- [ReSpec](http://www.w3.org/respec/ "ReSpec")
+- [darobin/respec](https://github.com/darobin/respec "darobin/respec")
