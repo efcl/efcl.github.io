@@ -16,11 +16,8 @@ tags:
 その中でJavaScriptで書かれたツールでは[Esprima][2]や[socket.io][3]等のモジュールが[package.json][1]のdependenciesに含まれていると、  
 どのような特性を持っているかなどが分かりやすくなるのでそれをGithubのレポジトリページに表示するGreasemonkeyスクリプトを書きました。
 
-*   [Github: display package.json dependencies for Greasemonkey][4]
+* [azu/github-display-package-dependencies](https://github.com/azu/github-display-package-dependencies "azu/github-display-package-dependencies")
 
- 
-
-<!--more-->
 
 [yahoo/istanbul · GitHub][5]
 
@@ -34,7 +31,6 @@ tags:
 
 意外と便利な感じがするので、.gitmoduleとか他のパッケージ管理とかも同じように対応できたらおもしろいような気がします。
 
-*   [Github: display package.json dependencies for Greasemonkey][4]
 *   [azu/github-display-package-dependencies · GitHub][9]
 
  [1]: https://npmjs.org/doc/json.html
