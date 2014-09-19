@@ -43,9 +43,9 @@ function Point(x, y) {
 
 のようなコンストラクタで、これを`new`したインスタンスの形(プロパティの名前、種類とか)が同じなら、プロパティのアクセスが高速になるやつ。
 
-- [JIT compilation - TechTalksNSU - March 2014](http://mrale.ph/talks/techtalksnsu2014/#/31 "JIT compilation - TechTalksNSU - March 2014") 図だとこれ面白い
+- [JIT compilation - TechTalksNSU - March 2014](http://mrale.ph/talks/techtalksnsu2014/#/31 "JIT compilation - TechTalksNSU - March 2014") 図だとこれが面白い
 
-逆に以下みたいの`p2`みたいに形が崩れると最適化がされなくなる(de-opt)
+逆に以下みたいな`p2`みたいに形が崩れると最適化がされなくなる(de-opt)
 
 ```js
 var p1 = new Point(10, 10);
@@ -60,9 +60,9 @@ p2.name = "BREAK"; // <= これで最適化は壊れる
 
 実装的な話だと[Polymorphic Inline Cache implementation of iv / lv5 - 枕を欹てて聴く](http://constellation.hatenablog.com/entry/2012/12/22/235914 "Polymorphic Inline Cache implementation of iv / lv5 - 枕を欹てて聴く")とか。
 
-このHidden Classとかは皆知ってると思いますが、実際にどういうケースで最適化が**行われないか**は[IRHydra2 ](http://mrale.ph/irhydra/2/# "IRHydra2 ")で確認するのが簡単で面白いです。
+このHidden Classとかは皆知ってると思いますが、実際にどういうケースで最適化が**行われないか**は[IRHydra2](http://mrale.ph/irhydra/2/# "IRHydra2")で確認するのが簡単で面白いです。
 
-### [IRHydra2 ](http://mrale.ph/irhydra/2/# "IRHydra2 ")
+### [IRHydra2](http://mrale.ph/irhydra/2/# "IRHydra2")
 
 > [mraleph/irhydra](https://github.com/mraleph/irhydra "mraleph/irhydra")
 
@@ -73,7 +73,7 @@ IRHydraは、Chrome/V8のデバッグオプションでIR(中間表現)やイン
 - [Release the IRHydra!](http://mrale.ph/blog/2013/02/17/release-the-irhydra.html "Release the IRHydra!") v1 
 -  [(Pre)release IRHydra 2.0](http://mrale.ph/blog/2014/01/28/prerelease-irhydra2.html "(Pre)release IRHydra 2.0") v2- この動画でdemoを扱ってるので見ておくといいです。
 
-[IRHydra2 ](http://mrale.ph/irhydra/2/# "IRHydra2 ")の[demo-1](http://mrale.ph/irhydra/2/#demo-1 "")がまさにHidden Classの最適化されない事例についてのサンプルコードです。
+[IRHydra2](http://mrale.ph/irhydra/2/# "IRHydra2")の[demo-1](http://mrale.ph/irhydra/2/#demo-1 "")がまさにHidden Classの最適化されない事例についてのサンプルコードです。
 
  - [demo.js - irhydra - In browser viewer for V8 and Dart VM compilation artifacts - Google Project Hosting](https://code.google.com/p/irhydra/source/browse/web/demos/v8/deopt-eager/demo.js?name=polymerized "demo.js - irhydra - In browser viewer for V8 and Dart VM compilation artifacts - Google Project Hosting") demo1のコード
 
@@ -83,7 +83,7 @@ v2.name = "whatever";
 loop(v2);
 ```
 
-というようにv2で`Vec2`の形が`.name`によって変化するため、最適化が行われなくなっていることがIRHydra2 では可視化されます。
+というようにv2で`Vec2`の形が`.name`によって変化するため、最適化が行われなくなっていることがIRHydra2では可視化されます。
 
 ![Eager deoptimization](http://efcl.info/wp-content/uploads/2014/09/13-1410615756.png)
 
@@ -138,7 +138,7 @@ loop(v2);
 
 自分は面倒だったので`brew edit v8`で[v8_enable_disassembler=1](https://gist.github.com/azu/203ada47a6a271a91d70 "v8_enable_disassembler=1")したものを作ってインストールしました。
 
-使い方は[IRHydra2 ](http://mrale.ph/irhydra/2/# "IRHydra2 ")に書いてありますが、v8で以下のようにオプションをつけて実行すると(Chromeもjs-flagで同じような感じ)、`hydrogen-34272-1.cfg` のようなのと、`code.asm`というファイルができます。
+使い方は[IRHydra2](http://mrale.ph/irhydra/2/# "IRHydra2")に書いてありますが、v8で以下のようにオプションをつけて実行すると(Chromeもjs-flagで同じような感じ)、`hydrogen-34272-1.cfg`のようなのと、`code.asm`というファイルができます。
 
 ```sh
 v8 example.js \
@@ -223,7 +223,7 @@ for(var i = 0; i < 10000; i++) {
 - Dead code elimination (DCE)
 - [v8-perf/compiler.md at master · thlorenz/v8-perf](https://github.com/thlorenz/v8-perf/blob/master/compiler.md#optimizing-compiler "v8-perf/compiler.md at master · thlorenz/v8-perf")
 
-[最適化を無効にする方法はありますが](http://kolodny.github.io/blog/blog/2014/05/19/unoptimize-devtools-for-easy-debugging/ "Unoptimize V8 for Easy Debugging - Moshe&#39;s Blog")、ベンチマークを取りたい時は最適化自体は有効あってもいいと思うので、それが意図したもの以外も最適化されてるケースがあるかもというのが正しいベンチマークを取る難しさかも知れません。
+[最適化を無効にする方法はありますが](http://kolodny.github.io/blog/blog/2014/05/19/unoptimize-devtools-for-easy-debugging/ "Unoptimize V8 for Easy Debugging - Moshe&#39;s Blog")、ベンチマークを取りたい時は最適化自体は有効であってもいいと思うので、それが意図したもの以外も最適化されてるケースがあるかもというのが正しいベンチマークを取る難しさかも知れません。
 
 ## 意識できるレベルの最適化
 
@@ -232,7 +232,7 @@ ECMAScriptレベルのコードの最適化は実際のコードだと殆ど誤�
 
 意識してやれるレベルのJavaScriptの最適化については[Supersonic JavaScript // Speaker Deck](https://speakerdeck.com/ariya/supersonic-javascript "Supersonic JavaScript // Speaker Deck")、[JavaScript: Need for Speed // Speaker Deck](https://speakerdeck.com/ariya/javascript-need-for-speed "JavaScript: Need for Speed // Speaker Deck")あたりを見るのがいいと思います。
 
-実際にこういうエンジンレベルの最適化を意識してるライブラリ例としては[Bluebird](https://github.com/petkaantonov/bluebird "Bluebird")、[Lo-Dash](http://lodash.com/ "Lo-Dash")、[React](https://github.com/facebook/react "React")などがありますが、普通の人はこういう事やらないほうがいいと思います。。
+実際にこういうエンジンレベルの最適化を意識してるライブラリ例としては[Bluebird](https://github.com/petkaantonov/bluebird "Bluebird")、[Lo-Dash](http://lodash.com/ "Lo-Dash")、[React](https://github.com/facebook/react "React")などがありますが、普通の人はこういう事やらないほうがいいと思います。
 
 Bluebirdは特にこれを意識してて、fast  caseに載せるために色々変則的なコードを書いたりしてて、Wikiにもそれらの事についてまとめられています。([ネイティブのPromiseより早い](https://github.com/petkaantonov/bluebird/blob/master/benchmark/stats/latest.md "bluebird/latest.md at master · petkaantonov/bluebird")とかはこういうレベルの話があるからだと思います)
 
@@ -262,5 +262,5 @@ JavaScriptが最適化されるコード書くより、JavaScriptが最適化さ
 
 ## おわりに
 
-[Vyacheslav Egorov](http://mrale.ph/ "Vyacheslav Egorov")さんのブログ読んでてて面白かったのでメモっただけの記事です。
+[Vyacheslav Egorov](http://mrale.ph/ "Vyacheslav Egorov")さんのブログを読んでて面白かったのでメモっただけの記事です。
 最近だと[thlorenz/v8-perf](https://github.com/thlorenz/v8-perf "thlorenz/v8-perf")が広くまとまってるんじゃないかと思います。
