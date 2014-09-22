@@ -13,7 +13,7 @@ tags:
 
 ---
 
-ConstさんがWebKitにコミットしてたCSS JITが入ったiOS8リリースがされたのを記念して[#DOMQuery寿司](http://togetter.com/li/722602 "#DOMQuery寿司")をしてきました。
+ConstさんがWebKitにコミットしてたCSS JIT入りのiOS8リリースがされたのを記念して[#DOMQuery寿司](http://togetter.com/li/722602 "#DOMQuery寿司")をしてきました。
 
 元ネタは以下の記事です。
 
