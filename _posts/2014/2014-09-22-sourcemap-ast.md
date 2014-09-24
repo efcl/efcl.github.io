@@ -185,6 +185,7 @@ Node.jsスタイルでスッキリ書きやすいので最近色々試してい�
 	- [Preventing attacks on a user&#39;s history through CSS :visited selectors](http://dbaron.org/mozilla/visited-privacy "Preventing attacks on a user&#39;s history through CSS :visited selectors") に書かれてないケースを解読
 	- `:visited + *` と `a:visited a:visited`のケース
 	- `visited` が getComputedStyle から読めないのと2状態の関係
+	- [Bug 135639 – CSS: Refactor :visited handling in SelectorChecker](https://bugs.webkit.org/show_bug.cgi?id=135639 "Bug 135639 – CSS: Refactor :visited handling in SelectorChecker")
 - CSS `:has`の問題
 	- `:has`がでてきたら下からたどってきたものを、もう一度下まで辿り直さないといかない(非効率…)
 	- 上手い対処法について考える
