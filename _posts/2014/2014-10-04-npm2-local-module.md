@@ -45,8 +45,19 @@ npm 1.xの時はローカルにあるディレクトリへの相対パスを`dep
 相対パスで参照するので、プロジェクト内に`local_modules`のような場所を作って置くのが、
 シンプルな方法だと思います。
 
+**example-utils.js** の中身は普通のnode moduleのコードです。
+この例だと`fs`モジュールをラップしただけのシンプルなコードです。
+
+```javascript
+var Utils = {};
+Utils.loadFile = function (filePath) {
+    return require("fs").readFileSync(filePath, "utf-8");
+};
+module.exports = Utils;
+```
+
 package.jsonの中身も普通のモジュールと同じですが、npm publishする予定は無いので、
-`"repository"`フィールドを無くす代わりに、`"private": true`というフィールドをつけておくといいです。
+`"repository"`フィールドを外して、`"private": true`というフィールドをつけておくといいです。
 
 ```json
 {
