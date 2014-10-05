@@ -34,11 +34,9 @@ npm 1.xの時はローカルにあるディレクトリへの相対パスを`dep
 
 - [azu/npm-localpaths-example](https://github.com/azu/npm-localpaths-example "azu/npm-localpaths-example")
 
-ローカルモジュールの作り方は同じで、
-普通にnpmで公開するモジュールの作り方と全く同じです。
+ローカルモジュールの作り方は普通にnpmで公開するモジュールと全く同じです。
 
 今回は、[example-utils](https://github.com/azu/npm-localpaths-example/tree/master/local_modules/example-utils "example-utils")というローカルのモジュールを作成しました。
-
 
 - example-utils.js
 - package.json
