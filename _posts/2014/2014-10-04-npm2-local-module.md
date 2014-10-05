@@ -23,9 +23,10 @@ npm 1.xの時はローカルにあるディレクトリへの相対パスを`dep
 
 そのため、`npm link`や`node_modules`にそのまま追加してやるなど、微妙なハックがひつようだった。
 
-しかし、npm 2.0.0で`dependency`フィールドに[Local Paths](https://www.npmjs.org/doc/files/package.json.html#local-paths "Local Paths")の指定がサポートされたので、ローカルに置いたディレクトリをモジュールとして使えるので、require("local-library"); みたいな書き方で使えるようになった。
+しかし、npm 2.0.0で`dependency`フィールドに[Local Paths](https://www.npmjs.org/doc/files/package.json.html#local-paths "Local Paths")の指定がサポートされた。
+そのため、ローカルに置いたディレクトリをモジュールとして使うことができ、`require("local-library");`みたいな書き方が可能になる。
 
-プロジェクトに依存したUtilとかを定義するのに便利という話。
+要はプロジェクトに依存したUtilsとかを定義するのに便利という話。
 
 ## ローカルモジュールの作成
 
@@ -36,7 +37,7 @@ npm 1.xの時はローカルにあるディレクトリへの相対パスを`dep
 ローカルモジュールの作り方は同じで、
 普通にnpmで公開するモジュールの作り方と全く同じです。
 
-今回は、`exmaple-utils`というモジュールを作成しました。
+今回は、[example-utils](https://github.com/azu/npm-localpaths-example/tree/master/local_modules/example-utils "example-utils")というローカルのモジュールを作成しました。
 
 
 - example-utils.js
