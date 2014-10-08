@@ -9,6 +9,7 @@ tags:
     - pdf.js
     - pdf
     - スライド
+issue: https://github.com/efcl/efcl.github.io/issues/35
 
 ---
 
