@@ -56,7 +56,7 @@ http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/pow
 
 pdf.jsは自動でpdfファイルをちょっとづつ取得して表示するので意外大きなファイルでも大丈夫そうだった。
 
-これを`<iframe>`を使って埋め込んだページを公開ページとして用意する形を意図して作りました。
+これを`<iframe>`を使って埋め込んだページ公開するのを意図した感じで作ってあります。(なので http://azu.github.io/slide-pdf.js/ 単体は画面ピッタリ)
 
 ```html
 <iframe id="main-slide"
