@@ -190,6 +190,12 @@ function setupAnnotations(page, viewport, annotationArea) {
 
 やや複雑なのでデフォルトで用意して欲しい感じもしますが、テンプレ的な感じで一度動かせれば結構色々出来そうな感じです。
 
+pdf.jsについては公式のサンプルと以下がとても参考になります。(一部そのままでは動かなかった気がする)
+
+- [PDF.js で遊んでみた (ページの描画，テキスト・注釈の表示など) - きちぽよ〜](http://kichipoyo.hatenablog.com/entry/2013/11/21/223527 "PDF.js で遊んでみた (ページの描画，テキスト・注釈の表示など) - きちぽよ〜")
+
+----
+
 pdf.js 思っている以上に普通に動いて、APIもPromiseベースだったり面白い感じだったのでPDFを使った何かを作りたい時はいじってみると楽しいと思います。
 
 ## まとめ
@@ -197,4 +203,8 @@ pdf.js 思っている以上に普通に動いて、APIもPromiseベースだっ
 - [slide-pdf.js](https://github.com/azu/slide-pdf.js "slide-pdf.js")
 	- pdf.jsを使ったiframeで埋め込みPDF表示ツール
 - [azu/pdf-slide-html](https://github.com/azu/pdf-slide-html "azu/pdf-slide-html")
-	- 上記の埋め込みツールを使ったページを吐き出すジェネレーター
+	- 上記の埋め込みツールを使ったページを吐き出すジェネレータ
+
+今使おうと思うと、自分でslide-pdfをcloneして配置する必要があったりちょっと面倒だと思います。( [azu/pdf-slide-html](https://github.com/azu/pdf-slide-html "azu/pdf-slide-html")も雑なので使いにくい)
+
+もっと使いやすくする pull requestなど待ってます！
