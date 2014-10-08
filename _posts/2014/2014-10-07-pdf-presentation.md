@@ -16,9 +16,8 @@ tags:
 
 <iframe src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
 scrolling="no"
-allowtransparency="true"
 width="100%"
-height="100%"
+height="500"
 style="border:0;">
 </iframe>
 
