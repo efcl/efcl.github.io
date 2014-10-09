@@ -196,13 +196,13 @@ pdf.jsについては公式のサンプルと以下がとても参考になり�
 
 ----
 
-pdf.js 思っている以上に普通に動いて、APIもPromiseベースだったり面白い感じだったのでPDFを使った何かを作りたい時はいじってみると楽しいと思います。
+pdf.js 思っている以上に普通に動いて、APIもPromiseベースだったり面白い感じなのでPDFを使った何かを作りたい時はいじってみると楽しいと思います。
 
 ### FAQ
 
 Q. PDF選択出来るようになったけど文字化けする
 
-おそらく[bcmaps](https://github.com/mozilla/pdf.js/tree/master/external/bcmaps "bcmaps")ファイルが読み込めてないのだと思います。ネットワークパネルで/bcmaps/が404とかになっていたらそれです。
+おそらく[bcmaps](https://github.com/mozilla/pdf.js/tree/master/external/bcmaps "bcmaps")ファイルが読み込めてないのだと思います。ネットワークパネルで/bcmaps/が404になっていたらそれです。
 
 その場合は、以下でcmapsのディレクトリに対してのパスを定義すれば読み込んでくれます。
 
@@ -212,7 +212,7 @@ PDFJS.cMapUrl = "../cmaps/"; // /をつける
 PDFJS.cMapPacked = true; // 拡張子にbcmapを付けるか
 ```
 
-これはPDFの内容によって動的に読み込むみたいで(全部読み込むと数MBあるので)、そのリクエストするURLパスが解決出来てないことが原因だと思います。
+これはPDFの内容によって動的に読み込むため(全部読み込むと数MBあるので)、そのリクエストするURLパスが解決出来てないことが原因だと思います。
 
 ## まとめ
 
