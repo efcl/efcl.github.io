@@ -19,7 +19,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 scrolling="no"
 width="100%"
 height="500"
-style="border:0;">
+style="border:0; background-color:white;">
 </iframe>
 
 http://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを読み込んで表示しています。
