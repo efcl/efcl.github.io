@@ -33,6 +33,10 @@ Reactとreact-routerを使ったクローン
 
 AngularJSを使ったクローン
 
+> [yyx990803/vue-hackernews](https://github.com/yyx990803/vue-hackernews "yyx990803/vue-hackernews")
+
+Vue.jsを使ったクローン
+
 等現在進行形で増えていってる気がします。
 
 [TodoMVC](http://todomvc.com/ "TodoMVC")はいわゆるTODOアプリをデモアプリとして色々なフレームワーク等を使って仕様を満たすものを作るというプロジェクトですが、ネットワークはあまり関係ない構造になっています。
