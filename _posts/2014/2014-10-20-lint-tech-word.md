@@ -43,7 +43,10 @@ WZ EDITORの用語統一辞書をスペルチェックとして使えるCodeMirr
 
 ### 導入方法
 
-[azu/wzeditor-word-rules-parser](https://github.com/azu/wzeditor-word-rules-parser "azu/wzeditor-word-rules-parser")で辞書をパースすると、以下の様なマッチする`pattern`と置換結果が入った`expected`があるオブジェクトが生成されるので、それを`registerSpellDictionary`で登録します。
+[azu/wzeditor-word-rules-parser](https://github.com/azu/wzeditor-word-rules-parser "azu/wzeditor-word-rules-parser")でWZ EDITORの用語統一辞書をパースすると、以下の様なマッチする`pattern`と置換結果が入った`expected`があるオブジェクトが生成されるので、それを`registerSpellDictionary`で登録します。
+
+`WZ EDITORの用語統一辞書` がどういう形式なのかは[WEB+DB PRESS用語統一ルール](https://gist.github.com/inao/f55e8232e150aee918b9 "WEB+DB PRESS用語統一ルール")や[wzeditor-rule.md](https://github.com/azu/wzeditor-word-rules-parser/blob/master/doc/wzeditor-rule.md "wzeditor-rule.md")などを見れば大体分かると思います。
+(タブ区切りで置換対象と置換後の単語を書いて、正規表現などで前後の条件を書く感じの1行1個の辞書です)
 
 そしてCodeMirrorのエディタには`gutters`と`lintTypo`を設定すれば、行番号の所にLintの結果が表示されるようになります。
 
