@@ -1,5 +1,5 @@
 ---
-title: "WEB+DB PRESS用語統一ルール等を使った技術用語のLintを出来るCodeMirrorアドオンを書いた"
+title: "WEB+DB PRESS用語統一ルール等を使った技術用語のLintをするCodeMirrorアドオンを書いた"
 author: azu
 layout: post
 date : 2014-10-20T19:13
