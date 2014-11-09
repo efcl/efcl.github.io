@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="layout-reverse theme-base-0d">
+{% include github-ribbon.html %}
+<header>
+    {% include header.html %}
+</header>
+<aside>
+    <div class="sidebar">
+        <div class="container">
+            <div class="profile">
+                <a href="{{ site.baseurl }}/about/" title="About"><img src="{{ site.baseurl }}/public/img/azu.png"
+                                                                       alt="Profile"></a>
+
+                <h2><a href="{{ site.baseurl }}/about/" title="About">azu</a></h2>
+            </div>
+            <div class="social">
+                <a class="twitter" href="http://twitter.com/{{site.author.twitter}}" title="Twitter">
+                    <img src="{{ site.baseurl }}/public/svg/twitter.svg" alt="twitter" width="32" height="32"/>
+                </a>
+                <a class="github" href="https://github.com/{{site.author.github}}" title="GitHub">
+                    <img src="{{ site.baseurl }}/public/svg/github.svg" alt="GitHub" width="32" height="32"/>
+                </a>
+                <a class="rss" href="/feed/" title="RSS Feed">
+                    <img src="{{ site.baseurl }}/public/svg/feed.svg" alt="RSS" width="32" height="32"/>
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="search">
+                    <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                        <label for="search-box-label">検索:</label>
+                        <input type="hidden" name="q" value="site:efcl.info">
+                        <input id="search-box-label" type="search" name="q">
+                        <input type="submit" value="search">
+                    </form>
+                </div>
+            </nav>
+            <nav class="sidebar-nav">
+                <div class="about-menu">
+                    <ul class="recent-posts">
+                        <li><a href="/" title="Home" rv-on-click="action.load" data-route-path="home">Home</a></li>
+                        <li><a href="/about/timeline/" title="about me" rv-on-click="action.load"
+                               data-route-path="home">タイムライン</a>
+                        </li>
+                        <li><a href="/about/sites/" title="Sites" rv-on-click="action.load"
+                               data-route-path="home">活動サイト</a></li>
+                        <li><a href="/about/products/" title="products" rv-on-click="action.load"
+                               data-route-path="product">制作物</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+<article>
+    <div class="content container">
+        {{ content }}
+    </div>
+</article>
+</body>
+</html>
