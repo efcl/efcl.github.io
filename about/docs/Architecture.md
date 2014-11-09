@@ -36,3 +36,7 @@
 - ロードした時-> [routr](https://github.com/yahoo/routr "routr") でマッチ判定 -> Router-Action -> Store
     
 ### Page
+
+- home
+- sites
+- timeline
