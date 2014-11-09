@@ -15,7 +15,10 @@ production_url : "http://efcl.info"
 github_repo_url : https://github.com/efcl/efcl.github.io
 timezone: Asia/Tokyo
 encoding: utf-8
-exclude: ["README.md"]
+exclude:
+  - README.md
+  - config.rb
+  - about/node_modules
 # Setup
 author:
   name: 'azu'
