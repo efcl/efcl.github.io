@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "description": "ポートフィリオサイト",
+  "version": "1.0.0",
+  "homepage": "https://github.com/azu/portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/portfolio.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack -d --watch",
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/portfolio/issues"
+  },
+  "dependencies": {
+    "array.from": "^0.2.0",
+    "jquery": "^2.1.1",
+    "jquery.scrollto": "^1.4.13",
+    "mcfly": "0.0.4",
+    "rivets": "^0.7.1",
+    "routr": "0.0.4"
+  },
+  "devDependencies": {
+    "es6-loader": "^0.2.0",
+    "es6-promise": "^2.0.0",
+    "espower-loader": "^0.9.1",
+    "intelli-espower-loader": "^0.4.0",
+    "mocha": "^2.0.1",
+    "power-assert": "^0.9.1",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.6.5"
+  }
+}

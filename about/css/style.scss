@@ -1,0 +1,54 @@
+@charset "utf-8";
+// 無いと日本語扱えない
+@import "mixin";
+
+$seperate-color: #eee;
+$spacer: 10px;
+@import "timeline";
+
+.nav-site {
+  margin: 0 1em;
+  display: inline-block;
+  text-align: center;
+  a {
+    display: block;
+  }
+  img {
+    width: 140px;
+    height: 100px
+  }
+}
+
+#contents {
+  $gutter: 45px;
+  $border-size: 1px;
+  padding-left: ceil($gutter/2 - $border-size);
+  margin-left: ceil($gutter/2 - $border-size);
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  border-left: $border-size solid $seperate-color;
+  p {
+    line-height: 1.5;
+  }
+  .sites, .products {
+    margin-top: 10px;
+    border-top: 1px solid $seperate-color;
+    h1 {
+      line-height: 1.2;
+      padding-left: 10px;
+      border-left: 4px solid #111;
+    }
+  }
+  .site-description, .description {
+    background-color: #e3ffa6;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 10px 10px 15px;
+    text-align: left;
+  }
+  .mail-form {
+    padding: 5px 10px;
+    border: none;
+  }
+
+}
