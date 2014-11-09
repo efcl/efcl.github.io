@@ -6,12 +6,16 @@ var router = new Router({
         path: "/",
         method: 'get'
     },
+    "timeline": {
+        path: "/about/timeline.html",
+        method: 'get'
+    },
     "sites": {
         path: "/about/sites.html",
         method: 'get'
     },
     "products": {
-        path: "product.html",
+        path: "/about/product.html",
         method: 'get'
     }
 });

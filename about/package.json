@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack -p --devtool source-map",
     "watch": "webpack -d --watch",
     "test": "mocha test/*.js"
   },
