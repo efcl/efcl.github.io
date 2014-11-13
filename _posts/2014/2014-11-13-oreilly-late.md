@@ -6,6 +6,7 @@ date : 2014-11-13T21:08
 category: 雑記
 tags:
     - Book
+    - 電子書籍
 
 ---
 
