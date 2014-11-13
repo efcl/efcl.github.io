@@ -1,5 +1,5 @@
 ---
-title: "オライリージャパンの電子書籍は紙の本の大体4ヶ月後に出る"
+title: "オライリージャパンの電子書籍は紙の本の大体4ヶ月後に出てる"
 author: azu
 layout: post
 date : 2014-11-13T21:08
@@ -40,4 +40,4 @@ tags:
 最近だと技術評論社の[「テクニックバイブル」シリーズや「パーフェクト」シリーズ](http://gihyo.jp/news/nr/2014/10/2401 "プログラマ必読の「テクニックバイブル」シリーズがKindle/Koboでも購入可能に！～JavaScriptやHTML5，Vimなどの厳選テクニックが満載：ニュースリリース｜gihyo.jp … 技術評論社")の電子版がやっと購入できるようになったので、もっともっと電子版を出して欲しい所存です。
 
 
-日本の出版社の電子版の新着は[電子書籍（IT系技術書）の新刊情報 - ブクログ](http://booklog.jp/opds "電子書籍（IT系技術書）の新刊情報 - ブクログ")を見るとまとめられているので便利です([Open Publication Distribution System | Official Specification &amp; Blog](http://opds-spec.org/ "Open Publication Distribution System | Official Specification &amp; Blog")に対応してるやつだけなので、オライリーとかはない…)
+日本の出版社の電子版の新着は[電子書籍（IT系技術書）の新刊情報 - ブクログ](http://booklog.jp/opds "電子書籍（IT系技術書）の新刊情報 - ブクログ")を見るとまとめられているので便利です([Open Publication Distribution System | Official Specification &amp; Blog](http://opds-spec.org/ "Open Publication Distribution System | Official Specification &amp; Blog")に対応してるやつだけ<del>なので、オライリーとかはない…</del>オライリーもありました。)
