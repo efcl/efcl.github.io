@@ -31,7 +31,7 @@ tags:
 
 オライリージャパンはまだ大体出るのでいいですが(やっぱり販売スケジュール欲しいけど…)、他の出版社だとまだ電子版がでるかどうか分からないケースも多い感じがします。
 
-ことあるごと[電子版](https://twitter.com/azu_re/status/382055902171254784)が[でるかどうか](https://twitter.com/azu_re/status/322711955909537792)の[問い合わせ](https://twitter.com/azu_re/status/437150957973950464)をしてますが、出版社側も需要があるかどうか分からないので出せない的な返事をもらったこともあるので、その辺の需要の意思は伝えたほうがいい気がします。
+ことあるごとに[電子版](https://twitter.com/azu_re/status/382055902171254784)が[でるかどうか](https://twitter.com/azu_re/status/322711955909537792)の[問い合わせ](https://twitter.com/azu_re/status/437150957973950464)をしてますが、出版社側も需要があるかどうか分からないので出せない的な返事をもらったこともあるので、その辺の需要の意思は伝えたほうがいい気がします。
 
 <blockquote class="twitter-tweet" lang="en"><p>電子版の販売の問題 Twitterに書いても反応はないので(翔泳社の方がたまに答えてくれるぐらい)、issueを立てるためにメールというプロトコルを使ってissueを積極的に立てて報告した方がいいです。&#10;(需要が分からないので電子版出せないと言われたこともあるので、需要も示せる)</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/437150957973950464">February 22, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
