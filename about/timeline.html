@@ -12,7 +12,7 @@ permalink: /about/timeline.html
 
     <p class="description">今までのネットでの活動を振り返る</p>
     <ol id="timeline">
-        {% for member in site.data.timeline %}
+        {% for member in site.data.azu_timeline %}
         <li>
             <time datetime="{{ member.date | date: '%Y-%m-%d' }}">{{ member.date | date: '%Y年%m月%d日' }}</time>
             <p>{{member.text}}</p>
