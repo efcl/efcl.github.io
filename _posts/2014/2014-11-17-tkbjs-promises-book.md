@@ -18,6 +18,8 @@ tags:
 
 いつ始まるかは[@vestige\_](https://twitter.com/vestige_ "@vestige_")さんをフォローしておけば分かりやすいと思います。(もしくは [#tkbjs][] を見る)
 
+TODO: IFTTTで通知するレシピを作る
+
 - [tkbjs][] Lingrでやってます
 - [#tkbjs][] ハッシュタグ
 - [Online JavaScript 勉強会を始めます！ - tatsuo.sakurai&#39;s blog](http://t2os.hatenablog.com/entry/20100708/1278561934 "Online JavaScript 勉強会を始めます！ - tatsuo.sakurai&#39;s blog")
