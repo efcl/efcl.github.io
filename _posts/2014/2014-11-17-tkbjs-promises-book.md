@@ -16,7 +16,7 @@ tags:
 
 毎月第２、第４火曜日、22時から1時間やっている勉強会です。
 
-<iframe src="https://www.google.com/calendar/embed?src=vatumj33f3su13b1p772ng4oq0%40group.calendar.google.com&ctz=Asia/Tokyo" style="border: 0" width="100%" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://www.google.com/calendar/embed?src=vatumj33f3su13b1p772ng4oq0%40group.calendar.google.com&ctz=Asia/Tokyo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 [tkbjsの開催時間のGoogleカレンダー](https://www.google.com/calendar/embed?src=vatumj33f3su13b1p772ng4oq0%40group.calendar.google.com&ctz=Asia/Tokyo "tkbjs")
 
