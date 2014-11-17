@@ -33,6 +33,7 @@ tags:
 Effective JavaScriptが終わり、次の本として自分が書いた[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")をやることになりました。
 
 Promise本はまだ始めたばかりなので、途中参加でも全く問題ないと思います。
+
 また、[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")はウェブサイトや無料のPDFがあるので、指定の時間に[Online Study TokyoBouldering.js – Lingr](http://lingr.com/room/tkbjs "Online Study TokyoBouldering.js – Lingr")へ来るだけで準備しなくても参加出来ます。
 
 気軽にご参加下さい。
