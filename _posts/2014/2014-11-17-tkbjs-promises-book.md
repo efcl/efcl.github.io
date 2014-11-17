@@ -14,6 +14,8 @@ tags:
 
 [tkbjs][]というオンライン勉強会では、毎回特定の本を選んでオンライン読書会をしています。
 
+Lingr上の [tkbjs][] で少しづつ読んで、気になったところを話し合うという感じの繰り返して進めて行く感じなのでので、常時いないとついていけないとかそういう感じのものではないです。
+
 毎月第２、第４火曜日、22時から1時間やっている勉強会です。
 
 <iframe src="https://www.google.com/calendar/embed?src=vatumj33f3su13b1p772ng4oq0%40group.calendar.google.com&ctz=Asia/Tokyo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
