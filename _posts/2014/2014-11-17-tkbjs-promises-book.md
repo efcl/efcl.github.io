@@ -20,6 +20,8 @@ tags:
 
 [tkbjsの開催時間のGoogleカレンダー](https://www.google.com/calendar/embed?src=vatumj33f3su13b1p772ng4oq0%40group.calendar.google.com&ctz=Asia/Tokyo "tkbjs")
 
+なので、次は11月 25日 (火曜日)の22〜23時にやる予定です。
+
 いつ始まるかは[@vestige\_](https://twitter.com/vestige_ "@vestige_")さんをフォローするか、カレンダーを見るのがいいと思います。
 
 - [tkbjs][] Lingrでやってます
