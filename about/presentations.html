@@ -1,0 +1,45 @@
+---
+layout: about
+title: 勉強会での発表履歴
+permalink: /about/presentations.html
+---
+
+<link href="./css/style.css" type="text/css" rel="stylesheet">
+<h1>勉強会での発表履歴</h1>
+
+<p class="description">勉強会やイベントでの発表してきた内容について</p>
+<ol id="timeline">
+</ol>
+<table class="presentation-table">
+    <caption>
+        <strong>発表してきたスライドの一覧</strong>
+    </caption>
+    <thead>
+    <tr>
+        <th>日付</th>
+        <th>発表タイトル</th>
+        <th>レポート</th>
+        <th>イベント名</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for event in site.data.azu_events %}
+    <tr>
+        <th class="presentation-table__item presentation-table__item--date">
+            <time datetime="{{ event.date | date: '%Y-%m-%d' }}">{{ event.date | date: '%Y年%m月%d日' }}</time>
+        </th>
+        <td class="presentation-table__item presentation-table__item--slide">
+            <a href="{{ event.URL }}" title="{{ event.title }}">{{ event.title }}</a></td>
+        <td class="presentation-table__item presentation-table__item--report">
+            <a href="{{ event.report_URL }}">{{ event.report_URL }}</a></td>
+        {% if event.event_URL == blank or event.event_URL == nil %}
+        <td class="presentation-table__item presentation-table__item--event">{{ event.event_title }}</td>
+        {% else %}
+        <td class="presentation-table__item presentation-table__item--event">
+            <a href="{{ event.event_URL }}">{{ event.event_title }}</a></td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<script src="built/index.built.js"></script>

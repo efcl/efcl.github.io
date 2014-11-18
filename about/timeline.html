@@ -7,16 +7,14 @@ permalink: /about/timeline.html
 <link href="./css/style.css" type="text/css" rel="stylesheet">
 今までやってきたこと
 
-<article>
-    <h1>タイムライン</h1>
+<h1>タイムライン</h1>
 
-    <p class="description">今までのネットでの活動を振り返る</p>
-    <ol id="timeline">
-        {% for member in site.data.timeline %}
-        <li>
-            <time datetime="{{ member.date | date: '%Y-%m-%d' }}">{{ member.date | date: '%Y年%m月%d日' }}</time>
-            <p>{{member.text}}</p>
-        </li>
-        {% endfor %}
-    </ol>
-</article>
+<p class="description">今までのネットでの活動を振り返る</p>
+<ol id="timeline">
+    {% for member in site.data.azu_timeline %}
+    <li>
+        <time datetime="{{ member.date | date: '%Y-%m-%d' }}">{{ member.date | date: '%Y年%m月%d日' }}</time>
+        <p>{{member.text}}</p>
+    </li>
+    {% endfor %}
+</ol>

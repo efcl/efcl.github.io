@@ -1,0 +1,175 @@
+- date: 2011-01-16
+  title: "世界のJavaScript情報を読もう"
+  URL: http://www.slideshare.net/efcl/javascript-6580879
+  report_URL: http://efcl.info/2011/0117/res2229/
+  event_title: "Mozilla 勉強会@東京 5th"
+  event_URL: https://dev.mozilla.jp/events/workshop08/
+
+- date: 2012-01-15
+  title: "JSer.info 1年を迎えて"
+  URL: http://azu.github.io/slide/offline_study/jser_info.html
+  report_URL: http://jser.info/post/15883533195/
+  event_title: "オフラインJavaScript勉強会"
+  event_URL: https://atnd.org/events/23551
+
+- date: 2012-01-15
+  title: "世界のJavaScript情報を読もう @ 2012"
+  URL: http://azu.github.io/slide/offline_study/javascript_world.html
+  report_URL: http://jser.info/post/15883533195/
+  event_title: "オフラインJavaScript勉強会"
+  event_URL: https://atnd.org/events/23551
+
+- date: 2012-02-26
+  title: "WebStorm指南書"
+  URL: http://azu.github.io/slide/webstorm/webstorm.html
+  report_URL: http://efcl.info/2012/0226/res3015/
+  event_title: "横浜JSTDDハンズオン"
+  event_URL: https://atnd.org/events/25519
+
+- date: 2012-03-24
+  title: "JavaScript Testing FrameworkのBusterJSを使う"
+  URL: http://azu.github.io/slide/Kamakura/busterJS.html
+  report_URL: http://efcl.info/2012/0324/res3020/
+  event_title: "カヤック社内勉強会"
+
+- date: 2013-05-10
+  title: "iOS Unit Test"
+  URL: http://azu.github.io/slide/OCStudy/ios_unit_test.html
+  report_URL: http://efcl.info/2013/0607/res3295/
+  event_title: "Objective-C勉強会＠東京"
+  event_URL: http://partake.in/events/30064810-a41b-4de6-a49b-897b73a5890d
+
+- date: 2013-06-07
+  title: "NSDate A Live"
+  URL: http://azu.github.io/slide/OCStudy/2013_June/nsdate_a_live.html
+  report_URL: http://efcl.info/2013/0607/res3295/
+  event_title: "Objective-C勉強会＠東京 ６月"
+  event_URL: http://partake.in/events/54f3c547-5ffa-4fd4-8de6-d95788cb3915
+
+- date: 2013-08-02
+  title: "Devlop iOS Library"
+  URL: http://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html
+  report_URL: http://efcl.info/2013/0802/res3377/
+  event_title: "Objective-C勉強会@東京 ８月"
+
+- date: 2013-10-11
+  title: "Array.prototype.reduce Dance"
+  URL: https://gist.github.com/azu/6919649
+  report_URL: http://efcl.info/2013/1011/res3455/
+  event_title: "蕎麦JS"
+
+- date: 2013-11-02
+  title: "NSAttributedString と TextKit"
+  URL: http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html
+  report_URL: http://efcl.info/2013/1102/res3462/
+  event_title: "Objective-C勉強会@東京 １１月"
+
+- date: 2013-11-02
+  title: "deprecated! deprecated!"
+  URL: http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html
+  report_URL: http://efcl.info/2013/1102/res3462/
+  event_title: "Objective-C勉強会@東京 １１月"
+
+- date: 2013-11-02
+  title: "最近作ったiOSのライブラリ紹介"
+  URL: http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html
+  report_URL: http://efcl.info/2013/1102/res3462/
+  event_title: "Objective-C勉強会@東京 １１月"
+
+- date: 2014-01-15
+  title: "mogenerator – potate tips"
+  URL: http://azu.github.io/slide/potatotips/mogenerator.html
+  report_URL: http://efcl.info/2014/0115/res3586/
+  event_title: "【第3回】potatotips"
+  event_URL: http://connpass.com/event/4563/
+
+- date: 2014-03-28
+  title: "カジュアルJavaScript AST"
+  URL: http://azu.github.io/slide/JSojisan/
+  report_URL: http://efcl.info/2014/0328/res3756/
+  event_title: "JSオジサン #1"
+  event_URL: https://atnd.org/events/48368
+
+- date: 2014-03-31
+  title: "Promises Starter"
+  URL: http://azu.github.io/slide/sushijs/
+  report_URL: http://efcl.info/2014/0401/res3779/
+  event_title: "寿司JS"
+
+- date: 2014-04-02
+  title: "SAKURA(Internet Cloud).js"
+  URL: http://azu.github.io/slide/sakurajs/sakura_cloud.html
+  report_URL: http://efcl.info/2014/0403/res3793/
+  event_title: "桜JS"
+
+- date: 2014-04-02
+  title: "5分で分かるpower assert"
+  URL: http://azu.github.io/slide/sakurajs/power-assert.html
+  report_URL: http://efcl.info/2014/0403/res3793/
+  event_title: "桜JS"
+
+- date: 2014-04-15
+  title: "Test Runner Tips"
+  URL: http://azu.github.io/slide/hasakurajs/
+  report_URL: http://efcl.info/2014/0415/res3844/
+  event_title: "葉桜JS"
+
+- date: 2014-05-28
+  title: "node-webkitとは何か"
+  URL: http://azu.github.io/slide/udonjs/node-webkit.html
+  report_URL: http://efcl.info/2014/0528/res3914/
+  event_title: "うどんJS"
+
+- date: 2014-05-28
+  title: "一人で使えるGithub Issue"
+  URL: http://azu.github.io/slide/udonjs/github-issue.html
+  report_URL: http://efcl.info/2014/0528/res3914/
+  event_title: "うどんJS"
+
+- date: 2014-06-28
+  title: "Githubで書く電子書籍"
+  URL: http://azu.github.io/slide/individual/
+  report_URL: http://efcl.info/2014/0628/res3950/
+  event_title: "個人開発を支える技術Night"
+  event_URL: http://www.zusaar.com/event/10467019
+
+- date: 2014-08-20
+  title: "Objective-CでのPromiseと非同期処理"
+  URL: http://azu.github.io/slide/potatotips/promisekit.html
+  report_URL: http://efcl.info/2014/08/20/potatotips/
+  event_title: "【第8回】potatotips"
+  event_URL: http://efcl.info/2014/08/20/potatotips/
+
+- date: 2014-09-22
+  title: "多段SourceMapと統一的なインターフェース"
+  URL: http://azu.github.io/slide/DOMQuery/sourcemap.pdf
+  report_URL: http://efcl.info/2014/09/22/sourcemap-ast/
+  event_title: "DOMQuery寿司"
+
+- date: 2014-09-22
+  title: "power-assert in browser"
+  URL: http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
+  report_URL: http://efcl.info/2014/09/22/sourcemap-ast/
+  event_title: "DOMQuery寿司"
+
+- date: 2014-10-29
+  title: "明日には使えなくなるES7トーク"
+  URL: http://azu.github.io/slide/es6talks/
+  report_URL: http://efcl.info/2014/10/29/es6-talks/
+  event_title: "ES6+カジュアルトーク"
+  event_URL: http://connpass.com/event/9113/
+
+- date: 2014-11-01
+  title: "JSer.info 200 回目記念イベント"
+  URL: http://azu.github.io/slide/jser200/
+  report_URL: http://efcl.info/2014/11/02/jserinfo200/
+  event_title: "JSer.info 200回記念イベント"
+  event_URL: http://connpass.com/event/9067/
+
+- date: 2014-11-01
+  title: "世界のJavaScriptを読もう @ 2014"
+  URL: http://azu.github.io/slide/jser200/javascript-2014.html
+  report_URL: http://efcl.info/2014/11/02/jserinfo200/
+  event_title: "JSer.info 200回記念イベント"
+  event_URL: http://connpass.com/event/9067/
+
