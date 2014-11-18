@@ -56,6 +56,7 @@
   title: "Array.prototype.reduce Dance"
   URL: https://gist.github.com/azu/6919649
   report_URL: http://efcl.info/2013/1011/res3455/
+  event_title: "蕎麦JS"
 
 - date: 2013-11-02
   title: "NSAttributedString と TextKit"
@@ -70,7 +71,7 @@
   event_title: "Objective-C勉強会@東京 １１月"
 
 - date: 2013-11-02
-  title: "最近作ったiOSのライブラリ紹介";
+  title: "最近作ったiOSのライブラリ紹介"
   URL: http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html
   report_URL: http://efcl.info/2013/1102/res3462/
   event_title: "Objective-C勉強会@東京 １１月"
@@ -93,19 +94,19 @@
   title: "Promises Starter"
   URL: http://azu.github.io/slide/sushijs/
   report_URL: http://efcl.info/2014/0401/res3779/
-  event_title: "寿司js"
+  event_title: "寿司JS"
 
 - date: 2014-04-02
   title: "SAKURA(Internet Cloud).js"
   URL: http://azu.github.io/slide/sakurajs/sakura_cloud.html
   report_URL: http://efcl.info/2014/0403/res3793/
-  event_title: "桜js"
+  event_title: "桜JS"
 
 - date: 2014-04-02
   title: "5分で分かるpower assert"
   URL: http://azu.github.io/slide/sakurajs/power-assert.html
   report_URL: http://efcl.info/2014/0403/res3793/
-  event_title: "桜js"
+  event_title: "桜JS"
 
 - date: 2014-04-15
   title: "Test Runner Tips"
