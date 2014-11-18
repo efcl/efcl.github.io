@@ -124,5 +124,8 @@
     padding: 5px 10px;
     border: none; }
 
+.presentation-table {
+  background-color: #efc; }
+
 .presentation-table__item--date, .presentation-table__item--report {
   font-size: 80%; }
