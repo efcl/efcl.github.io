@@ -10,7 +10,7 @@ tags:
 
 ---
 
-最近の[O&#39;Reilly Japan](https://www.oreilly.co.jp/index.shtml "O&#39;Reilly Japan - Home")の電子版は紙の書籍がリリースされてから大体4ヶ月後に出るようになっているようです。
+(2014年11月からみて)最近の[O&#39;Reilly Japan](https://www.oreilly.co.jp/index.shtml "O&#39;Reilly Japan - Home")の電子版は紙の書籍がリリースされてから大体4ヶ月後に出るようになっているようです。
 
 - [O&#39;Reilly Japan Ebook Store](https://www.oreilly.co.jp/ebook/ "O&#39;Reilly Japan Ebook Store")
 
