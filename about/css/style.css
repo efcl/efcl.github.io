@@ -27,34 +27,34 @@
   border-radius: 20px; }
 
 #timeline:after {
-  margin-left: -7px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
   background: none;
   border: 7px solid #f43059;
   border-color: #f43059 transparent transparent transparent;
-  width: 0;
-  height: 0;
-  top: auto;
+  border-radius: 0;
   bottom: -7px;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
+  height: 0;
+  margin-left: -7px;
+  top: auto;
+  width: 0; }
 
 #timeline li {
-  position: relative;
-  clear: both;
-  float: left;
-  width: 260px;
-  padding: 10px;
+  -moz-border-radius: 2px;
+  -moz-box-shadow: 0 1px #fff inset;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0 1px #fff inset;
   background: #fef8c4;
   border: 1px solid #d8d566;
-  text-align: right;
-  margin: 0 0 10px 0;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
-  -moz-box-shadow: 0 1px #fff inset;
-  -webkit-box-shadow: 0 1px #fff inset;
-  box-shadow: 0 1px #fff inset; }
+  box-shadow: 0 1px #fff inset;
+  clear: both;
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  position: relative;
+  text-align: right;
+  width: 260px; }
 
 #timeline li:before,
 #timeline li:after {
@@ -82,50 +82,56 @@
   right: 100%; }
 
 #timeline time {
-  text-align: left;
+  font-family: Calibri, sans-serif;
   font-weight: bold;
-  font-family: Calibri, sans-serif; }
+  text-align: left; }
 
 #timeline li:hover {
   background: #feac5a; }
 
 .nav-site {
-  margin: 0 1em;
   display: inline-block;
+  margin: 0 1em;
   text-align: center; }
   .nav-site a {
     display: block; }
   .nav-site img {
-    width: 140px;
-    height: 100px; }
+    height: 100px;
+    width: 140px; }
 
 #contents {
-  padding-left: 22px;
+  border-left: 1px solid #eee;
+  margin-bottom: 10px;
   margin-left: 22px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  border-left: 1px solid #eeeeee; }
+  padding-left: 22px; }
   #contents p {
     line-height: 1.5; }
-  #contents .sites, #contents .products {
-    margin-top: 10px;
-    border-top: 1px solid #eeeeee; }
-    #contents .sites h1, #contents .products h1 {
+  #contents .sites,
+  #contents .products {
+    border-top: 1px solid #eee;
+    margin-top: 10px; }
+    #contents .sites h1,
+    #contents .products h1 {
+      border-left: 4px solid #111;
       line-height: 1.2;
-      padding-left: 10px;
-      border-left: 4px solid #111; }
-  #contents .site-description, #contents .description {
+      padding-left: 10px; }
+  #contents .site-description,
+  #contents .description {
     background-color: #e3ffa6;
     font-size: 1em;
     margin: 5px;
     padding: 10px 10px 10px 15px;
     text-align: left; }
   #contents .mail-form {
-    padding: 5px 10px;
-    border: none; }
+    border: none;
+    padding: 5px 10px; }
 
 .presentation-table {
   background-color: #efc; }
 
-.presentation-table__item--date, .presentation-table__item--report {
+.presentation-table__item--date,
+.presentation-table__item--report {
   font-size: 80%; }
+
+/*# sourceMappingURL=style.css.map */

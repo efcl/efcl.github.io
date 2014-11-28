@@ -1,54 +1,61 @@
-@charset "utf-8";
+@charset 'UTF-8';
 // 無いと日本語扱えない
-@import "mixin";
+@import 'mixin';
 
 $seperate-color: #eee;
 $spacer: 10px;
-@import "timeline";
+@import 'timeline';
 
 .nav-site {
-  margin: 0 1em;
   display: inline-block;
+  margin: 0 1em;
   text-align: center;
   a {
     display: block;
   }
   img {
-    width: 140px;
-    height: 100px
+    height: 100px;
+    width: 140px
   }
 }
 
 #contents {
   $gutter: 45px;
   $border-size: 1px;
-  padding-left: ceil($gutter/2 - $border-size);
+  border-left: $border-size solid $seperate-color;
+  margin-bottom: $spacer;
   margin-left: ceil($gutter/2 - $border-size);
   margin-top: $spacer;
-  margin-bottom: $spacer;
-  border-left: $border-size solid $seperate-color;
+  padding-left: ceil($gutter/2 - $border-size);
+
   p {
     line-height: 1.5;
   }
-  .sites, .products {
-    margin-top: 10px;
+
+  .sites,
+  .products {
     border-top: 1px solid $seperate-color;
+    margin-top: 10px;
+
     h1 {
+      border-left: 4px solid #111;
       line-height: 1.2;
       padding-left: 10px;
-      border-left: 4px solid #111;
     }
   }
-  .site-description, .description {
+
+  .site-description,
+  .description {
     background-color: #e3ffa6;
     font-size: 1em;
     margin: 5px;
     padding: 10px 10px 10px 15px;
     text-align: left;
   }
+
   .mail-form {
-    padding: 5px 10px;
     border: none;
+    padding: 5px 10px;
   }
 }
 
@@ -57,7 +64,8 @@ $spacer: 10px;
 }
 
 // presentation
-.presentation-table__item--date, .presentation-table__item--report {
+.presentation-table__item--date,
+.presentation-table__item--report {
   font-size: 80%;
 }
 

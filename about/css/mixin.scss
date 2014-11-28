@@ -1,39 +1,43 @@
 // オレオレのmixin
 @mixin clearfix {
-    zoom: 1;
+  zoom: 1;
 
-    &:before,
-    &:after {
-        display: block;
-        height: 0;
-        visibility: hidden;
-        content: "\0020";
-    }
-    &:after {
-        clear: both;
-    }
+  &:before,
+  &:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+
+  &:after {
+    clear: both;
+  }
 }
+
 @mixin min-height($px) {
   min-height: $px;
-  height: auto!important;
+  height: auto !important;
   height: $px;
 }
-@mixin stripe($width, $s_rgba, $e_rgba){
-    background-repeat:  no-repeat;
-    -webkit-background-size:$width;
-    -moz-background-size:$width;
-    -o-background-size:$width;
-    background-size:$width;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%,  color-stop(.5, $s_rgba), to($e_rgba));
-    background-image: -moz-linear-gradient(top , $s_rgba, $e_rgba);
-    background-image: -o-linear-gradient(top , $s_rgba, $e_rgba);
-    background-image: linear-gradient(top , $s_rgba, $e_rgba);
+
+@mixin stripe($width, $s_rgba, $e_rgba) {
+  background-repeat: no-repeat;
+  -webkit-background-size: $width;
+  -moz-background-size: $width;
+  -o-background-size: $width;
+  background-size: $width;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, $s_rgba), to($e_rgba));
+  background-image: -moz-linear-gradient(top, $s_rgba, $e_rgba);
+  background-image: -o-linear-gradient(top, $s_rgba, $e_rgba);
+  background-image: linear-gradient(top, $s_rgba, $e_rgba);
 
 }
-@mixin border-radias($width){
-    -moz-border-radius:$width;
-    -webkit-border-radius:$width;
-    -o-border-radius:$width;
-    -ms-border-radius:$width;
-    border-radius:$width;
+
+@mixin border-radias($width) {
+  -moz-border-radius: $width;
+  -webkit-border-radius: $width;
+  -o-border-radius: $width;
+  -ms-border-radius: $width;
+  border-radius: $width;
 }
