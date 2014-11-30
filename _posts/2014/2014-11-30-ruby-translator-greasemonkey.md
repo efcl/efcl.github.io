@@ -52,7 +52,6 @@ make install
 
 元の文章とルビが一緒だと見にくいので、安直にちょっと文字サイズを大きくしてます。
 
-
 ## 仕組み
 
 文章を単語で区切って、辞書とマッチするかを何百も繰り返して、`<ruby>`タグにDOMを書き換えるだけです。
@@ -62,6 +61,8 @@ Firefoxは`<ruby>`対応してないですが、以下のCSSをベースにそ�
 - [htmlruby-firefox/htmlruby.css at master · sakai135/htmlruby-firefox](https://github.com/sakai135/htmlruby-firefox/blob/master/data/styles/htmlruby.css "htmlruby-firefox/htmlruby.css at master · sakai135/htmlruby-firefox")
 
 数年前に[英辞郎のSQLite辞書を作って同じような事](https://github.com/azu/JetpackSDK/tree/master/eijiro-ruby-reader "JetpackSDK/eijiro-ruby-reader at master · azu/JetpackSDK")をやった時は遅すぎてダメだったので、辞書をメモリにまるごと載せてしまったほうがいいかなと思って雑にGreasemonkeyで実装した感じです。
+
+結構適当に実装したけど、思ったより普通に動いてて面白い。
 
 拡張機能として実装しても結局`<ruby>`の書き換えでContent Contextで動かす必要があるので、コンセプトを実証する感じでGreasemonkeyを選んだだけです。
 
@@ -75,3 +76,6 @@ Firefoxは`<ruby>`対応してないですが、以下のCSSをベースにそ�
 - 熟語対応したい(今は熟語は辞書自体から消してるので1MBぐらいになってる)
 
 今はスペースとかで文章を区切って、そこで単語のマッチをして和訳を出してるので熟語対応するには仕組み自体変える必要がありそうでやってない(いいアイデア欲しい)
+
+
+- [azu/en-ja-ruby-translator](https://github.com/azu/en-ja-ruby-translator "azu/en-ja-ruby-translator")
