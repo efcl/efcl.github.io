@@ -1,5 +1,5 @@
 ---
-title: "chatworkjsでQUnit 2.xやTC39 MTG Notesや企業JavaScriptについてなどの話をした"
+title: "#chatworkjs でQUnit 2.xやTC39 MTG Notesや企業JavaScriptについてなどの話をした"
 author: azu
 layout: post
 date : 2014-12-05T22:28
