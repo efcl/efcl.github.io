@@ -23,6 +23,13 @@ tags:
 
 いつもの
 
+## チャットワーク社訪問
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/glatyou">@glatyou</a> chatwork社の床です <a href="https://twitter.com/hashtag/chatworkjs?src=hash">#chatworkjs</a> <a href="http://t.co/El7HJ8K5OY">pic.twitter.com/El7HJ8K5OY</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/540811132202528768">December 5, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/chatworkjs?src=hash">#chatworkjs</a> chatwork滞在時間五分ぐらいだった</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/540813800258027520">December 5, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 北京ダック
 
