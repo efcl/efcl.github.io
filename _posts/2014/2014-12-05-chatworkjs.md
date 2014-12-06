@@ -11,7 +11,7 @@ tags:
 
 ---
 
-[#chatworkjs](https://twitter.com/search?f=realtime&q=%23TC39MTG&src=typd "#chatworkjs")でQunitやコードリーディング、TC39 MTG NotesやCanvasについて等の話をしてきました。
+[#chatworkjs](https://twitter.com/search?f=realtime&q=%23chatworkjs&src=typd "#chatworkjs")でQunitやコードリーディング、TC39 MTG NotesやCanvasについて等の話をしてきました。
 
 ## 経緯
 
