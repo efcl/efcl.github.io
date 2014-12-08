@@ -12,6 +12,8 @@ tags:
 
 ---
 
+[VirtualDOM Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/virtual-dom "VirtualDOM Advent Calendar 2014 - Qiita") 9日目の記事。
+
 # [segmentio/deku](https://github.com/segmentio/deku "segmentio/deku") コードリーディング
 
 読んだもの: deku [0.0.2](https://github.com/segmentio/deku/releases/tag/0.0.2 "0.0.2")
@@ -27,7 +29,7 @@ tags:
 - コンストラクタが受け取る`spec`オブジェクト
 
 ```javascript
-var ButtonComponent = component({
+var ButtonComponent = component({ // specオブジェクト
   onClick() {
     this.setState({ clicked: true });
   }
@@ -49,7 +51,7 @@ var ButtonComponent = component({
 
 ## lib/node
 
-Virtul DOMのvTreeを作る場所
+Virtual DOM trees(長いの次からvTreeと書きます)を作る場所
 
 ```javascript
 component({
@@ -59,7 +61,8 @@ component({
 });
 ```
 
-renderで渡ってくる`dom`という関数がvTreeを作る関数
+renderで渡ってくる`dom`という関数がvTreeを作る関数 = `render`メソッドの返り値はvTree。
+(本物のDOM Nodeではない)
 
 ### lib/node/index.js
 
@@ -224,7 +227,112 @@ var ButtonComponent = component({
 
 これはシンプルな仕組みで、`toElement`で作ったDOM Nodeへのパス
 (単純にプロパティにいれて保持してると考える)を保持していて、
-Componentにはひとつの`render`しかないので、その結果できるDOM Nodeも一つとなる(Treeではあるかもしれないけど)
+Componentにはひとつの`render`しかないので、その結果できるDOM Nodeも一つ(Treeではあるかもしれないが)となる。
 
-なので、そのDOM Nodeを取り出して普通にイベントを付けるだけ。
+なので、そのDOM Nodeを取り出して普通に`addEventListner`でイベントを付けるだけ。
+
+---
+
+## 感想
+
+dekuのコードは読みやすいというよりは流れが見やすい感じがします。
+`diff`以外のところは結構素直に実装されていて、普通にコードを追っていくだけでどういう処理がされているか分かる感じです(実際実行しないで読めたので)
+
+## コードリーディングのツール
+
+[WebStorm](http://www.jetbrains.com/webstorm/ "WebStorm")を使って読みました。
+よくモジュール化されているので、定義元へのジャンプ等を使うとかなり読みやすいです。
+
+### どこから読むか
+
+Nodeモジュールを書き慣れている人は大体`index.js`を作ってるケースが多いです。
+dekuの場合も[deku/index.js](https://github.com/segmentio/deku/blob/master/index.js "deku/index.js")というファイルがあり、以下のような1行があるだけです。
+
+(単なるエイリアスみたいなものですが、テストディレクトリからの相対パスが短くなったり、package.jsonの指定がデフォルトで良くなるなどのメリットがあるのでよく使われる気がします)
+
+```js
+module.exports = require('./lib/component');
+```
+
+つまり、[lib/component/index.js](https://github.com/segmentio/deku/blob/master/lib/component/index.js "lib/component/index.js")から読み始めればいいと分かります。
+
+dekuの場合は上から読んでいけるコードなので、結構コードリーディングするのが楽だと思います。(イベント等があるとコードから追うのが難しくなるので、実行して必要がある)
+
+後は興味がある所から見ていくか、順番に見ていくかを決めるだけですね。
+
+```
+lib
+├── component
+│   ├── index.js
+│   ├── protos.js
+│   └── statics.js
+├── node
+│   ├── component.js
+│   ├── element.js
+│   ├── index.js
+│   └── text.js
+└── renderer
+    ├── component.js
+    ├── diff.js
+    ├── interactions.js
+    ├── mount.js
+    ├── string.js
+    └── tree.js
+```
+
+### よくわからない時はテストを見る
+
+例えば、[lib/node/index.js](https://github.com/segmentio/deku/blob/8c11681775196ad337ddb3bb809882c815c1bfa1/lib/node/index.js#L49-53 "lib/node/index.js")を見ると、`dom(type, props, children)`関数で以下のようなif分岐があります。
+
+```js
+// if you pass in a function, it's a `Component` constructor.
+// otherwise it's an element.
+if ('function' == typeof type) {
+	var node = new ComponentNode(type, props, key, children);
+} else {
+	var node = new ElementNode(type, props, key, children);
+}
+```
+
+`type`に渡されるものが関数がそうでないかで分岐しています。
+
+こういう時にまず見るのがテストだと思います(今どきのなら普通はある)。
+[test/node/index.js](https://github.com/segmentio/deku/blob/8c11681775196ad337ddb3bb809882c815c1bfa1/test/node/index.js "test/node/index.js")があるので、このテストを見ると
+
+```js
+dom('div', { key: 'foo' })
+```
+
+という文字列を受け取るパターンと
+
+```js
+var Span = component({
+ render: function(dom, state, props){
+   return dom('span', null, 'foo');
+ }
+});
+var Component = component({
+ render: function(dom, state, props){
+   return dom(Span);
+ }
+});
+```
+
+`dom(component)`というようにcomponentを受け取るパターン(=type function)があると分かると思います。
+
+更によくわからない時はIssueを検索してみましょう。
+
+- [Issues · segmentio/deku](https://github.com/segmentio/deku/issues "Issues · segmentio/deku")
+
+
+## 他のVirtual DOM
+
+dekuはまだ0.0.2というレベルで、`diff.js`もまだ実装が変わりそうな気配があります。
+
+他にも[virtual-dom](https://github.com/Matt-Esch/virtual-dom "virtual-dom")や[React](https://github.com/facebook/react "React")等の情報の方が多いので、Virtual DOMの仕組み自体について知りたい場合は以下を見ましょう
+
+- [Virtual DOMのアルゴリズムが知りたくてvirtual-domのコードを読んだ話 - snyk_s log](http://saneyukis.hatenablog.com/entry/2014/09/03/134858 "Virtual DOMのアルゴリズムが知りたくてvirtual-domのコードを読んだ話 - snyk_s log")
+- [Performance Calendar » React’s diff algorithm](http://calendar.perfplanet.com/2013/diff/ "Performance Calendar » React’s diff algorithm")
+- [reactjs - React.jsのVirtualDOMについて - Qiita](http://qiita.com/koba04/items/de79f158cd1f59ba5d20 "reactjs - React.jsのVirtualDOMについて - Qiita")
+
 
