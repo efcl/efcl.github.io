@@ -1,5 +1,5 @@
 ---
-title: "dekuのコードリーディング"
+title: "segmentio/dekuのコードリーディング"
 author: azu
 layout: post
 date : 2014-12-08T23:48
@@ -12,13 +12,13 @@ tags:
 
 ---
 
-[VirtualDOM Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/virtual-dom "VirtualDOM Advent Calendar 2014 - Qiita") 9日目の記事。
+[VirtualDOM Advent Calendar 2014](http://qiita.com/advent-calendar/2014/virtual-dom "VirtualDOM Advent Calendar 2014 - Qiita") 9日目の記事。
 
 # [segmentio/deku](https://github.com/segmentio/deku "segmentio/deku") コードリーディング
 
 読んだもの: deku [0.0.2](https://github.com/segmentio/deku/releases/tag/0.0.2 "0.0.2")
 
-絶賛実装中な感じなので、これをみたからといってもどうという感じではないと思います。
+絶賛実装中な感じなので、これを見たからといってもどうという感じではないと思います。
 
 基本的なVirtual DOMの構造はあるので、そういう意味では読みやすいです。
 
@@ -42,7 +42,7 @@ var ButtonComponent = component({ // specオブジェクト
 `spec`はcomponentの定義を書く場所。
 
 - `render`はデフォルトだと空なので、必ず上書きする
-- APIは`setState`とか`renderString`とかReactっぽいやつが多い
+- APIは`setState`とか`renderString`とかReactの[Component API](http://facebook.github.io/react/docs/component-api.html "Component API")っぽいのが多い
 
 この`spec`で面白いのは`displayName`というプロパティがあると、
 作った `component.displayName` にそれを設定してくれる。(デバッグ用)
@@ -98,7 +98,28 @@ dom('span', null, ['Hello World']);
 `ElementNode` はタグの名前とかプロパティを持ったデータのオブジェクト
 (操作するメソッドがないDOM Nodeみたいなものっぽい)
 
-もう一つ、`dom`がComponentを受け取った場合は`ComponentNode`を作る事が出来る。
+```javascript
+/**
+ * Initialize a new `ElementNode`.
+ *
+ * @param {String} tagName
+ * @param {Object} attributes
+ * @param {String} key Used for sorting/replacing during diffing.
+ * @param {Array} children Child virtual dom nodes.
+ * @api public
+ */
+
+function ElementNode(tagName, attributes, key, children) {
+  this.type = 'element';
+  this.tagName = tagName || 'div';
+  this.attributes = parseAttributes(attributes);
+  if (key) this.attributes['data-key'] = key;
+  this.children = children || [];
+  this.key = key;
+}
+```
+
+もう一つのパターンが、`dom`がComponentを受け取った場合は`ComponentNode`を作る事が出来る。
 
 ```javascript
   it('should render an element with component root', function () {
@@ -137,7 +158,7 @@ componentを受け取ってそれをレンダリングする(HTMLへ)
 
 ## `lib/renderer/component.js`
 
-レンダリングのmain
+レンダリングのmainとなる場所
 
 それぞれのcomponentは`render`メソッドを実装しているので
 `this.current = this.render()`でvTreeを取り出して使う。
@@ -158,15 +179,16 @@ componentを受け取ってそれをレンダリングする(HTMLへ)
 `ElementNode`はchildrenを持っていることもあるので再帰的に行ってDOM Nodeを作る
 
 
-## Component/vTree/ElementNodeの関係
+## Component/vTreeの関係
 
-	Component{
+```javascript
+Component({
     	// @return vTree
-    	render()
-        	return vTree
-            		ElementNodes
-    }
-
+	render() => {
+		return vTree(ComponentNode | ElementNodes)
+	}
+})
+```
 
 ## diff/patch
 
@@ -179,8 +201,10 @@ Virtual DOMの本領であるdiff/patchもRendererにある。
 
 dukuはVue.jsのようにキューにためて一定のタイミングでViewのアップデートの処理を行う。
 
-`ComponentRenderer.prototype.queue`は他が処理中ならまったり、
-連続して呼ばれたりしたらキャンセルしてから実際の`upodate`処理を呼ぶようにしてる。
+`ComponentRenderer.prototype.queue`は他が処理中なら待ったり、
+連続して呼ばれたりしたらキャンセルしてから実際の`update`処理を呼ぶようにしてる。
+
+いわゆる[Batching](http://qiita.com/koba04/items/de79f158cd1f59ba5d20#batching "Batching")の処理です。
 
 実際のdiff/patchでのDOM Nodeの更新をするのは`ComponentRenderer.prototype.update`で行われる
 
@@ -191,7 +215,6 @@ dukuはVue.jsのようにキューにためて一定のタイミングでViewの
   this.current = this.render();
   // update the element to match.
   this.diff();
-
 ```
 
 という感じで、現在のvTreeを`this.previous`にいれて、
