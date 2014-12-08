@@ -2,7 +2,7 @@
 title: "segmentio/dekuのコードリーディング"
 author: azu
 layout: post
-date : 2014-12-08T23:48
+date : 2014-12-09T07:00
 category: JavaScript
 tags:
     - VirtualDOM
