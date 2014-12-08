@@ -249,10 +249,9 @@ var ButtonComponent = component({
 ```
 
 これはシンプルな仕組みで、`toElement`で作ったDOM Nodeへのパス
-(単純にプロパティにいれて保持してると考える)を保持していて、
-Componentにはひとつの`render`しかないので、その結果できるDOM Nodeも一つ(Treeではあるかもしれないが)となる。
+(単純にプロパティにいれて保持してると考える)を保持しています。
 
-なので、そのDOM Nodeを取り出して普通に`addEventListner`でイベントを付けるだけ。
+Componentにはひとつの`render`しかないので、その結果できるDOM Nodeも一つ(Treeではあるかもしれないが)となり、そのDOM Nodeを取り出して普通に`spec`オブジェクトのイベント定義を要素につけているだけのようです。
 
 ---
 
