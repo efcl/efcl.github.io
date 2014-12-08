@@ -28,7 +28,7 @@ module.exports = function () {
     $('div#js-glanceyear').glanceyear(dataset,
         {
             eventClick: function (e) {
-                $('#debug').html('Date: ' + e.date + ', Count: ' + e.count);
+                //$('#debug').html('Date: ' + e.date + ', Count: ' + e.count);
             },
             months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             weeks: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
