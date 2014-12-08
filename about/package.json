@@ -36,6 +36,7 @@
     "intelli-espower-loader": "^0.4.0",
     "mocha": "^2.0.1",
     "power-assert": "^0.9.1",
+    "script-loader": "^0.6.1",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.5"
   }

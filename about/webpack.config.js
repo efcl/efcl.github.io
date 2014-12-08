@@ -1,4 +1,5 @@
 "use strict";
+var webpack = require("webpack");
 module.exports = {
     entry: {
         index: './lib/index.js'
@@ -13,7 +14,14 @@ module.exports = {
             'bower_components'
         ]
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
+    ],
     loaders: [
+        {test: /jquery\.glanceyear\.js$/, loader: 'script-loader'},
         {test: /(\.js|\.es6)$/, loader: 'es6-loader'}
     ]
 };

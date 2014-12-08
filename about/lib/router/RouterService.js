@@ -17,6 +17,10 @@ var router = new Router({
     "products": {
         path: "/about/product.html",
         method: 'get'
+    },
+    "presentations": {
+        path: "/about/presentations.html",
+        method: 'get'
     }
 });
 module.exports = router;

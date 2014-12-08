@@ -13,9 +13,11 @@ if (route == null) {
 }
 RouterStore.addChangeListener(function () {
     var route = RouterStore.getCurrentRoute();
-    console.log(route);
-    if (route.name === "sites") {
-        require("./page/sites/IndexOfSite")();
+    switch (route.name) {
+        case "sites":
+            return require("./page/sites/IndexOfSite")();
+        case "presentations":
+            return require("./page/presentations/presentations")();
     }
 });
 RouterAction.changeURL(route);

@@ -5,11 +5,11 @@ permalink: /about/presentations.html
 ---
 
 <link href="./css/style.css" type="text/css" rel="stylesheet">
+<link href="./vendor/glanceyear/glanceyear.css" type="text/css" rel="stylesheet"/>
 <h1>勉強会での発表履歴</h1>
-
 <p class="description">勉強会やイベントでの発表してきた内容について</p>
-<ol id="timeline">
-</ol>
+
+<div id="js-glanceyear" style="margin:0 auto;"></div>
 <table class="presentation-table">
     <caption>
         <strong>発表してきたスライドの一覧</strong>
@@ -42,4 +42,8 @@ permalink: /about/presentations.html
     {% endfor %}
     </tbody>
 </table>
+
+<script type="application/json" id="js-presentation-data">
+    {{site.data.azu_events | jsonify}}
+</script>
 <script src="built/index.built.js"></script>
