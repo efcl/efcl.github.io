@@ -11,7 +11,6 @@ module.exports = function () {
     var placeholder = {};
     // massive from html
     var massive = JSON.parse(document.getElementById('js-presentation-data').innerHTML);
-    console.log(massive);
     massive.forEach(function (object) {
         if (!placeholder[object.date]) {
             placeholder[object.date] = 1;
