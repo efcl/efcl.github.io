@@ -270,7 +270,7 @@ dukuはVue.jsのようにキューにためて一定のタイミングでViewの
 という感じで、現在のvTreeを`this.previous`にいれて、
 `this.diff();`を呼び出してdiff/patchをする。
 
-`diff`という名前だけどでは置換処理もそのまま行ってるので、patchの処理も含まれている。
+`diff`という名前だけど置換処理もそのまま行ってるので、patchの処理も含まれている。
 (今のところdiffの中間表現とかなく直接書き換えしてる、ここは実装変えそうな気がする)
 
 ### lib/renderer/diff.js
