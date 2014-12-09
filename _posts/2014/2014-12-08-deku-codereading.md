@@ -322,7 +322,8 @@ dekuのコードは読みやすいというよりは流れが見やすい感じ�
 Nodeモジュールを書き慣れている人は大体`index.js`を作ってるケースが多いです。
 dekuの場合も[deku/index.js](https://github.com/segmentio/deku/blob/master/index.js "deku/index.js")というファイルがあり、以下のような1行があるだけです。
 
-(単なるエイリアスみたいなものですが、テストディレクトリからの相対パスが短くなったり、package.jsonの指定がデフォルトで良くなるなどのメリットがあるのでよく使われる気がします)
+単なるエイリアスみたいな使い方ですが、package.jsonの`main`フィールドの指定のデフォルト値が`index.js`であったり、名前的にも分かりやすいのでよく見かける気がします。
+(テストディレクトリ等から`require("../")`で読み込めると書いてましたが、[package.json のあるディレクトリのパスを対象に require すると、自動的に main ファイルを読み込むようになっている](https://github.com/efcl/efcl.github.io/commit/796c80b7b2f1ed2cb44f525d672f2001360d7947#commitcomment-8888418 "package.json のあるディレクトリのパスを対象に require すると、自動的に main ファイルを読み込むようになっている")とのことなのであくまで習慣的なものな気がします。)
 
 ```js
 module.exports = require('./lib/component');
