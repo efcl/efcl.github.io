@@ -315,6 +315,10 @@ dekuのコードは読みやすいというよりは流れが見やすい感じ�
 [WebStorm](http://www.jetbrains.com/webstorm/ "WebStorm")を使って読みました。
 よくモジュール化されているので、定義元へのジャンプ等を使うとかなり読みやすいです。
 
+メモは自分で作った[floating-memo.app](https://github.com/azu/floating-memo "floating-memo.app")というのを使いました。
+
+- [node-webkitで最前面に置けるMarkdownメモアプリを作った](http://efcl.info/2014/08/27/floating-memo/ "node-webkitで最前面に置けるMarkdownメモアプリを作った")
+
 ### どこから読むか
 
 Nodeモジュールを書き慣れている人は大体`index.js`を作ってるケースが多いです。
