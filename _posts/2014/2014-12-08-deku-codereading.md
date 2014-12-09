@@ -14,8 +14,6 @@ tags:
 
 [VirtualDOM Advent Calendar 2014](http://qiita.com/advent-calendar/2014/virtual-dom "VirtualDOM Advent Calendar 2014 - Qiita") 9日目の記事。
 
-# [segmentio/deku](https://github.com/segmentio/deku "segmentio/deku") コードリーディング
-
 [segmentio/deku](https://github.com/segmentio/deku "segmentio/deku")  は最近出たばかりのVirtualDOMの実装ライブラリです。
 
 小さくて読みやすく拡張性がある実装を目指していて、既にある[virtual-dom](https://github.com/Matt-Esch/virtual-dom "virtual-dom")とは別に作り始めたのも微妙にComponent周りの[考え方が違う](https://github.com/segmentio/deku/issues/10 "Use Matt-Esch/virtual-dom · Issue #10 · segmentio/deku")からのようです。
