@@ -247,7 +247,7 @@ Virtual DOMの本領であるdiff/patchもRendererにある。
 
 ### `ComponentRenderer.prototype.queue`
 
-dukuはVue.jsのようにキューにためて一定のタイミングでViewのアップデートの処理を行う。
+dekuはVue.jsのようにキューにためて一定のタイミングでViewのアップデートの処理を行う。
 
 `ComponentRenderer.prototype.queue`は他が処理中なら待ったり、
 連続して呼ばれたりしたらキャンセルしてから実際の`update`処理を呼ぶようにしてる。
