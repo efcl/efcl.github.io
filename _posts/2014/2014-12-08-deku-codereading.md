@@ -28,6 +28,50 @@ tags:
 
 基本的なVirtual DOMの構造はあるので、そういう意味では読みやすいです。
 
+## 基本的な使い方
+
+```javascript
+var component = require('segmentio/deku');
+
+// Buttonのcomponentを作る
+// <button>とonClickした時のイベントがある
+var ButtonComponent = component({
+  onClick() {
+    this.setState({ clicked: true });
+  }
+  render(dom, state, props) {
+    return dom('button', { onClick: this.onClick }, [props.text]);
+  }
+});
+
+// mainとなるcomponent - componentはcomponentを含められる
+// <div> <button /> </div>
+var App = component({
+  render(dom, state, props) {
+    return dom('div', { class: 'App' }, [
+      ButtonComponent({ text: props.buttonText })
+    ]);
+  }
+});
+
+// `use`で拡張を追加出来る
+App.use(styleHelper());
+
+// bodyに `App` componentを追加
+var scene = App.mount(document.body, {
+  buttonText: 'Click Me!'
+});
+
+// 更新処理 => 描画も更新される
+scene.setProps({
+  buttonText: 'Do it...'
+});
+
+// bodyから取り除く
+scene.remove();
+```
+
+
 ## lib/component
 
 - ユーザが触る感じのAPI定義をしてる場所
