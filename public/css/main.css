@@ -186,7 +186,7 @@ pre {
   font-family: Menlo, Monaco, "Courier New", monospace; }
 
 code {
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.5);
   border-radius: 3px;
   color: #bf616a;
   font-size: 85%;
