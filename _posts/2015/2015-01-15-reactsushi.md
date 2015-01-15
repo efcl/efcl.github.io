@@ -95,7 +95,7 @@ tags:
 	- isomorphicの例でよく出てくる
 	- サーバのコアに欲しいバリデーションとフロントのバリデーションは少し趣旨が違うのでは?
 	- このケースの場合にバリデーションしているのはAPIのモデルという感じになってるいるのでは
-	- Javaの実装からJSON Schemaを吐いてバリデーションする話
+	- Javaの実装からJSON Schemaを吐いてバリデーションする話(固い言語の実装を正としてバリデーション)
 - Truly Isomorphic
 	- View層のみを共有するのが真のisomorphicという訳ではない
 	- Truly Isomorphicとは
