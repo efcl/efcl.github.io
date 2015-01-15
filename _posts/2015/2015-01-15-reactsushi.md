@@ -51,7 +51,10 @@ tags:
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/reactsushi?src=hash">#reactsushi</a> LT! <a href="http://t.co/2HRAShqJEp">pic.twitter.com/2HRAShqJEp</a></p>&mdash; Toru Kobayashi (@koba04) <a href="https://twitter.com/koba04/status/555328205922369536">January 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
+- 電子書籍開発環境のセットが欲しい
+    - CI、Lint、PDFなどの自動化
+    - Promise本はAsciidoc => [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](http://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")
+    - Leanpubの[Markua](http://markua.com/ "Markua")が早く公開されて欲しい。
 - d.tsの管理をどうしているか?
 	- モジュール分離しても、共通のインターフェースのオブジェクトを扱いたい
 	- その部分を定義した不完全なd.tsを共有したい
