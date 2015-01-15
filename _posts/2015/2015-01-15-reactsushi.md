@@ -64,9 +64,7 @@ tags:
 
 ## [React / Flux を実案件で使ってみた](http://twada.herokuapp.com/presentations/reactsushi/reactsushi.html "React / Flux を実案件で使ってみた")
 
-
-
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/reactsushi?src=hash">#reactsushi</a> 会長「truly isomorphic は view だけではない」</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/555342041614258176">January 14, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/reactsushi?src=hash">#reactsushi</a> t-wadaさんの発表 <a href="http://t.co/ELcFiP2VyQ">pic.twitter.com/ELcFiP2VyQ</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/555334629767397376">January 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - デザイナーとの分業(JSX)
@@ -112,6 +110,12 @@ tags:
 	- DocTestのような形式でサンプルもテストになればいいのでは
 	- [AmpersandJS/amp](https://github.com/AmpersandJS/amp "AmpersandJS/amp")は`example.js`というものがドキュメントに埋め込まれるようになってる
 	- RSpecとかもそういう感じ
+
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/reactsushi?src=hash">#reactsushi</a> 会長「truly isomorphic は view だけではない」</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/555342041614258176">January 14, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 -----
 
