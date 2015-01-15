@@ -131,7 +131,7 @@ tags:
 	- [samccone/Marionette.VDOMView](https://github.com/samccone/Marionette.VDOMView "samccone/Marionette.VDOMView")
 	- [tiagorg/marionette-vdom](https://github.com/tiagorg/marionette-vdom "tiagorg/marionette-vdom")
 - Vue.js
-	- [作者さん](https://github.com/yyx990803)さんがMeteorの人になったしどうなるんだろ?
+	- [作者さん](https://github.com/yyx990803)がMeteorの人になったしどうなるんだろ?
 - EmberのFastBoot
 	- vdomとは微妙に違うアプロード
 	- htmlbars テンプレートをDOM APIで組み立てられるようにする
