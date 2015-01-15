@@ -1,5 +1,5 @@
 ---
-title: "#reactsushiでESLintとtextlintの設計について話してきた"
+title: "#reactsushi でESLintとtextlintの設計について話してきた"
 author: azu
 layout: post
 date : 2015-01-15T02:03
