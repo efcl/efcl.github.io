@@ -37,6 +37,10 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
   </p>
 </div>
 
+ブラウザ編はこちらです。
+
+* [power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch][14]
+
 ## <a name="before-how-touse">使い方の前に</a>
 
 [power-assert][5] の役割について簡単に解説します。
@@ -250,7 +254,14 @@ Node.jsのプロジェクトでは、ちょっとした設定をして、`requir
 
 ブラウザでpower-assertを動かす方法について書きました。
 
-*   [power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch][14]
+* [power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch][14]
+
+**追記2**
+
+ES6で書いてpower-assertでテストしたい場合はこちらを参照するといいでしょう。
+
+* [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+
 
  [1]: https://github.com/twada/power-assert "power-assert"
  [2]: http://jasmine.github.io/ "Jasmine"
