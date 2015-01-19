@@ -179,6 +179,9 @@ MSも[webcompat.com](http://webcompat.com/ "webcompat.com")からのバグ報告
 
 > 古典的なものの見方で、W3C HTML5仕様を軸にW3C仕様の現状を分かる範囲でごく簡単に
 
+[#14 WHATWG | mozaic.fm](http://mozaic.fm/post/108439721723/14-whatwg "#14 WHATWG | mozaic.fm")
+
+> WHATWG、 W3C、 TAG などの成り立ちや、それらがやっていること。先日の HTML5 勧告の意味。 LivingStandard とはどう考えればいいのか？といった話から、標準化において「今何が起こっているのか」、「これからどうなっていくのか」そして、「自分たちはそれにどう参加できるのか？」を議論しました。
 
 ----
 より詳しい(正しい)見方などがありましたらPull Requestよろしくお願いします。
