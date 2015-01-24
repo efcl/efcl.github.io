@@ -93,7 +93,7 @@ describe("app-test", function () {
     });
     context("when テキストボックスに文字を入れて送信した時", function () {
         beforeEach(function () {
-          // テキストを入力して送信ボタンをくりっkスうる
+          // テキストを入力して送信ボタンをクリック
         	browser.setValue('.todoText', text);
     		browser.click('.todoBtn');
         });
@@ -234,7 +234,7 @@ $ ./node_modules/.bin/testium --download-selenium
 
 **Tips:**
 
-TestiumコマンドにはREPL機能があり、いかのようなコマンドを実行するREPLとして`browser`APIを叩いて試せます。
+TestiumコマンドにはREPL機能があり、以下のようなコマンドを実行するREPLとして`browser`APIを叩いて試せます。
 
 ```
 ./node_modules/.bin/testium --browser firefox
