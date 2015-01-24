@@ -9,6 +9,7 @@ tags:
     - JavaScript
     - Browser
     - jQuery
+    - testing
     - リファクタリング
 issue: https://github.com/efcl/efcl.github.io/issues/59
 
