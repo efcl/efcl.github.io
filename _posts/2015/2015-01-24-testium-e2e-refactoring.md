@@ -318,6 +318,6 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 
 - [doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium](https://github.com/groupon-testium/testium/issues/124 "doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium")
 
-後、やはり同期的なAPIであることやMochaでユニットテストと同じように書けるのが書き心地に影響があって、E2Eテストとユニコードで脳をスイッチするコストが小さく済むように思えます。
+後、やはり同期的なAPIであることやMochaでユニットテストと同じように書けるのが書き心地に影響があって、E2Eテストとユニットテストで脳をスイッチするコストが小さく済むように思えます。
 
 まだ[groupon-testium/testium](https://github.com/groupon-testium/testium "groupon-testium/testium")試したことがある人は少ないと思いますが、E2Eテストがユニットテストと同じぐらい手軽に書けるので試してみるといいかもしれません。
