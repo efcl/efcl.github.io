@@ -312,6 +312,8 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 
 [![Build Status](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype.svg)](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype)
 
+jQueryで書いたコードをどうやってリファクタリングするかは[The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch](http://efcl.info/2015/01/11/refactoring-tales/ "The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch")で書いた[The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html "The Refactoring Tales")を読んでみるのもいいかもしれません。
+
 ## おわりに
 
 まだ、足りない機能や日本語をWebDriver API経由での入力が上手く行かないバグ等もありますが、Protractorに比べると設定ファイルや実行するために覚える必要があることが少なくて済むのでいいなーという感じがします。
