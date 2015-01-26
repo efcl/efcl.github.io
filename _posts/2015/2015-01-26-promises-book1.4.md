@@ -26,8 +26,6 @@ tags:
 
 一番変化が大きいのは[3.1. 基本的なテスト](http://azu.github.io/promises-book/#basic-tests "3.1. 基本的なテスト")だと思います。
 
-- [Release 1.4.0 : Promiseのテストの導入についての更新 · azu/promises-book](https://github.com/azu/promises-book/releases/tag/1.4.0 "Release 1.4.0 : Promiseのテストの導入についての更新 · azu/promises-book")
-
 細かい変更は以下の通りです。
 
 **PDF**
