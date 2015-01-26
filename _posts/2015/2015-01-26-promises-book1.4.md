@@ -22,7 +22,7 @@ tags:
 
 - [RSS Release notes from promises-book](https://github.com/azu/promises-book/releases.atom "Release notes from promises-book") RSSで購読も出来ます。
 
-------
+## 変更履歴
 
 一番変化が大きいのは[3.1. 基本的なテスト](http://azu.github.io/promises-book/#basic-tests "3.1. 基本的なテスト")だと思います。
 
@@ -66,11 +66,13 @@ tags:
 
 -----
 
-### Contributing
+## Contributing
 
 Thanks [@misahot](https://github.com/misahot "misahot"), [@t-mochizuki](https://github.com/t-mochizuki "t-mochizuki"), [@alitaso345](https://twitter.com/alitaso345/status/502618230666846209 "@alitaso345") and [Online Study TokyoBouldering.js](http://lingr.com/room/tkbjs "Online Study TokyoBouldering.js").
 
-### TODO
+## TODO
+
+意見やPull Request募集しています。
 
 - [epubのサポート · Issue #208 · azu/promises-book](https://github.com/azu/promises-book/issues/208)
 - [Docker対応 · Issue #212 · azu/promises-book](https://github.com/azu/promises-book/issues/212)
