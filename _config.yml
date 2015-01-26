@@ -38,6 +38,7 @@ redcarpet:
     extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "with_toc_data"]
 gems:
   - jekyll-sitemap
+  - jemoji
 # Prose
 prose:
   rooturl: '_posts/'
