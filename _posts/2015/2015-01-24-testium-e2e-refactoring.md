@@ -317,9 +317,9 @@ jQueryで書いたコードをどうやってリファクタリングするか�
 
 ## おわりに
 
-まだ、足りない機能や日本語をWebDriver API経由での入力が上手く行かないバグ等もありますが、Protractorに比べると設定ファイルや実行するために覚える必要があることが少なくて済むのでいいなーという感じがします。
+まだ、足りない機能や<del>日本語をWebDriver API経由での入力が上手く行かないバグ等</del>(直った)もありますが、Protractorに比べると設定ファイルや実行するために覚える必要があることが少なくて済むのでいいなーという感じがします。
 
-- [doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium](https://github.com/groupon-testium/testium/issues/124 "doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium")
+- [doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium](https://github.com/groupon-testium/testium/issues/124 "doesn&#39;t deal with multibyte unicode characters · Issue #124 · groupon-testium/testium") 2.5.0で修正済
 
 後、やはり同期的なAPIであることやMochaでユニットテストと同じように書けるのが書き心地に影響があって、E2Eテストとユニットテストで脳をスイッチするコストが小さく済むように思えます。
 
