@@ -194,8 +194,9 @@ Fetch API polyfillに必要なものの話
 - [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams "URLSearchParams")が必要
 	- [Jxck/URLSearchParams](https://github.com/Jxck/URLSearchParams "Jxck/URLSearchParams")
 	- [FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita](http://qiita.com/Jxck_/items/769766853a90b7b435b0 "FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita")
-- TextEncoder & TextDecoder
-	- UTF-8以外はLegacy扱い
+- URLエンコードするのに、TextEncoder & TextDecoderが必要
+	- TextDecoderは色々な文字コードがある(大変)
+	- UTF-8以外はLegacy扱い -> UTF-8を前提にしておく
 	- [Jxck/utf8-encoding](https://github.com/Jxck/utf8-encoding "Jxck/utf8-encoding")
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/template_literal_sushi?src=hash">#template_literal_sushi</a> 文字コードは闇ですね</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/560067022587838464">January 27, 2015</a></blockquote>
