@@ -16,6 +16,7 @@ tags:
 vivaldi_sushiとe2e_sushiと隣でやってた`template_literal_sushi`に[参加した](https://twitter.com/search?f=realtime&q=%23template_literal_sushi%20OR%20%23e2e_sushi%20&src=typd "#template_literal_sushi OR #e2e_sushi - Twitter Search")
 
 - [#template_literal_sushi と #e2e_sushi のログ - Togetterまとめ](http://togetter.com/li/775431 "#template_literal_sushi と #e2e_sushi のログ - Togetterまとめ")
+- ログはいつもどおり記憶たよりなので色々間違ってる気がするので気になるところは本人に聞こう
 
 ## [Vivaldi_sushi](https://vivaldi.com/ "Vivaldi - A new browser for our friends")
 
