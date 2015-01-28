@@ -188,7 +188,7 @@ var styles = ReactStyle`
 
 Fetch API polyfillに必要なものの話
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/e2e_sushi?src=hash">#e2e_sushi</a> URL.searchURLParamはencodeURLが必要 -&gt; TextEncodeというものが必要 -&gt; decodeの方はUTF-8/16以外にもある -&gt; 仕様にdecodeのそれぞれの文字コードの仕様が乗ってる</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/560063683229786112">January 27, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/e2e_sushi?src=hash">#e2e_sushi</a> FetchAPIは`URL`に依存してるので、まずは`URL`のpolyfillを作るところから始まった</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/560062865734782977">January 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL "URL")が必要
