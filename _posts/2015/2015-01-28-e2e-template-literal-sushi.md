@@ -192,6 +192,7 @@ Fetch API polyfillに必要なものの話
 - [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL "URL")が必要
 	- [Jxck/URL](https://github.com/Jxck/URL "Jxck/URL")
 - [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams "URLSearchParams")が必要
+	- [Jxck/URLSearchParams](https://github.com/Jxck/URLSearchParams "Jxck/URLSearchParams")
 	- [FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita](http://qiita.com/Jxck_/items/769766853a90b7b435b0 "FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita")
 - TextEncoder & TextDecoder
 	- UTF-8以外はLegacy扱い
