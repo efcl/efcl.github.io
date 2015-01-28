@@ -141,8 +141,6 @@ var styles = ReactStyle`
 
 という感じでTemplate literalとあわせて書ける
 
-- 型付き文字列とCSSバリデーションのシンタックス
-
 -----
 
 ## Closure Templateは何をやってるのか? セキュリティ編 - teppeis
