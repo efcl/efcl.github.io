@@ -186,8 +186,13 @@ var styles = ReactStyle`
 - [Jxck/fetch](https://github.com/Jxck/fetch "Jxck/fetch")
 - Fetch APIが実装できれば、Nodeにも本物のXHRが実装できるはず
 
-Fetch API polyfillに必要がある話
+Fetch API polyfillに必要なものの話
 
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/e2e_sushi?src=hash">#e2e_sushi</a> URL.searchURLParamはencodeURLが必要 -&gt; TextEncodeというものが必要 -&gt; decodeの方はUTF-8/16以外にもある -&gt; 仕様にdecodeのそれぞれの文字コードの仕様が乗ってる</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/560063683229786112">January 27, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL "URL")が必要
+	- [Jxck/URL](https://github.com/Jxck/URL "Jxck/URL")
 - [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams "URLSearchParams")が必要
 	- [FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita](http://qiita.com/Jxck_/items/769766853a90b7b435b0 "FormData は multipart/form-data で application/x-www-form-urlencoded は URLSearchParams - Qiita")
 - TextEncoder & TextDecoder
