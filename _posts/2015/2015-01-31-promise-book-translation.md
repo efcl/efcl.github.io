@@ -20,6 +20,8 @@ tags:
 
 中国語の翻訳は以下から見ることが出来ます。
 
+[![screenshot](http://efcl.info/wp-content/uploads/2015/01/31-1422676729.png)](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")
+
 - [JavaScript Promise迷你书（中文版）](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")
 - [liubin/promises-book](https://github.com/liubin/promises-book/ "liubin/promises-book")
 
