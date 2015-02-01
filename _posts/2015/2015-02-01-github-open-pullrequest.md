@@ -10,7 +10,7 @@ tags:
 
 ---
 
-タイトル通りですが、現在のGitのブランチ情報を元に該当するPull Requestのページを開く方法がGitHubにはあります。
+タイトル通りですが、Gitのブランチ名を元に該当するPull Requestのページを開く方法がGitHubにはあります。
 
 ```
 https://github.com/<OWNER>/<REPO>/pull/<branch>
