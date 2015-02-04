@@ -43,6 +43,11 @@ https://github.com/<OWNER>/<REPO>/pull/<branch>
 
 `.gitconfig`で開くパターンを設定できるので、`ref`のところを`/tree/` から `/pull/`にして見たところ、現在いるブランチからPull Requestのページを開けて便利になりました。(これであってるのかな?)
 
+追記: 公式に同様の機能がオプションでついたのでこちらの方が安全な気がします。
+
+- [git-browse-remote で現在のブランチに対応するプルリクエストを一発で開く - 詩と創作・思索のひろば](http://motemen.hatenablog.com/entry/2015/02/git-browse-remote-pr "git-browse-remote で現在のブランチに対応するプルリクエストを一発で開く - 詩と創作・思索のひろば")
+
+
 ```
 [browse-remote "github.com"]
 	top = https://{host}/{path}
