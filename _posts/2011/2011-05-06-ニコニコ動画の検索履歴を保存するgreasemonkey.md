@@ -17,7 +17,7 @@ tags:
 ---
 今のニコニコだと好きな動画を探すときに、特定の検索をして探すって感じの場合が多くなってきた気がするので、検索履歴を保存して表示できるGreasemonkeyを書いてみました。
 
-*   [Nico Search History for Greasemonkey][1]
+- [azu/nico-search-history](https://github.com/azu/nico-search-history "azu/nico-search-history")
 
 検索画面の右上の方にボタンが出るようになるので、それをクリックすると検索した履歴が表示されます。   
 検索履歴は検索キーだけではなくてsort方法によっても別々に保存されます。
@@ -33,7 +33,7 @@ tags:
 それぞれ必要な部品をモジュールhistory,templeteとして定義して、必要な時に   
 Sandbox(&#8220;history&#8221;, function(box) { … }) という感じで使うというような書き方になってる。
 
-*   [nico\_search\_history at master from azu/Greasemonkey &#8211; GitHub][5]
+- [azu/nico-search-history](https://github.com/azu/nico-search-history "azu/nico-search-history")
 
  [1]: http://userscripts.org/scripts/show/102371
  [2]: http://efcl.info/wp-content/uploads/2011/05/image8.png
