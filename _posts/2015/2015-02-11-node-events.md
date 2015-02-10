@@ -20,6 +20,9 @@ tags:
 
 ## 「io.jsについて」 by @yosuke_furukawa
 
+> スライド : [io.js 東京Node学園 15時限目 // Speaker Deck](https://speakerdeck.com/yosuke_furukawa/io-dot-js-dong-jing-nodexue-yuan-15shi-xian-mu "io.js 東京Node学園 15時限目 // Speaker Deck")
+
+
 - 最初はforkじゃなくてsporkと書いてあった
 	- forkほど先割れじゃないよという
 - io.jsはオープンガバナンスモデル
@@ -47,11 +50,9 @@ tags:
 
 ----
 
-> スライド : [io.js 東京Node学園 15時限目 // Speaker Deck](https://speakerdeck.com/yosuke_furukawa/io-dot-js-dong-jing-nodexue-yuan-15shi-xian-mu "io.js 東京Node学園 15時限目 // Speaker Deck")
-
-----
-
 ## 「extensible web」 by @Jxck_
+
+> スライド: [Extensible web](http://www.slideshare.net/Jxck/extensible-web "Extensible web")
 
 - [The Extensible Web Manifesto](https://extensiblewebmanifesto.org/ja/ "The Extensible Web Manifesto")
 - Shut the fuck up and write some code ということ
@@ -90,9 +91,6 @@ tags:
 	- Encoding
 		- obtain-unicode
 		- `String.fromCodePoint`
-
-> スライド: [Extensible web](http://www.slideshare.net/Jxck/extensible-web "Extensible web")
-
 
 ----
 
