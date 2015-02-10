@@ -183,4 +183,9 @@ shibukawaさん + いつもの
   - DTDにあるURLがリンク切れになってる問題
   - ドメインリスク
   - GitHubのURLをid代わり使ったりするのは永遠なのか
-
+- コードホスティングの信頼性
+  - 暗号やアルゴリズムなどはGoogle Codeに置かれたりすることが多い
+  - アカウントの重み??
+     - SourceForge > Google Code > GitHub
+     - SourceForgeのアカウント持ってたら昔からやってたんだとわかる
+  - Gitはなくなっても大丈夫だが、GitHubは現状だとなくなるのが困る
