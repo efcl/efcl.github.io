@@ -96,6 +96,8 @@ tags:
 
 # WebSocketの圧縮機能とSocket.IO by @nkzawa
 
+> スライド:  [WebSocketの圧縮機能とSocket.IO // Speaker Deck](https://speakerdeck.com/nkzawa/websocketfalseya-suo-ji-neng-tosocket-dot-io "WebSocketの圧縮機能とSocket.IO // Speaker Deck")
+
 - wsモジュール
 	- Nodeのデファクトモジュール
 	- 昔からあった機能を追加
