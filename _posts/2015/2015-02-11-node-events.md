@@ -117,10 +117,6 @@ tags:
 	- WebScoket APIから変更することができない
 - この圧縮機能を使えるオプションが入った
 
-----
-
-
-
 -----
 
 ##「CodeOnMobile」 by @dai_shi
