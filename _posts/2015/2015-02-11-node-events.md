@@ -131,6 +131,8 @@ tags:
 
 ## 今できる通信高速化にトライしてみた by @shibu_jp 
 
+> スライド: [東京Node学園 今できる通信高速化にトライしてみた](http://www.slideshare.net/shibukawa/node-44508626 "東京Node学園 今できる通信高速化にトライしてみた")
+
 - JavaScriptでgoto
 	- [goto for JS](https://gist.github.com/shibukawa/315765020c34f4543665 "goto for JS")
 - 今できるとは
