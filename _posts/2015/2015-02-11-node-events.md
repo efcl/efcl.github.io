@@ -39,7 +39,7 @@ tags:
 	- `const`や`let`が使える
 	- `--es_staging` というオプションをつけると、V8でフラグが必要な機能も有効化できる
 	- [io.js - JavaScript I/O](https://iojs.org/en/es6.html "io.js - JavaScript I/O")
-	- `var v8 = require("v8");` を使って、GCのトレースを撮ったりするオプションを有効化したりできる。
+	- `var v8 = require("v8");` を使って、GCのトレースを取ったりするオプションを有効化したりできる。
 	- `assert` のdeepEqualStrictの追加
 	- `util.debuglog` [visionmedia/debug](https://github.com/visionmedia/debug "visionmedia/debug")みたいなモジュール
 - Node.jsとio.js
@@ -136,7 +136,7 @@ tags:
 - JavaScriptでgoto
 	- [goto for JS](https://gist.github.com/shibukawa/315765020c34f4543665 "goto for JS")
 - 今できるとは
-	- Service Wrokerはまだ実験的
+	- Service Workerはまだ実験的
 - LZ4コマンド
 	-  JSパーサで生成JSONを圧縮
 	- gzip -> LZ4 するとファイルサイズが小さくなる
