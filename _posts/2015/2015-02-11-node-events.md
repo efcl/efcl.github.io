@@ -28,7 +28,7 @@ tags:
 - io.jsはオープンガバナンスモデル
 	- Node.jsは何に着手してるのかが不透明
 	- どういうふうに取り組んでいるのかを公開する
-	- Google Hangoutで議論したものを動画を公開
+	- Google Hangoutで議論したものの動画を公開
 	- 基本的には合議制、Voteで :+1: :-1: を投票
 	- コミットが活性化しだした
 	- Comitterが追加された
@@ -39,7 +39,7 @@ tags:
 	- `const`や`let`が使える
 	- `--es_staging` というオプションをつけると、V8でフラグが必要な機能も有効化できる
 	- [io.js - JavaScript I/O](https://iojs.org/en/es6.html "io.js - JavaScript I/O")
-	- `var v8 = require("v8");` を使って、GCのトレースを撮ったりするプションを有効化したりできる。
+	- `var v8 = require("v8");` を使って、GCのトレースを取ったりするオプションを有効化したりできる。
 	- `assert` のdeepEqualStrictの追加
 	- `util.debuglog` [visionmedia/debug](https://github.com/visionmedia/debug "visionmedia/debug")みたいなモジュール
 - Node.jsとio.js
@@ -70,18 +70,18 @@ tags:
 	- 既存の機能を説明できる低レベルなAPIが必要
 	- 開発者がその低レベルなAPIを使っていいものを作ろう
 - e.g.) Fetch
-	- XHRよりも低レベルが色々なところを定義
+	- XHRよりも低レベルな色々なところを定義
 - e.g.) URL
 	- URLを正しくパースできる
 	- IPv6にちゃんと対応してる?
 	- ライブラリを作るときはこの`URL`を使えばいい
-- e.g.) WebComponent(Custom Element)
+- e.g.) Web Components(Custom Elements)
 - これらの低レベルなAPIがあれば、開発者は欲しいものが作れる
 - [Extensible Web を支える低レベル API 群 - Block Rockin’ Codes](http://jxck.hatenablog.com/entry/extensible-lowlevel-api "Extensible Web を支える低レベル API 群 - Block Rockin’ Codes")
-	- WebComponentを触って各コードが多いのは、それが低レベルなAPIなので当たり前。
+	- Web Componentsを触って書くコードが多いのは、それが低レベルなAPIなので当たり前。
 	- 低レベルなAPIをラップした便利なライブラリを書きましょう
 - 問題
-	- まず最初にLow Level APIがブラウザに実装する必要があるが、
+	- まず最初にLow Level APIがブラウザに実装される必要があるが、
 	- Pure JavaScriptでも書ける低レベルなAPIは書けるケースが多い
 	- アルゴリズムは実装できるはず
 - Fetch
@@ -136,12 +136,12 @@ tags:
 - JavaScriptでgoto
 	- [goto for JS](https://gist.github.com/shibukawa/315765020c34f4543665 "goto for JS")
 - 今できるとは
-	- Service Wrokerはまで実験的
+	- Service Workerはまだ実験的
 - LZ4コマンド
 	-  JSパーサで生成JSONを圧縮
 	- gzip -> LZ4 するとファイルサイズが小さくなる
 - 主に繰り返しの多いJSONやテキストで起きる
-	- gzipはウェブのスタンダート
+	- gzipはウェブのスタンダード
 	- JavaScriptでLZ4を展開できるようにするといいのでは?
 - LZ4をJavaScriptで展開
 	- JSXで実行
@@ -184,7 +184,7 @@ shibukawaさん + いつもの
 - ExcelとXSLTとXML Schemaのリンク切れについて
   - DTDにあるURLがリンク切れになってる問題
   - ドメインリスク
-  - GitHubのURLをid代わり使ったりするのは永遠なのか
+  - GitHubのURLをid代わりに使ったりするのは永遠なのか
 - コードホスティングの信頼性
   - 暗号やアルゴリズムなどはGoogle Codeに置かれたりすることが多い
   - アカウントの重み??
