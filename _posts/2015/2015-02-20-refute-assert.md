@@ -130,6 +130,6 @@ require('espower-loader')({
 
 
 [azu/refute](https://github.com/azu/refute "azu/refute")はコンセプトの証明的な感じなので、あんまり実用的ではないかもしれませんが、
-`assert.not`と違い`refute`という非定版があるとテスト書くときに迷いが減るので自分はこの考え方が結構好きです。
+`assert.not`と違い`refute`という否定版があるとテスト書くときに迷いが減るので自分はこの考え方が結構好きです。
 
-`assert.ok` があるのにたいして `assert.ng` がないので、`assert(!bool)`と書くのが何かいやなので、`refute(bool)`とかけたらいいなーと思って書きました。
+`assert.ok` があるのに対して `assert.ng` がないので、`assert(!bool)`と書くのが何かいやなので、`refute(bool)`とかけたらいいなーと思って書きました。
