@@ -97,6 +97,11 @@ SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、�
 
 
 ## ESTreeとShift ASTの目的の違い
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/py">@py</a> RE: ESTree, I think it&#39;s great that there&#39;s finally a canonical spec, but I look at it as legacy; I&#39;m confident Shift will be the future</p>&mdash; Michael Ficarra (@jspedant) <a href="https://twitter.com/jspedant/status/569238440044142592">February 21, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 ## [Babel][] - [babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")
 ## おまけ: [mdast][]
 
