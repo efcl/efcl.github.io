@@ -61,12 +61,41 @@ ESLintはASTだけではなく少し細かい単位のtokenなどにも依存し
 
 - [Add ECMAScript 6 features · Issue #10 · eslint/espree](https://github.com/eslint/espree/issues/10 "Add ECMAScript 6 features · Issue #10 · eslint/espree")
 
-## shift-spec
+## [Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")
+
+- [Announcing the Shift JavaScript AST Specification](http://engineering.shapesecurity.com/2014/12/announcing-shift-javascript-ast.html "Announcing the Shift JavaScript AST Specification")
+- [A Technical Comparison of the Shift and SpiderMonkey AST Formats](http://engineering.shapesecurity.com/2015/01/a-technical-comparison-of-shift-and.html "A Technical Comparison of the Shift and SpiderMonkey AST Formats")
+
+Esprimaの[@AriyaHidayat](https://twitter.com/AriyaHidayat "@AriyaHidayat")や[CoffeeScriptRedux](https://github.com/michaelficarra/CoffeeScriptRedux "CoffeeScriptRedux")の[@michaelficarra](https://github.com/michaelficarra "michaelficarra")がいる[Shape Security](https://github.com/shapesecurity "Shape Security")からShift ASTというASTの仕様策定と実装が公開されました。
+
+基本的には、Esprimaなどで使われていてデファクトだった[SpiderMonkey AST](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API "Parser API - Mozilla | MDN")から変換できる程度にはベースは同じですが、ES6などの対応を含め進められています。(まだ進行中の仕様です)
+
+Shift ASTの仕様策定、パーサ、ジェネレータ、バリデータ、SpiderMonkey ASTからの変換ツール、Javaの実装が公開されています。
+
+- [ES6: Add support for ES6 · Issue #8 · shapesecurity/shift-parser-js](https://github.com/shapesecurity/shift-parser-js/issues/8 "ES6: Add support for ES6 · Issue #8 · shapesecurity/shift-parser-js")
+
+SpiderMonkey ASTはもともとFirefoxのJavaScriptエンジンであるSpiderMonkeyの内部表現として始まったため、ツールとして扱うASTとしては微妙な部分などが存在しました。
+
+詳しくは[This doesn&#39;t exist already?](http://engineering.shapesecurity.com/2014/12/announcing-shift-javascript-ast.html "This doesn&#39;t exist already?")にかかれていますが、その扱いにくくなっているASTの部分の整理などをする目的もあります。
+
+「SpiderMonkey ASTからShift ASTに乗り換えるべきなの?」という疑問も生まれるかもしれませんが、現在ある意味安定してるSpiderMonkey ASTを扱った方がツール間の連携も上手くいくので、実験目的以外ならShift ASTをまだ使う理由はないと思います。
+
+まだ進行中の仕様なので実験してIssueとかを立てたりするのは、歓迎されると思うので後述する[ESTree][]と共に見ていくのがいいと思います。
+
 ## [jQuery Foundation adopts Esprima | Official jQuery Blog](http://blog.jquery.com/2015/01/26/jquery-foundation-adopts-esprima/ "jQuery Foundation adopts Esprima | Official jQuery Blog")
 ## http://azu.github.io/slide/crosushi/shift-ast.html
 - ----- ここまで復習 -----
 ## jQuery Foundationの手腕
 ## [ESTree][]
+
+SpiderMonkey ASTと同じものだと思ってもらって問題ないですが、SpiderMonkey ASTはMDNのドキュメントはコラボレーションで更新しにくいので、GitHubで策定(整理)が進められているASTの仕様です。
+
+SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、あまり大きな意味はなくて単純にSpiderMonkeyの内部表現以外でも使われる仕様ということなので、ESTreeという名前に変わった感じだと思います。
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/rauschma">@rauschma</a> Note that this is not a &quot;new&quot; standard, but simply the original SpiderMonkey standard (<a href="https://t.co/LObMtM6xEq">https://t.co/LObMtM6xEq</a>) now on Github.</p>&mdash; Michael Ficarra (@jspedant) <a href="https://twitter.com/jspedant/status/567037276450848768">February 15, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 ## ESTreeとShift ASTの目的の違い
 ## [Babel][] - [babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")
 ## おまけ: [mdast][]
