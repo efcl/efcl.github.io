@@ -132,7 +132,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 jQuery Foundationがやったこと
 
 - Esprima 2.0のリリース
-- dlhelmanを口説いてESTreeの作成
+- dhermanを口説いてESTreeの作成
 - Ariyaを含めEsprimaについての定期ミーティング
 
 ## [ESTree][]
