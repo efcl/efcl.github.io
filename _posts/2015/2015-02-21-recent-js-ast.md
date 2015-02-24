@@ -95,7 +95,7 @@ Esprimaのプロジェクトリーダは変わらず@Ariyaです。
 
 ## [[2014/01]最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)
 
-ここまでのASTの話をパーサを中心にまとめたスライドです。
+ここまでのASTの話をパーサ中心にまとめたスライドです。
 
 EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっきりとした動きはわかってなかったので、2014年1月までの現状をまとめたという感じです。
 
