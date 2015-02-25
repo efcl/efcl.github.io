@@ -191,8 +191,10 @@ Babelは[babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-ba
 
 そのため、先ほど紹介した[ESTree][]でのASTの標準化にも関わっていて、特に[ES6](https://github.com/estree/estree/blob/master/es6.md "estree/es6.md at master · estree/estree")や[ES7+](https://github.com/estree/estree/blob/master/experimental.md "estree/experimental.md at master · estree/estree")を中心にコミットされています。
 
-
 ## おまけ: [mdast][]
+
+これはJavaScriptのASTではありませんが、MarkdownをパースしてASTにしてくれる[mdast][]が最近公開されていて、JS ASTと同じようにNodeに分けられて、それぞれのNodeのposition情報もあり、ジェネレータにあたるstringifierもあるので、Markdownツールのエコシステムとしてかなり有用な気がします。
+
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
 [aster]: https://github.com/asterjs  "aster"
