@@ -181,7 +181,17 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 Shift ASTの人もESTreeの目的は分かって一緒にやってるので、今すぐ使える仕様が複数存在するという感じではないので、基本的にはESTreeを参照してツールが作られています。
 
-## [Babel][] - [babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")
+## [Babel][]
+
+2015年2月15日に6to5がBabelへとリネームされました。
+
+- [Not Born to Die · Babel](http://babeljs.io/blog/2015/02/15/not-born-to-die/ "Not Born to Die · Babel")
+
+Babelは[babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")というacornをベースにJSXやES7+の対応をしているパーサを使っています。
+
+そのため、先ほど紹介した[ESTree][]でのASTの標準化にも関わっていて、特に[ES6](https://github.com/estree/estree/blob/master/es6.md "estree/es6.md at master · estree/estree")や[ES7+](https://github.com/estree/estree/blob/master/experimental.md "estree/experimental.md at master · estree/estree")を中心にコミットされています。
+
+
 ## おまけ: [mdast][]
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
