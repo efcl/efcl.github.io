@@ -171,15 +171,15 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 - [Shift initiative · Issue #30 · estree/estree](https://github.com/estree/estree/issues/30 "Shift initiative · Issue #30 · estree/estree")
 
-先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についての取り決めを後方互換性をできるだけ維持して決めていくプロジェクトです。
+先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持して決めていくプロジェクトです。
 
-一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")は
+一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指しています。
+そのため、後方互換性よりもその修正を優先しています。
+また、Spidermonkey AST(ESTree) から Shift ASTに変換するモジュールも公開しています。
 
-- [ ] Shift ASTの立場をはっきり
+- [shapesecurity/shift-spidermonkey-converter-js](https://github.com/shapesecurity/shift-spidermonkey-converter-js "shapesecurity/shift-spidermonkey-converter-js")
 
-基本的にお互いに参照しあってるので、２つの仕様が根本からかけ離れたものにならないと思います
-
-
+Shift ASTの人もESTreeの目的は分かって一緒にやってるので、今すぐ使える仕様が複数存在するという感じではないので、基本的にはESTreeを参照してツールが作られています。
 
 ## [Babel][] - [babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")
 ## おまけ: [mdast][]
