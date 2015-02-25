@@ -193,7 +193,10 @@ Babelは[babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-ba
 
 ## おまけ: [mdast][]
 
-これはJavaScriptのASTではありませんが、MarkdownをパースしてASTにしてくれる[mdast][]が最近公開されていて、JS ASTと同じようにNodeに分けられて、それぞれのNodeのposition情報もあり、ジェネレータにあたるstringifierもあるので、Markdownツールのエコシステムとしてかなり有用な気がします。
+これはJavaScriptのASTではありませんが、MarkdownをパースしてASTにしてくれる[mdast][]が最近公開されています。
+
+JavaScript ASTと同じようにNodeに分けられて、それぞれのNodeの位置情報もあるため色々使い道がありそうです。
+ASTからMarkdown文字列を生成することもできるので、Markdownツールのエコシステムとしてかなり有用な気がします。
 
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
