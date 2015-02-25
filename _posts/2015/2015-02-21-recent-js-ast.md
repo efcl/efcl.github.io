@@ -141,7 +141,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 
 ## [ESTree][]
 
-基本はSpiderMonkey ASTと同じものだと思ってもらって問題ないですが、SpiderMonkey ASTはMDNのドキュメントはコラボレーションで更新しにくいので、GitHubで策定(整理)が進められているASTの仕様です。
+基本はSpiderMonkey ASTと同じものだと思ってもらって問題ないですが、SpiderMonkey ASTをそのまま維持しつつ、ES6についてなどの未定義だった部分の仕様を策定(整理)が進められているプロジェクトです。
 
 SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、あまり大きな意味はなくて単純にSpiderMonkeyの内部表現以外でも使われる仕様ということなので、ESTreeという名前に変わった感じだと思います。
 
@@ -158,15 +158,28 @@ SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、�
 
 先ほどの[Esprima Meeting](https://docs.google.com/document/d/1l02VT94tdphwUUZfPJorRYOY0Q_v41R_TyYhKayiP9M/edit# "Esprima Meeting Agenda - Google ドキュメント")のメンバーを合わせると、JavaScriptパーサに関係する人はだいたい関わってることがわかると思います。
 
-このASTの仕様を決めるオープンなコミュニティができたことで、今後パーサ間でどのようなASTを吐くかのズレなどが少なくなっていくと思います。(少なくてもECMAScriptの範囲では)
-
+パーサの実装に関わる人が仕様を決めるオープンなコミュニティができたことで、今後パーサ間でどのようなASTを吐くかのズレなどが少なくなっていくと思います。(少なくてもECMAScriptの範囲では)
 
 ## ESTreeとShift ASTの目的の違い
+
+[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")と[ESTree][]はどちらもASTの仕様を決めているのでどちらも同じように見えます。この２つの違いは何でしょうか?
+
+Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra")さんが次のように書いています。
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/py">@py</a> RE: ESTree, I think it&#39;s great that there&#39;s finally a canonical spec, but I look at it as legacy; I&#39;m confident Shift will be the future</p>&mdash; Michael Ficarra (@jspedant) <a href="https://twitter.com/jspedant/status/569238440044142592">February 21, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - [Shift initiative · Issue #30 · estree/estree](https://github.com/estree/estree/issues/30 "Shift initiative · Issue #30 · estree/estree")
+
+先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についての取り決めを後方互換性をできるだけ維持して決めていくプロジェクトです。
+
+一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")は
+
+- [ ] Shift ASTの立場をはっきり
+
+基本的にお互いに参照しあってるので、２つの仕様が根本からかけ離れたものにならないと思います
+
+
 
 ## [Babel][] - [babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")
 ## おまけ: [mdast][]
