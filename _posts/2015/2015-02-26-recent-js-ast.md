@@ -61,6 +61,7 @@ ESLintはASTだけではなく少し細かい単位のtokenなどにも依存し
 なぜforkしたのかは[espreeのREADME](https://github.com/eslint/espree "eslint/espree")や[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html "最近のASTパーサの動き")などを見てみるといいかと思います。
 
 基本的にはEsprimaが吐き出すASTと互換性を持ちながら、ES6のサポートなどを追加していっています。
+(Esprimaと相互参照するIssueも多いので、ライブラリとしては別ですがAST的には大体同じです)
 
 - [Add ECMAScript 6 features · Issue #10 · eslint/espree](https://github.com/eslint/espree/issues/10 "Add ECMAScript 6 features · Issue #10 · eslint/espree")
 
