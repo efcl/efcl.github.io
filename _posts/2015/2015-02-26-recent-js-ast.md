@@ -1,5 +1,5 @@
 ---
-title: "[2015-02] 最近のJavaScript ASTの標準化の動き"
+title: "[2015-02] 最近のJavaScript AST標準化の動き"
 author: azu
 layout: post
 date : 2015-02-26T11:54
