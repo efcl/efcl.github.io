@@ -7,11 +7,13 @@ category: JavaScript
 tags:
     - AST
     - JavaScript
+    - Parser
 
 ---
 
 以前書いた記事からのどんな感じの動きがあったのかまとめたものです。
 
+2015年前後ぐらいの内容です。
 
 前回のに比べ、JavaScriptのエコシステムの根幹でもあるパーサやASTの仕様まわりについての動きが最近活発なので、その辺を中心にまとめています。
 
@@ -82,7 +84,7 @@ SpiderMonkey ASTはもともとFirefoxのJavaScriptエンジンであるSpiderMo
 
 「SpiderMonkey ASTからShift ASTに乗り換えるべきなの?」という疑問も生まれるかもしれませんが、現在ある意味安定してるSpiderMonkey ASTを扱った方がツール間の連携も上手くいくので、実験目的以外ならShift ASTをまだ使う理由はないと思います。
 
-まだ進行中の仕様なので実験してIssueとかを立てたりするのは、歓迎されると思うので後述する[ESTree][]と共に見ていくのがいいと思います。
+進行中の仕様なので実験してIssueとかを立てたりするのは、歓迎されると思うので後述する[ESTree][]と共に見ていくのがいいと思います。
 
 ## [jQuery Foundation adopts Esprima | Official jQuery Blog](http://blog.jquery.com/2015/01/26/jquery-foundation-adopts-esprima/ "jQuery Foundation adopts Esprima | Official jQuery Blog")
 
@@ -123,7 +125,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 
 [[2014/01]最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)でも登場していたJavaScriptパーサが色々あることからわかるように、2015年1月をピークにパーサ周りでは労力が分散していました。(同じ機能についてを各パーサで考えて実装したり、[estools/escodegen](https://github.com/estools/escodegen "estools/escodegen")がその分散を吸収してたり)
 
-実際にjQuery Foundationが間に入ったことで開発速度は大幅に改善されていて、後述しますがESTreeなどのAST標準化作業も動きが始まり、jQuery Foundationがやったことは大きかったと思います。
+実際にjQuery Foundationが間に入ったことで開発速度は大幅に改善されていて、後述するESTreeなどのAST標準化作業も始まり、jQuery Foundationがやったことは大きかったと思います。
 
 ここまででjQuery Foundationがやったこと
 
@@ -171,15 +173,14 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 - [Shift initiative · Issue #30 · estree/estree](https://github.com/estree/estree/issues/30 "Shift initiative · Issue #30 · estree/estree")
 
-先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持して決めていくプロジェクトです。
+先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら標準化していくプロジェクトです。
 
-一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指しています。
-そのため、後方互換性よりもその修正を優先しています。
+一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指していて、後方互換性よりもその修正を優先しています。
 また、Spidermonkey AST(ESTree) から Shift ASTに変換するモジュールも公開しています。
 
 - [shapesecurity/shift-spidermonkey-converter-js](https://github.com/shapesecurity/shift-spidermonkey-converter-js "shapesecurity/shift-spidermonkey-converter-js")
 
-Shift ASTの人もESTreeの目的は分かって一緒にやってるので、今すぐ使える仕様が複数存在するという感じではないので、基本的にはESTreeを参照してツールが作られています。
+Shift ASTの人もESTreeの目的は分かって一緒にやっていて、今すぐ使える仕様が複数存在するという感じではないので、基本的にはESTreeを参照してツールが作られています。
 
 ## [Babel][]
 
@@ -189,7 +190,7 @@ Shift ASTの人もESTreeの目的は分かって一緒にやってるので、�
 
 Babelは[babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-babel")というacornをベースにJSXやES7+の対応をしているパーサを使っています。
 
-そのため、先ほど紹介した[ESTree][]でのASTの標準化にも関わっていて、特に[ES6](https://github.com/estree/estree/blob/master/es6.md "estree/es6.md at master · estree/estree")や[ES7+](https://github.com/estree/estree/blob/master/experimental.md "estree/experimental.md at master · estree/estree")を中心にコミットされています。
+そのため、[@sebmck](https://github.com/sebmck "sebmck")も先ほど紹介した[ESTree][]でのASTの標準化にも関わっていて、特に[ES6](https://github.com/estree/estree/blob/master/es6.md "estree/es6.md at master · estree/estree")や[ES7+](https://github.com/estree/estree/blob/master/experimental.md "estree/experimental.md at master · estree/estree")を中心にコミットされています。
 
 ## おまけ: [mdast][]
 
@@ -198,6 +199,12 @@ Babelは[babel/acorn-babel](https://github.com/babel/acorn-babel "babel/acorn-ba
 JavaScript ASTと同じようにNodeに分けられて、それぞれのNodeの位置情報もあるため色々使い道がありそうです。
 ASTからMarkdown文字列を生成することもできるので、Markdownツールのエコシステムとしてかなり有用な気がします。
 
+-----
+
+## 今後のみどころ
+
+- ESTreeによる仕様の標準化作業
+- 
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
 [aster]: https://github.com/asterjs  "aster"
