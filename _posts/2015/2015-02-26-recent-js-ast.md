@@ -178,7 +178,10 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら、コミュニティレベルでの標準化していくプロジェクトです。
 
+現在作られてるパーサの結果を仕様に落としたりしてるので、既に動いてる仕様です。
+
 一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指していて、後方互換性よりもその修正を優先しています。
+
 また、Spidermonkey AST(ESTree) から Shift ASTに変換するモジュールも公開しています。
 
 - [shapesecurity/shift-spidermonkey-converter-js](https://github.com/shapesecurity/shift-spidermonkey-converter-js "shapesecurity/shift-spidermonkey-converter-js")
