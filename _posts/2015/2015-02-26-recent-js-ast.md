@@ -142,7 +142,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 	- [IRC logs](http://irc.jquery.org/%23esprima-meeting/ "IRC logs") にログ
 	- [@ariya](https://github.com/ariya "ariya")(Esprima/Shift AST)、[@ikarienator](https://github.com/ikarienator "ikarienator") (Shift AST)、[@michaelficarra](https://github.com/michaelficarra "michaelficarra")(Shift AST)、[@mikesherov](https://github.com/mikesherov "mikesherov") (JSCS/jQuery Foundation)、[@jeffmo](https://github.com/jeffmo "jeffmo")(esprima-fb/facebook)、[@nzakas](https://github.com/nzakas/ "nzakas")(espree/ESLint) が主となって定期的にIRC/Skypeでミーティングをやっています
 
-この中でもAST全体で見て大きいのは [ESTree][] というあやふやだったMozilla ASTのドキュメントを整備するプロジェクトを作ったことだと思います。
+この中でもAST全体で見て大きいのはあやふやだったMozilla ASTのドキュメントを整備する[ESTree][]というプロジェクトを作ったことだと思います。
 
 ## [ESTree][]
 
