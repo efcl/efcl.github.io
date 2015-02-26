@@ -134,7 +134,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 
 - Esprima 2.0のリリース
 	- 主なコミットはAriya
-- EsprimaをGoogle CodeからGitHub Issueを中心に回るように
+- EsprimaがGoogle CodeからGitHub Issueを中心に回るように
 	- [Maintainer&#39;s Guide · jquery/esprima Wiki](https://github.com/jquery/esprima/wiki/Maintainer%27s-guide "Maintainer&#39;s Guide · jquery/esprima Wiki")
 - [@dherman](https://github.com/dherman "dherman")を召喚して[ESTree][]の作成
 - Ariyaを含めEsprimaについての定期ミーティング
