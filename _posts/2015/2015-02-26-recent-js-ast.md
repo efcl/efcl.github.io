@@ -2,7 +2,7 @@
 title: "[2015-02] 最近のJavaScript ASTの標準化の動き"
 author: azu
 layout: post
-date : 2015-02-21T11:54
+date : 2015-02-26T11:54
 category: JavaScript
 tags:
     - AST
@@ -13,7 +13,7 @@ tags:
 
 以前書いた記事からのどんな感じの動きがあったのかまとめたものです。
 
-- [最近気になったJavaScript AST周りの動き | Web Scratch](http://efcl.info/2014/0419/res3859/ "最近気になったJavaScript AST周りの動き | Web Scratch") 前回
+- [最近気になったJavaScript AST周りの動き | Web Scratch](http://efcl.info/2014/0419/res3859/ "最近気になったJavaScript AST周りの動き | Web Scratch") 前回の記事
 
 2015年の1月前後の内容が中心です。
 
@@ -203,12 +203,16 @@ ASTからMarkdown文字列を生成することもできるので、Markdownツ�
 
 -----
 
-## 今後のみどころ
+## 今後の見どころ
+
+2015年2月26日現在の動きについて書きましたが、まだまだやることは出てくると思います。
 
 - ESTreeによる標準化作業
 - ASTより粒度が小さいtokenの扱い
 	- 以前CST([getify/concrete-syntax-tree](https://github.com/getify/concrete-syntax-tree "getify/concrete-syntax-tree"))というのを考えられたけど頓挫した
 - 拡張仕様(JSXなど)をどう扱うのか
+
+
 
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
