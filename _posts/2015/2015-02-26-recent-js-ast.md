@@ -56,7 +56,7 @@ Babelとなった今でもそのペースが落ちずに進んでいるので、
 
 Espreeがリリースされた頃(2014年12月6日) Esprimaは動きが遅かったのと、ES6の対応はHarmonyブランチで行われていましたが[Comment Attachのアルゴリズムの違い](https://github.com/jquery/esprima/issues/1024 "Revert comment attachment to 1.2 behavior? · Issue #1024 · jquery/esprima")もあって、masterブランチのforkとして作成が開始されました。(Esprima 2.0でHarmonyはmasterにマージされています)
 
-ESLintはASTだけではなく少し細かい単位のtokenなどにも依存したLintを行っているため、acornなど別のパーサへの移行する子が難しいのでforkした感じでした。
+ESLintはASTだけではなく少し細かい単位のtokenなどにも依存したLintを行っているため、acornなど別のパーサへの移行することが難しいのでforkした感じでした。
 
 なぜforkしたのかは[espreeのREADME](https://github.com/eslint/espree "eslint/espree")や[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html "最近のASTパーサの動き")などを見てみるといいかと思います。
 
