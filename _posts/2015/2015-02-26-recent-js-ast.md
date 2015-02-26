@@ -205,14 +205,14 @@ ASTからMarkdown文字列を生成することもできるので、Markdownツ�
 
 ## 今後の見どころ
 
-2015年2月26日現在の動きについて書きましたが、まだまだやることは出てくると思います。
+2015年2月26日現在のAST周りの動きについて書きましたが、まだまだ決めるべきことは色々あると思います。
 
 - ESTreeによる標準化作業
 - ASTより粒度が小さいtokenの扱い
 	- 以前CST([getify/concrete-syntax-tree](https://github.com/getify/concrete-syntax-tree "getify/concrete-syntax-tree"))というのを考えられたけど頓挫した
 - 拡張仕様(JSXなど)をどう扱うのか
 
-
+この記事ででてきたリポジトリや[JavaScript AST Links.](https://gist.github.com/azu/a44cc817c233c53a496c "JavaScript AST Links.")で紹介してる人などを追ってみると良さそうな気がします。
 
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
