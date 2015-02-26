@@ -1,5 +1,5 @@
 ---
-title: "[2015-02] 最近のJavaScript AST"
+title: "[2015-02] 最近のJavaScript ASTの標準化の動き"
 author: azu
 layout: post
 date : 2015-02-21T11:54
@@ -13,7 +13,9 @@ tags:
 
 以前書いた記事からのどんな感じの動きがあったのかまとめたものです。
 
-2015年前後ぐらいの内容です。
+- [最近気になったJavaScript AST周りの動き | Web Scratch](http://efcl.info/2014/0419/res3859/ "最近気になったJavaScript AST周りの動き | Web Scratch") 前回
+
+2015年の1月前後の内容が中心です。
 
 前回のに比べ、JavaScriptのエコシステムの根幹でもあるパーサやASTの仕様まわりについての動きが最近活発なので、その辺を中心にまとめています。
 
@@ -143,7 +145,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 
 ## [ESTree][]
 
-基本はSpiderMonkey ASTと同じものだと思ってもらって問題ないですが、SpiderMonkey ASTをそのまま維持しつつ、ES6についてなどの未定義だった部分の仕様を策定(整理)が進められているプロジェクトです。
+基本はSpiderMonkey ASTと同じものだと思ってもらって問題ないですが、SpiderMonkey ASTをそのまま維持しつつ、ES6についてなどの未定義だった部分の仕様を整理していくコミュニティプロジェクトです。(仕様といってもECMAみたいな標準化団体としてやったりしてるわけではないです)
 
 SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、あまり大きな意味はなくて単純にSpiderMonkeyの内部表現以外でも使われる仕様ということなので、ESTreeという名前に変わった感じだと思います。
 
@@ -173,7 +175,7 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 - [Shift initiative · Issue #30 · estree/estree](https://github.com/estree/estree/issues/30 "Shift initiative · Issue #30 · estree/estree")
 
-先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら標準化していくプロジェクトです。
+先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら、コミュニティレベルでの標準化していくプロジェクトです。
 
 一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指していて、後方互換性よりもその修正を優先しています。
 また、Spidermonkey AST(ESTree) から Shift ASTに変換するモジュールも公開しています。
@@ -203,8 +205,11 @@ ASTからMarkdown文字列を生成することもできるので、Markdownツ�
 
 ## 今後のみどころ
 
-- ESTreeによる仕様の標準化作業
-- 
+- ESTreeによる標準化作業
+- ASTより粒度が小さいtokenの扱い
+	- 以前CST([getify/concrete-syntax-tree](https://github.com/getify/concrete-syntax-tree "getify/concrete-syntax-tree"))というのを考えられたけど頓挫した
+- 拡張仕様(JSXなど)をどう扱うのか
+
 
 [RReverser]: https://github.com/RReverser  "RReverser (Ingvar Stepanyan)"
 [aster]: https://github.com/asterjs  "aster"
