@@ -62,7 +62,7 @@ ESLintはASTだけではなく少し細かい単位のtokenなどにも依存し
 
 基本的にはEsprimaが吐き出すASTと互換性を持ちながら、ES6のサポートなどを追加していってます。。
 Esprimaと相互参照するIssueも多く、ライブラリとしては別ですがAST的には大体同じです。
-(ESLintはどの機能をパース可能にするかがオプショナルになっていてかなり細かい作り)
+(Espreeはどの機能/構文をパース可能にするかがオプショナルになっているのでかなり細かい作り)
 
 - [Add ECMAScript 6 features · Issue #10 · eslint/espree](https://github.com/eslint/espree/issues/10 "Add ECMAScript 6 features · Issue #10 · eslint/espree")
 
