@@ -29,7 +29,7 @@ tags:
 
 AST周りでよく見る人やパーサをいかにまとめてあります。
 
-- [JavaScript AST Links](https://gist.github.com/azu/a44cc817c233c53a496c)
+- [JavaScript AST Links.](https://gist.github.com/azu/a44cc817c233c53a496c)
 
 ## [estools](https://github.com/estools/)
 
@@ -52,15 +52,15 @@ Babelとなった今でもそのペースが落ちずに進んでいるので、
 
 ## [Espree][]
 
-[Espree][]は[ESLint](http://eslint.org/ "ESLint")プロジェクトでES6対応やJSXのオプショナルサポートするためにEsprimaをフォークしたものです。
+[Espree][]は[ESLint](http://eslint.org/ "ESLint")プロジェクトでES6対応やJSXのオプショナルサポートをするためにEsprimaをフォークしたものです。
 
 Espreeがリリースされた頃(2014年12月6日) Esprimaは動きが遅かったのと、ES6の対応はHarmonyブランチで行われていましたが[Comment Attachのアルゴリズムの違い](https://github.com/jquery/esprima/issues/1024 "Revert comment attachment to 1.2 behavior? · Issue #1024 · jquery/esprima")もあって、masterブランチのforkとして作成が開始されました。(Esprima 2.0でHarmonyはmasterにマージされています)
 
-ESLintはASTだけではなく少し細かい単位のtokenなどにも依存したLintを行っているため、acornなど別のパーサへの移行することが難しいのでforkした感じでした。
+ESLintはASTだけではなく少し細かい単位のtokenなどにも依存したLintを行っているため、acornなど別のパーサへ移行することが難しいのでforkした感じでした。
 
 なぜforkしたのかは[espreeのREADME](https://github.com/eslint/espree "eslint/espree")や[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html "最近のASTパーサの動き")などを見てみるといいかと思います。
 
-基本的にはEsprimaが吐き出すASTと互換性を持ちながら、ES6のサポートなどを追加していってます。。
+基本的にはEsprimaが吐き出すASTと互換性を持ちながら、ES6のサポートなどを追加していってます。
 Esprimaと相互参照するIssueも多く、ライブラリとしては別ですがAST的には大体同じです。
 (Espreeはどの機能/構文をパース可能にするかがオプショナルになっているのでかなり細かい作り)
 
@@ -81,7 +81,7 @@ Shift ASTの仕様策定、パーサ、ジェネレータ、バリデータ、Sp
 
 SpiderMonkey ASTはもともとFirefoxのJavaScriptエンジンであるSpiderMonkeyの内部表現として始まったため、ツールとして扱うASTとしては微妙な部分などが存在しました。
 
-また、SpiderMonkey ASTはES6への対応やドキュメントが更新が疎かになっていたため、各パーサがES6対応をする際に参照するものがなかったのもひとつの理由です。
+また、SpiderMonkey ASTはES6への対応やドキュメントの更新が疎かになっていたため、各パーサがES6対応をする際に参照するものがなかったのもひとつの理由です。
 
 詳しくは[This doesn&#39;t exist already?](http://engineering.shapesecurity.com/2014/12/announcing-shift-javascript-ast.html "This doesn&#39;t exist already?")にかかれていますが、その扱いにくくなっているASTの部分の整理などをする目的もあります。
 
@@ -96,17 +96,17 @@ SpiderMonkey ASTはもともとFirefoxのJavaScriptエンジンであるSpiderMo
 
 [@ariya](https://github.com/ariya "ariya")がEsprimaの開発を辞めたという感じではなく、よりパーサ周りの開発を活性化、集中化するためにjQuery Foundationに移管されて[jquery/esprima](https://github.com/jquery/esprima)となりました。
 
-Esprimaのプロジェクトリーダは変わらず@Ariyaです。
+Esprimaのプロジェクトリーダは変わらずAriyaです。
 
-## [[2014/01]最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)
+## [[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)
 
 ここまでのASTの話をパーサ中心にまとめたスライドです。
 
-EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっきりとした動きはわかってなかったので、2014年1月までの現状をまとめたという感じです。
+EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっきりとした動きはわかってなかったので、2015年1月までの現状をまとめたという感じです。
 
 -----
 
-ここまでが[[2014/01]最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)のスライドの振り返りです。
+ここまでが[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)のスライドの振り返りです。
 
 -----
 
@@ -126,7 +126,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 	- Be open to contributions from the community
 	- Do work and make decisions in public
 
-[[2014/01]最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)でも登場していたJavaScriptパーサが色々あることからわかるように、2015年1月をピークにパーサ周りでは労力が分散していました。(同じ機能についてを各パーサで考えて実装したり、[estools/escodegen](https://github.com/estools/escodegen "estools/escodegen")がその分散を吸収してたり)
+[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)でも登場していたJavaScriptパーサが色々あることからわかるように、2015年1月をピークにパーサ周りでは労力が分散していました。(同じ機能について各パーサで考えて実装したり、[estools/escodegen](https://github.com/estools/escodegen "estools/escodegen")がその分散を吸収してたり)
 
 実際にjQuery Foundationが間に入ったことで開発速度は大幅に改善されていて、後述するESTreeなどのAST標準化作業も始まり、jQuery Foundationがやったことは大きかったと思います。
 
@@ -139,8 +139,8 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 - [@dherman](https://github.com/dherman "dherman")を召喚して[ESTree][]の作成
 - Ariyaを含めEsprimaについての定期ミーティング
 	- [Esprima Meeting Agenda - Google ドキュメント](https://docs.google.com/document/d/1l02VT94tdphwUUZfPJorRYOY0Q_v41R_TyYhKayiP9M/edit# "Esprima Meeting Agenda - Google ドキュメント") アジェンダ
-	- [IRC logs](http://irc.jquery.org/%23esprima-meeting/ "IRC logs") にログ
-	- [@ariya](https://github.com/ariya "ariya")(Esprima/Shift AST)、[@ikarienator](https://github.com/ikarienator "ikarienator") (Shift AST)、[@michaelficarra](https://github.com/michaelficarra "michaelficarra")(Shift AST)、[@mikesherov](https://github.com/mikesherov "mikesherov") (JSCS/jQuery Foundation)、[@jeffmo](https://github.com/jeffmo "jeffmo")(esprima-fb/facebook)、[@nzakas](https://github.com/nzakas/ "nzakas")(espree/ESLint) が主となって定期的にIRC/Skypeでミーティングをやっています
+	- [IRC logs](http://irc.jquery.org/%23esprima-meeting/ "IRC logs")にログ
+	- [@ariya](https://github.com/ariya "ariya")(Esprima/Shift AST)、[@ikarienator](https://github.com/ikarienator "ikarienator")(Shift AST)、[@michaelficarra](https://github.com/michaelficarra "michaelficarra")(Shift AST)、[@mikesherov](https://github.com/mikesherov "mikesherov")(JSCS/jQuery Foundation)、[@jeffmo](https://github.com/jeffmo "jeffmo")(esprima-fb/facebook)、[@nzakas](https://github.com/nzakas/ "nzakas")(espree/ESLint)が主となって定期的にIRC/Skypeでミーティングをやっています
 
 この中でもAST全体で見て大きいのはあやふやだったMozilla ASTのドキュメントを整備する[ESTree][]というプロジェクトを作ったことだと思います。
 
@@ -163,7 +163,7 @@ SpiderMonkey ASTじゃなくてESTreeという名前になってるのには、�
 
 先ほどの[Esprima Meeting](https://docs.google.com/document/d/1l02VT94tdphwUUZfPJorRYOY0Q_v41R_TyYhKayiP9M/edit# "Esprima Meeting Agenda - Google ドキュメント")のメンバーを合わせると、JavaScriptパーサに関係する人はだいたい関わってることがわかると思います。
 
-パーサの実装に関わる人が仕様を決めるオープンなコミュニティができたことで、今後パーサ間でどのようなASTを吐くかのズレなどが少なくなっていくと思います。(少なくてもECMAScriptの範囲では)
+パーサの実装に関わる人が仕様を決めるオープンなコミュニティができたことで、今後パーサ間でどのようなASTを吐くかのズレなどが少なくなっていくと思います。(少なくともECMAScriptの範囲では)
 
 ## ESTreeとShift ASTの目的の違い
 
@@ -176,13 +176,13 @@ Shift ASTの[@michaelficarra](https://github.com/michaelficarra "michaelficarra"
 
 - [Shift initiative · Issue #30 · estree/estree](https://github.com/estree/estree/issues/30 "Shift initiative · Issue #30 · estree/estree")
 
-先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら、コミュニティレベルでの標準化していくプロジェクトです。
+先ほども述べたように[ESTree][]は新しい仕様ではなくて、既存のSpiderMonkey ASTで未定義だったES6についてを後方互換性をできるだけ維持しながら、コミュニティレベルで標準化していくプロジェクトです。
 
 現在作られてるパーサの結果を仕様に落としたりしてるので、既に動いてる仕様です。
 
 一方、[Shift AST Specification](https://github.com/shapesecurity/shift-spec "Shift AST Specification")が[現在のASTの扱いにくい部分がある問題](https://speakerdeck.com/michaelficarra/spidermonkey-parser-api-a-standard-for-structured-js-representations "SpiderMonkey Parser API: A Standard For Structured JS Representations // Speaker Deck")などを修正した未来の仕様を目指していて、後方互換性よりもその修正を優先しています。
 
-また、Spidermonkey AST(ESTree) から Shift ASTに変換するモジュールも公開しています。
+また、SpiderMonkey AST(ESTree)からShift ASTに変換するモジュールも公開しています。
 
 - [shapesecurity/shift-spidermonkey-converter-js](https://github.com/shapesecurity/shift-spidermonkey-converter-js "shapesecurity/shift-spidermonkey-converter-js")
 
@@ -213,7 +213,7 @@ ASTからMarkdown文字列を生成することもできるので、Markdownツ�
 
 - ESTreeによる標準化作業
 - ASTより粒度が小さいtokenの扱い
-	- 以前CST([getify/concrete-syntax-tree](https://github.com/getify/concrete-syntax-tree "getify/concrete-syntax-tree"))というのを考えられたけど頓挫した
+	- 以前CST([getify/concrete-syntax-tree](https://github.com/getify/concrete-syntax-tree "getify/concrete-syntax-tree"))というのが考えられたけど頓挫した
 - 拡張仕様(JSXなど)をどう扱うのか
 
 この記事ででてきたリポジトリや[JavaScript AST Links.](https://gist.github.com/azu/a44cc817c233c53a496c "JavaScript AST Links.")で紹介してる人などを追ってみると良さそうな気がします。
