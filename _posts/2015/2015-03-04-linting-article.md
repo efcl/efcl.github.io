@@ -24,8 +24,73 @@ MarkdownなのでLintingには[textlint](https://github.com/azu/textlint "textli
 
 といっても基本的には[azu/spellcheck-tech-word-textlint-rule](https://github.com/azu/spellcheck-tech-word-textlint-rule "azu/spellcheck-tech-word-textlint-rule")をベースにして無視するルールを追加した[spellcheck-post.js](https://github.com/jser/jser.github.io/blob/master/test/rules/spellcheck-post.js "spellcheck-post.js")を作って使っています。
 
+```js
+// LICENSE : MIT
+"use strict";
+var RuleHelper = require("textlint-rule-helper").RuleHelper;
+var spellCheck = require("spellcheck-technical-word").spellCheckText;
+var ContributingLink = '[Contributing Guide](https://github.com/jser/jser.github.io/blob/master/CONTRIBUTING.md)';
+/**
+ * @param {RuleContext} context
+ */
+module.exports = function (context) {
+    var helper = new RuleHelper(context);
+    var exports = {};
+    var Syntax = context.Syntax;
+    // HTMLの中身は無視する
+    var isCurrentHTMLBlock = false;
+    exports[context.Syntax.Html] = function (node) {
+        isCurrentHTMLBlock = true;
+    };
+    // ---- <h1 class="site-genre">ヘッドライン</h1> きたらリセット
+    exports[context.Syntax.HorizontalRule] = function (node) {
+        isCurrentHTMLBlock = false;
+    };
+    // 次のParagraphがきたらHTMLブロックは終わった事にする
+    exports[context.Syntax.Paragraph] = function (node) {
+        isCurrentHTMLBlock = false;
+    };
+    exports[context.Syntax.Str] = function (node) {
+        if (isCurrentHTMLBlock) {
+            return;
+        }
+        // Headerは自動でサイトのタイトルを使うので無視する
+        if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote, Syntax.Header])) {
+            return;
+        }
+        var text = context.getSource(node);
+        var results = spellCheck(text);
+        results.forEach(function (/*SpellCheckResult*/result) {
+            // line, column
+            context.report(node, new context.RuleError(result.actual + " => " + result.expected + "\n" + ContributingLink, {
+                line: result.paddingLine,
+                column: result.paddingColumn
+            }));
+        });
+    };
+    return exports;
+};
+```
+
 - [azu/technical-word-rules](https://github.com/azu/technical-word-rules "azu/technical-word-rules") 辞書本体
 - [azu/spellcheck-technical-word](https://github.com/azu/spellcheck-technical-word/ "azu/spellcheck-technical-word") 上記の辞書を使ってチェックする関数
+
+
+```
+"scripts": {
+  "postinstall": "bower-installer",
+  "lint:spell": "textlint --rulesdir test/rules -f pretty-error"
+},
+```
+
+という感じでnpm run-scriptを定義してあるので、
+
+```
+$ npm run lint:spell -- path/to/file.md
+```
+
+とすることで記事をLintすることができるようになりました。
+
 
 ## Lint結果をコメント
 
