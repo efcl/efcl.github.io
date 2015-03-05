@@ -1,11 +1,13 @@
 ---
-title: ""
+title: "jser/jser.github.ioの記事をpull request時にLintする"
 author: azu
 layout: post
 date : 2015-03-04T21:04
-category: 
+category: JavaScript
 tags:
-    - 
+    - JavaScript
+    - Markdown
+    - TravisCI
 
 ---
 
@@ -36,3 +38,30 @@ MarkdownなのでLintingには[textlint](https://github.com/azu/textlint "textli
 というのも、使ってる辞書のLintはそこまで正確ではないので、Warning的な扱いがちょうどいいと思ってます(最悪無視してもいいし、辞書の方を直したほうがいい時も多い)
 
 なので、[jser.github.io](https://github.com/jser/jser.github.io "jser.github.io")の方はLintした結果をレビューコメントとして書き込むようになってます。
+
+![レビューコメントのイメージ](http://efcl.info/wp-content/uploads/2015/03/05-1425550592.png)
+
+pull request時にしかこのLintは動かないので、最近記事を書くときはWIPでpull requestしながら記事を書いています。
+
+[[WIP] 2015-03-09のJS by azu · Pull Request #52 · jser/jser.github.io](https://github.com/jser/jser.github.io/pull/52 "[WIP] 2015-03-09のJS by azu · Pull Request #52 · jser/jser.github.io") みたいな感じなので、途中でヘッドラインのオススメとかあればコメントくれれば反映されるかもしれません。
+
+## TraviCI -> Lint -> レビューコメント
+
+これは[packsaddle/ruby-saddler](https://github.com/packsaddle/ruby-saddler "packsaddle/ruby-saddler")を使ってやっています。
+
+Saddlerはcheckstyle形式のLint結果を渡すと、Travis CIやCircle CIからレビューコメントとして書き込んでくれるコマンドラインツールです。
+
+基本的には以下でやっている書かれていることをやっているだけです。
+
+- [変更したファイルにrubocopやjscsを実行して pull requestに自動でコメントする – Saddler - checkstyle to anywhere](http://packsaddle.org/articles/saddler-overview/ "変更したファイルにrubocopやjscsを実行して pull requestに自動でコメントする – Saddler - checkstyle to anywhere")
+
+[travis-spellcheck.sh](https://github.com/jser/jser.github.io/blob/master/test/travis-spellcheck.sh "travis-spellcheck.sh")という感じのスクリプトを作って、textlintは`$(npm bin)/textlint --rulesdir test/rules -f checkstyle` という感じでcheckstyle形式でも出力できるので、それをSaddlerに渡す感じです。
+
+そのままだとファイル全体のLintの結果が含まれるので、実際にコミットの差分だけに絞りたい場合は[packsaddle/ruby-checkstyle_filter-git](https://github.com/packsaddle/ruby-checkstyle_filter-git "packsaddle/ruby-checkstyle_filter-git")をパイプするとできます。
+
+----
+## 使ったツール
+
+- [azu/textlint](https://github.com/azu/textlint)
+- [packsaddle/ruby-saddler](https://github.com/packsaddle/ruby-saddler)
+- [packsaddle/ruby-checkstyle_filter-git](https://github.com/packsaddle/ruby-checkstyle_filter-git)
