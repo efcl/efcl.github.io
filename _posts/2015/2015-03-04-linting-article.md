@@ -1,5 +1,5 @@
 ---
-title: "jser/jser.github.ioの記事をpull request時にLintする"
+title: "jser/jser.github.ioの記事をpull request時にLintする仕組み"
 author: azu
 layout: post
 date : 2015-03-04T21:04
