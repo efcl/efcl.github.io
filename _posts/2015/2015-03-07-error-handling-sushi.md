@@ -219,13 +219,13 @@ tags:
     - abortとtimeOutは別?
 - まずはtimeoutで話が上がった
     - [Add timeout option · Issue #20 · whatwg/fetch](https://github.com/whatwg/fetch/issues/20 "Add timeout option · Issue #20 · whatwg/fetch")
-- Fetch -> ServiceWorkerが話が移行
+- Fetch -> ServiceWorkerへ話が移行
     - [Returning a FetchPromise from fetch() · Issue #625 · slightlyoff/ServiceWorker](https://github.com/slightlyoff/ServiceWorker/issues/625 "Returning a FetchPromise from fetch() · Issue #625 · slightlyoff/ServiceWorker")
 - Fetchをabortできるように
     - 現状の案
          - `fetch`はFetchPromise という独自のPromiseを返す
          - `fetchPromise.abort`をできるようにする
-         - 公開する関数を一つにしたので、何でもfetchはオプションオブジェクトでやる
+         - 公開する関数を一つにしたので、fetchはオプションオブジェクトのもつ機能が多くなってしまってる
     - Fetchのいいところ
          - Requestクラス、Responseクラスができたところ
     - やろうとしたことに対してシンプル過ぎて、拡張性が欠けているのでは
