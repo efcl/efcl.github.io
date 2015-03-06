@@ -17,9 +17,15 @@ tags:
 
 - ログ: [#error_handling_sushi - Togetterまとめ](http://togetter.com/li/791762 "#error_handling_sushi - Togetterまとめ")
 
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/error_handling_sushi?src=hash">#error_handling_sushi</a> 始まった <a href="https://twitter.com/hashtag/%E5%AF%BF%E5%8F%B8%E3%81%A8%E3%81%AF?src=hash">#寿司とは</a> <a href="http://t.co/XZe21QTsDO">pic.twitter.com/XZe21QTsDO</a></p>&mdash; Takuto Wada (@t_wada) <a href="https://twitter.com/t_wada/status/573789853524983809">March 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 --
 
 ## 基調講演 - teppeis
+
+<blockquote class="twitter-tweet" lang="en"><p>これが <a href="https://twitter.com/hashtag/error_handling_sushi?src=hash">#error_handling_sushi</a> <a href="http://t.co/vSLDpthYi4">pic.twitter.com/vSLDpthYi4</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/573788901883564032">March 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - [`#error_handling_sushi` 基調講演](https://gist.github.com/teppeis/cc2b7adb501ace8ca7ab "#error_handling_sushi 基調講演")
 - 一つの話としてカスタムエラー
@@ -35,6 +41,9 @@ tags:
 --
 
 ## JavaScript Error Handling - jxck
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/error_handling_sushi?src=hash">#error_handling_sushi</a> by jack <a href="http://t.co/vlenkkbsGB">pic.twitter.com/vlenkkbsGB</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/573790216130973696">March 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - JavaScriptだとエラーの設計についての話はあんまりされない
 - Javaなどの話はそのまま適応できない
@@ -136,6 +145,9 @@ tags:
 - ブラウザとNodeの違い
     - ブラウザは人間にするフィードバックを求められてしまう
     - ライブラリ内でのエラーの扱いが中立的な判断が必要になる局面?
+
+<blockquote class="twitter-tweet" lang="en"><p>カスタムエラーの分岐 <a href="https://twitter.com/hashtag/error_handling_sushi?src=hash">#error_handling_sushi</a> <a href="http://t.co/NADxCmHmha">pic.twitter.com/NADxCmHmha</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/573799300993433600">March 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 --
 
