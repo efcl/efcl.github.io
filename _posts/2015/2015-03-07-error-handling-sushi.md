@@ -40,7 +40,7 @@ tags:
 
 --
 
-## JavaScript Error Handling - jxck
+## JavaScript Error Design  - jxck
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/error_handling_sushi?src=hash">#error_handling_sushi</a> by jack <a href="http://t.co/vlenkkbsGB">pic.twitter.com/vlenkkbsGB</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/573790216130973696">March 6, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
