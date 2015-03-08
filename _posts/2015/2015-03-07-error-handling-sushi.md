@@ -202,7 +202,9 @@ tags:
 
 --
 
-# Promiseのキャンセル - ama-ch
+## Promiseのキャンセル - ama-ch
+
+スライド: [gist:a487e3347f3f26ec7d73](https://gist.github.com/ama-ch/a487e3347f3f26ec7d73 "gist:a487e3347f3f26ec7d73")
 
 - bluebird
     - `Promise.CacellationError`というものを投げる
