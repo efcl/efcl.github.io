@@ -1,11 +1,13 @@
 ---
-title: ""
+title: "material-fluxというFluxライブラリをREADME駆動で開発した"
 author: azu
 layout: post
 date : 2015-03-17T09:44
-category: 
+category: JavaScript
 tags:
-    - 
+    - JavaScript
+    - Flux
+    - library
 
 ---
 
