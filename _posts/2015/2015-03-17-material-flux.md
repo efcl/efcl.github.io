@@ -132,7 +132,7 @@ userContext.userAction.doSomething("data");
 実際に使うときは、ReactなどのViewを担当するものへ`Context`のインスタンスを渡して使ってもらう。
 ReactもES6 classで書けるので例では`React.Component`を継承しているけど、`this`のバインドの問題などあるので、`createClass`の方が使いやすいかもしれない。
 
-ReactのAPIは`componentDidMount`というメソッドを定義したらあるタイミングでよばれるというような一種の宣言的なAPIで、外から呼ばれるという訳でもないのでES6 classである`createClass`を使うデメリットは少ない。
+ReactのAPIは`componentDidMount`というメソッドを定義したらあるタイミングでよばれるというような一種の宣言的なAPIで、外から呼ばれるという訳でもないのでES6 classでない`createClass`を使うデメリットは少ない。(そとから呼び出すための補完がしにくくてもそこまで問題起きない)
 
 ```js
 import React from 'react';
