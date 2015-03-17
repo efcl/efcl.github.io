@@ -224,11 +224,18 @@ README駆動をするときは表面的なAPIだけじゃなくて、擬似コ�
 
 また[material-flux](https://github.com/azu/material-flux "azu/material-flux")はES6 Classを使いまくるという趣旨だったので、使っていますが良いところと悪いところがあります。
 
-いいところは`constructor()`というイニシャライズする場所が決まってるので覚えやすい事、悪い所は`super()`を忘れると挙動が変わってしまう作りを作りやすい継承的な問題など。
+いいところは`constructor()`というイニシャライズする場所が決まってるので覚えやすい事、悪い所は`super()`周りに気を配る必要がある継承的な問題など。
 
-下手な独自のインスタンス化する手法よりも、やり方がある程度一定になるので覚えることが少なくていいのはメリットだと思います。
+- [`super()`の呼び忘れ](http://www.2ality.com/2015/02/es6-classes-final.html#super-constructor_calls "Classes in ECMAScript 6 (final semantics)")はネイティブだと`ReferenceError`になるが、Babel等のTranspilerでは[カバーできない](https://babeljs.io/repl/#?experimental=true&playground=true&evaluate=true&loose=false&spec=false&code=class%20Point%20{%0A%20%20constructor%28x,%20y%29%20{%0A%20%20%20%20this.x%20=%20x;%0A%20%20%20%20this.y%20=%20y;%0A%20%20}%0A%20%20toString%28%29%20{%0A%20%20%20%20return%20%27%28%27%20%2B%20this.x%20%2B%20%27,%20%27%20%2B%20this.y%20%2B%20%27%29%27;%0A%20%20}%0A}%0A%0Aclass%20ColorPoint%20extends%20Point%20{%0A%20%20constructor%28x,%20y,%20color%29%20{%0A%20%20%20%20this.color%20=%20color;%0A%20%20}%0A%20%20toString%28%29%20{%0A%20%20%20%20return%20super.toString%28%29%20%2B%20%27%20in%20%27%20%2B%20this.color;%0A%20%20}%0A}%0A%0Alet%20cp%20=%20new%20ColorPoint%2825,%208,%20%27green%27%29;%0Aconsole.log%28cp.toString%28%29%29;%0A)事
+	- ライブラリ側(親クラス側)で`assert`等を使って条件を制限する実装が必要そう
+- `super(args)` のように引数を渡すパターンだとユーザーは何を渡すか意識する必要があること
+- `super(args)` と `callWithArgs(args)` のような関数呼び出しでは、情報量がやっぱり違うこと
 
-また、デメリットとしては`React.Component`はより顕著で`this`が自動的にバインドされないため、ES6 classを使うとより書きにくくなる感じはしました。
+など書いていて思った感想です。
+
+しかし、下手な独自のインスタンス化する手法よりも、やり方がある程度一定になるので覚えることが少なくていいのはメリットだと思います。
+
+他には`React.Component`ではES6 classを使って書くと`this`が自動的にバインドされないため書きにくくなる感じはしました。
 
 これは以下のIssueでも議論されています。
 
