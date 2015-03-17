@@ -8,6 +8,7 @@ tags:
     - JavaScript
     - Flux
     - library
+    - ES6
 
 ---
 
