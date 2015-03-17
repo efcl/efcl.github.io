@@ -227,10 +227,11 @@ README駆動をするときは表面的なAPIだけじゃなくて、擬似コ�
 いいところは`constructor()`というイニシャライズする場所が決まってるので覚えやすい事、悪い所は`super()`周りに気を配る必要がある継承的な問題など。
 
 - [`super()`の呼び忘れ](http://www.2ality.com/2015/02/es6-classes-final.html#super-constructor_calls "Classes in ECMAScript 6 (final semantics)")はネイティブだと`ReferenceError`になるが、Babel等のTranspilerでは[カバーできてない](http://tinyurl.com/lcqddxy)こと
-	- ライブラリ側(親クラス側)で`assert`等を使って条件を制限する実装が必要そう
 - `super(args)` のように引数を渡すパターンだとユーザーは何を渡すか意識する必要があること
+	- ライブラリ側(親クラス側)で`assert`等を使って条件を制限する実装が必要そう
 - `super(args)` と `callWithArgs(args)` のような関数呼び出しを比較すると情報量がやっぱり違うこと
 	- ユーザーが親クラスを意識する必要があるのはちょっと大変な気がする
+	- 使いにくさの主な原因はこれな気がする
 
 などが書いていて思った感想で、この辺も今後考えていく必要がありそうです。
 
