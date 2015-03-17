@@ -15,9 +15,19 @@ tags:
 
 [material-flux](https://github.com/azu/material-flux "azu/material-flux")というFluxアーキテクチャの実装ライブラリを書きました。
 
+[Flux](http://facebook.github.io/flux/ "Flux")って何?と思う人は以下などを見ると良さそうな気がします。
+
+- [React: Flux Architecture - Video Tutorial Series @eggheadio](https://egghead.io/series/react-flux-architecture "React: Flux Architecture - Video Tutorial Series @eggheadio")
+- [Fluxとはなんだったのか + misc at 2014 - snyk_s log](http://saneyukis.hatenablog.com/entry/2014/12/24/014421)
+- [Fluxアーキテクチャの覚え書きを書いた - snyk_s log](http://saneyukis.hatenablog.com/entry/2014/09/26/174750)
+- [The Flux Quick Start Guide](http://www.jackcallister.com/2015/02/26/the-flux-quick-start-guide.html)
+- [Getting To Know Flux, the React.js Architecture ♥ Scotch](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
+- [What the Flux? (On Flux, DDD, and CQRS) — Jack Hsu](http://jaysoo.ca/2015/02/06/what-the-flux/ "What the Flux? (On Flux, DDD, and CQRS) — Jack Hsu")
+
 ## なぜ作ったか
 
-IDE readable(machine readable)なライブラリが欲しかったのがひとつの理由です。
+IDE readable(machine readable)なライブラリが欲しかったのがひとつの理由です。(d.tsなどを書けばだいたい問題ないですが、特殊なハックはしないという制限が欲しかった)
+
 Fluxライブラリの実装比較をしてる[voronianski/flux-comparison](https://github.com/voronianski/flux-comparison "voronianski/flux-comparison")や[The State of Flux](https://reactjsnews.com/the-state-of-flux/ "The State of Flux")などを出てくるライブラリなどを試しましたが、殆どのライブラリは
 
 - オブジェクトを渡したら、それに合わせたメソッドの生成
@@ -176,7 +186,9 @@ export default class AppComponent extends React.Component {
 }
 ```
 
-examplesや[voronianski/flux-comparison](https://github.com/voronianski/flux-comparison "voronianski/flux-comparison")にも例があるのでそちらも見てもらえるといいかもしれません。
+[examples](https://github.com/azu/material-flux/tree/master/examples "examples")やflux-comparisonの[material-flux実装バージョン](https://github.com/azu/flux-comparison/tree/material-flux "azu/flux-comparison at material-flux")があるのでそちらも見てもらえるといいかもしれません。
+
+- [azu/flux-comparison at material-flux](https://github.com/azu/flux-comparison/tree/material-flux "azu/flux-comparison at material-flux")
 
 ## README駆動開発
 
@@ -202,5 +214,37 @@ README駆動をするときは表面的なAPIだけじゃなくて、擬似コ�
 - [実践的なREADME駆動について | GH Issue Note](https://efcl.wordpress.com/2014/12/31/%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AAreadme%E9%A7%86%E5%8B%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
 - [README Driven Development](https://oncletom.io/talks/2014/okfestival/#/)
 
+
+## 学び
+
+学習目的で作り始めましたが、基本的にはFacebookのFluxと殆ど同じような感じで素に近い感覚の書き方ができるようなものができたと思います。
+
+今までDispatcherが隠されてるライブラリだと、どこでそれを渡してたりするのかが実装して明確に分かったのが良かった気がします。
+
+また[material-flux](https://github.com/azu/material-flux "azu/material-flux")はES6 Classを使いまくるという趣旨だったので、使っていますが良いところと悪いところがあります。
+
+いいところは`constructor()`というイニシャライズする場所が決まってるので覚えやすい事、悪い所は`super()`を忘れると挙動が変わってしまう作りを作りやすい継承的な問題など。
+
+下手な独自のインスタンス化する手法よりも、やり方がある程度一定になるので覚えることが少なくていいのはメリットだと思います。
+
+また、デメリットとしては`React.Component`はより顕著で`this`が自動的にバインドされないため、ES6 classを使うとより書きにくくなる感じはしました。
+
+これは以下のIssueでも議論されています。
+
+- [Use ES6 Classes to create React components. · Issue #613 · facebook/react](https://github.com/facebook/react/issues/613#issuecomment-76588054)
+- [Components as ES6 classes · Issue #3400 · facebook/react](https://github.com/facebook/react/issues/3400)
+
+クラスの継承の問題は古来より伝わるものらしいので詳しい人に任せますが、JavaScriptにもいわゆる`class`っぽいものがきたので、これからのライブラリAPIをどうするかはちょっと考えていかないといけなさそうな感じはしました。
+
+- [Joost&#39;s Dev Blog: Why composition is often better than inheritance](http://joostdevblog.blogspot.jp/2014/07/why-composition-is-often-better-than.html "Joost&#39;s Dev Blog: Why composition is often better than inheritance")
+- [【翻訳】クラスの「継承」より「合成」がよい理由とは？ゲーム開発におけるコードのフレキシビリティと可読性の向上 | POSTD](http://postd.cc/why-composition-is-often-better-than-inheritance/ "【翻訳】クラスの「継承」より「合成」がよい理由とは？ゲーム開発におけるコードのフレキシビリティと可読性の向上 | POSTD")
+
+ECMAScript 6の`class`は単なるシンタックスシュガーではなく、`Error`や`Array`、`Promise`といったネイティブオブジェクトを正しく継承するためにも必要です。
+
+ただし`class`構文じゃないとできないという訳ではなくて`Reflect.construct`などを使えば、同じようなことが書ける気がします?
+
+- [Classes in ECMAScript 6 (final semantics)](http://www.2ality.com/2015/02/es6-classes-final.html "Classes in ECMAScript 6 (final semantics)")
+
+ぐだぐだ書いてしまったので結論はありませんが、合成や継承にどんな手法を使うにしても、ヒューマンリーダブルかつマシンリーダブルな書き方というのは[考えていく](https://github.com/azu/material-flux/pull/8 "Thought on functional by azu · Pull Request #8 · azu/material-flux")必要がありそうです。
 
 [Babel]: https://babeljs.io/  "Babel · The transpiler for writing next generation JavaScript"
