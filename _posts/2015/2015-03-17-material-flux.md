@@ -63,7 +63,7 @@ export const keys = {
     "doSomething": "unique value"
 };
 export default class UserAction extends Action {
-    // or `[keys.doSomething](data){}`と書くこともできるけど補完できなさそう
+    // UserAction#doSomething
     doSomething(data){
         // pass the `data` to Store's `onHandler`
         // call `onHandler(data);`
@@ -71,6 +71,7 @@ export default class UserAction extends Action {
     }
 }
 ```
+
 
 ### Store
 
