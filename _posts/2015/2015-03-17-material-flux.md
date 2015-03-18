@@ -57,9 +57,10 @@ material-fluxはES6 classを前提としたAPIを組み立てていたので、[
 ```js
 import {Action} from "material-flux"
 // ただの定数なので、任意の文字列であればいいです。
-// {"dosome" : Symbol("key")} とかでも問題ないです
+// {"dosome" : Symbol("key")} とかでも問題ない
+// export var doSomeKey = "unique value"; を並べる感じでも良い
 export const keys = {
-    "doSomething": "doSomething"
+    "doSomething": "unique value"
 };
 export default class UserAction extends Action {
     // or `[keys.doSomething](data){}`と書くこともできるけど補完できなさそう
