@@ -57,7 +57,7 @@ material-fluxはES6 classを前提としたAPIを組み立てていたので、[
 ```js
 import {Action} from "material-flux"
 // ただの定数なので、任意の文字列であればいいです。
-// Symbol("key") とかでも問題ないです
+// {"dosome" : Symbol("key")} とかでも問題ないです
 export const keys = {
     "doSomething": "doSomething"
 };
