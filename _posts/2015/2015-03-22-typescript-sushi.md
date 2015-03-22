@@ -14,6 +14,7 @@ tags:
 
 [#typescript_sushi](https://twitter.com/search?f=realtime&q=%23typescript_sushi%20%20 "#typescript_sushi")に参加してきました。
 
+ログ: [#typescript_sushi - Togetterまとめ](http://togetter.com/li/798364 "#typescript_sushi - Togetterまとめ") 
 
 - [meta-sushi/guideline](https://github.com/meta-sushi/guideline "meta-sushi/guideline")に則ったイベントです。
 
