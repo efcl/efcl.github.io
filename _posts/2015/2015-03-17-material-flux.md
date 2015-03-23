@@ -191,9 +191,9 @@ export default class AppComponent extends React.Component {
 }
 ```
 
-[examples](https://github.com/azu/material-flux/tree/master/examples "examples")やflux-comparisonの[material-flux実装バージョン](https://github.com/azu/flux-comparison/tree/material-flux "azu/flux-comparison at material-flux")があるのでそちらも見てもらえるといいかもしれません。
+[examples](https://github.com/azu/material-flux/tree/master/examples "examples")やflux-comparisonの[material-flux実装バージョン](https://github.com/voronianski/flux-comparison/tree/master/material-flux "azu/flux-comparison at material-flux")があるのでそちらも見てもらえるといいかもしれません。
 
-- [azu/flux-comparison at material-flux](https://github.com/azu/flux-comparison/tree/material-flux "azu/flux-comparison at material-flux")
+- [flux-comparison/material-flux at master · voronianski/flux-comparison](https://github.com/voronianski/flux-comparison/tree/master/material-flux "flux-comparison/material-flux at master · voronianski/flux-comparison")
 
 ## README駆動開発
 
