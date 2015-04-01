@@ -1,5 +1,5 @@
 ---
-title: "ライブラリとパッケージ管理の権限移譲の問題(cocoapods)"
+title: "オープンソースライブラリとパッケージ管理の権限移譲の問題(cocoapods)"
 author: azu
 layout: post
 date : 2015-04-01T22:26
