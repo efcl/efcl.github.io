@@ -1,5 +1,5 @@
 ---
-title: "オープンソースライブラリとパッケージ管理の権限移譲の問題(cocoapods)"
+title: "オープンソースライブラリとパッケージ管理の権限移譲の問題(CocoaPods)"
 author: azu
 layout: post
 date : 2015-04-01T22:26
@@ -14,9 +14,9 @@ tags:
 
 ---
 
-ライブラリを開発してオープンソースにして、npmやcocoapodsといった場所へパッケージとして公開することはよくあることだと思います。それを業務とかチームで使うこともよくあります。
+ライブラリを開発してオープンソースにして、npmやCocoaPodsといった場所へパッケージとして公開することはよくあることだと思います。それを業務とかチームで使うこともよくあります。
 
-そういった事をしてた時に、後から権限を付与しようとしたりリポジトリの管理についてで問題が出てくることがあったので、それについてのメモです。
+そういった事をしてた時に、後から権限を付与しようとしたりリポジトリの管理で問題が出てくることがあったので、それについてのメモです。
 
 この記事は、既に個人のアカウントで公開していたライブラリを後からどうやって権限の移譲や分配をしていくかという趣旨の内容です。
 
@@ -30,16 +30,16 @@ tags:
 - 後になってチームで更新出来るようにしたくなった
 - そもそもライブラリとリポジトリで権限が別で何か面倒だね
 
-## Cocoapodsの例
+## CocoaPodsの例
 
 SwiftとObjective-Cのパッケージ管理ツールである[CocoaPods](http://cocoapods.org/ "CocoaPods")を例にしてみます。
-[CocoaPods](http://cocoapods.org/ "CocoaPods")はRubyGemsやnpmと同じように、パッケージをpublishして公開する形なので、CocoaPodsを公開するようのアカウントがリポジトリとは別に必要です。
+[CocoaPods](http://cocoapods.org/ "CocoaPods")はRubyGemsやnpmと同じように、パッケージをpublishして公開する形なので、CocoaPodsを公開する用のアカウントがリポジトリとは別に必要です。
 
 なので、パッケージはパッケージで権限を付与する必要があります。
 
 ### 登録済みのpodspecの取得
 
-その人が登録しているcocoapodsのパッケージを確認する
+その人が登録しているCocoaPodsのパッケージを確認する
 
 ```
 $ pod trunk me
@@ -87,11 +87,11 @@ $ pod trunk me
     - ArsScale
 ```
 
-もしくは [cocoapods.org](http://cocoapods.org/?q=author%3Aazu "author:azu") で検索するなど。
+もしくは[CocoaPods.org](http://cocoapods.org/?q=author%3Aazu "author:azu")で検索するなど。
 
 ### 権限の付与
 
-一覧が確認できたら、公開の権限を付与したい人のcocoapodsアカウントへ権限を与える。
+一覧が確認できたら、公開の権限を付与したい人のCocoaPodsアカウントへ権限を与える。
 
 取得したリストから余計なものを取り除いて
 
@@ -101,7 +101,7 @@ OPBitMaskNumber
 ArsScale
 ```
 
-という感じの登録してるpod名のデータをクリップボードに入れておいて、`pod trunk add-owner `で権限を付与する。
+という感じの登録してるpod名のデータをクリップボードに入れておいて、`pod trunk add-owner`で権限を付与する。
 
 ```
 pbpaste | xargs -I% pod trunk add-owner "%" "付与するメールアドレス"
