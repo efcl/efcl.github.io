@@ -76,7 +76,7 @@ tags:
 
 追記: [0.10.2](https://github.com/twada/power-assert/releases/tag/v0.10.2 "0.10.2")からはnpmのみで完結するのでBowerは不要です。
 
-~~ブラウザ向けに`power-assert`は[Bower][10]を使うことで簡単にインストールできます。~~
+<del>ブラウザ向けに`power-assert`は[Bower][10]を使うことで簡単にインストールできます。</del>
 
     bower init
     bower install power-assert --save
