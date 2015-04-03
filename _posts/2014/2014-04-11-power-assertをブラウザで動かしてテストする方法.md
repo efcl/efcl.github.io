@@ -150,7 +150,7 @@ power-assert化したコードは[sourcemapに対応][13]しているため、
 Node.js環境なら読み込むようにして、ブラウザでは既にglobalで読み込まれているので読み込まないようにすることが出来ます。
 
     if (typeof require == "function" && typeof module == "object") {
-        var assert = require(&#039;power-assert&#039;);
+        var assert = require("power-assert");
     }
     
 
@@ -232,7 +232,7 @@ Browserifyを扱う事が出来るプリプロセッサのプラグインとし�
 
 実際のkarma.confの設定は[azu/power-assert-karma-seed][18]を参照して下さい
 
-    frameworks: [&#039;mocha&#039;, "browserify"],
+    frameworks: ["mocha", "browserify"],
     files: [
     ],
     browserify: {
