@@ -66,20 +66,23 @@ tags:
 
 そのため、方針としては次のようになります。
 
-1.  ブラウザ向けの`power-assert`ライブラリを`bower install`
+1.  <del>ブラウザ向けの`power-assert`ライブラリを`bower install`</del>
+[0.10.2](https://github.com/twada/power-assert/releases/tag/v0.10.2 "0.10.2")でnpmにもブラウザ向けのファイルが含まれるようになったのでBowerは不要です
 2.  `testem.json` でブラウザでmocha + power-assertで実行出来る環境を作る
 
 **完成したサンプルプロジェクト**は以下に置いてあります。
 
 *   [azu/power-assert-testem-seed][9]
 
-ブラウザ向けに`power-assert`は[Bower][10]を使うことで簡単にインストールできます。
+追記: [0.10.2](https://github.com/twada/power-assert/releases/tag/v0.10.2 "0.10.2")からはnpmのみで完結するのでBowerは不要です。
+
+~~ブラウザ向けに`power-assert`は[Bower][10]を使うことで簡単にインストールできます。~~
 
     bower init
     bower install power-assert --save
-    
 
 で**1**のインストールが完了です。
+
 
 次にTestemをインストールしてない場合はインストールしておきましょう
 
@@ -100,7 +103,7 @@ Test runnerとなるHTMLページは、[testem][8]が内蔵しているため気
             "./test/*.js"
         ],
         "serve_files": [
-            "./bower_components/power-assert/build/power-assert.js",
+            "./node_modules/power-assert/build/power-assert.js",
             "./powered-test/*.js"
         ]
     }
