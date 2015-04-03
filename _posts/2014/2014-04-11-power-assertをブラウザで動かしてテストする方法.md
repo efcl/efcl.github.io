@@ -74,15 +74,9 @@ tags:
 
 *   [azu/power-assert-testem-seed][9]
 
-追記: [0.10.2](https://github.com/twada/power-assert/releases/tag/v0.10.2 "0.10.2")からはnpmのみで完結するのでBowerは不要です。
+追記: [0.10.2](https://github.com/twada/power-assert/releases/tag/v0.10.2 "0.10.2")からはnpmのみで完結するのでBowerは不要になりました。
 
-<del>ブラウザ向けに`power-assert`は[Bower][10]を使うことで簡単にインストールできます。</del>
-
-    bower init
-    bower install power-assert --save
-
-で**1**のインストールが完了です。
-
+- [Bowerの手順を削除 · efcl/efcl.github.io@8d8d229](https://github.com/efcl/efcl.github.io/commit/8d8d229300a8da095082b3cd1227c0327a6af151 "Bowerの手順を削除 · efcl/efcl.github.io@8d8d229")
 
 次にTestemをインストールしてない場合はインストールしておきましょう
 
