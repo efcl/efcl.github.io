@@ -46,6 +46,8 @@ zshの関数とaliasですが、基本的にただのコマンドの組み合わ
 
 ## 使い方
 
+![npm-patch](http://efcl.info/wp-content/uploads/2015/04/09-1428537317.png)
+
 - npm-patch
 - npm-minor
 - npm-major
