@@ -2,7 +2,7 @@
 title: "npm publishのパターン"
 author: azu
 layout: post
-date : 2015-04-08T09:35
+date : 2015-04-09T12:35
 category: JavaScript
 tags:
     - npm
@@ -159,3 +159,10 @@ npm publishに対するグローバルなホックは書けないので、こう
 ![npm-patch](http://efcl.info/wp-content/uploads/2015/04/09-1428537317.png)
 
 間違ってEnterおしても、installやtestなどが走るのでその間にCtrl+Cとかでキャンセルできるので数秒は猶予があります。
+
+後はpackage.jsonの`files`とかをチェックしたい感じですが、基本的にコマンドの組み合わせなのでそういうコマンド作っていく感じになりそう。
+
+## おわり
+
+- [npm version publish alias](https://gist.github.com/azu/fb3ec88231235511858a "npm version publish alias") について紹介した
+- PublicとPrivateでnpm publish叩くのは同じだけどコマンドを分けた
