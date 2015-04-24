@@ -1,5 +1,5 @@
 ---
-title: "React.js meetupで10分で実装するFluxについて発表してきた"
+title: "React.js meetupにて10分で実装するFluxについて発表してきた"
 author: azu
 layout: post
 date : 2015-04-24T22:11
