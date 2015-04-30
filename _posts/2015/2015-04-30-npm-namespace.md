@@ -70,10 +70,10 @@ npm install -g npm
 ## おわりに
 
 [scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")を使うことで、npmでも名前空間っぽいものが扱えるようになりました。
-特定のライブラリを細かく分けて公開するようなときに、[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")でまとめたりするとドンドンモジュール作って公開してもキレイにまとまるので良さそうな気がします。
+
+[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")であれば名前の重複などを気にしなくてよくなるのはいい気がします。
 
 これの問題としては、周辺のツールがまだ未対応であったりすることがあります。
-
 例えば、`@myorg/mypackage`という名前のモジュールをインストールすると以下のような配置でnode_modules以下にインストールされます。
 
 
