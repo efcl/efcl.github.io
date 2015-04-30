@@ -1,5 +1,5 @@
 ---
-title: "npmで名前空間を持ったモジュールを公開する方法(scoped module)"
+title: "npmで名前空間を持ったモジュールを公開する方法(scoped modules)"
 author: azu
 layout: post
 date : 2015-04-30T23:47
@@ -13,15 +13,15 @@ tags:
 
 npmにモジュールを公開することは多くなってると思いますが、今までのnpmだと名前は早い者勝ちでした。
 
-最近[npm Private Modules](https://www.npmjs.com/private-modules "npm Private Modules")というprivateで扱えるモジュールを有料でサポートしましたが、これは[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")をprivateで扱う時だけ有料でpublicで公開する時は無料で行えます。
+最近[npm Private Modules](https://www.npmjs.com/private-modules "npm Private Modules")というprivateで扱えるモジュールを有料でサポートしましたが、これは[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")をprivateで扱う時だけ有料でpublicで公開する時は無料で行えます。
 
-[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")というのは、`@username/project-name` という感じで、@ユーザー名がパッケージ名に入るので異なるユーザー間では重複しません。
+[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")というのは、`@username/project-name` という感じで、@ユーザー名がパッケージ名に入るので異なるユーザー間では重複しません。
 
 - [The npm Blog — solving npm’s hard problem: naming packages](http://blog.npmjs.org/post/116936804365/solving-npms-hard-problem-naming-packages "The npm Blog — solving npm’s hard problem: naming packages")
 
 ## 公開手順
 
-実際に[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")をpublicに公開する手順としては、
+実際に[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")をpublicに公開する手順としては、
 
 
 1. `npm init --scope=<npmユーザ名>`
@@ -32,7 +32,7 @@ npmにモジュールを公開することは多くなってると思います�
 
 するだけです。
 
-簡単に書くと[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")として作って、公開する時は`npm publish --access=public`とするだけです。(デフォルトが`--access=restricted`であるため明示する必要がある)
+簡単に書くと[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")として作って、公開する時は`npm publish --access=public`とするだけです。(デフォルトが`--access=restricted`であるため明示する必要がある)
 
 こうして公開したモジュールは
 
@@ -69,8 +69,8 @@ npm install -g npm
 
 ## おわりに
 
-[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")を使うことで、npmでも名前空間っぽいものが扱えるようになりました。
-特定のライブラリを細かく分けて公開するようなときに、[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")でまとめたりするとドンドンモジュール作って公開してもキレイにまとまるので良さそうな気がします。
+[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")を使うことで、npmでも名前空間っぽいものが扱えるようになりました。
+特定のライブラリを細かく分けて公開するようなときに、[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")でまとめたりするとドンドンモジュール作って公開してもキレイにまとまるので良さそうな気がします。
 
 これの問題としては、周辺のツールがまだ未対応であったりすることがあります。
 
@@ -90,7 +90,7 @@ node_modules
 ....
 ```
 
-そのため、ディレクトリが一つ深くなって再帰的に探索していないツールなどは[scoped packages](https://docs.npmjs.com/getting-started/scoped-packages "scoped packages")を無視してしまう事があります。
+そのため、ディレクトリが一つ深くなって再帰的に探索していないツールなどは[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")を無視してしまう事があります。
 
 具体的には`tsd link`などはそういうバグがあったりしました。
 
