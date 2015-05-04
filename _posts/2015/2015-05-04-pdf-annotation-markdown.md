@@ -11,6 +11,8 @@ tags:
     - markdown
     - github
     - JavaScript
+    - CustomElement
+    - WebComponent
 
 ---
 
@@ -76,3 +78,46 @@ require("babel/register")();
 ```
 
 という一行が初期化時に走って、後はES6で書いたコードが読み込み時に自動でES5とかに変換されるのでES6のコードがビルド不要で動かせます。(多分大部分はFirefoxやChromeなら素で動く感じがしますが)
+
+[CodeMirror](http://codemirror.net/) や [pdf.js](https://github.com/mozilla/pdf.js)はDOMをガンガンいじるライブラリなので、Reactで扱うときにどうするかはちょっとまだ迷っているので雑な作りになってます。
+
+- [pdf-markdown-annotator/lib/components at master · azu/pdf-markdown-annotator](https://github.com/azu/pdf-markdown-annotator/tree/master/lib/components "pdf-markdown-annotator/lib/components at master · azu/pdf-markdown-annotator")
+- Componentで包んであるけど、包みきれてない感じ
+
+PDFの表示はiframe置いただけというシンプルなもので、こんなものでも結構使えるのでpdf.jsは触って楽しい感じがします。
+もうちょっとしたらイベントの仕組みがViewerに入るので、これあるとよりコンポーネントとして扱いやすくなると思います。
+
+- [Added documentloaded, metadataloaded, and pageremoved API events by mbbaig · Pull Request #5915 · mozilla/pdf.js](https://github.com/mozilla/pdf.js/pull/5915 "Added documentloaded, metadataloaded, and pageremoved API events by mbbaig · Pull Request #5915 · mozilla/pdf.js")
+
+[Highlights App for Mac](http://highlightsapp.net/ "Highlights App for Mac")は結構良さそうでしたが、やっぱりエディタ部分が何か微妙でした(シンタックスハイライトが欲しい)。
+なので、こういう感じで既存のものをちょこっと組み合わせてアプリが作れるようになってきたのは楽しいです。
+
+CSSもReact Componentと同じ名前で名前空間を作ると命名に迷いが減るので書きやすくなった感じがします。
+これは[SUIT CSS](http://suitcss.github.io/ "SUIT CSS")を参考にしていて、`MarkdownEditor`というコンポーネントなら、`.MarkdownEditor`というクラスをつけるというシンプルなルールですね。
+
+- [pdf-markdown-annotator/css/components at master · azu/pdf-markdown-annotator](https://github.com/azu/pdf-markdown-annotator/tree/master/css/components "pdf-markdown-annotator/css/components at master · azu/pdf-markdown-annotator")
+- [markdown-finder/docs at master · azu/markdown-finder](https://github.com/azu/markdown-finder/tree/master/docs "markdown-finder/docs at master · azu/markdown-finder")
+
+コンポーネントはあると良いのですが、やはりと言うか[React Components](http://react-components.com/ "React Components")でも使い勝手の問題やメンテされてないものがあったりします。
+Markdownのプレビューに[react-remarkable](https://github.com/acdlite/react-remarkable "react-remarkable")を使ったりしましたが、動いてなかったので[修正](https://github.com/acdlite/react-remarkable/pull/3 "Update package.json by azu · Pull Request #3 · acdlite/react-remarkable")を送ったりしてました。
+
+特にReactはまだ0.xなので、semver的な問題でReactに依存するモジュールが"^0.12"だと"0.13"が出た時に修正が必要だったりします.
+
+まあ、こういう問題はReact Componentに限らず起こりえるものなので、UIコンポーネント(DOMに追加するような何か)を提供する人はちゃんと設計する必要があると感じました。
+
+例えば、React以外から使いたくなった時にちゃんと提供できるかとか、この辺はGruntやgulpのtaskでライブラリのコア部分がTask Runnerに依存しない作りにするとかそういうのと似たような話な気がします。
+
+- [Designing Front-End Components](http://ponyfoo.com/articles/designing-front-end-components "Designing Front-End Components")
+
+UIの場合はCSSとか色々あるのでより難しいですが、UIのライフサイクルはCustom Elementの4つのライフサイクルイベントをベースに考えた作りになっていると、React以外のコンポーネントとしても対応しやすくなるじゃないかと思います。
+
+- [Custom Elements: HTML に新しい要素を定義する - HTML5 Rocks](http://www.html5rocks.com/ja/tutorials/webcomponents/customelements/ "Custom Elements: HTML に新しい要素を定義する - HTML5 Rocks")
+
+後、DOMを`<div>`的な何かを追加するのだけがコンポーネントじゃなくて、今回使ったpdf.jsのwebviewerをiframeで埋め込むのも一種のコンポーネントかなと思いました。
+
+複雑なUIならiframeで扱えると意外と楽だったり、iframeなのでカプセル化しやすいです。
+また最近だとseamless属性やsandbox属性などもあるので、制御もしやすくなってたり下手にDOM追加で頑張るより安全で見えます。(same originならiframeの`contentWindow`とかも触りにいけるので)
+
+Web Componentsさんは[来そうでまだ来てない](http://www.w3.org/2015/04/24-webapps-minutes.html)ので、その辺は色々想像しながら実装に落としていくのが現状なのかと思います。
+
+- [Web Components における依存ライブラリの断片化とエコシステムのコロニー化 ::ハブろぐ](http://havelog.ayumusato.com/develop/webcomponents/e662-web_components_issues.html "Web Components における依存ライブラリの断片化とエコシステムのコロニー化 ::ハブろぐ")
