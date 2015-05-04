@@ -79,7 +79,8 @@ NW.jsはNode.jsが動くので、
 require("babel/register")();
 ```
 
-という一行が初期化時に走って、後はES6で書いたコードが読み込み時に自動でES5とかに変換されるのでES6のコードがビルド不要で動かせます。(多分大部分はFirefoxやChromeなら素で動く感じがしますが)
+という一行が初期化時に走らせて、後はES6で書いたコードが読み込み時に自動でES5に変換できます。
+そのためES6のコードがビルド不要で動かせます。(多分大部分はFirefoxやChromeなら素で動く感じがしますが)
 
 [CodeMirror](http://codemirror.net/) や [pdf.js](https://github.com/mozilla/pdf.js)はDOMをガンガンいじるライブラリなので、Reactで扱うときにどうするかはちょっとまだ迷っているので雑な作りになってます。
 
