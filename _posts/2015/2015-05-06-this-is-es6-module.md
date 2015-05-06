@@ -32,7 +32,9 @@ tags:
 
 ## ES6 moduleの前提知識
 
-- Moduleは[Module Environment Records](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-module-environment-records "Module Environment Records")という所に情報を記録する(スコープみたいなものに必要な環境情報的なものがある)
+- Environment Recordというのはそのスコープと変数を関連付けたりするような環境情報的なものを入れる場所
+	- 関数とかモジュールとかwith用みたいな何種類かある
+- Moduleは[Module Environment Records](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-module-environment-records "Module Environment Records")のを作ってそこに情報を記録する
 - [Module Environment Records](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-module-environment-records "Module Environment Records")はdeclarative Environment Recordの一種で、加えてModule専用の記録領域がある(importのbindingのための場所)
 - 基本的な仕組みはdeclarative Environment Recordと同じ
 
