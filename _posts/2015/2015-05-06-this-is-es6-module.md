@@ -167,6 +167,8 @@ Moduleは特に色々変更があったと思うので、diffからこれが何�
 
 diffがハイライトされたpdf with rev29 change markupで確認できる。
 
+![img](http://monosnap.com/image/anxlOI4AHisPwLgNbAZjQ89XCzKfmD.png)
+
 ### テキストDiffを確認
 
 テキストベースでES6 Draftの各Rev毎をGitのコミットにして検索できる仕組みを作りました。
