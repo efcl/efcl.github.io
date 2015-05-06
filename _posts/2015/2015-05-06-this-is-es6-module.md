@@ -17,6 +17,11 @@ tags:
 - [Babelで top level this が undefinedになって困った件 - console.lealog();](http://lealog.hateblo.jp/entry/2015/04/27/203147 "Babelで top level this が undefinedになって困った件 - console.lealog();")
      - [demo](https://babeljs.io/repl/#?experimental=true&evaluate=true&loose=false&spec=false&playground=false&code=var%20that%20%3D%20this%3B)
 
+
+```
+// module.js
+console.log(this);// ???
+```
  
 ----
 
