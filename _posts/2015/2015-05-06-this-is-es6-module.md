@@ -151,3 +151,66 @@ $ babel --blacklist strict script.js
 - [Why is this being remapped to undefined?](https://babeljs.io/docs/faq/#why-is-this-being-remapped-to-undefined- "Why is this being remapped to undefined?")
 
 であってると思うのだけれど、間違っているなら修正したいので[Issues](https://github.com/efcl/efcl.github.io/issues "Issues · efcl/efcl.github.io")か[Pull Requests](https://github.com/efcl/efcl.github.io/pulls "Pull Requests · efcl/efcl.github.io")お願いします。
+
+### おまけ
+
+ES6 DraftはRev38もあるぐらい結構更新されてFinal Draftが今でてる感じです。
+Moduleは特に色々変更があったと思うので、diffからこれが何時入ったものか見てみます。
+
+### 答え合わせ
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">ES6 final tweaks #6: at the top level of a module, the this binding evaluates to undefined.</p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/535920492486483968">November 21, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+>  The this binding at the top level of a module has the value undefined.
+
+[December 6, 2014 Draft Rev 29](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#december_6_2014_draft_rev_29 "December 6, 2014 Draft Rev 29")の変更点
+
+diffがハイライトされたpdf with rev29 change markupで確認できる。
+
+### テキストDiffを確認
+
+テキストベースでES6 Draftの各Rev毎をGitのコミットにして検索できる仕組みを作りました。
+
+- [ECMAScript 6 diff検索の仕組み · Issue #82 · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/issues/82 "ECMAScript 6 diff検索の仕組み · Issue #82 · efcl/efcl.github.io")
+
+```sh
+git clone https://github.com/meta-ecmascript/es6-draft-revision.git
+cd es6-draft-revision
+git show rev29 | grep "return undefined" -i -C 10 | grep "CreateImportBinding" -B 14
+```
+
+output: 
+
+```
+--
+--
+ deletable.
+
++HasThisBinding ()
++
++Module Environment Records provide a THIS binding.
++
++1.  Return TRUE.
++
++GetThisBinding ()
++
++1.  Return UNDEFINED.
++
+ CreateImportBinding (N, M, N2)
+--
+
+ The concrete Environment Record method CreateImportBinding for module
+````
+
+
+### git logから検索
+
+コミットの差分から検索したかったけど、何か上手くマッチしない…
+
+```
+git log --perl-regexp -i -G "GetThisBinding(.|\n)*?Return UNDEFINED"
+```
+
+`--perl-regexp`でperlの正規表現使えた方がいいので、gitを入れるときに`brew install git --with-pcre`で入れてる。
+
+- [git-grepでPerlの正規表現が使える…ぞ？ Part.2 - idesaku blog](http://d.hatena.ne.jp/idesaku/20111001/1317483481 "git-grepでPerlの正規表現が使える…ぞ？ Part.2 - idesaku blog")
