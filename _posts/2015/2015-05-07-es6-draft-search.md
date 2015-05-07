@@ -132,11 +132,19 @@ pandoc -f docx "${file}" -t native | pandoc -f native -t plain -o "txts/${output
 ClassDefinitionEvaluationは`class`の中身を見て定義していくアルゴリズムで長いですが、21に以下のようなステップがあります。
 
 ```
-21. For each ClassElement m in order from methods	a. If IsStatic of m is false, then		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments protoand false. 
-	b. Else,		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments F and false.	c. If status is an abrupt completion, then		i. Set the running execution context’s LexicalEnvironment to lex.		ii. Return Completion(status).
+21. For each ClassElement m in order from methods
+	a. If IsStatic of m is false, then
+		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments proto
+and false. 
+	b. Else,
+		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments F and false.
+	c. If status is an abrupt completion, then
+		i. Set the running execution context’s LexicalEnvironment to lex.
+		ii. Return Completion(status).
 ```
 
-> Let status be the result of performing PropertyDefinitionEvaluation for m with arguments protoand false.
+> Let status be the result of performing PropertyDefinitionEvaluation for m with arguments proto
+and false.
 
 この部分の`PropertyDefinitionEvaluation(proto, false)`という第二引数がenumurableかどうかを決めることが、[14.3.9 Runtime Semantics: PropertyDefinitionEvaluation](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-method-definitions-runtime-semantics-propertydefinitionevaluation "14.3.9 Runtime Semantics: PropertyDefinitionEvaluation")を合わせてみるとわかります。
 
@@ -213,6 +221,7 @@ $ git show rev32 | grep "PropertyDefinitionEvaluation for m with arguments" -C10
 git log --perl-regexp -i -G "GetThisBinding(.|\n)*?Return UNDEFINED"
 ```
 
+Gitのdiff検索テクニックもっと知りたい…
 
 ### まとめ
 
