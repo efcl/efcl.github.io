@@ -138,9 +138,9 @@ moduleのtop levelのコードから直近のEnvironmentはmodule Environmentな
 
 ## 結論
 
-BabelがコードをES6 modulesとして扱うなら、top levelの`this`がundefinedになるのは仕様。
+BabelがコードをES6 moduleとして扱うなら、top levelの`this`がundefinedになるのは仕様。
 
-Babelにissueを立てるならば、なぜ全てをES6 modulesとして扱うのか?が焦点。
+Babelにissueを立てるならば、なぜ全てをES6 moduleとして扱うのか?が焦点。
 
 また、この挙動は`--blacklist strict`で無効化するオプションが用意されている。
 
@@ -154,8 +154,8 @@ $ babel --blacklist strict script.js
 
 ### おまけ
 
-ES6 DraftはRev38もあるぐらい結構更新されてFinal Draftが今でてる感じです。
-Moduleは特に色々変更があったと思うので、diffからこれが何時入ったものか見てみます。
+ES6 DraftはRev 38もあるぐらい結構更新されてFinal Draftが今でてる感じです。
+Moduleは特に色々変更があったと思うので、diffからこれが何時入ったのか見てみます。
 
 ### 答え合わせ
 
