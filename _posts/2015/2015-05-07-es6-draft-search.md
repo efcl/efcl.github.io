@@ -118,11 +118,110 @@ pandoc -f docx "${file}" -t native | pandoc -f native -t plain -o "txts/${output
 
 `git log -S`でコミットの差分に含まれてる内容を検索したりできます。
 
+### classのメソッドの例
+
+先ほども例に上げた、classのmethod定義が列挙されなくなったRevを変更履歴から特定してみましょう。
+
+まずは、最新のドラフトでどこでclass methodのenumerableが定義されてるかを探します。
+
+`class`構文周りを探していくと
+
+- [14.3.9 Runtime Semantics: PropertyDefinitionEvaluation](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-method-definitions-runtime-semantics-propertydefinitionevaluation "14.3.9 Runtime Semantics: PropertyDefinitionEvaluation")
+- [14.5.14 Runtime Semantics: ClassDefinitionEvaluation](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-runtime-semantics-classdefinitionevaluation "14.5.14 Runtime Semantics: ClassDefinitionEvaluation")
+
+ClassDefinitionEvaluationは`class`の中身を見て定義していくアルゴリズムで長いですが、21に以下のようなステップがあります。
+
+```
+21. For each ClassElement m in order from methods	a. If IsStatic of m is false, then		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments protoand false. 
+	b. Else,		i. Let status be the result of performing PropertyDefinitionEvaluation for m with arguments F and false.	c. If status is an abrupt completion, then		i. Set the running execution context’s LexicalEnvironment to lex.		ii. Return Completion(status).
+```
+
+> Let status be the result of performing PropertyDefinitionEvaluation for m with arguments protoand false.
+
+この部分の`PropertyDefinitionEvaluation(proto, false)`という第二引数がenumurableかどうかを決めることが、[14.3.9 Runtime Semantics: PropertyDefinitionEvaluation](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-method-definitions-runtime-semantics-propertydefinitionevaluation "14.3.9 Runtime Semantics: PropertyDefinitionEvaluation")を合わせてみるとわかります。
+
+> With parameters object and enumerable.
+
+話を戻して、途中でこのenumerableがtrueからfalseになったということなので、`PropertyDefinitionEvaluation`の変更というよりも、`ClassDefinitionEvaluation`のステップが変更された可能性が高そうです。
+
+> Let status be the result of performing PropertyDefinitionEvaluation for m with arguments F and false.
+
+に`false`となった変更がどっかであれば、その変更があるコミットが"classのmethod定義が列挙されなくなったRev"と言えそうです。
+
+```sh
+$ git clone https://github.com/meta-ecmascript/es6-draft-revision.git
+$ cd es6-draft-revision
+# コミットの差分からPropertyDefinitionEvaluationの呼び出しの変更を探す
+$ git log -S "PropertyDefinitionEvaluation for m with arguments" | more
+commit 62ecee4ed31859ba94359b08cadbf0264eb86c06
+Author: azu <azuciao@gmail.com>
+Date:   Mon May 4 14:20:12 2015 +0900
+
+    rev32 
+```
+
+
+rev32にそういうコミットがあるようなので中身を見てみます。
+
+```diff
+$ git show rev32 | grep "PropertyDefinitionEvaluation for m with arguments" -C10
++25. Else, let methods be NonConstructorMethodDefinitions of
+     ClassBody.
+
+-25. For each ClassElement m in order from methods
++26. For each ClassElement m in order from methods
+
+     a.  If IsStatic of m is FALSE, then
+
+         i.  Let status be the result of performing
+-            PropertyDefinitionEvaluation for m with argument proto.
++            PropertyDefinitionEvaluation for m with arguments proto
++            and FALSE.
+
+     b.  Else,
+
+         i.  ii. iii. Let status be the result of performing
+-            PropertyDefinitionEvaluation for m with argument F.
+--
++            and FALSE.
+
+     b.  Else,
+
+         i.  ii. iii. Let status be the result of performing
+-            PropertyDefinitionEvaluation for m with argument F.
++            PropertyDefinitionEvaluation for m with arguments F and
++            FALSE.
+
+     c.  If status is an abrupt completion, then
+
+@@ -25329,16 +25333,16 @@ ClassTail : ClassHeritage~opt~ { ClassBody~opt~ }
+
+         ii. Return status.
+
+-26. Set the running execution context’s LexicalEnvironment to lex.
++27. Set the running execution context’s LexicalEnvironment to lex.
+ 
+```
+
+最初に答えが書いてありましたが、答えと同じくRev32で変更されていたことが発見できました。
 
 ### 疑問
 
-`git log -G`で改行無視して複数行に跨いだ検索が上手くいかない…(pcre拡張はいれてあるのに…) リポジトリのデータがおかしい可能性はある。。
+[ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch](http://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")でも書いてたけど、`git log -G`で改行無視して複数行に跨いだ検索が上手くいかない…(pcre拡張はいれてあるのに…) リポジトリのデータがおかしい可能性はある。。
 
 ```
 git log --perl-regexp -i -G "GetThisBinding(.|\n)*?Return UNDEFINED"
 ```
+
+
+### まとめ
+
+[Meta ECMAScript](https://github.com/meta-ecmascript "Meta ECMAScript")
+
+- [meta-ecmascript/es6-to-text-diff](https://github.com/meta-ecmascript/es6-to-text-diff)
+- [meta-ecmascript/download-es6-spec](https://github.com/meta-ecmascript/download-es6-spec)
+- [meta-ecmascript/es6-spec-changelog](https://github.com/meta-ecmascript/es6-spec-changelog)
+- [meta-ecmascript/es6-draft-revision](https://github.com/meta-ecmascript/es6-draft-revision) 完成リポジトリ
+
+[Meta ECMAScript](https://github.com/meta-ecmascript "Meta ECMAScript")
+はECMAScriptに関連するメタ的なツールを置いておくorganizationとして作ったので、なにか置きたい場合は言ってくれればInviteします。
