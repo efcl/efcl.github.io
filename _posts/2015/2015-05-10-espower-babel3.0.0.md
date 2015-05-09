@@ -10,6 +10,7 @@ tags:
     - ES6
     - tools
     - library
+    - testing
 
 ---
 
