@@ -35,7 +35,9 @@ tags:
 
 記事の方もこの変更に追従させてアップデートしているので、細かく変更点を知りたい人は以下のDiffを見てみるといいかと思います。
 
+- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 - [Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/pull/84/files "Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io")
+
 
 ES6に変換したくないコードをテストファイルから読み込んでいる場合は、[espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")は[Babel](http://babeljs.io/ "Babel")は[babelrc](http://babeljs.io/docs/usage/babelrc/ "babelrc")の設定ファイルを自動で使うようになってるので、以下のような設定を書くと変換しません。
 
@@ -53,8 +55,8 @@ ES6に変換したくないコードをテストファイルから読み込ん�
 
 ## まとめ
 
-- [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")は[Babel](http://babeljs.io/ "Babel") 3.0.0からはテストファイル以外も自動でBabelの変換を行うようになった
+- [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel") 3.0.0からはテストファイル以外も自動でBabelの変換を行うようになった
 - これにより、変換済みの一時ファイル(ES5のコード)なしでES6のみでコードとテストを書けるようになった
-- [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")は[Babel](http://babeljs.io/ "Babel") 2.xのものを使っている場合は、テストから直接ES6のコードを参照するように書き換えると良い
+- [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel") 2.xのものを使っている場合は、テストから直接ES6のコードを参照するように書き換えると良い
 	- Babelが二重に変換してしまって挙動が変わる可能性はあるのか未定義(二度変換してもASTレベルでは同じに見えるけど)
 - 変換したくない場合は[babelrc](http://babeljs.io/docs/usage/babelrc/ "babelrc")でignoreやonlyの設定をする
