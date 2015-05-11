@@ -14,7 +14,7 @@ tags:
 ---
 
 最近GitHubのコメントとかQiitaのコメントなど色々な部分でMarkdownで書くことが出来るようになっていると思います。
-しかし、大体はただの`<textrea>`に絵文字やユーザ名の補完がついただけのものになっていて、
+しかし、大体はただの`<textarea>`に絵文字やユーザ名の補完がついただけのものになっていて、
 Markdown支援的な機能が入ってるものは意外と多くない印象です。
 
 特に気になるのがタブインデントができなかったり、エディタ上のシンタックスハイライトが無かったりする所なので、
@@ -22,9 +22,9 @@ Markdown支援的な機能が入ってるものは意外と多くない印象で
 
 ## [azu/codemirror-anywhere](https://github.com/azu/codemirror-anywhere "azu/codemirror-anywhere")
 
-[codemirror-anywhere](https://github.com/azu/codemirror-anywhere "azu/codemirror-anywhere") 名前の通り`<textrea>`を[CodeMirror](http://codemirror.net/ "CodeMirror")のエディタに切り替える事が出来るものです。
+[codemirror-anywhere](https://github.com/azu/codemirror-anywhere "azu/codemirror-anywhere") 名前の通り`<textarea>`を[CodeMirror](http://codemirror.net/ "CodeMirror")のエディタに切り替える事が出来るものです。
 
-こんな感じで、Cmd+E or Ctrl+Eで`<textrea>`とCodeMirrorを切り替え出来ます。
+こんな感じで、Cmd+E or Ctrl+Eで`<textarea>`とCodeMirrorを切り替え出来ます。
 
 
 ![img1](http://i.gyazo.com/c29a9a3535c66083827cba81181bd5c1.gif)
@@ -39,7 +39,7 @@ Markdown支援的な機能が入ってるものは意外と多くない印象で
 
 ## 使い方
 
-1. `<textrea>` にフォーカス
+1. `<textarea>` にフォーカス
 2. Cmd+E or Ctrl+Eでトグル
 
 ## おわりに
