@@ -121,7 +121,7 @@ npm install reftest-runner -g
 $ reftest-runner --list path/to/reftest.list
 ```
 
-もちろん、`reftest.list`なしでもできて、以下のようにテスト用ファイルとリファレンスファイルをそれぞれ指定刷ることでも実行できます。
+もちろん、`reftest.list`なしでもできて、以下のようにテスト用ファイルとリファレンスファイルをそれぞれ指定することでも実行できます。
 
 ```
 $ reftest-runner --browser "firefox" --targetA path/to/fileA.html --targetB path/to/fileB.html
@@ -160,7 +160,7 @@ $ reftest-runner --browser "firefox" --targetA path/to/fileA.html --targetB path
 document.documentElement.className = "";
 ```
 
-これは既存のブラウザが使ってるreftestがこういう形式を取っていたのでそれに合わせた形です。
+これは既存のブラウザが使ってるreftestツールがこういう形式を取っていたのでそれに合わせた形です。
 
 ## reftestの使いドコロ
 
@@ -173,7 +173,7 @@ document.documentElement.className = "";
 
 ### Canvasのテスト
 
-Canvasは描画されている内容がピクセルでしか取れないので、ある描画上手く言ってるかのテストが難しいです。
+Canvasは描画されている内容がピクセルでしか取れないので、ある描画上手くできてるのかのテストが難しいです。
 
 [Canvasの描画内容とimgタグでの画像の表示を比較したり](https://github.com/azu/reftest-runner/tree/master/example/equal)することでテストが出来ます。
 
@@ -182,6 +182,10 @@ Canvasのライブラリを書いている場合は、そのライブラリを�
 ### クロスブラウザの表示一致テスト
 
 [reftest-runner][]はモジュールとして使えば、FirefoxとChromeで同じHTMLの表示結果を比較できるので、ブラウザの差を吸収しているライブラリがほぼ同じ表示になるかのチェックできます。
+
+- [reftest-runner/example.js at master · azu/reftest-runner](https://github.com/azu/reftest-runner/blob/master/example/example.js "reftest-runner/example.js at master · azu/reftest-runner")
+	 - `reftestPhantomJSAndFirefox()`ではPhantomJSとFirefoxで比較しています
+	 - 背景色が透明と白色などブラウザではデフォルトでの差異が多いのでどこまで使えるか微妙ですが
 
 `blinkDiff`の`delta`オプションでどれくらいの差を許容するかを決定できます。
 
@@ -200,15 +204,18 @@ var testEngine = new ReftestEngine({
 
 ## おわりに
 
-[reftest-runner][] はこういうことができたらもっといろんな角度からテストできんるじゃないかというコンセプトで既存のものを組み合わせて簡単に作って見たものです。
+[reftest-runner][] はこういうことができたらもっといろんな角度からテストできるのではと思って、既存のものを組み合わせて作った感じです。
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">DOMのテストだと、ある要素がDOMに追加されてるかとかを判定するテストがあるけど、Canvasの場合にある図形や画像がCanvasにレンダリングされてるかをテストすることって出来る? <a href="https://twitter.com/hashtag/CanvasTests?src=hash">#CanvasTests</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/586872208867246080">April 11, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ReftestsみたいなのWebDriver APIで動かして画像diffを確認できるところまで作った。 <a href="http://t.co/ZpxKN311yH">pic.twitter.com/ZpxKN311yH</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/586916886195019776">April 11, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-実際にCanvasライブラリの互換性を検証するための自動テストに組み込んで使ってみた感じ、テストファイルがただのHTMLで[Self-Describing Tests](http://testthewebforward.org/docs/test-style-guidelines.html#self-describing-tests "Self-Describing Tests")というのがかなり有用だと思いました。
+実際にCanvasライブラリを書き直す時に、互換性を検証するための自動テストに組み込んで使ってみた感じ、テストファイルがただのHTMLであるというのがかなり有用だと思いました。
 
-そのテスト用HTMLは別にテストのためではなく、ある機能を使って動かすサンプルコードともなるので、妙な動きをした場合はそのHTMLを開いてデバッガで確認するという単純なことができるのがいい気がします。
+- [Self-Describing Tests](http://testthewebforward.org/docs/test-style-guidelines.html#self-describing-tests "Self-Describing Tests")
+	- Test Runnerに依存しないで、ファイル単体で実行できるテスト
+
+そのテスト用HTMLは別にテストのためだけではなく、ある機能を使って動かすサンプルコードともなるので、妙な動きをした場合はそのHTMLを開いてデバッガで確認するという単純なことができるのがいい気がします。
 テストファイルのテストが簡単にできるというのはユニットテストとは少し違う所なのかもしれません。
 
 [reftest-runner][] はrunnerとなっていますがNodeモジュールとして使った方ができることは多くて、実際APIの方を意識して実装しています。(CLIは単純なことしかできない)
