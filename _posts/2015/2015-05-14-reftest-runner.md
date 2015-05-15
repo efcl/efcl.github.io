@@ -113,7 +113,7 @@ npm install reftest-runner -g
 == ./equal/smile-canvas.html ./equal/smile-img.html
 ```
 
-は`./equal/smile-canvas.html`と `./equal/smile-img.html`の描画結果が一致することを期待する ということを示しています。
+は"`./equal/smile-canvas.html`と `./equal/smile-img.html`の描画結果が一致することを期待する" を事を示しています。
 
 この作成した`reftest.list`をCLIで以下のように指定すれば、reftestが実行できます。
 
