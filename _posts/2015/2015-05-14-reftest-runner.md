@@ -95,7 +95,7 @@ npm install reftest-runner -g
 
 - [reftest-runner/example at master · azu/reftest-runner](https://github.com/azu/reftest-runner/tree/master/example "reftest-runner/example at master · azu/reftest-runner")
 
-先ほどでてきて`reftest.list`というテキストファイルに、比較するHTMLと比較演算子(== or !=)を並べるのが簡単な使い方です。
+先ほどでてきた`reftest.list`というテキストファイルに、比較するHTMLと比較演算子(== or !=)を並べるのが簡単な使い方です。
 
 サンプルの`reftest.list`では以下のようになっています。
 
@@ -114,7 +114,7 @@ npm install reftest-runner -g
 == ./equal/smile-canvas.html ./equal/smile-img.html
 ```
 
-は"`./equal/smile-canvas.html`と `./equal/smile-img.html`の描画結果が一致することを期待する" を事を示しています。
+は"`./equal/smile-canvas.html`と `./equal/smile-img.html`の描画結果が一致することを期待する" 事を示しています。
 
 この作成した`reftest.list`をCLIで以下のように指定すれば、reftestが実行できます。
 
