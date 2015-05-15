@@ -68,6 +68,7 @@ reftestは、画像のキャプチャを保存しておいて比較するのと�
 - テスト結果をTAP形式で出力
 - テスト用のローカルサーバを立てる
 - `reftest.list` という形式でテスト対象を記述
+
 [reftest-runner][]はrunnerという名前になってて一応コマンドラインツールとしても動かせますが、本質的にはNodeモジュールとして使えるような作りになっています
 
 Diff画像とは以下の様なテスト対象とリファレンスのキャプチャ画像を比較して差分を出す画像で、[yahoo/blink-diff](https://github.com/yahoo/blink-diff "yahoo/blink-diff")を使っています。
