@@ -24,7 +24,7 @@ tags:
 
 以下のスライドに簡単に[reftest-runner][]やreftestとはなにか、どういうユースケースがあるのかが書いてあります。
 
-- [reftest-runner-overview.pdf](https://github.com/azu/reftest-runner/tree/master/docs "reftest-runner-overview.pdf")
+- [reftest-runner-overview.pdf](https://github.com/azu/reftest-runner/blob/master/docs/reftest-runner-overview.pdf "reftest-runner-overview.pdf")
 
 ## reftestとは
 
