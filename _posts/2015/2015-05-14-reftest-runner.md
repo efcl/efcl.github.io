@@ -134,12 +134,7 @@ $ reftest-runner --browser "firefox" --targetA path/to/fileA.html --targetB path
 
 ### 実行してる動画
 
-<video width="640" height="360" controls="controls">
-    <source src="_http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" type="video/mp4" />
-    <param name="src" value="http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" />
-    <param name="autoplay" value="false" />
-    <param name="showlogo" value="false" />
-</video>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/9BFdxZI381A" frameborder="0" allowfullscreen></iframe>
 
 ### 非同期のテスト
 
