@@ -61,7 +61,7 @@ reftestは、画像のキャプチャを保存しておいて比較するのと�
 - HTMLの描画結果の比較テスト
 	- いわゆるreftestができます
 	- 非同期テストも対応しています
-- FirefoxとChromeの描画内容の比較テスト
+- クロスブラウザの描画比較テスト
 	- 通常は同じブラウザ同士で別HTMLの表示比較をしますが、同じHTMLを別ブラウザで表示比較が可能
 	- WebDriverサポートしてるブラウザ - IE、Firefox、Chrome、Safari、Opera、PhantomJSなどで動作します
 - 比較結果のDiff画像を生成
