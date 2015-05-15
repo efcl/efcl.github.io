@@ -14,9 +14,9 @@ tags:
 
 ## 概要
 
-[reftest-runner][]というブラウザでちゃんと描画されているのかをテストするためのライブラリを作りました。
+[reftest-runner][]というブラウザで描画内容やレイアウトといった表示結果をテストするためのライブラリを作りました。
 
-要素技術としてはWebDriver、レンダリングキャプチャ、画像Diffという感じです。
+要素技術としてはブラウザ、WebDriver API、レンダリングキャプチャ、画像Diffという感じです。
 
 - [azu/reftest-runner](https://github.com/azu/reftest-runner "azu/reftest-runner")
 
