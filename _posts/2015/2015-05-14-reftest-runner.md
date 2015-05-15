@@ -78,15 +78,6 @@ Diff画像とは以下の様なテスト対象とリファレンスのキャプ�
 
 表示結果さえあれば何でもテストできるので、テストが難しいCanvas APIのテスト等もできます。
 
-動作の様子
-
-<video width="640" height="360" controls="controls">
-    <source src="_http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" type="video/mp4" />
-    <param name="src" value="http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" />
-    <param name="autoplay" value="false" />
-    <param name="showlogo" value="false" />
-</video>
-
 ---
 
 ## インストール
@@ -124,7 +115,35 @@ npm install reftest-runner -g
 
 は`./equal/smile-canvas.html`と `./equal/smile-img.html`の描画結果が一致することを期待する ということを示しています。
 
+この作成した`reftest.list`をCLIで以下のように指定すれば、reftestが実行できます。
+
+```
+$ reftest-runner --list path/to/reftest.list
+```
+
+もちろん、`reftest.list`なしでもできて、以下のようにテスト用ファイルとリファレンスファイルをそれぞれ指定刷ることでも実行できます。
+
+```
+$ reftest-runner --browser "firefox" --targetA path/to/fileA.html --targetB path/to/fileB.html
+```
+
+`--browser`で実行ブラウザも指定できて、IE/Firefox/Chrome/phantomjs/iPhone/Andoirdのような[Selenium WebDriver](http://docs.seleniumhq.org/ "Selenium WebDriver")があるものをサポートしてます。
+([SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium") に依存してます)
+
+実行すると、`logs`ディレクトリにスクリーンショットのdiff画像が生成されます。
+
+### 実行してる動画
+
+<video width="640" height="360" controls="controls">
+    <source src="_http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" type="video/mp4" />
+    <param name="src" value="http://efcl.info/wp-content/uploads/2015/05/reftest.mp4" />
+    <param name="autoplay" value="false" />
+    <param name="showlogo" value="false" />
+</video>
+
 ### 非同期のテスト
+
+何か非同期の処理が終わってからその描画テストしたい場合は非同期テストにする必要があります。
 
 [reftest-runner/example/async at master · azu/reftest-runner](https://github.com/azu/reftest-runner/tree/master/example/async "reftest-runner/example/async at master · azu/reftest-runner")に非同期テストのサンプルがあります。
 
@@ -193,7 +212,8 @@ var testEngine = new ReftestEngine({
 テストファイルのテストが簡単にできるというのはユニットテストとは少し違う所なのかもしれません。
 
 [reftest-runner][] はrunnerとなっていますがNodeモジュールとして使った方ができることは多くて、実際APIの方を意識して実装しています。(CLIは単純なことしかできない)
-なので[mocha integrate](https://github.com/azu/reftest-runner/issues/7 "mocha integrate · Issue #7 · azu/reftest-runner")ができたりするともっと使いやすくなったりすんじゃないかと思うので、何かあったら[Issues · azu/reftest-runner](https://github.com/azu/reftest-runner/issues "Issues · azu/reftest-runner")へお願いします。
+
+そのため[mocha integrate](https://github.com/azu/reftest-runner/issues/7 "mocha integrate · Issue #7 · azu/reftest-runner")ができたりするともっと使いやすくなったりすんじゃないかと思うので、何かあったら[Issues · azu/reftest-runner](https://github.com/azu/reftest-runner/issues "Issues · azu/reftest-runner")へお願いします。
 
 [reftest-runner]: https://github.com/azu/reftest-runner  "azu/reftest-runner"
 
