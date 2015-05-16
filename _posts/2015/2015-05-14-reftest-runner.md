@@ -204,6 +204,8 @@ var testEngine = new ReftestEngine({
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">DOMのテストだと、ある要素がDOMに追加されてるかとかを判定するテストがあるけど、Canvasの場合にある図形や画像がCanvasにレンダリングされてるかをテストすることって出来る? <a href="https://twitter.com/hashtag/CanvasTests?src=hash">#CanvasTests</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/586872208867246080">April 11, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+3時間後 ->
+
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ReftestsみたいなのWebDriver APIで動かして画像diffを確認できるところまで作った。 <a href="http://t.co/ZpxKN311yH">pic.twitter.com/ZpxKN311yH</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/586916886195019776">April 11, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 実際にCanvasライブラリを書き直す時に、互換性を検証するための自動テストに組み込んで使ってみた感じ、テストファイルがただのHTMLであるというのがかなり有用だと思いました。
