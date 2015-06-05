@@ -193,21 +193,19 @@ var dekuComponent = {
 dekuを使って先ほどのカウントアップボタンを書いてみると以下のように書くことができます。
 
 ```js
-// Define a name for the component that can be used in debugging
 import {element} from 'deku'
+// state event mapping
+var events = {};
 
-// propsはReactと同じ
+// ライフサイクルイベントはReactとほぼ同じ
 function initialState(props) {
     return {
-        count: props.context.counterStore.getCount(),
-        onChange(){
-            // noop
-        }
+        count: props.context.counterStore.getCount()
     };
 }
 
 function afterMount(component, el, setState) {
-    let { props, state } = component;
+    let { props, state, id } = component;
     setState({
         count: props.context.counterStore.getCount()
     });
@@ -216,15 +214,16 @@ function afterMount(component, el, setState) {
             count: props.context.counterStore.getCount()
         });
     };
-    // onChange as state for Unmount
-    // このやり方は何かもっといい方法がありそう…
-    state.onChange = onChange;
+    // save onChange for unmount
+    events[id] = {};
+    events[id].onChange = onChange; // remove listenerするために保持する
     props.context.counterStore.onChange(onChange);
 }
 
 function beforeUnmount(component, el) {
-    let {props, state} = component;
-    props.context.counterStore.removeChangeListener(state.onChange);
+    let {props, state, id} = component;
+    var onChange = events[id].onChange;
+    props.context.counterStore.removeChangeListener(onChange);
 }
 function render(component) {
     let {props, state} = component;
@@ -237,6 +236,7 @@ function render(component) {
         <button onClick={onClick}>{state.count}</button>
     </div>
 }
+
 // コンポーネントを構成するオブジェクトを返してる
 export default {
     initialState,
