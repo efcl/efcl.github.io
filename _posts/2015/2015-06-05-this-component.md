@@ -155,9 +155,9 @@ export default class IBComponent extends React.Component {
 
 ### dekuの場合
 
-ReactはコンポーネントをES6 Classesまたは`React.createClass`を使って書くので、いわゆるクラスっぽいもので書く感じになっています。
+ReactはコンポーネントをES6 Classesまたは`React.createClass`を使って書くので、いわゆるクラスっぽいもので書く感じになっています。クラスで書くとクラス内のメソッドを参照するのに`this`使うため、必然的に`this`が多くなることがわかると思います。
 
-Virtual DOMやReactのようなコンポーネントを扱う[deku](https://github.com/dekujs/deku "deku")といいうライブラリでは、このthisの問題はクラスではなく関数でコンポーネントを書くことで解決しようとしています。
+Reactのようなコンポーネントを扱う[deku](https://github.com/dekujs/deku "deku")というライブラリでは、このthisの問題をクラスではなく関数でコンポーネントを書くことで解決しようとしています。
 
 - [Deku: How we built our functional alternative to React](https://segment.com/blog/deku-our-functional-alternative-to-react/ "Deku: How we built our functional alternative to React")
 
