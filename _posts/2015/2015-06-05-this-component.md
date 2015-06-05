@@ -2,7 +2,7 @@
 title: "React/dekuコンポーネントとthisのパターン"
 author: azu
 layout: post
-date : 2015-06-03T19:40
+date : 2015-06-05T17:00
 category: JavaScript
 tags:
     - JavaScript
@@ -16,7 +16,7 @@ tags:
 
 ## thisの問題
 
-React ComponentをES6 Classesで書いている場合に`this`を`bind`する必要が多くなる気がします。
+ReactのコンポーネントをES6 Classesで書いている場合に`this`を`bind`する必要が多くなる気がします。
 
 特にFlux的なStoreの変更した時にハンドラを登録したいときに`this`で`bind`した関数を登録すると、ハンドラを解除するときに面倒なことが起こります。
 
