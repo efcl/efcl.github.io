@@ -215,7 +215,7 @@ function afterMount(component, el, setState) {
         });
     };
     // save onChange for unmount
-    events[id] = {};
+    events[id] = events[id] || {};
     events[id].onChange = onChange; // remove listenerするために保持する
     props.context.counterStore.onChange(onChange);
 }
