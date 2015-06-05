@@ -60,7 +60,7 @@ x.bind(this) !== x.bind(this)
 
 ### React - `this`を普通にbindする手法
 
-これは単純で毎回bindすると===で異なる関数が帰ってしまうので、constructorなどで一度だけbindして、それを使いまわすという形で書くことができます。
+これは単純で毎回bindすると===で異なる関数が返すため、`constructor(){}`などで一度だけbindして、それを使いまわすという形で書くことができます。
 
 ```js
 import React from "react"
