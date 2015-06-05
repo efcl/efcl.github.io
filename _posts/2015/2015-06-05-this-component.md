@@ -52,6 +52,10 @@ x.bind(this) !== x.bind(this)
 
 の3つ書いてみます。
 
+ソースコードはこちら
+
+- [azu/component-event-binding](https://github.com/azu/component-event-binding "azu/component-event-binding")
+
 ### React - `this`を普通にbindする手法
 
 これは単純で毎回bindすると===で異なる関数が帰ってしまうので、constructorなどで一度だけbindして、それを使いまわすという形で書くことができます。
