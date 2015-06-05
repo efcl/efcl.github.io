@@ -196,30 +196,35 @@ dekuを使って先ほどのカウントアップボタンを書いてみると�
 // Define a name for the component that can be used in debugging
 import {element} from 'deku'
 
-// default: noop
-var onChange = ()=> {};
-
 // propsはReactと同じ
 function initialState(props) {
-    return {count: props.context.counterStore.getCount()};
+    return {
+        count: props.context.counterStore.getCount(),
+        onChange(){
+            // noop
+        }
+    };
 }
 
 function afterMount(component, el, setState) {
     let { props, state } = component;
-    // onChangeを定義して用意しておいた変数に入れてる(解除するため)
-    // 何かもっと良い書き方できそうだけど
-    onChange = ()=> {
-        // setStateでstateを更新する
+    setState({
+        count: props.context.counterStore.getCount()
+    });
+    var onChange = ()=> {
         setState({
             count: props.context.counterStore.getCount()
         });
     };
+    // onChange as state for Unmount
+    // このやり方は何かもっといい方法がありそう…
+    state.onChange = onChange;
     props.context.counterStore.onChange(onChange);
 }
 
 function beforeUnmount(component, el) {
-    let {props} = component;
-    props.context.counterStore.removeChangeListener(onChange);
+    let {props, state} = component;
+    props.context.counterStore.removeChangeListener(state.onChange);
 }
 function render(component) {
     let {props, state} = component;
