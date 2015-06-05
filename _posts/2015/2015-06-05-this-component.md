@@ -279,3 +279,8 @@ min.jsが10kb程度でReactに比べて大分小さいことなど特徴はい�
 React [0.14](https://github.com/facebook/react/issues/3220 "0.14")で[Stateless Components](https://github.com/facebook/react/pull/3995 "Stateless Components")を入れる予定もあるらしいので、この辺のコンポーネントの作りはまだまだ議論の余地がありそうですね。
 
 Fluxアーキテクチャの方も[StoreやActionはPureなオブジェクトとしたい](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)という意見にも同じ流れを感じるので、JavaScriptにおけるFunctional Programmingへの取り組みは模索中という感じです。
+
+また、bindの問題を構文的にサポートするES.nextのプロポーサルもありますが(Babelではオプショナルサポート)、今回の話は構文で解決する問題ではないので単純には行かない感じですね。
+
+- [Function Bind Syntax · Babel](http://babeljs.io/blog/2015/05/14/function-bind/ "Function Bind Syntax · Babel")
+- [zenparsing/es-function-bind](https://github.com/zenparsing/es-function-bind "zenparsing/es-function-bind")
