@@ -20,7 +20,7 @@ tags:
 }
 </style>
 
-[JSer.info](http://jser.info/)というサイトをやってるのですが、2015年1月から半年ぐらい経ったので軽く振り返りをしてみました。
+[JSer.info](http://jser.info/)というサイトを4年半ぐらいやってるのですが、2015年1月から半年ぐらい経ったので軽く振り返りをしてみました。
 
 
 途中で出てくるグラフとか数値は[JSer.info](http://jser.info/)での言及数を元にしていて、これは[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")を使って出したものです。
