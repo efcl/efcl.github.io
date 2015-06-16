@@ -169,7 +169,3 @@ npm publishに対するグローバルなホックは書けないので、こう
 
 - [npm version publish alias](https://gist.github.com/azu/fb3ec88231235511858a "npm version publish alias") について紹介した
 - PublicとPrivateでnpm publish叩くのは同じだけどコマンドを分けた
-=======
-package.jsonを作るときに
-
->>>>>>> Stashed changes
