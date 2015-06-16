@@ -12,11 +12,13 @@ tags:
 
 [JSer.info](http://jser.info/)というサイトをやってるのですが、2015年1月から半年ぐらい経ったので軽く振り返りをしてみました。
 
-(年末あたりにReactが上がってきてた)
+途中で出てくるグラフとか数値は[JSer.info](http://jser.info/)での言及数などを[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")を使って出したものです。
+なので自分の主観的な数値に過ぎないので、一般的とは値とは異なる可能性があることは覚えておいてください。
+
 
 - [2015-01-06のJS: ESLint 0.11.0、Browserifyとwebpack、TypeScriptの本 - JSer.info](http://jser.info/2015/01/06/eslint0.11-browserify-webpack-typescript/ "2015-01-06のJS: ESLint 0.11.0、Browserifyとwebpack、TypeScriptの本 - JSer.info")
     - browserify vs webpack
-    - 新たなWeeklyサイトの誕生
+    - 新たなWeeklyサイトがでてきた
 - [2015-01-13のJS: 6to5、ES6とjspm、リファクタリングJavaScript - JSer.info](http://jser.info/2015/01/13/6to5-jspm-refactoring-javascript/ "2015-01-13のJS: 6to5、ES6とjspm、リファクタリングJavaScript - JSer.info")
 	- 6to5 2.0リリース 認知されてきた
 - [JSer.info 4周年 - JSer.info](http://jser.info/2015/01/16/4-years/ "JSer.info 4周年 - JSer.info")
@@ -24,8 +26,7 @@ tags:
 - [2015-01-20のJS: TypeScript 1.4、io.js 1.0、bluebird 2.7のglobal rejection events - JSer.info](http://jser.info/2015/01/20/typescript1.4-iojs-bluebird2.7/ "2015-01-20のJS: TypeScript 1.4、io.js 1.0、bluebird 2.7のglobal rejection events - JSer.info")
     - TypeScritp 1.4リリース
     - Angularチームと協力しているなど色々布石があった
-    - [io.js](https://iojs.org/en/index.html "io.js") 1.0.0がリリース
-        - Node.js自体はこの頃から大分陰りが
+    - Node.jsのforkである[io.js](https://iojs.org/en/index.html "io.js") 1.0.0がリリース
 - [2015-01-28のJS: Vivaldi、lodash 3.0.0、JavaScriptテスト概要 - JSer.info](http://jser.info/2015/01/28/vivaldi-lodash3-js-tests/ "2015-01-28のJS: Vivaldi、lodash 3.0.0、JavaScriptテスト概要 - JSer.info")
     - [Vivaldi](https://vivaldi.com/ "A New Browser for Our Friends ◦ Vivaldi")リリース
     - [What the Virtual Viewport?](http://updates.html5rocks.com/2015/01/virtual-viewport "What the Virtual Viewport?")
@@ -96,7 +97,7 @@ RxJSそのものについての話もちょっと見かけるようになって�
 	- 近年のMSっぽく最初からとてもオープンな雰囲気で公開
 - [2015-05-12のJS: ECMAScript 2015(ES6)入門、最近のnpmの変更点を見る - JSer.info](http://jser.info/2015/05/12/ecmascript2015-npm/ "2015-05-12のJS: ECMAScript 2015(ES6)入門、最近のnpmの変更点を見る - JSer.info")
 	- Babelを使ったES6を学ぶ記事とかが増えてきた感じ
-	- Traceurはほぼ聞かなくなり、ES6の変換はBabelを使うのが一般的に
+	- Traceurはほぼ聞かなくなり、ES6の変換はBabelを使うのがデファクトっぽくなった
 
 ![traceur-babel](http://efcl.info/wp-content/uploads/2015/06/16-1434381112.png)
 
@@ -113,6 +114,11 @@ ES6+をTranspileするツールである[Traceur](https://github.com/google/trac
 - [2015-05-27のJS: Promiseのありがちな間違い、AngularJS 2に向けて、Plain JS - JSer.info](http://jser.info/2015/05/27/promise-angular2/ "2015-05-27のJS: Promiseのありがちな間違い、AngularJS 2に向けて、Plain JS - JSer.info")
 	- CoffeeScriptやES5と比較したES6の書き方という記事が多かった
 	- 段階を経て移行していく雰囲気を感じた
+
+![coffee-typscript](http://efcl.info/wp-content/uploads/2015/06/16-1434414830.png)
+
+CoffeeScriptとTypeScriptの言及数の変化を見るとCoffeeScriptは言及は少なくて、あっても[Replace CoffeeScript with ES6](https://robots.thoughtbot.com/replace-coffeescript-with-es6 "Replace CoffeeScript with ES6")のような記事だったりしてCoffeeScript自体についての話は本体のアップデートと[The Pragmatic Bookshelf | CoffeeScript](https://pragprog.com/book/tbcoffee2/coffeescript "The Pragmatic Bookshelf | CoffeeScript")ぐらいな感じがします。
+
 - [2015-06-02のJS: AngularJS 1.4.0、Polymer 1.0リリース、今後のJSの流れ - JSer.info](http://jser.info/2015/06/02/Angular1.4.0-Polymer1.0/ "2015-06-02のJS: AngularJS 1.4.0、Polymer 1.0リリース、今後のJSの流れ - JSer.info")
 	- Polymer 1.0がリリースされた。
 	- PolymerやWeb Componentsへの言及は一定で、ちょっと盛り上がりに欠けている
@@ -194,7 +200,7 @@ Polymer 1.0がでたので、ちょうど今がタイミングなのでここ数
 
 ## おわりに
 
-2015年1月から2015年6月15日までに紹介した記事についてるキーワード率
+2015年1月から2015年6月15日までに紹介した記事についてるタグ率
 
 ```
            Key|Ct  (Pct)    Histogram
@@ -238,3 +244,44 @@ WebPlatformAPI|  7  (0.48%) ▬▬
 月ごとの紹介した記事数(2014年1月から2015年6月)を見ると全体的に2015年4月が少ない
 
 ![紹介記事数](http://efcl.info/wp-content/uploads/2015/06/16-1434412905.png)
+
+## 調べ方
+
+JSer.infoに投稿した記事(posts.json)、紹介したサイト(items.json)はJSONデータとして取得できるようにしてあります。
+
+- [JSer.info is data · Issue #45 · jser/jser.info](https://github.com/jser/jser.info/issues/45 "JSer.info is data · Issue #45 · jser/jser.info")
+
+そのままのJSONだと扱いにくいので、今回[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")というライブラリを作って調べました。
+
+[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")はposts.jsonとitems.jsonをラップしたもので、JSer.infoの周期(`JSerWeek`)とJSer.infoに投稿した記事(`JSerPost`)とその記事で紹介したサイト(`JSerItem`)を関連付けて取れるようになってます。
+
+例えば、2015年1月から6月までに紹介したサイトのタグ一覧出したい場合は、以下のようなスクリプトを書けば、1行1タグの出力ができます。
+
+```js
+var JSerStat = require("jser-stat").JSerStat;
+var countByGroup = require("jser-stat").compute.countByGroup;
+var stat = new JSerStat();
+var beginDate = new Date(2015, 0, 1);
+var endDate = new Date(2015, 5, 1);
+var weeks = stat.getJSerWeeksBetWeen(beginDate, endDate);
+weeks.forEach(function (week) {
+    week.items.forEach(function (item) {
+        item.tags.forEach(function (tag) {
+            console.log(tag);
+        })
+    });
+});
+```
+
+これと[philovivero/distribution](https://github.com/philovivero/distribution "philovivero/distribution")を合わせれば、以下のようなタグの割合などが簡単に出せました。
+
+![keywords](http://efcl.info/wp-content/uploads/2015/06/16-1434415741.png)
+
+今回調査に使ったスクリプトは[azu/jser-keyword-count](https://github.com/azu/jser-keyword-count "azu/jser-keyword-count")においてあります。
+(これをNumberなどに食わせてグラフを作ってます)
+
+今回スクリプトを書いて自分で貯めてたデータと自分の意見を照らしあわせてみると、「これはちょっと下火な感じ」という感覚的に思ってたことが数値としても現れてて面白かったです(あくまで主観なので、一般にそうではない可能性もある)
+
+JSer.infoのデータは誰でも使えるので(あんまり正確性は保証しないですが)、[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")など使って遊んで見るといいかもしれません。
+
+もう少し潜在的なデータの出し方が見えてくると面白そうなきがします。
