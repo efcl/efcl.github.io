@@ -99,7 +99,7 @@ RxJSそのものについての話もちょっと見かけるようになって�
 	- Babelを使ったES6を学ぶ記事とかが増えてきた感じ
 	- Traceurはほぼ聞かなくなり、ES6の変換はBabelを使うのがデファクトっぽくなった
 
-![traceur-babel](http://efcl.info/wp-content/uploads/2015/06/16-1434381112.png)
+![traceur-babel](http://efcl.info/wp-content/uploads/2015/06/16-1434418123.png)
 
 ES6+をTranspileするツールである[Traceur](https://github.com/google/traceur-compiler "Traceur")についての言及が、[Babel](http://babeljs.io/ "Babel")が広まってからは殆どなくなった感じがします。
 	
