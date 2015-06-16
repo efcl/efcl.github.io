@@ -19,6 +19,7 @@ exclude:
   - README.md
   - config.rb
   - about/node_modules
+  - vendor
 # Setup
 author:
   name: 'azu'
