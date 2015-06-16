@@ -17,7 +17,6 @@ tags:
 <style>
 .post-content img{
     background-color: white;
-    width:100%;
 }
 </style>
 
