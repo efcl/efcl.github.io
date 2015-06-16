@@ -2,11 +2,15 @@
 title: "2015年前半のJavaScriptを振り返る"
 author: azu
 layout: post
-date : 2015-06-15T23:59
+date : 2015-06-16T11:30
 category: JavaScript
 tags:
     - JavaScript
     - まとめ
+    - React
+    - WebComponents
+    - Angular
+    - TypeScript
 
 ---
 
@@ -124,7 +128,7 @@ CoffeeScriptとTypeScriptの言及数の変化を見るとCoffeeScriptは言及�
 	- PolymerやWeb Componentsへの言及は一定で、ちょっと盛り上がりに欠けている
 	- [Web ComponentsはES4のように感じる日がくるかもしれない](https://twitter.com/codylindley/status/609006418620862464)というのもその空気感
 
-![polymer-angular-react](http://efcl.info/wp-content/uploads/2015/06/16-1434381470.png)
+![polymer-angular-react](http://efcl.info/wp-content/uploads/2015/06/16-1434418601.png)
 
 WebComponents(Polymer含む)とReactとAngularJSのJSer.info内での言及数を表したものです。
 
