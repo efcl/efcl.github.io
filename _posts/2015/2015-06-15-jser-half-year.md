@@ -12,7 +12,6 @@ tags:
 
 [JSer.info](http://jser.info/)というサイトをやってるのですが、2015年1月から半年ぐらい経ったので軽く振り返りをしてみました。
 
-
 (年末あたりにReactが上がってきてた)
 
 - [2015-01-06のJS: ESLint 0.11.0、Browserifyとwebpack、TypeScriptの本 - JSer.info](http://jser.info/2015/01/06/eslint0.11-browserify-webpack-typescript/ "2015-01-06のJS: ESLint 0.11.0、Browserifyとwebpack、TypeScriptの本 - JSer.info")
@@ -123,7 +122,6 @@ ES6+をTranspileするツールである[Traceur](https://github.com/google/trac
 
 WebComponents(Polymer含む)とReactとAngularJSのJSer.info内での言及数を表したものです。
 
-WebComponents(Polymer含む)は爆発的に言及数が増えたタイミングがない感じです。
 Reactは2014年末あたりから伸びて(Advent Calender系)、2-3月ぐらいにスライド(発表)が増えてるのは年末の記事読んでReact触った人が増えたからかなーとか見方もできます。
 4-6月もまあ安定して言及されてた気がします。
 
@@ -183,6 +181,8 @@ AngularJSもライブラリとかのくくりだとよく言及されるタイ�
 ╘═════════╧═══════════════╧═══════╧═══════════╛
 ```
 
+一方、WebComponents(Polymer含む)は爆発的に言及数が増えたタイミングがない感じです。
+
 Polymer 1.0がでたので、ちょうど今がタイミングなのでここ数ヶ月でどういう変化があるかが大事な気がします。
 
 > 本当に Polymer のエコシステムが受け入れられるのか、そもそも Web Components 自体がどうなるのか予測できませんが、Polymer にとっても Web Components にとっても、いよいよ重要な時期に入ったのではないでしょうか。
@@ -191,6 +191,10 @@ Polymer 1.0がでたので、ちょうど今がタイミングなのでここ数
 
 - [2015-06-10のJS: ブラウザとES6の状況、Web Audio APIチュートリアル - JSer.info](http://jser.info/2015/06/10/es6-status-webaudio/ "2015-06-10のJS: ブラウザとES6の状況、Web Audio APIチュートリアル - JSer.info")
 	- JSer.infoがi18n対応した(韓国語訳)
+
+## おわりに
+
+2015年1月から2015年6月15日までに紹介した記事についてるキーワード率
 
 ```
            Key|Ct  (Pct)    Histogram
@@ -230,3 +234,7 @@ WebPlatformAPI|  7  (0.48%) ▬▬
   CoffeeScript|  7  (0.48%) ▬▬
    translation|  7  (0.48%) ▬▬
 ```
+
+月ごとの紹介した記事数(2014年1月から2015年6月)を見ると全体的に2015年4月が少ない
+
+![紹介記事数](http://efcl.info/wp-content/uploads/2015/06/16-1434412905.png)
