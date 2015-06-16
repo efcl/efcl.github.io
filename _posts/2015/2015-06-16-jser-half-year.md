@@ -14,7 +14,15 @@ tags:
 
 ---
 
+<style>
+.post-content img{
+    backgrond-color:white;
+    width:100%;
+}
+</style>
+
 [JSer.info](http://jser.info/)というサイトをやってるのですが、2015年1月から半年ぐらい経ったので軽く振り返りをしてみました。
+
 
 途中で出てくるグラフとか数値は[JSer.info](http://jser.info/)での言及数などを[jser/stat-js](https://github.com/jser/stat-js "jser/stat-js")を使って出したものです。
 なので自分の主観的な数値に過ぎないので、一般的とは値とは異なる可能性があることは覚えておいてください。
