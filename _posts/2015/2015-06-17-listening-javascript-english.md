@@ -34,7 +34,7 @@ JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.
 [Biscuit](http://getbiscuit.com/ "Biscuit")は文字列をコピーすると通知センターから翻訳結果を返してくれて、またコピーした結果を記録してくれます。
 (もっと良い翻訳アプリがあるといいなー)
 
-音声と文字起こしと翻訳アプリがあると、ある程度早口でもおっていけますが、[Javascript Jabber](http://devchat.tv/js-jabber "Javascript Jabber - DevChat.tv")は結構一つが長くしゃべるので、結構集中力が必要になるのが辛い。。
+音声と文字起こしと翻訳アプリがあると、ある程度早口でもおっていけますが、[Javascript Jabber](http://devchat.tv/js-jabber "Javascript Jabber - DevChat.tv")は結構一人が長くしゃべるので、集中力が必要になるのが辛い。。
 (なので、音声に合わせて文字列をハイライトしてくれるPDFビューアみたいなものがあるといいな。。)
 
 個人的には短く、交互に喋ってくれるPodcastが好きなので(全体的にPodcast1話が長すぎる)、[5 Minutes of Javascript](https://fivejs.codeschool.com/ "5 Minutes of Javascript")が聴きやすくて結構好きです。
