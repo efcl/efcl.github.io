@@ -14,7 +14,7 @@ tags:
 
 あいかわらず英語の勉強が長続きしないので、JavaScriptのついでに英語のリスニングができると良さそうかなと思ったのと、移動中に聞けるといいなと思ってちょうどいいものを探していました。
 
-JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.tv/js-jabber "Javascript Jabber - DevChat.tv")というサイトでは、Podcast(音声)とTranscript(文字起こし)が一緒に公開されいます。
+JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.tv/js-jabber "Javascript Jabber - DevChat.tv")というサイトでは、Podcast(音声)とTranscript(文字起こし)が一緒に公開されています。
 
 ゲストもBrendan EichだったりReactのPete Huntだったりやたら豪華なことが多いので、内容も面白いです。
 
@@ -41,4 +41,4 @@ JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.
 
 昨日、JavaScriptのPodcastを聞くと90%ぐらいの確率でスポンサーにでてくるCodeSchoolが[JavaScript.com](https://www.javascript.com/ "JavaScript.com")というサイトを始めました。[News - JavaScript.com](https://www.javascript.com/news "News - JavaScript.com")というコーナーで[5 Minutes of Javascript](https://fivejs.codeschool.com/ "5 Minutes of Javascript")と連携していますが、5minJSにもTranscriptがついたりすると便利な気がします。
 
-文字起こしはコストが結構ありそうなので、文字起こしスポンサー見たいのがあると面白そうとか思った。
+文字起こしはコストが結構ありそうなので、文字起こしスポンサーみたいのがあると面白そうとか思った。
