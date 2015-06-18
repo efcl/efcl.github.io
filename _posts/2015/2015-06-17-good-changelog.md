@@ -74,3 +74,5 @@ Babelを例に見ると、変更した内容を1行のテキストで表現す�
 ChangeLogを手書きするならGitHubの[Releases](https://help.github.com/articles/creating-releases/ "Releases")機能を使うのが楽だし、RSSなども自動でできるし良いと思います。
 
 機械的に自動生成されたChangeLogと[Releases](https://help.github.com/articles/creating-releases/ "Releases")機能は齟齬がなければ併用しても別に問題なくて、ChangeLog以上ブログ未満みたいな感覚で使うのがいいのかなと思ってます。
+
+正直まだベストな解は分かってないですが、コミット時にChangeLogを意識すると結構かわるんじゃないかと思っています。(semverにもかかわる感じがします)
