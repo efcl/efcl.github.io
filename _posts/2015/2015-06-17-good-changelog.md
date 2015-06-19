@@ -64,7 +64,7 @@ Babelを例に見ると、変更した内容を1行のテキストで表現す�
 
 [Mochaの古いChangeLog](https://github.com/mochajs/mocha/blob/master/HISTORY.md#220--2015-03-06)をみてもらうとChangeLogがあっても、コミットメッセージが並んでるだけだと読むのが辛いと思います。
 
-こういうChangeLogに出すべきではないコミットメッセージを意識すること結構大事で、それがconventional-changelogの[chore](https://github.com/ajoslin/conventional-changelog/blob/master/conventions/angular.md "chore")のようなtypeをコミットメッセージに書くことで、どのコミットをChangeLogには含めないかを決めることだと思います。
+こういうChangeLogに出すべきではないコミットメッセージを意識することが結構大事で、それがconventional-changelogの[chore](https://github.com/ajoslin/conventional-changelog/blob/master/conventions/angular.md "chore")のようなtypeをコミットメッセージに書くことで、どのコミットをChangeLogには含めないかを決めることだと思います。
 
 
 自動生成する場合は、どれだけ余計な情報を削るかが見やすいChangeLogに繋がると思います。
