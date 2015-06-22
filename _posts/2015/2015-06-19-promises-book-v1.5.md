@@ -20,7 +20,7 @@ tags:
 
 - [ECMAScript 2015 is now an Ecma Standard](https://esdiscuss.org/topic/ecmascript-2015-is-now-an-ecma-standard "ECMAScript 2015 is now an Ecma Standard")
 
-これに合わせてES6の正式版に対応したPromise本 Ver1.5をリリースしました。
+これに合わせてES6の正式版に対応した[Promise本 Ver1.5](https://github.com/azu/promises-book/releases/tag/1.5.0)をリリースしました。
 1.4までの変更点は以下を参照してください。
 
 - [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](http://efcl.info/2014/08/19/promises-book-1.2.0/ "JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch")
@@ -33,6 +33,8 @@ tags:
 ## Ver 1.4 - 1.5の変更点
 
 環境的な変更が多いので、文章的には大きく変わってないです。
+
+- [Promise本 ver 1.5のリリースノート](https://github.com/azu/promises-book/releases/tag/1.5.0)
 
 ### 中国語、韓国語版をリリース
 
@@ -66,7 +68,8 @@ tags:
 
 ### Chapter 4
 
-- Notification APIの判定方法を変更 [#236](https://github.com/azu/promises-book/issues/236
+- Notification APIの判定方法を変更 [#236](https://github.com/azu/promises-book/issues/236)
+	- サンプルコードをNotification APIが使えるかどうかの部分を変更してます。
 
 -----
 
