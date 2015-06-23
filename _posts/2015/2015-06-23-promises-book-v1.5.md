@@ -12,6 +12,12 @@ tags:
 
 ---
 
+
+## [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") 
+<iframe src="http://ghbtns.com/github-btn.html?user=azu&repo=promises-book&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+
+
 去年の6月23日に[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") Ver 1.0をリリースしてから今日でちょうど一年になります。
 
 - [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
