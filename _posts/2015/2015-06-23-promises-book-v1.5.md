@@ -101,7 +101,7 @@ Promise本はそのAPIの組み合わせ方というよりも、Promise自体は
 今回、ES6がEcma標準(Ecmaという標準化団体による承認されたデファクト標準)となりましたが、
 ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755 "ISO/IEC 16262")としても標準化（デジュール標準)されています。
 
-最近、ES6のISO/IEC JTC 1での審議を手伝ってるのもあって、ES6の仕様の方を読んでいます。
+最近、ES6のISO/IEC JTC 1での審議を手伝ってるのもあって[ES6の仕様の方を読んで](https://github.com/azu/azu/issues/47)います。
 
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
@@ -110,8 +110,7 @@ ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/c
 
 という感じです。
 
-とりあえず、ECMAScript 2015(aka. ES6)のEcma標準化おめでとうございます。
-
+とりあえずECMAScript 2015(aka. ES6)のEcma標準化おめでとうございます。
 
 <script type="text/javascript" src="https://gumroad.com/js/gumroad-embed.js"></script>
 <div class="gumroad-product-embed" data-gumroad-product-id="SHqg" data-outbound-embed="true"><a href="https://gumroad.com/l/SHqg">Promise本のおまけ付録</a></div>
