@@ -89,7 +89,7 @@ ver1.4-1.5までは翻訳版のリリースやECMAScript 6正式版への対応�
 > こういう形態で書籍を公開したのは、常に書籍が更新出来るようにしたいからでもあります。
 -- [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
-とあるように、公開から1年ぐらい経ちますが今もちょこちょこ更新されています。(だいたい200コミットぐらい)
+とあるように、公開から1年ぐらい経ちますが今もちょこちょこ更新されています。
 
 - [Comparing 1.0.0...1.5.0 · azu/promises-book](https://github.com/azu/promises-book/compare/1.0.0...1.5.0 "Comparing 1.0.0...1.5.0 · azu/promises-book")
 
