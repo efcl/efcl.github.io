@@ -107,11 +107,13 @@ ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/c
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 
-その過程で何か見つけたらPromise本の方へと反映や、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺の見ていく感じだったり、[unhandled rejectionへの対応](http://azu.github.io/slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")への話を追加していくかもしれません。
+その過程で何か見つけたらPromise本の方へと反映や、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺の見ていく感じだったり、[unhandled rejectionへの対応](http://azu.github.io/slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")等の話を追加していくかもしれません。
 
 という感じです。
 
 とりあえずECMAScript 2015(aka. ES6)のEcma標準化おめでとうございます。
+
+-----
 
 <script type="text/javascript" src="https://gumroad.com/js/gumroad-embed.js"></script>
 <div class="gumroad-product-embed" data-gumroad-product-id="SHqg" data-outbound-embed="true"><a href="https://gumroad.com/l/SHqg">Promise本のおまけ付録</a></div>
