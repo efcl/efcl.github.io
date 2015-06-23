@@ -77,7 +77,7 @@ ver1.4-1.5までは翻訳版のリリースやECMAScript 6正式版への対応�
 
 [ECMAScript 2015](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript 2015")も正式に出たことなので、Promiseについてまだ知らない人は[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")を読んでみるといいかもしれません。
 
-また、Oreillyの方からPromiseについて扱う[JavaScript with Promises - O&#39;Reilly Media](http://shop.oreilly.com/product/0636920032151.do "JavaScript with Promises - O&#39;Reilly Media")という書籍が出るようです。(最初は2014年5月22日発売とかでこれに合わせてPromise出す目標にしていましたが、実際に出たのは一年後…)
+また、Oreillyの方からPromiseについて扱う[JavaScript with Promises](http://shop.oreilly.com/product/0636920032151.do)という書籍が出るようです。(最初は2014年5月22日発売とかでこれに合わせてPromise出す目標にしていましたが、実際に出たのは一年後…)
 
 ＞ Chapter 6 Combining ECMAScript 6 Features with Promises
 
