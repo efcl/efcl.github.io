@@ -40,11 +40,12 @@ tags:
 
 詳細は以下に書いてありますが、[JavaScript Promise迷你书（中文版）](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")と[[한빛미디어 eBook] JavaScript Promise](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293 "[한빛미디어 eBook] JavaScript Promise - eBook &amp; DRM-free")がそれぞれリリースされました。
 
+- [Promise本が中国語と韓国語に翻訳されました | Web Scratch](http://efcl.info/2015/01/31/promise-book-translation/ "Promise本が中国語と韓国語に翻訳されました | Web Scratch")
+
+
 [![book cover](http://efcl.info/wp-content/uploads/2015/01/b_9788968487293-ko.png)](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293)
 
 猫
-
-- [Promise本が中国語と韓国語に翻訳されました | Web Scratch](http://efcl.info/2015/01/31/promise-book-translation/ "Promise本が中国語と韓国語に翻訳されました | Web Scratch")
 
 ### iOSやAndroidでもエディタが一応操作可能になった
 
