@@ -30,7 +30,7 @@ tags:
 
 - [Releases · azu/promises-book](https://github.com/azu/promises-book/releases "Releases · azu/promises-book")
 
-## Ver 1.4 - 1.5の変更点
+## [Ver 1.4 - 1.5](https://github.com/azu/promises-book/compare/1.4.0...1.5.0)の変更点
 
 環境的な変更が多いので、文章的には大きく変わってないです。
 
