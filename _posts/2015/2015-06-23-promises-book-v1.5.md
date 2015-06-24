@@ -26,7 +26,7 @@ tags:
 
 - [ECMAScript 2015 is now an Ecma Standard](https://esdiscuss.org/topic/ecmascript-2015-is-now-an-ecma-standard "ECMAScript 2015 is now an Ecma Standard")
 
-これに合わせてES6の正式版に対応した[Promise本 Ver1.5](https://github.com/azu/promises-book/releases/tag/1.5.0)をリリースしました。
+これに合わせてES6の正式版に対応した[Promise本 Ver 1.5](https://github.com/azu/promises-book/releases/tag/1.5.0)をリリースしました。
 1.4までの変更点は以下を参照してください。
 
 - [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](http://efcl.info/2014/08/19/promises-book-1.2.0/ "JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch")
@@ -40,11 +40,11 @@ tags:
 
 環境的な変更が多いので、文章的には大きく変わってないです。
 
-- [Promise本 ver 1.5のリリースノート](https://github.com/azu/promises-book/releases/tag/1.5.0)
+- [Promise本 Ver 1.5のリリースノート](https://github.com/azu/promises-book/releases/tag/1.5.0)
 
 ### 中国語、韓国語版をリリース
 
-詳細は以下に書いてありますが、[JavaScript Promise迷你书（中文版）](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")と[[한빛미디어 eBook] JavaScript Promise](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293 "[한빛미디어 eBook] JavaScript Promise - eBook &amp; DRM-free")がそれぞれリリースされました。
+詳細は以下に書いてありますが、[JavaScript Promise迷你书（中文版）](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")と[[한빛미디어 eBook] JavaScript Promise](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293 "[한빛미디어 eBook] JavaScript Promise - eBook & DRM-free")がそれぞれリリースされました。
 
 - [Promise本が中国語と韓国語に翻訳されました | Web Scratch](http://efcl.info/2015/01/31/promise-book-translation/ "Promise本が中国語と韓国語に翻訳されました | Web Scratch")
 
@@ -71,7 +71,7 @@ tags:
 
 ### Chapter 3
 
--  `assert.deepEqual` の使い方が間違っているのを修正 [#218](https://github.com/azu/promises-book/pull/218 "Ch3: assert.deepEqualの使い方が間違っている by azu · Pull Request #218 · azu/promises-book")
+- `assert.deepEqual`の使い方が間違っているのを修正 [#218](https://github.com/azu/promises-book/pull/218 "Ch3: assert.deepEqualの使い方が間違っている by azu · Pull Request #218 · azu/promises-book")
 
 ### Chapter 4
 
@@ -80,15 +80,15 @@ tags:
 
 -----
 
-ver1.4-1.5までは翻訳版のリリースやECMAScript 6正式版への対応などが中心なので、文章の構成自体は変化ないと思います。
+Ver 1.4 - 1.5までは翻訳版のリリースやECMAScript 6正式版への対応などが中心なので、文章の構成自体は変化ないと思います。
 
 [ECMAScript 2015](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript 2015")も正式に出たことなので、Promiseについてまだ知らない人は[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")を読んでみるといいかもしれません。
 
-また、Oreillyの方からPromiseについて扱う[JavaScript with Promises](http://shop.oreilly.com/product/0636920032151.do)という書籍が出るようです。(最初は2014年5月22日発売とかでこれに合わせてPromise出す目標にしていましたが、実際に出たのは一年後…)
+また、O'Reillyの方からPromiseについて扱う[JavaScript with Promises](http://shop.oreilly.com/product/0636920032151.do)という書籍が出るようです。(最初は2014年5月22日発売とかでこれに合わせてPromise本を出す目標にしていましたが、実際に出たのは一年後…)
 
 ＞ Chapter 6 Combining ECMAScript 6 Features with Promises
 
-こちらの書籍はPromise本ではまだ使ってないES6の機能同士を使った(例えばGeneratorとPromise)話などがあるようです。
+こちらの書籍はPromise本ではまだ扱っていないES6の機能同士を使った(例えばGeneratorとPromise)話などがあるようです。
 
 ## 今後
 
@@ -105,15 +105,15 @@ Promise APIはウェブ標準の色々なAPIで使われていて、今後も増
 
 Promise本はそのAPIの組み合わせ方というよりも、Promise自体はどういう特性のものだっけ?という話を中心に書いています。
 
-今回、ES6がEcma標準(Ecmaという標準化団体による承認されたデファクト標準)となりましたが、
-ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755 "ISO/IEC 16262")としても標準化（デジュール標準)されています。
+今回、ES6がEcma標準(Ecmaという標準化団体によって承認されたデファクト標準)となりましたが、
+ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755 "ISO/IEC 16262")としても標準化(デジュール標準)されています。
 
 最近、ES6のISO/IEC JTC 1での審議を手伝ってるのもあって[ES6の仕様の方を読んで](https://github.com/azu/azu/issues/47)います。
 
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 
-その過程で何か見つけたらPromise本の方へと反映や、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺の見ていく感じだったり、[unhandled rejectionへの対応](http://azu.github.io/slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")等の話を追加していくかもしれません。
+その過程で何か見つけたらPromise本の方へと反映したり、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺を見ていく感じだったり、[unhandled rejectionへの対応](http://azu.github.io/slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")等の話を追加していくかもしれません。
 
 という感じです。
 
