@@ -14,6 +14,8 @@ tags:
 
 タイトルから何を言ってるのか意味わからない気がするので順を追って解説。
 
+スライド版: [ECMAScript 6 Draft Hisotry Repo](http://azu.github.io/slide/ecma262reading/es6-draft.html "ECMAScript 6 Draft Hisotry Repo")
+
 2015-05-07現在、ES6の仕様は[April 14, 2015 Rev 38 Final Draft](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#april_14_2015_rev_38_final_draft "April 14, 2015 Rev 38 Final Draft")が公開されています。
 Rev38とわかるようにドラフトは38回ぐらい更新されていて、ちょっとづつ追記されたり変更されたりして結構な変更履歴があります。
 
