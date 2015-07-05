@@ -25,6 +25,9 @@ JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">JavaScriptについて喋ってる動画で、字幕付きで、字幕から辞書を引けて、IOSでオフラインで見られるサイトやアプリ欲しい</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/610974338137731072">June 17, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+追記: Youtubeを字幕付きでオフラインで見るアプリは知らないですが([youtube-dl](https://github.com/rg3/youtube-dl "youtube-dl")とか必要そうな気がする)、[JSConf US 2015 - YouTube](https://www.youtube.com/playlist?list=PL37ZVnwpeshEkVjFZlLm1krvx0mPYPOoq "JSConf US 2015 - YouTube")は文字起こしがあり、その内容もgistにおいてあるので良さそう。
+
+
 ### リスニングの補助
 
 さきほども書いてたように移動中にやりたかったので、iPhoneで聞きながら、Transcriptの文字を目で追っています。
