@@ -27,6 +27,7 @@ JavaScriptのPodcastサイトで[Javascript Jabber - DevChat.tv](http://devchat.
 
 追記: Youtubeを字幕付きでオフラインで見るアプリは知らないですが([youtube-dl](https://github.com/rg3/youtube-dl "youtube-dl")とか必要そうな気がする)、[JSConf US 2015 - YouTube](https://www.youtube.com/playlist?list=PL37ZVnwpeshEkVjFZlLm1krvx0mPYPOoq "JSConf US 2015 - YouTube")は文字起こしがあり、その内容もgistにおいてあるので良さそう。
 
+また、著内な人の講演を文字起こししてる[matthiasn/talk-transcripts](https://github.com/matthiasn/talk-transcripts "matthiasn/talk-transcripts")も参考になりそう。
 
 ### リスニングの補助
 
