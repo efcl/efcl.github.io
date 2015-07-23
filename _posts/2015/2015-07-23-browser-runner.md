@@ -2,7 +2,7 @@
 title: "コマンドラインまたはNodeモジュールからブラウザでURLへ簡単にアクセスさせる"
 author: azu
 layout: post
-date : 2015-07-21T09:06
+date : 2015-07-23T09:06
 category: JavaScript 
 tags:
     - Browser
