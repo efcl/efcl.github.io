@@ -17,9 +17,9 @@ tags:
 
 以前書いた[node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch](http://efcl.info/2014/09/05/node-webkit-binary-release/ "node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch")の更新版的な記事です。
 
-この記事では[NW.js](http://nwjs.io/)と[Electron](http://electron.atom.io/)で書いたアプリをGitHub Releaseで公開するまでの流れやツールの紹介です。
+この記事は[NW.js](http://nwjs.io/)と[Electron](http://electron.atom.io/)で書いたアプリをGitHub Releaseで公開するまでの流れやツールの紹介です。
 
-この記事の目標としては"Travis CIからGitHub Releaseへ自動的にパッケージしたアプリをアップロードする"を目標してます。
+この記事の目標としては"Travis CIからGitHub Releaseへ自動的にパッケージしたアプリをアップロードする"を目標にしてます。
 
 つまり、git tagを付けてgit pushすれば、自動的にアプリのバイナリができあがるという感じです。
 
