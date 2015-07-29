@@ -48,6 +48,8 @@ brew cask install rstudio
 
 ### Alfred
 
+追記: `brew cask alfred` でちゃんとリンクを貼れるようになってます。
+
 AlfredでRStudioが出てこないのはシンボリックリンクだからなようです。  
 以下のように方法でAlfredにも出せると思います。
 
