@@ -2,7 +2,7 @@
 title: "npmパッケージをExampleテストしよう"
 author: azu
 layout: post
-date : 2015-07-28T10:04
+date : 2015-07-29T10:04
 category: JavaScript
 tags:
     - npm
