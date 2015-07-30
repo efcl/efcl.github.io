@@ -86,6 +86,14 @@ runner.runBrowser("http://example.com").then(function () {
 
 実際に動かせるサンプルコードはドキュメントとしても役立つのでExampleテストはドキュメント的な性質もあるかもしれません。
 
+後は、この作ったexample.jsを`npm test`とかで実行するようにするだけで、CIとかでも自動的にExampleテストが走るので便利です。
+
+```
+  "scripts": {
+    "test": "npm run build && mocha && (cd example && npm run example)"
+  },
+```
+
 ### `package.json`の設定ミスとかをチェックできる
 
 `package.json`の"main"や"files"、npmignoreなどが色々合わさってnpm publishされるため、publishしたものにファイルが入ってなかったりそういうミスは結構多いです。
