@@ -34,7 +34,7 @@ NW.jsなのでWindows/OS X/Linuxで動くと思います。
 ## 使い方
 
 1. アプリを開く
-2. [Personal token](https://github.com/settings/tokens)を作ってサイドバーに入力する
+2. [Personal token](https://github.com/settings/tokens)(デフォルトの✔でよさそう)を作ってサイドバーに入力する
     - [Creating an access token for command-line use - User Documentation](https://help.github.com/articles/creating-an-access-token-for-command-line-use/ "Creating an access token for command-line use - User Documentation")
     - これでIssue一覧が表示できます。
 3. 普通にWebViewで表示されてるGitHubにログインする
