@@ -56,11 +56,21 @@ Go言語のExampleと近いような気がします。
 mkdir example
 cd example
 npm install --save-dev ../
-# example.jsなどを作成
+# example.jsを作成...
+# => example.jsを実行
 node example.js
 ```
 
 こうして作った`example.js`を実行した結果が正常終了ならば、Exampleテストをパスしたという単純なものなので特別なテストフレームワークなども不要で導入は簡単だと思います。
+
+こうして作った`example.js`を`npm test`などで実行するようにすればExampleテストができます。
+
+```
+  "scripts": {
+    "test": "(cd example && npm install && node example.js)"
+  },
+```
+
 
 また、ロジックテストを書くことが難しいライブラリでも、単純に実行するだけなら書くことは簡単で少なくても実行して例外がでないというチェックを簡単に取り入れることが利点の一つです。
 
