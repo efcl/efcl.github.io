@@ -120,6 +120,12 @@ Saddlerはcheckstyle形式のLint結果を渡すと、Travis CIやCircle CIか�
 
 - [変更したファイルにrubocopやjscsを実行して pull requestに自動でコメントする – Saddler - checkstyle to anywhere](http://packsaddle.org/articles/saddler-overview/ "変更したファイルにrubocopやjscsを実行して pull requestに自動でコメントする – Saddler - checkstyle to anywhere")
 
+TravisCIからPull Request時にコメントするためにGitHubのtokenを取得して、travis.ymlに追加します。
+
+```
+travis encrypt -r jser/jser.github.io GITHUB_ACCESS_TOKEN=b95xasdasx3bxsadsdadsaxx --add
+```
+
 [travis-spellcheck.sh](https://github.com/jser/jser.github.io/blob/master/test/travis-spellcheck.sh "travis-spellcheck.sh")という感じのスクリプトを作って、textlintは`$(npm bin)/textlint --rulesdir test/rules -f checkstyle` という感じでcheckstyle形式でも出力できるので、それをSaddlerに渡す感じです。
 
 そのままだとファイル全体のLintの結果が含まれるので、実際にコミットの差分だけに絞りたい場合は[packsaddle/ruby-checkstyle_filter-git](https://github.com/packsaddle/ruby-checkstyle_filter-git "packsaddle/ruby-checkstyle_filter-git")をパイプするとできます。
