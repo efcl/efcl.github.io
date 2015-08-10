@@ -1,5 +1,5 @@
 ---
-title: "power-assertを使ったDoctestツール power-doctest 1.0リリース"
+title: "power-assertを使ったDoctestツール power-doctestを書き直した"
 author: azu
 layout: post
 date : 2015-08-10T09:20
@@ -100,6 +100,8 @@ browserify -D -r power-assert powered-example.js > build.js
 
 ただの`assert`に変換するだけなので[非同期テスト](http://efcl.info/2014/0322/res3743/ "power-doctestが非同期テストに対応しました | Web Scratch")も何もせずに対応できています。
 
+ただ、今の所実行面のサポートがなんにもないので、なんか上手い方法が欲しくなりそうな感じですね。
+
 ## 仕組み
 
 仕組み的にはASTを変換するということには全く変わりがないですが、変換の役割をはっきりさせたり、ASTを変換する部分以外を抽象化することで変換に集中しやすくするためのライブラリを書きました。
@@ -162,3 +164,7 @@ var astNode = toAST`var a = ${nodeForInline}`;
 これを使うことで、AST変換する際にJSON的にNodeを色々書いたりしないで組み立てができるようになって意外と上手く動いてる感じです。
 
 - [comment-to-assert/ast-utils.js at cff0a537e7e501feeb0fa84b72350084636e0d07 · azu/comment-to-assert](https://github.com/azu/comment-to-assert/blob/cff0a537e7e501feeb0fa84b72350084636e0d07/src/ast-utils.js#L24-L36 "comment-to-assert/ast-utils.js at cff0a537e7e501feeb0fa84b72350084636e0d07 · azu/comment-to-assert")
+
+この辺の仕組みを使って書き換えた[power-doctest](https://github.com/azu/power-doctest "power-doctest")本体のコードは1/10ぐらいまで短くなりました。
+
+- [rewrite simply by azu · Pull Request #11 · azu/power-doctest](https://github.com/azu/power-doctest/pull/11 "rewrite simply by azu · Pull Request #11 · azu/power-doctest")
