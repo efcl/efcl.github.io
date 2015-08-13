@@ -37,7 +37,7 @@ assert.euqal(評価したい式, 期待する評価結果);
 
 [azu/power-doctest](https://github.com/azu/power-doctest "azu/power-doctest")
 
-さきほども書いたように変換機能しかので、ライブラリとして使うのがいい気がしますが単純なファイルを指定して変換するCLIの機能だけは入っています。
+さきほども書いたように変換機能しかないのでライブラリとして使うのがいい気がしますが、単純なファイルを指定して変換するCLIの機能だけは入っています。
 
 	npm install -g power-doctest
 
