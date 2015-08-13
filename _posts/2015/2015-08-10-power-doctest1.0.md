@@ -131,7 +131,7 @@ astEqual(actualAST, expectedAST);
 
 今回のAST変換でメインとなるライブラリですが、ASTは[ESTree](https://github.com/estree/estree "ESTree")というデファクトが存在するので、本来どのパーサで作られたASTであるのかは気にする必要がありません。
 
-しかし今回のようにコメントを`assert`に変換するAST変換関数は`node.trailingComments`というようにESTreeでは標準化されたないコメントの位置に関する情報を使ったり、power-assertの変換をする[espower](https://github.com/power-assert-js/espower "espower")は`range`や`loc`といったこちらも標準化されてない情報を使います。
+しかし今回のようにコメントを`assert`に変換するAST変換関数は`node.trailingComments`というようにESTreeでは標準化されたないコメントの位置に関する情報を使ったり、power-assertの変換をする[espower](https://github.com/power-assert-js/espower "espower")は`loc`といったこちらも標準化されてない情報を使います。
 (実際にはどのパーサも同じ情報をもっているのですが)
 
 また、最近はesprima、espree、acorn、[Babylon](https://github.com/babel/babel/tree/master/packages/babylon "Babylon")など色々なパーサが存在するため、
@@ -140,6 +140,8 @@ astEqual(actualAST, expectedAST);
 そのため、AST変換関数がそのパーサだったりを気にするのは本質的ではないなと思ったので、パーサやジェネレータを抽象化した[azu/ast-source](https://github.com/azu/ast-source)というライブラリを作りました。
 
 結局はそのAST変換関数が受け付けるのはユーザが書いたコードであるためそれがパースできれば問題ないという方針で、自動的にパーサを切り替えたりするような仕組みが入ってます。(上手く動いてるのかまだ良くわかってない)
+
+追記: escodegenやrecastなどESTree -> Codeがまだ完全ではないことが発覚した…
 
 後はSourceMapを生成するジェネレータ部分の仕組みはいってるので簡単に扱えるようにする目的もあります([escodegen](https://github.com/estools/escodegen "escodegen")の使い方いつも忘れる)
 
