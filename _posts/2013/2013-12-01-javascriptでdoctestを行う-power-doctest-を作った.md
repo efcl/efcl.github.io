@@ -288,6 +288,8 @@ power-doctestではコメントも扱えるtraversalライブラリの[millermed
             <strong>JS testing everywhere!</strong>
           </p>
 
+2015-08-15 追記: [power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch](http://efcl.info/2015/08/10/power-doctest1.0/ "power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch")
+
  [1]: http://www.adventar.org/calendars/56
  [2]: https://github.com/azu/power-doctest "azu/power-doctest"
  [3]: http://gyazo.com/56ea3848bb1a419d7d0ed47d111b39fc.gif
