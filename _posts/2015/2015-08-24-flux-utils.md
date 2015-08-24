@@ -15,7 +15,7 @@ tags:
 
 [facebook/flux](https://github.com/facebook/flux "facebook/flux") [2.1.0](https://github.com/facebook/flux/blob/master/CHANGELOG.md#210 "2.1.0")から[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")というStoreなどの実装が含まれるようになりました。
 
-Flux Utilsを使って、指定したアカウントのはてなブックマークを検索するウェブアプリを書いてみました。
+今回Flux Utilsを使って、指定したアカウントのはてなブックマークを検索するウェブアプリを書いてみました。
 
 - [azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")
 - [azu.github.io/hatebu-mydata-search/](http://azu.github.io/hatebu-mydata-search/)
@@ -23,13 +23,13 @@ Flux Utilsを使って、指定したアカウントのはてなブックマー�
 
 ![はてなブックマーク](http://efcl.info/wp-content/uploads/2015/08/24-1440376718.png)
 
-これを作ってFlux Utilsについて思ったことを書いていきます。
+これを作ってみてFlux Utilsについて思ったことを書いていきます。
 
 ## Flux Utils
 
-[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")の紹介ページに、Flux Utilsに含まれているものについてが書かれています。
+[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")の紹介ページに、Flux Utilsの解説が書かれています。
 
-簡単にまとめると以下の4つが2.1.0には含まれています。
+簡単にまとめると以下の4つのクラスがFlux Utilsとして提供されています。
 
 - Store
 	- ベースとなるクラス
@@ -48,11 +48,12 @@ Storeはおそらく直接使わない、`MapStore`は[Immutable.js](https://fac
 
 [azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")でも`ReduceStore`と`Container`の2つを利用しました。
 
-Flux Utilsは[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")が一部使っているのからも分かりますが(使わなくても問題ない)、Immutableなオブジェクトを`state`として使うのが前提となった作りになっています。
+Flux Utilsは[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")を一部使っているのからも分かりますが(使わなくても問題ない)、Immutableなオブジェクトを`state`として使うのが前提となった作りになっています。
 
-[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")はFlowやTypeScriptなどの型付きや[Immutableな実装でのパフォーマンス](https://www.youtube.com/watch?v=I7IdS-PbEgI)におけるメリットはありますが、普通に扱うのが難しいので今回はImmutableなオブジェクトとして[christianalfoni/immutable-store](https://github.com/christianalfoni/immutable-store "christianalfoni/immutable-store")を利用しました。
+[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")はFlowやTypeScriptなどの型付き言語で使いやすくなってたり、[Immutableな実装でのパフォーマンス](https://www.youtube.com/watch?v=I7IdS-PbEgI)におけるメリットはありますが、普通に扱うのが難しいのです。
+なので、今回はImmutableなstateオブジェクトとして[christianalfoni/immutable-store](https://github.com/christianalfoni/immutable-store "christianalfoni/immutable-store")を利用しました。
 
-Flux Utilsを利用する場合、`flux`モジュールのmainからは辿らずに、パスを指定して読み込むことで利用できます。
+Flux Utilsを利用する場合、`flux`モジュールのmainからはたどっても存在しないので、パスを指定して読み込むことで利用できます。(Facebookはこういうのが多いですが、browserifyした時とかに使ってないものが勝手に含まれないから?)
 
 ```js
 import {ReduceStore} from 'flux/utils';
