@@ -15,13 +15,15 @@ tags:
 
 [facebook/flux](https://github.com/facebook/flux "facebook/flux") [2.1.0](https://github.com/facebook/flux/blob/master/CHANGELOG.md#210 "2.1.0")から[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")というStoreなどの実装が含まれるようになりました。
 
-Flux Utilsを使って、自分のはてなブックマークを検索するウェブアプリを書いてみてFlux Utilsについて思ったことを書いていきます。
+Flux Utilsを使って、指定したアカウントのはてなブックマークを検索するウェブアプリを書いてみました。
 
 - [azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")
 - [azu.github.io/hatebu-mydata-search/](http://azu.github.io/hatebu-mydata-search/)
-- mydataのAPIがCROS対応してないので[JSONProxy](https://jsonp.afeld.me/ "JSONProxy")を挟んでます。(なのであんまり多いブックマークデータ持ってるアカウント名は避けたほうが…)
+- mydataのAPIがCORS対応してないので[JSONProxy](https://jsonp.afeld.me/ "JSONProxy")を挟んでます。(なのでブックマークデータが多いアカウント名は避けたほうが…)
 
 ![はてなブックマーク](http://efcl.info/wp-content/uploads/2015/08/24-1440376718.png)
+
+これを作ってFlux Utilsについて思ったことを書いていきます。
 
 ## Flux Utils
 
