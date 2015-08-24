@@ -158,7 +158,7 @@ export default class BookmarkList extends React.Component {
 
 `App.js`にダミーの配列データ(`bookmarks`)を置いて表示しています。
 
-```js
+```diff
 
 +import BookmarkList from "./components/BookmarkList"
  function onSubmit({name}) {
@@ -321,7 +321,7 @@ Containerで包むべきReact ComponentはRootとなるComponentとするべき�
 
 - [React Tips and Best Practices - ÆFLASH](http://aeflash.com/2015-02/react-tips-and-best-practices.html "React Tips and Best Practices - ÆFLASH")
 
-```js
+```diff
  import InputUserName from "./components/InputUserName"
  import BookmarkList from "./components/BookmarkList"
  import SearchBox from "./components/SearchBox"
