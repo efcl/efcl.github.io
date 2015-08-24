@@ -1,5 +1,5 @@
 ---
-title: "Flux Utilsを使いながらはてなブックマーク検索を作る"
+title: "はてなブックマーク検索を作りながらFlux Utilsについて学ぶ"
 author: azu
 layout: post
 date : 2015-08-24T09:23
@@ -7,6 +7,8 @@ category: JavaScript
 tags:
     - Flux
     - JavaScript
+    - library
+    - React
     - はてなブックマーク
 
 ---
@@ -16,6 +18,8 @@ tags:
 Flux Utilsを使って、自分のはてなブックマークを検索するウェブアプリを書いてみてFlux Utilsについて思ったことを書いていきます。
 
 - [azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")
+- [azu.github.io/hatebu-mydata-search/](http://azu.github.io/hatebu-mydata-search/)
+- mydataのAPIがCROS対応してないので[JSONProxy](https://jsonp.afeld.me/ "JSONProxy")を挟んでます。(なのであんまり多いブックマークデータ持ってるアカウント名は避けたほうが…)
 
 ![はてなブックマーク](http://efcl.info/wp-content/uploads/2015/08/24-1440376718.png)
 
@@ -419,3 +423,81 @@ var state = Store{
 var newState = state.set('foo', 'bar2');
 areEqual(state, newState);// false
 ```
+
+
+
+このstateはImmutableであるというのは、stateが汚れたりしないのでいいところもありますが、逆に`setState`のような無理やりstateを変えたいという時に結構面倒な事があります。
+
+### ローカルストレージからの復元
+
+[azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")でも一つ遭遇して、このアプリでは取得済みのブックマークやユーザー名などはIndexedDBに保存しています。
+
+画面を表示した後、非同期で取得したデータをstateを設定し直すのに`setState`みたいな単純な方法がないので以下のような作りにしました。
+
+`restoreType`というtypeを追加して、ストレージから取得したオブジェクトをstateにするというものを`reduce`に追加しています。
+
+要はActionCreatorから`restoreType`というActionとストレージにあるstateをdispatchするという、他のActionと全く同じ流れを踏むようになっています。
+
+```js
+import {ReduceStore} from 'flux/utils';
+import Dispatcher from "../Dispatcher";
+import { keys } from "./HatebuAction"
+import Immutable from "immutable-store"
+import {getStorage, setStorage} from "../LocalStorageContainer"
+const restoreType = Symbol("restore");
+class HatebuStore extends ReduceStore {
+    constructor(...args) {
+        super(...args);
+        getStorage(this.constructor.name).then(state => {
+            Dispatcher.dispatch({
+                type: restoreType,
+                state
+            });
+        });
+        this.addListener(() => {
+            var storeName = this.constructor.name;
+            var state = this.getState();
+            setStorage(storeName, state).catch(error => {
+                console.warn(error, " on " + storeName);
+            });
+        });
+    }
+
+    getInitialState() {
+        return Immutable({
+            "userName": ""
+        });
+    }
+
+    reduce(state, action) {
+        switch (action.type) {
+            case keys.inputUser:
+                return state.set("userName", action.userName);
+            case restoreType:
+                return state.import(action.state);
+            default:
+                return state;
+        }
+    }
+}
+```
+
+最初はReduceStoreをハックしてどうにかしようとしていますが結構難しい事がわかったので、`restoreType`というActionでやる形にしています。
+
+やってみるとFlux Utilsはこういった感じで結構ルール外なことはやりにくいようになっている気がするので、ギブス的にもなってるような気がします。
+
+ストレージから復元もActionでやったほうが例外的なルールもなくなるので真っ当な設計だと思います。
+
+
+## まとめ
+
+[flux-utilsについて](https://gist.github.com/azu/e0274b703ef97226b0db "flux-utilsについて")でも書いていましたが、特に`MapStore`などは[Flow](http://flowtype.org/ "Flow")やTypeScriptといった型付き言語だと使いやすいような形となっています。
+そういったものと一緒にFlux Utilsを使うといろんな人がいても書き方がかなり統一されるような感じがします。
+
+また[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html#content "Flux Utils")のページの最初にも書いてあるように、別にFluxアーキテクチャをやる際にFlux Utilsを絶対使うべきというものでもないと思います。
+
+> Flux Utils is a set of basic utility classes to help get you started with Flux. These base classes are a solid foundation for a simple Flux application, but they are not a feature-complete framework that will handle all use cases. There are many other great Flux frameworks out there if these utilities do not fulfill your needs.
+
+[Flow](http://flowtype.org/ "Flow")で書きやすいようにするというモチベーションがありそうですが、[rackt/redux](https://github.com/rackt/redux "rackt/redux")などにも近いような話も出てくるので、一度触ってみると面白いかもしれません。
+
+以前のDispatcherしかなかった`flux`モジュールに比べて、コード量も少なくなり、Storeなどの形も一定になって見通しが良くなったり、Containerが結構いい感じなので普通に使えるといった印象です。
