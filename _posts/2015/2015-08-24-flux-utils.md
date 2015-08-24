@@ -13,7 +13,7 @@ tags:
 
 ---
 
-[facebook/flux](https://github.com/facebook/flux "facebook/flux") [2.1.0](https://github.com/facebook/flux/blob/master/CHANGELOG.md#210 "2.1.0")から[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html#content "Flux Utils")というStoreなどの実装が含まれるようになりました。
+[facebook/flux](https://github.com/facebook/flux "facebook/flux") [2.1.0](https://github.com/facebook/flux/blob/master/CHANGELOG.md#210 "2.1.0")から[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")というStoreなどの実装が含まれるようになりました。
 
 Flux Utilsを使って、自分のはてなブックマークを検索するウェブアプリを書いてみてFlux Utilsについて思ったことを書いていきます。
 
@@ -91,9 +91,9 @@ import {MapStore} from 'flux/utils';
 最初はビルド環境や`index.html`を置いて`build.js`を読み込めるようにします。
 
 babel+babelify+browserifyな感じでJavaScriptを書けるようにしてます。
+CSSは[cssnext](http://cssnext.io/ "cssnext")と[Pure](http://purecss.io/ "Pure")を使いました。
 
 - [setup devlopment env · azu/hatebu-mydata-search@101d631](https://github.com/azu/hatebu-mydata-search/commit/101d6310659d4d8b701e9cfffa14fafde351a7b3 "setup devlopment env · azu/hatebu-mydata-search@101d631")
-
 
 ### ステートレスコンポーネント
 
@@ -494,7 +494,7 @@ class HatebuStore extends ReduceStore {
 [flux-utilsについて](https://gist.github.com/azu/e0274b703ef97226b0db "flux-utilsについて")でも書いていましたが、特に`MapStore`などは[Flow](http://flowtype.org/ "Flow")やTypeScriptといった型付き言語だと使いやすいような形となっています。
 そういったものと一緒にFlux Utilsを使うといろんな人がいても書き方がかなり統一されるような感じがします。
 
-また[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html#content "Flux Utils")のページの最初にも書いてあるように、別にFluxアーキテクチャをやる際にFlux Utilsを絶対使うべきというものでもないと思います。
+また[Flux Utils](http://facebook.github.io/flux/docs/flux-utils.html "Flux Utils")のページの最初にも書いてあるように、別にFluxアーキテクチャをやる際にFlux Utilsを絶対使うべきというものでもないと思います。
 
 > Flux Utils is a set of basic utility classes to help get you started with Flux. These base classes are a solid foundation for a simple Flux application, but they are not a feature-complete framework that will handle all use cases. There are many other great Flux frameworks out there if these utilities do not fulfill your needs.
 
