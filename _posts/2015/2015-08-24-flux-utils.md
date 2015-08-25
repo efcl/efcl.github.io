@@ -21,7 +21,7 @@ tags:
 - [azu.github.io/hatebu-mydata-search/](http://azu.github.io/hatebu-mydata-search/)
 - mydataのAPIがCORS対応してないので[JSONProxy](https://jsonp.afeld.me/ "JSONProxy")を挟んでます。(なのでブックマークデータが多いアカウント名は避けたほうが…)
 
-![はてなブックマーク](http://efcl.info/wp-content/uploads/2015/08/24-1440376718.png)
+![はてなブックマーク検索](https://monosnap.com/file/KPhJNSpqHIVUsqFOd5cHzFw3yEyCeH.png)
 
 これを作ってみてFlux Utilsについて思ったことを書いていきます。
 
