@@ -509,6 +509,6 @@ class HatebuStore extends ReduceStore {
 
 > Flux Utils is a set of basic utility classes to help get you started with Flux. These base classes are a solid foundation for a simple Flux application, but they are not a feature-complete framework that will handle all use cases. There are many other great Flux frameworks out there if these utilities do not fulfill your needs.
 
-[Flow](http://flowtype.org/ "Flow")で書きやすいようにするというモチベーションがありそうですが、[rackt/redux](https://github.com/rackt/redux "rackt/redux")などにも近いような話も出てくるので、一度触ってみると面白いかもしれません。
+[Flow](http://flowtype.org/ "Flow")で書きやすいようにするというモチベーションがありそうですが、immutable state、pure functionといったあたりは[rackt/redux](https://github.com/rackt/redux "rackt/redux")などにも近いような話も出てきますが、その前に一度Flux Utilsを触ってみると面白いかもしれません。
 
 以前のDispatcherしかなかった`flux`モジュールに比べて、コード量も少なくなり、Storeなどの形も一定になって見通しが良くなったり、Containerが結構いい感じなので普通に使えるといった印象です。
