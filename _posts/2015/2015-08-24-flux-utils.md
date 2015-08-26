@@ -50,10 +50,12 @@ Storeはおそらく直接使わない、`MapStore`は[Immutable.js](https://fac
 
 Flux Utilsは[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")を一部使っているのからも分かりますが(使わなくても問題ない)、Immutableなオブジェクトを`state`として使うのが前提となった作りになっています。
 
-[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")はFlowやTypeScriptなどの型付き言語で使いやすくなってたり、[Immutableな実装でのパフォーマンス](https://www.youtube.com/watch?v=I7IdS-PbEgI)におけるメリットはありますが、普通に扱うのが難しいのです。
-なので、今回はImmutableなstateオブジェクトとして[christianalfoni/immutable-store](https://github.com/christianalfoni/immutable-store "christianalfoni/immutable-store")を利用しました。
+[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.js")はFlowやTypeScriptなどの型付き言語で使いやすくなってたり、[Immutableな実装でのパフォーマンス](https://www.youtube.com/watch?v=I7IdS-PbEgI)におけるメリットはありますが、癖があって普通に扱うのが難しいのです。
 
-Flux Utilsを利用する場合、`flux`モジュールのmainからはたどっても存在しないので、パスを指定して読み込むことで利用できます。(Facebookはこういうのが多いですが、browserifyした時とかに使ってないものが勝手に含まれないから?)
+そのため、今回はImmutableなstateオブジェクトとして、もう少し扱いやすい[christianalfoni/immutable-store](https://github.com/christianalfoni/immutable-store "christianalfoni/immutable-store")を利用しました。
+
+Flux Utilsを利用する場合、以下のように`flux/utils`とパスを指定して読み込むことで利用できます。
+(Facebookはこういうのが多いですが、browserifyした時とかに使ってないものが勝手に含まれないから?)
 
 ```js
 import {ReduceStore} from 'flux/utils';
@@ -100,7 +102,7 @@ CSSは[cssnext](http://cssnext.io/ "cssnext")と[Pure](http://purecss.io/ "Pure"
 
 ### ステートレスコンポーネント
 
-コミットをそこまでキレイに分けてないですが、上記のコミットに含まれてますが、まずはステートレスなReact Componentを作成していくようにしています。
+コミットをそこまでキレイに分けてないので上記のコミットに含まれてますが、まずはステートレスなReact Componentを作成していくようにしています。
 (React Componentで`this.state`を使わないと考えれば書きやすいと思います)
 
 具体的には以下のユーザ名の入力するinput要素を`InputUserName.js`という名前で最初に作っています。
@@ -109,15 +111,21 @@ CSSは[cssnext](http://cssnext.io/ "cssnext")と[Pure](http://purecss.io/ "Pure"
 
 ```js
 import React from "react"
-export default class SearchBox extends React.Component {
-    onChange(event) {
-        var text = event.target.value;
-        this.props.onChange(text);
+export default class InputUserName extends React.Component {
+    onSubmit(event) {
+        event.preventDefault();
+        var name = React.findDOMNode(this.refs.userName).value;
+        this.props.onSubmit({
+            name
+        });
     }
 
     render() {
-        return <div className="SearchBox">
-            <input onChange={this.onChange.bind(this)} type="text" placeholder="例) [test]"/>
+        return <div className="InputUserName">
+            <form className="InputUserName-form pure-form" onSubmit={this.onSubmit.bind(this)}>
+                <input type="text" ref="userName"></input>
+                <input className="pure-button" type="submit" value="変更"></input>
+            </form>
         </div>
     }
 }
