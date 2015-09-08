@@ -22,7 +22,7 @@ tags:
 と書くことで、これを以下のようなassertへ変換するツールを作っていました。
 
 ```js	
-assert.euqal(評価したい式, 期待する評価結果);
+assert.equal(評価したい式, 期待する評価結果);
 ```
 
 今回[power-doctest](https://github.com/azu/power-doctest "power-doctest")をシンプルなものへと作りなおしました。
