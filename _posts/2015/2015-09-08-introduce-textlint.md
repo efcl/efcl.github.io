@@ -27,7 +27,7 @@ tags:
 ### インストール
 
 textlintはデフォルトでは一つもルールがありません。
-これはpluggable linting toolのためでもありますが、現実的に全ての言語(日本語、英語、中国語...)で上手く機能するようなルールは殆ど無いと思っているからでもあります。
+これはpluggable linting toolのためでもありますが、現実的に全ての言語(日本語やロシア語といった言語)で上手く機能するようなルールは少ないと思ってるからでもあります。
 
 ルールはJavaScriptで書くことができ、それらのルールはNode.jsのパッケージ管理ツールであるnpmで公開、利用することができます。
 (textlintのルールは`textlint-rule-*`という名前で公開をオススメします)
@@ -45,7 +45,17 @@ Node.jsの`package.json`があるプロジェクトなら`--save-dev`とかで�
 
 インストールすると`$ textlint`というコマンドが使えるようになります。
 
-### 文章をLintする
+入れた3つのルールはそれぞれ以下のようなことをチェックしてくれます。
+
+- [textlint-rule-max-ten](https://github.com/azu/textlint-rule-max-ten)
+	- 一文に利用できる`、`の数をチェックするルール
+- [textlint-rule-spellcheck-tech-word](https://github.com/azu/textlint-rule-spellcheck-tech-word)
+	- WEB+DB PRESS用語統一ルールをベースにした[azu/technical-word-rules](https://github.com/azu/technical-word-rules "azu/technical-word-rules")の辞書で単語チェック
+- [textlint-rule-no-mix-dearu-desumasu](https://github.com/azu/textlint-rule-no-mix-dearu-desumasu)
+	- 「ですます」調と「である」調の混在をチェックするルール
+
+
+### 文章をルールでLintする
 
 先ほど入れたルールを使ってみましょう。
 
@@ -65,9 +75,11 @@ $ textlint --rule no-mix-dearu-desumasu --rule max-ten --rule spellcheck-tech-wo
 
 引数が多いですね… 
 
-textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")で`.textlintrc`という設定ファイルをサポートしたので、上記のコマンドは以下のような設定ファイルにすることができます。
+textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")で`.textlintrc`という設定ファイルをサポートていて、上記のコマンドは以下のような設定ファイルにすることができます。
 
-設定ファイルはJSON、YAML、JS(`module.exports = {}`)で書くことができます。
+設定ファイルはJSON、YAML、JSモジュール(`module.exports = {}`)で書くことができます。
+
+> `.textlintrc`
 
 ```json
 {
@@ -81,4 +93,44 @@ textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")�
 }
 ```
 
-`rules`にはルールの有効(true)/無効(true) または ルールの設定があれば設定を書くことができます。
+`rules`にはルールの有効(true)/無効(true) または ルールの設定を書くことができます。
+
+詳しくは[README.md](https://github.com/azu/textlint#textlintrc)を見てみて下さい
+
+textlintを実行すると自動で`.textlintrc`ファイルを探索して読み込まれるので、設定ファイルがあるディレクトリなどで実行し場合はコマンドラインオプションに書かなくてもよくなります。
+
+```sh
+$ textlint --rule no-mix-dearu-desumasu --rule max-ten --rule spellcheck-tech-word README.md
+# ==
+$ textlint README.md
+```
+
+実例: [refactor: use `.textlintrc` for textlint by azu · Pull Request #43 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/43 "refactor: use `.textlintrc` for textlint by azu · Pull Request #43 · azu/JavaScript-Plugin-Architecture")
+
+textlintのルールは以下のWikiにまとめてありますが、作った場合は自由に追加してみてください。
+
+- [Collection of textlint rule · azu/textlint Wiki](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule "Collection of textlint rule · azu/textlint Wiki")
+
+## ルールを作る
+
+textlint ruleの作り方は以下のドキュメントに書かれています。
+
+- [textlint/create-rules.md at master · azu/textlint](https://github.com/azu/textlint/blob/master/docs/create-rules.md "textlint/create-rules.md at master · azu/textlint")
+
+Lintの仕組みは[ESLint](http://eslint.org/ "ESLint")と同じく、Markdown(コード)をパースしてASTにしたものをtraverseしながらそれぞれのルールに渡してチェックする仕組みをtextlintは提供しています。
+
+詳しくはESLintのプラグインアーキテクチャを解説を以下に書いたので読んでみるといいと思います。
+
+- [ESLint | JavaScript Plugin Architecture](http://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/index.html "ESLint | JavaScript Plugin Architecture")
+
+以下の記事でも簡単に紹介しています。
+
+- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/)
+- [textlint 1.4 パーサの安定化、ルールの自由度の改善をして現実的に使えるLintツールへ | Web Scratch](http://efcl.info/2015/01/07/textlint1.4/)
+
+例えば、パラグラフで同じ接頭辞が連続して使われてることをチェックするtextlint ruleを書いてみると以下のようになります。
+
+- それぞれのパラグラフの接頭辞を取り出す
+- 変数に接頭辞を保存しておく
+- 次の接頭辞が前回の接頭辞と一致してないかを調べる
+- 一致していたら`context.report`でエラー報告をする
