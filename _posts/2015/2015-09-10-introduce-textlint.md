@@ -77,9 +77,9 @@ $ textlint --rule no-mix-dearu-desumasu --rule max-ten --rule spellcheck-tech-wo
 
 引数が多いですね… 
 
-textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")で`.textlintrc`という設定ファイルをサポートていて、上記のコマンドは以下のような設定ファイルにすることができます。
+textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")で`.textlintrc`という設定ファイルをサポートしていて、上記のコマンドは以下のような設定ファイルにすることができます。
 
-設定ファイルはJSON、YAML、JSモジュール(`module.exports = {}`)で書くことができます。
+設定ファイルはJSON、YAML、JSモジュール(`module.exports = {}`)で書くことができます。(ファイル名は `.textlintrc` で同じ)
 
 > `.textlintrc`
 
@@ -97,9 +97,9 @@ textlint [v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")�
 
 `rules`にはルールの有効(true)/無効(true) または ルールの設定を書くことができます。
 
-詳しくは[README.md](https://github.com/azu/textlint#textlintrc)を見てみて下さい
+詳しくは[README.md#textlintrc](https://github.com/azu/textlint#textlintrc)を見てみて下さい
 
-textlintを実行すると自動で`.textlintrc`ファイルを探索して読み込まれるので、設定ファイルがあるディレクトリなどで実行し場合はコマンドラインオプションに書かなくてもよくなります。
+textlintを実行すると自動で`.textlintrc`ファイルを探索して読み込まれるので、`--rule`引数を指定しなくてもよくなります。
 
 ```sh
 $ textlint --rule no-mix-dearu-desumasu --rule max-ten --rule spellcheck-tech-word README.md
@@ -109,7 +109,7 @@ $ textlint README.md
 
 実例: [refactor: use `.textlintrc` for textlint by azu · Pull Request #43 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/43 "refactor: use `.textlintrc` for textlint by azu · Pull Request #43 · azu/JavaScript-Plugin-Architecture")
 
-textlintのルールは以下のWikiにまとめてありますが、作った場合は自由に追加してみてください。
+textlintのルールは以下のWikiにまとめてありますが、ルールを作った場合は自由に追加してみてください。
 
 - [Collection of textlint rule · azu/textlint Wiki](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule "Collection of textlint rule · azu/textlint Wiki")
 
@@ -121,7 +121,7 @@ textlintのルールの作り方は以下のドキュメントに書かれてい
 
 Lintの仕組みは[ESLint](http://eslint.org/ "ESLint")と同じく、Markdown(コード)をパースしてASTにしたものをtraverseしながらそれぞれのルールに渡してチェックする仕組みをtextlintは提供しています。
 
-詳しくはESLintのプラグインアーキテクチャを解説を以下に書いたので読んでみるといいと思います。
+詳しくはESLintのプラグインアーキテクチャを解説を書いたので読んでみるといいと思います。
 
 - [ESLint | JavaScript Plugin Architecture](http://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/index.html "ESLint | JavaScript Plugin Architecture")
 
@@ -166,18 +166,23 @@ export default function (context, options = {}) {
     var previousPhases = [];
     var useDuplicatedPhase = false;
     return {
+    	// パラグラフ == <p> と考えればいいはず
         [Syntax.Paragraph](node){
+            // パラグラフは1文だけとは限らないので。で分割
             var text = getSource(node);
             var sentences = splitBySentence(text);
             sentences.forEach(sentence => {
+                // 先頭の接続詞、 をとりだす。
                 var phrase = getFirstPhrase(sentence);
                 if (phrase.length === 0) {
                     return;
                 }
+                // 少し前の文で出てきてないかをチェック
                 if (previousPhases.indexOf(phrase) !== -1) {
                     useDuplicatedPhase = true;
                 }
 
+		// 使われてたら報告
                 if (useDuplicatedPhase) {
                     report(node, new RuleError(`don't repeat "${phrase}" in ${options.interval} phrases`));
                     useDuplicatedPhase = false;
@@ -203,21 +208,21 @@ textlintはデフォルトでルールを持ってない代わりに、自分で
 
 なので、自然言語に詳しい人がもっと[難しい日本語文法などの間違い](http://tsuchinoko.dmmlabs.com/?p=2303)をチェックできるものを書いていったり、思いつきで自分で書いた文章をチェックするものを作ってみると面白くなるんじゃないかなと思います。
 
-複雑なことを考えなければ、正規表現とStringメソッドぐらいである程度のルールを書けたりします。(よく使うパターンは[azu/textlint-rule-helper](https://github.com/azu/textlint-rule-helper "azu/textlint-rule-helper")に追加していきたい)
+複雑なことを考えなければ、正規表現とStringメソッドぐらいで、ある程度のルールを書けたりします。(よく使うパターンは[azu/textlint-rule-helper](https://github.com/azu/textlint-rule-helper "azu/textlint-rule-helper")に追加していきたい)
 
 自然言語をチェックする場合に万人が満足するルールを作るのは難しそうなので、自分用のルールを書いてみて、必要に応じてオプションを増やすのがいいのではないかなーと思います。
 
-最近だとJavaScriptでも日本語をちゃんと扱える形態素解析器である[kuromoji.js](https://github.com/takuyaa/kuromoji.js)、[rakutenma](https://github.com/rakuten-nlp/rakutenma)などがあったりします。
+最近だとJavaScriptでも日本語をちゃんと扱える形態素解析器である[kuromoji.js](https://github.com/takuyaa/kuromoji.js)、[rakutenma](https://github.com/rakuten-nlp/rakutenma)などがあります。
 
-また、日本語がそのまま扱えるわけじゃないですが[NaturalNode/natural](https://github.com/NaturalNode/natural)や[wooorm/retext](https://github.com/wooorm/retext)など結構手軽に文章などを扱って遊べたりします。
+また、日本語がそのまま扱えるわけじゃないですが[NaturalNode/natural](https://github.com/NaturalNode/natural)や[wooorm/retext](https://github.com/wooorm/retext)など結構手軽に文章などを扱って遊べます。
 
-特に[wooorm](https://github.com/wooorm "wooorm")先生は[ALEX](http://alexjs.com/ "ALEX")というチェックツールを出したり、Markdownパーサである[mdast](https://github.com/wooorm/mdast "mdast")を作ったり、テキスト処理向けの抽象フォーマットである[VFile](https://github.com/wooorm/vfile "VFile")を作ったりしています。
+特に[wooorm](https://github.com/wooorm "wooorm")先生は[ALEX](http://alexjs.com/ "ALEX")というチェックツールを出したり、Markdownパーサである[mdast](https://github.com/wooorm/mdast "mdast")を作ったり、テキスト処理向けの抽象フォーマットである[VFile](https://github.com/wooorm/vfile "VFile")を作ったり精力的にモジュールなどを書いています。
 
-この辺の抽象フォーマットなどの足並みが揃ってくると、文章を扱うツールのエコシステムが回ってきて色々なツールが出てくるようになってくるような気がします。
+この辺の抽象フォーマットなどの足並みが揃ってくると、文章を扱うツールのエコシステムが回ってきて色々なツールが出てくるようになってくると思います。
 
 例えば、textlintではMarkdownは[azu/markdown-to-ast](https://github.com/azu/markdown-to-ast "azu/markdown-to-ast")でパースして独自に定義したAST(抽象構文木)にした状態で扱います。
 しかし、独自のASTだとファイルフォーマット毎に独自のパーサが必要になり、そのASTを扱うツールもそれぞれ必要になってしまうため結構面倒くさいです。
 
-その辺がもっと解決していければ、プログラミング言語を扱うツールのように文章を扱うツールがもっと作りやすくなったりするんじゃないかなと思います。
+その辺が解決していければ、プログラミング言語を扱うツールのように、文章を扱うツールがもっと作りやすくなったりするんじゃないかなと思います。
 
-文章の正しさは時間で変化する感じがして、その時に正しいと思ったことをすぐにチェックできるようにしたい と思って[textlint](https://github.com/azu/textlint "textlint")を作ったので、一度遊んでみるといいのかもしれません。
+文章の正しさは時間で変化する感じがして、その時に正しいと思ったことをすぐにチェックできるようにしたいと思って[textlint](https://github.com/azu/textlint "textlint")を作ったので、一度遊んでみるといいのかもしれません。
