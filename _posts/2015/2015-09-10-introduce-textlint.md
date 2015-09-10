@@ -198,8 +198,6 @@ export default function (context, options = {}) {
 
 ### おわりに
 
-[textlint](https://github.com/azu/textlint "textlint")`--rule` の引数は`.textlintrc`の設定ファイルに使うルールをまとめることができるようになっています。(他のオプションはまだ対応してないのでPR下さい…)。
-
 textlintはデフォルトでルールを持ってない代わりに、自分でルールを書きやすいようにしています。
 
 最近だと[RedPen](http://redpen.cc/ "RedPen")もJavaScriptでバリデーションを書けるようになったりしています。(MarkdownだけじゃなくてAsciidocやLaTeXも対応してる)
