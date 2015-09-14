@@ -106,23 +106,42 @@ textlintを使って文章をチェックしてみます。
 
 ```sh
 $ textlint README.md
-# サンプルプロジェクトでは
+# サンプルプロジェクトではnpm run-script経由
 # npm run textlint
 ```
 
-![result](https://monosnap.com/file/aBHagUloZiFYAshaagbYbIXVVonnAl.png)
-
-実行すると
+実行結果を見てみると
 
 ```
 /Users/azu/.ghq/github.com/azu/prh-textlint-example/README.md
   10:1  error  JQuery => jQuery  prh
 ```
 
-10行目の1列目に`JQuery`となっていますが、それは`jQuery`が正しいのではと提案してくれます。
+10行目の1列目に`JQuery`となっていますが、それは`jQuery`が正しいのでは?と提案してくれます。
 
+`$ textlint -f preety-error` で`preety-error`というフォーマッターを使ってみるともう少し見た目でも分かりやすいです。
+
+![result](https://monosnap.com/file/aBHagUloZiFYAshaagbYbIXVVonnAl.png)
 
 ## 辞書の追加
 
-## エディタとの連携
+先程も書いたように[proofread-helper](https://github.com/vvakame/prh "proofread-helper")はyamlファイルに追加するだけで、
+辞書を追加していけるのでプロジェクトごとの辞書を持ちやすいです。
 
+[JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript-Plugin-Architecture")という書籍でも、この書籍内でのみ使うルールを管理して使っています。
+
+- [JavaScript-Plugin-Architecture/prh-rule.yaml at master · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/test/prh-rule.yaml "JavaScript-Plugin-Architecture/prh-rule.yaml at master · azu/JavaScript-Plugin-Architecture")
+
+例えば、"プラグインアーキテクチャ"という単語で表記ゆれが起きていたので、
+辞書に以下のようなルールを追加してから修正するということが簡単に行えます。
+
+```js
+version: 1
+rules:
+  - expected: プラグインアーキテクチャ
+    pattern:
+      - プラグイン機構
+      - プラグインのアーキテクチャ
+```
+
+- [refactor: プラグイン機構 => プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/50 "refactor: プラグイン機構 =&gt; プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture")
