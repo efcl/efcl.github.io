@@ -113,8 +113,12 @@ $ textlint README.md
 実行結果を見てみると
 
 ```
-/Users/azu/.ghq/github.com/azu/prh-textlint-example/README.md
+> textlint README.md
+
+/Users/azusa_okayama/.ghq/github.com/azu/prh-textlint-example/README.md
   10:1  error  JQuery => jQuery  prh
+
+✖ 1 problem (1 error, 0 warnings)
 ```
 
 10行目の1列目に`JQuery`となっていますが、それは`jQuery`が正しいのでは?と提案してくれます。
@@ -122,6 +126,20 @@ $ textlint README.md
 `$ textlint -f preety-error` で`preety-error`というフォーマッターを使ってみるともう少し見た目でも分かりやすいです。
 
 ![result](https://monosnap.com/file/aBHagUloZiFYAshaagbYbIXVVonnAl.png)
+
+### Markdownを安全に処理する
+
+これはtextlintの特徴なので、textlintはMarkdownをパースしてASTを介してルールが処理するので、単純なキーワードマッチとは少し異なります。
+
+例えば、[textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")では次のようなリンクはチェックの対象から外しています。
+
+```
+[jquery.com](http://jquery.com/) というリンクの文字列は無視できる。 
+```
+
+リンクや引用などは自分で書いた文字列じゃない事があるので、この部分の文字列をチェックして引っかかるとストレスなので無視するようになっています。
+
+[proofread-helper](https://github.com/vvakame/prh "proofread-helper")でもignoreのルールが書けますが、正規表現で書くことになるのでtextlint経由で使った場合との違いになると思います。
 
 ## 辞書の追加
 
@@ -145,3 +163,16 @@ rules:
 ```
 
 - [refactor: プラグイン機構 => プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/50 "refactor: プラグイン機構 =&gt; プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture")
+
+## おわりに
+
+textlintから[proofread-helper](https://github.com/vvakame/prh "proofread-helper")を扱える[azu/textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")というtextlintルールについて紹介しました。
+
+proofread-helperは文章の表記ゆれをチェックするのに、簡単にルールを追加できとても便利です。
+
+今回はtextlintから扱うことでMarkdownを安全に処理できるようになり、[他のtextlintルール](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule)と合わせて使えるようにしました。
+
+- [textlint](https://github.com/azu/textlint "textlint")
+- [azu/textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")
+- [proofread-helper](https://github.com/vvakame/prh "proofread-helper")
+- [azu/prh-textlint-example](https://github.com/azu/prh-textlint-example "azu/prh-textlint-example")
