@@ -16,9 +16,9 @@ tags:
 
 [proofread-helper](https://github.com/vvakame/prh "proofread-helper")は@[vvakame](https://github.com/vvakame "vvakame")さんが作っている文章の校正補助ツールです。([TechBooster](http://techbooster.org/ "TechBooster")とかの執筆で使っている?らしいです)
 
-機能としては表記揺れの辞書を指定して、そのルールに則って文章のチェック、また期待する単語への書き換えを行うことができます。
+機能としては表記ゆれの辞書を指定して、そのルールに則って文章のチェック、また期待する単語への書き換えを行うことができます。
 
-ものすごくざっくり書くと、期待する単語と表記揺れを補足する正規表現の組み合わせを持った辞書を作ってチェックするような形です。
+ものすごくざっくり書くと、期待する単語と表記ゆれを補足する正規表現の組み合わせを持った辞書を作ってチェックするような形です。
 
 仕組み的には[azu/technical-word-rules](https://github.com/azu/technical-word-rules "azu/technical-word-rules")と殆ど同じですが、辞書をyaml形式で書けたり、辞書内に期待通りに動いているのかの簡単なテストも書くことができます。
 なので、辞書の追加や管理がしやすいと思います。
