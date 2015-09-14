@@ -98,6 +98,8 @@ alias post-version='npm run --if-present build && git diff --exit-code && git pu
 - npm publish
 	- `git push && git push --tags && npm publish`
 
+プロジェクトのpacakge.jsonの`"prepublish": "npm run build"`とするのが楽ですが、プロジェクトに依存しないコマンドとして作ってます。
+
 `npm-patch` を叩くと色々チェックして、patchバージョンを上げてコミットしたものをgit pushとnpm publishしてくれる感じですね。
 
 ## Privateへの公開
