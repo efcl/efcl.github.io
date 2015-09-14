@@ -67,7 +67,7 @@ npm install -g textlint textlint-rule-prh
 2: [proofread-helper](https://github.com/vvakame/prh "proofread-helper")の辞書を追加する
 
 [proofread-helper](https://github.com/vvakame/prh "proofread-helper")にはデフォルトでWEB+DBをベースとした辞書が入っています。
-今回は最小限のルールにしたいので、`rule.yaml`という名前でproofread-helperの辞書を追加します。
+今回は最小限のルールにしたいので、`prh.yml`という名前でproofread-helperの辞書を追加します。
 
 ```yaml
 version: 1
@@ -86,14 +86,14 @@ rules:
 
 textlint-rule-prhは`rulePaths`にproofread-helperの辞書ファイルへのパスを設定する必要があります。
 
-今回は先ほど作成した`rule.yaml`へのファイルパスを指定します。
+今回は先ほど作成した`prh.yml`へのファイルパスを指定します。
 
 ```yaml
 {
   "rules": {
     "prh": {
       "rulePaths": [
-        "./rule.yaml"
+        "./prh.yml"
       ]
     }
   }
@@ -129,7 +129,7 @@ $ textlint README.md
 
 ### Markdownを安全に処理する
 
-これはtextlintの特徴なので、textlintはMarkdownをパースしてASTを介してルールが処理するので、単純なキーワードマッチとは少し異なります。
+これはtextlintの特徴なのですが、textlintはMarkdownをパースしてASTを介してルールが処理するので、単純なキーワードマッチとは少し異なります。
 
 例えば、[textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")では次のようなリンクはチェックの対象から外しています。
 
@@ -137,7 +137,7 @@ $ textlint README.md
 [jquery.com](http://jquery.com/) というリンクの文字列は無視できる。 
 ```
 
-リンクや引用などは自分で書いた文字列じゃない事があるので、この部分の文字列をチェックして引っかかるとストレスなので無視するようになっています。
+リンクや引用などは自分で書いた文字列じゃない事があるので、この部分の文字列をチェックして引っかかるとストレスなので、無視するようになっています。
 
 [proofread-helper](https://github.com/vvakame/prh "proofread-helper")でもignoreのルールが書けますが、正規表現で書くことになるのでtextlint経由で使った場合との違いになると思います。
 
@@ -168,7 +168,7 @@ rules:
 
 textlintから[proofread-helper](https://github.com/vvakame/prh "proofread-helper")を扱える[azu/textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")というtextlintルールについて紹介しました。
 
-proofread-helperは文章の表記ゆれをチェックするのに、簡単にルールを追加できとても便利です。
+proofread-helperは簡単にルールを追加できて文章の表記ゆれをチェックするのに、とても便利です。
 
 今回はtextlintから扱うことでMarkdownを安全に処理できるようになり、[他のtextlintルール](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule)と合わせて使えるようにしました。
 
