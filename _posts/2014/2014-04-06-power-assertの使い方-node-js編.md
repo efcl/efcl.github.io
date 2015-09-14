@@ -98,6 +98,10 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 
 そもそも何を設定する必要があるかというと、テストファイルがどこにあるかという事を指定する必要があります。[intelli-espower-loader][19]ではこれをpackage.jsonに持たせることが出来ます。
 
+追記: ES6 + Babelの場合は[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")が[intelli-espower-loader][19]の代わりに利用できます。
+
+- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](http://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
+
 ### power-assertをプロジェクトに導入する
 
 サンプルプロジェクトは以下に置いてあります
