@@ -7,6 +7,8 @@ category: JavaScript
 tags:
     - textlint
     - tools
+    - markdown
+    - JavaScript
 
 ---
 
