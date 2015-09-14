@@ -12,7 +12,7 @@ tags:
 
 ## [proofread-helper](https://github.com/vvakame/prh "proofread-helper")
 
-[proofread-helper](https://github.com/vvakame/prh "proofread-helper")は@[vvakame](https://github.com/vvakame "vvakame")さんが作っている文章の校正補助ツールです。([Tech Booster](http://techbooster.org/ "Tech Booster")とかの執筆で使っている?らしいです)
+[proofread-helper](https://github.com/vvakame/prh "proofread-helper")は@[vvakame](https://github.com/vvakame "vvakame")さんが作っている文章の校正補助ツールです。([TechBooster](http://techbooster.org/ "TechBooster")とかの執筆で使っている?らしいです)
 
 機能としては表記揺れの辞書を指定して、そのルールに則って文章のチェック、また期待する単語への書き換えを行うことができます。
 
