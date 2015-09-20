@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "spellcheck-tech-word": true,
+    "no-mix-dearu-desumasu": true,
+    "no-start-duplicated-conjunction": {
+      "interval": 2
+    }
+  }
+}

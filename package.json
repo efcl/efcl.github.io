@@ -1,0 +1,29 @@
+{
+  "name": "efcl.github.io",
+  "version": "1.0.0",
+  "description": "efcl.info",
+  "main": "index.js",
+  "dependencies": {
+    "textlint": "^3.4.0",
+    "textlint-rule-spellcheck-tech-word": "^4.1.0"
+  },
+  "devDependencies": {
+    "textlint": "^3.4.0",
+    "textlint-rule-no-mix-dearu-desumasu": "^1.0.1",
+    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6"
+  },
+  "scripts": {
+    "textlint": "git diff --name-only --diff-filter=ACMR origin/master | grep -a '_posts/.*.md$' | xargs textlint",
+    "test": "npm run textlint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efcl/efcl.github.io.git"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efcl/efcl.github.io/issues"
+  },
+  "homepage": "http://efcl.info/"
+}
