@@ -166,6 +166,14 @@ rules:
 
 - [refactor: プラグイン機構 => プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/50 "refactor: プラグイン機構 =&gt; プラグインアーキテクチャ by azu · Pull Request #50 · azu/JavaScript-Plugin-Architecture")
 
+## 定義済み辞書
+
+自分が利用している定義済みの辞書は以下にあります。
+
+- [azu/technical-word-rules](https://github.com/azu/technical-word-rules "azu/technical-word-rules")
+
+[WEB+DB PRESS用語統一ルール](https://gist.github.com/inao/f55e8232e150aee918b9 "WEB+DB PRESS用語統一ルール")やJavaScriptの関連用語、[JSer.info](http://jser.info/)で利用してるルールなどが定義されています。
+
 ## おわりに
 
 textlintから[proofread-helper](https://github.com/vvakame/prh "proofread-helper")を扱える[azu/textlint-rule-prh](https://github.com/azu/textlint-rule-prh "azu/textlint-rule-prh")というtextlintルールについて紹介しました。
