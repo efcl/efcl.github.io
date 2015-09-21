@@ -7,7 +7,7 @@ if [ -n "${TRAVIS_PULL_REQUEST}" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; t
 
   # 変更行のみを対象にする
   npm run textlint -- -f checkstyle \
-   | checkstyle_filter-git diff origin/develop \
+   | checkstyle_filter-git diff develop \
    | saddler report \
       --require saddler/reporter/github \
       --reporter Saddler::Reporter::Github::PullRequestReviewComment
