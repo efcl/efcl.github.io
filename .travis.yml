@@ -2,6 +2,9 @@ sudo: false
 language: ruby
 rvm:
 - 2.2.0
+install:
+- bundle install --without production --deployment
+- npm install
 script:
 - npm test
 - bundle exec jekyll build --trace
