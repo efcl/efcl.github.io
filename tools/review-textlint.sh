@@ -6,10 +6,10 @@ if [ -n "${TRAVIS_PULL_REQUEST}" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; t
   npm run textlint || RETURN_CODE=$?
 
   case "$RETURN_CODE" in
-    "" ) echo "Pass!"
-         exit 0;;
+    "" ) echo "Found modified file" ;;
     "1" )
-      echo "Found Lint Error"
+      echo "Not found modified file" ;;
+      exit 0 ;;
     * )
       echo "Error"
       exit $RETURN_CODE ;;
