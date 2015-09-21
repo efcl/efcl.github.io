@@ -22,6 +22,8 @@ tags:
 
 この記事では簡単な[textlint](https://github.com/azu/textlint "textlint")の導入方法について紹介します。
 
+browserifyテストWEBです。
+
 扱う[textlint](https://github.com/azu/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
 
 ### インストール
