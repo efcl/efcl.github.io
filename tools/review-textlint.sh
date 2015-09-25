@@ -1,14 +1,14 @@
 #!/bin/bash
-set -e
 if [ -n "${TRAVIS_PULL_REQUEST}" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
   gem install --no-document checkstyle_filter-git saddler saddler-reporter-github
 
-  npm run textlint && exit 0
-
+  diffBranchName="develop"
   # 変更行のみを対象にする
-  npm run textlint -- -f checkstyle \
-   | checkstyle_filter-git diff develop \
-   | saddler report \
+  git diff --name-only --diff-filter=ACMR ${diffBranchName} \
+  | grep -a '_posts/.*.md$' \
+  | xargs $(npm bin)/textlint -f checkstyle \
+  | checkstyle_filter-git diff ${diffBranchName} \
+  | saddler report \
       --require saddler/reporter/github \
       --reporter Saddler::Reporter::Github::PullRequestReviewComment
 fi
