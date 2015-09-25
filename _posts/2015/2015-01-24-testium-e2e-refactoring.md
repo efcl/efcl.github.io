@@ -15,6 +15,8 @@ issue: https://github.com/efcl/efcl.github.io/issues/59
 
 ---
 
+いつものbrowserifyです。
+
 ユニットテストがしにくい状態となってるコードを[Testium](https://github.com/groupon-testium/testium "Testium")を使ったE2Eテストを書いてリファクタリングしてみる話です。
 
 例えば、以下のようなjQueryで書いたコードは外(テストコード)から取り出すポイントがないので、ユニットテストを書くのは難しいと思います。(そもそもViewのコードなので)
