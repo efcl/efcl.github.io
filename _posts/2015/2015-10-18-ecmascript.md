@@ -3,9 +3,11 @@ title: "ECMAScriptカンニングペーパー"
 author: azu
 layout: post
 date : 2015-09-26T00:20
-category: 
+category: JavaScript
 tags:
-    - 
+    - ECMAScript
+    - JavaScript
+    - spec
 
 ---
 
