@@ -50,9 +50,9 @@ Ecmaは色々な仕様を策定しているので、その中でECMAScriptを策
 
 ES6以降は1年毎にリリースしていく予定のため、2015, 2016...となるように変更された。
 
-### ES6のエディタリーダ
+### ES6のエディタリーダー
 
-ES6の仕様策定のリーダ(実際に仕様書に載せる文章を書く人)
+ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く人)
 
 [![icon](https://monosnap.com/file/YZf9xQvF692CCyPm6UZilXBrzJKUIS.png)](https://twitter.com/awbjs "Allen Wirfs-Brock (@awbjs) | Twitter")
 
@@ -65,7 +65,7 @@ ECMAScriptはデファクト標準([Ecma International](http://www.ecma-internat
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 
-日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってる。(@azuもレビューアとして参加)
+日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってる。(@azuもレビューアーとして参加)
 
 ### なぜISO標準が必要?
 
@@ -94,7 +94,7 @@ ECMAScript 7 or 2016って何のこと??
 現在から見て次期ECMAScriptの事
 (2015年9月25日から見ると、次期ECMAScriptは2016以降の事)
 
-### ES.nextのエディタリーダ
+### ES.nextのエディタリーダー
 
 [![Brian Terlson](https://monosnap.com/file/GxYyVcRB3ZDE4VcJ2nYBoLzfbrrzaz.png)](https://twitter.com/bterlson)
 
@@ -140,7 +140,7 @@ Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正�
 - Stage 3: Candidate
 	- 仕様は完成した状態
 	- 実装や外部のフィードバックを求める状態
-	- レビューアはその仕様策定者以外ならだれでもなれるが専門的な知識を持っている必要がある
+	- レビューアーはその仕様策定者以外ならだれでもなれるが専門的な知識を持っている必要がある
 	- ECMAScriptのエディタがチェックする必要があり 
 - Stage 4: Finished
 	- 2つの実装(not polyfill)が必要
