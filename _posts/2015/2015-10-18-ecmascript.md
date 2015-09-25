@@ -65,7 +65,7 @@ ECMAScriptはデファクト標準([Ecma International](http://www.ecma-internat
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 
-日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってる。(@azuもレビューアーとして参加)
+日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってる。(@azuもレビュアとして参加)
 
 ### なぜISO標準が必要?
 
@@ -140,7 +140,7 @@ Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正�
 - Stage 3: Candidate
 	- 仕様は完成した状態
 	- 実装や外部のフィードバックを求める状態
-	- レビューアーはその仕様策定者以外ならだれでもなれるが専門的な知識を持っている必要がある
+	- レビュアはその仕様策定者以外ならだれでもなれるが専門的な知識を持っている必要がある
 	- ECMAScriptのエディタがチェックする必要があり 
 - Stage 4: Finished
 	- 2つの実装(not polyfill)が必要
