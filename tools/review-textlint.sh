@@ -2,7 +2,7 @@
 if [ -n "${TRAVIS_PULL_REQUEST}" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
   gem install --no-document checkstyle_filter-git saddler saddler-reporter-github
 
-  diffBranchName="develop"
+  diffBranchName="origin"
   # 変更行のみを対象にする
   git diff --name-only --diff-filter=ACMR ${diffBranchName} \
   | grep -a '_posts/.*.md$' \
