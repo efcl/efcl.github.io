@@ -94,7 +94,7 @@ ECMAScript 7 or 2016って何のこと??
 現在から見て次期ECMAScriptの事
 (2015年9月25日から見ると、次期ECMAScriptは2016以降の事)
 
-### ES.nextのエディタリーダー
+## ES.nextのエディタリーダー
 
 [![Brian Terlson](https://monosnap.com/file/GxYyVcRB3ZDE4VcJ2nYBoLzfbrrzaz.png)](https://twitter.com/bterlson)
 
@@ -189,6 +189,14 @@ ECMAScript 2016のドラフトはGitHubで公開されている
 	- [bugs.ecmascript.org](https://bugs.ecmascript.org/)
 - SNS
 	- Twitter/GitHub/Google+
+
+
+## 結局ECMAScript 2016って何が入るの?
+
+[ES2016 Draft 1](https://github.com/tc39/ecma262/releases/tag/es2016-draft-1 "ES2016 Draft 1")がリリースされている。
+
+基本的にはES2015と同じで、細かいバグ修正のみ。
+その他の違いとしては、仕様書がWordではなく[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")で書きなおされたこと。
 
 ## Ecmarkup
 
