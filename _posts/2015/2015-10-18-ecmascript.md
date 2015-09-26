@@ -124,7 +124,7 @@ Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正�
 - 3. Candidate
 - 4. Finished
 
-言いかたを返ると、次期ECMAScriptは1年ごとに出るので、その時までにStage4となったものが次期ECMAScriptに入る。
+言いかたを変えると、次期ECMAScriptは1年ごとに出るので、その時までにStage4となったものが次期ECMAScriptに入る。
 
 <iframe src="http://azu.github.io/tc39-svg/" ></iframe>
 
