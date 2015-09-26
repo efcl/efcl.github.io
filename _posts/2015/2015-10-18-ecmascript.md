@@ -28,7 +28,7 @@ ECMAScript関係についてざっとみるカンニングペーパー
 
 ## Ecma-262
 
-ECMAScriptの事。_262_はEcmaの管理番号。
+ECMAScriptの事。_262_はEcma Internationalでの管理番号。
 
 - [Ecma Standards - list](http://www.ecma-international.org/publications/standards/Standard.htm "Ecma Standards - list")
 
