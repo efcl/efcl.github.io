@@ -26,6 +26,12 @@ ECMAScript関係についてざっとみるカンニングペーパー
 
 - [ECMAScript® 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript® 2015 Language Specification")
 
+## Ecma-262
+
+ECMAScriptの事。_262_はEcmaの管理番号。
+
+- [Ecma Standards - list](http://www.ecma-international.org/publications/standards/Standard.htm "Ecma Standards - list")
+
 ## TC39
 
 Technical Committee = 専門委員会。
