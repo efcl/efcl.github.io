@@ -165,9 +165,9 @@ Ecma Internationalの特許、著作権のポリシーに同意してる人な�
 
 - [Contributing New Proposals](https://github.com/tc39/ecma262#contributing-new-proposals "Contributing New Proposals")
 
-## ECMAScriptとGItHub
+## ECMAScriptとGitHub
 
-ECMAScript 2016のドラフトはGItHubで公開されている
+ECMAScript 2016のドラフトはGitHubで公開されている
 
 - [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")
 
@@ -195,3 +195,18 @@ ECMAScript 2016のドラフトはGItHubで公開されている
 Module loaderはES6から外されたけど、[whatwg/loader](https://github.com/whatwg/loader "whatwg/loader")で議論されてる。
 
 
+## ECMAScriptの実装ってどれぐらいあるの?
+
+ES.nextの仕様に入るには2つ以上の実装が必要。
+ここに関わるのはブラウザベンダーによる実装。
+
+- [Chakra](https://msdn.microsoft.com/en-us/library/dn249673(v=vs.94).aspx "Chakra") @ MicroSoft
+- [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey "SpiderMonkey") @ Mozilla
+- [V8](https://code.google.com/p/v8/ "V8") @ Google
+- [JavaScriptCore](https://www.webkit.org/projects/javascript/ "JavaScriptCore") @ Apple
+
+組み込みやJVM向けなど
+
+- [Nashorn](http://openjdk.java.net/projects/nashorn/ "Nashorn")
+- [Duktape](http://duktape.org/index.html "Duktape")
+- [cesanta/v7](https://github.com/cesanta/v7/ "cesanta/v7")
