@@ -175,6 +175,12 @@ ECMAScript 2016のドラフトはGItHubで公開されている
 
 今までのECMAScriptはWordファイルだったが、ES.nextでは[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")を使ったHTMLベースで書くようになっている。
 
+```html
+<emu-production name="SourceCharacter" type="lexical" id="prod-SourceCharacter">
+<emu-nt><a href="#prod-SourceCharacter">SourceCharacter</a><emu-mods></emu-mods></emu-nt><emu-geq>::</emu-geq><emu-rhs><emu-gprose>any Unicode code point</emu-gprose></emu-rhs>
+</emu-production>
+```
+
 [Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")は仕様書向けのタグを定義したHTML。
 
 ## ES.nextの進捗
