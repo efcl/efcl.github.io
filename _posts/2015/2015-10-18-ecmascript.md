@@ -62,7 +62,8 @@ ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く�
 
 [![icon](https://monosnap.com/file/YZf9xQvF692CCyPm6UZilXBrzJKUIS.png)](https://twitter.com/awbjs "Allen Wirfs-Brock (@awbjs) | Twitter")
 
-- Allen Wirfs-Brock([@awbjs](https://twitter.com/awbjs "@awbjs")) @ Mozilla
+- Allen Wirfs-Brock(アレン・ワーフスブラック) @ Mozilla
+- [@awbjs](https://twitter.com/awbjs "@awbjs")
 
 ## Ecma標準とISO標準の違い
 
@@ -104,7 +105,8 @@ ECMAScript 7 or 2016って何のこと??
 
 [![Brian Terlson](https://monosnap.com/file/GxYyVcRB3ZDE4VcJ2nYBoLzfbrrzaz.png)](https://twitter.com/bterlson)
 
-- Brian Terlson([@bterlson](https://twitter.com/bterlson "@bterlson")) @ Microsoft
+- Brian Terlson(ブライアン・テルソン) @ Microsoft
+- [@bterlson](https://twitter.com/bterlson "@bterlson")
 
 > Thanks TC39 for the support :) I'm excited to take on the editorship of ECMA262!
 > -- https://twitter.com/bterlson/status/626104816511512576
@@ -135,6 +137,10 @@ Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正�
 <iframe src="http://azu.github.io/tc39-svg/" ></iframe>
 
 - [TC39 Process](http://azu.github.io/tc39-svg/ "TC39 Process")
+
+![ecmascript-timeline](https://monosnap.com/file/XqpEfoMeWxcLw92Jx1UOQ8EWe1e37m.png)
+
+via [What’s New in JavaScript for Fast and Scalable Apps | Build 2015 | Channel 9](https://channel9.msdn.com/Events/Build/2015/2-763 "What’s New in JavaScript for Fast and Scalable Apps | Build 2015 | Channel 9")
 
 ## TC39 Process: Stage
 
