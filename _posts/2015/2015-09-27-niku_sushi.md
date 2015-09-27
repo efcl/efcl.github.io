@@ -1,5 +1,5 @@
 ---
-title: ":meat_on_bone: :sushi: #nikusushi"
+title: "Markdownで各電子書籍について話してきた #nikusushi"
 author: azu
 layout: post
 date : 2015-09-27T23:45
