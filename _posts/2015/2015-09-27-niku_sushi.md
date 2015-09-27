@@ -1,5 +1,5 @@
 ---
-title: "Markdownで書く電子書籍について話してきた #nikusushi"
+title: "Markdownで書く電子書籍について話してきた #niku_sushi"
 author: azu
 layout: post
 date : 2015-09-27T23:45
