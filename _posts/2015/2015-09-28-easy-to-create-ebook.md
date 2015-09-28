@@ -107,7 +107,6 @@ gitbook-starter-kitはJavaScript向けの設定にしているので、以下の
 - [Mocha](http://mochajs.org/ "Mocha")でのテスト
 
 並列でテストを実行できるように[npm-run-all](https://github.com/mysticatea/npm-run-all "npm-run-all")を利用しています。
-
 テスト結果の表示が混ざるのが気になる場合は、`--parallel`オプションを外してみてください。
 
 テストツールなどは普通のJavaScriptライブラリと変わらないので好きなものを使うといいかと思います。
