@@ -1,5 +1,5 @@
 ---
-title: "今すぐ電子書籍(技術書)を書き始める方法"
+title: "今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック"
 author: azu
 layout: post
 date : 2015-09-28T18:15
@@ -112,6 +112,13 @@ gitbook-starter-kitはJavaScript向けの設定にしているので、以下の
 テスト結果の表示が混ざるのが気になる場合は、`--parallel`オプションを外してみてください。
 
 テストツールなどは普通のJavaScriptライブラリと変わらないので好きなものを使うといいかと思います。
+
+このテストはTravis CIでも動くので、以下のように`.travis.yml`を作るだけで自動的にテストが動くようになります。
+
+```
+gem install travis
+travis init node.js
+```
 
 ## 表記揺れのテスト
 
