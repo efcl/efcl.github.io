@@ -196,6 +196,8 @@ export default function (context, options = {}) {
 }
 ```
 
+このルールは[azu/textlint-rule-no-start-duplicated-conjunction](https://github.com/azu/textlint-rule-no-start-duplicated-conjunction "azu/textlint-rule-no-start-duplicated-conjunction")に置いてあります。
+
 ### おわりに
 
 textlintはデフォルトでルールを持ってない代わりに、自分でルールを書きやすいようにしています。
