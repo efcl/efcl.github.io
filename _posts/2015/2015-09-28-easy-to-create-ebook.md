@@ -1,5 +1,5 @@
 ---
-title: "簡単に技術書を書き始める"
+title: "今すぐ電子書籍(技術書)を書き始める方法"
 author: azu
 layout: post
 date : 2015-09-28T18:15
@@ -44,7 +44,7 @@ cd your-book-name
 npm install
 ```
 
-gitがそのまま引き継がれるのが気になる場合は以下のようにgitを初期化するか、[zipでダウンロード](https://github.com/azu/gitbook-starter-kit/archive/master.zip)して使うなどすれば良い気がします。
+`.git`がそのまま引き継がれるのが気になる場合は以下のように`.git`を初期化するか、[zipでダウンロード](https://github.com/azu/gitbook-starter-kit/archive/master.zip)して使うなどすれば良い気がします。
 
 ```
 rm .git
