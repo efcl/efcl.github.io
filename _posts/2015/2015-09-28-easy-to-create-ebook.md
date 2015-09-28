@@ -105,8 +105,6 @@ gitbook-starter-kitはJavaScript向けの設定にしているので、以下の
 - [ESLint](http://eslint.org/ "ESLint")でのコードチェック
 - [textlint](https://github.com/azu/textlint "textlint")での文章チェック
 - [Mocha](http://mochajs.org/ "Mocha")でのテスト
-- `*-example.js`の実行テスト
-    - `-example.js`という名前のファイルを正常に実行できるかをテストします。
 
 並列でテストを実行できるように[npm-run-all](https://github.com/mysticatea/npm-run-all "npm-run-all")を利用しています。
 
