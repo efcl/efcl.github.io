@@ -2,6 +2,8 @@ sudo: false
 language: ruby
 rvm:
 - 2.2.0
+before_install:
+- git fetch --unshallow
 install:
 - bundle install --without production --deployment
 - npm install
