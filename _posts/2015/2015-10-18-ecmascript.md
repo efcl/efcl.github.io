@@ -62,7 +62,7 @@ ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く�
 
 [![icon](https://monosnap.com/file/YZf9xQvF692CCyPm6UZilXBrzJKUIS.png)](https://twitter.com/awbjs "Allen Wirfs-Brock (@awbjs) | Twitter")
 
-- Allen Wirfs-Brock(アレン・ワーフスブラック) @ Mozilla
+- Allen Wirfs-Brock(アレン・ワーフスブラック) @ <del>Mozilla</del> [family business](https://twitter.com/awbjs/status/649995551467945984)
 - [@awbjs](https://twitter.com/awbjs "@awbjs")
 
 ## Ecma標準とISO標準の違い
