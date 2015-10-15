@@ -379,3 +379,16 @@ JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるよ�
 	- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](http://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
 - 仕様のTranspilerやPolyfillを実装してみる
 - TranspilerやPolyfillを使ってみて使い勝手などのフィードバックを書いてみる
+
+
+## こんな機能ってES.nextに入るの?
+
+検索しましょう！
+
+<form method="get" action="https://github.com/tc39/ecma262/searc">
+  <input type="text" name="q">
+  <input type="hidden" name="utf8" value="✓">
+  <input type="submit" value="search">
+</form>
+
+
