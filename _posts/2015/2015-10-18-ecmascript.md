@@ -217,15 +217,15 @@ ECMAScript 2016のドラフトはGitHubで公開されている
 Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。
 その他の違いとしては、仕様書がWordではなく[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")で書きなおされたこと。
 
-リリースする時期は決まっていて、[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")の承認がされて初めてリリースされるので、次の総会が行われる2016年6月15-16日あたりにES2016がリリースされる。
+リリースする時期は決まっていて、[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")で承認されて初めてリリースされるので、次の総会が行われる2016年6月15-16日あたりにES2016がリリースされる。
 
-仕様を提出するまでにStage 4となったものも一緒にES2016としてリリースされるが、ES2016はProposalが独立してるのでそれを仕様にマージしたり編集の作業が必要(Brianさんが頑張る)
+仕様を提出するまでにStage 4となったものも一緒にES2016に含まれてリリースされるが、ES2016はProposalが独立してるのでそれを仕様にマージしたり編集の作業が必要(Brianさんが頑張る)
 
 そのため、提出の半年ぐらい前には入れる機能はフリーズされる(何を入れるかを決めて、残りはtypoや実装からのフィードバックなどの機能以外の修正)。
 
 なので、ES2016は2016年1月ぐらいには細かいところを除きフリーズされる(この時期を"freezing" deadlineと呼んだりしてる)
 
-**結論:** 2016年1月にStage 4となってる仕様がES2016には入る。
+**結論:** 2016年1月中にStage 4となってる仕様がES2016には入る。
 
 可能性としてありえるのは以下の仕様あたり
 
