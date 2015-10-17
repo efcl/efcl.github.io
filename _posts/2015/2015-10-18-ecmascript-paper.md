@@ -104,7 +104,7 @@ ECMAScript 7 or 2016って何のこと??
 ## ES.next
 
 現在から見て次期ECMAScriptの事
-(2015年9月25日から見ると、次期ECMAScriptは2016以降の事)
+(2015年10月18から見ると、次期ECMAScriptは2016以降の事)
 
 ## ES.nextのエディタリーダー
 
