@@ -270,7 +270,7 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 ## ES.nextの進捗
 
 [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にそれぞれのプロポーザルのstageが掲載されている。
-またstageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録されている。
+またstageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録を読めばいい。
 
 - [rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes "rwaldron/tc39-notes")
 
