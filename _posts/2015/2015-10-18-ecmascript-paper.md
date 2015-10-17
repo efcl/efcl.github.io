@@ -139,7 +139,7 @@ Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正�
 
 言いかたを変えると、次期ECMAScriptは1年ごとに出るので、その時までにStage4となったものが次期ECMAScriptに入る。
 
-<iframe src="http://azu.github.io/tc39-svg/" ></iframe>
+<iframe src="http://azu.github.io/tc39-svg/" height="600px" width="100%"></iframe>
 
 - [TC39 Process](http://azu.github.io/tc39-svg/ "TC39 Process")
 
