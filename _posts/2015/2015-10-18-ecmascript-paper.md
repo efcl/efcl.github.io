@@ -432,9 +432,10 @@ JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるよ�
 
 検索しましょう！
 
-<form method="get" action="https://github.com/tc39/ecma262/searc">
+<form method="get" action="https://github.com/tc39/ecma262/search">
   <input type="text" name="q">
   <input type="hidden" name="utf8" value="✓">
   <input type="submit" value="search">
 </form>
 
+続きはウェブで
