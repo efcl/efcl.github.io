@@ -293,7 +293,7 @@ ES.nextの仕様に入るには2つ以上の実装が必要。
 - [V8](https://code.google.com/p/v8/ "V8") @ Google
 - [JavaScriptCore](https://www.webkit.org/projects/javascript/ "JavaScriptCore") @ Apple
 
-組み込みやJVM向けなど
+組み込みやJVM向けなどもあるけど多分カウントされない気がする。
 
 - [Nashorn](http://openjdk.java.net/projects/nashorn/ "Nashorn")
 - [Duktape](http://duktape.org/index.html "Duktape")
