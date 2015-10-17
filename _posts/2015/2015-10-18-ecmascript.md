@@ -207,8 +207,40 @@ ECMAScript 2016のドラフトはGitHubで公開されている
 
 [ES2016 Draft 1](https://github.com/tc39/ecma262/releases/tag/es2016-draft-1 "ES2016 Draft 1")がリリースされている。
 
-基本的にはES2015と同じで、細かいバグ修正のみ。
+Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。
 その他の違いとしては、仕様書がWordではなく[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")で書きなおされたこと。
+
+リリースする時期は決まっていて、[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")の承認がされて初めてリリースされるので、次の総会が行われる2016年6月15-16日あたりにES2016がリリースされる。
+
+仕様を提出するまでにStage 4となったものも一緒にES2016としてリリースされるが、ES2016はProposalが独立してるのでそれを仕様にマージしたり編集の作業が必要(Brianさんが頑張る)
+
+そのため、提出の半年ぐらい前には入れる機能はフリーズされる(何を入れるかを決めて、残りはtypoや実装からのフィードバックなどの機能以外の修正)。
+
+なので、ES2016は2016年1月ぐらいには細かいところを除きフリーズされる(この時期を"freezing" deadlineと呼んだりしてる)
+
+**結論:** 2016年1月にStage 4となってる仕様がES2016には入る。
+
+可能性としてありえるのは以下の仕様あたり
+
+- [tc39/ecmascript-asyncawait](https://github.com/tc39/ecmascript-asyncawait)
+- [tc39/Array.prototype.includes](https://github.com/tc39/Array.prototype.includes/)
+- [rwaldron/exponentiation-operator](https://github.com/rwaldron/exponentiation-operator)
+
+-----
+
+例) ES6の場合
+
+ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Publication%20of%20ECMA-262%206th%20edition.htm)された。
+
+以下の図のように大体1月ぐらいには機能はフリーズされて、そこからは実装のフィードバックを受けての修正がメインとなっていた(実際には細かな機能が増えたりしたけど。。)
+
+<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
+
+<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank">＊画像横に長いのでクリック</a></p>
+
+- [The ECMAScript 6 schedule changes](http://www.2ality.com/2014/06/es6-schedule.html "The ECMAScript 6 schedule changes")
+
+-----
 
 ## Ecmarkup
 
@@ -390,5 +422,4 @@ JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるよ�
   <input type="hidden" name="utf8" value="✓">
   <input type="submit" value="search">
 </form>
-
 
