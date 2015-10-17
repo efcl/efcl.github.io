@@ -233,6 +233,11 @@ Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。
 - [tc39/Array.prototype.includes](https://github.com/tc39/Array.prototype.includes/)
 - [rwaldron/exponentiation-operator](https://github.com/rwaldron/exponentiation-operator)
 
+2016年1月までにある[ミーティング](https://github.com/tc39/agendas)は2回。
+
+- November 17 - 19, 2015 (San Jose - Paypal) 
+- January 26 - 28, 2016 (San Francisco - Salesforce) 
+
 -----
 
 例) ES6の場合
