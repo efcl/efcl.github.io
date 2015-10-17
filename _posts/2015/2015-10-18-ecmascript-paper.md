@@ -77,7 +77,7 @@ ECMAScriptはデファクト標準([Ecma International](http://www.ecma-internat
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 
-日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってる。([@azu](https://github.com/azu)もレビュアとして参加)
+日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってたり([@azu](https://github.com/azu)もレビュアとして参加)
 
 ### なぜISO標準が必要?
 
@@ -171,6 +171,12 @@ via [What’s New in JavaScript for Fast and Scalable Apps | Build 2015 | Channe
 	- ECMAScriptのエディタがチェックする必要があり
 
 それぞれのstageはTC39のミーティング等で話し合い、それぞれのstageの条件を満たしている場合に次のstageへあがる。
+
+### 何で1年ごとにリリースするの?
+
+ES6はリリースするまで結局6年かかったので、もっと少しずつ出していきたいため。
+
+この方針はエディタリーダが交代する前から決まっていた。
 
 ### 誰がプロポーザル書いてるの?
 
