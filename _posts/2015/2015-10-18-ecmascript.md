@@ -15,6 +15,10 @@ tags:
 
 ECMAScript関係についてざっとみるカンニングペーパー
 
+2015年10月18日の[次世代 Web カンファレンス](http://nextwebconf.connpass.com/event/19699/ "次世代 Web カンファレンス")でstandardizationのセッションで議論に参加するらしいのでそれのカンペです。
+
+ここに書かれている情報は2015年10月17日現在のものです。
+
 ## ECMAScriptとは?
 
 [Ecma International](http://www.ecma-international.org/default.htm "Ecma International")によって標準化されてるJavaScriptの仕様の事
