@@ -120,7 +120,7 @@ ECMAScript 7 or 2016って何のこと??
 
 - [Recapping the July 2015 TC39 Committee meeting in Redmond | Microsoft Edge Dev Blog](http://blogs.windows.com/msedgedev/2015/08/03/recapping-the-july-2015-tc39-committee-meeting-in-redmond/ "Recapping the July 2015 TC39 Committee meeting in Redmond | Microsoft Edge Dev Blog")
 
-ES.nextの仕様策定はBrian Terlsonの元に行われる。
+ES.nextのエディタはBrian Terlsonとなった。
 
 ## ES.nextと策定プロセス
 
