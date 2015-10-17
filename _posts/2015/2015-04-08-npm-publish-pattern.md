@@ -118,7 +118,6 @@ npm publishはパッケージが[Scoped packages](https://docs.npmjs.com/misc/sc
 
 上記のどれかに該当する場合は、正しく設定されていればPrivateへ公開され、また設定が一部おかしかった場合もPrivateへリクエストを投げるので、Publicには漏れなくなります。
 
-<<<<<<< Updated upstream
 理想的には、package.jsonを作るときに最初から[Scoped packages](https://docs.npmjs.com/misc/scope "Scoped packages")として作ると間違ってPublicに公開されることはなくなるので安全です。
 
 ```
