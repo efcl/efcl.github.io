@@ -305,7 +305,7 @@ ES.nextの仕様に入るには2つ以上の実装が必要。
 
 ## ECMAScriptの実装状況ってどうなの?
 
-[ECMAScript 6 compatibility table](http://kangax.github.io/compat-table/es6/ "ECMAScript 6 compatibility table")で、ブラウザの実装状況が見られる。
+[ECMAScript 6 compatibility table](http://kangax.github.io/compat-table/es6/ "ECMAScript 6 compatibility table")で、ブラウザの実装状況が見ることが出来ます。
 
 それぞれのブラウザの更新履歴などについては以下を参照。
 
