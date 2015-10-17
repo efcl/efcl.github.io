@@ -91,7 +91,7 @@ ECMAScriptはデファクト標準([Ecma International](http://www.ecma-internat
 
 ECMAScript 7 or 2016って何のこと??
 
-大抵の場合は次(ES6の次)のECMASCriptの事を言ってる。
+大抵の場合は次(ES6の次)のECMAScriptの事を言ってる。
 
 「ES7のDecoratorについて」といった言い方はまだ仕様に入ることすら決まっていないもののことを言っているので正しくはない。
 
