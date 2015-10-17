@@ -278,8 +278,7 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 
 ECMAScript 2016のリリース予定は2016年の6月15-16日
 
-Ecmaの[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")(GA)の総会で正式に承認された後にリリースされるので、次にGAの総会が行われるのは15-16 Juneなので。
-
+Ecmaの[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")(GA)で正式に承認された後にリリースされるので、次にGAが行われるのは15-16 Juneなので。
 
 ## ECMAScriptとModuleとWHAWG
 
