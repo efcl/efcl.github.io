@@ -40,7 +40,8 @@ ECMAScriptの事。_262_はEcma Internationalでの管理番号。
 
 Technical Committee = 専門委員会。
 
-TC39: ECMAScriptを策定してる専門委員会
+TC39: ECMAScriptを策定してる専門委員会のこと。
+
 Ecmaは色々な仕様を策定しているので、その中でECMAScriptを策定してるグループの名前がTC39。
 
 - [TC39 - ECMAScript](http://www.ecma-international.org/memento/TC39.htm "TC39 - ECMAScript")
