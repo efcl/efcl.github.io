@@ -98,8 +98,11 @@ alias post-version='npm run --if-present build && git diff --exit-code && git pu
 - npm publish
 	- `git push && git push --tags && npm publish`
 
+<<<<<<< Updated upstream
 プロジェクトのpacakge.jsonの`"prepublish": "npm run build"`とするのが楽ですが、プロジェクトに依存しないコマンドとして作ってます。
 
+=======
+>>>>>>> Stashed changes
 `npm-patch` を叩くと色々チェックして、patchバージョンを上げてコミットしたものをgit pushとnpm publishしてくれる感じですね。
 
 ## Privateへの公開
@@ -117,6 +120,7 @@ npm publishはパッケージが[Scoped packages](https://docs.npmjs.com/misc/sc
 
 上記のどれかに該当する場合は、正しく設定されていればPrivateへ公開され、また設定が一部おかしかった場合もPrivateへリクエストを投げるので、Publicには漏れなくなります。
 
+<<<<<<< Updated upstream
 理想的には、package.jsonを作るときに最初から[Scoped packages](https://docs.npmjs.com/misc/scope "Scoped packages")として作ると間違ってPublicに公開されることはなくなるので安全です。
 
 ```
@@ -170,3 +174,7 @@ npm publishに対するグローバルなホックは書けないので、こう
 
 - [npm version publish alias](https://gist.github.com/azu/fb3ec88231235511858a "npm version publish alias") について紹介した
 - PublicとPrivateでnpm publish叩くのは同じだけどコマンドを分けた
+=======
+package.jsonを作るときに
+
+>>>>>>> Stashed changes
