@@ -412,6 +412,9 @@ JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるよ�
 
 - ES.nextの仕様は殆どがGitHubのリポジトリを持ってるので、それぞれのリポジトリにIssueやPull Requestを送ってみる。
 	- [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")
+- ECMAScriptの仕様本体も[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にある
+	- [CONTRIBUTING.md](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")を見て分かるように普通にIssueやPull Requestで修正できる
+	- 細かい変更ならCLAへの承認も必要ない
 - 最新の議論は[TC39 Meeting Notes](https://github.com/rwaldron/tc39-notes "TC39 Meeting Notes")に記録されているがtypoなどの間違いが多いので修正してみる
 - Transpilerなどのツールが新しい構文に対応するには、まずそのコードをパースできないといけない。
 	- 各種パーサが対応出来るようにPull Requestを送ってみる
