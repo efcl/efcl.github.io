@@ -26,7 +26,7 @@ ECMAScript関係についてざっとみるカンニングペーパー
 - 仕様: ECMAScript
 - 実装: JavaScript
 
-2015年9月25日の最新版はECMAScript 2015(aka. ES6)
+2015年10月18日のStableな最新版はECMAScript 2015(aka. ES6)
 
 - [ECMAScript® 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript® 2015 Language Specification")
 
