@@ -1,5 +1,5 @@
 ---
-title: "ECMAScriptカンニングペーパー"
+title: "ECMAScript仕様策定のカンニングペーパー"
 author: azu
 layout: post
 date : 2015-10-18T00:00
