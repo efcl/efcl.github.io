@@ -56,16 +56,16 @@ tags:
 <script type="module" charset="euc-jp" />
 ```
 
-とした時の問題。どうなるかは仕様に決まってない
+とした時の問題。どうなるかは仕様で決まってない
 
 ### パス解決
 
 
 - con = Node.jsと違うパス解決は異なるものにはならないだろう
-- [Global Objects Node.js v4.2.1 Manual & Documentation](https://nodejs.org/api/globals.html "Global Objects Node.js v4.2.1 Manual &amp; Documentation")
-- NodeとES6で違うのはディレクティブな所
-	- requireは関数なので動的にモジュール読めるけど( `require(name)` みたいな)
-	- ES6 module は impor name from "name" みたいな感じなので静的に決まる。
+- [Global Objects Node.js v4.2.1 Manual & Documentation](https://nodejs.org/api/globals.html "Global Objects Node.js v4.2.1 Manual & Documentation")
+- Node.jsとES6で違うのはディレクティブな所
+	- requireは関数なので動的にモジュール読めるけど(`require(name)`みたいな)
+	- ES6 modulesは import name from "name" みたいな感じなので静的に決まる。
 
 ### Spec
 
@@ -78,7 +78,7 @@ tags:
 	- ES5のために型定義の構文をいれてるので、[Intersection types](https://github.com/Microsoft/TypeScript/issues/1256 "Intersection types")とかES6前提だと要らない感じ
 	- なのでそのままECMAScriptに持っていきにくいものも多い
 - 使われない機能は仕様にあっても使わない
-- TypeScript に新しい機能が入るときに、特定の何かのユースケースために入れた?
+- TypeScriptに新しい機能が入るときに、特定の何かのユースケースのために入れた?
 	- 頑張ればできたものを、簡単に型定義できる機能が追加されてる
 	- なので型システム自体が複雑化している
 - d.tsとライブラリの作者が別なのでAPIが2重にある
@@ -95,7 +95,7 @@ tags:
 - ほんとにそれの宣言された型は正しいのかとか気にする必要がある
 - 一回も実際に実行されない時に宣言された型を使える
 - でも実際に実行された値の型の方が信用できる
-- 宣言された型と実行時の値と一致するとは限らない
+- 宣言された型が実行時の値と一致するとは限らない
 
 ### WebAssembly
 
@@ -105,8 +105,8 @@ tags:
 - [Bug 146064 – JSC should natively support WebAssembly](https://bugs.webkit.org/show_bug.cgi?id=146064 "Bug 146064 – JSC should natively support WebAssembly")
 - entry pointがまだ決まってないので、まだ実行ができない
 - 実装自体はBaseline Compilerはある。
-- objectのlinkにES6 moduleを使ってる
-	- バイナリのリンク = ES6 module
+- objectのlinkにES6 modulesを使ってる
+	- バイナリのリンク = ES6 modules
 - ゲームエンジンとかにいい感じの設計されてる
 - ゲームに必要なことはCanvasとかWebGLにつなげること
 
@@ -149,12 +149,12 @@ ECMAScriptの仕様策定については以下にまとめておきました。
 - Performance Timeline
 	- [Performance Timeline](http://www.w3.org/TR/performance-timeline/ "Performance Timeline")
 	- パフォーマンスのボトルネックにアクセスできるようになった
-- 感覚の数値はFrame Timeingとかで取れるようになるの?
+- 間隔の数値はFrame Timingとかで取れるようになるの?
 - [w3c/performance-timeline](https://github.com/w3c/performance-timeline "w3c/performance-timeline")
 - ファーストペイント
-	- `firstPaint` というものがある
+	- `firstPaint`というものがある
 	- でもfirstPaintってほんとに有用?
-	- firstPaintはサービスの性質の影響をうけやすいので、fistPaintのみだと測れない
+	- firstPaintはサービスの性質の影響をうけやすいので、firstPaintのみだと測れない
 	- [w3c/frame-timing](https://github.com/w3c/frame-timing "w3c/frame-timing")
 - SpeedIndexも組み合わせの問題だけど、納得感がある仕組み
 - パフォーマンス改善をどうやるのか?
@@ -168,18 +168,18 @@ ECMAScriptの仕様策定については以下にまとめておきました。
 	- => タスクの優先度をつければいいのでは
 - Blink Scheduler
 	- [BlinkOn Scheduler Presentation - Google スライド](https://docs.google.com/presentation/d/1V09Qq08_jOucvOFs-C7P4Hz2Vsswa6imqLxAf7ONomQ/present#slide=id.p "BlinkOn Scheduler Presentation - Google スライド")
-- `setTimeout(fn, 0)`はレンダリングしたい用途 = `setImmidiate`
+- `setTimeout(fn, 0)`はレンダリングしたい用途 = `setImmediate`
 	- これは[w3c/requestidlecallback](https://github.com/w3c/requestidlecallback/ "w3c/requestidlecallback")でアイドルになったらレンダリングするという考え方
 	- アイドルにbeaconを送る使い方
 - 日本でパフォーマンスが盛り上がらない
 	- 日本が物理的に小さいのでネットが早い
-- ServiceWorkerってどう思ってますか?
-	- モバイルのライフタイムをPCみたいなライムタイムに持っていく?
+- Service Workerってどう思ってますか?
+	- モバイルのライフタイムをPCみたいなライフタイムに持っていく?
 - [Resource Hints](http://www.w3.org/TR/resource-hints/ "Resource Hints")
 	- 元はResource Priority
 	- 遅延ロード
 - ATF
-	- ATF(Above the fold, ページを表示して最初に見える範囲)を高速に表示される
+	- ATF(Above the fold、ページを表示して最初に見える範囲)を高速に表示させる
 - [Accelerated Mobile Pages Project](https://www.ampproject.org/ "Accelerated Mobile Pages Project")
 
 
@@ -202,7 +202,7 @@ ECMAScriptの仕様策定については以下にまとめておきました。
 - PolymerとWeb Components
 	- Shadow DOM
 	- Template String
-- WebComponentの未来
+- Web Componentsの未来
 	- 最近MSがコントリビュートしだしたX-Tag
 	- [X-Tag ★ Web Components](https://x-tag.readme.io/ "X-Tag ★ Web Components")
 	- Shadow DOMはブラウザ間で合意取れたので実装中
@@ -218,19 +218,19 @@ ECMAScriptの仕様策定については以下にまとめておきました。
 	- AngularJS 2ではcomponent routerというui-routerを参考にしたものが入ってる
 - ルータに求める機能
 	- AngularJSは標準でサポートしてる
-	- AngularJS フレームワークらしいフレームワーク
+	- AngularJSはフレームワークらしいフレームワーク
 - History API
 	- 普通に使うのが厳しいAPI
 - それぞれのライブラリは何で書かれてるの
 	- ReactはES6 + JSX
-	- Angularは2009年とか古い時代から
-	- Angular2はTypeScriptで書く
+	- AngularJSは2009年とか古い時代から
+	- AngularJS 2はTypeScriptで書く
 		- ES5/ES6でも書くことはできる
 	- Polymer
 		- ES5で書かれてた
 		- 最近ES6でも書けるようになった
 - 速度
-	- Angular2では大分改善された
+	- AngularJS 2では大分改善された
 		- [Change Detection in Angular 2 | Victor Savkin](http://victorsavkin.com/post/110170125256/change-detection-in-angular-2 "Change Detection in Angular 2 | Victor Savkin")
 	- Reactは遅くならないような作り
 		- performanceの改善方法
@@ -246,16 +246,16 @@ ECMAScriptの仕様策定については以下にまとめておきました。
 		- [rackt/redux](https://github.com/rackt/redux "rackt/redux")を使ってる話
 		- Fluxで通信はどこでするの?
 		- Actionを作るやつがリクエスト
-	- Angular
+	- AngularJS
 		- MV*
-		- Angularで書くとAngularっぽくなる
-		- Angular2 Component Treeという考え方
+		- AngularJSで書くとAngularJSっぽくなる
+		- AngularJS 2 Component Treeという考え方
 		- Reactと似てるのでFluxみたいになるのか?
 	- Redux
-		- 一つの巨大のState
-		- 一箇所にコードが全てが集まるのではなくて、実装自体は小分けに行える
+		- 一つの巨大なState
+		- 一箇所にコードが全て集まるのではなくて、実装自体は小分けに行える
 		- root 一箇所にstateが集まる
-		- Component毎にstateが持っているとHistory APIとかで戻った時にstateを全て変え直す必要がある
+		- Component毎にstateを持っているとHistory APIとかで戻った時にstateを全て変え直す必要がある
 	- Polymer
 		- stateはコンポーネントが持ってもいいし、どこにあってもいい。
 		- データバインディングでstateが伝播するのでスタートポイントの違いに過ぎない?
