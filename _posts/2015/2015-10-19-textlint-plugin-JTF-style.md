@@ -26,7 +26,7 @@ tags:
 
 textlintのプラグイン(ルールセット)として[textlint-plugin-JTF-style](https://github.com/azu/textlint-plugin-JTF-style "textlint-plugin-JTF-style")を作成しました。
 
-これへ[日本翻訳連盟](http://www.jtf.jp/ "日本翻訳連盟")が[JTF日本語標準スタイルガイド（翻訳用）](https://www.jtf.jp/jp/style_guide/styleguide_top.html "JTF日本語標準スタイルガイド（翻訳用）")をtextlintのルールとして実装したものです。
+これへ[日本翻訳連盟](http://www.jtf.jp/ "日本翻訳連盟")の[JTF日本語標準スタイルガイド（翻訳用）](https://www.jtf.jp/jp/style_guide/styleguide_top.html "JTF日本語標準スタイルガイド（翻訳用）")をtextlintのルールとして実装したものです。
 
 > 『JTF日本語標準スタイルガイド（翻訳用）』は、実務翻訳において和訳時に使用できる日本語表記ガイドラインです。2012年1月30日に初版を公開しました。『JTF日本語標準スタイルガイド』はどなたでも無償で使用できます。日本語の表記のゆらぎを防いで、スムーズに表記を統一するためのガイドラインとして活用してください
 
