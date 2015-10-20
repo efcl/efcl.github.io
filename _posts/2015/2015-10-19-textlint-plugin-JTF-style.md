@@ -12,7 +12,7 @@ tags:
 ---
 
 
-## textlint
+## [textlint](https://github.com/azu/textlint "textlint")
 
 昨日、[textlint 4.0をリリース](http://efcl.info/2015/10/18/textlint-4.0/ "校正ツール textlint 4.0リリース | Web Scratch")しましたが、textlintはMarkdownなどの文章に対してルールベースでチェックできるツールです。
 
@@ -33,6 +33,11 @@ textlintのプラグイン(ルールセット)として[textlint-plugin-JTF-styl
 [jtf_style_guide.pdf](https://www.jtf.jp/jp/style_guide/pdf/jtf_style_guide.pdf)からスタイルガイドの内容を読むことができます。
 
 ## インストール
+
+詳しくは以下のREADMEに書かれているのでそちらを読んで頂くとして、一応の推奨インストール方法を紹介します。
+
+- [textlint](https://github.com/azu/textlint "textlint")
+- [azu/textlint-plugin-JTF-style](https://github.com/azu/textlint-plugin-JTF-style "azu/textlint-plugin-JTF-style")
 
 現在のディレクトリに`textlint`と`textlint-plugin-jtf-style`をインストールして使うと、グローバルにインストールしなくても良くなります。
 
@@ -55,6 +60,8 @@ textlintの設定ファイルとなる`.textlintrc`に次のように`textlint-p
 
 ```
 node_modules/.bin/textlint /path/to/target.md
+# npm binを使っても同じ
+$(npm bin)/textlint /path/to/target.md
 ```
 
 もしくは`package.json`のrun-scriptにtextlintを定義して
