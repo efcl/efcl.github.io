@@ -13,7 +13,7 @@ tags:
 
 # ECMAScriptのカンペ
 
-ECMAScript関係についてざっとみるカンニングペーパー
+ECMAScript関係についてざっとみるカンニングペーパー。
 
 2015年10月18日の[次世代 Web カンファレンス](http://nextwebconf.connpass.com/event/19699/ "次世代 Web カンファレンス")でstandardizationのセッションで議論に参加するらしいのでそれのカンペです。
 
@@ -21,16 +21,16 @@ ECMAScript関係についてざっとみるカンニングペーパー
 
 ## ECMAScriptとは?
 
-[Ecma International](http://www.ecma-international.org/default.htm "Ecma International")によって標準化されてるJavaScriptの仕様の事
+[Ecma International](http://www.ecma-international.org/default.htm "Ecma International")によって標準化されてるJavaScriptの仕様の事。
 
 - 仕様: ECMAScript
 - 実装: JavaScript
 
-2015年10月18日のStableな最新版はECMAScript 2015(aka. ES6)
+2015年10月18日のStableな最新版はECMAScript 2015(aka. ES6)。
 
 - [ECMAScript® 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript® 2015 Language Specification")
 
-## Ecma-262
+## ECMA-262
 
 ECMAScriptの事。_262_はEcma Internationalでの管理番号。
 
@@ -52,8 +52,7 @@ Ecmaは色々な仕様を策定しているので、その中でECMAScriptを策
 
 ## ECMAScript 6 / 2015の呼び方
 
-一応の正式名称はECMAScript 2015。
-通称(多くの人に馴染みがあるという意味)ではES6と呼ぶ人も多い。
+一応の正式名称はECMAScript 2015。通称(多くの人に馴染みがあるという意味)ではES6と呼ぶ人も多い。
 
 > ES2015が正式名称であり、来年以降のECMAScriptの策定やリリースのスタイルに名称を合わせるというのが理由
 
@@ -63,7 +62,7 @@ ES6以降は1年毎にリリースしていく予定のため、2015, 2016...と
 
 ### ES6のエディタリーダー
 
-ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く人)
+ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く人)。
 
 [![icon](https://monosnap.com/file/YZf9xQvF692CCyPm6UZilXBrzJKUIS.png)](https://twitter.com/awbjs "Allen Wirfs-Brock (@awbjs) | Twitter")
 
@@ -72,12 +71,12 @@ ES6の仕様策定のリーダー(実際に仕様書に載せる文章を書く�
 
 ## Ecma標準とISO標準の違い
 
-ECMAScriptはデファクト標準([Ecma International](http://www.ecma-international.org/default.htm "Ecma International")により標準化)でもあり、[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755 "ISO/IEC 16262")としてISO標準化(デジュール標準)もされている
+ECMAScriptはデファクト標準([Ecma International](http://www.ecma-international.org/default.htm "Ecma International")により標準化)でもあり、[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755 "ISO/IEC 16262")としてISO標準化(デジュール標準)もされている。
 
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 
-日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってたり([@azu](https://github.com/azu)もレビュアとして参加)
+日本ではISO/IEC JTC1/SC22のECMAScript adhoc委員会でFast Trackの手続きをやってたり([@azu](https://github.com/azu)もレビュアとして参加)。
 
 ### なぜISO標準が必要?
 
@@ -99,12 +98,11 @@ ECMAScript 7 or 2016って何のこと??
 
 次期ECMAScriptの事をECMAScript nextとかES.nextと言ったりもする。
 
-- [ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?](http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/ "ES5, ES6, ES2016, ES.Next: What&#39;s going on with JavaScript versioning?")
+- [ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?](http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/ "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?")
 
 ## ES.next
 
-現在から見て次期ECMAScriptの事
-(2015年10月18から見ると、次期ECMAScriptは2016以降の事)
+現在から見て次期ECMAScriptの事(2015年10月18日から見ると、次期ECMAScriptは2016以降の事)。
 
 ## ES.nextのエディタリーダー
 
@@ -126,18 +124,17 @@ ES.nextのエディタはBrian Terlsonとなった。
 
 ES.nextは今までのECMAScriptとは策定プロセスが異なる。
 
-ECMAScript 2016からは機能ごとに仕様のプロポーザル(提案)を出し策定していく。
-それぞれのプロポーザルには**Stage**と呼ばれる5段階のラベルが振られている。
+ECMAScript 2016からは機能ごとに仕様のプロポーザル(提案)を出し策定していく。それぞれのプロポーザルには**Stage**と呼ばれる5段階のラベルが振られている。
 
-Stage4となったプロポーザルは次期ECMAScriptに取り込まれ、正式にECMAScriptの仕様となる。
+Stage 4となったプロポーザルは次期ECMAScriptに取り込まれ、正式にECMAScriptの仕様となる。
 
-- 0. Stawman
+- 0. Strawman
 - 1. Proposal
 - 2. Draft
 - 3. Candidate
 - 4. Finished
 
-言いかたを変えると、次期ECMAScriptは1年ごとに出るので、その時までにStage4となったものが次期ECMAScriptに入る。
+言いかたを変えると、次期ECMAScriptは1年ごとに出るので、その時までにStage 4となったものが次期ECMAScriptに入る。
 
 <iframe src="http://azu.github.io/tc39-svg/" height="600px" width="100%"></iframe>
 
@@ -149,13 +146,12 @@ via [What’s New in JavaScript for Fast and Scalable Apps | Build 2015 | Channe
 
 ## TC39 Process: Stage
 
-それぞれのStageについて。
-詳しくは[The TC39 Process](https://tc39.github.io/process-document/ "The TC39 Process")を読む 
+それぞれのStageについて。詳しくは[The TC39 Process](https://tc39.github.io/process-document/ "The TC39 Process")を読む。
 
-- Stage 0: Stawman
+- Stage 0: Strawman
 	- アイデア
--  Stage 1: Proposal
-	- プロポーサルの目的や解決方法を示す
+- Stage 1: Proposal
+	- プロポーザルの目的や解決方法を示す
 	- Polyfillやデモ等を用いて解説する
 - Stage 2: Draft
 	- いわゆるドラフト
@@ -166,21 +162,21 @@ via [What’s New in JavaScript for Fast and Scalable Apps | Build 2015 | Channe
 	- レビュアはその仕様策定者以外ならだれでもなれるが専門的な知識を持っている必要がある
 	- ECMAScriptのエディタがチェックする必要があり 
 - Stage 4: Finished
-	- 2つの実装(not polyfill)が必要
+	- 2つの実装(not Polyfill)が必要
 	- ECMAScriptへ取り込まれる準備が完了したことを示す状態
 	- ECMAScriptのエディタがチェックする必要があり
 
-それぞれのstageはTC39のミーティング等で話し合い、それぞれのstageの条件を満たしている場合に次のstageへあがる。
+それぞれのStageはTC39のミーティング等で話し合い、それぞれのStageの条件を満たしている場合に次のStageへあがる。
 
 ### 何で1年ごとにリリースするの?
 
 ES6はリリースするまで結局6年かかったので、もっと少しずつ出していきたいため。
 
-この方針はエディタリーダが交代する前から決まっていた。
+この方針はエディタリーダーが交代する前から決まっていた。
 
 ### 誰がプロポーザル書いてるの?
 
-色々な人
+色々な人。
 
 - ブラウザベンダー
 - ウェブ開発者
@@ -189,8 +185,7 @@ ES6はリリースするまで結局6年かかったので、もっと少しず�
 
 ## 新しいプロポーザルを提案するには
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にプロポーザルを追加してPull Requestする。
-Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来る。
+[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にプロポーザルを追加してPull Requestする。Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来る。
 
 - [Contributing New Proposals](https://github.com/tc39/ecma262#contributing-new-proposals "Contributing New Proposals")
 
@@ -199,7 +194,7 @@ Ecma Internationalの特許、著作権のポリシーに同意してる人な�
 
 ## ECMAScriptとGitHub
 
-ECMAScript 2016のドラフトはGitHubで公開されている
+ECMAScript 2016のドラフトはGitHubで公開されている。
 
 - [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")
 
@@ -216,25 +211,23 @@ ECMAScript 2016のドラフトはGitHubで公開されている
 - SNS
 	- Twitter/GitHub/Google+
 
-
 ## 結局ECMAScript 2016って何が入るの?
 
 [ES2016 Draft 1](https://github.com/tc39/ecma262/releases/tag/es2016-draft-1 "ES2016 Draft 1")がリリースされている。
 
-Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。
-その他の違いとしては、仕様書がWordではなく[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")で書きなおされたこと。
+Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。その他の違いとしては、仕様書がWordではなく[Ecmarkup](http://bterlson.github.io/ecmarkup/ "Ecmarkup")で書きなおされたこと。
 
 リリースする時期は決まっていて、[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")で承認されて初めてリリースされるので、次の総会が行われる2016年6月15-16日あたりにES2016がリリースされる。
 
-仕様を提出するまでにStage 4となったものも一緒にES2016に含まれてリリースされるが、ES2016はProposalが独立してるのでそれを仕様にマージしたり編集の作業が必要(Brianさんが頑張る)
+仕様を提出するまでにStage 4となったものも一緒にES2016に含まれてリリースされるが、ES2016はProposalが独立してるのでそれを仕様にマージしたり編集の作業が必要(Brianさんが頑張る)。
 
 そのため、提出の半年ぐらい前には入れる機能はフリーズされる(何を入れるかを決めて、残りはtypoや実装からのフィードバックなどの機能以外の修正)。
 
-なので、ES2016は2016年1月ぐらいには細かいところを除きフリーズされる(この時期を"freezing" deadlineと呼んだりしてる)
+なので、ES2016は2016年1月ぐらいには細かいところを除きフリーズされる(この時期を"freezing" deadlineと呼んだりしてる)。
 
 **結論:** 2016年1月中にStage 4となってる仕様がES2016には入る。
 
-可能性としてありえるのは以下の仕様あたり
+可能性としてありえるのは以下の仕様あたり。
 
 - [tc39/ecmascript-asyncawait](https://github.com/tc39/ecmascript-asyncawait)
 - [tc39/Array.prototype.includes](https://github.com/tc39/Array.prototype.includes/)
@@ -251,7 +244,7 @@ Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。
 
 ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Publication%20of%20ECMA-262%206th%20edition.htm)された。
 
-以下の図のように大体1月ぐらいには機能はフリーズされて、そこからは実装のフィードバックを受けての修正がメインとなっていた(実際には細かな機能が増えたりしたけど。。)
+以下の図のように大体1月ぐらいには機能はフリーズされて、そこからは実装のフィードバックを受けての修正がメインとなっていた(実際には細かな機能が増えたりしたけど)。
 
 <p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
 
@@ -275,18 +268,17 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 
 ## ES.nextの進捗
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にそれぞれのプロポーザルのstageが掲載されている。
-またstageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録を読めばいい。
+[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にそれぞれのプロポーザルのStageが掲載されている。またStageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録を読めばいい。
 
 - [rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes "rwaldron/tc39-notes")
 
 ## 次の仕様っていつリリースされるの?
 
-ECMAScript 2016のリリース予定は2016年の6月15-16日
+ECMAScript 2016のリリース予定は2016年の6月15-16日。
 
 Ecmaの[General Assembly](http://www.ecma-international.org/memento/GA.htm "General Assembly")(GA)で正式に承認された後にリリースされるので、次にGAが行われるのは15-16 Juneなので。
 
-## ECMAScriptとModuleとWHAWG
+## ECMAScriptとModuleとWHATWG
 
 Module loaderはES6から外されたけど、[whatwg/loader](https://github.com/whatwg/loader "whatwg/loader")で議論されてる。
 
@@ -300,8 +292,7 @@ Module loaderはES6から外されたけど、[whatwg/loader](https://github.com
 
 ## ECMAScriptの実装ってどれぐらいあるの?
 
-ES.nextの仕様に入るには2つ以上の実装が必要。
-ここに関わるのはブラウザベンダーによる実装。
+ES.nextの仕様に入るには2つ以上の実装が必要。ここに関わるのはブラウザベンダーによる実装。
 
 - [Chakra](https://msdn.microsoft.com/en-us/library/dn249673(v=vs.94).aspx "Chakra") @ MicroSoft
 - [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey "SpiderMonkey") @ Mozilla
@@ -316,7 +307,7 @@ ES.nextの仕様に入るには2つ以上の実装が必要。
 
 ## ECMAScriptの実装状況ってどうなの?
 
-[ECMAScript 6 compatibility table](http://kangax.github.io/compat-table/es6/ "ECMAScript 6 compatibility table")で、ブラウザの実装状況が見ることが出来ます。
+[ECMAScript 6 compatibility table](http://kangax.github.io/compat-table/es6/ "ECMAScript 6 compatibility table")で、ブラウザの実装状況を見ることが出来ます。
 
 それぞれのブラウザの更新履歴などについては以下を参照。
 
@@ -324,11 +315,9 @@ ES.nextの仕様に入るには2つ以上の実装が必要。
 
 ## Transpilerって何?
 
-Transpilerは[Source-to-source compiler](https://en.wikipedia.org/wiki/Source-to-source_compiler "Source-to-source compiler")の事。
-コードからコードへ変換するツールの事で、JavaScriptやCSSなどの世界では色々なツールがある。
+Transpilerは[Source-to-source compiler](https://en.wikipedia.org/wiki/Source-to-source_compiler "Source-to-source compiler")の事。コードからコードへ変換するツールの事で、JavaScriptやCSSなどの世界では色々なツールがある。
 
-ECMAScriptではES6以降のコードをES5のコードに変換する[Babel](https://babeljs.io/ "Babel")(元々は6to5という名前)や、
-CSSでは[PostCSS](https://github.com/postcss/postcss "PostCSS")などがある。
+ECMAScriptではES6以降のコードをES5のコードに変換する[Babel](https://babeljs.io/ "Babel")(元々は6to5という名前)や、CSSでは[PostCSS](https://github.com/postcss/postcss "PostCSS")などがある。
 
 古い環境にそもそも同等の表現を出来る機能がない場合はTranspilerでも実装する事はできない。
 
@@ -343,36 +332,33 @@ Babelの作者である@[sebmck](https://github.com/sebmck "sebmck")もTranspile
 - [JavaScript Transformation - JSConf 2015 // Speaker Deck](https://speakerdeck.com/sebmck/javascript-transformation-jsconf-2015)
 - [どうやってECMAScript 6を学び始めるか](http://azu.github.io/slide/nodejs-es6/how-to-learn.html)
 
-
 ## Polyfillって何?
 
 一種のライブラリ。
 
 仕様で策定されている機能だが、古いブラウザなどではまだ実装されていない時に、APIが全く同じ互換実装を提供するライブラリの事。
 
-`Promise`や`Array.from`などのオブジェクトやメソッドの追加が主な働き。
-Transpilerと違って新しい構文を古いブラウザで動かせるようにするのではなく、既存の構文で新しい機能を追加する(つまりライブラリ)
+`Promise`や`Array.from`などのオブジェクトやメソッドの追加が主な働き。Transpilerと違って新しい構文を古いブラウザで動かせるようにするのではなく、既存の構文で新しい機能を追加する(つまりライブラリ)。
 
-ECMAScriptにはマクロのような仕組みはないのでコードで構文を拡張することが難しい。
-そのため、TranspilerとPolyfillを使い分け、組み合わせて利用する。
+ECMAScriptにはマクロのような仕組みはないのでコードで構文を拡張することが難しい。そのため、TranspilerとPolyfillを使い分け、組み合わせて利用する。
 
 [Babel](https://babeljs.io/ "Babel")はTranspiler、[core-js](https://github.com/zloirock/core-js "core-js")はPolyfill。
 
-ECMAScriptよりもDOM APIはpolyfillとして実装しやすいため多くのPolyfillが実装されている。
+ECMAScriptよりもDOM APIはPolyfillとして実装しやすいため多くのPolyfillが実装されている。
 
 - [Polyfill service](https://cdn.polyfill.io/v1/docs/ "Polyfill service")
 
-## ずっとBabel使い続けるのか?
+## ずっとBabelを使い続けるのか?
 
 [Babel](https://babeljs.io/ "Babel")ではES6で追加された構文の大部分が変換でき、古いブラウザなどでもES6を利用できるようになっている。
 
-そのため、とりあえずBabelを使っておけばいう人も多い。
+そのため、とりあえずBabelを使っておけばという人も多い。
 
 - [Effective ES6 / Teppei Sato - YouTube](https://www.youtube.com/watch?v=oSPv5IPDSxE "Effective ES6 / Teppei Sato - YouTube")
 
 ブラウザ側の実装も進んでいるため、IEのようなアップデートのライフサイクルが異なるブラウザを無視すれば、モダンなブラウザでもES6の機能を利用できるようになってきている。
 
-Q. ブラウザでも実装された後もBabelの使い続けていくのか?それは健全なのか?という話について。
+Q. ブラウザでも実装された後もBabelを使い続けていくのか? それは健全なのか? という話について。
 
 A. 個人的な考えではYES。
 
@@ -385,8 +371,7 @@ TC39のメンバーでもある[@jhusain](https://twitter.com/jhusain "@jhusain"
 - [168JSJ The Future of JavaScript with Jafar Husain](https://devchat.tv/js-jabber/168-jsj-the-future-of-javascript-with-jafar-husain "168JSJ The Future of JavaScript with Jafar Husain")
 - [JSJ The Future of JavaScript with Jafar Husainのメモ :memo:](https://gist.github.com/azu/ec6c5721393b8c3a6845 "JSJ The Future of JavaScript with Jafar Husainのメモ :memo:")
 
-現実的な問題として仕様に関わる人があまり数が多くない。
-しかし、仕様策定側は仕様に対するフィードバックを求めている。
+現実的な問題として仕様に関わる人があまり数が多くない。しかし、仕様策定側は仕様に対するフィードバックを求めている。
 
 Transpilerがあると、策定中の仕様をウェブ開発者が試すことができ仕様に対するフィードバックがより多く集まる事が挙げられている。
 
@@ -402,14 +387,13 @@ Transpilerがあると、策定中の仕様をウェブ開発者が試すこと�
 
 - [世界のJavaScriptを読もう @ 2014](http://azu.github.io/slide/jser200/javascript-2014.html "世界のJavaScriptを読もう @ 2014")
 
-ES.nextでも _Stage 1: Proposal_ あたりで、TranspilerやPolyfillを仕様と共に提供して、より多くの人が試せるようにしているケースが多い。(TranspilerやPolyfillはStage 4となるのに必要な実装数にはカウントされない)
+ES.nextでも _Stage 1: Proposal_ あたりで、TranspilerやPolyfillを仕様と共に提供して、より多くの人が試せるようにしているケースが多い(TranspilerやPolyfillはStage 4となるのに必要な実装数にはカウントされない)。
 
 ## どうやって仕様へContributingするの?
 
 ### ES6
 
-やはり、仕様の問題は実装時に多く見つかるので、JavaScriptエンジンに仕様の実装をしてみる。
-JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるようになっているので、機能によっては外部の人でも手を出しやすいとの事。
+やはり、仕様の問題は実装時に多く見つかるので、JavaScriptエンジンに仕様の実装をしてみる。JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるようになっているので、機能によっては外部の人でも手を出しやすいとの事。
 
 - [#19 ES7 | mozaic.fm](http://mozaic.fm/post/125673651143/19-es7 "#19 ES7 | mozaic.fm")
 
@@ -421,18 +405,17 @@ JavaScriptエンジンの多くはJavaScriptでJavaScriptを実装できるよ�
 
 ### ES.next
 
-- ES.nextの仕様は殆どがGitHubのリポジトリを持ってるので、それぞれのリポジトリにIssueやPull Requestを送ってみる。
+- ES.nextの仕様は殆どがGitHubのリポジトリを持ってるので、それぞれのリポジトリにIssueやPull Requestを送ってみる
 	- [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")
 - ECMAScriptの仕様本体も[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にある
 	- [CONTRIBUTING.md](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")を見て分かるように普通にIssueやPull Requestで修正できる
 	- 細かい変更ならCLAへのサインも必要ない
 - 最新の議論は[TC39 Meeting Notes](https://github.com/rwaldron/tc39-notes "TC39 Meeting Notes")に記録されているがtypoなどの間違いが多いので修正してみる
-- Transpilerなどのツールが新しい構文に対応するには、まずそのコードをパースできないといけない。
+- Transpilerなどのツールが新しい構文に対応するには、まずそのコードをパースできないといけない
 	- 各種パーサが対応出来るようにPull Requestを送ってみる
 	- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](http://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
 - 仕様のTranspilerやPolyfillを実装してみる
 - TranspilerやPolyfillを使ってみて使い勝手などのフィードバックを書いてみる
-
 
 ## こんな機能ってES.nextに入るの?
 
