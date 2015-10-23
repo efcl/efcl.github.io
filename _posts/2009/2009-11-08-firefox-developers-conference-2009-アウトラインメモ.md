@@ -824,446 +824,446 @@ tags:
   <span style="color: #000000;">ゲスト: Amachang (天野 仁史)、Piro (下田 洋志)、Aza Rakin</span>
 </div>
 
+<div>
+<span style="color: #000000;">モデレータ: 有限会社オングス　後藤 大地</p> <p>
+</span></div> <div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「UIを大きくいじるものはまだできない。<br /> リファレンスが貧弱で更新が行き届いていない。<br /> とっかかりとなるところが少ない」</span>
+</div>
+
 <div style="margin: 0em 0em 0em 1.01em;">
-  <span style="color: #000000;">モデレータ: 有限会社オングス　後藤 大地</p> <p>
-    </span></div> <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「UIを大きくいじるものはまだできない。<br /> リファレンスが貧弱で更新が行き届いていない。<br /> とっかかりとなるところが少ない」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「使いやすさ、機能、セキュリティのどの位置にJetpack位置づけるのかを考える。<br /> すべての一度に解決するとどれも解決できない→セカンドシンドローム<br /> なので、どれかの機能をあきらめなければならない。<br /> ハイエンドユーザーがJetpack自体を拡張できるような形を作りたい。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「多くのユーザー使っているAPIは他の人が安心して使っていける。<br /> 今は頻繁に変わって開発者も触りにくい」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「1.0までは自由にいじれる。1.0からは安定したものを渡せる」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「なんでjQueryがデフォルト?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「好きだから。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「重くならない?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「ライブラリを使わないのはクレイジー」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「jQueryはjQuery言語だから新しく覚えないといけない」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「jQueryは作りやすい。将来的には他のものを使えるようにしたい」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「今回Jetpack featureを作ったとき、アニメーションは楽に適応できた。<br /> そういう点ではライブラリは簡単でいいもの。<br /> 他のライブラリ(dojo,prototype.js)は使えるようになるの?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「URLでのimportで他のライブラリを使えるようにする。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">CPAN的な仕組み。<br /> セキュリティについてもチェックする必要がある。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「古いアドオンが将来的には0になるの?」<br /> Aza「古いスタイルのアドオンが0になるのは望んでいない<br /> Firefox4の段階でJetpackが優勢になる状態を作りたい。」<br /> piro「オブジェクト汚染や他のアドオンに影響を与える可能性は?」<br /> Aza「Jetpackは他のものに影響を与える可能性は大きい。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「今のJetpackはhttpsでは無いところにアップデート見に行ってる」<br /> Aza「将来的にはアドオンと同じような仕組みもあり得る。<br /> 後はmanifestの仕組み。manifestは将来変わらないように作る」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「UIについて。今のUIについて不満に思っていることは?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「まだまだ改善余地があるところが多い」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「オレオレUIが多いなか、一般化(標準的なデザインを用意)する必要があるとは思う?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「iPhoneみたいに統一されているものは使いやすい。<br /> 何か標準的なものを用意した方がわかりやすい。」<br /> Amachang「WebのUIについて思うところは?」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「Flashでリッチなものを作るとき、リッチにすることを目的にしないで何をするのかを考えていくことでよりよいものが作れる。ユーザーの立場を考えていく。」<br /> Amachang「日本と海外のUIの違い」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「物理学者のUIはひどい。<br /> 文化によってUIは大きく違う。<br /> 対象毎にUIを変えていくのは良いこと。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">中国の場合は複数のことを同時に行っている。→待っている間に何も表示されない、シンプルなGoogleのページはつまらない。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">グローバルにするにはローカルにする必要がある。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「about:jetpackがhtmlベースな理由は？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「webを使っている以上はwebライクなものを使う方がいいのではないか」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「jetpackはWeb上で書くが、将来はWeb上でコーディングするようになると思うか？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「YES!!!　web開発者はWebに多く関わっている方がよい」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「Webサービスがアプリと呼ばれるようになってがそれについてどう思う？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「WebOSという考え方のように、ブラウザと関わっている時間は大きくなっている」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「Fennec(Firefoxのモバイル版)のいいとこと悪いところは？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「Fennecはまだほとんど使える端末がない。<br /> safariは一部の機能制限を設けていると思う。<br /> Fennecは深く扱えるようなものになる。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">piro「FennecもFirefoxと同じようにオーバーヘッドが大きいので、ハードウェアの進歩が必要になる。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「Webkitの活躍について」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「ブラウザ業界全体を活性化させていると思う。<br /> 他のレンダリングも活性化すれば、ユーザーはレンダリングを意識する必要がなくなる。<br /> UX(ユーザーエクスピアレンス)が重要視される」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「mozilla lab に入るにはどうすればいいか？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「ラーメンで買収。(違」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「Ubiquityはシェルのコマンドみたいだけど、どの辺からの発想？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「Ubiquityは人が中心(タスク中心)の考え方というのが発想の元。<br /> おばあさんに電話で説明できるものを目標にしている。<br /> Ubiquity2はマルチランゲージに対応してるよ！！」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「javascriptライブラリなしでどうやって開発するの？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「アドオン開発メインだからライブラリなんて気にしたことない<br /> spindermonkey の仕様に対する忠実さのおかげで10年やってきました」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Amachang「自分でライブラリ書いて使ってる。<br /> jQueryはクロージャーすると重くなる。」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「日本は組み込み系のデバイスですごい<br /> Geckoのプラットフォーム変えるならどこを変えたい？」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「XPCOMがわかりづらい」<br /> Amachang「ディレクトリなどのファイル構成がわかりにくい」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">piro「誰でも作りやすい環境ができると、良いものも必然的に出てくる」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Aza「Firefox向けの開発しているとエラーがいつの間にか消えているのか不満。<br /> pythonみたいにエラーをしっかりしたい。」</span>
-    </div>
-    
-    <h3>
-      <span style="color: #000000;">ライトニングトーク</span>
-    </h3>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">位置情報通知機能の利用について(30min)</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">位置情報サービスは最近流行っていた</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">wifiの位置情報機能を利用したランチマップ</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">位置情報取得するのは簡単→でもあんまり利用されてない</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">twitter+位置情報を進めていく</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Weather Japan</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">「<strong>無職という自由な職業</strong>」</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">気象データを集めて表示する拡張</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">北海道専門ページも見えるよ。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">利用者増えるタイミング</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">天候が荒れる時</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">気象災害が起きたとき</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">結論 : NetWalkerが欲しい</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">goo辞書、gooツールバー、緑のgoo</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">1997年～</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">goo辞書</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">履歴を記録して、参照した回数も記録してる</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">緑のgoo</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">検索サービス</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">検索によって得た利益を環境保護に募金</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">エコ気分</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">gooツールバー</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">いろんなものを統合したもの</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">placeEngeinに連動している</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 5.05em;">
-      <span style="color: #000000;">位置情報を取得ができる→地図との連携</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 5.05em;">
-      <span style="color: #000000;">placeEnginはユーザーの補正で精度が上がる</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">NAVERツールバーとFirefoxテーマ</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">NAVERの日本サイトは日本向けにすべて作り直している。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">「探し合う検索」コンセプト</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">NAVERツールバー</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">他のポータルサイトの検索も含まれている</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Autopagerize for firefox & google Chrome</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">swdyh : えすだぶるでぃーだぶるえいち</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">greasemonkeyから始まった</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">拡張化するのは難しい</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">ChromeにもGreasemokeyと同様にcontentに対して実行できる仕組みがある。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">自作ツールとAPIを使ってFirefox拡張を作成</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">http://github.com/swdyh/chlorine</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">Chrome拡張はFx拡張のいいところ悪いところを踏まえてデザインされている</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Twitter Plus</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">スパムと偽造から成り立つ</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">みんな開発がんばれ！</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">about:ぼかろFx</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">Firefoxの似た目が初音ミク</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">スキン切り替え ペルソナ(再起動が必要ない)<br /> ペルソナはいじれるところは少ないので別途作成した</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Dropfox</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">プロファイルの共有</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">windowsとlinuxではパスフォーマットが違う</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 5.05em;">
-      <span style="color: #000000;">この共有できる仕組みを提供する。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 5.05em;">
-      <span style="color: #000000;">javascriptでOSをまたぐものが作成できる。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">環境変数 ${環境変数}が使用できる。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">Userscriptは起動時に実行される。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 4.04em;">
-      <span style="color: #000000;">シェルコマンドを実行できる</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">学年別ひらがな切り替えアドオン</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">メニューからロケール変更</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">小学生の学年別の漢字に合わせたメニューを切り替える</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">小学生1ー6年生</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">エラーメッセージや他のアドオンも漢字をひらがなに変換する。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Google Apps Help & Google Ad planner</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Google Apps Help</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">Google全体のアプリ</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">ヘルプメニューをプルダウンでその場でヘルプの中身をたどれる。</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 1.01em;">
-      <span style="color: #000000;">Google Ad Planner</span>
-    </div>
-    
-    <div style="margin: 0em 0em 0em 3.03em;">
-      <span style="color: #000000;">Google側が難読化しているので非公開</span>
-    </div>
+  <span style="color: #000000;">Aza「使いやすさ、機能、セキュリティのどの位置にJetpack位置づけるのかを考える。<br /> すべての一度に解決するとどれも解決できない→セカンドシンドローム<br /> なので、どれかの機能をあきらめなければならない。<br /> ハイエンドユーザーがJetpack自体を拡張できるような形を作りたい。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「多くのユーザー使っているAPIは他の人が安心して使っていける。<br /> 今は頻繁に変わって開発者も触りにくい」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「1.0までは自由にいじれる。1.0からは安定したものを渡せる」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「なんでjQueryがデフォルト?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「好きだから。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「重くならない?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「ライブラリを使わないのはクレイジー」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「jQueryはjQuery言語だから新しく覚えないといけない」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「jQueryは作りやすい。将来的には他のものを使えるようにしたい」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「今回Jetpack featureを作ったとき、アニメーションは楽に適応できた。<br /> そういう点ではライブラリは簡単でいいもの。<br /> 他のライブラリ(dojo,prototype.js)は使えるようになるの?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「URLでのimportで他のライブラリを使えるようにする。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">CPAN的な仕組み。<br /> セキュリティについてもチェックする必要がある。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「古いアドオンが将来的には0になるの?」<br /> Aza「古いスタイルのアドオンが0になるのは望んでいない<br /> Firefox4の段階でJetpackが優勢になる状態を作りたい。」<br /> piro「オブジェクト汚染や他のアドオンに影響を与える可能性は?」<br /> Aza「Jetpackは他のものに影響を与える可能性は大きい。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「今のJetpackはhttpsでは無いところにアップデート見に行ってる」<br /> Aza「将来的にはアドオンと同じような仕組みもあり得る。<br /> 後はmanifestの仕組み。manifestは将来変わらないように作る」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「UIについて。今のUIについて不満に思っていることは?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「まだまだ改善余地があるところが多い」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「オレオレUIが多いなか、一般化(標準的なデザインを用意)する必要があるとは思う?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「iPhoneみたいに統一されているものは使いやすい。<br /> 何か標準的なものを用意した方がわかりやすい。」<br /> Amachang「WebのUIについて思うところは?」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「Flashでリッチなものを作るとき、リッチにすることを目的にしないで何をするのかを考えていくことでよりよいものが作れる。ユーザーの立場を考えていく。」<br /> Amachang「日本と海外のUIの違い」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「物理学者のUIはひどい。<br /> 文化によってUIは大きく違う。<br /> 対象毎にUIを変えていくのは良いこと。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">中国の場合は複数のことを同時に行っている。→待っている間に何も表示されない、シンプルなGoogleのページはつまらない。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">グローバルにするにはローカルにする必要がある。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「about:jetpackがhtmlベースな理由は？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「webを使っている以上はwebライクなものを使う方がいいのではないか」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「jetpackはWeb上で書くが、将来はWeb上でコーディングするようになると思うか？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「YES!!!　web開発者はWebに多く関わっている方がよい」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「Webサービスがアプリと呼ばれるようになってがそれについてどう思う？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「WebOSという考え方のように、ブラウザと関わっている時間は大きくなっている」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「Fennec(Firefoxのモバイル版)のいいとこと悪いところは？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「Fennecはまだほとんど使える端末がない。<br /> safariは一部の機能制限を設けていると思う。<br /> Fennecは深く扱えるようなものになる。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">piro「FennecもFirefoxと同じようにオーバーヘッドが大きいので、ハードウェアの進歩が必要になる。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「Webkitの活躍について」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「ブラウザ業界全体を活性化させていると思う。<br /> 他のレンダリングも活性化すれば、ユーザーはレンダリングを意識する必要がなくなる。<br /> UX(ユーザーエクスピアレンス)が重要視される」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「mozilla lab に入るにはどうすればいいか？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「ラーメンで買収。(違」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「Ubiquityはシェルのコマンドみたいだけど、どの辺からの発想？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「Ubiquityは人が中心(タスク中心)の考え方というのが発想の元。<br /> おばあさんに電話で説明できるものを目標にしている。<br /> Ubiquity2はマルチランゲージに対応してるよ！！」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「javascriptライブラリなしでどうやって開発するの？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「アドオン開発メインだからライブラリなんて気にしたことない<br /> spindermonkey の仕様に対する忠実さのおかげで10年やってきました」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Amachang「自分でライブラリ書いて使ってる。<br /> jQueryはクロージャーすると重くなる。」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「日本は組み込み系のデバイスですごい<br /> Geckoのプラットフォーム変えるならどこを変えたい？」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「XPCOMがわかりづらい」<br /> Amachang「ディレクトリなどのファイル構成がわかりにくい」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">piro「誰でも作りやすい環境ができると、良いものも必然的に出てくる」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Aza「Firefox向けの開発しているとエラーがいつの間にか消えているのか不満。<br /> pythonみたいにエラーをしっかりしたい。」</span>
+</div>
+
+<h3>
+  <span style="color: #000000;">ライトニングトーク</span>
+</h3>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">位置情報通知機能の利用について(30min)</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">位置情報サービスは最近流行っていた</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">wifiの位置情報機能を利用したランチマップ</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">位置情報取得するのは簡単→でもあんまり利用されてない</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">twitter+位置情報を進めていく</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Weather Japan</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">「<strong>無職という自由な職業</strong>」</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">気象データを集めて表示する拡張</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">北海道専門ページも見えるよ。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">利用者増えるタイミング</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">天候が荒れる時</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">気象災害が起きたとき</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">結論 : NetWalkerが欲しい</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">goo辞書、gooツールバー、緑のgoo</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">1997年～</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">goo辞書</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">履歴を記録して、参照した回数も記録してる</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">緑のgoo</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">検索サービス</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">検索によって得た利益を環境保護に募金</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">エコ気分</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">gooツールバー</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">いろんなものを統合したもの</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">placeEngeinに連動している</span>
+</div>
+
+<div style="margin: 0em 0em 0em 5.05em;">
+  <span style="color: #000000;">位置情報を取得ができる→地図との連携</span>
+</div>
+
+<div style="margin: 0em 0em 0em 5.05em;">
+  <span style="color: #000000;">placeEnginはユーザーの補正で精度が上がる</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">NAVERツールバーとFirefoxテーマ</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">NAVERの日本サイトは日本向けにすべて作り直している。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">「探し合う検索」コンセプト</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">NAVERツールバー</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">他のポータルサイトの検索も含まれている</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Autopagerize for firefox & google Chrome</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">swdyh : えすだぶるでぃーだぶるえいち</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">greasemonkeyから始まった</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">拡張化するのは難しい</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">ChromeにもGreasemokeyと同様にcontentに対して実行できる仕組みがある。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">自作ツールとAPIを使ってFirefox拡張を作成</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">http://github.com/swdyh/chlorine</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">Chrome拡張はFx拡張のいいところ悪いところを踏まえてデザインされている</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Twitter Plus</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">スパムと偽造から成り立つ</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">みんな開発がんばれ！</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">about:ぼかろFx</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">Firefoxの似た目が初音ミク</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">スキン切り替え ペルソナ(再起動が必要ない)<br /> ペルソナはいじれるところは少ないので別途作成した</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Dropfox</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">プロファイルの共有</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">windowsとlinuxではパスフォーマットが違う</span>
+</div>
+
+<div style="margin: 0em 0em 0em 5.05em;">
+  <span style="color: #000000;">この共有できる仕組みを提供する。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 5.05em;">
+  <span style="color: #000000;">javascriptでOSをまたぐものが作成できる。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">環境変数 ${環境変数}が使用できる。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">Userscriptは起動時に実行される。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 4.04em;">
+  <span style="color: #000000;">シェルコマンドを実行できる</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">学年別ひらがな切り替えアドオン</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">メニューからロケール変更</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">小学生の学年別の漢字に合わせたメニューを切り替える</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">小学生1ー6年生</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">エラーメッセージや他のアドオンも漢字をひらがなに変換する。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Google Apps Help & Google Ad planner</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Google Apps Help</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">Google全体のアプリ</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">ヘルプメニューをプルダウンでその場でヘルプの中身をたどれる。</span>
+</div>
+
+<div style="margin: 0em 0em 0em 1.01em;">
+  <span style="color: #000000;">Google Ad Planner</span>
+</div>
+
+<div style="margin: 0em 0em 0em 3.03em;">
+  <span style="color: #000000;">Google側が難読化しているので非公開</span>
+</div>
 
  [1]: http://mozilla.jp/events/2009/fxdevcon/
