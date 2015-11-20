@@ -5,14 +5,13 @@ rvm:
 node_js: stable
 before_install:
 - git fetch --unshallow
-- nvm use stable
+- nvm use 5.0
 install:
 - bundle install --without production --deployment
 - npm install
 cache:
   directories:
   - vendor/bundle
-  - node_modules
 script:
 - npm test
 - bundle exec jekyll build --trace
