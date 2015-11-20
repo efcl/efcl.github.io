@@ -2,20 +2,10 @@ sudo: false
 language: ruby
 rvm:
 - 2.2.0
-before_install:
-- git fetch --unshallow
 install:
 - bundle install --without production --deployment
-- npm install
 cache:
   directories:
   - vendor/bundle
-  - node_modules
 script:
-- npm test
 - bundle exec jekyll build --trace
-after_failure:
-- ./tools/review-textlint.sh
-env:
-  global:
-    secure: iSkBFERIqGA18YODMor7ZYS2VNEoGG1WqiScUkz86BP7Xhs/xTCjQg06gIlrgVe3y7rsFs8b203GWMCnHIOSNVgeU+5dvrdTpUew/w3ZyzsJxjDQ+tRiQjlZX6mURRFCQnH45QFjC3IGw3gvzgNFLKdS8kiAIh3g4mfanq8zu2g=

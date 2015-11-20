@@ -4,6 +4,7 @@
     "no-mix-dearu-desumasu": true,
     "no-start-duplicated-conjunction": {
       "interval": 2
-    }
+    },
+    "no-doubled-joshi": true
   }
 }
