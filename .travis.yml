@@ -6,7 +6,7 @@ before_install:
 - git fetch --unshallow
 install:
 - bundle install --without production --deployment
-- npm use stable
+- nvm use stable
 - npm install
 cache:
   directories:
