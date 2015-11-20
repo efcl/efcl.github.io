@@ -5,7 +5,7 @@ rvm:
 node_js: stable
 before_install:
 - git fetch --unshallow
-- nvm use 5.0
+- nvm install stable && nvm use stable
 install:
 - bundle install --without production --deployment
 - npm install
