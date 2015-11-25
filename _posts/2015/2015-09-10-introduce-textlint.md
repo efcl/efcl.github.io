@@ -14,15 +14,15 @@ tags:
 
 ## textlint
 
-[textlint](https://github.com/azu/textlint "textlint")はMarkdownやテキスト向けのLintツールで、テキスト版ESLintみたいな感じのツールです。
+[textlint](https://github.comtextlint/textlint "textlint")はMarkdownやテキスト向けのLintツールで、テキスト版ESLintみたいな感じのツールです。
 
 - [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
 
 最近[azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "azu/JavaScript-Plugin-Architecture")という小さな書籍を書いていて、色々簡単に使えるような仕組みを追加しています。
 
-この記事では簡単な[textlint](https://github.com/azu/textlint "textlint")の導入方法について紹介します。
+この記事では簡単な[textlint](https://github.comtextlint/textlint "textlint")の導入方法について紹介します。
 
-扱う[textlint](https://github.com/azu/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
+扱う[textlint](https://github.comtextlint/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
 
 ### インストール
 
@@ -182,7 +182,7 @@ export default function (context, options = {}) {
                     useDuplicatedPhase = true;
                 }
 
-		// 使われてたら報告
+                // 使われてたらエラー報告
                 if (useDuplicatedPhase) {
                     report(node, new RuleError(`don't repeat "${phrase}" in ${options.interval} phrases`));
                     useDuplicatedPhase = false;
@@ -225,4 +225,4 @@ textlintはデフォルトでルールを持ってない代わりに、自分で
 
 その辺が解決していければ、プログラミング言語を扱うツールのように、文章を扱うツールがもっと作りやすくなったりするんじゃないかなと思います。
 
-文章の正しさは時間で変化する感じがして、その時に正しいと思ったことをすぐにチェックできるようにしたいと思って[textlint](https://github.com/azu/textlint "textlint")を作ったので、一度遊んでみるといいのかもしれません。
+文章の正しさは時間で変化する感じがして、その時に正しいと思ったことをすぐにチェックできるようにしたいと思って[textlint](https://github.comtextlint/textlint "textlint")を作ったので、一度遊んでみるといいのかもしれません。
