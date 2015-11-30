@@ -43,13 +43,12 @@ ElectronアプリじゃなくてNode.jsのCLIでも良かったのですが面�
 ## 目的
 
 [JavaScript Weekly](http://javascriptweekly.com/ "JavaScript Weekly")のようなWeekly系のメルマガを購読しててもやっぱり単位がでかいのでちょっと読みにくいなと思ったため作りました。
-
-[Meta Weekly](http://azu.github.io/Meta-Weekly/ "Meta Weekly")というサイトにWeekly系のメルマガをまとめていますが、メールの未読になりがちなのをなんとかしたくて作りました。
+([Meta Weekly](http://azu.github.io/Meta-Weekly/ "Meta Weekly")というサイトにWeekly系のメルマガをまとめています)
 
 最初はPocketのようなアプリを作ろうとしましたが、Pocketのアプリが悪くなかったのでもっと使うためにまとめて突っ込めるアプリを書きました。
 
 以下のようなワークフローで上手く行くのかを今試している感じです。
 
-とりあえずPocketに記事を個別に突っ込む -> チラ見していって気になったものにPocketでFavする -> FavしたものをIFTTT経由で[Diigo](https://www.diigo.com/ "Diigo")にブクマ -> [Diigo](https://www.diigo.com/ "Diigo")のRSSでもう一度見る
+とりあえずPocketに記事を個別に突っ込む -> チラ見していって気になったものをPocketでFavする -> FavしたものをIFTTT経由で[Diigo](https://www.diigo.com/ "Diigo")にブクマ -> [Diigo](https://www.diigo.com/ "Diigo")のRSSでもう一度見る
 
 DiigoのRSSは記事の先頭をちょっとだけ出してくれるので良かった。[Inoreader](https://www.inoreader.com/ "Inoreader")がもっと良さそうでしたが、その機能は有料っぽかったので諦めました(RSSをフィルターしたRSSとかを作れて便利)
