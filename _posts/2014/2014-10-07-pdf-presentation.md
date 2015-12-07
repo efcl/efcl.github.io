@@ -13,6 +13,10 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 
 ---
 
+追記: ライブラリとして切り出しました
+
+- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")
+
 ## どういうもの
 
 <iframe src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
@@ -224,3 +228,7 @@ PDFJS.cMapPacked = true; // 拡張子にbcmapを付けるか
 今使おうと思うと、自分でslide-pdfをcloneして配置する必要があったりちょっと面倒だと思います。( [azu/pdf-slide-html](https://github.com/azu/pdf-slide-html "azu/pdf-slide-html")も雑なので使いにくい)
 
 もっと使いやすくする pull requestなど待ってます！
+
+追記: ライブラリとして切り出しました
+
+- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")
