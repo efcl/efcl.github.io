@@ -100,7 +100,8 @@ runner.runBrowser("http://example.com").then(function () {
 
 ```
   "scripts": {
-    "test": "npm run build && mocha && (cd example && npm run example)"
+    "prepublish": "npm run build",
+    "test": "mocha && (cd example && npm run example)"
   },
 ```
 
