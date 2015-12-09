@@ -53,7 +53,7 @@ tags:
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">マネージメントの問題を解決するときのツールが欲しいという話 <a href="https://twitter.com/hashtag/%E5%BF%98%E5%B9%B4_sushi?src=hash">#忘年_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/674541071724994560">December 9, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## pdf.js-controll
+## pdf.js-controller
 
 <blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/%E5%BF%98%E5%B9%B4_sushi?src=hash">#忘年_sushi</a> <a href="https://t.co/X3FRXzSkzA">pic.twitter.com/X3FRXzSkzA</a></p>&mdash; サスケ (@kyo_ago) <a href="https://twitter.com/kyo_ago/status/674541370808270848">December 9, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -134,7 +134,7 @@ tags:
 - 精神的なconst
 	- const使う事自体は正しい
 	- 一種のコーディングスタイルに近い効力
-	- 引数の値のconst
+	- 引数のconst問題
 	- constを利用することは問題ないが、既存の全てをconstにしろと言える程の効力がない
 	- constで解決出来ることは別のスタイルでも解決できる可能性もある
 - [【Effective Java】項目１５：可変性を最小限にする - モノクローム](http://hjm333.hatenablog.com/entry/2015/09/15/000644)
