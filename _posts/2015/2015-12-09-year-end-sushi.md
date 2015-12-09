@@ -70,8 +70,11 @@ tags:
 
 [HTTP/2 Push を Service Worker + Cache Aware Server Push で効率化したい話 - Block Rockin’ Codes](http://jxck.hatenablog.com/entry/service-worker-casper "HTTP/2 Push を Service Worker + Cache Aware Server Push で効率化したい話 - Block Rockin’ Codes")
 
-- localhostのSSL化問題
-	- SWがSSLじゃないと使えないのでhttps://localhost/とする必要がある
+- localhostのHTTPS化問題
+	- HTTP2がHTTPSじゃないと使えないのでhttps://localhost/とする必要がある
+	- でもlocalhostの証明書がinvalidだとSWが登録できない
+	- これを回避する安全な方法がChromeではバグッてる
+	- 危険なフラグで無理矢理開発してる。怖い。
 - SWを使ったキャッシュレイヤーがあり、Server pushでそれに必要なものを送り込む
 	- 次回のリクエストをhookしてSWがレスポンスを返せれば、実際のリクエストをしなくてよくなるという話
 - cache aware server pushの理論
