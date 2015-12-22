@@ -618,3 +618,11 @@ JTFスタイルガイドは簡単で小さなルールが60個ほどあって、
 
 個人的な感覚では辞書ベースとなる部分は人によって感覚のズレが起きやすいです。
 そういう表記揺れを統一するためのスタイルガイドですが、煩わしい場合は個別に無効化するとよさそうです。
+
+
+追記(2015-12-22): **textlint-plugin-jtf-style** は **textlint-rule-preset-jtf-style**へとリネームされました。
+
+この記事もプラグインではなく、プリセットとしてのインストール方法に変更されています。
+移行方法などについては以下を参照して下さい。
+
+- [Release 2.0.0 · azu/textlint-rule-preset-JTF-style](https://github.com/azu/textlint-rule-preset-JTF-style/releases/tag/2.0.0 "Release 2.0.0 · azu/textlint-rule-preset-JTF-style")
