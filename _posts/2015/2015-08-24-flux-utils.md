@@ -393,9 +393,9 @@ Containerで包むべきReact ComponentはRootとなるComponentとするべき�
 
 Flux Utilsでは他のFlux実装のように`setState`や`eventEmitter.emit("change")`のような部分は隠蔽されています。
 
-Flux UtilsのReduceStoreにおける**Storeの変更**とは
+Flux UtilsのReduceStoreにおける**Storeの変更**とは`reduce(state, action)`の結果が現在とは異なるstateオブジェクトである時をいいます。
 
-`reduce(state, action)`の結果 現在とは異なるstateオブジェクトが返ってきた ==> stateが変更された ==> Storeの変更イベントが発火
+現在とは異なるstateオブジェクトになった ==> stateが変更された ==> Storeの変更イベントが発火
 
 ということになっています。
 
