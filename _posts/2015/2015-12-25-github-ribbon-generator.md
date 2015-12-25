@@ -18,7 +18,7 @@ tags:
 
 [GitHub Ribbon Generator](http://azu.github.io/github-ribbon-generator/ "GitHub Ribbon Generator")というツールを作りました。
 
-[![github ribbon](http://efcl.info/wp-content/uploads/2015/12/25-1451040287.png)](http://azu.github.io/github-ribbon-generator/)
+[![github ribbon](http://efcl.info/wp-content/uploads/2015/12/25-1451045310.png)](http://azu.github.io/github-ribbon-generator/)
 
 [GitHub Ribbons](https://github.com/blog/273-github-ribbons "GitHub Ribbons")というのは、右上にあるFork Meボタンのことです。
 
@@ -228,7 +228,7 @@ ReactのPropsと同じですが、Vue.jsも`props`というの子コンポーネ
             :position="state.position"></user-input>
 ```
 
-と3つの値を渡したいでの、子となる[user-input.vue](https://github.com/azu/github-ribbon-generator/blob/master/src/component/user-input.vue "user-input.vue")では
+と3つの値を渡したいで、子となる[user-input.vue](https://github.com/azu/github-ribbon-generator/blob/master/src/component/user-input.vue "user-input.vue")では
 
 ```
 props: {
