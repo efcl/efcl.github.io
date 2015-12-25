@@ -319,7 +319,7 @@ props: {
 
 `<template>`ではその受け取った値を元に表示するHTMLを書くという感じです。
 
-Vue.jsでは`watch`プロパティに書いた キー名 = インスタンス[キー名] を監視する機能があるので、
+Vue.jsでは`watch`プロパティに書いたキー名で、Vueインスタンス[キー名] を監視する機能があるので、
 これで値が変わったらStoreの値を書き換える`Store.set*`を呼んでいます。
 ([vm.$watch](http://jp.vuejs.org/api/#vm-\$watch\(_expOrFn\,_callback\,_\[options\]_\) "vm.$watch")の宣言的なバージョンですね)
 
