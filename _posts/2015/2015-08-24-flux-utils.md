@@ -54,6 +54,8 @@ Flux Utilsは[Immutable.js](https://facebook.github.io/immutable-js/ "Immutable.
 
 そのため、今回はImmutableなstateオブジェクトとして、もう少し扱いやすい[christianalfoni/immutable-store](https://github.com/christianalfoni/immutable-store "christianalfoni/immutable-store")を利用しました。
 
+追記: immutable-storeはDEPRECATEDなので、[omniscientjs/immstruct](https://github.com/omniscientjs/immstruct "omniscientjs/immstruct")や[immutable-js](https://github.com/facebook/immutable-js "immutable-js")を使いましょう
+
 Flux Utilsを利用する場合、以下のように`flux/utils`とパスを指定して読み込むことで利用できます。
 (Facebookはこういうのが多いですが、browserifyした時とかに使ってないものが勝手に含まれないから?)
 
