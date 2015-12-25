@@ -331,7 +331,7 @@ Storeに直接setter的なメソッドが生えてますが、この辺をAction
 
 今回はFluxフレームワーク的なライブラリを使わずにEventEmitterのみで書いてます。
 
-公式でもFluxライクなフレームワークは作ってらしいので、その辺を見てみると面白いかもしれません。
+公式でもFluxライクなフレームワークは作ってるらしいので、その辺を見てみると面白いかもしれません。
 
 - [Vue.js用のFluxライクなライブラリVuexを試してみる - Qiita](http://qiita.com/tomato360/items/b2f11a392bf8fb125610)
 - [vuejs/vuex](https://github.com/vuejs/vuex)
