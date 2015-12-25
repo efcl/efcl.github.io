@@ -245,7 +245,7 @@ props: {
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Why is React&#39;s PropTypes naming inconsistent with JS? number, object, string, array — all good — but then &quot;func&quot; and &quot;bool&quot;. Um...</p>&mdash; kangax (@kangax) <a href="https://twitter.com/kangax/status/647110546194624512">September 24, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-```
+```html
 <style>
     .UserInput .UserInput-field {
         margin: 1rem 0;
