@@ -335,6 +335,7 @@ Storeに直接setter的なメソッドが生えてますが、この辺をAction
 
 - [Vue.js用のFluxライクなライブラリVuexを試してみる - Qiita](http://qiita.com/tomato360/items/b2f11a392bf8fb125610)
 - [vuejs/vuex](https://github.com/vuejs/vuex)
+- [Vue.jsにreduxを載せた話 | MMMブログ](http://blog.mmmcorp.co.jp/blog/2015/12/03/vue-with-redux/ "Vue.jsにreduxを載せた話 | MMMブログ")
 
 ## まとめ
 
