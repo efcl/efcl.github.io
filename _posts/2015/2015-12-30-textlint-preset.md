@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[textlint](https://github.com/textlint/textlint "textlint")はルールで拡張出来る自然言語向けのLintルールです。
+[textlint](https://github.com/textlint/textlint "textlint")はルールで拡張出来る自然言語向けのLintツールです。
 
 [textlint](https://github.com/textlint/textlint "textlint") [5.1.0](https://github.com/textlint/textlint/releases/tag/5.1.0 "5.1.0")でルールのプリセットをサポートしました。
 
