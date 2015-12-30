@@ -14,14 +14,14 @@ tags:
 
 [textlint](https://github.com/textlint/textlint "textlint") [5.1.0](https://github.com/textlint/textlint/releases/tag/5.1.0 "5.1.0")でルールのプリセットをサポートしました。
 
-ルールとプリセットとプラグインは以下のような関係です。
+ルール、プリセット、プラグインは以下のような関係です。
 
 - [rule](https://github.com/textlint/textlint/tree/master/docs/docs/rule.md)
     - いわゆるルール
 - [rule-preset](https://github.com/textlint/textlint/tree/master/docs/docs/rule-preset.md)
     - ルールをまとめたもの
 - [plugin](https://github.com/textlint/textlint/tree/master/docs/docs/plugin.md)
-    - ルールとプロセッサと呼ばれる拡張機能を持ってる
+    - ルールとプロセッサ(拡張機能)を持ってる
 
 ![rule-preset-plugin](https://raw.githubusercontent.com/textlint/textlint/master/docs/resources/rule-preset-plugin.png)
 
@@ -99,7 +99,7 @@ $(npm bin)/textlint README.md
 
 ### もっと優しい使い方
 
-Node.jsやGitなどに慣れてない人は以下を参考にしてみてください。
+Node.jsやGitなどに慣れてない人は以下を参考にしてください。
 (プリセットではなくルールベースですが、プリセットとルールの使い方はだいたい同じです)
 
 - [kubosho/textlint-starter-kit](https://github.com/kubosho/textlint-starter-kit)
@@ -110,7 +110,7 @@ Node.jsやGitなどに慣れてない人は以下を参考にしてみてくだ�
 
 ## プリセットの作り方
 
-プリセットの作り方は以下のドキュメントを参考にしてみてください。
+プリセットの作り方は以下のドキュメントを参考にしてください。
 
 - [textlint/rule-preset.md at master · textlint/textlint](https://github.com/textlint/textlint/blob/master/docs/rule-preset.md "textlint/rule-preset.md at master · textlint/textlint")
 
@@ -130,7 +130,7 @@ module.exports = {
 作ったプリセットは`textlint-rule-preset-<好きな名前>`で公開してください。
 (この命名規則だとtextlint-rule部分の指定を省略できます)
 
-プリセットは元々別にあるルールを集めただけの場合が多くなると思うので、依存するルールが更新された時に自動的にプリセットも更新できると便利です。
+プリセットは元々別にあるルールを集めただけの場合が多くなると思うので、依存するルールが更新された時にプリセットも更新できると便利です。
 
 [Greenkeeper](http://greenkeeper.io/ "Greenkeeper")と[semantic-release](https://github.com/semantic-release/semantic-release "semantic-release")を使うと依存するルールモジュールが更新されたら自動でPull Requestがきて、マージしたら自動的にnpm publishすることができて便利です。
 
