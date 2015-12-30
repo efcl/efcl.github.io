@@ -117,7 +117,7 @@ textlintのルールは以下のWikiにまとめてありますが、ルール�
 
 textlintのルールの作り方は以下のドキュメントに書かれています。
 
-- [textlint/create-rules.md at master · azu/textlint](https://github.com/azu/textlint/blob/master/docs/create-rules.md "textlint/create-rules.md at master · azu/textlint")
+- [textlint/create-rules.md at master · azu/textlint](https://github.com/azu/textlint/blob/master/docs/rule.md "textlint/create-rules.md at master · azu/textlint")
 
 Lintの仕組みは[ESLint](http://eslint.org/ "ESLint")と同じく、Markdown(コード)をパースしてASTにしたものをtraverseしながらそれぞれのルールに渡してチェックする仕組みをtextlintは提供しています。
 
