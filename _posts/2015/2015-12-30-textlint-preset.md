@@ -97,6 +97,14 @@ $(npm bin)/textlint README.md
 
 ![result](https://monosnap.com/file/tndweS7k0ZsrVz8yN3olPvD3l2rbTx.png)
 
+### もっとルールを加える
+
+プリセットとルールは併用可能なので、プリセットにないルールは自分で追加していくといいと思います。
+
+[textlint-rule-prh](https://github.com/azu/textlint-rule-prh "textlint-rule-prh")を使った表記揺れの検出などは効果的なルールと言えます。
+
+- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
+
 ### もっと優しい使い方
 
 Node.jsやGitなどに慣れてない人は以下を参考にしてください。
