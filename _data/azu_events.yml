@@ -198,3 +198,77 @@
   report_URL: http://efcl.info/2014/12/05/chatworkjs/
   event_title: "#chatworkjs"
 
+- date: 2014-12-18
+  title: "#JavaScript忘年会"
+  URL: http://azu.github.io/slide/pixelgrid/forget-js.html
+  report_URL: http://efcl.info/2014/12/18/pxgridjs/
+  event_title: "#pxgridjs"
+
+- date: 2015-01-15
+  title: "textlintから学んだこと"
+  URL: http://azu.github.io/slide/reactsushi/textlint.html
+  report_URL: http://efcl.info/2015/01/15/reactsushi/
+  event_title: "#reactsushi"
+
+- date: 2015-01-28
+  title: "Testium"
+  URL: http://azu.github.io/slide/e2e_sushi/testium.html
+  report_URL: http://efcl.info/2015/01/28/e2e-template-literal-sushi/
+  event_title: "#e2e_sushi"
+
+- date: 2015-03-07
+  title: "Promise Error Handling"
+  URL: http://azu.github.io/slide/error-handling/promise-error-handling.html
+  report_URL: http://efcl.info/2015/03/07/error-handling-sushi/
+  event_title: "#error_handling_sushi"
+
+- date: 2015-03-22
+  title: "Decorators進捗"
+  URL: http://azu.github.io/slide/typescript-sushi/decorators.html
+  report_URL: http://efcl.info/2015/03/22/typescript-sushi/
+  event_title: "#typescript_sushi"
+  
+- date: 2015-04-24
+  title: "10分で実装するFlux"
+  URL: http://azu.github.io/slide/react-meetup/flux.html
+  report_URL: http://efcl.info/2015/04/24/react-meetup/
+  event_title: "React.js meetup"
+  event_URL: http://reactjs-meetup.connpass.com/event/11232/
+
+- date: 2015-05-26
+  title: "われわれは、いかにして変更点を追うか"
+  URL: http://azu.github.io/slide/cto/changelog.html
+  report_URL: http://efcl.info/2015/05/26/cto_sushi/
+  event_title: "#cto_sushi"
+
+- date: 2015-05-30
+  title: "ECMAScript 6 Draft Hisotry Repo"
+  URL: http://azu.github.io/slide/ecma262reading/es6-draft.html
+  report_URL: http://efcl.info/2015/05/30/ecma-262/
+  event_title: "ECMA262読書会・1周年記念会"
+  event_URL: https://ecma262reading.doorkeeper.jp/events/25174
+
+- date: 2015-07-27
+  title: "ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト"
+  URL: http://azu.github.io/slide/assistant-bucho/test-everything.html
+  report_URL: http://efcl.info/2015/07/27/assistant-bucho/
+  event_title: "#副本部長_sushi"
+
+- date: 2015-09-27
+  title: "Markdownで書く電子書籍開発環境"
+  URL: http://azu.github.io/slide/niku_sushi/ebook_development.html
+  report_URL: http://efcl.info/2015/09/27/niku_sushi/ 
+  event_title: "#niku_sushi"
+
+- date: 2015-11-07
+  title: "技術文書をソフトウェア開発する話"
+  URL: https://azu.gitbooks.io/nodefest-technical-writing/content/
+  report_URL: http://efcl.info/2015/11/07/nodefest-2015/ 
+  event_title: "東京Node学園祭2015"
+  event_URL: http://nodefest.jp/2015/
+
+- date: 2015-12-09
+  title: "JavaScriptの素振りする技術"
+  URL: http://azu.github.io/slide/2015/year-end/javascript-swing.html
+  report_URL: http://efcl.info/2015/12/09/year-end-sushi/
+  event_title: "東京Node学園祭2015"
