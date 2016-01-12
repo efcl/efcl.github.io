@@ -96,9 +96,7 @@ textlintのLintの結果は"compact", "checkstyle", "jslint-xml", "junit", "tap"
 
 ## 文章カバレッジのモチベーション
 
-今回実装した文章カバレッジの仕組みの話です。
-
-その前に、この仕組みのモチベーションについて書いておきます。
+この仕組みのモチベーションについて書いておきます。
 
 [ESLint](http://eslint.org/ "ESLint")や[textlint](https://github.com/textlint/textlint "textlint")などのLint系に共通する話ですが、LintはCIに入れるとユニットテストに比べて、スタイルに近いチェックが多いためCIを落としやすいです。
 
