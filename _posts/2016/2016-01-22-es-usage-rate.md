@@ -149,7 +149,7 @@ ExportDefaultDeclaration| 7 (13.73%) ▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 ImportNamespaceSpecifier| 1  (1.96%) ▬▬▬
 ```
 
-当たり前な感じは`import`の方が`export`より使われているという結果が見えました。
+当たり前な感じはしますが、`import`の方が`export`より使われているという結果が見えました。
 
 `es-usage-rate`は大した処理をしてなくて、`--formatter`、`--reducer`、`--mapper`の引数で指定したスクリプトを組み合わせて欲しい形で、コードをパースした結果を吐くためのツールです。
 (`reduce`のシグネチャがイマイチなので変えるかも)
