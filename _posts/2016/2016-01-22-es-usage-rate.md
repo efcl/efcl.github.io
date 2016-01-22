@@ -594,7 +594,7 @@ json2csv -i results.json -o results.csv
 
 Numbersで読み込んで積み重ね棒グラフにしてみました。
 
-![graph](http://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)
+[![graph](http://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)](http://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)
 
 先ほども書いたように 数が多い = 使われる頻度が高い というわけではないので、
 大して意味があるグラフではないです。(こういうのはどういうグラフ使うのがいいんだろ?)
