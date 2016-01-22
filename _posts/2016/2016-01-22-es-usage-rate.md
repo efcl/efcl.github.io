@@ -18,7 +18,8 @@ tags:
 > - JavaScript/ECMAScriptを改めてどう学べばいいのか考える
   - [azu/how-to-learn-es6](https://github.com/azu/how-to-learn-es6 "azu/how-to-learn-es6")とか[#thinking_in_es6](https://twitter.com/hashtag/thinking_in_es6?src=hash "#thinking_in_es6")で考えてるやつ
 
-というのを今年考える事としてあげていたので考えるために、既存のコードがどうなってるかを見てみるという話です。
+というのを今年考える事としてあげていました。
+それを考えるために、既存のコードがどうなってるかを見てみるという話です。
 
 具体的には既存のコードを見て、そこでどういう機能/構文が多く使われているのかが分かれば、どこを中心的に学ぶと結果が出やすくなるのではという感じです。
 
@@ -30,9 +31,9 @@ tags:
 npm install -g es-usage-rate
 ```
 
-使い方
+### 使い方
 
-例えば、`es-usage-rate`がどういう機能を使って書かれてるかを見てみてます。
+例えば、`es-usage-rate`自体がどういう構文を使って書かれてるかを見てみてます。
 
 `es-usage-rate`は他のCLIと組み合わせて使う事を前提としてるので、
 デフォルトでは指定したコードをパースして、それらのAST Node typeを出力するだけです。
