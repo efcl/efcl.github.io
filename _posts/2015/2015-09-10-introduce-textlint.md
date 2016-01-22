@@ -113,6 +113,10 @@ textlintのルールは以下のWikiにまとめてありますが、ルール�
 
 - [Collection of textlint rule · azu/textlint Wiki](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule "Collection of textlint rule · azu/textlint Wiki")
 
+追記: どのルールを使えばいいか分からない！という場合はルールプリセットから始めるとよいでしょう。
+
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
+
 ## ルールを作る
 
 textlintのルールの作り方は以下のドキュメントに書かれています。
