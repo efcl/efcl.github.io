@@ -45,9 +45,12 @@ AST Node typeは以下を参照すると分かりますが、ECMAScriptの構文
 ```sh
 $ es-usage-rate "es-usage-rate/src/**/*.js"
 ImportDeclaration
-ImportSpecifier
-ImportSpecifier
-ImportDeclaration
+AssignmentExpression
+Identifier
+CallExpression
+Identifier
+Identifier
+CatchClause
 ....
 ```
 
