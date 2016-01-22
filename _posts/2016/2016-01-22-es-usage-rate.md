@@ -59,7 +59,7 @@ CatchClause
 例えば、Promiseとか構文としては新しいものではなくただのオブジェクトなので、typeだけでは区別できないと思います。
 (名前などを見れば判定はできますが面倒なのでやってないです)
 
-これを使えば標準出力には出現した回数だけ出力されるので、これを[distribution](https://github.com/philovivero/distribution "philovivero/distribution")で集計して見たりするので簡単な使い方です。
+これを使えば標準出力には出現した回数だけ出力されるので、これを[distribution](https://github.com/philovivero/distribution "philovivero/distribution")で集計して見たりするのが簡単な使い方です。
 
 ```sh
 $ git clone https://github.com/azu/es-usage-rate.git
