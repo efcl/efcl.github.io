@@ -1,3 +1,7 @@
+general:
+  branches:
+    ignore:
+      - master
 machine:
   environment:
     USER_NAME: azu
