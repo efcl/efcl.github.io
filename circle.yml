@@ -8,13 +8,11 @@ machine:
     version: 4.1.0
 dependencies:
     override:
-        - bundle install --without production --deployment
-        - npm install
+      - bundle install --without production --deployment
+      - npm install
 test:
   override:
     - npm test || ./tools/review-textlint.sh
-test:
-  post:
     - bundle exec jekyll build --trace
 deployment:
   production:
