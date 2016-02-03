@@ -1,2 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+gem 'jekyll', '~> 2.1'
+gem 'redcarpet'
+gem 'jemoji'
+gem 'jekyll-sitemap'
+gem 'rake'
+gem 'rake-jekyll'

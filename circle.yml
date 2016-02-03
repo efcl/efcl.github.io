@@ -1,6 +1,23 @@
 machine:
+  environment:
+    USER_NAME: azu
+    USER_EMAIL: azuciao@gmail.com
+  ruby:
+    version: 2.2.3
   node:
     version: 4.1.0
+dependencies:
+    override:
+        - bundle install --without production --deployment
+        - npm install
 test:
   override:
     - npm test || ./tools/review-textlint.sh
+test:
+  post:
+    - bundle exec jekyll build --trace
+deployment:
+  production:
+    branch: develop
+    commands:
+      - bundle exec rake deploy

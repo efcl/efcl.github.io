@@ -13,7 +13,7 @@
     "textlint-rule-no-start-duplicated-conjunction": "^1.0.6"
   },
   "scripts": {
-    "textlint": "git diff --name-only --diff-filter=ACMR origin/master | grep -a '_posts/.*.md$' | xargs textlint",
+    "textlint": "git diff --name-only --diff-filter=ACMR origin/develop | grep -a '_posts/.*.md$' | xargs textlint",
     "test": "npm run textlint"
   },
   "repository": {
