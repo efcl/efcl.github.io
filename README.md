@@ -1,4 +1,5 @@
-# Web Scratch [![Build Status](https://travis-ci.org/efcl/efcl.github.io.svg?branch=master)](https://travis-ci.org/efcl/efcl.github.io) [![Gitter chat](https://badges.gitter.im/efcl/efcl.github.io.png)](https://gitter.im/efcl/efcl.github.io)
+# Web Scratch [![Circle CI](https://circleci.com/gh/efcl/efcl.github.io/tree/develop.svg?style=svg)](https://circleci.com/gh/efcl/efcl.github.io/tree/develop)
+
 http://efcl.info/ のブログ用のリポジトリです。
 
 ## Installation
@@ -9,6 +10,8 @@ http://efcl.info/ のブログ用のリポジトリです。
 4. Open http://0.0.0.0:4000
 
 ## Contributing
+
+typoなどの間違いは`develop`ブランチにPull Requestして頂いて問題ありません。
 
 書いて欲しい記事のIssueを立てるだけなどでもOKです。
 

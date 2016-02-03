@@ -21,7 +21,6 @@ exclude:
   - about/node_modules
   - vendor
   - circle.yml
-  - .travis.yml
 # Setup
 author:
   name: 'azu'
