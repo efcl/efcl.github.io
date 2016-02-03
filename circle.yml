@@ -18,4 +18,6 @@ deployment:
   production:
     branch: develop
     commands:
+      - git config --global user.name "azu"
+      - git config --global user.email "azuciao@gmail.com"
       - bundle exec rake deploy
