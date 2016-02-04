@@ -9,6 +9,7 @@
         {{ page.title }} | {{ site.title }}
         {% endif %}
     </title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.tags %}
     <meta name="keywords" content="{{page.tags | join: ','}}" />
     {% else %}
@@ -25,6 +26,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
     <!-- JavaScript -->
+    {% include ogp.html %}
     {% include google_analytics.html %}
     {% include categories-list-script.html %}
 </head>
