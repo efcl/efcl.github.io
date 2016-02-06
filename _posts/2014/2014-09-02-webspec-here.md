@@ -3,7 +3,7 @@ title: "ウェブの仕様は今どこにあるのか？"
 author: azu
 layout: post
 date : 2014-09-02T07:46
-category: Web 
+category: Web
 tags:
     - Web
     - Spec
@@ -186,10 +186,7 @@ MSも[webcompat.com](http://webcompat.com/ "webcompat.com")からのバグ報告
 ----
 より詳しい(正しい)見方などがありましたらPull Requestよろしくお願いします。
 
-＜ Pull Request は   [こちらからです！](https://github.com/efcl/efcl.github.io/edit/master/_posts/2014/2014-09-02-webspec-here.md "efcl/efcl.github.io")＞
+＜ Pull Request は   [こちらからです！](https://github.com/efcl/efcl.github.io/edit/develop/_posts/2014/2014-09-02-webspec-here.md "efcl/efcl.github.io")＞
 
 
 ----
-
-
-
