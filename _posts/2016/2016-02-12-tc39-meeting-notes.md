@@ -53,17 +53,17 @@ ECMAScriptのリリース方針についてなどは以下を参照してくだ�
 
 例えば先ほどの[ECMA-262/402 2016 End-Game](https://github.com/tc39/tc39-notes/blob/master/es7/2016-01/2016-01-27.md#ecma-262402-2016-end-game "ECMA-262/402 2016 End-Game")なら、以下のように終わりに"Conclusion/Resolution"がわかりやすく書いてあります。
 
-> ECMA-262/402 2016 End-Game  
->   
-> AWB: slide (Key dates)  
-> BT: the way I want to do this, at the march meeting I want us to approve what is in master, or a snapshot. I don't want to make minor tech or editorial changes. I will make fixes if major issues exist, but otherwise I wish we can leave it as is. Leaving it as a tag  
-> ...  
-> Conclusion/Resolution
->
->    30 days before the next meeting, the final draft will be provided
->    next meeting we will vote to make it ES2016
->    start the out-patent review process, you may need to alert your organizations
-
+```
+ECMA-262/402 2016 End-Game  
+  
+AWB: slide (Key dates)  
+BT: the way I want to do this, at the march meeting I want us to approve what is in master, or a snapshot. I don't want to make minor tech or editorial changes. I will make fixes if major issues exist, but otherwise I wish we can leave it as is. Leaving it as a tag  
+...  
+Conclusion/Resolution
+   30 days before the next meeting, the final draft will be provided
+   next meeting we will vote to make it ES2016
+   start the out-patent review process, you may need to alert your organizations
+```
 
 自分は[#TC39MTG](https://twitter.com/search?f=realtime&q=%20%23TC39MTG "#TC39MTG")というハッシュタグをつけて読んでいます。
 
