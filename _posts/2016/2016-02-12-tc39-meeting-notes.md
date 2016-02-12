@@ -51,7 +51,9 @@ ECMAScriptのリリース方針についてなどは以下を参照してくだ�
 ミーティングノートは3日分がワンセットなのでちょっと多いですが、数時間あれば読める感じです。
 ちゃんとテーマごとに議論の区切りと結論が書いてあるので、気になるものだけみるならすぐ読めると思います。
 
-例えば先ほどの[ECMA-262/402 2016 End-Game](https://github.com/tc39/tc39-notes/blob/master/es7/2016-01/2016-01-27.md#ecma-262402-2016-end-game "ECMA-262/402 2016 End-Game")なら、以下のように終わりに"Conclusion/Resolution"がわかりやすく書いてあります。
+例えば、先ほどの[ECMA-262/402 2016 End-Game](https://github.com/tc39/tc39-notes/blob/master/es7/2016-01/2016-01-27.md#ecma-262402-2016-end-game "ECMA-262/402 2016 End-Game")なら、結論が"Conclusion/Resolution"にわかりやすく書いてあります。
+
+口語表現が多くてよく分からなかったら(自分は大抵そうなります)、結論からさかのぼって読むといい気がします。
 
 ```
 ECMA-262/402 2016 End-Game  
