@@ -117,7 +117,7 @@ ECMAScriptの新しいProposalを知りたいという場合は、適当なブ�
 
 ちょっと長いですが、一次情報を見ればモチベーションなどもわかるし、なんとなく見てても面白いのでおすすめです。(Conclusionだけ見ても色々分かります)
 
-少なくてもBabelで`Stage X preset`を使ってる人は一度見るといいかと思います。(ミーティノートにも度々Babelの話はでてきます)
+少なくてもBabelで`Stage X preset`を使ってる人は一度見るといいかと思います。(ミーティングノートにも度々Babelの話はでてきます)
 
 Angular 2を使ってる人も[Stage 1のDecorators](https://github.com/wycats/javascript-decorators)の上に[Stage 0のDecorators関連Proposal](http://ecmascript-daily.github.io/2016/01/28/stage0-descorator-related)があることなどを知るために見ておくべきです。
 
