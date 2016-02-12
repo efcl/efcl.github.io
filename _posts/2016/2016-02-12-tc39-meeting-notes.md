@@ -79,6 +79,8 @@ Conclusion/Resolution
 
 ![contributing](http://efcl.info/wp-content/uploads/2016/02/12-1455276798.png)
 
+typoを直すためにかなりの数コミットしたので跳ねてる…(まだtypoは残ってるのがあると思います…)
+
 ### 具体的な修正の送り方
 
 やり方も何もないですが、Markdownファイルを修正して以下のリポジトリにPull Requestを送るだけです。
