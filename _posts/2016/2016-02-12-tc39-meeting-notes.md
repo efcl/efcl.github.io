@@ -26,7 +26,7 @@ ECMAScriptのリリース方針についてなどは以下を参照してくだ�
 
 - [ECMAScript 2016 features & changes - JSer.info](http://jser.info/2016/02/01/es2016/#%E5%A4%89%E6%9B%B4%E3%82%92%E7%9F%A5%E3%82%8B%E6%96%B9%E6%B3%95 "ECMAScript 2016 features &amp; changes - JSer.info")
 
-これが"どこで"決まっているのかというと2ヶ月に1回行われているTC39のミーティングです。(どこかに物理的に集合してF2Fでやる)
+"どこで"決まっているのかというと2ヶ月に1回行われているTC39のミーティングです。(物理的に集合してF2Fでやる)
 
 - [ECMA-262/402 2016 End-Game](https://github.com/tc39/tc39-notes/blob/master/es7/2016-01/2016-01-27.md#ecma-262402-2016-end-game "ECMA-262/402 2016 End-Game")
 	- 具体的にES2016は、ここで今回のミーティングでStage 4となったものがそうだと決まった
