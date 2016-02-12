@@ -189,12 +189,19 @@ ES6はリリースするまで結局6年かかったので、もっと少しず�
 
 ## 新しいプロポーザルを提案するには
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にプロポーザルを追加してPull Requestする。Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来る。
+[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にプロポーザルを追加してPull Requestする。Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来るが、基本的にはTC39で議論してからPull Requestする。
 
 - [Contributing New Proposals](https://github.com/tc39/ecma262#contributing-new-proposals "Contributing New Proposals")
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ECMAScriptに仕様提案までのフロー(Ecma非会員の場合)&#10;1. 仕様策定のプロセスを理解しましょう&#10;2. フォームから必要な情報送ってルールに同意してね &#10;3. ProposalをPull Requestしましょう&#10;<a href="https://t.co/vTcqEPzzBg">https://t.co/vTcqEPzzBg</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/652419947059150848">October 9, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+決まったパターンがあるわけではなく最終的にPull Requestでマージされるというのが決まっているだけ。
+
+よくある流れとしては
+
+1. [ES Discuss](https://esdiscuss.org/ "ES Discuss")(ML)で議論
+2. 2ヶ月に1回のTC39ミーティングで議題に取り上げる
+3. TC39でそのプロポーザルをStage 0でOKと承認する(たまにStage 1からとかもある)
+4. [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にPull Request
+5. マージ
 
 ## ECMAScriptとGitHub
 
@@ -236,6 +243,8 @@ Draft 1は基本的にはES2015と同じで、細かいバグ修正のみ。そ�
 - [tc39/ecmascript-asyncawait](https://github.com/tc39/ecmascript-asyncawait)
 - [tc39/Array.prototype.includes](https://github.com/tc39/Array.prototype.includes/)
 - [rwaldron/exponentiation-operator](https://github.com/rwaldron/exponentiation-operator)
+
+追記(2016-02-12): 実際に入るものが決まった => [ECMAScript 2016 features & changes - JSer.info](http://jser.info/2016/02/01/es2016/#%E5%A4%89%E6%9B%B4%E3%82%92%E7%9F%A5%E3%82%8B%E6%96%B9%E6%B3%95 "ECMAScript 2016 features &amp; changes - JSer.info")
 
 2016年1月までにある[ミーティング](https://github.com/tc39/agendas)は2回。
 
