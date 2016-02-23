@@ -26,10 +26,13 @@ tags:
 
 自分はチーム開発でReact + 何かを採用するときにどういうフローで話を進めていってるかについてを話しました。
 まだ結論はないですが、Flux的な何かを採用したからといって設計がすごく簡単になるという話ではないです。
+
 またStoreはただの入れ物的な使い方をした場合に、ドメイン層はActionCreator的な部分が持つのか、それはどうやって扱うのかという部分がふわふわしているという話になりました。
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">StoreはただのViewのためのStateという感じ。<br>その場合にドメイン層をどこに書くかが皆迷うところ。 <a href="https://twitter.com/hashtag/reject_sushi?src=hash">#reject_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/702105875771555840">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+なんとなくのレイヤー分けは見えてきていますが、それを説明するのにはまだ何か(サンプル?実例?体系化?)が足りてないのかなーという印象です。
 
 以下のスライドも見てみると面白いかもしれません。
 
@@ -37,7 +40,7 @@ tags:
 
 また最近[今日からはじめる情報設計](http://www.amazon.co.jp/dp/4802510012/ "今日からはじめる情報設計")や[エンジニアのための図解思考](http://www.amazon.co.jp/dp/B00EESW7OG/ "エンジニアのための図解思考")的な本を読んでいたので、そういった情報の扱い方や表現という話も兼ねています。
 
-## Rails と npm @ mizchi
+## Rails と Node.js @ mizchi
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">browserify-railsとtsify問題 <a href="https://twitter.com/hashtag/reject_sushi?src=hash">#reject_sushi</a></p>&mdash; サスケ (@kyo_ago) <a href="https://twitter.com/kyo_ago/status/702089989887172609">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
