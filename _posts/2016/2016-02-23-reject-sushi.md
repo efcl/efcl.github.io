@@ -90,7 +90,7 @@ tags:
 
 - async/await
 	- try/catchでハンドリングしないと行けないのは複雑になる可能性
-	- GoLangのように多値を変えるEither的なアプローチで解決できなかったのか
+	- GoLangのように多値を返すアプローチで解決できなかったのか
 	- [Option/Maybeとかで解決していることを、さながらgolangのようにES6のdestructuring assignmentで解決する - snyk_s log](http://saneyukis.hatenablog.com/entry/2015/03/22/184823 "Option/Maybeとかで解決していることを、さながらgolangのようにES6のdestructuring assignmentで解決する - snyk_s log")
 - WebComponents
 	- 名前がでかすぎて何から手を出せばいいのかよくわからなくなる問題
