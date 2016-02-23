@@ -24,6 +24,9 @@ tags:
 	
 ## [How to work as a Team](http://azu.github.io/slide/2016/reject-sushi/how-to-work-team.html "How to work as a Team") @ azu
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/reject_sushi?src=hash">#reject_sushi</a> で発表したReact+Flux的な何かの意思決定と情報設計の話。  &quot;How to work as a Team&quot;  <a href="https://t.co/qM4iyipRFS">https://t.co/qM4iyipRFS</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/702138441681637376">February 23, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 自分はチーム開発でReact + 何かを採用するときにどういうフローで話を進めていってるかについてを話しました。
 まだ結論はないですが、Flux的な何かを採用したからといって設計がすごく簡単になるという話ではないです。
 
