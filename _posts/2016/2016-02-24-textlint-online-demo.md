@@ -33,6 +33,10 @@ textlintの公式サイトというがオンラインデモページを作成し
 
 Deku v2は最小限のAPIでReduxと合わせて使いやすい作りなので、初めてReduxを触るときはReact([react-redux](https://github.com/reactjs/react-redux "react-redux"))と合わせて使うよりもシンプルで理解しやすいかもしれません。
 
+最近のtextlintを3分で把握できるスライドも書いたので、どんな感じのものをかをぱっと知りたい方は見ると面白いかもしれません。
+
+- [3分でわかるtextlint](http://azu.github.io/slide/2016/reject-sushi/textlint.html "3分でわかるtextlint")
+
 ## デザイン
 
 ![logo](https://textlint.github.io/media/logo/textlint-logo.png)
