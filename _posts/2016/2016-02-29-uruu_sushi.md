@@ -13,7 +13,9 @@ tags:
 
 うるう年なので[#uruu_sushi](https://twitter.com/hashtag/uruu_sushi?src=hash "#uruu_sushi")を食べてきた。
 
-脆弱性報告者
+- [#uruu_sushi - Togetterまとめ](http://togetter.com/li/944473 "#uruu_sushi - Togetterまとめ")
+
+脆弱性報告
 
 - バグハンティング
 - [HackerOne: Vulnerability Coordination and Bug Bounty Platform](https://hackerone.com/ "HackerOne: Vulnerability Coordination and Bug Bounty Platform")
