@@ -57,6 +57,36 @@ Case
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">XSSとかSQLiとかはどんどん減ってきてる。今はアクセス権問題が割合として増えてきている <a href="https://twitter.com/hashtag/uruu_sushi?src=hash">#uruu_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/704290564158525440">February 29, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+## 仕様とセキュリティ - azu
+
+セキュリティな問題のある仕様の変更や、
+現実の実装に合わせた仕様の定義とうような変更があったよ的な話をしました。
+
+- `Object.prototype.` hijack
+- [How should browsers mitigate Proxy-related security issues? · Issue #272 · tc39/ecma262 | ECMAScript Daily](http://ecmascript-daily.github.io/2015/12/26/how-should-browsers-mitigate-proxy-related-security-issues-issue-272-tc39-ecma262 "How should browsers mitigate Proxy-related security issues? · Issue #272 · tc39/ecma262 | ECMAScript Daily")
+
+```html
+<script>
+window.__proto__ = Proxy.create({
+    get: function(target, name) {
+	    console.log("data=" + name)
+	}
+});
+</script>
+<script src="http://victim/test.csv"></script>
+```
+
+- POC on Chrome(`chrome://flags/#enable-javascript-harmony`)
+- Changed in ES2016 Draft 2016-02-15
+
+> `Object.prototype` is an immutable prototype exotic object.   
+> -- [Release ES2016 Draft 2016-02-15 · tc39/ecma262](https://github.com/tc39/ecma262/releases/tag/es2016-draft-20160215 "Release ES2016 Draft 2016-02-15 · tc39/ecma262")
+
+
+- WHATWG HTML define Window
+- [Define security around Window, WindowProxy, and Location properly · whatwg/html@acae3df](https://github.com/whatwg/html/commit/acae3df652b382e9f4f1d1b4dc7e08e2b00df821 "Define security around Window, WindowProxy, and Location properly · whatwg/html@acae3df")
+
+
 	
 ## Node.js と ES6 modules
 
