@@ -44,12 +44,19 @@ Case
 - 安全にファイルダウンロードを実装するのは難しい
 - ServiceWorkerは本当に安全?
 - HTMLをHTTPSでホスティングするサービスで何か悪さができてしまわないか
+- 普通にウェブサイトで普通のXSSというような問題は少なくなってきてる
+- Railsのようなフレームワークに普通に乗っていればそういう問題はおこりにくい
 - ブラウザというサンドボックスはある程度安全
 	- そこから外れたものを作った場合に問題が起こりやすい
 	- Electron, Firefox OS
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/uruu_sushi?src=hash">#uruu_sushi</a> これの話  &quot;Firefox OS is not helping the web — Anne’s Blog&quot;  <a href="https://t.co/XhdnAdaDTX">https://t.co/XhdnAdaDTX</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/704275123025477632">February 29, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">XSSとかSQLiとかはどんどん減ってきてる。今はアクセス権問題が割合として増えてきている <a href="https://twitter.com/hashtag/uruu_sushi?src=hash">#uruu_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/704290564158525440">February 29, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 	
 ## Node.js と ES6 modules
 
@@ -83,9 +90,6 @@ Case
 	- セキュリティ業界が最新のウェブに疎く見える問題
 	- ウェブ側もセキュリティをよくわからない問題
 - 間に繋ぐような人が重要という話
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">XSSとかSQLiとかはどんどん減ってきてる。今はアクセス権問題が割合として増えてきている <a href="https://twitter.com/hashtag/uruu_sushi?src=hash">#uruu_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/704290564158525440">February 29, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## おわり
 
