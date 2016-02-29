@@ -17,7 +17,7 @@ tags:
 
 脆弱性報告
 
-- バグハンティング
+- バグハンター
 - [HackerOne: Vulnerability Coordination and Bug Bounty Platform](https://hackerone.com/ "HackerOne: Vulnerability Coordination and Bug Bounty Platform")
 - Bug Bountyのプラットフォームなども最近できてきた
 	- 報告者/企業のレーティングなどができる
@@ -31,8 +31,8 @@ tags:
 
 報奨金制度
 
-- バグハンティング同士、企業間同士の脆弱性に関する情報共有する場所がない
-- 脆弱性報告により新しい攻撃方法を知ることがある
+- バグハンター同士、企業間同士の脆弱性に関する情報共有する場所がない
+- 報告を受け付ける側も脆弱性報告により新しい攻撃方法を知ることがある
 	- 関連サービスに同様の問題があり、そちらを直すことができる
 - [共通脆弱性評価システムCVSS](https://www.ipa.go.jp/security/vuln/CVSS.html "共通脆弱性評価システムCVSS")
 - ドメインに依存しないので、指標として扱いやすい
