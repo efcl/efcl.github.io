@@ -16,6 +16,66 @@ tags:
 
 ## ASTとは
 
+[![AST](http://efcl.info/wp-content/uploads/2016/03/06-1457240557.png)](http://azu.github.io/slide/JSojisan/#8)
+
+AST(Abstract Syntax Tree)はコードをパースした抽象構文木のこと。
+JavaScriptの場合はJavaScriptオブジェクト(JSON)として表現されます。
+
+コード:
+
+```js
+var a = 1;
+```
+
+AST:
+
+```json
+{
+  "range": [
+    0,
+    10
+  ],
+  "type": "Program",
+  "body": [
+    {
+      "range": [
+        0,
+        10
+      ],
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "range": [
+            4,
+            9
+          ],
+          "type": "VariableDeclarator",
+          "id": {
+            "range": [
+              4,
+              5
+            ],
+            "type": "Identifier",
+            "name": "a"
+          },
+          "init": {
+            "range": [
+              8,
+              9
+            ],
+            "type": "Literal",
+            "value": 1,
+            "raw": "1"
+          }
+        }
+      ],
+      "kind": "var"
+    }
+  ],
+  "sourceType": "module"
+}
+```
+
 - [カジュアルJavaScript AST](http://azu.github.io/slide/JSojisan/)
 - [JavaScript AST Walker](http://azu.github.io/slide/tkbjs/js-ast-walker.html)
 
