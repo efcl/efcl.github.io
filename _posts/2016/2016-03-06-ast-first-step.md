@@ -67,7 +67,7 @@ BabylonはEStreeの仕様外について積極的にサポートしているた�
 	- [estraverse](https://github.com/estools/estraverse "estraverse")、[ast-types](https://github.com/benjamn/ast-types#ast-traversal "ast-types")、[babel-traverse](https://github.com/babel/babel/tree/master/packages/babel-traverse "babel-traverse")
 	- [estree-walker](https://github.com/Rich-Harris/estree-walker "estree-walker")、[esrecurse](https://github.com/estools/esrecurse "esrecurse")
 	- どのライブラリもほぼおなじものを持っている
-- ASTからJSのコードを生成する(チェックのみの場合はここは不要)
+- ASTからJSのコードを生成する(チェックのみの場合は不要)
 	- [escodegen](https://github.com/estools/escodegen "escodegen")、[babel-generator](https://www.npmjs.com/package/babel-generator "babel-generator")を使う
 	- ジェネレータはパーサと合わせたツールが必要
 	- Esprimaならescodegen、babelならbabel-generator
