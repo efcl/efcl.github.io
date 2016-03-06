@@ -112,3 +112,16 @@ eval("var a = 20")
 安全でないことが分かったら実行は諦める。
 
 というような考え方でやるのがよくあるケースだと思います。
+
+## おわりに
+
+上記のようなチェックツールを書くには、まず[ESLint](http://eslint.org/ "ESLint")のルールを見てみるのが参考になるはずです。
+
+書き換えをしたい場合はそのまま書き換えるとASTのTree内で不整合が起きて大変になります。
+[jscodeshift](https://github.com/facebook/jscodeshift "jscodeshift")や[ast-types](https://github.com/benjamn/ast-types#ast-traversal "ast-types")などのライブラリが使えないか検討してみてください。
+
+また、同様の機能を持つツールがどういうライブラリを使っているかを調べてみるのが近道になるはずです。
+例えば、モジュールbundleツールの[rollup](https://github.com/rollup/rollup "rollup")は[magic-string](https://github.com/Rich-Harris/magic-string "magic-string")というライブラリで文字列の操作をしていることが分かります。
+
+現在のASTの状況はESTreeより先のデファクトがないため新しい構文を扱おうとすると色々考えることが出てきます。
+そういった時には[ast-source](https://github.com/azu/ast-source "ast-source")のような抽象層が必要になってくるかもしれません。
