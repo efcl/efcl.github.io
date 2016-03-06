@@ -89,7 +89,9 @@ ESTreeというデファクトスタンダードがあります(ES6までは定�
 
 - Babel、Esprima、Acorn などどれもES6のレベルまでなら同じASTを吐く
 - `token`、`range`、コメントのいち情報周りの扱いがパーサによって異なる
-- ASTの範囲内ならどのパーサでも同じ
+- ESTreeで定義されているASTの範囲内ならどのパーサでも殆ど同じ
+	- `Literal`やGeneratorに関してパーサ間で解釈が異なるため議論中です
+	- [Proposal to potentially incorporate changes to existing nodes · Issue #120 · estree/estree](https://github.com/estree/estree/issues/120 "Proposal to potentially incorporate changes to existing nodes · Issue #120 · estree/estree")
 
 ## パーサ
 
