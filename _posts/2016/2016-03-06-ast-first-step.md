@@ -98,6 +98,7 @@ ESTreeというデファクトスタンダードがあります(ES6までは定�
 - [Babylon](https://github.com/babel/babel/tree/master/packages/babylon "Babylon")
 	- Babelで使われてるAcorn派生のパーサ
 	- まだ[仕様として入るか分からないStage](http://azu.github.io/slide-what-is-ecmascript/slide/12.html "TC39 Process: Stage | ECMAScriptとは何か？")の構文も対応している
+	- 注意: 逆にESTree仕様外の拡張も指定しているため、ESTree互換ではないです。
 - [Esprima](http://esprima.org/ "Esprima")
 	- [ast-types](https://github.com/benjamn/ast-types "ast-types")
 - [Acorn](https://github.com/ternjs/acorn "Acorn")
