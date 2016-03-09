@@ -8,6 +8,7 @@ tags:
     - security
     - JavaScript
     - browser
+    - イベント
 
 ---
 
