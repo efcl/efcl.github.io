@@ -18,8 +18,7 @@ tags:
 <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 <h2>前菜</h2>
 <p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" title="Array.prototype.reduce">Array.prototype.reduce</a> について発表しました。</p>
-<p><script src="http://glide.so/azu/6919649.js"></script></p>
-<p><a href="http://glide.so/azu/6919649" title="azu / Array.prototype.reduce Dance - Glide">azu / Array.prototype.reduce Dance &#8211; Glide</a></p>
+<p>スライド: <a href="http://azu.github.io/slide/JSGohan/reduce.html">Array.prototype.reduce Dance</a></p>
 <p>サンプルコードとテストは<a href="https://github.com/azu/ReduceDance" title="azu/ReduceDance">azu/ReduceDance</a>にあります。</p>
 <ul>
 <li>reduce 単体だとイマイチ良さがわからない</li>
