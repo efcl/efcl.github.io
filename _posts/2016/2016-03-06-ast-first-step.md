@@ -95,7 +95,7 @@ ESTreeというデファクトスタンダードがあります(ES6までは定�
 
 ## パーサ
 
-- [Babylon](https://github.com/babel/babel/tree/master/packages/babylon "Babylon")
+- [Babylon](https://github.com/babel/babylon "babylon")
 	- Babelで使われてるAcorn派生のパーサ
 	- まだ[仕様として入るか分からないStage](http://azu.github.io/slide-what-is-ecmascript/slide/12.html "TC39 Process: Stage | ECMAScriptとは何か？")の構文も対応している
 	- 注意: 逆にESTree仕様外の拡張もしているため、ESTree互換ではないです。
@@ -125,7 +125,7 @@ BabylonはEStreeの仕様外について積極的にサポートしているた�
 ## よくある流れ
 
 - パーサでコードをパースしてASTにする
-	- [Babylon](https://github.com/babel/babel/tree/master/packages/babylon "Babylon")、[Esprima](http://esprima.org/ "Esprima")、[Acorn](https://github.com/ternjs/acorn "Acorn")、[espree](https://github.com/eslint/espree "espree")
+	- [babylon](https://github.com/babel/babylon "babylon")、[Esprima](http://esprima.org/ "Esprima")、[Acorn](https://github.com/ternjs/acorn "Acorn")、[espree](https://github.com/eslint/espree "espree")
 - ASTをtraverseして処理(変換、チェック)する
 	- [estraverse](https://github.com/estools/estraverse "estraverse")、[ast-types](https://github.com/benjamn/ast-types#ast-traversal "ast-types")、[babel-traverse](https://github.com/babel/babel/tree/master/packages/babel-traverse "babel-traverse")
 	- [estree-walker](https://github.com/Rich-Harris/estree-walker "estree-walker")、[esrecurse](https://github.com/estools/esrecurse "esrecurse")
