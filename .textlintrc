@@ -1,10 +1,7 @@
 {
   "rules": {
-    "spellcheck-tech-word": true,
-    "no-mix-dearu-desumasu": true,
-    "no-start-duplicated-conjunction": {
-      "interval": 2
-    },
-    "no-doubled-joshi": true
+  	"preset-jtf-style": true,
+  	"spellcheck-tech-word": true,
+  	"common-misspellings": true
   }
 }

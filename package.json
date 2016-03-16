@@ -7,10 +7,13 @@
     "textlint-rule-spellcheck-tech-word": "^4.1.0"
   },
   "devDependencies": {
-    "textlint": "^5.0.2",
+    "textlint": "^6.0.1-0",
+    "textlint-rule-common-misspellings": "^1.0.1",
     "textlint-rule-no-doubled-joshi": "^1.2.3",
     "textlint-rule-no-mix-dearu-desumasu": "^1.0.1",
-    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6"
+    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6",
+    "textlint-rule-preset-jtf-style": "^2.1.1",
+    "textlint-rule-spellcheck-tech-word": "^4.2.0"
   },
   "scripts": {
     "textlint": "git diff --name-only --diff-filter=ACMR origin/develop | grep -a '_posts/.*.md$' | xargs textlint",
