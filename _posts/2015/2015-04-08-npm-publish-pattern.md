@@ -30,7 +30,7 @@ zshの関数とaliasですが、基本的にただのコマンドの組み合わ
 
 (今後gistの方を更新するかもしれないので、記事中に書かれてるものよりgistの方が最新です)
 
-<script src="https://gist.github.com/azu/fb3ec88231235511858a.js"></script>
+<script src="https://gist.github.com/azu/7d997a658950559f7d5d.js"></script>
 
 大まかな流れは
 
