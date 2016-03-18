@@ -15,16 +15,18 @@ textlint 6.0をリリースしました。
 
 - [Release 6.0: --fix to be stable · textlint/textlint](https://github.com/textlint/textlint/releases/tag/6.0.1 "Release 6.0: --fix to be stable · textlint/textlint")
 
-モジュールとして使っている場合に、細かな破壊的な変更がありますが、ツールとして使っている人は単純に`npm install textlint@6 -D`などでアップデートすれば動くと思います。
+モジュールとして使っている場合に、細かな破壊的な変更があります。
+ツールとして使っている人は単純に`npm install textlint@6 -D`などでアップデートすれば動くと思います。
 
 ## `--fix`による自動修正の対応
 
 [5.5.3: --fix & --experimental support](https://github.com/textlint/textlint/releases/tag/5.5.3 "5.5.3: --fix &amp; --experimental support")で`--fix`による自動修正機能を実験的にサポートしていました。
+
 6.0では`--fix`を`--experimental`フラグなしで利用できるようになりました。
 
 自動修正はルール側で対応が必要 かつ 原理的に自動修正が難しいルールもあると思うので、あくまでサポート的な機能です。
 
-[Wiki](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule)にまとめてあるルールのうち、✔ fixableマークが付いてるものは対応している形です。
+[Wiki](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule)にまとめてあるルールのうち、✔ fixableマークが付いてるものは対応しています。
 
 対応しているルールをfixableルールと呼んでいて、以下のバッジをつけています。
 
@@ -40,15 +42,16 @@ textlint 6.0をリリースしました。
 - [nodaguti/textlint-rule-spellchecker: textlint rule to check spellings with native spellchecker](https://github.com/nodaguti/textlint-rule-spellchecker)
 - [nodaguti/textlint-rule-ginger: textlint rule to check your English grammar with Ginger Proofreading](https://github.com/nodaguti/textlint-rule-ginger)
 
-fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.info/2015/09/14/textlint-rule-prh/)や[JTF日本語標準スタイルガイドを使った表記の統一](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)など、辞書ベースやスタイルの統一を自動的にできるようになるのが利点です。
+fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.info/2015/09/14/textlint-rule-prh/)や[JTF日本語標準スタイルガイドを使った表記の統一](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)など、辞書ベースやスタイルの統一を簡単になるのが利点です。
 
 逆に表現的なものをチェックするルールは自動修正が難しく、頑張ってもサジェストのような推敲支援になると思います。
 
 - [東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch](http://efcl.info/2015/11/07/nodefest-2015/ "東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch")
 - [校正と推敲 | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/slide/90.html "校正と推敲 | 技術文書をソフトウェア開発する話")
+- [編集は「自動化」されていく仕事なのか　編集者のためのイベント「編む庭 」レポ【前編】 - はてな編集部ブログ「編む庭」](http://editor.hatenastaff.com/entry/2016/03/17/113000 "編集は「自動化」されていく仕事なのか　編集者のためのイベント「編む庭 」レポ【前編】 - はてな編集部ブログ「編む庭」")
 
 [textlint](https://github.com/textlint/textlint "textlint")は校正支援として始めたツールなので、まだ推敲支援のような要素は入っていません。
-以下のIssueでそのようなサジェストをどう扱うかについて話し合ってるので興味がある人は見てみてください。
+以下のIssueでそのようなサジェストをどう扱うかについて話し合ってるので興味がある人は見てください。
 
 - [Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint](https://github.com/textlint/textlint/issues/158 "Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint")
 
@@ -57,7 +60,7 @@ fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.i
 
 - [Document: add "How to test your rule?" · Issue #136 · textlint/textlint](https://github.com/textlint/textlint/issues/136 "Document: add &#34;How to test your rule?&#34; · Issue #136 · textlint/textlint")
 
-使ってみてバグを見つけたら、それは特定のルールのバグであるならそちらへ、そうでなくて`textlint`のバグであるならtextlintに報告してください。
+使用してバグを見つけたら、それは特定のルールのバグであるならそちらへ、そうでなくて`textlint`のバグであるならtextlintに報告してください。
 
 バグ報告の仕方については以下を参考にしてください。
 
@@ -82,7 +85,7 @@ cd efcl.github.io
 - [io-monad/textlint-rule-common-misspellings: textlint rule to check common misspellings](https://github.com/io-monad/textlint-rule-common-misspellings)
 
 ```
-npm i -D textlint@beta textlint-rule-preset-jtf-style textlint-rule-spellcheck-tech-word textlint-rule-common-misspellings
+npm i -D textlint textlint-rule-preset-jtf-style textlint-rule-spellcheck-tech-word textlint-rule-common-misspellings
 ```
 
 インストールし終わったら、`.textlintrc`にインストールしたルールを使うように設定します。
@@ -124,11 +127,11 @@ Try to run: $ textlint --fix [file]
 デフォルトのformatterである`-f stylish` または `-f pretty-error`では、
 Lintの結果にそのうち自動修正できるエラーの数を表示してくれます。
 
-この数値は実際に修正できる数とは必ずしも一致しません。ルール間は独立していているので、重複や衝突が存在しているためです。基本的には衝突しないように修正を逐次的に処理していく形になります。
+この数値は実際に修正できる数とは必ずしも一致しません。ルール間は独立しているので、重複や衝突が存在しているためです。基本的には衝突しないように修正を逐次的に処理していく形になります。
 
 このエラーを実際に`--fix`で修正してみたいと思います。
 
-修正する前に、対象のファイルは必ず元に戻せるようにバックアップを取るかGitにコミットしておくなどしてください。
+修正する前に、対象のファイルは必ず復元できるように、バックアップを取るかGitにコミットしておくなどしてください。
 また、`--dry-run`オプションを使うことで、実際にファイルの上書きはしないでどのような変更が行われるかを見ることができます。
 
 変更を比較する場合は `-f diff` でdiff表示をするformatterを利用すると分かりやすいです。
@@ -224,7 +227,7 @@ textlint --init
 var ruleError = new context.RuleError("Found rule error", { index: paddingIndex });
 ```
 
-正確なエラーの位置を簡単に指定するために追加しました。
+正確なエラーの位置を簡単に指定できます。
 今まで通り、`column`と`line`の組み合わせでも問題ないですが、`column`単独の指定は`index`に書き換える事を推奨しています。
 
 - [textlint/rule.md at master · textlint/textlint](https://github.com/textlint/textlint/blob/master/docs/rule.md#ruleerror "textlint/rule.md at master · textlint/textlint")
@@ -280,7 +283,7 @@ Atomプラグインとして[linter-textlint](https://github.com/1000ch/linter-t
 
 ## 開発メモ
 
-`--fix`は5.5から使えたのですが、色々APIデザインを変更する可能性があったのでexperimentalフラグを付けてリリースしていました。
+`--fix`は5.5から使えたのですが、色々APIデザインを変更する可能性があったのでexperimentalフラグを付けてリリースしました。
 
 浅いイテレーションをするには
 
@@ -309,6 +312,6 @@ Atomプラグインとして[linter-textlint](https://github.com/1000ch/linter-t
 
 - 本体のBreaking Changeに依存したプラグインの変更をうまく扱う方法がない
 - なので本体のBreaking Changeはなるべく小さく、単独でリリースする
-  - プラグインがすぐに追従できるような大きさに収めるべき
+  - プラグインがすぐに追従できるような変更の粒度を考える
 
 という感じになっています。
