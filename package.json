@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "efcl.info",
   "main": "index.js",
-  "dependencies": {
-    "textlint-rule-spellcheck-tech-word": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "textlint": "^5.0.2",
-    "textlint-rule-no-doubled-joshi": "^1.2.3",
+    "textlint": "^6.0.1",
+    "textlint-rule-no-doubled-joshi": "^3.2.0",
     "textlint-rule-no-mix-dearu-desumasu": "^1.0.1",
-    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6"
+    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "scripts": {
     "textlint": "git diff --name-only --diff-filter=ACMR origin/develop | grep -a '_posts/.*.md$' | xargs textlint",
