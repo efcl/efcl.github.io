@@ -11,12 +11,17 @@ tags:
 
 ---
 
-textlint 6.0をリリースしました。
+[textlint](https://textlint.github.io/ "textlint") 6.0をリリースしました。
 
 - [Release 6.0: --fix to be stable · textlint/textlint](https://github.com/textlint/textlint/releases/tag/6.0.1 "Release 6.0: --fix to be stable · textlint/textlint")
 
 モジュールとして使っている場合に、細かな破壊的な変更があります。
 ツールとして使っている人は単純に`npm install textlint@6 -D`などでアップデートすれば動くと思います。
+
+textlint自体については以下を見てください。
+
+- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/)
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/)
 
 ## `--fix`による自動修正の対応
 
