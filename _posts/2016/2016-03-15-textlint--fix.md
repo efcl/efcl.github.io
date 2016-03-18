@@ -13,7 +13,9 @@ tags:
 
 textlint 6.0をリリースしました。
 
-モジュールとして使っている場合に、細かな破壊的な変更がありますが、ツールとして使っている人は単純に`npm install textlint -D`などでアップデートすれば動くと思います。
+- [Release 6.0: --fix to be stable · textlint/textlint](https://github.com/textlint/textlint/releases/tag/6.0.1 "Release 6.0: --fix to be stable · textlint/textlint")
+
+モジュールとして使っている場合に、細かな破壊的な変更がありますが、ツールとして使っている人は単純に`npm install textlint@6 -D`などでアップデートすれば動くと思います。
 
 ## `--fix`による自動修正の対応
 
@@ -49,6 +51,18 @@ fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.i
 以下のIssueでそのようなサジェストをどう扱うかについて話し合ってるので興味がある人は見てみてください。
 
 - [Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint](https://github.com/textlint/textlint/issues/158 "Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint")
+
+また`--fix`はread onlyなlintと違ってwrite処理であるため、バグを作りやすいです。
+自分もリリースしてからあるルールでバグがあることに気づいたので、そういうのテストする方法については以下で話し合っています。
+
+- [Document: add "How to test your rule?" · Issue #136 · textlint/textlint](https://github.com/textlint/textlint/issues/136 "Document: add &#34;How to test your rule?&#34; · Issue #136 · textlint/textlint")
+
+使ってみてバグを見つけたら、それは特定のルールのバグであるならそちらへ、そうでなくて`textlint`のバグであるならtextlintに報告してください。
+
+バグ報告の仕方については以下を参考にしてください。
+
+- [textlint Bug Reporting](https://gist.github.com/azu/913454a54ea8ef59ba30 "textlint Bug Reporting")
+- [textlint/CONTRIBUTING.md at master · textlint/textlint](https://github.com/textlint/textlint/blob/master/CONTRIBUTING.md#bug-reporting "textlint/CONTRIBUTING.md at master · textlint/textlint")
 
 ## Fixableルール
 
