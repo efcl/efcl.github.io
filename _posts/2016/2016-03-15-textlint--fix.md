@@ -279,6 +279,8 @@ Breaking Changeはほとんどのユーザには関係ないものだと思い�
 - [文書校正ツール textlint の Chrome 拡張を作った - もなでぃっく](http://io-monad.hatenablog.com/entry/2016/03/14/225800 "文書校正ツール textlint の Chrome 拡張を作った - もなでぃっく")
 - [textlint: 文章チェッカー - Chrome ウェブストア](https://chrome.google.com/webstore/detail/textlint-proofreader/hdongmdneapmhfblomidbafplpanpdmm?hl=ja&gl=JP "textlint: 文章チェッカー - Chrome ウェブストア")
 
+![textlint on chrome](https://monosnap.com/file/LTo4HPrWD0k8fzfC8J9PRf0dNSJerG.png)
+
 Chrome拡張として`textlint`を動かすものが出てきたので、Node.jsを入れなくても
 ブラウザでインストールしてGUIで設定できるので簡単に使うことができます。
 
