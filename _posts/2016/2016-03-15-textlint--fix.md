@@ -164,7 +164,7 @@ $(npm bin)/textlint _posts --fix
 
 ## textlint v5からv6の変更点
 
-[textlint 5.0.0までの変更点](http://efcl.info/2015/11/20/textlint5.0.0/ "textlint 5.0.0")はいぜん書いたので、5.0から6.0までにあった変更点を列挙してみます。
+[textlint 5.0.0までの変更点](http://efcl.info/2015/11/20/textlint5.0.0/ "textlint 5.0.0")については以前書いたので、5.0から6.0までにあった変更点を列挙してみます。
 
 ### [5.1.0](https://github.com/textlint/textlint/releases/tag/5.1.0 "5.1.0")
 
