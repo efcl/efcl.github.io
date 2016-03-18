@@ -61,11 +61,16 @@ fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.i
 - [Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint](https://github.com/textlint/textlint/issues/158 "Feature Request: Multiple fix results and interactive fix · Issue #158 · textlint/textlint")
 
 また`--fix`はread onlyなlintと違ってwrite処理であるため、バグを作りやすいです。
-自分もリリースしてからあるルールでバグがあることに気づいたので、そういうのテストする方法については以下で話し合っています。
+自分もリリースしてからあるルールでバグがあることに気づいたので、そういうのをテストする方法については以下で話し合っています。
 
 - [Document: add "How to test your rule?" · Issue #136 · textlint/textlint](https://github.com/textlint/textlint/issues/136 "Document: add &#34;How to test your rule?&#34; · Issue #136 · textlint/textlint")
 
-使用してバグを見つけたら、それは特定のルールのバグであるならそちらへ、そうでなくて`textlint`のバグであるならtextlintに報告してください。
+使用してバグを見つけたら、
+
+- それが特定のルールのバグであるならルールのリポジトリへ
+- そうでなくて`textlint`のバグであるなら[textlint](https://textlint.github.io/ "textlint")へ
+
+報告してください。
 
 バグ報告の仕方については以下を参考にしてください。
 
