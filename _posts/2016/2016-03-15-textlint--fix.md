@@ -281,8 +281,7 @@ Breaking Changeはほとんどのユーザには関係ないものだと思い�
 
 ![textlint on chrome](https://monosnap.com/file/LTo4HPrWD0k8fzfC8J9PRf0dNSJerG.png)
 
-Chrome拡張として`textlint`を動かすものが出てきたので、Node.jsを入れなくても
-ブラウザでインストールしてGUIで設定できるので簡単に使うことができます。
+Chrome拡張として動くので、Node.jsを入れなくてもブラウザにインストールしてGUIで設定できるので簡単に使うことができます。
 
 - [Nkzn/textlint-prh-template: A writing environment watched by textlint & prh](https://github.com/Nkzn/textlint-prh-template "Nkzn/textlint-prh-template: A writing environment watched by textlint &amp; prh")
 
