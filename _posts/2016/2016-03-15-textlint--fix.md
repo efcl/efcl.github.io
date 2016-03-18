@@ -249,9 +249,9 @@ var ruleError = new context.RuleError("Found rule error", { index: paddingIndex 
 
 5.7.0では一部formatterがエラーとそのエラーが自動修正できるかを出すようになりました。
 
-## 6.0.0
+## [6.0](https://github.com/textlint/textlint/releases/tag/6.0.1 "6.0")
 
-6.0.0では
+6.0では
 
 - `--dry-run`のサポート(`--fix`と組み合わせて使います)
 - `--fix`からexperimentalフラグが外れました
