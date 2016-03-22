@@ -12,7 +12,7 @@ machine:
     version: 4.1.0
 dependencies:
     override:
-      - bundle install --without production --deployment
+      - bundle install --frozen
       - npm install
 test:
   override:
