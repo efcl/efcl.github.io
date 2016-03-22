@@ -143,7 +143,7 @@ assert.deepEqual(test1.captureGroups, [
 ]);
 ```
 
-制限として受け止めれば使えますが、いい案が思いつかないので修正するPull Requestを募集しています。。
+制限として受け止めれば使えますが、いい案が思いつかないので修正するPull Requestを募集しています…
 
 - [azu/match-index: Get index of each capture.](https://github.com/azu/match-index "azu/match-index: Get index of each capture.")
 
