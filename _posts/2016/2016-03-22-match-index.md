@@ -13,6 +13,8 @@ tags:
 
 [match-index](https://github.com/azu/match-index "match-index")という正規表現の補助JavaScriptライブラリを書きました。
 
+- [azu/match-index: Get index of each capture.](https://github.com/azu/match-index "azu/match-index: Get index of each capture.")
+
 例えば、
 
 	"ABC ABC"
