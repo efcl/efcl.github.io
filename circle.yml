@@ -7,7 +7,7 @@ machine:
     USER_NAME: azu
     USER_EMAIL: azuciao@gmail.com
   ruby:
-    version: 2.2.3
+    version: 2.2.0
   node:
     version: 4.1.0
 dependencies:
@@ -24,4 +24,4 @@ deployment:
     commands:
       - git config --global user.name "azu"
       - git config --global user.email "azuciao@gmail.com"
-      - bundle exec rake deploy
+      - bundle exec rake deploy --trace
