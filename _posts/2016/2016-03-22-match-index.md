@@ -149,7 +149,7 @@ assert.deepEqual(test1.captureGroups, [
 
 このライブラリは[textlint-rule-preset-JTF-style](https://github.com/azu/textlint-rule-preset-JTF-style "textlint-rule-preset-JTF-style")を[--fixでの自動修正に対応](http://efcl.info/2016/03/15/textlint--fix/ "--fixでの自動修正に対応")に対応するときに、もっと直感的にマッチしてその位置を取得する方法が欲しくて作りました。
 
-これにより書く効率は上がって、つねに`g`フラグで扱われるので、一度マッチしても最後までちゃんと繰り返しマッチするようになって、全てのエラーを出せるようになったので書いてよかったと思います。([textlint](https://github.com/textlint/textlint "textlint")のようなLintの特性上、その行にある全部のエラーを出せたほうがよい)
+これにより書く効率は上がって、つねに`g`フラグで扱われるので、一度マッチしても最後までちゃんと繰り返しマッチするようになって、全てのエラーを出せるようになったので書いてよかったと思います。([textlint](https://github.com/textlint/textlint "textlint")のようなLintの特性上、その行にある全部のエラーを出せた方がよいため)
 
 - [azu/textlint-rule-preset-JTF-style: JTF日本語標準スタイルガイド for textlint.](https://github.com/azu/textlint-rule-preset-JTF-style "azu/textlint-rule-preset-JTF-style: JTF日本語標準スタイルガイド for textlint.")
 
