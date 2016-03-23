@@ -114,7 +114,6 @@ const captureGroups = matchAll(text, regexp);
 const text = 'test1test2';
 const regexp = /t(e)(st(\d?))/g;
 const captureGroups = matchAll(text, regexp);
-// captureGroups is array of `MatchAllGroup`
 /**
  * @typedef {Object} MatchAllGroup
  * @property {Array} all
