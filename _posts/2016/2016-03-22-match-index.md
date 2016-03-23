@@ -84,7 +84,7 @@ assert.equal(y.text, "EFG");
 assert.equal(y.index, 4);
 ```
 
-`matchCaptureGroupAll` は内部的に次に紹介する `matchAll` を使っています。.
+`matchCaptureGroupAll` は内部的に次に紹介する `matchAll` を使っています…
 
 ### `matchAll(text, regExp): MatchAllGroup`
 
@@ -94,7 +94,6 @@ assert.equal(y.index, 4);
 const text = 'test1test2';
 const regexp = /t(e)(st\d?)/g;
 const captureGroups = matchAll(text, regexp);
-// captureGroups is array of `MatchAllGroup`
 /**
  * @typedef {Object} MatchAllGroup
  * @property {Array} all
