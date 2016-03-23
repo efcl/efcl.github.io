@@ -84,11 +84,11 @@ assert.equal(y.text, "EFG");
 assert.equal(y.index, 4);
 ```
 
-`matchCaptureGroupAll` は内部的に次に紹介する `matchAll` を使っています…
+`matchCaptureGroupAll` は内部的に次に紹介する `matchAll` を使っています。
 
 ### `matchAll(text, regExp): MatchAllGroup`
 
-`matchAll()`は[String.prototype.matchAll](https://github.com/tc39/String.prototype.matchAll#rationale "String.prototype.matchAll")と似たような感じですが、キャプチャに関する内容を`captureGroups`に保持する拡張をしています。
+一方、`matchAll()`は[String.prototype.matchAll](https://github.com/tc39/String.prototype.matchAll#rationale "String.prototype.matchAll")と似たような感じですが、キャプチャに関する内容を`captureGroups`に保持する拡張をしています。
 
 ```js
 const text = 'test1test2';
