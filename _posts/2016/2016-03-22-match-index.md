@@ -103,7 +103,7 @@ const captureGroups = matchAll(text, regexp);
  */
 ```
 
-### 問題点
+**問題点**
 
 これは実装上の問題で、多分正規表現ではなく[パーサコンビネータ](http://blog.anatoo.jp/entry/2015/04/26/220026 "パーサコンビネータ")とかで実装すればどうにかできると思いますが、[match-index](https://github.com/azu/match-index "match-index")はネストしたキャプチャを正確に扱えないバグがあります。
 
