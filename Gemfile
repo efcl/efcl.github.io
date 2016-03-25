@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll', '~> 2.1'
-gem 'redcarpet'
+gem 'redcarpet', '3.3.3'
 gem 'jemoji'
 gem 'jekyll-sitemap'
 gem 'rake'
