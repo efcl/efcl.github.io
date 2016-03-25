@@ -16,7 +16,7 @@ JSDocをassertに変換するライブラリとそれを使ったBabelプラグ�
 - [azu/babel-plugin-jsdoc-to-assert: Babel plugin for jsdoc-to-assert.](https://github.com/azu/babel-plugin-jsdoc-to-assert)
 - [azu/jsdoc-to-assert: JSDoc to assert](https://github.com/azu/jsdoc-to-assert)
 
-ライブラリの[jsdoc-to-assert](https://github.com/azu/jsdoc-to-assert "jsdoc-to-assert")の方は、JavaScript ASTのコメントから`assert`の文字列を作り出しくれるだけのシンプルなものです。
+ライブラリの[jsdoc-to-assert](https://github.com/azu/jsdoc-to-assert "jsdoc-to-assert")の方は、JavaScript ASTのコメントから`assert`の文字列を作り出すだけのシンプルなものです。
 
 実際に使う場合は、Babelのプラグインとして[babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")を使い、コードを変換してランタイムassertを追加させます。
 
