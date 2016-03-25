@@ -50,9 +50,10 @@ function myFunc(a, b, c, d) {
 
 ```js
 /**
- * @param {number} param - this is a param.
+ * @param {number} a - this is a param.
  * @param {string} b - this is a param.
  * @param {string[]} c - this is a param.
+ * @param {boolean} [d] - this is a optional.
  */
 function myFunc(param, b, c) {
   console.assert(typeof a === 'number');
