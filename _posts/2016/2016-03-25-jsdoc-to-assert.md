@@ -148,3 +148,8 @@ JSDoc単体の型定義はValidだけど、実際の利用方法と合ってる�
 結局はキレイなJSDocが残ればいいだけなので、
 [babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")はいつでも外しても問題ない作りです。
 なので、Babelを使ってるプロジェクトにひっそりいれて色々エラーを見つけると面白いのかもしれません。
+
+類似
+
+- FlowType: [codemix/babel-plugin-typecheck: Static and runtime type checking for JavaScript in the form of a Babel plugin.](https://github.com/codemix/babel-plugin-typecheck)
+- TypeScript: [Proposal: Run-time Type Checks · Issue #7607 · Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/7607 "Proposal: Run-time Type Checks · Issue #7607 · Microsoft/TypeScript")
