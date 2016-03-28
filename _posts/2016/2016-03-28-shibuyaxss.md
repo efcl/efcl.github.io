@@ -125,6 +125,8 @@ $(document).ready(function() {
 	- `file://`で悪意があるものがあれば、任意コード実行できそう
 - 同一オリジン
 	- ディレクトリと関係なく全てが同一オリジン in `file://`
+	- Chrome 45では修正が入ってる: [Issue 455882 - chromium - Treat file:// URLs as having unique origin - Monorail](https://bugs.chromium.org/p/chromium/issues/detail?id=455882 "Issue 455882 - chromium - Treat file:// URLs as having unique origin - Monorail")
+	- Electronもそのうち直る?
 - 悪意のあるファイル in `file://`
 	- 事前にダウンロード
 	- ファイルサーバを立ち上げて、`file://`なものを用意しておくと同一オリジンとして認識される
