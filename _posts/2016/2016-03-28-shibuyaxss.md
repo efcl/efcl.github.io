@@ -115,6 +115,8 @@ $(document).ready(function() {
 
 ## Electronのセキュリティの話 - hasegawa
 
+スライド: [Electronのはなし](http://utf-8.jp/public/2016/0328/shibuyaxss.pdf "shibuyaxss.pdf")
+
 - Electron vs. CSP
 	- レンダラにCSPを適用しても
 	- `webview`タグ内で任意コード実行ができる
