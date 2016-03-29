@@ -17,6 +17,8 @@ tags:
 
 ## 超絶技巧 CSRF - mala
 
+スライド: [超絶技巧CSRF / Shibuya.XSS techtalk #7 // Speaker Deck](https://speakerdeck.com/mala/shibuya-dot-xss-techtalk-number-7 "超絶技巧CSRF / Shibuya.XSS techtalk #7 // Speaker Deck")
+
 - CSRFについて
 - クロスサイトでリクエストを強制する脆弱性
 	- 書き込み
