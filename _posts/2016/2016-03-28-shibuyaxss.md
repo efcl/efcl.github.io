@@ -72,6 +72,8 @@ tags:
 
 ## PATHでXSSする技術 - Masato Kinugawa
 
+スライド: [明日から使える?! PATHでXSSする技術/ Shibuya.XSS techtalk #7 // Speaker Deck](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-7 "明日から使える?! PATHでXSSする技術/ Shibuya.XSS techtalk #7 // Speaker Deck")
+
 - `https://host/path?key=a#b`
 - クエリとかハッシュ以外もXSSに使える
 - `$_SERVER` 
