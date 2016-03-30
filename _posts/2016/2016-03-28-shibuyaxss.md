@@ -171,6 +171,7 @@ $(document).ready(function() {
 
 ## Firefoxの話 - llamakko_cafe
 
+関連: [晴れのちバグ( ꒪⌓꒪): Firefoxのバグを見つけて5000ドルの報奨金をもらった話](http://blog.vuln.jp/2016/01/firefox5000.html "晴れのちバグ( ꒪⌓꒪): Firefoxのバグを見つけて5000ドルの報奨金をもらった話")
 
 - 脆弱性を探す前に
 	- ブラウザの脆弱性探しはハードル高そう
