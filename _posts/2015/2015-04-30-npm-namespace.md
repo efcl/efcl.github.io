@@ -44,7 +44,7 @@ npm install @<npmユーザ名>/パッケージ名
 
 以下の記事で書いてたpublishのパターンも少し更新しておきました。
 
-- [npm publishのパターン | Web Scratch](http://efcl.info/2015/04/09/npm-publish-pattern/ "npm publishのパターン | Web Scratch")
+- [npm publishのパターン | Web Scratch](http://efcl.info/2015/04/08/npm-publish-pattern/ "npm publishのパターン | Web Scratch")
 
 ## 公開例
 
