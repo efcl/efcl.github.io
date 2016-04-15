@@ -1,5 +1,5 @@
 ---
-title: "power-assert + babel as a tool"
+title: "power-assert + babel as a development tool"
 author: azu
 layout: post
 date : 2016-04-14T19:55
@@ -16,6 +16,32 @@ tags:
 - [espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")は役目を終えたので、Deprecated
 - Babel + power-assertは[babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert")を使う
 - コード上は`require("power-assert")`でも、`require("assert")`でもpower-assert化できるようになった
+
+## [espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")は非推奨へ
+
+Babel + Mocha + power-assertの組み合わせを出来るだけ設定ファイルなどを作らずに使える[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")というモジュールを書いていましたが、役目を終えたので非推奨(deprecated)にしました。
+
+- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](http://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
+
+理由としては、Babel@6からは設定(ファイル)を必ず必要とするので、[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")をかませる分、柔軟性がなくなったり余計な処理が起きて遅くなるためです。
+
+代わりに[babel-register](https://www.npmjs.com/package/babel-register "babel-register")と[babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert"). and [babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert")を直接使って、通常のBabelの設定としてpower-assertを導入する方法を推奨しています。
+
+以下は、power-assert + Mocha + Babel環境を新規インストールする場合の手順ですが、espower-babelからの移行は[migrate-espower-babel-to-babel-preset-power-assert](https://github.com/power-assert-js/migrate-espower-babel-to-babel-preset-power-assert "migrate-espower-babel-to-babel-preset-power-assert")を使うことで同様のことができるようにしてあります。
+
+- [migrate-espower-babel-to-babel-preset-power-assert](https://github.com/power-assert-js/migrate-espower-babel-to-babel-preset-power-assert "migrate-espower-babel-to-babel-preset-power-assert")
+
+```
+$ npm i -g migrate-espower-babel-to-babel-preset-power-assert
+$ cd <該当プロジェクトrootへ>
+$ migrate-espower-babel-to-babel-preset-power-assert
+```
+
+でマイグレーションしてくれます。
+
+------
+
+新規で、power-assert + Mocha + Babel環境(ランタイム変換)を導入する手順です。
 
 ## インストール
 
@@ -129,6 +155,8 @@ describe("add", function () {
 
 なので、`power-assert`を使わなくなった時はツール(具体的には`babelrc`から)power-assertを外すだけで、コードは一切変更しなくても良くなったということです。
 
+そのため、power-assertは開発用のライブラリからツールという位置づけに変わったという話でした。
+
 ## おまけ
 
 アプリケーションに`assert`を書くようになったと言っても、今回の`add(x ,y)`のように決まりきったような引数のチェックを毎回書くのは大変です。
@@ -149,10 +177,53 @@ describe("add", function () {
 
             throw new Error("unreachable line");
         } catch (error) {
-            assert(error instanceof assert.AssertionError);
+            assert.equal(error.name, assert.AssertionError.name);
         }
     });
 });
 ```
 
 引数の型違反例外(`assert.AssertionError`)もテストされていることが分かります。
+
+JSDocから自動でランタイムAssertionを追加してくれる[babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")を使うことで、`add.js`から型チェック的な`assert`は取り除けます。
+
+- [JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch](http://efcl.info/2016/03/25/jsdoc-to-assert/ "JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch")
+
+具体的には`presets`に[babel-preset-jsdoc-to-assert](https://github.com/azu/babel-preset-jsdoc-to-assert "azu/babel-preset-jsdoc-to-assert: Babel plugin for jsdoc-to-assert")を追加して、JSDocを書くだけです。
+
+```diff
+--- a/.babelrc
++++ b/.babelrc
+@@ -5,6 +5,7 @@
+   "env": {
+     "development": {
+       "presets": [
++        "jsdoc-to-assert",
+         "power-assert"
+       ]
+     }
+ 
+diff --git a/src/add.js b/src/add.js
+index 4748ae3..5cc3b9c 100644
+--- a/src/add.js
++++ b/src/add.js
+@@ -1,7 +1,9 @@
+ "use strict";
+-const assert = require("assert");
++/**
++ * @param {number} x
++ * @param {number} y
++ * @returns {Number}
++ */
+ export default function add(x, y) {
+-    assert(typeof x === "number");
+-    assert(typeof y === "number");
+     return x + y;
+-}
+```
+
+変更したコミット: 
+
+- [feat(babel): use jsdoc-to-assert by azu · Pull Request #1 · azu/power-assert-as-tool-demo](https://github.com/azu/power-assert-as-tool-demo/pull/1 "feat(babel): use jsdoc-to-assert by azu · Pull Request #1 · azu/power-assert-as-tool-demo")
+
+[babel-preset-jsdoc-to-assert](https://github.com/azu/babel-preset-jsdoc-to-assert "azu/babel-preset-jsdoc-to-assert: Babel plugin for jsdoc-to-assert")もpower-assert化できるといいのですが、Babelの変換の仕組み上難しいのでまだできてません。
