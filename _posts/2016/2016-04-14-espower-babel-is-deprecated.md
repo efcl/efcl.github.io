@@ -70,7 +70,7 @@ mochaからテストを実行する際にBabelの変換をするので、`babel-
 Babelの設定をするために、`.babelrc`を次のように作成します。
 power-assertは開発ビルド(テスト中)にしか必要ないので、`env`で振り分けしておきます。
 `env`は`NODE_ENV`によって振り分けされます。 `NODE_ENV=production <コマンド>`のような感じで環境変数を指定し、必要なプラグインを分けることができます。
-何も指定していない場合は``NODE_ENV=development`と同じになります。
+何も指定していない場合は`NODE_ENV=development`と同じになります。
 
 ```json
 {
@@ -149,12 +149,25 @@ describe("add", function () {
 例えば、この`add.js`の例では引数のチェックに`assert`を使っています。
 
 ```js
+"use strict";
+const assert = require("assert");
+export default function add(x, y) {
+    assert(typeof x === "number");
+    assert(typeof y === "number");
+    return x + y;
+}
+```
+
+なので、次のようなコードを書くと例外を投げるのでテストは失敗します。
+
+```js
     it("arguments should be type of number", function () {
         add("string", "string");
     });
 ```
 
-これもMocha経由で実行してみると、ただの`assert(typeof x === "number");`もpower-assert化されています。
+今までは、ただの`assert()`だったので、大した情報はでませんでした。
+しかし、これもMocha経由で実行してみると、`assert(typeof x === "number");`がpower-assert化されています。
 
 ![assert to be power-asssert](http://efcl.info/wp-content/uploads/2016/04/14-1460633294.png)
 
