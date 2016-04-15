@@ -25,7 +25,7 @@ Babel + Mocha + power-assertの組み合わせを出来るだけ設定ファイ�
 
 理由としては、Babel@6からは設定(ファイル)を必ず必要とするので、[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")をかませる分、柔軟性がなくなったり余計な処理が起きて遅くなるためです。
 
-代わりに[babel-register](https://www.npmjs.com/package/babel-register "babel-register")と[babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert")を直接使って、通常のBabelの設定としてpower-assertを導入する方法を推奨しています。
+代わりに[babel-register](https://www.npmjs.com/package/babel-register "babel-register")と[babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert")を直接使って、開発時のBabelのビルド設定としてpower-assertを導入する方法を推奨しています。
 
 以下は、power-assert + Mocha + Babel環境を新規インストールする場合の手順ですが、espower-babelからの移行は[migrate-espower-babel-to-babel-preset-power-assert](https://github.com/power-assert-js/migrate-espower-babel-to-babel-preset-power-assert "migrate-espower-babel-to-babel-preset-power-assert")を使うことで同様のことができるようにしてあります。
 
