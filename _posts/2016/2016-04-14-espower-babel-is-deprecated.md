@@ -177,7 +177,9 @@ export default function add(x, y) {
 
 そのため、power-assertは開発用のライブラリからツールという位置づけに変わったという話でした。
 
-ここまでを適応したバージョン
+サンプルプロジェクト
+
+- [azu/power-assert-as-tool-demo: babel + power-assert preset demo project.](https://github.com/azu/power-assert-as-tool-demo "azu/power-assert-as-tool-demo: babel + power-assert preset demo project.")
 
 ## おまけ
 
