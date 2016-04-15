@@ -16,7 +16,7 @@ tags:
 
 - [espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")は役目を終えたので、Deprecated
 - Babel + power-assertは[babel-preset-power-assert](https://github.com/power-assert-js/babel-preset-power-assert "babel-preset-power-assert")を使う
-- コード上は`require("power-assert")`でも、`require("assert")`でもpower-assert化できるようになった
+- コード上は`require("power-assert")`と`require("assert")` どちらでもpower-assert化できるようになった
 
 ## [espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")は非推奨へ
 
