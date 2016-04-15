@@ -43,15 +43,19 @@ $ migrate-espower-babel-to-babel-preset-power-assert
 
 新規で、power-assert + Mocha + Babel環境(ランタイム変換)を導入する手順です。
 
+サンプルプロジェクト
+
+- [azu/power-assert-as-tool-demo](https://github.com/azu/power-assert-as-tool-demo "azu/power-assert-as-tool-demo")
+
 ## インストール
 
 ### 必要なモジュールをインストール
 
 ```sh
-npm i -D mocha babel-register babel-preset-power-assert babel-preset-es2015
+npm i -D power-assert mocha babel-register babel-preset-power-assert babel-preset-es2015
 ```
 
-mochaからテストを実行する際に、Babelの変換を噛ませるようにするために、`babel-register`と以下の2つのpresetをインストールします。
+mochaからテストを実行する際にBabelの変換をするので、`babel-register`と以下の2つのpresetをインストールします。
 
 - babel-preset-es2015
 	- ES2015の変換を行うpreset
@@ -151,11 +155,13 @@ describe("add", function () {
 
 ![assert to be power-asssert](http://efcl.info/wp-content/uploads/2016/04/14-1460633294.png)
 
-これは、どういうことになるかというと、コード上でライブラリとして`require("power-assert")`と読み込む必要がなくなり、ツールとしてpower-assertが動くようになった事を意味します。
+これはどういうことになるかというと、コード上でライブラリとして`require("power-assert")`と読み込む必要がなくなり、ツールとしてpower-assertが動くようになった事を意味します。
 
 なので、`power-assert`を使わなくなった時はツール(具体的には`babelrc`から)power-assertを外すだけで、コードは一切変更しなくても良くなったということです。
 
 そのため、power-assertは開発用のライブラリからツールという位置づけに変わったという話でした。
+
+ここまでを適応したバージョン
 
 ## おまけ
 
@@ -202,7 +208,7 @@ JSDocから自動でランタイムAssertionを追加してくれる[babel-plugi
          "power-assert"
        ]
      }
- 
+
 diff --git a/src/add.js b/src/add.js
 index 4748ae3..5cc3b9c 100644
 --- a/src/add.js
@@ -222,8 +228,48 @@ index 4748ae3..5cc3b9c 100644
 -}
 ```
 
-変更したコミット: 
+変更したコミット:
 
 - [feat(babel): use jsdoc-to-assert by azu · Pull Request #1 · azu/power-assert-as-tool-demo](https://github.com/azu/power-assert-as-tool-demo/pull/1 "feat(babel): use jsdoc-to-assert by azu · Pull Request #1 · azu/power-assert-as-tool-demo")
 
 [babel-preset-jsdoc-to-assert](https://github.com/azu/babel-preset-jsdoc-to-assert "azu/babel-preset-jsdoc-to-assert: Babel plugin for jsdoc-to-assert")もpower-assert化できるといいのですが、Babelの変換の仕組み上難しいのでまだできてません。
+
+また、`assert`をアプリケーション側で使っていた際に、プロダクションビルドからは取り除きたいということがあります。その場合はunassertを使えば、取り除けるので便利です。
+
+- [twada/unassert: Encourage reliable programming by writing assertions in production code, and compiling them away from release](https://github.com/twada/unassert)
+- [twada/babel-plugin-unassert: Babel plugin to encourage reliable programming by writing assertions in production code, and compiling them away from release.](https://github.com/twada/babel-plugin-unassert)
+
+変更したコミット:
+
+- [feat(babel): add unassert in NODE_ENV=production building by azu · Pull Request #2 · azu/power-assert-as-tool-demo](https://github.com/azu/power-assert-as-tool-demo/pull/2 "feat(babel): add unassert in NODE_ENV=production building by azu · Pull Request #2 · azu/power-assert-as-tool-demo")
+
+ここまでを全部適応した最終的な`.bebelrc`は次のような形になっています。
+
+```js
+{
+  "presets": [
+    "es2015"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "jsdoc-to-assert",
+        "power-assert"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "babel-plugin-unassert"
+      ]
+    }
+  }
+}
+```
+
+- [azu/power-assert-as-tool-demo: babel + power-assert preset demo project.](https://github.com/azu/power-assert-as-tool-demo "azu/power-assert-as-tool-demo: babel + power-assert preset demo project.")
+
+## おわり
+
+- espower-babelはBebel5以下における解だったので、役目はひとまず終わり
+- 普通にコンパイル言語と同じように、デバッグ時のみ情報量の多いassertの適応、プロダクションビルド時は取り除くということができるようになった
+- [ホーア論理](https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%BC%E3%82%A2%E8%AB%96%E7%90%86 "ホーア論理")的な事前条件は`assert`やJSDocで、事後条件はテストで保証するみたいなことはやりやすくなった
