@@ -38,6 +38,7 @@ $ migrate-espower-babel-to-babel-preset-power-assert
 ```
 
 でマイグレーションしてくれます。
+(自分のプロジェクトでのespower-babelの設定を移行するのに書いたので、人によっては構成が違うため動かないかもしれません。その場合はPull Requestをいただけると助かります。
 
 ------
 
