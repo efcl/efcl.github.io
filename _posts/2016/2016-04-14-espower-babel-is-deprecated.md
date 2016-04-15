@@ -49,7 +49,7 @@ $ migrate-espower-babel-to-babel-preset-power-assert
 
 - [azu/power-assert-as-tool-demo](https://github.com/azu/power-assert-as-tool-demo "azu/power-assert-as-tool-demo")
 
-## インストール
+## 設定方法
 
 ### 必要なモジュールをインストール
 
