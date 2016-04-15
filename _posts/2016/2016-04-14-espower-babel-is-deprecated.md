@@ -68,9 +68,9 @@ mochaからテストを実行する際にBabelの変換をするので、`babel-
 ### `.babelrc`を作成
 
 Babelの設定をするために、`.babelrc`を次のように作成します。
-power-assertは開発中(テスト中)にしか必要ないので、`env`で振り分けしておきます。
-`env`は`NODE_ENV`によって振り分けされます。 `NODE_ENV=production <コマンド>`のような感じで指定して環境によって必要がプラグインなどを分けることができます。
-何も指定していない場合は``NODE_ENV=development`
+power-assertは開発ビルド(テスト中)にしか必要ないので、`env`で振り分けしておきます。
+`env`は`NODE_ENV`によって振り分けされます。 `NODE_ENV=production <コマンド>`のような感じで環境変数を指定し、必要なプラグインを分けることができます。
+何も指定していない場合は``NODE_ENV=development`と同じになります。
 
 ```json
 {
