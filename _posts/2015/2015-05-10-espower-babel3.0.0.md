@@ -24,6 +24,11 @@ tags:
 
 - [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 
+:warning: 追記(2016-04-15): espower-babelは非推奨で、`.babelrc`で直接power-assertを利用するのを推奨しています。
+詳しくは次の記事を見てください・
+
+- [power-assert + babel as a development tool | Web Scratch](http://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
+
 ## 3.0.0
 
 今まで[espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")はテストファイルのみをBabel(当時は6to5ですが)で変換していて、テストから`import`したファイルについてはBabelの変換をしてませんでした。
