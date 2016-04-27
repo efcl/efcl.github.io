@@ -24,6 +24,8 @@ Almin自体は大した実装ではないので、サンプルとかドキュメ
 
 JavaScriptでもウェブアプリやElectronでのアプリのような、APIを叩いて表示して終わりじゃなくて、ドメインモデルの生存期間が長いものが増えてきているのでその辺を考えていこうという話でした。
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr">🍣 <a href="https://twitter.com/hashtag/child_process_sushi?src=hash">#child_process_sushi</a> <a href="https://t.co/CSuqQoDrWj">pic.twitter.com/CSuqQoDrWj</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/725281910373511172">April 27, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## PathでのXSS - kyo_ago
 
