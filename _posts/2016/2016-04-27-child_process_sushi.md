@@ -27,6 +27,10 @@ JavaScriptでもウェブアプリやElectronでのアプリのような、API�
 <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr">🍣 <a href="https://twitter.com/hashtag/child_process_sushi?src=hash">#child_process_sushi</a> <a href="https://t.co/CSuqQoDrWj">pic.twitter.com/CSuqQoDrWj</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/725281910373511172">April 27, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+ログ
+
+- [#child_process_sushi - Togetterまとめ](http://togetter.com/li/968216 "#child_process_sushi - Togetterまとめ")
+
 ## PathでのXSS - kyo_ago
 
 > [明日から使える?! PATHでXSSする技術/ Shibuya.XSS techtalk #7 // Speaker Deck](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-7 "明日から使える?! PATHでXSSする技術/ Shibuya.XSS techtalk #7 // Speaker Deck")
@@ -146,6 +150,8 @@ JavaScriptでもウェブアプリやElectronでのアプリのような、API�
 	- scoped moduleでregistryの名前空間を分けるといい
 
 ## ビルド職人を減らしたいという話 -- vvakame
+
+> スライド: [ビルド職人.md](https://gist.github.com/vvakame/45ca8f051e54702071eb88bb1dd8b46e "ビルド職人.md")
 
 - 設定を共有したい
 - [rocjs/roc: Modern Application Development Ecosystem](https://github.com/rocjs/roc "rocjs/roc: Modern Application Development Ecosystem")
