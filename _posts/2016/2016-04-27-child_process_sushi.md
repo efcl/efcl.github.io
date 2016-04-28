@@ -176,8 +176,10 @@ JavaScriptでもウェブアプリやElectronでのアプリのような、API�
 - ES6時代に対応したdeepEqualが必要
 - 無限Iteratorとかどうするの?
 - ESLintでキャキャやってるのすごいね
-- npm3+dedupe+バージョン違い競合+Browserifyの辛い話
+- npm3+dedupe+依存モジュールのバージョン違い競合(estraverseとか?)+Browserifyの辛い話
 	- ESLintとpower-assertでdudupeの問題が起こることもある
+	- バージョン違いが存在するとネストしてインストールされる
+	- ネストしてインストールされたモジュールをBrowserifyに食べさせるとなぜか絶対パスがビルドファイル内にでてくる、2つ分のファイルが読み込まれたり、dedupeできなかった問題がおきる
 	- 後ろ向きな理由でJSHintを使ってる話
 
 
