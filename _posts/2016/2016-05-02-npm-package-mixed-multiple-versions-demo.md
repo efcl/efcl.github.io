@@ -13,7 +13,7 @@ tags:
 
 [Add support for ESLint v2 by Daniel15 · Pull Request #107 · fkling/astexplorer](https://github.com/fkling/astexplorer/pull/107/files#diff-b9cfc7f2cdf78a7f4b91a753d10865a2R52 "Add support for ESLint v2 by Daniel15 · Pull Request #107 · fkling/astexplorer")で、一つのプロジェクト内で複数のバージョンの同じライブラリを使う面白い方法が使われてたのでメモです。
 
-上記の[AST explorer](https://astexplorer.net/ "AST explorer")の場合だと、ESLint@1とESLint@2両方に対応したPlaygroundを作りたいため、一つのプロジェクトに両方のバージョンをインストールする必要があるという話です。ローカルパッケージ
+前述した[AST explorer](https://astexplorer.net/ "AST explorer")の場合だと、ESLint@1とESLint@2両方に対応したPlaygroundを作りたいため、一つのプロジェクトに両方のバージョンをインストールする必要があるという話です。ローカルパッケージ
 
 他にも、同じライブラリでもβ版は別の名前空間(`require("name-spaace")`)で使って試したいというケースもあると思います。
 
@@ -78,7 +78,7 @@ lodash3のモジュールで`require("lodash")`したのは[packages/lodash3/pac
 
 ## 2. ローカルパッケージをインストールする
 
-後は、プロジェクトに[Local Paths](https://docs.npmjs.com/files/package.json#local-paths "Local Paths")を使って作った`lodash3`と`lodash4`の依存を定義するだけです。
+後は、プロジェクトにローカルパッケージとして作った`lodash3`と`lodash4`への依存を定義するだけです。
 
 ```sh
 npm i -S packages/lodash3 packages/lodash4
