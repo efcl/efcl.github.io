@@ -48,8 +48,6 @@ packages
 │   └── package.json
 └── lodash4
     ├── index.js
-    ├── node_modules
-    │   └── lodash
     └── package.json
 ```
 
