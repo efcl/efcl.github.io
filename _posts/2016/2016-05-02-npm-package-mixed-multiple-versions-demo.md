@@ -115,7 +115,10 @@ lodashには`.VERSION`にバージョン番号が入ってるので、それぞ�
 
 ローカルパッケージを使って、一つのプロジェクト内で複数バージョンのnpmパッケージを使い分ける方法を紹介しました。
 
-[astexplorer](https://github.com/fkling/astexplorer "astexplorer")みたいなツール系だと結構実用的な感じで、普通のウェブサイトとかプロダクトならまあ最新のバージョン使おうって感じです。
+[astexplorer](https://github.com/fkling/astexplorer "astexplorer")みたいなツール系だと結構実用的なユースケースだと思います。
+普通のウェブサイトとかプロダクトなら、最新のバージョン使おうねって感じです。
 (ワークアラウンドとして覚えておくと便利なことがあるかもしれないという感じです)
+
+他にも過去のバージョンとのパフォーマンス比較ポイントを作ったりなどの色々使い道があるかもしれません。
 
 - サンプル: [azu/npm-package-mixed-multiple-versions-demo: Demo project for mixing multiple version of the same npm package in a project.](https://github.com/azu/npm-package-mixed-multiple-versions-demo "azu/npm-package-mixed-multiple-versions-demo: Demo project for mixing multiple version of the same npm package in a project.")
