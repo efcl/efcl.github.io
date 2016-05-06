@@ -139,3 +139,5 @@ textlint --rule no-mix-dearu-desumasu README.md
 イマイチ明確な基準がわかっていないため、false positiveにならないように限定しています。
 
 - [azu/analyze-desumasu-dearu: 文の敬体(ですます調)、常体(である調)を解析するJavaScriptライブラリ](https://github.com/azu/analyze-desumasu-dearu "azu/analyze-desumasu-dearu: 文の敬体(ですます調)、常体(である調)を解析するJavaScriptライブラリ")
+
+(本当は[textlint-rule-no-mix*ed*-dearu-desumasu](https://github.com/azu/textlint-rule-no-mix-dearu-desumasu/issues/4 "textlint-rule-no-mix*ed*-dearu-desumasu")の方がESLint的なルール名として正しい…)
