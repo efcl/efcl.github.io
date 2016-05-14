@@ -185,11 +185,11 @@ ES6はリリースするまで結局6年かかったので、もっと少しず�
 - ブラウザベンダー
 - ウェブ開発者
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にプロポーザル一覧とStageが載っている。
+[tc39/proposals](https://github.com/tc39/proposals)にプロポーザル一覧とStageが載っている。
 
 ## 新しいプロポーザルを提案するには
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")の`stage0.md`にプロポーザルを追加してPull Requestする。Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来るが、基本的にはTC39で議論してからPull Requestする。
+[tc39/proposals](https://github.com/tc39/proposals)の`stage0.md`にプロポーザルを追加してPull Requestする。Ecma Internationalの特許、著作権のポリシーに同意してる人ならば誰でも出来るが、基本的にはTC39で議論してからPull Requestする。
 
 - [Contributing New Proposals](https://github.com/tc39/ecma262#contributing-new-proposals "Contributing New Proposals")
 
@@ -281,7 +281,7 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 
 ## ES.nextの進捗
 
-[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にそれぞれのプロポーザルのStageが掲載されている。またStageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録を読めばいい。
+[tc39/proposals](https://github.com/tc39/proposals)にそれぞれのプロポーザルのStageが掲載されている。またStageは2ヶ月に一度行われるTC39のミーティングにより変化するため、ミーティングの記録を読めばいい。
 
 - [rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes "rwaldron/tc39-notes")
 
@@ -424,8 +424,9 @@ ES6で言語としてのベースラインがかなり整ったので、普通�
 
 ### ES.next
 
-- ES.nextの仕様は殆どがGitHubのリポジトリを持ってるので、それぞれのリポジトリにIssueやPull Requestを送ってみる
-	- [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")
+- ES.nextのプロポーザルはマージされる(Stage 4となる)まで、GitHubのリポジトリを持っている。
+	- [tc39/proposals](https://github.com/tc39/proposals)
+- それぞれのリポジトリにIssueやPull Requestを送ってみる
 - ECMAScriptの仕様本体も[tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にある
 	- [CONTRIBUTING.md](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")を見て分かるように普通にIssueやPull Requestで修正できる
 	- 細かい変更ならCLAへのサインも必要ない
