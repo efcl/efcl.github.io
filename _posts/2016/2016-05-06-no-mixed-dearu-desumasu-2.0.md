@@ -42,6 +42,9 @@ textlint --rule no-mix-dearu-desumasu README.md
 
 ## オプション
 
+追記(2016-05-22): デフォルトでは `strict: false` にしています。
+`strict:false`では少し緩めで文末のチェックのみ限定しているので、文中のチェックを入れたい場合は`strict: true`をオプションに加える必要があります。
+
 このルールでは、本文、見出し、箇条書きをそれぞれ独立してチェックし、その項目内で表記が混在していないかを見つけます。
 なので、本文と見出しの間で表記が混在するのは問題ありません。
 
@@ -65,7 +68,9 @@ textlint --rule no-mix-dearu-desumasu README.md
         "no-mix-dearu-desumasu": {
              "preferInHeader": "", // "である" or "ですます"
              "preferInBody": "",   // "である" or "ですます"
-             "preferInList": ""    // "である" or "ですます"
+             "preferInList": "",    // "である" or "ですます"
+             // 文末以外でも、敬体(ですます調)と常体(である調)を厳しくチェックするかどうか
+             "strict": false
         }
     }
 }
@@ -73,9 +78,10 @@ textlint --rule no-mix-dearu-desumasu README.md
 
 例えば、以下の例だと
 
-- 見出しは"自動"(多く使われてる表記に統一を促す
+- 見出しは"自動"(多く使われてる表記に統一を促す)
 - 本文は"ですます"
 - 箇条書きは"である"
+- Strict modeでチェック
 
 というルールでチェックします。
 
@@ -85,7 +91,9 @@ textlint --rule no-mix-dearu-desumasu README.md
         "no-mix-dearu-desumasu": {
              "preferInHeader": "", // "である" or "ですます"
              "preferInBody": "ですます",// "である" or "ですます"
-             "preferInList": "である"    // "である" or "ですます"
+             "preferInList": "である",    // "である" or "ですます"
+             // 文末以外でも、敬体(ですます調)と常体(である調)を厳しくチェックするかどうか
+             "strict": true
         }
     }
 }
