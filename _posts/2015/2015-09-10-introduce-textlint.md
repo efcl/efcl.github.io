@@ -113,9 +113,20 @@ textlintのルールは以下のWikiにまとめてありますが、ルール�
 
 - [Collection of textlint rule · azu/textlint Wiki](https://github.com/azu/textlint/wiki/Collection-of-textlint-rule "Collection of textlint rule · azu/textlint Wiki")
 
-追記: どのルールを使えばいいか分からない！という場合はルールプリセットから始めるとよいでしょう。
+追記: 
+
+どのルールを使えばいいか分からない！という場合はルールプリセットから始めるとよいでしょう。
 
 - [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
+- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)
+
+表記揺れの辞書をプロジェクトに入れたい場合はprhが便利です。
+
+- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/)
+
+textlintの設定をESLint configのようにnpmで共有することもできます。
+
+- [textlintの設定をnpmにあげて使い回す | Web Scratch](http://efcl.info/2016/04/08/textlint-sharable-config/)
 
 ## ルールを作る
 
