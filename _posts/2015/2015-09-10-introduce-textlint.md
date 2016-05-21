@@ -24,6 +24,12 @@ tags:
 
 扱う[textlint](https://github.com/textlint/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
 
+[![textlint](http://azu.github.io/slide/2016/reject-sushi/img/textlint.png)](http://textlint.github.io/)
+
+一部ルール(主に英語ですが)オンラインデモページはこちらにあります。
+
+- [textlint.github.io/#demo](http://textlint.github.io/#demo)
+
 ### インストール
 
 textlintはデフォルトでは一つもルールがありません。
