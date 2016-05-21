@@ -247,6 +247,8 @@ textlintはデフォルトでルールを持ってない代わりに、自分で
 
 最近だとJavaScriptでも日本語をちゃんと扱える形態素解析器である[kuromoji.js](https://github.com/takuyaa/kuromoji.js)、[rakutenma](https://github.com/rakuten-nlp/rakutenma)などがあります。
 
+追記(2016-05-22): textlintの[日本語文法を扱うルール](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule)の多くはkuromoji.jsのラップである[kuromojin](https://github.com/azu/kuromojin "kuromojin")を使っています。(読み込む辞書のキャッシュため)
+
 また、日本語がそのまま扱えるわけじゃないですが[NaturalNode/natural](https://github.com/NaturalNode/natural)や[wooorm/retext](https://github.com/wooorm/retext)など結構手軽に文章などを扱って遊べます。
 
 特に[wooorm](https://github.com/wooorm "wooorm")先生は[ALEX](http://alexjs.com/ "ALEX")というチェックツールを出したり、Markdownパーサである[mdast](https://github.com/wooorm/mdast "mdast")を作ったり、テキスト処理向けの抽象フォーマットである[VFile](https://github.com/wooorm/vfile "VFile")を作ったり精力的にモジュールなどを書いています。
