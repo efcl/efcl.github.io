@@ -14,7 +14,7 @@ tags:
 
 ## textlint
 
-[textlint](https://github.com/textlint/textlint "textlint")はMarkdownやテキスト向けのLintツールで、テキスト版ESLintみたいな感じのツールです。
+[textlint](https://github.com/textlint/textlint "textlint")はMarkdownなどテキスト向けのLintツールで、テキスト版ESLintみたいな感じのツールです。
 
 - [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
 
@@ -136,6 +136,7 @@ textlintのルールは以下のWikiにまとめてありますが、ルール�
 表記揺れの辞書をプロジェクトに入れたい場合はprhが便利です。
 
 - [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/)
+- [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/ "Introduction | 技術文書をソフトウェア開発する話")
 
 textlintの設定をESLint configのようにnpmで共有することもできます。
 
