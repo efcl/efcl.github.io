@@ -30,6 +30,13 @@ tags:
 
 - [textlint.github.io/#demo](http://textlint.github.io/#demo)
 
+手軽に動作を見たい場合は、Chrome拡張版を試すといいかもしれません。
+こちらを使うとNode.jsなどの環境を揃えなくても試せます。
+
+- [文書校正ツール textlint の Chrome 拡張を作った - もなでぃっく](http://io-monad.hatenablog.com/entry/2016/03/14/225800)
+- [Chrome ウェブストア - アプリ](https://chrome.google.com/webstore/detail/textlint-proofreader/hdongmdneapmhfblomidbafplpanpdmm?hl=ja&gl=JP)
+
+
 ### インストール
 
 textlintはデフォルトでは一つもルールがありません。
