@@ -102,7 +102,7 @@ npm i -D textlint textlint-rule-preset-jtf-style textlint-rule-spellcheck-tech-w
 (`--rule`や`--preset`オプションでも指定できますが毎回やるのは面倒なので)
 
 ```sh
-$(npm bin)/textlnt --init
+$(npm bin)/textlint --init
 ```
 
 というコマンドを叩くと、空の`.textlintrc`設定ファイルが作成されるので、編集して次のような設定をします。
