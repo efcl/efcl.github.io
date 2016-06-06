@@ -193,14 +193,15 @@ textlintで日本語の文章をチェックするために論文やRedPenなど
 ## おわりに
 
 [JavaScript Plugin Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript Plugin Architecture")をひとまずリリースしました。
-世の中にはまだまだおもしろいプラグインの仕組みがあると思うので、面白いものがあったら[Proposal](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md#proposal%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9 "Proposal")のIssueを書いていただけると更新される気がします。
+世の中にはまだまだおもしろいプラグインの仕組みがあるので、面白いものがあったら[Proposal](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md#proposal%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9 "Proposal")のIssueを書いていただけると更新される気がします。
 
 JavaScriptのライブラリを書くときにいろんなプラグインの仕組みをぱっと読めるものがあると便利なので、
 他にも面白い仕組みの話を追加してくれる人も募集中です。
 
-最近[プラガブルなロガーライブラリ](https://github.com/azu/bellows-logger)を実装していて、[Connect · JavaScript Plugin Architecture](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/index.html "Connect · JavaScript Plugin Architecture")とか[Web Audio API](https://github.com/azu/JavaScript-Plugin-Architecture/issues/101)を参考に書いたりしたので、こういうのがあると便利です。
+最近、プラガブルな[ロガーライブラリ](https://github.com/azu/bellows-logger)を実装していて、[Connect · JavaScript Plugin Architecture](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/index.html "Connect · JavaScript Plugin Architecture")や[Web Audio API](https://github.com/azu/JavaScript-Plugin-Architecture/issues/101)を参考にしたので、こういうのがあると便利です。
 
-今現在、電子書籍を書く環境は簡単に揃うと思うので、ブログでは収まらなそうなちょっとした内容を電子書籍という体裁でまとめてみたりすると面白いかもしれません。
+今現在、電子書籍を書く環境は簡単に揃います。
+ブログでは収まらなそうなちょっとした内容を電子書籍という体裁でまとめてみたりすると面白いかもしれません。
 
 > 技術書は一日で書き終わらない
 > 途中で飽きてしまう問題
