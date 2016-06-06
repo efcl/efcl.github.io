@@ -37,8 +37,8 @@ Twitterのハッシュタグは[#js_plugin_book](https://twitter.com/search?f=tw
 
 - [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
-このツール/ライブラリで使われてるプラグインの仕組みは面白いというようなものがあればProposalをIssueに書いてみてください。
-[CONTRIBUTING.md](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")にProposalの書き方が載せています。
+このツール/ライブラリで使われてるプラグインの仕組みは面白いというようなものがあれば、ProposalをIssueに書いてみてください。
+[CONTRIBUTING.md](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")にProposalの書き方を載せています。
 
 ## はじめに
 
