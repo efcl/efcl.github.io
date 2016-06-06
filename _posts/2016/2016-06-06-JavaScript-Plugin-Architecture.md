@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[JavaScript Plugin Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript Plugin Architecture")というJavaScriptにおけるプラグイン設計についての電子書籍を書きました。
+[JavaScript Plugin Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript Plugin Architecture")というJavaScriptのプラグイン設計についての電子書籍を書きました。
 
 この書籍はJavaScriptのライブラリやツールにおけるプラグインアーキテクチャについて見ていく事を目的としたものです。
 
