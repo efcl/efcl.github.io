@@ -7,6 +7,8 @@ category: JavaScript
 tags:
     - JavaScript
     - plugin
+    - book
+    - 電子書籍
 
 ---
 
