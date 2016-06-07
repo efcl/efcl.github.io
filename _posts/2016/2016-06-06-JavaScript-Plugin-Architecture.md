@@ -66,29 +66,29 @@ JavaScriptの世界では1つの大きなライブラリよりも小さいなも
 - この仕組みを使っているもの
 - エコシステム
 
-### [jQuery](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/jQuery/README.md)
+### [jQuery](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/jQuery/)
 
 jQueryのプラグインについて解説しています。
 `<script>`タグをベースとしたプラグインアーキテクチャについて解説しています。
 
-### [ESLint](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/README.md)
+### [ESLint](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/)
 
 ESLintのルールを拡張する仕組みについて解説しています。
 ESLintではJavaScriptのコードをパースして作成されたASTを元にコードのLintを行います。
 実際にESLintのルールを解釈できる小さな実装を作りながらプラグインの仕組みについて学びます。
 
-### [Connect](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/README.md)
+### [Connect](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/)
 
 Connectの **middleware** と呼ばれるプラグインアーキテクチャについて解説しています。
 Node.js以外においても_Rack_などHTTPサーバーでよく見られるプラグインを使った階層構造について学びます。
 
-### [gulp](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/gulp/README.md)
+### [gulp](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/gulp/)
 
 **タスク自動化ツール**として知られるgulpのプラグインアーキテクチャについて解説しています。
 gulpではデータの流れとして既存のNode.js Streamを使い、そこで流すデータとしてvinylオブジェクトを利用します。
 実際にgulpプラグインを書きながら、gulpのプラグインの仕組みについて学びます。
 
-### [Redux](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/Redux/README.md)
+### [Redux](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/Redux/)
 
 アプリケーションのStateを管理ライブラリのReduxのプラグインアーキテクチャについて解説しています。
 Reduxでは **Middleware** と呼ばれる拡張の仕組みを持っていますが、Connectとの類似点や相違点があります。
