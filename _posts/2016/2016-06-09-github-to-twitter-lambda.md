@@ -55,7 +55,7 @@ GitHubのWatchやアクティビティは読むのが困難なデザインなの
 	 git clone https://github.com/azu/github-to-twitter-lambda.git
     cd github-to-twitter-lambda/functions/notifications
     npm install
-    npm run init 
+    npm run init
     # dynamodbのテーブルを作る
 
 dynamodbをロックファイル代わりというか、前回実行した時間の記録だけに使っています。
@@ -66,7 +66,7 @@ lambdaとdynamodbは毎月無料枠があるので、基本的にこのBotでか
 サンプルの設定があるのでコピーして編集します。
 
     cp project.example.json project.json
-    
+
 
 - `role` はApexのドキュメントに書かれてるようにlambdaの実行するRoleです
 	- 後述するpolicyを指定しています。
@@ -148,9 +148,9 @@ lambdaはデフォルトだと１回実行して終わりなので繰り返し�
 - GitHub -> Twitter
 - TwitterでGitHubを読めるようにした
 - Slackは未読に厳しい
-- 未読を読み飛ばしやすいのはやっぱりTwitterかRSSリーダ
-- RSSリーダもコンテキストが異なる物量には弱い
-	- RSSリーダはリリースノートだけに絞ってる
+- 未読を読み飛ばしやすいのはやっぱりTwitterかRSSリーダー
+- RSSリーダーもコンテキストが異なる物量には弱い
+	- RSSリーダーはリリースノートだけに絞ってる
 	- [GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch](http://efcl.info/2014/07/30/find-github-release/ "GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch")
 - [TweetIrcGateway](http://www.misuzilla.org/Distribution/TweetIrcGateway/ "TweetIrcGateway")っぽい
 - それぞれのコンテキストにあった読みやすさがあるので、読みやすい場所に読みたいものを置く
