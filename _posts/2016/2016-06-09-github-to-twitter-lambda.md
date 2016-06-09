@@ -156,3 +156,4 @@ lambdaはデフォルトだと１回実行して終わりなので繰り返し�
 - [TweetIrcGateway](http://www.misuzilla.org/Distribution/TweetIrcGateway/ "TweetIrcGateway")っぽい
 - それぞれのコンテキストにあった読みやすさがあるので、読みやすい場所に読みたいものを置く
 - そういう土管ツールが簡単につくれるともっと良さそう
+- [hoist.io](http://hoist.io/ "hoist.io") とかそういうサービスの類
