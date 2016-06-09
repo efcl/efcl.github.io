@@ -70,7 +70,7 @@ lambdaとdynamodbは毎月無料枠があるので、基本的にこのlambda fu
 
 
 - `role` はApexのドキュメントに書かれてるようにlambdaの実行するRoleです
-	- 後述するpolicyを指定しています。
+	- 後述するpolicyを持ったRoleを作って指定しています。
 - `environment`は環境変数的な感じですが、ここにToken類を入れています。
 	- 実行時に環境変数でも行けるはず
 
@@ -88,7 +88,7 @@ lambdaとdynamodbは毎月無料枠があるので、基本的にこのlambda fu
 
 ### Lambda role policy
 
-Lambda(`role": "arn:aws:iam::xxxxxxxxxxxx"`)のroleに指定するpolicyは以下のような感じになってます。
+Lambda(`role": "arn:aws:iam::xxxxxxxxxxxx"`)のroleは次のpolicyをもたせています。
 `"lambda:*"`と`"cloudwatch:*"`があればとりあえず動く気がします。
 
 ```json
