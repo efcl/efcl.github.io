@@ -1,5 +1,5 @@
 ---
-title: "lambdaでGitHubのアクティビティをTwitterで読む用のBotを作った"
+title: "AWS lambdaでGitHubのアクティビティをTwitterで読む用に投稿する"
 author: azu
 layout: post
 date : 2016-06-09T09:52
@@ -13,7 +13,7 @@ tags:
 
 ---
 
-タイトルどおりですが、[AWS Lambda](https://aws.amazon.com/jp/lambda/ "AWS Lambda")を使って、GitHubのWatchやアクティビティをTwitterに投げるBotを書きました。
+タイトルどおりですが、[AWS Lambda](https://aws.amazon.com/jp/lambda/ "AWS Lambda")を使って、GitHubのWatchやアクティビティをTwitterに投げるlambda functionを書きました。
 
 - [azu/github-to-twitter-lambda: Lambda bot that fetch own GitHub notifications/events and post to Twitter.](https://github.com/azu/github-to-twitter-lambda "azu/github-to-twitter-lambda: Lambda bot that fetch own GitHub notifications/events and post to Twitter.")
 
@@ -59,7 +59,8 @@ GitHubのWatchやアクティビティは読むのが困難なデザインなの
     # dynamodbのテーブルを作る
 
 dynamodbをロックファイル代わりというか、前回実行した時間の記録だけに使っています。
-lambdaとdynamodbは毎月無料枠があるので、基本的にこのBotでかかる費用は $0から$1以内になる感じです。
+lambdaとdynamodbは毎月無料枠があるので、基本的にこのlambda functionでかかる費用は $0から$1以内になる感じです。
+(2分に1回
 
 ### Config
 
