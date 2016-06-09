@@ -60,7 +60,7 @@ GitHubのWatchやアクティビティは読むのが困難なデザインなの
 
 dynamodbをロックファイル代わりというか、前回実行した時間の記録だけに使っています。
 lambdaとdynamodbは毎月無料枠があるので、基本的にこのlambda functionでかかる費用は $0から$1以内になる感じです。
-(2分に1回
+(2分に1回実行した場合)
 
 ### Config
 
@@ -134,7 +134,7 @@ Lambda(`role": "arn:aws:iam::xxxxxxxxxxxx"`)のroleに指定するpolicyは以�
 
 ### Cron
 
-lambdaはデフォルトだと１回実行して終わりなので繰り返し実行することでBotとして動かします
+lambdaはデフォルトだと１回実行して終わりなので繰り返し実行させて動かします
 (lambdaの実行回数による料金は基本無料枠で納まります)
 
 [スケジュールされたイベントでの AWS Lambda の使用 - AWS Lambda](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/with-scheduled-events.html "スケジュールされたイベントでの AWS Lambda の使用 - AWS Lambda")を使うことで、Cron的に繰り返し実行を設定できます。
