@@ -147,6 +147,11 @@ textlintの設定をESLint configのようにnpmで共有することもでき�
 
 - [textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch](http://efcl.info/2016/03/15/textlint--fix/ "textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch")
 
+日本語でルールなどについて話せるGitterのチャットルームが以下にあります。
+
+- [![Gitter](https://badges.gitter.im/textlint-ja/textlint-ja.svg)](https://gitter.im/textlint-ja/textlint-ja?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+
 ## ルールを作る
 
 textlintのルールの作り方は以下のドキュメントに書かれています。
