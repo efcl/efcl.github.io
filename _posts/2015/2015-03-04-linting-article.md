@@ -16,6 +16,10 @@ tags:
 
 最近になって、Markdownで書いた技術用語の表記などをLintする仕組みを追加して、pull requestした際にLint結果がinvalidなら修正を促す(主に自分に対して)レビューコメントが書き込まれる[HoundCI](https://houndci.com/ "Hound")みたいな仕組みを追加しました。
 
+追記(2016-06-18): 同じ趣旨の別記事を書きました。こちらの方が分かりやすいと思います。
+
+- [Travis CIでtextlintの指摘をPull Requestのレビューコメントとして書き込む - Qiita](http://qiita.com/azu/items/c2305f3dded3fda968e0 "Travis CIでtextlintの指摘をPull Requestのレビューコメントとして書き込む - Qiita")
+
 ## 記事のLint
 
 MarkdownなのでLintingには[textlint](https://github.com/azu/textlint "textlint")を使いました。
