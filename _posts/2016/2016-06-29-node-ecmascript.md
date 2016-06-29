@@ -21,8 +21,8 @@ tags:
 ECMAScriptの仕様策定は大きなプロジェクトですが、
 大部分の作業がGitHub上で見られる形でやり取りされています。
 
-そのため、大きなGitHubプロジェクトでそこまで変わらない感覚で見ることができ、
-また標準仕様を作るのでフォーマルなやり取りもあります。
+そのため、大きなGitHubプロジェクトとそこまで変わらない感覚で見ることができます。
+また標準仕様を作るのでConsensusを取ったり、フォーマルなやり取りもあります。
 
 - [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals)
 - [tc39/ecma262: Status, process, and documents for ECMA262](https://github.com/tc39/ecma262)
