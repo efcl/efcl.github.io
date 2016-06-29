@@ -58,7 +58,7 @@ GitHubで常に最新の仕様が公開されていて、ECMAScriptもHTMLなど
 話を戻して、ECMAScriptの仕様策定は[プロセス](https://tc39.github.io/process-document/ "The TC39 Process")や[ミーティングの議事録](https://github.com/tc39/tc39-notes/)などが公開されています。
 これは、透明性を確保するためでもあり、開発者からのフィードバックを得やすい環境を作るためだとも考えられます(GitHubでやっているのもそういう理由があると思います)
 
-そういった策定プロセスのパターンランゲージというES2015のEditor Allen Wirfs-Brockさんが公開しているので読んでみると面白いかもしれません。
+そういった策定プロセスのパターンランゲージをAllen Wirfs-Brockさん(ES2015 Editor)が公開しているので読んでみると面白いかもしれません。
 
 - [Microsoft Word - standpats-asianplop-final.docx - standpats-asianplop2016.pdf](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
 - 自分のメモ: [プログラミング言語標準化のパターン](https://gist.github.com/azu/47082cbcaf7cc7b2b2f2075afad1b025)
