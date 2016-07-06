@@ -13,7 +13,7 @@ tags:
 
 ---
 
-今、[js-primer](https://github.com/asciidwango/js-primer "js-primer")を書いていて、この本ではいろんなものをテストできる常体にして開発しています。
+今、[js-primer](https://github.com/asciidwango/js-primer "js-primer")を書いていて、この本ではいろんなものをテストできる状態にして開発しています。
 
 詳しくは[CONTRIBUTING.md](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")に書いていますが、今のところ次のようなテストが常に回っています。(CONTRIBUTINGもお待ちしています)
 
