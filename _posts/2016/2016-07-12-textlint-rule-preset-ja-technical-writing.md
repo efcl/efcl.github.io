@@ -24,6 +24,10 @@ tags:
 
 そのため、実際に適応した状態で書けることは確認した内容がベースです。一部オプションで設定をゆるくしたり、[textlint-filter-rule-comments](https://github.com/textlint/textlint-filter-rule-comments "textlint-filter-rule-comments")などで無視する必要がある部分もありますが、許容範囲な感じでした。
 
+そもそもなんでこういうツールが必要なのかについては以下のスライドを参照してください。
+
+- [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/ "Introduction | 技術文書をソフトウェア開発する話")
+
 ## インストール
 
 通常の[ルールプリセット](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセット")と入れ方は同じです。
@@ -64,12 +68,12 @@ $(npm bin)/textlint README.md
 最新のものとは異なる場合があるので、詳細は[textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing "textlint-rule-preset-ja-technical-writing")を参照してください。
 
 また、ルールの大部分は読みにくさを排除してシンプルな文章にするためのものが中心です。
-技術文書には小説のような言い回しなどは不要であるため、できるだけわかりやすく簡潔な表現をするためのものです。
+技術文書では、できるだけわかりやすく簡潔な表現をした方が良いです。
 
 - [文書執筆の指南書で解説されている問題点を textlint で発見する - Qiita](http://qiita.com/azu/items/60764ed6f415d3c748bf "文書執筆の指南書で解説されている問題点を textlint で発見する - Qiita")
 - [文書執筆の指南書で解説されている問題点を RedPen で発見する - Qiita](http://qiita.com/takahi-i/items/a8b994ef17fd66fe6237 "文書執筆の指南書で解説されている問題点を RedPen で発見する - Qiita")
 
-上記の記事では技術文書の指南書で解説されている文書の問題点とそれに対するルールがまとめられています。
+上記の記事では技術文書の問題点とそれに対するルールがまとめられています。
 このプリセットも大部分は上記の記事で解説している内容が反映されています。
 
 * 1文の長さは90文字以下とする
