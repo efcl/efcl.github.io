@@ -12,7 +12,7 @@ tags:
 
 [#teppeis_sushi](https://twitter.com/search?q=%23teppeis_sushi&src=typd "#teppeis_sushi")に参加した。
 
-- [#teppeis_sushi - Togetterまとめ]: http://togetter.com/li/1000035  "#teppeis_sushi - Togetterまとめ"
+- [#teppeis_sushi - Togetterまとめ](http://togetter.com/li/1000035 "#teppeis_sushi - Togetterまとめ")
 
 ## Karma 1.0について @ kyo_ago
 
