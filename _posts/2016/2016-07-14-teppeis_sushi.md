@@ -39,10 +39,9 @@ tags:
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/teppeis_sushi?src=hash">#teppeis_sushi</a> 謎のやつ <a href="https://t.co/PuKx1Qe9Dm">pic.twitter.com/PuKx1Qe9Dm</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/753546274012434433">July 14, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## PCブラウザから使われるウェブアプリケーションで独自ズームの実装 
+## PCブラウザから使われるウェブアプリケーションで独自ズームの実装 - yoshiko
 
-TODO: スライドのPR待ち
-
+スライド: [3分で独自ズーム](http://yoshiko-pg.github.io/slides/20160714-sushijs/)
 
 - wheelイベントでやってるサービスがあった
 - DOM3で標準化されてる
