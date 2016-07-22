@@ -45,16 +45,16 @@ npm install textlint-rule-preset-ja-spacing
 次のようなルールがプリセットには含まれています。
 また、個別のルールとしてもnpmでインストールできるようになっています。
 
-### [textlint-rule-ja-space-between-half-and-full-width](./https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-space-between-half-and-full-width)
+### [textlint-rule-ja-space-between-half-and-full-width](https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-space-between-half-and-full-width)
 
 半角文字と全角文字の間にスペースを入れるかどうかのルール
 デフォルトはスペースを入れない。
 
-### [textlint-rule-ja-space-around-code](./https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-space-around-code)
+### [textlint-rule-ja-space-around-code](https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-space-around-code)
 
 インラインコードの周りにスペースを入れるかを決めるルール
 
-### [textlint-rule-ja-no-space-between-full-width](./https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-no-space-between-full-width)
+### [textlint-rule-ja-no-space-between-full-width](https://github.com/textlint-ja/textlint-rule-spacing/tree/master/packages/textlint-rule-ja-no-space-between-full-width)
 
 全角文字同士の間のスペースについてのtextlintルール。
 全角文字どうしの間にスペースを入れません。
