@@ -69,7 +69,7 @@ JavaScriptに詳しい人は問題ないですが、JavaScriptを今から始め
 また、最近のブラウザは先行して実装したりしています。
 ブラウザに入ってる ＝ 標準化されたもの ではないので、そういうのをコードから検索できる必要が出てくる気がしています。
 
-[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")を書いていて、[演算子 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/operator/ "演算子 · JavaScriptの入門書 #jsprimer")はGoogle検索が難しいので、１ページに殆どの演算子記号を並べて書いたりしています。
+[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")を書いていて、[演算子](https://asciidwango.github.io/js-primer/basic/operator/ "演算子 · JavaScriptの入門書 #jsprimer")はGoogle検索が難しいので、１ページに殆どの演算子記号を並べて書いたりしています。
 
 JavaScriptのコードにおいても、コードからこの構文って何なのかを知りたい事があると思うので作りました。
 
