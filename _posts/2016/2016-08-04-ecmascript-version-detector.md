@@ -77,6 +77,81 @@ JavaScriptのコードにおいても、コードからこの構文って何な�
 
 [azu/ecmascript-version-detector: ECMAScript Version Detector](https://github.com/azu/ecmascript-version-detector "azu/ecmascript-version-detector: ECMAScript Version Detector")は結構ラフスケッチな感じなので、もっといい感じの表示したりするPull Request待っています。
 
+一応、ライブラリとして使えるます。
+
+```js
+const parse = require("ecmascript-version-detector").parse;
+parse(`const x = 1 ** 2;`);
+/*
+[
+    {
+        "selector": "//BinaryExpression[@operator=='**']",
+        "version": "2016",
+        "en": {
+            "name": "BinaryExpression exponentiation operator"
+        },
+        "node": {
+            "type": "BinaryExpression",
+            "start": 0,
+            "end": 6,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 6
+                }
+            },
+            "left": {
+                "type": "NumericLiteral",
+                "start": 0,
+                "end": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 1
+                    }
+                },
+                "extra": {
+                    "rawValue": 1,
+                    "raw": "1"
+                },
+                "value": 1
+            },
+            "operator": "**",
+            "right": {
+                "type": "NumericLiteral",
+                "start": 5,
+                "end": 6,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 5
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 6
+                    }
+                },
+                "extra": {
+                    "rawValue": 2,
+                    "raw": "2"
+                },
+                "value": 2
+            }
+        }
+    },
+    ....
+]
+*/
+```
+
 [Contributing](https://github.com/azu/ecmascript-version-detector#contributing "Contributing")に書いていますが、コードからのバージョンの判定は[astq](https://github.com/rse/astq "astq")を使ってセレクタにマッチするかを見ています。
 
 まだ足りてない判定などもあるので、気軽にPull Requestを投げてください。
