@@ -77,7 +77,8 @@ JavaScriptのコードにおいても、コードからこの構文って何な�
 
 [azu/ecmascript-version-detector: ECMAScript Version Detector](https://github.com/azu/ecmascript-version-detector "azu/ecmascript-version-detector: ECMAScript Version Detector")は結構ラフスケッチな感じなので、もっといい感じの表示したりするPull Request待っています。
 
-一応、ライブラリとして使えるます。
+一応、ライブラリとして使えます。
+コードをパースしたら、バージョンとかASTが入ったものを返します。
 
 ```js
 const parse = require("ecmascript-version-detector").parse;
