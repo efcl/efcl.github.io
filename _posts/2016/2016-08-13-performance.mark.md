@@ -166,7 +166,7 @@ ServiceWorkerの静的ファイルのキャッシュには以下のツールを�
 ```js
 // LICENSE : MIT
 "use strict";
-const MapLike = require("map-like");// Mapと同じようなものです
+const MapLike = require("map-like"); // Mapみたいなもの
 const EventEmitter = require("events");
 export default class PerfLogger extends EventEmitter {
     static get Events() {
@@ -201,6 +201,17 @@ export default class PerfLogger extends EventEmitter {
     }
 
     /**
+     * Register onComplete handler and return unregister handler function
+     * @param {Function} completeHandler
+     * @returns {function()}
+     */
+    onComplete(completeHandler){
+        this.on(PerfLogger.Events.complete, completeHandler);
+        return () => {
+            this.removeListener(PerfLogger.Events.complete, completeHandler);
+        };
+    }
+    /**
      * Mark log with `markerName`
      * @param {string} markerName
      */
@@ -217,7 +228,6 @@ export default class PerfLogger extends EventEmitter {
     }
 
     /**
-     * `window.performance.mark` を使いマークを付けます
      * @param {string} markerName
      * @private
      */
@@ -243,7 +253,7 @@ const perfLogger = new PerfLogger([
     "b"
 ]);
 // All("a" and "b") complete!
-perfLogger.on(PerfLogger.Events.complete, () => {
+perfLogger.onComplete(() => {
     window.performance.measure(
         "Taken a->b",
         "a",
