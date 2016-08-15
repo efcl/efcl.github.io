@@ -108,7 +108,7 @@ Perfoamance APIでは、地点のマーキングと区間のマーキングと�
 
 ロガーを実装するのは面倒だったので、[micmro/performance-bookmarklet](https://github.com/micmro/performance-bookmarklet "micmro/performance-bookmarklet: Performance-Bookmarklet helps to analyze the current page through the Resource Timing API, Navigation Timing API and User-Timing - requests by type, domain, load times, marks and more. Sort of a light live WebPageTest.")を使って"起動までの時間"をコンソールに表示します。
 
-![before](http://efcl.info/wp-content/uploads/2016/08/13-1471098414.png)
+[![before](http://efcl.info/wp-content/uploads/2016/08/13-1471098414.png)](http://efcl.info/wp-content/uploads/2016/08/13-1471098414.png)
 
 "AppBootStrap:end"が遠すぎて見えない…
 
@@ -142,7 +142,7 @@ ServiceWorkerの静的ファイルのキャッシュには以下のツールを�
 
 辞書をキャッシュしたことで、起動までの時間が8913ms -> 2187msまで短縮できました。
 
-![after](http://efcl.info/wp-content/uploads/2016/08/13-1471098703.png)
+[![after](http://efcl.info/wp-content/uploads/2016/08/13-1471098703.png)](http://efcl.info/wp-content/uploads/2016/08/13-1471098703.png)
 
 `console.log`と違って、このまま`window.performance.mark("AppBootStrap:end");`などを残してても特に害があるわけではありません。
 コンソールへの出力を実装していないので、能動的に見ないかぎりは何も出力されてないように見えるためです。
