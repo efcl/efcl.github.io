@@ -14,7 +14,7 @@ tags:
 JavaScriptである区間にかかった時間を計測する時に、次のようなコードを書いたことがあると思います。
 
 ```js
-const start = perforamnce.now();
+const start = performance.now();
 // 処理
 // 色々な処理がすべて終わった
 doSome(() => {
