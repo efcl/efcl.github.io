@@ -2,7 +2,7 @@
 title: "performance.markでパフォーマンス計測する"
 author: azu
 layout: post
-date : 2016-08-13T23:24
+date : 2016-08-15T21:24
 category: JavaScript
 tags:
     - performance
