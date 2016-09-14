@@ -33,7 +33,7 @@ tags:
 
 ## 文章が特定のキーワードを含むかテストする
 
-実際どうやって文章をテストするかというと次のようなBDDっぽいようなテストを買います。
+実際どうやって文章をテストするかというと次のようなBDDっぽいようなテストを書きます。
 
 - [text-testing-mocha](https://github.com/azu/text-testing/tree/master/packages/text-testing-mocha "text-testing-mocha")
 
