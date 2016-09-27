@@ -1,5 +1,5 @@
 ---
-title: "React Meetup #4でJavaScriptでのCQRSの話をしてきた"
+title: "React Meetup #4 でJavaScriptでのCQRSの話をしてきた"
 author: azu
 layout: post
 date : 2016-09-27T22:54
