@@ -56,6 +56,12 @@ GitHubのリポジトリには、リポジトリごとにDeploy Keyという公�
 npm i -D @alrra/travis-scripts
 ```
 
+先に指定した、公開鍵をGitHubリポジトリに登録する[azu/add-deploy-key-to-github](https://github.com/azu/add-deploy-key-to-github "azu/add-deploy-key-to-github")というツールを書いたのでそれを入れておきます。
+
+```
+npm i -g add-deploy-key-to-github
+```
+
 次に、先ほどの手順の1-3をある程度自動的にやってくれるスクリプトを該当するプロジェクトのディレクトリで実行します。
 
 ```sh
