@@ -27,7 +27,9 @@ GitHubのリポジトリには、リポジトリごとにDeploy Keyという公�
 
 - [alrra/travis-scripts: Scripts to help automate things using Travis CI](https://github.com/alrra/travis-scripts "alrra/travis-scripts: Scripts to help automate things using Travis CI")
 
-このスクリプトはTC39のECMAScriptの仕様書の自動デプロイとかにも使わrています。
+このスクリプトはTC39のECMAScriptの仕様書の自動デプロイとかにも使われています。
+
+- [ecma262/auto-deploy.sh at master · tc39/ecma262](https://github.com/tc39/ecma262/blob/master/scripts/auto-deploy.sh "ecma262/auto-deploy.sh at master · tc39/ecma262")
 
 仕組みとしては、次のようになっています。
 
