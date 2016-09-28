@@ -1,5 +1,5 @@
 ---
-title: "Travis CIからgh-pagesでデプロイする設定 via SSH/git push"
+title: "Travis CIからgh-pagesへデプロイする設定 via SSH/git push"
 author: azu
 layout: post
 date : 2016-09-27T23:29
