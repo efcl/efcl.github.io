@@ -21,8 +21,9 @@ tags:
 - [large-scale-javascript/refs.md at master · azu/large-scale-javascript](https://github.com/azu/large-scale-javascript/blob/master/refs.md "large-scale-javascript/refs.md at master · azu/large-scale-javascript")
 
 自分用のメモなので、読んだ順で並べておきます。
+右側の年は書籍の出た年です。
 
-## [実践ドメイン駆動設計](http://www.shoeisha.co.jp/book/detail/9784798131610 "実践ドメイン駆動設計")
+## [実践ドメイン駆動設計](http://www.shoeisha.co.jp/book/detail/9784798131610 "実践ドメイン駆動設計") @ 2013
 
 一番最初に読んだDDD系の本。
 
@@ -43,7 +44,7 @@ Kindleで買ってたので、スクリーンショットをOneNoteに貼ると�
 
 ![memo](http://efcl.info/wp-content/uploads/2016/09/30-1475238536.png)
 
-## [今日からはじめる情報設計](http://www.bnn.co.jp/dl/mess/ "今日からはじめる情報設計")
+## [今日からはじめる情報設計](http://www.bnn.co.jp/dl/mess/ "今日からはじめる情報設計") @ 2015
 
 情報設計(IA)についてかなり分かりやすい本。
 フワッとした表現が多いけど、色々考え方の参考になった。
@@ -62,12 +63,12 @@ Kindleで買ってたので、スクリーンショットをOneNoteに貼ると�
 
 IAという言葉もやはり変化していると思って探して見つけた記憶。
 
-## [エンジニアのための図解思考 再入門講座 情報の“本質”を理解するための実践テクニック（開米瑞浩） ｜ 翔泳社の本](http://www.shoeisha.co.jp/book/detail/9784798122755 "エンジニアのための図解思考 再入門講座 情報の“本質”を理解するための実践テクニック（開米瑞浩） ｜ 翔泳社の本")
+## [エンジニアのための図解思考 再入門講座 情報の“本質”を理解するための実践テクニック（開米瑞浩） ｜ 翔泳社の本](http://www.shoeisha.co.jp/book/detail/9784798122755 "エンジニアのための図解思考 再入門講座 情報の“本質”を理解するための実践テクニック（開米瑞浩） ｜ 翔泳社の本") @ 2010
 
 情報の整理の仕方を考えていた。
 箇条書きよりテーブルのほうが情報量多いよという話
 
-## [.NETのエンタープライズアプリケーションアーキテクチャ　第2版　～.NETを例にしたアプリケーション設計原則](http://ec.nikkeibp.co.jp/item/books/P98480.html ".NETのエンタープライズアプリケーションアーキテクチャ　第2版　～.NETを例にしたアプリケーション設計原則")
+## [.NETのエンタープライズアプリケーションアーキテクチャ　第2版　～.NETを例にしたアプリケーション設計原則](http://ec.nikkeibp.co.jp/item/books/P98480.html ".NETのエンタープライズアプリケーションアーキテクチャ　第2版　～.NETを例にしたアプリケーション設計原則") @ 2015
 
 DDD本の中では一番読みやすい日本語の書籍な気がする。
 最初のアーキテクトの話なども面白かった。
@@ -82,7 +83,7 @@ DDDの文脈で出てくる用語は検索しても、とにかく曖昧な事�
 
 とかそういう話はIAのやつでも出てきたので、その辺で話のつながりを感じた。
 
-## [オブジェクト開発の神髄](http://bpstore.nikkeibp.co.jp/item/books/P82370.html "日経BP書店｜商品詳細　-　オブジェクト開発の神髄")
+## [オブジェクト開発の神髄](http://bpstore.nikkeibp.co.jp/item/books/P82370.html "日経BP書店｜商品詳細　-　オブジェクト開発の神髄") @2005
 
 [Almin](https://github.com/almin/almin "Almin")でUseCaseという用語を使っていたので、その用語が出てくるものとして見つけて読んだ。
 
@@ -92,16 +93,16 @@ DDDの文脈で出てくる用語は検索しても、とにかく曖昧な事�
 
 PoEAAと出版時期が近かった気がするけど、こっちの方が興味深い感じだった。
 
-## [エンタープライズアプリケーションアーキテクチャパターン](http://www.shoeisha.co.jp/book/detail/9784798105536 "エンタープライズアプリケーションアーキテクチャパターン（長瀬嘉秀 Martin Fowler 株式会社テクノロジックアート） ｜ 翔泳社の本")
+## [エンタープライズアプリケーションアーキテクチャパターン](http://www.shoeisha.co.jp/book/detail/9784798105536 "エンタープライズアプリケーションアーキテクチャパターン（長瀬嘉秀 Martin Fowler 株式会社テクノロジックアート） ｜ 翔泳社の本") @ 2005
 
 PoEAA。
 読んでいてDDD本とかIDDD本とかでも似たような事を言ってたなー感じた記憶がある。
 
 この辺でアーキテクチャ本みたいな事が言ってることは、本質的にはそんな変化ないのかなーという所に興味が出てきた。
 
-## [パターン・ランゲージ: 創造的な未来をつくるための言語](https://www.amazon.co.jp/dp/4766419871/ "パターン・ランゲージ: 創造的な未来をつくるための言語")
+## [パターン・ランゲージ: 創造的な未来をつくるための言語](https://www.amazon.co.jp/dp/4766419871/ "パターン・ランゲージ: 創造的な未来をつくるための言語") @ 2013
 
-今ある色々なアーキテクチャの源流的なものを巡っていて、[パタン・ランゲージ―環境設計の手引](https://www.amazon.co.jp/dp/4306041719/ "パタン・ランゲージ―環境設計の手引")を探しているときに見た。
+今ある色々なアーキテクチャの源流的なものを巡っていて、[パタン・ランゲージ―環境設計の手引](https://www.amazon.co.jp/dp/4306041719/ "パタン・ランゲージ―環境設計の手引") @ 1984を探しているときに見た。
 
 DDDもパターン集であるため、この源流はやはりこの辺にあるのではと思って調べていた。
 IAの話もそうだけど、構造化の考え方などは都市構造の考えの話とも一致している感じがする。
@@ -147,11 +148,15 @@ via [http://twilog.org/azu_re/date-160519](http://twilog.org/azu_re/date-160519)
 
 この辺で一端折り返した。
 
-## [`Pattern_Language_for_Information_Architecture.pdf`](http://www.ellisonconsulting.com/downloads/Pattern_Language_for_Information_Architecture.pdf "Pattern_Language_for_Information_Architecture.pdf")
+## [A Pattern Language for Information Architecture](http://www.ellisonconsulting.com/downloads/Pattern_Language_for_Information_Architecture.pdf "Pattern_Language_for_Information_Architecture.pdf")
 
 パターン・ランゲージとIAについて書かれたスライド。
 
-## [Patterns, Principles, and Practices of Domain-Driven Design - Wrox](http://www.wrox.com/WileyCDA/WroxTitle/Patterns-Principles-and-Practices-of-Domain-Driven-Design.productCd-1118714709.html "Patterns, Principles, and Practices of Domain-Driven Design - Wrox")
+## [企業情報システムアーキテクチャ](https://www.amazon.co.jp/dp/B00N0SRXBI/ "企業情報システムアーキテクチャ")
+
+企業システムのアーキテクチャの話として見た。
+
+## [Patterns, Principles, and Practices of Domain-Driven Design - Wrox](http://www.wrox.com/WileyCDA/WroxTitle/Patterns-Principles-and-Practices-of-Domain-Driven-Design.productCd-1118714709.html "Patterns, Principles, and Practices of Domain-Driven Design - Wrox") @ 2015
 
 DDDについて分かりやすく書かれてる書籍。
 DDD本/IDDD本が分かりにくいところを分かりやすく書こうとした感じのする内容だった。
@@ -160,16 +165,18 @@ DDDに興味がある人は読むとよい感じな気がする。(かなり分�
 
 ## 読みたいけど読めてないもの
 
-### [オブジェクトデザイン](https://www.amazon.co.jp/dp/4798109037/ "オブジェクトデザイン")
+### [オブジェクトデザイン](https://www.amazon.co.jp/dp/4798109037/ "オブジェクトデザイン") @ 2007
 
 ES6の仕様のEditorである[アレン・ワーフスブラック](https://codezine.jp/article/detail/9071 "アレン・ワーフスブラック")の奥さんでもある[レベッカ・ワーフスブラック](https://www.ogis-ri.co.jp/otc/hiroba/ogisbooks/ObjectDesign.html "レベッカ・ワーフスブラック")が書いた書籍。
 責務駆動についてちょっと知りたい。
 
-### [実践UML 第3版 オブジェクト指向分析設計と反復型開発入門](https://www.amazon.co.jp/dp/4894716828/ "実践UML 第3版 オブジェクト指向分析設計と反復型開発入門")
 
-オブジェクト指向について
+### [実践UML 第3版 オブジェクト指向分析設計と反復型開発入門](https://www.amazon.co.jp/dp/4894716828/ "実践UML 第3版 オブジェクト指向分析設計と反復型開発入門") @ 2007
 
-### [ユースケース駆動開発実践ガイド](http://www.shoeisha.co.jp/book/detail/9784798114453 "ユースケース駆動開発実践ガイド")
+オブジェクト指向について。
+そもそも手に入らない。
+
+### [ユースケース駆動開発実践ガイド](http://www.shoeisha.co.jp/book/detail/9784798114453 "ユースケース駆動開発実践ガイド") @ 2007
 
 ユースケースについて。今読んでる。
 
