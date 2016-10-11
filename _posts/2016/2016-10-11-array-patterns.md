@@ -247,7 +247,7 @@ console.log(b.hasOwnProperty(0)); // => false
 // new Array(10)
 var array = {
     length: 10,
-    __proto__: Array
+    __proto__: Array.prototype
 };
 array[0]; // => undefined
 ```
