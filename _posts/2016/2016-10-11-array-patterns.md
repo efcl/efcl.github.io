@@ -363,6 +363,7 @@ console.log(index); // => -1
 ```
 
 代わりにES2015からは`Array#findIndex` が利用できます。
+
 ```js
 var array = [{ id: 1 }, { id: 2}];
 var index = array.findIndex(item => item.id === 1);
