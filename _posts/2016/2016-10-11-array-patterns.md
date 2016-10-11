@@ -214,6 +214,7 @@ console.log(newArray); // => [1, 2, 3, 4]
 ```
 
 もちろん`Array#slice`などでコピーした配列にpushするでも問題ありません。
+
 ```js
 var array = [1, 2, 3];
 var newArray = array.slice();
