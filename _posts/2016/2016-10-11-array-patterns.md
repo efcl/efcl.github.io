@@ -525,3 +525,54 @@ function getSomeList(){
 こうすることで、このAPIを利用する側はnullチェックをしなくても良くなります。
 `null`や`undefined`を返してしまうと、このAPIを使うたびに`null`チェックが必要となります。
 `null`チェックが不要ならば不要な形にした方が良いはずです。
+
+## おまけ
+
+Arrayのメソッドで破壊的なものとそうでないものをまとめたもの
+
+### Mutable
+
+| Name                                     |        |
+| ---------------------------------------- | ------ |
+| [`Array.prototype.copyWithin()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin) | Array  |
+| [`Array.prototype.fill()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | Array  |
+| [`Array.prototype.pop()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) | any    |
+| [`Array.prototype.push()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/push) | Number |
+| [`Array.prototype.reverse()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) | Array  |
+| [`Array.prototype.shift()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) | any    |
+| [`Array.prototype.sort()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) | Array  |
+| [`Array.prototype.unshift()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) | any    |
+
+### Immutable
+
+| Name                                     | Description |
+| ---------------------------------------- | ----------- |
+| [`Array.from()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/from) | Array       |
+| [`Array.prototype.slice()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) | Array       |
+| [`Array.prototype.concat()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) | Array       |
+| [`Array.prototype.entries()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/entries) | Array       |
+| [`Array.prototype.filter()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) | Array       |
+| [`Array.prototype.keys()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) | Array       |
+| [`Array.prototype.map()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map) | Array       |
+| [`Array.prototype.reduce()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) | any         |
+| [`Array.prototype.reduceRight()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight) | any         |
+
+
+
+
+### Other 
+
+| Name                                     | Returns  |
+| ---------------------------------------- | -------- |
+| [`Array.prototype.join()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join) | String   |
+| [`Array.prototype.some()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/some) | boolean  |
+| [`Array.prototype.values()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/values) | Iterator |
+| [`Array.isArray()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) | boolean  |
+| [`Array.prototype.every()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/every) | void     |
+| [`Array.prototype.find()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/find) | any      |
+| [`Array.prototype.findIndex()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) | Number   |
+| [`Array.prototype.forEach()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | void     |
+| [`Array.prototype.includes()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) | boolean  |
+| [`Array.prototype.indexOf()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) | Number   |
+| [`Array.prototype.lastIndexOf()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) | Number   |
+
