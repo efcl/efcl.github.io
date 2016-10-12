@@ -279,7 +279,7 @@ console.log(array[9] === 9);// => true
 - [Array.from() - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/from "Array.from() - JavaScript | MDN")
 
 先ほどの`new Array`で作った疎な配列もlengthは持っているので、for文などで走査することはできます。
-`Array.from`は、`arguments`のようなArray-likeや疎な配列も、意図したように列挙できる`Array#map`のような仕組みを持っています。
+`Array.from`は、`arguments`のようなArray-likeや疎な配列も列挙でき かつ `Array#map`のような仕組みを持っています。
 
 ```js
 var array = Array.from(new Array(10), (item, index) => {
