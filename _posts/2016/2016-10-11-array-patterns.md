@@ -338,7 +338,7 @@ flatten(array); // => [1, 2, 3]
 
 ## entriesで何か
 
-オブジェクをループ時に key と value のどちらも必要な場合は、`Object.values`メソッドを利用すると簡単です。
+オブジェクをループ時に key と value のどちらも必要な場合は、`Object.entries`メソッドを利用すると簡単です。
 
 ```js
 var object = {
@@ -351,6 +351,7 @@ var keyValues = Object.entries(object).map(([key, value]) => {
 console.log(keyValues); // => ["key1:value1", "key2:value2"];
 ```
 
+keyだけなら`Object.keys`メソッド、valueだけなら`Object.values`メソッドが利用できます。
 
 ## indexOf => findIndex
 
