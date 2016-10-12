@@ -300,7 +300,7 @@ console.log(Array.from(map));// => [[1, 2], [2, 4], [4, 8]]
 
 ```js
 var map = new Map([[1, 2], [2, 4], [4, 8]]);
-console.log(...map);// => [[1, 2], [2, 4], [4, 8]]
+console.log([...map]);// => [[1, 2], [2, 4], [4, 8]]
 ```
 
 ## flatten
