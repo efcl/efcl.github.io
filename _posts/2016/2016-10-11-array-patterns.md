@@ -311,7 +311,7 @@ console.log(...map);// => [[1, 2], [2, 4], [4, 8]]
 
 concatを使った方法が有名です。
 
-shallowなflattenをします・。
+`Array#concat`を使った方法ではshallowなflattenを行えます。
 
 ```js
 function flatten(array) {
@@ -321,7 +321,8 @@ var array = [[1], [2], [3]];
 flatten(array); // => [1, 2, 3]
 ```
 
-再帰的にやることでdeepなflattenをします。
+再帰的にやることでdeepなflattenができます。
+もう一つのflattenを行う方法として、`...` spread operatorで配列を展開してしまう方法です。
 
 ```js
 function flatten(array) {
