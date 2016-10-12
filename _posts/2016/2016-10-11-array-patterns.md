@@ -532,7 +532,7 @@ Arrayのメソッドで破壊的なものとそうでないものをまとめた
 
 ### Mutable
 
-| Name                                     |        |
+| Name                                     | Returns |
 | ---------------------------------------- | ------ |
 | [`Array.prototype.copyWithin()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin) | Array  |
 | [`Array.prototype.fill()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | Array  |
@@ -545,7 +545,7 @@ Arrayのメソッドで破壊的なものとそうでないものをまとめた
 
 ### Immutable
 
-| Name                                     | Description |
+| Name                                     | Returns |
 | ---------------------------------------- | ----------- |
 | [`Array.from()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/from) | Array       |
 | [`Array.prototype.slice()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) | Array       |
