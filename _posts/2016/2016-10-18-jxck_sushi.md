@@ -130,7 +130,7 @@ tags:
 
 - `title`属性の使い道は現在のUAだとツールチップぐらい
 - セマンティックスが先にあって、それを消費する形が正しい姿
-- 今title属性を消費するクライアントがないからという理由で、titleを省略していくという考えは変なの正しくはないのではという話
+- 今title属性を消費するクライアントがないからという理由で、titleを省略していくという考えは変なのではという話
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">HTMLとして正しいじゃなくて、ウェブとして正しいかという話になってしまう。<br>なのでやや抽象的で、どこから見た視点なのかという話になる<br> <a href="https://twitter.com/hashtag/jxck_sushi?src=hash">#jxck_sushi</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/788351935640285184">October 18, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
