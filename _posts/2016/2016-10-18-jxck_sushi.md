@@ -105,11 +105,11 @@ tags:
 	- テーマ機能とか
 	- CSSむずかしい
 - v1ではopenとclose modeとなった
-	- CSS Custom PropertyをI/F的に使えるのは同じ
+	- どちらもCSS Custom PropertyをI/F的に使えるのは同じ
 	- [僕がネイティブな CSS 変数にわくわくする理由](http://terkel.github.io/why-im-excited-about-native-css-variables/ "僕がネイティブな CSS 変数にわくわくする理由")
 	- closeは外からさせない
 	- openは外からさせる
-	- コンポーネントを作るときに確定する仕組みになった
+	- コンポーネントをattachShadowする時に確定する仕組みになった
 
 ## それCSSでできるよ
 
