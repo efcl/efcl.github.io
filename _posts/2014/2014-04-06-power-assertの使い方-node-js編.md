@@ -134,7 +134,7 @@ power-assertを使いたいプロジェクトに[power-assert][5]と[intelli-esp
     <span class="p">});</span>
     <span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;#indexOf()&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should return index when the value is present&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">zero</span> <span class="o">=</span> <span class="mi"></span><span class="p">,</span> <span class="nx">two</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="kd">var</span> <span class="nx">zero</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">two</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
             <span class="nx">assert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">ary</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">zero</span><span class="p">)</span> <span class="o">===</span> <span class="nx">two</span><span class="p">);</span>
         <span class="p">});</span>
     <span class="p">});</span>
