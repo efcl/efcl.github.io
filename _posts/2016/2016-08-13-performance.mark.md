@@ -33,7 +33,7 @@ APIについて詳しくは以下の記事を見るといいと思います。
 
 そして、マーキングした後に[Performance.getEntries()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntries "Performance.getEntries()")でその区間の開始時間やかかった時間などを得ることができます。
 
-開発者ツールだとこのマーキングした区間を可視化してくれないので不便ですが、次の拡張 or ブックマークレットを使ううとNavigation Timing APIとともに可視化してくれるので便利です。
+<del>開発者ツールだとこのマーキングした区間を可視化してくれないので不便ですが、</del><ins>ChromeやIE、MSEdgeは開発者ツールが対応しています。</ins>次の拡張 or ブックマークレットを使ううとNavigation Timing APIとともに可視化してくれるので便利です。
 
 - [micmro/performance-bookmarklet](https://github.com/micmro/performance-bookmarklet "micmro/performance-bookmarklet: Performance-Bookmarklet helps to analyze the current page through the Resource Timing API, Navigation Timing API and User-Timing - requests by type, domain, load times, marks and more. Sort of a light live WebPageTest.")
 
