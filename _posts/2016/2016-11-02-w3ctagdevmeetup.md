@@ -8,6 +8,7 @@ tags:
     - W3C
     - Spec
     - Discussion
+    - イベント
 
 ---
 
