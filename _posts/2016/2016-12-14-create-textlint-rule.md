@@ -183,10 +183,9 @@ textlint-rule-found-bug/
 
 ルールの公開は基本的には[npm](https://www.npmjs.com/)に公開します。
 `pacakge.json`の`version`を上げたり`git tag`を貼るなどは[npm-version](https://docs.npmjs.com/cli/version "npm-version")を使うと簡単です。
-バージョンを上げたら、[npm-publish](https://docs.npmjs.com/cli/publish "npm-publish")コマンドで公開すれば完了です。
+[semver](http://semver.org/lang/ja/)なバージョンを上げたら、[npm-publish](https://docs.npmjs.com/cli/publish "npm-publish")コマンドで公開すれば完了です。
 
-	npm version patch
-	# semverに応じしてバージョンのあがり方を選ぶ
+	npm version patch	
 	# npm version minor
 	# npm version major
 	npm publish
