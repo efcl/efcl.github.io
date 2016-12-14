@@ -18,7 +18,7 @@ tags:
 
 しかし、普段JavaScriptをあんまり使ってない人には[Babel](https://babeljs.io/ "Babel")を使ったコード変換や[Mocha](http://mochajs.org/ "Mocha")を使ったテストの設定など、ルールを書き始めるまでの環境づくりの方が大変です。
 
-そういう環境の設定をワンラインで作れて、ルールづくりをすぐ始めることができるツールを作りました。
+そういう環境の設定をコマンド一発で作れて、textlintルールづくりをすぐ始めることができるツールを作りました。
 
 - [create-textlint-rule](https://github.com/textlint/create-textlint-rule "create-textlint-rule")
 	- Scaffolding Tool
