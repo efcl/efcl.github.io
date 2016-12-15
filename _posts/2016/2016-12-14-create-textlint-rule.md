@@ -185,7 +185,7 @@ textlint-rule-found-bug/
 `pacakge.json`の`version`を上げたり`git tag`を貼るなどは[npm-version](https://docs.npmjs.com/cli/version "npm-version")を使うと簡単です。
 [semver](http://semver.org/lang/ja/)なバージョンを上げたら、[npm-publish](https://docs.npmjs.com/cli/publish "npm-publish")コマンドで公開すれば完了です。
 
-	npm version patch	
+	npm version patch
 	# npm version minor
 	# npm version major
 	npm publish
@@ -225,10 +225,17 @@ textlint-rule-found-bug/
 
 [create-textlint-rule](https://github.com/textlint/create-textlint-rule "create-textlint-rule")を使い、作ったプロジェクト内で、`textlint`にルールを読み込ませて確認する方法。
 
-	$ npm run build
-	$ $(npm bin)/textlint --rulesdir ./lib/ README.md
-	# $(npm bin) は ./node_modules/.bin と同じなので次も可
-        $ ./node_modules/.bin/textlint --rulesdir ./lib/ README.md
+プロジェクトをビルドして、`textlint`の`--rulesdir`で直接ルールを読み込んで使えば、publishせずに確認できます。
+
+  	$ npm run build
+  	$ $(npm bin)/textlint --rulesdir ./lib/ README.md
+  	# $(npm bin) は ./node_modules/.bin と同じなので次でもOK
+    $ ./node_modules/.bin/textlint --rulesdir ./lib/ README.md
+
+もしくは、ローカルで作ったプロジェクトを`npm install`することでも、publishせずに確認できます。
+
+    # 試したいプロジェクトで、textlint-rule-found-bugへのローカルパスを指定
+    $ npm install /path/to/textlint-rule-found-bug
 
 ## おわりに
 
