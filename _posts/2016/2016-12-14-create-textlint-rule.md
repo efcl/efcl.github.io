@@ -227,7 +227,8 @@ textlint-rule-found-bug/
 
 	$ npm run build
 	$ $(npm bin)/textlint --rulesdir ./lib/ README.md
-
+	# $(npm bin) は ./node_modules/.bin と同じなので次も可
+        $ ./node_modules/.bin/textlint --rulesdir ./lib/ README.md
 
 ## おわりに
 
