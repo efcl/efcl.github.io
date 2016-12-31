@@ -1,5 +1,5 @@
 ---
-title: "ECMAScriptの情報サイト"
+title: "ECMAScriptの情報サイトを始めて1年経った"
 author: azu
 layout: post
 date : 2016-12-31T15:33
