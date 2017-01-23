@@ -28,6 +28,14 @@ tags:
 
 - [Open Collective · Issue #4 · jser/report](https://github.com/jser/report/issues/4 "Open Collective · Issue #4 · jser/report")
 
+Twitterログ
+
+- [#t_wada_sushi - Togetterまとめ](https://togetter.com/li/1073636 "#t_wada_sushi - Togetterまとめ")
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">いろいろとヤバいプレゼントを貰いました。ありがとうございました！ <a href="https://twitter.com/hashtag/t_wada_sushi?src=hash">#t_wada_sushi</a> <a href="https://t.co/8ilgnGhEAq">pic.twitter.com/8ilgnGhEAq</a></p>&mdash; Takuto Wada (@t_wada) <a href="https://twitter.com/t_wada/status/823545108695875584">January 23, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 -----
 
 ## webpack2 - 会長
