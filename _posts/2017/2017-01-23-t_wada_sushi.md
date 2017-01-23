@@ -101,7 +101,7 @@ tags:
 	- CSP: block-all-mixed-contentでmixed contentはblockされる
 	- `Content-Security-Policy-Report-Only: policy`
 	- [Content Security Policy (CSP) - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP "Content Security Policy (CSP) - HTTP | MDN")
-	- `report-onlyp` modeなら実際にはblockされないで、reportだけを遅れる
+	- `report-only` modeなら実際にはblockされないで、reportだけを遅れる
 - [Welcome to report-uri.io](https://report-uri.io/ "Welcome to report-uri.io")
 	- UIがダメ、すぐダウンする
 	- CSP reportの管理ツールでいいものがまだない
