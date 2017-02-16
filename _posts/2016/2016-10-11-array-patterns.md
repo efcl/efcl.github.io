@@ -384,7 +384,7 @@ console.log(isContained); // => true
 
 ## indexOf => includes
 
-配列が指定した要素を含んでいるかに `array.indexOf(value) !=== -1` を使ったイディオムがあります。
+配列が指定した要素を含んでいるかに `array.indexOf(value) !== -1` を使ったイディオムがあります。
 先ほども書いたように`indexOf`は`===`による比較なので、`Array#some`で書くと次のような処理になります。
 
 ```js
