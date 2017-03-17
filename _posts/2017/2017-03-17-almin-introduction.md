@@ -364,7 +364,7 @@ const appContext = new Context({
 });
 ```
 
-```jsx
+```js
 "use strict";
 import React from "react";
 import { Context, Dispatcher } from "almin";
@@ -431,7 +431,7 @@ appContext.onChange(onChangeHandler);
 context.useCase(new IncrementalCounterUseCase()).execute();
 ```
 
-```jsx
+```js
 "use strict";
 import React from "react";
 import IncrementalCounterUseCase from "../usecase/IncrementalCounterUseCase";
