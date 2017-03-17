@@ -1,5 +1,5 @@
 ---
-title: "AlminでFluxアーキテクチャについてを見ていく"
+title: "AlminでFluxアーキテクチャをやってみる"
 author: azu
 layout: post
 date : 2017-03-17T19:33
