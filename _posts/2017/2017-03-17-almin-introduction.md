@@ -79,16 +79,7 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 
 他のライブラリと見比べてみると次のような形になります。
 
-| Almin      | Flux          | Redux                  |
-|------------|---------------|------------------------|
-| Dispatcher | Dispatcher    | store.dispatch         |
-| Context    | Container     | Middleware/React Redux |
-| UseCase    | ActionCreator | Actions                |
-| Store      | Store         | Store                  |
-| StoreGroup | Container     | combineReducers        |
-| (State)    | Store         | Reducer                |
-| (Domain)   |               |                        |
-|(Repository)|               |                        |
+![比較table](http://efcl.info/wp-content/uploads/2017/03/17-1489747778.png)
 
 このサンプルは状態が一つしかないため、複数のStoreをまとめるStoreGroupや、
 ロジックが殆どないためDomainといった要素は登場していません。
