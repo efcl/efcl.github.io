@@ -13,7 +13,7 @@ tags:
 
 [Almin](https://github.com/almin/almin "Almin")でFluxアーキテクチャについてを見ていく話です。
 
-AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆動設計(DDD)を行うにあたって既存の[Redux](https://github.com/reactjs/redux "Redux")や[Flux](https://github.com/facebook/flux "Flux")では上手くレイヤリングがしにくい問題があったため作成しました。
+AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆動設計(DDD)を行うにあたって既存の[Redux](https://github.com/reactjs/redux "Redux")や[Flux](https://github.com/facebook/flux "Flux")では上手くレイヤー分けをやりにくい部分がありました。
 
 この辺の経緯については以前スライドやドキュメントにまとめてあるので、以下を参照してください。
 
@@ -47,7 +47,7 @@ open http://localhost:8080/
 
 ## ディレクトリ構造
 
-最終的なディレクトリ構造を最初に見ておいたほうがイメージがしやすいかもしれません。
+最終的なディレクトリ構造を最初に見ておくとイメージがしやすいかもしれません。
 
 データの流れとしては、Component -> UseCase -> Storeとなりますが、実装の順序はこの順序じゃなくても問題ありません。
 
@@ -99,7 +99,7 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 
 以上。
 
-つまり、このカウンターは「ユーザーがボタンを押したら+1する」というUseCaseがあることが分かります。
+つまり、このカウンターは「ユーザーがボタンを押したら+1する」というUseCaseがあります。
 
 ## UseCase
 
@@ -107,7 +107,7 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 UseCaseとは、ユーザーとシステムのやり取りを対話的に書いたものです。
 
 簡単に言えば、ユースケースにはユーザーがシステムとやり取りする手順を書いていきます。
-カウンターの例ではそんなに複雑な手順は出てこないので、ユーザーがUIを操作した時に行うアクションを書く場所と思っておけば間違いはないでしょう。
+カウンターの例では複雑な手順が出てこないため、ユーザーがUIを操作した時に行うアクションを書く場所と考えれば問題ありません。
 
 > 1. ボタンを押したら+1する
 
@@ -349,7 +349,7 @@ UseCase、Store、Stateと分かれているのでテストも書くのは簡単
 `Context`オブジェクトとはStoreとUseCaseを繋ぐ役割をするものです。
 
 次のように、StoreのインスタンスとDispatcherのインスタンスを渡して初期化しています。
-(ここではStoreは一つのみですが、Alminでは複数のStoreをまとめるStoreGroupというものも用意しています)
+(ここではStoreが一つのみですが、Alminでは複数のStoreをまとめるStoreGroupというものも用意しています)
 
 ```js
 import {Context, Dispatcher} from "almin";
