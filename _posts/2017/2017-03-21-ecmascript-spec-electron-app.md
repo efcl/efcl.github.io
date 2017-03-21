@@ -1,5 +1,5 @@
 ---
-title: "ECMAScript仕様書アプリを作る"
+title: "3行でECMAScript仕様書アプリを作る"
 author: azu
 layout: post
 date : 2017-03-21T09:45
@@ -22,14 +22,14 @@ Electron製なのでどのプラットフォームでも動くと思います。
 
 - [nativefier](https://github.com/jiahaog/nativefier "nativefier")を入れます。
 - サイト内検索をする[in-site-search-javascript](https://github.com/azu/in-site-search-javascript "in-site-search-javascript")を入れます。
-- ビルドします
-- 完成です
+- ビルドします。
 
 ```
 npm i -g nativefier
 curl https://azu.github.io/in-site-search-javascript/index.js > index.js
 nativefier --name "ECMAScript" "https://tc39.github.io/ecma262/" --fast-quit --hide-window-frame --show-menu-bar --maximize --inject ./index.js
 ```
+完成です。
 
 ## 使い方
 
