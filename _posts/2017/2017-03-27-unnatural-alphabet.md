@@ -96,5 +96,5 @@ C言語のようなよくあるアルファベット一文字 + 日本語から�
 npm i -g technological-book-corpus-ja textlint textlint-rule-ja-unnatural-alphabet
 # 技術書のMarkdonファイルパスが出力される
 # それをtextlintのルールに通してどんなところでおちるかをチェックする
-technological-book-corpus-ja  | xargs textlint --rules textlint-rule-ja-unnatural-alphabet -f pretty-error
+technological-book-corpus-ja  | xargs textlint --rule textlint-rule-ja-unnatural-alphabet -f pretty-error
 ```
