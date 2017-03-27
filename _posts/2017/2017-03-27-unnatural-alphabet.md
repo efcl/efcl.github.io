@@ -1,5 +1,5 @@
 ---
-title: "不自然なアルファベットを見つｋるtextlintルール"
+title: "不自然なアルファベットを見つけるtextlintルール"
 author: azu
 layout: post
 date : 2017-03-27T20:14
