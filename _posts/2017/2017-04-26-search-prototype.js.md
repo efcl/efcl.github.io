@@ -57,6 +57,12 @@ cc({});
 - <https://github.com/azu/search-prototype.js/blob/master/src/create-search-index.js>
 - このファイルをみるとどのような検索パターンなのか分かります。
 
+検索クエリは基本的にはequeryですが、utilだけsqueryで書いてます(graspには`$`をエスケープできないバグがある)
+
+- [equery | Grasp - JavaScript structural search, replace, and refactor](http://www.graspjs.com/docs/equery/)
+- [squery | Grasp - JavaScript structural search, replace, and refactor](http://www.graspjs.com/docs/squery/)
+
+
 ## おわり
 
 [Prototype JavaScript Framework - Wikipedia](https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework "Prototype JavaScript Framework - Wikipedia")によると[Prototype.js](http://prototypejs.org/ "Prototype")のは12年前にリリースされたライブラリです。
