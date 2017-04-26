@@ -29,6 +29,10 @@ redmind 2.0のコードからprototype.jsを利用してる箇所を検索して
 
 標準出力に検索結果が流れてきます。
 
+検出するAPIの定義はAPIリファレンスのサジェストファイルから取ってきています。
+
+- <http://api.prototypejs.org/javascripts/pdoc/item_index.js>
+
 ## 制限
 
 [Prototype.js](http://prototypejs.org/ "Prototype")は名前が表すようにprototypeを拡張するライブラリです。
