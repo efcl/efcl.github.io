@@ -17,7 +17,9 @@ tags:
 以前は、GitHub Access Tokenを発行して、Travis CIのconfig(secret)にそのTokenを埋め込んで、Tokenを使ってpushをしていました。
 
 しかし、GitHub Access Tokenは簡単に発行できるとはいえリポジトリ単位で管理できる権限となっていないため、Tokenが漏れてしまうと管理ができないという問題があります。
-(実際 `git push -q`などしないと簡単に漏れてしまう)
+(実際 `git push url-with-secret >/dev/null 2>&1`などしないと簡単に漏れてしまう)
+
+- [Best Practices in Securing Your Data - Travis CI](https://docs.travis-ci.com/user/best-practices-security/ "Best Practices in Securing Your Data - Travis CI")
 
 そのため、最近はSSH鍵を使ってリポジトリへpushする方針へと変更しました。
 
