@@ -29,7 +29,7 @@ git push --force --quiet "https://${GH_TOKEN}@github.com/example/test.git" gh-pa
 ```
 
 このスクリプトは、`--quiet`が付いてるので `GH_TOKEN` が漏れないように見えますが、
-`git push`に失敗すると、push先がログにでるため安全ではありません。
+`git push`に失敗すると、エラー結果に含まれるpush先(`"https://${GH_TOKEN}@github.com/example/test.git"`)がログにでるため安全ではありません。
 
 そのため、標準出力と標準エラー出力を両方共潰さないと、`GH_TOKEN`が漏れるケースがあります。
 
