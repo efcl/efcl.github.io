@@ -17,10 +17,10 @@ tags:
 
 - [The Travis CI Blog: Security Advisory: Secured Environment Variables](https://blog.travis-ci.com/2017-05-08-security-advisory "The Travis CI Blog: Security Advisory: Secured Environment Variables")
 
-これ自体はTravis CIのバグではなくて、デプロイスクリプトなどのツール側のバグによってGitHubのTokenなどsecretな環境変数がログ上に出ている話です。
-Travis CIのログはPublicで誰でも見ることができるので、標準出力にTokenが露出していると問題があるという話。
+これ自体はTravis CIのバグではなくて、ユーザーが書いたデプロイスクリプトなどのツール側のバグによってGitHubのTokenなどsecretな環境変数がログ上に出ている話です。
+Travis CIのログはPublicで誰でも見ることができるので、標準出力にTokenが露出していると問題があります。
 
-どういうケースでGitHubのTokenが標準出力に出てしまうかというと、`git push`のミスが一番多いと思います。
+どのようなケースでGitHubのTokenが標準出力に出てしまうかというと、`git push`のミスが一番多いと思います。
 
 例えば次のようにGitHubのTokenを使って、Travis CIからGitHubへpushしているスクリプトは問題があります。
 
