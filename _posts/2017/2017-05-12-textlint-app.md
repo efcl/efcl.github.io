@@ -25,12 +25,17 @@ tags:
 ダウンロードしたインストーラー（Windows）、`app`（Mac）を実行すれば動きます。（Node.jsの環境なども不要です）
 実行する際に署名されてないバイナリなので警告がでるので、その辺は許可しないと動きません。
 
+- Windows: インストーラーで許可を選択する必要がある
+- Mac: `/Application/textlint.app` をコンテキストメニューから"開く"をして許可する必要がある
+
 ## 特徴
 
 一番の特徴はNode.jsなどの環境を作る必要なくインストールするだけで動く点です。
-[textlint](https://github.com/textlint/textlint "textlint")はNode.js（一応ブラウザも動く）で動くツールですが、そのセットアップが慣れてない人には大変なので作成しました。
+[textlint](https://github.com/textlint/textlint "textlint")はNode.js（一応ブラウザも動く）で動くツールです。
+しかし、Node.jsのセットアップに慣れてない人には大変そうなので作成しました。
 
-内部的にはElectronアプリなのでNode.jsをnpmも同梱して、[textlint](https://github.com/textlint/textlint "textlint")のルールもアプリ上でインストールして動かします。
+内部的にはElectronアプリで、Node.jsとnpmを同梱しています。
+また[textlint](https://github.com/textlint/textlint "textlint")のルールもアプリ上でインストールして動かします。
 
 利用できるルールはNode.jsのCLI版と全く同じ、設定ファイルの`.textlintrc`も同じです。
 
@@ -96,3 +101,29 @@ tags:
 （CodeMirrorのパフォーマンスとかガタガタする問題をどうにかしたいです…）
 
 - [Issues · textlint/textlint-app](https://github.com/textlint/textlint-app/issues "Issues · textlint/textlint-app")
+
+## おまけ
+
+この記事を書いているときの`.textlintrc`の設定は次のようなものでした。
+
+```json
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "ja-no-redundant-expression": true,
+    "period-in-list-item": {
+      "periodMark": ""
+    },
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": {
+        "allowFullWidthQuestion": true
+      },
+      "max-kanji-continuous-len": {
+        "max": 6
+      }
+    }
+  }
+}
+```
