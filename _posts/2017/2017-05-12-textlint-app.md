@@ -1,5 +1,5 @@
 ---
-title: "textlintのElectronアプリを公開した"
+title: "textlintのElectronアプリを作った"
 author: azu
 layout: post
 date : 2017-05-12T19:36
