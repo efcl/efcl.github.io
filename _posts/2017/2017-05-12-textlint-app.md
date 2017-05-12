@@ -13,7 +13,7 @@ tags:
 
 # textlint-app
 
-[textlint-app](https://github.com/textlint/textlint-app "textlint-app")というtextlintのElectronアプリ版を作成しました。
+[textlint-app](https://github.com/textlint/textlint-app "textlint-app")という、インストールするだけで動くtextlintのElectronアプリを作成しました。
 
 [![gif](https://media.giphy.com/media/3o7buj7KnuEurvGVm8/giphy.gif)](https://github.com/textlint/textlint-app)
 
