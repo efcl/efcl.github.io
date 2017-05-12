@@ -62,7 +62,9 @@ tags:
 
 ![Step 2](http://efcl.info/wp-content/uploads/2017/05/12-1494586443.png)
 
-次のような設定の内容を`.textlintrc`のコピペします。
+次のような設定を`.textlintrc`へコピペします。
+
+**例**: [textlint-ja/textlint-rule-preset-ja-technical-writing: 技術文書向けのtextlintルールプリセット](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing "textlint-ja/textlint-rule-preset-ja-technical-writing: 技術文書向けのtextlintルールプリセット")を使う設定
 
 ```json
 {
