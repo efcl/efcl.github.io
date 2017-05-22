@@ -1,5 +1,5 @@
 ---
-title: "GitHubのリポジトリをDprecatedにするスクリプト"
+title: "GitHubのリポジトリをDeprecatedにするスクリプト"
 author: azu
 layout: post
 date : 2017-05-22T10:02
