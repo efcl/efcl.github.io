@@ -11,7 +11,7 @@ tags:
 
 ---
 
-GitHubのリポジトリを別の場所に移す場合、リポジトリ毎移動できるなら[repository transfers](https://help.github.com/articles/about-repository-transfers/ "repository transfers")を利用するのが正解です。
+GitHubのリポジトリを別の場所に移す場合、リポジトリまるごと移動できるなら[repository transfers](https://help.github.com/articles/about-repository-transfers/ "repository transfers")を利用するのが正解です。
 
 しかし、既存のリポジトリをmonorepoの一部として取り込む場合はそのようなことができません。リポジトリの履歴は[Lerna](https://lernajs.io/ "Lerna")などでは`lerna import`で取り込むことができますが、既に作ったリポジトリからリダイレクトさせることができません。
 
