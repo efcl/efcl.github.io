@@ -29,9 +29,9 @@ GitHubのリポジトリを別の場所に移す場合、リポジトリ毎移�
 
 
 - リポジトリのdescription && homepageを更新する
-- "301_moved_permanently"ブランチを作る
+- `301_moved_permanently`ブランチを作る
 	- このブランチは移転してことを書いたREADME.mdのみがある
-- "301_moved_permanently"をデフォルトブランチにする
+- `301_moved_permanently`をデフォルトブランチにする
 
 これによって既存のブランチは維持されるので、リンクなどは切れません。
 
