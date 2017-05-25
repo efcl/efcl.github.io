@@ -25,7 +25,7 @@ tags:
 
 GitHubのリポジトリには、リポジトリごとにDeploy Keyという公開鍵を登録できる仕組みがあるため、リポジトリ毎の秘密鍵とと公開鍵の組み合わせで管理することができます。
 
-基本的にはJavaScript関係のものが多いでの、npm run-scriptで実行できるような仕組みでこの鍵を使ったdeployをやってくれるものがないかなーと思って探してみたらありました。
+基本的にはJavaScript関係のものが多いので、npm run-scriptで実行できるような仕組みでこの鍵を使ったdeployをやってくれるものがないかなーと思って探してみたらありました。
 
 - [alrra/travis-scripts: Scripts to help automate things using Travis CI](https://github.com/alrra/travis-scripts "alrra/travis-scripts: Scripts to help automate things using Travis CI")
 
