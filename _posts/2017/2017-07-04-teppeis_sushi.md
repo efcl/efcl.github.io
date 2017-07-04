@@ -231,7 +231,8 @@ Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")
 
 ## Web Packaging - jxck
 
-
+- [draft-yasskin-dispatch-web-packaging-00 - Web Packaging](https://tools.ietf.org/html/draft-yasskin-dispatch-web-packaging-00 "draft-yasskin-dispatch-web-packaging-00 - Web Packaging")
+- [Webページを丸ごとパッケージングする Web Packagingとは - ASnoKaze blog](http://asnokaze.hatenablog.com/entry/2017/07/02/171513 "Webページを丸ごとパッケージングする Web Packagingとは - ASnoKaze blog")
 - ネットワークが遅いところで物理的p2pでサイトを見てるケース
 - mhtmlみたいな
 - データ・フォーマットなのでIETFへ
@@ -242,7 +243,7 @@ Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")
 
 - dispatchというWGで議論されて、どこで議論するべきなのかを決める
 - WGができたら結構すごいことになるかも
-- Service Workerの横つながりみたいな話がでてきるかも
+- Service Workerの横つながりみたいな話がでてくるかも
 - 次回のプラハ会議に注目
 
 
