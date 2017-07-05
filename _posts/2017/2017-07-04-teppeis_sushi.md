@@ -165,7 +165,7 @@ Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")
 
 ## 2017年のフォームの話 - 会長
 
-> 要スライド
+> スライド: [2017年のformの話 // Speaker Deck](https://speakerdeck.com/yosuke_furukawa/2017nian-falseformfalsehua "2017年のformの話 // Speaker Deck")
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/teppeis_sushi?src=hash">#teppeis_sushi</a> 2017年のフォームの話 - 会長</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/882214321186521088">July 4, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
