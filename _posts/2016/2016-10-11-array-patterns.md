@@ -533,3 +533,7 @@ function getSomeList(){
 Arrayのメソッドで破壊的なものとそうでないものをまとめたもの
 
 <script src="https://gist.github.com/azu/30b1ff6831c3bbf7fbd5501d6a2bdfb0.js"></script>
+
+追記: この記事で登場したMutableなメソッドのImmutable版を提供するライブラリを作りました。
+
+[azu/immutable-array-prototype: A collection of Immutable Array prototype methods(Per method packages).](https://github.com/azu/immutable-array-prototype "azu/immutable-array-prototype: A collection of Immutable Array prototype methods(Per method packages).")
