@@ -43,17 +43,7 @@ npm install @immutable-array/copy-within
 
 対応してるメソッドは次の通りです。
 
-| Native method: Return type               | `@immutable-array/*`                       |
-| ---------------------------------------- | ---------------------------------------- |
-| [`Array.prototype.pop()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/pop): `any`| [`pop()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/pop): new  `Array` |
-| [`Array.prototype.push()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/push): `Number`| [`push()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/push): new  `Array` |
-| [`Array.prototype.shift()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/shift): `any`| [`shift()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/shift): new  `Array` |
-| [`Array.prototype.unshift()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift): `any`| [`unshift()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/unshift): new  `Array` |
-| [`Array.prototype.splice()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/splice): `Array`| [`splice()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/splice): new  `Array` |
-| [`Array.prototype.reverse()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse): `Array`| [`reverse()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/sort): new `Array` |
-| [`Array.prototype.sort()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/sort): `Array`| [`sort()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/sort): new  `Array` |
-| [`Array.prototype.fill()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/fill): `Array`| [`fill()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/fill): new `Array` |
-| [`Array.prototype.copyWithin()`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin): `Array`| [`copyWithin()`](https://github.com/azu/immutable-array-prototype/tree/master/packages/copy-within): new `Array` |
+![method table](http://efcl.info/wp-content/uploads/2017/07/11-1499771177.png)
 
 それぞれのメソッドの使い方は第一引数が対象の配列となるだけで他の引数や挙動はECMAScriptに合わせています。
 
@@ -115,13 +105,16 @@ ok ~3.64 s (3 s + 638863405 ns)  >>>   ok ~3.45 s (3 s + 449089624 ns)
 
 今のReactやRedux、Alminなどを使ってアプリケーションを書くと、オブジェクトはImmutableでやることが多いです。
 
-- [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
-- [Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")
-
 ある程度の規模のJavaScriptアプリケーションを作ったときに、ドメイン層やStateをImmutableにすることがボトルネックになることはそこまで多くありません(巨大なリストとは別ですが)
 Reactなどで作るアプリケーションは、配列などを作るよりも、値を比較する回数の方が圧倒的に多くなるため、作るコストよりも比較するコストを気にすることが多いです。
 
+次のスライドでもそういう話をしてます。
 
-Immutable.jsのような速度も兼ね備えたものを使うと便利ですが、通常の配列とは使い方やサイズも多いので使うのに躊躇します。
-ある程度小さくて、配列と同じ使い方ができるものがほしかったので作りました。
+- [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
+- [Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")
 
+
+Immutable.jsのような速度も兼ね備えたものを使うと便利ですが、通常の配列とは使い方やサイズも大きいので使うのに躊躇します。
+サイズが小さくて、配列と同じ使い方ができるものがほしかったので作りました。
+
+あとTypeScriptの型定義ファイルも入っています。
