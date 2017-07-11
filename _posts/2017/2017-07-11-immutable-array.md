@@ -12,8 +12,14 @@ tags:
 
 JavaScriptの配列には破壊的なものと非破壊的なものが混在しています。
 例えば`Arrray.prototype.push`は破壊的ですが、`Array.prototype.concat`は結合した新しい配列を返すので非破壊的です。
-
 破壊的か非破壊的かは、基本的には覚えることでしか区別できません。
+
+配列のメソッドの使い方については次の記事やjs-primerで今書いています。
+
+- [JavaScriptの配列のパターン | Web Scratch](http://efcl.info/2016/10/11/array-patterns/ "JavaScriptの配列のパターン | Web Scratch")
+- [配列 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/array/ "配列 · JavaScriptの入門書 #jsprimer")
+
+
 それらの破壊的メソッドの非破壊的なバージョン - Immutableバージョンのライブラリを作成しました。
 
 - [azu/immutable-array-prototype: A collection of Immutable Array prototype methods(Per method packages).](https://github.com/azu/immutable-array-prototype "azu/immutable-array-prototype: A collection of Immutable Array prototype methods(Per method packages).")
@@ -60,6 +66,19 @@ var reversedArrray = reverse(array); // ["e", "d", "c", "b", "a"]
 
 またよくある[Immutableライブラリのように](https://github.com/azu/immutable-array-prototype#related)独自のImmutableメソッドは追加していません。
 あくまで、JavaScriptの配列における破壊的なメソッドの非破壊的なバージョンを提供するという立ち位置にしています。
+
+## 作った理由
+
+すでにいくつか同じ試みはありますが、このmonorepoな[immutable-array-prototype](https://github.com/azu/immutable-array-prototype#benchmarks "immutable-array-prototype")を作った理由としては次の通りです。
+
+- TypeScriptに対応してるものがない
+- `Array#fill`など新しいメソッドに対応していない
+- `Array#splice`のImmutable実装が正しくできているものがない…
+	- [この`-1``をindexに受け取るテストケース](https://github.com/azu/immutable-array-prototype/blob/d9654c9d23178df7a4bc417d67341478d9292193/packages/splice/test/splice-test.ts#L97-L111)が殆どのライブラリで落ちます…
+- 独自のメソッドを追加しているケースが多い
+	- `update()`など独自のメソッドはいらない
+
+[immutable-array-prototype](https://github.com/azu/immutable-array-prototype#benchmarks "immutable-array-prototype")は基本的にドキュメントを見ないで`import`したら普通に使えるようにすることが目的なので、使い方はネイティブのArrayと同じです。
 
 ## おわりに
 
