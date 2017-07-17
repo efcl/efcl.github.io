@@ -23,7 +23,7 @@ tags:
 ## `src/` の TypeScript化
 
 1. Babel -> JS(js -> js)だったものをTypeScript -> Babel -> JSに[ビルドスクリプトを変更](https://github.com/almin/almin/pull/68/commits/7afc5a9d5ed2aa2f45da497f07c881a8c13767f6)
-	- TypeScriptは`target`を`esnext`にすることで単純に型をと除くだけの変換にする
+	- TypeScriptは`target`を`esnext`にすることで単純に型を取り除くだけの変換にする
 	- ES2015 -> ES5を実際にやるのは既存のBabelのまま
 	- 空のtsファイルを一つおいて実際にコンパイルが通るかを検証
 2. [既存のテストを1で変換したソースで動くようにパスを変える](https://github.com/almin/almin/pull/68/commits/721d9fec6066fdc4b091b851f962c1d3ef60ace9)
