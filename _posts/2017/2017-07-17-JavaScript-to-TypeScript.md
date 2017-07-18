@@ -52,13 +52,14 @@ tags:
 実際にまとめると次のような方法で移行しています。
 
 1. `test/`以下にテスト用の[`tsconfig.json`](https://github.com/almin/almin/blob/8a52b440b68693151b589415825fd6a26ebb6ada/packages/almin/test/tsconfig.json)を追加する
-	- `src/`用のコンパイル設定を継承し、`"allowJs": true`にしたものを利用
-	- `"allowJs": true`にすることで`.js`も`tsc`がコンパイルできるようになる
-	- `src/**/*`と`test/**/*`をincludesし、テスト向けにテストコードとソースコードをコンパイルする
+	- `src/`用のコンパイル設定を`"extends": "../tsconfig.json"`で継承し、`"allowJs": true`の設定を追加したものを利用
+	- `"allowJs": true`にすることで`.js`もTypeScriptがコンパイルできるようになる
+	- `src/**/*`と`test/**/*`をincludesし、テスト向けにテストコードとソースコードを一緒にコンパイルする
 	- コンパイル結果、 `src`は`lib/src`へ、 `test/`は`lib/test`へ出力する
 1. テストファイルが`import {Store} from "../lib/"`のソースコードをみているのを、`import {Store} from "../src/"`のソースコードを見るようにする
 	- コンパイル前は`src/*.ts`を見るが、コンパイル後は`lib/src/*.js`を見ることになる
-	- 相対パスなので、`lib/{src,test}/`に吐いてることでこれができてる
+	- 出力先は`lib/{src,test}/`となっていて、`lib/test`から`../src`を見ると`lib/src`をみる状態を作れる
+	- これでコンパイル結果は全てただのJSなので、後は普通にmochaなどでJavaScriptのテストとして`lib/test`を実行する
 1. テストの実行前に`test/tsconfig.json`を使ってコンパイルする
 	- `"test": "npm run build:test && npm run test:js"`という感じ
 
