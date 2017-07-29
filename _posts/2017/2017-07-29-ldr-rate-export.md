@@ -73,7 +73,7 @@ ldr-export-opmlは`npm`などでインストール出来ます。
 
 ## おわり
 
-LDRも[サービスを終了](http://blog.livedoor.jp/staff_reader/archives/52278396.html "サービスを終了")です。
+LDRも[サービス終了](http://blog.livedoor.jp/staff_reader/archives/52278396.html "サービスを終了")です。
 
 乗り換え先をどうするのかがまだ決まってないけど多分必要になるので作りました。(バグってたらPull Requestください)
 
