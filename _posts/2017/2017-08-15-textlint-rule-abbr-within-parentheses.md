@@ -80,7 +80,7 @@ npmでインストールして
 
 
 ウェブに文書を書くと基本的にはHTMLなので、HTMLではどうなっているかが気になりました。
-HTMLタグの世界では[dfn](https://developer.mozilla.org/ja/docs/Web/HTML/Element/dfn "dfn")と[abbr](https://developer.mozilla.org/ja/docs/Web/HTML/Element/abbr "abbr")がそれぞれ関係します。
+HTMLの世界では[dfn](https://developer.mozilla.org/ja/docs/Web/HTML/Element/dfn "dfn")と[abbr](https://developer.mozilla.org/ja/docs/Web/HTML/Element/abbr "abbr")がそれぞれ関係します。
 
 > <p>We use <dfn><abbr title="Hypertext Markup Language">HTML</abbr></dfn> to structure our web documents.</p>
 
@@ -92,7 +92,7 @@ HTMLタグの世界では[dfn](https://developer.mozilla.org/ja/docs/Web/HTML/El
 この場合も正式名称が属性値にあるので、正式名称の方が補足情報にも見えます。
 
 これは感覚的なものですが、略語をそもそも使うのは正式名称が毎回書くには長いためです。
-なので、最初にこの正式名称の略語はこう定義しますという意味で `正式名称(略語)`と書くスタイルがあるのだと思います。またこの時に2回目以降は正式名称は補足的な情報に逆転する感じがします。(`attr`タグの例)
+なので、最初にこの正式名称の略語はこう定義しますという意味で `正式名称(略語)`と書くスタイルがあるのだと思います。またこの時に2回目以降は正式名称は補足的な情報に逆転する感じがします。(`abbr`要素の例)
 一方、そもそも一度しか出てこない単語はどちらでもいいという理由で表記が安定しないような気がします。(このルールで縛りたい部分)
 
 この辺の書き方や読んだときにどのような印象を受けるかについて調査レポートや論文とか知ってる人いたら教えてください。
