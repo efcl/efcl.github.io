@@ -57,13 +57,13 @@ npmでインストールして
 > 混ざっていて良くない例  
 > Ths Object Management Group(OMG) maintains specifications for the UML(Unified Modeling Language).
 
-そのため統一する書き方を探していたのですが、括弧の中に略語を書くというルールを採用してるケースが色々ありました。AP StyleやIBM Style Guideなどはそのような書き方を推奨しているようです。
+そのため統一する書き方を探していたのですが、括弧の中に略語を書くというルールを採用してるケースが色々ありました。APA StyleやIBM Style Guideなどはそのような書き方を推奨しているようです。
 
 逆(略語を先に書く)を推奨してるルールは見つけることができませんでしたが、括弧ではなく言葉で略語を解説するスタイルも見られました。しかしながら略語は括弧の中に書くという根拠については見つけられませんでした。
 
 一つまだ疑問があって、括弧の中に書くとどうも補足的な印象が出てきてしまいます。
 たとえば、URLのような略語自体が言葉として一般的に成立してるパターンは、Uniform Resource Locatorという正式名称はもはやURLの補足情報になっているように思えます。
-先ほどもでてきたAP Styleの正式名称はAssociated Press Styleですが、AP(Associated Press) Styleのように紹介してる文章も見受けられます。(ここでの正式名称はわかりにくいしあまり重要ではないから括弧の中に書かれているのかも?)
+他にもAP Styleの正式名称はAssociated Press Styleですが、AP(Associated Press) Styleのように紹介してる文章も見受けられます。(ここでの正式名称はわかりにくいしあまり重要ではないから括弧の中に書かれているのかも?)
 
 ### English
 
