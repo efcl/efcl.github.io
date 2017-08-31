@@ -1,5 +1,5 @@
 ---
-title: "LDRがサービス終了なのでInoreader/Feedlyをバックエンドに動くRSSリーダを書いている"
+title: "LDRがサービス終了のため、Inoreader/Feedlyをバックエンドに動くRSSリーダを書いている"
 author: azu
 layout: post
 date : 2017-08-31T10:03
