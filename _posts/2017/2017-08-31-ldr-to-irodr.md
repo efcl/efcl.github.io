@@ -98,6 +98,10 @@ http://localhost:3000 は自動的にCORSを無視するProxyも兼ねている�
 
 Electronアプリにすれば簡単に無視できますが、RSSリーダはブラウザで開けるウェブアプリのほうが都合がいいのでそこまでやる気はないです（タブを開きまくるのでアプリよりブラウザの方がいい。PRは歓迎しています）
 
+後gh-pagesに公開したいのですが、 %PUBLIC_URL%が置換されないというcreate-react-app-typescriptの謎っぽい挙動を踏んでいるので、わかる方は次のIssueをみてください。
+
+- [Not working on gh-pages · Issue #16 · azu/irodr](https://github.com/azu/irodr/issues/16 "Not working on gh-pages · Issue #16 · azu/irodr")
+
 他の既知の問題は <https://github.com/azu/irodr/issues> にIssueを立てているので、気になる人は見てみてください。
 
 ### Feedly
