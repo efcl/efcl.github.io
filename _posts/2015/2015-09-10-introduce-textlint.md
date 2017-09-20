@@ -36,6 +36,10 @@ tags:
 - [文書校正ツール textlint の Chrome 拡張を作った - もなでぃっく](http://io-monad.hatenablog.com/entry/2016/03/14/225800)
 - [Chrome ウェブストア - アプリ](https://chrome.google.com/webstore/detail/textlint-proofreader/hdongmdneapmhfblomidbafplpanpdmm?hl=ja&gl=JP)
 
+[textlint-app](https://github.com/textlint/textlint-app "textlint-app")というクロスプラットフォームで動く単独のアプリ版もあります。
+`.textlintrc`の設定方法は共通しているので理解する必要がありますが、Node.js環境が内蔵されているので別途Node.jsのインストールは不要です。
+
+- [textlint-app](https://github.com/textlint/textlint-app "textlint-app")
 
 ### インストール
 
