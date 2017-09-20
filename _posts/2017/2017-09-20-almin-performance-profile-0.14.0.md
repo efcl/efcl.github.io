@@ -57,6 +57,10 @@ const appContext = new Context({
 
 この動画ではReactの[?react_perf](https://facebook.github.io/react/docs/optimizing-performance.html "?react_perf")と組み合わせたものをタイムライン表示しています。
 
+動かしているサンプルはショッピングカートのコードです。
+
+- [almin/examples/shopping-cart at master · almin/almin](https://github.com/almin/almin/tree/master/examples/shopping-cart "almin/examples/shopping-cart at master · almin/almin")
+
 ## Vue + Almin
 
 ReactだけではなくVueも`performance.mark`ベースの[パフォーマンスオプション](https://vuejs.org/v2/api/#performance)をサポートしています。
