@@ -19,8 +19,7 @@ tags:
 [Almin 0.14.0](https://github.com/almin/almin/releases/tag/almin%400.14.0 "almin@0.14.0")で`performance.mark`ベースのプロファイルを取れるようになりました。
 これにより、AlminのUseCaseやStoreといったそれぞれの処理にどれぐらいかかっているかを開発者ツールのタイムラインで見ることができます。
 
-![DevTool timeline](http://efcl.info/wp-content/uploads/2017/09/30529748-b18719b6-9c7b-11e7-90d9-40d914de418f.png)
-
+[![DevTool timeline](http://efcl.info/wp-content/uploads/2017/09/20-1505888631.png)](https://github.com/almin/almin/releases/tag/almin%400.14.0)
 
 `performance.mark`は[User Timing Level 2](https://w3c.github.io/user-timing/ "User Timing Level 2")で標準化されている方法なので、後述するようにReactやVueなどのライブラリと組み合わせた状態も見ることができます。
 `performance.mark`については次の記事でも書いています。
