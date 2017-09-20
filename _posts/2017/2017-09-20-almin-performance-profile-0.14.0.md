@@ -55,11 +55,11 @@ const appContext = new Context({
 <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/almin?src=hash">#almin</a> + <a href="https://twitter.com/hashtag/react?src=hash">#react</a> easy to profile web app with devTool&#39;s timeline.<a href="https://t.co/HLndVyS4hI">https://t.co/HLndVyS4hI</a> <a href="https://t.co/d7l2c2pP1K">pic.twitter.com/d7l2c2pP1K</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/909418278153478144">September 17, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-この動画ではReactの[?react_perf](https://facebook.github.io/react/docs/optimizing-performance.html "?react_perf")と組み合わせて見ることができています。
+この動画ではReactの[?react_perf](https://facebook.github.io/react/docs/optimizing-performance.html "?react_perf")と組み合わせたものをタイムライン表示しています。
 
 ## Vue + Almin
 
-ReactだけではなくVueも`performance.mark`ベースの[パフォーマンスプロファイル](https://vuejs.org/v2/api/#performance)をサポートしています。
+ReactだけではなくVueも`performance.mark`ベースの[パフォーマンスオプション](https://vuejs.org/v2/api/#performance)をサポートしています。
 
 Vue + Alminで書いたサンプルを作ったので、次のリポジトリで試すことができます。
 
