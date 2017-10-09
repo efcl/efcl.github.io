@@ -155,7 +155,7 @@ ThoughtWorksの人達が書いた本なので、アーキテクチャに対す�
     - 一度に管理するサービスのエンドポイントのバージョンは2つまで
     
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">left-padだ <a href="https://t.co/JctKbVAVfH">pic.twitter.com/JctKbVAVfH</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/917040368339755008?ref_src=twsrc%5Etfw">October 8, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 外部モジュールのバージョン管理の話が結構面白かった。
 
