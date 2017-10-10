@@ -164,6 +164,10 @@ ThoughtWorksの人達が書いた本なので、アーキテクチャに対す�
 
 つまり、フレームワークは自分が制御するわけではないので、アップデートは積極的に行わないと進化できなくなる可能性がある。一方ライブラリは必要になったタイミングで更新すればいいという話。
 
+またフレームワークに関するアンチパターンとしてLast 10%という話があった。
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">Antipattern: Last 10% Trap<br>- あるフレームワークで要求の80%が実現できることが確認できていた<br>- ハックをつかって10%+できた<br>- しかし最後の10%が無理で要求を満たせなかったので、フレームワークを使うのをやめる</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/917045990917468161?ref_src=twsrc%5Etfw">October 8, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ----
 
