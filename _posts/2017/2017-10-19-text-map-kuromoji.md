@@ -10,6 +10,8 @@ tags:
 
 ---
 
+[azu/text-map-kuromoji: テキストを形態素解析した結果とテキストの関係をビジュアライズするエディタ](https://github.com/azu/text-map-kuromoji)というツールを作った話。
+
 [くだけた表現を高精度に解析するための正規化ルール自動生成手法](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=70540&item_no=1&page_id=13&block_id=8 "くだけた表現を高精度に解析するための正規化ルール自動生成手法")という論文誌では、「ヵゎぃぃ」，「ゎた Uゎ」みたいな普通の形態素解析では未知語として検出されるものをどうやって正規化していくかという話が書かれていました。
 
 これを読んでいて面白かったのは形態素解析をした結果の未知語となった部分と穴埋め的にパターンを作って、そのパターンにマッチする同じようなテキストを探すというアプローチでした。
