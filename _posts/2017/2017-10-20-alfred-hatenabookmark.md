@@ -49,5 +49,5 @@ npm install --global alfred-hantebookmark-mydata
 
 境界となる文字列が記号やスペースのみとなっていて、その結果に対して先頭からのマッチのみなので、必然的に日本語だと上手くマッチしない問題があります。形態素解析とかして分解すればいいのですが、処理時間的に現実的じゃない感じがしました。(差分更新、キャッシュを上手く使えばできそうな気がするけど、PR歓迎)
 
-<blockquote class="twitter-video" data-lang="en"><p lang="ja" dir="ltr">自分のはてなブックマークをAlfredから検索してして絞り込むやつ書いた。<br>もっと早く動くようにできないかな?(後マッチングが日本語不安定な気はする)<a href="https://t.co/8z3GzWGzwW">https://t.co/8z3GzWGzwW</a> <a href="https://t.co/DmhYJ8Dh6v">pic.twitter.com/DmhYJ8Dh6v</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/921017924898275328?ref_src=twsrc%5Etfw">October 19, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">自分のはてなブックマークをAlfredから検索してして絞り込むやつ書いた。<br>もっと早く動くようにできないかな?(後マッチングが日本語不安定な気はする)<a href="https://t.co/8z3GzWGzwW">https://t.co/8z3GzWGzwW</a> <a href="https://t.co/DmhYJ8Dh6v">pic.twitter.com/DmhYJ8Dh6v</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/921017924898275328?ref_src=twsrc%5Etfw">October 19, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
