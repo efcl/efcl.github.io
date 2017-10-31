@@ -123,12 +123,12 @@ const englishParser = new EnglishParser();
 const patternMatcher = new PatternMatcher({
     parser: englishParser
 });
-const pattern = patternMatcher.tag`Bob ${{
+const pattern = patternMatcher.tag`Bob ${ {
     type: "*",
     data: {
         pos: /^VB/ // verb
     }
-}} it.`;
+} } it.`;
 const text = "Bob does it.";
 const results = patternMatcher.match(text, pattern);
 const [result] = results;
@@ -214,13 +214,13 @@ const res = matchTestReplace(text, {
         return `To ${captures[1]}, click ${captures[0]}.`
     },
     test: ({ all }) => {
-        const pattern = matcher.tag`Click ${{
+        const pattern = matcher.tag`Click ${ {
             type: "WordNode",
             data: {
                 // Verb
                 pos: /^VB/
             }
-        }}`;
+        } }`;
         return matcher.test(all, pattern);
     }
 });
