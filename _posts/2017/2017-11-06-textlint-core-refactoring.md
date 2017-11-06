@@ -153,6 +153,16 @@ textlintのルールを置く場所には特に制限はありません。また
 - 日本語専用のルール: [textlint-ja](https://github.com/textlint-ja "textlint-ja")
 - その他のルール: [textlint-rule](https://github.com/textlint-rule/ "textlint-rule")
 
+[textlint@9.1.1](https://github.com/textlint/textlint/releases/tag/textlint%409.1.1 "textlint@9.1.1")でscoped moduleのサポートを拡張したのもこういったOrganizationでのルール管理のしやすさを改善するためでもあります。
+
+```json
+{
+  "rules": {
+    "@textlint-rule/preset-google": true
+  }
+}
+```
+
 ## ツールを良くする
 
 textlintのElectronアプリがありますがそこまで作り込まれてません。
