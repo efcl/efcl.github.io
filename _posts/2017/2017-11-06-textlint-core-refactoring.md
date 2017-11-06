@@ -24,7 +24,7 @@ textlint 9.0.0では[@textlint/kernel](https://github.com/textlint/textlint/tree
 
 アドホックに対応するならブラウザ向けのbundleを[browser field](https://qiita.com/shinout/items/911e024368e2cb29fd3d "browser field")などで提供すれば終わりですが、長期的なことを考えるとモジュールを分けたほうが建設的です。
 
-[textlint organization](https://github.com/textlint "textlint")を見ると分かるように[textlint][]はMarkdownパーサやトラバーサ、フォーマッターなどがモジュールとして各リポジトリに分けられていました。部品となるモジュールとリポジトリを1対1で分けると、Aをアップデートすると、Aに依存BやCを更新するといったアップデートの連鎖反応が起きる問題があります。
+[textlint organization](https://github.com/textlint "textlint")を見ると分かるように[textlint][]はMarkdownパーサやトラバーサ、フォーマッターなどがモジュールとして各リポジトリに分けられていました。部品となるモジュールとリポジトリを1対1で分けると、Aをアップデートすると、Aに依存するBやCを更新するといったアップデートの連鎖反応が起きる問題があります。
 また、新しいモジュールを切り出す心理的なコストがありました。
 
 そのため、まずは`textlint`を構成するモジュールを1つのリポジトリにまとめたmonorepo化をすることにしました。
