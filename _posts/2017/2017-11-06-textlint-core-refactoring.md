@@ -114,7 +114,8 @@ textlintではどういうところが足りてない、直せるのかなどに
     - monorepoへの移行が完璧ではないのでそれをなおすのも歓迎です
     - [Import * to monorepo #270](https://github.com/textlint/textlint/issues/270 "Import * to monorepo #270")
 
-[`label:"good for beginner"`](https://github.com/textlint/textlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+for+beginner%22 "Issues · textlint/textlint")というラベルが付いてるやつは比較的やることがはっきりしてるので手が出しやすいので、ここから見るといいかもしれません。
+[`label:"good for beginner"`](https://github.com/textlint/textlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+for+beginner%22 "Issues · textlint/textlint")というラベルが付いてるものは、比較的やることがはっきりしています。
+そのため最初のコントビューションとして手が出しやすいかもしれません。
 
 また、textlintはあまりパフォーマンスの最適化がまだ行われていません。[markdown-parser](https://github.com/textlint/textlint/blob/master/packages/markdown-to-ast/src/markdown-parser.js "markdown-parser")など明らかに無駄な処理をしている部分があります。
 一方、500以上のユニットテストや典型的なユースケースの[Exampleテスト](http://efcl.info/2015/07/29/example-test-on-npm/ "Exampleテスト")、実際の文章を使った[Integration test](https://github.com/textlint/textlint/tree/master/test/integration-test "Integration test")などが書かれています。
@@ -176,6 +177,12 @@ textlintのルールをコマンド一発で作り始めることができるツ
 - [textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch](http://efcl.info/2016/12/14/create-textlint-rule/)
 - [textlint/create-textlint-rule: Create textlint rule project with no configuration.](https://github.com/textlint/create-textlint-rule)
 - [textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書のコーパス](https://github.com/textlint-ja/technological-book-corpus-ja "textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書のコーパス")
+
+## ウェブサイト
+
+textlintのウェブサイト兼オンラインデモとして[textlint - pluggable linting tool for text and markdown](https://textlint.github.io/ "textlint - pluggable linting tool for text and markdown")があります。
+
+こちらも[`label:"good for beginner"`](https://github.com/textlint/textlint.github.io/labels/good%20first%20issue "Issues · textlint/textlint.github.io")のラベルがついたIssueがあります。
 
 ## その他
 
