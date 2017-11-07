@@ -13,6 +13,7 @@ url: "http://efcl.info"
 baseurl: ""
 production_url : "http://efcl.info"
 github_repo_url : https://github.com/efcl/efcl.github.io
+icon: "/public/favicon.ico"
 timezone: Asia/Tokyo
 encoding: utf-8
 exclude:
