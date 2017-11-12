@@ -32,8 +32,15 @@ GitHubのリポジトリを別の場所に移す場合、リポジトリまる�
 - `301_moved_permanently`ブランチを作る
 	- このブランチは移転してことを書いたREADME.mdのみがある
 - `301_moved_permanently`をデフォルトブランチにする
+- リポジトリをアーカイブにします(read onlyとなる)
 
 これによって既存のブランチは維持されるので、リンクなどは切れません。
+
+追記: リポジトリのアーカイブに対応しました。
+IssueやPRなどが出せなくなるread onlyモードとなります。
+
+- [Archiving repositories](https://github.com/blog/2460-archiving-repositories "Archiving repositories")
+- [Archiving repositories | GitHub Developer Guide](https://developer.github.com/changes/2017-11-08-archiving-repositories/)
 
 ## インストール
 
