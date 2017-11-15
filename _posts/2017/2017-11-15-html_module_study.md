@@ -99,7 +99,7 @@ tags:
 
 ## HTML Modules -  @tkochi
 
-- Blink
+- Blinkやってる
 - Layout Tests
 - HTML5
 	- progressとかいろんな要素が増えた
