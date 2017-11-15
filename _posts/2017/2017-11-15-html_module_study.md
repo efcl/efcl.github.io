@@ -78,7 +78,7 @@ tags:
 	- DOMの出し分けに対応する
 	- ループ処理
 - Template Parts
-	- `{{value}}` をPartsと呼ぶ
+	- `\{\{value\}\}` をPartsと呼ぶ
 	- このpartsを更新することでCapitalizeとかの処理を実装できる
 	- 前後のNodeや親子のNodeの参照などを持つ
 - Template Partsの中にTemplate Parts
@@ -96,7 +96,7 @@ tags:
 - 出典
 	- [Standardize template variables and event handlers · Issue #2254 · whatwg/html](https://github.com/whatwg/html/issues/2254 "Standardize &lt;template&gt; variables and event handlers · Issue #2254 · whatwg/html")
 - FAQ
-	- `{{`の記号 は変えられない?
+	- `\{\{`の記号 は変えられない?
 
 
 ## HTML Modules -  @tkochi
