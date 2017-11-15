@@ -76,6 +76,13 @@ performance.getEntriesByName(markerName).forEach(entry => {
 });
 ```
 
+`entry`オブジェクトは`performance.get*` APIで取得できます。
+
+- [Performance.getEntries() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntries)
+- [Performance.getEntriesByName() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntriesByName)
+- [Performance.getEntriesByType() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntriesByType)
+
+
 ## おわりに
 
 `performance.mark`はシンプルながら結構便利なAPIです。
