@@ -54,6 +54,8 @@ tags:
 
 ## Template-Instantiation.md: @koba04
 
+> スライド: [Template Instantiation // Speaker Deck](https://speakerdeck.com/koba04/template-instantiation "Template Instantiation // Speaker Deck")
+
 - [HTML Template Instantiation](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Template-Instantiation.md "HTML Template Instantiation")
 - テンプレートであってコンポーネントではない
 	- mustache syntax
