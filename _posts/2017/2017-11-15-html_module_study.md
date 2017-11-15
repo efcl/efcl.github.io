@@ -92,7 +92,7 @@ tags:
 	- [Glimmer](https://glimmerjs.com/ "Glimmer")
 		- [Ember.js - Glimmer.js Progress Report](https://emberjs.com/blog/2017/10/10/glimmer-progress-report.html "Ember.js - Glimmer.js Progress Report")
 - 出典
-	- [Standardize <template> variables and event handlers · Issue #2254 · whatwg/html](https://github.com/whatwg/html/issues/2254 "Standardize &lt;template&gt; variables and event handlers · Issue #2254 · whatwg/html")
+	- [Standardize template variables and event handlers · Issue #2254 · whatwg/html](https://github.com/whatwg/html/issues/2254 "Standardize &lt;template&gt; variables and event handlers · Issue #2254 · whatwg/html")
 - FAQ
 	- `{{` `}}` は変えられない?
 
