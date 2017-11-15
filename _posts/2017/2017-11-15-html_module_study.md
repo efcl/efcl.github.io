@@ -96,7 +96,7 @@ tags:
 - 出典
 	- [Standardize template variables and event handlers · Issue #2254 · whatwg/html](https://github.com/whatwg/html/issues/2254 "Standardize &lt;template&gt; variables and event handlers · Issue #2254 · whatwg/html")
 - FAQ
-	- `{{` `}}` は変えられない?
+	- `{{`の記号 は変えられない?
 
 
 ## HTML Modules -  @tkochi
