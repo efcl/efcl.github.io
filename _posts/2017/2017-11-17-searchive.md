@@ -146,7 +146,7 @@ Reduxでよく見るような形になってると思います。
 
 [![Store](http://efcl.info/wp-content/uploads/2017/11/17-1510923816.png)](https://github.com/azu/searchive/blob/master/packages/searchive-app/src/renderer/store/SearchIndexStore/SearchIndexStore.ts)
 
-後は、[almin-react-container](https://github.com/almin/almin/tree/master/packages/almin-react-container "almin-react-container")を使えば、AlminのStoreとViewが自動で繋がるので、Stateが更新されたViewを更新するだけです。
+後は、[almin-react-container](https://github.com/almin/almin/tree/master/packages/almin-react-container "almin-react-container")を使えば、AlminのStoreとReactのViewが自動で繋がるので、Stateが更新されたViewを更新するだけです。
 
 #### TODO
 
