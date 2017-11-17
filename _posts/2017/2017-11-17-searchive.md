@@ -25,7 +25,8 @@ tags:
 
 [Release page](https://github.com/azu/searchive/releases)からElectronアプリをダウンロードしてインストール出来ます。Electronアプリにはサーバの実装も入ってるので、アプリを入れるだけで動きます。
 
-- [Latest Release](https://github.com/azu/searchive/releases/latest)
+- [Latest Release](https://github.com/azu/searchive/releases/latest)からダウンロードしてインストール
+  - 署名してないので、右クリックの"開く"からじゃないと怒られる
 
 [AppVeyor](https://www.appveyor.com/ "AppVeyor")などのCIの設定が面倒だったので、Mac版のバイナリしか置いていませんが、[searchive-app](https://github.com/azu/searchive/tree/master/packages/searchive-app "searchive-app")をビルドすればどのOSでも動くと思います。またはPR歓迎です。
 
