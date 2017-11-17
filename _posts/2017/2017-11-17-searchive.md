@@ -137,7 +137,7 @@ Alminでは、やりたいこと(ユースケース)を1ファイル1ユース�
 
 なので、このアプリでは次のようなユースケースを書きました。
 
-![usecase図](http://efcl.info/wp-content/uploads/2017/11/use-case.png)
+![usecase図](http://efcl.info/wp-content/uploads/2017/11/17-1510927384.png)
 
 > <https://github.com/almin/almin-usecase-map-generator>でユースケース図を生成
 
