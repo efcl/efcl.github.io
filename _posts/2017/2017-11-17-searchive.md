@@ -11,7 +11,7 @@ tags:
 ---
 
 ローカルにあるPDFを全部検索して、その結果を一覧したいことがあります。
-例えば、今[js-primer](https://github.com/asciidwango/js-primer "js-primer")という書籍を書いていて、他の書籍ではどんな扱い/用語になっているのかを調べいことがよくありました。
+例えば、今、[js-primer](https://github.com/asciidwango/js-primer "js-primer")という書籍を書いていて、ある用語が他の書籍ではどんな扱い/用語になっているのかを調べたいことがよくありました。
 
 この手のアプリとしては論文管理の[Papers for Mac](https://www.readcube.com/papers/mac/ "Papers for Mac")などがありますが、検索したいだけなのに色々な機能がついていてまた、とりあえず作ってみることにしました。
 
