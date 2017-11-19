@@ -152,7 +152,7 @@ Reduxでよく見るような形になってると思います。
 
 - Electronのmainプロセスで重たい処理をすると、UIも固まるのでどうにかしたい
 	- インデックスを作る処理が重たい
-- この制限で検索結果に実際にpdfを表示するプレビューがでてきてないのでどうにかしたい
+- [electron-webpack](https://github.com/electron-userland/electron-webpack/ "electron-webpack")がdev serverを立てる制限で検索結果に実際にpdfを表示するプレビューがでてきてないのでどうにかしたい
 - PDF以外も原理的に対応できるのでテキストファイルも合わせて検索したい
 
 ## おわり
