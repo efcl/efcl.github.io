@@ -395,17 +395,18 @@ export default class App extends React.Component {
     }
 
     render() {
-        /*
-         Where is "CounterState" come from? 
-         It is CounterStore#getState()'s key name
-
-         getState() {
-             return {
-                counterState: this.state
-             }
-         }
-        */
-        const counterState = this.state.counterState;
+        /**
+         * Where is "CounterState" come from?
+         * It is a `key` of StoreGroup.
+         *
+         * ```
+         * const storeGroup = new StoreGroup({
+         *   "counter": counterStore
+         * });
+         * ```
+         * @type {CounterState}
+         */
+        const counterState = this.state.counter;
         return <Counter counterState={counterState}
                         appContext={appContext}/>;
     }
