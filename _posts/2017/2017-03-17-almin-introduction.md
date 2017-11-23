@@ -13,7 +13,7 @@ tags:
 
 [Almin](https://github.com/almin/almin "Almin")でFluxアーキテクチャについてを見ていく話です。
 
-AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆動設計(DDD)を行うにあたって既存の[Redux](https://github.com/reactjs/redux "Redux")や[Flux](https://github.com/facebook/flux "Flux")では上手くレイヤー分けをやりにくい部分がありました。
+AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆動設計（DDD）を行うにあたって既存の[Redux](https://github.com/reactjs/redux "Redux")や[Flux](https://github.com/facebook/flux "Flux")では上手くレイヤー分けをやりにくい部分がありました。
 
 この辺の経緯については以前スライドやドキュメントにまとめてあるので、以下を参照してください。
 
@@ -29,11 +29,15 @@ AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆�
 
 ![counter](https://almin.js.org/docs/tutorial/counter/img/counter.png)
 
+次に英語のチュートリアルもあるので参照してください。
+
+- [Counter App · Almin.js](https://almin.js.org/docs/tutorial/counter/ "Counter App · Almin.js")
+
 ## Source Code
 
 ソースコードは次の場所にあります。
 
-- [https://github.com/almin/almin/tree/master/example/counter](https://github.com/almin/almin/tree/master/example/counter)
+- <https://github.com/almin/almin/tree/master/examples/counter>
 
 ```sh
 git clone https://github.com/almin/almin.git
@@ -72,8 +76,8 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
     - ユーザーが自由に選ぶ
     - ここではReactを選択
 - Store
-    - アプリの状態(State)を保存する
-    - Stateが変わったことを(Viewへ)通知する
+    - アプリの状態（State）を保存する
+    - Stateが変わったことを（Viewへ）通知する
 - UseCase
     - ユーザーが行いたい処理の**流れ**を書く場所
 
@@ -81,7 +85,7 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 
 ![比較table](http://efcl.info/wp-content/uploads/2017/03/17-1489747778.png)
 
-このサンプルは状態が一つしかないため、複数のStoreをまとめるStoreGroupや、
+このサンプルは状態が1つしかないため、複数のStoreをまとめるStoreGroupや、
 ロジックが殆どないためDomainといった要素は登場していません。
 
 ## カウンターの機能
@@ -97,19 +101,19 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 カウンターの機能をUseCaseという形で実装します。
 UseCaseとは、ユーザーとシステムのやり取りを対話的に書いたものです。
 
-簡単に言えば、ユースケースにはユーザーがシステムとやり取りする手順を書いていきます。
+簡単にいえば、ユースケースにはユーザーがシステムとやり取りする手順を書いていきます。
 カウンターの例では複雑な手順が出てこないため、ユーザーがUIを操作した時に行うアクションを書く場所と考えれば問題ありません。
 
 > 1. ボタンを押したら+1する
 
-基本的にAlminでは1 UseCase 1ファイル(クラス)として実装します。
+基本的にAlminでは1 UseCase 1ファイル（クラス）として実装します。
 
 これを実現する`IncrementalCounterUseCase.js`を作成します。
 Alminの`UseCase`クラスを継承し、`execute()`メソッドに行いたい処理実装します。
 
 ```js
 "use strict";
-import {UseCase} from "almin"
+import { UseCase } from "almin";
 export default class IncrementalCounterUseCase extends UseCase {
     // UseCase should implement #execute method
     execute() {
@@ -130,7 +134,7 @@ export default class IncrementalCounterUseCase extends UseCase {
 
 ```js
 "use strict";
-import {Store} from "almin";
+import { Store } from "almin";
 export class CounterStore extends Store {
     constructor() {
         super();
@@ -141,7 +145,7 @@ export class CounterStore extends Store {
     getState() {
         return {
             count: 0 
-        }
+        };
     }
 }
 ```
@@ -150,8 +154,8 @@ Alminの`Store`は`UseCase`から`dispatch`されたpayloadを受け取ること
 
 つまり次のような流れを実装します。
 
-1. IncrementalCounterUseCaseが"increment" payloadをdispatchします.
-2. CounterStoreは"increment" payloadを受け取り、自分自身のstateを更新します。
+1. IncrementalCounterUseCaseが"increment" payloadをdispatchします
+2. CounterStoreは"increment" payloadを受け取り、自分自身のstateを更新します
 
 これはいわゆるFluxパターンです
 
@@ -160,7 +164,7 @@ Alminの`Store`は`UseCase`から`dispatch`されたpayloadを受け取ること
 Fluxでは次のような説明になります。
 
 1. ActionCreatorで"increment" actionを作りdispatchします
-2. CounterStoreは"increment" payloadを受け取り、自分自身のstateを更新します。
+2. CounterStoreは"increment" payloadを受け取り、自分自身のstateを更新します
 
 ## **UseCase** dispatch -> Store
  
@@ -183,11 +187,11 @@ export default class IncrementalCounterUseCase extends UseCase {
 `UseCase`クラスを継承したクラスは`this.dispatch(payload)`メソッド利用できます。
 
 `payload`オブジェクトは`type`プロパティを持ったオブジェクトです。
-次の`payload`は最小のものと言えます。
+次の`payload`は最小のものといえます。
 
 ```js
 {
-    type: "type"
+    type: "type";
 }
 ```
 
@@ -209,7 +213,7 @@ export default class IncrementalCounterUseCase extends UseCase {
 `Store`クラスを継承したクラスは、`this.onDispatch(function(payload){ })`メソッドが利用できます。
 
 ```js
-import {Store} from "almin";
+import { Store } from "almin";
 export class CounterStore extends Store {
     constructor() {
         super();
@@ -224,7 +228,7 @@ export class CounterStore extends Store {
         });
     }
     
-    getState(){ /* stateを返す */ }
+    getState() { /* stateを返す */ }
 }
 ```
 
@@ -233,7 +237,7 @@ export class CounterStore extends Store {
 
 その前に、Alminでは多くの場合StoreがStateを別々のクラスとして実装しています。
 
-つまり、`CouterStore`は`CounterState`のインスタンスを持つという形にしています。
+つまり、`CouterStore`は`CounterState`のインスタンスをもつという形にしています。
 
 **Store**
 
@@ -287,10 +291,10 @@ Reduxの **reducer** と呼ばれるものによく似たものを実装して�
 
 1. dispatchされたpayloadを受け取り、`CounterState`を更新を試みます
 2. もし`CounterState`が更新されたなら, `CounterStore#emitChange`を叩き変更を通知します
-3. `getState(){}`ではStateのインスタンスを返します。
+3. `getState(){}`ではStateのインスタンスを返します
 
 `Store`を継承したクラスは`this.emitChange()`メソッドを持っています。
-これは、Storeを監視しているもの(主にView)に対して、Store(State)が変わったことを通知しています。
+これは、Storeを監視しているもの（主にView）に対して、Store（State）が変わったことを通知しています。
 
 ```js
 "use strict";
@@ -314,9 +318,7 @@ export class CounterStore extends Store {
     }
 
     getState() {
-        return {
-            counterState: this.state
-        };
+        return this.state;
     }
 }
 ```
@@ -340,18 +342,25 @@ UseCase、Store、Stateと分かれているのでテストも書くのは簡単
 `Context`オブジェクトとはStoreとUseCaseを繋ぐ役割をするものです。
 
 次のように、StoreのインスタンスとDispatcherのインスタンスを渡して初期化しています。
-(ここではStoreが一つのみですが、Alminでは複数のStoreをまとめるStoreGroupというものも用意しています)
+ここではStoreが1つのみですが、Alminでは複数のStoreをまとめるStoreGroupというものも用意しています。
+StoreGroupには `{ State名: Store }` というように対応関係のマッピングオブジェクトを渡します。
+`StoreGroup#getState`で `{ State名: Store#getState()結果 }`が取得できます。
 
 ```js
-import {Context, Dispatcher} from "almin";
-import {CounterStore} from "../store/CounterStore";
+import { Context, Dispatcher } from "almin";
+import { CounterStore } from "../store/CounterStore";
 // a single dispatcher
 const dispatcher = new Dispatcher();
 // a single store. if you want to use multiple, please use StoreGroup!
 const store = new CounterStore();
+// StoreGroupを
+const storeGroup = new StoreGroup({
+    // stateName : store
+    counter: store
+});
 const appContext = new Context({
     dispatcher,
-    store
+    store: storeGroup
 });
 ```
 
@@ -410,11 +419,11 @@ appContext.onChange(onChangeHandler);
 ```
 
 これは、`CounterStore` が変更される(`emitChange()`を叩く)と`onChangeHandler`が呼ばれることを意味しています。
-そして、`onChangeHandler` は`App` componentのState(ReactのState)を更新します。
+そして、`onChangeHandler` は`App` componentのState（ReactのState）を更新します。
 
 ### Counter component
 
-後は、`counterState`をCounterComponent(実際にcountを表示するView)が受け取り、カウントの値を表示すれば完成です。
+後は、`counterState`をCounterComponent（実際にcountを表示するView）が受け取り、カウントの値を表示すれば完成です。
 
 カウントを更新したい場合は、作成したIncrementalCounterUseCaseを`context.useCase(new IncrementalCounterUseCase()).execute(渡したい値);`で呼び出すことができます。
 
@@ -460,7 +469,7 @@ CounterComponent.propTypes = {
 
 これにより、一般的なFluxの一方こうのデータフローが次のようにできていることが分かります。
 
-- React -> UseCase -> Store(State) -> React
+- React -> UseCase -> Store（State） -> React
 
 
 ## Alminとロガー
@@ -489,18 +498,18 @@ logger.startLogging(appContext);
 - [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension "Redux DevTools Extension")
 
 Alminでは[almin-devtools](https://github.com/almin/almin-devtools "almin-devtools")を使うことで、
-[Redux DevTools](https://github.com/gaearon/redux-devtools "Redux DevTools")と連携することができます。
+[Redux DevTools](https://github.com/gaearon/redux-devtools "Redux DevTools")と連携できます。
 
 ブラウザに[Redux DevTools](https://github.com/gaearon/redux-devtools "Redux DevTools")をインストールします。
 
 - Chrome: [Chrome Web Store](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd);
 - Firefox: [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/remotedev/);
-- Electron: [`electron-devtools-installer`](https://github.com/GPMDP/electron-devtools-installer).
+- Electron: [`electron-devtools-installer`](https://github.com/GPMDP/electron-devtools-installer)
 
-そして、3行加えるだけで、Alminのログを[Redux DevTools](https://github.com/gaearon/redux-devtools "Redux DevTools")で見ることができます。(タイムマシーンデバッグなどはアプリ側でちゃんと実装しないと動かないので制限があります)
+そして、3行加えるだけで、Alminのログを[Redux DevTools](https://github.com/gaearon/redux-devtools "Redux DevTools")で見ることができます。（タイムマシーンデバッグなどはアプリ側でちゃんと実装しないと動かないので制限があります）
 
 ```js
-import AlminDevTools from "almin-devtools"
+import AlminDevTools from "almin-devtools";
 const logger = new AlminDevTools(appContext);
 logger.connect();
 ```
@@ -519,7 +528,7 @@ Alminで簡単なカウンターアプリを作成しました。
 
 ![almin-flux.png](https://almin.js.org/docs/tutorial/counter/img/almin-architecture-flux.png)
 
-実際のアプリケーションでは、StoreやUseCaseが一つだけというものはあまりないと思います。
+実際のアプリケーションでは、StoreやUseCaseが1つだけというものはあまりないと思います。
 TodoMVCの例では、CQRSやドメインモデルなどの要素も登場し、複数のUseCaseを実装していきます。
 
 - [Todo App · Almin.js](https://almin.js.org/docs/tutorial/todomvc/ "Todo App · Almin.js")
@@ -533,7 +542,7 @@ Alminは元々ある程度複雑になるであろうアプリケーションの
 
 どれだけ短く書けるかよりも、どれだけ読みやすく書けて管理できるかの方がメインといえるかもしれません。
 
-この辺の話は、以下のスライドやリポジトリを見てみると良いかもしれません。
+この辺の話は、次のスライドやリポジトリを見てみるとよいかもしれません。
 
 - スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
 - [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
