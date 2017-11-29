@@ -186,7 +186,7 @@ textlintのルールをコマンド一発で作り始めることができるツ
 
 textlintのウェブサイト兼オンラインデモとして[textlint - pluggable linting tool for text and markdown](https://textlint.github.io/ "textlint - pluggable linting tool for text and markdown")があります。
 
-こちらも[`label:"good for beginner"`](https://github.com/textlint/textlint.github.io/labels/good%20first%20issue "Issues · textlint/textlint.github.io")のラベルがついたIssueがあります。
+こちらも[`label:"good first issue"`](https://github.com/textlint/textlint.github.io/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)のラベルがついたIssueがあります。
 
 ## その他
 
