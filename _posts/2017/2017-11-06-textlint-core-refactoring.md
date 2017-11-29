@@ -114,7 +114,7 @@ textlintではどういうところが足りてない、直せるのかなどに
     - monorepoへの移行が完璧ではないのでそれをなおすのも歓迎です
     - [Import * to monorepo #270](https://github.com/textlint/textlint/issues/270 "Import * to monorepo #270")
 
-[`label:"good for beginner"`](https://github.com/textlint/textlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+for+beginner%22 "Issues · textlint/textlint")というラベルが付いてるものは、比較的やることがはっきりしています。
+[`label:"good first issue`](https://github.com/textlint/textlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)というラベルが付いてるものは、比較的やることがはっきりしています。
 そのため最初のコントビューションとして手が出しやすいかもしれません。
 
 また、textlintはあまりパフォーマンスの最適化がまだ行われていません。[markdown-parser](https://github.com/textlint/textlint/blob/master/packages/markdown-to-ast/src/markdown-parser.js "markdown-parser")など明らかに無駄な処理をしている部分があります。
