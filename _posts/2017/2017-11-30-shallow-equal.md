@@ -177,6 +177,7 @@ export abstract class BaseComponent<P, S> extends React.Component<P, S> {
 ----
 
 この例ではわざわざ[shallow-equal-object](https://github.com/azu/shallow-equal-object "shallow-equal-object")を使ってますが、Reactには`React.PureComponent`があるので、そちらを使えば実装は特にいらないです。
+([shallow-equal-props](https://github.com/azu/shallow-equal-props "shallow-equal-props")は[React.PureComponentとはChildrenとかのReact.Elementの扱い](https://github.com/facebook/react/issues/8669)が違いますが、大抵は`React.PureComponent`で十分です。この例ではこの違いは特に関係ないので省きます。)
 
 ```js
 export abstract class BaseComponent<P, S> extends React.PureComponent<P, S> {
