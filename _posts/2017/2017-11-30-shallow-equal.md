@@ -126,7 +126,7 @@ export abstract class BaseComponent<P, S> extends React.Component<P, S> {
 
 アプリの構造はシンプルで`<A/>`というネストが深い用途、でっかいリストを描画する`<List />`があります。`<button />`を押すたびに、`state.a`の中にある`count`が+1ずつ更新されるだけです。
 
-ここで`<List />`に渡す`state.largeList`は初回時に固定の10000コの配列を作ったものが入ります。
+ここで`<List />`に渡す`state.largeList`は初回時に固定の10000コの値をもつ配列となります。
 
 ```js
 const frozenLargeList = new Array(10000).fill("x");
