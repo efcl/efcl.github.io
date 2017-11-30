@@ -105,7 +105,7 @@ ReactやReduxなどでよく言われる状態のオブジェクトのをImmutab
 このサンプルでは、すべてのコンポーネントは`BaseComponent`を継承しています。
 `BaseComponent`はDeep Equal(`JSON.stringify`)とShallow Equalが切り替えできるようになっています。
 
-```jsx
+```js
 import * as React from "react";
 import { shallowEqual } from "shallow-equal-object";
 
@@ -134,7 +134,7 @@ const frozenLargeList = new Array(10000).fill("x");
 
 ボタン押しても`List`のpropsである`state.largeList`は変更されないので、`<List/>`は一度描画されたら更新する必要がありません。
 
-```jsx
+```js
 <div className="App">
     <A {...state.a}/>
     <button onClick={this.onClick}>+1</button>
@@ -146,7 +146,7 @@ const frozenLargeList = new Array(10000).fill("x");
 この渡されたpropsが同じ値であるなら、更新しないというのをReactでは`BaseComponent`ででてきた`shouldComponentUpdate`メソッドの実装で解決できます。
 
 
-```jsx
+```js
 export abstract class BaseComponent<P, S> extends React.Component<P, S> {
     shouldComponentUpdate(nextProps: P) {
         return true;
@@ -163,7 +163,7 @@ export abstract class BaseComponent<P, S> extends React.Component<P, S> {
 
 どちらもDeepもShallow(`state.largeList`の参照先は毎回同じ)も比較結果は`true`となり、つまりそれを反転して返せば更新されません。
 
-```jsx
+```js
 export abstract class BaseComponent<P, S> extends React.Component<P, S> {
     shouldComponentUpdate(nextProps: P) {
         const shouldUpdate = !isShallowEqual(this.props, nextProps);
