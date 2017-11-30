@@ -174,6 +174,17 @@ export abstract class BaseComponent<P, S> extends React.Component<P, S> {
 }
 ```
 
+----
+
+この例ではわざわざ[shallow-equal-object](https://github.com/azu/shallow-equal-object "shallow-equal-object")を使ってますが、Reactには`React.PureComponent`があるので、そちらを使えば実装は特にいらないです。
+
+```js
+export abstract class BaseComponent<P, S> extends React.PureComponent<P, S> {
+}
+```
+
+----
+
 ここで本題のDeep Equal(`JSON.stringify`)とShallow Equalの比較のコストの差の話がでてきます。このコストの差は`shouldComponentUpdate`の処理自体にどれぐらいかかっているかを調べれば比較できます。
 
 React 15まではreact-addon-perfsで比較できましたが、React 16では`?react_perf`の`performance.mark`の結果を使うのが簡単です。
