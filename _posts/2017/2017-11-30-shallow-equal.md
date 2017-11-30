@@ -321,7 +321,7 @@ App.tsx:33 Updated components: ⚛ A.shouldComponentUpdate, ⚛ B.shouldComponen
 
 ## 結果
 
-Deep Equalは合計で5ms程度かかるのに対して、Shallowは0.02ms程度で済んでいます。
+Deep Equalは合計で5ms程度かかるのに対して、Shallow Equalは0.02ms程度で済んでいます。
 200倍程度の違いがでていますが、これは複雑で巨大なpropsになるほどDeep Equalは不利になります。
 (`JSON.stringify`の結果をキャッシュすれば時間は半分程度になります)
 
