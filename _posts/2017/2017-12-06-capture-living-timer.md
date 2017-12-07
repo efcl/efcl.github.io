@@ -82,7 +82,7 @@ export class TimerComponent extends React.Component {
 これらの放置時の更新は大体裏では"setTimeout", "setInterval", "requestAnimationFrame"などを使っていることが多いです。
 (WebRTCやWebSocketなどもありますが、それらが止まってないかを定期的にチェックする仕組みなどにも関係します)
 
-タイマー系は意図しないタイミングで他の処理と重なるとUIを固めたりするので、[requestIdleCallback](https://developer.mozilla.org/ja/docs/Web/API/Window/requestIdleCallback "requestIdleCallback")と組み合わせるなどの工夫がひつようになるかもしれません。
+タイマー系は意図しないタイミングで他の処理と重なるとUIを固めたりするので、[requestIdleCallback](https://developer.mozilla.org/ja/docs/Web/API/Window/requestIdleCallback "requestIdleCallback")と組み合わせるなどの工夫が必要になるかもしれません。
 
 - <https://github.com/azu/faao/blob/f52920656db792a0e24fc8bcbbc555c33b02b623/src/infra/time-sheduler/TimeScheduler.ts>
 
