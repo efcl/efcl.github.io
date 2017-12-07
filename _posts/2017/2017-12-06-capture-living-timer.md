@@ -58,7 +58,7 @@ export class TimerComponent extends React.Component {
 タイムラインツールでも記録はできるのですが、呼び出し元毎のグルーピングやフィルタリングが難しいです。(良い方法があるなら知りたい)
 "setTimeout", "setInterval", "requestAnimationFrame"を乗っ取ってログを取ることで実装しています。
 
-一回のタイマー発火ごとの処理は小さくても、CPUが弱いデバイスではネックとなることがあるのでそのような無駄な処理を発見する目的で作りました。
+一回のタイマー発火ごとの処理は小さくても、スペック弱いデバイスではネックとなることがあるのでそのような無駄な処理を発見する目的で作りました。
 (Chromeの[CPU Throttling](https://umaar.com/dev-tips/88-cpu-throttling/ "CPU Throttling - Chrome DevTools - Dev Tips")などでシミュレートすると問題を見つけやすいです)
 
 その他
