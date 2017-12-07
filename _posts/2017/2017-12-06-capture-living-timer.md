@@ -15,9 +15,10 @@ tags:
 例えば、Twitterのようなアプリならば、ポーリングで更新するために`setInverval`のようなタイマーを回します。
 また、ゲームなどCanvasで描画を行うアプリケーションならば、メインループを`requestAnimationFrame`で回します。
 
-このように色々なタイマー系が一つのアプリで動くことが多いですが、特に問題がなりやすいのが表示中だけタイマーを回すようなコンポーネントがあるケースです。
+このように色々なタイマー系が一つのアプリで動くことが多いですが、特に問題がなりやすいのが表示中だけタイマーを回すコンポーネントです。
 
-よくあるのが次のようなmount時にtimerを開始して、unmount時にtimerを停止するコンポーネントです。この実装はunmount時に止めているので問題ありませんが、`componentWillUnmount`の実装を忘れるとそのタイマーはコンポーネントが消えた後も周り続けます。
+よくあるのが次のようなmount時にtimerを開始して、unmount時にtimerを停止するコンポーネントです。
+この実装はunmount時に止めているので問題ありませんが、`componentWillUnmount`の実装を忘れるとそのタイマーはコンポーネントが消えた後も回り続けます。
 
 ```js
 export class TimerComponent extends React.Component {
@@ -27,7 +28,7 @@ export class TimerComponent extends React.Component {
     }
 
     componentWillUnmount() {
-        this.stopTimer();
+        this.stopTimer(); // <= これを止め忘れるとTimerリーク
     }
 }
 
