@@ -18,7 +18,10 @@ tags:
 
 [Docusaurus](https://docusaurus.io/ "Docusaurus")は説明にあるようにOSSのライブラリやプロダクト向けのドキュメントサイトを作る一種の静的サイトジェネレーターです。
 
+[![Docusaurus](http://efcl.info/wp-content/uploads/2017/12/26-1514286444.png)](https://docusaurus.io/)
+
 > Easy to Maintain Open Source Documentation Websites
+
 
 Facebookから公開されていることからも分かるように、[Jest](http://facebook.github.io/jest/ "Jest")や[Prettier](https://prettier.io/ "Prettier")(Facebookプロダクトではないけど中にFacebookの[vjeux](https://github.com/vjeux "vjeux")さんがいる)などが利用しています。
 
