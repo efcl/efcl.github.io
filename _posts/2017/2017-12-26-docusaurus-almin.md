@@ -41,8 +41,8 @@ Facebookから公開されていることからも分かるように、[Jest](ht
 ## GitBookからDocusaurusへの移行
 
 <https://almin.js.org/>は元々GitBookで動いていましたが、[Docusaurus](https://docusaurus.io/ "Docusaurus")に移行しています。
-GitBookは便利でプラグインも沢山つくっていますが、ドキュメントサイト向けかというとそうでもない気がします。またファイル数が多くなると`gitbook serve`が異常なほど重くなる問題があります。
-[Docusaurus](https://docusaurus.io/ "Docusaurus")のサイトを見て代替できそうと思ったのと、ブログ機能なども欲しかったので試しに移行してみました。
+GitBookは便利で[JavaScriptの入門書](https://github.com/asciidwango/js-primer)や[JavaScriptプラグインアーキテクチャの本](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScriptプラグインアーキテクチャの本")でも使っていますが、ドキュメントサイト向けかというとそうでもない気がします。またファイル数が多くなると`gitbook serve`が異常なほど重くなる問題があります。
+[Docusaurus](https://docusaurus.io/ "Docusaurus")のサイトを見ていて、移行できそうと思ったのとブログ機能なども欲しかったので試しに移行してみました。
 
 詳細は次のPRでまるっと移行しました。
 合わせて[Netlify](https://www.netlify.com/ "Netlify")のPRプレビュー機能を使って、PRを出したら<https://deploy-preview-304--almin.netlify.com/>という感じでプレビューできるようにして進めました。
