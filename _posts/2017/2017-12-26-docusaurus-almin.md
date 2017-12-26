@@ -11,7 +11,7 @@ tags:
 ---
 
 [Almin](https://github.com/almin/almin "Almin")では元々GitBookを使ったドキュメントサイトを<https://almin.js.org/>で公開していました。
-最近、OSS向けのドキュメントサイト作成ツールである[Docusaurus](https://docusaurus.io/ "Docusaurus")が公開されたのを受けて、GitBookから[Docusaurus](https://docusaurus.io/ "Docusaurus")に移行しました。
+最近、OSS向けのドキュメントサイト作成ツールである[Docusaurus](https://docusaurus.io/ "Docusaurus")が公開されたのを受けて、[GitBook](https://www.gitbook.com/)から[Docusaurus](https://docusaurus.io/ "Docusaurus")に移行しました。
 
 - Alminのサイト: [Almin · Flux/CQRS patterns for JavaScript application.](https://almin.js.org/ "Almin · Flux/CQRS patterns for JavaScript application.")
 	- <https://github.com/almin/almin>
@@ -40,7 +40,7 @@ Facebookから公開されていることからも分かるように、[Jest](ht
 
 ## GitBookからDocusaurusへの移行
 
-<https://github.com/almin/almin>は元々GitBookで動いていましたが、[Docusaurus](https://docusaurus.io/ "Docusaurus")に移行しています。
+<https://almin.js.org/>は元々GitBookで動いていましたが、[Docusaurus](https://docusaurus.io/ "Docusaurus")に移行しています。
 GitBookは便利でプラグインも沢山つくっていますが、ドキュメントサイト向けかというとそうでもない気がします。またファイル数が多くなると`gitbook serve`が異常なほど重くなる問題があります。
 [Docusaurus](https://docusaurus.io/ "Docusaurus")のサイトを見て代替できそうと思ったのと、ブログ機能なども欲しかったので試しに移行してみました。
 
