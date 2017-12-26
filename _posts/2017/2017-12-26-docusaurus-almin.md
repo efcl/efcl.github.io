@@ -22,7 +22,6 @@ tags:
 
 > Easy to Maintain Open Source Documentation Websites
 
-
 Facebookから公開されていることからも分かるように、[Jest](http://facebook.github.io/jest/ "Jest")や[Prettier](https://prettier.io/ "Prettier")(Facebookプロダクトではないけど中にFacebookの[vjeux](https://github.com/vjeux "vjeux")さんがいる)などが利用しています。
 
 特徴としてはMarkdownでドキュメントと目次を書いてドキュメントサイトを作ることができます。
@@ -95,6 +94,10 @@ URLは`id`によって決定されるため、ファイル名とは別で管理�
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Almin get new website!<a href="https://t.co/5ArxMldalw">https://t.co/5ArxMldalw</a><br><br>Thanks to <a href="https://twitter.com/docusaurus?ref_src=twsrc%5Etfw">@docusaurus</a> <a href="https://t.co/OmrXn9SI8d">pic.twitter.com/OmrXn9SI8d</a></p>&mdash; alminjs (@alminjs) <a href="https://twitter.com/alminjs/status/942068484560715776?ref_src=twsrc%5Etfw">December 16, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+次の記事でも使い方を解説されてるので併せてみるといいかもしれません。
+
+- [(OSS向け)ドキュメントツールDocusaurus - Qiita](https://qiita.com/takeyuichi/items/835f2f5a882e3144e759 "(OSS向け)ドキュメントツールDocusaurus - Qiita")
 
 ### [Algolia DocSearch](https://community.algolia.com/docsearch/ "DocSearch")での全文検索
 
