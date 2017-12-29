@@ -10,11 +10,11 @@ tags:
 
 ---
 
-[制御文字](https://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E6%96%87%E5%AD%97 "制御文字")は色々ありますが、通常の文中に出てくる制御文字は復帰(`r`)、改行(`\n`)、タブ(`\t`)など限られたものだけだと思います。
+[制御文字](https://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E6%96%87%E5%AD%97 "制御文字")は色々ありますが、通常の文中に出てくる制御文字は復帰(`r`)、改行(`\n`)、タブ(`\t`)など限られたものだけだと思います。それ以外の制御文字は文中に入ると文字化けしたりします。
 
 ![cc](https://monosnap.com/file/UjfDjfC7pmKgAJtz52Eot0DQn3MSP1.png)
 
-次の記事のように、文中に制御文字が混じっていると、文字化けしたりします。
+次の記事では文中に制御文字が入った場合の問題を紹介しています。
 
 - [テキストエディタ内の「見えない何か」を見つける #atom #sublime ｜ Developers.IO](https://dev.classmethod.jp/non-programming/texteditor_garbled_letter/ "テキストエディタ内の「見えない何か」を見つける #atom #sublime ｜ Developers.IO")
 
