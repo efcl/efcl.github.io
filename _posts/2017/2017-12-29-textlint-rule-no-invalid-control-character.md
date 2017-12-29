@@ -12,9 +12,9 @@ tags:
 
 [制御文字](https://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E6%96%87%E5%AD%97 "制御文字")は色々ありますが、通常の文中に出てくる制御文字は復帰(`r`)、改行(`\n`)、タブ(`\t`)など限られたものだけだと思います。
 
-次の記事のように、文中に制御文字が混じっていると、文字化けしたりします。
+![cc](https://monosnap.com/file/UjfDjfC7pmKgAJtz52Eot0DQn3MSP1.png)
 
-![cc](http://efcl.info/wp-content/uploads/2017/12/29-1514518900.png)
+次の記事のように、文中に制御文字が混じっていると、文字化けしたりします。
 
 - [テキストエディタ内の「見えない何か」を見つける #atom #sublime ｜ Developers.IO](https://dev.classmethod.jp/non-programming/texteditor_garbled_letter/ "テキストエディタ内の「見えない何か」を見つける #atom #sublime ｜ Developers.IO")
 
@@ -33,7 +33,7 @@ tags:
 - `\n`
 - `\t`
 
-### 許可されていていない制御文字
+### 許可されていない制御文字
 
 その他の[Control character](https://en.wikipedia.org/wiki/Control_character "Control character")であるもの
 
