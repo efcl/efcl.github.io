@@ -23,7 +23,7 @@ tags:
 また、バグ報告やPRも直接リポジトリにして問題ありません。
 おかしい場所を選択した状態で右下にある"Bug Report"ボタンを押せば、簡単にtypoとかのバグを報告できます。(PRでも歓迎)
 
-![バグ報告のフロー](http://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)
+[![バグ報告のフロー](http://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://asciidwango.github.io/js-primer/basic/function-this/)
 
 前置きはこの辺までで、ここから本編。
 
