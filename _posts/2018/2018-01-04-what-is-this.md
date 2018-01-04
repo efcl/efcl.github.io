@@ -837,6 +837,8 @@ console.log(object.method.call("THAT")); // => "THAT"
 
 ![`this`の評価結果のまとめ](http://efcl.info/wp-content/uploads/2018/01/04-1515062936.png)
 
+- [Gist: `this` の穴埋めの解答](https://gist.github.com/azu/9833e2f66bc8f0c97258ab0c81258469 "`this` の穴埋めの解答")
+
 <!-- textlint-disable -->
 
 実際にブラウザで実行した結果は[What is `this` value in JavaScript?](https://azu.github.io/what-is-this/ "What is `this` value in JavaScript?")で確認できます。
