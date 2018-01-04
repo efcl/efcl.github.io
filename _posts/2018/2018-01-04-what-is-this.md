@@ -18,9 +18,11 @@ tags:
 この記事と違って実際にコードを実行しながら読めるので、学習ソースとしては[js-primer版](https://asciidwango.github.io/js-primer/basic/function-this/)を推奨します。
 
 - [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
-- [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
 
 また、バグ報告やPRも直接リポジトリにして問題ありません。
+
+- [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
+
 おかしい場所を選択した状態で右下にある"Bug Report"ボタンを押せば、簡単にtypoとかのバグを報告できます。(PRでも歓迎)
 
 [![バグ報告のフロー](http://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://asciidwango.github.io/js-primer/basic/function-this/)
