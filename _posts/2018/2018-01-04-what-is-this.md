@@ -648,7 +648,9 @@ Arrow Functionとそれ以外の関数で大きく違うことは、Arrow Functi
 そのため、Arrow Function内の`this`の参照先は、常に外側のスコープ（関数）へと探索しに行きます（詳細は[スコープチェーン][]を参照）。
 また、`this`は読み取り専用のキーワードであるため、ユーザーが`this`という変数を定義できません。
 
-[import, this-is-readonly](./src/this-is-readonly-invalid.js)
+```js
+const this = "thisは読み取り専用"; // => SyntaxError: Unexpected token this
+```
 
 これにより、Arrow Functionにおける`this`は通常の変数と同じように、どの値を参照するかは静的に決まるという性質があります（詳細は[静的スコープ][]を参照）。
 つまりArrow Functionにおける`this`の参照先は「Arrow Function自身の外側のスコープにあるもっとも近い関数の`this`の値」となります。
