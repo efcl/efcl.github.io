@@ -937,7 +937,7 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 	    - 見つかるまで再帰的に外側のEnvironment Recordsを探索する
 	    - 見つからない場合は、"Script"や"Module"の実行コンテキストの`this`の値になる
 	    - "Module"の[GetThisBinding ( )](https://tc39.github.io/ecma262/#sec-module-environment-records-getthisbinding "GetThisBinding ( )")は常に`undefined`
-	    - "Script"の[GetThisBinding ( )](https://tc39.github.io/ecma262/#sec-global-environment-records-getthisbinding "GetThisBinding ( )")はグローバルオブジェクト
+	    - "Script"の[GetThisBinding ( )](https://tc39.github.io/ecma262/#sec-global-environment-records-getthisbinding "GetThisBinding ( )")は`[[GlobalThisValue]]`
 	- ただし、Arrow Functionは`[[ThisValue]]`を持たないので必ずスキップされる
 	- もっと近い関数(Function Environment Records)の`[[ThisValue]]`の値が`this`の値となる
 
