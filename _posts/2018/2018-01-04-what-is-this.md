@@ -29,6 +29,13 @@ tags:
 
 前置きはこの辺までで、ここから本編。
 
+----
+
+- 追記(2018-01-04): 表が一部が間違っていたので修正
+
+----
+
+
 > この記事では注釈がないコードはstrict modeとして扱います
 
 # ECMAScript 2015以降の`this`
@@ -941,12 +948,6 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 	- ただし、Arrow Functionは`[[ThisValue]]`を持たないので必ずスキップされる
 	- もっと近い関数(Function Environment Records)の`[[ThisValue]]`の値が`this`の値となる
 
-
-----
-
-- 追記(2018-01-04): 表が一部が間違っていたので修正
-
-----
 
 [JavaScriptとは]: https://asciidwango.github.io/js-primer/basic/introduction/
 [関数と宣言]: https://asciidwango.github.io/js-primer/basic/function-declaration/
