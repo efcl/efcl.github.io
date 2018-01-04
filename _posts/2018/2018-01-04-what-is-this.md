@@ -14,7 +14,7 @@ tags:
 この記事はJavaScriptの入門書として書いている[js-primer](https://github.com/asciidwango/js-primer "js-primer")の`this`に関する部分をベースにしています。
 またjs-primerでは書けなかった現在時点(2018年1月1日)でのブラウザの挙動についてを加えたものです。
 
-次の場所に[js-primer](https://github.com/asciidwango/js-primer "js-primer")版（書籍版）のか`this`についての解説があります。
+次の場所に[js-primer](https://github.com/asciidwango/js-primer "js-primer")版（書籍版）の`this`についての解説があります。
 この記事と違って実際にコードを実行しながら読めるので、学習ソースとしては[書籍版](https://asciidwango.github.io/js-primer/basic/function-this/)を推奨します。
 
 - 書籍版: [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
