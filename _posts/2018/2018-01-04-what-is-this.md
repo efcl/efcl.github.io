@@ -834,11 +834,12 @@ console.log(object.method.call("THAT")); // => "THAT"
 
 <!-- textlint-disable -->
 
-実際にブラウザで実行した結果は[What is `this` value in JavaScript?][]というサイトで確認できます。
+実際にブラウザで実行した結果は[What is `this` value in JavaScript?](https://azu.github.io/what-is-this/ "What is `this` value in JavaScript?")で確認できます。
 
 <!-- textlint-enable -->
 
 Chrome 63を使ってる人は"Module"コンテキストのトップレベルArrow Functionにおける`this`の挙動が表と一致しないことに気づいたかもしれません。
+Chrome 63では次のコードを"Module"コンテキストで実行すると`this`が`undefined`ではなく、グローバルオブジェクトを参照します。
 
 ```js
 // "Module" context @ Chrome 63
@@ -929,6 +930,5 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 [スコープチェーン]: https://asciidwango.github.io/js-primer/basic/function-scope/##scope-chain}
 [静的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#static-scope
 [動的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#dynamic-scope
-[What is `this` value in JavaScript？]: https://azu.github.io/what-is-this/  "What is `this` value in JavaScript?"
 
 
