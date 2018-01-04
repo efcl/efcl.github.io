@@ -883,7 +883,7 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 - [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
-書籍の方の更新を追いたい方はリポジトリをStarやWatchしてください。
+書籍の更新を追いたい方はリポジトリをStarやWatchしてください。
 
 > [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
 
