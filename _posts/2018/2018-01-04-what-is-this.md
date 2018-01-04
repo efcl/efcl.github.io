@@ -29,6 +29,8 @@ tags:
 
 前置きはこの辺までで、ここから本編。
 
+> この記事では注釈がないコードはstrict modeとして扱います
+
 # ECMAScript 2015以降の`this`
 
 この記事では`this`という特殊な動作をするキーワードについてを見ていきます。
@@ -213,7 +215,7 @@ function outer() {
 outer();
 ```
 
-この書籍では注釈がないコードはstrict modeとして扱いますが、コード例に`"use strict";`でstrict modeを明示しています。
+この記事では注釈がないコードはstrict modeとして扱いますが、コード例に`"use strict";`でわざわざstrict modeを明示しています。
 なぜなら、strict modeではない場合に`this`が`undefined`の場合は、`this`がグローバルオブジェクトへと暗黙的に変換されてしまう問題があるからです。
 strict modeかどうかによって挙動が異なるのは混乱の元であるため、関数呼び出しする関数においては`this`を使うべきではありません。
 
