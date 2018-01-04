@@ -529,9 +529,6 @@ Prefixer.prefixArray(["a", "b", "c"]); // => TypeError: Cannot read property 'pr
 ```js
 const Prefixer = {
     prefix: "pre",
-    /**
-     * `strings`配列の各要素にprefixをつける
-     */
     prefixArray(strings) {
         // コールバック関数は`callback()`のように呼び出される
         // そのためコールバック関数における`this`は`undefined`となる(strict mode)
@@ -561,9 +558,6 @@ Prefixer.prefixArray(["a", "b", "c"]); // => TypeError: Cannot read property 'pr
 ```js
 const Prefixer = {
     prefix: "pre",
-    /**
-     * `strings`配列の各要素にprefixをつける
-     */
     prefixArray(strings) {
         // `that`は`prefixArray`メソッド呼び出しにおける`this`となる
         // つまり`that`は`Prefixer`オブジェクトを参照する
@@ -587,9 +581,6 @@ console.log(prefixedStrings); // => ["pre-a", "pre-b", "pre-c"]
 ```js
 const Prefixer = {
     prefix: "pre",
-    /**
-     * `strings`配列の各要素にprefixをつける
-     */
     prefixArray(strings) {
         // `Array#map`メソッドは第二引数に`this`となる値を渡せる
         return strings.map(function(string) {
