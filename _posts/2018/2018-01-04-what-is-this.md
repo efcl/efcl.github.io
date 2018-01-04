@@ -62,12 +62,12 @@ tags:
 - `＊`はどの場合でも結果に影響しないということを示すワイルドカード
 - 関数は`fn()`と実行した場合の`this`の評価結果、メソッドは`obj.method()`と実行した場合の`this`の評価結果
 
-例えば、実行コンテキストが**Script**でstrict modeではない(NO)、`const fn = function(){ return this; }`における`this`は次のように評価した時に結果(`???`)を表にしたものです。
+例えば、**実行コンテキスト**がScriptで**strict mode**がNO(strict modeはない)ときに、**コード**が`const fn = function(){ return this; }`というのは、次のように評価した場合における`this`の評価結果(`???`)を表にしたものです。
 
 ```html
 <script>
 const fn = function(){ return this; }
-console.log(fn()); // ???
+console.log(fn()); // このときに出力結果が ??? に入る
 </script>
 ```
 
