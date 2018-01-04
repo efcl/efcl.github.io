@@ -56,7 +56,7 @@ tags:
 基本的な関数やメソッドについては次のようなパターンが考えられます。
 
 この記事では`???`となっている`this`の評価結果がなぜそうなるのかを理解できることを目標にします。
-この記事では`this`の実用的な範囲外の知識(仕様やトップレベルの`this`など)についても書いているので、実用的に使うにはここまで理解する必要はありません。
+また、この記事では`this`の実用的な範囲外の知識(仕様やトップレベルの`this`など)についても書いているので、実用的に使うにはここまで理解する必要はありません。
 
 ![`this`の評価結果の穴埋め](http://efcl.info/wp-content/uploads/2018/01/04-1515062180.png)
 
@@ -871,10 +871,12 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 メソッド以外においても`this`は評価できますが、実行コンテキストやstrict modeなどによって結果が異なり混乱の元となります。
 そのため、メソッド以外では`this`を使うべきではありません（ここでは紹介してないコンストラクタは例外です）
 
-つまり、この記事で紹介している半分以上のことは知らなくてもメソッドやArrow Functionについて理解していれば、実用的にはあまり問題はありません。
+この記事で紹介している半分以上（トップレベルにおける`this`、関数呼び出しの`this`など)のことは知らなくても、実用的にはあまり問題はありません。
+実際にはメソッドやArrow Functionにおける`this`について理解していれば十分です。
+特殊な書き方をしていると必要になる知識が半分なので、普通の書き方をして普通の使い方をしましょう。
 
 - ['this' in TypeScript · Microsoft/TypeScript Wiki](https://github.com/Microsoft/TypeScript/wiki/'this'-in-TypeScript "&#39;this&#39; in TypeScript · Microsoft/TypeScript Wiki")
-    - TypeScript向けだけど、この記事で扱った内容が簡潔にまとまっています
+    - TypeScript向けですが、この記事で扱った内容が簡潔にまとまっています
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">+infinity<br>JS `this` is for OO methods, not standalone functions. Never use `this` as a parameter to non-method functions. <a href="https://t.co/tFHkqEepcM">https://t.co/tFHkqEepcM</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/938272440085446657?ref_src=twsrc%5Etfw">December 6, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
