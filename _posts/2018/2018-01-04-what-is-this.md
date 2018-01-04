@@ -308,6 +308,7 @@ JavaScriptではメソッドとして定義したものが、後からただの�
 
 
 ```js
+"use strict";
 const person = {
     fullName: "Brendan Eich",
     sayName: function() {
@@ -331,6 +332,7 @@ say(); // => TypeError: Cannot read property 'fullName' of undefined
 
 
 ```js
+"use strict";
 // const sayName = person.sayName; は次のようなイメージ
 const say = function() {
     return this.fullName;
@@ -342,7 +344,7 @@ say(); // => TypeError: Cannot read property 'fullName' of undefined
 このように、Arrow Function以外の関数において、`this`は定義した時ではなく実行した時に決定されます。
 そのため、関数に`this`を含んでいる場合、その関数は意図した呼ばれ方がされないと間違った結果が発生するという問題があります。
 
-この問題の対処法法としては大きく分けて2つあります。
+この問題の対処法としては大きく分けて2つあります。
 
 ひとつはメソッドとして定義されている関数はメソッドとして呼ぶということです。
 メソッドをわざわざただの関数として呼ばなければそもそもこの問題は発生しません。
