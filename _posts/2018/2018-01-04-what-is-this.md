@@ -231,8 +231,8 @@ strict modeかどうかによって挙動が異なるのは混乱の元である
 次の例では`method1`と`method2`はそれぞれメソッドとして呼び出されています。
 このとき、それぞれのベースオブジェクトは`object`となり、`this`は`object`となります。
 
-
 ```js
+"use strict";
 const object = {
     // 関数式をプロパティの値にしたメソッド
     method1: function() {
@@ -252,6 +252,7 @@ object.method2(); // => object
 これを利用すれば、メソッドの中から同じオブジェクトに所属する別のプロパティを`this`で参照できます。
 
 ```js
+"use strict";
 const person = {
     fullName: "Brendan Eich",
     sayName: function() {
@@ -481,6 +482,7 @@ sayPerson(); // => "こんにちは Brendan Eich！"
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     /**
@@ -527,6 +529,7 @@ Prefixer.prefixArray(["a", "b", "c"]); // => TypeError: Cannot read property 'pr
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     prefixArray(strings) {
@@ -556,6 +559,7 @@ Prefixer.prefixArray(["a", "b", "c"]); // => TypeError: Cannot read property 'pr
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     prefixArray(strings) {
@@ -579,6 +583,7 @@ console.log(prefixedStrings); // => ["pre-a", "pre-b", "pre-c"]
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     prefixArray(strings) {
@@ -610,6 +615,7 @@ Arrow Functionを使うことで、先ほどのコードは次のように書く
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     prefixArray(strings) {
@@ -764,6 +770,7 @@ const object = {
 
 
 ```js
+"use strict";
 const Prefixer = {
     prefix: "pre",
     prefixArray(strings) {
@@ -808,6 +815,7 @@ fn.call({}); // グローバルオブジェクト
 
 
 ```js
+"use strict";
 const object = {
     method() {
         const arrowFunction = () => {
