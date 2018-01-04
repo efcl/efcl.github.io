@@ -29,13 +29,6 @@ tags:
 
 前置きはこの辺までで、ここから本編。
 
-----
-
-- 追記(2018-01-04): 表が一部が間違っていたので修正
-
-----
-
-
 > この記事では注釈がないコードはstrict modeとして扱います
 
 # ECMAScript 2015以降の`this`
@@ -64,7 +57,7 @@ tags:
 
 この記事では`???`となっている`this`の評価結果がなぜそうなるのかを理解できることを目標にします。
 
-![`this`の評価結果の穴埋め](http://efcl.info/wp-content/uploads/2018/01/before-table.png)
+![`this`の評価結果の穴埋め](http://efcl.info/wp-content/uploads/2018/01/04-1515062180.png)
 
 - `＊`はどの場合でも結果に影響しないということを示すワイルドカード
 - 関数は`fn()`と実行した場合の`this`の評価結果、メソッドは`obj.method()`と実行した場合の`this`の評価結果
@@ -842,7 +835,7 @@ console.log(object.method.call("THAT")); // => "THAT"
 `this`は状況によって異なる値を参照する性質を持ったキーワードであることについてを紹介しました。
 その`this`の評価結果をまとめると次の表のようになります。
 
-![`this`の評価結果のまとめ](http://efcl.info/wp-content/uploads/2018/01/after-table.png)
+![`this`の評価結果のまとめ](http://efcl.info/wp-content/uploads/2018/01/04-1515062936.png)
 
 <!-- textlint-disable -->
 
@@ -947,7 +940,6 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 	    - "Script"の[GetThisBinding ( )](https://tc39.github.io/ecma262/#sec-global-environment-records-getthisbinding "GetThisBinding ( )")は`[[GlobalThisValue]]`
 	- ただし、Arrow Functionは`[[ThisValue]]`を持たないので必ずスキップされる
 	- もっと近い関数(Function Environment Records)の`[[ThisValue]]`の値が`this`の値となる
-
 
 [JavaScriptとは]: https://asciidwango.github.io/js-primer/basic/introduction/
 [関数と宣言]: https://asciidwango.github.io/js-primer/basic/function-declaration/
