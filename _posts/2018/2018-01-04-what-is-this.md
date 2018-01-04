@@ -856,9 +856,14 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 ## まとめ
 
-`this`はオブジェクト指向プログラミングの文脈でJavaScriptに導入されました。[^awbjs]
+`this`はオブジェクト指向プログラミングのメソッドでの利用を目的としています。
 メソッド以外においても`this`は評価できますが、実行コンテキストやstrict modeなどによって結果が異なり混乱の元となります。
 そのため、メソッド以外では`this`を使うべきではありません（ここでは紹介してないコンストラクタは例外です）
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">+infinity<br>JS `this` is for OO methods, not standalone functions. Never use `this` as a parameter to non-method functions. <a href="https://t.co/tFHkqEepcM">https://t.co/tFHkqEepcM</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/938272440085446657?ref_src=twsrc%5Etfw">December 6, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+> ECMAScript 2015の仕様策定者であるAllen Wirfs-Brock‏氏の意見
 
 また、メソッドにおいても`this`は呼び出し方によって異なる値となり、それにより発生する問題と対処法についてを紹介しました。
 コールバック関数における`this`はArrow Functionを使うことで分かりやすく解決できます。
@@ -918,13 +923,12 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 	- ただし、Arrow Functionは`[[ThisValue]]`を持たないので必ずスキップされる
 	- もっと近い関数(Function Environment Records)の`[[ThisValue]]`の値が`this`の値となる
 
-[^awbjs]: ES 2015の仕様策定者であるAllen Wirfs-Brock‏氏もただの関数においては`this`を使うべきではないと述べている。<https://twitter.com/awbjs/status/938272440085446657>;
-[JavaScriptとは]: ../introduction/README.md
-[関数と宣言]: ../function-declaration/README.md
-[関数とスコープ]: ../function-scope/README.md
-[スコープチェーン]: ../function-scope/README.md##scope-chain}
-[静的スコープ]: ../function-scope/README.md#static-scope
-[動的スコープ]: ../function-scope/README.md#dynamic-scope
+[JavaScriptとは]: https://asciidwango.github.io/js-primer/basic/introduction/
+[関数と宣言]: https://asciidwango.github.io/js-primer/basic/function-declaration/
+[関数とスコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/
+[スコープチェーン]: https://asciidwango.github.io/js-primer/basic/function-scope/##scope-chain}
+[静的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#static-scope
+[動的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#dynamic-scope
 [What is `this` value in JavaScript？]: https://azu.github.io/what-is-this/  "What is `this` value in JavaScript?"
 
 
