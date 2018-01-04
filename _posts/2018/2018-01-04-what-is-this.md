@@ -934,7 +934,7 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 [JavaScriptとは]: https://asciidwango.github.io/js-primer/basic/introduction/
 [関数と宣言]: https://asciidwango.github.io/js-primer/basic/function-declaration/
 [関数とスコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/
-[スコープチェーン]: https://asciidwango.github.io/js-primer/basic/function-scope/##scope-chain}
+[スコープチェーン]: https://asciidwango.github.io/js-primer/basic/function-scope/#scope-chain
 [静的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#static-scope
 [動的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#dynamic-scope
 
