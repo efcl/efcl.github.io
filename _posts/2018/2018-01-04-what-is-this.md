@@ -105,7 +105,7 @@ console.log(this); // => undefined
 このように、コード直下の`this`は実行コンテキストによって`undefined`となる場合があります。
 単純にグローバルオブジェクトを参照したい場合は、`this`ではなく`window`などのグローバルオブジェクトを直接参照した方がよいです。
 
-#### :memo: Note
+#### 📝 Note
 
 なぜModuleコンテキストではトップレベルの`this`が`undefined`となるかは次の記事で解説しています。
 
@@ -876,14 +876,14 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 - [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
-### :memo: Note: This-Binding Syntax proposal
+### 📝 Note: This-Binding Syntax proposal
 
 通常の関数をmixin関数のように扱いやすくする`::`という構文のProposalがありましたが、しばらくステータスが更新されていません。
 (Proposalの元々のAuthorがTC39メンバーではなくなったのも1つの理由)
 
 - [ECMAScript This-Binding Syntax](https://github.com/tc39/proposal-bind-operator "ECMAScript This-Binding Syntax")
 
-### :memo: `this`名前解決の仕様
+### 📝 `this`名前解決の仕様
 
 `this` bindingの設定は、関数を呼ぶときの次の仕様で決定される。
 
