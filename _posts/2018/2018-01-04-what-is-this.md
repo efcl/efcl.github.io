@@ -881,6 +881,16 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 - [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
+書籍の方の更新を追いたい方はリポジトリをStarやWatchしてください。
+
+> [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
+
+<a class="github-button" href="https://github.com/asciidwango/js-primer" data-size="large" data-show-count="true" aria-label="Star asciidwango/js-primer on GitHub">Star</a>
+<a class="github-button" href="https://github.com/asciidwango/js-primer/subscription" data-size="large" data-show-count="true" aria-label="Watch asciidwango/js-primer on GitHub">Watch</a>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 ### 📝 Note: This-Binding Syntax proposal
 
 通常の関数をmixin関数のように扱いやすくする`::`という構文のProposalがありましたが、しばらくステータスが更新されていません。
