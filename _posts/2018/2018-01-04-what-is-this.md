@@ -841,10 +841,12 @@ console.log(object.method.call("THAT")); // => "THAT"
 Chrome 63を使ってる人は"Module"コンテキストのトップレベルArrow Functionにおける`this`の挙動が表と一致しないことに気づいたかもしれません。
 Chrome 63では次のコードを"Module"コンテキストで実行すると`this`が`undefined`ではなく、グローバルオブジェクトを参照します。
 
-```js
+```html
+<script type="module">
 // "Module" context @ Chrome 63
 const fn = () => this;
 console.log(fn()); // => window
+</script>
 ```
 
 これはChrome(V8)のバグです。すでに報告して最新のCanary(65相当)では修正されています。
