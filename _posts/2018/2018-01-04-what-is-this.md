@@ -895,6 +895,8 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 - ['this' in TypeScript · Microsoft/TypeScript Wiki](https://github.com/Microsoft/TypeScript/wiki/'this'-in-TypeScript "&#39;this&#39; in TypeScript · Microsoft/TypeScript Wiki")
     - TypeScript向けですが、この記事で扱った内容が簡潔にまとまっています
+- [no-invalid-this - Rules - ESLint - Pluggable JavaScript linter](https://eslint.org/docs/rules/no-invalid-this "no-invalid-this - Rules - ESLint - Pluggable JavaScript linter")
+    - 混乱の元となる`this`の書き方をチェックするESLintのルール
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">+infinity<br>JS `this` is for OO methods, not standalone functions. Never use `this` as a parameter to non-method functions. <a href="https://t.co/tFHkqEepcM">https://t.co/tFHkqEepcM</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/938272440085446657?ref_src=twsrc%5Etfw">December 6, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
