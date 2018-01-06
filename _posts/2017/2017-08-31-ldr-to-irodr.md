@@ -24,6 +24,8 @@ tags:
 
 [Irodr](https://github.com/azu/irodr "Irodr")は[Inoreader](http://www.inoreader.com/developers/)や[Feedly](https://developer.feedly.com/v3/auth/)(こっちはまだ対応してない)のAPIを使ったRSSリーダです。
 
+- <http://irodr.netlify.com/>からOAuth認証すると利用できます。
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://t.co/xKJF7YUu5D">https://t.co/xKJF7YUu5D</a> の様子 <a href="https://t.co/ERUTFtaP0b">pic.twitter.com/ERUTFtaP0b</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/903085352448962560">August 31, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -85,11 +87,17 @@ LDRのような感覚というのは個人的な感覚に過ぎなので普遍�
 
 - <http://disq.us/p/1lpznh0>	
 
-今のところ、CORSを回避するProxyサーバを組み合わせるか、ブラウザ拡張で特定のAPIだけCORSを無視するワークアラウンドが必要です。
+<del>今のところ、CORSを回避するProxyサーバを組み合わせるか、ブラウザ拡張で特定のAPIだけCORSを無視するワークアラウンドが必要です。</del>
 
-- [Docs: Add workaround for CORS · Issue #11 · azu/irodr](https://github.com/azu/irodr/issues/11 "Docs: Add workaround for CORS · Issue #11 · azu/irodr")
+- [Netlify](https://www.netlify.com/ "Netlify")のCORSプロキシ機能を使いました
+- <http://irodr.netlify.com/>
+
+
+<del>[Docs: Add workaround for CORS · Issue #11 · azu/irodr](https://github.com/azu/irodr/issues/11 "Docs: Add workaround for CORS · Issue #11 · azu/irodr")
 
 まだ開発中なので、`npm start`すると自動でCORSを無視できるProxyサーバが立つ仕組みしか用意していません。ブラウザ拡張でCORSを無視させる方法には[まだ問題があるので興味がある人はIssue](https://github.com/azu/irodr/issues/11)に日本語でもいいから書き込んでください。
+</del>
+
 
 **開発用のサーバ**: `npm start`するとwebpack-dev-serverが立ち上がります。
 http://localhost:3000 は自動的にCORSを無視するProxyも兼ねているので、http://localhost:3000 にアクセスすれば利用できます。
