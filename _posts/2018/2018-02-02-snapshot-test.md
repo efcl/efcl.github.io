@@ -49,7 +49,7 @@ describe("Snapshot testing", () => {
       it(`Test ${normalizedTestName}`, function() {
         const fixtureDir = path.join(fixturesDir, caseName);
         const actualFilePath = path.join(fixtureDir, "input.json");
-        const actualContent = fs.readFileSync(actualFilePath, "utf-8");
+        const actualContent = JSON.parse(fs.readFileSync(actualFilePath, "utf-8"));
         const actual = transform(actualContent);
         const expectedFilePath = path.join(fixtureDir, "output.json");
         // UPDATE_SNAPSHOT=1 npm test で呼び出したときはスナップショットを更新
