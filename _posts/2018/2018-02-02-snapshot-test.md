@@ -13,6 +13,8 @@ tags:
 スナップショットテストといえば[Jest](https://github.com/facebook/jest "Jest")や[snap-shot-it](https://github.com/bahmutov/snap-shot-it "snap-shot-it")などが有名です。
 しかし、どちらもそれ自体がAssertionを含むため、比較したいだけには大掛かりな仕組みです。
 
+- [スナップショットテスト · Jest](https://facebook.github.io/jest/docs/ja/snapshot-testing.html "スナップショットテスト · Jest")
+
 自分がスナップショットテストを書くときはいつもその場でパターン化したテストコードを書いています。
 
 ## スナップショットテスト
