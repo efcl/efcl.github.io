@@ -85,7 +85,7 @@ ${JSON.stringify(actual)}
     ├── テストケース名1
     │   ├── input.json
     │   └── output.json
-    └── テストケース名1
+    └── テストケース名2
         ├── input.json
         └── output.json
 ```
