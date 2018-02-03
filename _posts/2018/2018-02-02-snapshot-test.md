@@ -118,4 +118,6 @@ Jestなどを使わずにスナップショットテストを書くメリット�
 スナップショットテストを使ってる例:
 
 - [sentence-splitter/fixtures-test.ts at master · azu/sentence-splitter](https://github.com/azu/sentence-splitter/blob/master/test/fixtures-test.ts)
+  - パースした結果のJSONをスナップショットとして保存しています
 - [ecmascript-proposals-json/snapshot-test.js at master · azu/ecmascript-proposals-json](https://github.com/azu/ecmascript-proposals-json/blob/master/test/snapshot-test.js)
+  - HTMLをスクレイピングして抽出した結果をスナップショットとして保存しています
