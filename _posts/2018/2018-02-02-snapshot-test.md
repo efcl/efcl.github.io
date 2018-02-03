@@ -121,3 +121,6 @@ Jestなどを使わずにスナップショットテストを書くメリット�
   - パースした結果のJSONをスナップショットとして保存しています
 - [ecmascript-proposals-json/snapshot-test.js at master · azu/ecmascript-proposals-json](https://github.com/azu/ecmascript-proposals-json/blob/master/test/snapshot-test.js)
   - HTMLをスクレイピングして抽出した結果をスナップショットとして保存しています
+- [textlint/parsing-test.js at master · textlint/textlint](https://github.com/textlint/textlint/blob/master/packages/%40textlint/markdown-to-ast/test/parsing-test.js "textlint/parsing-test.js at master · textlint/textlint")
+  - 大量のvalidなMarkdownをパースできるかを検証しつつ、そのパース結果のASTをJSONとして保存しています
+  
