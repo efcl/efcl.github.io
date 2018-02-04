@@ -54,7 +54,7 @@ describe("Snapshot testing", () => {
         const expectedFilePath = path.join(fixtureDir, "output.json");
         // UPDATE_SNAPSHOT=1 npm test で呼び出したときはスナップショットを更新
         if (process.env.UPDATE_SNAPSHOT) {
-          fs.writeFileSync(expectedFilePath, JSON.stringify(normalizedActual, null, 4));
+          fs.writeFileSync(expectedFilePath, JSON.stringify(actual, null, 4));
           this.skip(); // スキップ
           return;
         }
