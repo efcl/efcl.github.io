@@ -104,7 +104,7 @@ ES2015以前はすべての仕様の合意が取れるまで延々と議論を�
 この問題を解消するために、TC39は毎年リリースするためにECMAScriptの策定プロセスを変更しました。
 
 この策定プロセスはES2015がリリース後に適応され、このプロセスで初めてリリースされたのがES2016となります。
-ES2016以降では、次のような仕様策定のプロセスで議論を進めて仕様が決定されています。[^process]
+ES2016以降では、次のような仕様策定のプロセスで議論を進めて仕様が決定されています。
 
 仕様に追加する機能（API、構文など）をそれぞれ個別の**プロポーザル**（提案書）として進めていきます。
 現在策定中のプロポーザルはGitHub上の[tc39/proposals][]に一覧が公開されています。
@@ -156,9 +156,11 @@ ES2016以降では、次のような仕様策定のプロセスで議論を進�
 
 このような合意が取れる最低限の形でプロポーザルを進めていくのには、ES4の苦い失敗が背景にあります。
 ES4ではECMAScriptに多くの変更を入れることを試みましたが、TC39内でも意見が分かれ最終的に合意できませんでした。
-これによりES4の策定に割いた数年分のリソースが無駄となってしまったという経緯があります。[^1]
+これによりES4の策定に割いた数年分のリソースが無駄となってしまったという経緯があります。
 
-ES2016以降の策定プロセスでも、すべてのプロポーザルが仕様に入るわけではありません。[^2]
+詳しくはES2015のエディタであるAllenさんによる[プログラミング言語標準化](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)というPaperにかかれています。
+
+またES2016以降の策定プロセスでも、すべてのプロポーザルが仕様に入るわけではありません。
 別の代替プロポーザルが出た場合や後方互換性と保てない場合などにプロポーザルの策定を中断する場合があります。
 しかし、この場合でもプロポーザルという単位であるため策定作業の無駄は最小限で済みます。
 このようにモジュール化されたプロポーザルは入れ替えがし易いという性質もあります。
@@ -262,7 +264,7 @@ ECMAScriptにおいては策定プロセスという形でどのような段階�
 あるブラウザ/JavaScriptエンジンの挙動が仕様なのかを調べたいときがあります。
 
 それぞれのメジャーブラウザはJavaScriptエンジンを各自実装しています。
-そのため、どれかのブラウザが間違った実装だった場合に結果を比較することでわかる可能性があります。
+そのため、どれかのブラウザが間違った実装だった場合に結果を比較することで分かる可能性があります。
 
 [eshost-cli](https://github.com/bterlson/eshost-cli)というツールを使うことで、ローカルにインストール済みのJavaScriptエンジンでの実行結果をまとめて出力してくれます。
 それぞれのJavaScriptエンジンをインストールするには[jsvu](https://github.com/GoogleChromeLabs/jsvu)を使うのが簡単です。
@@ -371,7 +373,7 @@ console.log(Object.keys(MyClass.prototype)); // => ["method"]
 
 変換結果も異なりますが、実行結果（コンソールへの出力)も異なります。
 
-- Babelはメソッド（プロパティ）は列挙されないので `[]` 
+- Babelはメソッド（プロパティ）は列挙されないので `[]`
 - TypeSdriptはメソッド（プロパティ）が列挙されるので `["method"]`
 
 このようなときにどちらが仕様準拠の挙動なのかはを仕様を調べてみましょう。
@@ -452,8 +454,8 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 
 ### 例1: [関数とthis](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")の表現 – Arrow Function
 
-> `function`キーワードで定義した関数は呼び出し時に、ベースオブジェクトが暗黙的な引数のように`this`の値として渡されます。  
-> 一方、Arrow Functionの関数は呼び出し時に`this`を受け取らないため、定義時のArrow Functionにおける`this`の参照先が静的に決定されます。  
+> `function`キーワードで定義した関数は呼び出し時に、ベースオブジェクトが暗黙的な引数のように`this`の値として渡されます。
+> 一方、Arrow Functionの関数は呼び出し時に`this`を受け取らないため、定義時のArrow Functionにおける`this`の参照先が静的に決定されます。
 > -- [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
 この部分だけ切り出してもちょっと分かりにくいですが、よくあるような「Arrow Functionは`this`をbindする」という説明にはしていません。
@@ -631,7 +633,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 ## Tips
 
-- Stage 1はまでアイデアや実験なのでプロポーザル間でも重複する
+- Stage 1までアイデアや実験なのでプロポーザル間でも重複する
 - Stage 2+あたりからプロポーザル間での協調的な仕様を検討する
 	- [Revisiting mixins-vs-protocols proposal](https://github.com/rwaldron/tc39-notes/blob/master/es8/2018-01/jan-24.md#revisiting-mixins-vs-protocols-proposal "Revisiting mixins-vs-protocols proposal")
 - Decoratorはclass field、privateなど色々関係する
@@ -642,7 +644,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 ## おわりに
 
-最初に述べたようにここに書いてある事をすべて知る必要性はありません。
+最初に述べたようにここに書いてあることをすべて知る必要性はありません。
 具体的に気になることを見つけたときにそれを調べる手段にたどり着ければ問題ありません。
 
 また、ECMAScriptがLiving Standardであるという話をしましたが、Living Standardである以上その策定プロセスなども細かく修正されていきます。
@@ -663,11 +665,6 @@ ECMAScriptはこのようなオープンな仕組みであり、同じくブラ�
 - ECMAScriptのプロポーザル: [tc39/tc39-notes][]、[tc39/proposals][]に殆どの情報がある
 - ECMAScriptの策定プロセス: [The TC39 Process](https://tc39.github.io/process-document/ "The TC39 Process")に書かれてる
 - ECMAScriptの仕様: [tc39/ecma262](https://github.com/tc39/ecma262 "tc39/ecma262")にLiving Standard
-
-
-[^1]: ES2015の仕様編集者であるAllen Wirfs-Brock氏の書いた[Programming Language Standardization](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)に詳細が書かれています。
-[^2]: [Inactive Proposals](https://github.com/tc39/proposals/blob/master/inactive-proposals.md)に策定を中止したプロポーザルの一覧が公開されています。
-[^process]: この策定プロセスは<https://tc39.github.io/process-document/>に詳細が書かれています。
 
 [Ecma International]: http://www.ecma-international.org/  "Ecma International"
 [Standard ECMA-262]: https://www.ecma-international.org/publications/standards/Ecma-262.htm "Standard ECMA-262"
