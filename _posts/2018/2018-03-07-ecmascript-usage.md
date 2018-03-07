@@ -13,7 +13,7 @@ tags:
 
 ## はじめに
 
-この文章は[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")で書いた[ECMAScript · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")の章が元となっています。
+この文章は[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")で書いた[ECMAScript](https://asciidwango.github.io/js-primer/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")の章が元となっています。
 
 また、[ECMAScriptの使い方](http://azu.github.io/slide/2018/node/ecmascript39.html "ECMAScriptの使い方")というスライドでどのようの話をしているのであわせて参照してみてください。
 
