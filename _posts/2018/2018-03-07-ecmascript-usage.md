@@ -1,5 +1,5 @@
 ---
-title: "ECMAScriptの仕様/プロポーザルの調べ方/使い方を知る"
+title: "ECMAScriptの仕様/プロポーザルの調べ方を知る"
 author: azu
 layout: post
 date : 2018-03-07T11:54
