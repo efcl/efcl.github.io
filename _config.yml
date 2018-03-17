@@ -16,6 +16,8 @@ github_repo_url : https://github.com/efcl/efcl.github.io
 icon: "/public/favicon.ico"
 timezone: Asia/Tokyo
 encoding: utf-8
+include:
+  - _headers
 exclude:
   - README.md
   - config.rb
