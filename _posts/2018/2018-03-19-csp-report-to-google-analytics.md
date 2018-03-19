@@ -25,15 +25,13 @@ Content-Security-Policy: default-src https:
 
 実際にこのCSPをレスポンスHTTPヘッダに設定するとCSPに対応しているブラウザは、HTTPSではない画像やJavaScriptなどをブロックします。
 
-実際にブロックされると使えなくなって困るので、サイトの管理者はそのようなリソースが実在しているのかを `Content-Security-Policy-Report-Only` でチェックすることができます。
-
+実際にブロックされると使えなくなって困るので、サイトの管理者はそのようなリソースが埋め込まれていないかを `Content-Security-Policy-Report-Only` でチェックすることができます。(チェックするのは実際にアクセスしたブラウザ)
 
 ```
 Content-Security-Policy-Report-Only: default-src https: report-to https://example.com/csp-report
 ```
 
-のようなレスポンスHTTPヘッダを設定することで、ユーザーがページにアクセスした時に、`https://example.com/csp-report` へPOSTでその情報を投げてくれます。
-(ブラウザが勝手にやってくれます)
+のようなレスポンスHTTPヘッダを設定することで、ユーザーがページにアクセスした時に、`https://example.com/csp-report` へPOSTでその情報を投げてくれます。(ブラウザが必要な情報を勝手に送信します)
 
 ここでは`report-to`と書いていますが、古いブラウザは`report-uri`だったりするので注意します。
 
