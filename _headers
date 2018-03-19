@@ -1,4 +1,2 @@
 /*
   Content-Security-Policy-Report-Only: default-src https: http://www.google-analytics.com/* 'unsafe-eval' 'unsafe-inline';
-/feed/
-  Content-Type: application/xml
