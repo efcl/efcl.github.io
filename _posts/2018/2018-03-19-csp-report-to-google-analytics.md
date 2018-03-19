@@ -25,7 +25,7 @@ Content-Security-Policy: default-src https:
 
 実際にこのCSPをレスポンスHTTPヘッダに設定するとCSPに対応しているブラウザは、HTTPSではない画像やJavaScriptなどをブロックします。
 
-実際にブロックされると使えなくなって困るので、サイトの管理者はそのようなリソースが埋め込まれていないかを `Content-Security-Policy-Report-Only` でチェックすることができます。(チェックするのは実際にアクセスしたブラウザ)
+実際にブロックされると使えなくなって困るので、サイトの管理者はそのようなリソースが埋め込まれていないかを `Content-Security-Policy-Report-Only` でチェックすることができます。(実際にアクセスしたブラウザがCSP違反があるならレポート先のURLにデータをPOSTする)
 
 ```
 Content-Security-Policy-Report-Only: default-src https: report-to https://example.com/csp-report
@@ -51,7 +51,7 @@ CSPレポートは PV * CSP違反のリソース数 となるため適当にや�
 - [Adopting and Reducing Challenges of Content Security Policy (CSP) with Sentry](https://medium.com/sourceclear/content-security-policy-with-sentry-efb04f336f59 "Adopting and Reducing Challenges of Content Security Policy (CSP) with Sentry")
 
 どちらもそれだけのために使うのも微妙だなーと思いCSPについて調べていたところ、CSPの制約違反は`report-to`だけではなくJavaScriptのイベントとして取得する方法を見つけました。
-`securitypolicyviolation`イベントではCSPの制約違反をした時にエラーオブジェクトと共に呼び出されます。
+`securitypolicyviolation`イベントではCSPの制約違反をした時に[SecurityPolicyViolationEvent](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent "SecurityPolicyViolationEvent - Web APIs | MDN")オブジェクトと共に呼び出されます。
 
 ```js
 document.addEventListener("securitypolicyviolation", (e) => {
@@ -60,8 +60,6 @@ document.addEventListener("securitypolicyviolation", (e) => {
   console.log(e.originalPolicy);
 });
 ```
-
-- [SecurityPolicyViolationEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent "SecurityPolicyViolationEvent - Web APIs | MDN")
 
 このイベントを使えば、`report-to`(`report-uri`)の指定以外の方法でも任意の場所にCSPレポートを送ることができそうです。
 
