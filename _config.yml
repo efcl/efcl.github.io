@@ -18,7 +18,6 @@ timezone: Asia/Tokyo
 encoding: utf-8
 include:
   - _headers
-  - feed/
 exclude:
   - README.md
   - config.rb
