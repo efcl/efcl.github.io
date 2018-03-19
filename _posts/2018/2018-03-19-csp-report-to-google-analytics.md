@@ -126,7 +126,7 @@ Google Analyticsの[イベント トラッキング](https://developers.google.c
 
 - [Web サービスの完全 HTTPS 化 - クックパッド開発者ブログ](http://techlife.cookpad.com/entry/2017/04/19/190901 "Web サービスの完全 HTTPS 化 - クックパッド開発者ブログ")
 
-Google Analyticsのイベントは遅れるデータに制約があるので、[csp-report-to-google-analytics](https://github.com/azu/csp-report-to-google-analytics) では重要そうなデータしか送っていません。
+Google Analyticsのイベントは送ることができるデータに制約があるので、[csp-report-to-google-analytics](https://github.com/azu/csp-report-to-google-analytics) では重要そうなデータしか送っていません。
 
 ## まとめ
 
