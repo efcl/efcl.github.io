@@ -1,7 +1,7 @@
 # Rewrite rule
 # https://www.netlify.com/docs/redirects/
 # Netlifyはindex.xmlをDirectoryIndexとして認識しない
-/feed/              /feed/index.xml    200
-/feed/index.html    /feed/index.xml    200
-/feed/atom/         /feed/index.xml    200
+/feed/                        /feed/index.xml    200
+/feed/index.html              /feed/index.xml    200
+/feed/atom/                   /feed/index.xml    200
 /feed/atom/index.html         /feed/index.xml    200
