@@ -37,8 +37,8 @@ tags:
 
 その他の[Control character](https://en.wikipedia.org/wiki/Control_character "Control character")であるもの
 
-- ``(`\u0010` DATA LINK ESCAPE)
-- ``(`\u0019` ND OF MEDIUM)
+- `\u0010` DATA LINK ESCAPE
+- `\u0019` ND OF MEDIUM
 - etc...
 
 
