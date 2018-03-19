@@ -3,5 +3,5 @@
 # Netlifyはindex.xmlをDirectoryIndexとして認識しない
 /feed/                        /feed/index.xml    200
 /feed/index.html              /feed/index.xml    200
-/feed/atom/                   /feed/index.xml    200
-/feed/atom/index.html         /feed/index.xml    200
+/feed/atom/                   /feed/             301
+/feed/atom/index.html         /feed/             301
