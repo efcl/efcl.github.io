@@ -35,6 +35,10 @@ Content-Security-Policy-Report-Only: default-src https: report-to https://exampl
 のようなレスポンスHTTPヘッダを設定することで、ユーザーがページにアクセスした時に、`https://example.com/csp-report` へPOSTでその情報を投げてくれます。
 (ブラウザが勝手にやってくれます)
 
+ここでは`report-to`と書いていますが、古いブラウザは`report-uri`だったりするので注意します。
+
+- [CSP: `report-to` directive. - Chrome Platform Status](https://www.chromestatus.com/feature/5826576096690176 "CSP: `report-to` directive. - Chrome Platform Status")
+
 このCSPについては次の記事が詳しいです。
 
 - [コンテンツ セキュリティ ポリシー  |  Web  |  Google Developers](https://developers.google.com/web/fundamentals/security/csp/?hl=ja)
@@ -61,7 +65,7 @@ document.addEventListener("securitypolicyviolation", (e) => {
 
 - [SecurityPolicyViolationEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent "SecurityPolicyViolationEvent - Web APIs | MDN")
 
-このイベントを使えば、`report-to`の指定以外の方法でも任意の場所にCSPレポートを送ることができそうです。
+このイベントを使えば、`report-to`(`report-uri`)の指定以外の方法でも任意の場所にCSPレポートを送ることができそうです。
 
 こういったPVに関連するデータの集積といったら[Google Analytics](https://www.google.com/analytics/)がよく使われていると思います。
 このサイトでも[Google Analytics](https://www.google.com/analytics/)を使っていたので、CSPレポートをGoogle Analyticsに送る[analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/ "analytics.js")のプラグインを作りました。
@@ -120,7 +124,7 @@ Google Analyticsの[イベント トラッキング](https://developers.google.c
 
 このデータはHTTPSへの移行する時のMixed Content探しの指標データなどとして利用できると思います。
 
-もっとしっかりと分析したい人はAWSのAPI Gatewayで作成したAPIを`report-to`に指定し、[Amazon Kinesis Data Firehose](https://aws.amazon.com/jp/kinesis/data-firehose/ "Amazon Kinesis Data Firehose")にデータを流し、S3やRedshiftなどでデータを分析するのがいいと思います。
+もっとしっかりと分析したい人はAWSのAPI Gatewayで作成したAPIを`report-to`(`report-uri`)に指定し、[Amazon Kinesis Data Firehose](https://aws.amazon.com/jp/kinesis/data-firehose/ "Amazon Kinesis Data Firehose")にデータを流し、S3やRedshiftなどでデータを分析するのがいいと思います。
 
 - [Web サービスの完全 HTTPS 化 - クックパッド開発者ブログ](http://techlife.cookpad.com/entry/2017/04/19/190901 "Web サービスの完全 HTTPS 化 - クックパッド開発者ブログ")
 
