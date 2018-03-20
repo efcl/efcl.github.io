@@ -23,7 +23,7 @@ CSPにはHTTPSではない画像やJavaScriptを読み込めなくする制約�
 Content-Security-Policy: default-src https:
 ```
 
-実際にこのCSPをレスポンスHTTPヘッダに設定するとCSPに対応しているブラウザは、HTTPSではない画像やJavaScriptなどをブロックします。
+実際にこのCSPをHTTPレスポンスヘッダに設定するとCSPに対応しているブラウザは、HTTPSではない画像やJavaScriptなどをブロックします。
 
 実際にブロックされると使えなくなって困るので、サイトの管理者はそのようなリソースが埋め込まれていないかを `Content-Security-Policy-Report-Only` でチェックすることができます。(実際にアクセスしたブラウザがCSP違反があるならレポート先のURLにデータをPOSTする)
 
@@ -31,7 +31,7 @@ Content-Security-Policy: default-src https:
 Content-Security-Policy-Report-Only: default-src https: report-to https://example.com/csp-report
 ```
 
-のようなレスポンスHTTPヘッダを設定することで、ユーザーがページにアクセスした時に、`https://example.com/csp-report` へPOSTでその情報を投げてくれます。(ブラウザが必要な情報を勝手に送信します)
+のようなHTTPレスポンスヘッダを設定することで、ユーザーがページにアクセスした時に、`https://example.com/csp-report` へPOSTでその情報を投げてくれます。(ブラウザが必要な情報を勝手に送信します)
 
 ここでは`report-to`と書いていますが、古いブラウザは`report-uri`だったりするので注意します。
 
@@ -130,7 +130,7 @@ Google Analyticsのイベントは送ることができるデータに制約が�
 
 [csp-report-to-google-analytics](https://github.com/azu/csp-report-to-google-analytics)を使ったCSPレポートを[Google Analytics](https://www.google.com/analytics/)に送る方法を紹介しました。
 
-CSPのレスポンスHTTPヘッダを指定する必要がありますが、結構気軽にできるので面白いかもしれません。
+CSPのHTTPレスポンスヘッダを指定する必要がありますが、結構気軽にできるので面白いかもしれません。
 
 残念ながら `<meta>`タグでは `Content-Security-Policy-Report-Only` が利用できません。
 (通常のCSPは設定できますが実際にコンテンツが表示されなくなるので、目的に合わない)
