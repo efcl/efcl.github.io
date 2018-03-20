@@ -13,7 +13,7 @@ tags:
 ---
 
 
-Content Security Policy(CSP) ではさまざまな条件でコンテンツに制約をかけることができます。
+Content Security Policy(CSP) ではHTTPヘッダや`<meta>`要素に定義を記述し、さまざまな条件でコンテンツに制約をかけることができます。
 そのCSPの中でも実際に制約をかけずにテストして、その結果を特定のURLにPOSTする `Content-Security-Policy-Report-Only` という仕組みがあります。
 
 CSPにはHTTPSじゃないと画像やJavaScriptを読み込めなくする制約も設定できるので、HTTPからHTTPSに移行する際などに役立ちます。
