@@ -5,11 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "@proofdict/textlint-rule-proofdict": "^2.1.0",
     "textlint": "^10.1.4",
     "textlint-rule-no-doubled-joshi": "^3.2.0",
     "textlint-rule-no-mix-dearu-desumasu": "^3.0.3",
-    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
-    "textlint-rule-spellcheck-tech-word": "^5.0.0"
+    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2"
   },
   "scripts": {
     "textlint": "git diff --name-only --diff-filter=ACMR origin/develop | grep -a '_posts/.*.md$' | xargs textlint",
