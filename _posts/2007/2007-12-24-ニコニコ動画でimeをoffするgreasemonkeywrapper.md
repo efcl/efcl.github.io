@@ -27,4 +27,4 @@ javascriptいじるの初めてだったので、とりあえず動いたので�
 画面をクリックするとIMEがONになったりと挙動が怪しいです。
 
  [1]: http://a-h.parfe.jp/einfach/archives/2006/0905142930.html
- [2]: http://efcl.info/wp-content/uploads/imeoffwin.user.js "imeoffwin.user.js"
+ [2]: https://efcl.info/wp-content/uploads/imeoffwin.user.js "imeoffwin.user.js"

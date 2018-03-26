@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        save selection
-// @namespace      http://efcl.info/
+// @namespace      https://efcl.info/
 // @description    選択範囲のテキストをファイルとして保存する
 // @include     main
 // @compatibility Firefox 2.0 3.0
@@ -13,7 +13,7 @@ var saveSelection = {
     this.mItem = document.createElement("menuitem");
     document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", function() { saveSelection.onPopupShowing(this); }, false);
   },
-   
+
   onPopupShowing: function(aPopup) {
     if (!gContextMenu.onImage) {
       aPopup.insertBefore(this.mItem, document.getElementById("context-sep-open"));
@@ -92,7 +92,7 @@ var saveSelection = {
     }
   },
 
-  
+
   isJa: function()
   {
     var prefBranch = Components.classes["@mozilla.org/preferences-service;1"]

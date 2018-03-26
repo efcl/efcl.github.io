@@ -16,7 +16,7 @@ tags:
 
 [textlint](https://github.com/textlint/textlint "textlint")はMarkdownなどテキスト向けのLintツールで、テキスト版ESLintみたいな感じのツールです。
 
-- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
+- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](https://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
 
 最近[azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "azu/JavaScript-Plugin-Architecture")という小さな書籍を書いていて、色々簡単に使えるような仕組みを追加しています。
 
@@ -134,22 +134,22 @@ textlintのルールは以下のWikiにまとめてありますが、ルール�
 
 どのルールを使えばいいか分からない！という場合はルールプリセットから始めるとよいでしょう。
 
-- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
-- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](https://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
+- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](https://efcl.info/2015/10/19/textlint-plugin-JTF-style/)
 
 表記揺れの辞書をプロジェクトに入れたい場合はprhが便利です。
 
-- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/)
+- [textlint + prhで表記ゆれを検出する | Web Scratch](https://efcl.info/2015/09/14/textlint-rule-prh/)
 - [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/ "Introduction | 技術文書をソフトウェア開発する話")
 
 textlintの設定をESLint configのようにnpmで共有することもできます。
 
-- [textlintの設定をnpmにあげて使い回す | Web Scratch](http://efcl.info/2016/04/08/textlint-sharable-config/)
+- [textlintの設定をnpmにあげて使い回す | Web Scratch](https://efcl.info/2016/04/08/textlint-sharable-config/)
 
 ルールによっては `--fix` で自動修正に対応しています。
 導入した時にエラーが多い場合はこの辺の修正を適応するところから始めるといいかもしれません。
 
-- [textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch](http://efcl.info/2016/03/15/textlint--fix/ "textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch")
+- [textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch](https://efcl.info/2016/03/15/textlint--fix/ "textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch")
 
 日本語でルールなどについて話せるGitterのチャットルームが以下にあります。
 
@@ -170,8 +170,8 @@ Lintの仕組みは[ESLint](http://eslint.org/ "ESLint")と同じく、Markdown(
 
 以下の記事でも簡単に紹介しています。
 
-- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/)
-- [textlint 1.4 パーサの安定化、ルールの自由度の改善をして現実的に使えるLintツールへ | Web Scratch](http://efcl.info/2015/01/07/textlint1.4/)
+- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](https://efcl.info/2014/12/30/textlint/)
+- [textlint 1.4 パーサの安定化、ルールの自由度の改善をして現実的に使えるLintツールへ | Web Scratch](https://efcl.info/2015/01/07/textlint1.4/)
 
 例えば、"しかし"という同じ接頭辞が連続して出てくるのをチェックしたいとします。
 

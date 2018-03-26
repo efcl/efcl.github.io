@@ -15,7 +15,7 @@ tags:
 ---
 
 
-以前書いた[node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch](http://efcl.info/2014/09/05/node-webkit-binary-release/ "node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch")の更新版的な記事です。
+以前書いた[node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch](https://efcl.info/2014/09/05/node-webkit-binary-release/ "node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch")の更新版的な記事です。
 
 この記事は[NW.js](http://nwjs.io/)と[Electron](http://electron.atom.io/)で書いたアプリをGitHub Releaseで公開するまでの流れやツールの紹介です。
 
@@ -66,7 +66,7 @@ $ electron-zip-packager ./sample sample --platform=darwin,win32 --arch=x64 --ver
 
 ここまでで、パッケージングしたzipファイルが各OS毎にできあがりました。
 
-これをTravis CIからGitHub Releaseへアップロードするのですが、これは以前書いた[node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch](http://efcl.info/2014/09/05/node-webkit-binary-release/ "node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch")と全く同じですが、合わせて紹介。
+これをTravis CIからGitHub Releaseへアップロードするのですが、これは以前書いた[node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch](https://efcl.info/2014/09/05/node-webkit-binary-release/ "node-webkitアプリをTravis CI経由でGitHub Releaseにバイナリ登録する | Web Scratch")と全く同じですが、合わせて紹介。
 
 [travis-ci/travis.rb](https://github.com/travis-ci/travis.rb "travis-ci/travis.rb")を使うと、Travis CIからGitHub Releaseの連携がインタラクティブに行えます
 

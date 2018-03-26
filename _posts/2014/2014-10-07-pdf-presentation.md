@@ -15,7 +15,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 
 追記: ライブラリとして切り出しました
 
-- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")
+- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](https://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")
 
 ## どういうもの
 
@@ -231,4 +231,4 @@ PDFJS.cMapPacked = true; // 拡張子にbcmapを付けるか
 
 追記: ライブラリとして切り出しました
 
-- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")
+- [pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch](https://efcl.info/2015/12/07/pdf.js-controller/ "pdf.jsを使ってスライド表示するライブラリを書いた | Web Scratch")

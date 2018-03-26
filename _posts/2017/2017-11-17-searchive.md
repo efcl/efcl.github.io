@@ -34,7 +34,7 @@ tags:
 
 起動したら最初にPDFのインデックスを作る必要があります。
 
-![image](http://efcl.info/wp-content/uploads/2017/11/17-1510917382.png)
+![image](https://efcl.info/wp-content/uploads/2017/11/17-1510917382.png)
 
 メニューから設定を開くと、インデックスしたいファイルの場所を[glob](https://github.com/isaacs/node-glob "node-glob")で指定できます。
 保存するとPDFからテキストを取り出した`index.json`を作り出してくれます。(とても重いので放置しておくといいです)
@@ -47,7 +47,7 @@ tags:
 検索演算子はGitHubみたいなものが使えます。
 ライブラリとしては[search-query-tester](https://github.com/azu/search-query-tester "search-query-tester")を使っています。
 
-![keyword operator](http://efcl.info/wp-content/uploads/2017/11/17-1510924048.png)
+![keyword operator](https://efcl.info/wp-content/uploads/2017/11/17-1510924048.png)
 
 ## 作り方
 
@@ -63,8 +63,8 @@ tags:
 
 pdf.jsは使いにくいライブラリ(というアプリに近い)なので、日本語などもちゃんと扱えるようにするのは工夫が必要です。
 
-- [pdf.jsを使いブラウザで見られるPDFスライド表示ツールを作った | Web Scratch](http://efcl.info/2014/10/07/pdf-presentation/)
-- [[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch")
+- [pdf.jsを使いブラウザで見られるPDFスライド表示ツールを作った | Web Scratch](https://efcl.info/2014/10/07/pdf-presentation/)
+- [[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch](https://efcl.info/2015/12/07/pdf.js-controller/ "[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch")
 
 cmapsというファイルをちゃんと読めないと日本語などが扱えません。
 Node.jsで扱う公式のオプションはないので、テストコードを読んでURLをfsで代替するモック実装を使って読み込むことができました。
@@ -137,14 +137,14 @@ Alminでは、やりたいこと(ユースケース)を1ファイル1ユース�
 
 なので、このアプリでは次のようなユースケースを書きました。
 
-![usecase図](http://efcl.info/wp-content/uploads/2017/11/17-1510927384.png)
+![usecase図](https://efcl.info/wp-content/uploads/2017/11/17-1510927384.png)
 
 > <https://github.com/almin/almin-usecase-map-generator>でユースケース図を生成
 
 このアプリではドメインとかそこまでちゃんとやっても旨味がない気がしたので、UseCaseでイベントをdispatchして、Storeでイベントを受け取ってStateを更新する感じにしました。
 Reduxでよく見るような形になってると思います。
 
-[![Store](http://efcl.info/wp-content/uploads/2017/11/17-1510923816.png)](https://github.com/azu/searchive/blob/master/packages/searchive-app/src/renderer/store/SearchIndexStore/SearchIndexStore.ts)
+[![Store](https://efcl.info/wp-content/uploads/2017/11/17-1510923816.png)](https://github.com/azu/searchive/blob/master/packages/searchive-app/src/renderer/store/SearchIndexStore/SearchIndexStore.ts)
 
 後は、[almin-react-container](https://github.com/almin/almin/tree/master/packages/almin-react-container "almin-react-container")を使えば、AlminのStoreとReactのViewが自動で繋がるので、Stateが更新されたViewを更新するだけです。
 

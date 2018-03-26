@@ -29,41 +29,41 @@ ConstさんがWebKitにコミットしてたCSS JIT入りのiOS8リリースが�
 一つ目の献立として発表したのは、SourceMapとASTでちょっと似てるなーと思った問題点の話について。
 前半の多段SourceMapについては以下の記事で書いた話と大体同じです。
 
-- [多段SourceMapの対応方法とライブラリ | Web Scratch](http://efcl.info/2014/09/03/multi-stage-sourcemap/ "多段SourceMapの対応方法とライブラリ | Web Scratch")
+- [多段SourceMapの対応方法とライブラリ | Web Scratch](https://efcl.info/2014/09/03/multi-stage-sourcemap/ "多段SourceMapの対応方法とライブラリ | Web Scratch")
 
 発表に使ったスライドは [http://azu.github.io/slide/DOMQuery/sourcemap.pdf](http://azu.github.io/slide/DOMQuery/sourcemap.pdf "sourcemap.pdf") です。
 
 
-![basic-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
+![basic-sourcemap.png](https://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
 
 標準的なSourceMapの使い方なら何も問題はありません。
 
-![multiple-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
+![multiple-sourcemap.png](https://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
 
 ただし、これが複数回の変換した結果できたファイルでは、最初(Original)と最後(Generated)を繋ぐSourceMapがありません。
 
-![page-8](http://efcl.info/wp-content/uploads/2014/09/sourcemap-8.png)
+![page-8](https://efcl.info/wp-content/uploads/2014/09/sourcemap-8.png)
 
 そのため、AltJSなどを使った場合にこの問題が起きることがあります。
 
-![multiple-stage-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-stage-sourcemap.png)
+![multiple-stage-sourcemap.png](https://efcl.info/wp-content/uploads/2014/09/multiple-stage-sourcemap.png)
 
 これを汎用的に解決するために [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "multi-stage-sourcemap") というライブラリをつくりました。
 
-![page-12](http://efcl.info/wp-content/uploads/2014/09/sourcemap-12.jpg)
+![page-12](https://efcl.info/wp-content/uploads/2014/09/sourcemap-12.jpg)
 
  [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "multi-stage-sourcemap") は中間にあるSourceMapを使って新しく最初と最後を結ぶSourceMapを作り直すためのライブラリです。
  
-![page-19](http://efcl.info/wp-content/uploads/2014/09/sourcemap-19.png)
+![page-19](https://efcl.info/wp-content/uploads/2014/09/sourcemap-19.png)
  
 中間情報は失ってしまいますが、そもそもSourceMapに世代の情報があればこの問題は解決できたかもしれません。
 現状ではGruntやGulpやBrowserify等それぞれの対応方法が必要となってしまっています。
 
-![page-20](http://efcl.info/wp-content/uploads/2014/09/sourcemap-20.png)
+![page-20](https://efcl.info/wp-content/uploads/2014/09/sourcemap-20.png)
 
 SourceMapは**SourceMap**という単一のファイルは仕様として定められていますが、それが連続的に変換された時に関する扱いについては取り決めがないという問題があります。
 
-![page-22-ast](http://efcl.info/wp-content/uploads/2014/09/sourcemap-22.png)
+![page-22-ast](https://efcl.info/wp-content/uploads/2014/09/sourcemap-22.png)
 
 同じような問題?がJavaScript ASTにも存在します。
 
@@ -71,7 +71,7 @@ JavaScript ASTを扱うライブラリ同士(結合や圧縮等)を繋げて使�
 
 コードを受け取りコードを返す場合、変換する毎にcode parseとcode generateが必要になってしまうため非効率です。
 
-![page-23](http://efcl.info/wp-content/uploads/2014/09/sourcemap-23.png)
+![page-23](https://efcl.info/wp-content/uploads/2014/09/sourcemap-23.png)
 
 現状のGruntやGulp、Browserifyではこの問題がまだ解決出来ていません。
 
@@ -93,7 +93,7 @@ GulpやBroserifyでは、Gruntからファイルの読み込みと書き出し�
 
 [Broccoli](https://github.com/broccolijs/broccoli "Broccoli")が効率的なビルドを目指すツールと同じように、[aster](http://rreverser.com/aster-ast-based-code-builder/ "aster - AST-based code builder")も効率的なASTの変換を目指すツールと言えるかもしれません。
 
-![page-27](http://efcl.info/wp-content/uploads/2014/09/page-27.png)
+![page-27](https://efcl.info/wp-content/uploads/2014/09/page-27.png)
 
 しかし、現実的には"ASTを受け取り、ASTを返す"というAPIを公開していないモジュールも見られます。これは明確なメリットが見えていない現状だと仕方ないのかもしれません。
 

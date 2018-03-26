@@ -30,5 +30,5 @@ PCに入ってたランタイムは2008ぐらいのだったので、[Microsoft 
 
  [1]: http://park2.wakwak.com/%7Ebenki/index.html
  [2]: http://www.microsoft.com/downloads/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84&displayLang=ja
- [3]: http://efcl.info/2010/0723/res1841/ "UstreamのFlash動画内広告を消す方法"
+ [3]: https://efcl.info/2010/0723/res1841/ "UstreamのFlash動画内広告を消す方法"
  [4]: http://park2.wakwak.com/%7Ebenki/index.html "BENKI"

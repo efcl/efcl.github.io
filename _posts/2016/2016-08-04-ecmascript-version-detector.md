@@ -13,7 +13,7 @@ tags:
 
 # [ECMAScript Version Detector](https://azu.github.io/ecmascript-version-detector/ "ECMAScript Version Detector")
 
-[![image](http://efcl.info/wp-content/uploads/2016/08/04-1470309082.png)](https://azu.github.io/ecmascript-version-detector/)
+[![image](https://efcl.info/wp-content/uploads/2016/08/04-1470309082.png)](https://azu.github.io/ecmascript-version-detector/)
 
 [ECMAScript Version Detector](https://azu.github.io/ecmascript-version-detector/ "ECMAScript Version Detector")というツールとライブラリを書きました。
 
@@ -58,7 +58,7 @@ export function friends(state = initialState, action) {
 
 [ECMAScript Version Detector](https://azu.github.io/ecmascript-version-detector/ "ECMAScript Version Detector")に入れてみると分かりますが、`{...property}`はまだ標準化されていない機能です。
 
-![result](http://efcl.info/wp-content/uploads/2016/08/04-1470309795.png)
+![result](https://efcl.info/wp-content/uploads/2016/08/04-1470309795.png)
 
 これは[Object Rest/Spread Properties](http://sebmarkbage.github.io/ecmascript-rest-spread/ "Object Rest/Spread Properties")で、Stage 2のProposalです。
 

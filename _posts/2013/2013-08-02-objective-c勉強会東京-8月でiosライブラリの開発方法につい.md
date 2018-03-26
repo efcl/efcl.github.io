@@ -172,4 +172,4 @@ iOSライブラリの公開する環境として、CocoaPods,Travis CI,Coveralls
  [6]: https://github.com/yepher/CoreDataUtility "yepher/CoreDataUtility"
  [7]: http://rentzsch.github.io/mogenerator/ "mogenerator + Xmo’d"
  [8]: http://d.hatena.ne.jp/watanata2000/20111115/1321356729 "CoreData の実行SQLを出力させる - 日々是笑心"
- [9]: http://efcl.info/2013/0801/res3366/ "NSDateをもっと便利に使うためのライブラリ NSDate-Escortを書いた | Web scratch"
+ [9]: https://efcl.info/2013/0801/res3366/ "NSDateをもっと便利に使うためのライブラリ NSDate-Escortを書いた | Web scratch"

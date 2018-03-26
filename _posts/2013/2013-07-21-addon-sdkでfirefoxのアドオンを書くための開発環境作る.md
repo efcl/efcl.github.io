@@ -113,13 +113,13 @@ AddonSDKのソースコードを見るとわかります、[addon-sdk / lib / sd
 
 WebStormの場合、 `Setting -> JavaScript -> Libraries` から `addon-sdk/lib/sdk/` のディレクトリを登録する事で先ほどのJavaScriptを解析した結果を補完に利用できます。
 
-<img src="http://efcl.info/wp-content/uploads/2013/07/Edit-Library-2013-07-18-23-34-22.jpg" alt="Edit Library 2013 07 18 23 34 22" title="Edit Library 2013-07-18 23-34-22.jpg" border="0" width="600" height="212" />
+<img src="https://efcl.info/wp-content/uploads/2013/07/Edit-Library-2013-07-18-23-34-22.jpg" alt="Edit Library 2013 07 18 23 34 22" title="Edit Library 2013-07-18 23-34-22.jpg" border="0" width="600" height="212" />
 
 *   [WebStorm:追加した独自のコード補完候補をプロジェクトで使用可能にする &#8211; 仙台 Ruby Vim JavaScript社長][35]
 
 `Setting -> Direcotories` に 先ほどの `addon-sdk/lib/sdk/` のディレクトリを追加することでも同じようにAddonSDK APIの補完が効きます(Librariesに追加するほうが汎用性がありますが)
 
-<img src="http://efcl.info/wp-content/uploads/2013/07/Preferences-2013-07-18-23-32-35.jpg" alt="Preferences 2013 07 18 23 32 35" title="Preferences 2013-07-18 23-32-35.jpg" border="0" width="600" height="100" />
+<img src="https://efcl.info/wp-content/uploads/2013/07/Preferences-2013-07-18-23-32-35.jpg" alt="Preferences 2013 07 18 23 32 35" title="Preferences 2013-07-18 23-32-35.jpg" border="0" width="600" height="100" />
 
 JavaScriptで書かれているので、モジュールが実際にどういう処理をしているのかも簡単に確認できるのは利点です。
 
@@ -201,7 +201,7 @@ WebStorm7EAP以降なら、[@typedef][47]に対応してるみたいですがこ
 Addon SDKで作成したアドオンのデバッグは、Firefox buildinのデバッガを使って行う事ができます。  
 また、 `console.log()`等のConsole APIを使ったprintデバッグもできます。
 
-<img src="http://efcl.info/wp-content/uploads/2013/07/2013-07-21-at-14.35.png" alt="2013 07 21 at 14 35" title="2013-07-21 at 14.35.png" border="0" width="600" height="499" />
+<img src="https://efcl.info/wp-content/uploads/2013/07/2013-07-21-at-14.35.png" alt="2013 07 21 at 14 35" title="2013-07-21 at 14.35.png" border="0" width="600" height="499" />
 
 FirefoxにもChromeのようにネイティブのデバッグツールが色々増えていて、名前がややこしいですが以下の様な使い分けです。
 

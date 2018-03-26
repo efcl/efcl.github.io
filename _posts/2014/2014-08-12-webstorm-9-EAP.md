@@ -39,7 +39,7 @@ Nodeアプリの再起動的な事をやってくれるみたいです。
 
 そもそもspy-jsとは何かというと、実行したJavaScriptをトレースして、実行時の関数の引数の中身やその処理にかかった時間の計測などしてくれます。ブレークポイントで見るのと違って、実行し終わった部分に対して後から見ていくことが出来る機能です。
 
-![img](http://efcl.info/wp-content/uploads/2014/08/12-1407819730.png)
+![img](https://efcl.info/wp-content/uploads/2014/08/12-1407819730.png)
 
 見た目的にはAdobe Bracketsのtheseus等が似ています。
 
@@ -53,7 +53,7 @@ Nodeアプリの再起動的な事をやってくれるみたいです。
 
 実行がかなり手軽で、Run Configurationで実行したいNode.jsファイルを選ぶだけです。(ブラウザの時と違ってproxyを刺す必要もないです)
 
-![configuration](http://efcl.info/wp-content/uploads/2014/08/12-1407819988.png)
+![configuration](https://efcl.info/wp-content/uploads/2014/08/12-1407819988.png)
 
 Nodeで実行されるものなら何でもいいので、mochaで実行するテストに対しても同じようにspy-jsを仕込んで実行することもできます。
 
@@ -75,7 +75,7 @@ Java(IntelliJ)の方ではすでに入っていましたが、新しい補完方
 
 まだ補完の定義は多くないですが、[Complete Current Statement](http://blog.livedoor.jp/okashi1/archives/51751259.html "Complete Current Statement")と合わせるとコードを書くテンポが結構変わりそうな気がします。
 
-![list](http://efcl.info/wp-content/uploads/2014/08/12-1407820341.png)
+![list](https://efcl.info/wp-content/uploads/2014/08/12-1407820341.png)
 
 ## その他
 

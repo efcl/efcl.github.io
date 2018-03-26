@@ -73,7 +73,7 @@ reftestは、画像のキャプチャを保存しておいて比較するのと�
 
 Diff画像とは以下の様なテスト対象とリファレンスのキャプチャ画像を比較して差分を出す画像で、[yahoo/blink-diff](https://github.com/yahoo/blink-diff "yahoo/blink-diff")を使っています。
 
-![diff](http://efcl.info/wp-content/uploads/2015/05/2015_05_13__08-54-18-canvas-left.html-vs-canvas-right.html2.png)
+![diff](https://efcl.info/wp-content/uploads/2015/05/2015_05_13__08-54-18-canvas-left.html-vs-canvas-right.html2.png)
 
 この画像の差が一定のしきい値(delta、設定可能)を超えると一致してないと判定されます。
 

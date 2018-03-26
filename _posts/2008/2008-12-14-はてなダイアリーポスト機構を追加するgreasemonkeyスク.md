@@ -29,7 +29,7 @@ tags:
 
 使い方ははてブ版とほとんど同じで、上のをインストールしてなるべく上の方におきます。  
 Altキーを使って移動させる。  
-[<img class="alignnone size-medium wp-image-395" title="screenshot1" src="http://efcl.info/wp-content/uploads/2008/12/screenshot1-300x261.png" alt="" width="300" height="261" />][2]
+[<img class="alignnone size-medium wp-image-395" title="screenshot1" src="https://efcl.info/wp-content/uploads/2008/12/screenshot1-300x261.png" alt="" width="300" height="261" />][2]
 
 **ポスト機構の使い方**
 
@@ -68,4 +68,4 @@ var atom = new window.Hateda(
 ポスト機構はかなり手抜きで日付は設定させてないので、常に最新の位置にポストしています。
 
  [1]: http://gist.github.com/35464
- [2]: http://efcl.info/wp-content/uploads/2008/12/screenshot1.png
+ [2]: https://efcl.info/wp-content/uploads/2008/12/screenshot1.png

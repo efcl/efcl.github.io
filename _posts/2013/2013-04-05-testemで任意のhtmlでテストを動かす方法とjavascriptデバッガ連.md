@@ -86,7 +86,7 @@ HTMLを見ると気付きますが、 `testem.json` の `src_files` に対応す
 
 後は、普通に `http://localhost:7357` なCapture URLにアクセスしていけばテストが動作します。
 
-<img src="http://efcl.info/wp-content/uploads/2013/04/BuildHive1.-testem-.jpg" alt="1 testem" title="1. testem .jpg" border="0" width="376" height="204" />
+<img src="https://efcl.info/wp-content/uploads/2013/04/BuildHive1.-testem-.jpg" alt="1 testem" title="1. testem .jpg" border="0" width="376" height="204" />
 
 この辺、シンプルな仕組みながらもちゃんと拡張できるようになっていて、[testem][1]よく出来てるなーと思いました。
 
@@ -112,12 +112,12 @@ WebStormのJavaScriptデバッガーとの連携がものすごく簡単にで�
     // ルートとなる所
     
 
-<img src="http://efcl.info/wp-content/uploads/2013/04/BuildHiveRunDebug-Configurations-2013-04-04-23-58-18.jpg" alt="RunDebug Configurations 2013 04 04 23 58 18" title="RunDebug Configurations 2013-04-04 23-58-18.jpg" border="0" width="600" />
+<img src="https://efcl.info/wp-content/uploads/2013/04/BuildHiveRunDebug-Configurations-2013-04-04-23-58-18.jpg" alt="RunDebug Configurations 2013 04 04 23 58 18" title="RunDebug Configurations 2013-04-04 23-58-18.jpg" border="0" width="600" />
 
 たったこれだけで、 `$ testem` にてCapture待ちの状態にしておいて、  
 WebStormからDebug実行で先程のJavaScript Debugを起動させるとJavaScriptデバッガー連携ができます。
 
-<img src="http://efcl.info/wp-content/uploads/2013/04/BuildHivehello-test.js-testem-custom-test-page-DropboxworkspaceJavaScriptprojecttestem-custom-test-page-2013-04-04-23-57-21.jpg" alt="Hello test js  testem custom test page   ~DropboxworkspaceJavaScriptprojecttestem custom test page 2013 04 04 23 57 21" title="hello-test.js - testem-custom-test-page - [~DropboxworkspaceJavaScriptprojecttestem-custom-test-page] 2013-04-04 23-57-21.jpg" border="0" width="600" />
+<img src="https://efcl.info/wp-content/uploads/2013/04/BuildHivehello-test.js-testem-custom-test-page-DropboxworkspaceJavaScriptprojecttestem-custom-test-page-2013-04-04-23-57-21.jpg" alt="Hello test js  testem custom test page   ~DropboxworkspaceJavaScriptprojecttestem custom test page 2013 04 04 23 57 21" title="hello-test.js - testem-custom-test-page - [~DropboxworkspaceJavaScriptprojecttestem-custom-test-page] 2013-04-04 23-57-21.jpg" border="0" width="600" />
 
 [testem][1]はTest Runnerに徹しているため、複雑な設定なしにすぐにテストを書き始められる所が魅力的で、またシンプルな仕組みなため意外と他との連携がやりやすい作りになっています。
 
@@ -140,7 +140,7 @@ WebStormからDebug実行で先程のJavaScript Debugを起動させるとJavaSc
  [8]: https://github.com/azu/testem-custom-test-page/blob/master/testem.json "testem.json"
  [9]: https://github.com/azu/testem-custom-test-page/blob/master/tests.html "testem-custom-test-page / tests.html"
  [10]: https://github.com/airportyh/testem/pull/193 "fix garbled UTF-8 characters by azu · Pull Request #193 · airportyh/testem"
- [11]: http://efcl.info/2012/1028/res3154/ "WebStormからtestacularでテストとデバッグをする方法 | Web scratch"
- [12]: http://efcl.info/2013/0220/res3198/ "WebStormのデバッガでBuster.JSのテストをデバッグをする方法 | Web scratch"
- [13]: http://efcl.info/2013/0321/res3234/ "CI as a Service – ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web scratch"
+ [11]: https://efcl.info/2012/1028/res3154/ "WebStormからtestacularでテストとデバッグをする方法 | Web scratch"
+ [12]: https://efcl.info/2013/0220/res3198/ "WebStormのデバッガでBuster.JSのテストをデバッグをする方法 | Web scratch"
+ [13]: https://efcl.info/2013/0321/res3234/ "CI as a Service – ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web scratch"
  [14]: http://d.hatena.ne.jp/sasaplus1/20130301/1362145202 "testem + mocha on Travis-CI - ブラウザでのテストを自動化する - 四角革命前夜"

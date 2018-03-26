@@ -68,7 +68,7 @@ tags:
 ### [2015-02-17のJS: Babel(6to5)、BrowserSync 2.0、Flux実装比較 - JSer.info](http://jser.info/2015/02/17/6to5-to-babel-browsersync-flux/ "2015-02-17のJS: Babel(6to5)、BrowserSync 2.0、Flux実装比較 - JSer.info")
 
 - ESTreeというAST策定のコミュニティ仕様ができてASTは一段落
-- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](http://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
+- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](https://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
 - React CanvasがでてきてReactがいろんな層でみかけるようになってきた
 - Extensible Web!
 
@@ -101,7 +101,7 @@ tags:
 
 - コアな層以外でRxについての話をポツポツみかけるようになってきた
 
-![rx](http://efcl.info/wp-content/uploads/2015/06/16-1434380739.png)
+![rx](https://efcl.info/wp-content/uploads/2015/06/16-1434380739.png)
 
 RxJSそのものについての話もちょっと見かけるようになって来た感じですが、関連してECMAScriptにobservableを入れようというプロポーサル周りもこの関連して言及が増えた感じがします。
 (まあ、大体Netflix)
@@ -122,7 +122,7 @@ RxJSそのものについての話もちょっと見かけるようになって�
 - 一般的な開発ユーザーと仕様との接点ができた
 - Bower v1.4.0でloginとかunregisterとかが入ったけど、いまさら感があって反応が薄い
 
-![bower-npm](http://efcl.info/wp-content/uploads/2015/06/16-1434419368.png)
+![bower-npm](https://efcl.info/wp-content/uploads/2015/06/16-1434419368.png)
 
 自分があまりBowerを使ってないというのもありますが、Bowerとnpmを言及数を比較してみると結構差がある感じです。
 
@@ -132,7 +132,7 @@ npmの言及数が多いのは、[われわれは、いかにして変更点を�
 
 - jQueryの歴史発掘
 - [npm private modules](http://blog.npmjs.org/post/116379479775/npm-private-modules-are-here "npm private modules")が公開
-- 実は[publicなら無料](http://efcl.info/2015/04/30/npm-namespace/)で公開できるので、scoped moduleで公開してる事例が増えてきた
+- 実は[publicなら無料](https://efcl.info/2015/04/30/npm-namespace/)で公開できるので、scoped moduleで公開してる事例が増えてきた
 
 ### [2015-04-20のJS: ECMAScript6最終ドラフト、JavaScriptトレーニング - JSer.info](http://jser.info/2015/04/20/es6-final-draft-js-traning/ "2015-04-20のJS: ECMAScript6最終ドラフト、JavaScriptトレーニング - JSer.info")
 
@@ -156,7 +156,7 @@ npmの言及数が多いのは、[われわれは、いかにして変更点を�
 - Babelを使ったES6を学ぶ記事とかが増えてきた感じ
 - Traceurはほぼ聞かなくなり、ES6の変換はBabelを使うのがデファクトっぽくなった
 
-![traceur-babel](http://efcl.info/wp-content/uploads/2015/06/16-1434418123.png)
+![traceur-babel](https://efcl.info/wp-content/uploads/2015/06/16-1434418123.png)
 
 ES6+をTranspileするツールである[Traceur](https://github.com/google/traceur-compiler "Traceur")についての言及が、[Babel](http://babeljs.io/ "Babel")が広まってからは殆どなくなった感じがします。
 	
@@ -174,7 +174,7 @@ ES6+をTranspileするツールである[Traceur](https://github.com/google/trac
 - CoffeeScriptやES5と比較したES6の書き方という記事が多かった
 - 段階を経て移行していく雰囲気を感じた
 
-![coffee-typscript](http://efcl.info/wp-content/uploads/2015/06/16-1434414830.png)
+![coffee-typscript](https://efcl.info/wp-content/uploads/2015/06/16-1434414830.png)
 
 CoffeeScriptとTypeScriptの言及数の変化を見るとCoffeeScriptは言及は少なくて、あっても[Replace CoffeeScript with ES6](https://robots.thoughtbot.com/replace-coffeescript-with-es6 "Replace CoffeeScript with ES6")のような記事だったりしてCoffeeScript自体についての話は本体のアップデートと[The Pragmatic Bookshelf | CoffeeScript](https://pragprog.com/book/tbcoffee2/coffeescript "The Pragmatic Bookshelf | CoffeeScript")ぐらいな感じがします。
 
@@ -184,7 +184,7 @@ CoffeeScriptとTypeScriptの言及数の変化を見るとCoffeeScriptは言及�
 - PolymerやWeb Componentsへの言及は一定で、ちょっと盛り上がりに欠けている
 - [Web ComponentsはES4のように感じる日がくるかもしれない](https://twitter.com/codylindley/status/609006418620862464)というのもその空気感
 
-![polymer-angular-react](http://efcl.info/wp-content/uploads/2015/06/16-1434418601.png)
+![polymer-angular-react](https://efcl.info/wp-content/uploads/2015/06/16-1434418601.png)
 
 WebComponents(Polymer含む)とReactとAngularJSのJSer.info内での言及数を表したものです。
 
@@ -304,7 +304,7 @@ WebPlatformAPI|  7  (0.48%) ▬▬
 
 月ごとの紹介した記事数(2014年1月から2015年6月)を見ると全体的に2015年5月が少ない
 
-![紹介記事数](http://efcl.info/wp-content/uploads/2015/06/16-1434412905.png)
+![紹介記事数](https://efcl.info/wp-content/uploads/2015/06/16-1434412905.png)
 
 ## 調べ方
 
@@ -336,7 +336,7 @@ weeks.forEach(function (week) {
 
 これと[philovivero/distribution](https://github.com/philovivero/distribution "philovivero/distribution")を合わせれば、以下のようなタグの割合などが簡単に出せました。
 
-![keywords](http://efcl.info/wp-content/uploads/2015/06/16-1434415741.png)
+![keywords](https://efcl.info/wp-content/uploads/2015/06/16-1434415741.png)
 
 今回調査に使ったスクリプトは[azu/jser-keyword-count](https://github.com/azu/jser-keyword-count "azu/jser-keyword-count")においてあります。
 (これをNumberなどに食わせてグラフを作ってます)

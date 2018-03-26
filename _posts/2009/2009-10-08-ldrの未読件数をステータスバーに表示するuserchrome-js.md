@@ -23,7 +23,7 @@ LDRの未読件数をステータスバーに表示して定期的に更新す�
 
 <pre>const reMinute = 30; // 何分毎に更新する</pre><figure id="attachment_1391" style="width: 214px;" class="wp-caption alignnone">
 
-[<img class="size-full wp-image-1391" title="ss-2009-10-08-17-10-55" src="http://efcl.info/wp-content/uploads/2009/10/ss-2009-10-08-17-10-55.png" alt="ss-2009-10-08-17-10-55" width="214" height="67" />][1]<figcaption class="wp-caption-text">数値だけでシンプルです</figcaption></figure> 
+[<img class="size-full wp-image-1391" title="ss-2009-10-08-17-10-55" src="https://efcl.info/wp-content/uploads/2009/10/ss-2009-10-08-17-10-55.png" alt="ss-2009-10-08-17-10-55" width="214" height="67" />][1]<figcaption class="wp-caption-text">数値だけでシンプルです</figcaption></figure> 
 *   [LDRUnreadCounter.uc.js][2]
 
 環境によって描画がおかしくなってるかもしれないので、下のあたりといじると解決するかも。
@@ -56,7 +56,7 @@ LDRの未読件数をステータスバーに表示して定期的に更新す�
   </dl>
 </div>
 
- [1]: http://efcl.info/wp-content/uploads/2009/10/ss-2009-10-08-17-10-55.png
- [2]: http://efcl.info/wp-content/uploads/2009/10/LDRUnreadCounter.uc_.js
+ [1]: https://efcl.info/wp-content/uploads/2009/10/ss-2009-10-08-17-10-55.png
+ [2]: https://efcl.info/wp-content/uploads/2009/10/LDRUnreadCounter.uc_.js
  [3]: http://d.hatena.ne.jp/teramako/20080730/p1 "LDRの未読件数をステータスバーに表示するプラグイン - hogehoge"
  [4]: http://d.hatena.ne.jp/javascripter/20080609/1212968037 "LDRの未読数をfaviconに表示するGreasemonkeyスクリプト - 素人がプログラミングを勉強するブログ"

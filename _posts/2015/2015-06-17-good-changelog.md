@@ -58,7 +58,7 @@ Babelを例に見ると、変更した内容を1行のテキストで表現す�
 - [clog - A conventional changelog generator for the rest of us](http://blog.thoughtram.io/announcements/tools/2014/09/18/announcing-clog-a-conventional-changelog-generator-for-the-rest-of-us.html)
 - [lalitkapoor/github-changes](https://github.com/lalitkapoor/github-changes)
 
-これは以前[Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](http://efcl.info/2014/07/20/git-tag-to-release-github/ "Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")とかでも紹介してた気がします。
+これは以前[Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](https://efcl.info/2014/07/20/git-tag-to-release-github/ "Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")とかでも紹介してた気がします。
 
 しかし、こういう自動生成ツールを使っても見やすいChangeLogになるかは別の問題で、コミット時に結構考えないと余計な情報が多くて見難いChangeLogが生成されると思います。
 

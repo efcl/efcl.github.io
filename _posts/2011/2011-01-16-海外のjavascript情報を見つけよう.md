@@ -53,7 +53,7 @@ JavaScript情報配信サイトなど
 ついでに、日本でもこういうサイトが欲しいとのことで[JSer.info][13]を立ち上げました。
 
 **Mozilla勉強会@東京 5thで「世界のJavaScript情報を読もう」という発表をしました | Web scratch**
-:   [http://efcl.info/2011/0117/res2229/][14]
+:   [https://efcl.info/2011/0117/res2229/][14]
 
  [1]: http://blog.reybango.com/2010/12/15/what-to-read-to-get-up-to-speed-in-javascript/?utm_source=javascriptweekly&utm_medium=email
  [2]: http://jsmentors.com/index.html
@@ -66,6 +66,6 @@ JavaScript情報配信サイトなど
  [9]: http://thechangelog.com/
  [10]: http://nundefined.tistory.com/ "Nundefined ::"
  [11]: http://twitter.com/nundefined "nundefined"
- [12]: http://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
+ [12]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
  [13]: http://jser.info/ "JSer.info"
- [14]: http://efcl.info/2011/0117/res2229/ "Mozilla勉強会@東京 5thで「世界のJavaScript情報を読もう」という発表をしました | Web scratch"
+ [14]: https://efcl.info/2011/0117/res2229/ "Mozilla勉強会@東京 5thで「世界のJavaScript情報を読もう」という発表をしました | Web scratch"

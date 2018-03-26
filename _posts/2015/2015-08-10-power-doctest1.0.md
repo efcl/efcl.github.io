@@ -15,7 +15,7 @@ tags:
 
 ## power-doctest
 
-以前[JavaScriptでdoctestを行う power-doctest を作った | Web Scratch](http://efcl.info/2013/1201/res3494/ "JavaScriptでdoctestを行う power-doctest を作った | Web Scratch")という記事で紹介しましたが、
+以前[JavaScriptでdoctestを行う power-doctest を作った | Web Scratch](https://efcl.info/2013/1201/res3494/ "JavaScriptでdoctestを行う power-doctest を作った | Web Scratch")という記事で紹介しましたが、
 
     評価したい式; // => 期待する評価結果
     
@@ -98,7 +98,7 @@ browserify -D -r power-assert powered-example.js > build.js
 
 ![browser](https://monosnap.com/file/LxGCmcgfnwekZ6UXJqbEuV24NNYGes.png)
 
-ただの`assert`に変換するだけなので[非同期テスト](http://efcl.info/2014/0322/res3743/ "power-doctestが非同期テストに対応しました | Web Scratch")も何もせずに対応できています。
+ただの`assert`に変換するだけなので[非同期テスト](https://efcl.info/2014/0322/res3743/ "power-doctestが非同期テストに対応しました | Web Scratch")も何もせずに対応できています。
 
 ただ、今の所実行面のサポートがなんにもないので、なんか上手い方法が欲しくなりそうな感じですね。
 

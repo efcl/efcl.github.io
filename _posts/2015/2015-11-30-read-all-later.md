@@ -24,7 +24,7 @@ ElectronアプリじゃなくてNode.jsのCLIでも良かったのですが面�
 
 以下のような動作になります。
 
-![gif read-all-later](http://efcl.info/wp-content/uploads/2015/11/read-all-later.gif)
+![gif read-all-later](https://efcl.info/wp-content/uploads/2015/11/read-all-later.gif)
 
 ## インストール
 

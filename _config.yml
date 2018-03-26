@@ -9,9 +9,9 @@ keywords:
   - "Objective-C"
   - "Firefox"
   - "拡張機能"
-url: "http://efcl.info"
+url: "https://efcl.info"
 baseurl: ""
-production_url : "http://efcl.info"
+production_url : "https://efcl.info"
 github_repo_url : https://github.com/efcl/efcl.github.io
 icon: "/public/favicon.ico"
 timezone: Asia/Tokyo
@@ -27,7 +27,7 @@ exclude:
 # Setup
 author:
   name: 'azu'
-  url:  http://efcl.info/
+  url:  https://efcl.info/
   twitter: azu_re
   github:  azu
 
@@ -47,7 +47,7 @@ gems:
 # Prose
 prose:
   rooturl: '_posts/'
-  siteurl: 'http://efcl.info'
+  siteurl: 'https://efcl.info'
   media: 'wp-content/uploads'
   metadata:
     _posts:

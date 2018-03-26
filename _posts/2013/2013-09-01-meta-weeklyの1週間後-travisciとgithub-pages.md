@@ -47,7 +47,7 @@ Travis CIからリポジトリにpushするためには、.travis.ymlにGithub�
 
 *   [azu/Meta-Weekly][15]
 
- [1]: http://efcl.info/2013/0825/res3409/ "定期更新されるJavaScript等の情報サイトをまとめたMeta-Weeklyというサイトを作りました | Web scratch"
+ [1]: https://efcl.info/2013/0825/res3409/ "定期更新されるJavaScript等の情報サイトをまとめたMeta-Weeklyというサイトを作りました | Web scratch"
  [2]: http://azu.github.io/Meta-Weekly/ "Meta Weekly"
  [3]: https://github.com/azu/Meta-Weekly/pulls?direction=desc&page=1&sort=created&state=closed "Pull Requests · azu/Meta-Weekly"
  [4]: https://github.com/azu/Meta-Weekly/blob/master/CONTRIBUTING.md "Meta-Weekly/CONTRIBUTING.md at master · azu/Meta-Weekly"

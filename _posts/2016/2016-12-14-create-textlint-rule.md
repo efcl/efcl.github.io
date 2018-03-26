@@ -14,7 +14,7 @@ tags:
 
 [textlint](https://textlint.github.io/ "textlint")はJavaScriptで自由にルールを追加することができる仕組みになっています。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
 
 しかし、普段JavaScriptをあんまり使ってない人には[Babel](https://babeljs.io/ "Babel")を使ったコード変換や[Mocha](http://mochajs.org/ "Mocha")を使ったテストの設定など、ルールを書き始めるまでの環境づくりの方が大変です。
 

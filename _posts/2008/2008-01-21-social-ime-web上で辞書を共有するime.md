@@ -24,7 +24,7 @@ tags:
 <p><strong>単語登録・辞書共有</strong></p>
 <p>単語を登録するとそれを共有することで辞書を拡張することができます。</p>
 <p>例)え + TABキー</p>
-<p><a href="http://efcl.info/wp-content/uploads/2008/01/snap3.png" title="ime"><img src="http://efcl.info/wp-content/uploads/2008/01/snap3.thumbnail.png" alt="ime" /></a></p>
+<p><a href="https://efcl.info/wp-content/uploads/2008/01/snap3.png" title="ime"><img src="https://efcl.info/wp-content/uploads/2008/01/snap3.thumbnail.png" alt="ime" /></a></p>
 <p>あからさまに偏ってますね。<br />
 ATOKなどでは出てこない人物名等が豊富に出てきます。</p>
 <p>あと、<a href="http://www.nokuno.jp/" target="_blank">東方変換機</a>という東方のスペルカード等を簡単に変換できるものを公開されてます。</p>
@@ -40,7 +40,7 @@ ATOKなどでは出てこない人物名等が豊富に出てきます。</p>
 なぜか無駄にてかっていてみづらい。(Web2.0を意識したのかな？)<br />
 あAという切り替えがはっきりと見えないのは問題だと思う。</p>
 <p>リソースエディタでアイコンは変えれるのでその部分だけ変えてみた。</p>
-<p><a href="http://efcl.info/wp-content/uploads/2008/01/snap4.png" title="snap4.png"><img src="http://efcl.info/wp-content/uploads/2008/01/snap4.thumbnail.png" alt="snap4.png" /></a></p>
+<p><a href="https://efcl.info/wp-content/uploads/2008/01/snap4.png" title="snap4.png"><img src="https://efcl.info/wp-content/uploads/2008/01/snap4.thumbnail.png" alt="snap4.png" /></a></p>
 <p>またVistaとの相性がまだよくない<br />
 これを書いてるときにも一度Firefoxが落ちた。(Firefoxとの相性が悪いのかも)<br />
 あとF8などのショートカットを使用する場合も落ちたので、IMEの癖でやると少々面倒くさい。</p>

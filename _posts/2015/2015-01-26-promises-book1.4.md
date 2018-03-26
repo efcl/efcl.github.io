@@ -15,7 +15,7 @@ tags:
 [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")の[1.4.0](https://github.com/azu/promises-book/releases/tag/1.4.0 "1.4.0")をリリースしたので、
 前回書いたVer 1.2から変更点を簡単にまとめたものです。
 
-- [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](http://efcl.info/2014/08/19/promises-book-1.2.0/ "JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch")
+- [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](https://efcl.info/2014/08/19/promises-book-1.2.0/ "JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch")
 - [Comparing 1.2.0...1.4.0 · azu/promises-book](https://github.com/azu/promises-book/compare/1.2.0...1.4.0 "Comparing 1.2.0...1.4.0 · azu/promises-book")
 
 各バージョン毎のリリースノートは[Releases · azu/promises-book](https://github.com/azu/promises-book/releases "Releases · azu/promises-book")に書いてるので詳しくはこちらを見て下さい。

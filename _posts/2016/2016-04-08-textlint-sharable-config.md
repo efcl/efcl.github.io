@@ -119,4 +119,4 @@ $(npm bin)/textlint --config @azu/textlint-config-readme README.md
 
 Scoped module(`@azu/abc`のような形式)も対応してるので、自分の名前空間なら気軽に公開できて便利です。
 
-- [npmで名前空間を持ったモジュールを公開する方法(scoped modules) | Web Scratch](http://efcl.info/2015/04/30/npm-namespace/ "npmで名前空間を持ったモジュールを公開する方法(scoped modules) | Web Scratch")
+- [npmで名前空間を持ったモジュールを公開する方法(scoped modules) | Web Scratch](https://efcl.info/2015/04/30/npm-namespace/ "npmで名前空間を持ったモジュールを公開する方法(scoped modules) | Web Scratch")

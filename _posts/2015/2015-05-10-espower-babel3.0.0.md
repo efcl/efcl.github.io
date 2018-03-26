@@ -14,7 +14,7 @@ tags:
 
 ---
 
-[ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")で紹介してた[azu/espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")をアップデートして[3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")をリリースしました。
+[ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")で紹介してた[azu/espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")をアップデートして[3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")をリリースしました。
 
 [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")は[Babel](http://babeljs.io/ "Babel")の変換 + [power-assert](https://github.com/twada/power-assert "power-assert")の変換を一緒にやってくれるライブラリです。
 
@@ -22,12 +22,12 @@ tags:
 
 詳しくは以下の記事を見て下さい
 
-- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 
 :warning: 追記(2016-04-15): espower-babelは非推奨で、`.babelrc`で直接power-assertを利用するのを推奨しています。
 詳しくは次の記事を見てください・
 
-- [power-assert + babel as a development tool | Web Scratch](http://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
+- [power-assert + babel as a development tool | Web Scratch](https://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
 
 ## 3.0.0
 
@@ -41,7 +41,7 @@ tags:
 
 記事の方もこの変更に追従させてアップデートしているので、細かく変更点を知りたい人は以下のDiffを見てみるといいかと思います。
 
-- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 - [Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/pull/84/files "Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io")
 
 

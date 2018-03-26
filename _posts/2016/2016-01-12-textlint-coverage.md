@@ -84,7 +84,7 @@ textlintのLintの結果は"compact", "checkstyle", "jslint-xml", "junit", "tap"
 
 これを利用すれば、Codecov上にカバレッジとメッセージ(Lintのエラーメッセージ)を表示することができます。
 
-[![architecuture](http://efcl.info/wp-content/uploads/2016/01/12-1452563559.png)](https://codecov.io/github/azu/JavaScript-Plugin-Architecture/ja/connect/README.md?ref=e2fabe23359c253760b48641ad464c79a4f483e9)
+[![architecuture](https://efcl.info/wp-content/uploads/2016/01/12-1452563559.png)](https://codecov.io/github/azu/JavaScript-Plugin-Architecture/ja/connect/README.md?ref=e2fabe23359c253760b48641ad464c79a4f483e9)
 
 カバレッジの結果として
 
@@ -153,7 +153,7 @@ $(npm bin)/textlint -f codecov README.md | codecov
 
 CodecovはPull Request毎にカバレッジを書いてくれるBotとかもあるので面白いです。
 
-![codecov bot](http://efcl.info/wp-content/uploads/2016/01/12-1452597521.png)
+![codecov bot](https://efcl.info/wp-content/uploads/2016/01/12-1452597521.png)
 
 - [feat(coverage): add coverage for text by azu · Pull Request #91 · azu/JavaScript-Plugin-Architecture](https://github.com/azu/JavaScript-Plugin-Architecture/pull/91 "feat(coverage): add coverage for text by azu · Pull Request #91 · azu/JavaScript-Plugin-Architecture")
 

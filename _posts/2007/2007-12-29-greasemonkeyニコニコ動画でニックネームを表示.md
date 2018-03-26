@@ -16,9 +16,9 @@ tags:
   - Greasemonkey
   - ニコニコ動画
 ---
-<p><a title="nick.png" href="http://efcl.info/wp-content/uploads/2008/01/nick.png"> </a> <a href="http://script41self.seesaa.net/">++ Script for oneself ++</a>さんで公開されている <a href="http://script41self.seesaa.net/article/73226087.html">動画のうｐ主のニックネームを表示するGMスクリプト</a>が動かなくっていたので、 修正と改悪したものです。</p>
+<p><a title="nick.png" href="https://efcl.info/wp-content/uploads/2008/01/nick.png"> </a> <a href="http://script41self.seesaa.net/">++ Script for oneself ++</a>さんで公開されている <a href="http://script41self.seesaa.net/article/73226087.html">動画のうｐ主のニックネームを表示するGMスクリプト</a>が動かなくっていたので、 修正と改悪したものです。</p>
 <p>タイトルどおりニコニコ動画の再生ページで投稿者の名前を表示するものです。</p>
-<p><a title="nick.png" href="http://efcl.info/wp-content/uploads/2008/01/nick.png"><img src="http://efcl.info/wp-content/uploads/2008/01/nick.thumbnail.png" alt="nick.png" /></a> <a href="http://efcl.info/wp-content/uploads/niconickname.user.js"></a></p>
+<p><a title="nick.png" href="https://efcl.info/wp-content/uploads/2008/01/nick.png"><img src="https://efcl.info/wp-content/uploads/2008/01/nick.thumbnail.png" alt="nick.png" /></a> <a href="https://efcl.info/wp-content/uploads/niconickname.user.js"></a></p>
 <p><span style="text-decoration: line-through;"><a href="http://gist.github.com/raw/18550/95446d1e07b1e2283a5c1dbf2002ca0c3ac1d29b?niconickname.user.js">niconickname.user.js</a></span></p>
 <p><span style="text-decoration: line-through;"><a href="http://gist.github.com/18550">gist: 18550 — GitHub</a>で管理</span></p>
 <p>こっからインストール<a href="http://userscripts.org/scripts/show/88105"><br /></a></p>

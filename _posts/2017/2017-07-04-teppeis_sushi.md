@@ -13,7 +13,7 @@ tags:
 
 [#teppeis_sushi](https://twitter.com/search?f=realtime&q=%20%23teppeis_sushi "#teppeis_sushi")というイベントで、[Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")という話をしました。
 
-[![image](http://efcl.info/wp-content/uploads/2017/07/05-1499182533.png)](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html)
+[![image](https://efcl.info/wp-content/uploads/2017/07/05-1499182533.png)](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html)
 
 Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")というGitHubクライアントを書いていてそれの技術的な話です。
 クライアントサイドでDDDを取り入れた設計になっていて、その設計や規約の作り方やそれを守る方法についての話をしました。
@@ -30,7 +30,7 @@ Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/teppeis_sushi?src=hash">#teppeis_sushi</a> 前回も台風でしたね</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/882191585122820096">July 4, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-- [#teppeis_sushi に参加した | Web Scratch](http://efcl.info/2016/07/14/teppeis_sushi/ "#teppeis_sushi に参加した | Web Scratch")
+- [#teppeis_sushi に参加した | Web Scratch](https://efcl.info/2016/07/14/teppeis_sushi/ "#teppeis_sushi に参加した | Web Scratch")
 
 ----
 

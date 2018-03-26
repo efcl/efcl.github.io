@@ -29,7 +29,7 @@ SlideShareやSpeakerDeck等で現在表示してるページのパーマネン�
 
 [bookmarkletter](https://github.com/azu/bookmarkletter "bookmarkletter")はこのために書いた、コマンドラインからブックマークレットを作成するツールです。
 
-- [ブックマークレットを作るコマンドラインツール | Web Scratch](http://efcl.info/2014/09/08/bookmarklets-env/ "ブックマークレットを作るコマンドラインツール | Web Scratch")
+- [ブックマークレットを作るコマンドラインツール | Web Scratch](https://efcl.info/2014/09/08/bookmarklets-env/ "ブックマークレットを作るコマンドラインツール | Web Scratch")
 
 また、bookmarkletterを作ってから気づいたのですが、GitHubのREADMEには`javascript:`なリンクは埋め込む事が出来ません(セキュリティの都合)
 

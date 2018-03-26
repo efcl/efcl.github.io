@@ -390,7 +390,7 @@ John Resigさんに書いてる本がNinjaなのに表紙がSamuraiな件なの�
 **Firefox Developers Conference 2010**
 :   [http://mozilla.jp/events/2010/fxdevcon/][2]
 
- [1]: http://efcl.info/2009/1108/res1424/
+ [1]: https://efcl.info/2009/1108/res1424/
  [2]: http://mozilla.jp/events/2010/fxdevcon/ "Firefox Developers Conference 2010"
  [3]: http://search.twitter.com/search?q=%23fxdevcon
  [4]: http://togetter.com/li/71239 "Togetter - 「Firefox Developers Conference 2010」"

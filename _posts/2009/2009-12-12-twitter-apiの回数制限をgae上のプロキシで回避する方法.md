@@ -50,7 +50,7 @@ http://birdnest.googlecode.com/svn/branches/gae/ 以下のファイルを全部�
 
 <br class="spacer_" /><figure id="attachment_1510" style="width: 213px;" class="wp-caption alignnone">
 
-[<img class="size-full wp-image-1510" title="sshot-2009-12-12-1" src="http://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-1.png" alt="ダウンロードしたファイル" width="213" height="169" />][8]<figcaption class="wp-caption-text">ダウンロードしたファイル</figcaption></figure> 
+[<img class="size-full wp-image-1510" title="sshot-2009-12-12-1" src="https://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-1.png" alt="ダウンロードしたファイル" width="213" height="169" />][8]<figcaption class="wp-caption-text">ダウンロードしたファイル</figcaption></figure> 
 これらのファイルを先ほど作成した**アプリケーションID名のフォルダ**を作りその中に入れておきます。(これは説明を統一するためなので絶対必要な操作ではないかも)  
 アプリケーションのIDがtwitproxyならtwitproxyというフォルダを作りその中に入れる。
 
@@ -114,7 +114,7 @@ var TWITTER\_API\_URL = &#8220;http://アプリケーション名.appspot.com/ap
 海外のクライアントだとAPIを指定できるソフトも多いです。
 
 [Spaz][11]の場合だと設定画面にBase API URLを指定できるので、同じようにhttp://アプリケーション名.appspot.com/api/を入れればプロキシ経由で使用できます。  
-[<img class="alignnone size-medium wp-image-1512" title="sshot-2009-12-12-2" src="http://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-2-300x182.png" alt="sshot-2009-12-12-2" width="300" height="182" />][12]
+[<img class="alignnone size-medium wp-image-1512" title="sshot-2009-12-12-2" src="https://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-2-300x182.png" alt="sshot-2009-12-12-2" width="300" height="182" />][12]
 
 <br class="spacer_" />
 
@@ -144,11 +144,11 @@ var TWITTER\_API\_URL = &#8220;http://アプリケーション名.appspot.com/ap
  [5]: http://code.google.com/intl/ja/appengine/docs/python/gettingstarted/devenvironment.html
  [6]: http://www.python.jp/Zope/download/pythoncore
  [7]: http://blog.promob.jp/fri/2009/02/eclipsesubversion.html
- [8]: http://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-1.png
+ [8]: https://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-1.png
  [9]: http://d.hatena.ne.jp/intheflight/20090611/p1
  [10]: https://addons.mozilla.org/ja/firefox/addon/5081
  [11]: http://getspaz.com/
- [12]: http://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-2.png
+ [12]: https://efcl.info/wp-content/uploads/2009/12/sshot-2009-12-12-2.png
  [13]: http://nest.appspot.com/
  [14]: http://code.google.com/p/birdnest/ "birdnest - Project Hosting on Google Code"
  [15]: http://www.bruceyo.info/archives/402 "How to set up Twitter API Proxy with Google App Engine | Bruce Yo's Blog"

@@ -18,7 +18,7 @@ tags:
 
 [Docusaurus](https://docusaurus.io/ "Docusaurus")は<q>Easy to Maintain Open Source Documentation Websites</q>とあるようにOSSのライブラリやプロダクト向けのドキュメントサイトを作る一種の静的サイトジェネレーターです。
 
-[![Docusaurus](http://efcl.info/wp-content/uploads/2017/12/26-1514286444.png)](https://docusaurus.io/)
+[![Docusaurus](https://efcl.info/wp-content/uploads/2017/12/26-1514286444.png)](https://docusaurus.io/)
 
 Facebookから公開されていることからも分かるように、[Jest](http://facebook.github.io/jest/ "Jest")や[Prettier](https://prettier.io/ "Prettier")(Facebookプロダクトではないけど中にFacebookの[vjeux](https://github.com/vjeux "vjeux")さんがいる)などが利用しています。
 
@@ -86,7 +86,7 @@ URLは`id`によって決定されるため、ファイル名とは別で管理�
 
 - [almin/docs/](https://github.com/almin/almin/tree/master/docs "almin/docs/")
 
-![dicrectory](http://efcl.info/wp-content/uploads/2017/12/26-1514284267.png)
+![dicrectory](https://efcl.info/wp-content/uploads/2017/12/26-1514284267.png)
 
 こうしたできたのが次のサイトです。
 
@@ -104,7 +104,7 @@ Docusaurusは[DocSearch](https://community.algolia.com/docsearch/ "DocSearch")�
 
 [ESLint](https://eslint.org/)や[Vue](vuejs.org/guide/)、[React](https://reactjs.org/)など最近の有名なツールでドキュメントがしっかりとあるものは、使ってることが多いので見たことがある人も多いかもしれません。
 
-![eslint](http://efcl.info/wp-content/uploads/2017/12/26-1514284622.png)
+![eslint](https://efcl.info/wp-content/uploads/2017/12/26-1514284622.png)
 
 とても便利なのですが、この申請フローがなぜかマニュアルだったので有効化の仕方をメモって置きます。
 

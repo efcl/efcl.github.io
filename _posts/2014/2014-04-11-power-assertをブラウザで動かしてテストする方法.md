@@ -323,8 +323,8 @@ power-assert化したテストファイルも問題なくブラウザで動か�
 より良きJavaScriptテストを!
 
  [1]: https://github.com/twada/power-assert "power-assert"
- [2]: http://efcl.info/2014/0406/res3809/ "power-assertの使い方 Node.js編 | Web scratch"
- [3]: http://efcl.info/2014/0406/res3809/ "power-assert + gulp"
+ [2]: https://efcl.info/2014/0406/res3809/ "power-assertの使い方 Node.js編 | Web scratch"
+ [3]: https://efcl.info/2014/0406/res3809/ "power-assert + gulp"
  [4]: https://github.com/azu/power-assert-testem-seed/tree/0.0.3 "azu/power-assert-testem-seed at 0.0.3"
  [5]: https://github.com/azu/power-assert-testem-seed/blob/0.0.3/gulpfile.js "gulpfile.js"
  [6]: https://github.com/airportyh/testem "airportyh/testem"
@@ -335,10 +335,10 @@ power-assert化したテストファイルも問題なくブラウザで動か�
  [11]: https://github.com/twada/power-assert#using-grunt-espower "using grunt-espower"
  [12]: https://twitter.com/t_wada/status/466863515576180736
  [13]: https://github.com/twada/espower-source "espower-source"
- [14]: http://efcl.info/2013/0405/res3256/ "testemで任意のHTMLでテストを動かす方法とJavaScriptデバッガ連携 | Web scratch"
+ [14]: https://efcl.info/2013/0405/res3256/ "testemで任意のHTMLでテストを動かす方法とJavaScriptデバッガ連携 | Web scratch"
  [15]: https://github.com/twada/espowerify "espowerify"
  [16]: https://github.com/substack/node-browserify "browserify"
- [17]: http://efcl.info/2014/0120/res3605/ "npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch"
+ [17]: https://efcl.info/2014/0120/res3605/ "npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch"
  [18]: https://github.com/azu/power-assert-karma-seed "azu/power-assert-karma-seed"
  [19]: https://github.com/karma-runner/karma-coffee-preprocessor "karma-coffee-preprocessor"
  [20]: https://github.com/cjohansen/karma-browserifast "karma-browserifast"
@@ -355,5 +355,5 @@ power-assert化したテストファイルも問題なくブラウザで動か�
  [31]: http://imaya.blog.jp/archives/7169783.html "#JSオジサンで Source Map について話してきました : document"
  [32]: #testem
  [33]: #karma-browserify
- [34]: http://efcl.info/2014/0406/res3809/ "power-assertの使い方 Node.js編"
+ [34]: https://efcl.info/2014/0406/res3809/ "power-assertの使い方 Node.js編"
  [35]: https://github.com/twada/power-assert "twada/power-assert"

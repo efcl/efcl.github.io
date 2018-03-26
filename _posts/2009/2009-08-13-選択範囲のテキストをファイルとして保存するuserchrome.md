@@ -47,7 +47,7 @@ Syntax Highlighterしてるような文章を保存したとき、改行やタ�
 
 &nbsp;
 
- [1]: http://efcl.info/wp-content/uploads/2009/08/saveSelection.uc_.js
+ [1]: https://efcl.info/wp-content/uploads/2009/08/saveSelection.uc_.js
  [2]: http://www.kanasansoft.com/weblab/2009/01/bookmarklet_1.html "選択範囲を保存するBookmarklet (Kanasansoft Web Lab.)"
  [3]: http://piro.sakura.ne.jp/xul/tips/x0022.html "XUL Apps > Tips > ファイル選択のダイアログ - outsider reflex"
  [4]: http://xul-app.hp.infoseek.co.jp/xultu-janit/filedialog.html "XUL チュートリアル - 「開く」ダイアログと「保存」ダイアログ"

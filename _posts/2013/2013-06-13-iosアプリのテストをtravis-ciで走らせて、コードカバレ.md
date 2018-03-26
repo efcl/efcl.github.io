@@ -16,7 +16,7 @@ tags:
 <li>iOSアプリのテストを<a href="https://travis-ci.org/" title="desc">Travis CI</a>で動かす</li>
 <li><a href="https://coveralls.io/" title="Your Repositories | Coveralls - Code Coverage History and Statistics">Coveralls</a>にコードカバレッジを渡す</li>
 </ul>
-<p><a href="http://efcl.info/2013/0607/res3295/" title="Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch">Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch</a> で書いていたように、<br />
+<p><a href="https://efcl.info/2013/0607/res3295/" title="Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch">Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch</a> で書いていたように、<br />
 NSDateについてのライブラリ <a href="https://github.com/azu/NSDate-Escort" title="azu/NSDate-Escort · GitHub">azu/NSDate-Escort · GitHub</a> を書いてて、このライブラリは、</p>
 <p><a href="https://travis-ci.org/" title="desc">Travis CI</a>でテストを動かして<a href="https://travis-ci.org/azu/NSDate-Escort"><img src="https://travis-ci.org/azu/NSDate-Escort.png?branch=master" alt="Build Status" /></a><br />
 <a href="https://coveralls.io/" title="Your Repositories | Coveralls - Code Coverage History and Statistics">Coveralls</a> でコードカバレッジ<a href="https://coveralls.io/r/azu/NSDate-Escort?branch=master"><img src="https://coveralls.io/repos/azu/NSDate-Escort/badge.png?branch=master" alt="Coverage Status" /></a> をとっています。</p>
@@ -35,7 +35,7 @@ NSDateについてのライブラリ <a href="https://github.com/azu/NSDate-Esco
 <p>NSDate-Escort では、xctoolの設定ファイルである<a href="https://github.com/azu/NSDate-Escort/blob/master/.xctool-args" title=".xctool-args">.xctool-args</a>にテストを動かす設定を書いておき、<br />
 単純に <code>xctool test</code> を実行すればテストを走るようにしてあります。</p>
 <p>また、この時にプロジェクトのschemeにxctool用のschemeを追加しておくといいです。</p>
-<p><img src="http://efcl.info/wp-content/uploads/2013/06/Screenshot-2013-06-12-23-16-38.jpg" alt="Screenshot 2013 06 12 23 16 38" title="Screenshot 2013-06-12 23-16-38.jpg" border="0" width="600" height="407" /></p>
+<p><img src="https://efcl.info/wp-content/uploads/2013/06/Screenshot-2013-06-12-23-16-38.jpg" alt="Screenshot 2013 06 12 23 16 38" title="Screenshot 2013-06-12 23-16-38.jpg" border="0" width="600" height="407" /></p>
 <p>xctoolは <em>Find Implicit Dependencies</em> をサポートしていないため、自動でPodsのlinkしてくれないので、<br />
 xctool用のschemeにはTest Bundleより前に 依存関係となるPodsを追加しておきましょう。</p>
 <ul>
@@ -44,7 +44,7 @@ xctool用のschemeにはTest Bundleより前に 依存関係となるPodsを追�
 <p>後は、忘れずにxctool用のschemeにはSharedにチェックを入れておきます。<br />
 Sharedにチェックを入れると <code>NSDate-Escort.xcodeproj/xcshareddata/xcschemes/xctool.xcscheme</code>  という感じの場所にスキームが移動されるので、一般的な<a href="https://github.com/github/gitignore/blob/master/Objective-C.gitignore" title="Objective-C.gitignore">Objective-C.gitignore</a>を設定してるならGitで管理できる位置になると思います。</p>
 <p>Schemeをちゃんと含めないとTravis CIからスキームがないといわれて <code>xctool test</code> でエラーになったりします。</p>
-<p><img src="http://efcl.info/wp-content/uploads/2013/06/Screenshot-2013-06-12-23-20-59.jpg" alt="Screenshot 2013 06 12 23 20 59" title="Screenshot 2013-06-12 23-20-59.jpg" border="0" width="600" height="474" /></p>
+<p><img src="https://efcl.info/wp-content/uploads/2013/06/Screenshot-2013-06-12-23-20-59.jpg" alt="Screenshot 2013 06 12 23 20 59" title="Screenshot 2013-06-12 23-20-59.jpg" border="0" width="600" height="474" /></p>
 <h3>.travis.yml</h3>
 <p>Travis CIの設定は.travis.ymlファイルに書きますが、NSDate-Escortでは以下のような感じです。</p>
 <ul>

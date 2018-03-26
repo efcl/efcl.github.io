@@ -82,5 +82,5 @@ jquery.js  jquery.min.js</pre>
  [1]: https://github.com/jquery/jquery
  [2]: http://docs.jquery.com/Downloading_jQuery#If_you.27re_using_ant:
  [3]: http://rewish.org/javascript/jquery_dev_build
- [4]: http://efcl.info/2011/0420/res2588/
+ [4]: https://efcl.info/2011/0420/res2588/
  [5]: https://github.com/jquery/jquery.git

@@ -462,7 +462,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 仕様ではArrowFunctionは`[[ThisValue]]`を持たないLexicalEnvironmentという定義になっていて、Arrow Functionが`this`を持つ(bind)わけではないからです。
 そのため、「Arrow Functionは`this`をbindする」というよりは、「Arrow Functionは`this`を持たないので移譲する」と言ったほうが仕様に近いかもしれません。
 
-この辺の説明はホントややこしいので、詳細は[ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch](http://efcl.info/2018/01/04/what-is-this/ "ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch")に譲ります。
+この辺の説明はホントややこしいので、詳細は[ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch](https://efcl.info/2018/01/04/what-is-this/ "ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch")に譲ります。
 
 実際に書いているときには以下のIssueのようにメモしながら、どのような表現が良いのかを考えながら書いています。
 
@@ -499,7 +499,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 "Module"コンテキストのトップレベル`this`は常に`undefined`ということは調べて知っていました。
 
-- [ES6 moduleのtop levelにある`this`の値は何になるのか?](http://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
+- [ES6 moduleのtop levelにある`this`の値は何になるのか?](https://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
 
 なので、最初のコードは`undefined`になるはずで、何か自分の仕様の解釈が間違っているのかなと思いました。
 
@@ -648,7 +648,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 具体的に気になることを見つけたときにそれを調べる手段にたどり着ければ問題ありません。
 
 また、ECMAScriptがLiving Standardであるという話をしましたが、Living Standardである以上その策定プロセスなども細かく修正されていきます。
-以前、[ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](http://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")で書いたものはES2015時点のものでしたが、現在も細かくプロセスが変わったりより分かりやすくなっています。(ミーティングログにサマリが増えたり、[Contributing to ECMAScript](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "Contributing to ECMAScript")などのドキュメントが増えたりなど)
+以前、[ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](https://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")で書いたものはES2015時点のものでしたが、現在も細かくプロセスが変わったりより分かりやすくなっています。(ミーティングログにサマリが増えたり、[Contributing to ECMAScript](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "Contributing to ECMAScript")などのドキュメントが増えたりなど)
 
 ECMAScriptはこのようなオープンな仕組みであり、同じくブラウザに乗る機能も現在はオープンな仕様や議論を元にしていることが多いです(例外はあります)。
 そのため、仕様やその仕様がどのような経緯で実装されたかといった事実を調べることは特別に難しいことではありません。

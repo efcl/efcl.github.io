@@ -77,6 +77,6 @@ LightBoxのような表示をする。
  [3]: http://userscripts.org/scripts/show/1868
  [4]: http://labs.beffa.org/greasemonkey/ImageLinkTooltip.user.js
  [5]: http://www.grauw.nl/projects/pc/greasemonkey/
- [6]: http://efcl.info/wp-content/uploads/showimageurl.user.js
+ [6]: https://efcl.info/wp-content/uploads/showimageurl.user.js
  [7]: http://userscripts.org/scripts/show/23031
  [8]: http://kengo.preston-net.com/archives/002867.shtml

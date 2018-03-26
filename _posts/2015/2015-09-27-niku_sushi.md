@@ -55,7 +55,7 @@ tags:
 
 文章は人により解釈が変わりやすいので、根拠を残しやすくするためのIssue/Pull Request駆動についてなどの話をしました。
 
-追記: [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](http://efcl.info/2015/09/28/easy-to-create-ebook/ "今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch")にもう少し詳しい話を書きました。
+追記: [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](https://efcl.info/2015/09/28/easy-to-create-ebook/ "今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch")にもう少し詳しい話を書きました。
 
 <blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/niku_sushi?src=hash">#niku_sushi</a> <a href="http://t.co/d68CjaRdj1">pic.twitter.com/d68CjaRdj1</a></p>&mdash; Yosuke FURUKAWA (@yosuke_furukawa) <a href="https://twitter.com/yosuke_furukawa/status/648076139743711232">September 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

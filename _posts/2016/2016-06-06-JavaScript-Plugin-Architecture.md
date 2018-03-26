@@ -35,7 +35,7 @@ Twitterのハッシュタグは[#js_plugin_book](https://twitter.com/search?f=tw
 最初に[書くと決めたプラグインアーキテクチャ](https://github.com/azu/JavaScript-Plugin-Architecture/issues?q=label%3Aproposal+is%3Aclosed)が揃ったので[1.0.0](https://github.com/azu/JavaScript-Plugin-Architecture/releases/tag/1.0.0 "1.0.0")としてリリースしました。
 [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")の時と同じく、継続的に更新できる仕組みを色々入れてあるので新しいプラグインアーキテクチャのProposalが出たら書いていく感じになると思います。
 
-- [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
+- [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
 このツール/ライブラリで使われてるプラグインの仕組みは面白いというようなものがあれば、ProposalをIssueに書いてみてください。
 [CONTRIBUTING.md](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")にProposalの書き方を載せています。
@@ -132,7 +132,7 @@ MIT/CC BY-NC © azu
 
 この書籍を書きながら考えた電子書籍のセットアップや継続的な開発については以下などで発表しています。
 
-- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](http://efcl.info/2015/09/28/easy-to-create-ebook/)
+- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](https://efcl.info/2015/09/28/easy-to-create-ebook/)
 - [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/)
 
 いつもどおり[手段と目的が逆転](http://azu.github.io/promises-book/#about-author)しているので、
@@ -156,7 +156,7 @@ textlintで日本語の文章をチェックするために論文やRedPenなど
 > -- [https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_view_main_item_snippet&index_id=8404&pn=1&count=20&order=7&lang=japanese&page_id=13&block_id=8](自然言語処理技術の現状と展望)
 
 とか書かれてるぐらいなので、textlintではルールを簡単に作って公開できる所に注力しています。
-オレオレ[ルール](http://efcl.info/2015/09/10/introduce-textlint/)、[設定](http://efcl.info/2016/04/08/textlint-sharable-config/)や[プリセット](http://efcl.info/2015/12/30/textlint-preset/)などをどんどん公開するといいです。
+オレオレ[ルール](https://efcl.info/2015/09/10/introduce-textlint/)、[設定](https://efcl.info/2016/04/08/textlint-sharable-config/)や[プリセット](https://efcl.info/2015/12/30/textlint-preset/)などをどんどん公開するといいです。
 
 また、textlint自体もデフォルトでルールを持っていなかったり、プラガブルな実装になっています。
 
@@ -183,12 +183,12 @@ textlintで日本語の文章をチェックするために論文やRedPenなど
   - サンプルコードのスタイルチェック
   - インラインコードブロックで埋め込んだサンプルコードのチェック
 - 文章のカバレッジ
-  - [textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch](http://efcl.info/2016/01/12/textlint-coverage/ "textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch")
+  - [textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch](https://efcl.info/2016/01/12/textlint-coverage/ "textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch")
   - https://github.com/azu/JavaScript-Plugin-Architecture/blob/dee986289576598d7f9725d84ab3ba4dcb961d57/package.json#L32
 
 この辺をすぐ使えるGitBookのスターターキットも公開してるので興味がある人は触ってみると面白いかもしれません。
 
-- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](http://efcl.info/2015/09/28/easy-to-create-ebook/ "今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch")
+- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](https://efcl.info/2015/09/28/easy-to-create-ebook/ "今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch")
 
 ## おわりに
 

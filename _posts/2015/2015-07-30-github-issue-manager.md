@@ -23,7 +23,7 @@ tags:
 - サイドバーにそのIssue内にある`- [ ]`のタスク一覧を表示
 - テキストエリアをCodeMirrorのエディタにすり替える機能
     - `Cmd+e` でトグルできます。
-    - [テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch](http://efcl.info/2015/05/10/codemirror-anywhere/ "テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch")と同じものです
+    - [テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch](https://efcl.info/2015/05/10/codemirror-anywhere/ "テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch")と同じものです
 
 ## インストール
 

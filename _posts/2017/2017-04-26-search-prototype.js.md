@@ -56,7 +56,7 @@ var cc = Class.create
 cc({});
 ```
 
-![image](http://efcl.info/wp-content/uploads/2017/04/26-1493170126.png)
+![image](https://efcl.info/wp-content/uploads/2017/04/26-1493170126.png)
 
 - <https://github.com/azu/search-prototype.js/blob/master/src/create-search-index.js>
 - このファイルをみるとどのような検索パターンなのか分かります。

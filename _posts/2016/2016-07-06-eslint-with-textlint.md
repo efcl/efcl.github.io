@@ -69,7 +69,7 @@ via [変数と宣言 · JavaScriptの入門書 #jsprimer](https://asciidwango.gi
 
     <!-- textlint-enable -->
 
-- [textlint 7.0リリース、フィルタールールの追加 | Web Scratch](http://efcl.info/2016/06/30/textlint7.0/ "textlint 7.0リリース、フィルタールールの追加 | Web Scratch")
+- [textlint 7.0リリース、フィルタールールの追加 | Web Scratch](https://efcl.info/2016/06/30/textlint7.0/ "textlint 7.0リリース、フィルタールールの追加 | Web Scratch")
 
 つまり、textlintのルールとしてESLintを動かすことができれば、textlintとしてコードブロックを無視する = ESLintのチェックしないコードブロックを作れるので[textlint-rule-eslint](https://github.com/azu/textlint-rule-eslint "textlint-rule-eslint")を作りました。
 (プラグインの[アーキテクチャとかも似てる](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/)ので10分ぐらいでできた)

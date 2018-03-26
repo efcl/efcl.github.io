@@ -15,7 +15,7 @@ ECMAScriptは毎年リリースの方針となったため、最新の仕様を�
 
 ECMAScriptのリリース方針についてなどは以下を参照してください。
 
-- [ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](http://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")
+- [ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](https://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")
 
 これらの最新の変更が反映されたLiving Standardなものは以下のURLで公開されています。
 
@@ -79,7 +79,7 @@ Conclusion/Resolution
 
 特に[今回はtypoの数が多かった](https://github.com/rwaldron/tc39-notes/pull/41)ので、積極的に修正を送ると他の読む人が幸せになれます。
 
-![contributing](http://efcl.info/wp-content/uploads/2016/02/12-1455276798.png)
+![contributing](https://efcl.info/wp-content/uploads/2016/02/12-1455276798.png)
 
 typoを直すためにかなりの数コミットしたので跳ねてる…(まだtypoは残ってるのがあると思います…)
 

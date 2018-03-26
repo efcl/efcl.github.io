@@ -109,7 +109,7 @@ runner.runBrowser("http://example.com").then(function () {
 
 `package.json`の"main"や"files"、npmignoreなどが色々合わさってnpm publishされるため、publishしたものにファイルが入ってなかったりそういうミスは結構多いです。
 
-[npm publishのパターン](http://efcl.info/2015/04/09/npm-publish-pattern/ "npm publishのパターン")的なものを使ったり[dependency-check](https://www.npmjs.com/package/dependency-check "dependency-check")などでチェックしたりすることである程度カバーできます。
+[npm publishのパターン](https://efcl.info/2015/04/09/npm-publish-pattern/ "npm publishのパターン")的なものを使ったり[dependency-check](https://www.npmjs.com/package/dependency-check "dependency-check")などでチェックしたりすることである程度カバーできます。
 
 Exampleテストをするときにローカルモジュールとしてインストールして試せば、実際にその時点のpackage.jsonが使われるのでpackage.jsonのミスに気付きやすくなります。
 

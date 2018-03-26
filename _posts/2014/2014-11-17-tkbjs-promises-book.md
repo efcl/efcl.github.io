@@ -32,7 +32,7 @@ Lingr上の [tkbjs][] で少しづつ読んで、気になったところを話�
 
 去年あたりに3冊目のEffective JavaScriptを始めました。
 
-- [tkbjs オンラインJavaScript勉強会3冊目Effective JavaScriptは11月26日からスタート | Web Scratch](http://efcl.info/2013/1126/res3486/ "tkbjs オンラインJavaScript勉強会3冊目Effective JavaScriptは11月26日からスタート | Web Scratch")
+- [tkbjs オンラインJavaScript勉強会3冊目Effective JavaScriptは11月26日からスタート | Web Scratch](https://efcl.info/2013/1126/res3486/ "tkbjs オンラインJavaScript勉強会3冊目Effective JavaScriptは11月26日からスタート | Web Scratch")
 
 Effective JavaScriptが終わり、次の本として自分が書いた[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")をやることになりました。
 

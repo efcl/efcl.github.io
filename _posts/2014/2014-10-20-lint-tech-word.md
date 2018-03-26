@@ -18,7 +18,7 @@ tags:
 これを少し改善して[WEB+DB PRESS表記ルール](https://gist.github.com/inao/f55e8232e150aee918b9 "WEB+DB PRESS表記ルール")が解釈できるようになったので、
 これを使ってCodeMirrorにLint機能をつけてみたという話です。
 
-- [WEB+DB PRESS用語統一ルール(WZEditor)のパーサを書いた | Web Scratch](http://efcl.info/2014/0616/res3931/ "WEB+DB PRESS用語統一ルール(WZEditor)のパーサを書いた | Web Scratch")
+- [WEB+DB PRESS用語統一ルール(WZEditor)のパーサを書いた | Web Scratch](https://efcl.info/2014/0616/res3931/ "WEB+DB PRESS用語統一ルール(WZEditor)のパーサを書いた | Web Scratch")
 - [azu/wzeditor-word-rules-parser](https://github.com/azu/wzeditor-word-rules-parser "azu/wzeditor-word-rules-parser")
 
 
@@ -93,7 +93,7 @@ Markdownで書いても記法やリンクなどがLintに引っかかってく�
 
 また、[JSer.info 200回記念イベント](http://connpass.com/event/9067/)で色々話す予定ですが、[jser/jser.info-editor](https://github.com/jser/jser.info-editor "jser/jser.info-editor")というJSer.infoに投稿するデータを編集するエディタアプリを[node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")で作っていて、このエディタに今回作ったLint機能を統合してあります。
 
-![screenshot](http://efcl.info/wp-content/uploads/2014/10/20-1413800739.png)
+![screenshot](https://efcl.info/wp-content/uploads/2014/10/20-1413800739.png)
 
 紹介する記事は[jser/jser.info](https://github.com/jser/jser.info "jser/jser.info")にJSONデータとして保存されているので、それを編集チェックするための簡易なエディタアプリです。(CodeMirrorやRactive.jsを使ってます)
 

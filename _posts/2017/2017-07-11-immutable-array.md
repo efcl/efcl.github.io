@@ -16,7 +16,7 @@ JavaScriptの配列には破壊的なものと非破壊的なものが混在し�
 
 配列のメソッドの使い方については次の記事やjs-primerで今書いています。
 
-- [JavaScriptの配列のパターン | Web Scratch](http://efcl.info/2016/10/11/array-patterns/ "JavaScriptの配列のパターン | Web Scratch")
+- [JavaScriptの配列のパターン | Web Scratch](https://efcl.info/2016/10/11/array-patterns/ "JavaScriptの配列のパターン | Web Scratch")
 - [配列 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/array/ "配列 · JavaScriptの入門書 #jsprimer")
 
 
@@ -49,7 +49,7 @@ npm install @immutable-array/copy-within
 
 対応してるメソッドは次の通りです。
 
-![method table](http://efcl.info/wp-content/uploads/2017/07/11-1499771177.png)
+![method table](https://efcl.info/wp-content/uploads/2017/07/11-1499771177.png)
 
 それぞれのメソッドの使い方は第一引数が対象の配列となるだけで他の引数や挙動はECMAScriptに合わせています。
 

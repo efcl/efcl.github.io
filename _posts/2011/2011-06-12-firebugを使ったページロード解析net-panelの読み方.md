@@ -44,18 +44,18 @@ Thnak you, *Jan Odvarko.*
 ここでは2つのリクエストが表示されています。   
 1つめのリクエストではページは16msで取得できていて、load event (赤いライン)は58msで発生している事がわかります。ログ上にマウスオーバーさせると詳細な表示がされます。
 
-[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb11.png" width="300" height="249" />][9]
+[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb11.png" width="300" height="249" />][9]
 
 *   青の縦線であるDOM Loaded はDOMContentLoaded event 
 *   赤の縦線であるPage Loaded はLoad event 
 *   灰色のReceiving がページの取得にかかった時間 
 
-[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb12.png" width="158" height="77" />][10]
+[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb12.png" width="158" height="77" />][10]
 
 同じように2つ目のリクエストを見てみると、5msでXHRが実行されています。   
 そして合計経過時間は408msであることもわかります。
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb13.png" width="307" height="250" />][11]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb13.png" width="307" height="250" />][11]
 
 2つ目のリクエスト(XHR)上でもマウスオーバーで詳細な情報が表示されています。   
 こちらでもload event を表していますが、こちらはXHRのリクエストからの相対値が表示されています。XHRが発生(Started)したのは403msなので 403 &#8211; 357 = 58msでload event が発生したことがわかります。(load eventはページの取得を見た方がわかりやすいからこう見る必要はない気がするけど)
@@ -81,7 +81,7 @@ Thnak you, *Jan Odvarko.*
 各ブラウザの同時接続数は[Home &#8211; Browserscope][12]を見るといいでしょう。   
 Firefoxではabout:configのnetwork.http.max-persistent-connections-per-serverの設定から変更可能です。
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb14.png" width="514" height="240" />][13]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb14.png" width="514" height="240" />][13]
 
 同じように#2のポップアップされる詳細のログを見てみると、Blocking(light-brown 色)はページを取得(DOM Loaded)した時から4.63s待たされていて、リソースの取得は2.22sかかり、6.85sで完了している事がわかります。
 
@@ -126,7 +126,7 @@ Firefox(3.6)でパイプライン処理が有効(network.http.pipelining == true
 3番目と4番目のリクエストの間に隙間ができています。これは5秒間のインラインスクリプトの実行によりブロッキング発生しています。 (\*ここで言うインラインスクリプトとは<script>/\*実行スクリプト*/</script>という感じで<script>タグ内で実行しているものを言う)   
 [Inline Scripts Block][15]のページにて試すことができます。
 
-[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb15.png" width="320" height="141" />][16]   
+[<img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb15.png" width="320" height="141" />][16]   
 Firefox5に試すとちょっと挙動が異なるけど、インラインスクリプトで隙間ができるのは同じ。   
 どちらかというとChromeがログに近い動きをしていた。   
 Firefox4からインラインスクリプトの実行タイミングが変わったのも関係するかもしれない。   
@@ -167,13 +167,13 @@ Firefox4からインラインスクリプトの実行タイミングが変わっ
  [6]: http://www.softwareishard.com/blog/netexport/
  [7]: http://groups.google.com/group/firebug-working-group/web/http-tracing---export-format
  [8]: http://www.janodvarko.cz/har/viewer/
- [9]: http://efcl.info/wp-content/uploads/2011/06/image11.png
- [10]: http://efcl.info/wp-content/uploads/2011/06/image12.png
- [11]: http://efcl.info/wp-content/uploads/2011/06/image13.png
+ [9]: https://efcl.info/wp-content/uploads/2011/06/image11.png
+ [10]: https://efcl.info/wp-content/uploads/2011/06/image12.png
+ [11]: https://efcl.info/wp-content/uploads/2011/06/image13.png
  [12]: http://www.browserscope.org/?category=network
- [13]: http://efcl.info/wp-content/uploads/2011/06/image14.png
+ [13]: https://efcl.info/wp-content/uploads/2011/06/image14.png
  [14]: https://developer.mozilla.org/ja/HTTP_Pipelining_FAQ
  [15]: http://stevesouders.com/cuzillion/?ex=10100&title=Inline+Scripts+Block
- [16]: http://efcl.info/wp-content/uploads/2011/06/image15.png
+ [16]: https://efcl.info/wp-content/uploads/2011/06/image15.png
  [17]: http://www.softwareishard.com/blog/firebug/script-execution-analysis-in-firefox-4/
  [18]: http://stevesouders.com/cuzillion/?c0=bi1hfff1_0_f&c1=bi1hfff1_0_f&c2=bb0hfff0_5_f&t=1307854749986

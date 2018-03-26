@@ -34,7 +34,7 @@ Greasemonkeyからフォークしてるので、Greasemonkey向けに書かれ�
 
 GreasemonkeyとScriptishのpref.jsの書式の違いを見てみると
 
-<pre>user_pref("greasemonkey.scriptvals.http://efcl.info//Post Now browsing to Twitter.GM_config", "{"defaultTag":"見てる:","isSelection":true,"removeUtm":true,"avoidLinktoMeta":true,"PostWithCtrl":true,"ShortCutKey":"C-Delete","ShortURL":"bit.ly","bitlyUserName":"remiko","bitlyAPIKey":"R_fa2240c646c07b2091c6bc6d109089ef","googlAPIKey":"AIzaSyDYer57o2GyHX_xylyaa4iGIyyjd81kGxc"}");</pre>
+<pre>user_pref("greasemonkey.scriptvals.https://efcl.info//Post Now browsing to Twitter.GM_config", "{"defaultTag":"見てる:","isSelection":true,"removeUtm":true,"avoidLinktoMeta":true,"PostWithCtrl":true,"ShortCutKey":"C-Delete","ShortURL":"bit.ly","bitlyUserName":"remiko","bitlyAPIKey":"R_fa2240c646c07b2091c6bc6d109089ef","googlAPIKey":"AIzaSyDYer57o2GyHX_xylyaa4iGIyyjd81kGxc"}");</pre>
 
 <pre>// =&#62;</pre>
 
@@ -84,4 +84,4 @@ Firefox4への移行と同時にGreasemonkeyもScriptishへ移行を行えば、
  [9]: http://sukima-manual.seesaa.net/article/113336296.html
  [10]: http://www.forest.impress.co.jp/article/2008/12/11/linkshellext.html
  [11]: https://github.com/erikvold/scriptish/wiki/Manual%3A-Preferences
- [12]: http://efcl.info/2010/1021/res2008/ "使ってないGreasemonkeyスクリプトを削除・整理するNILScript"
+ [12]: https://efcl.info/2010/1021/res2008/ "使ってないGreasemonkeyスクリプトを削除・整理するNILScript"

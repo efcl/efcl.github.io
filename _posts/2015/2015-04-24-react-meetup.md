@@ -26,7 +26,7 @@ Fluxは図が複雑だったり、複雑そうな文章が出てきたりしま�
 
 発表では触れなかったおまけでFluxライブラリの比較やよくある疑問とかもちょっと書いてました。
 
-- [material-fluxというFluxライブラリをREADME駆動で開発した | Web Scratch](http://efcl.info/2015/03/17/material-flux/ "material-fluxというFluxライブラリをREADME駆動で開発した | Web Scratch") 以前実装したもの
+- [material-fluxというFluxライブラリをREADME駆動で開発した | Web Scratch](https://efcl.info/2015/03/17/material-flux/ "material-fluxというFluxライブラリをREADME駆動で開発した | Web Scratch") 以前実装したもの
 - [azu/mini-flux](https://github.com/azu/mini-flux "azu/mini-flux") 発表で紹介してた実装
 
 Fluxのメンテナである[Bill Fisher](https://github.com/fisherwebdev "Bill Fisher")の[react-flux-fluent-2015 // Speaker Deck](https://speakerdeck.com/fisherwebdev/react-flux-fluent-2015 "react-flux-fluent-2015 // Speaker Deck")という発表が最近あったのでこちらも見てみるいいかもしれません。

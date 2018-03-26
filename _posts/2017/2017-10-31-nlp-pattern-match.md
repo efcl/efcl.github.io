@@ -262,4 +262,4 @@ textlintのルールなどを書くときに使える[nlcst-pattern-match](https
 
 textlintをコマンド一発で作り始めることができる`create-textlint-rule`というコマンドもあるので、色々作って見ると面白いかもしれません。
 
-- [textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch](http://efcl.info/2016/12/14/create-textlint-rule/ "textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch")
+- [textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch](https://efcl.info/2016/12/14/create-textlint-rule/ "textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch")

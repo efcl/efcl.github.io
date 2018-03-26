@@ -17,7 +17,7 @@ tags:
 
 [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
 
-- [GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch](http://efcl.info/2014/07/29/voting-badge/ "GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch")
+- [GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch](https://efcl.info/2014/07/29/voting-badge/ "GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch")
 
 説明の中でも書いてありますがこのウェブアプリはHeroku(node.js)で動いています。
 
@@ -63,7 +63,7 @@ Herokuですでに公開してて、GitHubにソースをおいてある場合�
 
 これで以下のようにボタンが追加できて、ボタンを押すとHerokuにforkすることが出来ます。
 
-![img](http://efcl.info/wp-content/uploads/2014/08/08-1407471632.png)
+![img](https://efcl.info/wp-content/uploads/2014/08/08-1407471632.png)
 
 実際に動くボタンは以下のような感じです
 

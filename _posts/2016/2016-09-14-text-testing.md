@@ -15,7 +15,7 @@ tags:
 
 技術書とかの文書を開発するにあたってテストを先に書きたくなったという話です。
 
-- [東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch](http://efcl.info/2015/11/07/nodefest-2015/)
+- [東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch](https://efcl.info/2015/11/07/nodefest-2015/)
 - [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/)
 
 とかの続きみたいなものです。

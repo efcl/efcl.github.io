@@ -20,7 +20,7 @@ tags:
 
 中国語の翻訳は以下から見ることが出来ます。
 
-[![screenshot](http://efcl.info/wp-content/uploads/2015/01/31-1422676729.png)](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")
+[![screenshot](https://efcl.info/wp-content/uploads/2015/01/31-1422676729.png)](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")
 
 - [JavaScript Promise迷你书（中文版）](http://liubin.github.io/promises-book/ "JavaScript Promise迷你书（中文版）")
 - [liubin/promises-book](https://github.com/liubin/promises-book/ "liubin/promises-book")
@@ -33,7 +33,7 @@ tags:
 
 韓国語の翻訳は以下から見ることが出来ます。
 
-[![book cover](http://efcl.info/wp-content/uploads/2015/01/b_9788968487293-ko.png)](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293)
+[![book cover](https://efcl.info/wp-content/uploads/2015/01/b_9788968487293-ko.png)](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293)
 
 - [[한빛미디어 eBook] JavaScript Promise - eBook &amp; DRM-free](http://www.hanbit.co.kr/ebook/look.html?isbn=9788968487293 "[한빛미디어 eBook] JavaScript Promise - eBook &amp; DRM-free")
 
@@ -50,7 +50,7 @@ Promise本は<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.
 
 関連:
 
-- [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
-- [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](http://efcl.info/2015/01/06/ebook-env/)
-- [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](http://efcl.info/2014/08/19/promises-book-1.2.0/)
-- [Promise本 Ver1.4リリース | Web Scratch](http://efcl.info/2015/01/26/promises-book1.4/)
+- [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
+- [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](https://efcl.info/2015/01/06/ebook-env/)
+- [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](https://efcl.info/2014/08/19/promises-book-1.2.0/)
+- [Promise本 Ver1.4リリース | Web Scratch](https://efcl.info/2015/01/26/promises-book1.4/)

@@ -17,15 +17,15 @@ tags:
 という記事を読んで、GitHubにメールすればInactiveなアカウントを削除してもらうことができるということを知り、同じことをやったという話です。
 
 [JSer.info](http://jser.info/ "JSer.info") というブログをTumblrでやっていて、
-[efcl.info](http://efcl.info/)(このサイト)と同じようにJekyll(+Github Pages)の方が適してるじゃないかと思って、移行を検討していました。
+[efcl.info](https://efcl.info/)(このサイト)と同じようにJekyll(+Github Pages)の方が適してるじゃないかと思って、移行を検討していました。
 
-* [Jekyllベースのブログに移行しました。 | Web Scratch](http://efcl.info/2014/07/06/new-blog/ "Jekyllベースのブログに移行しました。 | Web Scratch")
+* [Jekyllベースのブログに移行しました。 | Web Scratch](https://efcl.info/2014/07/06/new-blog/ "Jekyllベースのブログに移行しました。 | Web Scratch")
 * [Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info](https://github.com/azu/jser.info/issues/21 "Jekyllベースのブログへの移行を検討 · Issue #21 · azu/jser.info")
 
 GitHub Pagesに独自ドメインを当てる場合、GitHubのorganizationアカウントを取ってそこでやるのが楽だという事はわかっていたので、
 [JSer.info](http://jser.info/ "JSer.info") むけに `jser` というGitHubアカウントを取ろうとしていましたが、既にアカウントは取られていた状態でした。
 
-![元のjserアカウント](http://efcl.info/wp-content/uploads/2014/07/2014-07-18_10-06-19.jpg)
+![元のjserアカウント](https://efcl.info/wp-content/uploads/2014/07/2014-07-18_10-06-19.jpg)
 
 元々あった `jser` というアカウントは、リポジトリが1つだけあってコミットがひとつもない、ただ取得しただけというInactiveなアカウントだったので、
 最初に[紹介した記事](http://lestrrat.ldblog.jp/archives/39456399.html "Githubでpecoのアカウントを融通してもらった件 : D-7 &lt;altijd in beweging&gt;")を思い出しました。

@@ -19,7 +19,7 @@ tags:
 Power Assertとは`assert(a === b);` のような単純なアサーションでも、  
 Assert失敗時(テストが通らなかった時)に分かりやすい情報を表示できるようにする機能の事を言います。
 
-<img src="http://efcl.info/wp-content/uploads/2014/04/power-assert.png" alt="Power assert" title="power-assert.png" border="0" width="557" height="234" />
+<img src="https://efcl.info/wp-content/uploads/2014/04/power-assert.png" alt="Power assert" title="power-assert.png" border="0" width="557" height="234" />
 
 [Jasmine][2]や[Chai][3]が持つ`should`や`expect`等言った豊富なアサーションを覚える必要なく、  
 シンプルに[assert()][4]を使うだけでも十分な失敗時の情報が得られるため、沢山のアサーションを使い分けしなくていいというメリットがあります。
@@ -100,7 +100,7 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 
 追記: ES6 + Babelの場合は[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")が[intelli-espower-loader][19]の代わりに利用できます。
 
-- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](http://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
+- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](https://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
 
 ### power-assertをプロジェクトに導入する
 
@@ -108,7 +108,7 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 
 *   [azu/power-assert-node-seed][20]
 
-<img src="http://efcl.info/wp-content/uploads/2014/04/power-assert-node-seed-2014-04-06-22-50-36-2014-04-06-22-51-51.png" alt="Power assert node seed 2014 04 06 22 50 36 2014 04 06 22 51 51" title="power-assert-node-seed] 2014-04-06 22-50-36 2014-04-06 22-51-51.png" border="0" width="392" height="145" />
+<img src="https://efcl.info/wp-content/uploads/2014/04/power-assert-node-seed-2014-04-06-22-50-36-2014-04-06-22-51-51.png" alt="Power assert node seed 2014 04 06 22 50 36 2014 04 06 22 51 51" title="power-assert-node-seed] 2014-04-06 22-50-36 2014-04-06 22-51-51.png" border="0" width="392" height="145" />
 
 power-assertを使いたいプロジェクトに[power-assert][5]と[intelli-espower-loader][19]をインストールします。
 
@@ -147,7 +147,7 @@ power-assertを使いたいプロジェクトに[power-assert][5]と[intelli-esp
     $ mocha --require intelli-espower-loader
     
 
-<img src="http://efcl.info/wp-content/uploads/2014/04/power-assert-node-seed-zsh-2014-04-06-22-58-57-2014-04-06-22-59-07.png" alt="Power assert node seed  zsh 2014 04 06 22 58 57 2014 04 06 22 59 07" title="power-assert-node-seed (zsh) 2014-04-06 22-58-57 2014-04-06 22-59-07.png" border="0" width="600" height="233" />
+<img src="https://efcl.info/wp-content/uploads/2014/04/power-assert-node-seed-zsh-2014-04-06-22-58-57-2014-04-06-22-59-07.png" alt="Power assert node seed  zsh 2014 04 06 22 58 57 2014 04 06 22 59 07" title="power-assert-node-seed (zsh) 2014-04-06 22-58-57 2014-04-06 22-59-07.png" border="0" width="600" height="233" />
 
 毎回`--require`を指定するのが面倒な場合は[mocha.opts][22]ファイルを作って書いておくことでも同様の効果が得られます。
 
@@ -264,7 +264,7 @@ Node.jsのプロジェクトでは、ちょっとした設定をして、`requir
 
 ES6で書いてpower-assertでテストしたい場合はこちらを参照するといいでしょう。
 
-* [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+* [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 
 
  [1]: https://github.com/twada/power-assert "power-assert"
@@ -280,7 +280,7 @@ ES6で書いてpower-assertでテストしたい場合はこちらを参照す�
  [11]: http://www.slideshare.net/t_wada/powerassert-in-javascript "power-assert in JavaScript"
  [12]: http://azu.github.io/slide/JSojisan/ "カジュアルJavaScript AST"
  [13]: http://azu.github.io/slide/JSojisan/resources/power-assert.gif
- [14]: http://efcl.info/2014/0411/res3820/ "power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch"
+ [14]: https://efcl.info/2014/0411/res3820/ "power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch"
  [15]: https://github.com/twada/power-assert#how-to-use " HOW TO USE"
  [16]: http://visionmedia.github.io/mocha/ "Mocha"
  [17]: https://github.com/twada/espower-loader "espower-loader"

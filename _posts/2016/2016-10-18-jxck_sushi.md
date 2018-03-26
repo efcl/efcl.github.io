@@ -17,7 +17,7 @@ tags:
 
 2回目の`#jxck_sushi`だった。
 
-- [CROSS 2015 アウトラインメモ | Web Scratch](http://efcl.info/2015/01/30/cross-2015/ "CROSS 2015 アウトラインメモ | Web Scratch")
+- [CROSS 2015 アウトラインメモ | Web Scratch](https://efcl.info/2015/01/30/cross-2015/ "CROSS 2015 アウトラインメモ | Web Scratch")
 
 今回は[Serverlessを使った匿名でGitHub Issueを立てるAPIを作った](http://azu.github.io/slide/2016/jxck_sushi/serverless.html "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った")という話をしてきた。
 

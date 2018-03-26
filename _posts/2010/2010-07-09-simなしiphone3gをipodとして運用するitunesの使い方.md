@@ -48,7 +48,7 @@ iTunes自体は重くて使いにくいが、やはり標準と言うことで�
     タグの編集には[STEP β][3]を使用する。[本体＋標準プラグイン][4]とβ版のexeやプラグインをダウンロードすれば導入できる。  
     ベータ版はアルバムアーティストとコンピレーションに対応しているので、一つのアルバムに複数のアーティストが混じっている場合にそれが統一できるためiTunesのようにフォルダ管理ができないもので結構重宝する。  
     オプションの表示項目からアルバムアーティストとコンピレーションにチェックを入れて使えるようにしておく。  
-    [<img class="alignnone size-medium wp-image-1836" title="ss-2010-07-09-1" src="http://efcl.info/wp-content/uploads/2010/07/ss-2010-07-09-1-300x274.png" alt="" width="300" height="274" />][5]  
+    [<img class="alignnone size-medium wp-image-1836" title="ss-2010-07-09-1" src="https://efcl.info/wp-content/uploads/2010/07/ss-2010-07-09-1-300x274.png" alt="" width="300" height="274" />][5]  
     iTunes(iPod)ではアルバムアーティストを統一すると、アーティスト毎にアルバムが重複して表示されなくなるのでiPod上でまともに曲を扱うには必要、またコンピレーションに&#8221;はい&#8221;をいれた場合compilationという場所で管理される。  
     STEPで編集したものはアルバム毎のフォルダに分けてフォルダ管理している
 3.  iTunesライブラリに登録  
@@ -119,7 +119,7 @@ iPhoneで再生が普通のDAPレベルになってくれればもっと良く�
  [2]: http://ja.wikipedia.org/wiki/IPod%E7%AE%A1%E7%90%86%E3%82%BD%E3%83%95%E3%83%88
  [3]: http://haseta2003.hp.infoseek.co.jp/cgi-bin/index.cgi?%a6%c2%c8%c7%a4%ce%a5%c0%a5%a6%a5%f3%a5%ed%a1%bc%a5%c9
  [4]: http://haseta2003.hp.infoseek.co.jp/cgi-bin/index.cgi?%a5%c0%a5%a6%a5%f3%a5%ed%a1%bc%a5%c9
- [5]: http://efcl.info/wp-content/uploads/2010/07/ss-2010-07-09-1.png
+ [5]: https://efcl.info/wp-content/uploads/2010/07/ss-2010-07-09-1.png
  [6]: http://itlu.ownz.ch/wordpress
  [7]: http://www.d6f.com/
  [8]: http://www.voralent.com/products/broadway/
@@ -128,7 +128,7 @@ iPhoneで再生が普通のDAPレベルになってくれればもっと良く�
  [11]: http://www.getmusicbee.com/
  [12]: http://ipod-touch-max.ru/cydia/index.php?cat=package&id=5933
  [13]: http://kitta.jf.land.to/index.cgi?page=iPod+touch%2F2.0%B0%CA%B9%DF%2Flighttpd
- [14]: http://efcl.info/wp-content/uploads/2010/07/2010-07-09_lighttpd_set.zip
+ [14]: https://efcl.info/wp-content/uploads/2010/07/2010-07-09_lighttpd_set.zip
  [15]: http://www.d6f.com/ "//////**//D6F.com//"
  [16]: http://www.voralent.com/products/broadway/ "Broadway - Voralent Computer Service"
  [17]: http://www.beatunes.com/ "beaTunes ~ build better playlists"

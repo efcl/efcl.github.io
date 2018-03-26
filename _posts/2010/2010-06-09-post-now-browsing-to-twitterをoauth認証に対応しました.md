@@ -76,7 +76,7 @@ OAuthページとかのアイコンがやっつけ感酷いのでアイコン募
 
 機能説明ページ
 **Post Now browsing to Twitter | Web scratch**
-:   [http://efcl.info/post-now-browsing-to-twitter/][2]
+:   [https://efcl.info/post-now-browsing-to-twitter/][2]
 
 スクリプト配布ページ
 **Post Now browsing to Twitter for Greasemonkey**

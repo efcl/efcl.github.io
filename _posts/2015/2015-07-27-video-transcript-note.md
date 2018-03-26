@@ -15,7 +15,7 @@ tags:
 
 [video-transcript-note](https://github.com/azu/video-transcript-note "video-transcript-note") というElectronアプリを書きました。
 
-一言で説明するならば、[PDFを見ながらMarkdownでメモを取れるアプリを書いた](http://efcl.info/2015/05/04/pdf-annotation-markdown/ "PDFを見ながらMarkdownでメモを取れるアプリを書いた | Web Scratch")の動画版です。
+一言で説明するならば、[PDFを見ながらMarkdownでメモを取れるアプリを書いた](https://efcl.info/2015/05/04/pdf-annotation-markdown/ "PDFを見ながらMarkdownでメモを取れるアプリを書いた | Web Scratch")の動画版です。
 
 ## インストール
 
@@ -37,7 +37,7 @@ Linuxも多分動くんだと思いますが、何か妙にバイナリが大き
 - Quote from Video and Transcript.
     - `Cmd+T`/`Ctrl+T`
 
-ルビ翻訳は[英語の文章をルビ翻訳(ふりがな和訳)するGreasemonkeyを書いた](http://efcl.info/2014/11/30/ruby-translator-greasemonkey/ "英語の文章をルビ翻訳(ふりがな和訳)するGreasemonkeyを書いた | Web Scratch")と殆ど同じ仕組みで、辞書として[簡短英日辞典](https://github.com/gunyarakun/kantan-ej-dictionary "簡短英日辞典")を使っています。
+ルビ翻訳は[英語の文章をルビ翻訳(ふりがな和訳)するGreasemonkeyを書いた](https://efcl.info/2014/11/30/ruby-translator-greasemonkey/ "英語の文章をルビ翻訳(ふりがな和訳)するGreasemonkeyを書いた | Web Scratch")と殆ど同じ仕組みで、辞書として[簡短英日辞典](https://github.com/gunyarakun/kantan-ej-dictionary "簡短英日辞典")を使っています。
 
 - [gunyarakun/kantan-ej-dictionary](https://github.com/gunyarakun/kantan-ej-dictionary)
 - [Netflixの英語字幕に日本語訳をつけるChrome拡張「Netflix Subtitles Extender for Japanese」をリリースしました](http://blog.wktk.co.jp/ja/entry/2015/07/07/netflix-subtitles-extender-for-japanese)

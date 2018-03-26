@@ -25,7 +25,7 @@ tags:
 
 [世界のJavaScriptを読もう @ 2012][7]を発表していた時、[RSS購読フロー][8]の部分がなぜか[受け][9]が[良かった][10]ようなので、簡単な補足を書いておきます。
 
-<img title="social_flow.png" src="http://efcl.info/wp-content/uploads/2012/01/social_flow.png" border="0" alt="Social flow" width="600" height="528" />
+<img title="social_flow.png" src="https://efcl.info/wp-content/uploads/2012/01/social_flow.png" border="0" alt="Social flow" width="600" height="528" />
 
 自分はRSSリーダを多用しているので、何でもRSSにしてとりあえずRSSリーダーに流れてくるような状況を作っています。  
 Webサイトを見ていて、Read It Latorなどで後で読むことにしても結局読むのを忘れてしまうことがあるため、Read It Latorに登録したリストがRSSとしてRSSリーダーに流れてくるといった感じです。
@@ -80,16 +80,16 @@ Pinboardやはてなブックマークや[ソーシャルニュース][11]サイ
     </ul>
 
  [1]: http://jser.info/post/15883533195
- [2]: http://efcl.info/2011/0116/res2185/ "海外のJavaScript情報を見つけよう"
- [3]: http://efcl.info/2011/0117/res2229/ "世界のJavaScript情報を読もう"
- [4]: http://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果"
- [5]: http://efcl.info/2011/0301/res2303/ "ブラウザの最新情報を知るために、Web開発者が読んでおくべきブログ"
+ [2]: https://efcl.info/2011/0116/res2185/ "海外のJavaScript情報を見つけよう"
+ [3]: https://efcl.info/2011/0117/res2229/ "世界のJavaScript情報を読もう"
+ [4]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果"
+ [5]: https://efcl.info/2011/0301/res2303/ "ブラウザの最新情報を知るために、Web開発者が読んでおくべきブログ"
  [6]: http://azu.github.com/slide/HowToLearn/#slide1
  [7]: http://azu.github.com/slide/offline_study/javascript_world.html#slide1
  [8]: http://azu.github.com/slide/offline_study/javascript_world.html#slide29
  [9]: http://twitter.com/tatsuoSakurai/statuses/158419082654400512
  [10]: http://twitter.com/koichik/statuses/158542707378233344
  [11]: http://azu.github.com/slide/offline_study/javascript_world.html#slide22
- [12]: http://efcl.info/2010/1025/res2018/
- [13]: http://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
+ [12]: https://efcl.info/2010/1025/res2018/
+ [13]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
  [14]: http://userscripts.org/scripts/show/46441

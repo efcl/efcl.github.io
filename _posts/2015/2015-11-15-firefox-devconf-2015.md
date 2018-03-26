@@ -14,9 +14,9 @@ tags:
 
 Tokyoでは久々のFirefox Developers Conferenceだった。
 
-- [Mozilla Vision 2012 Conference Day アウトラインメモ | Web Scratch](http://efcl.info/2012/0121/res2997/)
-- [Firefox Developers Conference 2010 アウトラインメモ | Web Scratch](http://efcl.info/2010/1121/res2092/)
-- [Firefox Developers Conference 2009 アウトラインメモ | Web Scratch](http://efcl.info/2009/1108/res1424/)
+- [Mozilla Vision 2012 Conference Day アウトラインメモ | Web Scratch](https://efcl.info/2012/0121/res2997/)
+- [Firefox Developers Conference 2010 アウトラインメモ | Web Scratch](https://efcl.info/2010/1121/res2092/)
+- [Firefox Developers Conference 2009 アウトラインメモ | Web Scratch](https://efcl.info/2009/1108/res1424/)
 
 
 -----

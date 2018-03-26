@@ -57,8 +57,8 @@ textlintのロゴやアイコンを[@uetchy](https://github.com/uetchy "uetchy")
 
 またサクッとプロジェクトに導入したい場合はルールがある程度まとまったルールプリセットを使うと、手軽に日本語のLintを始めることができます。
 
-- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](https://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
 
 他のtextlint関連記事は以下から探すことができます。
 
-- [textlint - タグ一覧 | Web Scratch](http://efcl.info/tags/?q=textlint "タグ一覧 | Web Scratch")
+- [textlint - タグ一覧 | Web Scratch](https://efcl.info/tags/?q=textlint "タグ一覧 | Web Scratch")

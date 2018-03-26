@@ -235,7 +235,7 @@ http://d.hatena.ne.jp/Sore_0/20080428に合わせて更新しました。
 <span style="text-decoration: line-through;">とりあえず動いたけど<a href="http://coderepos.org/share/browser/lang/javascript/userscripts/niconicoplayerwrapper.user.js?">niconicoplayerwrapper.user.js</a>を元にしたプレイヤーの外からプレイヤーを操作するのが失敗してるっぽい。(コメント非表示にするとか)</span>  
 まあプレイヤー自体も表示されるので大して不便でもないけど。
 
-[<img class="alignnone size-medium wp-image-220" title="cap0011" src="http://efcl.info/wp-content/uploads/2008/06/cap0011-300x185.png" alt="player" width="300" height="185" />][8][ ][9]
+[<img class="alignnone size-medium wp-image-220" title="cap0011" src="https://efcl.info/wp-content/uploads/2008/06/cap0011-300x185.png" alt="player" width="300" height="185" />][8][ ][9]
 
 Opera向けな気がするので、所々変な気がするけど(ブックマークレットとか)、自分的にはプレイリスト専用のマイリストを作って、ユーザースクリプトを実行するページをそのマイリストだけにして他のところは非表示にしてしてる。  
 プレイリストに登録したい動画を普通にマイリストに入れれば、マイリストのページでplayを押せば全部登録されるから意外と便利
@@ -355,11 +355,11 @@ Playerのサイズを調整したのと、リンク上にマウスを乗せた�
 
  [1]: http://abc.s65.xrea.com/prox/wiki/%A5%D5%A5%A3%A5%EB%A5%BF%A1%A2%A5%EA%A5%B9%A5%C8%B8%F8%B3%AB/nicovideo/#wrapper
  [2]: http://blog.fulltext-search.biz/articles/2007/10/15/nicovideo-hacks
- [3]: http://efcl.info/wp-content/uploads/niconicoplaylist1.user.js
+ [3]: https://efcl.info/wp-content/uploads/niconicoplaylist1.user.js
  [4]: http://d.hatena.ne.jp/Sore_0/20080309
  [5]: http://d.hatena.ne.jp/Sore_0/20080428
- [6]: http://efcl.info/wp-content/uploads/nicovideoplayerlite2.user.js "nicovideoplayerlite2user.js"
+ [6]: https://efcl.info/wp-content/uploads/nicovideoplayerlite2.user.js "nicovideoplayerlite2user.js"
  [7]: http://orera.g.hatena.ne.jp/miya2000/20080323/p0
- [8]: http://efcl.info/wp-content/uploads/2008/06/cap0011.png
- [9]: http://efcl.info/wp-content/uploads/2008/03/snap6.png "nicovideoplayerlite2"
+ [8]: https://efcl.info/wp-content/uploads/2008/06/cap0011.png
+ [9]: https://efcl.info/wp-content/uploads/2008/03/snap6.png "nicovideoplayerlite2"
  [10]: http://orera.g.hatena.ne.jp/miya2000/20080616/p0

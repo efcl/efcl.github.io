@@ -19,12 +19,12 @@ tags:
 [Almin 0.14.0](https://github.com/almin/almin/releases/tag/almin%400.14.0 "almin@0.14.0")で`performance.mark`ベースのプロファイルを取れるようになりました。
 これにより、AlminのUseCaseやStoreといったそれぞれの処理にどれぐらいかかっているかを開発者ツールのタイムラインで見ることができます。
 
-[![DevTool timeline](http://efcl.info/wp-content/uploads/2017/09/20-1505888631.png)](https://github.com/almin/almin/releases/tag/almin%400.14.0)
+[![DevTool timeline](https://efcl.info/wp-content/uploads/2017/09/20-1505888631.png)](https://github.com/almin/almin/releases/tag/almin%400.14.0)
 
 `performance.mark`は[User Timing Level 2](https://w3c.github.io/user-timing/ "User Timing Level 2")で標準化されている方法なので、後述するようにReactやVueなどのライブラリと組み合わせた状態も見ることができます。
 `performance.mark`については次の記事でも書いています。
 
-- [performance.markでパフォーマンス計測する | Web Scratch](http://efcl.info/2016/08/15/performance.mark/ "performance.markでパフォーマンス計測する | Web Scratch")
+- [performance.markでパフォーマンス計測する | Web Scratch](https://efcl.info/2016/08/15/performance.mark/ "performance.markでパフォーマンス計測する | Web Scratch")
 
 ## 使い方
 
@@ -76,7 +76,7 @@ Alminのパフォーマンスプロファイルは、UseCaseの実行、StoreGro
 
 Alminが現在サポートしているメトリクスについては次のドキュメントで公開しています。
 
-[![Metrics](http://efcl.info/wp-content/uploads/2017/09/20-1505887064.png)](https://almin.js.org/docs/tips/performance-profile.html)
+[![Metrics](https://efcl.info/wp-content/uploads/2017/09/20-1505887064.png)](https://almin.js.org/docs/tips/performance-profile.html)
 
 - [Performance profile · Almin.js](https://almin.js.org/docs/tips/performance-profile.html "Performance profile · Almin.js")
 

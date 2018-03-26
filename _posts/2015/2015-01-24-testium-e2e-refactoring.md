@@ -302,7 +302,7 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 - [coding-kata/todo-app-jquery-to-backbone](https://github.com/coding-kata/todo-app-jquery-to-backbone "coding-kata/todo-app-jquery-to-backbone")
    - [リファクタリングのためのテスト](http://hokaccha.github.io/slides/refactoring/ "リファクタリングのためのテスト")のE2EテストをTestiumに移植した内容
    - jQueryで書かれたTodoアプリをBackbone.jsベースにリファクタリングしてます。
-   - 実装はES6で書いてます => [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+   - 実装はES6で書いてます => [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 - [coding-kata/monologue](https://github.com/coding-kata/monologue "coding-kata/monologue")
 	- 以下のを元にjQueryベースのものをBackbone.jsベースにリファクタリングする内容です
 	- Browserifyでファイルとしてモジュールを分けたりなどもしています。
@@ -313,7 +313,7 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 
 [![Build Status](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype.svg)](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype)
 
-jQueryで書いたコードをどうやってリファクタリングするかは[The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch](http://efcl.info/2015/01/11/refactoring-tales/ "The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch")で書いた[The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html "The Refactoring Tales")を読んでみるのもいいかもしれません。
+jQueryで書いたコードをどうやってリファクタリングするかは[The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch](https://efcl.info/2015/01/11/refactoring-tales/ "The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch")で書いた[The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html "The Refactoring Tales")を読んでみるのもいいかもしれません。
 
 ## おわりに
 

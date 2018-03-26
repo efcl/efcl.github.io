@@ -15,7 +15,7 @@ tags:
 
 ## Promise本
 
-以前[JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")でも書いていましたが、
+以前[JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")でも書いていましたが、
 電子版である意味は常に書籍が更新できるという点が大きいです。
 
 そのため、[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") も

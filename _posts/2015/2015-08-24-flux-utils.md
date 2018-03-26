@@ -190,7 +190,7 @@ export default class BookmarkList extends React.Component {
 +    },
 +    {
 +        title: "NW.jsでのバイナリリリース",
-+        url: "http://efcl.info/2014/09/05/node-webkit-binary-release/",
++        url: "https://efcl.info/2014/09/05/node-webkit-binary-release/",
 +        comment: "[test] ビルドが楽になりたい"
 +    }
 +];

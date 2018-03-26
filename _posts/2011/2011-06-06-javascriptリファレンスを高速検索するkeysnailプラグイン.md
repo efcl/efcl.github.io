@@ -33,7 +33,7 @@ tags:
 *   [es5.github.com][8]
 *   [msdn.microsoft.com][9]
 
-ECMAScriptの仕様書、MDCのドキュメント、jQueryのAPIドキュメント、IEのJavaScriptリファレンスなどを同時に引けるので結構便利です。[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb8.png" border="0" alt="image" width="640" height="116" />][10]
+ECMAScriptの仕様書、MDCのドキュメント、jQueryのAPIドキュメント、IEのJavaScriptリファレンスなどを同時に引けるので結構便利です。[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb8.png" border="0" alt="image" width="640" height="116" />][10]
 
 対応サイトもSITEINFO的なものを書けば増やせるので、[JSReference at master from azu/KeySnail-Plugins &#8211; GitHub][1]を参考に見てみるといいです。
 
@@ -63,7 +63,7 @@ ECMAScriptの仕様書、MDCのドキュメント、jQueryのAPIドキュメン�
 
 このコマンドをKeySnailの設定メニューや_keysnail.jsファイルに直接書き込むなどでショートカットに割り当てて使います。
 
-[<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://efcl.info/wp-content/uploads/2011/06/image_thumb9.png" border="0" alt="image" width="240" height="88" />][11]   
+[<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="https://efcl.info/wp-content/uploads/2011/06/image_thumb9.png" border="0" alt="image" width="240" height="88" />][11]   
 設定画面の場合
 
 <div>
@@ -136,6 +136,6 @@ key.setGlobalKey(['C-b', 'r'], function (ev, arg) {
  [7]: http://api.jquery.com
  [8]: http://es5.github.com/
  [9]: http://msdn.microsoft.com/en-us/library/yek4tbz0%28v=VS.94%29.aspx
- [10]: http://efcl.info/wp-content/uploads/2011/06/image8.png
- [11]: http://efcl.info/wp-content/uploads/2011/06/image9.png
- [12]: http://efcl.info/2011/0402/res2453/
+ [10]: https://efcl.info/wp-content/uploads/2011/06/image8.png
+ [11]: https://efcl.info/wp-content/uploads/2011/06/image9.png
+ [12]: https://efcl.info/2011/0402/res2453/

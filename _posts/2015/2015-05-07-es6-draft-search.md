@@ -217,7 +217,7 @@ $ git show rev32 | grep "PropertyDefinitionEvaluation for m with arguments" -C10
 
 ### 疑問
 
-[ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch](http://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")でも書いてたけど、`git log -G`で改行無視して複数行に跨いだ検索が上手くいかない…(pcre拡張はいれてあるのに…) リポジトリのデータがおかしい可能性はある。。
+[ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch](https://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")でも書いてたけど、`git log -G`で改行無視して複数行に跨いだ検索が上手くいかない…(pcre拡張はいれてあるのに…) リポジトリのデータがおかしい可能性はある。。
 
 ```
 git log --perl-regexp -i -G "GetThisBinding(.|\n)*?Return UNDEFINED"

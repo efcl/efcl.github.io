@@ -80,4 +80,4 @@ nyaosでやる例
  [9]: http://tech.kayac.com/archive/vim-plugin-coding.html
  [10]: http://labs.timedia.co.jp/2011/03/git-removing-a-submodule.html
  [11]: http://d.hatena.ne.jp/tyru/20110324/git_removing_submodule
- [12]: http://efcl.info/2011/0501/res2717/
+ [12]: https://efcl.info/2011/0501/res2717/

@@ -315,7 +315,7 @@ dekuのコードは読みやすいというよりは流れが見やすい感じ�
 
 メモは自分で作った[floating-memo.app](https://github.com/azu/floating-memo "floating-memo.app")というのを使いました。
 
-- [node-webkitで最前面に置けるMarkdownメモアプリを作った](http://efcl.info/2014/08/27/floating-memo/ "node-webkitで最前面に置けるMarkdownメモアプリを作った")
+- [node-webkitで最前面に置けるMarkdownメモアプリを作った](https://efcl.info/2014/08/27/floating-memo/ "node-webkitで最前面に置けるMarkdownメモアプリを作った")
 
 ### どこから読むか
 

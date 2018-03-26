@@ -52,7 +52,7 @@ git push --force --quiet "https://${GH_TOKEN}@github.com/example/test.git" gh-pa
 > Both new builds and archived build logs with this issue will see the string [secure] instead of potentially exposed secure environment variables. Logs on both our open-source .org, and closed-source .com platforms have been updated.
 > -- [The Travis CI Blog: Security Advisory: Secured Environment Variables](https://blog.travis-ci.com/2017-05-08-security-advisory "The Travis CI Blog: Security Advisory: Secured Environment Variables")
 
-![image](http://efcl.info/wp-content/uploads/2017/05/09-1494289700.png)
+![image](https://efcl.info/wp-content/uploads/2017/05/09-1494289700.png)
 
 ## Travis CIからGitHubへpushする
 
@@ -73,7 +73,7 @@ GitHubの[Deploy Keys](https://developer.github.com/guides/managing-deploy-keys/
 [Deploy Keys](https://developer.github.com/guides/managing-deploy-keys/ "Deploy Keys")(SSHキー)を使った`gh-pages`へのpush方法は次の記事などで解説されています。
 
 - [Auto-deploying built products to gh-pages with Travis](https://gist.github.com/domenic/ec8b0fc8ab45f39403dd "Auto-deploying built products to gh-pages with Travis")
-- [Travis CIからgh-pagesへデプロイする設定 via SSH/git push | Web Scratch](http://efcl.info/2016/09/27/deploy-from-travis-ci-to-gh-pages/ "Travis CIからgh-pagesへデプロイする設定 via SSH/git push | Web Scratch")
+- [Travis CIからgh-pagesへデプロイする設定 via SSH/git push | Web Scratch](https://efcl.info/2016/09/27/deploy-from-travis-ci-to-gh-pages/ "Travis CIからgh-pagesへデプロイする設定 via SSH/git push | Web Scratch")
 - [Travis CI から GitHub へ git push を行う設定 ｜ Tips Note by TAM](https://www.tam-tam.co.jp/tipsnote/program/post11795.html "Travis CI から GitHub へ git push を行う設定 ｜ Tips Note by TAM")
 
 ## フローチャート

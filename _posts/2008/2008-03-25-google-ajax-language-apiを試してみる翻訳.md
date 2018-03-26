@@ -47,4 +47,4 @@ JavaScriptはほとんど書けないのでかなり地味。
 
  [1]: http://journal.mycom.co.jp/articles/2008/03/21/ajaxlang/index.html
  [2]: http://code.google.com/apis/ajaxlanguage/documentation/
- [3]: http://efcl.info/test/Google_translation_api.htm
+ [3]: https://efcl.info/test/Google_translation_api.htm

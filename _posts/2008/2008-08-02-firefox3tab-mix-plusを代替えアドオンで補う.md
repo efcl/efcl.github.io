@@ -76,4 +76,4 @@ Tab Mix Plusが問題なく動く人は特に関係ないエントリーです�
  [6]: http://twanno.mozdev.org/
  [7]: https://addons.mozilla.org/ja/firefox/addon/7446
  [8]: http://www.pqrs.org/tekezo/firefox/extensions/functions_for_keyconfig/index.html.ja
- [9]: http://efcl.info/2008/0514/res182/
+ [9]: https://efcl.info/2008/0514/res182/

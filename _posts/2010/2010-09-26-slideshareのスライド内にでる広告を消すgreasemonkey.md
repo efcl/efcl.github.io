@@ -13,7 +13,7 @@ tags:
   - Greasemonkey
   - 広告
 ---
-[<img class="alignnone size-medium wp-image-1971" title="ss-2010-09-26-2" src="http://efcl.info/wp-content/uploads/2010/09/ss-2010-09-26-2-300x233.png" alt="" width="300" height="233" />][1]
+[<img class="alignnone size-medium wp-image-1971" title="ss-2010-09-26-2" src="https://efcl.info/wp-content/uploads/2010/09/ss-2010-09-26-2-300x233.png" alt="" width="300" height="233" />][1]
 
 最近になって[SlideShare][2]ではスライドの下部に広告が出るようになったので、それを自動で閉じて非表示にするGreasemonkeyです。
 
@@ -24,7 +24,7 @@ tags:
 [UstreamのFlash動画内広告を消す方法 | Web scratch][4]とかでも同じような方式広告が出ていますが、何度もでてきてウイルスみたいだ。  
 CNETとかマイコミジャーナルとかあの辺の広告も理解できない。
 
- [1]: http://efcl.info/wp-content/uploads/2010/09/ss-2010-09-26-2.png
+ [1]: https://efcl.info/wp-content/uploads/2010/09/ss-2010-09-26-2.png
  [2]: http://www.slideshare.net/
  [3]: http://userscripts.org/scripts/show/86791
- [4]: http://efcl.info/2010/0723/res1841/
+ [4]: https://efcl.info/2010/0723/res1841/

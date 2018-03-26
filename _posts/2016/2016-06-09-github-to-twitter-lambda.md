@@ -19,7 +19,7 @@ tags:
 
 こんな感じでTwitterにGitHubの[Notification](https://github.com/notifications)(Watch)、[アクティビティ](https://github.com/)が流れます。
 
-![on Twitter](http://efcl.info/wp-content/uploads/2016/06/09-1465433692.png)
+![on Twitter](https://efcl.info/wp-content/uploads/2016/06/09-1465433692.png)
 
 **⚠ 注意**: メインで使ってるGitHubアカウントのPersonal Tokenを使うとそのアカウントのNotificationとタイムラインが流れるので、privateの情報とかもなげられてしまうので注意です。
 
@@ -35,7 +35,7 @@ GitHubのWatchやアクティビティは読むのが困難なデザインなの
 - [Issues](https://github.com/issues)
 - [Issues assigned](https://github.com/issues/assigned)
 - [JasperというGitHub Issue Readerを作りました - maru source](http://blog.h13i32maru.jp/entry/2016/06/08/090000)
-- [自分に関係するGitHub Issueを一覧できるアプリを書いた | Web Scratch](http://efcl.info/2015/07/30/github-issue-manager/)
+- [自分に関係するGitHub Issueを一覧できるアプリを書いた | Web Scratch](https://efcl.info/2015/07/30/github-issue-manager/)
 
 
 導入はREADME通りにやっても動かない場合がありそうなので、そこは頑張って…(Pull Request下さい)
@@ -152,7 +152,7 @@ lambdaはデフォルトだと１回実行して終わりなので繰り返し�
 - 未読を読み飛ばしやすいのはやっぱりTwitterかRSSリーダー
 - RSSリーダーもコンテキストが異なる物量には弱い
 	- RSSリーダーはリリースノートだけに絞ってる
-	- [GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch](http://efcl.info/2014/07/30/find-github-release/ "GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch")
+	- [GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch](https://efcl.info/2014/07/30/find-github-release/ "GitHubでライブラリのリリースを見ていくためのツールや方法 | Web Scratch")
 - [TweetIrcGateway](http://www.misuzilla.org/Distribution/TweetIrcGateway/ "TweetIrcGateway")っぽい
 - それぞれのコンテキストにあった読みやすさがあるので、読みやすい場所に読みたいものを置く
 - そういう土管ツールが簡単につくれるともっと良さそう

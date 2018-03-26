@@ -38,7 +38,7 @@ JavaScriptに対応してるIDEのメモまとめ。
     komodo Editはオープンソース版の[Open Komodo][7]もあるらしい。  
     XULと親和性が高そうで [Komodo Edit が面白い &#8211; hogehoge @teramako][8]
 *   [Spket IDE][9]  
-    以前何か書きました<a href="http://efcl.info/2009/1203/res1496/" target="_blank">JavaScript向けIDE「Spket IDE」の導入 | Web scratch</a>  
+    以前何か書きました<a href="https://efcl.info/2009/1203/res1496/" target="_blank">JavaScript向けIDE「Spket IDE」の導入 | Web scratch</a>  
     IDEの中では軽くて、<span>Firefoxの拡張向けの機能もある。</span>
 *   [Visual Studio 2010][10]  
     またまたーって感じがするけど意外と凄い子。  
@@ -90,7 +90,7 @@ IDE全般としては、クロスプラットフォームに対応している�
  [2]: http://d.hatena.ne.jp/yuchi78/20100515/1273944479
  [3]: http://www.jetbrains.com/webstorm/index.html
  [4]: http://www.jetbrains.com/editors/javascript_editor.jsp?ide=idea
- [5]: http://efcl.info/2010/1027/res2023/
+ [5]: https://efcl.info/2010/1027/res2023/
  [6]: http://www.activestate.com/komodo-ide "Komodo IDE"
  [7]: http://www.openkomodo.com/
  [8]: http://d.hatena.ne.jp/teramako/20090205/p1

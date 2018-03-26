@@ -10,7 +10,7 @@ tags:
 
 ---
 
-前回、[Jekyllベースのブログに移行しました。 | Web Scratch](http://efcl.info/2014/07/06/new-blog/ "Jekyllベースのブログに移行しました。 | Web Scratch")で
+前回、[Jekyllベースのブログに移行しました。 | Web Scratch](https://efcl.info/2014/07/06/new-blog/ "Jekyllベースのブログに移行しました。 | Web Scratch")で
 WordpressからJekyllへと移行しました。
 
 その時に、[benbalter/wordpress-to-jekyll-exporter](https://github.com/benbalter/wordpress-to-jekyll-exporter "benbalter/wordpress-to-jekyll-exporter")を使い

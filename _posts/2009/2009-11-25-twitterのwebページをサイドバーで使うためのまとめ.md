@@ -18,14 +18,14 @@ tags:
   - web
 ---
 **Twitterのウェブサイトをクライアントとして使うのに役立つGreasemonkeyとCSS | Web scratch**
-:   [http://efcl.info/2009/0317/res613/][1]
+:   [https://efcl.info/2009/0317/res613/][1]
 
 以前書いたような記事と似たような記事を書きましたが、今回はシンプルにサイドバーでTwitterのWebページを表示する方法です。  
 Greasemonkeyがサイドバーでも動作するようになったので、かなり快適になり、またWebページを表示するだけなので**APIを使わない**のが特徴です。
 
 <br class="spacer_" /><figure id="attachment_1490" style="width: 121px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-1490" title="ss-2009-11-25-22-40-16" src="http://efcl.info/wp-content/uploads/2009/11/ss-2009-11-25-22-40-16-121x300.png" alt="最終的な似た目" width="121" height="300" />][2]<figcaption class="wp-caption-text">最終的な似た目</figcaption></figure> 
+[<img class="size-medium wp-image-1490" title="ss-2009-11-25-22-40-16" src="https://efcl.info/wp-content/uploads/2009/11/ss-2009-11-25-22-40-16-121x300.png" alt="最終的な似た目" width="121" height="300" />][2]<figcaption class="wp-caption-text">最終的な似た目</figcaption></figure> 
 <br class="spacer_" />
 
 まずはCSSでサイドバーに合わせた形にする必要があります。
@@ -83,8 +83,8 @@ Ctrl+Enterでポストする。
 
 <br class="spacer_" />
 
- [1]: http://efcl.info/2009/0317/res613/ "Twitterのウェブサイトをクライアントとして使うのに役立つGreasemonkeyとCSS | Web scratch"
- [2]: http://efcl.info/wp-content/uploads/2009/11/ss-2009-11-25-22-40-16.png
+ [1]: https://efcl.info/2009/0317/res613/ "Twitterのウェブサイトをクライアントとして使うのに役立つGreasemonkeyとCSS | Web scratch"
+ [2]: https://efcl.info/wp-content/uploads/2009/11/ss-2009-11-25-22-40-16.png
  [3]: http://nukumori.org/hiki/?TwitterSidebarCSS "nukumori wiki - Firefoxのサイドバーでtwitter.comするCSS"
  [4]: http://twitter.com/?sidebar
  [5]: https://addons.mozilla.org/ja/firefox/addon/2707

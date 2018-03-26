@@ -95,7 +95,7 @@ if (Element && !Element.prototype.matches) {
 
 以前紹介したgulp+testemの方法も、ちょっと変更があってBowerなしでも可能になったので以下の記事は更新してあります。
 
-- [power-assertでJavaScriptのテストをする ブラウザ編 | Web Scratch](http://efcl.info/2014/0411/res3820/ "power-assertでJavaScriptのテストをする ブラウザ編 | Web Scratch")
+- [power-assertでJavaScriptのテストをする ブラウザ編 | Web Scratch](https://efcl.info/2014/0411/res3820/ "power-assertでJavaScriptのテストをする ブラウザ編 | Web Scratch")
 
 今回やったのは上記の記事Karmaでやってた部分をTestemに変えただけで、Browserifyでテストコード(power-assertを使ってる)をビルドしたファイルを作って、それをTestemに読み込ませて、Mochaでブラウザ上でテストするという感じです。
 
@@ -115,7 +115,7 @@ script: npm test -- -l phantomjs,firefox
 
 [![Build Status](https://travis-ci.org/azu/wait-for-element.js.svg?branch=master)](https://travis-ci.org/azu/wait-for-element.js)
 
-- [CI as a Service ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web Scratch](http://efcl.info/2013/0321/res3234/ "CI as a Service ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web Scratch")
+- [CI as a Service ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web Scratch](https://efcl.info/2013/0321/res3234/ "CI as a Service ブラウザを使ったJavaScriptのテストをCIサービスで動かす方法のまとめ | Web Scratch")
 
 [zuul](https://github.com/defunctzombie/zuul)を使おうとしたけど、MochaがPromiseテスト対応していないバージョンだったり面倒になったので諦めました。(SauceLabsでIEのテストしたかった…)
 

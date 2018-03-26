@@ -251,7 +251,7 @@ gulpは[APIデザイン][14]的な話が結構でてくるので見ていて面�
  [1]: https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md#35 "3.5"
  [2]: https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md#35 "gulp/CHANGELOG.md at master · gulpjs/gulp"
  [3]: https://github.com/gulpjs/gulp/pull/162 "Avoid promoting gulp.run by robrich · Pull Request #162 · gulpjs/gulp"
- [4]: http://efcl.info/2014/0120/res3605/ "npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch"
+ [4]: https://efcl.info/2014/0120/res3605/ "npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch"
  [5]: https://github.com/azu/tech-video-rss-searcher/ "azu/tech-video-rss-searcher"
  [6]: https://github.com/azu/tech-video-rss-searcher/blob/ef0853ed723cacb49ac121a9462193426665534b/gulpfile.js "gulpfile.js"
  [7]: https://github.com/gulpjs/gulp/blob/master/docs/API.md " gulp.task(name[, deps], fn)"

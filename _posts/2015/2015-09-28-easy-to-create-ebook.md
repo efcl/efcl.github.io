@@ -125,8 +125,8 @@ travis init node.js
 gitbook-starter-kitでは[prh.yml](https://github.com/azu/gitbook-starter-kit/blob/master/prh.yml)に辞書を追加することで表記揺れをチェックすることができます。
 詳しい設定方法については以下を参照して下さい。
 
-- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
+- [textlint + prhで表記ゆれを検出する | Web Scratch](https://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
 
 ![gif](https://embed.gyazo.com/af14634690a0515c2c5ce56bd2fd6431.gif)
 
