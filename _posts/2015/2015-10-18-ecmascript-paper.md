@@ -259,9 +259,9 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 
 以下の図のように大体1月ぐらいには機能はフリーズされて、そこからは実装のフィードバックを受けての修正がメインとなっていた(実際には細かな機能が増えたりしたけど)。
 
-<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
+<p><a href="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
 
-<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank">＊画像横に長いのでクリック</a></p>
+<p><a href="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank">＊画像横に長いのでクリック</a></p>
 
 - [The ECMAScript 6 schedule changes](http://www.2ality.com/2014/06/es6-schedule.html "The ECMAScript 6 schedule changes")
 

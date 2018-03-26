@@ -33,14 +33,14 @@ tags:
 
 Githubでは自分用の認証のtokenを発行できるので、それを作ってもらってログインする感じで使います。
 
-<img src="http://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png" border="0" width="600" height="431" />
+<img src="https://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png" border="0" width="600" height="431" />
 
 *   [New personal access token][7]から新しいtokenの作成
 *   **scopes**の選択肢で `notifications` と `user`はチェックする
 
 上記の手順でtokenを作ってもらったらアプリを起動して、最初にtokenとGithubアカウントの設定をします。(APIを使うためです)
 
-<img src="http://monosnap.com/image/Dgh7zSUetiJTNuQQ55w76CYVur7G0h.png" border="0" width="600" height="431" />
+<img src="https://monosnap.com/image/Dgh7zSUetiJTNuQQ55w76CYVur7G0h.png" border="0" width="600" height="431" />
 
 `Config`を開くと設定画面が出てくるので、  
 Githubの**username**と先ほど作成したPersonal access tokenをそれぞれ入力して保存&更新します。
