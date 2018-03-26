@@ -88,7 +88,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 面倒な人は以下のスライドに簡略化された概要が載ってるので、そちらをみるといいかもしれません。
 
 <div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.io/slide/okonomi.js/"><img src="http://kwout.com/cutout/w/2c/hc/36t.jpg" alt="http://azu.github.io/slide/okonomi.js/" title="power-doctest @ okonomi.js" width="600" height="189" style="border: none;" usemap="#map_w2chc36t" /></a> <p style="margin-top: 10px; text-align: center;">
+  <a href="https://azu.github.io/slide/okonomi.js/"><img src="http://kwout.com/cutout/w/2c/hc/36t.jpg" alt="http://azu.github.io/slide/okonomi.js/" title="power-doctest @ okonomi.js" width="600" height="189" style="border: none;" usemap="#map_w2chc36t" /></a> <p style="margin-top: 10px; text-align: center;">
     <a href="http://azu.github.io/slide/okonomi.js/">power-doctest @ okonomi.js</a>
   </p>
 </div>

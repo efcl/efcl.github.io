@@ -31,7 +31,7 @@ ConstさんがWebKitにコミットしてたCSS JIT入りのiOS8リリースが�
 
 - [多段SourceMapの対応方法とライブラリ | Web Scratch](https://efcl.info/2014/09/03/multi-stage-sourcemap/ "多段SourceMapの対応方法とライブラリ | Web Scratch")
 
-発表に使ったスライドは [http://azu.github.io/slide/DOMQuery/sourcemap.pdf](http://azu.github.io/slide/DOMQuery/sourcemap.pdf "sourcemap.pdf") です。
+発表に使ったスライドは [https://azu.github.io/slide/DOMQuery/sourcemap.pdf](http://azu.github.io/slide/DOMQuery/sourcemap.pdf "sourcemap.pdf") です。
 
 
 ![basic-sourcemap.png](https://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
@@ -122,7 +122,7 @@ GulpやBroserifyでは、Gruntからファイルの読み込みと書き出し�
 
 一昨日ぐらいに[power-assert playground](http://azu.github.io/power-assert-demo/ "power-assert playground")というクライアントサイドで、power-assertのテストを動かせるデモサイトを作った話を軽くしました。(立ち話レベル)
 
-発表に使ったスライドは[http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf](http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf "power-assert-in-browser.pdf")です。
+発表に使ったスライドは[https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf](http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf "power-assert-in-browser.pdf")です。
 
 
 これは以下のような構成で作られているサイトです。

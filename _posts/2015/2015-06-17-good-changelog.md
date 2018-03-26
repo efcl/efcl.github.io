@@ -17,15 +17,15 @@ tags:
 
 GitHubでのChangeLogの扱いについての話
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html"><img src="http://kwout.com/cutout/c/v2/sz/8pm_bor.jpg" alt="http://azu.github.io/slide/cto/changelog.html" title="われわれは、いかにして変更点を追うか" width="600" height="328" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html">われわれは、いかにして変更点を追うか</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/cto/changelog.html"><img src="http://kwout.com/cutout/c/v2/sz/8pm_bor.jpg" alt="http://azu.github.io/slide/cto/changelog.html" title="われわれは、いかにして変更点を追うか" width="600" height="328" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html">われわれは、いかにして変更点を追うか</a></p></div>
 
 このスライドは、ChangeLogから詳細を追う方法を知ることで、転じて分かりやすいChangeLogを書くことができるようになるのではという話でした。
 
-![changelog-image](http://azu.github.io/slide/cto/flow.png)
+![changelog-image](https://azu.github.io/slide/cto/flow.png)
 
 スライドでは、ChangeLogの追い方として[Babel 5.3.0](https://github.com/babel/babel/blob/master/CHANGELOG.md#530 "5.3.0")を例としてどうやって、このChangeLogから詳細を見ていくかについて話していました。
 
-[![Babel](http://azu.github.io/slide/cto/img/babel5.3.0-full.jpg)](https://github.com/babel/babel/blob/master/CHANGELOG.md#530)
+[![Babel](https://azu.github.io/slide/cto/img/babel5.3.0-full.jpg)](https://github.com/babel/babel/blob/master/CHANGELOG.md#530)
 
 このBabelのChangeLogの問題点としては、変更点については書かれているのですが具体的にどういう変更だったのか、また関連するIssue/Pull Requestへのリンクがないため、ChangeLog単体では詳細がわからないという問題があったので例としていました。
 

@@ -18,7 +18,7 @@ tags:
 <li><a href="http://togetter.com/li/649498" title="#寿司js - Togetterまとめ">#寿司js &#8211; Togetterまとめ</a></li>
 </ul>
 <hr />
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/sushijs/"><img src="http://kwout.com/cutout/a/pt/sa/z8p.jpg" alt="http://azu.github.io/slide/sushijs/" title="Promises Starter" width="600" height="317" style="border: none;" /></a>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/sushijs/"><img src="http://kwout.com/cutout/a/pt/sa/z8p.jpg" alt="http://azu.github.io/slide/sushijs/" title="Promises Starter" width="600" height="317" style="border: none;" /></a>
 <p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/sushijs/">Promises Starter</a></p>
 </div>
 <p><a href="http://azu.github.io/slide/sushijs/" title="Promises Starter">Promises Starter</a>ではPromiseの基本的な部分だけなので、<code>Pormise.all</code>等実際に使うと便利的な話は入れてないです。</p>

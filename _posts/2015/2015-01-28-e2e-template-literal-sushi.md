@@ -25,7 +25,7 @@ vivaldi_sushiとe2e_sushiと隣でやってた`template_literal_sushi`に[参加
 
 ## Testium - azu
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/e2e_sushi/testium.html"><img src="http://kwout.com/cutout/9/bt/yv/7gy_bor.jpg" alt="http://azu.github.io/slide/e2e_sushi/testium.html" title="Testium" width="600" height="214" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/e2e_sushi/testium.html">Testium</a> via <a href="http://kwout.com/quote/9btyv7gy">kwout</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/e2e_sushi/testium.html"><img src="http://kwout.com/cutout/9/bt/yv/7gy_bor.jpg" alt="http://azu.github.io/slide/e2e_sushi/testium.html" title="Testium" width="600" height="214" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/e2e_sushi/testium.html">Testium</a> via <a href="http://kwout.com/quote/9btyv7gy">kwout</a></p></div>
 
 自分は[TestiumとPageObjectパターンの話](http://azu.github.io/slide/e2e_sushi/testium.html "Testium")をしました。
 

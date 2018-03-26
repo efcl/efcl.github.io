@@ -434,7 +434,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 
 ----
 
-[![inline, repo-actions-watch.png](http://azu.github.io/slide/2018/node/img/repo-actions-watch.png)](https://github.com/asciidwango/js-primer)
+[![inline, repo-actions-watch.png](https://azu.github.io/slide/2018/node/img/repo-actions-watch.png)](https://github.com/asciidwango/js-primer)
 
 興味ある人はStarやWatchしてください。
 
@@ -554,7 +554,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 プロポーザルにはそれぞれチャンピオンとなる責任者いて、そのチャンピオンが策定作業を進めることで初めてステージが進みます。
 [tc39/proposals][] にかかれている :rocket: はプロポーザルのステージをチャンピオンが進める意志がある状態かを表しています。(頻繁に更新されるためあくまで参考情報に過ぎません)
 
-![inline, rockets.png](http://azu.github.io/slide/2018/node/img/rockets.png)
+![inline, rockets.png](https://azu.github.io/slide/2018/node/img/rockets.png)
 
 :rocket: マークがついていない場合やしばらくステージが更新されていないプロポーザルは何かしらの課題や問題を抱えています。
 ここではそれのプロポーザルがどのような課題を持っていて、ステージが更新されないのかを見ていきます。
@@ -609,13 +609,13 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 [tc39/agendas](https://github.com/tc39/agendas "tc39/agendas")（議事録のアジェンダ）を"[Decorators](https://github.com/tc39/agendas/search?o=desc&q=Decorators&s=indexed&type=&utf8=%E2%9C%93 "Search · Decorators")"で検索すると、[agendas/2018/01.md](https://github.com/tc39/agendas/blob/385085dead6e4f08a2100eccc7b8738dec97f236/2018/01.md "agendas/2018/01.md")にも議題となったことが分かります。
 
 
-![right, decorators-agenda.png](http://azu.github.io/slide/2018/node/img/decorators-agenda.png)
+![right, decorators-agenda.png](https://azu.github.io/slide/2018/node/img/decorators-agenda.png)
 
 
 このアジェンダと同じ月のミーティングノートを[tc39/tc39-notes][]で探すと[2018-01/summary.md](https://github.com/rwaldron/tc39-notes/blob/master/es8/2018-01/summary.md "2018-01/summary.md")が見つかります。
 ミーティングの議事録事態は長いですが、`summary.md`にはその内容がまとまっているのでまずはそちらを見てみます。
 
-![inline, summary-decorator.png](http://azu.github.io/slide/2018/node/img/summary-decorator.png)
+![inline, summary-decorator.png](https://azu.github.io/slide/2018/node/img/summary-decorator.png)
 
 デコレーターでの議事録や関連するスライドを見てみると、幾つかの課題がその課題を解決するまでステージ3にはできないという話が書かれています。
 

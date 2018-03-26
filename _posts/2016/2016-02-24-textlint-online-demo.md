@@ -13,7 +13,7 @@ tags:
 ---
 
 
-[![textlint](http://azu.github.io/slide/2016/reject-sushi/img/textlint.png)](http://textlint.github.io/)
+[![textlint](https://azu.github.io/slide/2016/reject-sushi/img/textlint.png)](http://textlint.github.io/)
 
 [textlint - pluggable linting tool for text and markdown](http://textlint.github.io/ "textlint - pluggable linting tool for text and markdown")
 

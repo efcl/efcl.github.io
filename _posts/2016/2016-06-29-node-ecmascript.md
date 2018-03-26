@@ -41,7 +41,7 @@ GitHubで常に最新の仕様が公開されていて、ECMAScriptもHTMLなど
 
 プログラミングをやったことがあるが、JavaScriptはよくわからないという人が読むと良さそうな本を目指しています。
 
-[![Image](http://azu.github.io/slide/2016/node-es/img/js-primer.png)](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
+[![Image](https://azu.github.io/slide/2016/node-es/img/js-primer.png)](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
 
 - [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
 

@@ -19,14 +19,14 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 
 ## どういうもの
 
-<iframe src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
+<iframe src="https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
 scrolling="no"
 width="100%"
 height="500"
 style="border:0; background-color:white;">
 </iframe>
 
-http://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを読み込んで表示しています。
+https://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを読み込んで表示しています。
 
 普通のHTMLスライドのようにウェブページとして公開することも出来ます。
 
@@ -54,7 +54,7 @@ http://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを読
 
 [slide-pdf.js](https://github.com/azu/slide-pdf.js "slide-pdf.js") がpdf.jsを使ってpdfスライドを読み込んでスライド的に表示する本体。
 
-http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
+https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
 
 という感じURLにpdfファイルを指定するとスライド表示してくれるようにした。same originでpdfファイルを読み込めるなら何でも行ける。
 
@@ -64,7 +64,7 @@ pdf.jsは自動でpdfファイルをちょっとづつ取得して表示する�
 
 ```html
 <iframe id="main-slide"
-    src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
+    src="https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
     scrolling="no"
     allowtransparency="true"
     width="100%"
@@ -110,7 +110,7 @@ Usage:pdf-slide-html [options]
 `--base-url`には、iframeで埋め込むURLのベースを指定しますが ( `http://azu.github.io/slide-pdf.js/` )、same origin policyがあるため使う場合は自分でcloneして、pdfがsame origin的に読み込める位置に配置する必要があります。
 
 ```
-pdf-slide-html --pdf-url http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf --base-url http://azu.github.io/slide-pdf.js/ --markdown power-assert-in-browser.md -o index.html
+pdf-slide-html --pdf-url https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf --base-url http://azu.github.io/slide-pdf.js/ --markdown power-assert-in-browser.md -o index.html
 ```
 
 という感じの長い指定をすれば、自動的に先ほどのindex.htmlを作ってくれます。

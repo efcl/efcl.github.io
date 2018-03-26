@@ -32,7 +32,7 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 お忙しい方は[5分ぐらいで分かるpower-assert][6]というスライドもあるので、そちらを読んでざっくり把握してみるのもいいでしょう。
 
 <div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.io/slide/sakurajs/power-assert.html#/"><img src="http://kwout.com/cutout/y/hb/tj/bqs.jpg" alt="http://azu.github.io/slide/sakurajs/power-assert.html#/" title="5minで分かるpower-assert" width="600" height="314" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
+  <a href="https://azu.github.io/slide/sakurajs/power-assert.html#/"><img src="http://kwout.com/cutout/y/hb/tj/bqs.jpg" alt="http://azu.github.io/slide/sakurajs/power-assert.html#/" title="5minで分かるpower-assert" width="600" height="314" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
     <a href="http://azu.github.io/slide/sakurajs/power-assert.html#/">5minで分かるpower-assert</a>
   </p>
 </div>

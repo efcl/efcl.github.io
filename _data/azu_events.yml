@@ -142,13 +142,13 @@
 
 - date: 2014-09-22
   title: "多段SourceMapと統一的なインターフェース"
-  URL: http://azu.github.io/slide/DOMQuery/sourcemap.pdf
+  URL: https://azu.github.io/slide/DOMQuery/sourcemap.pdf
   report_URL: https://efcl.info/2014/09/22/sourcemap-ast/
   event_title: "DOMQuery寿司"
 
 - date: 2014-09-22
   title: "power-assert in browser"
-  URL: http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
+  URL: https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
   report_URL: https://efcl.info/2014/09/22/sourcemap-ast/
   event_title: "DOMQuery寿司"
 
@@ -175,8 +175,8 @@
 
 - date: 2014-11-09
   title: "ニコニココードリーディング"
-  URL: http://azu.github.io/slide/niconicode/code-reading.pdf
-  report_URL: http://azu.github.io/slide/niconicode/code-reading.pdf
+  URL: https://azu.github.io/slide/niconicode/code-reading.pdf
+  report_URL: https://azu.github.io/slide/niconicode/code-reading.pdf
   event_title: "ドワンゴ社内勉強会(外部参加)"
 
 - date: 2014-12-05

@@ -20,7 +20,7 @@ Fluxとかで上半分は皆やるようになったけど、ドメインモデ�
 
 Almin自体は大した実装ではないので、サンプルとかドキュメントとしてパターンについて学べるものを書いていきたいイメージ。(このアーキテクチャ話自体は、色々な言語で繰り返しやっては言語が廃れて、パターンがちょっと違う形で残るというのを繰り返している by @t_wada)
 
-![almin](http://azu.github.io/slide/2016/child_process_sushi/img/almin-architecture-flux.png)
+![almin](https://azu.github.io/slide/2016/child_process_sushi/img/almin-architecture-flux.png)
 
 JavaScriptでもウェブアプリやElectronでのアプリのような、APIを叩いて表示して終わりじゃなくて、ドメインモデルの生存期間が長いものが増えてきているのでその辺を考えていこうという話でした。
 
@@ -94,7 +94,7 @@ JavaScriptでもウェブアプリやElectronでのアプリのような、API�
 
 - Fluxとかで上半分は皆できるようになったけどドメインモデルについてはまだ未成熟
 
-![almin](http://azu.github.io/slide/2016/child_process_sushi/img/almin-architecture-flux.png)
+![almin](https://azu.github.io/slide/2016/child_process_sushi/img/almin-architecture-flux.png)
 
 - [Almin.js](https://github.com/almin/almin "Almin.js")はその辺を考える土台とパターンとサンプルを用意するプロジェクト
 	- 実装自体はFluxと大体同じ

@@ -19,7 +19,7 @@ tags:
 -----
 
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html"><img src="http://kwout.com/cutout/c/eg/rb/qs2_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/test-everything.html" title="ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト" width="600" height="294" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/assistant-bucho/test-everything.html"><img src="http://kwout.com/cutout/c/eg/rb/qs2_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/test-everything.html" title="ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト" width="600" height="294" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a></p></div>
 
 [ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト](http://azu.github.io/slide/assistant-bucho/test-everything.html "ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト")というタイトルで発表してきました。
 タイトル通り、最近やったようなテスト事例をひたすら書いてる感じです。
@@ -43,7 +43,7 @@ tags:
 -----
 
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html"><img src="http://kwout.com/cutout/u/vi/pa/z8p_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html" title="Visualize TC39 Process" width="600" height="320" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html">Visualize TC39 Process</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/assistant-bucho/visual-tc39-process.html"><img src="http://kwout.com/cutout/u/vi/pa/z8p_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html" title="Visualize TC39 Process" width="600" height="320" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html">Visualize TC39 Process</a></p></div>
 
 もう一つ、[Visualize TC39 Process](http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html "Visualize TC39 Process")というのも発表しました。
 
