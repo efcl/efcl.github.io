@@ -20,7 +20,7 @@ tags:
 
 **Typewriter Scrolling** というのはタイトルのように入力行が中央になる機能の事らしいです。
 
-![gif](http://gyazo.com/a529c6a25caf013775df4309310a2e7f.gif)
+![gif](https://gyazo.com/a529c6a25caf013775df4309310a2e7f.gif)
 
 [FoldingText](http://www.foldingtext.com/ "FoldingText")に同じ名前の機能があります(これでこの名前を知った)
 

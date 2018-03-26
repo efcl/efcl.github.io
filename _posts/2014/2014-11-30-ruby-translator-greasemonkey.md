@@ -48,7 +48,7 @@ make install
 
 翻訳したい場所を Alt + クリック(選択範囲)を作れば、その周辺を翻訳してくれます。
 
-![gif](http://gyazo.com/530524cc50b541b85ae517904bd1b2e7.gif)
+![gif](https://gyazo.com/530524cc50b541b85ae517904bd1b2e7.gif)
 
 元の文章とルビが一緒だと見にくいので、安直にちょっと文字サイズを大きくしてます。
 

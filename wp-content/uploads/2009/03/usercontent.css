@@ -1,13 +1,13 @@
 @-moz-document domain("twitter.com") {
 /* Twitter */
 
-  /* ‚«o‚µ */
+  /* ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ */
   .content-bubble-arrow {
     display:none;
   }
-  /* ƒwƒbƒ_[ */
+  /* ï¿½wï¿½bï¿½_ï¿½[ */
   #navigation:hover { height : auto !important; overflow : visible !important; }
-  #navigation { position : absolute !important; left : 0px !important; top : 1px !important; overflow : hidden !important; z-index : 3 !important; font-size : 16px !important; line-height : 22px !important; padding: 0 !important; height: 0px !important; width: 100%; color: #000000 !important; background-image: url(http://image.livedoor.com/img/top/11/title_bg_normal.gif) !important; border-bottom: 2px solid #999 !important ;-moz-opacity:0.5;  }
+  #navigation { position : absolute !important; left : 0px !important; top : 1px !important; overflow : hidden !important; z-index : 3 !important; font-size : 16px !important; line-height : 22px !important; padding: 0 !important; height: 0px !important; width: 100%; color: #000000 !important; background-image: url(https://image.livedoor.com/img/top/11/title_bg_normal.gif) !important; border-bottom: 2px solid #999 !important ;-moz-opacity:0.5;  }
   #profile:hover > #navigation{
     display:block!important;
   }
@@ -17,7 +17,7 @@
   #container{
    margin-top:0!important;
   }
-  /* L */
+  /* ï¿½Lï¿½ï¿½ */
   #side_ad_base{
     display:none;
   }
@@ -25,7 +25,7 @@
     display:none;
   }
 
-  /* ƒXƒy[ƒXŠm•Û •¶š”ƒJƒEƒ“ƒg*/
+  /* ï¿½Xï¿½yï¿½[ï¿½Xï¿½mï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½Eï¿½ï¿½ï¿½g*/
   .bar h3 {
     display:none!important;
   }
@@ -36,14 +36,14 @@
     right:20px!important;
     top:25px!important;
   }
-  /* “Šeƒ{ƒ^ƒ“ */
+  /* ï¿½ï¿½ï¿½eï¿½{ï¿½^ï¿½ï¿½ */
   .status-btn{
     display:none;
   }
   #currently {
       width:500px!important;
   }
-  /* ”­Œ¾‚ÌƒXƒy[ƒXŠg’£ 
+  /* ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒXï¿½yï¿½[ï¿½Xï¿½gï¿½ï¿½
   ol.statuses span.status-body {
       width:450px!important;
   }*/

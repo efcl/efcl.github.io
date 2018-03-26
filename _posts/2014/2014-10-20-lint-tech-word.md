@@ -31,7 +31,7 @@ WZ EDITORの用語統一辞書をスペルチェックとして使えるCodeMirr
 
 以下から試すことが出来ます。(DEMOにはWZ EDITORの用語統一辞書の記号周りを取り除いたものが入ってます)
 
-[![gif](http://i.gyazo.com/fe26a3fa4e194bafb72be12ca551d947.gif)](http://azu.github.io/codemirror-spellckecker/)
+[![gif](https://i.gyazo.com/fe26a3fa4e194bafb72be12ca551d947.gif)](http://azu.github.io/codemirror-spellckecker/)
 
 - [azu.github.io/codemirror-spellckecker/](http://azu.github.io/codemirror-spellckecker/ "CodeMirror + Spell Check + Quick Fix")
 

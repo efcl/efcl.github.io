@@ -19,7 +19,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/59
 
 例えば、以下のようなjQueryで書いたコードは外(テストコード)から取り出すポイントがないので、ユニットテストを書くのは難しいと思います。(そもそもViewのコードなので)
 
-![img](http://gyazo.com/b7e1593ef11326f5d6bf788d25e1bd6d.gif)
+![img](https://gyazo.com/b7e1593ef11326f5d6bf788d25e1bd6d.gif)
 
 > 特定のバージョンでの変更点を簡単に確認できるよう、 
 「Aの列のラジオボタンを選ぶと同じ行より一つ下にあるBの列のラジオボタンを自動で選ぶ」 という補助機能
@@ -120,7 +120,7 @@ describe("app-test", function () {
 - [azu/testium-seed](https://github.com/azu/testium-seed/ "azu/testium-seed")
 - READMEにも同じ解説が書いてあります。
 
-[![site](http://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
+[![site](https://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
 
 ![screenshot-error](https://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
 
@@ -250,7 +250,7 @@ TestiumコマンドにはREPL機能があり、以下のようなコマンドを
 npm test
 ```
 
-![chrome-e2e](http://gyazo.com/3ff16c0473b5eb3729d26c6401a2fe7b.gif)
+![chrome-e2e](https://gyazo.com/3ff16c0473b5eb3729d26c6401a2fe7b.gif)
 
 
 細かい設定は[Configuration](https://github.com/groupon-testium/testium#configuration "Configuration")にかいてありますが、この設定書式をini形式(Key=value)に直す必要があることには注意して下さい。

@@ -27,11 +27,11 @@ Markdown支援的な機能が入ってるものは意外と多くない印象で
 こんな感じで、Cmd+E or Ctrl+Eで`<textarea>`とCodeMirrorを切り替え出来ます。
 
 
-![img1](http://i.gyazo.com/c29a9a3535c66083827cba81181bd5c1.gif)
+![img1](https://i.gyazo.com/c29a9a3535c66083827cba81181bd5c1.gif)
 
-![img2](http://i.gyazo.com/990c553552be3ca673e815c777c3f8b2.gif)
+![img2](https://i.gyazo.com/990c553552be3ca673e815c777c3f8b2.gif)
 
-![img3](http://gyazo.com/003a690ade95e7a84b3f06de1c0ac508.gif)
+![img3](https://gyazo.com/003a690ade95e7a84b3f06de1c0ac508.gif)
 
 ## インストール
 

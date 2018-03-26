@@ -269,7 +269,7 @@ min.jsが10kb程度でReactに比べて大分小さいことなど特徴はい�
 
 ### おわりに
 
-[![example](http://gyazo.com/f46c61f95c54c61ebca063997d420329.gif)](http://azu.github.io/component-event-binding/)
+[![example](https://gyazo.com/f46c61f95c54c61ebca063997d420329.gif)](http://azu.github.io/component-event-binding/)
 
 今回作ったサンプルはReactとDekuのコンポーネントをそれぞれ作って、StoreとActionは同じものを共有して使っています。
 

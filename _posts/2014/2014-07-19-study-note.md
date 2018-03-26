@@ -50,7 +50,7 @@ tags:
 上に載せてないですが、[Day One](http://dayoneapp.com/ "Day One")とかがこのリスト周りの動きの出来がいいと思います。
 (iOS版もアウトラインに絞ると中々いい感じ)
 
-![dayone](http://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
+![dayone](https://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
 
 後、最初の頃は[Qute for PC/Mac](http://www.inkcode.net/qute "Qute for PC/Mac")というのを使っていて、
 このアプリは幻の[Chromeless Browser](https://mozillalabs.com/en-US/chromeless/ "Chromeless Browser")を使ったHTML/CSS/JSのアプリです。
@@ -72,7 +72,7 @@ tags:
 OmniOutlinerはアウトライナーなので当たり前ですが、タブでインデントレベルの変更ができることや、
 **CONTENTS**に表示する部分をフィルターしたり、入力は結構快適です。
 
-![gif](http://gyazo.com/8b401092165dcb4dbb7681dcbcc56b02.gif)
+![gif](https://gyazo.com/8b401092165dcb4dbb7681dcbcc56b02.gif)
 
 #### 欠点
 

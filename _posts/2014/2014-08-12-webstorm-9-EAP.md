@@ -68,7 +68,7 @@ spy-js for node.jsについては以下の動画で詳しく解説されてい�
 Java(IntelliJ)の方ではすでに入っていましたが、新しい補完方法として**Postfix completion**がサポートされました。
 これは以下のように、式の末尾に`.return<TAB>`としてスニペット的な補完をする方式です。
 
-![gif](http://gyazo.com/095afae3db42318dfb0a1ea3f00d47d1.gif)
+![gif](https://gyazo.com/095afae3db42318dfb0a1ea3f00d47d1.gif)
 
 - [Postfix Code Completion in IntelliJ IDEA 13.1 EAP \| JetBrains IntelliJ IDEA Blog](http://blog.jetbrains.com/idea/2014/03/postfix-completion/ "Postfix Code Completion in IntelliJ IDEA 13.1 EAP | JetBrains IntelliJ IDEA Blog")
 - [おもしろプラグイン：Postfix Completionプラグイン - marsのメモ](http://d.hatena.ne.jp/masanobuimai/20131218/1387292674 "おもしろプラグイン：Postfix Completionプラグイン - marsのメモ")
