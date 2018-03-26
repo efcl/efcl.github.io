@@ -52,7 +52,7 @@ waitForElement("#js-element").then(function (element) {
 
 [Example of wait-for-element.js](https://github.com/azu/wait-for-element.js/tree/master/example "Example of wait-for-element.js") か以下にブラウザで動かせるサンプルがあるので試してみるとわかりやすいです。
 
-[![view on requirebin](http://requirebin.com/badge.png)](http://requirebin.com/?gist=ed965c96630535f6ed96)
+[![view on requirebin](https://requirebin.com/badge.png)](http://requirebin.com/?gist=ed965c96630535f6ed96)
 
 ### 依存
 

@@ -35,7 +35,7 @@ tags:
 
 そのため、2.x以下だとES6で書いたテストファイルから、既に変換済みのES5のコードを参照する必要があって直感的ではなかったと思います。
 
-[![diff](http://monosnap.com/image/rVZFSUmfrBZzfCQhaxnNhFbrPOl2Iy.png)](https://github.com/efcl/efcl.github.io/commit/a029988b21f0ab6713c97a2123edde96d5bf8e85)
+[![diff](https://monosnap.com/image/rVZFSUmfrBZzfCQhaxnNhFbrPOl2Iy.png)](https://github.com/efcl/efcl.github.io/commit/a029988b21f0ab6713c97a2123edde96d5bf8e85)
 
 [3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")では、テストファイル以外も自動的に変換するようなBreaking Changeを入れています。
 

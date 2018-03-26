@@ -29,7 +29,7 @@ tags:
 
 また、JetBrains IDEには**Show virtual space at file bottom**という名前で同じような機能があります。
 
-![Show virtual space at file bottom](http://monosnap.com/image/1SEJ8dEPBs3fKcC1O1v0n77K8Mz6OF.png)
+![Show virtual space at file bottom](https://monosnap.com/image/1SEJ8dEPBs3fKcC1O1v0n77K8Mz6OF.png)
 
 要は、入力行がエディタの一番下になると見にくくて不便だねというのを解消する機能です。
 

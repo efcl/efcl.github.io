@@ -24,7 +24,7 @@ tags:
 
 扱う[textlint](https://github.com/textlint/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
 
-[![textlint logo](http://textlint.github.io/media/logo/spaced/textlint-logo.png)](http://textlint.github.io/)
+[![textlint logo](https://textlint.github.io/media/logo/spaced/textlint-logo.png)](http://textlint.github.io/)
 
 一部ルール(主に英語ですが)のオンラインデモページはこちらにあります。
 

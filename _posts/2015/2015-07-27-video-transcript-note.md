@@ -25,7 +25,7 @@ Linuxも多分動くんだと思いますが、何か妙にバイナリが大き
 
 ## 機能
 
-![screenshot](http://monosnap.com/image/0B7VE8sHjR7ZojNUWDs0u5z8ZZCwRl.png)
+![screenshot](https://monosnap.com/image/0B7VE8sHjR7ZojNUWDs0u5z8ZZCwRl.png)
 
 機能としては、HTML5 Video + `<track>`による字幕 + CodeMirrorでのMarkdownメモと言った感じのアプリです。
 
@@ -43,7 +43,7 @@ Linuxも多分動くんだと思いますが、何か妙にバイナリが大き
 - [Netflixの英語字幕に日本語訳をつけるChrome拡張「Netflix Subtitles Extender for Japanese」をリリースしました](http://blog.wktk.co.jp/ja/entry/2015/07/07/netflix-subtitles-extender-for-japanese)
 - [azu/kantan-ej-dict](https://github.com/azu/kantan-ej-dict "azu/kantan-ej-dict") (npmモジュール)
 
-![quote](http://monosnap.com/image/FSFWLmC6vpn6UopBPYom8cSyiCDMtL.png)
+![quote](https://monosnap.com/image/FSFWLmC6vpn6UopBPYom8cSyiCDMtL.png)
 
 また"Quote"の機能としては、現在表示中の動画のスクリーンショット+再生時間+表示されてる字幕を引用してエディタに追加する形となってます。
 

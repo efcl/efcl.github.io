@@ -41,7 +41,7 @@ Babelを例に見ると、変更した内容を1行のテキストで表現す�
 
 余計なものを取り除く + 詳細へのリンクの有無でどれくらい見やすさが変わるかは[mocha](https://github.com/mochajs/mocha/blob/master/HISTORY.md "mocha/HISTORY.md at master · mochajs/mocha")の改善例を見てみると実感できると思います。
 
-![mocha](http://monosnap.com/image/zuE5fEpsDB2fzA8P1dsPQu4HZxfdtZ.png)
+![mocha](https://monosnap.com/image/zuE5fEpsDB2fzA8P1dsPQu4HZxfdtZ.png)
 
 - [HISTORY: improve 2.2.5 changelog by rstacruz · Pull Request #1739 · mochajs/mocha](https://github.com/mochajs/mocha/pull/1739/files?short_path=88dc747 "HISTORY: improve 2.2.5 changelog by rstacruz · Pull Request #1739 · mochajs/mocha")
 

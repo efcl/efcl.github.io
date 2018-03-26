@@ -245,7 +245,7 @@ tabLinks.click(function() {
 
 第二章はjQueryで書かれたCarouselデザインのリファクタリング
 
-![image](http://monosnap.com/image/YtmnAR4sEZDvL4nVDDKpjeHXAUVnWY.png)
+![image](https://monosnap.com/image/YtmnAR4sEZDvL4nVDDKpjeHXAUVnWY.png)
 
 (こういうデザインのやつの話)
 

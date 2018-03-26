@@ -122,7 +122,7 @@ describe("app-test", function () {
 
 [![site](http://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
 
-![screenshot-error](http://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
+![screenshot-error](https://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
 
 
 1: インストール `devDependencies`
@@ -211,7 +211,7 @@ npm test
 mocha --require intelli-espower-loader test/
 ```
 
-![Success tests](http://monosnap.com/image/hwVhdEMWlrgafoUNOq8hUKOePaFRNH.png)
+![Success tests](https://monosnap.com/image/hwVhdEMWlrgafoUNOq8hUKOePaFRNH.png)
 
 ### chromeでテストする
 

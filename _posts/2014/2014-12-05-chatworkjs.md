@@ -103,7 +103,7 @@ DRM?っぽいものとして元画像をパズルみたいに組み替えた画�
 
 [東京Node学園祭2014 アウトラインメモ | Web Scratch](https://efcl.info/2014/11/15/nodefest-2014/ "東京Node学園祭2014 アウトラインメモ | Web Scratch")でも話を聞いていた企業のJavaScriptについての考えを聞きました。
 
-[![テーマ](http://monosnap.com/image/Lrk1yFzRaaiIBIqdCMoapmvQkfiwb3.png)](https://azu.github.io/slide/nodefest2014/lunch.pdf)
+[![テーマ](https://monosnap.com/image/Lrk1yFzRaaiIBIqdCMoapmvQkfiwb3.png)](https://azu.github.io/slide/nodefest2014/lunch.pdf)
 
 サーバサイドの人により良いJavaScriptを知ってもらうのか、そもそもサーバサイドの人がiOSアプリを本格的に作る人が少ないように、JavaScriptもアプリのような難しさがあるんじゃないかという話等をしました。
 

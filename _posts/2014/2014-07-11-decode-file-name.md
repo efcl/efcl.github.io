@@ -37,6 +37,6 @@ done
 
 これで、記事ファイルを一覧した時にパッと見て分かりやすくなった気がします。
 
-![screenshot](http://monosnap.com/image/MxAx28cr32VyJnnf1FjBYD6awPAReE.png)
+![screenshot](https://monosnap.com/image/MxAx28cr32VyJnnf1FjBYD6awPAReE.png)
 
 Jekyllのブログエディタみたいのでいい感じのものはないのかなー(今はWebStormを使って書いてる)

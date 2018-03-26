@@ -75,15 +75,15 @@ JavaScript ASTを扱うライブラリ同士(結合や圧縮等)を繋げて使�
 
 現状のGruntやGulp、Browserifyではこの問題がまだ解決出来ていません。
 
-![fit](http://monosnap.com/image/MQJmxXkCRlIvOzq5x0bzyoytP5zZOl.png)
+![fit](https://monosnap.com/image/MQJmxXkCRlIvOzq5x0bzyoytP5zZOl.png)
 
 Gruntではファイル読み込み->パース->変換->コード生成->ファイルに書き出しというサイクルが取られます。
 
-![fit](http://monosnap.com/image/kQhPiCykxgEsNZnr4CAYhDUjpw60YO.png)
+![fit](https://monosnap.com/image/kQhPiCykxgEsNZnr4CAYhDUjpw60YO.png)
 
 GulpやBroserifyでは、Gruntからファイルの読み込みと書き出しを最初と最後の一度だけにすることで効率化していますが、パースとコード生成は毎回それぞれのプラグイン間で行われています。
 
-![fit](http://monosnap.com/image/9iwjh67u7SxayeMmmqTePdohvwGC0k.png)
+![fit](https://monosnap.com/image/9iwjh67u7SxayeMmmqTePdohvwGC0k.png)
 
 それを解決しようとして作られているのが[aster - AST-based code builder](http://rreverser.com/aster-ast-based-code-builder/ "aster - AST-based code builder")です。
 

@@ -14,7 +14,7 @@ tags:
 
 [github-issue-teev](https://github.com/azu/github-issue-teev "github-issue-teev")という自分に関連するIssueを一覧するアプリをNW.jsで書きました。
 
-![screenshot](http://monosnap.com/image/2JTJWEqoZAFuSqqT57edf7xSEtqpwi.png)
+![screenshot](https://monosnap.com/image/2JTJWEqoZAFuSqqT57edf7xSEtqpwi.png)
 
 ## 機能
 
