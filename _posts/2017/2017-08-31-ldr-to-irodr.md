@@ -18,7 +18,7 @@ tags:
 
 次の記事でも書いていましたが、RSSリーダのバックエンドを自前で管理するのはコスト的に難しそうでした。そのため、バックエンドとして[Inoreader](http://www.inoreader.com/developers/)や[Feedly](https://developer.feedly.com/v3/auth/)のAPI使ったRSSリーダのウェブクライアントを書くことにしました。
 
-- [LDRのフィードをレート情報付きでエクスポートする | Web Scratch](http://efcl.info/2017/07/29/ldr-rate-export/ "LDRのフィードをレート情報付きでエクスポートする | Web Scratch")
+- [LDRのフィードをレート情報付きでエクスポートする | Web Scratch](https://efcl.info/2017/07/29/ldr-rate-export/ "LDRのフィードをレート情報付きでエクスポートする | Web Scratch")
 
 ## irodr
 
@@ -148,6 +148,6 @@ DDD的な感じで作っていて、ドメインモデルはInoreaderという�
 LDRは2017-08-31でサービス終了なので、次の記事で紹介してるフィード一覧の詳細データが入った `ldr.json` と呼んでいるものをまだ取得してない人は一応バックアップしておくといいと思います。
 (opmlと違ってレートなど細かいデータも含まれている）
 
-- [LDRのフィードをレート情報付きでエクスポートする | Web Scratch](http://efcl.info/2017/07/29/ldr-rate-export/ "LDRのフィードをレート情報付きでエクスポートする | Web Scratch")
+- [LDRのフィードをレート情報付きでエクスポートする | Web Scratch](https://efcl.info/2017/07/29/ldr-rate-export/ "LDRのフィードをレート情報付きでエクスポートする | Web Scratch")
 
 LDRは長いこと使いましたが、livedoor Readerを作った[方](http://youkoseki.tumblr.com/post/22588852397/mala)々、LDRを[AWS](https://www.youtube.com/watch?v=596ymsCCxbw)に[移して](http://media.amazonwebservices.com/jp/summit2015/docs/ME-02-Tokyo-Summit-2015.pdf)運用されたLive Dwango Readerの方々ありがとうございました。

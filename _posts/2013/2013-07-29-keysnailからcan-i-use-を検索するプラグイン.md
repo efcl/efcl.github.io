@@ -16,7 +16,7 @@ tags:
 ---
 タイトルどおりですが、[Can I use&#8230;][1] をKeySnailのプロンプトから検索するプラグインを書きました
 
-<img src="http://efcl.info/wp-content/uploads/2013/07/CanIuse.png" alt="NewImage" title="CanIuse.png" border="0" width="600" height="123" />
+<img src="https://efcl.info/wp-content/uploads/2013/07/CanIuse.png" alt="NewImage" title="CanIuse.png" border="0" width="600" height="123" />
 
 *   [KeySnail-Plugins/caniuse-keysnail at master · azu/KeySnail-Plugins][2]
 *   <https://raw.github.com/azu/KeySnail-Plugins/master/caniuse-keysnail/caniuse-keysnail.ks.js> からインストールできると思います
@@ -57,7 +57,7 @@ AddonSDKに依存した感じのモジュール(又、それを利用するモ�
  [3]: https://github.com/Fyrd/caniuse "Fyrd/caniuse"
  [4]: http://caniuse.com/feed.php?id=136 "Data contributions via GitHub"
  [5]: https://github.com/Fyrd/caniuse "data.json"
- [6]: http://efcl.info/2013/0721/res3346/ "Addon-SDKでFirefoxのアドオンを書くための開発環境を作る | Web scratch"
+ [6]: https://efcl.info/2013/0721/res3346/ "Addon-SDKでFirefoxのアドオンを書くための開発環境を作る | Web scratch"
  [7]: https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/request.html "request"
  [8]: https://github.com/azu/KeySnail-Plugins/commit/866ccaf177113ca57f8c363163e3d4d4ab1e3bb3 "XHR"
  [9]: https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html "Add-on SDK"

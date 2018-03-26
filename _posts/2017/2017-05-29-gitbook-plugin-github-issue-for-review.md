@@ -78,7 +78,7 @@ GitHubのPRレビューだとMarkdownのままなので、GitBook上で見たと
 [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")のときも同じような仕組みを入れてました。
 こういう仕組みがあるとスマートフォンからIssueが簡単に切れるので、Issueだけ先に切っておいて後から直すということがしやすいです。
 
-- [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](http://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")
+- [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](https://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")
 
 
 [![gif](https://media.giphy.com/media/3o7btYpgJvLlhkJMfC/giphy.gif)](http://www.giphy.com/gifs/3o7btYpgJvLlhkJMfC)

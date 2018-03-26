@@ -236,12 +236,12 @@ ThoughtWorksの人達が書いた本なので、アーキテクチャに対す�
 - [Delft Students on Software Architecture: DESOSA 2017 · GitBook](https://www.gitbook.com/book/delftswa/desosa-2017/details "Delft Students on Software Architecture: DESOSA 2017 · GitBook")
 - [.NETのエンタープライズアプリケーションアーキテクチャ](http://ec.nikkeibp.co.jp/item/books/P98480.html ".NETのエンタープライズアプリケーションアーキテクチャ")
 - [Patterns, Principles, and Practices of Domain-Driven Design: Scott Millett, Nick Tune: 0787721845461: Amazon.com: Books](https://www.amazon.com/dp/1118714709/ "Patterns, Principles, and Practices of Domain-Driven Design: Scott Millett, Nick Tune: 0787721845461: Amazon.com: Books")
-	- [アーキテクチャをめぐるたび | Web Scratch](http://efcl.info/2016/09/30/architecture-refs/ "アーキテクチャをめぐるたび | Web Scratch")
+	- [アーキテクチャをめぐるたび | Web Scratch](https://efcl.info/2016/09/30/architecture-refs/ "アーキテクチャをめぐるたび | Web Scratch")
 
 どちらかというと次のものに近い方向だけど、もう少し技術よりなので短い時間で読みやすい。
 
 - [ソフトウェアシステムアーキテクチャ構築の原理](https://www.amazon.co.jp/dp/B00ZF44J0I/ "ソフトウェアシステムアーキテクチャ構築の原理")
 - [Living Documentation by design, with Domain-Driven Design](https://leanpub.com/livingdocumentation "Living Documentation by design, with Domain-Driven Design")
-   - [Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](http://efcl.info/2017/05/12/Living-Documentation-DDD/ "Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch")
+   - [Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](https://efcl.info/2017/05/12/Living-Documentation-DDD/ "Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch")
 
 感想の量からもわかるように[Building Evolutionary Architectures](https://www.amazon.com/dp/1491986360/ "Building Evolutionary Architectures: Support Constant Change: Neal Ford, Rebecca Parsons, Patrick Kua: 9781491986363: Amazon.com: Books")は結構面白かった。

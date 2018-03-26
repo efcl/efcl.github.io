@@ -126,4 +126,4 @@ window.__proto__ = Proxy.create({
 
 セキュリティ寿司は久々な気がする。
 
-- [テストとセキュリティの葉桜JSに参加してきた | Web Scratch](http://efcl.info/2014/0415/res3844/ "テストとセキュリティの葉桜JSに参加してきた | Web Scratch")
+- [テストとセキュリティの葉桜JSに参加してきた | Web Scratch](https://efcl.info/2014/0415/res3844/ "テストとセキュリティの葉桜JSに参加してきた | Web Scratch")

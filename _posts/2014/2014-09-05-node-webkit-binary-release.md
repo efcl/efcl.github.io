@@ -19,7 +19,7 @@ Travis CIには[Deployment](http://docs.travis-ci.com/user/deployment/ "Deployme
 その一つとして、GitHub Releasesに対してファイルをデプロイする事が出来ます。
 
 - [Travis CI: GitHub Releases Uploading](http://docs.travis-ci.com/user/deployment/releases/ "Travis CI: GitHub Releases Uploading")
-- [Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](http://efcl.info/2014/07/20/git-tag-to-release-github/ "Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")
+- [Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](https://efcl.info/2014/07/20/git-tag-to-release-github/ "Git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")
 	- GitHub Releasesの使い方に関して
 
 zipファイルならなんでも登録でき、登録するファイルサイズはリポジトリにpushするより大きくても問題ないので、バイナリサイズがでかいnode-webkitアプリには向いていると言えます。

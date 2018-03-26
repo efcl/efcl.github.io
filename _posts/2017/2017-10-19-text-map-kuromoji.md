@@ -39,9 +39,9 @@ tags:
 
 入力されたテキストと特定の位置に関する情報をビジュアライズするパターンについてはSourceMapを調べていたときに[source-map-visualization](http://sokra.github.io/source-map-visualization/ "source-map-visualization")というサイトがあるのを思い出しました。
 
-[![sourcemap](http://efcl.info/wp-content/uploads/2017/10/19-1508374636.png)](http://sokra.github.io/source-map-visualization/)
+[![sourcemap](https://efcl.info/wp-content/uploads/2017/10/19-1508374636.png)](http://sokra.github.io/source-map-visualization/)
 
-- [Source Mapを扱う関連ライブラリのまとめ | Web Scratch](http://efcl.info/2014/0622/res3933/ "Source Mapを扱う関連ライブラリのまとめ | Web Scratch")
+- [Source Mapを扱う関連ライブラリのまとめ | Web Scratch](https://efcl.info/2014/0622/res3933/ "Source Mapを扱う関連ライブラリのまとめ | Web Scratch")
 
 これの形態素解析版があると良さそうと思いました。
 
@@ -51,9 +51,9 @@ tags:
 ここで、既にJavaScriptとそのパース結果からECMAScriptのバージョンをToken毎に割り出すツールを作ってたのを思い出しました。
 
 
-[![image](http://efcl.info/wp-content/uploads/2016/08/04-1470309082.png)](https://azu.github.io/ecmascript-version-detector/)
+[![image](https://efcl.info/wp-content/uploads/2016/08/04-1470309082.png)](https://azu.github.io/ecmascript-version-detector/)
 
-- [そのコードが標準化されてるJavaScriptなのかを判定する方法 | Web Scratch](http://efcl.info/2016/08/04/ecmascript-version-detector/ "そのコードが標準化されてるJavaScriptなのかを判定する方法 | Web Scratch")
+- [そのコードが標準化されてるJavaScriptなのかを判定する方法 | Web Scratch](https://efcl.info/2016/08/04/ecmascript-version-detector/ "そのコードが標準化されてるJavaScriptなのかを判定する方法 | Web Scratch")
 
 これをforkして[kuromoji.js](https://github.com/takuyaa/kuromoji.js#api "kuromoji.js")で形態素解析してその結果をビジュアライズするものを作りました。
 

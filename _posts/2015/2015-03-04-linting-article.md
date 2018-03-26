@@ -108,7 +108,7 @@ $ npm run lint:spell -- path/to/file.md
 
 なので、[jser.github.io](https://github.com/jser/jser.github.io "jser.github.io")の方はLintした結果をレビューコメントとして書き込むようになってます。
 
-![レビューコメントのイメージ](http://efcl.info/wp-content/uploads/2015/03/05-1425550592.png)
+![レビューコメントのイメージ](https://efcl.info/wp-content/uploads/2015/03/05-1425550592.png)
 
 pull request時にしかこのLintは動かないので、最近記事を書くときはWIPでpull requestしながら記事を書いています。
 

@@ -14,13 +14,13 @@ tags:
 
 ## [textlint](https://github.com/azu/textlint "textlint")
 
-昨日、[textlint 4.0をリリース](http://efcl.info/2015/10/18/textlint-4.0/ "校正ツール textlint 4.0リリース | Web Scratch")しましたが、textlintはMarkdownなどの文章に対してルールベースでチェックできるツールです。
+昨日、[textlint 4.0をリリース](https://efcl.info/2015/10/18/textlint-4.0/ "校正ツール textlint 4.0リリース | Web Scratch")しましたが、textlintはMarkdownなどの文章に対してルールベースでチェックできるツールです。
 
 詳しくは以下の記事を参照してください。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/)
-- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/)
-- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](http://efcl.info/2015/09/28/easy-to-create-ebook/)
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/)
+- [textlint + prhで表記ゆれを検出する | Web Scratch](https://efcl.info/2015/09/14/textlint-rule-prh/)
+- [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](https://efcl.info/2015/09/28/easy-to-create-ebook/)
 
 ## [textlint-rule-preset-jtf-style](https://github.com/azu/textlint-rule-preset-jtf-style "textlint-rule-preset-jtf-style")
 

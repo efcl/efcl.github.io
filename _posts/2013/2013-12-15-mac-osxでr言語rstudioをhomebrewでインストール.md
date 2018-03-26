@@ -44,7 +44,7 @@ brew cask install rstudio
 
 *   [R のインストール &#8211; RjpWiki][7]
 
-<img src="http://efcl.info/wp-content/uploads/2013/12/RStudio-2013-12-15-16-30-36.jpg" alt="RStudio 2013 12 15 16 30 36" title="RStudio 2013-12-15 16-30-36.jpg" border="0" width="600" height="462" />
+<img src="https://efcl.info/wp-content/uploads/2013/12/RStudio-2013-12-15-16-30-36.jpg" alt="RStudio 2013 12 15 16 30 36" title="RStudio 2013-12-15 16-30-36.jpg" border="0" width="600" height="462" />
 
 ### Alfred
 

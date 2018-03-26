@@ -14,7 +14,7 @@ tags:
 
 ---
 
-[ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")で紹介してた[azu/espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")をアップデートして[3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")をリリースしました。
+[ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")で紹介してた[azu/espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")をアップデートして[3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")をリリースしました。
 
 [espower-babel](https://github.com/azu/espower-babel "azu/espower-babel")は[Babel](http://babeljs.io/ "Babel")の変換 + [power-assert](https://github.com/twada/power-assert "power-assert")の変換を一緒にやってくれるライブラリです。
 
@@ -22,12 +22,12 @@ tags:
 
 詳しくは以下の記事を見て下さい
 
-- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 
 :warning: 追記(2016-04-15): espower-babelは非推奨で、`.babelrc`で直接power-assertを利用するのを推奨しています。
 詳しくは次の記事を見てください・
 
-- [power-assert + babel as a development tool | Web Scratch](http://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
+- [power-assert + babel as a development tool | Web Scratch](https://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
 
 ## 3.0.0
 
@@ -35,13 +35,13 @@ tags:
 
 そのため、2.x以下だとES6で書いたテストファイルから、既に変換済みのES5のコードを参照する必要があって直感的ではなかったと思います。
 
-[![diff](http://monosnap.com/image/rVZFSUmfrBZzfCQhaxnNhFbrPOl2Iy.png)](https://github.com/efcl/efcl.github.io/commit/a029988b21f0ab6713c97a2123edde96d5bf8e85)
+[![diff](https://monosnap.com/image/rVZFSUmfrBZzfCQhaxnNhFbrPOl2Iy.png)](https://github.com/efcl/efcl.github.io/commit/a029988b21f0ab6713c97a2123edde96d5bf8e85)
 
 [3.0.0](https://github.com/azu/espower-babel/releases/tag/v3.0.0 "3.0.0")では、テストファイル以外も自動的に変換するようなBreaking Changeを入れています。
 
 記事の方もこの変更に追従させてアップデートしているので、細かく変更点を知りたい人は以下のDiffを見てみるといいかと思います。
 
-- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+- [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 - [Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/pull/84/files "Update espower-babel by azu · Pull Request #84 · efcl/efcl.github.io")
 
 

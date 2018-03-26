@@ -26,14 +26,14 @@ tags:
 
 インストールした状態でニコニコ動画の動画再生ページにいくと
 
-<img src="http://efcl.info/wp-content/uploads/a.png" alt="" width="374" height="100" />
+<img src="https://efcl.info/wp-content/uploads/a.png" alt="" width="374" height="100" />
 
 マイリストの近くに**はてブ**というリンクがあるのでそれをクリックすると、  
 普段のはてブ投稿画面にタグなどが記載された状態で表示されます。
 
-<img src="http://efcl.info/wp-content/uploads/hatebu1a.png" alt="" width="362" height="169" />
+<img src="https://efcl.info/wp-content/uploads/hatebu1a.png" alt="" width="362" height="169" />
 
 最初はブックマークレットにしようと思いましたが、よく分からなかったのでGreasemonkeyにしてみました。  
 まだ、微妙なところ(タグにカテゴリとか投稿者コメントがあるのが)があるのでそこを少し調整する予定。
 
- [1]: http://efcl.info/wp-content/uploads/2008/06/js/nicohatebu_tagpost.user.js
+ [1]: https://efcl.info/wp-content/uploads/2008/06/js/nicohatebu_tagpost.user.js

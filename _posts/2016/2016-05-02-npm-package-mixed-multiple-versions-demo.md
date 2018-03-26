@@ -35,8 +35,8 @@ npm@2 からは[Local Paths](https://docs.npmjs.com/files/package.json#local-pat
 
 簡単にいうと、相対パスで指定したディレクトリをモジュールとして`dependencies`に追加できる機能です。
 
-- [npm 2.0.0でローカルパッケージを使ってrequire('../../../')を回避する | Web Scratch](http://efcl.info/2014/10/04/npm2-local-module/ "npm 2.0.0でローカルパッケージを使ってrequire(&#39;../../../&#39;)を回避する | Web Scratch")
-- [npmパッケージをExampleテストしよう | Web Scratch](http://efcl.info/2015/07/29/example-test-on-npm/ "npmパッケージをExampleテストしよう | Web Scratch")
+- [npm 2.0.0でローカルパッケージを使ってrequire('../../../')を回避する | Web Scratch](https://efcl.info/2014/10/04/npm2-local-module/ "npm 2.0.0でローカルパッケージを使ってrequire(&#39;../../../&#39;)を回避する | Web Scratch")
+- [npmパッケージをExampleテストしよう | Web Scratch](https://efcl.info/2015/07/29/example-test-on-npm/ "npmパッケージをExampleテストしよう | Web Scratch")
 
 これを使って、`lodash@3`と`lodash@4`のローカルパッケージを作ります。
 

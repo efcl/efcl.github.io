@@ -19,18 +19,18 @@ Firefox3も落ち着いてきたので、移行する時に忘れないうちに
 
 <!--more-->
 
-*   http://efcl.info/wp-content/uploads/nicovideoautoplay.user.js
+*   https://efcl.info/wp-content/uploads/nicovideoautoplay.user.js
 
 [NicoVideo Auto Play: ニコニコ動画で次の動画を自動再生するGreasemonkeyスクリプト | endflow.net blog][1]
 
-*   http://efcl.info/wp-content/uploads/komeshoku.user.js
+*   https://efcl.info/wp-content/uploads/komeshoku.user.js
 
 [KomeShoku &#8211; ニコニコ動画コメント支援＆ﾋﾞｼﾞｭｱﾗｲｽﾞGreasemonkey &#8211; wktkラボ][2]
 
 上の二つはnico.を付け加えただけ。  
 今度からWrapperを見分ける関数作って場合分けする予定。
 
-*   http://efcl.info/wp-content/uploads/nicovideologwithtwitter_.user.js
+*   https://efcl.info/wp-content/uploads/nicovideologwithtwitter_.user.js
 
 [ニコニコ動画の最近見た動画を超パワーアップさせるGreasemonkeyComments][3]
 

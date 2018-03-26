@@ -137,7 +137,7 @@ ECMAScript/TC39の話をした。
 
 ECMAScriptの仕様策定については以下にまとめておきました。
 
-- [ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](http://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")
+- [ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](https://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")
 
 
 ----

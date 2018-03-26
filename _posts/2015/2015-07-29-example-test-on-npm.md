@@ -26,7 +26,7 @@ Go言語のExampleと近いような気がします。
 
 以下のスライドでも簡単に解説してますが、この記事はExampleテストのメリットやNodeモジュールでのやり方について書いていきます。
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html"><img src="http://kwout.com/cutout/c/eg/rb/qs2_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/test-everything.html" title="ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト" width="600" height="294" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/assistant-bucho/test-everything.html"><img src="http://kwout.com/cutout/c/eg/rb/qs2_bor.jpg" alt="http://azu.github.io/slide/assistant-bucho/test-everything.html" title="ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト" width="600" height="294" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a></p></div>
 
 
 ## Exampleテストの利点
@@ -109,7 +109,7 @@ runner.runBrowser("http://example.com").then(function () {
 
 `package.json`の"main"や"files"、npmignoreなどが色々合わさってnpm publishされるため、publishしたものにファイルが入ってなかったりそういうミスは結構多いです。
 
-[npm publishのパターン](http://efcl.info/2015/04/09/npm-publish-pattern/ "npm publishのパターン")的なものを使ったり[dependency-check](https://www.npmjs.com/package/dependency-check "dependency-check")などでチェックしたりすることである程度カバーできます。
+[npm publishのパターン](https://efcl.info/2015/04/09/npm-publish-pattern/ "npm publishのパターン")的なものを使ったり[dependency-check](https://www.npmjs.com/package/dependency-check "dependency-check")などでチェックしたりすることである程度カバーできます。
 
 Exampleテストをするときにローカルモジュールとしてインストールして試せば、実際にその時点のpackage.jsonが使われるのでpackage.jsonのミスに気付きやすくなります。
 

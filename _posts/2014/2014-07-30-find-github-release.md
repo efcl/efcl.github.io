@@ -18,7 +18,7 @@ tags:
 
 前回、GitHubのRelease機能ついて書きましたが、これはリリースする側の自動化等についてでした。
 
-* [git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](http://efcl.info/2014/07/20/git-tag-to-release-github/ "git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")
+* [git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch](https://efcl.info/2014/07/20/git-tag-to-release-github/ "git tagとGitHub ReleasesとCHANGELOG.mdの自動化について | Web Scratch")
 
 今度は、いわゆるライブラリユーザーだったりソフトウェアの利用者側から、
 GitHubでリリースされるものをどう追っていくかについて書いていきたいと思います。
@@ -47,7 +47,7 @@ Starは単純なブックマークですが、Watchは登録したリポジト�
 (代わりにメールの通知はフィルタして無効化しています)
 
 * [azu/github-reader](https://github.com/azu/github-reader "azu/github-reader")
-* [Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web Scratch](http://efcl.info/2014/0430/res3872/ "Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web Scratch")
+* [Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web Scratch](https://efcl.info/2014/0430/res3872/ "Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web Scratch")
 
 Watchしたリポジトリのイベントは大量に流れてくるので、基本的に殆ど中身までは見ていません。
 
@@ -174,7 +174,7 @@ GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取
 
 [われわれは、いかにして変更点を追うか](http://azu.github.io/slide/cto/changelog.html "われわれは、いかにして変更点を追うか")というスライドで続きを書きました。
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html"><img src="http://kwout.com/cutout/c/v2/sz/8pm_bor.jpg" alt="http://azu.github.io/slide/cto/changelog.html" title="われわれは、いかにして変更点を追うか" width="600" height="328" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html">われわれは、いかにして変更点を追うか</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/cto/changelog.html"><img src="http://kwout.com/cutout/c/v2/sz/8pm_bor.jpg" alt="http://azu.github.io/slide/cto/changelog.html" title="われわれは、いかにして変更点を追うか" width="600" height="328" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html">われわれは、いかにして変更点を追うか</a></p></div>
 
 
 ---

@@ -61,7 +61,7 @@ JavaScriptに型注釈を加えることで15%程度バグを減らすことが�
 
 JavaScriptからTypeScriptへの移行方法は次の記事で書いてるような手法を取っています。
 
-- [JavaScriptのライブラリを徐々にTypeScriptに移行する | Web Scratch](http://efcl.info/2017/07/17/JavaScript-to-TypeScript/ "JavaScriptのライブラリを徐々にTypeScriptに移行する | Web Scratch")
+- [JavaScriptのライブラリを徐々にTypeScriptに移行する | Web Scratch](https://efcl.info/2017/07/17/JavaScript-to-TypeScript/ "JavaScriptのライブラリを徐々にTypeScriptに移行する | Web Scratch")
 
 まだ単に型を付けただけであったり、テストはTypeScriptになってなかったりします。
 本体の`textlint`の方もTypeScript化したいので興味がある人は次のIssueを参照してください。
@@ -74,7 +74,7 @@ JavaScriptからTypeScriptへの移行方法は次の記事で書いてるよう
 
 textlintはルールを気軽に作れるようにする土台を作ることが目的です。
 
-- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](http://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
+- [JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch](https://efcl.info/2014/12/30/textlint/ "JavaScriptでルールを書けるテキスト/Markdownの校正ツール textlint を作った | Web Scratch")
 
 今回色々リファクタリングして、[@textlint/kernel][]の分離でLint以外への発展も少し見えてきています。Lintは入力に対して解答(正否)を出さないと行けないですが、[textstat](https://github.com/azu/textstat "textstat")のように統計データを出したり、[Glosser](http://www.academia.edu/154001/Glosser_Enhanced_Feedback_for_Student_Writing_Tasks "Glosser")のようなフィードバックエンジンを作ってみたいです。
 
@@ -118,7 +118,7 @@ textlintではどういうところが足りてない、直せるのかなどに
 そのため最初のコントビューションとして手が出しやすいかもしれません。
 
 また、textlintはあまりパフォーマンスの最適化がまだ行われていません。[markdown-parser](https://github.com/textlint/textlint/blob/master/packages/markdown-to-ast/src/markdown-parser.js "markdown-parser")など明らかに無駄な処理をしている部分があります。
-一方、500以上のユニットテストや典型的なユースケースの[Exampleテスト](http://efcl.info/2015/07/29/example-test-on-npm/ "Exampleテスト")、実際の文章を使った[Integration test](https://github.com/textlint/textlint/tree/master/test/integration-test "Integration test")などが書かれています。
+一方、500以上のユニットテストや典型的なユースケースの[Exampleテスト](https://efcl.info/2015/07/29/example-test-on-npm/ "Exampleテスト")、実際の文章を使った[Integration test](https://github.com/textlint/textlint/tree/master/test/integration-test "Integration test")などが書かれています。
 そのため、壊れるとテストが落ちるはずなのでパフォーマンスの改善やリファクタリングなどはある程度し易いかもしれません。
 
 TypeScriptで書きたいという人は、textlint本体もTypeScript化したり、型定義を整理したりすると良いかもしれません。
@@ -172,13 +172,13 @@ textlintのルールを置く場所には特に制限はありません。また
 
 textlintのElectronアプリがありますがそこまで作り込まれてません。
 
-- [textlintのElectronアプリを作った | Web Scratch](http://efcl.info/2017/05/12/textlint-app/)
+- [textlintのElectronアプリを作った | Web Scratch](https://efcl.info/2017/05/12/textlint-app/)
 - [textlint/textlint-app: textlint standalone application top on Electron.](https://github.com/textlint/textlint-app)
 
 textlintのルールをコマンド一発で作り始めることができるツールがあります。
 コーパスを使ってルールをチェックしやすくするなどもっと色々な工夫をして、ルールづくりを簡単にできると嬉しいです。
 
-- [textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch](http://efcl.info/2016/12/14/create-textlint-rule/)
+- [textlintのルールを簡単に作り始めることができるツールを作りました | Web Scratch](https://efcl.info/2016/12/14/create-textlint-rule/)
 - [textlint/create-textlint-rule: Create textlint rule project with no configuration.](https://github.com/textlint/create-textlint-rule)
 - [textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書のコーパス](https://github.com/textlint-ja/technological-book-corpus-ja "textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書のコーパス")
 

@@ -120,14 +120,14 @@ Babelプラグインなので、Babelと共に利用するために`.babelrc`を
 
 これらどの関数宣言に対してコード変換をするかは[babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")側に実装しています。
 
-- [JavaScript ASTを始める最初の一歩 | Web Scratch](http://efcl.info/2016/03/06/ast-first-step/ "JavaScript ASTを始める最初の一歩 | Web Scratch")
+- [JavaScript ASTを始める最初の一歩 | Web Scratch](https://efcl.info/2016/03/06/ast-first-step/ "JavaScript ASTを始める最初の一歩 | Web Scratch")
 
 で書いていますが、BabelのASTはあんまり互換性がないので、[babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")の部分は複数実装が存在してもおかしくない領域です。
 
 以前、似たようなツールで`a; // => "string"` のようなコメントをassertに変換するライブラリも書いていましたが、この場合も[コメントをassertに変換する部分](https://github.com/azu/comment-to-assert)と[変換したassertをコードに追加する部分](https://github.com/azu/power-doctest)は分けて実装していました。
 
 - [azu/comment-to-assert: convert single line comment to assert.](https://github.com/azu/comment-to-assert)
-- [power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch](http://efcl.info/2015/08/10/power-doctest1.0/)
+- [power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch](https://efcl.info/2015/08/10/power-doctest1.0/)
 
 話を戻して、JSDoc自体の型定義が結構曖昧(nullableとか定義みたいな部分が曖昧)なので、[jsdoc-to-assert](https://github.com/azu/jsdoc-to-assert "jsdoc-to-assert")も実装見ると分かるようにかなり簡略化しています。
 

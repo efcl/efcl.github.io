@@ -41,7 +41,7 @@ watchオプション(&#8211;watch or -w)はディレクトリにも使えるよ�
 
 &nbsp;<figure id="attachment_2495" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-2495" title="2011-04-09-ss2" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-09-ss2-300x69.png" alt="" width="300" height="69" />][7]<figcaption class="wp-caption-text">watchオプションを入れた様子</figcaption></figure> 
+[<img class="size-medium wp-image-2495" title="2011-04-09-ss2" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-09-ss2-300x69.png" alt="" width="300" height="69" />][7]<figcaption class="wp-caption-text">watchオプションを入れた様子</figcaption></figure> 
 &nbsp;
 
 コンパイルの実行速度ですが20Kbほどあるunderscore.coffeeが1-2秒ぐらいでコンパイルできるので、まあまあ使ってられるものだと思います。WindowsでCoffeeScriptをコマンドラインでコンパイルできて、ファイルの変更監視ができるものが見つからなかったので[kennyjのブログ(仮): CoffeeScriptをWindowsで使う][8]を見て何となく書きました。  
@@ -52,11 +52,11 @@ watchオプション(&#8211;watch or -w)はディレクトリにも使えるよ�
 
  [1]: http://jashkenas.github.com/coffee-script/
  [2]: http://jashkenas.github.com/coffee-script/#scripts
- [3]: http://efcl.info/2010/0816/res1888/ "NILScriptの使い方と書き方"
+ [3]: https://efcl.info/2010/0816/res1888/ "NILScriptの使い方と書き方"
  [4]: https://github.com/azu/NILScript/tree/master/utilityTools/CoffeeScript
  [5]: http://lukewarm.s151.xrea.com/nilscript.html
  [6]: https://github.com/azu/NILScript/tree/master/utilityTools/%3Chttps://github.com/jashkenas/coffee-script/blob/master/extras/coffee-script.js%3E
- [7]: http://efcl.info/wp-content/uploads/2011/04/2011-04-09-ss2.png
+ [7]: https://efcl.info/wp-content/uploads/2011/04/2011-04-09-ss2.png
  [8]: http://kennyj-jp.blogspot.com/2011/01/coffeescriptwindows.html
  [9]: http://sites.google.com/site/sappariwiki/coffeescript/coffeescript-install
  [10]: ../adiary/0112

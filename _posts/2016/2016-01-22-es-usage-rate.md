@@ -13,7 +13,7 @@ tags:
 ---
 
 
-[今年のOSS活動振り返り @ 2015 | Web Scratch](http://efcl.info/2015/12/31/oss-in-2015/ "今年のOSS活動振り返り @ 2015 | Web Scratch")で
+[今年のOSS活動振り返り @ 2015 | Web Scratch](https://efcl.info/2015/12/31/oss-in-2015/ "今年のOSS活動振り返り @ 2015 | Web Scratch")で
 
 > - JavaScript/ECMAScriptを改めてどう学べばいいのか考える
   - [azu/how-to-learn-es6](https://github.com/azu/how-to-learn-es6 "azu/how-to-learn-es6")とか[#thinking_in_es6](https://twitter.com/hashtag/thinking_in_es6?src=hash "#thinking_in_es6")で考えてるやつ
@@ -594,7 +594,7 @@ json2csv -i results.json -o results.csv
 
 Numbersで読み込んで積み重ね棒グラフにしてみました。
 
-[![graph](http://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)](http://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)
+[![graph](https://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)](https://efcl.info/wp-content/uploads/2016/01/22-1453435236.png)
 
 先ほども書いたように 数が多い ≠ 使われる頻度が高い なので、
 大して意味のないグラフです。(どういうグラフ使うのがいいんだろ?)

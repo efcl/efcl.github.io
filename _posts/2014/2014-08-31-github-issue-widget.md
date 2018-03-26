@@ -86,4 +86,4 @@ GitHub APIを[JSON-P Callbacks](https://developer.github.com/v3/#json-p-callback
 
 [Issues · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/issues "Issues · efcl/efcl.github.io") にまとめてるので興味があったらコメントや`:+1`しておくと参考になります。
 
-- [GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch](http://efcl.info/2014/07/29/voting-badge/ "GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch")
+- [GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch](https://efcl.info/2014/07/29/voting-badge/ "GitHubなどで使える:+1:するバッジサービスを作った | Web Scratch")

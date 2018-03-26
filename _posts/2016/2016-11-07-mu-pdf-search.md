@@ -12,7 +12,7 @@ tags:
 
 [mu-pdf-viewer](https://github.com/azu/mu-pdf-viewer "mu-pdf-viewer")は上から下へ読むように作ったので、検索など移動して読むパターンはイマイチでした。
 
-- [pdf.jsなPDFビューアアプリをElectronで作った | Web Scratch](http://efcl.info/2016/10/12/mu-pdf-viewer/ "pdf.jsなPDFビューアアプリをElectronで作った | Web Scratch")
+- [pdf.jsなPDFビューアアプリをElectronで作った | Web Scratch](https://efcl.info/2016/10/12/mu-pdf-viewer/ "pdf.jsなPDFビューアアプリをElectronで作った | Web Scratch")
 
 タイトルのように、Cmd+Fで検索したら同時に検索結果の一覧を表示できるようにしました。
 クリックすると移動もできるので、これでリファレンス的に探すのも少しは便利になりそうです。

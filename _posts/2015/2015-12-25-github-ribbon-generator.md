@@ -18,7 +18,7 @@ tags:
 
 [GitHub Ribbon Generator](http://azu.github.io/github-ribbon-generator/ "GitHub Ribbon Generator")というツールを作りました。
 
-[![github ribbon](http://efcl.info/wp-content/uploads/2015/12/25-1451045310.png)](http://azu.github.io/github-ribbon-generator/)
+[![github ribbon](https://efcl.info/wp-content/uploads/2015/12/25-1451045310.png)](http://azu.github.io/github-ribbon-generator/)
 
 [GitHub Ribbons](https://github.com/blog/273-github-ribbons "GitHub Ribbons")というのは、右上にあるFork Meボタンのことです。
 
@@ -178,7 +178,7 @@ export default emitter;
 - `<template>` がそのコンポーネントなので、分かりやすく`<div class="App">`で囲んでいます。
 - `<script>` はVueの[コンポーネント](http://jp.vuejs.org/guide/components.html "コンポーネント")のコードです。
 
-![.vue style](http://efcl.info/wp-content/uploads/2015/12/2015-12-25_20-00-13.jpg)
+![.vue style](https://efcl.info/wp-content/uploads/2015/12/2015-12-25_20-00-13.jpg)
 
 Reactだと`<style>`がない事以外は大体同じですが、`<style>`が同じ所に書けるのでコンポーネントのスタイルを簡単に適応するのがやりやすいです。
 
@@ -186,7 +186,7 @@ Reactの場合も、コンポーネント毎にCSSファイルを作ってスタ
 
 > これはSUIT CSSという命名ルールと殆ど同じで、MyComponentというコンポーネントには.MyComponentというクラス名をつけるという命名ルールです。
 
-- [はてなブックマーク検索を作りながらFlux Utilsについて学ぶ | Web Scratch](http://efcl.info/2015/08/24/flux-utils/ "はてなブックマーク検索を作りながらFlux Utilsについて学ぶ | Web Scratch")
+- [はてなブックマーク検索を作りながらFlux Utilsについて学ぶ | Web Scratch](https://efcl.info/2015/08/24/flux-utils/ "はてなブックマーク検索を作りながらFlux Utilsについて学ぶ | Web Scratch")
 
 逆に分かりにくい所としては、`.Vue`でも`components`に子コンポーネントの`.vue`を読み込んだインスタンスを渡す事で、`<template>`の中でそのコンポーネントをタグとして書くことが出来ます。
 (JSXでも大体同じ)
@@ -325,7 +325,7 @@ Vue.jsでは`watch`プロパティに書いたキー名で、Vueインスタン�
 
 Storeに直接setter的なメソッドが生えてますが、この辺をAction的なものを経由するようにしたりすれば、大体Fluxと似たようなデータフローになると思います。
 
-![data-flow](http://efcl.info/wp-content/uploads/2015/12/25-1451042957.png)
+![data-flow](https://efcl.info/wp-content/uploads/2015/12/25-1451042957.png)
 
 - [大規模アプリケーションの構築 - vue.js](http://jp.vuejs.org/guide/application.html "大規模アプリケーションの構築 - vue.js")
 

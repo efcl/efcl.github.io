@@ -16,7 +16,7 @@ tags:
 
 タイトルで分かる方は分かるかもしれませんが、いわゆるルビ翻訳をするものを書きました。
 
-![img](http://efcl.info/wp-content/uploads/2014/11/30-1417346468.png)
+![img](https://efcl.info/wp-content/uploads/2014/11/30-1417346468.png)
 
 [ずるっこ！](http://zurukko.jp/ "ずるっこ！") などがイメージとしてかなり近いサービスで、
 これをローカルに辞書を持ってどこでも翻訳をかけられるGreasemonkeyを書きました。
@@ -48,7 +48,7 @@ make install
 
 翻訳したい場所を Alt + クリック(選択範囲)を作れば、その周辺を翻訳してくれます。
 
-![gif](http://gyazo.com/530524cc50b541b85ae517904bd1b2e7.gif)
+![gif](https://gyazo.com/530524cc50b541b85ae517904bd1b2e7.gif)
 
 元の文章とルビが一緒だと見にくいので、安直にちょっと文字サイズを大きくしてます。
 
@@ -66,7 +66,7 @@ Firefoxは`<ruby>`対応してないですが、以下のCSSをベースにそ�
 
 拡張機能として実装しても結局`<ruby>`の書き換えでContent Contextで動かす必要があるので、コンセプトを実証する感じでGreasemonkeyを選んだだけです。
 
-![chromeとcontext](http://efcl.info/wp-content/uploads/2014/11/2014-11-30_20-37-45.png)
+![chromeとcontext](https://efcl.info/wp-content/uploads/2014/11/2014-11-30_20-37-45.png)
 
 モジュール化して書いてるので[index.js](https://github.com/azu/en-ja-ruby-translator/blob/master/index.js "index.js")以外はGreasemonkeyに依存してない感じです。(なので他への移植とかはまあ出来る気がする)
 

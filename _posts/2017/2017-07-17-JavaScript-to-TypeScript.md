@@ -14,7 +14,7 @@ tags:
 
 その時のコミットログは次のPRに残っているため、コミットログを1コづつ見ていけばどのように行われていったが分かると思います。
 
-[![コミットログ](http://efcl.info/wp-content/uploads/2017/07/17-1500298209.png)](https://github.com/almin/almin/pull/68/commits)
+[![コミットログ](https://efcl.info/wp-content/uploads/2017/07/17-1500298209.png)](https://github.com/almin/almin/pull/68/commits)
 
 - [Convert src/ to TypeScript by saneyuki · Pull Request #68 · almin/almin](https://github.com/almin/almin/pull/68 "Convert src/ to TypeScript by saneyuki · Pull Request #68 · almin/almin")
 
@@ -31,7 +31,7 @@ tags:
 	- 一時的に型が解決できないものは`any`にして後から型を直す
 	- コンパイルが通ってテストが通るなら動作的に問題ない
 	- 実際に変換後のリリースではこれに起因するバグはなかったと思います
-	- [Inroducing Almin 0.10.0: TypeScript, FlowType, Logger | Web Scratch](http://efcl.info/2017/03/08/almim0.10/ "Inroducing Almin 0.10.0: TypeScript, FlowType, Logger | Web Scratch")
+	- [Inroducing Almin 0.10.0: TypeScript, FlowType, Logger | Web Scratch](https://efcl.info/2017/03/08/almim0.10/ "Inroducing Almin 0.10.0: TypeScript, FlowType, Logger | Web Scratch")
 	
 という手順でJavaScript to TypeScriptを行いました。
 この時の変更では、`test/`下のテストファイルはJavaScriptのままでした。

@@ -344,10 +344,10 @@ OAuth認証を手助けすることを目的に書いたので、アクセスト
 [Twitter Applications | dev.twitter.com][9] から自分の作成するGreasemonkeyをnew appから登録しておきます。  
 Application TypeはClientならPINコードを使うタイプ、Browserなら認証したときにリダイレクトするURLを決めてそのURLでアクセストークンを受け取れます。今回は**ClientタイプつまりPINコードを使う方法**です。<figure id="attachment_1745" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-1745" title="sshot-2010-06-10-4" src="http://efcl.info/wp-content/uploads/2010/06/sshot-2010-06-10-4-300x284.png" alt="" width="300" height="284" />][10]<figcaption class="wp-caption-text">登録でClientを選ぶ</figcaption></figure> 
+[<img class="size-medium wp-image-1745" title="sshot-2010-06-10-4" src="https://efcl.info/wp-content/uploads/2010/06/sshot-2010-06-10-4-300x284.png" alt="" width="300" height="284" />][10]<figcaption class="wp-caption-text">登録でClientを選ぶ</figcaption></figure> 
 ユーザーにPINコードをコピーさせてそれを入力させるという動作が、普通のWebサービスではあまり見ない流れだと思います。このラッパーでやっているOAuth認証の流れを簡単に図にするとこんな流れです。(Browserタイプよりユーザーの負担が大きい)
 
-[<img class="aligncenter size-medium wp-image-1724" title="シーケンス図0" src="http://efcl.info/wp-content/uploads/2010/06/4853f6fc7d7316c872b273d972580a55-270x300.png" alt="" width="270" height="300" />][11]もっとコアの流れをみるなら[OAuthのやり取りを読み取ってみる &#8211; 風柳メモ][12] とか
+[<img class="aligncenter size-medium wp-image-1724" title="シーケンス図0" src="https://efcl.info/wp-content/uploads/2010/06/4853f6fc7d7316c872b273d972580a55-270x300.png" alt="" width="270" height="300" />][11]もっとコアの流れをみるなら[OAuthのやり取りを読み取ってみる &#8211; 風柳メモ][12] とか
 
 実際にGreasemonkeyでやってる動画 [YouTube &#8211; Post Now browsing to Twitter for Greasemonkey][13]  
 かなり大雑把な流れなので詳しくは他のサイトを参照して下さい。  
@@ -472,7 +472,7 @@ GM_xmlhttpRequestだとdata部分は文字列で書くので、そのまま&#822
   HTTP MethodがGETならそのクエリになるようにAPIのURLとクエリオブジェクトをtw.getに渡す。
 </div>
 
- [1]: http://efcl.info/2010/0609/res1715/
+ [1]: https://efcl.info/2010/0609/res1715/
  [2]: http://userscripts.org/scripts/show/46441
  [3]: http://help.twitter.com/requests/982242
  [4]: http://blog.tomatomax.net/archives/2696
@@ -481,8 +481,8 @@ GM_xmlhttpRequestだとdata部分は文字列で書くので、そのまま&#822
  [7]: http://userscripts.org/scripts/show/78102
  [8]: http://github.com/azu/OAuth-for-Greasemonkey
  [9]: http://dev.twitter.com/apps
- [10]: http://efcl.info/wp-content/uploads/2010/06/sshot-2010-06-10-4.png
- [11]: http://efcl.info/wp-content/uploads/2010/06/4853f6fc7d7316c872b273d972580a55.png
+ [10]: https://efcl.info/wp-content/uploads/2010/06/sshot-2010-06-10-4.png
+ [11]: https://efcl.info/wp-content/uploads/2010/06/4853f6fc7d7316c872b273d972580a55.png
  [12]: http://d.hatena.ne.jp/furyu-tei/20090929/1254225568
  [13]: http://www.youtube.com/watch?v=8oXTuZk5xAk
  [14]: http://apiwiki.twitter.com/Twitter-API-Documentation

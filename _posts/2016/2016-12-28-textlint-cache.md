@@ -38,7 +38,7 @@ textlint --cache docs/
 
 このプロジェクトではファイル数やルール数が多いのもそうですが、textlintの中でESLintを動かしてJavaScriptのコードもチェックしてたりキャッシュの有無がかなり速度に影響がありました。
 
-- [MarkdownのコードブロックをESLintでチェックするtextlintルール | Web Scratch](http://efcl.info/2016/07/06/eslint-with-textlint/ "MarkdownのコードブロックをESLintでチェックするtextlintルール | Web Scratch")
+- [MarkdownのコードブロックをESLintでチェックするtextlintルール | Web Scratch](https://efcl.info/2016/07/06/eslint-with-textlint/ "MarkdownのコードブロックをESLintでチェックするtextlintルール | Web Scratch")
 
 ### --cacheなし
 

@@ -30,7 +30,7 @@ tags:
 
 ## インストール
 
-通常の[ルールプリセット](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセット")と入れ方は同じです。
+通常の[ルールプリセット](https://efcl.info/2015/12/30/textlint-preset/ "ルールプリセット")と入れ方は同じです。
 
 プリセットをインストールします
 
@@ -226,7 +226,7 @@ $(npm bin)/textlint README.md
 ルール的にもJTFスタイルガイドと似ている部分は多いです。
 
 - [azu/textlint-rule-preset-JTF-style: JTF日本語標準スタイルガイド for textlint.](https://github.com/azu/textlint-rule-preset-JTF-style)
-- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)
+- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](https://efcl.info/2015/10/19/textlint-plugin-JTF-style/)
 
 [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing "textlint-rule-preset-ja-technical-writing")では、単純な辞書での一致ではなく、形態素解析をしているルールが多いです。
 (JTF-styleは正規表現で頑張った感じ)

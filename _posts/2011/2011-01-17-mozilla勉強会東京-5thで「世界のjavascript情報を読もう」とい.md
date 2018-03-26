@@ -464,8 +464,8 @@ tags:
 </p>
 
  [1]: https://dev.mozilla.jp/events/workshop08/ "Mozilla 勉強会@東京 5th"
- [2]: http://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
- [3]: http://efcl.info/2011/0116/res2185/ "海外のJavaScript情報を見つけよう | Web scratch"
+ [2]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
+ [3]: https://efcl.info/2011/0116/res2185/ "海外のJavaScript情報を見つけよう | Web scratch"
  [4]: http://jser.info/ "JSer.info"
  [5]: http://jser.info/about "JSer.infoについて | JSer.info"
- [6]: http://efcl.info/2011/0116/res2211/ "Tumblrをブログとして使うためにやるべき事 | Web scratch"
+ [6]: https://efcl.info/2011/0116/res2211/ "Tumblrをブログとして使うためにやるべき事 | Web scratch"

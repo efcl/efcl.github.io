@@ -36,7 +36,7 @@ tags:
 
 上記のテスト結果は失敗するので、以下のようなエラーが表示されます。
 
-<img src="http://efcl.info/wp-content/uploads/2014/03/power-doctest-promised-example-zsh-2014-03-22-23-34-12-2014-03-22-23-34-19.jpg" alt="Power doctest promised example  zsh 2014 03 22 23 34 12 2014 03 22 23 34 19" title="power-doctest-promised-example (zsh) 2014-03-22 23-34-12 2014-03-22 23-34-19.jpg" border="0" width="600" height="131" />
+<img src="https://efcl.info/wp-content/uploads/2014/03/power-doctest-promised-example-zsh-2014-03-22-23-34-12-2014-03-22-23-34-19.jpg" alt="Power doctest promised example  zsh 2014 03 22 23 34 12 2014 03 22 23 34 19" title="power-doctest-promised-example (zsh) 2014-03-22 23-34-12 2014-03-22 23-34-19.jpg" border="0" width="600" height="131" />
 
 サンプルコードは以下においてあります。
 
@@ -73,7 +73,7 @@ vmモジュール自体はエラーが起きた時に捉えるイベントとか
 *   [power-doctest/lib/power-doctest.js at 5e1a935092ead1cfe0c4d9d12a67b0f6e8deb40c · azu/power-doctest][10]
 
  [1]: https://github.com/azu/power-doctest "azu/power-doctest"
- [2]: http://efcl.info/2013/1201/res3494/ "JavaScriptでdoctestを行う power-doctest を作った | Web scratch"
+ [2]: https://efcl.info/2013/1201/res3494/ "JavaScriptでdoctestを行う power-doctest を作った | Web scratch"
  [3]: http://nodejs.org/api/vm.html "vm"
  [4]: https://github.com/azu/power-doctest/releases/tag/0.3.0 "0.3.0"
  [5]: http://gyazo.com/0a18eab81490475b3e6c3b70e366ca36.gif

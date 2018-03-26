@@ -88,7 +88,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 面倒な人は以下のスライドに簡略化された概要が載ってるので、そちらをみるといいかもしれません。
 
 <div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.io/slide/okonomi.js/"><img src="http://kwout.com/cutout/w/2c/hc/36t.jpg" alt="http://azu.github.io/slide/okonomi.js/" title="power-doctest @ okonomi.js" width="600" height="189" style="border: none;" usemap="#map_w2chc36t" /></a> <p style="margin-top: 10px; text-align: center;">
+  <a href="https://azu.github.io/slide/okonomi.js/"><img src="http://kwout.com/cutout/w/2c/hc/36t.jpg" alt="http://azu.github.io/slide/okonomi.js/" title="power-doctest @ okonomi.js" width="600" height="189" style="border: none;" usemap="#map_w2chc36t" /></a> <p style="margin-top: 10px; text-align: center;">
     <a href="http://azu.github.io/slide/okonomi.js/">power-doctest @ okonomi.js</a>
   </p>
 </div>
@@ -99,7 +99,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 
 多くの書籍では、紙面のスペースの都合等もありますが、以下のように実行結果を横にコメントで書くようなケースが多いと思います。
 
-<img src="http://efcl.info/wp-content/uploads/2013/12/effective_javascript-2013-12-01-21-43-23.jpg" alt="Effective javascript 2013 12 01 21 43 23" title="effective_javascript 2013-12-01 21-43-23.jpg" border="0" width="600" height="217" />
+<img src="https://efcl.info/wp-content/uploads/2013/12/effective_javascript-2013-12-01-21-43-23.jpg" alt="Effective javascript 2013 12 01 21 43 23" title="effective_javascript 2013-12-01 21-43-23.jpg" border="0" width="600" height="217" />
 
 これを写経して試す際には、ブラウザやNodeのREPLなどで試す必要があってエディタから離れないと行けないので不便な感じです。
 
@@ -112,7 +112,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 
 というのが、そのままテストとして実行されるようになっています。
 
-<img src="http://efcl.info/wp-content/uploads/2013/12/Effective_JavaScript-2013-12-01-21-49-24.jpg" alt="Effective JavaScript 2013 12 01 21 49 24" title="Effective_JavaScript] 2013-12-01 21-49-24.jpg" border="0" width="600" height="304" />
+<img src="https://efcl.info/wp-content/uploads/2013/12/Effective_JavaScript-2013-12-01-21-49-24.jpg" alt="Effective JavaScript 2013 12 01 21 49 24" title="Effective_JavaScript] 2013-12-01 21-49-24.jpg" border="0" width="600" height="304" />
 
 ![ScreenShot][3]
 
@@ -182,7 +182,7 @@ power-doctestではコメントも扱えるtraversalライブラリの[millermed
         
         
   <p>
-            サポートしました => <a href="http://efcl.info/2013/1208/res3526/" title="オブジェクト同士の比較と例外のテストをサポートしたpower-doctest 0.2.0リリース | Web scratch">オブジェクト同士の比較と例外のテストをサポートしたpower-doctest 0.2.0リリース | Web scratch</a>
+            サポートしました => <a href="https://efcl.info/2013/1208/res3526/" title="オブジェクト同士の比較と例外のテストをサポートしたpower-doctest 0.2.0リリース | Web scratch">オブジェクト同士の比較と例外のテストをサポートしたpower-doctest 0.2.0リリース | Web scratch</a>
           </p>
 
         
@@ -288,7 +288,7 @@ power-doctestではコメントも扱えるtraversalライブラリの[millermed
             <strong>JS testing everywhere!</strong>
           </p>
 
-2015-08-15 追記: [power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch](http://efcl.info/2015/08/10/power-doctest1.0/ "power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch")
+2015-08-15 追記: [power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch](https://efcl.info/2015/08/10/power-doctest1.0/ "power-assertを使ったDoctestツール power-doctestを書き直した | Web Scratch")
 
  [1]: http://www.adventar.org/calendars/56
  [2]: https://github.com/azu/power-doctest "azu/power-doctest"
@@ -302,5 +302,5 @@ power-doctestではコメントも扱えるtraversalライブラリの[millermed
  [10]: http://d.hatena.ne.jp/vividcode/20110430/1304182281 "実行コンテキスト"
  [11]: https://github.com/azu/power-doctest/blob/697b3eb1fb263dc44e32a5d573176251d72f99da/lib/power-doctest.js#L158
  [12]: http://nazomikan.hateblo.jp/entry/2013/04/10/032410 "Nodeでプライベートな(exportsされてない)メソッドのテスト - ぶれすとつーる"
- [13]: http://efcl.info/2013/1117/res3481/ "tkbjsでJavaScript ASTについて発表してきました | Web scratch"
+ [13]: https://efcl.info/2013/1117/res3481/ "tkbjsでJavaScript ASTについて発表してきました | Web scratch"
  [14]: https://github.com/millermedeiros/rocambole "millermedeiros/rocambole"

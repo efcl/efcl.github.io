@@ -25,7 +25,7 @@ tags:
 
 おかしい場所を選択した状態で右下にある"Bug Report"ボタンを押せば、簡単にtypoとかのバグを報告できます。(PRでも歓迎)
 
-[![バグ報告のフロー](http://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://asciidwango.github.io/js-primer/basic/function-this/)
+[![バグ報告のフロー](https://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://asciidwango.github.io/js-primer/basic/function-this/)
 
 前置きはこの辺までで、ここから本編。
 
@@ -57,7 +57,7 @@ tags:
 
 この記事では表では`???`となっている`this`の評価結果を仕組みから理解できることを目標にします。
 
-![`this`の評価結果の穴埋め](http://efcl.info/wp-content/uploads/2018/01/04-1515062180.png)
+![`this`の評価結果の穴埋め](https://efcl.info/wp-content/uploads/2018/01/04-1515062180.png)
 
 - `＊`はどの場合でも結果に影響しないということを示すワイルドカード
 - 関数は`fn()`と実行した場合の`this`の評価結果、メソッドは`obj.method()`と実行した場合の`this`の評価結果
@@ -132,7 +132,7 @@ console.log(this); // => undefined
 
 なぜModuleコンテキストではトップレベルの`this`が`undefined`となるかは次の記事で解説しています。
 
-- [ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch](http://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
+- [ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch](https://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
 
 また現時点では環境へ依存せずにグローバルオブジェクトを取得するのはややこしい方法が必要です。
 しかし、現在(2018-01-01) Stage 3のProposalである`global`が将来的には利用できます。
@@ -854,7 +854,7 @@ console.log(object.method.call("THAT")); // => "THAT"
 `this`は状況によって異なる値を参照する性質を持ったキーワードであることについてを紹介しました。
 その`this`の評価結果をまとめると次の表のようになります。
 
-![`this`の評価結果のまとめ](http://efcl.info/wp-content/uploads/2018/01/04-1515062936.png)
+![`this`の評価結果のまとめ](https://efcl.info/wp-content/uploads/2018/01/04-1515062936.png)
 
 - [Gist: `this` の穴埋めの解答](https://gist.github.com/azu/9833e2f66bc8f0c97258ab0c81258469 "`this` の穴埋めの解答")
 

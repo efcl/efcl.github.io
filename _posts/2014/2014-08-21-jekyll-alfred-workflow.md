@@ -29,7 +29,7 @@ Wordpress + marsedit(ブログエディタ)等に作らべて不便な箇所は�
 
 今のAlfred Workflowの全体像は以下のような感じです。
 
-![全体像](http://efcl.info/wp-content/uploads/2014/08/2014-08-21_19-29-02.jpg)
+![全体像](https://efcl.info/wp-content/uploads/2014/08/2014-08-21_19-29-02.jpg)
 
 - 全文検索
 - git commit
@@ -48,7 +48,7 @@ Wordpress + marsedit(ブログエディタ)等に作らべて不便な箇所は�
 
 Alfred workflowには任意のディレクトリやファイルの種類だけを検索できる[File Filter](http://support.alfredapp.com/workflows:config:inputs-file-filter "File Filter")という機能があります。
 
-![file filter](http://efcl.info/wp-content/uploads/2014/08/21-1408616779.png)
+![file filter](https://efcl.info/wp-content/uploads/2014/08/21-1408616779.png)
 
 この機能はデフォルトだとファイルの中身までは検索してくれませんが、
 **Advanced** から `kMDItemTextContent` をキーに加えるとファイルの中身も検索対象に入れてくれます。
@@ -57,7 +57,7 @@ Alfred workflowには任意のディレクトリやファイルの種類だけ�
 
 こうすることで全文検索してMarkdownエディタで開くという感じの事が簡単にできます。
 
-![](http://efcl.info/wp-content/uploads/2014/08/21-1408617204.png)
+![](https://efcl.info/wp-content/uploads/2014/08/21-1408617204.png)
 
 ## git commit
 
@@ -66,7 +66,7 @@ SourceTreeでコミット画面を開くAppleScriptを書いてそれを叩く�
 
 同梱されてるAppleScriptは以下のものと同じです。
 
-- [コマンドラインからSourceTreeのコミット画面を開くAppleScript | Web Scratch](http://efcl.info/2014/0401/res3788/ "コマンドラインからSourceTreeのコミット画面を開くAppleScript | Web Scratch")
+- [コマンドラインからSourceTreeのコミット画面を開くAppleScript | Web Scratch](https://efcl.info/2014/0401/res3788/ "コマンドラインからSourceTreeのコミット画面を開くAppleScript | Web Scratch")
 
 ## git push
 
@@ -90,7 +90,7 @@ brew install pngpaste
 ``` sh
 # baseDirからyyyy/mm/ファイル名 に配置される
 baseDir="/Users/azu/Dropbox/workspace/blogs/efcl/wp-content/uploads/"
-baseURL="http://efcl.info/wp-content/uploads/"
+baseURL="https://efcl.info/wp-content/uploads/"
 
 # start git
 cd $baseDir

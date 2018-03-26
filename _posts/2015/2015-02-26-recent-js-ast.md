@@ -13,7 +13,7 @@ tags:
 
 以前書いた記事からのどんな感じの動きがあったのかまとめたものです。
 
-- [最近気になったJavaScript AST周りの動き | Web Scratch](http://efcl.info/2014/0419/res3859/ "最近気になったJavaScript AST周りの動き | Web Scratch") 前回の記事
+- [最近気になったJavaScript AST周りの動き | Web Scratch](https://efcl.info/2014/0419/res3859/ "最近気になったJavaScript AST周りの動き | Web Scratch") 前回の記事
 
 2015年の1月前後の内容が中心です。
 

@@ -53,7 +53,7 @@ export class TimerComponent extends React.Component {
 
 例えば、twtter.comでこれを実行してみると`setInterval`と`requestAnimationFrame`が回っていることが分かります。
 
-![image](http://efcl.info/wp-content/uploads/2017/12/07-1512611803.png)
+![image](https://efcl.info/wp-content/uploads/2017/12/07-1512611803.png)
 
 これは定期的な更新をするために呼び出していることがわかります。
 
@@ -67,7 +67,7 @@ export class TimerComponent extends React.Component {
 
 次の記事で作ってたものはそういうところを改善する目安を探すためのツールです。
 
-- [performance.markにメタデータを紐付けできるライブラリを書いた | Web Scratch](http://efcl.info/2017/11/15/performance.mark-metadata/ "performance.markにメタデータを紐付けできるライブラリを書いた | Web Scratch")
+- [performance.markにメタデータを紐付けできるライブラリを書いた | Web Scratch](https://efcl.info/2017/11/15/performance.mark-metadata/ "performance.markにメタデータを紐付けできるライブラリを書いた | Web Scratch")
 - [`performance.mark` with metadata is useful for Real user monitoring](https://dev.to/azu/performancemark-with-medata-is-useful-for-real-user-monitoring-54p "`performance.mark` with metadata is useful for Real user monitoring")
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">これのFB Flux版を実装してたけど、やっぱりこういうの必要だと思う。ボトルネックが可視化されるので特殊な技能がなくてもパフォーマンス悪いところが発見できる。 &quot;Almin + React/Vue.jsのパフォーマンスプロフ…&quot; <a href="https://t.co/9alBY5tnca">https://t.co/9alBY5tnca</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/933888717101588480?ref_src=twsrc%5Etfw">November 24, 2017</a></blockquote>

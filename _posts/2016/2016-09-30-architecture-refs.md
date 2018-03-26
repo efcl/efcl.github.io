@@ -42,7 +42,7 @@ tags:
 基本的に読んだ内容は覚えていないので、この辺からメモを取りながら読むようにした。
 Kindleで買ってたので、スクリーンショットをOneNoteに貼るという形でメモした(一応OCRがあるので検索できる)
 
-![memo](http://efcl.info/wp-content/uploads/2016/09/30-1475238536.png)
+![memo](https://efcl.info/wp-content/uploads/2016/09/30-1475238536.png)
 
 ## [今日からはじめる情報設計](https://www.amazon.co.jp/dp/4802510012/ "今日からはじめる情報設計") @ 2015
 

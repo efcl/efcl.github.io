@@ -120,7 +120,7 @@ NSDateComponents を使えば同様の事ができますが、NSDateから直接
 <p>Travis CIでテストを動かておくと、普段気づかないことにも気づくチャンスができるので、ライブラリを公開する場合はTravis CIでも動くようにしておくといいと思います。</p>
 <p><a href="https://travis-ci.org/azu/NSDate-Escort"><img src="https://travis-ci.org/azu/NSDate-Escort.png?branch=master" alt="Build Status" /></a></p>
 <ul>
-<li><a href="http://efcl.info/2013/0613/res3301/" title="iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch">iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch</a></li>
+<li><a href="https://efcl.info/2013/0613/res3301/" title="iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch">iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch</a></li>
 </ul>
 <h3>コードカバレッジ</h3>
 <p><a href="https://github.com/azu/NSDate-Escort" title="azu/NSDate-Escort">NSDate-Escort</a> の目的の一つにコードカバレッジが100%であることがありました。</p>
@@ -130,7 +130,7 @@ NSDateComponents を使えば同様の事ができますが、NSDateから直接
 <p>コードカバレッジという指標があるとモチベーションを保ち易いように思います。<br />
 現在は 100%を達成しているため、 <a href="https://coveralls.io/r/azu/NSDate-Escort?branch=master"><img src="https://coveralls.io/repos/azu/NSDate-Escort/badge.png?branch=master" alt="Coverage Status" /></a> 今後はこれを落とさないようにしていく感じになります。</p>
 <ul>
-<li><a href="http://efcl.info/2013/0613/res3301/" title="iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch">iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch</a> </li>
+<li><a href="https://efcl.info/2013/0613/res3301/" title="iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch">iOSアプリのテストをTravis CIで走らせて、コードカバレッジをCoverallsで取る方法 | Web scratch</a> </li>
 <li><a href="http://www.tokoro.me/2013/07/09/objc-travis-coveralls/" title="iOSのライブラリだってTravis CIとかCoverallsとか使うべき - TOKOROM BLOG">iOSのライブラリだってTravis CIとかCoverallsとか使うべき &#8211; TOKOROM BLOG</a></li>
 <li><a href="https://github.com/azu/Coveralls-iOS" title="azu/Coveralls-iOS">azu/Coveralls-iOS</a></li>
 </ul>
@@ -157,4 +157,4 @@ NSDateComponents を使えば同様の事ができますが、NSDateから直接
 </ul>
 <p>みたいな感じです。</p>
 <p><a href="https://github.com/azu/NSDate-Escort#contributing">コントリビューション</a>も歓迎しています。</p>
-<p>NSDateについては、<a href="http://efcl.info/2013/0607/res3295/" title="Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch">Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch</a>での発表も見ておくといいかもしれません。(この辺の内容がライブラリにも含まれてます)</p>
+<p>NSDateについては、<a href="https://efcl.info/2013/0607/res3295/" title="Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch">Objective-C勉強会＠東京 ６月 でNSDateについて発表してきた | Web scratch</a>での発表も見ておくといいかもしれません。(この辺の内容がライブラリにも含まれてます)</p>

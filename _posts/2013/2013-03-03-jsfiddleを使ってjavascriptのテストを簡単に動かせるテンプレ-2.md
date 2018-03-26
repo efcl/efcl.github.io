@@ -12,7 +12,7 @@ tags:
   - test
   - webservice
 ---
-[<img title="JavaScript Test Fiddle Template.png" alt="JavaScript Test Fiddle Template" src="http://efcl.info/wp-content/uploads/2013/03/Buster-StaticJavaScript-Test-Fiddle-Template.png" width="301" height="320" border="0" />][1]
+[<img title="JavaScript Test Fiddle Template.png" alt="JavaScript Test Fiddle Template" src="https://efcl.info/wp-content/uploads/2013/03/Buster-StaticJavaScript-Test-Fiddle-Template.png" width="301" height="320" border="0" />][1]
 
 [JavaScript Test Fiddle Template][1] という[JSFiddle][2]で使える[QUnit][3]/[Jasmine][4]/[Mocha][5]/[Buster.JS][6]などを動かすテンプレートを作りました。
 
@@ -20,9 +20,9 @@ tags:
 
 1.  [JavaScript Test Fiddle][1]で好きなテスティングフレームワークを選ぶ(なかったら[Pull Requst][7])
 2.  [JSFiddle][2]がテストのセットアップが入った状態で開かれるので、テストを書く  
-    <img title="Edit this Fiddle - jsFiddle 2013-03-03 02-53-02.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 02 53 02" src="http://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-02-53-02.jpg" width="600" height="342" border="0" />
+    <img title="Edit this Fiddle - jsFiddle 2013-03-03 02-53-02.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 02 53 02" src="https://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-02-53-02.jpg" width="600" height="342" border="0" />
 3.  &#8220;Save&#8221; ボタンを押して保存  
-    <img title="Edit this Fiddle - jsFiddle 2013-03-03 02-53-56.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 02 53 56" src="http://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-02-53-56.jpg" width="345" height="43" border="0" />
+    <img title="Edit this Fiddle - jsFiddle 2013-03-03 02-53-56.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 02 53 56" src="https://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-02-53-56.jpg" width="345" height="43" border="0" />
 
 後は、自由にShareするなどして使えます。
 
@@ -48,12 +48,12 @@ jsFiddleにログインしておくと、実験的な機能として[Debugging r
 jsFiddleにログインする、Runの隣にdebug on mobileというボタンが表示されるので実行すると、  
 短いURLが表示されるので、デバッグ対象(モバイル端末など)でそのURLにアクセスします。
 
-<img title="Edit this Fiddle - jsFiddle 2013-03-03 13-48-06.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 13 48 06" src="http://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-13-48-06.jpg" width="700" height="305" />
+<img title="Edit this Fiddle - jsFiddle 2013-03-03 13-48-06.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 13 48 06" src="https://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-13-48-06.jpg" width="700" height="305" />
 
 Chrome等のブラウザ でdebuggerとなってるリンクを開くと、  
 デバッグ対象が開いてるページをデバッグできるコンソールが開かれます。
 
-<img title="Edit this Fiddle - jsFiddle 2013-03-03 13-53-15.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 13 53 15" src="http://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-13-53-15.jpg" width="585" height="565" border="0" />
+<img title="Edit this Fiddle - jsFiddle 2013-03-03 13-53-15.jpg" alt="Edit this Fiddle  jsFiddle 2013 03 03 13 53 15" src="https://efcl.info/wp-content/uploads/2013/03/Buster-StaticEdit-this-Fiddle-jsFiddle-2013-03-03-13-53-15.jpg" width="585" height="565" border="0" />
 
 Sourceパネルが無いのでJavaScriptのデバッグでできることは限られてますが、簡単にremote debugできるので便利です。
 

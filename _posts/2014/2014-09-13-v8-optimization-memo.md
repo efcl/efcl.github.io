@@ -85,7 +85,7 @@ loop(v2);
 
 というようにv2で`Vec2`の形が`.name`によって変化するため、最適化が行われなくなっていることがIRHydra2では可視化されます。
 
-![Eager deoptimization](http://efcl.info/wp-content/uploads/2014/09/13-1410615756.png)
+![Eager deoptimization](https://efcl.info/wp-content/uploads/2014/09/13-1410615756.png)
 
 `CheckMaps`というところでpolymorphic(形が多様化)してることが検出されて最適化されてないというメッセージが見られます。
 
@@ -154,7 +154,7 @@ v8 example.js \
 
 これをInlinedに読み込ませると表示してくれます。
 
-![img](http://monosnap.com/image/MQL21HelEEUj6aXweyzK98mtQSjKwR.png)
+![img](https://monosnap.com/image/MQL21HelEEUj6aXweyzK98mtQSjKwR.png)
 
 v8(d8)の使い方やインストールは以下などを参考にした方がいいと思います。
 

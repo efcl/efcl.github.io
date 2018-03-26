@@ -56,11 +56,11 @@ tags:
 
 - **1.** "Settings"のタブを開く:
 
-![Step 1](http://efcl.info/wp-content/uploads/2017/05/12-1494586278.png)
+![Step 1](https://efcl.info/wp-content/uploads/2017/05/12-1494586278.png)
 
 - **2.** `.textlintrc`の設定を書く
 
-![Step 2](http://efcl.info/wp-content/uploads/2017/05/12-1494586443.png)
+![Step 2](https://efcl.info/wp-content/uploads/2017/05/12-1494586443.png)
 
 次のような設定を`.textlintrc`へコピペします。
 
@@ -86,7 +86,7 @@ tags:
 
 - [Support html/rst/re:view · Issue #8 · textlint/textlint-app](https://github.com/textlint/textlint-app/issues/8 "Support html/rst/re:view · Issue #8 · textlint/textlint-app")
 
-![Screenshot](http://efcl.info/wp-content/uploads/2017/05/12-1494586618.png)
+![Screenshot](https://efcl.info/wp-content/uploads/2017/05/12-1494586618.png)
 
 また"Fix all errors"ボタンを押すことで、修正可能なエラーは自動的に修正できます。
 

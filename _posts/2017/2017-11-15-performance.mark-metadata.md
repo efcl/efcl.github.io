@@ -15,10 +15,10 @@ tags:
 `performance.mark`というパフォーマンス計測に役立つAPIがあります。
 `performance.mark` APIを使うと、指定して処理をマーキングでき、その結果を開発者ツールでみれます。とても便利なのですが、そのマーキングとメタデータを紐付ける仕組みがありませんでした。
 
-[![DevTool timeline](http://efcl.info/wp-content/uploads/2017/09/20-1505888631.png)](https://github.com/almin/almin/releases/tag/almin%400.14.0)
+[![DevTool timeline](https://efcl.info/wp-content/uploads/2017/09/20-1505888631.png)](https://github.com/almin/almin/releases/tag/almin%400.14.0)
 
-- [performance.markでパフォーマンス計測する | Web Scratch](http://efcl.info/2016/08/15/performance.mark/ "performance.markでパフォーマンス計測する | Web Scratch")
-- [Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch](http://efcl.info/2017/09/20/almin-performance-profile-0.14.0/ "Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch")
+- [performance.markでパフォーマンス計測する | Web Scratch](https://efcl.info/2016/08/15/performance.mark/ "performance.markでパフォーマンス計測する | Web Scratch")
+- [Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch](https://efcl.info/2017/09/20/almin-performance-profile-0.14.0/ "Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch")
 
 TPAC 2017の[User Timing L3 - Google スライド](https://docs.google.com/presentation/d/1d64Y4rtLCxobGgljVySU2CJpMPK5ksaiZuv3ka1dCVA/edit#slide=id.p "User Timing L3 - Google スライド")では、`performance.mark` APIでメタデータ(`details`)を紐付けできる仕組みが提案されています。
 
@@ -88,7 +88,7 @@ performance.getEntriesByName(markerName).forEach(entry => {
 `performance.mark`はシンプルながら結構便利なAPIです。
 `performance.now`を使うため負荷的に優しく、とりあえず必要なマーキングをしておき、後から取り出して細かく計測(`measure`)できます。
 
-単純なパフォーマンスのロギングと違ってブラウザやNode.jsで使える共通の仕様であるため、[Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch](http://efcl.info/2017/09/20/almin-performance-profile-0.14.0/ "Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch")のように他のライブラリと組み合わせ計測もできます。
+単純なパフォーマンスのロギングと違ってブラウザやNode.jsで使える共通の仕様であるため、[Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch](https://efcl.info/2017/09/20/almin-performance-profile-0.14.0/ "Almin + React/Vue.jsのパフォーマンスプロファイルをタイムライン表示できるように | Web Scratch")のように他のライブラリと組み合わせ計測もできます。
 
 今までは名前のみであったため処理時間しか取れるデータはありませんでしたが、[performance-mark-metadata](https://github.com/azu/performance-mark-metadata "performance-mark-metadata")を使うことで任意のメタデータを乗せられるので幅が広がるのかなと思います。
 将来的にUser Timing APIの方にこの仕組みが入ったらそちらに移行していくのがいいかなと思います。

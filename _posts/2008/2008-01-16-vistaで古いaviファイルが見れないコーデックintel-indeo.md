@@ -29,4 +29,4 @@ Vistaで少し古めのaviファイルを再生したときに音声のみだけ
 多分2003年ぐらいまでPCゲーム(サウンドノベル)何かはこのコーデックを使ってるものがあると思う。  
 minori作品のwindとかも使ってる気がした。
 
- [1]: http://efcl.info/wp-content/uploads/regsvr32ir50_32dll.bat "regsvr32ir50_32dll.bat"
+ [1]: https://efcl.info/wp-content/uploads/regsvr32ir50_32dll.bat "regsvr32ir50_32dll.bat"

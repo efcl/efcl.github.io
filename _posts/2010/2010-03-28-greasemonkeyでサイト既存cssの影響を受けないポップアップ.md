@@ -110,7 +110,7 @@ function makeFrame(callback/*(iframeTag, window, document)*/, name, debug) {
 
 makeFrame関数は(callback ,[フレームのname , debugモード])という引数なので、gotFrame1という関数(callback)を引数にしてmakeFrameを読んでいる。 callbackには(iframe, iframeのwindow, iframeのdocument)が入ってるいるので、iframeのstyleをいじればパネルの色やサイズ、表示する場所などを指定できる。 上記のソースだと左下にframe1、右下にframe2が表示できる。
 
-[<img class="aligncenter size-medium wp-image-1638" title="sshot-2010-03-28-1" src="http://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-28-1-300x219.png" alt="表示例" width="300" height="219" />][2]
+[<img class="aligncenter size-medium wp-image-1638" title="sshot-2010-03-28-1" src="https://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-28-1-300x219.png" alt="表示例" width="300" height="219" />][2]
 
 **元ネタからの改良点 **
 
@@ -147,8 +147,8 @@ Flashより上に表示するには&#8221;position: fixed; <span class="keyword"
 </div>
 
  [1]: http://gist.github.com/raw/346174/e76861b73952461419eebe2335ee9c13b8344b40/panel.user.js
- [2]: http://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-28-1.png
- [3]: http://efcl.info/2008/0622/res227/
+ [2]: https://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-28-1.png
+ [3]: https://efcl.info/2008/0622/res227/
  [4]: http://d.hatena.ne.jp/gifnksm/20100129/1264797620
  [5]: http://userscripts.org/scripts/show/72319 "Nico MylistComments for Greasemonkey"
  [6]: http://wiki.github.com/Martii/greasemonkey/html-injection-tips "HTML Injection Tips - greasemonkey - GitHub"

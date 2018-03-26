@@ -24,12 +24,12 @@ alt|src|data|title|href|cite|action|onclick|onmouseover|onsubmit
 
 普段機能しているのはaltという要素のみですが、alt|titleというように変えれば下の用に複数の要素がツールチップとして表示されます。
 
-[<img src="http://efcl.info/wp-content/uploads/2008/07/cap003-212x300.png" alt="" title="cap003" width="212" height="300" class="alignnone size-medium wp-image-234" />][2]
+[<img src="https://efcl.info/wp-content/uploads/2008/07/cap003-212x300.png" alt="" title="cap003" width="212" height="300" class="alignnone size-medium wp-image-234" />][2]
 
 何が便利なの？って言うのは人それぞれですが、自分は[autoHideStatusbar][3]を使っていて、リンク上に乗っている時にステータスバーを表示する必要がなくなりました。(リンク上でステータスバーを表示するという設定のこと)
 
 piroさんが作るアドオンには隠し機能見たいのが結構あるので見直してみると意外な事があるかも知れません。
 
  [1]: http://piro.sakura.ne.jp/xul/_popupalt.html
- [2]: http://efcl.info/wp-content/uploads/2008/07/cap003.png
+ [2]: https://efcl.info/wp-content/uploads/2008/07/cap003.png
  [3]: http://caspar.regis.free.fr/ahs/

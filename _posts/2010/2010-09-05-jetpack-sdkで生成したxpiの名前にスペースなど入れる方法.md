@@ -43,10 +43,10 @@ fullNameに日本語入れる方法はよく分かりませんでした。ユニ
 生成されるxpiファイル自体のファイル名はnameの中身が使われるようです。
 
 **Google Web Historyに見たページを自動記録するアドオン(Jetpack SDK) | Web scratch**
-:   [http://efcl.info/2010/0809/res1872/][1]
+:   [https://efcl.info/2010/0809/res1872/][1]
 
 **Labs/Jetpack/JEP/31 &#8211; MozillaWiki**
 :   [https://wiki.mozilla.org/Labs/Jetpack/JEP/31#Packages][2]
 
- [1]: http://efcl.info/2010/0809/res1872/ "Google Web Historyに見たページを自動記録するアドオン(Jetpack SDK) | Web scratch"
+ [1]: https://efcl.info/2010/0809/res1872/ "Google Web Historyに見たページを自動記録するアドオン(Jetpack SDK) | Web scratch"
  [2]: https://wiki.mozilla.org/Labs/Jetpack/JEP/31#Packages "Labs/Jetpack/JEP/31 - MozillaWiki"

@@ -14,7 +14,7 @@ tags:
   - ソフトウェア
   - メモ帳
 ---
-<p><a href="http://efcl.info/wp-content/uploads/2008/04/sticka.png" title="sticka.png"><img src="http://efcl.info/wp-content/uploads/2008/04/sticka.thumbnail.png" alt="sticka.png" /></a></p>
+<p><a href="https://efcl.info/wp-content/uploads/2008/04/sticka.png" title="sticka.png"><img src="https://efcl.info/wp-content/uploads/2008/04/sticka.thumbnail.png" alt="sticka.png" /></a></p>
 <p><a href="http://sticka.jp/">Sticka &#8211; どこでも使える付箋紙</a>はオンライン上で<strong>メモ帳</strong>のように使えるWebサービスです。<br />
 ちょっとしたメモを書くときに、わざわざ何かメモ管理ソフトを立ち上げるよりも、ブラウザは起動したままの事が多いのでそのまま書けるのはすてきですね。<br />
 Ajaxで動くので画面が切り替わることもなく書け、さらにタグで内容の関連付けもできるのでテキストファイル単体を扱うよりもいい感じ。<br />

@@ -19,7 +19,7 @@ tags:
 
 node-webkitで最前面なアプリが書けることに気づいたので簡単に作りました。
 
-![img](http://efcl.info/wp-content/uploads/2014/08/25-1408964710.png)
+![img](https://efcl.info/wp-content/uploads/2014/08/25-1408964710.png)
 
 今のところMacのみのサポートとしています(DayOneに依存してるので)、別の所に保存する実装等があれば他のプラットフォームでも動かせるようになると思います。
 
@@ -66,7 +66,7 @@ node-webkitでアプリを最前面にするのは簡単で[Window.setAlwaysOnTo
 ####Macのネイティブメニュー
 
 node-webkit 0.10からMacのネイティブメニューは自動では作られなくなりました。
-![menu](http://efcl.info/wp-content/uploads/2014/08/30-1409390312.png)
+![menu](https://efcl.info/wp-content/uploads/2014/08/30-1409390312.png)
 
 これで何が困るかというと、MacだとCmd+QやCmd+a等のショートカットはメニューに定義されているため、どのアプリも共通にあるショートカットが効かなくなってしまう点です。
 
@@ -118,7 +118,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("floating-memo"), {
 - それぞれシンタックスハイライトした言語のmodeも読み込む
 - gfm.jsはmarkdown.jsとoverlay.jsに依存する
 
-他には[CodeMirrorでカーソル位置が常に中央になるアドオンを書いた | Web Scratch](http://efcl.info/2014/08/24/codemirror-typewriter-scrolling/ "CodeMirrorでカーソル位置が常に中央になるアドオンを書いた | Web Scratch")でも書いてますが、幾つかAddonを使っています。
+他には[CodeMirrorでカーソル位置が常に中央になるアドオンを書いた | Web Scratch](https://efcl.info/2014/08/24/codemirror-typewriter-scrolling/ "CodeMirrorでカーソル位置が常に中央になるアドオンを書いた | Web Scratch")でも書いてますが、幾つかAddonを使っています。
 
 普通に必要になるレベルのAPIは大体揃ってるので、いじるのもそこまで難しい(選択範囲とか考えると面倒ですが)という感じじゃないので触ってみると面白いと思います。
 
@@ -138,7 +138,7 @@ Mac用のMarkdownアプリなのですが、内部でCodeMirrorを使ってい�
 
 mercuryについては長くなったので別記事にしました
 
-- [Virtual DOMを持つMV*ライブラリのmercuryについて](http://efcl.info/2014/08/28/mercury/)
+- [Virtual DOMを持つMV*ライブラリのmercuryについて](https://efcl.info/2014/08/28/mercury/)
 
 ## まとめ
 
@@ -146,4 +146,4 @@ node-webkitアプリは最前面表示や枠なしのウィンドウ表示もで
 プレビューツールみたいな小物アプリを書くのに便利です。
 
 - [floating-memo.app](https://github.com/azu/floating-memo "floating-memo.app")
-- [Virtual DOMを持つMV*ライブラリのmercuryについて](http://efcl.info/2014/08/28/mercury/)
+- [Virtual DOMを持つMV*ライブラリのmercuryについて](https://efcl.info/2014/08/28/mercury/)

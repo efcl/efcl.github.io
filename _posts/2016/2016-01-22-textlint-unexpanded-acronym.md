@@ -14,8 +14,8 @@ tags:
 
 textlint自体については以下を参照してください。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/)
-- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/)
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/)
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](https://efcl.info/2015/12/30/textlint-preset/)
 
 ## [textlint-rule-unexpanded-acronym](https://github.com/azu/textlint-rule-unexpanded-acronym "textlint-rule-unexpanded-acronym")
 

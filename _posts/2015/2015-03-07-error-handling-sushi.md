@@ -176,7 +176,7 @@ tags:
 - サンプル: [azu/Unhandled-Rejection-Tracking](https://github.com/azu/Unhandled-Rejection-Tracking "azu/Unhandled-Rejection-Tracking")
 
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/error-handling/promise-error-handling.html"><img src="http://kwout.com/cutout/6/wd/yv/7gy_bor.jpg" alt="http://azu.github.io/slide/error-handling/promise-error-handling.html" title="Promise Error Handling" width="600" height="225" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/error-handling/promise-error-handling.html">Promise Error Handling</a> via <a href="http://kwout.com/quote/6wdyv7gy">kwout</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/error-handling/promise-error-handling.html"><img src="http://kwout.com/cutout/6/wd/yv/7gy_bor.jpg" alt="http://azu.github.io/slide/error-handling/promise-error-handling.html" title="Promise Error Handling" width="600" height="225" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/error-handling/promise-error-handling.html">Promise Error Handling</a> via <a href="http://kwout.com/quote/6wdyv7gy">kwout</a></p></div>
 
 最近、io.jsやbluebirdに実装された`unhandledRejection` と `rejectionHandled` について話しました。
 

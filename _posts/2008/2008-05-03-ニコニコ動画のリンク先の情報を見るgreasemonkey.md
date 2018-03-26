@@ -30,7 +30,7 @@ tags:
 
 [FastLookupNicoinfo.user.js][4]
 
-[<img class="alignnone size-medium wp-image-170" title="fastlook" src="http://efcl.info/wp-content/uploads/2008/05/fastlook-300x187.png" alt="" width="300" height="187" />][5]
+[<img class="alignnone size-medium wp-image-170" title="fastlook" src="https://efcl.info/wp-content/uploads/2008/05/fastlook-300x187.png" alt="" width="300" height="187" />][5]
 
 もう一方
 
@@ -69,6 +69,6 @@ return desc;
  [1]: http://d.hatena.ne.jp/AOI-CAT/20080427
  [2]: http://coderepos.org/share/browser/lang/javascript/userscripts/niconico_thuminfo_check.user.js?
  [3]: http://d.hatena.ne.jp/Sore_0/
- [4]: http://efcl.info/wp-content/uploads/FastLookupNicoinfo.user.js
- [5]: http://efcl.info/wp-content/uploads/2008/05/fastlook.png
+ [4]: https://efcl.info/wp-content/uploads/FastLookupNicoinfo.user.js
+ [5]: https://efcl.info/wp-content/uploads/2008/05/fastlook.png
  [6]: http://userscripts.org/scripts/show/28910

@@ -19,7 +19,7 @@ JavaScriptにおけるPromiseの仕様といえば、次期ECMAScriptの[ECMAScr
 
 以前、Promiseについて紹介した時に以下のように書いてました。
 
-> また、今後ブラウザに実装されるAPIとしてService WorkersやStreams API等、Promiseをベースしたものも出てきています。 -- [JavaScript Promiseの本を書きました | Web Scratch](http://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
+> また、今後ブラウザに実装されるAPIとしてService WorkersやStreams API等、Promiseをベースしたものも出てきています。 -- [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
 実際にどれくらいの仕様がPromiseを参照してるかを調べてみました。
 
@@ -122,7 +122,7 @@ via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](ht
 
 ## どうやって調べたか
 
-[ウェブの仕様は今どこにあるのか？ | Web Scratch](http://efcl.info/2014/09/02/webspec-here/ "ウェブの仕様は今どこにあるのか？ | Web Scratch")という記事でも、色々書きましたが仕様のURLを調べるには[tobie/specref](https://github.com/tobie/specref "tobie/specref")を使うのが簡単です。
+[ウェブの仕様は今どこにあるのか？ | Web Scratch](https://efcl.info/2014/09/02/webspec-here/ "ウェブの仕様は今どこにあるのか？ | Web Scratch")という記事でも、色々書きましたが仕様のURLを調べるには[tobie/specref](https://github.com/tobie/specref "tobie/specref")を使うのが簡単です。
 
 [tobie/specref](https://github.com/tobie/specref "tobie/specref")からJSONで仕様の一覧(W3C,WHATWG,IETFは大体あるはず)を取得できます。
 これのデータを使って仕様をまとめてダウンロードする[azu/webspec-downloader](https://github.com/azu/webspec-downloader "azu/webspec-downloader")というものを書きました。
@@ -133,7 +133,7 @@ via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](ht
 もっと色々な使い道があるかもしれません。
 
 
-[![nfc](http://monosnap.com/image/Vq6q1xOoXpgYyvfj5P06RY1GuLMdo5.png)](http://w3c.github.io/nfc/proposals/common/nfc.html)
+[![nfc](https://monosnap.com/image/Vq6q1xOoXpgYyvfj5P06RY1GuLMdo5.png)](http://w3c.github.io/nfc/proposals/common/nfc.html)
 
 [Web NFC API](http://w3c.github.io/nfc/proposals/common/nfc.html "Web NFC API")など最近かかれてGitHubに公開されている仕様には
 [ReSpec](http://www.w3.org/respec/ "ReSpec")というバッジが付いている事があります。

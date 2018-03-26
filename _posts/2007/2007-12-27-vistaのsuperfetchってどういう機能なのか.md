@@ -73,7 +73,7 @@ tags:
 > 1  
 > 名無し~3.EXE sage 2007/12/01(土) 20:59:44 ID:BEnuKdnI(4)  
 > タスクマネージャの正しい見方も説明しておこう。  
-> <img src="http://efcl.info/wp-content/uploads/2007/12/bw-uploadsimages832348.png" title="task" alt="task" border="0" height="429" width="478" />  
+> <img src="https://efcl.info/wp-content/uploads/2007/12/bw-uploadsimages832348.png" title="task" alt="task" border="0" height="429" width="478" />  
 > ここに出てくる、物理メモリの「合計」の 1022MB が搭載物理メモリ容量。  
 > 「キャッシュ済み」の 587MB というのがSuperFetchによるキャッシュデータ  
 > 「空きメモリ」の 40MB と言うのが本当に何にも使われていないメモリ。

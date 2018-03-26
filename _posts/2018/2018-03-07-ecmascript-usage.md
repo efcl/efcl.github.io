@@ -434,7 +434,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 
 ----
 
-[![inline, repo-actions-watch.png](http://azu.github.io/slide/2018/node/img/repo-actions-watch.png)](https://github.com/asciidwango/js-primer)
+[![inline, repo-actions-watch.png](https://azu.github.io/slide/2018/node/img/repo-actions-watch.png)](https://github.com/asciidwango/js-primer)
 
 興味ある人はStarやWatchしてください。
 
@@ -462,7 +462,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 仕様ではArrowFunctionは`[[ThisValue]]`を持たないLexicalEnvironmentという定義になっていて、Arrow Functionが`this`を持つ(bind)わけではないからです。
 そのため、「Arrow Functionは`this`をbindする」というよりは、「Arrow Functionは`this`を持たないので移譲する」と言ったほうが仕様に近いかもしれません。
 
-この辺の説明はホントややこしいので、詳細は[ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch](http://efcl.info/2018/01/04/what-is-this/ "ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch")に譲ります。
+この辺の説明はホントややこしいので、詳細は[ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch](https://efcl.info/2018/01/04/what-is-this/ "ECMAScript 2015以降のJavaScriptの`this`を理解する | Web Scratch")に譲ります。
 
 実際に書いているときには以下のIssueのようにメモしながら、どのような表現が良いのかを考えながら書いています。
 
@@ -499,7 +499,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 "Module"コンテキストのトップレベル`this`は常に`undefined`ということは調べて知っていました。
 
-- [ES6 moduleのtop levelにある`this`の値は何になるのか?](http://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
+- [ES6 moduleのtop levelにある`this`の値は何になるのか?](https://efcl.info/2015/05/06/this-is-es6-module/ "ES6 moduleのtop levelにある`this`の値は何になるのか? | Web Scratch")
 
 なので、最初のコードは`undefined`になるはずで、何か自分の仕様の解釈が間違っているのかなと思いました。
 
@@ -554,7 +554,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 プロポーザルにはそれぞれチャンピオンとなる責任者いて、そのチャンピオンが策定作業を進めることで初めてステージが進みます。
 [tc39/proposals][] にかかれている :rocket: はプロポーザルのステージをチャンピオンが進める意志がある状態かを表しています。(頻繁に更新されるためあくまで参考情報に過ぎません)
 
-![inline, rockets.png](http://azu.github.io/slide/2018/node/img/rockets.png)
+![inline, rockets.png](https://azu.github.io/slide/2018/node/img/rockets.png)
 
 :rocket: マークがついていない場合やしばらくステージが更新されていないプロポーザルは何かしらの課題や問題を抱えています。
 ここではそれのプロポーザルがどのような課題を持っていて、ステージが更新されないのかを見ていきます。
@@ -609,13 +609,13 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 [tc39/agendas](https://github.com/tc39/agendas "tc39/agendas")（議事録のアジェンダ）を"[Decorators](https://github.com/tc39/agendas/search?o=desc&q=Decorators&s=indexed&type=&utf8=%E2%9C%93 "Search · Decorators")"で検索すると、[agendas/2018/01.md](https://github.com/tc39/agendas/blob/385085dead6e4f08a2100eccc7b8738dec97f236/2018/01.md "agendas/2018/01.md")にも議題となったことが分かります。
 
 
-![right, decorators-agenda.png](http://azu.github.io/slide/2018/node/img/decorators-agenda.png)
+![right, decorators-agenda.png](https://azu.github.io/slide/2018/node/img/decorators-agenda.png)
 
 
 このアジェンダと同じ月のミーティングノートを[tc39/tc39-notes][]で探すと[2018-01/summary.md](https://github.com/rwaldron/tc39-notes/blob/master/es8/2018-01/summary.md "2018-01/summary.md")が見つかります。
 ミーティングの議事録事態は長いですが、`summary.md`にはその内容がまとまっているのでまずはそちらを見てみます。
 
-![inline, summary-decorator.png](http://azu.github.io/slide/2018/node/img/summary-decorator.png)
+![inline, summary-decorator.png](https://azu.github.io/slide/2018/node/img/summary-decorator.png)
 
 デコレーターでの議事録や関連するスライドを見てみると、幾つかの課題がその課題を解決するまでステージ3にはできないという話が書かれています。
 
@@ -648,7 +648,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 具体的に気になることを見つけたときにそれを調べる手段にたどり着ければ問題ありません。
 
 また、ECMAScriptがLiving Standardであるという話をしましたが、Living Standardである以上その策定プロセスなども細かく修正されていきます。
-以前、[ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](http://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")で書いたものはES2015時点のものでしたが、現在も細かくプロセスが変わったりより分かりやすくなっています。(ミーティングログにサマリが増えたり、[Contributing to ECMAScript](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "Contributing to ECMAScript")などのドキュメントが増えたりなど)
+以前、[ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch](https://efcl.info/2015/10/18/ecmascript-paper/ "ECMAScriptの仕様策定に関するカンニングペーパー | Web Scratch")で書いたものはES2015時点のものでしたが、現在も細かくプロセスが変わったりより分かりやすくなっています。(ミーティングログにサマリが増えたり、[Contributing to ECMAScript](https://github.com/tc39/ecma262/blob/master/CONTRIBUTING.md "Contributing to ECMAScript")などのドキュメントが増えたりなど)
 
 ECMAScriptはこのようなオープンな仕組みであり、同じくブラウザに乗る機能も現在はオープンな仕様や議論を元にしていることが多いです(例外はあります)。
 そのため、仕様やその仕様がどのような経緯で実装されたかといった事実を調べることは特別に難しいことではありません。

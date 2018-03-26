@@ -9,9 +9,9 @@ keywords:
   - "Objective-C"
   - "Firefox"
   - "拡張機能"
-url: "http://efcl.info"
+url: "https://efcl.info"
 baseurl: ""
-production_url : "http://efcl.info"
+production_url : "https://efcl.info"
 github_repo_url : https://github.com/efcl/efcl.github.io
 icon: "/public/favicon.ico"
 timezone: Asia/Tokyo
@@ -27,7 +27,7 @@ exclude:
 # Setup
 author:
   name: 'azu'
-  url:  http://efcl.info/
+  url:  https://efcl.info/
   twitter: azu_re
   github:  azu
 
@@ -44,39 +44,3 @@ redcarpet:
 gems:
   - jekyll-sitemap
   - jemoji
-# Prose
-prose:
-  rooturl: '_posts/'
-  siteurl: 'http://efcl.info'
-  media: 'wp-content/uploads'
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-          type: "text"
-      - name: "author"
-        field:
-          element: "hidden"
-          label: "Author"
-          value: "azu"
-          placeholder: "Trunk Botterson"
-          type: "text"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Post Category"
-          placeholder: "Create or choose"
-          alterable: true
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Post Tag"
-          placeholder: "Create or choose"
-          alterable: true

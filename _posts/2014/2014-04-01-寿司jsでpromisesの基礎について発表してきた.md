@@ -18,7 +18,7 @@ tags:
 <li><a href="http://togetter.com/li/649498" title="#寿司js - Togetterまとめ">#寿司js &#8211; Togetterまとめ</a></li>
 </ul>
 <hr />
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/sushijs/"><img src="http://kwout.com/cutout/a/pt/sa/z8p.jpg" alt="http://azu.github.io/slide/sushijs/" title="Promises Starter" width="600" height="317" style="border: none;" /></a>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/sushijs/"><img src="http://kwout.com/cutout/a/pt/sa/z8p.jpg" alt="http://azu.github.io/slide/sushijs/" title="Promises Starter" width="600" height="317" style="border: none;" /></a>
 <p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/sushijs/">Promises Starter</a></p>
 </div>
 <p><a href="http://azu.github.io/slide/sushijs/" title="Promises Starter">Promises Starter</a>ではPromiseの基本的な部分だけなので、<code>Pormise.all</code>等実際に使うと便利的な話は入れてないです。</p>
@@ -110,7 +110,7 @@ tags:
 </li>
 <li><code>&lt;x -sushi&gt;</code> のデモ</li>
 </ul>
-<h2><img src="http://efcl.info/wp-content/uploads/2014/04/d28b12afb435bf4eb8cac6ba0d104db1.png" alt="名称未設定 2014 04 01 00 21 01 2014 04 01 00 21 15" title="名称未設定 2014-04-01 00-21-01 2014-04-01 00-21-15.png" border="0" width="450" height="600" /></h2>
+<h2><img src="https://efcl.info/wp-content/uploads/2014/04/d28b12afb435bf4eb8cac6ba0d104db1.png" alt="名称未設定 2014 04 01 00 21 01 2014 04 01 00 21 15" title="名称未設定 2014-04-01 00-21-01 2014-04-01 00-21-15.png" border="0" width="450" height="600" /></h2>
 <h2>Docker による Rails Application 開発環境の構築 &#8211; y_imaya</h2>
 <blockquote>
 <p><a href="http://www.hast.me/hast/nHHXeoKQsMQTBuQXB" title="Hast: live presentation">Docker による Rails Application 開発環境の構築</a></p>

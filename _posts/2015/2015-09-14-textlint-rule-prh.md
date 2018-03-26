@@ -48,7 +48,7 @@ rules:
 
 textlintについてはMarkdownなどをルールを元にチェックできるツールで、詳しくは以下の記事を見てみて下さい。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
 
 ## インストール/使い方
 

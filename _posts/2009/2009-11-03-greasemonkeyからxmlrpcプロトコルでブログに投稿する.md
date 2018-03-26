@@ -28,7 +28,7 @@ WordPressでしかテストしてませんがXMLRPCに対応してるブログ�
 
 <pre class="brush:javascript;">// ==UserScript==
 // @name           XMLRPC poster
-// @namespace      http://efcl.info/
+// @namespace      https://efcl.info/
 // @include        http://*
 // ==/UserScript==
 

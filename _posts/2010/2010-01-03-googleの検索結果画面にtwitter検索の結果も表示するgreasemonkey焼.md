@@ -21,12 +21,12 @@ Googleの検索結果画面に[Twitter検索][1]の結果も表示するGreasemo
 以前、Twitter Search Results on Google for Greasemonkey [ http://userscripts.org/scripts/show/43451 ]を元に書いたものの焼き直しです。
 
 **Googleの検索結果にtwitter検索の結果を同時に表示するGreasemonkey | Web scratch**
-:   http://efcl.info/2009/0826/res1266/
+:   https://efcl.info/2009/0826/res1266/
 :   
 
 また一から書き直してみた。  
 機能はほとんど変わってません。  
-[<img class="alignnone size-medium wp-image-1523" title="sshot-2010-01-03-1" src="http://efcl.info/wp-content/uploads/2010/01/sshot-2010-01-03-1-300x120.png" alt="" width="300" height="120" />][2]
+[<img class="alignnone size-medium wp-image-1523" title="sshot-2010-01-03-1" src="https://efcl.info/wp-content/uploads/2010/01/sshot-2010-01-03-1-300x120.png" alt="" width="300" height="120" />][2]
 
 少し似た目が変わったのと、その場でTwitter検索の結果を継ぎ足せるようにしたぐらいです。  
 インストールは[こちら][3]から
@@ -35,6 +35,6 @@ Googleの検索結果画面に[Twitter検索][1]の結果も表示するGreasemo
 :   [http://userscripts.org/scripts/show/65540][4]
 
  [1]: http://pcod.no-ip.org/yats/
- [2]: http://efcl.info/wp-content/uploads/2010/01/sshot-2010-01-03-1.png
+ [2]: https://efcl.info/wp-content/uploads/2010/01/sshot-2010-01-03-1.png
  [3]: http://userscripts.org/scripts/show/65540
  [4]: http://userscripts.org/scripts/show/65540 "Twitter search(ja) result on Google for Greasemonkey"

@@ -40,7 +40,7 @@ Twitterのまとめはこちらです。(ハイライト的なトビトビ感…
 ### [node-webkitとは何か][3]
 
 <div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.io/slide/udonjs/node-webkit.html"><img src="http://kwout.com/cutout/c/iv/jt/94x.jpg" alt="http://azu.github.io/slide/udonjs/node-webkit.html" title="node-webkitとは何か" width="600" height="428" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
+  <a href="https://azu.github.io/slide/udonjs/node-webkit.html"><img src="http://kwout.com/cutout/c/iv/jt/94x.jpg" alt="http://azu.github.io/slide/udonjs/node-webkit.html" title="node-webkitとは何か" width="600" height="428" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
     <a href="http://azu.github.io/slide/udonjs/node-webkit.html">node-webkitとは何か</a>
   </p>
 </div>
@@ -54,7 +54,7 @@ Twitterのまとめはこちらです。(ハイライト的なトビトビ感…
 ### [一人で使えるGithub Issue][4]
 
 <div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.io/slide/udonjs/github-issue.html"><img src="http://kwout.com/cutout/b/t5/pz/8pm.jpg" alt="http://azu.github.io/slide/udonjs/github-issue.html" title="一人で使えるGithub Issue" width="600" height="417" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
+  <a href="https://azu.github.io/slide/udonjs/github-issue.html"><img src="http://kwout.com/cutout/b/t5/pz/8pm.jpg" alt="http://azu.github.io/slide/udonjs/github-issue.html" title="一人で使えるGithub Issue" width="600" height="417" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
     <a href="http://azu.github.io/slide/udonjs/github-issue.html">一人で使えるGithub Issue</a>
   </p>
 </div>
@@ -88,10 +88,10 @@ Travis CIが通る間にもう一度軽くチェックしたり、書いてて�
  [2]: http://togetter.com/li/673082 "#うどんJS - Togetterまとめ"
  [3]: http://azu.github.io/slide/udonjs/node-webkit.html "node-webkitとは何か"
  [4]: http://azu.github.io/slide/udonjs/github-issue.html "一人で使えるGithub Issue"
- [5]: http://efcl.info/2014/0430/res3872/ "Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web scratch"
+ [5]: https://efcl.info/2014/0430/res3872/ "Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web scratch"
  [6]: http://azu.github.io/promises-book/ "JavaScript Promiseの本"
  [7]: https://gitter.im/ "Gitter"
  [8]: https://gitter.im/azu/promises-book "azu/promises-book - Gitter"
- [9]: http://efcl.info/2014/0521/res3908/ "Githubのissueをオフライン環境で見る | Web scratch"
+ [9]: https://efcl.info/2014/0521/res3908/ "Githubのissueをオフライン環境で見る | Web scratch"
  [10]: https://github.com/azu/Promises-book/pulls?direction=desc&page=1&sort=created&state=closed "Pull Requests · azu/promises-book"
  [11]: https://developer.github.com/v3/activity/events/types/#gollumevent "GollumEvent"

@@ -33,14 +33,14 @@ tags:
 
 Githubでは自分用の認証のtokenを発行できるので、それを作ってもらってログインする感じで使います。
 
-<img src="http://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png" border="0" width="600" height="431" />
+<img src="https://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png" border="0" width="600" height="431" />
 
 *   [New personal access token][7]から新しいtokenの作成
 *   **scopes**の選択肢で `notifications` と `user`はチェックする
 
 上記の手順でtokenを作ってもらったらアプリを起動して、最初にtokenとGithubアカウントの設定をします。(APIを使うためです)
 
-<img src="http://monosnap.com/image/Dgh7zSUetiJTNuQQ55w76CYVur7G0h.png" border="0" width="600" height="431" />
+<img src="https://monosnap.com/image/Dgh7zSUetiJTNuQQ55w76CYVur7G0h.png" border="0" width="600" height="431" />
 
 `Config`を開くと設定画面が出てくるので、  
 Githubの**username**と先ほど作成したPersonal access tokenをそれぞれ入力して保存&更新します。
@@ -55,7 +55,7 @@ Githubの**username**と先ほど作成したPersonal access tokenをそれぞ�
 
 後、Growlでイベント通知するようにしてます。(Mac以外で動くのかな?)
 
-<img src="http://efcl.info/wp-content/uploads/2014/04/BmdVSTYCAAAXm7k_large.jpg" alt="BmdVSTYCAAAXm7k jpg large" title="BmdVSTYCAAAXm7k.jpg_large.jpg" border="0" width="600" height="431" />
+<img src="https://efcl.info/wp-content/uploads/2014/04/BmdVSTYCAAAXm7k_large.jpg" alt="BmdVSTYCAAAXm7k jpg large" title="BmdVSTYCAAAXm7k.jpg_large.jpg" border="0" width="600" height="431" />
 
 ## 仕組み
 
@@ -107,7 +107,7 @@ JavaScriptと言っても先ほどの[nwfaketop][9]のような特権的な機�
 JavaScript Contextで実行したものはnode-webkitのDevToolsがそのまま使えるので、  
 そっちにまとめてもよかったかなとか思いましたが、どうするのがいいのかまだ良く見えてないです。。
 
-<img src="http://efcl.info/wp-content/uploads/2014/04/index.html-2014-04-30-23-38-40-2014-04-30-23-38-50.png" alt="Index html 2014 04 30 23 38 40 2014 04 30 23 38 50" title="index.html 2014-04-30 23-38-40 2014-04-30 23-38-50.png" border="0" width="600" height="485" />
+<img src="https://efcl.info/wp-content/uploads/2014/04/index.html-2014-04-30-23-38-40-2014-04-30-23-38-50.png" alt="Index html 2014 04 30 23 38 40 2014 04 30 23 38 50" title="index.html 2014-04-30 23-38-40 2014-04-30 23-38-50.png" border="0" width="600" height="485" />
 
 node-webkitはその2つのcontextの溝が殆どないので、結構簡単に境界をまたいだり出来ます。
 
@@ -130,12 +130,12 @@ node.jsがそのまま動くという特性があるので、ロジック面等�
 
 [WebStorm 8.0.1][23] からnode-webkitのデバッグ実行もサポートしてるので、普通のウェブアプリ/Node.jsアプリをデバッグしてる感覚で行えます。
 
-<img src="http://efcl.info/wp-content/uploads/2014/05/2014-05-01-at-12.51.png" alt="2014 05 01 at 12 51" title="2014-05-01 at 12.51.png" border="0" width="600" height="339" />
+<img src="https://efcl.info/wp-content/uploads/2014/05/2014-05-01-at-12.51.png" alt="2014 05 01 at 12 51" title="2014-05-01 at 12.51.png" border="0" width="600" height="339" />
 
 後、node-webkitならではの特徴(スクリプト言語ならでは)としては、  
 普通にウェブアプリと同じようにリロードすることで、スクリプトが反映されるので、アプリを起動しなおさなくてもリロードだけで動作確認が繰り返せます。
 
-<img src="http://efcl.info/wp-content/uploads/2014/05/Github-Reader-2014-05-01-12-53-26-2014-05-01-12-54-35.png" alt="Github Reader 2014 05 01 12 53 26 2014 05 01 12 54 35" title="Github Reader 2014-05-01 12-53-26 2014-05-01 12-54-35.png" border="0" width="600" height="441" />
+<img src="https://efcl.info/wp-content/uploads/2014/05/Github-Reader-2014-05-01-12-53-26-2014-05-01-12-54-35.png" alt="Github Reader 2014 05 01 12 53 26 2014 05 01 12 54 35" title="Github Reader 2014-05-01 12-53-26 2014-05-01 12-54-35.png" border="0" width="600" height="441" />
 
 Chromiumベースなので、Chrome DevToolsと同じような機能が普通に使えたり、デバッグはかなりやりやすい部類になるんじゃないかなと思いました。
 

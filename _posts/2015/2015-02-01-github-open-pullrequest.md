@@ -56,4 +56,4 @@ https://github.com/<OWNER>/<REPO>/pull/<branch>
 	file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
 ```
 
-![gif](http://gyazo.com/6ad38092de4513b4196e699947d983ea.gif)
+![gif](https://gyazo.com/6ad38092de4513b4196e699947d983ea.gif)

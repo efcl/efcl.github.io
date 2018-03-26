@@ -80,7 +80,7 @@ runner.runBrowser(path.join(__dirname, "local.html")).then(function () {
 
 [browser-runner](https://github.com/azu/browser-runner "browser-runner")の仕組みは[Reftest-runner](https://github.com/azu/reftest-runner "Reftest-runner")のものがベースでそれを別モジュールに取り出したという感じです。
 
-- [ブラウザでビジュアルテストをするreftest-runnerを作った | Web Scratch](http://efcl.info/2015/05/14/reftest-runner/ "ブラウザでビジュアルテストをするreftest-runnerを作った | Web Scratch")
+- [ブラウザでビジュアルテストをするreftest-runnerを作った | Web Scratch](https://efcl.info/2015/05/14/reftest-runner/ "ブラウザでビジュアルテストをするreftest-runnerを作った | Web Scratch")
 
 ### 類似
 

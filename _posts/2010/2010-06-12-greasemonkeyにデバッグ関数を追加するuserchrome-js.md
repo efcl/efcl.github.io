@@ -49,7 +49,7 @@ Clipboardの方はjetpack prototypeからのコピペなのであんまり確認
 **gist: 428596 &#8211; Greasemonkeyから使える関数を追加するuserChrome.js- GitHub**
 :   [http://gist.github.com/428596][4]
 
- [1]: http://efcl.info/2010/0606/res1708/
+ [1]: https://efcl.info/2010/0606/res1708/
  [2]: http://github.com/lackac/callout "lackac's callout at master - GitHub"
  [3]: https://addons.mozilla.org/ja/firefox/addon/159546/
  [4]: http://gist.github.com/428596 "gist: 428596 - Greasemonkeyから使える関数を追加するuserChrome.js- GitHub"

@@ -59,6 +59,6 @@ JavaScriptの整形には[Online javascript beautifier][6](これ自体がJavaSc
  [4]: http://code.google.com/intl/ja/closure/utilities/docs/linter_howto.html
  [5]: http://pypi.python.org/pypi/setuptools
  [6]: http://jsbeautifier.org/
- [7]: http://efcl.info/2010/0816/res1888/
+ [7]: https://efcl.info/2010/0816/res1888/
  [8]: http://gist.github.com/453042
  [9]: http://closuretools.blogspot.com/2010/08/introducing-closure-linter.html "Introducing Closure Linter - Closure Tools Blog"

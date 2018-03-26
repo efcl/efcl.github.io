@@ -16,7 +16,7 @@ tags:
 
 ## ASTとは
 
-[![AST](http://efcl.info/wp-content/uploads/2016/03/06-1457240557.png)](http://azu.github.io/slide/JSojisan/#8)
+[![AST](https://efcl.info/wp-content/uploads/2016/03/06-1457240557.png)](http://azu.github.io/slide/JSojisan/#8)
 
 AST(Abstract Syntax Tree)はコードをパースした抽象構文木のこと。
 JavaScriptの場合はJavaScriptオブジェクト(JSON)として表現されます。
@@ -85,7 +85,7 @@ ESTreeというデファクトスタンダードがあります(ES6までは定�
 
 - [estree/estree: The ESTree Spec](https://github.com/estree/estree "estree/estree: The ESTree Spec")
 
-経緯: [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](http://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
+経緯: [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](https://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
 
 - `token`、`range`、コメントのいち情報周りの扱いがパーサによって異なる
 - ESTreeで定義されているASTの範囲内ならどのパーサでも殆ど同じ

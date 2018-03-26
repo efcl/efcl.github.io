@@ -31,7 +31,7 @@ textlintはデフォルトでは一つもルールを持っていません。
 
 textlintの使い方は以下で解説しているのと基本的に同じですが、今回はプリセットの使い方を紹介します。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
 
 ## インストール
 
@@ -41,7 +41,7 @@ textlint本体と2つのプリセットをインストールしてみます。
 	- 自分が作った日本語関係のルールセット
 - [azu/textlint-rule-preset-JTF-style](https://github.com/azu/textlint-rule-preset-JTF-style)
 	- [JTFスタイルガイド](https://www.jtf.jp/jp/style_guide/styleguide_top.html)のルールセット
-	- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/ "JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch")
+	- [JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch](https://efcl.info/2015/10/19/textlint-plugin-JTF-style/ "JTF日本語標準スタイルガイドのルールセットで文章をチェックできるtextlintプリセット | Web Scratch")
 
 
 ```sh
@@ -103,7 +103,7 @@ $(npm bin)/textlint README.md
 
 [textlint-rule-prh](https://github.com/azu/textlint-rule-prh "textlint-rule-prh")を使った表記揺れの検出などは効果的なルールと言えます。
 
-- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
+- [textlint + prhで表記ゆれを検出する | Web Scratch](https://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
 
 ### もっと優しい使い方
 

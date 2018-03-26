@@ -36,23 +36,23 @@ coLinux : [64 bit][7]が非対応でした。
 
 Turnkey Linux coreはVM向けにovf形式でも配布してるので、OVFと書かれてるリンクからturnkey-core-バージョン-lucid-x86-ovf.zipをダウンロードして使う。
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss11" border="0" alt="2011-04-20-ss11" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss11_thumb.png" width="640" height="153" />][9]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss11" border="0" alt="2011-04-20-ss11" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss11_thumb.png" width="640" height="153" />][9]
 
 VirtualBoxを起動してメニューの仮想アプライアンスのインポートから、先ほどのovfをインポートすると自動でTurnKey Coreが仮想マシン一覧に並ぶ。(設定するのは仮想マシンの名前ぐらい）
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss8" border="0" alt="2011-04-20-ss8" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss8_thumb.png" width="240" height="170" />][10]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss8" border="0" alt="2011-04-20-ss8" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss8_thumb.png" width="240" height="170" />][10]
 
 起動するとパスワードの設定などがあって、パスワード以外はEnter押してればいいと思う。   
 設定が終わると起動して下のようなメニュー画面が表示される。
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss12" border="0" alt="2011-04-20-ss12" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss12_thumb.png" width="240" height="209" />][11]   
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss12" border="0" alt="2011-04-20-ss12" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss12_thumb.png" width="240" height="209" />][11]   
 メニューを終了させると、CUIで操作できるけどキーやマウスの関係で扱いにくいのでSSHからアクセスして操作する。
 
 [RLogin][8]を起動して、サーバの接続から新規追加して、プロトコロルにSSH、アドレスにはLinuxサーバーのIPアドレス、ユーザーはrootで、パスワードは最初の起動時に設定したものを入力して接続する
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss13" border="0" alt="2011-04-20-ss13" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss13_thumb.png" width="226" height="240" />][12]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss13" border="0" alt="2011-04-20-ss13" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss13_thumb.png" width="226" height="240" />][12]
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss9" border="0" alt="2011-04-20-ss9" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss9_thumb.png" width="240" height="141" />][13]
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss9" border="0" alt="2011-04-20-ss9" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss9_thumb.png" width="240" height="141" />][13]
 
 こっからはサーバー{ゲスト側(Ubuntu)}の設定
 
@@ -142,7 +142,7 @@ passwd: password updated successfully</pre>
 </div>
 
 <div>
-  <a href="http://efcl.info/wp-content/uploads/2011/04/image.png"><img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/04/image_thumb.png" width="240" height="186" /></a>
+  <a href="https://efcl.info/wp-content/uploads/2011/04/image.png"><img style="background-image: none; border-right-width: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/04/image_thumb.png" width="240" height="186" /></a>
 </div>
 
 <div>
@@ -154,7 +154,7 @@ passwd: password updated successfully</pre>
 </div>
 
 <div>
-  <a href="http://efcl.info/wp-content/uploads/2011/04/2011-04-23-ss1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="2011-04-23-ss1" border="0" alt="2011-04-23-ss1" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-23-ss1_thumb.png" width="240" height="120" /></a>
+  <a href="https://efcl.info/wp-content/uploads/2011/04/2011-04-23-ss1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="2011-04-23-ss1" border="0" alt="2011-04-23-ss1" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-23-ss1_thumb.png" width="240" height="120" /></a>
 </div>
 
 <div>
@@ -227,7 +227,7 @@ authorized_keys  turnkey</pre>
     <div>
       鍵は生成して公開鍵(authorized_keys)の登録ができたので、秘密鍵をホスト側のPCに転送します。<br /> <br /><a href="http://nanno.dip.jp/softlib/man/rlogin/">RLogin</a>にファイル転機能がついてるので、.sshディレクトリにある秘密鍵(turnkey)をホスト側に移動させます。 </p> <p>
         ゲスト側(Ubuntu)に秘密鍵は置いておく必要はないので、秘密鍵(turnkey)は転送したら削除します。</div> <div>
-          <a href="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss15.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss15" border="0" alt="2011-04-20-ss15" src="http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss15_thumb.png" width="240" height="115" /></a>
+          <a href="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss15.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="2011-04-20-ss15" border="0" alt="2011-04-20-ss15" src="https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss15_thumb.png" width="240" height="115" /></a>
         </div>
         
         <div>
@@ -293,7 +293,7 @@ UsePAM no
         </p>
         
         <p>
-          <a href="http://efcl.info/wp-content/uploads/2011/04/image1.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://efcl.info/wp-content/uploads/2011/04/image_thumb1.png" width="240" height="214" /></a>
+          <a href="https://efcl.info/wp-content/uploads/2011/04/image1.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="https://efcl.info/wp-content/uploads/2011/04/image_thumb1.png" width="240" height="214" /></a>
         </p>
         
         <p>
@@ -425,11 +425,11 @@ nvm use latest</pre>
  [6]: http://www.nyaos.org/
  [7]: http://colinux.wikia.com/wiki/Dashboard_for_developing_a_64_bit_coLinux
  [8]: http://nanno.dip.jp/softlib/man/rlogin/
- [9]: http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss11.png
- [10]: http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss8.png
- [11]: http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss12.png
- [12]: http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss13.png
- [13]: http://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss9.png
+ [9]: https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss11.png
+ [10]: https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss8.png
+ [11]: https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss12.png
+ [12]: https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss13.png
+ [13]: https://efcl.info/wp-content/uploads/2011/04/2011-04-20-ss9.png
  [14]: http://d.hatena.ne.jp/replication/20110423/1303525759
  [15]: http://d.hatena.ne.jp/sdhr/20110219/1298111849
  [16]: http://chocokanpan.net/archives/374

@@ -83,7 +83,7 @@ Alminの構成要素については[Component of Almin](https://almin.js.org/doc
 
 他のライブラリと見比べてみると次のような形になります。
 
-![比較table](http://efcl.info/wp-content/uploads/2017/03/17-1489747778.png)
+![比較table](https://efcl.info/wp-content/uploads/2017/03/17-1489747778.png)
 
 このサンプルは状態が1つしかないため、複数のStoreをまとめるStoreGroupや、
 ロジックが殆どないためDomainといった要素は登場していません。

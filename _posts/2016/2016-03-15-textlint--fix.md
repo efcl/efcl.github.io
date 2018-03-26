@@ -20,8 +20,8 @@ tags:
 
 textlint自体については以下を見てください。
 
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/)
-- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/)
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/)
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](https://efcl.info/2015/12/30/textlint-preset/)
 
 ## `--fix`による自動修正の対応
 
@@ -47,11 +47,11 @@ textlint自体については以下を見てください。
 - [nodaguti/textlint-rule-spellchecker: textlint rule to check spellings with native spellchecker](https://github.com/nodaguti/textlint-rule-spellchecker)
 - [nodaguti/textlint-rule-ginger: textlint rule to check your English grammar with Ginger Proofreading](https://github.com/nodaguti/textlint-rule-ginger)
 
-fixableルールは[prhと辞書を使った表記揺れの統一](http://efcl.info/2015/09/14/textlint-rule-prh/)や[JTF日本語標準スタイルガイドを使った表記の統一](http://efcl.info/2015/10/19/textlint-plugin-JTF-style/)など、辞書ベースやスタイルの統一を簡単になるのが利点です。
+fixableルールは[prhと辞書を使った表記揺れの統一](https://efcl.info/2015/09/14/textlint-rule-prh/)や[JTF日本語標準スタイルガイドを使った表記の統一](https://efcl.info/2015/10/19/textlint-plugin-JTF-style/)など、辞書ベースやスタイルの統一を簡単になるのが利点です。
 
 逆に表現的なものをチェックするルールは自動修正が難しく、頑張ってもサジェストのような推敲支援になると思います。
 
-- [東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch](http://efcl.info/2015/11/07/nodefest-2015/ "東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch")
+- [東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch](https://efcl.info/2015/11/07/nodefest-2015/ "東京Node学園祭2015で技術文書をソフトウェア開発する話をしてきた | Web Scratch")
 - [校正と推敲 | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/slide/90.html "校正と推敲 | 技術文書をソフトウェア開発する話")
 - [編集は「自動化」されていく仕事なのか　編集者のためのイベント「編む庭 」レポ【前編】 - はてな編集部ブログ「編む庭」](http://editor.hatenastaff.com/entry/2016/03/17/113000 "編集は「自動化」されていく仕事なのか　編集者のためのイベント「編む庭 」レポ【前編】 - はてな編集部ブログ「編む庭」")
 
@@ -130,7 +130,7 @@ $(npm bin)/textlint _posts/
 Try to run: $ textlint --fix [file]
 ```
 
-![result of linting](http://efcl.info/wp-content/uploads/2016/03/16-1458133066.png)
+![result of linting](https://efcl.info/wp-content/uploads/2016/03/16-1458133066.png)
 
 絶望的な数のエラーが表示されました…
 
@@ -156,7 +156,7 @@ $(npm bin)/textlint _posts --fix --dry-run -f diff
 ✖ Remaining 73 problems
 ```
 
-![result of fixing](http://efcl.info/wp-content/uploads/2016/03/16-1458133752.png)
+![result of fixing](https://efcl.info/wp-content/uploads/2016/03/16-1458133752.png)
 
 ✖ 6091 problemsのうち✔ Fixed 5713 problemsが自動で修正することができます。
 `--dry-run`で問題ないのが確認できたら、`--fix`のみにして上書き保存できます。
@@ -165,11 +165,11 @@ $(npm bin)/textlint _posts --fix --dry-run -f diff
 $(npm bin)/textlint _posts --fix
 ```
 
-![fix error](http://efcl.info/wp-content/uploads/2016/03/16-1458134174.png)
+![fix error](https://efcl.info/wp-content/uploads/2016/03/16-1458134174.png)
 
 ## textlint v5からv6の変更点
 
-[textlint 5.0.0までの変更点](http://efcl.info/2015/11/20/textlint5.0.0/ "textlint 5.0.0")については以前書いたので、5.0から6.0までにあった変更点を列挙してみます。
+[textlint 5.0.0までの変更点](https://efcl.info/2015/11/20/textlint5.0.0/ "textlint 5.0.0")については以前書いたので、5.0から6.0までにあった変更点を列挙してみます。
 
 ### [5.1.0](https://github.com/textlint/textlint/releases/tag/5.1.0 "5.1.0")
 
@@ -179,7 +179,7 @@ $(npm bin)/textlint _posts --fix
 もちろん内蔵しているルール個別に設定を`.textlintrc`に書くことができるので、
 一つのルールに沢山のチェック機能を設けるよりも、個別のルールに分けてルールプリセットとして公開することを推奨しています。
 
-- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](http://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
+- [ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch](https://efcl.info/2015/12/30/textlint-preset/ "ルールプリセットを使ってお手軽にtextlint入門 | Web Scratch")
 
 ### [5.2.0](https://github.com/textlint/textlint/releases/tag/5.2.0 "5.2.0")
 
@@ -189,7 +189,7 @@ $(npm bin)/textlint _posts --fix
 
 - [azu/textlint-formatter-lcov: textlint formatter for lcov format](https://github.com/azu/textlint-formatter-lcov)
 - [azu/textlint-formatter-codecov: textlint formatter for codecov json.](https://github.com/azu/textlint-formatter-codecov)
-- [textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch](http://efcl.info/2016/01/12/textlint-coverage/ "textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch")
+- [textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch](https://efcl.info/2016/01/12/textlint-coverage/ "textlintで文章カバレッジレポートを継続的に見ていく | Web Scratch")
 
 formatterの作り方はドキュメントを見てください。
 
@@ -306,8 +306,8 @@ Atomプラグインとして[linter-textlint](https://github.com/1000ch/linter-t
 - プラグイン側が特定バージョン以降に依存するならpeerDependenciesを付ける
 - npmのbetaとGitHubのprereleaseを使う
   - `npm publish --tag beta`するalisを使っています
-  - [npm version publish alias - http://efcl.info/2015/04/08/npm-publish-pattern/](https://gist.github.com/azu/fb3ec88231235511858a)
-  - [npm publishのパターン | Web Scratch](http://efcl.info/2015/04/08/npm-publish-pattern/)
+  - [npm version publish alias - https://efcl.info/2015/04/08/npm-publish-pattern/](https://gist.github.com/azu/fb3ec88231235511858a)
+  - [npm publishのパターン | Web Scratch](https://efcl.info/2015/04/08/npm-publish-pattern/)
 - フラグつき機能は、次のメジャーアップデートで外す
 - testライブラリを作りdeprecatedはプラグイン作者に通知
   - テスト中はガンガン例外を投げて伝える

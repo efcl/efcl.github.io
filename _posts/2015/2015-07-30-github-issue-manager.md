@@ -14,7 +14,7 @@ tags:
 
 [github-issue-teev](https://github.com/azu/github-issue-teev "github-issue-teev")という自分に関連するIssueを一覧するアプリをNW.jsで書きました。
 
-![screenshot](http://monosnap.com/image/2JTJWEqoZAFuSqqT57edf7xSEtqpwi.png)
+![screenshot](https://monosnap.com/image/2JTJWEqoZAFuSqqT57edf7xSEtqpwi.png)
 
 ## 機能
 
@@ -23,7 +23,7 @@ tags:
 - サイドバーにそのIssue内にある`- [ ]`のタスク一覧を表示
 - テキストエリアをCodeMirrorのエディタにすり替える機能
     - `Cmd+e` でトグルできます。
-    - [テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch](http://efcl.info/2015/05/10/codemirror-anywhere/ "テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch")と同じものです
+    - [テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch](https://efcl.info/2015/05/10/codemirror-anywhere/ "テキストエリアをMarkdownエディタに切り替えるGreasemonkeyを書いた | Web Scratch")と同じものです
 
 ## インストール
 

@@ -110,7 +110,7 @@ tags:
 - power-assert 2.0をだそうをだろうしてる。
 - nodeのassert互換 - 透過的なassertにしようとしてる
 - 一個だけnodeに追加してるassertがあるのでbreaking change
-- [power-assert + babel as a development tool | Web Scratch](http://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
+- [power-assert + babel as a development tool | Web Scratch](https://efcl.info/2016/04/14/espower-babel-is-deprecated/ "power-assert + babel as a development tool | Web Scratch")
 - power-assertをツールにするということ
 - 今はbabelのpresetのみになってる
 - 他のASTツールでも動くようにする目標

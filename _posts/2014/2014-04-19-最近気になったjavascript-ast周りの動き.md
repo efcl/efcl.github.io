@@ -168,6 +168,6 @@ DOM APIのように全てをカバーするわけではありませんが、最�
  [26]: https://gist.github.com/teppeis/10659631 "TypeScript用フルスタック型付きライブラリのご提案 #葉桜JS"
  [27]: https://github.com/SBoudrias/AST-query#object-literal-token "AST Query"
  [28]: https://github.com/Constellation/estraverse "Estraverse"
- [29]: http://efcl.info/2014/0404/res3802/ "Estraverseの動きを可視化する | Web scratch"
+ [29]: https://efcl.info/2014/0404/res3802/ "Estraverseの動きを可視化する | Web scratch"
  [30]: http://uhyohyohyo.sakura.ne.jp/javascript/7_3.html "TreeWalker"
  [31]: https://github.com/SBoudrias/AST-query/releases/tag/0.2.0 "0.2.0"

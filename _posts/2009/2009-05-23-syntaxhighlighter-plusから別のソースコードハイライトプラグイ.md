@@ -51,7 +51,7 @@ SyntaxHighlighter Plusは
 
 設定メニューから[HF Edition][3]の書式で書く言語別に作っておくと便利です。<figure id="attachment_843" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-843" title="2009-05-23-23-04-03" src="http://efcl.info/wp-content/uploads/2009/05/2009-05-23-23-04-03-300x116.png" alt="<pre>の後に改行しておくといい" width="300" height="116" />][5]<figcaption class="wp-caption-text">preの後に改行しておくといい</figcaption></figure> 
+[<img class="size-medium wp-image-843" title="2009-05-23-23-04-03" src="https://efcl.info/wp-content/uploads/2009/05/2009-05-23-23-04-03-300x116.png" alt="<pre>の後に改行しておくといい" width="300" height="116" />][5]<figcaption class="wp-caption-text">preの後に改行しておくといい</figcaption></figure> 
 &nbsp;
 
 **Google Syntax Highlighter for WordPress HF Edition**
@@ -67,4 +67,4 @@ SyntaxHighlighter Plusは
  [2]: http://urbangiraffe.com/plugins/search-regex/
  [3]: http://soft.fpso.jp/develop/wordpress/plugin/entry_1219.html
  [4]: http://wordpress.org/extend/plugins/addquicktag/
- [5]: http://efcl.info/wp-content/uploads/2009/05/2009-05-23-23-04-03.png
+ [5]: https://efcl.info/wp-content/uploads/2009/05/2009-05-23-23-04-03.png

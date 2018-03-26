@@ -21,7 +21,7 @@ ECMAScript関係についてざっとみるカンニングペーパー。
 
 追記: 縦に長い記事読むのが面倒な人向けにスライド形式にしたものも置いておきます。
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide-what-is-ecmascript/"><img src="http://kwout.com/cutout/x/xm/dp/mv7_bor.jpg" alt="http://azu.github.io/slide-what-is-ecmascript/" title="Introduction | ECMAScriptとは何か？" width="600" height="369" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide-what-is-ecmascript/"><img src="http://kwout.com/cutout/x/xm/dp/mv7_bor.jpg" alt="http://azu.github.io/slide-what-is-ecmascript/" title="Introduction | ECMAScriptとは何か？" width="600" height="369" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a></p></div>
 
 ## ECMAScriptとは?
 
@@ -259,9 +259,9 @@ ES6は[2015年の6月17日にリリース](http://ecma-international.org/news/Pu
 
 以下の図のように大体1月ぐらいには機能はフリーズされて、そこからは実装のフィードバックを受けての修正がメインとなっていた(実際には細かな機能が増えたりしたけど)。
 
-<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
+<p><a href="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank"><img width="100%" src="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" alt="ES6 Release Schedule"/></a></p>
 
-<p><a href="http://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank">＊画像横に長いのでクリック</a></p>
+<p><a href="https://monosnap.com/image/VdNAJQPs9B0Jynw6bG3BoDxceqAEzl.png" title="ES6 timeline" target="_blank">＊画像横に長いのでクリック</a></p>
 
 - [The ECMAScript 6 schedule changes](http://www.2ality.com/2014/06/es6-schedule.html "The ECMAScript 6 schedule changes")
 
@@ -340,7 +340,7 @@ ECMAScriptではES6以降のコードをES5のコードに変換する[Babel](ht
 
 Babelの作者である@[sebmck](https://github.com/sebmck "sebmck")もTranspilerだけで新しい言語機能を学ぶべきではないと言っている。
 
-![slide](http://azu.github.io/slide/nodejs-es6/img/JavaScript_transformation.png)
+![slide](https://azu.github.io/slide/nodejs-es6/img/JavaScript_transformation.png)
 
 - [JavaScript Transformation - JSConf 2015 // Speaker Deck](https://speakerdeck.com/sebmck/javascript-transformation-jsconf-2015)
 - [どうやってECMAScript 6を学び始めるか](http://azu.github.io/slide/nodejs-es6/how-to-learn.html)
@@ -433,7 +433,7 @@ ES6で言語としてのベースラインがかなり整ったので、普通�
 - 最新の議論は[TC39 Meeting Notes](https://github.com/rwaldron/tc39-notes "TC39 Meeting Notes")に記録されているがtypoなどの間違いが多いので修正してみる
 - Transpilerなどのツールが新しい構文に対応するには、まずそのコードをパースできないといけない
 	- 各種パーサが対応出来るようにPull Requestを送ってみる
-	- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](http://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
+	- [[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch](https://efcl.info/2015/02/26/recent-js-ast/ "[2015-02] 最近のJavaScript AST標準化の動き | Web Scratch")
 - 仕様のTranspilerやPolyfillを実装してみる
 - TranspilerやPolyfillを使ってみて使い勝手などのフィードバックを書いてみる
 

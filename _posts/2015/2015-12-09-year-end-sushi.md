@@ -59,7 +59,7 @@ tags:
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-- [[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch](http://efcl.info/2015/12/07/pdf.js-controller/ "[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch")
+- [[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch](https://efcl.info/2015/12/07/pdf.js-controller/ "[pdf.js] テキスト選択出来るスライド表示ライブラリを書いた | Web Scratch")
 - pdf.jsは扱いにくいけど普通に動いても面白い
 - 楽に扱えるライブラリを書いたよという話
 

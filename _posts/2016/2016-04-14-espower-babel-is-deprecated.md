@@ -22,7 +22,7 @@ tags:
 
 Babel + Mocha + power-assertの組み合わせを出来るだけ設定ファイルなどを作らずに使える[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")というモジュールを書いていましたが、役目を終えたので非推奨(deprecated)にしました。
 
-- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](http://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
+- [テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch](https://efcl.info/2015/05/10/espower-babel3.0.0/ "テストコードをES6+power-assertで書けるespower-babel 3.0.0リリース | Web Scratch")
 
 理由としては、Babel@6からは設定(ファイル)を必ず必要とするので、[espower-babel](https://github.com/power-assert-js/espower-babel "espower-babel")をかませる分、柔軟性がなくなったり余計な処理が起きて遅くなるためです。
 
@@ -133,7 +133,7 @@ describe("add", function () {
 
 `$ mocha`という感じでテストを実行してみると、このテストは`3 == 5`となっているので失敗します。
 
-![power-assert result](http://efcl.info/wp-content/uploads/2016/04/14-1460632719.png)
+![power-assert result](https://efcl.info/wp-content/uploads/2016/04/14-1460632719.png)
 
 テストを失敗すると、power-assertにより構造的な結果が表示されています。
 `.babelrc`の設定にもとづいて変換する際に`babel-preset-power-assert`が次の2つのことをやっています。
@@ -169,7 +169,7 @@ export default function add(x, y) {
 今までは、ただの`assert()`だったので、大した情報はでませんでした。
 しかし、これもMocha経由で実行してみると、`assert(typeof x === "number");`がpower-assert化されています。
 
-![assert to be power-asssert](http://efcl.info/wp-content/uploads/2016/04/14-1460633294.png)
+![assert to be power-asssert](https://efcl.info/wp-content/uploads/2016/04/14-1460633294.png)
 
 これはどういうことになるかというと、コード上でライブラリとして`require("power-assert")`と読み込む必要がなくなり、ツールとしてpower-assertが動くようになった事を意味します。
 
@@ -211,7 +211,7 @@ describe("add", function () {
 
 JSDocから自動でランタイムAssertionを追加してくれる[babel-plugin-jsdoc-to-assert](https://github.com/azu/babel-plugin-jsdoc-to-assert "babel-plugin-jsdoc-to-assert")を使うことで、`add.js`から型チェック的な`assert`は取り除けます。
 
-- [JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch](http://efcl.info/2016/03/25/jsdoc-to-assert/ "JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch")
+- [JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch](https://efcl.info/2016/03/25/jsdoc-to-assert/ "JSDocをランタイムassertに変換するBabelプラグインを書いた | Web Scratch")
 
 具体的には`presets`に[babel-preset-jsdoc-to-assert](https://github.com/azu/babel-preset-jsdoc-to-assert "azu/babel-preset-jsdoc-to-assert: Babel plugin for jsdoc-to-assert")を追加して、JSDocを書くだけです。
 

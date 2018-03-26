@@ -53,7 +53,7 @@ tags:
 
 - 電子書籍開発環境のセットが欲しい
     - CI、Lint、PDFなどの自動化
-    - Promise本はAsciidoc => [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](http://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")
+    - Promise本はAsciidoc => [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](https://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")
     - Leanpubの[Markua](http://markua.com/ "Markua")が早く公開されて欲しい。
 - d.tsの管理をどうしているか?
 	- モジュール分離しても、共通のインターフェースのオブジェクトを扱いたい

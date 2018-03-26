@@ -19,7 +19,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/59
 
 例えば、以下のようなjQueryで書いたコードは外(テストコード)から取り出すポイントがないので、ユニットテストを書くのは難しいと思います。(そもそもViewのコードなので)
 
-![img](http://gyazo.com/b7e1593ef11326f5d6bf788d25e1bd6d.gif)
+![img](https://gyazo.com/b7e1593ef11326f5d6bf788d25e1bd6d.gif)
 
 > 特定のバージョンでの変更点を簡単に確認できるよう、 
 「Aの列のラジオボタンを選ぶと同じ行より一つ下にあるBの列のラジオボタンを自動で選ぶ」 という補助機能
@@ -120,9 +120,9 @@ describe("app-test", function () {
 - [azu/testium-seed](https://github.com/azu/testium-seed/ "azu/testium-seed")
 - READMEにも同じ解説が書いてあります。
 
-[![site](http://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
+[![site](https://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
 
-![screenshot-error](http://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
+![screenshot-error](https://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
 
 
 1: インストール `devDependencies`
@@ -211,7 +211,7 @@ npm test
 mocha --require intelli-espower-loader test/
 ```
 
-![Success tests](http://monosnap.com/image/hwVhdEMWlrgafoUNOq8hUKOePaFRNH.png)
+![Success tests](https://monosnap.com/image/hwVhdEMWlrgafoUNOq8hUKOePaFRNH.png)
 
 ### chromeでテストする
 
@@ -250,7 +250,7 @@ TestiumコマンドにはREPL機能があり、以下のようなコマンドを
 npm test
 ```
 
-![chrome-e2e](http://gyazo.com/3ff16c0473b5eb3729d26c6401a2fe7b.gif)
+![chrome-e2e](https://gyazo.com/3ff16c0473b5eb3729d26c6401a2fe7b.gif)
 
 
 細かい設定は[Configuration](https://github.com/groupon-testium/testium#configuration "Configuration")にかいてありますが、この設定書式をini形式(Key=value)に直す必要があることには注意して下さい。
@@ -302,7 +302,7 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 - [coding-kata/todo-app-jquery-to-backbone](https://github.com/coding-kata/todo-app-jquery-to-backbone "coding-kata/todo-app-jquery-to-backbone")
    - [リファクタリングのためのテスト](http://hokaccha.github.io/slides/refactoring/ "リファクタリングのためのテスト")のE2EテストをTestiumに移植した内容
    - jQueryで書かれたTodoアプリをBackbone.jsベースにリファクタリングしてます。
-   - 実装はES6で書いてます => [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](http://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
+   - 実装はES6で書いてます => [ライブラリをES6で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/ "ライブラリをES6で書いて公開する所から始めよう | Web Scratch")
 - [coding-kata/monologue](https://github.com/coding-kata/monologue "coding-kata/monologue")
 	- 以下のを元にjQueryベースのものをBackbone.jsベースにリファクタリングする内容です
 	- Browserifyでファイルとしてモジュールを分けたりなどもしています。
@@ -313,7 +313,7 @@ E2Eテストの場合は現状を壊してないかのテストは比較的カ�
 
 [![Build Status](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype.svg)](https://travis-ci.org/coding-kata/beautiful-code-vs-mr-oldtype)
 
-jQueryで書いたコードをどうやってリファクタリングするかは[The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch](http://efcl.info/2015/01/11/refactoring-tales/ "The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch")で書いた[The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html "The Refactoring Tales")を読んでみるのもいいかもしれません。
+jQueryで書いたコードをどうやってリファクタリングするかは[The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch](https://efcl.info/2015/01/11/refactoring-tales/ "The Refactoring Tales - JavaScriptのリファクタリング本を読んだ | Web Scratch")で書いた[The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html "The Refactoring Tales")を読んでみるのもいいかもしれません。
 
 ## おわりに
 

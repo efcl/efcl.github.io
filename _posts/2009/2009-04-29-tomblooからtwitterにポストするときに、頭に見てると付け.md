@@ -17,10 +17,10 @@ tags:
   - twitter
 ---
 TomblooからTwitterにポストするときに、何もコメントを書いていない時に**  
-見てる: &#8220;引用文&#8221; Web scratch http://efcl.info/ **  
+見てる: &#8220;引用文&#8221; Web scratch https://efcl.info/ **  
 みたいな感じに頭に文字列を挿入するscriptパッチです。  
 コメントありの場合は  
-**コメント &#8220;引用文&#8221; Web scratch http://efcl.info/ **  
+**コメント &#8220;引用文&#8221; Web scratch https://efcl.info/ **  
 という形になります。(引用文はQuote時のみ)
 
 追記: 0.4.6からに合わせた形式に合わせました。

@@ -118,9 +118,9 @@ if, for, while, doなどの{}は省略しない([WebStormの自動整形で中�
  [16]: http://code.google.com/p/uupaa-js/wiki/CodingStyle
  [17]: http://d.hatena.ne.jp/amachang/20100917/1284700700
  [18]: http://www.amazon.co.jp/exec/obidos/ASIN/4873114888/book042-22/ref=nosim/
- [19]: http://efcl.info/adiary/JavaScriptPatterns/Chapter2Essentials
+ [19]: https://efcl.info/adiary/JavaScriptPatterns/Chapter2Essentials
  [20]: http://www.jetbrains.com/webstorm/
- [21]: http://efcl.info/2010/1027/res2023/
+ [21]: https://efcl.info/2010/1027/res2023/
  [22]: http://blog.livedoor.jp/okashi1/archives/51751259.html
  [23]: http://meme.efcl.info/2011/05/webstorm_29.html
  [jscs]: https://github.com/jscs-dev/node-jscs#preset  "jscs-dev/node-jscs"

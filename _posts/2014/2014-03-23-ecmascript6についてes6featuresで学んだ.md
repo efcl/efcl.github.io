@@ -78,7 +78,7 @@ power-assertを使うときに[intelli-espower-loader][19]をインストール�
 
 `$ mocha --require intelli-espower-loader` だけでpower-assertらしいテスト結果が出せるようになります。
 
-<img src="http://efcl.info/wp-content/uploads/2014/03/NewImage.png" alt="NewImage" title="NewImage.png" border="0" width="600" height="303" />
+<img src="https://efcl.info/wp-content/uploads/2014/03/NewImage.png" alt="NewImage" title="NewImage.png" border="0" width="600" height="303" />
 
 <div class="highlight">
   <pre><span class="s2">"use strict"</span><span class="p">;</span>

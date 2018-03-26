@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        LDR UnreadCounter
-// @namespace      http://efcl.info/
+// @namespace      https://efcl.info/
 // @description    LDRの未読数をステータスバーに表示
 // @include     main
 // @compatibility Firefox 2.0 3.*

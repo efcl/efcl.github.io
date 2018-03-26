@@ -14,7 +14,7 @@ tags:
 
 ## 電子書籍開発環境
 
-<div class="kwout" style="text-align: center;"><a href="http://azu.github.io/slide/niku_sushi/ebook_development.html"><img src="http://kwout.com/cutout/a/94/x9/4x5_bor.jpg" alt="http://azu.github.io/slide/niku_sushi/ebook_development.html" title="Markdownで書く電子書籍開発環境" width="600" height="225" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/niku_sushi/ebook_development.html">Markdownで書く電子書籍開発環境</a></p></div>
+<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/niku_sushi/ebook_development.html"><img src="http://kwout.com/cutout/a/94/x9/4x5_bor.jpg" alt="http://azu.github.io/slide/niku_sushi/ebook_development.html" title="Markdownで書く電子書籍開発環境" width="600" height="225" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/niku_sushi/ebook_development.html">Markdownで書く電子書籍開発環境</a></p></div>
 
 [Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")というスライドで、GitBookとMarkdownで技術書(電子書籍)を書く話を紹介しました。
 
@@ -125,8 +125,8 @@ travis init node.js
 gitbook-starter-kitでは[prh.yml](https://github.com/azu/gitbook-starter-kit/blob/master/prh.yml)に辞書を追加することで表記揺れをチェックすることができます。
 詳しい設定方法については以下を参照して下さい。
 
-- [textlint + prhで表記ゆれを検出する | Web Scratch](http://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
-- [textlintで日本語の文章をチェックする | Web Scratch](http://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
+- [textlint + prhで表記ゆれを検出する | Web Scratch](https://efcl.info/2015/09/14/textlint-rule-prh/ "textlint + prhで表記ゆれを検出する | Web Scratch")
+- [textlintで日本語の文章をチェックする | Web Scratch](https://efcl.info/2015/09/10/introduce-textlint/ "textlintで日本語の文章をチェックする | Web Scratch")
 
 ![gif](https://embed.gyazo.com/af14634690a0515c2c5ce56bd2fd6431.gif)
 

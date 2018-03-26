@@ -35,12 +35,12 @@ CommonJS -> ブラウザ用のJS といえば、[browserify][2]や[CommonJS Ever
 そのため、元のコードが小さくても、元コード + エミュレートする関数等が入って表示用としてはあまりキレイではありません。
 
 <div class="kwout" style="text-align: center;">
-  <img src="http://kwout.com/cutout/u/i8/cs/2uk.jpg" alt="http://efcl.info/2014/0120/res3605/" title="npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch" width="600" height="299" style="border: none;" usemap="#map_ui8cs2uk" /><br /> <map id="map_ui8cs2uk" name="map_ui8cs2uk">
+  <img src="http://kwout.com/cutout/u/i8/cs/2uk.jpg" alt="https://efcl.info/2014/0120/res3605/" title="npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch" width="600" height="299" style="border: none;" usemap="#map_ui8cs2uk" /><br /> <map id="map_ui8cs2uk" name="map_ui8cs2uk">
     <area coords="69,257,124,270" href="https://github.com/azu/browserify-example/blob/master/simple/bundle.js" alt="" shape="rect" />
   </map>
   
   <p style="margin-top: 10px; text-align: center;">
-    <a href="http://efcl.info/2014/0120/res3605/">npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch</a>
+    <a href="https://efcl.info/2014/0120/res3605/">npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch</a>
   </p>
 </div>
 
@@ -275,5 +275,5 @@ browserifyみたいに大きなものとかじゃなくて、ちょっとした�
  [25]: http://atnd.org/events/48368 "JSオジサン"
  [26]: https://github.com/azu/slide/issues/1 "JSオジサンのスライド作成 · Issue #1 · azu/slide"
  [27]: http://eslint.org/ "ESLint"
- [28]: http://efcl.info/2013/1104/res3465/ "ESLint 0.1.0がリリースされたので、JSHintとの違いやプラグインの書き方について | Web scratch"
+ [28]: https://efcl.info/2013/1104/res3465/ "ESLint 0.1.0がリリースされたので、JSHintとの違いやプラグインの書き方について | Web scratch"
  [29]: https://github.com/eslint/eslint-tester "eslint-tester"

@@ -19,7 +19,7 @@ GitHubのリポジトリを別の場所に移す場合、リポジトリまる�
 
 そのため、よく取られるのはリポジトリは空にしてDescriptionなどで移動したことを書いておく手法です。
 
-![moved](http://efcl.info/wp-content/uploads/2017/05/22-1495415248.png)
+![moved](https://efcl.info/wp-content/uploads/2017/05/22-1495415248.png)
 
 これをやる[move-github-repository](https://github.com/azu/move-github-repository "azu/move-github-repository: Move GitHub repository(Update description &amp;&amp; URL &amp;&amp; default branch).")というツールを書きました。
 

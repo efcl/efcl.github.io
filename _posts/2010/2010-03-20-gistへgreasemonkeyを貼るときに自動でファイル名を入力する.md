@@ -22,7 +22,7 @@ tags:
 
 Add another file…で追加したテキストエリアにも対応させてあります。
 
-[<img class="aligncenter size-medium wp-image-1615" title="sshot-2010-03-20-1" src="http://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-20-1-300x226.png" alt="" width="300" height="226" />][2]
+[<img class="aligncenter size-medium wp-image-1615" title="sshot-2010-03-20-1" src="https://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-20-1-300x226.png" alt="" width="300" height="226" />][2]
 
 *   [gist fill in fileName automatically][3]
 
@@ -129,7 +129,7 @@ DOMNodeInsertedとかドキュメントがあんまり見当たらない。
 以上
 
  [1]: http://gist.github.com/
- [2]: http://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-20-1.png
+ [2]: https://efcl.info/wp-content/uploads/2010/03/sshot-2010-03-20-1.png
  [3]: http://userscripts.org/scripts/show/71914
  [4]: http://userscripts.org/scripts/show/71914 "gist fill in fileName automatically for Greasemonkey"
  [5]: http://twitter.com/Griever2

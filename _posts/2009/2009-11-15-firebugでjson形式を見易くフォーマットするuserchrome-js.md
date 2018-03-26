@@ -66,7 +66,7 @@ FirebugでDOMをtoSource()したときに生成されるJSON形式のような�
 
 <br class="spacer_" /><figure id="attachment_1470" style="width: 300px;" class="wp-caption alignnone">
 
-[<img class="size-medium wp-image-1470" title="2009-11-14 22-48-43" src="http://efcl.info/wp-content/uploads/2009/11/2009-11-14-22-48-43-300x55.png" alt="使い方の流れ" width="300" height="55" />][2]<figcaption class="wp-caption-text">使い方の流れ</figcaption></figure> 
+[<img class="size-medium wp-image-1470" title="2009-11-14 22-48-43" src="https://efcl.info/wp-content/uploads/2009/11/2009-11-14-22-48-43-300x55.png" alt="使い方の流れ" width="300" height="55" />][2]<figcaption class="wp-caption-text">使い方の流れ</figcaption></figure> 
 <br class="spacer_" />
 
 1.  FirebugのコマンドラインにJSON形式のものだけを入力する(コマンドラインに入力されているものをそのまま使います)
@@ -84,7 +84,7 @@ FirebugでDOMをtoSource()したときに生成されるJSON形式のような�
 <br class="spacer_" />
 
  [1]: http://gist.github.com/raw/234552/643b98a1f96d3a77efae5627c662bd406d77ea5b/Firebug%20JSON%20formatting.uc.js
- [2]: http://efcl.info/wp-content/uploads/2009/11/2009-11-14-22-48-43.png
+ [2]: https://efcl.info/wp-content/uploads/2009/11/2009-11-14-22-48-43.png
  [3]: http://0-oo.net/sbox/javascript/json-decoder
  [4]: http://0-oo.net/sbox/javascript/json-decoder "JSONを見やすく展開してFirebugとかで表示 - JSONDecoder.js [ゼロと無限の間に]"
  [5]: http://gist.github.com/234552 "gist: 234552 - GitHub"

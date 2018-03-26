@@ -13,7 +13,7 @@ tags:
 
 この記事では自分なりの勉強会でのメモの取り方についてメモしたものです。
 
-今までに参加してきた[イベント](http://efcl.info/categories/#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88 "イベント")では、
+今までに参加してきた[イベント](https://efcl.info/categories/#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88 "イベント")では、
 大体メモを取っていて"〜アウトラインメモ"とかいうタイトルで公開してあります。
 
 ## 書くツール
@@ -50,7 +50,7 @@ tags:
 上に載せてないですが、[Day One](http://dayoneapp.com/ "Day One")とかがこのリスト周りの動きの出来がいいと思います。
 (iOS版もアウトラインに絞ると中々いい感じ)
 
-![dayone](http://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
+![dayone](https://i.gyazo.com/465772eac81687cb97b9882b95a5af58.gif)
 
 後、最初の頃は[Qute for PC/Mac](http://www.inkcode.net/qute "Qute for PC/Mac")というのを使っていて、
 このアプリは幻の[Chromeless Browser](https://mozillalabs.com/en-US/chromeless/ "Chromeless Browser")を使ったHTML/CSS/JSのアプリです。
@@ -67,12 +67,12 @@ tags:
 
 ### OmniOutliner
 
-![omnioutliner](http://efcl.info/wp-content/uploads/2014/07/2014-07-18_20-02-33.jpg)
+![omnioutliner](https://efcl.info/wp-content/uploads/2014/07/2014-07-18_20-02-33.jpg)
 
 OmniOutlinerはアウトライナーなので当たり前ですが、タブでインデントレベルの変更ができることや、
 **CONTENTS**に表示する部分をフィルターしたり、入力は結構快適です。
 
-![gif](http://gyazo.com/8b401092165dcb4dbb7681dcbcc56b02.gif)
+![gif](https://gyazo.com/8b401092165dcb4dbb7681dcbcc56b02.gif)
 
 #### 欠点
 
@@ -166,10 +166,10 @@ opml-to-markdown -e file.opml --require lib/build-markdown.js # markdownに変�
 勉強会だとPCを開いているので普通にメモればいいですが、
 飲み会とか懇談会的なものは皆PC閉じてる事が多いためメモしてないです。
 
-自分が [飲み会](http://efcl.info/2014/0415/res3844/ "テストとセキュリティの葉桜JSに参加してきた | Web Scratch")とか
-[食事](http://efcl.info/2014/0401/res3779/ "寿司jsでPromisesの基礎について発表してきた | Web Scratch")とかに
-[参加](http://efcl.info/2014/0528/res3914/ "#うどんJS でnode-webkitと一人で使うGithub Issueについて発表してきた | Web Scratch")すると
-なぜか[LT大会](http://efcl.info/2014/0403/res3793/ "桜JSでご飯を食べながらLT大会をした | Web Scratch")が始まるため、
+自分が [飲み会](https://efcl.info/2014/0415/res3844/ "テストとセキュリティの葉桜JSに参加してきた | Web Scratch")とか
+[食事](https://efcl.info/2014/0401/res3779/ "寿司jsでPromisesの基礎について発表してきた | Web Scratch")とかに
+[参加](https://efcl.info/2014/0528/res3914/ "#うどんJS でnode-webkitと一人で使うGithub Issueについて発表してきた | Web Scratch")すると
+なぜか[LT大会](https://efcl.info/2014/0403/res3793/ "桜JSでご飯を食べながらLT大会をした | Web Scratch")が始まるため、
 メモっておきたいことが良くあります。
 
 そういう時は、Twitterに適当に書いておくということをよくやります。
