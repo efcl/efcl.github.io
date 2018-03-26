@@ -9,7 +9,7 @@ machine:
   ruby:
     version: 2.3.0
   node:
-    version: 4.1.0
+    version: 8.9.0
 dependencies:
     override:
       - bundle install --frozen
