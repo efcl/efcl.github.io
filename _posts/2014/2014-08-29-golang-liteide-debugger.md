@@ -85,7 +85,7 @@ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/gdb.rb
 
 ブレークポイントを打って止められるようになる。
 
-![img](http://take.ms/ib04C)
+![img](https://take.ms/ib04C)
 
 Stringがstructのままだけどそんなもんなのかな?
 (AppCodeとかXcodeもこの辺徐々に対応してたからそういう感じなのかな)

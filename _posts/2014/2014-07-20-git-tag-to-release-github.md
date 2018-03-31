@@ -50,7 +50,7 @@ git tag -a "annotation title" -m "release message body"
 * `-a` リリースのタイトル
 * `-m` リリースのメッセージボディ
 
-![demo](http://take.ms/UBT0G)
+![demo](https://take.ms/UBT0G)
 
 GitHub Releasesのページは自動的にtagについてるメッセージを読み取って表示してくれます。
 
