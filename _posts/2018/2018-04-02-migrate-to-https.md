@@ -55,7 +55,7 @@ GitHubからNetlifyに移行するためにドメインレジストラで以下�
 
 ### GitHub Pages と Netlifyの違い
 
-基本的にドメインの変更だけでそのままJekyllのサイトは移行できましたが、一箇所だけ挙動が異なる部分がありました。
+基本的にDNSの変更だけでそのままJekyllのサイトは移行できましたが、一箇所だけ挙動が異なる部分がありました。
 
 
 GitHub Pageは`index.xml`をindexとして認識しますが、Netlifyは`index.xml`をindexとして認識しないという違いがありました。
