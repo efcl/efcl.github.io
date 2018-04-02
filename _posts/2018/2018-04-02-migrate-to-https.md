@@ -126,9 +126,9 @@ CSPについて調べているとCSPレポートはJavaScriptからも[SecurityP
 - HTTPヘッダを使うためにGitHub Pages から Netlify へ移行した
 - CSPレポートをGoogle Analyticsに収集した
 	- [CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch](https://efcl.info/2018/03/19/csp-report-to-google-analytics/ "CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch")
-- HTTPS化した
+- HTTPS化
 - Google AnalyticsでHTTPでアクセスしてる部分を見つけた修正
-- HTTPS化完了
+- フルHTTPS化完了
 
 もう少し丁寧にやるならば、デフォルト化をする前に[mcdetect](https://github.com/agis/mcdetect "mcdetect")のようなツールでMixed Contentが残ってないかをチェックしたりもできそうです。
 また[CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch](https://efcl.info/2018/03/19/csp-report-to-google-analytics/ "CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch")でも書いていますが、もっとCSPレポートを詳細に分析するならAWS Gatewayなどを使って分析基盤にデータを貯めるのが良さそうな気がしています。
