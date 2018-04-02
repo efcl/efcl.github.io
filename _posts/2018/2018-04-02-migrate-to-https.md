@@ -78,9 +78,11 @@ GitHub Pageは`index.xml`をindexとして認識しますが、Netlifyは`index.
 
 https化した後にhttp://でアクセスしているリソースが残っているとMixed Contentの問題が発生し、画像が表示されなかったりURLバーに警告がでるので、Mixed Contentを検知できる仕組みをまず作ることにしました。
 
-`Content-Security-Policy-Report-Only` HTTPヘッダを使いMixed Contentの問題を収集するのですが、その集計先が問題となりました。
+`Content-Security-Policy-Report-Only` HTTPヘッダを使いCSPレポートを収集するのですが、その集計先が問題となりました。
+AWS Gatewayなどを使えばある程度簡単につくれることは分かっていましたが、データを貯める場所はコストや管理などが問題になりやすいためです。
+
 CSPについて調べているとCSPレポートはJavaScriptからも[SecurityPolicyViolationEvent](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent "SecurityPolicyViolationEvent")として取得できることが分かりました。
-このイベントで取得したレポートをGoogle Analyticsに送信して、Google AnalyticsでMixed Contentsがないかをみられるようにしました。
+このイベントで取得したCSPレポートをGoogle Analyticsに送信して、Google AnalyticsでMixed Contentsがないかをみられるようにしました。
 
 詳しくは次の記事で解説しています。
 
