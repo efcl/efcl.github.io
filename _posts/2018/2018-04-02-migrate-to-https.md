@@ -24,6 +24,7 @@ tags:
 
 - https化後にhttpでアクセスしているリソースがないことをツールで確認できる
 	- 要はMixed Contentがないことを知る方法をもつこと
+- 常時HTTPSでアクセスできるようにする
 
 ## Content-Security-Policy-Report-Only
 
@@ -84,13 +85,26 @@ AWS Gatewayなどを使えばある程度簡単につくれることは分かっ
 CSPについて調べているとCSPレポートはJavaScriptからも[SecurityPolicyViolationEvent](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent "SecurityPolicyViolationEvent")として取得できることが分かりました。
 このイベントで取得したCSPレポートをGoogle Analyticsに送信して、Google AnalyticsでMixed Contentsがないかをみられるようにしました。
 
+Netlifyの`_headers`ファイルを使いHTTPヘッダに次のようにCSPを設定しました。
+意味的にはすべてのアクセスに `Content-Security-Policy-Report-Only` のレスポンスヘッダを付けて返しています。(`report-to`も付けろと警告がでますが付けなくて動きます)
+
+```
+/*
+Content-Security-Policy-Report-Only: default-src https: blob: data: http://www.google-analytics.com/* 'unsafe-eval' 'unsafe-inline';
+```
+
+- <https://github.com/efcl/efcl.github.io/blob/develop/_headers>
+- [Headers & Basic Auth | Netlify](https://www.netlify.com/docs/headers-and-basic-auth/ "Headers &amp; Basic Auth | Netlify")
+
+このCSPにかかった結果をGoogle Analyticsに送信しています。
+
 詳しくは次の記事で解説しています。
 
 - [CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch](https://efcl.info/2018/03/19/csp-report-to-google-analytics/ "CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch")
 
 ## https化
 
-万が一Mixed Contentsが残っていても見つけられる仕組みができてから、HTTPS化をしましｔあ。
+万が一Mixed Contentsが残っていても見つけられる仕組みができてから、HTTPS化をしました。
 
 [Netlify][]はLet's Enctryptを使ったhttpsをサポートしているのでコントロールパネルから有効化するだけでhttpsでアクセスできるようになります。
 
