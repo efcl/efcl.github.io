@@ -23,7 +23,7 @@ tags:
 この記事では次のことを目標しました。
 
 - https化後にhttpでアクセスしているリソースがないことをツールで確認できる
-	- 要はMixed Contentがないことを知る方法をもつこと
+	- 要はMixed Contentがないことを検知する方法をもつ
 - 常時HTTPSでアクセスできるようにする
 
 ## Content-Security-Policy-Report-Only
@@ -56,14 +56,17 @@ GitHubからNetlifyに移行するためにドメインレジストラで以下�
 
 ### GitHub Pages と Netlifyの違い
 
-基本的にDNSの変更だけでそのままJekyllのサイトは移行できましたが、一箇所だけ挙動が異なる部分がありました。
+基本的にドメインの変更だけでそのままJekyllのサイトは移行できましたが、一箇所だけ挙動が異なる部分がありました。
 
 
 GitHub Pageは`index.xml`をindexとして認識しますが、Netlifyは`index.xml`をindexとして認識しないという違いがありました。
 これが原因で <http://efcl.info/feed/> にアクセスすると404となる問題がありました。
 (<http://efcl.info/feed/index.xml>ならアクセスできた。
 
-そのため、Rewrite Ruleを追加してこの問題を解決しています。
+そのため、NetlifyのRewrite Ruleを`_redirect`ファイルにて定義してこの問題を解決しています。
+
+- <https://github.com/efcl/efcl.github.io/blob/36d5b7858677a33194867d9b1342ba5581ba8659/_redirects#L4-L7>
+- [Redirects | Netlify](https://www.netlify.com/docs/redirects/ "Redirects | Netlify")
 
 ```
 # Rewrite rule
@@ -104,9 +107,10 @@ Content-Security-Policy-Report-Only: default-src https: blob: data: http://www.g
 
 ## https化
 
-万が一Mixed Contentsが残っていても見つけられる仕組みができてから、HTTPS化をしました。
+万が一Mixed Contentsが残っていても見つけられる仕組みができたので、サイトをHTTPSでアクセスできるようにしました。
 
-[Netlify][]はLet's Enctryptを使ったhttpsをサポートしているのでコントロールパネルから有効化するだけでhttpsでアクセスできるようになります。
+[Netlify][]はLet's Encryptを使ったhttps化をサポートしています。
+コントロールパネルから有効化するだけでhttpsでアクセスできるようになります。
 
 - [SSL / HTTPS | Netlify](https://www.netlify.com/docs/ssl/ "SSL / HTTPS | Netlify")
 
@@ -126,9 +130,9 @@ Content-Security-Policy-Report-Only: default-src https: blob: data: http://www.g
 
 ## 数日後にMixed Contentのチェック
 
-数日後にGoogle Analyticsに集計していたCSPレポートを見ると殆ど`http://`でアクセスするリソースはなくなっていることがわかりました。
+数日後にGoogle Analyticsに集計していたCSPレポートを見ると、`http://`でアクセスするリソースはほぼなくなっていることが確認できました。
 
-一部変更のミスがあることが分かったので、それを書き換えて https への完了しました。
+一部変更のミスがあることが分かったので、それを`https://`に書き換えて、HTTP化は完了しました。
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">ほぼほぼhttpsのCSPレポートなくなってた。<br>kwout以外は直せるかな <a href="https://t.co/33sar0LIru">pic.twitter.com/33sar0LIru</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/979959462940229632?ref_src=twsrc%5Etfw">March 31, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -137,8 +141,8 @@ Content-Security-Policy-Report-Only: default-src https: blob: data: http://www.g
 
 まとめるとこのサイトは次のようなステップでHTTPS化しました。
 
-- HTTPヘッダを使うためにGitHub Pages から Netlify へ移行した
-- CSPレポートをGoogle Analyticsに収集した
+- HTTPヘッダを使うためにGitHub Pages から Netlify へ移行
+- CSPレポートをGoogle Analyticsに収集
 	- [CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch](https://efcl.info/2018/03/19/csp-report-to-google-analytics/ "CSPレポート(Mixed Contentの問題)をGoogle Analyticsに集約する | Web Scratch")
 - HTTPS化
 - Google AnalyticsでHTTPでアクセスしてる部分を見つけて修正
