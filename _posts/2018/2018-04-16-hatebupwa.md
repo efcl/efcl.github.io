@@ -425,5 +425,10 @@ UIフレームワークにはMicrosoftの[Office UI Fabric](https://developer.mi
 [Issues](https://github.com/azu/hatebupwa/issues)や[Pull Requests](https://github.com/azu/hatebupwa/pulls)を待っています！
 
 
-- ``サイト: [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
+- サイト: [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
 - リポジトリ: [azu/hatebupwa: Hatena Bookmark search app.](https://github.com/azu/hatebupwa)
+
+
+作り終わってから過去にもはてなブックマーク検索ツールを書いていたことを思い出しました。
+
+- [はてなブックマーク検索を作りながらFlux Utilsについて学ぶ | Web Scratch](https://efcl.info/2015/08/24/flux-utils/)
