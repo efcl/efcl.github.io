@@ -161,8 +161,8 @@ export { Provider, Consumer, Subscribe };
 }
 ```
 
-React Context APIをコンポーネント間で値を共有する方法の一種を提供しています。
-React Context APIは`createContext`で新しいコンテキストのインスタンスを作り、それをexportするファイル作り、そのファイルをいろんなところからimportして使う形になると思います。
+React Context APIはコンポーネント間で値を共有する方法の一種です。
+React Context APIは`createContext`で新しいコンテキストのインスタンスを作成しそれをexportするファイル作り、そのファイルをいろんなところからimportして使う形になると思います。
 
 ```js
 // some-context.js
