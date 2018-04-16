@@ -178,7 +178,7 @@ import {Provider, Consumer} from "./some-context.js"
 
 一種のシングルトン的な感じになると思うので、いたるところのコンポーネントから読み込んで使うのは危険な参照になりそうです。現実的には、上の層のコンポーネント(App.jsやContainer componentなど)でContextから値を取り出し、下のプリミティブなコンポーネントには今まで通りpropsで値を渡す形に落ち着きそうな気はします。
 
-`createContext`で作った`Provider`と`Consumer`はReactコンポーネントという性質上、`render()`の中でしか使えません。そのためContext経由の値を他のライフサイクルイベントで使うには一度propsで渡す必要があり、すべてがContextだけになることは現実的にはではないでしょう。
+`createContext`で作った`Provider`と`Consumer`はReactコンポーネントという性質上、`render()`の中でしか使えません。そのためContext経由の値を他のライフサイクルイベントで使うには一度propsで渡す必要があり、Contextのみで値のやり取りが完結することは基本的にはないです。
 
 今回は[App.tsx](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L84-L93)だけAlmin + React Contextを使って、そこから下にはpropsでアプリの状態を渡しています。
 
