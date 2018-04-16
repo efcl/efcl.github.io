@@ -42,7 +42,7 @@ tags:
 - Android: "Add to HomeScreen" on <https://hatebupwa.netlify.com/>
 - macOS: Download from <https://github.com/azu/hatebupwa/releases/latest>
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">iOSでのホームスクリーンアプリでもオフラインで動作してる様子。 <a href="https://t.co/Upu2PGpREc">pic.twitter.com/Upu2PGpREc</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/985672400187539456?ref_src=twsrc%5Etfw">April 16, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="ja" dir="ltr">iOSでのホームスクリーンアプリでもオフラインで動作してる様子。 <a href="https://t.co/Upu2PGpREc">pic.twitter.com/Upu2PGpREc</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/985672400187539456?ref_src=twsrc%5Etfw">April 16, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -64,27 +64,29 @@ tags:
 ### 作った理由
 
 元々[keysnail](https://github.com/mooz/keysnail)の[Hatebnail](https://github.com/mooz/keysnail/wiki/Plugin)を使ってはてブを検索していましたが、Firefox 57+へのアップデートで拡張が使えなくなったので代わりとなるものを探しましたがなかったので作りました。
-Hatebnailは、旧はてなブックマーク拡張の内部的に持つデータベースを検索するため、オフラインでも検索また高速なインクリメンタル検索ができていました。
+Hatebnailは旧はてなブックマーク拡張の内部的に持つデータベースを検索するため、オフラインでも検索また高速なインクリメンタル検索ができていました。
 
-データの更新は、はてなブックマーク拡張が差分更新だけをやっていたので、基本的に最新のデータが手元でいつでも検索出来るような感じで使い勝手が良かったです。
+はてなブックマーク拡張がデータの差分更新だけをやっていたので、基本的に最新のデータが手元でいつでも検索出来るような感じで使い勝手が良かったです。
 
 [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)もできるだけ同じレベルで使えるように、データの更新を意識しないような作りや高速な絞り込み検索にメインにしています。
 
 ## 技術的詳細
 
-### Toolkit
+ここからこのアプリの技術的なメモ書きです。
+
+## Toolkit
 
 TypeScript + Reactで書くことにしたので、[create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)を使いました。
 [create-react-app](https://github.com/facebook/create-react-app)のTypeScript版です。
 
 今回はService WorkerやWeb Workerで少し範囲を超えた事をしないとダメでしたが、普通に使う分には面倒な設定が減るので快適です。
 
-### React 16.3 Context
+## React 16.3 Context
 
 このアプリを作り始めるときに最初に必要になりそうな機能やアーキテクチャをざっくりと決めていました。ついでなのでReact 16.3.0で新しくなった[Context](https://reactjs.org/docs/context.html) APIを試すことにしました。
 
 - [React v16.3.0: New lifecycles and context API - React Blog](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)
-- 
+
 このアプリは[Almin](https://almin.js.org/)というライブラリを使ってステートを管理しています。
 
 - [almin/almin: Client-side DDD/CQRS for JavaScript.](https://github.com/almin/almin)
@@ -133,7 +135,7 @@ export { Provider, Consumer, Subscribe };
 
 後は、[App.tsx](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L84-L93)で各種コンポーネントを状態のオブジェクトを渡してるだけです。
 
-```js
+```
     render() {
         return (
             <>
@@ -181,7 +183,7 @@ import {Provider, Consumer} from "./some-context.js"
 今回は[App.tsx](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L84-L93)でだけAlmin + React Contextを使って、そこから下にはpropsでアプリの状態を渡しています。
 
 
-### ルータ
+## ルータ
 
 このアプリのユースケースを[almin-usecase-map-generator](https://github.com/almin/almin-usecase-map-generator)で生成すると次のような感じです。
 
@@ -247,27 +249,44 @@ Reactのルータと言えば[React Router](https://github.com/ReactTraining/rea
 
 - <https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L61-L77>
 
-### Web Worker
+## Web Worker
 
 <https://hatebupwa.netlify.com/>でブックマークをフィルタ検索してみると分かりますが、ある程度のPCならある程度の量をリアルタイムにフィルターできていることがわかると思います。(Macbook Proで10万件ぐらいまでなら100ms以内に反映できる程度)
 
 メモリ上にデータを持っているので検索自体が速いのは当然ですが、単純にUIスレッドでフィルターをするとものすごくカクつきます。
 それを避けるために実際の検索キーワードでのフィルタリング処理は[Web Worker](https://developer.mozilla.org/ja/docs/Web/API/Web_Workers_API/Using_web_workers)の中で行っています。
 
-これによりCPUをかなり使い重たいフィルタリング処理がUIスレッドに影響を与えなくなるので、入力中の重さがかなり軽減できています。（影響が完全になくなるわけではなく、Web WorkerへpostMessageするときにデータ量が多いとそこで詰まることがある気がします）
+これによりかなり重たいフィルタリング処理がUIスレッドに影響が少なくなり、入力中の重さがかなり軽減できています。（影響が完全になくなるわけではなく、Web WorkerへpostMessageするときにデータ量が多いとそこで詰まることがある気がします）
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">WebWorkerを使うことでUIブロックなくせた。 <a href="https://t.co/4CY95S8yA3">pic.twitter.com/4CY95S8yA3</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/983162005463883781?ref_src=twsrc%5Etfw">April 9, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-残念なことに[create-react-app](https://github.com/facebook/create-react-app)はWeb Workerをインライン化する方法がないため、Web Worker用のワーカーファイルを外部ファイルとして起き、必要になったらアプリから読み込むようにしています。
+残念なことに[create-react-app](https://github.com/facebook/create-react-app)はWeb Workerをインライン化する方法がないため、Web Worker用のワーカーファイルを外部ファイルとしておいて、必要になったらアプリから読み込むようにしています。
 
 - [Add WebWorker Support · Issue #3660 · facebook/create-react-app](about:blank)
 
-webpackなどを使っている人は[worker-loader](https://github.com/webpack-contrib/worker-loader)などを使うことで、普通のJavaScriptと同じような間隔でWeb Workerのファイルを読み込める(インライン化できる)ので、結構気軽にWeb Workerを使えると思います。
+webpackなどを使っている人は[worker-loader](https://github.com/webpack-contrib/worker-loader)などを使うことで、普通のJavaScriptモジュールと同じ感覚でWeb Workerのファイルを読み込める(インライン化できる)ので、結構気軽にWeb Workerを使えると思います。
 
 このアプリではワーカー用のファイルとそれをビルドする[webpack.worker.config.js](https://github.com/azu/hatebupwa/blob/master/webpack.worker.config.js)をわざわざ用意してビルドするという手法を取っていますが、フィルタリングのロジック自体はワーカーとアプリで共有しています。
 
-- [hatebupwa/filter.ts at 0e7c430c04717306ee5952b5eebc67af8a5ee631 · azu/hatebupwa](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/workers/filter.ts)
+そのため、Workerファイル([filter.ts](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/workers/filter.ts))に書いてあるのは10行程度のコードです。
+
+```ts
+import { HatebuSearchListItem } from "../src/container/SearchContainer/SearchContainerStore";
+import { matchBookmarkItem } from "../src/domain/Hatebu/BookmarkSearch";
+
+const registerWebworker = require("webworker-promise/lib/register");
+let currentItems: HatebuSearchListItem[] = [];
+registerWebworker()
+    .on("init", (items: HatebuSearchListItem[]) => {
+        currentItems = items;
+    })
+    .operation("filter", (filterWords: string[]) => {
+        return currentItems.filter(item => {
+            return matchBookmarkItem(item, filterWords);
+        });
+});
+```
 
 実際のデータをTransferable ObjectsとしてWorkerに渡せると、コストがもっと減って良さそうですが、Transferable ObjectsにできるのはArrayBufferなどに限定されています。
 (普通の文字列とか配列をTransferable Objectsにして転送コストを減らす方法あるのかな)
@@ -285,7 +304,8 @@ webpackなどを使っている人は[worker-loader](https://github.com/webpack-
 
 あとはIME特有のCompositionEventに対応したり、できるだけ違和感がなく速いフィルタリング体験ができることを目標にして設定しました。
 
-### オフライン
+## オフライン
+
 
 オフライン対応するには主に2種類の対応が必要です。
 
@@ -312,7 +332,7 @@ Service Workerは[AppCacheほど](http://0-9.sakura.ne.jp/pub/AVTokyo/start.html
 
 また[sw-precache](https://github.com/GoogleChromeLabs/sw-precache)のチームは現在[Workbox](https://developers.google.com/web/tools/workbox/)にリソースを割いているため、素直に[Workbox](https://developers.google.com/web/tools/workbox/)を使うことにしました。
 
-#### IndexedDB
+### IndexedDB
 
 key-valueなものがあれば十分なので[localForage](https://github.com/localForage/localForage)を使いました。
 メモリDBへの切り替えを動的にできるラッパーとして[StorageManger.ts](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/infra/repository/StorageManger.ts)を作ってそれを使って、[infra/repository](https://github.com/azu/hatebupwa/tree/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/infra/repository)でデータの永続化をしています。
@@ -333,7 +353,7 @@ Entityはuniqu idを持っていて、EntityをJSONにシリアライズ/JSONか
 [ddd-base](https://github.com/almin/ddd-base)も機能的に優れていたり洗練されているわけでもないので、ちょっとづつよくしていきたいなと思っています。
 （シリアライズ周りは未だに書いてて若干の苦痛があるので、もう少し楽できるようになりたい）
 
-#### Service Worker
+### Service Worker
 
 アプリの状態はIndexedDBに永続化しても、ブラウザがページを表示するのに必要なのはHTMLです。
 そのため、HTML自体をオフラインでアクセスできるようにキャッシュしておかないと行けません。
@@ -372,7 +392,7 @@ Service Workerでキャッシュするのは、[create-react-app-typescript](htt
   },
 ```
 
-### UI
+## UI
 
 UIフレームワークにはMicrosoftの[Office UI Fabric](https://developer.microsoft.com/en-us/fabric)を使っています。
 
