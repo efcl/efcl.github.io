@@ -251,7 +251,7 @@ Reactのルータと言えば[React Router](https://github.com/ReactTraining/rea
 
 ## Web Worker
 
-<https://hatebupwa.netlify.com/>でブックマークをフィルタ検索してみると分かりますが、ある程度のPCならある程度の量をリアルタイムにフィルターできていることがわかると思います。(Macbook Proで10万件ぐらいまでなら100ms以内に反映できる程度)
+<https://hatebupwa.netlify.com/>でブックマークをフィルタ検索してみると分かりますが、ある程度のPCならある程度の量をリアルタイムにフィルターできていることがわかると思います。(Macbook Proで10万件ぐらいまでなら100ms-200ms以内に反映できる程度)
 
 メモリ上にデータを持っているので検索自体が速いのは当然ですが、単純にUIスレッドでフィルターをするとものすごくカクつきます。
 それを避けるために実際の検索キーワードでのフィルタリング処理は[Web Worker](https://developer.mozilla.org/ja/docs/Web/API/Web_Workers_API/Using_web_workers)の中で行っています。
