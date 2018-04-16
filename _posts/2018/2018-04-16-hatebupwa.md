@@ -302,7 +302,7 @@ registerWebworker()
 [webworker-promise](https://github.com/kwolfy/webworker-promise)はWeb Workerとの間でEvent Emitter + Promiseのような感じで処理をやり取りできたので結構直感的にフィルタリング処理を書けました。
 また、[データを渡すイベント](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/component/HatebuSearchList/HatebuSearchList.tsx#L97)と[フィルタリングを行うイベント](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/component/HatebuSearchList/HatebuSearchList.tsx#L156)を分けることで、データの転送量を減らすようにしています。
 
-あとはIME特有のCompositionEventに対応したり、できるだけ違和感がなく速いフィルタリング体験ができることを目標にして設定しました。
+あとはIME特有のCompositionEventに対応したり、できるだけ違和感が少なく速いフィルタリング体験ができることを目標にして設定しました。
 
 ## オフライン
 
