@@ -425,5 +425,5 @@ UIフレームワークにはMicrosoftの[Office UI Fabric](https://developer.mi
 [Issues](https://github.com/azu/hatebupwa/issues)や[Pull Requests](https://github.com/azu/hatebupwa/pulls)を待っています！
 
 
-- WebSite: [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
+- ``サイト: [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
 - リポジトリ: [azu/hatebupwa: Hatena Bookmark search app.](https://github.com/azu/hatebupwa)
