@@ -351,7 +351,8 @@ domain – つまりクラスのシリアライズ/デシリアライズは相�
 Entityはuniqu idを持っていて、EntityをJSONにシリアライズ/JSONからデシリアライズできるインターフェースがあり、RepositoryはEntityをコレクション的に保存できて… みたいなよくあるパターンは毎回同じ事を書くのが面倒なので、[ddd-base](https://github.com/almin/ddd-base)というライブラリを書いて使っています。
 
 [ddd-base](https://github.com/almin/ddd-base)も機能的に優れていたり洗練されているわけでもないので、ちょっとづつよくしていきたいなと思っています。
-（シリアライズ周りは未だに書いてて若干の苦痛があるので、もう少し楽できるようになりたい）
+これを使うことでEntityとかRepositoryとかはある程度迷うことなく書けるようになるかなーと思います。
+（シリアライズ周りは未だに書いてて若干の苦痛があるので、もう少し楽できるようになりたい。Decoratorを使わずに手軽にConverterを定義したい…）
 
 ### Service Worker
 
