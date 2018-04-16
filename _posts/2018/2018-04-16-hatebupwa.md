@@ -180,7 +180,7 @@ import {Provider, Consumer} from "./some-context.js"
 
 `createContext`で作った`Provider`と`Consumer`はReactコンポーネントという性質上、`render()`の中でしか使えません。そのためContext経由の値を他のライフサイクルイベントで使うには一度propsで渡す必要があり、すべてがContextだけになることは現実的にはではないでしょう。
 
-今回は[App.tsx](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L84-L93)でだけAlmin + React Contextを使って、そこから下にはpropsでアプリの状態を渡しています。
+今回は[App.tsx](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/container/App.tsx#L84-L93)だけAlmin + React Contextを使って、そこから下にはpropsでアプリの状態を渡しています。
 
 
 ## ルータ
