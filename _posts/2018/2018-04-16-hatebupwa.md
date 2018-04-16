@@ -340,7 +340,7 @@ key-valueなものがあれば十分なので[localForage](https://github.com/lo
 (localForage以外のも探したのですが、IndexedDBに対応していて、安定していて、メモリDBなどのデバッグやテストの補助があって、key-valueでシンプルなAPIというものがなかなか見つからなかった…)
 
 アプリとしての状態はdomainとして管理してあり、domainをシリアライズ/デシリアライズして永続化するのがinfraのrepositoryの役割です。
-このアプリでは、[Hatebu](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain/Hatebu/Hatebu.ts)や[Bookmark](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain/Hatebu/Bookmark.ts)といった[domain](https://github.com/azu/hatebupwa/tree/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain)がシリアライズできるJSONにシリアライズできるインターフェースを定義してあるので、repositoryではそれを使ってJSON化したデータをIndexedDBへ保存しています。
+このアプリでは、[Hatebu](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain/Hatebu/Hatebu.ts)や[Bookmark](https://github.com/azu/hatebupwa/blob/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain/Hatebu/Bookmark.ts)といった[domain](https://github.com/azu/hatebupwa/tree/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain)がJSONにシリアライズできるインターフェースを定義してあるので、repositoryではそれを使ってJSON化したデータをIndexedDBへ保存しています。
 
 逆にアプリの起動時には[InitializeSystemUseCase](https://github.com/azu/hatebupwa/blob/master/src/use-case/InitializeSystemUseCase.ts)でrepositoyがIndexedDBからデータを取得して、それぞれの[domain](https://github.com/azu/hatebupwa/tree/0e7c430c04717306ee5952b5eebc67af8a5ee631/src/domain)を復元しています。
 
