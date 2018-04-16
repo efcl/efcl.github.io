@@ -187,7 +187,7 @@ import {Provider, Consumer} from "./some-context.js"
 
 このアプリのユースケースを[almin-usecase-map-generator](https://github.com/almin/almin-usecase-map-generator)で生成すると次のような感じです。
 
-[ユースケース図](https://efcl.info/wp-content/uploads/2018/04/use-case.png)
+[ユースケース図](https://efcl.info/wp-content/uploads/2018/04/16-1523885493.png)
 
 最初に[InitializeSystemUseCase](https://github.com/azu/hatebupwa/blob/master/src/use-case/InitializeSystemUseCase.ts)を呼び、その後はURLによってどのユースケースを行うかを決めています。
 
