@@ -330,7 +330,7 @@ Service Workerは[AppCacheほど](http://0-9.sakura.ne.jp/pub/AVTokyo/start.html
 
 - [Why was service worker merged into create react app? · Issue #2398 · facebook/create-react-app](https://github.com/facebook/create-react-app/issues/2398)
 
-また[sw-precache](https://github.com/GoogleChromeLabs/sw-precache)のチームは現在[Workbox](https://developers.google.com/web/tools/workbox/)にリソースを割いているため、素直に[Workbox](https://developers.google.com/web/tools/workbox/)を使うことにしました。
+ただし[sw-precache](https://github.com/GoogleChromeLabs/sw-precache)のチームは現在[Workbox](https://developers.google.com/web/tools/workbox/)にリソースを割いているため、素直に[Workbox](https://developers.google.com/web/tools/workbox/)を使うことにしました。
 
 ### IndexedDB
 
