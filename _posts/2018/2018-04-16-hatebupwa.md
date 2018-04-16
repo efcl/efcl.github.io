@@ -358,7 +358,7 @@ Entityはuniqu idを持っていて、EntityをJSONにシリアライズ/JSONか
 
 アプリの状態はIndexedDBに永続化しても、ブラウザがページを表示するのに必要なのはHTMLです。
 そのため、HTML自体をオフラインでアクセスできるようにキャッシュしておかないと行けません。
-これを行うにはApplication CacheかService Workerが必要ですが、Application Cacheは廃止されService Workerへ移行しています。(Service Worker自体がBetter AppCacheとして始まったプロジェクト)
+これを行うにはApplication CacheかService Workerが必要ですが、Application Cacheは廃止予定でありService Workerへ移行しています。(Service Worker自体がBetter AppCacheとして始まったプロジェクト)
 
 - [Application Cache 対応が廃止されます | Firefox サイト互換性情報](https://www.fxsitecompat.com/ja/docs/2016/application-cache-support-will-be-removed/)
 - [イベント駆動型サービス実行基盤としての Service Worker - Qiita](https://qiita.com/nhiroki/items/65efc9e41ec1d928afcd)
