@@ -256,7 +256,7 @@ Reactのルータと言えば[React Router](https://github.com/ReactTraining/rea
 メモリ上にデータを持っているので検索自体が速いのは当然ですが、単純にUIスレッドでフィルターをするとものすごくカクつきます。
 それを避けるために実際の検索キーワードでのフィルタリング処理は[Web Worker](https://developer.mozilla.org/ja/docs/Web/API/Web_Workers_API/Using_web_workers)の中で行っています。
 
-これによりかなり重たいフィルタリング処理がUIスレッドに影響が少なくなり、入力中の重さがかなり軽減できています。（影響が完全になくなるわけではなく、Web WorkerへpostMessageするときにデータ量が多いとそこで詰まることがある気がします）
+これによりかなり重たいフィルタリング処理でもUIスレッドへの影響が少なくなり、入力中の重さがかなり軽減できています。（影響が完全になくなるわけではなく、Web WorkerへpostMessageするときにデータ量が多いとそこで詰まることがある気がします）
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">WebWorkerを使うことでUIブロックなくせた。 <a href="https://t.co/4CY95S8yA3">pic.twitter.com/4CY95S8yA3</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/983162005463883781?ref_src=twsrc%5Etfw">April 9, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
