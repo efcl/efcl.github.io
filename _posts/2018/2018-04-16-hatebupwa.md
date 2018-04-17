@@ -421,8 +421,9 @@ UIフレームワークにはMicrosoftの[Office UI Fabric](https://developer.mi
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 これでざっくりとした[はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)の紹介は終わりです。間違ってFirefoxをアップデートして必要になって突貫で作ったので、まだ微妙なところもあるかもしれません。
+また遅くならないように設計しましたが、早くなるように実装はまだできていません。
 
-[Issues](https://github.com/azu/hatebupwa/issues)や[Pull Requests](https://github.com/azu/hatebupwa/pulls)を待っています！
+そのため[Issues](https://github.com/azu/hatebupwa/issues)や[Pull Requests](https://github.com/azu/hatebupwa/pulls)を待っています！
 
 
 - サイト: [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
