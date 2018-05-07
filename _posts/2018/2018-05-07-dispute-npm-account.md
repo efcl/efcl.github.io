@@ -88,9 +88,6 @@ Azu: Thanks for starting this conversation and CC'ing npm support. I'll keep an 
 @jser: We would really appreciate if you would be willing to discuss this with Azu regarding taking ownership of the jser user account name.
 
 If either of you have questions about this process, please let me know, I'll be here to help! Thank you.
-
-Regards,
-Lisa
 ```
 
 そしてしらばらく返事がなかったのでDispute Resolutionに則り、最初の連絡から4週間(April 30までに)返事がなければ、アカウントを開放するという通知がされていました。
