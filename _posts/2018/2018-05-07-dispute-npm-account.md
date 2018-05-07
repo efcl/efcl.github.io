@@ -49,7 +49,7 @@ To dispute a user name, follow these steps:
 
 ## Dispute Resolutionの手続き
 
-[Dispute Resolution](https://www.npmjs.com/policies/disputes)にかいてあるステップどおりに事を勧めした。
+[Dispute Resolution](https://www.npmjs.com/policies/disputes)にかいてあるステップどおりに進めました。
 
 
 `support@npmjs.com`へ次のような内容で `jser` という使われてないアカウントを解放してもらうことができるかというメールをだしました。
