@@ -25,6 +25,8 @@ JSer.infoでは紹介する記事をすべてJSONのデータにして管理し�
 JSer.infoではいくつかのデータがあり、次のような分類になっています。
 歴史的に経緯で、徐々にアイテムに対する情報量が増えたり欠損している部分もあるので、後述するライブラリ経由で扱ったほうが楽です。
 
+データのライセンスは[Creative Commons — Attribution 4.0 International — CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)で公開しています。
+
 - Item: 紹介するサイトのこと
     - 1 Item = 1 サイト
     - すべてのデータのoriginとなるものです
