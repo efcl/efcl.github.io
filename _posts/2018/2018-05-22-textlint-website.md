@@ -48,6 +48,13 @@ tags:
 興味がある人は[Issues · textlint/textlint](https://github.com/textlint/textlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)などを見てください。
 Pull RequestやIssueはいつでも歓迎しています。
 
+実際ウェブサイトのリニューアルはコントリビュータの協力がありできました。
+
+- [@0x6b](https://github.com/0x6b) start to work migrate exising document to website.
+- [@uetchy](https://github.com/uetchy) design this website.
+- [@azu](https://github.com/azu) implement the design and deploy.
+
+
 ### ルール関係
 
 [ニューラルネットワークを用いた日本語学習者の文章における不自然箇所検知](http://db-event.jpn.org/deim2018/data/papers/298.pdf)(via [最終論文集](http://db-event.jpn.org/deim2018/post/proceedings/#session_G3))でもtextlintが引用されていましたが、そろそろクライアントサイドでも機械学習を使ったルールというものができてもおかしくはないんじゃないかなと思いました。
