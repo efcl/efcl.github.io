@@ -54,8 +54,8 @@ Pull RequestやIssueはいつでも歓迎しています。
 
 textlintが特徴的なのはソースが公開されていて、サーバにデータを送ることなくクライアント側で動作する点にあると思うので、その辺はもっと見ていきたいですね。
 
-また、最近[Proofdict · A dictionary engine that based on one rule per one file.](https://proofdict.github.io/)という自分用辞書を作るというプロジェクトをやっていて、実際に自分で使っている分には問題なのでもうそろそろしたら何か書こうと思います。
+また、最近[Proofdict · A dictionary engine that based on one rule per one file.](https://proofdict.github.io/)という自分用辞書を作るというプロジェクトをやっていて、実際に自分で使っている分には問題ないので、もうそろそろしたら何か書こうと思います。
 
-簡単に書くと自分用の1ルール1ファイルの辞書をGitHubリポジトリをforkするだけでつくれて、ブラウザだけで更新できて、作った辞書は常に最新の辞書としてtextlintでチェックできるという感じのプロジェクトです。
+簡単に説明すると自分用の1ルール1ファイルの辞書をGitHubリポジトリをforkするだけでつくれて、ブラウザだけで更新できて、自動的にウェブAPIとして辞書が公開されて、作った辞書を使ってtextlintでチェックできるという感じのプロジェクトです。
 
 イマイチ分かりやすさや目的が伝わらない感じがするので、[Usage · Proofdict](https://proofdict.github.io/docs/usage.html)から試して感想とかくれると嬉しいです。
