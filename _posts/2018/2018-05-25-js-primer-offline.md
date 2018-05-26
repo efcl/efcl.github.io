@@ -35,7 +35,7 @@ iPhoneやAndroidなどホームにアプリとして追加もできます。
 - [Manifest.jsonの作成 by nd-02110114 · Pull Request #460 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/pull/460)
 - [feat(website): add icon and favicon by azu · Pull Request #464 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/pull/464)
 
-これでLightHouse 2.0(beta)のPWAスコアも100になりました。
+これでLighthouse 3.0(beta)のPWAスコアも100になりました。
 
 ![PWA スコア](https://efcl.info/wp-content/uploads/2018/05/25-1527220707.png)
 
