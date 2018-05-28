@@ -12,8 +12,7 @@ tags:
     - Browser
 
 ---
-
-タイトルがややこしいですが簡単に言うと、Oculus GoのブラウザにPCからテキストデータを渡してフォームに入力できるツールを書いたよという話です。
+Oculus GoのブラウザにPCからテキストデータを渡してフォームに入力できるツールを書きました。
 擬似的にOculus GoのブラウザでPCのクリップボード貼り付けを行えるよという感じです。
 
 - [azu/no-clipboard-app: Share your clipboard text to your device like Oculus Go.](https://github.com/azu/no-clipboard-app)
@@ -78,8 +77,10 @@ Oculus Go(クライアント)とElectronアプリ(サーバ)が連携して動�
 1. PC: Electronアプリ(サーバ)を起動する
     - macはコンテキストメニューの"開く"じゃないと署名なしアプリは起動できません
 2. Oculus Go: Oculus Goのブラウザを開き、アプリに表示されている`https://random-id-hogehoge.localtunnel.me/bookmarklet`のURLへアクセスする
+    - Tips: 同じネットワークにいるなら `http://192.16.8.x.x/bookmarklet` のようなURLでもアクセスできる
     - 表示された画面の案内に従ってページをブックマーク(copy-clipboard)
     - ブックマークしたURLが`javasript:`から始まるように先頭を削る = ブックマークレット化
+    - 生成後のブックマークレットにはkeyやrandomなlocaltunnelのurlを埋め込むので、生成済みのブックマークレット自体は共有しないでください
 3. Oculus Go: `<input>` or `<textarea>` 要素にフォーカスする
     - `copy-clipboard`は[activeElement](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/activeElement)に依存しています
 4. Oculus Go: `copy-clipboard`のブックマークレットを実行する
@@ -89,11 +90,10 @@ Oculus Go(クライアント)とElectronアプリ(サーバ)が連携して動�
 ### ブックマークレットの種類
 
 今実装してあるブックマークレットは次においてあります。
-ブックマークレットを生成時にkeyやrandomなlocaltunnelのurlを埋め込むので、生成済みのブックマークレット自体は共有しないでください。
 
 - [no-clipboard-app/src/server/bookmarklet at master · azu/no-clipboard-app](https://github.com/azu/no-clipboard-app/tree/master/src/server/bookmarklet)
 
-原理的にはFetch APIでClipboard データを読み書きできるサーバがあるというだけなので、
+Fetch APIでClipboard データを読み書きできるサーバがあるというだけなので、
 なにかいいアイデアのブックマークレットがあったらPull Requestしてください。
 
 ### セキュリティ
