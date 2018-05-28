@@ -101,7 +101,7 @@ Oculus Go(クライアント)とElectronアプリ(サーバ)が連携して動�
 原理的には任意のサイトでブックマークレットを実行しているので、そのブックマークレットの実行自体をhookすればリクエストやレスポンスを奪い取れます。
 そのため、センシティブなデータはやり取りしないほうがいいです。
 
-よりセキュアにするにはEnd to Endな何かが必要になるため、その辺を解決できる人はPull Request募集しています。
+よりセキュアにするにはEnd to Endな何かが必要になるため、その辺を解決できる人のPull Request募集しています。
 
 WebRTCなどを使いP2Pなローカルネットワークで解決できると良かったのですが、そのようなAPIは[Secure Contexts](https://developer.mozilla.org/ja/docs/Web/Security/Secure_Contexts)じゃないと動かないので動かないサイトがでてきて不便そうなのでRest APIに落ち着きました。
 
