@@ -85,6 +85,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.3.3)
+    rouge (3.1.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
     sass (3.5.5)
@@ -112,6 +113,7 @@ DEPENDENCIES
   rake
   rake-jekyll
   redcarpet (= 3.3.3)
+  rouge
 
 BUNDLED WITH
    1.16.0
