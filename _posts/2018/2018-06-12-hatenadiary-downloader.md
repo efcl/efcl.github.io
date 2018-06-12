@@ -368,7 +368,8 @@ Twitterはストックではないので、その場その場で書いてもそ�
 
 今どきの結果はGitやPRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
 
-今書いてる[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer)でも、今まで行ったミーティングログはすべてまとめてある。これはなんでこういうことにしたんだっけというのをあとから振り返るのやくだった。
+今書いてる[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer)でも、今まで行ったミーティングログはすべてまとめてある。これはなんでこういうことにしたんだっけというのをあとから振り返るの目的。
+(結論を意識して書いているのは[tc39-notes](https://github.com/rwaldron/tc39-notes)をまねた。これがADRというのを知ったのがあとだった。)
 
 - [js-primer/meetings at master · asciidwango/js-primer](https://github.com/asciidwango/js-primer/tree/master/meetings)
 
