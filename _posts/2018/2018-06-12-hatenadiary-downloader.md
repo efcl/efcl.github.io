@@ -23,6 +23,7 @@ tags:
 
 [neue cc - はてなダイアリー to HTML](http://neue.cc/2010/03/09_246.html)を参考に[hatenadiary-downloader](https://github.com/azu/hatenadiary-downloader)というCLIを書きました。
 
+- [azu/hatenadiary-downloader: はてなダイアリーの記事を一括ダウンロードするCLI](https://github.com/azu/hatenadiary-downloader/blob/master/test/hatenadiary-downloader-test.js)
 
 ## 使い方
 
