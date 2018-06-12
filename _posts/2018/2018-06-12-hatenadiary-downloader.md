@@ -367,7 +367,7 @@ Twitterはストックではないので、その場その場で書いてもそ�
 - [アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/2017/02/22/080000 "アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog")
 - ADRは[Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](https://efcl.info/2017/05/12/living-documentation-ddd/)で知った
 
-今どきの結果はGitやPRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
+今どきの結果はGitやPRに残ってることが多いので、コミットより粒度が小さい過程は意識して残さないとなくなってしまうのかなと思いました。
 
 今書いてる[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer)でも、今まで行ったミーティングログはすべてまとめてある。これはなんでこういうことにしたんだっけというのをあとから振り返るの目的。
 (結論を意識して書いているのは[tc39-notes](https://github.com/rwaldron/tc39-notes)をまねた。これがADRというのを知ったのがあとだった。)
