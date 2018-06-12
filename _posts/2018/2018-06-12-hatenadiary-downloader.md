@@ -382,4 +382,4 @@ Twitterはストックではないので、その場その場で書いてもそ�
 
 - <https://github.com/asciidwango/js-primer/blob/master/source/use-case/todoapp/OUTLINE.md>
 
-というのがこの記事を書いていての感想でした。
+というのがこの記事を書いての感想でした。
