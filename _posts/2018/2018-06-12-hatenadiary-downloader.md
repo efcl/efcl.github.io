@@ -366,4 +366,19 @@ Twitterはストックではないので、その場その場で書いてもそ�
 - [アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/2017/02/22/080000 "アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog")
 - ADRは[Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](https://efcl.info/2017/05/12/living-documentation-ddd/)で知った
 
-今どきの結果はGitやIssue、PRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
+今どきの結果はGitやPRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
+
+今書いてる[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer)でも、今まで行ったミーティングログはすべてまとめてある。これはなんでこういうことにしたんだっけというのをあとから振り返るのやくだった。
+
+- [js-primer/meetings at master · asciidwango/js-primer](https://github.com/asciidwango/js-primer/tree/master/meetings)
+
+書くときもIssueに思ってたことや参考リンクなど貼っていて、最終的な結果(文章)がなぜこうなったのかをできるだけあとから辿れることを意識してる。
+
+- [Issues · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues)
+
+あと長い文章書くときはアウトラインと文章を行き来して書いていて、本文に書かなかったことは"未使用"という項目に残している。
+(このやり方は[アウトライナー実践入門](http://gihyo.jp/book/2016/978-4-7741-8285-8)から持ってきたやり方。)
+
+- <https://github.com/asciidwango/js-primer/blob/master/source/use-case/todoapp/OUTLINE.md>
+
+というのがこの記事を書いていての感想でした。
