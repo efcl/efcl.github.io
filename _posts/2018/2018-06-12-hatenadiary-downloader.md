@@ -238,12 +238,6 @@ for await (const document of fetchAsyncIterator)  {
 そしてAsyncIteatorオブジェクトを返す`createFetchReader`を実装しました。
 
 ```
-/**
- * Return asyncIterator for fetch article list
- * @param URL
- * @param intervalTimeMs
- * @returns {{[Symbol.asyncIterator]: (function(): {next(): Promise<*>})}}
- */
 const createFetchReader = (URL, { intervalTimeMs }) => {
     let prevURL = URL;
     return {
