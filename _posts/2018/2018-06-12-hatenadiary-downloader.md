@@ -360,7 +360,7 @@ module.exports.cli = cli;
 こういった思考の流れをブログに書くことって少なくなっていってるんだなという実感を得た気がする。
 Twitterはストックではないので、その場その場で書いてもその流れをなにかの形でまとめないと流れとしてみるのは難しい。書いたことで満足してしまうので、なんでこういう結果になったんだろう過程はGitのコミットログにも残ってないから見つけるのが難しい。
 
-最近は何かを調査して修正する時は、ある種のADR(Architecture Decision Records)のようなテンプレの項目(問題、目的、解決案、試したこと、結果など)を項目を書いて、項目の中身を埋めながら調査していることが多い。
+最近、何かを調査して修正する時はある種のADR(Architecture Decision Records)のようなテンプレの項目(問題、目的、解決案、試したこと、結果など)を項目を書いて、項目の中身を埋めながら調査していることが多い。
 
 - [Blog | Documenting Architecture Decisions | Relevance](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions "Blog | Documenting Architecture Decisions | Relevance")
 - [アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/2017/02/22/080000 "アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog")
