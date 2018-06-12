@@ -182,7 +182,7 @@ describe("hatenadiary-downloader", () => {
 
 `cli.js`を実装しながら、**URLからドキュメント取得**は非同期処理なので逐次的な非同期ループが必要だ！ということに気が付きました。
 
-最初にダウンロードする全部のURLを知ることができないため、`Promise.all`でいっぱつみたいなことはできずに、非同期 -> パース -> 非同期 -> パースを逐次的にやらないといけなくてとても面倒そうです。
+最初にダウンロードする全部のURLを知ることができないため、`Promise.all`で一発みたいなことはできずに、非同期 -> パース -> 非同期 -> パースを逐次的にやらないといけなくてとても面倒そうです。
 
 ここで、そういえば[Async iterators](https://github.com/tc39/proposal-async-iteration)ってこういうときに使うものだったような気がすると思い出しました。
 Generatorは普段全然使わなかったため書き方がピンと来ませんでしたが、適当にググって`Symbol.asyncIterator`を実装すればどうにかなるっぽいことがわかりました。
@@ -356,3 +356,20 @@ module.exports.cli = cli;
 - 最初の頃は散文で前後に直接的なつながりはなかったり、あったり、酔いつぶれてたり。けど時系列というつながりがあって思考の流れのようなもの見えていた気がした
 
 ということを思いながら"実装"の話を書いていた。
+
+こういう思考の流れを書き出すことはたまにやってる。
+
+- [power-assertの記事が出来るまで](http://azu.github.io/slide/hasakurajs/power-assert.html)
+- [JavaScriptライブラリの気になる実装をどうやって見ていくか | Web Scratch](https://efcl.info/2014/0209/res3658/)
+- [ECMAScriptの仕様/プロポーザルの調べ方を知る | Web Scratch](https://efcl.info/2018/03/07/ecmascript-usage/)
+
+こういった思考の流れをブログに書くことって少なくなっていってるんだなという実感を得た気がする。
+Twitterはストックではないので、その場その場で書いてもその流れをなにかの形でまとめないと流れとしてみるのは難しい。書いたことで満足してしまうので、なんでこういう結果になったんだろう過程はGitのコミットログにも残ってないから見つけるのが難しい。
+
+最近は何かを調査して修正する時は、ある種のADR(Architecture Decision Records)のようなテンプレの項目(問題、目的、解決案、試したこと、結果など)を項目を書いて、項目の中身を埋めながら調査していることが多い。
+
+- [Blog | Documenting Architecture Decisions | Relevance](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions "Blog | Documenting Architecture Decisions | Relevance")
+- [アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/2017/02/22/080000 "アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog")
+- ADRは[Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](https://efcl.info/2017/05/12/living-documentation-ddd/)で知った
+
+今どきの結果はGitやIssueやPRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
