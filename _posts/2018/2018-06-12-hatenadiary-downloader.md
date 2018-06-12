@@ -127,11 +127,11 @@ module.exports.getPrevArticleListURL = getPrevArticleListURL;
 
 なんとなく形は見えてきたのであとは実装して、組み合わせばURLからdocument取得 -> コンテンツをパースしてどっかに貯める -> 次のURL -> 繰り返すでクロールできるでしょうと思って中身を実装し始めました。
 
-通信が走るCLIのデバッグが面倒なことが多いですが、手動でいちいちテストするのも大変なので、大雑把なテストケースを書いてそこを見ながら開発することにしました。
+通信があるCLIのデバッグは面倒なことが多く手動でいちいちテストするのも大変なので、大雑把なテストケースを書いてそこを見ながら開発することにしました。
 (最終的なテストは<https://github.com/azu/hatenadiary-downloader/blob/master/test/hatenadiary-downloader-test.js>にある)
 
 次のようにまずは`fetchDocument`でURLから`document`オブジェクトを取得する部分を書きました。
-適当にコンソールログをテストに書いて`document`が取れるのがわかりました。
+適当にコンソールログをテストに書いて`document`をとれるのが確認できました。
 
 ```js
 // こんな感じでOKだった
@@ -146,7 +146,7 @@ const fetchDocument = (URL) => {
 
 同時に`fetchDocument `で取得した`documentPを使って、`getPrevArticleListURL`が前のページのURL(クロールはTOPページ = 先頭からおこなうため)が取れるかのテストを書きました。
 
-実際にページにアクセスして`<link rel="prev" href="/t-wada/searchdiary?of=3&word=%2A%5BXP%5D" title="前の3日分">`の`rel=prev`を見ればいいことがわかったので、この値を直接比較しています。
+実際にページへアクセスして`<link rel="prev" href="/t-wada/searchdiary?of=3&word=%2A%5BXP%5D" title="前の3日分">`の`rel=prev`を見ればいいことがわかったので、この値を直接比較しています。
 
 ```js
 const assert = require("assert").strict;
@@ -344,7 +344,7 @@ module.exports.cli = cli;
 - 特に最初のころは1記事が140文字程度の内容が多かったのでTwitterっぽいと思った
 - あと診断アプリみたいなのがたまにでてくるのも
 - 途中でTwitter(2008?9?年)がでてきたぐらいから、書く内容も変化してきて報告形式(登壇、執筆)になってきた気がする(これはやること自体が変わったのもありそう)
-- おそらくTwitterらしい内容はTwitterに書くように変わっていったのだと推測
+- おそらくTwitterらしい内容はTwitterへ書くように変わっていったのだと推測
 - 書き方の形式が変わっていたのもあり、少し先にピンをおいてそこまで書いて次のピンをおいてそこまで書いていくみたいな印象受けた
 - 最初にアウトラインを書いて中を書いていくような印象
 - 最初の頃は散文で前後に直接的なつながりはなかったり、あったり、酔いつぶれてたり。けど時系列というつながりがあって思考の流れのようなもの見えていた気がした
@@ -366,4 +366,4 @@ Twitterはストックではないので、その場その場で書いてもそ�
 - [アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/2017/02/22/080000 "アーキテクチャの意思決定を記録する Lightweight Architecture Decision Records について - Tbpgr Blog")
 - ADRは[Living Documentation by design, with Domain-Driven Designを読んだ | Web Scratch](https://efcl.info/2017/05/12/living-documentation-ddd/)で知った
 
-今どきの結果はGitやIssueやPRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
+今どきの結果はGitやIssue、PRに残ってることが多いので、過程は意識して残さないとなくなってしまうのかなと思いました。
