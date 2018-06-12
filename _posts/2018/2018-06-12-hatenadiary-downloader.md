@@ -19,7 +19,7 @@ tags:
 
 - [はてなダイアリーで記事を古い日付から並べなおす事はできますか… - 人力検索はてな](http://q.hatena.ne.jp/1179013193)
 
-そのため指定したはてなダイアリーの記事をすべてダウンロードしてローカルでソートしたHTMLを作って表示することにしました。
+そのため、指定したはてなダイアリーの記事をすべてダウンロードしてローカルでソートしたHTMLを作って表示することにしました。
 
 [neue cc - はてなダイアリー to HTML](http://neue.cc/2010/03/09_246.html)を参考に[hatenadiary-downloader](https://github.com/azu/hatenadiary-downloader)というCLIを書きました。
 
