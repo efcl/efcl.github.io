@@ -22,22 +22,25 @@ tags:
 
 この記事では簡単な[textlint](https://github.com/textlint/textlint "textlint")の導入方法について紹介します。
 
-扱う[textlint](https://github.com/textlint/textlint "textlint")は[v3.3.0](https://github.com/azu/textlint/releases/tag/v3.3.0 "v3.3.0")以降とします。
-
 [![textlint logo](https://textlint.github.io/media/logo/spaced/textlint-logo.png)](http://textlint.github.io/)
 
-一部ルール(主に英語ですが)のオンラインデモページはこちらにあります。
+公式サイトには一部ルールを含むオンラインデモが公開されています。
 
-- [textlint.github.io/#demo](http://textlint.github.io/#demo)
+- [textlint入門 (全11回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_textlint)
 
-手軽に動作を見たい場合は、Chrome拡張版を試すといいかもしれません。
+[ドットインストール](https://dotinstall.com/)にてNode.jsのインストール、textlintの利用方法、エディタとの連携などのチュートリアルが公開されています。Node.jsをあまり使ったことがない人は参考にしてみるとよいです。
+
+- [textlint入門 (全11回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_textlint)
+
+ブラウザだけで手軽に動作を見たい場合は、Chrome拡張版を試すといいかもしれません。
 こちらを使うとNode.jsなどの環境を揃えなくても試せます。
 
 - [文書校正ツール textlint の Chrome 拡張を作った - もなでぃっく](http://io-monad.hatenablog.com/entry/2016/03/14/225800)
 - [Chrome ウェブストア - アプリ](https://chrome.google.com/webstore/detail/textlint-proofreader/hdongmdneapmhfblomidbafplpanpdmm?hl=ja&gl=JP)
 
-[textlint-app](https://github.com/textlint/textlint-app "textlint-app")というクロスプラットフォームで動く単独のアプリ版もあります。
-`.textlintrc`の設定方法は共通しているので理解する必要がありますが、Node.js環境が内蔵されているので別途Node.jsのインストールは不要です。
+[textlint-app](https://github.com/textlint/textlint-app "textlint-app")というクロスプラットフォームで動く単独のアプリ版です。
+`.textlintrc`を利用し設定するため、設定ファイルについてを理解する必要がありますが、Node.js環境が内蔵されています。
+そのため別途Node.jsのインストールをしなくてもアプリ単体でtextlintを含んだ簡易なエディタとして利用できます。
 
 - [textlint-app](https://github.com/textlint/textlint-app "textlint-app")
 
