@@ -26,7 +26,7 @@ tags:
 
 公式サイトには一部ルールを含むオンラインデモが公開されています。
 
-- [textlint入門 (全11回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_textlint)
+- [textlint · The pluggable linting tool for text and markdown](https://textlint.github.io/#demo)
 
 [ドットインストール](https://dotinstall.com/)にてNode.jsのインストール、textlintの利用方法、エディタとの連携などのチュートリアルが公開されています。Node.jsをあまり使ったことがない人は参考にしてみるとよいです。
 
