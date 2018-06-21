@@ -85,7 +85,7 @@ tags:
     - XHR，描画、イベントハンドリング、バリデーション
   - 1つのコンポーネントを変更する理由が複数ある
     - => Fluxで分ければいいのでは
-- KintoneにはすでにReactで新規画面を使っていたのでClosure Library実装のluxが入ってた
+- KintoneにはすでにReactで新規画面を使っていたのでClosure Library実装のFluxが入ってた
 - Flux ≠ React
   - React以外でも使える
   - Componentからロジックとかを分離するのが大事
