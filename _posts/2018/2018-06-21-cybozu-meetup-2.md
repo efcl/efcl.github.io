@@ -63,8 +63,7 @@ tags:
 ------
 
 
-
-#### ## フロントエンドのレガシーコードをFluxできれいに - 前田 浩邦
+## フロントエンドのレガシーコードをFluxできれいに - 前田 浩邦
 
 
 
@@ -108,9 +107,7 @@ tags:
 
 ------
 
-
-
-#### ## [Renovate](https://renovatebot.com/)でストレスフリーなnpmパッケージ自動更新 -  [@teppeis](https://twitter.com/teppeis)
+## [Renovate](https://renovatebot.com/)でストレスフリーなnpmパッケージ自動更新 -  [@teppeis](https://twitter.com/teppeis)
 
 >  Automated Dependency Updates with Renovate -  [@teppeis](https://twitter.com/teppeis)
 
