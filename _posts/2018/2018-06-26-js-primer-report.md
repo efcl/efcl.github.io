@@ -1,5 +1,5 @@
 ---
-title: "JavaScriptの入門書の書き方"
+title: "js-primerの書き方"
 author: azu
 layout: post
 date : 2018-06-26T18:28
