@@ -22,9 +22,9 @@ tags:
 - JXAの[TypeScript](https://www.typescriptlang.org/index.html)統合環境
     - JXAをTypeScriptで書けるようにした
 - [Node.js](https://nodejs.org/)からJXAの実行ライブラリ
-    - [@jxa/run](./packages/@jxa/run) and [@jxa/repl](./packages/@jxa/repl)
+    - [@jxa/run](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/run) and [@jxa/repl](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/repl)
 - [TypeScript](https://www.typescriptlang.org/index.html) definition file(`.d.ts`)を使ってWebStormやVScodeでのJXAのコード補完の実装
-    - [@jxa/types](./packages/@jxa/types) and [@jxa/global-type](./packages/@jxa/global-type)
+    - [@jxa/types](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/types) and [@jxa/global-type](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/global-type)
 
 などを作った話をしました。
 
@@ -382,7 +382,7 @@ tags:
 この辺をどうにかするために、リファレンス(`.sdef`)からTypeScriptの型定義ファイルを作るパーサとかを作りました
 
 - [TypeScript](https://www.typescriptlang.org/index.html) definition file(`.d.ts`)を使ってWebStormやVScodeでのJXAのコード補完の実装
-  - [@jxa/types](./packages/@jxa/types) and [@jxa/global-type
+  - [@jxa/types](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/types) and [@jxa/global-type
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">「node.jsからjxaを呼び出せる」 <a href="https://twitter.com/hashtag/laco_sushi?src=hash&amp;ref_src=twsrc%5Etfw">#laco_sushi</a></p>&mdash; Local Proxy (@kyo_ago) <a href="https://twitter.com/kyo_ago/status/1011945001578663936?ref_src=twsrc%5Etfw">June 27, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -390,7 +390,7 @@ tags:
 
 
 - [Node.js](https://nodejs.org/)からJXAの実行するライブラリ
-  - [@jxa/run](./packages/@jxa/run) and [@jxa/repl](./packages/@jxa/repl)
+  - [@jxa/run](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/run) and [@jxa/repl](https://github.com/JXA-userland/JXA/tree/master/packages/@jxa/repl)
 
 
 
