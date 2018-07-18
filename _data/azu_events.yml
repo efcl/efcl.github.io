@@ -265,3 +265,69 @@
   URL: http://azu.github.io/slide/2015/year-end/javascript-swing.html
   report_URL: https://efcl.info/2015/12/09/year-end-sushi/
   event_title: "#忘年_sushi"
+
+- date: 2016-02-23
+  title: "How to work as a Team"
+  URL: http://azu.github.io/slide/2016/reject-sushi/how-to-work-team.html
+  report_URL: https://efcl.info/2016/02/23/reject-sushi/
+  event_title: "#reject_sushi"
+
+- date: 2016年04月27
+  title: "Almin.js | JavaScriptアーキテクチャ"
+  URL: http://azu.github.io/slide/2016/child_process_sushi/almin-javascript-architecture.html
+  report_URL: https://efcl.info/2016/04/27/child_process_sushi/
+  event_title: "#child_process_sushi"
+
+- date: 2016年06月29
+  title: "ECMAScript as a Living Standard"
+  URL: http://azu.github.io/slide/2016/node-es/ecmascript.html
+  report_URL: https://efcl.info/2016/06/29/node-ecmascript/
+  event_title: "Node学園 21時限目"
+
+- date: 2016-07-14
+  title: "最近のtextlint !"
+  URL: http://azu.github.io/slide/2016/honbucho/textlint.html
+  report_URL: https://efcl.info/2016/07/14/teppeis_sushi/
+  event_title: "#teppeis_sushi"
+
+- date: 2016-09-27
+  title: "複雑なJavaScriptアプリケーションを考えながら作る話"
+  URL: http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html
+  report_URL: https://efcl.info/2016/09/27/react-meetup-4/
+  event_title: "React Meetup #4"
+
+- date: 2016-10-18
+  title: "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った"
+  URL: http://azu.github.io/slide/2016/jxck_sushi/serverless.html
+  report_URL: https://efcl.info/2016/10/18/jxck_sushi/
+  event_title: "#jxck_sushi"
+
+- date: 2017-01-23
+  title: "Open Collective"
+  URL: http://azu.github.io/slide/2017/t_wada_sushi/OpenCollective.html
+  report_URL: https://efcl.info/2017/01/23/t_wada_sushi/
+  event_title: "#t_wada_sushi"
+
+- date: 2017-04-24
+  title: "ECMAScript Specification Suite"
+  URL: http://azu.github.io/slide/2017/node/ecmascript-specification-suite.html
+  report_URL: https://efcl.info/2017/04/24/node-25/
+  event_title: "Node学園 25時限目"
+
+- date: 2017-07-04
+  title: "Faao - ドメイン駆動設計で作るGitHub Issue Client -"
+  URL: http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html
+  report_URL: https://efcl.info/2017/07/04/teppeis_sushi/
+  event_title: "#teppeis_sushi"
+
+- date: 2018-02-22
+  title: "ECMAScriptの使い方"
+  URL: http://azu.github.io/slide/2018/node/ecmascript39.html
+  report_URL: https://efcl.info/2018/02/22/node29/
+  event_title: "Node学園 29時限目"
+
+- date: 2018-06-27
+  title: "JXA for TypeScript/Node.js"
+  URL: http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html
+  report_URL: https://efcl.info/2018/06/27/laco_sushi/
+  event_title: "#laco_sushi"
