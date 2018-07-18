@@ -266,6 +266,18 @@
   report_URL: https://efcl.info/2015/12/09/year-end-sushi/
   event_title: "#忘年_sushi"
 
+- date: 2016-01-16
+  title: "JSer.info 5周年"
+  URL: http://azu.github.io/slide/2016/jser5years/jser.info.html
+  report_URL: https://jser.info/2016/01/16/jser-5years/
+  event_title: "JSer.info 5周年記念イベント"
+
+- date: 2016-01-16
+  title: "JavaScript情報って何だっけ?"
+  URL: http://azu.github.io/slide/2016/jser5years/javascript-information.html
+  report_URL: https://jser.info/2016/01/16/jser-5years/
+  event_title: "JSer.info 5周年記念イベント"
+
 - date: 2016-02-23
   title: "How to work as a Team"
   URL: http://azu.github.io/slide/2016/reject-sushi/how-to-work-team.html
@@ -301,6 +313,18 @@
   URL: http://azu.github.io/slide/2016/jxck_sushi/serverless.html
   report_URL: https://efcl.info/2016/10/18/jxck_sushi/
   event_title: "#jxck_sushi"
+
+- date: 2017-01-15
+  title: "JSer.info 6周年イベント"
+  URL: http://azu.github.io/slide/2017/jser_info/jser_info_6years.html
+  report_URL: https://jser.info/2017/01/15/jser-info-6years/
+  event_title: "JSer.info 6周年イベント"
+
+- date: 2017-01-15
+  title: "JSer.infoの作り方"
+  URL: http://azu.github.io/slide/2017/jser_info/how_to_make_jser_info.html
+  report_URL: https://jser.info/2017/01/15/jser-info-6years/
+  event_title: "JSer.info 6周年イベント"
 
 - date: 2017-01-23
   title: "Open Collective"
