@@ -15,8 +15,8 @@ JXA(JavaScript for Automation)を書いて実行するためにいろいろな�
 
 この記事で紹介する内容は次のスライドで発表したものと大体同じです。
 
-- [JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)
-- [JXA-userland/JXA: JavaScript for Automation(JXA) packages for TypeScript/Node.js.](https://github.com/JXA-userland/JXA)
+- スライド: [JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)
+- リポジトリ: [JXA-userland/JXA: JavaScript for Automation(JXA) packages for TypeScript/Node.js.](https://github.com/JXA-userland/JXA)
 
 JXAはAppleScriptのJavaScript版(WebKit)のようなもので、macOSにはビルトインされています。
 `osascript -l javascrript file.js`でJXAを実行できます。
@@ -41,6 +41,7 @@ AppleScriptやJXAを使うとmacOSのAutomatorアプリでできるような、�
 AppleScriptは普通のプログラミング言語とは文法体系が異なるため、初見でコードを理解するのが難しかったです（主にキーワードが英文法的で難しい）
 
 AppleScriptでChromeでGoogleを開くコード
+
 ```
 set myLink to "https://google.com/"
 tell application "Google Chrome"
