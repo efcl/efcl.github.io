@@ -17,15 +17,15 @@ tags:
 
 [textlint - pluggable linting tool for text and markdown](http://textlint.github.io/ "textlint - pluggable linting tool for text and markdown")
 
-textlintの公式サイトというがオンラインデモページを作成しました。
+textlintの公式サイトというかオンラインデモページを作成しました。
 
-- [textlint.github.io/#demo](http://textlint.github.io/#demo)
+- [textlint.github.io/#try](http://textlint.github.io/#try)
 
-上記にページにアクセスするとブラウザ上でtextlintを動かして試すことができます。
+上記ページにアクセスするとブラウザ上でtextlintを動かして試すことができます。
 
 デフォルトだと[textlint-rule-rousseau](https://github.com/azu/textlint-rule-rousseau "textlint-rule-rousseau")や[textlint-rule-alex](https://github.com/azu/textlint-rule-alex "textlint-rule-alex")といった英語向けのルールが設定されていますが、npmモジュール名を指定すれば任意のルールも読み込めます。
 
-例えば、[textlint-rule-spellcheck-tech-word](https://github.com/azu/textlint-rule-spellcheck-tech-word "textlint-rule-spellcheck-tech-word")と入れて"Add rule"するとこのルールが動的に追加できて試せます
+例えば、[textlint-rule-spellcheck-tech-word](https://github.com/azu/textlint-rule-spellcheck-tech-word "textlint-rule-spellcheck-tech-word")と入れて"Add rule"するとこのルールが動的に追加できて試せます。
 [Browserify CDN](https://www.brcdn.org/ "Browserify CDN")で動的にビルドして読み込んでいるので、Browserifyでビルドできないルールは流石にブラウザ上では動かないです。
 (後、形態素解析とかやってるルールはそもそものファイルサイズが大きいです)
 
