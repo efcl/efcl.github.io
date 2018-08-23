@@ -90,7 +90,7 @@ tags:
 
 ## WebPagetestから始める継続的パフォーマンス改善 by azu
 
-スライド: [Webpagetestから始める継続的パフォーマンス改善](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)
+> スライド: [Webpagetestから始める継続的パフォーマンス改善](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)
 
 - 継続的なパフォーマンス改善をするために継続的に計測する話
 - パフォーマンス改善と計測の関係
@@ -99,17 +99,18 @@ tags:
 
 ## Local State Management with Apollo Client by Kodai Nakamura
 
-スライド: [Local State Management with Apollo - Speaker Deck](https://speakerdeck.com/kdnk/local-state-management-with-apollo)
+> スライド: [Local State Management with Apollo - Speaker Deck](https://speakerdeck.com/kdnk/local-state-management-with-apollo)
 
 - apollo-link-state
 - Wantedlyの毎週木曜日のFrontend Night勉強会
 
 ## 続・貢献できるOSSの探し方 by ohbarye
 
-- [続・貢献できるOSSの見つけ方 / How to find "Good First Issues" part 2 - Speaker Deck](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-part-2)
+> スライド: [続・貢献できるOSSの見つけ方 / How to find "Good First Issues" part 2 - Speaker Deck](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-part-2)
+
 - コントリビュータと利用者
 - 前回: "good first issues"ラベルを検索してリポジトリのIssueをまとめた
-- UIから検索できるようにした
+- 今回: UIから検索できるようにした
 - monorepo構成
     - Frontendとサーバサイドを同じディレクトリにいれる
     - リポジトリが分散しないのでスターが分散しない
