@@ -12,6 +12,9 @@ tags:
 
 ---
 
+追記: 1.0.0を出して説明を書き直したので、[Irodr](https://irodr.netlify.com/)を使いたい方は[LDRライクなRSSリーダのIrodr 1.0.0をリリースした | Web Scratch](https://efcl.info/2018/09/30/irodr-1.0.0/)を参照してください。
+
+
 2017年8月31日をもってLDRはサービス終了です。乗り換え先となるRSSリーダを探したりしましたが、求めるものを見つけることができなかったので作ることにしました。
 
 - [【重要】Live Dwango Reader/LDR Pocketサービス終了のお知らせ｜LDR / LDRポケット 開発日誌](http://blog.livedoor.jp/staff_reader/archives/52278396.html "【重要】Live Dwango Reader/LDR Pocketサービス終了のお知らせ｜LDR / LDRポケット 開発日誌")
