@@ -127,7 +127,7 @@ DDD的な感じで作っていて、ドメインモデルはInoreaderという�
 
 ## 使い方
 
-2017-08-31現在は開発サーバを建てないと使えないです。
+<del>2017-08-31現在は開発サーバを建てないと使えないです。</del><ins>[Irodr](https://irodr.netlify.com/)はNetlifyで動いています。</ins>
 次の手順で多分[Irodr](https://github.com/azu/irodr "Irodr")を手元で動かせるようになると思います。
 
 	git clone https://github.com/azu/irodr
