@@ -127,14 +127,14 @@ DDD的な感じで作っていて、ドメインモデルはInoreaderという�
 
 ## 使い方
 
-<del>2017-08-31現在は開発サーバを建てないと使えないです。</del><ins>[Irodr](https://irodr.netlify.com/)はNetlifyで動いています。</ins>
-次の手順で多分[Irodr](https://github.com/azu/irodr "Irodr")を手元で動かせるようになると思います。
+<del>2017-08-31現在は開発サーバを建てないと使えないです。</del><ins>[Irodr](https://irodr.netlify.com/)はNetlifyでもうごきます。</ins>
+次の手順でローカルでも[Irodr](https://github.com/azu/irodr "Irodr")を動かせるようになると思います。
 
 	git clone https://github.com/azu/irodr
 	cd irodr
-	npm install
+	yarn install
 	# yarn installの方がlockを使うので推奨
-	npm start
+	yarn start
 	open http://localhost:3000
 
 ページを開くと多分TokenがないからInoreaderにログインして認証しろというエラーがでて、認証して戻ってくるとAPIを叩けるようになります。
