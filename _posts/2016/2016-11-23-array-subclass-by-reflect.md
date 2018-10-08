@@ -11,12 +11,14 @@ tags:
 ---
 
 ES2015から`class extends`を使うことでクラスを継承することができます。
-これにより今まで継承するのが難しかったビルトインの`Array`や`Error`の継承ができるようになってます。
+
+今まではビルトインの`Array`や`Error`の継承は内部プロパティを引き継ぐことができませんでした。
 
 - [Chapter 28. Subclassing Built-ins](http://speakingjs.com/es5/ch28.html "Chapter 28. Subclassing Built-ins")
 - [How ECMAScript 5 still does not allow to subclass array — Perfection Kills](http://perfectionkills.com/how-ecmascript-5-still-does-not-allow-to-subclass-an-array/ "How ECMAScript 5 still does not allow to subclass array — Perfection Kills")
 
-`class`を使うと次のように普通に`extends`できます。
+ES2015からは`class extends`を使うと内部プロパティも含め継承できます。
+`length`プロパティの動作も継承できています。
 
 ```js
 class SubArray extends Array {
