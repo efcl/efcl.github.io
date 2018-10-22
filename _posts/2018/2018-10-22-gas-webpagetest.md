@@ -1,5 +1,5 @@
 ---
-title: "gas-webpagetestでWebPagetestでのパフォーマンス計測を自動化、可視化する"
+title: "gas-webpagetestでWebPagetestのパフォーマンス計測を自動化、可視化する"
 author: azu
 layout: post
 date : 2018-10-22T10:59
