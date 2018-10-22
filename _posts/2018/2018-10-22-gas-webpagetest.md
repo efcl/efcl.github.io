@@ -235,7 +235,7 @@ yarn run deploy
 
 - [DataStudioとGASでWebPagetestの計測結果をグラフ化する | mediba Creator × Engineer Blog](https://ceblog.mediba.jp/post/154874126622/datastudio%E3%81%A8gas%E3%81%A7webpagetest%E3%81%AE%E8%A8%88%E6%B8%AC%E7%B5%90%E6%9E%9C%E3%82%92%E3%82%B0%E3%83%A9%E3%83%95%E5%8C%96%E3%81%99%E3%82%8B)
 
-似たような仕組みのものを作ろうとしていたところ、[gas-webpagetest][]があったので機能追加していいか聞いて、[大量のPRを送って]()ひとまず自分が欲しかったものができた感じです。
+似たような仕組みのものを作ろうとしていたところ、[gas-webpagetest][]があったので機能追加していいか聞いて、[大量のPRを送って](https://github.com/uknmr/gas-webpagetest/pulls?utf8=%E2%9C%93&q=sort%3Aupdated-desc+author%3Aazu)ひとまず自分が欲しかったものができた感じです。
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/uknmr?ref_src=twsrc%5Etfw">@uknmr</a> こんにちは。<br>claspでWebPageTestの計測/記録スクリプトを書こうとしていて、<a href="https://t.co/O6lUavovFz">https://t.co/O6lUavovFz</a> を見つけて、やりたいことはほぼ同じでした。<br>そのため足りない部分についてのPRとかを送ろうかなと思ったのですが、一部破壊的な変更もしないといけないためどうするのがいいでしょうか?</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1023220515823968256?ref_src=twsrc%5Etfw">July 28, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
