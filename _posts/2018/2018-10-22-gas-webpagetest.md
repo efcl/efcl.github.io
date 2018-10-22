@@ -20,13 +20,13 @@ tags:
 ここまででてきたツールは無料で十分に使えます。
 [gas-webpagetest][]を使うことでとりあえず計測を自動化してみるようなところを殆どコストなしに実現できます。
 
-[gas-webpagetest][]を使った取得した記録データをGoogle DataStuidoで可視化したサンプルは次のURLで確認できます。
+[gas-webpagetest][]を使って取得した記録データをGoogle DataStuidoで可視化したサンプルは次のURLで確認できます。
 
 - DataStudio + gas-webpagetest: <https://datastudio.google.com/u/0/reporting/16CAqnC3ErfJ_B0UypUq4zQzYdReuW24i/page/1hVS>
 
 [![datastudio-example](https://raw.githubusercontent.com/uknmr/gas-webpagetest/master/docs/img/datastudio-example.png)](https://datastudio.google.com/u/0/reporting/16CAqnC3ErfJ_B0UypUq4zQzYdReuW24i/page/1hVS)
 
-なぜ計測的に計測するかについては、次のスライドで紹介しています。
+なぜ継続的に計測するかについては、次のスライドで紹介しています。
 他のパフォーマンス計測サービスなども紹介しています。
 
 - [Webpagetestから始める継続的パフォーマンス改善](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)
@@ -192,7 +192,7 @@ yarn run deploy
 
 ## Setup schedule for `gas-webpagetest` script
 
-`gas-webpagetest`がデプロイされれると、紐付いているSpread Sheetには次のようにメニューが出現します。
+`gas-webpagetest`がデプロイされると、紐付いているSpread Sheetには次のようにメニューが出現します。
 
 ![spread sheet menu](https://raw.githubusercontent.com/uknmr/gas-webpagetest/master/docs/img/gas-webpagetest-menu.png)
 
