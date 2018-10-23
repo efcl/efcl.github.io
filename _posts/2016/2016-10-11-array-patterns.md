@@ -160,7 +160,7 @@ StringやNumberなどのプリミティブな値は、作成後に値そのも�
 
 一方、ArrayやObjectなどのプリミティブな値でないものは、作った後も状態を変更できるためMutableと呼ばれます。
 
-詳しくは[データ型とリテラル · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/data-type/ "データ型とリテラル · JavaScriptの入門書 #jsprimer")を参照してください。
+詳しくは[データ型とリテラル · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/data-type/ "データ型とリテラル · JavaScriptの入門書 #jsprimer")を参照してください。
 
 ## Arrayのコピー
 
@@ -509,7 +509,7 @@ console.lg(string);// => "1,2,3"
 
 ## ループと反復処理
 
-`Array#map`メソッドなどのループと反復処理については[ループと反復処理 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/loop/ "ループと反復処理 · JavaScriptの入門書 #jsprimer")を参照してください。
+`Array#map`メソッドなどのループと反復処理については[ループと反復処理 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/loop/ "ループと反復処理 · JavaScriptの入門書 #jsprimer")を参照してください。
 
 ## 空の配列を返す
 

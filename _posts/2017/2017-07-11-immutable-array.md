@@ -17,7 +17,7 @@ JavaScriptの配列には破壊的なものと非破壊的なものが混在し�
 配列のメソッドの使い方については次の記事やjs-primerで今書いています。
 
 - [JavaScriptの配列のパターン | Web Scratch](https://efcl.info/2016/10/11/array-patterns/ "JavaScriptの配列のパターン | Web Scratch")
-- [配列 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/array/ "配列 · JavaScriptの入門書 #jsprimer")
+- [配列 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/array/ "配列 · JavaScriptの入門書 #jsprimer")
 
 
 それらの破壊的メソッドの非破壊的なバージョン - Immutableバージョンのライブラリを作成しました。

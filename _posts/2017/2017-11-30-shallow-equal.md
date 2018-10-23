@@ -355,7 +355,7 @@ Shallow Equalの場合はそのようなことはありませんが、参照す�
 Mutableな方法でStateの更新処理を行う場合は、Shallow Equalでは更新したつもりが更新されていないと判定されてしまう場合があります。
 よくあるのは配列の値を追加するときに`Array#push`で行った場合などです。
 
-- [配列 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/array/#mutable-immutable "配列 · JavaScriptの入門書 #jsprimer")
+- [配列 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/array/#mutable-immutable "配列 · JavaScriptの入門書 #jsprimer")
 
 ```js
 const state = {

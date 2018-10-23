@@ -52,7 +52,7 @@ JavaScriptを学ぶ本なので、大量のサンプルコードがでてくる�
     一般に変数への再代入は「変数の値は最初に定義した値と常に同じである」という参照透過性を壊すため、
     バグを発生させやすい要因として知られています。
 
-via [変数と宣言 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/variables/ "変数と宣言 · JavaScriptの入門書 #jsprimer")
+via [変数と宣言 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/variables/ "変数と宣言 · JavaScriptの入門書 #jsprimer")
     
 [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown "eslint-plugin-markdown")では`js`がついたコードブロックが自動でチェックされてしまうため、このコードブロック自体を無視して欲しいという書き方ができません。
 (コードの中でESLintを `eslint-disable` はできるが表示されてしまう)
