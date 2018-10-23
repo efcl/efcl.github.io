@@ -13,7 +13,7 @@ tags:
 
 ## はじめに
 
-この文章は[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")で書いた[ECMAScript](https://asciidwango.github.io/js-primer/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")の章が元となっています。
+この文章は[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")で書いた[ECMAScript](https://jsprimer.net/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")の章が元となっています。
 
 また、[ECMAScriptの使い方](http://azu.github.io/slide/2018/node/ecmascript39.html "ECMAScriptの使い方")というスライドでどのようの話をしているのであわせて参照してみてください。
 
@@ -426,7 +426,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 
 ## 例: [js-primer](https://github.com/asciidwango/js-primer "js-primer")の場合
 
-- サイト: [この書籍について · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/ "この書籍について · JavaScriptの入門書 #jsprimer")
+- サイト: [この書籍について · JavaScriptの入門書 #jsprimer](https://jsprimer.net/ "この書籍について · JavaScriptの入門書 #jsprimer")
 - リポジトリ: [github.com/asciidwango/js-primer](https://github.com/asciidwango/js-primer)
 
 最近、[js-primer](https://github.com/asciidwango/js-primer "js-primer")というES21015以降を基本としたJavaScriptの入門書を書いています。
@@ -452,11 +452,11 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 そのような際には仕様書ではどのように定義しているのかを参考にしています。
 
 
-### 例1: [関数とthis](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")の表現 – Arrow Function
+### 例1: [関数とthis](https://jsprimer.net/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")の表現 – Arrow Function
 
 > `function`キーワードで定義した関数は呼び出し時に、ベースオブジェクトが暗黙的な引数のように`this`の値として渡されます。
 > 一方、Arrow Functionの関数は呼び出し時に`this`を受け取らないため、定義時のArrow Functionにおける`this`の参照先が静的に決定されます。
-> -- [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
+> -- [関数とthis · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
 この部分だけ切り出してもちょっと分かりにくいですが、よくあるような「Arrow Functionは`this`をbindする」という説明にはしていません。
 仕様ではArrowFunctionは`[[ThisValue]]`を持たないLexicalEnvironmentという定義になっていて、Arrow Functionが`this`を持つ(bind)わけではないからです。
@@ -468,7 +468,7 @@ ECMAScriptの仕様書は巨大(800ページ以上)なので、基本的に上�
 
 - [関数とthis · Issue #316 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/316 "関数とthis · Issue #316 · asciidwango/js-primer")
 
-## 例2: [関数とthis](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")の表現 – `this`の値
+## 例2: [関数とthis](https://jsprimer.net/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")の表現 – `this`の値
 
 また`this`の話ですが、`this`の解説をするためにあらゆる場所の`this`の挙動を調べていました。
 `this`は普通はクラスぐらいにしか使いませんが、JavaScriptでは`this`はどこにでも書けます。
@@ -660,7 +660,7 @@ ECMAScriptはこのようなオープンな仕組みであり、同じくブラ�
 
 この記事で紹介した簡単なリンクのまとめです。
 
-- [js-primer](https://github.com/asciidwango/js-primer)版: [ECMAScript · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")
+- [js-primer](https://github.com/asciidwango/js-primer)版: [ECMAScript · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")
 - ECMAScript関係の情報: [@EcmascriptDaily](https://twitter.com/ecmascriptdaily "@EcmascriptDaily")をフォローしておけばとりあえず流れてくる
 - ECMAScriptのプロポーザル: [tc39/tc39-notes][]、[tc39/proposals][]に殆どの情報がある
 - ECMAScriptの策定プロセス: [The TC39 Process](https://tc39.github.io/process-document/ "The TC39 Process")に書かれてる

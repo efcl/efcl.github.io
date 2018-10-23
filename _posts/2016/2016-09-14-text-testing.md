@@ -133,7 +133,7 @@ function isLeap(year) {
 
 実際にこのテストを取り入れて書いてみたものは次のものになっています。
 
-- [暗黙的な型変換 · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/implicit-coercion/ "暗黙的な型変換 · JavaScriptの入門書 #jsprimer")
+- [暗黙的な型変換 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/implicit-coercion/ "暗黙的な型変換 · JavaScriptの入門書 #jsprimer")
 - [feat(implicit-coercion): 暗黙的な型変換について by azu · Pull Request #129 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/pull/129 "feat(implicit-coercion): 暗黙的な型変換について by azu · Pull Request #129 · asciidwango/js-primer")
 
 後は、何かと文章は一度に多くを書きすぎてしまう問題を持っている気がします。

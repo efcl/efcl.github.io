@@ -15,9 +15,9 @@ tags:
 またjs-primerでは書けなかった現在時点(2018年1月1日)でのブラウザの挙動についてを加えたものです。
 
 次の場所に[js-primer](https://github.com/asciidwango/js-primer "js-primer")版（書籍版）の`this`についての解説があります。
-この記事と違って実際にコードを実行しながら読めるので、学習ソースとしては[書籍版](https://asciidwango.github.io/js-primer/basic/function-this/)を推奨します。
+この記事と違って実際にコードを実行しながら読めるので、学習ソースとしては[書籍版](https://jsprimer.net/basic/function-this/)を推奨します。
 
-- 書籍版: [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
+- 書籍版: [関数とthis · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
 また、バグ報告やPRも直接リポジトリにして問題ありません。
 
@@ -25,7 +25,7 @@ tags:
 
 おかしい場所を選択した状態で右下にある"Bug Report"ボタンを押せば、簡単にtypoとかのバグを報告できます。(PRでも歓迎)
 
-[![バグ報告のフロー](https://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://asciidwango.github.io/js-primer/basic/function-this/)
+[![バグ報告のフロー](https://efcl.info/wp-content/uploads/2018/01/04-1515061693.png)](https://jsprimer.net/basic/function-this/)
 
 前置きはこの辺までで、ここから本編。
 
@@ -909,7 +909,7 @@ Chrome 63とChrome 65では次のサイトの結果は異なることが分か�
 
 もっと`this`について理解してみたい人は、書籍版も実行しながら見ると良さそうです。
 
-- [関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
+- [関数とthis · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/function-this/ "関数とthis · JavaScriptの入門書 #jsprimer")
 
 書籍の更新を追いたい方はリポジトリをStarやWatchしてください。
 
@@ -971,11 +971,11 @@ Read: `this`という識別子から、その値が何を参照するかを決�
 	- ただし、Arrow Functionは`[[ThisValue]]`を持たないので必ずスキップされる
 	- もっと近い関数(Function Environment Records)の`[[ThisValue]]`の値が`this`の値となる
 
-[JavaScriptとは]: https://asciidwango.github.io/js-primer/basic/introduction/
-[関数と宣言]: https://asciidwango.github.io/js-primer/basic/function-declaration/
-[関数とスコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/
-[スコープチェーン]: https://asciidwango.github.io/js-primer/basic/function-scope/#scope-chain
-[静的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#static-scope
-[動的スコープ]: https://asciidwango.github.io/js-primer/basic/function-scope/#dynamic-scope
+[JavaScriptとは]: https://jsprimer.net/basic/introduction/
+[関数と宣言]: https://jsprimer.net/basic/function-declaration/
+[関数とスコープ]: https://jsprimer.net/basic/function-scope/
+[スコープチェーン]: https://jsprimer.net/basic/function-scope/#scope-chain
+[静的スコープ]: https://jsprimer.net/basic/function-scope/#static-scope
+[動的スコープ]: https://jsprimer.net/basic/function-scope/#dynamic-scope
 
 

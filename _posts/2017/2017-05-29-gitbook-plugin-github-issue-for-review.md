@@ -70,7 +70,7 @@ GitBookの`book.json`に設定を追加します。
 今、JavaScriptの入門書を書いていて半分ぐらいはできてきたので、ちょっとづつ過去の部分をレビューしながら修正もしています。
 
 - [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
-- [Introduction · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/ "Introduction · JavaScriptの入門書 #jsprimer") (ウェブ版)
+- [Introduction · JavaScriptの入門書 #jsprimer](https://jsprimer.net/ "Introduction · JavaScriptの入門書 #jsprimer") (ウェブ版)
 
 GitHubのPRレビューだとMarkdownのままなので、GitBook上で見たときなどに違和感がある部分が見つかることが多いです。
 こういう問題を見つけたらすぐにIssueを切れるようにするのために[gitbook-plugin-github-issue-feedback](https://github.com/azu/gitbook-plugin-github-issue-feedback "gitbook-plugin-github-issue-feedback")を作りました。
@@ -83,4 +83,4 @@ GitHubのPRレビューだとMarkdownのままなので、GitBook上で見たと
 
 [![gif](https://media.giphy.com/media/3o7btYpgJvLlhkJMfC/giphy.gif)](http://www.giphy.com/gifs/3o7btYpgJvLlhkJMfC)
 
-[Introduction · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/ "Introduction · JavaScriptの入門書 #jsprimer")のサイト上に組み込んであるので、是非バグ/typoを探して報告してみてください。（ついでに直してくれるとさらに嬉しいです。一文字のPRも歓迎です）
+[Introduction · JavaScriptの入門書 #jsprimer](https://jsprimer.net/ "Introduction · JavaScriptの入門書 #jsprimer")のサイト上に組み込んであるので、是非バグ/typoを探して報告してみてください。（ついでに直してくれるとさらに嬉しいです。一文字のPRも歓迎です）

@@ -12,7 +12,7 @@ tags:
 今書いてる[js-primer](https://github.com/asciidwango/js-primer "js-primer")をどのように書いてるかのメモ書きです。
 
 - [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")
-- [この書籍について · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/ "この書籍について · JavaScriptの入門書 #jsprimer")
+- [この書籍について · JavaScriptの入門書 #jsprimer](https://jsprimer.net/ "この書籍について · JavaScriptの入門書 #jsprimer")
 
 
 今、基本文法の`Promise`についてを書いています。
@@ -29,13 +29,13 @@ tags:
 - [Error/try...catch構文 · Issue #93 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/93)
 - [例外処理の章 by lacolaco · Pull Request #320 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/pull/320)
 
-やっと[ユースケース: Todoアプリ](https://asciidwango.github.io/js-primer/use-case/todoapp/)も終わったので、自分の担当であるPromise/Async Functionについてを書き始めました。
+やっと[ユースケース: Todoアプリ](https://jsprimer.net/use-case/todoapp/)も終わったので、自分の担当であるPromise/Async Functionについてを書き始めました。
 
 ## 書く流れ
 
 ここ最近はまず`OUTLINE.md`というファイルを、各章と同じディレクトリに配置しています。
 
-たとえば、[関数とthis · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/basic/function-this/)では次のようにファイルを配置していました。
+たとえば、[関数とthis · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/function-this/)では次のようにファイルを配置していました。
 
 ```
 function-this/
@@ -120,9 +120,9 @@ js-primerではMarkdown中に書いたJavaScriptのコードも[Doctest](https:/
 
 ----
 
-また最近[文章の間違いに気づいたら · JavaScriptの入門書 #jsprimer](https://asciidwango.github.io/js-primer/intro/feedback/)という章を作りました。
+また最近[文章の間違いに気づいたら · JavaScriptの入門書 #jsprimer](https://jsprimer.net/intro/feedback/)という章を作りました。
 全くバグがないプログラムはないのと同様に、全く間違いのない技術書は存在しないため、[js-primer](https://github.com/asciidwango/js-primer "js-primer")でバグを見つけたときにどうすればいいかという話を書いたものです。
 
 [Contribution Guide](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md)にもっと詳細に書いていますが、どのようなときにIssueやPRを立てればいいのかについてを書いています。
 
-もし、[js-primer](https://asciidwango.github.io/js-primer/)を読んでいて、間違い（typoから技術的な間違い、読みにくさ）などを見つけたら、ぜひこの章を読んで行動してみてください！
+もし、[js-primer](https://jsprimer.net/)を読んでいて、間違い（typoから技術的な間違い、読みにくさ）などを見つけたら、ぜひこの章を読んで行動してみてください！

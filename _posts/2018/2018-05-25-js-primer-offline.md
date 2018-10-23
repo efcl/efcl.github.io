@@ -10,7 +10,7 @@ tags:
 
 ---
 
-現在開発中の[js-primer(JavaScript入門本)](https://asciidwango.github.io/js-primer/)がServiceWorkerを使ってオフラインでも読めるようになりました。
+現在開発中の[js-primer(JavaScript入門本)](https://jsprimer.net/)がServiceWorkerを使ってオフラインでも読めるようになりました。
 [Service Workers](https://caniuse.com/#feat=serviceworkers)に対応しているブラウザ(IE以外)なら一度開いた後はキャッシュを使ってオフラインでも読めるようになっています。
 
 また、ただのウェブページでもあるので書籍の内容が更新されれば最新の内容に更新されます。
@@ -20,7 +20,7 @@ tags:
 
 iPhoneやAndroidなどホームにアプリとして追加もできます。
 
-- サイト: [ \[WIP\] JavaScriptの入門書 – ECMAScript 2017時代のJavaScript入門書](https://asciidwango.github.io/js-primer/)
+- サイト: [ \[WIP\] JavaScriptの入門書 – ECMAScript 2017時代のJavaScript入門書](https://jsprimer.net/)
 	- そろそろES2018がでるのでサブタイトルは出たら更新します
 - リポジトリ: [asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer)
 
@@ -41,7 +41,7 @@ iPhoneやAndroidなどホームにアプリとして追加もできます。
 
 Thanks to [@nd-02110114](https://github.com/nd-02110114)!
 
-書籍は<https://asciidwango.github.io/js-primer/>から読めます。
+書籍は<https://jsprimer.net/>から読めます。
 (8割ぐらいは書き終わっていますが、まだ少し追加とリファクタリングが残っています)
 
 ### Todo
