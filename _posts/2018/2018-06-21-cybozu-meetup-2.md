@@ -34,14 +34,14 @@ tags:
   - js-codeshiftで変換スクリプト書いたり
   - Flux化のモブプログラミング
   - ライブラリのバージョンアップに対応とか
-- KIntoneプラットフォーム
-  - KintoneはHTML/CSS/JavaScriptでプラグインを作ってカスタマイズできる
+- kintoneプラットフォーム
+  - kintoneはHTML/CSS/JavaScriptでプラグインを作ってカスタマイズできる
   - プラグインエコシステムがある
   - プラットフォームとしてのフロントエンドという領域がある
 - プラグインの作成の苦行
   - manifest.jsonを人力で編集
   - shellを使ってzipしてアップロード
-  - => WIndowsとかの人は大変
+  - => Windowsとかの人は大変
 - [kintone/plugin-packer](https://github.com/kintone)を作った
   - 
   - [plugin-packerを使ってプラグインファイルをパッケージングしよう！ – cybozu developer network](https://developer.cybozu.io/hc/ja/articles/360000910783-plugin-packer%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0%E3%81%97%E3%82%88%E3%81%86-)
@@ -56,7 +56,7 @@ tags:
   - react, babel周りへのコミット
 - FAQ
   - Q. フロントエンドってどこまで?
-  - A. それぞれのチームはフロントエンドとかサーバをわかれてない(ウェブアプリケーションエンジニアという人が両方やる携帯)
+  - A. それぞれのチームはフロントエンドとかサーバをわかれてない(ウェブアプリケーションエンジニアという人が両方やる形態)
 
 
 
