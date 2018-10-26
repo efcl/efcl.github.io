@@ -139,6 +139,4 @@ pod trunk push
 最近を小さいライブラリを書いては公開するのを繰り返してるので、
 このpodspecのアップデートをする作業がとても面倒だったので作ってみました。
 
-<div class="kwout" style="text-align: center;"><a href="http://cocoapods.org/?q=author%3Aazu*"><img src="http://kwout.com/cutout/x/e4/my/jbq_bor.jpg" alt="http://cocoapods.org/?q=author%3Aazu*" title="Untitled" width="600" height="150" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://cocoapods.org/?q=author%3Aazu*">azu</a></div>
-
 公式にそれっぽい事をやれそうな[CocoaPods/VersionKit](https://github.com/CocoaPods/VersionKit "CocoaPods/VersionKit")というのがあるので、ruby版とか作ってくれると皆幸せになるんじゃないですかね。

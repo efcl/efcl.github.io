@@ -34,15 +34,7 @@ CommonJS -> ブラウザ用のJS といえば、[browserify][2]や[CommonJS Ever
 
 そのため、元のコードが小さくても、元コード + エミュレートする関数等が入って表示用としてはあまりキレイではありません。
 
-<div class="kwout" style="text-align: center;">
-  <img src="http://kwout.com/cutout/u/i8/cs/2uk.jpg" alt="https://efcl.info/2014/0120/res3605/" title="npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch" width="600" height="299" style="border: none;" usemap="#map_ui8cs2uk" /><br /> <map id="map_ui8cs2uk" name="map_ui8cs2uk">
-    <area coords="69,257,124,270" href="https://github.com/azu/browserify-example/blob/master/simple/bundle.js" alt="" shape="rect" />
-  </map>
-  
-  <p style="margin-top: 10px; text-align: center;">
-    <a href="https://efcl.info/2014/0120/res3605/">npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch</a>
-  </p>
-</div>
+- <a href="https://efcl.info/2014/0120/res3605/">npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch</a>
 
 複雑な`reuqire`による依存の解決等を捨てて、書き方にある程度制約を持てば単純に`require`をインライン化したり、不要な `export`を削除して結合しただけのコードでもそのまま動くように出来るはず という感じで表題にある事をするNodeモジュールを書きました
 

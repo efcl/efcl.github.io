@@ -18,32 +18,20 @@ tags:
 
 * * *
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1"><img src="http://kwout.com/cutout/s/p5/am/v7g_w450.jpg" alt="http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1" title="NSAttributedString と TextKit" width="450" height="356" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1">NSAttributedString と TextKit</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1">NSAttributedString と TextKit</a>
 
 [NSAttributedString と TextKit][2] ではiOS6から入ったNSAttributedStringでどのような事ができるのかと、iOS7からその辺の仕組みが一新されてTextKitになったので、TextKitはどのような構造になってるのかを紹介しています。
 
 実際に中身まで調べる時間がなかったので、[Getting to Know TextKit – #5 – iOS 7][3]をかなり参考にして書いています。
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1"><img src="http://kwout.com/cutout/8/2z/88/pmv_w450.jpg" alt="http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1" title="deprecated! deprecated!" width="450" height="355" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1">deprecated! deprecated!</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1">deprecated! deprecated!</a>
 
 [deprecated! deprecated!][4] では、iOS6や7でどのようなメソッドが非推奨になってるかを書いています。
 
 基本的には `NS_DEPRECATED_IOS(5_0,6_0);` のようなマクロで定義されるのですが、  
 `UIButtonTypeRoundedRect` のようにコメントで書いてあるだけというものもあるので調べて見ると色々出てきます。
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1"><img src="http://kwout.com/cutout/y/gt/9n/ife_w450.jpg" alt="http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1" title="最近作ったiOSのライブラリ紹介" width="450" height="357" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1">最近作ったiOSのライブラリ紹介</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1">最近作ったiOSのライブラリ紹介</a>
 
 最後の[最近作ったiOSのライブラリ紹介][5]はiOS6はあんまり関係なく、最近作って公開したiOSのライブラリについてまとめています。
 

@@ -150,11 +150,7 @@ iOSのライブラリ開発、テスト、コードカバレッジ、ライセ�
 
 スライドは以下に置いてあります。
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html#/"><img src="http://kwout.com/cutout/9/zx/3h/rwd_bor.jpg" alt="http://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html#/" title="Devlop iOS Library" width="600" height="322" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html#/">Devlop iOS Library</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html#/">Devlop iOS Library</a>
 
 スライド中でも触れていますが、
 

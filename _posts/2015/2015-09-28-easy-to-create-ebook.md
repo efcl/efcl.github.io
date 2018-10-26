@@ -14,8 +14,6 @@ tags:
 
 ## 電子書籍開発環境
 
-<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/niku_sushi/ebook_development.html"><img src="http://kwout.com/cutout/a/94/x9/4x5_bor.jpg" alt="http://azu.github.io/slide/niku_sushi/ebook_development.html" title="Markdownで書く電子書籍開発環境" width="600" height="225" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/niku_sushi/ebook_development.html">Markdownで書く電子書籍開発環境</a></p></div>
-
 [Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")というスライドで、GitBookとMarkdownで技術書(電子書籍)を書く話を紹介しました。
 
 文章は[textlint](https://github.com/azu/textlint "textlint")で、コードは[ESLint](http://eslint.org/ "ESLint")とテストでチェックして、サンプルコードに対してテストを書けるプロジェクト構造について書かれています。

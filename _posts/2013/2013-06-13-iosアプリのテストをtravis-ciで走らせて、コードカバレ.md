@@ -222,7 +222,5 @@ main <span class="k">${</span><span class="p">@+</span><span class="s2">&quot;$@
 <p>Travis CIやcoverallsのようにステータス画像を発行してくれるサービスが最近は多くなってます。</p>
 <p><a href="https://travis-ci.org/azu/NSDate-Escort"><img src="https://travis-ci.org/azu/NSDate-Escort.png?branch=master" alt="Build Status" /></a> <a href="https://coveralls.io/r/azu/NSDate-Escort?branch=master"><img src="https://coveralls.io/repos/azu/NSDate-Escort/badge.png?branch=master" alt="Coverage Status" /></a></p>
 <p>そういうサービスについて最近まとめたスライド書いてたので一緒に置いておきます。</p>
-<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/inc/github_service/#slide1"><img src="http://kwout.com/cutout/n/ec/jm/v7g_bor_w480.jpg" alt="http://azu.github.io/slide/inc/github_service/#slide1" title="Githubでコードを公開する時に便利なサービス - いまならBadge付き -" width="480" height="379" style="border: none;" /></a>
-<p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/inc/github_service/#slide1">Githubでコードを公開する時に便利なサービス &#8211; いまならBadge付き -</a></p>
-</div>
+<p><a href="http://azu.github.io/slide/inc/github_service/#slide1">Githubでコードを公開する時に便利なサービス &#8211; いまならBadge付き -</a></p>
 <p>上記のスライドには入ってないですが、最近CocoaPodsのステータスバッジを取れる<a href="http://fjcaetano.github.io/cocoapod-badges/" title="Cocoapod Badges">Cocoapod Badges</a>というサービスもできてました。</p>

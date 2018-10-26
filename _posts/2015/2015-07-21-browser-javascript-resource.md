@@ -19,8 +19,6 @@ tags:
 
 - [azu/browser-javascript-resource](https://github.com/azu/browser-javascript-resource "azu/browser-javascript-resource")
 
-<div class="kwout" style="text-align: center;"><a href="https://github.com/azu/browser-javascript-resource"><img src="http://kwout.com/cutout/h/3m/kh/rwd_bor.jpg" alt="https://github.com/azu/browser-javascript-resource" title="azu/browser-javascript-resource" width="600" height="449" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="https://github.com/azu/browser-javascript-resource">azu/browser-javascript-resource</a></p></div>
-
 更新がしやすようにGitHubのREADMEとして置いてるので、継続して見たい人はWatchをするなり、付け足したい情報や訂正したほうがいいものはPull RequestやIssueを送ってくださるといいと思います。
 
 ----
