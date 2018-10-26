@@ -19,11 +19,7 @@ tags:
 
 ## UILocalNotificationのパターンとテスト &#8211; azu
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide1"><img src="http://kwout.com/cutout/u/nr/nq/s2u_bor_w450.jpg" alt="http://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide1" title="UILocalNotificationのパターンとテスト" width="450" height="356" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide1">UILocalNotificationのパターンとテスト</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide1">UILocalNotificationのパターンとテスト</a>
 
 自分が発表したUILocalNotificationのパターンについてのスライドです。
 
@@ -114,11 +110,7 @@ ViewObjects は ViewObjectの配列とする
 
 ## instacetype と typeof(self)
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_September/instancetype_self.html#slide1"><img src="http://kwout.com/cutout/m/we/bi/feh_bor_w450.jpg" alt="http://azu.github.io/slide/OCStudy/2013_September/instancetype_self.html#slide1" title="instacetype と typeof(self)" width="450" height="355" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_September/instancetype_self.html#slide1">instacetype と typeof(self)</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/OCStudy/2013_September/instancetype_self.html#slide1">instacetype と typeof(self)</a>
 
 もう一個発表した、instancetype型とtypeofなどについてです。
 

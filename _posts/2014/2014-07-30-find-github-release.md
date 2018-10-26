@@ -174,9 +174,6 @@ GitHubにちゃんとしたリポジトリのtag一覧(日付が入った)を取
 
 [われわれは、いかにして変更点を追うか](http://azu.github.io/slide/cto/changelog.html "われわれは、いかにして変更点を追うか")というスライドで続きを書きました。
 
-<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide/cto/changelog.html"><img src="http://kwout.com/cutout/c/v2/sz/8pm_bor.jpg" alt="http://azu.github.io/slide/cto/changelog.html" title="われわれは、いかにして変更点を追うか" width="600" height="328" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide/cto/changelog.html">われわれは、いかにして変更点を追うか</a></p></div>
-
-
 ---
 
 # まとめ

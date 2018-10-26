@@ -13,11 +13,7 @@ tags:
 ---
 [オフラインJavaScript勉強会 &#8211; Online Study TokyoBouldering.js | Doorkeeper][1]でJavaScript ASTについて発表してきました。
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/tkbjs/js-ast-walker.html#0"><img src="http://kwout.com/cutout/u/ze/q3/6t9.jpg" alt="http://azu.github.io/slide/tkbjs/js-ast-walker.html#0" title="JavaScript AST Walker" width="600" height="391" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/tkbjs/js-ast-walker.html">JavaScript AST Walker</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/tkbjs/js-ast-walker.html">JavaScript AST Walker</a>
 
 JavaScript ASTがどんなものかや、どのようなツールで使われてるか、ASTを編集するのにどういうライブラリがあるかなどについて書いてあります。  
 (中でかなり重たいものを読み込んでるのでロードが終わるまで適応に待ったほうがいいです)

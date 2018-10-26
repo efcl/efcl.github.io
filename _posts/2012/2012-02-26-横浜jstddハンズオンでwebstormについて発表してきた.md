@@ -18,11 +18,7 @@ tags:
 ---
 [横浜JSTDDハンズオン][1]に参加してきて、WebStormというIDEはどういうものなのかについて発表してきました。
 
-<div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide1"><img style="border: none;" title="WebStorm指南書" src="http://kwout.com/cutout/b/v4/vx/5az_bor_rou.jpg" alt="http://azu.github.com/slide/webstorm/webstorm.html#slide1" width="600" height="515" /></a></p> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide1">WebStorm指南書</a>
-  </p>
-</div>
+- <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide1">WebStorm指南書</a>
 
 発表してきた資料置いておきます。
 
@@ -30,20 +26,11 @@ tags:
 また、最近出たばかりの[WebStorm 4.0 Early Access Program][2]についても書いてあるので興味がある人はどうぞ。
 
  
-
-<div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide12"><img style="border: none;" title="WebStorm指南書" src="http://kwout.com/cutout/9/97/aj/bqs_bor_rou.jpg" alt="http://azu.github.com/slide/webstorm/webstorm.html#slide12" width="600" height="439" /></a></p> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide12">スライドの見方</a>
-  </p>
-</div>
+- <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide12">スライドの見方</a>
 
 スライドは上記のように機能の紹介がベースで、それの利用方法やこういう機能があって便利という感じのスライドになってます。
 
-<div class="kwout" style="text-align: center;">
-  <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide39"><img style="border: none;" title="WebStorm指南書" src="http://kwout.com/cutout/f/7n/bp/mv7_bor_rou.jpg" alt="http://azu.github.com/slide/webstorm/webstorm.html#slide39" width="600" height="394" /></a></p> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide39">WebStormの楽しさ</a>
-  </p>
-</div>
+- <a href="http://azu.github.com/slide/webstorm/webstorm.html#slide39">WebStormの楽しさ</a>
 
 Web開発等JavaScript周りの環境も変化してきているので、それにあわせてエディタやIDEももっと変化するといいなーと思う部分にいろいろ挑戦してる感じがしてるのがWebStormが好きな所でもあります。  
 とりあえず、[WebStorm][3]は[30-day trial][4]なので、試してみるといいかもしれません。他のエディタ等もいろいろ競争して質が上がっていくといいなー。

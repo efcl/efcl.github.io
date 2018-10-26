@@ -32,21 +32,7 @@ Effective JavaScriptはKindle等の[電子書籍][7]もあります。
 
 サンプルのソースコードは[原著の公式サイト][8]から見つけられると思います。
 
-<div class="kwout" style="text-align: center;">
-  <img src="http://kwout.com/cutout/x/yp/ff/ehr.jpg" alt="http://effectivejs.com/" title="Effective JavaScript" width="600" height="311" style="border: none;" usemap="#map_xypffehr" /><br /> <map id="map_xypffehr" name="map_xypffehr">
-    <area coords="112,76,247,85" href="http://www.informit.com/esds" alt="" shape="rect" />
-    
-    <area coords="15,130,96,146" href="http://www.informit.com/store/effective-javascript-68-specific-ways-to-harness-the-9780321812186" alt="" shape="rect" />
-    
-    <area coords="99,130,156,146" href="http://github.com/effectivejs/code" alt="" shape="rect" />
-    
-    <area coords="159,130,193,146" href="https://github.com/effectivejs/site/wiki/Errata" alt="" shape="rect" />
-  </map>
-  
-  <p style="margin-top: 10px; text-align: center;">
-    <a href="http://effectivejs.com/">Effective JavaScript</a>
-  </p>
-</div>
+- <a href="http://effectivejs.com/">Effective JavaScript</a>
 
 ## 参加方法
 

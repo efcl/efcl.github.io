@@ -39,12 +39,6 @@ Twitterのまとめはこちらです。(ハイライト的なトビトビ感…
 
 ### [node-webkitとは何か][3]
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/udonjs/node-webkit.html"><img src="http://kwout.com/cutout/c/iv/jt/94x.jpg" alt="http://azu.github.io/slide/udonjs/node-webkit.html" title="node-webkitとは何か" width="600" height="428" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/udonjs/node-webkit.html">node-webkitとは何か</a>
-  </p>
-</div>
-
 [node-webkitとは何か][3] では、最近node-webkitでアプリを書いたのでそこでハマるであろうContextの話を中心にnode-webkitの特徴について紹介した内容です。(その場でもnode-webkitにはまって挫折事例がありました)
 
 *   [Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web scratch][5]
@@ -52,12 +46,6 @@ Twitterのまとめはこちらです。(ハイライト的なトビトビ感…
 * * *
 
 ### [一人で使えるGithub Issue][4]
-
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/udonjs/github-issue.html"><img src="http://kwout.com/cutout/b/t5/pz/8pm.jpg" alt="http://azu.github.io/slide/udonjs/github-issue.html" title="一人で使えるGithub Issue" width="600" height="417" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/udonjs/github-issue.html">一人で使えるGithub Issue</a>
-  </p>
-</div>
 
 [一人で使えるGithub Issue][4]では、GithubのIssueとpull requestsを一人でどう使っているかについて話ました。
 

@@ -33,11 +33,7 @@ JavaScriptに限った話では無いですが、今回はJavaScriptを例に&#8
 見たい挙動(今回はモデルへのバインディグ)のサンプルコードを書いて、  
 そこに対してブレークポイントを貼り step in しながら目的の実装を探すという単純な方法です。
 
-<div class="kwout" style="text-align: center;">
-  <a href="http://vuejs.org/"><img src="http://kwout.com/cutout/f/ty/ei/feh.jpg" alt="http://vuejs.org/" title="vue.js" width="600" height="165" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://vuejs.org/">vue.js</a>
-  </p>
-</div>
+- <a href="http://vuejs.org/">vue.js</a>
 
 トップページにあるサンプルコードを見ても分かるように、`new Vue({ /*モデル*/ })` となってるので、Vueコンストラクタの実装を見ていけばいいことがわかります。
 

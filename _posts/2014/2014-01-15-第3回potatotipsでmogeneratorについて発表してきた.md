@@ -22,11 +22,7 @@ tags:
 
 ## 自分が発表したスライド
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/potatotips/mogenerator.html"><img src="http://kwout.com/cutout/c/ue/4k/nif.jpg" alt="http://azu.github.io/slide/potatotips/mogenerator.html" title="mogenerator - potate tips" width="600" height="335" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/potatotips/mogenerator.html">mogenerator &#8211; potate tips</a>
-  </p>
-</div>
+- <a href="http://azu.github.io/slide/potatotips/mogenerator.html">mogenerator &#8211; potate tips</a>
 
 CoreDataのモデルクラスを生成するmogeneratorについてのスライド
 

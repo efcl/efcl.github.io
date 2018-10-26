@@ -70,12 +70,6 @@ tags:
 *   スライド : [NSDate A Live][2]
 *   テストコード: [azu/NSDateALive · GitHub][3]
 
-<div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/OCStudy/2013_June/nsdate_a_live.html#/"><img src="http://kwout.com/cutout/m/wg/zs/2uk_bor_w480.jpg" alt="http://azu.github.io/slide/OCStudy/2013_June/nsdate_a_live.html#/" title="NSDate A Live" width="480" height="260" style="border: none;" /></a> <p style="margin-top: 10px; text-align: center;">
-    <a href="http://azu.github.io/slide/OCStudy/2013_June/nsdate_a_live.html#/">NSDate A Live</a>
-  </p>
-</div>
-
 NSDateやNSDateFormatter、NSDateComponentsなどといった日付関係の話について発表して来ました。
 
 NSDateを操作する方法は色々ありますが、和暦、24時間表示等ハマリ所も色々あります。  

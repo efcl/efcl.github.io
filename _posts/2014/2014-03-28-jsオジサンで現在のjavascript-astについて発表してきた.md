@@ -23,8 +23,7 @@ tags:
 * * *
 
 <div class="kwout" style="text-align: center;">
-  <a href="https://azu.github.io/slide/JSojisan/"><img src="http://kwout.com/cutout/m/q7/88/pmv.jpg" alt="http://azu.github.io/slide/JSojisan/" title="カジュアルJavaScript AST" width="600" height="417" style="border: none;" usemap="#map_mq788pmv" /></a></p> <p>
-    <a href="http://azu.github.io/slide/JSojisan/">カジュアルJavaScript AST</a></div> <p>
+  <p><a href="http://azu.github.io/slide/JSojisan/">カジュアルJavaScript AST</a><p>
       自分はJavaScript ASTについて発表してきた。
     </p>
     

@@ -21,7 +21,7 @@ ECMAScript関係についてざっとみるカンニングペーパー。
 
 追記: 縦に長い記事読むのが面倒な人向けにスライド形式にしたものも置いておきます。
 
-<div class="kwout" style="text-align: center;"><a href="https://azu.github.io/slide-what-is-ecmascript/"><img src="http://kwout.com/cutout/x/xm/dp/mv7_bor.jpg" alt="http://azu.github.io/slide-what-is-ecmascript/" title="Introduction | ECMAScriptとは何か？" width="600" height="369" style="border: none;" /></a><p style="margin-top: 10px; text-align: center;"><a href="http://azu.github.io/slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a></p></div>
+- <a href="http://azu.github.io/slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a>
 
 ## ECMAScriptとは?
 
