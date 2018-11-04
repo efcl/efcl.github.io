@@ -125,7 +125,7 @@ $ textlint README.md
 
 10行目の1列目に`JQuery`となっていますが、それは`jQuery`が正しいのでは?と提案してくれます。
 
-`$ textlint -f preety-error` で`preety-error`というフォーマッターを使ってみるともう少し見た目でも分かりやすいです。
+`$ textlint -f pretty-error` で`pretty-error`というフォーマッターを使ってみるともう少し見た目でも分かりやすいです。
 
 ![result](https://monosnap.com/file/aBHagUloZiFYAshaagbYbIXVVonnAl.png)
 
