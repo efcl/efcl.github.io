@@ -5,3 +5,5 @@
 /feed/index.html              /feed/index.xml    200
 /feed/atom/                   /feed/             301
 /feed/atom/index.html         /feed/             301
+# 短縮URL
+/github-activity/ https://github.com/search?q=user%3Aazu+user%3Aefcl+user%3Ajser+user%3Aalmin+user%3Atextlint+user%3Atextlint-ja+user%3Atextlint-rule+user%3AJXA-userland+user%3Ajs-primer+user%3Aecmascript-daily+user%3Aasciidwango&type=Repositories 302
