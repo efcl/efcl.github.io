@@ -570,7 +570,9 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 
 [global breaks flickr.com · Issue #20 · tc39/proposal-global](https://github.com/tc39/proposal-global/issues/20 "global breaks flickr.com · Issue #20 · tc39/proposal-global")のIssueで具体的に話し合われています。
-このIssueやREADMEをみることで、`global`という名前によって壊れるサイトがいる問題がありこれが理由で止まっていることが割ります。
+このIssueやREADMEをみることで、`global`という名前によって壊れるサイトがいる問題がありこれが理由で止まっていることが分かります。
+
+この問題が解決されないとStage 4(ECMAScriptの正式な仕様)にならないでしょう。
 
 ----
 
