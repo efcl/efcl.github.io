@@ -74,8 +74,12 @@ import { createLocalStorage } from "localstorage-ponyfill";
 const localStorage = createLocalStorage({ mode : "node", storeFilePath: "./path/to/dir" });
 ```
 
-Note: [ブラウザとNode.jsのentry pointは分けている](https://github.com/azu/localstorage-ponyfill/blob/5251a3a5a2c6d9d6ffb3da76072826e90794fba9/package.json#L23-L25)ので、ブラウザで`node`は指定できません。
+**Note:** ブラウザで`node` modeは使えない
+
+ [ブラウザとNode.jsのentry pointは分けている](https://github.com/azu/localstorage-ponyfill/blob/5251a3a5a2c6d9d6ffb3da76072826e90794fba9/package.json#L23-L25)ので、ブラウザで`node`は指定できません。
 ブラウザに余計な依存が入らないようにするためにこういう構造にしています。
+
+- [refactor(pkg): split module to "browser" and "node" by azu · Pull Request #4 · azu/localstorage-ponyfill](https://github.com/azu/localstorage-ponyfill/pull/4)
 
 ### InMemory
 
