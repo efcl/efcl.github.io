@@ -1,5 +1,5 @@
 ---
-title: "ブラウザ、Node.js、インメモリで動くlocalStorageライブラリ"
+title: "ブラウザ、Node.js、メモリ上で動くlocalStorageライブラリ"
 author: azu
 layout: post
 date : 2018-12-29T10:02
