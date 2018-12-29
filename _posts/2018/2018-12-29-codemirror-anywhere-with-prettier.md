@@ -3,7 +3,7 @@ title: "どんなtextareaもエディタに差し替えて、Prettierで整形�
 author: azu
 layout: post
 date : 2018-12-29T09:27
-category: JavaScript
+category: Greasemonkey
 tags:
     - Greasemonkey
     - JavaScript
