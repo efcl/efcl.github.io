@@ -1,5 +1,5 @@
 ---
-title: "どんなtextareaもエディタにしてPrettierで整形できるGreasemonkey"
+title: "どんなtextareaもエディタに差し替えて、Prettierで整形できるGreasemonkey"
 author: azu
 layout: post
 date : 2018-12-29T09:27
@@ -10,7 +10,9 @@ tags:
 
 ---
 
-GitHubやQiitaなどただの`<textarea>`であるため、その場でコードを書いたりインデントが難しいため、不確実なコードを書いてしまいやすいです。
+GitHubやQiitaなどの入力欄はただの`<textarea>`で、シンタックスハイライトされていたりするわけではありません。
+そのため、その場でコードを書いたりインデントが難しくく、壊れていたり読みにくいコードを書いてしまいやすいです。
+(インデントがバラバラだったりすることが多いです)
 
 そのため、`<textarea>`をショートカット一発で、[CodeMirror](https://codemirror.net/)を使ったエディタにその場で差し替えるGreasemonkeyスクリプトを書いていました。(Violentmonkey、Tampermonkeyなどでも動くので、Chromeなどでも動くと思います)
 
