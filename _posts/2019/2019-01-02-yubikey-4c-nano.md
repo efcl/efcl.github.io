@@ -1,5 +1,5 @@
 ---
-title: "セキュリティキーYubiKey 4C Nanoの設定と使い道"
+title: "セキュリティキー YubiKey 4C Nanoの設定と運用"
 author: azu
 layout: post
 date : 2019-01-02T10:12
