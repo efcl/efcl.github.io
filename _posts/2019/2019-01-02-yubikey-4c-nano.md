@@ -129,6 +129,15 @@ AWSとかお金がかかる系は逐次やっておく。
 
 銀行系は2要素認証は対応してるけど、独自アプリだったり、セキュリティキーは対応してないところが多い。
 
+## YubiKey Manager
+
+[YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/ "YubiKey Manager | Yubico")を使うと、OTPを無効化したり、長押し時に行う動作を設定できたりする。
+(Yubico OTP、Challenge-response、Static password、OATH-HOTPなど)
+
+Short Touchは誤爆するので無効化した。
+
+![image](https://efcl.info/wp-content/uploads/2019/01/02-1546395849.png)
+
 ## 感想
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">Yubikeyを使うことによって便利に感じることはほとんどないけど(GitHubはちょこちょこ二要素認証するので便利かな)、使うことで不便になる(Twitterは逆にセキュリティキー使うと認証できなくなるクライアントがある…)こともあんまりない。<br>二要素認証を積極的にオンにできるお守りみたいな感じ。</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1077957676212965376?ref_src=twsrc%5Etfw">December 26, 2018</a></blockquote>
