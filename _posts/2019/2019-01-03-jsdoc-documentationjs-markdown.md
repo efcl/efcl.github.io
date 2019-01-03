@@ -120,3 +120,7 @@ documentation build -f md src/index.js | add-text-to-markdown README.md --sectio
 
 この方法はライブラリを書いてREADMEに使い方を書くようなスタイルだとかなり自動化ができて便利です。[documentationjs](http://documentation.js.org/)はJavaScript(JSDoc)しか対応してないので、使える範囲が限られますが、TypeScriptとかも同じようなことができるといいなーと思いました。
 
+具体例
+
+- [azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.](https://github.com/azu/morpheme-match-all "azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.")
+
