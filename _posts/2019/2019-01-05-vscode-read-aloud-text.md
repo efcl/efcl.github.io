@@ -21,7 +21,8 @@ tags:
 
 - Markdownなどをパースして、コードブロックなどは読み上げない
 	- [textlint](https://textlint.github.io/)のプラグインを再利用してるので、現在対応しているのはMarkdown、Txt、Re:Viewのみ
-	- 読み上げるのはHeader、Paragarah、Tableなどテキスト的なもの
+	- 読み上げるのはHeader、Paragraph、Tableなどテキスト的なもの
+	- コードブロックとかを読み上げるとは音声でデバッグするのは難しいので、[テスト](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md#%E3%83%86%E3%82%B9%E3%83%88)でカバーする
 - 読み上げている部分をハイライトする
 - 編集すると読み上げを停止する
 - ショートカットで読み上げ、開始、停止などができる
@@ -53,6 +54,5 @@ Visual Studio Marketplaceにアップロードしてあるのでインストー�
 
 実際にやってみると、読み上げることで助詞の間違いなど目では見つけにくい問題が見つかります。
 読み上げのスムーズさはOSに依存するので、微妙に読み間違いなどはありますが、まあまあ許容できる範囲です。(ChromeのSpeech to Textのほうがキレイなので、そっちを使いたい。Puppetterなどで無理やりできそうではあるけど)
-
 
 [vscode-read-aloud-text]: https://github.com/azu/vscode-read-aloud-text
