@@ -122,5 +122,5 @@ documentation build -f md src/index.js | add-text-to-markdown README.md --sectio
 
 具体例
 
-- [azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.](https://github.com/azu/morpheme-match-all "azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.")
+- [azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.](https://github.com/azu/morpheme-match-all "azu/morpheme-match-all: A wrapper of morpheme-match API. Match all kuromoji's tokens.")¡
 
