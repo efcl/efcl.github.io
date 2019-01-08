@@ -14,7 +14,7 @@ tags:
 しかし、Greasemonkeyはデフォルトではnpmモジュールを読み込む方法が用意されていません。
 
 そのため、[webpack](https://webpack.js.org/)や[Parcel](https://parceljs.org/)などのbundlerを使えば、Greasemonkeyスクリプトでもnpmモジュールが利用できます。
-(bundleしたものがスクリプトの配布サイトのレビューを通らない場合もありますが、今回はGitHubで配布するのが気にしないです)
+(bundleしたものがスクリプトの配布サイトのレビューを通らない場合もありますが、今回はGitHubで配布するので気にしないです)
 
 [codemirror-anywhere](https://github.com/azu/codemirror-anywhere)ではwebpackを使ったのですが、webpackは設定をしないといけないのがGreasemonkeyの手軽さを壊してしまうため、[Parcel](https://parceljs.org/)を使ってできないかと考えました。
 
