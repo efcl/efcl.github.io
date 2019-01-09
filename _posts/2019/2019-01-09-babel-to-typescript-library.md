@@ -92,13 +92,13 @@ Babelを使ってJavaScriptで書いていたライブラリをTypeScriptへマ�
 [textlint-rule-helper][]はソースコードとテストコードどちらもTypeScriptにへ変換する予定です。
 大まかなやり方は上記の記事と同じで、次のような流れでTypeScriptへ変換していきます。
 
-0. TypeScriptをインストールする
-1. TypeScript(tsc)でJavaScriptをビルドできるようにする
-2. TypeScript(tsc)でJavaScriptのテストを通るようにする
-3. ソースコード(src/)をTypeScriptへ変換する
-4. テストコードを(test/)をTypeScriptへ変換する
+1. TypeScriptをインストールする
+2. TypeScript(tsc)でJavaScriptをビルドできるようにする
+3. TypeScript(tsc)でJavaScriptのテストを通るようにする
+4. ソースコード(src/)をTypeScriptへ変換する
+5. テストコードを(test/)をTypeScriptへ変換する
 
-### 0. TypeScriptをインストールする
+### 1. TypeScriptをインストールする
 
 まずは、[TypeScript](https://www.typescriptlang.org/)などの必要な依存をまとめてインストールします。
 ここでは、[ts-node](https://github.com/TypeStrong/ts-node)などあとで必要になるものをまとめています。
@@ -113,7 +113,7 @@ mocha \
 @types/mocha
 ```
 
-### 1. TypeScript(tsc)でJavaScriptをビルドできるようにする
+### 2. TypeScript(tsc)でJavaScriptをビルドできるようにする
 
 ここでは、ソースコードをJavaScriptのままTypeScriptでビルドできるようにします。
 TypeScriptは`allowJs`というオプションによって、JavaScript(ES2015+)をJavaScript(ES5)へと変換するTranspilerとして利用できます。いままで、BabelでやっていたのはES2015 -> ES5の処理だったので、これをTypeScriptでやるように移行していきます
@@ -236,7 +236,7 @@ npx npe types "lib/${currentDirName}.d.ts"
 
 次は、既存のテストを同じように`allowJs`で実行してテストを通るようにしていきます。
 
-### 2. TypeScript(tsc)でJavaScriptのテストを通るようにする
+### 3. TypeScript(tsc)でJavaScriptのテストを通るようにする
 
 元々をMocha + [@babel/register](https://babeljs.io/docs/en/babel-register)を利用していたのを、[ts-node](https://github.com/TypeStrong/ts-node)と[ts-node-test-register](https://github.com/azu/ts-node-test-register)へ移行します。
 
@@ -306,7 +306,7 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 - [Type Checking JavaScript Files · Microsoft/TypeScript Wiki](https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files "Type Checking JavaScript Files · Microsoft/TypeScript Wiki")
 - [JSDocで型チェックする - Qiita](https://qiita.com/shisama/items/016288d38165d542fffd "JSDocで型チェックする - Qiita")
 
-### 3. ソースコード(src/)をTypeScriptへ変換する
+### 4. ソースコード(src/)をTypeScriptへ変換する
 
 次に、やっとコードをTypeScript(`.ts`)へと変換していきます。
 
@@ -396,7 +396,7 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 
 この状態で`npm run build`して`lib/`以下へ`.d.ts`と`.js`が生成されていれば成功です。
 
-### 4. テストコードを(test/)をTypeScriptへ変換する
+### 5. テストコードを(test/)をTypeScriptへ変換する
 
 最後にテストコードもTypeScriptへ変換していきます。
 
@@ -473,14 +473,14 @@ TypeScriptへ移行できたら、Babelの依存は不要なので削除する�
 
 実際にこの記事で書いた変換は、30分程度でできています。
 
-記事では省略せずに書いていますが、次のスクリプトでステップ0-2まではほぼ自動化できます。
+記事では省略せずに書いていますが、次のスクリプトでステップ1-3まではほぼ自動化できます。
 (スクリプトにはコピー元のファイルが入ってなかったり、そのままではビルドは通らないですが)
 
-0. [自動] TypeScriptをインストールする
-1. [自動] TypeScript(tsc)でJavaScriptをビルドできるようにする
-2. [自動] TypeScript(tsc)でJavaScriptのテストを通るようにする
-3. ソースコード(src/)をTypeScriptへ変換する
-4. テストコードを(test/)をTypeScriptへ変換する
+1. [自動] TypeScriptをインストールする
+2. [自動] TypeScript(tsc)でJavaScriptをビルドできるようにする
+3. [自動] TypeScript(tsc)でJavaScriptのテストを通るようにする
+4. ソースコード(src/)をTypeScriptへ変換する
+5. テストコードを(test/)をTypeScriptへ変換する
 
 ```sh
 #!/bin/bash
