@@ -18,6 +18,8 @@ Macbook系はUSB Cなので、[YubiKey 4C Nano](https://www.yubico.com/product/y
 AirもProも2ポート以上あるので、基本的にずっと挿しっぱなし。
 1ポートはUSB Cハブ、1ポートは[YubiKey 4C Nano](https://www.yubico.com/product/yubikey-4-series/#yubikey-4c-nano)を刺している状態。
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yubikey 4C Nano + Macbook Air 2018 <a href="https://t.co/cciCb01h7P">pic.twitter.com/cciCb01h7P</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1080271802163638272?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 この運用からも分かるように、YubiKeyのみでログインとか何かできるような状態では使ってない。
 あくまで二要素認証のSMSの代わりという感じの使い方に収まるようにしている。
