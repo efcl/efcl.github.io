@@ -42,7 +42,7 @@ Babelを使ってJavaScriptで書いていたライブラリをTypeScriptへマ�
 
 ### Babelでの構成
 
-ざっくりとBabel版での[textlint/textlint-rule-helper][]は次のような構成になっています。
+ざっくりとBabel版での[textlint-rule-helper][]は次のような構成になっています。
 （[v2.0.1](https://github.com/textlint/textlint-rule-helper/tree/2.0.1)がBabelでのソースコードになっています。）
 
 ![File Tree in Babel](https://efcl.info/wp-content/uploads/2015/01/textlint-rule-helper.png)
