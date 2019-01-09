@@ -1,5 +1,5 @@
 ---
-title: "Babelで書かれたライブラリをTypeScriptへ移行する方法"
+title: "Babelで書かれたJavaScriptライブラリをTypeScriptへ移行する方法"
 author: azu
 layout: post
 date : 2019-01-09T14:32
