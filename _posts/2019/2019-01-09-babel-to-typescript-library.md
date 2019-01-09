@@ -56,7 +56,7 @@ Babelを使ってJavaScriptで書いていたライブラリをTypeScriptへマ�
 	- 一方で配布はするので`package.json`の`files`フィールドでnpmにはpublishする
 - `test/`
 	- ES2015で書かれたテストコード
-	- [@babel/register](https://babeljs.io/docs/en/babel-register)を利用して、実行時に変換しながテストする
+	- [@babel/register](https://babeljs.io/docs/en/babel-register)を利用して、実行時に変換しながらテストする
 
 詳しい構成については次の記事で解説しているので合わせてみてください。
 
@@ -77,7 +77,7 @@ Babelを使ってJavaScriptで書いていたライブラリをTypeScriptへマ�
 	- 一方で配布はするので`package.json`の`files`フィールドでnpmにはpublishする
 - `test/`
 	- TypeScriptで書かれたテストコード
-	- [ts-node](https://github.com/TypeStrong/ts-node)と[ts-node-test-register](https://github.com/azu/ts-node-test-register)を利用して、実行時に変換しながテストする
+	- [ts-node](https://github.com/TypeStrong/ts-node)と[ts-node-test-register](https://github.com/azu/ts-node-test-register)を利用して、実行時に変換しながらテストする
 
 変換するのがTypeScriptに変わった以外は、Babelの構造と何も変わっていないことがわかります。
 
