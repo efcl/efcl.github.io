@@ -66,7 +66,7 @@ Babelを使ってJavaScriptで書いていたライブラリをTypeScriptへマ�
 
 この記事の最終的な構造の予想図は次のようになっています。
 
-![File tree in TypeScript](https://efcl.info/wp-content/uploads/2019/01/textlint-helper-ts.png)
+![File tree in TypeScript](https://efcl.info/wp-content/uploads/2019/01/09-1547012454.png)
 
 - `src/`
 	- TypeScriptで書いたソースコード
