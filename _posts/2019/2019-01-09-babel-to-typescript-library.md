@@ -115,7 +115,7 @@ mocha \
 
 ### 2. TypeScript(tsc)でJavaScriptをビルドできるようにする
 
-ここでは、ソースコードをJavaScriptのままTypeScriptでビルドできるようにします。
+ここでは、ソースコードをJavaScriptのままTypeScript(`tsc`コマンド)でビルドできるようにします。
 TypeScriptは`allowJs`というオプションによって、JavaScript(ES2015+)をJavaScript(ES5)へと変換するTranspilerとして利用できます。いままで、BabelでやっていたのはES2015 -> ES5の処理だったので、これをTypeScriptでやるように移行していきます
 
 - [TypeScriptを徐々に導入する - Qiita](https://qiita.com/pirosikick/items/183987f8fb79f573ec8b "TypeScriptを徐々に導入する - Qiita")
