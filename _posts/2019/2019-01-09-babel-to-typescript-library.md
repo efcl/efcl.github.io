@@ -438,9 +438,7 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 
 ```json
 {
-    "name": "awesome",
-    "author": "Vandelay Industries",
-    "version": "1.0.0",
+    // typesにd.tsのパスを追加する
     "main": "./lib/main.js",
     "types": "./lib/main.d.ts"
 }
@@ -448,8 +446,7 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 
 - [Publishing · TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html)
 
-これで使う側も、TypeScriptで型付のライブラリを利用できます。
-
+これで使う側も、TypeScriptで型付きのライブラリとして利用できます。
 
 **Notes:** Babelの不要なファイルを削除する。
 
@@ -543,5 +540,11 @@ TypeScriptに変換することで型定義ファイルを配布できたり、�
 
 - [ライブラリをES2015(ES6)で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/)
 - [JavaScriptのライブラリを徐々にTypeScriptに移行する | Web Scratch](https://efcl.info/2017/07/17/javascript-to-typescript/)
+
+## FAQ
+
+- Q. [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)ではだめ?
+- A. [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)はTypeScriptから型情報を取り除くプリセットで、型定義ファイル(d.ts)を生成したり、型チェックはできません。そのため、ライブラリをTypeScriptに移行する際に、`tsc`を使うことに比べて特にメリットがありません。(どちらにしても`tsc`の併用が必要になるため、あまり意味がありません)
+- [@babel/preset-typescript · Babel](https://babeljs.io/docs/en/babel-preset-typescript#allextensions)はアプリケーション向けだと思います。Babelのエコシステムという柔軟性を取り入れつつ、TypeScriptで書けるメリットを享受できます。
 
 [textlint-rule-helper]: https://github.com/textlint/textlint-rule-helper
