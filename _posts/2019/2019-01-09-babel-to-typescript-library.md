@@ -450,16 +450,16 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 
 **Notes:** Babelの不要なファイルを削除する。
 
-TypeScriptへ移行できたら、Babelの依存は不要なので削除するのはわすれないでください。
+TypeScriptへ移行できたら、Babelの依存は不要なので削除しても大丈夫です。
 
 - `.babelrc`
 - `devDependencies`のbabel
 
-また、`lib/`には古い変換が残っている場合があるので、一度`lib/`を消してしまうのが良いでしょう。
+また、`lib/`には古い変換結果が残っている場合があるので、一度`lib/`を消してしまうのが良いでしょう。
 
 ## おわりに
 
-この記事ではBabelで書いていたライブラリをTypeScriptへ変換する方法を紹介しました。
+この記事では、Babelで書いていたライブラリをTypeScriptへ変換する方法を紹介しました。
 
 [textlint-rule-helper][]は[ライブラリをES2015(ES6)で書いて公開する所から始めよう | Web Scratch](https://efcl.info/2015/01/09/write-es6/)でBabelでライブラリを書く例として紹介しています。
 この記事では、そのライブラリをTypeScriptへ変換しました。
