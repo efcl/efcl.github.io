@@ -143,7 +143,7 @@ JavaScriptファイルもビルドできるように`allowJs`オプションを�
 	- `allowJs`が有効時は`d.ts`ファイルを生成する`declaration`は`false`でないといけない
 	- [Allow `--declaration` with `--allowJs` · Issue #7546 · Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/7546)
 
-```json
+```js
 {
   "compilerOptions": {
     /* Basic Options */
@@ -259,7 +259,7 @@ test/
 - `noEmit`を`true`にしてビルドしてもファイルを出力しないようにする
 - `include`に、テストファイル自身(`./**/*`)とソースコードのディレクトリを指定する
 
-```
+```json
 {
     "extends": "../tsconfig.json",
     "compilerOptions": {
@@ -281,8 +281,8 @@ test/
 + --require ts-node-test-register
 ```
 
-[ts-node-test-register](https://github.com/azu/ts-node-test-register)は[ts-node](https://github.com/TypeStrong/ts-node)のラッパーで、`test/tsconfig.json`を自動的に読み込んで使ってくれるテスト用のregisterです。
-(設定を探すこと以外の処理自体は[ts-node](https://github.com/TypeStrong/ts-node)に投げているので同じです)
+[ts-node](https://github.com/TypeStrong/ts-node)は実行時にTypeScriptを変換してくれるライブラリで、[@babel/register](https://babeljs.io/docs/en/babel-register)相当の処理を行います。
+[ts-node-test-register](https://github.com/azu/ts-node-test-register)は[ts-node](https://github.com/TypeStrong/ts-node)のラッパーで、`test/tsconfig.json`を自動的に読み込むようにしたテスト用のregisterです。([ts-node](https://github.com/TypeStrong/ts-node)はパスを設定しないとルートの`tsconfig.json`を読み込みます)
 
 そして、JavaScriptで書かれたテストを`npm test`コマンドで実行します。
 
@@ -436,7 +436,7 @@ Fixturesを動的に読み込んでいる場合などの挙動で違いが出る
 基本的にはBabelのときと同じように`lib`をnpmへpublishします。
 型定義ファイルも生成されるようになったので、`types`フィールドを追加して型定義ファイルも配布するのを忘れないでください。
 
-```json
+```js
 {
     // typesにd.tsのパスを追加する
     "main": "./lib/main.js",
