@@ -59,7 +59,7 @@ Docusaurusなど他の環境向けのプラグインも必要になったら追�
 
 サービスも昔は[JSfiddle](https://jsfiddle.net/)のようなクライアントサイドで実行するシンプルなものでしたが、今は[CodeSandbox](https://codesandbox.io/)、[Repl.it](https://repl.it/)、[Glitch](https://glitch.com/)など仮想環境で環境構築できるような高機能なものが増えています。
 
-[web.dev](https://web.dev/)は[Glitch](https://glitch.com/)は[Glitch](https://glitch.com/)を埋め込んでチュートリアルを書いたりしてますが、結構シームレスです。
+[web.dev](https://web.dev/)は[Glitch](https://glitch.com/)を埋め込んでチュートリアルを書いたりしてますが、結構シームレスです。
 
 - [Serve modern code to modern browsers for faster page loads  |  web.dev](https://web.dev/fast/serve-modern-code-to-modern-browsers/codelab-serve-modern-code)
 
