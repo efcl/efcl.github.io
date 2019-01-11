@@ -54,7 +54,7 @@ Docusaurusなど他の環境向けのプラグインも必要になったら追�
 
 このような書籍などのサンプルコードを実行する試みは結構色々なところでも見かけるようになったと思います。([codemirror-console][]は元々[JavaScript Promiseの本](http://azu.github.io/promises-book/)を書いてた時に、そういうものがなくて作りました)
 
-たとえば、CodeMirrorの作者でも[Marijn Haverbeke](https://github.com/marijnh)の[Eloquent JavaScript](https://eloquentjavascript.net/)という書籍でも同じような仕組みがあります。
+たとえば、CodeMirrorの作者である[Marijn Haverbeke](https://github.com/marijnh)の[Eloquent JavaScript](https://eloquentjavascript.net/)という書籍でも同じような仕組みがあります。
 またJavaScript以外でもRustの[The Rust Programming Language](https://doc.rust-lang.org/book/)なども同様の機能をもっています(こちらは実行サーバと通信します)
 
 サービスも昔は[JSfiddle](https://jsfiddle.net/)のようなクライアントサイドで実行するシンプルなものでしたが、今は[CodeSandbox](https://codesandbox.io/)、[Repl.it](https://repl.it/)、[Glitch](https://glitch.com/)など仮想環境で環境構築できるような高機能なものが増えています。
