@@ -18,7 +18,7 @@ tags:
 - [azu/codemirror-console: Web Console UI for JavaScript.](https://github.com/azu/codemirror-console)
 
 実際に動いてる例としては、[JavaScript Promiseの本](http://azu.github.io/promises-book/)や[JavaScriptの入門書 #jsprimer](https://jsprimer.net/)で見れます。
-あと、公式のGitBookで動いてるサンプルは次のページで見れます。
+あと、GitBookで動いてるサンプルは次のページで見れます。
 
 - <https://codemirror-console.netlify.com/>
 
