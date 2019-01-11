@@ -1,5 +1,5 @@
 ---
-title: "JavaScriptのコード例をインタラクションに実行できるようにするREPLライブラリ on GitBook"
+title: "JavaScriptのコード例をインタラクティブに実行できるようにするREPLライブラリ on GitBook"
 author: azu
 layout: post
 date : 2019-01-11T10:32
