@@ -107,5 +107,4 @@ license-generator MIT Apache --author azu
 
 - [An I/O Project: Building a Command Line Program - The Rust Programming Language](https://doc.rust-lang.org/book/ch12-00-an-io-project.html)
 - [入出力プロジェクト: コマンドラインプログラムを構築する - The Rust Programming Language](https://doc.rust-jp.rs/book/second-edition/ch12-00-an-io-project.html)
-
 - [Command Line Toolを作ってみる in Rust - Qiita](https://qiita.com/watawuwu/items/b20abfae62f76e4b4c0c)
