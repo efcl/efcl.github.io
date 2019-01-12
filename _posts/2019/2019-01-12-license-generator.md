@@ -95,6 +95,14 @@ license-generator MIT --author azu
 
 - [Home | Rustの日本語ドキュメント/Japanese Docs for Rust](https://doc.rust-jp.rs/)
 
+あとRustのライブラリはマルチライセンスのパターンがやたら多い(Rustがそうだから?)ので、複数ライセンスの生成に対応とかするといいのかもしれない。
+
+Pull Reuqest待っています。
+
+```
+license-generator MIT Apache --author azu
+```
+
 ## 参考
 
 - [An I/O Project: Building a Command Line Program - The Rust Programming Language](https://doc.rust-lang.org/book/ch12-00-an-io-project.html)
