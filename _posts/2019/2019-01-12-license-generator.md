@@ -82,14 +82,15 @@ license-generator MIT --author azu
 - [cargo-bump - Cargo: packages for Rust](https://crates.io/crates/cargo-bump "cargo-bump - Cargo: packages for Rust")
 - [sunng87/cargo-release: Cargo subcommand "release": everything about releasing a rust crate.](https://github.com/sunng87/cargo-release)
 
-[cargo-release](https://github.com/sunng87/cargo-release)は近いのだけど、バージョンを上げてpublishするのではなくて、devをcurrentにしてpublishするワークフローになっていて、次の開発バージョンを最初から決めておかないとできないワークフローになっていて少し違うものだった。
+<del>[cargo-release](https://github.com/sunng87/cargo-release)は近いのだけど、バージョンを上げてpublishするのではなくて、devをcurrentにしてpublishするワークフローになっていて、次の開発バージョンを最初から決めておかないとできないワークフローになっていて少し違うものだった。</del>
+<ins>`--dry-run`のメッセージで誤解してたけど、`cargo release {patch,minor,major}`はversionupしてからpublishをやってくれるみたいだった。</ins>
 
 1. pre-version
 2. `npm version {patch, minor, major}` # バージョン更新 & git tag
 3. post-version
 4. publish
 
-というフローがしたかったけど、そういうcargoサブコマンドとかないのかな? というのがパッケージを公開する作業やってて思った疑問だった。
+というフローがしたかったけど、<del>そういうcargoサブコマンドとかないのかな? というのがパッケージを公開する作業やってて思った疑問だった。</del>
 
 ドキュメントは翻訳(最新ではないけど)とかあったり、Cargoがテンプレ生成から実行/テスト、公開までプログラミングで面倒な部分を全部やってくれるので導入は楽だった。
 
