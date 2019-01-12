@@ -80,7 +80,7 @@ license-generator MIT --author azu
 
 - [cargo-version-cli - Cargo: packages for Rust](https://crates.io/crates/cargo-version-cli "cargo-version-cli - Cargo: packages for Rust")
 - [cargo-bump - Cargo: packages for Rust](https://crates.io/crates/cargo-bump "cargo-bump - Cargo: packages for Rust")
-- [sunng87/cargo-release: Cargo subcommand "release": everything about releasing a rust crate.](https://github.com/sunng87/cargo-release "sunng87/cargo-release: Cargo subcommand "release": everything about releasing a rust crate.")
+- [sunng87/cargo-release: Cargo subcommand "release": everything about releasing a rust crate.](https://github.com/sunng87/cargo-release)
 
 [cargo-release](https://github.com/sunng87/cargo-release)は近いのだけど、バージョンを上げてpublishするのではなくて、devをcurrentにしてpublishするワークフローになっていて、次の開発バージョンを最初から決めておかないとできないワークフローになっていて少し違うものだった。
 
