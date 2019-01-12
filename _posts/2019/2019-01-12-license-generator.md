@@ -94,3 +94,10 @@ license-generator MIT --author azu
 ドキュメントは翻訳(最新ではないけど)とかあったり、Cargoがテンプレ生成から実行/テスト、公開までプログラミングで面倒な部分を全部やってくれるので導入は楽だった。
 
 - [Home | Rustの日本語ドキュメント/Japanese Docs for Rust](https://doc.rust-jp.rs/)
+
+## 参考
+
+- [An I/O Project: Building a Command Line Program - The Rust Programming Language](https://doc.rust-lang.org/book/ch12-00-an-io-project.html)
+- [入出力プロジェクト: コマンドラインプログラムを構築する - The Rust Programming Language](https://doc.rust-jp.rs/book/second-edition/ch12-00-an-io-project.html)
+
+- [Command Line Toolを作ってみる in Rust - Qiita](https://qiita.com/watawuwu/items/b20abfae62f76e4b4c0c)
