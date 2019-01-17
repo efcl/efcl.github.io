@@ -1,5 +1,5 @@
 ---
-title: "MDNに載っているAPIをどれだけ知っているかのクイズアプリを書いた"
+title: "MDNに載っているAPIをどれだけ知っているかテストするクイズアプリを書いた"
 author: azu
 layout: post
 date : 2019-01-17T11:11
