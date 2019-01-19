@@ -39,7 +39,7 @@ const fs = require("fs");
 const path = require("path");
 const assert = require("assert");
 const fixturesDir = path.join(__dirname, "snapshots");
-// 変換する関数
+// transform function
 const transform = require("../transform");
 
 describe("Snapshot testing", () => {
@@ -52,13 +52,14 @@ describe("Snapshot testing", () => {
         const actualContent = JSON.parse(fs.readFileSync(actualFilePath, "utf-8"));
         const actual = transform(actualContent);
         const expectedFilePath = path.join(fixtureDir, "output.json");
-        // UPDATE_SNAPSHOT=1 npm test で呼び出したときはスナップショットを更新
-        if (process.env.UPDATE_SNAPSHOT) {
+        // Usage: update snapshots
+        // UPDATE_SNAPSHOT=1 npm test
+        if (!fs.existsSync(expectedFilePath) || process.env.UPDATE_SNAPSHOT) {
           fs.writeFileSync(expectedFilePath, JSON.stringify(actual, null, 4));
-          this.skip(); // スキップ
+          this.skip(); // skip when updating snapshots
           return;
         }
-        // inputとoutputを比較する
+        // compare input and output
         const expected = JSON.parse(fs.readFileSync(expectedFilePath, "utf-8"));
         assert.deepEqual(
           actual,
@@ -123,4 +124,5 @@ Jestなどを使わずにスナップショットテストを書くメリット�
   - HTMLをスクレイピングして抽出した結果をスナップショットとして保存しています
 - [textlint/parsing-test.js at master · textlint/textlint](https://github.com/textlint/textlint/blob/master/packages/%40textlint/markdown-to-ast/test/parsing-test.js "textlint/parsing-test.js at master · textlint/textlint")
   - 大量のvalidなMarkdownをパースできるかを検証しつつ、そのパース結果のASTをJSONとして保存しています
-  
+- [comment-to-assert/snapshot-test.ts at master · azu/comment-to-assert](https://github.com/azu/comment-to-assert/blob/master/test/snapshot-test.ts)
+  - JSのAST変換結果を比較
