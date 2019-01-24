@@ -23,12 +23,12 @@ npmにモジュールを公開することは多くなってると思います�
 
 実際に[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")をpublicに公開する手順としては、
 
-
 1. `npm init --scope=<npmユーザ名>`
 	- パッケージの名前が`@<npmユーザ名>/パッケージ名`になる
 	- 手動で書き換えても別に問題ない
 2. 適当に開発
 3. `npm publish --access=public`
+	- または[publishConfig](https://docs.npmjs.com/files/package.json#publishconfig)で`public`に設定（こちらの方が明示的）
 
 するだけです。
 
