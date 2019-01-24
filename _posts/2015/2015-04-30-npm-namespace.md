@@ -32,7 +32,18 @@ npmにモジュールを公開することは多くなってると思います�
 
 するだけです。
 
-簡単に書くと[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")として作って、公開する時は`npm publish --access=public`とするだけです。(デフォルトが`--access=restricted`であるため明示する必要がある)
+簡単に書くと[scoped modules](https://docs.npmjs.com/getting-started/scoped-packages "scoped modules")として作って、公開する時は`npm publish --access=public`とするだけです。(デフォルトが`--access=restricted`であるため明示する必要がある。必要なのは最初に公開する時のみ)
+
+`pacakge.json`の[publishConfig](https://docs.npmjs.com/files/package.json#publishconfig)で`public`に設定してある場合は、`npm publish`の`--access`オプションは不要です。
+
+```js
+...
+  "publishConfig": {
+    "access": "public"
+  }
+...
+```
+
 
 こうして公開したモジュールは
 
@@ -95,3 +106,6 @@ node_modules
 具体的には`tsd link`などはそういうバグがあったりしました。
 
 - [Does `tsd link` not work? · Issue #130 · DefinitelyTyped/tsd](https://github.com/DefinitelyTyped/tsd/issues/130#issuecomment-91127150 "Does `tsd link` not work? · Issue #130 · DefinitelyTyped/tsd")
+
+
+<ins>追記(2019-01-24): [publishConfig](https://docs.npmjs.com/files/package.json#publishconfig)についてを追加</ins>
