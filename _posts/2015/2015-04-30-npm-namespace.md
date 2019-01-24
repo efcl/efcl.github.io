@@ -28,7 +28,7 @@ npmにモジュールを公開することは多くなってると思います�
 	- 手動で書き換えても別に問題ない
 2. 適当に開発
 3. `npm publish --access=public`
-	- または[publishConfig](https://docs.npmjs.com/files/package.json#publishconfig)で`public`に設定（こちらの方が明示的）
+	- または[publishConfig](https://docs.npmjs.com/files/package.json#publishconfig)で`public`に設定（こちらの方が宣言的）
 
 するだけです。
 
