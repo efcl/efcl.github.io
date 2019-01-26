@@ -473,7 +473,7 @@ TypeScriptもmonorepo向けのProject Referencesなどが入ってきていま�
 
 単独のリポジトリをmonorepoに集めたからといってなんでも解決するわけではないですが、楽になったりする部分はあるので、興味がある人は試してみるといいかもしれません。
 
-逆に今回の記事で書いているように開発フローなどが少し異なりますが、[Lerna](https://github.com/lerna/lerna)や[Yarn](http://yarnpkg.com/)によってその部分はだいぶ楽になっていると思います。
+逆に今回の記事で書いているように開発フローなどが少し異なったり、複数のパッケージを同時に開発するという事実は変わりませんが、[Lerna](https://github.com/lerna/lerna)や[Yarn](http://yarnpkg.com/)によってその部分はだいぶ楽になっていると思います。
 
 ## 参考
 
