@@ -359,7 +359,7 @@ git tag --points-at HEAD | xargs -I{} monorepo-utils-collect-changelog {} | pbco
 
 https://github.com/almin/almin/blob/master/.github/CONTRIBUTING.md#release-workflow にもこのリリースフローが書かれています。
 
-具体的なスクリプトは同じで、パッケージを公開する前にPull Requestを出してそれをチェックするという違いがあるだけです。
+具体的なスクリプトは同じです。パッケージを公開する前にPull Requestを出して、それをチェックするという違いがあります。
 
 ### 1. リリースブランチをcheckout
 
