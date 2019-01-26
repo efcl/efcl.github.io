@@ -306,7 +306,6 @@ yarn run release
 `yarn run release`は`lerna publish from-package`をしています。
 
 これは、現在のバージョンがnpm registryに公開されていなければ、`npm publish`するという形になります。
-なので、`npm publish`を順番にやっていく形になります。
 これはFixedと同じです。
 
 ### 3. GitHub Releaseにリリースノートを書く
