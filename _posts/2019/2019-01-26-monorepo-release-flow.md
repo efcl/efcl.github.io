@@ -269,7 +269,7 @@ git tag --points-at HEAD | xargs -I{} monorepo-utils-collect-changelog {} | pbco
     "versionup": "lerna version --conventional-commits",
     "versionup:patch": "lerna version patch --conventional-commits",
     "versionup:minor": "lerna version minor --conventional-commits",
-"versionup:major": "lerna version minor --conventional-commits",
+    "versionup:major": "lerna version major --conventional-commits",
     "release": "lerna publish from-package",
     "release:canary": "lerna publish --canary"
    },
