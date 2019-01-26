@@ -222,7 +222,7 @@ scoped packageをpublicに公開するときは`publishConfig`をそれぞれの
 
 1.の`yarn run versionup`で既に`CHANGELOG.md`が生成されているので、コピペでGitHub Releaseにリリースノートを更新もできます。
 
-またはFixed modeでは[conventional-github-releaser - npm](https://www.npmjs.com/package/conventional-github-releaser)が利用できます。
+また、Fixed modeでは[conventional-github-releaser - npm](https://www.npmjs.com/package/conventional-github-releaser)が利用できます。
 
 - [conventional-changelog/releaser-tools: Create a GitHub/GitLab/etc. release using a project's commit messages and metadata.](https://github.com/conventional-changelog/releaser-tools)
 
