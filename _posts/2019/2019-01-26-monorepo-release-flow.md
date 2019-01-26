@@ -443,9 +443,12 @@ yarn run release
 [Lerna](https://github.com/lerna/lerna)でのFixed modeとIndependent modeでのリリースフローについて書きました。
 
 lernaを使ったmonorepoでは[Yarnのワークスペース](https://yarnpkg.com/lang/ja/docs/workspaces/)と組み合わせた方がlockファイルの管理が楽です。
-そのため、基本的にはnpmではなくyarnを使っています。(また`yarn upgrade-interactive --latest`がとても便利)
+また[yarn upgrade-interactive](https://yarnpkg.com/lang/ja/docs/cli/upgrade-interactive/)がmonorepoに対応しているのでとても便利です。
+そのため、基本的にはnpmではなくyarnを使っています。
 
-[lerna.json](https://github.com/lerna/lerna#lernajson)の設定で`useWorkspace`を有効化して、`pacakge.json`でYarnの設定をする。
+![interactive](https://efcl.info/wp-content/uploads/2019/01/26-1548474924.png)
+
+Lerna + YarnでWorkspaceを有効化する場合には、[lerna.json](https://github.com/lerna/lerna#lernajson)の設定で`useWorkspace`を有効化して、`pacakge.json`でYarnの設定をする必要があります。
 
 ```
 {
