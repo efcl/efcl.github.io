@@ -111,13 +111,14 @@ Closes #8454
 `commit type` としては次のようなものがあります。
 
 - feat
-    - 新しい機能、章、節の追加など
-    - 更新履歴に載るような新しいページを追加
+    - CHANGELOGに載せる新しい機能の追加
+    - minorな変更
 - fix
-    - 意味が変わる修正
-    - 更新履歴に載るような修正
+    - CHANGELOGに載せる機能などの修正
+    - patchな変更
 - その他:
-    - chore: , docs:, style:, perf: なども使いますが、semverの推論には関係ありません。
+    - chore: , docs:, style:, perf: なども使いますが、semverの推論には関係ありません
+    - 基本的にpatchの変更となります。
 
 BREAKING CHANGEをしたい場合は、3行目を`BREAKING CHANGE:`から開始します。
 BREAKING CHANGEは`commit type`と併用できます。
