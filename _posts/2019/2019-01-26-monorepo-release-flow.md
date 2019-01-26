@@ -24,8 +24,6 @@ LernaにはFixed(すべてのパッケージが同じバージョン)とIndepend
 
 ## modeの違い
 
----
-
 ### Fixed mode
 
 Pros
