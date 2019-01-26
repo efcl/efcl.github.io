@@ -20,7 +20,7 @@ LernaにはFixed(すべてのパッケージが同じバージョン)とIndepend
 
 基本的にはFixedの方が運用は簡単ですが、不自然なバージョンの上がり方を避けたい場合などはIndependentのmodeを使うことがあります。
 
-この記事では、Fixed modeとIndependent modeでのそれぞれのパッケージのリリースフローについて見ていきます。
+この記事では、Fixed modeとIndependent modeでのパッケージのリリースフローについて見ていきます。
 
 ## modeの違い
 
