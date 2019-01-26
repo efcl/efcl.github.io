@@ -59,7 +59,6 @@ lerna 3から[@lerna/version](https://github.com/lerna/lerna/tree/master/command
 
 - `npm version` == `lerna version`
 - `npm publish` ==`lerna publish from-package`
-
 - `npm version` + `npm publish` == `lerna publish` (lerna 2の挙動と同じ)
 
 ## 共通のコミットメッセージ規約
