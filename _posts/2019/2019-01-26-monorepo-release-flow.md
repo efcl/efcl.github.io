@@ -53,7 +53,7 @@ FixedからIndenpendent への移行は簡単なので、Fixedで問題ない場
 
 それぞれのパターンにおけるmonorepoのパッケージリリースフローや`CHANGELOG.md`などのリリースノートの扱い方について書いていきます。
 
-lerna 3から[@lerna/version](https://github.com/lerna/lerna/tree/master/commands/version#readme)と[@lerna/publish](https://github.com/lerna/lerna/tree/master/commands/publish#readme)にコマンドが分離されたので、npmで通常のパッケージと同じようなフローが取れるようになってきました。
+lerna 3から[@lerna/version](https://github.com/lerna/lerna/tree/master/commands/version#readme)と[@lerna/publish](https://github.com/lerna/lerna/tree/master/commands/publish#readme)にコマンドが分離されたので、npmコマンドとコマンド体系は大体同じになりました。
 
 コマンドは次のような対応になっていると考えておけば大体OKです。
 
