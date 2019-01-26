@@ -13,7 +13,6 @@ tags:
 一つのリポジトリで複数のパッケージを管理する際には[Lerna](https://github.com/lerna/lerna)と[Yarnのワークスペース](https://yarnpkg.com/lang/ja/docs/workspaces/)を組み合わせて運用するmonorepoにすることが多いです。
 
 - [lerna/lerna: A tool for managing JavaScript projects with multiple packages.](https://github.com/lerna/lerna)
-- 
 
 LernaにはFixed(すべてのパッケージが同じバージョン)とIndependent(パッケージごとに異なるバージョン)のモードがあります。
 
@@ -21,7 +20,7 @@ LernaにはFixed(すべてのパッケージが同じバージョン)とIndepend
 
 基本的にはFixedの方が運用は簡単ですが、不自然なバージョンの上がり方を避けたい場合などはIndependentのmodeを使うことがあります。
 
-この記事ではFixed modeとIndependent modeでのそれぞれのパッケージのリリースフローについて見ていきます。
+この記事では、Fixed modeとIndependent modeでのそれぞれのパッケージのリリースフローについて見ていきます。
 
 ## modeの違い
 
