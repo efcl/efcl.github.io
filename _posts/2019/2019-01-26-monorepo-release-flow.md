@@ -22,6 +22,15 @@ LernaにはFixed(すべてのパッケージが同じバージョン)とIndepend
 
 この記事では、Fixed modeとIndependent modeでのパッケージのリリースフローについて見ていきます。
 
+## 目次
+
+- [modeの違い](#mode-diff)
+- [Fixed modeのリリースフロー](#fixed-release)
+- [Independent modeのリリースフロー](#independent-release)
+- [Independent modeのリリースレビューフロー](#independent-release-review)
+
+
+<a name="mode-diff"></a>
 ## modeの違い
 
 ### Fixed mode
@@ -135,7 +144,8 @@ Closes #234
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)ではバージョンに推論に関係ある部分しか決まっていません。
 また、[--changelog-preset](https://github.com/lerna/lerna/tree/master/commands/version#--changelog-preset)でこのルールセットは変更できます。
 
-## Fixed modeでのリリースフロー
+<a name="fixed-release"></a>
+## Fixed modeのリリースフロー
 
 [mdline](https://github.com/azu/mdline)はFixed modeでのリリースフローを採用しています。
 
@@ -251,6 +261,7 @@ git tag --points-at HEAD | xargs -I{} monorepo-utils-collect-changelog {} | pbco
 
 ----
 
+<a name="independent-release"></a>
 ## Independent modeのリリースフロー
 
 ここからはIndependent modeでのリリースフローです。
@@ -356,7 +367,8 @@ git tag --points-at HEAD | xargs -I{} monorepo-utils-collect-changelog {} | pbco
 
 ----
 
-## Independent modeでのリリースレビューフロー
+<a name="independent-release-review"></a>
+## Independent modeのリリースレビューフロー
 
 https://github.com/almin/almin/blob/master/.github/CONTRIBUTING.md#release-workflow にもこのリリースフローが書かれています。
 
