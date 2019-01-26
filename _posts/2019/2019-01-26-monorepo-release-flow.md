@@ -467,11 +467,13 @@ monorepoでパッケージを管理することで、関連するパッケージ
 
 lernaでは[lerna import](https://github.com/lerna/lerna/tree/master/commands/import#readme)によって既存のリポジトリをmonorepoへ取り込めるので、monorepoへの移行自体はそれほど大変ではありません。(大体import時点ではバージョンがバラバラになるのでIndependent modeになりやすい)
 
-TypeScriptもmonorepo向けのProject Referencesなどが入ってきてはいます。
+TypeScriptもmonorepo向けのProject Referencesなどが入ってきています。
 
 - [tsc --build / Project References Feedback & Discussion · Issue #25600 · Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/25600)
 
 単独のリポジトリをmonorepoに集めたからといってなんでも解決するわけではないですが、楽になったりする部分はあるので、興味がある人は試してみるといいかもしれません。
+
+逆に今回の記事で書いているように開発フローなどが少し異なりますが、[Lerna](https://github.com/lerna/lerna)や[Yarn](http://yarnpkg.com/)によってその部分はだいぶ楽になっていると思います。
 
 ## 参考
 
