@@ -458,6 +458,7 @@ lernaを使ったmonorepoでは[Yarnのワークスペース](https://yarnpkg.co
 Lerna + YarnでWorkspaceを有効化する場合には、[lerna.json](https://github.com/lerna/lerna#lernajson)の設定で`useWorkspace`を有効化して、`pacakge.json`でYarnの設定をする必要があります。
 
 `lerna.json`:
+
 ```
 {
   "version": "independent",
@@ -470,6 +471,7 @@ Lerna + YarnでWorkspaceを有効化する場合には、[lerna.json](https://gi
 ```
 
 `package.json`:
+
 ```
 {
   "private": true,
