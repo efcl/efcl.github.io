@@ -295,6 +295,7 @@ echo 'userChrome.import("*", "UChrm");' >> "${chromeDir}/userChrome.js"
 ### UserChromeスクリプト
 
 UserChromeのスクリプトも同じく `${chromeDir}/` に配置していくと`userChrome.js`が `*` にマッチするファイルを読み込んでくれる。
+
 ```
 profileDir="~/Library/Application Support/Firefox/Profiles/プロファイル名"
 chromeDir="${profileDir}/chrome"
