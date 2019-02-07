@@ -277,7 +277,7 @@ TampermonkeyとViolentmonkeyどちらもzipインポートをサポートして�
 ### UserChrome Loaderのセットアップ
 
 ```
-profileDir="プロファイルへのパス"
+profileDir="~/Library/Application Support/Firefox/Profiles/プロファイル名"
 chromeDir="${profileDir}/chrome"
 mkdir "${chromeDir}"
 
@@ -296,7 +296,7 @@ echo 'userChrome.import("*", "UChrm");' >> "${chromeDir}/userChrome.js"
 
 UserChromeのスクリプトも同じく `${chromeDir}/` に配置していくと`userChrome.js`が `*` にマッチするファイルを読み込んでくれる。
 ```
-profileDir="/Users/azu/Library/Application Support/Firefox/Profiles/m5j9lu0v.FirefoxQ-2018-01-01"
+profileDir="~/Library/Application Support/Firefox/Profiles/プロファイル名"
 chromeDir="${profileDir}/chrome"
 mkdir "${chromeDir}"
 
