@@ -277,7 +277,7 @@ TampermonkeyとViolentmonkeyどちらもzipインポートをサポートして�
 ### UserChrome Loaderのセットアップ
 
 ```
-profileDir="/Users/azu/Library/Application Support/Firefox/Profiles/m5j9lu0v.FirefoxQ-2018-01-01"
+profileDir="プロファイルへのパス"
 chromeDir="${profileDir}/chrome"
 mkdir "${chromeDir}"
 
