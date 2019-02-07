@@ -413,7 +413,7 @@ settings.theme = `
 Keysnailでは[Hatebnail](https://github.com/mooz/keysnail/wiki/plugin)というローカルに持ったはてなブックマークのDBを検索するものを使っていた。
 しかし、Keysnailが動かなくなったため、はてなブックマークのインクリメンタル検索をするFirefoxの拡張がなくなった。
 
-[Alfred上で自分のはてなブックマークを検索できるWorkflow | Web Scratch](http://efcl.info/2017/10/20/alfred-hatenabookmark/ "Alfred上で自分のはてなブックマークを検索できるWorkflow | Web Scratch")も書いたけど、速さが足りな買った(プロセスの仕組み的にメモリに乗せられない)
+[Alfred上で自分のはてなブックマークを検索できるWorkflow | Web Scratch](http://efcl.info/2017/10/20/alfred-hatenabookmark/ "Alfred上で自分のはてなブックマークを検索できるWorkflow | Web Scratch")も書いたけど、速さが足りなかった(プロセスの仕組み的にメモリに乗せられない)
 
 拡張機能だと[Online Bookmark Incremental Search for Firefox](https://addons.mozilla.org/ja/firefox/addon/online-bookmark-inc-search/ "Online Bookmark Incremental Search for Firefox")も良さそう。
 
