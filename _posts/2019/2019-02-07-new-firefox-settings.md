@@ -428,7 +428,7 @@ Electronアプリでラップしてアプリとして利用。モバイルでも
 ### 外部プロセス起動
 
 ブラウザの拡張に依存するのはキケンであるため、URLとタイトルを渡してアプリを起動するのに使う。
-[Tombfix](https://github.com/tombfix/core)はFirefox 57+では動かないので、自分でクロスポストクライアントとして[postem](https://github.com/azu/postem "postem")というElectronアプリを書いて利用していている。
+[Tombfix](https://github.com/tombfix/core)はFirefox 57+では動かないので、自分でクロスポストクライアントとして[postem](https://github.com/azu/postem "postem")というElectronアプリを書いて利用している。
 
 現時点(2019-02-07)ではブラウザとアプリを中継するAPIがFirefoxにはない。
 
