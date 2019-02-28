@@ -20,7 +20,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="{{ site.baseurl }}/public/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ site.icon | prepend: site.baseurl | prepend: site.url }}">
-
+    <!-- canonical -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <!-- Hatena -->
+    <link rel="author" href="http://www.hatena.ne.jp/efcl/" />
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed/">
     <!-- CSS -->
