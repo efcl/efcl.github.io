@@ -16,7 +16,7 @@ JavaScriptの配列をどう解説するかを考えていて、配列って普�
 
 皆さんは配列をどう使いますか?
 
-**追記**: 次のページでこの記事をブラッシュアップした話を公開しています。
+**追記**: 次のページでこの記事をブラッシュアップした話を<http://jsprimer.net/>で公開しています。
 
 - [配列 · JavaScriptの入門書 #jsprimer](https://jsprimer.net/basic/array/)
 
