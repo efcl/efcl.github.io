@@ -64,7 +64,6 @@ const mark = (name) => {
 }
 
 // 使い方の例
-// 使うとき
 const markEnd = mark("label");
 // ...
 // ...Do something to measure...    
