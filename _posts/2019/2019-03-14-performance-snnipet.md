@@ -88,7 +88,7 @@ markEnd({ key : "value" }); // 引数には計測に紐づけたい任意のデ�
 // markEnd(); // 処理時間だけなら引数はいらない
 ```
 
-計測した結果はすべて`performance.measure`に保存されています。
+計測した結果はすべて`performance.measure`に保存されるので、`performance.getEntries()`で取り出せます。
 また、`markEnd`で紐づけたデータは`window.window.__performance_mark_snippet_map`のMapオブジェクトに保存されています。
 次のスニペットを計測後に実行すれば、`console.table`でデータを一覧できます。
 
