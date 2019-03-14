@@ -1,0 +1,10 @@
+id: 01BQ92YXWTV260J4A7W8TSWEXH
+description: ''
+expected: Workaround
+patterns:
+  - Workaound
+specs:
+  - from: iOS7と8のquerySelectorバグの対処(Workaound)
+    to: iOS7と8のquerySelectorバグの対処(Workaround)
+tags:
+  - typo

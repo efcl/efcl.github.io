@@ -1,0 +1,11 @@
+id: 01BQ92YWWV924FDDABK9WR3A8Y
+description: （接尾語の場合）ひらがなを使う
+expected: 活気づく
+patterns:
+  - 活気付く
+specs:
+  - from: 活気付く
+    to: 活気づく
+tags:
+  - opinion
+  - 表記統一

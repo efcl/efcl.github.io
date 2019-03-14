@@ -1,0 +1,8 @@
+id: 01BQ92YXWVY5EFQNE4ZV8K0HS5
+description: ''
+expected: package.json
+patterns:
+  - packge.json
+specs: []
+tags:
+  - typo

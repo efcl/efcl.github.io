@@ -1,0 +1,11 @@
+id: 01BQ92YYSHHTGFD78FF7NB4RX9
+description: ''
+expected: HTML5 Rocks
+patterns:
+  - /HTML5Rocks/i
+  - /HTML5Rock/i
+specs:
+  - from: HTML5Rockに現在公開されている翻訳記事のまとめ
+    to: HTML5 Rocksに現在公開されている翻訳記事のまとめ
+tags:
+  - noun

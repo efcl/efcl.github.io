@@ -1,0 +1,13 @@
+id: 01BQ92YWWVW05VCDSH569QRHPF
+description: (補助動詞の場合)ひらがなを使う
+expected: てほしい
+patterns:
+  - て欲しい
+specs:
+  - from: 物が欲しい
+    to: 物が欲しい
+  - from: 考えて欲しい
+    to: 考えてほしい
+tags:
+  - opinion
+  - 表記統一

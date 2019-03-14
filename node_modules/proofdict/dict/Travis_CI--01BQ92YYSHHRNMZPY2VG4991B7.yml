@@ -1,0 +1,10 @@
+id: 01BQ92YYSHHRNMZPY2VG4991B7
+description: ''
+expected: Travis CI
+patterns:
+  - /TravisCI/i
+specs:
+  - from: TravisCI is a service
+    to: Travis CI is a service
+tags:
+  - noun

@@ -1,0 +1,9 @@
+id: 01BQ92YWWRZAQH7M4QN2T8W7Y7
+description: ''
+expected: $1中
+patterns:
+  - /(世界|日)じゅう/
+specs: []
+tags:
+  - opinion
+  - 表記統一

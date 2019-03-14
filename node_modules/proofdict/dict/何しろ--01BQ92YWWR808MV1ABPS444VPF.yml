@@ -1,0 +1,11 @@
+id: 01BQ92YWWR808MV1ABPS444VPF
+description: ''
+expected: 何しろ
+patterns:
+  - なにしろ
+specs:
+  - from: なにしろ困っている
+    to: 何しろ困っている
+tags:
+  - opinion
+  - 表記統一

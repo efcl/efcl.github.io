@@ -1,0 +1,9 @@
+id: 01BQ92YWJF8WXN0M9FE0S4QYW5
+description: ''
+expected: $1発売
+patterns:
+  - /(\d+年\d+月\d+日)\s発売/
+specs: []
+tags:
+  - opinion
+  - jser.info

@@ -1,0 +1,15 @@
+id: 01BQ92YWWKSTXDNGWVVE10WF9T
+description: ''
+expected: $1さらに
+patterns:
+  - '/([\s。、\nぁ-んァ-ヶ])更に/'
+specs:
+  - from: Aは加速した、更に加速した。
+    to: Aは加速した、さらに加速した。
+  - from: 加速すると更に加速した
+    to: 加速するとさらに加速した
+  - from: 変更に加えて
+    to: 変更に加えて
+tags:
+  - opinion
+  - 表記統一

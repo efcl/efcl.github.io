@@ -1,0 +1,12 @@
+id: 01BQMSTDZCWH8P81E7PBG9BMQS
+description: importのtypoです
+expected: Import
+patterns:
+  - Impport
+specs:
+  - from: Dynamic Impport
+    to: Dynamic Import
+  - from: Impporter
+    to: Importer
+tags:
+  - typo

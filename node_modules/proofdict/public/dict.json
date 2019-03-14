@@ -1,0 +1,2537 @@
+[
+    {
+        "id": "01BQ92YZ6NT1NACB4X0DC8XHFH",
+        "description": "",
+        "expected": "$1 EAP",
+        "patterns": [
+            "/([0-9\\.]+)EAP/"
+        ],
+        "specs": [],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YZ6QR8RJKA5Y8W2F9NMY",
+        "description": "Reference https://webkit.org/",
+        "expected": "WebKit",
+        "patterns": [
+            "/webkit/i"
+        ],
+        "specs": [
+            {
+                "from": "これはwebkitです",
+                "to": "これはWebKitです"
+            },
+            {
+                "from": "XXXwebkit",
+                "to": "XXXwebkit"
+            },
+            {
+                "from": "node-webkit",
+                "to": "node-webkit"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJW5M546Z0VEDHG0RZ",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "$1あとで",
+        "patterns": [
+            "/(して|した|、)後で/"
+        ],
+        "specs": [
+            {
+                "from": "して後で",
+                "to": "してあとで"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKSTXDNGWVVE10WF9T",
+        "description": "",
+        "expected": "$1さらに",
+        "patterns": [
+            "/([\\s。、\\nぁ-んァ-ヶ])更に/"
+        ],
+        "specs": [
+            {
+                "from": "Aは加速した、更に加速した。",
+                "to": "Aは加速した、さらに加速した。"
+            },
+            {
+                "from": "加速すると更に加速した",
+                "to": "加速するとさらに加速した"
+            },
+            {
+                "from": "変更に加えて",
+                "to": "変更に加えて"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWTK677A7VET6EJJF0S",
+        "description": "",
+        "expected": "$1だす",
+        "patterns": [
+            "/(うり|売り|送り|さし|差し|造り|創り|とり|取り|はき|よび|呼び|よみ|読み|動き|笑い)出す/"
+        ],
+        "specs": [
+            {
+                "from": "（例）動き出す。",
+                "to": "（例）動きだす。"
+            },
+            {
+                "from": "（例）笑い出す。",
+                "to": "（例）笑いだす。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWVFK5YDWZ46R2W1M5Y",
+        "description": "",
+        "expected": "$1つき",
+        "patterns": [
+            "/(手|目|腰)付き/"
+        ],
+        "specs": [
+            {
+                "from": "目付き。",
+                "to": "目つき。"
+            },
+            {
+                "from": "手付き。",
+                "to": "手つき。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWJG32Z679PF9CHJJD5R",
+        "description": "",
+        "expected": "$1デフォルトで有効$2",
+        "patterns": [
+            "/(?:(が)デフォルト有効)|(?:デフォルト有効(に))/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "jser.info"
+        ]
+    },
+    {
+        "id": "01BQ92YWWV2VVD5WZ1B8TFTBQP",
+        "description": "",
+        "expected": "$1とおり",
+        "patterns": [
+            "/(思った|以下の)通り/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ9EM0EEGVP0CRKC73",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "$1とき",
+        "patterns": [
+            "/(の)時(?!点|代|々|間)/"
+        ],
+        "specs": [
+            {
+                "from": "その時",
+                "to": "そのとき"
+            },
+            {
+                "from": "その時点",
+                "to": "その時点"
+            },
+            {
+                "from": "その時代",
+                "to": "その時代"
+            },
+            {
+                "from": "それまでの時間",
+                "to": "それまでの時間"
+            },
+            {
+                "from": "同時",
+                "to": "同時"
+            },
+            {
+                "from": "実行時",
+                "to": "実行時"
+            },
+            {
+                "from": "利用時",
+                "to": "利用時"
+            },
+            {
+                "from": "開発時",
+                "to": "開発時"
+            },
+            {
+                "from": "執筆時",
+                "to": "執筆時"
+            },
+            {
+                "from": "時点",
+                "to": "時点"
+            },
+            {
+                "from": "時代",
+                "to": "時代"
+            },
+            {
+                "from": "時間",
+                "to": "時間"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJNVMAHA0W2Q592SAF",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "$1ように",
+        "patterns": [
+            "/(の)様に/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWH8TVT2N8FT61TTDNH",
+        "description": "ひらがなで書かず、漢字で書くと読みやすくなります",
+        "expected": "$1中",
+        "patterns": [
+            "/(その)なか/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWRZAQH7M4QN2T8W7Y7",
+        "description": "",
+        "expected": "$1中",
+        "patterns": [
+            "/(世界|日)じゅう/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWT86VKCFD2GCM3KWV4",
+        "description": "（動詞の場合）漢字を使う",
+        "expected": "$1付く",
+        "patterns": [
+            "/(気が|利子が)つく/"
+        ],
+        "specs": [
+            {
+                "from": "気がつく。",
+                "to": "気が付く。"
+            },
+            {
+                "from": "利子がつく。",
+                "to": "利子が付く。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWJF8WXN0M9FE0S4QYW5",
+        "description": "",
+        "expected": "$1発売",
+        "patterns": [
+            "/(\\d+年\\d+月\\d+日)\\s発売/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "jser.info"
+        ]
+    },
+    {
+        "id": "01BQ92YWWV1AKBHZDQ6D9GA3ZQ",
+        "description": "（数詞に付く場合）は漢字を使う",
+        "expected": "$1通り",
+        "patterns": [
+            "/(\\d)とおり/"
+        ],
+        "specs": [
+            {
+                "from": "(例)2とおりの方法",
+                "to": "(例)2通りの方法"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJXRCA80R6BCA4SS7K",
+        "description": "Angular(1.x)",
+        "expected": "Angular",
+        "patterns": [
+            "/angular/i"
+        ],
+        "specs": [
+            {
+                "from": "angular",
+                "to": "Angular"
+            },
+            {
+                "from": "angulardart",
+                "to": "angulardart"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJDYYAR7DFH7M57G1P",
+        "description": "AngularJS(2.0~)",
+        "expected": "AngularJS",
+        "patterns": [
+            "/Angular\\.js/i",
+            "/angularjs/i"
+        ],
+        "specs": [
+            {
+                "from": "Angular.js",
+                "to": "AngularJS"
+            }
+        ],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YXWQDKGCA9W74SKW7VST",
+        "description": "",
+        "expected": "Arrow Function",
+        "patterns": [
+            "Array Function"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YXWP2ZS8E46DY1Q8RD93",
+        "description": "",
+        "expected": "Chromium",
+        "patterns": [
+            "Chronium"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YXWR8T1QBP2JSKFH74RK",
+        "description": "",
+        "expected": "CoffeeScript",
+        "patterns": [
+            "CoffeScript"
+        ],
+        "specs": [
+            {
+                "from": "CoffeScriptからES6",
+                "to": "CoffeeScriptからES6"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVMAMKQ3VK2DNYNCCP",
+        "description": "",
+        "expected": "Custom",
+        "patterns": [
+            "/Custome\\b/i"
+        ],
+        "specs": [
+            {
+                "from": "WebVRをCustome Elementのタグで書く",
+                "to": "WebVRをCustom Elementのタグで書く"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYBEFBXEHH8T8HC8RCRD",
+        "description": "Reference https://www.ecma-international.org/publications/standards/Ecma-262.htm",
+        "expected": "ECMAScript $1",
+        "patterns": [
+            "/ECMAScript([0-9]+)/i",
+            "/ECMA Script([0-9]+)/i"
+        ],
+        "specs": [
+            {
+                "from": "ECMASCRIPT5",
+                "to": "ECMAScript 5"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGQBRYXEZK5ZRRK1WW",
+        "description": "",
+        "expected": "Ecma標準",
+        "patterns": [
+            "ECMA標準"
+        ],
+        "specs": [],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJCY50GECA6CQH874F",
+        "description": "Reference https://www.emberjs.com/",
+        "expected": "Ember.js",
+        "patterns": [
+            "/Ember\\.js/i"
+        ],
+        "specs": [
+            {
+                "from": "ember.js",
+                "to": "Ember.js"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGZPBHMB3DMMXMJ0CJ",
+        "description": "",
+        "expected": "ES.next",
+        "patterns": [
+            "ES next"
+        ],
+        "specs": [
+            {
+                "from": "ES nextでは",
+                "to": "ES.nextでは"
+            }
+        ],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGSXM66TN1ZSJH177M",
+        "description": "",
+        "expected": "ES6 Classes",
+        "patterns": [
+            "/\\bES6 classes\\b/i"
+        ],
+        "specs": [
+            {
+                "from": "ES6 classes",
+                "to": "ES6 Classes"
+            }
+        ],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YW6Y5KA9YRC4HRPWZTVV",
+        "description": "",
+        "expected": "Flexbox",
+        "patterns": [
+            "Fluxbox"
+        ],
+        "specs": [
+            {
+                "from": "CSS Fluxboxでは",
+                "to": "CSS Flexboxでは"
+            }
+        ],
+        "tags": [
+            "noun",
+            "CSS"
+        ]
+    },
+    {
+        "id": "01BQ92YXWFVPNRGMBZ3RZNN1RD",
+        "description": "",
+        "expected": "Foundation",
+        "patterns": [
+            "Fundation"
+        ],
+        "specs": [
+            {
+                "from": "Fundation",
+                "to": "Foundation"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYBHA4FM6A82V2ZT0V91",
+        "description": "Reference https://www.w3.org/TR/html-imports/",
+        "expected": "HTML Imports",
+        "patterns": [
+            "/HTML Import/i"
+        ],
+        "specs": [
+            {
+                "from": "HTML import",
+                "to": "HTML Imports"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYSHHTGFD78FF7NB4RX9",
+        "description": "",
+        "expected": "HTML5 Rocks",
+        "patterns": [
+            "/HTML5Rocks/i",
+            "/HTML5Rock/i"
+        ],
+        "specs": [
+            {
+                "from": "HTML5Rockに現在公開されている翻訳記事のまとめ",
+                "to": "HTML5 Rocksに現在公開されている翻訳記事のまとめ"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQMSTDZCWH8P81E7PBG9BMQS",
+        "description": "importのtypoです",
+        "expected": "Import",
+        "patterns": [
+            "Impport"
+        ],
+        "specs": [
+            {
+                "from": "Dynamic Impport",
+                "to": "Dynamic Import"
+            },
+            {
+                "from": "Impporter",
+                "to": "Importer"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYBHB83ZNFWK5WBA58B7",
+        "description": "",
+        "expected": "JavaScript",
+        "patterns": [
+            "/Java Script/i"
+        ],
+        "specs": [
+            {
+                "from": "java script",
+                "to": "JavaScript"
+            },
+            {
+                "from": "Java script",
+                "to": "JavaScript"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJENZB6M480KCJ0J99",
+        "description": "Reference http://jquery.com/",
+        "expected": "jQuery",
+        "patterns": [
+            "/jquery(?!-)/i"
+        ],
+        "specs": [
+            {
+                "from": "jquery",
+                "to": "jQuery"
+            },
+            {
+                "from": "jquery-ui",
+                "to": "jquery-ui"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYSD9K713DCXTFGNDENS",
+        "description": "Reference https://leanpub.com/",
+        "expected": "Leanpub",
+        "patterns": [
+            "/leanpub/i"
+        ],
+        "specs": [
+            {
+                "from": "leanpub",
+                "to": "Leanpub"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGWJZC59XKSNA53X2C",
+        "description": "Reference https://www.w3.org/TR/webstorage/",
+        "expected": "localStorage",
+        "patterns": [
+            "localstorage",
+            "local storage"
+        ],
+        "specs": [
+            {
+                "from": "localstorage is a parts of webstorage",
+                "to": "localStorage is a parts of webstorage"
+            },
+            {
+                "from": "local storage is a parts of webstorage",
+                "to": "localStorage is a parts of webstorage"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YZ6Q0Y22BVKAVFC4VV1N",
+        "description": "Reference http://ocaml.org/",
+        "expected": "OCaml",
+        "patterns": [
+            "/OCaml/i"
+        ],
+        "specs": [
+            {
+                "from": "ocaml",
+                "to": "OCaml"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVT5PGRGQCH1ZZ6S7V",
+        "description": "",
+        "expected": "operator",
+        "patterns": [
+            "oeprator"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYSF66CHGRP4MX5X6P0Q",
+        "description": "O'reilly is OK. But oreilly is not OK",
+        "expected": "Oreilly",
+        "patterns": [
+            "/Oreilly/i"
+        ],
+        "specs": [
+            {
+                "from": "oreilly",
+                "to": "Oreilly"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVY5EFQNE4ZV8K0HS5",
+        "description": "",
+        "expected": "package.json",
+        "patterns": [
+            "packge.json"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YXWTM3A3CG10MT3FCD55",
+        "description": "",
+        "expected": "Performance",
+        "patterns": [
+            "/peformance/i"
+        ],
+        "specs": [
+            {
+                "from": "ブラウザ上でどうやって計測するかやPeformance Timelineなどの仕様について",
+                "to": "ブラウザ上でどうやって計測するかやPerformance Timelineなどの仕様について"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYBH2EZP1E4KVNDMXYV9",
+        "description": "",
+        "expected": "Pointer Events",
+        "patterns": [
+            "/pointer event/i",
+            "/pointer events/i"
+        ],
+        "specs": [
+            {
+                "from": "MSEdgeの対応、pointer eventなど対応、",
+                "to": "MSEdgeの対応、Pointer Eventsなど対応、"
+            },
+            {
+                "from": "pointer-events",
+                "to": "pointer-events"
+            }
+        ],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YW70P4BSGE4ZBMKECATV",
+        "description": "",
+        "expected": "PostCSS",
+        "patterns": [
+            "/PostCSS/i"
+        ],
+        "specs": [
+            {
+                "from": "postcss",
+                "to": "PostCSS"
+            }
+        ],
+        "tags": [
+            "noun",
+            "CSS"
+        ]
+    },
+    {
+        "id": "01BQ92YXWQ02R8SE1ZZHCG89P5",
+        "description": "",
+        "expected": "Property",
+        "patterns": [
+            "/propety/i"
+        ],
+        "specs": [
+            {
+                "from": "propety",
+                "to": "Property"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJVSG9KXZ337FNKFVZ",
+        "description": "",
+        "expected": "Redux",
+        "patterns": [
+            "/redux(?!-)/i"
+        ],
+        "specs": [
+            {
+                "from": "redux",
+                "to": "Redux"
+            },
+            {
+                "from": "redux-react",
+                "to": "redux-react"
+            }
+        ],
+        "tags": [
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYSHMN57CX27SAJQT2W0",
+        "description": "",
+        "expected": "Sauce Labs",
+        "patterns": [
+            "SauceLabs"
+        ],
+        "specs": [],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YYBHGYFTTDANV4RNC3CJ",
+        "description": "Should have a space between words. Reference https://github.com/w3c/ServiceWorker",
+        "expected": "$1 $2",
+        "patterns": [
+            "/(service)(worker)/i"
+        ],
+        "specs": [
+            {
+                "from": "This is serviceworker?",
+                "to": "This is service worker?"
+            },
+            {
+                "from": "ServiceWorker",
+                "to": "Service Worker"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGNT2ZA7SCBGZP4XW8",
+        "description": "Reference https://www.w3.org/TR/webstorage/",
+        "expected": "sessionStorage",
+        "patterns": [
+            "sessionstorage",
+            "session storage"
+        ],
+        "specs": [
+            {
+                "from": "sessionstorage is a parts of webstorage",
+                "to": "sessionStorage is a parts of webstorage"
+            },
+            {
+                "from": "session storage is a parts of webstorage",
+                "to": "sessionStorage is a parts of webstorage"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJBBNRPR2WYHMDYPPG",
+        "description": "Reference http://source-map.github.io/",
+        "expected": "Source Map",
+        "patterns": [
+            "/Source Map/i",
+            "/SourceMap/i"
+        ],
+        "specs": [
+            {
+                "from": "多段SourceMapに対応",
+                "to": "多段Source Mapに対応"
+            },
+            {
+                "from": "SourceMap",
+                "to": "Source Map"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJK6WW9Y09W7TF1YTT",
+        "description": "See http://todomvc.com/",
+        "expected": "TodoMVC",
+        "patterns": [
+            "/todomvc/i"
+        ],
+        "specs": [
+            {
+                "from": "todomvc is todo app.",
+                "to": "TodoMVC is todo app."
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBH2H42AT29Y4BP84FA",
+        "description": "Reference https://www.w3.org/TR/touch-events/",
+        "expected": "Touch Events",
+        "patterns": [
+            "/Touch Event/i",
+            "/Touch Events/i"
+        ],
+        "specs": [
+            {
+                "from": "Touch Event、Fullscreen APIなどのサポートなど",
+                "to": "Touch Events、Fullscreen APIなどのサポートなど"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYSHHRNMZPY2VG4991B7",
+        "description": "",
+        "expected": "Travis CI",
+        "patterns": [
+            "/TravisCI/i"
+        ],
+        "specs": [
+            {
+                "from": "TravisCI is a service",
+                "to": "Travis CI is a service"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJTDA6WF56ZE9PKP8F",
+        "description": "Reference http://underscorejs.org/",
+        "expected": "Underscore.js",
+        "patterns": [
+            "/underscore.js/i"
+        ],
+        "specs": [],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBJP9EDR7KS993CMQAR",
+        "description": "",
+        "expected": "Virtual DOM",
+        "patterns": [
+            "/VirtualDOM/i"
+        ],
+        "specs": [
+            {
+                "from": "VirtualDOM is virtual dom object",
+                "to": "Virtual DOM is virtual dom object"
+            }
+        ],
+        "tags": [
+            "noun",
+            "opinion",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YZ6QCTPXGPWWJ5NWT6NC",
+        "description": "",
+        "expected": "Virtual Machine",
+        "patterns": [
+            "Virtual machine"
+        ],
+        "specs": [
+            {
+                "from": "MSEdgeが使えるWindows 10のVirtual machine(VM)が公開された",
+                "to": "MSEdgeが使えるWindows 10のVirtual Machine(VM)が公開された"
+            }
+        ],
+        "tags": [
+            "noun",
+            "opinion"
+        ]
+    },
+    {
+        "id": "01BQ92YYBH4NNWB305Y1TD7B6N",
+        "description": "Reference https://www.w3.org/TR/webaudio/",
+        "expected": "Web Audio API",
+        "patterns": [
+            "/WebAudio API/i",
+            "/Web AudioAPI/i",
+            "/Web Audio API/i"
+        ],
+        "specs": [
+            {
+                "from": "All scheduled times in the WebAudio API are relative to the value of currentTime.",
+                "to": "All scheduled times in the Web Audio API are relative to the value of currentTime."
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YYBGNAKFHY1TFA9Z3KTC",
+        "description": "Reference https://w3c.github.io/webcomponents/explainer/",
+        "expected": "Web Components",
+        "patterns": [
+            "/WebComponents/i",
+            "/web components/i"
+        ],
+        "specs": [
+            {
+                "from": "WebComponentsについてのWeeklyメールマガジン",
+                "to": "Web ComponentsについてのWeeklyメールマガジン"
+            }
+        ],
+        "tags": [
+            "noun",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "01BQ92YZ6QD58PVYY3FE7QD2S5",
+        "description": "Reference http://www.seleniumhq.org/projects/webdriver/",
+        "expected": "WebDriver",
+        "patterns": [
+            "/WebDriver/i",
+            "/Web Driver/i"
+        ],
+        "specs": [
+            {
+                "from": "Web Driver is designed in a simpler and more concise programming interface",
+                "to": "WebDriver is designed in a simpler and more concise programming interface"
+            },
+            {
+                "from": "webdriver is designed in a simpler and more concise programming interface",
+                "to": "WebDriver is designed in a simpler and more concise programming interface"
+            },
+            {
+                "from": "WebdriverIO is OK.",
+                "to": "WebdriverIO is OK."
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVJ7HG4TDWA45RH297",
+        "description": "",
+        "expected": "webpack",
+        "patterns": [
+            "/\\bwebpac(?!k)\\b/"
+        ],
+        "specs": [
+            {
+                "from": "webpacのビルド速度改善についてのスライド",
+                "to": "webpackのビルド速度改善についてのスライド"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YZ6R35HCYAZGN18RB35E",
+        "description": "Reference https://www.microsoft.com/windows",
+        "expected": "Windows $1",
+        "patterns": [
+            "/Windows (\\d+)/i"
+        ],
+        "specs": [
+            {
+                "from": "OK windows",
+                "to": "OK windows"
+            },
+            {
+                "from": "windows 10",
+                "to": "Windows 10"
+            }
+        ],
+        "tags": [
+            "noun"
+        ]
+    },
+    {
+        "id": "01BQ92YXWTV260J4A7W8TSWEXH",
+        "description": "",
+        "expected": "Workaround",
+        "patterns": [
+            "Workaound"
+        ],
+        "specs": [
+            {
+                "from": "iOS7と8のquerySelectorバグの対処(Workaound)",
+                "to": "iOS7と8のquerySelectorバグの対処(Workaround)"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJAWZHRYQWBQTC1B4A",
+        "description": "",
+        "expected": "あらかじめ",
+        "patterns": [
+            "予め"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJH3XXNCQZAK2D85HF",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "あらかじめ",
+        "patterns": [
+            "予め"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWG88YPF547XKRY55GD",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "いう",
+        "patterns": [
+            "言う"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWFH022QKDDGHZ8SJ34",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "いえ",
+        "patterns": [
+            "言え"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWK7H8FD3NS8HDFX3HA",
+        "description": "",
+        "expected": "いずれ",
+        "patterns": [
+            "何れ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWK8TSEPWS0C95FEC71",
+        "description": "",
+        "expected": "いつ",
+        "patterns": [
+            "何時"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJFBM3H20AG34FKMK8",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "うまく",
+        "patterns": [
+            "巧く"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKTERGYMW0ZSM4Q6T9",
+        "description": "",
+        "expected": "おもむろに",
+        "patterns": [
+            "徐に"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKN8RQSJ5QS25W0VGE",
+        "description": "",
+        "expected": "およそ",
+        "patterns": [
+            "凡そ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSJWNGJ7XK6K9NGJ5X",
+        "description": "",
+        "expected": "および",
+        "patterns": [
+            "及び"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJZ5GNB58T87P7C518",
+        "description": "ひらがなで書かず、漢字で書くと読みやすくなります",
+        "expected": "お勧め",
+        "patterns": [
+            "おすすめ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKRG3DGNQNE47W4PA2",
+        "description": "",
+        "expected": "かえって",
+        "patterns": [
+            "却って"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ1XF356X492WM4GB3",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "かかわらず",
+        "patterns": [
+            "/関わ?らず/"
+        ],
+        "specs": [
+            {
+                "from": "関わらず",
+                "to": "かかわらず"
+            },
+            {
+                "from": "関らず",
+                "to": "かかわらず"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWK8PVJQWH8TFEDPBPP",
+        "description": "",
+        "expected": "かつ",
+        "patterns": [
+            "且つ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKFGQT7012C26Z9PDK",
+        "description": "",
+        "expected": "かもしれない",
+        "patterns": [
+            "かも知れない"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSC0HW6ZNWEPP1JD7D",
+        "description": "",
+        "expected": "が及ぶ",
+        "patterns": [
+            "がおよぶ"
+        ],
+        "specs": [
+            {
+                "from": "（例）影響がおよぶ。",
+                "to": "（例）影響が及ぶ。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWV3Q8NHMZVPNRJZVT5",
+        "description": "",
+        "expected": "が欲しい",
+        "patterns": [
+            "がほしい"
+        ],
+        "specs": [
+            {
+                "from": "この本がほしい",
+                "to": "この本が欲しい"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWH4S4MHJBC8MH9QWCH",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "きれい",
+        "patterns": [
+            "綺麗"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKKKX6HX0AKMPGKFG2",
+        "description": "",
+        "expected": "ください",
+        "patterns": [
+            "下さい"
+        ],
+        "specs": [
+            {
+                "from": "提出して下さい。",
+                "to": "提出してください。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWK0KK7V3EYSGTB16GV",
+        "description": "",
+        "expected": "ご$1",
+        "patterns": [
+            "/御(覧|意見)/"
+        ],
+        "specs": [
+            {
+                "from": "御覧ください",
+                "to": "ご覧ください"
+            },
+            {
+                "from": "御意見",
+                "to": "ご意見"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJVHKXNF08X9P8YP6R",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "$1こと",
+        "patterns": [
+            "/([ぁ-んァ-ヶ])事(?!情|件|前|後|例|実|体|態|項|者)/"
+        ],
+        "specs": [
+            {
+                "from": "やましい事があるのでは?",
+                "to": "やましいことがあるのでは?"
+            },
+            {
+                "from": "やましい事があるのでは?",
+                "to": "やましいことがあるのでは?"
+            },
+            {
+                "from": "ある事",
+                "to": "あること"
+            },
+            {
+                "from": "記事",
+                "to": "記事"
+            },
+            {
+                "from": "事件",
+                "to": "事件"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWK97DCJ3QSQWNP2W6T",
+        "description": "",
+        "expected": "これほど",
+        "patterns": [
+            "これ程"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWN8KK846ZN3H07QQJ8",
+        "description": "",
+        "expected": "これほど",
+        "patterns": [
+            "これ程"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVMSEK39KCCBHN0B0K",
+        "description": "",
+        "expected": "サインイン",
+        "patterns": [
+            "サイトイン"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWGD1C0PM7JYEKSTADT",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "さまざま",
+        "patterns": [
+            "様々"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWMAD0X0M113VPHHB7P",
+        "description": "",
+        "expected": "しかし",
+        "patterns": [
+            "然し"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ738MH1C1JPCAQQGE",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "したがって",
+        "patterns": [
+            "従って"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWTJSNNFTNCSXX0HP2V",
+        "description": "（接続詞の場合）ひらがなを使う",
+        "expected": "したがって",
+        "patterns": [
+            "従って"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWM4WW95ZZWJTMGYPZJ",
+        "description": "",
+        "expected": "しばらく",
+        "patterns": [
+            "暫く"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHVQYQ197GCNP3GPMV",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "すでに",
+        "patterns": [
+            "既に"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWMWSKYQZ8RZRDH8DNP",
+        "description": "",
+        "expected": "すなわち",
+        "patterns": [
+            "即ち"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWM8B4NYKG1AV9NXFVQ",
+        "description": "",
+        "expected": "すべき",
+        "patterns": [
+            "可き"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHG43XSW5K6T896MX0",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "すべて",
+        "patterns": [
+            "全て"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWM9JD0KMV2EF7DJNPB",
+        "description": "",
+        "expected": "せっかく",
+        "patterns": [
+            "折角"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWM04BWSG39QXQ2YYXY",
+        "description": "",
+        "expected": "ただし",
+        "patterns": [
+            "但し"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHPNJAV104G2XMJVXM",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "たとえば",
+        "patterns": [
+            "例えば"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWMY2YZNGG7Q70EZTFE",
+        "description": "",
+        "expected": "たびたび",
+        "patterns": [
+            "度々"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ3F217MCW2H9B8F3B",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "ちょうど",
+        "patterns": [
+            "/(丁度|調度)/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ35ZC5AYMTQ9V4A03",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "でき$1",
+        "patterns": [
+            "/出来(る|て|た|ま|上が)/"
+        ],
+        "specs": [
+            {
+                "from": "出来上がった",
+                "to": "でき上がった"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWMTM8Q7ERBRN2CXS0M",
+        "description": "",
+        "expected": "できる",
+        "patterns": [
+            "出来る"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWVW05VCDSH569QRHPF",
+        "description": "(補助動詞の場合)ひらがなを使う",
+        "expected": "てほしい",
+        "patterns": [
+            "て欲しい"
+        ],
+        "specs": [
+            {
+                "from": "物が欲しい",
+                "to": "物が欲しい"
+            },
+            {
+                "from": "考えて欲しい",
+                "to": "考えてほしい"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWG2GQWHKGWEAPEDGPD",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります。\"どおり\"のケースもありえます",
+        "expected": "とおり",
+        "patterns": [
+            "通り"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWN6RD8X7AVQEY1H5TN",
+        "description": "",
+        "expected": "どこ",
+        "patterns": [
+            "何処"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXB8FEH6HPDEZ3T430E2",
+        "description": "「どういう」は口語表現です",
+        "expected": "どのような",
+        "patterns": [
+            "/どういう(?!こと)/"
+        ],
+        "specs": [
+            {
+                "from": "どういうものがthenableなのか",
+                "to": "どのようなものがthenableなのか"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWN9KD15T8AFTWVBQAV",
+        "description": "",
+        "expected": "ないし",
+        "patterns": [
+            "乃至"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWN715EFEFCAPQFVM5E",
+        "description": "",
+        "expected": "なおさら",
+        "patterns": [
+            "尚さら"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWNJ61MQ72T0EY55T22",
+        "description": "",
+        "expected": "なかなか",
+        "patterns": [
+            "中々"
+        ],
+        "specs": [
+            {
+                "from": "中々できないことだ。",
+                "to": "なかなかできないことだ。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJZH4MQ6JSNDV3CJB6",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "なぜ",
+        "patterns": [
+            "何故"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWJHZ5T3JBSQCTZHPV86",
+        "description": "",
+        "expected": "などが追加",
+        "patterns": [
+            "など追加"
+        ],
+        "specs": [
+            {
+                "from": "Class expressionやGeneratorのサポートなど追加されています。",
+                "to": "Class expressionやGeneratorのサポートなどが追加されています。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "jser.info"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ7F8MABFKBS0FQS92",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "なる",
+        "patterns": [
+            "成る"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJBQWSE1K2A8G5SJP9",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "はやる",
+        "patterns": [
+            "流行る"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHREE95KZBWMVMSBAD",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります。",
+        "expected": "ひととおり",
+        "patterns": [
+            "/(一|ひと)通り/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWNN391X0F0PW38761G",
+        "description": "",
+        "expected": "または",
+        "patterns": [
+            "又は"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWN05F8HYFZNSEJMHWN",
+        "description": "",
+        "expected": "むしろ",
+        "patterns": [
+            "寧ろ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWNFF0J158TFBY1S88R",
+        "description": "",
+        "expected": "めったに",
+        "patterns": [
+            "滅多に"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWPAEQW4V39PPRMS2ZQ",
+        "description": "",
+        "expected": "もしくは",
+        "patterns": [
+            "若しくは"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWGVYSA2HFQF6QD18N5",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "もつ",
+        "patterns": [
+            "持つ"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWP9RD1Z6YCPCYMDSBS",
+        "description": "",
+        "expected": "もって",
+        "patterns": [
+            "以て",
+            "以って"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJXJARZBM2RP9FQ9JR",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "もっとも",
+        "patterns": [
+            "最も"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJYKTXWFFM0DV4JR4W",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "もっぱら",
+        "patterns": [
+            "専ら"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWEKYA4N824XMSXBB96",
+        "description": "",
+        "expected": "もとづ$1",
+        "patterns": [
+            "/基づ(く|き)/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWPVCH8E50EV6VA0ZZB",
+        "description": "",
+        "expected": "もはや",
+        "patterns": [
+            "最早"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJE2XPX5CD4HF25YKB",
+        "description": "漢字で書かず、ひらがなで書くと読みやすくなります",
+        "expected": "ゆえに",
+        "patterns": [
+            "故に"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWG5V9WEMBM34ADHSYV",
+        "description": "良し悪しを評価する表現は\"良い\"、しなくていい、など評価でない表現は\"よい\"を使います",
+        "expected": "よい",
+        "patterns": [
+            "/良い(?!例)/"
+        ],
+        "specs": [
+            {
+                "from": "良い",
+                "to": "よい"
+            },
+            {
+                "from": "良い例",
+                "to": "良い例"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWJHTG5YNKD3H5NZ5C8Q",
+        "description": "",
+        "expected": "ように$1",
+        "patterns": [
+            "/用に(な)/"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一",
+            "jser.info"
+        ]
+    },
+    {
+        "id": "01BQ92YWWR1KBVYS5XPZ82YE9Q",
+        "description": "",
+        "expected": "よほど",
+        "patterns": [
+            "余程"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWK9BE72T24NA95YZEC",
+        "description": "ライブラリのtypoです",
+        "expected": "ライブラリ",
+        "patterns": [
+            "ライブライ",
+            "ライブらい"
+        ],
+        "specs": [
+            {
+                "from": "ライブらい",
+                "to": "ライブラリ"
+            },
+            {
+                "from": "ライブライ",
+                "to": "ライブラリ"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YXWQDWZB8ZHKE38JZXW7",
+        "description": "",
+        "expected": "リリース",
+        "patterns": [
+            "リリーう"
+        ],
+        "specs": [
+            {
+                "from": "アプリをリリーう",
+                "to": "アプリをリリース"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWR9A6J12YB6MVTKJMK",
+        "description": "",
+        "expected": "一切",
+        "patterns": [
+            "いっさい"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWRYKNES5VR6YG9FE7B",
+        "description": "",
+        "expected": "今まで",
+        "patterns": [
+            "今ままで"
+        ],
+        "specs": [
+            {
+                "from": "今ままで`react`モジュールにあった",
+                "to": "今まで`react`モジュールにあった"
+            }
+        ],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHX5FHBWXP14S7GC91",
+        "description": "ひらがなで書かず、漢字で書くと読みやすくなります",
+        "expected": "他の",
+        "patterns": [
+            "ほかの"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSP4R531J2W6PXG8WW",
+        "description": "動詞では「付属する」が一般的",
+        "expected": "付属する",
+        "patterns": [
+            "附属する"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWR808MV1ABPS444VPF",
+        "description": "",
+        "expected": "何しろ",
+        "patterns": [
+            "なにしろ"
+        ],
+        "specs": [
+            {
+                "from": "なにしろ困っている",
+                "to": "何しろ困っている"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSR9C6PG1DAC8QPE9W",
+        "description": "",
+        "expected": "何とも",
+        "patterns": [
+            "なんとも"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWR14PSJT36G7RB8JED",
+        "description": "",
+        "expected": "何も",
+        "patterns": [
+            "なにも"
+        ],
+        "specs": [
+            {
+                "from": "なにも知らない",
+                "to": "何も知らない"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSN73465R030D5ZQYG",
+        "description": "",
+        "expected": "何らかの",
+        "patterns": [
+            "なんらかの"
+        ],
+        "specs": [
+            {
+                "from": "なんらかの策。",
+                "to": "何らかの策。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWVCS42N3CR4SPRPBB6",
+        "description": "",
+        "expected": "凍りつく",
+        "patterns": [
+            "凍り付く"
+        ],
+        "specs": [
+            {
+                "from": "凍り付く",
+                "to": "凍りつく"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWHNTE0DDF3QXWBRY2H",
+        "description": "ひらがなで書かず、漢字で書くと読みやすくなります",
+        "expected": "分かる",
+        "patterns": [
+            "わかる"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWVBVSM80TEGM6WGCQF",
+        "description": "「型定義」のtypoです",
+        "expected": "型定義",
+        "patterns": [
+            "方定義"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWRNQM9EXPXEWDKHMNG",
+        "description": "",
+        "expected": "大いに",
+        "patterns": [
+            "おおいに"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWKJG7KJ1D5W0BJV7GW",
+        "description": "",
+        "expected": "子ども",
+        "patterns": [
+            "子供",
+            "こども"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWRWYF8WM0A3EP6VSBW",
+        "description": "「対処法」のtypoです",
+        "expected": "対処法",
+        "patterns": [
+            "対処方"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWRB025P5VDD3P2RVKB",
+        "description": "",
+        "expected": "強いて",
+        "patterns": [
+            "しいて"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWTW9CQWHQJAZAZ7GJ5",
+        "description": "（動詞の場合）漢字を使う",
+        "expected": "従う",
+        "patterns": [
+            "したがう"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWRX38NVE23CXF6KD00",
+        "description": "",
+        "expected": "必ず",
+        "patterns": [
+            "かならず"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSEFCWQEHDGZT26PXS",
+        "description": "「摩」は「こする」、「磨」は「磨く（みがく）」の意味",
+        "expected": "摩滅",
+        "patterns": [
+            "磨滅"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSRY9BPACW2KTCJCJS",
+        "description": "「摩」は「こする」、「磨」は「磨く（みがく）」の意味",
+        "expected": "摩耗",
+        "patterns": [
+            "磨耗"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWJJF0HJ538KFP8N605N",
+        "description": "「を」が抜けています",
+        "expected": "新規開発を終了",
+        "patterns": [
+            "新規開発終了"
+        ],
+        "specs": [
+            {
+                "from": "YUIは新規開発終了し、今後はYahoo内部向けの修正に留めるとのこと。",
+                "to": "YUIは新規開発を終了し、今後はYahoo内部向けの修正に留めるとのこと。"
+            }
+        ],
+        "tags": [
+            "jser.info"
+        ]
+    },
+    {
+        "id": "01BQ92YWWRV7TB0XRH6W3WJ74S",
+        "description": "",
+        "expected": "時々",
+        "patterns": [
+            "ときどき"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWJ53P93ZZ2YMXDKF1D",
+        "description": "書籍の場合は、以下ではなく次を利用します（常に下にあるとは限らないため）",
+        "expected": "次$1",
+        "patterns": [
+            "/(?:以下|下記)(の|に)/"
+        ],
+        "specs": [
+            {
+                "from": "それぞれ以下のように書かれています。",
+                "to": "それぞれ次のように書かれています。"
+            },
+            {
+                "from": "以下の",
+                "to": "次の"
+            },
+            {
+                "from": "以下に",
+                "to": "次に"
+            },
+            {
+                "from": "次回",
+                "to": "次回"
+            },
+            {
+                "from": "下記の",
+                "to": "次の"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWV924FDDABK9WR3A8Y",
+        "description": "（接尾語の場合）ひらがなを使う",
+        "expected": "活気づく",
+        "patterns": [
+            "活気付く"
+        ],
+        "specs": [
+            {
+                "from": "活気付く",
+                "to": "活気づく"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSE08JY5FPZ3MFQ6ZR",
+        "description": "「個」が表外音",
+        "expected": "箇所",
+        "patterns": [
+            "個所"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSKKAVD458BM6SXDFB",
+        "description": "「個」が表外音",
+        "expected": "箇条書き",
+        "patterns": [
+            "個条書き"
+        ],
+        "specs": [],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YWWSVR4YWNC0RM7AVXSP",
+        "description": "",
+        "expected": "致す",
+        "patterns": [
+            "いたす"
+        ],
+        "specs": [
+            {
+                "from": "（例）思いをいたす。",
+                "to": "（例）思いを致す。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    },
+    {
+        "id": "01BQ92YXWTZZ3W5H8D0Z73ZN4H",
+        "description": "「行える」のtypoです",
+        "expected": "行える",
+        "patterns": [
+            "行得る"
+        ],
+        "specs": [],
+        "tags": [
+            "typo"
+        ]
+    },
+    {
+        "id": "01BQ92YWWF77273EN6Q23SBDNE",
+        "description": "",
+        "expected": "見てい$1",
+        "patterns": [
+            "/見て行(く|き)/"
+        ],
+        "specs": [
+            {
+                "from": "では、実際にどのように書くかの例を見て行きたいと思います。",
+                "to": "では、実際にどのように書くかの例を見ていきたいと思います。"
+            }
+        ],
+        "tags": [
+            "opinion",
+            "表記統一"
+        ]
+    }
+]

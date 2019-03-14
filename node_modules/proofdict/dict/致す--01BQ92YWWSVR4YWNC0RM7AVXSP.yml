@@ -1,0 +1,11 @@
+id: 01BQ92YWWSVR4YWNC0RM7AVXSP
+description: ''
+expected: 致す
+patterns:
+  - いたす
+specs:
+  - from: （例）思いをいたす。
+    to: （例）思いを致す。
+tags:
+  - opinion
+  - 表記統一

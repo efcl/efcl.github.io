@@ -1,0 +1,9 @@
+id: 01BQ92YYBJTDA6WF56ZE9PKP8F
+description: 'Reference http://underscorejs.org/'
+expected: Underscore.js
+patterns:
+  - /underscore.js/i
+specs: []
+tags:
+  - noun
+  - JavaScript

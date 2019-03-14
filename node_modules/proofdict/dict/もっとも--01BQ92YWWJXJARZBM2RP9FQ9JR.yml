@@ -1,0 +1,9 @@
+id: 01BQ92YWWJXJARZBM2RP9FQ9JR
+description: 漢字で書かず、ひらがなで書くと読みやすくなります
+expected: もっとも
+patterns:
+  - 最も
+specs: []
+tags:
+  - opinion
+  - 表記統一

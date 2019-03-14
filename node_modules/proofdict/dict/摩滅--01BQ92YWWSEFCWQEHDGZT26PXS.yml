@@ -1,0 +1,9 @@
+id: 01BQ92YWWSEFCWQEHDGZT26PXS
+description: 「摩」は「こする」、「磨」は「磨く（みがく）」の意味
+expected: 摩滅
+patterns:
+  - 磨滅
+specs: []
+tags:
+  - opinion
+  - 表記統一

@@ -1,0 +1,19 @@
+id: 01BQ92YWWJ53P93ZZ2YMXDKF1D
+description: 書籍の場合は、以下ではなく次を利用します（常に下にあるとは限らないため）
+expected: 次$1
+patterns:
+  - '/(?:以下|下記)(の|に)/'
+specs:
+  - from: それぞれ以下のように書かれています。
+    to: それぞれ次のように書かれています。
+  - from: 以下の
+    to: 次の
+  - from: 以下に
+    to: 次に
+  - from: 次回
+    to: 次回
+  - from: 下記の
+    to: 次の
+tags:
+  - opinion
+  - 表記統一

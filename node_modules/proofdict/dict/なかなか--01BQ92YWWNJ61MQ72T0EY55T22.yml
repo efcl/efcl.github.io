@@ -1,0 +1,11 @@
+id: 01BQ92YWWNJ61MQ72T0EY55T22
+description: ''
+expected: なかなか
+patterns:
+  - 中々
+specs:
+  - from: 中々できないことだ。
+    to: なかなかできないことだ。
+tags:
+  - opinion
+  - 表記統一

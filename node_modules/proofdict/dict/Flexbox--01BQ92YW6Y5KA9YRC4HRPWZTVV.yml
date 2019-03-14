@@ -1,0 +1,11 @@
+id: 01BQ92YW6Y5KA9YRC4HRPWZTVV
+description: ''
+expected: Flexbox
+patterns:
+  - Fluxbox
+specs:
+  - from: CSS Fluxboxでは
+    to: CSS Flexboxでは
+tags:
+  - noun
+  - CSS

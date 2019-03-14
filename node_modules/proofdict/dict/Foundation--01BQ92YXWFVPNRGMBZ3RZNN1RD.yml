@@ -1,0 +1,10 @@
+id: 01BQ92YXWFVPNRGMBZ3RZNN1RD
+description: ''
+expected: Foundation
+patterns:
+  - Fundation
+specs:
+  - from: Fundation
+    to: Foundation
+tags:
+  - typo

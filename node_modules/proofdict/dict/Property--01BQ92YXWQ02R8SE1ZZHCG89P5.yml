@@ -1,0 +1,10 @@
+id: 01BQ92YXWQ02R8SE1ZZHCG89P5
+description: ''
+expected: Property
+patterns:
+  - /propety/i
+specs:
+  - from: propety
+    to: Property
+tags:
+  - typo

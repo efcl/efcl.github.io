@@ -1,0 +1,10 @@
+id: 01BQ92YXWR8T1QBP2JSKFH74RK
+description: ''
+expected: CoffeeScript
+patterns:
+  - CoffeScript
+specs:
+  - from: CoffeScriptからES6
+    to: CoffeeScriptからES6
+tags:
+  - typo

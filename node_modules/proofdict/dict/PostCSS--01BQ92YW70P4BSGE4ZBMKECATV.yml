@@ -1,0 +1,11 @@
+id: 01BQ92YW70P4BSGE4ZBMKECATV
+description: ''
+expected: PostCSS
+patterns:
+  - /PostCSS/i
+specs:
+  - from: postcss
+    to: PostCSS
+tags:
+  - noun
+  - CSS

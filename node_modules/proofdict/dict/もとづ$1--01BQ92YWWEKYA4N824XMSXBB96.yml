@@ -1,0 +1,9 @@
+id: 01BQ92YWWEKYA4N824XMSXBB96
+description: ''
+expected: もとづ$1
+patterns:
+  - /基づ(く|き)/
+specs: []
+tags:
+  - opinion
+  - 表記統一

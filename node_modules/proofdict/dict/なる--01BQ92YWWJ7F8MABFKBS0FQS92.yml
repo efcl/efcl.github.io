@@ -1,0 +1,9 @@
+id: 01BQ92YWWJ7F8MABFKBS0FQS92
+description: 漢字で書かず、ひらがなで書くと読みやすくなります
+expected: なる
+patterns:
+  - 成る
+specs: []
+tags:
+  - opinion
+  - 表記統一

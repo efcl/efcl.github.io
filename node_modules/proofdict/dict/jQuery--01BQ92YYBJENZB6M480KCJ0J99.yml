@@ -1,0 +1,13 @@
+id: 01BQ92YYBJENZB6M480KCJ0J99
+description: 'Reference http://jquery.com/'
+expected: jQuery
+patterns:
+  - /jquery(?!-)/i
+specs:
+  - from: jquery
+    to: jQuery
+  - from: jquery-ui
+    to: jquery-ui
+tags:
+  - noun
+  - JavaScript

@@ -1,0 +1,11 @@
+id: 01BQ92YWWV1AKBHZDQ6D9GA3ZQ
+description: （数詞に付く場合）は漢字を使う
+expected: $1通り
+patterns:
+  - /(\d)とおり/
+specs:
+  - from: (例)2とおりの方法
+    to: (例)2通りの方法
+tags:
+  - opinion
+  - 表記統一

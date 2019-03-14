@@ -1,0 +1,14 @@
+id: 01BQ92YYBGNT2ZA7SCBGZP4XW8
+description: 'Reference https://www.w3.org/TR/webstorage/'
+expected: sessionStorage
+patterns:
+  - sessionstorage
+  - session storage
+specs:
+  - from: sessionstorage is a parts of webstorage
+    to: sessionStorage is a parts of webstorage
+  - from: session storage is a parts of webstorage
+    to: sessionStorage is a parts of webstorage
+tags:
+  - noun
+  - JavaScript

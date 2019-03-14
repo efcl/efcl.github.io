@@ -1,0 +1,10 @@
+id: 01BQ92YXWVJ7HG4TDWA45RH297
+description: ''
+expected: webpack
+patterns:
+  - /\bwebpac(?!k)\b/
+specs:
+  - from: webpacのビルド速度改善についてのスライド
+    to: webpackのビルド速度改善についてのスライド
+tags:
+  - typo

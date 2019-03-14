@@ -1,0 +1,9 @@
+id: 01BQ92YWJG32Z679PF9CHJJD5R
+description: ''
+expected: $1デフォルトで有効$2
+patterns:
+  - '/(?:(が)デフォルト有効)|(?:デフォルト有効(に))/'
+specs: []
+tags:
+  - opinion
+  - jser.info

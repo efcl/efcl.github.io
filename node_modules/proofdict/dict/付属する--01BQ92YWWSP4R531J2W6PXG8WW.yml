@@ -1,0 +1,9 @@
+id: 01BQ92YWWSP4R531J2W6PXG8WW
+description: 動詞では「付属する」が一般的
+expected: 付属する
+patterns:
+  - 附属する
+specs: []
+tags:
+  - opinion
+  - 表記統一

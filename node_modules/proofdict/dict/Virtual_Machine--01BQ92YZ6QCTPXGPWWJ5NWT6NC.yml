@@ -1,0 +1,11 @@
+id: 01BQ92YZ6QCTPXGPWWJ5NWT6NC
+description: ''
+expected: Virtual Machine
+patterns:
+  - Virtual machine
+specs:
+  - from: MSEdgeが使えるWindows 10のVirtual machine(VM)が公開された
+    to: MSEdgeが使えるWindows 10のVirtual Machine(VM)が公開された
+tags:
+  - noun
+  - opinion

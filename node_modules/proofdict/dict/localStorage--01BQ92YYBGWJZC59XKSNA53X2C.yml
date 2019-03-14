@@ -1,0 +1,15 @@
+id: 01BQ92YYBGWJZC59XKSNA53X2C
+description: 'Reference https://www.w3.org/TR/webstorage/'
+expected: localStorage
+patterns:
+  - localstorage
+  - local storage
+specs:
+  - from: localstorage is a parts of webstorage
+    to: localStorage is a parts of webstorage
+  - from: local storage is a parts of webstorage
+    to: localStorage is a parts of webstorage
+
+tags:
+  - noun
+  - JavaScript

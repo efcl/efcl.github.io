@@ -1,0 +1,10 @@
+id: 01BQ92YWJJF0HJ538KFP8N605N
+description: '「を」が抜けています'
+expected: 新規開発を終了
+patterns:
+  - 新規開発終了
+specs:
+  - from: YUIは新規開発終了し、今後はYahoo内部向けの修正に留めるとのこと。
+    to  : YUIは新規開発を終了し、今後はYahoo内部向けの修正に留めるとのこと。
+tags:
+  - jser.info

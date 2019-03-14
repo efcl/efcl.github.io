@@ -1,0 +1,9 @@
+id: 01BQ92YWWGVYSA2HFQF6QD18N5
+description: 漢字で書かず、ひらがなで書くと読みやすくなります
+expected: もつ
+patterns:
+  - 持つ
+specs: []
+tags:
+  - opinion
+  - 表記統一

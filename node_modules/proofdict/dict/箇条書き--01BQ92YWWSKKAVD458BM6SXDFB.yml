@@ -1,0 +1,9 @@
+id: 01BQ92YWWSKKAVD458BM6SXDFB
+description: 「個」が表外音
+expected: 箇条書き
+patterns:
+  - 個条書き
+specs: []
+tags:
+  - opinion
+  - 表記統一

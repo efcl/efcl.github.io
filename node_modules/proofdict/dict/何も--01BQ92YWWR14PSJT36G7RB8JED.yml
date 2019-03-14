@@ -1,0 +1,11 @@
+id: 01BQ92YWWR14PSJT36G7RB8JED
+description: ''
+expected: 何も
+patterns:
+  - なにも
+specs:
+  - from: なにも知らない
+    to: 何も知らない
+tags:
+  - opinion
+  - 表記統一

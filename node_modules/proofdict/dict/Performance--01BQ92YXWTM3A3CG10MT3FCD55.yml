@@ -1,0 +1,10 @@
+id: 01BQ92YXWTM3A3CG10MT3FCD55
+description: ''
+expected: Performance
+patterns:
+  - /peformance/i
+specs:
+  - from: ブラウザ上でどうやって計測するかやPeformance Timelineなどの仕様について
+    to: ブラウザ上でどうやって計測するかやPerformance Timelineなどの仕様について
+tags:
+  - typo

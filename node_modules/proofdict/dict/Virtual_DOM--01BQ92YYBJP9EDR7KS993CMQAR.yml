@@ -1,0 +1,12 @@
+id: 01BQ92YYBJP9EDR7KS993CMQAR
+description: ''
+expected: Virtual DOM
+patterns:
+  - /VirtualDOM/i
+specs:
+  - from: VirtualDOM is virtual dom object
+    to:   Virtual DOM is virtual dom object
+tags:
+  - noun
+  - opinion
+  - JavaScript

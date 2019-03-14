@@ -1,0 +1,11 @@
+id: 01BQ92YWWSN73465R030D5ZQYG
+description: ''
+expected: 何らかの
+patterns:
+  - なんらかの
+specs:
+  - from: なんらかの策。
+    to: 何らかの策。
+tags:
+  - opinion
+  - 表記統一

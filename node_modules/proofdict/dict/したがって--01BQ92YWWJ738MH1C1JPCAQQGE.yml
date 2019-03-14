@@ -1,0 +1,9 @@
+id: 01BQ92YWWJ738MH1C1JPCAQQGE
+description: 漢字で書かず、ひらがなで書くと読みやすくなります
+expected: したがって
+patterns:
+  - 従って
+specs: []
+tags:
+  - opinion
+  - 表記統一

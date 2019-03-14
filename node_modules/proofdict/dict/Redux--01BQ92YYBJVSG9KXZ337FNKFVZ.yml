@@ -1,0 +1,12 @@
+id: 01BQ92YYBJVSG9KXZ337FNKFVZ
+description: ''
+expected: Redux
+patterns:
+  - /redux(?!-)/i
+specs:
+  - from: redux
+    to: Redux
+  - from: redux-react
+    to: redux-react
+tags:
+  - JavaScript

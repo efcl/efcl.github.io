@@ -1,0 +1,9 @@
+id: 01BQ92YWWV2VVD5WZ1B8TFTBQP
+description: ''
+expected: $1とおり
+patterns:
+  - /(思った|以下の)通り/
+specs: []
+tags:
+  - opinion
+  - 表記統一

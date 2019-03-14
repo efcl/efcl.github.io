@@ -1,0 +1,11 @@
+id: 01BQ92YYBJK6WW9Y09W7TF1YTT
+description: 'See http://todomvc.com/'
+expected: TodoMVC
+patterns:
+  - /todomvc/i
+specs:
+  - from: todomvc is todo app.
+    to: TodoMVC is todo app.
+tags:
+  - noun
+  - JavaScript

@@ -1,0 +1,14 @@
+id: 01BQ92YYBJBBNRPR2WYHMDYPPG
+description: 'Reference http://source-map.github.io/'
+expected: Source Map
+patterns:
+  - /Source Map/i
+  - /SourceMap/i
+specs:
+  - from: 多段SourceMapに対応
+    to: 多段Source Mapに対応
+  - from: SourceMap
+    to: Source Map
+tags:
+  - noun
+  - JavaScript

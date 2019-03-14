@@ -1,0 +1,13 @@
+id: 01BQ92YYBH4NNWB305Y1TD7B6N
+description: 'Reference https://www.w3.org/TR/webaudio/'
+expected: Web Audio API
+patterns:
+  - /WebAudio API/i
+  - /Web AudioAPI/i
+  - /Web Audio API/i
+specs:
+  - from: All scheduled times in the WebAudio API are relative to the value of currentTime.
+    to: All scheduled times in the Web Audio API are relative to the value of currentTime.
+tags:
+  - noun
+  - JavaScript

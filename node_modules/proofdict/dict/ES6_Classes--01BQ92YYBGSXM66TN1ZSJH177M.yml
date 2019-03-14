@@ -1,0 +1,10 @@
+id: 01BQ92YYBGSXM66TN1ZSJH177M
+description: ''
+expected: ES6 Classes
+patterns:
+  - /\bES6 classes\b/i
+specs:
+  - from: ES6 classes
+    to: ES6 Classes
+tags:
+  - JavaScript

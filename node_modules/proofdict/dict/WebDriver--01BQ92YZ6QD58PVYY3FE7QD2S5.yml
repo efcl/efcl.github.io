@@ -1,0 +1,15 @@
+id: 01BQ92YZ6QD58PVYY3FE7QD2S5
+description: 'Reference http://www.seleniumhq.org/projects/webdriver/'
+expected: WebDriver
+patterns:
+  - /WebDriver/i
+  - /Web Driver/i
+specs:
+  - from: Web Driver is designed in a simpler and more concise programming interface
+    to  : WebDriver is designed in a simpler and more concise programming interface
+  - from: webdriver is designed in a simpler and more concise programming interface
+    to  : WebDriver is designed in a simpler and more concise programming interface
+  - from: WebdriverIO is OK.
+    to  : WebdriverIO is OK.
+tags:
+  - noun

@@ -1,0 +1,11 @@
+id: 01BQ92YYBJCY50GECA6CQH874F
+description: 'Reference https://www.emberjs.com/'
+expected: Ember.js
+patterns:
+  - /Ember\.js/i
+specs:
+  - from: ember.js
+    to: Ember.js
+tags:
+  - noun
+  - JavaScript

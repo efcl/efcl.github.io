@@ -1,0 +1,9 @@
+id: 01BQ92YWWTW9CQWHQJAZAZ7GJ5
+description: （動詞の場合）漢字を使う
+expected: 従う
+patterns:
+  - したがう
+specs: []
+tags:
+  - opinion
+  - 表記統一

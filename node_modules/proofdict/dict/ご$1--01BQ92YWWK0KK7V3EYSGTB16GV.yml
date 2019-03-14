@@ -1,0 +1,13 @@
+id: 01BQ92YWWK0KK7V3EYSGTB16GV
+description: ''
+expected: ご$1
+patterns:
+  - /御(覧|意見)/
+specs:
+  - from: 御覧ください
+    to: ご覧ください
+  - from: 御意見
+    to: ご意見
+tags:
+  - opinion
+  - 表記統一

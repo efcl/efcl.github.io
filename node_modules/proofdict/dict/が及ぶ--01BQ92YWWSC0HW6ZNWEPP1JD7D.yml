@@ -1,0 +1,11 @@
+id: 01BQ92YWWSC0HW6ZNWEPP1JD7D
+description: ''
+expected: が及ぶ
+patterns:
+  - がおよぶ
+specs:
+  - from: （例）影響がおよぶ。
+    to: （例）影響が及ぶ。
+tags:
+  - opinion
+  - 表記統一

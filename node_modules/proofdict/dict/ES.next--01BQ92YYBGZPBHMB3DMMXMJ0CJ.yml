@@ -1,0 +1,10 @@
+id: 01BQ92YYBGZPBHMB3DMMXMJ0CJ
+description: ''
+expected: ES.next
+patterns:
+  - ES next
+specs:
+  - from: ES nextでは
+    to: ES.nextでは
+tags:
+  - JavaScript

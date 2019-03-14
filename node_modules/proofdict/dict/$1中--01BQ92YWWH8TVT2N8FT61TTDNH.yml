@@ -1,0 +1,9 @@
+id: 01BQ92YWWH8TVT2N8FT61TTDNH
+description: ひらがなで書かず、漢字で書くと読みやすくなります
+expected: $1中
+patterns:
+  - /(その)なか/
+specs: []
+tags:
+  - opinion
+  - 表記統一

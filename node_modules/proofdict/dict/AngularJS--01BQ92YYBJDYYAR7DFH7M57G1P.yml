@@ -1,0 +1,11 @@
+id: 01BQ92YYBJDYYAR7DFH7M57G1P
+description: 'AngularJS(2.0~)'
+expected: AngularJS
+patterns:
+  - /Angular\.js/i
+  - /angularjs/i
+specs:
+  - from: Angular.js
+    to: AngularJS
+tags:
+  - JavaScript

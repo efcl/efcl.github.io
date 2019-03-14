@@ -1,0 +1,11 @@
+id: 01BQ92YWWVCS42N3CR4SPRPBB6
+description: ''
+expected: 凍りつく
+patterns:
+  - 凍り付く
+specs:
+  - from: 凍り付く
+    to: 凍りつく
+tags:
+  - opinion
+  - 表記統一

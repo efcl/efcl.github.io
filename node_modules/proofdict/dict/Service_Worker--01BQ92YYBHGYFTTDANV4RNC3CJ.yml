@@ -1,0 +1,13 @@
+id: 01BQ92YYBHGYFTTDANV4RNC3CJ
+description: 'Should have a space between words. Reference https://github.com/w3c/ServiceWorker'
+expected: $1 $2
+patterns:
+  - /(service)(worker)/i
+specs:
+  - from: This is serviceworker?
+    to:  This is service worker?
+  - from: ServiceWorker
+    to: Service Worker
+tags:
+  - noun
+  - JavaScript
