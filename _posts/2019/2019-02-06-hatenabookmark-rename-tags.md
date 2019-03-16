@@ -100,7 +100,9 @@ ElectronアプリでOAuthの部分は以前書いた[electron-authentication-hat
 
 はてなブックマーク REST APIの実行には[bouzuya/node-hatena-bookmark-api](https://github.com/bouzuya/node-hatena-bookmark-api)を使っています。
 
-おそらくはてなブックマークのサーバ側の問題だと思っていますが、REST APIで`tags`に日本語のタグがあると`401 Unauthorized`で登録/更新に失敗する気がしています。
+<del>おそらくはてなブックマークのサーバ側の問題だと思っていますが、REST APIで`tags`に日本語のタグがあると`401 Unauthorized`で登録/更新に失敗する気がしています。</del>
+
+<ins>2019-03-16追記: はてなブックマークAPI側で修正されました [【開発者向け情報】はてなブックマーク REST API で特定条件下においてブックマークの追加・更新に失敗する不具合を修正しました - はてなブックマーク開発ブログ](http://bookmark.hatenastaff.com/entry/2019/03/06/121008)</ins>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">んーなんではてなブックマーク更新すると401が変えるんだろ?<br>なんか特定のものだけ失敗する感じだけど、いまいち共通点がわからない…<br><br>API叩くのはこれ使ってるけど、サーバのレスポンスがおかしいのかな。<a href="https://t.co/pwArvRy0Au">https://t.co/pwArvRy0Au</a><br><br>1/4 ぐらいが更新に失敗する。<br>寝る<a href="https://t.co/yXgYOOxYzm">https://t.co/yXgYOOxYzm</a> <a href="https://t.co/wVUxy1oIhB">pic.twitter.com/wVUxy1oIhB</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1092461422808715265?ref_src=twsrc%5Etfw">February 4, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
