@@ -452,3 +452,13 @@ class C {
 - 標準を作ってもすぐには浸透しないのでpolyfillが使われる
 - そのためpolyfillの問題はでてくるので、洗礼されたfallbackの仕組みは必要
 - => TAGの議論
+
+
+----
+
+## 参考リンク
+
+- [rwaldron/tc39-notes: TC39 Meeting Notes](https://github.com/rwaldron/tc39-notes)
+- [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals)
+- [azu/ecmascript-proposals-json: ECMAScript Proposal Diff/Table generate](https://github.com/azu/ecmascript-proposals-json)
+- [moriken's project](https://scrapbox.io/petamoriken/)
