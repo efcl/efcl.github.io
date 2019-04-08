@@ -68,6 +68,8 @@ ZonesとかDecimalなどは最後にミーティングで話されたのも数�
 
 - [TC39 MTG Notes MTG | Doorkeeper](https://tc39-mtg.doorkeeper.jp/)
 
+以下は今回の読書会でのメモ書きです
+
 ----
 
 ## [tc39-notes/es9/2018-03 at master · rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes/tree/master/es9/2018-03)
