@@ -107,5 +107,58 @@ npm publishはパッケージが[Scoped packages](https://docs.npmjs.com/misc/sc
 
 上記のどれかに該当する場合は、正しく設定されていればPrivateへ公開され、また設定が一部おかしかった場合もPrivateへリクエストを投げるので、Publicには漏れなくなります。
 
+理想的には、package.jsonを作るときに最初から[Scoped packages](https://docs.npmjs.com/misc/scope "Scoped packages")として作ると間違ってPublicに公開されることはなくなるので安全です。
 package.jsonを作るときに
 
+```
+npm init mypackage —scope=myorg
+# @myorg/mypackage ができる
+```
+
+
+ですが、どちらにしてもnpmの設定かpackage.jsonの変更が必要で、それを忘れてnpm publishしてしまうことがありえるのと、そもそもPublicとPrivateが設定情報というコンテキストで自動で切り替わるのが怖かったのでコマンドとして分けるようしました。
+
+- npmjsにPublic公開したい時
+	- `npm-<patch|minor|major>` を叩く
+- Private regitoryに公開したい時
+	- `private-npm-<patch|minor|major>` を叩く
+
+というCLIの段階で分かれてると意識しやすくなるので、`npm publish`を内部で[release-it](https://github.com/webpro/release-it "release-it")のようなツールを使ってなければ大分事故が少なくなりそうです。
+
+```sh
+alias private-npm-patch='_confirm-npm "Private" && scoped-modules-checker && pre-version && npm version patch && post-version'
+alias private-npm-minor='_confirm-npm "Private" && scoped-modules-checker && pre-version && npm version minor && post-version'
+alias private-npm-major='_confirm-npm "Private" && scoped-modules-checker && pre-version && npm version major && post-version'
+```
+
+実際に見てみると最初に[scoped-modules-checker](https://github.com/azu/scoped-modules-checker "azu/scoped-modules-checker")でそれがscoped packagesであるかをチェックするのが入ってるだけで、あとは`npm-patch`などと同じですね。
+
+今回はチェックするコマンドの組み合わせでやっていますが、scoped packagesじゃないとpublishできない[private-npm-publish](https://github.com/dwango-js/private-npm-publish "dwango-js/private-npm-publish")というnpm publishのラッパーコマンドもあります。
+
+npm publishに対するグローバルなホックは書けないので、こういうアプローチになる感じです。
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/azu_re">@azu_re</a> 直接のフックはコマンドのwrapが必要になりそうですが、scoped packageで解決できたりしません…？ <a href="https://t.co/2a8MJFhQe6">https://t.co/2a8MJFhQe6</a></p>&mdash; Daijiro Wachi (@watilde) <a href="https://twitter.com/watilde/status/580982938700910592">March 26, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+----
+
+そもそも「なぜそこまでPrivateのものを間違って公開した時のことを気にするの? `npm unpublish -f` すればいいのでは?」と思うかもしれませんが、以下のブログで書かれているように現在(2015-04-09)のnpmは一度上げるとそれを完全に消すことはできない仕組みなってると書いてあります。
+
+- [The npm Blog — &#34;Oh no! I accidentally published private data to...](http://blog.npmjs.org/post/101934969510/oh-no-i-accidentally-published-private-data-to "The npm Blog — &#34;Oh no! I accidentally published private data to...")
+- registryのmirrorがあり、それはnpm inc.の管理下ではないため
+
+
+-----
+
+あと細かな工夫として　`npm-patch` の方はPublicで公開される可能性があるので、最初に確認を出すようにしてます。(ただEnter押せばいいだけ)
+
+![npm-patch](http://efcl.info/wp-content/uploads/2015/04/09-1428537317.png)
+
+間違ってEnterおしても、installやtestなどが走るのでその間にCtrl+Cとかでキャンセルできるので数秒は猶予があります。
+
+後はpackage.jsonの`files`とかをチェックしたい感じですが、基本的にコマンドの組み合わせなのでそういうコマンド作っていく感じになりそう。
+
+## おわり
+
+
+- [npm version publish alias](https://gist.github.com/azu/fb3ec88231235511858a "npm version publish alias") について紹介した
+- PublicとPrivateでnpm publish叩くのは同じだけどコマンドを分けた 
