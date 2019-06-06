@@ -151,7 +151,7 @@ module.exports = [
 
 [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)については次の記事で紹介しています。
 
-- [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)
+- [モバイル/オフラインでも動作するはてなブックマーク検索のPWAを作った | Web Scratch](https://efcl.info/2018/04/16/hatebupwa/)
 
 はてなブックマークを検索するウェブアプリですが、asocial-bookmarkのデータ構造はかなり似ているのでasocial-bookmarkも検索できるように改造しました。
 
