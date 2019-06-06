@@ -61,7 +61,8 @@ GitHubをファイルシステムのように読み書きをすることにな�
 
 具体的には次のような`.netlify.toml`の設定をブックマークリポジトリにおいています。
 
-`.netlify.toml`
+`.netlify.toml`:
+
 ```toml
 # example netlify.toml
 [build]
@@ -90,6 +91,7 @@ postemについては次の記事で紹介しています。
 GitHubのリポジトリが`your/watashi-no-bookmark"`なら次のような形になります。
 
 `src/services/asocial-bookmark/consumer.json`:
+
 ```json
 {
   "github": {
