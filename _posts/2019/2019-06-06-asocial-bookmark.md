@@ -1,5 +1,5 @@
 ---
-title: "GitHubで管理する個人向けのブックマークシステムを書いた"
+title: "GitHubで管理する個人向けブックマークシステムを書いた"
 author: azu
 layout: post
 date : 2019-06-06T11:11
