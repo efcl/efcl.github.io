@@ -44,20 +44,24 @@ GitHubをファイルシステムのように読み書きをすることにな�
 とりあえず今自分のブックマークシステムは次のような感じで作ってあります。
 (NetlifyのところはGitHub Action + gh-pagesなどCI/CDがあれば何でもいいと思います。)
 
-1. GitHubにリポジトリを作る
-    - Example: `https://github.com/{your}/mybookmarks`
-2. リポジトリに"はてなブックマーク"のブックマークを"asocial-bookmark"形式にしてインポートする
+### 1. GitHubにリポジトリを作る
+
+- Example: `https://github.com/{your}/mybookmarks`
+
+### 2. リポジトリに"はてなブックマーク"のブックマークを"asocial-bookmark"形式にしてインポートする
     - 手元にリポジトリをcloneしてきて、そのディレクトリ内で次のコマンドを実行
     - `$ migrate-hatenabookmark-to-asocial-bookmark --hatena <user-name>`
     - 大量の`/:year/:month/index.json`が作成されるのでコミットしてpush
     - 詳しくは[migrate-hatenabookmark-to-asocial-bookmark.ts](https://github.com/azu/asocial-bookmark/blob/master/src/cli/migrate-hatenabookmark-to-asocial-bookmark.ts)を見て下さい。
-3. Setup CI/CD - ここでは[Netlify](https://www.netlify.com/)を使ってます
-    - Netlifyの`build.command`で `asocial-bookmark-create-index` を実行するとすべてのブックマークをまとめた`index.json`を作ってデプロイできます。
-    - あとはこのデータにCORSヘッダをつけておきます `https://<your-bookmark>/index.json`
-    - APIとしては次のようなものができあがります
-    - All bookmarks: `https://<your-bookmark>/index.json`
-    - All tags: `https://<your-bookmark>/tags.json`
-    - Block bookmarks by month: `https://<your-bookmark>/:year/:month/index.json` 
+
+### 3. Setup CI/CD - ここでは[Netlify](https://www.netlify.com/)を使ってます
+
+- Netlifyの`build.command`で `asocial-bookmark-create-index` を実行するとすべてのブックマークをまとめた`index.json`を作ってデプロイできます。
+  - あとはこのデータにCORSヘッダをつけておきます `https://<your-bookmark>/index.json`
+  - APIとしては次のようなものができあがります
+  - All bookmarks: `https://<your-bookmark>/index.json`
+  - All tags: `https://<your-bookmark>/tags.json`
+  - Block bookmarks by month: `https://<your-bookmark>/:year/:month/index.json` 
 
 具体的には次のような`.netlify.toml`の設定をブックマークリポジトリにおいています。
 
@@ -78,7 +82,7 @@ GitHubをファイルシステムのように読み書きをすることにな�
 この状態でブックマークリポジトリが更新されれば、 `https://<your-bookmark>/index.json` でブックマークデータを取得できます。
 (publicです)
 
-4. ブックマークを[postem](https://github.com/azu/postem)経由で登録する
+### 4. ブックマークを[postem](https://github.com/azu/postem)経由で登録する
     - See <https://github.com/azu/postem/blob/master/src/services/asocial-bookmark/README.md>
 
 postemについては次の記事で紹介しています。
@@ -143,7 +147,7 @@ module.exports = [
 どこから見つけたのかの`viaURL`、関連するURLやタイトルなどを登録できたり、文字数制限がないです。
 そのため、今はasocial-bookmarkとはてなブックマークにクロスポストしています。
 
-5. ブックマークを[はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)で検索する
+### 5. ブックマークを[はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)で検索する
 
 [はてなブックマーク検索PWA](https://hatebupwa.netlify.com/)については次の記事で紹介しています。
 
