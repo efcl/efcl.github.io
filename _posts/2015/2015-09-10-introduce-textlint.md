@@ -150,7 +150,7 @@ textlintの設定をESLint configのようにnpmで共有することもでき�
 - [textlintの設定をnpmにあげて使い回す | Web Scratch](https://efcl.info/2016/04/08/textlint-sharable-config/)
 
 ルールによっては `--fix` で自動修正に対応しています。
-導入した時にエラーが多い場合はこの辺の修正を適応するところから始めるといいかもしれません。
+導入した時にエラーが多い場合はこの辺の修正を適用するところから始めるといいかもしれません。
 
 - [textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch](https://efcl.info/2016/03/15/textlint--fix/ "textlint 6.0リリース。--fixでの自動修正に対応 | Web Scratch")
 
