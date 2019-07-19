@@ -77,6 +77,8 @@ https://github.com/azu/security-alert/issues/1
 
 後は、このIssueに対応するかを決めて、GitHub Security Alertの方をCloseしたり、[Pull Requestで修正](https://github.com/azu/security-alert/pull/2)すれば完了です。
 
+GitHubにこの機能はフィードバックを送ってありますが、まだIssueを作る機能はないようです。
+
 ## おわりに
 
 GitHub Security Alertをコマンドラインから扱うための[@security-alert/list-alerts](https://github.com/azu/security-alert/tree/master/packages/list-alerts)や[@security-alert/create-issue](https://github.com/azu/security-alert/tree/master/packages/create-issue)を作りました。
