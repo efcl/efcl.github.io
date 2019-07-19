@@ -75,6 +75,13 @@ https://github.com/azu/security-alert/issues/1
 
 - <https://github.com/azu/security-alert/issues/1>
 
+作成時に、ラベルやassignの指定もできます。
+
+```
+GITHUB_TOKEN=xxx npx @security-alert/create-issue "https://github.com/azu/github-webhook-SecurityVulnerability-test/network/alert/package-lock.json/axios/open" --labels "security,package"
+```
+
+
 後は、このIssueに対応するかを決めて、GitHub Security Alertの方をCloseしたり、[Pull Requestで修正](https://github.com/azu/security-alert/pull/2)すれば完了です。
 
 GitHubにこの機能はフィードバックを送ってありますが、まだIssueを作る機能はないようです。
