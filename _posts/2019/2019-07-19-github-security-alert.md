@@ -99,3 +99,5 @@ GitHubにSecurity AlertがIntegrationされていることはすごい便利な�
 この辺は[renovatebot](https://renovatebot.com/)の方が柔軟で対応できる範囲は広いです。
 
 ただし、先ほども書いたようにGitHubに組み込まれていることがかなりメリットなので、この辺の機能やサポートが充実してくるといいなと思いました。
+
+この辺のGitHub Alertを含めたGitHub周りの仕組みをいい感じにするいい方法をもっと知りたい。
