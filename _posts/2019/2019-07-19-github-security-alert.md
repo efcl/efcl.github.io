@@ -84,7 +84,7 @@ GITHUB_TOKEN=xxx npx @security-alert/create-issue "https://github.com/azu/github
 
 後は、このIssueに対応するかを決めて、GitHub Security Alertの方をCloseしたり、[Pull Requestで修正](https://github.com/azu/security-alert/pull/2)すれば完了です。
 
-GitHubにこの機能はフィードバックを送ってありますが、まだIssueを作る機能はないようです。
+GitHubにこの機能はフィードバックを送ってありますが、まだ(2019-07-19)Issueを作る機能はないようです。
 
 ## おわりに
 
