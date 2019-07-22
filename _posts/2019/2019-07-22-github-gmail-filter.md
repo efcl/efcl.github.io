@@ -56,10 +56,10 @@ GitHub OrganizationのOrganizationは結構気軽に作るので、この更新�
 
 次のような運用に変更しました
 
-- GitHub: 
+- GitHub:
     - Default notification emailには `自分のGmailアカウント@gmail.com` を設定する
     - 自分がメインのOrganization(Custom routing)には `自分のGmailアカウント+github@gmail.com` を設定する
-    - [Notification settings](https://github.com/settings/notifications)から設定できる。
+    - [Notification settings](https://github.com/settings/notifications)から設定できる
 - Gmail: 次のようなフィルターを設定する
 
 ```
