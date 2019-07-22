@@ -87,6 +87,8 @@ GitHub OrganizationのOrganizationは結構気軽に作るので、この更新�
 
 - [Notification settings](https://github.com/settings/notifications)のCustom routingで、通知を受け取りOrganizationの通知先メールアドレスを  `自分のGmailアカウント+github@gmail.com` を設定する
 
+![Custom routing](https://efcl.info/wp-content/uploads/2019/07/22-1563762860.png)
+
 これでGitHub Organizationを増やす度にGmailフィルターを更新する必要がなくなりました。
 
 ## 参考
