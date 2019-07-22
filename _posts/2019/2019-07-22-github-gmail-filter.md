@@ -24,8 +24,7 @@ GitHubの[Watching](https://github.com/watching)は2000を超えているので�
 
 - 自分 と 自分のOrganization のメールについては 基本的に通知を受け取る
 - 自分が Watch しているだけのリポジトリについては mention などアクションが求められる行動以外は通知を受け取らない
-    - assign,author,comment,mention,state_change,team_mention,review_requested あたりは受け取りたい
-    - subscribed は受け取るとIssueが作成された(自分以外によって)場合も通知が来るので受け取りたくなる
+    - subscribed は受け取るとIssueが作成された(自分以外によって)場合も通知が来るので、受け取りたくない(あふれる)
     - [About email notifications - GitHub Help](https://help.github.com/en/articles/about-email-notifications)で通知の種類を分類できる
 - 新しくGitHub Organizationを作る際にGmailのフィルターを変更したくない
 
