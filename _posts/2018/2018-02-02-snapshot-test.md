@@ -126,3 +126,50 @@ Jestなどを使わずにスナップショットテストを書くメリット�
   - 大量のvalidなMarkdownをパースできるかを検証しつつ、そのパース結果のASTをJSONとして保存しています
 - [comment-to-assert/snapshot-test.ts at master · azu/comment-to-assert](https://github.com/azu/comment-to-assert/blob/master/test/snapshot-test.ts)
   - JSのAST変換結果を比較
+
+
+TypeScriptの例
+
+```ts
+import * as fs from "fs";
+import * as path from "path";
+import * as assert from "assert";
+// transform function
+import { transform } from "../src/transform";
+
+const fixturesDir = path.join(__dirname, "snapshots");
+describe("Snapshot testing", () => {
+    fs.readdirSync(fixturesDir)
+        .map(caseName => {
+            const normalizedTestName = caseName.replace(/-/g, " ");
+            it(`Test ${normalizedTestName}`, async function () {
+                const fixtureDir = path.join(fixturesDir, caseName);
+                const actualFilePath = path.join(fixtureDir, "input.js");
+                const actualContent = fs.readFileSync(actualFilePath, "utf-8");
+                const actualOptionFilePath = path.join(fixtureDir, "options.json");
+                const actualOptions = fs.existsSync(actualOptionFilePath)
+                    ? JSON.parse(fs.readFileSync(actualOptionFilePath, "utf-8"))
+                    : {};
+                const actual = transform(actualContent, actualOptions);
+                const expectedFilePath = path.join(fixtureDir, "output.txt");
+                // Usage: update snapshots
+                // UPDATE_SNAPSHOT=1 npm test
+                if (!fs.existsSync(expectedFilePath) || process.env.UPDATE_SNAPSHOT) {
+                    fs.writeFileSync(expectedFilePath, actual);
+                    this.skip(); // skip when updating snapshots
+                    return;
+                }
+                // compare input and output
+                const expectedContent = fs.readFileSync(expectedFilePath, "utf-8");
+                assert.deepStrictEqual(
+                    actual,
+                    expectedContent,
+                    `
+${fixtureDir}
+${actual}
+`
+                );
+            });
+        });
+});
+```
