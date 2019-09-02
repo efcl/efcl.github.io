@@ -56,6 +56,8 @@ console.log(評価したい式); // => 期待する評価結果
     assert.strictEqual(addPrefix("文字列", "カスタム:"), "カスタム:文字列");
     ```
 
+このケースではエラーがないので特別な表示はありませんが、実行したテストが失敗した場合にはその結果が表示されます。
+
 次のように実行した結果、`assert`が失敗するとわかりやすくどこで失敗したかが表示されます。
 これは内部的に[power-assert](https://github.com/power-assert-js/power-assert)を使っています。
 
