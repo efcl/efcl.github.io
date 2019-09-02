@@ -1,5 +1,5 @@
 ---
-title: "MarkdownやAsciidoc中に書いたJavaScriptのサンプルコードをdoctestするツールを書いた"
+title: "MarkdownやAsciidoc中に書いたJavaScriptのサンプルコードをdoctestするツールを作った"
 author: azu
 layout: post
 date : 2019-09-02T10:50
