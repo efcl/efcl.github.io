@@ -93,7 +93,7 @@ throw new Error("message"); // => Error: "message"
 power-doctestのコンセプトは書いたコードを余計なコードなしにテストできるようにすることです。
 コードにメモを書く感じでテストを自然に書けるようにすることが目的でした。
 
-Pythonの[doctest](https://docs.python.org/ja/3/library/doctest.html)のように以下にもテストしてますってよりは、
+Pythonの[doctest](https://docs.python.org/ja/3/library/doctest.html)のようにいかにもテストしてますってよりは、
 サンプルコードが動いてることを自然にコード中に確認(説明)できるようにしたいというのが目的です。
 
 ## [power-doctest](https://github.com/azu/power-doctest)の使い方
