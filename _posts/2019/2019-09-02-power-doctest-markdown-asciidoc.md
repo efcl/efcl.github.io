@@ -149,12 +149,12 @@ Total: 2
 この構文を[Doctest Control Annotation](https://github.com/azu/power-doctest#doctest-control-annotation)と呼んでいますが、
 基本的にはコードブロック前のコメントや属性を使って制御しています。
 
-基本的にどのファイルも同等の意味の構文を持っています。
-次のような意味の構文をそれぞれ持っています。
+次の構文はMarkdownにおける例ですが、基本的にどのファイルも同等の意味となる構文を実装してあります。
 
 - doctestを無効化: `<!-- doctest:disable -->`
+    - doctestしたくないコードブロックを無視する
 - doctestを有効化: `<!-- doctest:enable -->`
-    - デフォルトでは全てのコードブロックを評価するが、デフォルト値自体を反転も可能であるため
+    - デフォルトでは全てのコードブロックを評価するが、デフォルト値自体を反転できるため(オプトイン用)
 - 実行結果が期待したエラーになるかをテスト: `<!-- doctest:*Error -->`
     - `<!-- doctest: SyntaxError -->` とかけば、そのdoctestが`SyntaxError`になった場合にパスします
 - doctestのオプション定義: `<!-- doctest:options:{ ... } -->`
