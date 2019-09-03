@@ -179,6 +179,8 @@ npm install power-doctest -g
 
 これによりdoctestはユーザーと同じサンプルコードを動かせます。
 
+CLIの方は主にREADMEのdoctestをする用途に合わせています。(イマイチアイデアが足りてないのでとりあえず動くレベルです)
+
 ### JavaScriptのテストコード上でテストライブラリとして使う
 
 [power-doctest](https://github.com/azu/power-doctest)はどちらかというこちらの用途をメインに作られています。
