@@ -135,6 +135,16 @@ npm install power-doctest -g
     console.log(1 + 1); // => 2
     ````
 
+次のように`power-doctest`コマンドでテストできます。
+
+```sh
+$ power-doctest README.md
+# Test Results
+Pass: 2
+Fail: 0
+Total: 2
+```
+
 [power-doctest](https://github.com/azu/power-doctest)では、doctestを制御する構文も持っています。
 この構文を[Doctest Control Annotation](https://github.com/azu/power-doctest#doctest-control-annotation)と呼んでいますが、
 基本的にはコードブロック前のコメントや属性を使って制御しています。
