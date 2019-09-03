@@ -143,7 +143,7 @@ npm install power-doctest -g
 次のような意味の構文をそれぞれ持っています。
 
 - doctestを無効化: `<!-- doctest:disable -->`
-- doctestを有効化: `<!-- doctest:*Error -->`
+- doctestを有効化: `<!-- doctest:enable -->`
     - デフォルトでは全てのコードブロックを評価するが、デフォルト値自体を反転も可能であるため
 - 実行結果が期待したエラーになるかをテスト: `<!-- doctest:*Error -->`
     - `<!-- doctest: SyntaxError -->` とかけば、そのdoctestが`SyntaxError`になった場合にパスします
