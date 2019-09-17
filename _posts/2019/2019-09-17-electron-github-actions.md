@@ -19,54 +19,7 @@ tags:
 
 [.github/workflows/electron.yml](https://github.com/azu/mu-epub-reader/blob/master/.github/workflows/electron.yml)を見るのが早いですが次のような設定をしています。
 
-```yaml
-name: Electron CD
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [macOS-10.14, windows-2016, ubuntu-18.04]
-
-    steps:
-      - name: Context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 10.x
-      - name: yarn install
-        run: |
-          yarn install
-      - name: Publish
-        run: |
-          yarn run dist
-      - name: Cleanup artifacts
-        run: |
-          npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: ${{ matrix.os }}
-          path: dist
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: "dist/**"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+<script src="https://gist.github.com/azu/673426500458f63f019c8f5e013f282a.js"></script>
 
 `yarn run dist`は[package.json](https://github.com/azu/mu-epub-reader/blob/2185a7a810e70e8870a7f39cc1d72e54887dfb82/package.json#L34-L41)に設定した次のような[electron-builder](https://github.com/electron-userland/electron-builder)を使ったバイナリの生成するコマンドを呼び出しているだけです。
 
