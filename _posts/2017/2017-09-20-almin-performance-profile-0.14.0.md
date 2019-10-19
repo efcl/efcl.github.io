@@ -69,7 +69,7 @@ Vue + Alminで書いたサンプルを作ったので、次のリポジトリで
 
 - [azu/vue-almin-counter-example: Vue + Almin counter example](https://github.com/azu/vue-almin-counter-example "azu/vue-almin-counter-example: Vue + Almin counter example")
 
-![Vue + Almin](https://cdn.rawgit.com/azu/vue-almin-counter-example/master/img/performance-timeline.gif)
+![Vue + Almin](https://raw.githubusercontent.com/azu/vue-almin-counter-example/master/img/performance-timeline.gif)
 
 VueのパフォーマンスプロファイルはVueによるViewの更新(`render`や`patch`)に関する情報がタイムラインにでます。
 Alminのパフォーマンスプロファイルは、UseCaseの実行、StoreGroup/Storeの更新、StoreからのState取得に関する情報がタイムラインにでます。
