@@ -22,6 +22,7 @@ tags:
 ![on Twitter](https://efcl.info/wp-content/uploads/2016/06/09-1465433692.png)
 
 **⚠ 注意**: メインで使ってるGitHubアカウントのPersonal Tokenを使うとそのアカウントのNotificationとタイムラインが流れるので、privateの情報とかもなげられてしまうので注意です。
+追記: `G2T_ENABLE_PRIVATE_REPOSITORY` の設定でprivateリポジトリの情報は投げないように設定できます。
 
 ローカルだけで完結したい場合は以下のようなクライアントで動くタイプのものを利用したほうが良いです。
 
