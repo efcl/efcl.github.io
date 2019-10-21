@@ -1,5 +1,5 @@
 ---
-title: "textlint-script 3リリース、TypeScriptでtextlintのルールを作成できるようになりました"
+title: "textlint-scripts 3リリース、TypeScriptでtextlintのルールを作成できるようになりました"
 author: azu
 layout: post
 date : 2019-10-21T09:06
