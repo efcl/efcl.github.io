@@ -13,7 +13,7 @@ tags:
 [textlint](https://github.com/textlint/textlint)はJavaScriptでルールやサポートする拡張子を追加できる自然言語向けのLintツールです。
 
 以前から[textlint-scripts](https://github.com/textlint/textlint-scripts)という、textlintのルール作成を補助するツールを公開していました。
-[textlint-scripts](https://github.com/textlint/textlint-scripts)はES2015+のビルドやテスト周りのセットアップなど、
+textlint-scriptsはES2015+のビルドやテスト周りのセットアップなど、
 普段JavaScriptを書かない人でも1つコマンドを叩けばtextlintのルールを書き始められるようにするためのツールです。
 (JavaScript慣れてる人には`create-react-app`みたいなものというのがわかりやすい)
 
@@ -34,7 +34,7 @@ tags:
 
 ## TypeScriptサポート
 
-[textlint-scripts](https://github.com/textlint/textlint-scripts) 3.0.0では、JavaScriptだけではなくTypeScriptのサポートもしました。
+textlint-scripts 3.0.0では、JavaScriptだけではなくTypeScriptのサポートもしました。
 
 textlintはJavaScriptで書かれていましたが、途中からTypeScriptに移行して、今のコードベースは8割ぐらいはTypeScriptになっています。
 (テストとはそのままにしてる部分がある)
@@ -42,7 +42,7 @@ textlintはJavaScriptで書かれていましたが、途中からTypeScriptに�
 - [textlintのコアをTypeScriptで書き直した、textlintの今後について | Web Scratch](https://efcl.info/2017/11/06/textlint-core-refactoring/)
 
 また、コアモジュールとしてもtextlintルールなどのTypeScript型だけを提供する[@textlint/types](https://github.com/textlint/textlint/tree/master/packages/%40textlint/types)というものを公開しています。(これは内部でも使っているし、ルールを書くのにも利用できる)
-このように、textlintのルールをTypeScriptを書く準備は整ってきたので、[textlint-scripts](https://github.com/textlint/textlint-scripts) 3.0.0でTypeScriptのビルドとテストをサポートしました。
+このように、textlintのルールをTypeScriptを書く準備は整ってきたので、textlint-scripts 3.0.0でTypeScriptのビルドとテストをサポートしました。
 
 内部的には[Babel](https://babeljs.io/)でビルドしていて、テスト時には[ts-node](https://github.com/TypeStrong/ts-node)で型チェックをしながら回すというハイブリッド構成になっています。(Babelでビルドしているのは、後述する静的ファイルのインライン化をしてかったため)
 
@@ -96,7 +96,7 @@ const report: TextlintRuleModule<Options> = (context, options = {}) => {
 export default report;
 ```
 
-既存の[textlint-scripts](https://github.com/textlint/textlint-scripts)を使ったJavaScriptプロジェクトからTypeScriptに移行する方法も用意しています。
+既存のtextlint-scriptsを使ったJavaScriptプロジェクトからTypeScriptに移行する方法も用意しています。
 
 [@textlint/migrate-textlint-scripts-typescript](https://github.com/textlint/migrate-textlint-scripts-typescript)を使うと、TypeScript周りの設定ファイルを自動で用意してくれます。
 
@@ -180,12 +180,14 @@ Lint結果が出力されるならおそらくそのルールはブラウザで�
 [textlint-scripts](https://github.com/textlint/textlint-scripts) 3.0.0でTypeScript対応とブラウザの互換性向上の仕組みが入りました。
 またビルド後の出力ターゲットがES2015+となりました。
 
+- [Release 3.0.0 · textlint/textlint-scripts](https://github.com/textlint/textlint-scripts/releases/tag/3.0.0)
+
 textlintでブラウザをどう扱うかはまだ未定ですが(基本的にはユースケース駆動なので、ユースケースを書いてください)、[textlint-scripts](https://github.com/textlint/textlint-scripts) 3.0.0でビルドすれば`fs`の依存によって動かなかったルールは動くようになるかもしれません。
 
 - [@textlint/browser · Issue #299 · textlint/textlint](https://github.com/textlint/textlint/issues/299)
 
 内部的に[prh](https://github.com/prh/prh)を使ってるルールなどはこのアップデートで動かせるようになってると思うので、
-ブラウザで動かしたいは[textlint-scripts](https://github.com/textlint/textlint-scripts)をアップデートするPRを送るのがいいかもしれません。
+ブラウザで動かしたいはtextlint-scriptsをアップデートするPRを送るのがいいかもしれません。
 
 - [refactor(rule): Convert to TypeScript by azu · Pull Request #11 · textlint-ja/textlint-rule-ja-no-abusage](https://github.com/textlint-ja/textlint-rule-ja-no-abusage/pull/11)
 
