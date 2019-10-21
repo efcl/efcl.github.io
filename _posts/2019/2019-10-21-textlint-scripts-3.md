@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[textlint](https://github.com/textlint/textlint)は、JavaScriptでルールやサポートする拡張子を追加できる自然言語向けのLintツールです。
+[textlint](https://github.com/textlint/textlint)はJavaScriptでルールやサポートする拡張子を追加できる自然言語向けのLintツールです。
 
 以前から[textlint-scripts](https://github.com/textlint/textlint-scripts)という、textlintのルール作成を補助するツールを公開していました。
 [textlint-scripts](https://github.com/textlint/textlint-scripts)は、ES2015+のビルドやテスト周りのセットアップなど、
