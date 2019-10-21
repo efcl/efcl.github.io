@@ -13,7 +13,7 @@ tags:
 [textlint](https://github.com/textlint/textlint)はJavaScriptでルールやサポートする拡張子を追加できる自然言語向けのLintツールです。
 
 以前から[textlint-scripts](https://github.com/textlint/textlint-scripts)という、textlintのルール作成を補助するツールを公開していました。
-[textlint-scripts](https://github.com/textlint/textlint-scripts)は、ES2015+のビルドやテスト周りのセットアップなど、
+[textlint-scripts](https://github.com/textlint/textlint-scripts)はES2015+のビルドやテスト周りのセットアップなど、
 普段JavaScriptを書かない人でも1つコマンドを叩けばtextlintのルールを書き始められるようにするためのツールです。
 (JavaScript慣れてる人には`create-react-app`みたいなものというのがわかりやすい)
 
@@ -34,7 +34,7 @@ tags:
 
 ## TypeScriptサポート
 
-[textlint-scripts](https://github.com/textlint/textlint-scripts)の3.0.0では、JavaScriptだけではなくTypeScriptのサポートもしました。
+[textlint-scripts](https://github.com/textlint/textlint-scripts) 3.0.0では、JavaScriptだけではなくTypeScriptのサポートもしました。
 
 textlintはJavaScriptで書かれていましたが、途中からTypeScriptに移行して、今のコードベースは8割ぐらいはTypeScriptになっています。
 (テストとはそのままにしてる部分がある)
@@ -60,7 +60,7 @@ $ npx create-textlint-rule example --typescript
 [TypeScriptのプロジェクトテンプレート](https://github.com/textlint/textlint-rule-template-ts)を元にしたディレクトリが作成されるので、
 後は開発して、`npm test`でテストを通して、`npm run build`でビルドして、`npm publich`で公開するだけです。
 
-具体的には次のようにTypeScriptと`[@textlint/types](https://github.com/textlint/textlint/tree/master/packages/%40textlint/types)を使ったテンプレートが生成されます。
+具体的には次のようにTypeScriptと[@textlint/types](https://github.com/textlint/textlint/tree/master/packages/%40textlint/types)を使ったテンプレートが生成されます。
 `TextlintRuleModule<オプションのInterface>`で大体ルールに必要な型が付くので、あとは普通に開発するだけです。
 
 ```ts
@@ -98,7 +98,7 @@ export default report;
 
 既存の[textlint-scripts](https://github.com/textlint/textlint-scripts)を使ったJavaScriptプロジェクトからTypeScriptに移行する方法も用意しています。
 
-[@textlint/migrate-textlint-scripts-typescript](https://github.com/textlint/migrate-textlint-scripts-typescript)を使って、TypeScript周りの設定ファイルを自動で用意してくれます。
+[@textlint/migrate-textlint-scripts-typescript](https://github.com/textlint/migrate-textlint-scripts-typescript)を使うと、TypeScript周りの設定ファイルを自動で用意してくれます。
 
 ```shell
 # textlint-scriptをアップデートする
@@ -108,7 +108,7 @@ npm install textlint-script@3 -D
 npx @textlint/migrate-textlint-scripts-typescript
 ```
 
-あとは、手動でJavaScriptをTypeScriptに書き換えていくだけです。
+あとは手動でJavaScriptファイルをTypeScriptファイルに書き換えていくだけです。
 JavaScript to TypeScriptの基本的なやり方は次の記事も参照してください。
 ([textlint-tester](https://github.com/textlint/textlint/tree/master/packages/textlint-tester)を使ったテストは拡張子を書き換えて、importを治すだけでほぼ動きます)
 
@@ -118,12 +118,13 @@ JavaScript to TypeScriptの基本的なやり方は次の記事も参照して�
 
 先ほども書いたように`textlint-script build`でのビルドにはBabelを利用しています。
 
-3.0.0ではこのBabelのプリセットを[@babel/preset-es2015](https://babeljs.io/docs/en/babel-preset-es2015/)から[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)に変更しています。
+3.0.0ではBabelのプリセットを[@babel/preset-es2015](https://babeljs.io/docs/en/babel-preset-es2015/)から[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)に変更しています。
 また、[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)のオプションとして[targets.esmodules](https://babeljs.io/docs/en/babel-preset-env#targetsesmodules)を有効化しています。
 
 これにより`textlint-script build`でのビルドはES2015に対応したJavaScriptエンジン向けのコードを出力します。
 
-- `class A{}`はTranspileされずに`class A{}`として出力される
+- ES2015の構文で書かれたコードは、ビルド後もそのままES2015のコードとなる
+    - 例) `class A{}`はTranspileされずに`class A{}`として出力される
 - ES ModuleはCommonJSに変換される
 
 そのため、IEでは動作しないコードを出力するようになります。
