@@ -36,9 +36,9 @@ Promise本 1.0.0をリリースしたのは2014年6月ですが、そこから�
 そのため、サンプルコードにもES2015の構文を使っています。
 
 - Arrow Function
-- Async Function(章として追加)
 - `const`
 - `class`
+- Async Function(ES2017、章として追加)
 
 変更理由としては、ES2015のほうが簡潔に書ける部分([`class`を使った`Deferred`](https://azu.github.io/promises-book/#deferred-and-promise)など)があることや、
 `var`よりも`const`や`let`の利用を促す傾向が全体的にあるためです。
