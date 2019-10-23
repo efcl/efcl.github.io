@@ -24,7 +24,7 @@ Promise本 1.0.0をリリースしたのは2014年6月ですが、そこから�
 - `ES6`を`ES2015`に表記を変更
 - コードベースをES5からES2015+に変更
 - Async Functionの章を追加
-- Promise#finllayの対応
+- Promise#finallyの対応
 
 ## v2の変更点
 
@@ -63,7 +63,7 @@ Async Function(`async`と`await`)はES2017で追加された新しい非同期�
 Async Generatorについては触れていないため、この辺は今後の課題です。
 (そもそもGeneratorについて触れてない)
 
-### Promise#finllayの対応 [#284](https://github.com/azu/promises-book/issues/284) [#294](https://github.com/azu/promises-book/issues/294)
+### Promise#finallyの対応 [#284](https://github.com/azu/promises-book/issues/284) [#294](https://github.com/azu/promises-book/issues/294)
 
 ES2018からPromiseチェーンの最後の処理を簡潔に書ける`Promise#finally`メソッドが追加されました。
 その解説を[2.6. Promise#finally](https://azu.github.io/promises-book/#ch2-promise-finally)に追加しています。
