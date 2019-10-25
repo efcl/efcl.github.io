@@ -118,7 +118,7 @@ PromiseベースのAPIである[Fetch API](https://developer.mozilla.org/ja/docs
 > こういう形態で書籍を公開したのは、常に書籍が更新出来るようにしたいからでもあります。  
 > -- [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/)
 
-JavaScriptにおけるPromiseは、まだAPIが不十分がところがあるため、APIが拡張されています。
+JavaScriptにおけるPromiseは、まだAPIが不十分なところがあるため、APIが拡張されています。
 直近のものとしては`Promise.allSettled`はES2020で入ることが確定(Stage 4)であるため、対応が必要になりそうです。
 
 - [Promise.allSettled (ES2020) · Issue #330 · azu/promises-book](https://github.com/azu/promises-book/issues/330)
