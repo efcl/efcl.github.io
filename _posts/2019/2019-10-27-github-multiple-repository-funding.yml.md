@@ -146,6 +146,7 @@ azu/github-reader: Try to Update
 
 `github-funding-yml-updater`をインストールすると`github-funding-yml-settings`という別のコマンドもインストールされています。
 `github-funding-yml-settings`に`--list-file`を渡す設定するためのURLを出力してくれます。
+
 ```
 npm install github-funding-yml-updater -g
 github-funding-yml-settings --list-file list.txt
