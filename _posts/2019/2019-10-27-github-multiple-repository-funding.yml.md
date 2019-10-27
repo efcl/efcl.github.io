@@ -10,7 +10,7 @@ tags:
 
 ---
 
-GitHubリポジトリにはスポンサーボタンを表示する機能がありますが、これをまとめて行うツールを書きました。
+GitHubリポジトリにはスポンサーボタンを表示する機能がありますが、これをまとめて設定ツールを書きました。
 
 [![GitHub Sponsorship button](https://efcl.info/wp-content/uploads/2019/10/27-1572152741.png)](https://github.com/azu/github-funding-yml-updater)
 
@@ -126,6 +126,8 @@ azu/github-reader: Try to Update
 ```
 
 これで`list.txt`にあるリポジトリの`.github/FUNDING.yml`をまとめて更新できます。
+
+その他の`--mode`としてユーザーを削除する`delete`や既存のFUNDING.ymlを指定して上書きする`overwrite`などがあります。
 詳しいコマンドの使い方はREADMEや`--help`で見てください。
 
 - [azu/github-funding-yml-updater: Update multiple repositories's `.github/FUNDING.yml` via GitHub API](https://github.com/azu/github-funding-yml-updater)
