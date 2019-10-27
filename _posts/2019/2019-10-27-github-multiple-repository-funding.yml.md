@@ -14,7 +14,7 @@ GitHubリポジトリにはスポンサーボタンを表示する機能があ�
 
 ![GitHub Sponsorship button](https://efcl.info/wp-content/uploads/2019/10/27-1572148683.png)
 
-GitHubリポジトリにはスポンサーボタンを表示するには現在(2019-10-27)は次のような条件が必要です。
+GitHubリポジトリに、スポンサーボタンを表示するには次のような条件が必要です。(2019-10-27現在)
 
 1. GitHubリポジトリのSettingsで"Sponsorship"の✔をいれて有効化する
 2. リポジトリの`.github/FUNDING.yml`にGitHub SponsorsやPatreonなどのfunding platformsの情報を入れる
