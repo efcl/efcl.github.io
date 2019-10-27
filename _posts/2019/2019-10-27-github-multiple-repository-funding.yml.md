@@ -1,5 +1,5 @@
 ---
-title: "複数のGitHubリポジトリにまとめてGitHub Sponsors(FUNDING.yml)の設定をする方法"
+title: "複数のGitHubリポジトリにまとめてGitHub Sponsorsボタン(FUNDING.yml)を設定する方法"
 author: azu
 layout: post
 date : 2019-10-27T12:55
