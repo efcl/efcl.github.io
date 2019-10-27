@@ -27,7 +27,7 @@ GitHubリポジトリに、スポンサーボタンを表示するには次の�
 つまり、それぞれのリポジトリに`.github/FUNDING.yml`をコミットする必要があります。
 これだと更新が面倒そうなので、一括で複数のリポジトリの`.github/FUNDING.yml`のGitHub Sponsorsを更新するツールを書きました。
 
-:memo: Note: Organizationの場合は、ツールを使わなくても`.github`リポジトリを使うことで一括設定が可能なので、その方法は後述します。
+**Note:** Organizationの場合は、ツールを使わなくても`.github`リポジトリを使うことで一括設定が可能なので、その方法は後述します。
 
 ## [github-funding-yml-updater](https://github.com/azu/github-funding-yml-updater)
 
@@ -182,7 +182,6 @@ GitHub Organizationの場合は`.github`という名前のリポジトリを使�
 次のような感じで、ウェブサイトにGitHubと似たようなスポンサーボタンを配置できます。
 
 <a class="github-button" href="https://github.com/sponsors/azu" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @azu on GitHub">Sponsor</a>
-<!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 ## おわりに
