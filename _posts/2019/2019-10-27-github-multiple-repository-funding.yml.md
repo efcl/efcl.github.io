@@ -70,7 +70,7 @@ $ cat list.txt
 ```
 
 次に、GitHubのアクセストークンを用意します。
-Scopeは`repo`があればいいので、次のURLから必要に応じしてpersonal access tokenを作成してコピーしておきます。
+Scopeは`repo`があればいいので、次のURLから必要に応じてpersonal access tokenを作成してコピーしておきます。
 
 - https://github.com/settings/tokens/new?description=github-funding-yml-updater&scopes=repo
 
