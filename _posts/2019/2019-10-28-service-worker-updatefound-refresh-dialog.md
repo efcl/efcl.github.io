@@ -30,6 +30,7 @@ tags:
 
 
 `index.html`では次のようにスクリプトを読み込み、`serviceWorkerUpdatefoundRefreshDialog.register(registration);`で処理を登録します。
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
