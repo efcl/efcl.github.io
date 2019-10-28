@@ -85,7 +85,7 @@ window.addEventListener('load', function() {
 
 スタイルはCSSの[カスタムプロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/--*)を使って外から指定できるようになっています。
 
-```
+```css
 :root {
   min-width: var(--sw-updatefound-refresh-dialog--min-width, 250px);
   color: var(--sw-updatefound-refresh-dialog--color, #fff);
