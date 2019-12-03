@@ -1,5 +1,5 @@
 ---
-title: "JavaScript ASTを使ったツール(自作、ESLint、Babel、jscodeshift)を実装する話をした"
+title: "JavaScript ASTを使ったツール(自作、ESLint、Babel、jscodeshift)を実装する話"
 author: azu
 layout: post
 date : 2019-12-03T19:40
@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[Dive into AST](https://dive-into-ast.netlify.com/)というJavaScriptのASTを使ったツールの作り方を見ていく話をしました。
+[Dive into AST](https://dive-into-ast.netlify.com/)というJavaScriptのASTを使ったツールの作り方を見ていく話を書きました。
 自作の正規表現、ASTチェックツール、ESLint、Babel、jscodeshiftでそれぞれ動くツールを実装してるので、リポジトリにまとめてあります。
 
 スライドでは[Code Surfer](https://github.com/pomber/code-surfer)を使ってASTや書き方をインタラクティブに解説しています。
