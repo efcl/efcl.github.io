@@ -29,7 +29,7 @@ ASTとは何?という話はこの辺と大きくは変わってないです。
 - [JavaScript ASTを始める最初の一歩 | Web Scratch](https://efcl.info/2016/03/06/ast-first-step/)
 - [カジュアルJavaScript AST](https://azu.github.io/slide/JSojisan/#8)
 
-[JSConf.JP](https://jsconf.jp/2019/)で[ASTの野外ライブコーディングをしていたt_wadaさん](https://jsconf.jp/2019/talk/takuto-wada)とASTについて教えるときにどこにフォーカスして話すのがいいかという話をしてました。
+[JSConf.JP](https://jsconf.jp/2019/)で[ASTの野外ライブコーディングをしていたt_wadaさん](https://jsconf.jp/2019/talk/takuto-wada)とASTについて教えるときにどこにフォーカスして話すのがいいのかという話をしてました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">t_wadaさんとASTについて教えるときどこまで話すかが難しいという話したけど、<br>特定の領域(ESLint、Babel pluginみたいな感じ)に掘るか<br>広く浅くやるか<br>のどっちかという話になった。<br>広く浅くは前に書いてたので、特定の領域で掘るかー<a href="https://t.co/VcHt1Wtafj">https://t.co/VcHt1Wtafj</a><a href="https://t.co/jgs23lrx0e">https://t.co/jgs23lrx0e</a><a href="https://twitter.com/hashtag/jsconfjp?src=hash&amp;ref_src=twsrc%5Etfw">#jsconfjp</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1200698005478760448?ref_src=twsrc%5Etfw">November 30, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
