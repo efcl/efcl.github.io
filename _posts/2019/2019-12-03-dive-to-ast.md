@@ -68,7 +68,7 @@ ASTを扱うツールのテストはスナップショットをするのがい�
 
 [sentence-splitter](https://github.com/azu/sentence-splitter)はそんな感じで書いてた気がします。
 
-入力になるテストケースはあればあるほど安心はできるので(実際に全部回さなくてもいい)、コーパス的に集めたものを使うこともあります。
+入力になるテストケースはあればあるほど安心はできるので(CIじゃなくて手動でいい)、コーパス的に集めたものを使うこともあります。
 textlintルールを書くときは次のようなコーパスを使ったりしてます。
 
 - [textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書を収集した生コーパス/ツール](https://github.com/textlint-ja/technological-book-corpus-ja)
@@ -79,3 +79,10 @@ ASTを使ったライブラリとして使うようなValidatorを実装する�
 次のValidationはクロールした実データを使って手動で試したりしてました。
 
 - [azu/restrict-javascript: Define restrict JavaScript syntax and validate it.](https://github.com/azu/restrict-javascript)
+
+目的の形のランダムなデータを生成できるfuzzerがあるならFuzzingしてテストするのも面白いかもしれません。
+
+- [ファジング - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%B8%E3%83%B3%E3%82%B0)
+
+特にパーサを作る場合は、許可された書き方なのにパースエラーが出るのは一番嫌がられるので、物量でカバーするのが良い気がします。
+JavaScriptのコード/ASTなら、有名所のライブラリをテストケースに使うというのがよく取られる手法です(ベンチマークにもなる)。
