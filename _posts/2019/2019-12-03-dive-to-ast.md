@@ -58,8 +58,24 @@ ASTを扱うツールのテストはスナップショットをするのがい�
 
 - [Jestなどを使わずにスナップショットテストを書く | Web Scratch](https://github.com/efcl/efcl.github.io/edit/develop/_posts/2018/2018-02-02-snapshot-test.md)
 
+たとえばPrettierのテストはほとんどがスナップショットテストです。
+
+- [prettier/prettier: Prettier is an opinionated code formatter.](https://github.com/prettier/prettier)
+
 パーサとかはテストファースト的にやると進みやすい気がします。
 考えすぎるとScanner書くまでに時間がかかるので、テストケースを集めるところからやるのがいい気がします。
 無理な構造になってくるとそこまでの実装は捨てたくなって捨てるかもしれませんが、テストケースは残ります。
 
 [sentence-splitter](https://github.com/azu/sentence-splitter)はそんな感じで書いてた気がします。
+
+入力になるテストケースはあればあるほど安心はできるので(実際に全部回さなくてもいい)、コーパス的に集めたものを使うこともあります。
+textlintルールを書くときは次のようなコーパスを使ったりしてます。
+
+- [textlint-ja/technological-book-corpus-ja: 日本語で書かれた技術書を収集した生コーパス/ツール](https://github.com/textlint-ja/technological-book-corpus-ja)
+
+ASTを使ったライブラリとして使うようなValidatorを実装するときは、実データを使ってIntegrationテストすると安心できます。
+データベースから対象となるものを全部ダンプしてきて、手動でValidateを通して意図に反した結果がないかを検証していくとか。
+
+次のValidationはクロールした実データを使って手動で試したりしてました。
+
+- [azu/restrict-javascript: Define restrict JavaScript syntax and validate it.](https://github.com/azu/restrict-javascript)
