@@ -42,6 +42,12 @@ DOMもツリーなのでASTと似た構造ですが(実際に[TreeWalker](https:
 スライドでも書いてましたが、ASTを扱うパーサなどのツールはかなり充実してきているので、最近ではかなり簡単にASTに触れます。
 ASTを使ってちょっとした自動化をするようなツールを作ってみると面白いのかもしれません。
 
+自然言語を扱う[textlint](https://textlint.github.io/)もMarkdownなどのASTを扱ってルールを書きます。
+`npx create-textlint-rule example`でルールを書き始められるので、文章に興味がある人はこの辺を見てみるのもいいかもしれません。
+
+- [textlint-scripts 3リリース、TypeScriptでtextlintのルールを作成できるようになりました | Web Scratch](https://efcl.info/2019/10/21/textlint-scripts-3/)
+- [Creating Rules · textlint](https://textlint.github.io/docs/rule.html)
+
 ## その他
 
 ASTを吐くパーサの作り方は誰かがやってください。
