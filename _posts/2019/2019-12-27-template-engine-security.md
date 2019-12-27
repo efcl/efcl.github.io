@@ -470,7 +470,7 @@ Simple Token ReplacementとLimited Control Structuresは、信用できないテ
 また、Simple Token Replacementはevalを使ってないテンプレートエンジンなので、問題にはならないと思います。
 
 
-一方で、信用できないテンプレートをProgramming Language Templateとしてコンパイルのが一番危険な状態です。
+一方で、信用できないテンプレートをProgramming Language Templateとしてコンパイルするのが一番危険な状態です。
 
 
 
