@@ -734,7 +734,7 @@ ReactやAngular(2.x+)などは、テンプレートをビルドのフェーズ�
 ----
 
 <!-- Page 56 -->
-![EJS<%% global.process.mainModule.require('fs').readFileSync('/etc/passwd').toString() %%>Nunjucks\{% global.process.mainModule.require('fs').readFileSync('/etc/passwd').toString() \}Slim#\{ File.open('/etc/passwd').read \}erb<%= File.open('/etc/passwd').read %>Vue(SSR)\{\{ global.process.mainModule.require('fs').readFileSync('/etc/passwd').toString() \}\}](https://efcl.info/wp-content/uploads/2019/template-engine-security/56.png)
+![template](https://efcl.info/wp-content/uploads/2019/template-engine-security/56.png)
 
 実際にそれぞれのテンプレートエンジンでユーザー入力からテンプレートを生成してないかをチェックするクエリの例です。
 
