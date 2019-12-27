@@ -540,7 +540,7 @@ HTMLを返すサーバ側の実装はこのようになっています。
 <!-- Page 40 -->
 ![Vue + Client Side Template Injec4on•ユーザー入力(?name)HTMLエスケープはされているのでサーバサイドレンダリングとしては問題ない•h)ps://vue-client-side-template-injec;on-example.azu.now.sh/?name=%3Cscript%3Ealert(1)%3C/script%3E•サーバサイドがレンダリングした結果をVueがクライアントサイドレンダリングしている•h)ps://vue-client-side-template-injec;on-example.azu.now.sh/?name=%7B%7Bthis.constructor.constructor(%27alert(%22foo%22)%27)()%7D%7D•Vueをmountするときにテンプレート構文\{\{ expression \}\} が入ってると、それをテンプレートとして評価してしまう！](https://efcl.info/wp-content/uploads/2019/template-engine-security/40.png)
 
-次のように`name`パラメータにHTMLを入れてもエスケープされているので、XSSは起きない要因見えて一見安全そうです。
+次のように`name`パラメータにHTMLを入れてもエスケープされているので、XSSは起きないので一見安全そうです。
 
 - <https://vue-client-side-template-injection-example.azu.now.sh/?name=%3Cscript%3Ealert(1)%3C/script%3E>
 
