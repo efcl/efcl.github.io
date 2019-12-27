@@ -288,7 +288,7 @@ power-doctestではコメントも扱えるtraversalライブラリの[millermed
 
  [1]: http://www.adventar.org/calendars/56
  [2]: https://github.com/azu/power-doctest "azu/power-doctest"
- [3]: http://gyazo.com/56ea3848bb1a419d7d0ed47d111b39fc.gif
+ [3]: https://gyazo.com/56ea3848bb1a419d7d0ed47d111b39fc.gif
  [4]: https://github.com/twada/power-assert "power-assert"
  [5]: https://github.com/dtao/autodoc "dtao/autodoc"
  [6]: https://github.com/davidchambers/doctest "davidchambers/doctest"

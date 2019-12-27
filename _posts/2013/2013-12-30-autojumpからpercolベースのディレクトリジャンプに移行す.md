@@ -65,6 +65,6 @@ Nodeで適当にスクリプトを書いたので、autojump.txtを食わせれ�
  [2]: https://github.com/rupa/z "rupa/z"
  [3]: https://github.com/mooz/percol "percol"
  [4]: http://stillpedant.hatenablog.com/entry/percol-cd-history "percol で z / autojump のようにディレクトリ高速ジャンプ - Slip Ahead Logging"
- [5]: http://gyazo.com/5bb415e1d591670e45f102fea0987440.gif
+ [5]: https://gyazo.com/5bb415e1d591670e45f102fea0987440.gif
  [6]: https://github.com/azu/converter_from_autojump_to_percol "azu/converter_from_autojump_to_percol"
  [7]: https://github.com/dominictarr/event-stream "EventStream"

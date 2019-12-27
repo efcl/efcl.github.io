@@ -12,7 +12,7 @@ categories:
 tags:
   - まとめ
 ---
-<img style="border:none;" src="http://mozshot.nemui.org/shot?http://0at.org/summer-2008.html" border="0" alt="" hspace="4" vspace="4" width="128" height="128" />
+<img style="border:none;" src="https://mozshot.nemui.org/shot?http://0at.org/summer-2008.html" border="0" alt="" hspace="4" vspace="4" width="128" height="128" />
 
 [The State of the Web &#8211; Summer 2008][1]
 

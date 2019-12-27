@@ -345,7 +345,7 @@ power-assert化したテストファイルも問題なくブラウザで動か�
  [21]: https://github.com/azu/power-assert-karma-seed/blob/master/package.json "package.json"
  [22]: http://karma-runner.github.io/0.12/intro/configuration.html "Karma - Configuration"
  [23]: https://github.com/azu/power-assert-karma-seed/blob/master/karma.conf.js "karma.conf.js"
- [24]: http://gyazo.com/4daa1c15931e4de407a382c8fd895339.gif
+ [24]: https://gyazo.com/4daa1c15931e4de407a382c8fd895339.gif
  [25]: http://blog.jetbrains.com/jp/2013/10/04/223 "WebStorm 7を使いJavaScript テストをKarmaで動かす | JetBrains ブログ"
  [26]: http://d.hatena.ne.jp/Kazzz/20130524/p1 "Karma ユニットテストをWebStormでデバッグする - Kazzzの日記"
  [27]: http://page.mixi.jp/run_page_apps.pl?page_id=287564&module_id=1630003 "Source Mapについて | mixiページ"

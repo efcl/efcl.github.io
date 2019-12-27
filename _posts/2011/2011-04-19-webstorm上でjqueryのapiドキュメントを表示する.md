@@ -53,14 +53,14 @@ WebStormが今春のキャンペーンがまだ続いているので半額で購
 JetBrains公式の[NodeJS][9]プラグイン(Node.jsもそのうち公式対応されると思う)の公開が始まったりして、まだ進化のスピードは落ちてない印象なので、安いうちに買っておくのもいいかと思います。
 
 **WebStorm & PhpStorm Blog » Blog Archive » 50% OFF personal WebStorm licensesi**
-:   <http://blogs.jetbrains.com/webide/2011/04/50-off-on-personal-webstorm-licenses/>
+:   <https://blogs.jetbrains.com/webide/2011/04/50-off-on-personal-webstorm-licenses/>
 
- [1]: http://blogs.jetbrains.com/webide/2011/04/jquery-offline-doc/
- [2]: http://blogs.jetbrains.com/webide/2010/11/working-with-javascript-libraries-in-phpstorm-webstorm/
+ [1]: https://blogs.jetbrains.com/webide/2011/04/jquery-offline-doc/
+ [2]: https://blogs.jetbrains.com/webide/2010/11/working-with-javascript-libraries-in-phpstorm-webstorm/
  [3]: http://api.jquery.com "http://api.jquery.com"
  [4]: http://api.jquery.com/api/
  [5]: https://efcl.info/2010/1203/res2152/
  [6]: https://efcl.info/wp-content/uploads/2011/04/2011-04-19-ss2.png
- [7]: http://blogs.jetbrains.com/webide/2011/01/external-api-docs-support-for-popular-javascript-frameworks/
+ [7]: https://blogs.jetbrains.com/webide/2011/01/external-api-docs-support-for-popular-javascript-frameworks/
  [8]: http://www.jetbrains.com/webstorm/buy/
  [9]: http://plugins.jetbrains.com/plugin/?webide&id=6098

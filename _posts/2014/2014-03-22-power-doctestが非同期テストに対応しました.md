@@ -76,7 +76,7 @@ vmモジュール自体はエラーが起きた時に捉えるイベントとか
  [2]: https://efcl.info/2013/1201/res3494/ "JavaScriptでdoctestを行う power-doctest を作った | Web scratch"
  [3]: http://nodejs.org/api/vm.html "vm"
  [4]: https://github.com/azu/power-doctest/releases/tag/0.3.0 "0.3.0"
- [5]: http://gyazo.com/0a18eab81490475b3e6c3b70e366ca36.gif
+ [5]: https://gyazo.com/0a18eab81490475b3e6c3b70e366ca36.gif
  [6]: https://github.com/azu/power-doctest-promised-example "azu/power-doctest-promised-example"
  [7]: https://github.com/azu/gulp-power-doctest "azu/gulp-power-doctest"
  [8]: http://nodejs.org/api/domain.html "Domain"

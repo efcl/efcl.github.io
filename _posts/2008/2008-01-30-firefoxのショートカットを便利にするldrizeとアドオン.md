@@ -24,7 +24,7 @@ Firefoxでは元から様々ショートカットがあります。
 デフォルトからのショートカットキーは下記に書いてあります。  
 Ctrl +数字 のタブのショートカットキーは意外と知らなかったりしましたが、指がつりそうな配置です。
 
-[<img src="http://favicon.aruko.net/s/f/http://lesliefranke.com/files/reference/firefoxcheatsheet.html" alt="" width="13" height="13" /> Mozilla Firefox Cheat Sheet][1]
+[<img src="https://favicon.aruko.net/s/f/http://lesliefranke.com/files/reference/firefoxcheatsheet.html" alt="" width="13" height="13" /> Mozilla Firefox Cheat Sheet][1]
 
 LDRizeというアドオンはショートカットキーでページをスクロールしたり、フレームで開いて中身を確認できたり、  
 ピンを立てて一気に開いたりできます。  

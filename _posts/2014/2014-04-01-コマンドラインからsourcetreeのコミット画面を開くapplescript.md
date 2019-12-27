@@ -42,4 +42,4 @@ tigを使えば出来ますが、そこまでやるならGUIでやりたい
  [1]: http://qiita.com/suino/items/b0dae7e00bd7165f79ea "tigでgitをもっと便利に！ addやcommitも - Qiita"
  [2]: http://www.sourcetreeapp.com/ "SourceTree"
  [3]: https://github.com/azu/sourcetree-commit "azu/sourcetree-commit"
- [4]: http://gyazo.com/06b8a58e8afe0f600e199ed6dc6c6d81.gif
+ [4]: https://gyazo.com/06b8a58e8afe0f600e199ed6dc6c6d81.gif
