@@ -219,5 +219,7 @@ copy(temp1)
 
 今は関連データを`window`に入れていますが[User Timing Level 3](https://w3c.github.io/user-timing/#mark-method)では、`performance.mark(name, startTime, details)`と`details`に関連データを保存できるようになるのでもう少しましになると思います。
 
+- 追記(2019-12-31): [User Timing L3 - Chrome Platform Status](https://www.chromestatus.com/feature/5149401886490624)がChrome 78で実装されました
+
 `peformance.mark`を使ってマーキングとデータの回収の2フェーズに分けると計測がかなり楽になるのでおすすめです。
 常時計測するなら、[DataDog](https://www.datadoghq.com/)などのそれ系のサービスは大体似たようなロギングの仕組みがあるのでそちらを使いましょう。
