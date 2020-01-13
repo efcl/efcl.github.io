@@ -15,9 +15,7 @@ typoなどの間違いは`develop`ブランチにPull Requestして頂いて問�
 
 書いて欲しい記事のIssueを立てるだけなどでもOKです。
 
-また、Gitterを使ったチャットで伝えてもらっても問題ありません。
-
-[![Gitter chat](https://badges.gitter.im/efcl/efcl.github.io.png)](https://gitter.im/efcl/efcl.github.io)
+Contributeする前に[Code of Conduct](./CODE_OF_CONDUCT.md)も参照してください。
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -30,3 +28,9 @@ typoなどの間違いは`develop`ブランチにPull Requestして頂いて問�
 ソースコードはMIT
 
 文章はCC-BY <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+## OSS Supporters
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"/>
+</a>
