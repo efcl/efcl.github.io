@@ -1,4 +1,4 @@
-# Web Scratch [![Circle CI](https://circleci.com/gh/efcl/efcl.github.io/tree/develop.svg?style=svg)](https://circleci.com/gh/efcl/efcl.github.io/tree/develop)
+# Web Scratch [![Netlify Status](https://api.netlify.com/api/v1/badges/e2e0a8c2-636e-415f-a755-37f54829d8b9/deploy-status)](https://app.netlify.com/sites/efcl/deploys)
 
 https://efcl.info/ のブログ用のリポジトリです。
 
