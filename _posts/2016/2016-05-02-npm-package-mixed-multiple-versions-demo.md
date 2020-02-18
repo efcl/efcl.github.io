@@ -17,6 +17,13 @@ tags:
 
 ---
 
+注意: この手法は`npm ci`で壊れてる場合があります
+
+- [npm ci fails with transitive local packages - 🐞 bugs - npm forum](https://npm.community/t/npm-ci-fails-with-transitive-local-packages/4059)
+
+---
+
+
 [Add support for ESLint v2 by Daniel15 · Pull Request #107 · fkling/astexplorer](https://github.com/fkling/astexplorer/pull/107/files#diff-b9cfc7f2cdf78a7f4b91a753d10865a2R52 "Add support for ESLint v2 by Daniel15 · Pull Request #107 · fkling/astexplorer")を見ていて、一つのプロジェクト内で複数のバージョンの同じライブラリを使う面白い方法が使われてたのでメモです。
 
 前述した[AST explorer](https://astexplorer.net/ "AST explorer")の場合だと、ESLint@1とESLint@2の両方に対応したPlaygroundを作りたいため、一つのプロジェクトに両方のバージョンをインストールする必要があるという話です。
