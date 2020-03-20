@@ -167,7 +167,7 @@ async function fail() {
     throw new Error("FAIL!!");
 }
 
-it("is unhandled rejection", () => {
+it("unhandled rejection", () => {
     fail();
 });
 ```
@@ -183,12 +183,33 @@ async function fail() {
     throw new Error("FAIL!!");
 }
 
-it("is unhandled rejection", () => {
+it("unhandled rejection, but throw it", () => {
     fail();
 });
 ```
 
+Mochaで実行すると、少なくてもテストは通らなくなって安全です。(ただし結果の表示はおかしいときがあります)
+
+```
+$ mocha *.js
+
+
+
+  ✓ unhandled rejection
+  1) unhandled rejection, but throw it
+
+  1 passing (4ms)
+  1 failing
+
+  1) is unhandled rejection:
+     Uncaught Error: FAIL!!
+      at fail (fixed-test.js:6:11)
+      at Context.<anonymous> (fixed-test.js:10:5)
+      at processImmediate (internal/timers.js:439:21)
+```
+
 - Example: [azu/mocha-unhandled-rejections-example](https://github.com/azu/mocha-unhandled-rejections-example)
+- Issue: [unhandled promise rejection in async tests · Issue #2797 · mochajs/mocha](https://github.com/martin-ayvazyan13)
 
 ## `--unhandled-rejections=strict`でエラー終了させる
 
