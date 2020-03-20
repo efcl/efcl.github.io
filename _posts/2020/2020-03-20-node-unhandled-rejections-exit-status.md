@@ -97,7 +97,7 @@ main().then(() => {
 ```
 
 この場合は、`main()`関数でエラーが発生([Async Function内でエラーをthrowするとRejectedなPromiseを返す](https://jsprimer.net/basic/async/#async-function-return-promise))した場合に`catch`メソッドのコールバックが呼び出されます。
-`catch`内で`process.exit(1)`で明示的にExit Statusを`1`にしてプロセスを終了させているため安全です。
+`catch`内で`process.exit(1)`を使い明示的にExit Statusを`1`にしてプロセスを終了させているため安全です。
 
 ```bash
 $ node fixed-main.js
@@ -157,6 +157,38 @@ $ echo $?
 - [mcollina/make-promises-safe: A node.js module to make the use of promises safe](https://github.com/mcollina/make-promises-safe)
 
 まずは`Promise#catch`で管理することが重要ですが、書き忘れた際にUnhandled Rejectionsが発生してしまうので、それを防止する役割として利用できます。
+
+似た問題として、テストフレームワークの[Mocha](https://mochajs.org/)はデフォルトではUnhandled Rejectionsが発生してもテストを成功として扱ってしまいます。
+
+そのため、次のようなテストケースはMochaではパスしてしまいます。
+
+```js
+async function fail() {
+    throw new Error("FAIL!!");
+}
+
+it("is unhandled rejection", () => {
+    fail();
+});
+```
+
+これも`unhandledRejection`を使って例外を投げるようにすることで、テストケースを失敗させられます。
+
+```js
+process.on("unhandledRejection", reason => {
+    throw reason;
+});
+
+async function fail() {
+    throw new Error("FAIL!!");
+}
+
+it("is unhandled rejection", () => {
+    fail();
+});
+```
+
+- Example: [azu/mocha-unhandled-rejections-example](https://github.com/azu/mocha-unhandled-rejections-example)
 
 ## `--unhandled-rejections=strict`でエラー終了させる
 
