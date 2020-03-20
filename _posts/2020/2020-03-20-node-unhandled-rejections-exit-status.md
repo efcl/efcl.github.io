@@ -46,7 +46,7 @@ main();
 
 ブラウザではUnhandled Rejectionsは自動的にコンソールエラーとして表示されるためあまり問題には感じないかもしれません。
 
-![Unhandled Rejections on Browser](https://efcl.info/wp-content/uploads/2020/03/20-1584687893.png)
+![Unhandled Rejections on Browser](https://efcl.info/wp-content/uploads/2020/03/20-1584691170.png)
 
 Node.jsではこのコードを実行するとUnhandled Rejectionsとなりエラー表示はでますが、その際のExit Statusは`0`であるため正常終了となります。
 
