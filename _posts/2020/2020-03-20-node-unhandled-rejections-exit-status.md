@@ -111,7 +111,7 @@ $ echo $?
 
 ## [`unhandledRejection`](https://nodejs.org/api/process.html#process_event_unhandledrejection)イベントで明示的にエラー終了する
 
-Nopde.jsでは`process.on("unhandledRejection", (reason, promise) => {})`というイベントをサポートしています。
+Node.jsでは`process.on("unhandledRejection", (reason, promise) => {})`というイベントをサポートしています。
 
 - [Process | Node.js v13.11.0 Documentation](https://nodejs.org/api/process.html#process_event_unhandledrejection)
 
