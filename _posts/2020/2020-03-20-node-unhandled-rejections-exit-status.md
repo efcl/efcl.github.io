@@ -235,7 +235,7 @@ $ echo $?
 基本的にはUnhandled Rejectionが発生しないように`Promise#catch`などをしてちゃんとエラーハンドリングしたコードを書くことが大切です。
 それでも、意図しない例外などは発生するので、[unhandledRejection](https://nodejs.org/api/process.html#process_event_unhandledrejection)や[uncaughtException](https://nodejs.org/api/process.html#process_event_uncaughtexception)でのエラー時の処理を入れておくのが良い気がします。
 
-Async Functionを使って簡単にPromiseを扱えるようになったので、このUnhandled Rejectionsの問題をよく見るようになった気がするのでこの記事を書きました。
+Async Functionを使って簡単にPromiseを扱えるようになって、このUnhandled Rejectionsの問題をよく見るようになった気がするのでこの記事を書きました。
 
 サンプルリポジトリ:
 
