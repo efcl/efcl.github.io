@@ -1,5 +1,5 @@
 ---
-title: "Node.jsでUnhandled RejectionsのときにExit Statusが0となる問題を回避する"
+title: "Node.jsでUnhandled RejectionsのときにExit Statusが0となる問題について"
 author: azu
 layout: post
 date : 2020-03-20T15:51
