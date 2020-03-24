@@ -392,7 +392,8 @@ SecretlintへのContributionsはいつでも歓迎しています。
 興味ある人は次のラベルを見てみるといいかもしれません。
 
 - [label:good first issue](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-- [help wanted](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
+- [help wanted](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
+[Icon/logo](https://github.com/secretlint/secretlint/issues/13)も適当に作ったやつなので、これもどうにかしたいです。
 
 [Secretlint]: https://github.com/secretlint/secretlint
