@@ -20,7 +20,7 @@ tags:
 Gitのpre-commit hookやCIサービス上でSecretlintを使ってファイルの中身をチェックすることで、
 リポジトリ時うっかりCredentialsをコミットしてしまうことを防止する目的のLintツールです。
 
-機密情報のチェックに特化した[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようなものです。
+Credentials(秘匿情報)のチェックに特化した[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようなものです。
 
 ## 最初にチェックしてみよう
 
