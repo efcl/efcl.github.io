@@ -337,6 +337,76 @@ jobs:
 
 [![image](https://efcl.info/wp-content/uploads/2020/03/24-1584981940.png)](https://github.com/azu/secretlint-github-actions-example/pull/1/files)
 
+## ルールを作る
+
+[Secretlint][]は自作のルールを簡単に追加できます。
+コアのルールセットも同じ方法で実装されています。
+
+基本的にはTypeScriptやJavaScriptでかけるようになっています。
+次の`@secretlint/secretlint-rule-example`は`secret`という文字列を見つけるルールの実装例です。
+
+
+```js
+import { SecretLintRuleCreator, SecretLintSourceCode } from "@secretlint/types";
+
+// MessageIds
+export const messages = {
+    EXAMPLE_MESSAGE: {
+        en: "found secret: {{ID}}",
+        ja: "secret: {{ID}} がみつかりました"
+    }
+};
+
+export const creator: SecretLintRuleCreator = {
+    messages,
+    meta: {
+        // rule.meta.id should be same with package.json name
+        id: "@secretlint/secretlint-rule-example",
+        recommended: false,
+        // type
+        type: "scanner",
+        // support content types: "text" or "binary" or "all"
+        supportedContentTypes: ["text"],
+        // Documentation Base URL for the package
+        docs: {
+            url:
+                "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-example/README.md"
+        }
+    },
+    // Rule Logic
+    create(context) {
+        // Create Traslate instance
+        const t = context.createTranslator(messages);
+        return {
+            // source has `content`, `filePath` etc...
+            file(source: SecretLintSourceCode) {
+                const pattern = /secret/gi;
+                let match;
+                while ((match = pattern.exec(source.content)) !== null) {
+                    const index = match.index || 0;
+                    const matchString = match[0] || "";
+                    const range = [index, index + matchString.length];
+                    // Report found "secret"
+                    context.report({
+                        // Replace "found secret: {{ID}}" with `ID` data
+                        message: t("EXAMPLE_MESSAGE", {
+                            ID: matchString
+                        }),
+                        range
+                    });
+                }
+            }
+        };
+    }
+};
+// export it as default
+export default creator;
+```
+
+詳しい作り方は次のドキュメントを参照してください。
+
+- https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md
+
 ## なぜSecretlintを作ったのか
 
 [Secretlint][]を作った理由は、プロジェクトに導入しやすいCredentialチェックツールがなかったためです。
