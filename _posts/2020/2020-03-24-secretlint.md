@@ -1,5 +1,5 @@
 ---
-title: "SecretlintでAPIトークンや秘密鍵などを間違えてコミットするのを防止する"
+title: "SecretlintでAPIトークンや秘密鍵などのコミットを防止する"
 author: azu
 layout: post
 date : 2020-03-24T09:00
