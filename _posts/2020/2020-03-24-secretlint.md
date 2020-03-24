@@ -359,7 +359,7 @@ Opt-inではなくOpt-outで設定させる点やentropyという概念でチェ
 
 そのためSecretlintでは次のような単位でエラーを抑制できる手段も提供しています。
 
-- .secretlintignore: ファイル単位
+- `.secretlintignore`: ファイル単位
 - `disabled`オプション: ルール単位
 - `allowMessageIds`オプション: ルール内のメッセージ単位
 
