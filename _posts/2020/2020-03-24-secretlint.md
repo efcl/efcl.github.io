@@ -466,4 +466,7 @@ SecretlintへのContributionsはいつでも歓迎しています。
 
 [Icon/logo](https://github.com/secretlint/secretlint/issues/13)も適当に作ったやつなので、これもどうにかしたいです。
 
+<a class="github-button" href="https://github.com/sponsors/zu" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @zu on GitHub">Sponsor</a>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 [Secretlint]: https://github.com/secretlint/secretlint
