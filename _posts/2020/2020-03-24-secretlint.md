@@ -22,7 +22,7 @@ Gitのpre-commit hookやCIサービス上でSecretlintを使ってファイル�
 
 Credentials(秘匿情報)のチェックに特化した[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようなLintツールです。
 
-## 最初にチェックしてみよう
+## まずチェックしてみよう
 
 [Secretlint][]はDockerかNode.jsが入っている環境なら次のコマンドで、現在ディレクトリ以下を簡易チェックできます。
 
@@ -38,8 +38,8 @@ docker run -v `pwd`:`pwd` -w `pwd` --rm -it secretlint/secretlint secretlint "**
 npx @secretlint/quick-start "**/*"
 ```
 
-`"**/*"` は現在のディレクトリ以下をすべてを対象にするという意味です。
-実行した結果特にエラーが表示されなければ、そのプロジェクトにはSecretlintが検知できるCredentialsは入っていないはずです。
+`"**/*"` は現在のディレクトリ以下をすべてを対象にする[globパターン](https://github.com/micromatch/micromatch#matching-features)です。
+実行した結果特にエラーが表示されていなければ、そのプロジェクトにはSecretlintが検知できるCredentialsは入っていないはずです。
 
 もしなんらかのエラーが表示された場合は、先ほど紹介した検知できるCredentialsの何かが平文で書かれたものがあるはずです。
 
@@ -386,12 +386,13 @@ Opt-inではなくOpt-outで設定させる点やentropyという概念でチェ
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+履歴を全部チェックする[History Scanner](https://github.com/secretlint/secretlint/issues/34)などまだ実装したい機能は色々あります。
+
 SecretlintへのContributionsはいつでも歓迎しています。
 興味ある人は次のラベルを見てみるといいかもしれません。
 
 - [label:good first issue](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - [help wanted](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
-
 
 
 
