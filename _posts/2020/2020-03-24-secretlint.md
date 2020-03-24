@@ -284,7 +284,7 @@ Secretlintを`core.hooksPath`に設定する例は次のリポジトリにあり
 これはDocker版の例ですが、次のようにセットアップするだけで、コミット前には常にSecretlintでのチェックが入ります。
 かつ、そのリポジトリに別のcommit hookが設定されている場合はそっちも実行されます。
 
-```shell script
+```bash
 # clone this repository
 git clone https://github.com/secretlint/git-hooks git-hooks
 cd git-hooks
