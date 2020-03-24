@@ -341,7 +341,7 @@ jobs:
 
 [Secretlint][]を作った理由は、プロジェクトに導入しやすいCredentialチェックツールがなかったためです。
 
-[git-secrets](https://github.com/awslabs/git-secrets)を導入しようとしたのですが、git-secretsは設定を`.git/config`で管理するため設定を管理しにくいという問題がありました。
+[git-secrets](https://github.com/awslabs/git-secrets)を導入しようとしたのですが、git-secretsは設定を`.git/config`で管理するため、設定を管理しにくいという問題がありました。
 インストールする際にpre-commit hooksが設定でき、どのようなチェックをするかを設定ファイル(Gitで)管理したいというのがあります。
 `git-secrets`だと、設定を変更するたびに`.git/config`を変更するコマンドを叩く必要があり、扱いが難しい問題という問題がありました。
 (`git-secrets`はグローバルにインストールして使う想定なのかなと思います)
