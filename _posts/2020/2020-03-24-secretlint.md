@@ -395,8 +395,4 @@ SecretlintへのContributionsはいつでも歓迎しています。
 - [help wanted](https://github.com/secretlint/secretlint/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
 
-
-
-
-
 [Secretlint]: https://github.com/secretlint/secretlint
