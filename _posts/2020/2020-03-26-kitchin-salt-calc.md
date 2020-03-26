@@ -150,3 +150,6 @@ tags:
 - [azu/kitchin-salt-calc: 材料+容器+調味料の組み合わせから塩分濃度に基づいて入れる量を計算するツール](https://github.com/azu/kitchin-salt-calc)
 
 本当はアプリ上でも音声入力に対応したかったのですが、Safariが[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)に対応してなかったので諦めました。
+
+技術的には[Next.js](https://nextjs.org/)と[Chakra UI](https://github.com/chakra-ui/chakra-ui)を使っています。
+Chakra UIの[Slider input](https://chakra-ui.com/numberinput#combining-it-with-a-slider)が結構良かったです。
