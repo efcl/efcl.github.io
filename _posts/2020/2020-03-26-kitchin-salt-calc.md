@@ -25,7 +25,7 @@ tags:
 
 キッチン塩分計算機は事前に`容器`と`調味料`を登録しておいて、材料(容器の重さ込み)を入力するだけで必要な調味料の量をマトリクス表示してくれるツールです。
 
-![キッチン塩分計算機のスクショ](https://efcl.info/wp-content/uploads/2020/03/26-1585231429.png)
+[![キッチン塩分計算機のスクショ](https://efcl.info/wp-content/uploads/2020/03/26-1585231429.png)](https://kitchin-salt-calc.netlify.com/)
 
 ## 使い方
 
