@@ -136,7 +136,7 @@ tags:
 
 自分は次のようなショートカットを作成して音声で起動できるようにしています。
 
-[![塩分濃度ショートカット](https://efcl.info/wp-content/uploads/2020/03/26-1585231690.png)](https://www.icloud.com/shortcuts/87ae4b7369c446aa8fff510232ee78c3)
+[![塩分濃度ショートカット](https://efcl.info/wp-content/uploads/2020/03/26-1585232186.png)](https://www.icloud.com/shortcuts/87ae4b7369c446aa8fff510232ee78c3)
 
 - <https://www.icloud.com/shortcuts/87ae4b7369c446aa8fff510232ee78c3>
 
