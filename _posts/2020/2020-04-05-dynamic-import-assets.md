@@ -66,12 +66,12 @@ ES ModulesではCSSファイルは読み込めないため`link`タグなどを�
 
 ```js
 (async function main(){
-    const { dynamicImportJS, dynamicImportCSS } = await import("https://unpkg.com/dynamic-import-assets@^1.0.0?module");
+    const { dynamicImportJS, dynamicImportCSS } = await import("https://unpkg.com/dynamic-import-assets?module");
     await Promise.all([
         // inject <link rel="stylesheet">
-        dynamicImportCSS("https://unpkg.com/@evillt/toast@1.1.3/dist/toast.min.css"),
+        dynamicImportCSS("https://unpkg.com/@evillt/toast/dist/toast.min.css"),
         // inject <script>
-        dynamicImportJS("https://unpkg.com/@evillt/toast@1.1.3")
+        dynamicImportJS("https://unpkg.com/@evillt/toast")
     ]);
     // use toast after loaded 
     toast.createToast("Hello world");
