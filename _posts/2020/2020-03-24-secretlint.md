@@ -18,7 +18,7 @@ tags:
 [Secretlint][]が見つけられるCredentials(秘匿情報)はプラグインで拡張できるようになっていて、[npm](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-npm)、[AWS](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-aws)、[GCP](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-gcp)、[Slack](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-slack)、[SSH秘密鍵](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-privatekey)、[ベーシック認証](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-basicauth)などの検知に対応しています。
 
 Gitのpre-commit hookやCIサービス上でSecretlintを使ってファイルの中身をチェックすることで、
-リポジトリ時うっかりCredentialsをコミットしてしまうことを防止する目的のLintツールです。
+リポジトリにうっかりCredentialsをコミットしてしまうことを防止する目的のLintツールです。
 
 Credentials(秘匿情報)のチェックに特化した[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようなLintツールです。
 
@@ -99,7 +99,7 @@ npx secretlint --init
 npx secretlint "**/*"
 ```
 
-`secretlint`コマンドを細かい利用方法は`secretlint --help`を参照してください。
+`secretlint`コマンドの細かい利用方法は`secretlint --help`を参照してください。
 結果の出力形式を変更したり、`--secretlintrcignore .gitignore`で`.gitignore`に書かれたファイルを対象外にするといった設定もできます。
 またsecretlintには国際化の仕組みが入っているので`secretlint --locale ja`で一部日本語の結果を得られたりします。
 
