@@ -47,13 +47,13 @@ ECMAScriptの`import`文自体については次を参照してください。
 また、UIライブラリに含まれるCSSファイルなども[UNPKG](https://unpkg.com/)などから取得はできますが、
 ES ModulesではCSSファイルは読み込めないため`link`タグなどを使って読み込む必要があります。
 
-このようにライブラリごとに読み込み方法が異なるため、Modulesに対応していないJSやCSSの読み込みをラップする[dynamic-import-assets](https://github.com/azu/dynamic-import-assets)というパッケージを書きました。
+このようにライブラリごとに読み込み方法が異なるため、ES Modulesに対応していないJSやCSSの読み込みをラップする[dynamic-import-assets](https://github.com/azu/dynamic-import-assets)というパッケージを書きました。
 
 ## [dynamic-import-assets](https://github.com/azu/dynamic-import-assets)
 
 [dynamic-import-assets](https://github.com/azu/dynamic-import-assets)は、Modulesに対応していないJavaScriptやCSSを読み込むローダーライブラリです。
 
-たとえば、[@evillt/toast](https://toast.evila.me/)というToast UIを提供するライブラリは、`<script>`タグでJavaScriptを読み込む、`<link rel=stylesheet>`でCSSを読み込んでから扱います。
+たとえば、[@evillt/toast](https://toast.evila.me/)というToast UIを提供するライブラリは、`<script>`タグでJavaScriptを読み込み、`<link rel=stylesheet>`でCSSを読み込んでから扱います。
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@evillt/toast/dist/toast.min.css" />
