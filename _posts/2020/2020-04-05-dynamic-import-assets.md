@@ -32,8 +32,9 @@ tags:
 
 ECMAScriptの`import`文自体については次を参照してください。
 
-- [ECMAScriptモジュール · JavaScript Primer #jsprimer](https://jsprimer.net/basic/module/)
 - [import - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/import)
+- [ECMAScriptモジュール · JavaScript Primer #jsprimer](https://jsprimer.net/basic/module/)
+    - [Todoアプリ · JavaScript Primer #jsprimer](https://jsprimer.net/use-case/todoapp/)はBundlerやTranspilerを使わずにES Modulesでアプリを作る例です
 
 しかし、この[UNPKG](https://unpkg.com/)や[Pika CDN](https://www.pika.dev/cdn)からすべてのライブラリが直接Importできるわけではありません。
 これを行うにはライブラリ側が`package.json`の`module`フィールに対応している必要があります。
