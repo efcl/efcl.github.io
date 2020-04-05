@@ -79,7 +79,7 @@ ES ModulesではCSSファイルは読み込めないため`link`タグなどを�
 })();
 ```
 
-既存方法で`<script>`タグや`<link>`タグをHTMLに書いてしまうと、ライブラリが必要ない場合も読み込んでしまします。
+既存方法で`<script>`タグや`<link>`タグをHTMLに書いてしまうと、ライブラリが必要ない場合も読み込んでしまいます。
 
 [dynamic-import-assets](https://github.com/azu/dynamic-import-assets)ではJavaScriptやCSSのロードをJavaScriptから行うため、
 必要なタイミングで動的にライブラリを取得できます。
@@ -117,9 +117,9 @@ npmに公開されているライブラリを直接読み込めることがあ�
 
 - [azu/dynamic-import-assets: Dynamic Import Assets like JavaScript and CSS.](https://github.com/azu/dynamic-import-assets)
 
-逆にライブラリ作者側でES Modules形式で配布したい場合は次のようなビルドツールを使うのが良いかもしれません。
+逆にライブラリ作者側でES Modules形式も配布したい場合は、次のようなビルドツールを使うのが良いかもしれません。
 
 - [developit/microbundle: 📦 Zero-configuration bundler for tiny modules.](https://github.com/developit/microbundle)
 - [pikapkg/pack: 📦⚡️ Build your npm package using composable plugins. https://www.pika.dev/blog/introducing-pika-pack/](https://github.com/pikapkg/pack)
 
-この辺がまだこなれたツールがないのも、ES Modules形式で配布しているライブラリが少ない原因かもしれません。
+この辺でまだこなれたツールがないのも、ES Modules形式で配布しているライブラリが少ない原因かもしれません。
