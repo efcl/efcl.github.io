@@ -21,7 +21,7 @@ JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](ht
 略称は今まで通り jsprimer または js-primerです。
 ハッシュタグも引き続き [#jsprimer](https://twitter.com/search?q=%23jsprimer&src=typed_query&f=live) を利用してください。
 
-予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に公開される予定です。
+予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に発売される予定です。
 
 欲しい人はできるだけ予約してください！
 
@@ -33,7 +33,8 @@ JavaScriptの基本文法といった「書き方」だけではなく、ユー�
 
 プログラミング経験のある人がJavaScriptという言語を新たに学ぶことを念頭に書かれていますが、プログラミングが初めてな人でも他の教材と合わせて読むとちょうどいいと思います。
 
-jsprimerがどのような目的でどのような人を対象にして書かれているかは次のページにも書かれています。
+jsprimerは[lacolaco](https://github.com/lacolaco)と一緒に書いていますが、
+どのような目的でどのような人を対象にして書かれているかは次のページにも書かれています。
 
 - [はじめに · JavaScript Primer #jsprimer](https://jsprimer.net/intro/)
 
@@ -48,8 +49,8 @@ jsprimerがどのような目的でどのような人を対象にして書かれ
 書店への物理的なアクセスが難しい状況なので、欲しい人はできるだけ予約してください！
 
 - [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
-    - Kindle版は少し遅れる可能性があります
-- その他の書店サイトでもすでに予約できます
+    - Kindle版の発売は少し遅れる可能性がありますが、発売予定です
+- その他の書店サイトでもすでに物理書籍版は予約できます
     - [街の書店がやってる通販サイトまとめ｜ライツ社](https://www.honyaclub.com/shop/default.aspx)
 
 電子書籍のPDF版(とepub)は[達人出版会](https://tatsu-zine.com/)から大体発売日ぐらいに買えるようになる予定です。(こちらは発売開始時にページができるそうです。発売日にまた記事を書きます。)
@@ -122,7 +123,7 @@ ECMAScriptのLiving Standardとしての仕様が [https://tc39.es/ecma262/](htt
 
 ## JavaScript Primerのウェブ版の今後について
 
-ウェブに公開されているjsprimer.netは引き続きOSSとして開発されていく予定です。
+ウェブに公開されている <https://jsprimer.net> は引き続きOSSとして開発されていく予定です。
 
 - [JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)
 - [asciidwango/js-primer: JavaScript Primer - 迷わないための入門書](https://github.com/asciidwango/js-primer)
