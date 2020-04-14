@@ -101,7 +101,7 @@ jsprimerの書籍版の内容はウェブ版と同じです！
 
 記号から検索もできるようになっているので、チートシートの代わりとして便利だと思います。
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5aa96123-9713-4e77-b476-750a35b1ea59/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5aa96123-9713-4e77-b476-750a35b1ea59/Untitled.png)
+![JavaScript Primerの索引例](https://efcl.info/wp-content/uploads/2020/04/14-1586827034.png)
 
 書籍版の内容はウェブ版と同じですが、本として読めるように内容とレイアウトが最適化されています。
 書籍版は出版時点では基本的な内容は同じですが、ウェブ版は常にアップデートされています。
