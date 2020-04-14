@@ -86,6 +86,8 @@ JavaScript Primerは新しく会社に入った人へ「これ読んでおいて
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
+フォームが表示されない人は <https://github.us13.list-manage.com/subscribe/post?u=fc41e11a2b9dc6f05350e0de0&id=7ab1594ae8> から登録できます。
+
 ## JavaScript Primerのウェブ版と書籍版の違いについて
 
 jsprimerの書籍版の内容はウェブ版と同じです！
