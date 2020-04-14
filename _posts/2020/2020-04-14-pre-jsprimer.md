@@ -11,7 +11,7 @@ tags:
 ---
 
 JavaScript Primerは[https://jsprimer.net/](https://jsprimer.net/) でOSSとして公開しているJavaScriptの入門書です。
-このJavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売予定です！
+JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売予定です;！
 
 - [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
@@ -34,6 +34,8 @@ jsprimerがどのような目的でどのような人を対象にして書かれ
 - [はじめに · JavaScript Primer #jsprimer](https://jsprimer.net/intro/)
 
 また、JavaScript Primerは新しく会社に入った人へ「これ読んでおいて」と渡して読んでもらえるようなものが欲しいという話から書き始めたので、そういう人にもおすすめです。
+
+もっと詳細な「なぜJavaScript Primerは書かれたのか」については発売日ぐらいになったらまた記事で書く予定です。
 
 ## JavaScript Primerの書籍版を予約する方法
 
