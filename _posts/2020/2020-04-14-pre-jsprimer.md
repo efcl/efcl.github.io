@@ -11,19 +11,23 @@ tags:
 ---
 
 JavaScript Primerは <https://jsprimer.net/> でOSSとして公開しているJavaScriptの入門書です。
-JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売予定です;！
+JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売されます！
 
-[![JavaScript Primer 迷わないための入門書](https://efcl.info/wp-content/uploads/2020/04/jsprimer.jpg)](https://www.amazon.co.jp/dp/4048930737/)
+<div align="center">
+<a href="https://www.amazon.co.jp/dp/4048930737/"><img src="https://efcl.info/wp-content/uploads/2020/04/jsprimer.jpg" width="500" alt="JavaScript Primer 迷わないための入門書"></a>
+<p><a href="https://www.amazon.co.jp/dp/4048930737/">JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi</a></p>
+</div>
 
-> [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
-正式名称は「JavaScript Primer 迷わないための入門書」となっています。
+正式名称は「[JavaScript Primer 迷わないための入門書](https://www.amazon.co.jp/dp/4048930737/)」となっています。
 略称は今まで通り jsprimer または js-primerです。
 ハッシュタグも引き続き [#jsprimer](https://twitter.com/search?q=%23jsprimer&src=typed_query&f=live) を利用してください。
 
 予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に発売される予定です。
 
-欲しい人はできるだけ予約してください！
+書店への物理的なアクセスが難しい状況なので、欲しい人はできるだけ予約してください！Amazonなら次のページから物理書籍を予約できます。
+
+- [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
 ## JavaScript Primerとは
 
@@ -57,7 +61,6 @@ jsprimerがどのような目的でどのような人を対象にして書かれ
 
 発売日になったらメールで通知を受け取りたい方は、次のフォームから登録しておくと通知が来ます。
 
-<!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -82,7 +85,6 @@ jsprimerがどのような目的でどのような人を対象にして書かれ
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
 
 ## JavaScript Primerのウェブ版と書籍版の違いについて
 
