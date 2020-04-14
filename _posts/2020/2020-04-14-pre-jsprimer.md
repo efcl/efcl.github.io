@@ -117,7 +117,7 @@ jsprimerのウェブ版と書籍版は次の点は同じです。
 
 ECMAScriptのLiving Standardとしての仕様が [https://tc39.es/ecma262/](https://tc39.es/ecma262/) で公開されていて、[Standard ECMA-262](https://www.ecma-international.org/publications/standards/Ecma-262.htm)として公開されるES 20XXみたいなバージョンはスナップショットであるのと同じです。
 
-**Note:** このECMAScriptの使用策定のプロセスについても書籍内の[ECMAScriptの章](https://jsprimer.net/basic/ecmascript/)で解説しています。
+**Note:** このECMAScriptの仕様策定のプロセスについても書籍内の[ECMAScriptの章](https://jsprimer.net/basic/ecmascript/)で解説しています。
 
 内容としては同じですが、jsprimerは先頭から順番に読んでいくように書かれています。
 そのため、読み物としてレイアウトを整形した書籍版の方が読みやすくなっています。
