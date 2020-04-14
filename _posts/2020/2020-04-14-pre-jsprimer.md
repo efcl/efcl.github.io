@@ -14,7 +14,7 @@ JavaScript Primerは <https://jsprimer.net/> でOSSとして公開しているJa
 JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売されます！
 
 <div align="center">
-<a href="https://www.amazon.co.jp/dp/4048930737/"><img src="https://efcl.info/wp-content/uploads/2020/04/jsprimer.jpg" width="500" alt="JavaScript Primer 迷わないための入門書"></a>
+<a href="https://www.amazon.co.jp/dp/4048930737/"><img src="https://efcl.info/wp-content/uploads/2020/04/jsprimer.jpg" width="500" alt="JavaScript Primer 迷わないための入門書" target="_blank" rel="noopener"></a>
 <p><a href="https://www.amazon.co.jp/dp/4048930737/">JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi</a></p>
 </div>
 
