@@ -92,7 +92,7 @@ jsprimerの書籍版の内容はウェブ版と同じです！
 - [JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)
 - [asciidwango/js-primer: JavaScript Primer - 迷わないための入門書](https://github.com/asciidwango/js-primer)
 
- jsprimerのウェブ版と書籍版は次の点は同じです。
+jsprimerのウェブ版と書籍版は次の点は同じです。
 
 - ウェブ版と書籍版の内容は同じ
 
