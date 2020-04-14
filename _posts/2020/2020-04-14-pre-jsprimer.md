@@ -25,6 +25,8 @@ JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](ht
 
 予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に公開される予定です。
 
+欲しい人はできるだけ予約してください！
+
 ## JavaScript Primerとは
 
 JavaScript Primer(jsprimer)は、2015年に大きく変更があったECMAScript 2015をベースにして、一からJavaScriptを学べる書籍です。
