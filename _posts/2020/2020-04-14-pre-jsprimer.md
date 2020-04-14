@@ -18,9 +18,7 @@ JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](ht
 > [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
 正式名称は「JavaScript Primer 迷わないための入門書」となっています。
-
-略称は今まで通り jsprimer または js-primerです。 
-
+略称は今まで通り jsprimer または js-primerです。
 ハッシュタグも引き続き [#jsprimer](https://twitter.com/search?q=%23jsprimer&src=typed_query&f=live) を利用してください。
 
 予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に公開される予定です。
