@@ -34,7 +34,7 @@ JavaScriptの基本文法といった「書き方」だけではなく、ユー�
 プログラミング経験のある人がJavaScriptという言語を新たに学ぶことを念頭に書かれていますが、プログラミングが初めてな人でも他の教材と合わせて読むとちょうどいいと思います。
 
 jsprimerは[lacolaco](https://github.com/lacolaco)と一緒に書いていますが、
-どのような目的でどのような人を対象にして書かれているかは次のページにも書かれています。
+jsprimerがどのような目的でどのような人を対象にして書かれているかは次のページにも書かれています。
 
 - [はじめに · JavaScript Primer #jsprimer](https://jsprimer.net/intro/)
 
