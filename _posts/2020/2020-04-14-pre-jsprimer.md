@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Primerの書籍版が4月27日 に発売予定です！"
+title: "JavaScript Primerの書籍版が4月27日に発売予定です！"
 author: azu
 layout: post
 date : 2020-04-14T10:04
