@@ -10,7 +10,8 @@ tags:
 
 ---
 
-[https://jsprimer.net/](https://jsprimer.net/) でOSSとして公開しているJavaScriptの入門書の書籍版が2020年4月27日に発売予定です！
+JavaScript Primerは[https://jsprimer.net/](https://jsprimer.net/) でOSSとして公開しているJavaScriptの入門書です。
+このJavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売予定です！
 
 - [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
