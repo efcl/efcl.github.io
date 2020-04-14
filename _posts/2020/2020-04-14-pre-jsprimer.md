@@ -23,7 +23,7 @@ JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](ht
 略称は今まで通り jsprimer または js-primerです。
 ハッシュタグも引き続き [#jsprimer](https://twitter.com/search?q=%23jsprimer&src=typed_query&f=live) を利用してください。
 
-予約できるのは物理書籍だけですが、電子版(Kindleと[達人出版](https://tatsu-zine.com/))も発売同日〜後日に発売される予定です。
+予約できるのは物理書籍だけですが、電子版([Kindle](https://www.amazon.co.jp/dp/4048930737/)と[達人出版](https://tatsu-zine.com/))も発売同日〜後日に発売される予定です。
 
 書店への物理的なアクセスが難しい状況なので、欲しい人はできるだけ予約してください！Amazonなら次のページから物理書籍を予約できます。
 
