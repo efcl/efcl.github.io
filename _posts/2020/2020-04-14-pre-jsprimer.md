@@ -10,7 +10,7 @@ tags:
 
 ---
 
-JavaScript Primerは[https://jsprimer.net/](https://jsprimer.net/) でOSSとして公開しているJavaScriptの入門書です。
+JavaScript Primerは <https://jsprimer.net/> でOSSとして公開しているJavaScriptの入門書です。
 JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](https://asciidwango.jp/)から発売予定です;！
 
 [![JavaScript Primer 迷わないための入門書](https://efcl.info/wp-content/uploads/2020/04/jsprimer.jpg)](https://www.amazon.co.jp/dp/4048930737/)
