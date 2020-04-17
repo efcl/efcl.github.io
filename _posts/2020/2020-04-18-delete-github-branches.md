@@ -45,7 +45,7 @@ tags:
 ```
 
 そして次のように`delete-github-branches`で削除したいGItHubの`<owner>/<repo>`を指定して実行します。
-(https://github.com/azu/delete-github-branches-test/ に対してブランチの削除を実行します。`GITHUB_TOKEN`には各自のGitHubトークンを渡してください)
+(例として ttps://github.com/azu/delete-github-branches-test/ に対してブランチの削除を実行しています。`GITHUB_TOKEN`には各自のGitHubトークンを渡してください)
 
 ```
 $ GITHUB_TOKEN=$GH_TOKEN npx delete-github-branches --owner azu --repo delete-github-branches-test --config ./delete-github-branches.json
