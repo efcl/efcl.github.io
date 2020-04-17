@@ -35,6 +35,7 @@ tags:
 この設定では基本的には`feature/<name>`というブランチを切ってからPull Requestを出すというルールになります。
 
 `delete-github-branches.json`:
+
 ```json
 {
     "includesBranchPatterns":  ["/^.*$/"],
@@ -84,6 +85,7 @@ $ GITHUB_TOKEN=$GH_TOKEN npx delete-github-branches --owner azu --repo delete-gi
 ちょっと長いですが、次のようなGitHub Actionsの設定ファイルを追加します。
 
 `.github/workflows/delete-github-branches.yml`:
+
 ```yml
 name: delete-github-branches
 
@@ -161,6 +163,7 @@ jobs:
 合わせて先ほどと同じ`delete-github-branches.json`というファイルを`.github`以下に移動しておきます。
 
 `.github/delete-github-branches.json`:
+
 ```json
 {
     "includesBranchPatterns":  ["/^.*$/"],
