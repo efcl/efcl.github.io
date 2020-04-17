@@ -24,7 +24,7 @@ tags:
 - `includesBranchPatterns`(許可するブランチ名ルール)にマッチしてない
 - `excludesBranchPatterns`(許可しないブランチ名ルール)にマッチしている
 - そのブランチに紐づくOpenなPull Requestが存在しない
-- 最後のPushから`stalledDays`(デフォルトは30)日以上経過している
+- そのブランチへの最後のPushから`stalledDays`(デフォルトは30)日以上経過している
 
 基本的には、許可していないブランチ名にマッチして、そのブランチに紐づく開いているPull Reuqestがなければ削除します。
 そのため、基本的に放置されていてPull Requestも出していないブランチを削除することが目的です。
