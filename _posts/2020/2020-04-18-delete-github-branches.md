@@ -1,5 +1,5 @@
 ---
-title: "ルールに沿っていないGitHubのブランチを削除するCLI/Actions"
+title: "ルールに沿っていないGitHubのブランチを削除するツール/GitHub Actions"
 author: azu
 layout: post
 date : 2020-04-18T00:47
