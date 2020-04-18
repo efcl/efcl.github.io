@@ -187,3 +187,16 @@ Cronで毎日削除(実際には最後にPushしてから30日経過しないと
 リポジトリにゴミっぽいブランチが残ったりする場合は、delete-github-branchesを使うことで整理できるかもしれません。
 
 - [azu/delete-github-branches: CLI: Delete GitHub Branches by pattern matching.](https://github.com/azu/delete-github-branches)
+
+**別の使い方**
+
+例えば、`master`以外のブランチ以外を削除するルールにしておき`stalledDays`を180日とかにすれば、
+更新されずに放置された古いブランチを自動的に削除するルールとして実装できます。
+
+```json
+{
+    "includesBranchPatterns":  ["/^.*$/"],
+    "excludesBranchPatterns": ["master"],
+    "stalledDays": 180
+}
+```
