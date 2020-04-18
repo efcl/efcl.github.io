@@ -16,6 +16,8 @@ tags:
 [delete-github-branches](https://github.com/azu/delete-github-branches)はCLIですが、[GitHub Actionsのcron処理](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule)と合わせれば、ルールにあってないブランチをGitHubから自動的に削除できます。
 
 不要なブランチを削除することで、リポジトリからノイズとなるブランチを減らすのが目的です。
+Pull Requestなしで放置されてるブランチが単なる消し忘れ以外であることは少ないので、そのようなブランチを減らすことでpullした時のノイズやサイズを減らすの目的です。
+(GitHubにはDraft PRもあります)
 
 ## CLIの使い方
 
@@ -27,7 +29,7 @@ tags:
 - そのブランチへの最後のPushから`stalledDays`(デフォルトは30)日以上経過している
 
 基本的には、許可していないブランチ名にマッチして、そのブランチに紐づく開いているPull Reuqestがなければ削除します。
-そのため、基本的に放置されていてPull Requestも出していないブランチを削除することが目的です。
+そのため、基本的にずっと放置されていてPull Requestも出していないブランチを削除することが目的です。
 
 この設定はコマンドライン引数でも指定できますが、別途設定ファイルでも指定できます。
 
