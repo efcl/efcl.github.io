@@ -1,5 +1,5 @@
 ---
-title: "ウィンドウ/アプリを管理する`.phoenix.js`を使って、任意のアプリをSplit Viewのように左右に並べる"
+title: "ウィンドウ管理アプリの.phoenix.jsを使って、任意のアプリをSplit Viewのように左右に並べる"
 author: azu
 layout: post
 date : 2020-04-19T21:09
@@ -47,7 +47,6 @@ macOSにはビルトインでSplit Viewという2つのアプリをSide by Side�
 ## `.phonix.js`の設定
 
 [Phoenix][]は `~/.phoenix.js` に書かれた設定ファイルを読み込みます。
-この設定ファイルにはウィンドウ管理のコードを書けます。
 [Hammerspoon](https://www.hammerspoon.org/)のウィンドウ管理に特化したものと考えればよさそうです。
 
 Split Viewのような動きを実現するために次のような設定を実装しています。
@@ -55,6 +54,9 @@ Split Viewのような動きを実現するために次のような設定を実�
 - `appNames` には好きなアプリの組み合わせを書きます。
     - [mydiscord](https://github.com/azu/mydiscord)はDiscordからサイドバーを削ったラッパーアプリです
 - `windowRatio` には好きなウィンドウの比率を書きます。
+
+次のような設定ファイルを `~/.phoenix.js` に配置すれば、自動的に読み込まれます。
+この設定ファイルには、[Phoenix][]の提供するAPIを使ってウィンドウ管理のコードを書けます。
 
 ```js
 const appNames = {
