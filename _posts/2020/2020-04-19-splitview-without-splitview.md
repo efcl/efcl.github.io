@@ -1,5 +1,5 @@
 ---
-title: "ウィンドウ管理アプリの.phoenix.jsを使って、任意のアプリをSplit Viewのように左右に並べる"
+title: "ウィンドウ/アプリを管理する`.phoenix.js`を使って、任意のアプリをSplit Viewのように左右に並べる"
 author: azu
 layout: post
 date : 2020-04-19T21:09
