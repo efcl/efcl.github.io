@@ -93,6 +93,10 @@ JavaScript Primerは新しく会社に入った人へ「これ読んでおいて
 
 ## JavaScript Primerのウェブ版と書籍版の違いについて
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">JavaScript Primer <a href="https://twitter.com/hashtag/jsprimer?src=hash&amp;ref_src=twsrc%5Etfw">#jsprimer</a> の見本誌が届いた。<br><br>1ページ目に<br><br>&gt; ＊本書の内容は、<a href="https://t.co/sKcnu7bQL0">https://t.co/sKcnu7bQL0</a> にて公開されています。<br><br>と書いてある。<br><br>4月27日に出版なので<a href="https://t.co/6wu2D7LJuW">https://t.co/6wu2D7LJuW</a> から予約できます。 <a href="https://t.co/qVkFmK2dM5">pic.twitter.com/qVkFmK2dM5</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1251361734624854016?ref_src=twsrc%5Etfw">April 18, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 jsprimerの書籍版の内容はウェブ版と同じです！
 
 そのため、今すぐ読みたいかたはウェブ版を読めます！
