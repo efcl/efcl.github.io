@@ -112,7 +112,7 @@ This is [CommonMark](https://commonmark.org/) text.
 
 実際に`marked`を使っていて`sanitize`オプションを利用してなかったり、Markdownの変換結果であるHTMLが単純にサニタイズされてないためにXSSが発生してるウェブサービスを何度か見つけて報告しています。
 
-また、ブラウザでも現実的（ファイルサイズや利用数的）に利用できるHTMLのサニタイザーは実質[DOMPurify](https://github.com/cure53/DOMPurify)だと思います。
+また、ブラウザでも現実的（ファイルサイズや利用数的）に利用できるHTMLのサニタイザーは実質[DOMPurify](https://github.com/cure53/DOMPurify)だけだと思います。
 
 - [dompurify@2.0.8 | BundlePhobia](https://bundlephobia.com/result?p=dompurify@2.0.8)
 - [sanitize-html@1.23.0 | BundlePhobia](https://bundlephobia.com/result?p=sanitize-html@1.23.0)
