@@ -51,6 +51,20 @@ Node.jsの場合は[jsdom](https://github.com/jsdom/jsdom)を使うようにエ�
 - [Resolve | webpack](https://webpack.js.org/configuration/resolve/#resolvemainfields)
 - [defunctzombie/package-browser-field-spec: Spec document for the 'browser' field in package.json](https://github.com/defunctzombie/package-browser-field-spec)
 
+このbundleサイズの最適化によってsafe-markedはブラウザで使うと10kbちょっとになります。
+(jsdomを使うと700kbを超えます)
+
+```
+  package           size      minified  gzipped
+  safe-marked       90.15 KB  39.36 KB  13.82 KB (browser bundle size)
+  marked@0.7.0      45.05 KB  23.87 KB  7.87 KB
+  dompurify@1.0.11  45.21 KB  15.3 KB   5.99 KB
+  
+  # Other Markdown library  
+  markdown-it@9.0.0  325.52 KB  92.69 KB  32.77 KB
+  showdown@1.9.0     157.28 KB  71.06 KB  23.55 KB
+```
+
 使い方は単純で、次のようにMarkdownからサニタイズ済みのHTMLを出力できます。
 
 ```js
