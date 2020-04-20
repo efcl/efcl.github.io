@@ -21,7 +21,7 @@ MarkdownをHTMLにコンパイルする[marked](https://github.com/markedjs/mark
 [DOMPurify](https://github.com/cure53/DOMPurify)はブラウザとNode.js両方で使うには癖があるためちょっとややこしいです。
 
 なぜなら[DOMPurify](https://github.com/cure53/DOMPurify)はDOM APIに依存しているため、
-Node.jsで動かす場合を[jsdom](https://github.com/jsdom/jsdom)を使うことを推奨しているためです。
+Node.jsで動かす場合は[jsdom](https://github.com/jsdom/jsdom)使うためです。
 
 単純に[jsdom](https://github.com/jsdom/jsdom)を使ってしまうとブラウザでも[jsdom](https://github.com/jsdom/jsdom)が含まれてしまい、ファイルサイズが巨大になってしまいます。
 
@@ -105,7 +105,7 @@ This is [CommonMark](https://commonmark.org/) text.
 > -- https://jsprimer.net/use-case/ajaxapp/display/#escape-html
 
 個人的には、このようなHTML文字列を出力するライブラリはデフォルトがエスケープされている方がいいと思っています。
-（またライブラリ自体にエスケープするプラグインが用意されているなど）
+または、ライブラリ自体にエスケープするプラグインが用意されているなどされているのがいいと思います。
 
 ユーザー入力としてMarkdownを受け付けるサイトの場合は必然的にエスケープやサニタイズの処理が必要になります。
 そのため、エスケープの仕方が難しいと単純にエスケープをしないサイトが増えてしまう気がします。
@@ -120,6 +120,6 @@ This is [CommonMark](https://commonmark.org/) text.
 
 先ほども書いたように[DOMPurify](https://github.com/cure53/DOMPurify)はブラウザとNode.jsどちらでも使えるようにするのは簡単とはいいにくいです。
 
-[safe-marked](https://github.com/azu/safe-marked)を作った理由は、それを簡単にするためです。
+[safe-marked](https://github.com/azu/safe-marked)を[作った](https://github.com/markedjs/marked/pull/1519#issuecomment-510062918)[理由](https://github.com/markedjs/marked/issues/1232#issuecomment-616527747)は、それを簡単にするためです。
 
 [safe-marked](https://github.com/azu/safe-marked)は[marked](https://github.com/markedjs/marked)、[DOMPurify](https://github.com/cure53/DOMPurify)、[jsdom](https://github.com/jsdom/jsdom)のラッパーでしかないので、これらの依存を[Renovate](https://renovatebot.com/)で自動的に追従してアップデートできるようにしています。
