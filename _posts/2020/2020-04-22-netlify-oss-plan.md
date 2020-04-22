@@ -43,9 +43,7 @@ OSS Planの利用条件は簡単に言えば、OSSなライセンスで、CoCが
 Open Source Planは月に1000分のビルド時間が付与されています。
 また、並列ビルド数も3で、メンバーも無制限なので、実質的に[Pro](https://www.netlify.com/pricing/)プランと同じような形になっています。
 
-![OSS Plan 1000 built minutes/month](https://efcl.info/wp-content/uploads/2020/04/22-1587514855.png)
-
-![Bandwidth](https://efcl.info/wp-content/uploads/2020/04/22-1587514947.png)
+![Open Source Plan Usage](https://efcl.info/wp-content/uploads/2020/04/22-1587514947.png)
 
 この[Open Source Plan](https://www.netlify.com/legal/open-source-policy/)を使うには次のフォームから申請する必要があります。
 
