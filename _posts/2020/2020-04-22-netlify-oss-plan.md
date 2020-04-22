@@ -66,4 +66,4 @@ Transferしても既存のサイトには特に影響ないので(Collaborator�
 
 たとえば、[almin](https://github.com/almin/almin)はNetlifyのOSS Planの方を使っています。
 
-OSSでNetlifyを使っていて、Build timeはメンバー数の制限で困ってる場合は[Open Source Plan](https://www.netlify.com/legal/open-source-policy/)を使うのがよいと思います。
+OSSでNetlifyを使っていて、Build timeやメンバー数の制限で困ってる場合は[Open Source Plan](https://www.netlify.com/legal/open-source-policy/)を使うのがよいと思います。
