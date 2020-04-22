@@ -1,5 +1,5 @@
 ---
-title: "NetlifyのOpen Source Planを申請する"
+title: "NetlifyのOpen Source Planに申請する"
 author: azu
 layout: post
 date : 2020-04-22T09:11
