@@ -58,7 +58,7 @@ Open Source Planは月に1000分のビルド時間が付与されています。
 1. [oss-account-application](https://opensource-form.netlify.com/)からフォームを埋めて問い合わせる
 2. サポートからOSS Planの新しいTeamを作れる権限を一時的に付与してもらえる
 3. https://app.netlify.com/teams/new/pricing からOSS Planを選んで新しいTeamを作成
-4. サポートに報告する(OSS Planでチームを作る権限が取り除かされる)
+4. サポートに報告する(OSS Planでチームを作る権限が取り除かれる)
 5. 既存のサイトを新しいTeamにTransferする
 
 新しくOSS PlanのTeamを作ってそこへOSSなものは移行する感じで、NetlifyのOSS Planを利用できます。
