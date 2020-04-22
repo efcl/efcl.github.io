@@ -20,7 +20,7 @@ tags:
 
 - RenovatebotなどPRをたくさん出すやつとNetlifyのPreview Buildの相性が悪い
 - NetlifyのBuild TimeはプロジェクトをTransferしても、一度消費した分は戻らない
-- `https://app.netlify.com/teams/{team}/builds/insights` でBuild Timeを見られる
+    - `https://app.netlify.com/teams/{team}/builds/insights` でBuild Timeを見られる
 
 
 ## Netlify Open Source Plan
