@@ -51,8 +51,8 @@ Open Source Planは月に1000分のビルド時間が付与されています。
 
 ## Netlify OSS Planの手続き
 
-自分がやった時(2020年1月)には、
-[Open Source Plan](https://www.netlify.com/legal/open-source-policy/)を利用するには次の手続きをしました。
+自分がやった時(2020年1月)の手続きの記録です。
+[Open Source Plan](https://www.netlify.com/legal/open-source-policy/)の利用には次の手続きをしました。
 
 1. [oss-account-application](https://opensource-form.netlify.com/)からフォームを埋めて問い合わせる
 2. サポートからOSS Planの新しいTeamを作れる権限を一時的に付与してもらえる
