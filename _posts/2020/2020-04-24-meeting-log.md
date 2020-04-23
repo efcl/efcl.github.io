@@ -204,7 +204,8 @@ tom: 確定してないけど、変わるかも。
 このミーティングログは回想モードで作られています。
 ミーティングはざっくりとしたアジェンダはありますが、ブレインストーミングに近いミーティングなので、その場でログを取るのは難しいです。
 
-- 例) [2019-01-24 ミーティングアジェンダ · Issue #623 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/623)
+- アジェンダ: [2019-01-24 ミーティングアジェンダ · Issue #623 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/623)
+- ミーティングログ: [2019-01-24 Meeting Notes](https://github.com/asciidwango/js-primer/blob/master/meetings/2019-01-24/README.md)
 
 リアルタイムではミーティングログを取らない代わりに、次のようなパターンでポイントごとのログを取っています。
 
