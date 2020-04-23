@@ -195,9 +195,9 @@ tom: 確定してないけど、変わるかも。
 もう一つのメモの取り方としてミーティングが終わったあとに思い出しながらログを書く方法です。
 思い出しながら書いているので回想モードと呼ぶことにします。
 
-[4月27日に出版](https://efcl.info/2020/04/14/pre-jsprimer/)する[JavaScript Primer](https://jsprimer.net/)では、月一でミーティングをしていました。
+[4月27日に出版](https://efcl.info/2020/04/14/pre-jsprimer/)する[JavaScript Primer](https://jsprimer.net/)では、月一でミーティングをしています。
 このミーティングに関するログはミーティング終了後に書いています。
-そして、すべてのミーティングログがGitHub上に公開しています。
+そして、すべてのミーティングログをGitHub上に公開しています。
 
 - https://github.com/asciidwango/js-primer/tree/master/meetings
 
