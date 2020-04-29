@@ -242,3 +242,7 @@ Async Functionを使って簡単にPromiseを扱えるようになって、こ�
 - [azu/unhandled-rejections-example: Example wrong usage of Unhandled Rejections. Make exit status 1.](https://github.com/azu/unhandled-rejections-example)
 
 Node.jsでは[`EventEmitter.captureRejections`](https://nodejs.org/api/events.html#events_capture_rejections_of_promises)など新しいオプションが増えたりしているので、興味がある人はこの辺も見てみると良い気がします。
+
+追記: Node.js側でのデフォルトの挙動を変更するPR
+
+- [process: Throw exception on --unhandled-rejections=default by dfabulich · Pull Request #33021 · nodejs/node](https://github.com/nodejs/node/pull/33021)
