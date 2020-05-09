@@ -27,8 +27,8 @@ tags:
 
 ![Screenshot](https://efcl.info/wp-content/uploads/2020/05/09-1589004025.png)
 
-制限なく使うには自分で[Google Maps JavaScript API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)が必要ですが、
-手軽に試せるトライアルモードがあります。
+制限なく使うには自分で[Google Maps JavaScript API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)を取得する必要がありますが、
+手軽に試せるトライアルモードが一応あります。
 
 トライアルモードは次のようにすれば試せます。
 
