@@ -78,7 +78,7 @@ APIキーには無料枠があるので、普通に使う分には無料枠で�
 カメラがついているデバイスなら使えると思うので、スマートフォンだと画面的に厳しいですが、iPadとかのタブレットならなんとか使える気はします。
 タブレットなら腕立てとかに反応させて使うとかもできる気がします。
 
-Macbook Pro以外ではあんまりテストしてないので、デザイン崩れなどはPull Requestください。
+Macbook Pro以外ではあんまりテストしてないので、デザイン崩れや改善などはPull Requestをお願いします。
 
 - [azu/running-on-streetview: Running on Google Street View.](https://github.com/azu/running-on-streetview)
 
