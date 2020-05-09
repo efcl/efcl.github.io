@@ -97,6 +97,12 @@ Macbook Pro以外ではあんまりテストしてないので、デザイン崩
 
 - [Collect default map · Issue #1 · azu/running-on-streetview](https://github.com/azu/running-on-streetview/issues/1)
 
+オススメの場所を[#RunningOnStreetView](https://twitter.com/search?q=%23RunningOnStreetView&src=typed_query)のハッシュタグに投稿してください。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ブラジル走ってる🏃<a href="https://t.co/7G9t1OzNLc">https://t.co/7G9t1OzNLc</a> <a href="https://twitter.com/hashtag/RunningOnStreetView?src=hash&amp;ref_src=twsrc%5Etfw">#RunningOnStreetView</a> <a href="https://t.co/SVvxrbiRe8">pic.twitter.com/SVvxrbiRe8</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1259060030860451840?ref_src=twsrc%5Etfw">May 9, 2020</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 ## 参考
 
 - [エアロバイクをGoogleマップに連携して日本縦断の旅に出ます | オモコロ](https://omocoro.jp/kiji/230063/)
