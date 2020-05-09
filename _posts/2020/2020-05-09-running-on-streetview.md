@@ -28,7 +28,7 @@ tags:
 ![Screenshot](https://efcl.info/wp-content/uploads/2020/05/09-1589004025.png)
 
 制限なく使うには自分で[Google Maps JavaScript API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)を取得する必要がありますが、
-手軽に試せるトライアルモードが一応あります。
+手軽に試せるトライアルモードがあります。
 
 トライアルモードは次のようにすれば試せます。
 
@@ -53,7 +53,7 @@ tags:
 発行したAPIキーには`HTTPリファラー（ウェブサイト）`の制限で `https://running-on-streetview.netlify.app/*` を入れておくと安全です。
 APIキーには無料枠があるので、普通に使う分には無料枠で収まると思います。
 
-発行したAPIキーは次のようにすれば利用できます。(一度入れれば、次からは記憶されます)
+発行したAPIキーは次のようにすれば利用できます。(一度入れれば、次からキーは記憶されます)
 
 1. <https://running-on-streetview.netlify.app/> を開く
 2. APIキーをテキストエリアにいれる
