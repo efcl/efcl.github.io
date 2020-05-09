@@ -1,5 +1,5 @@
 ---
-title: "Googleマップ ストリートビューをランニングできるウェブアプリを作った"
+title: "Googleマップ ストリートビューでランニングできるウェブアプリを作った"
 author: azu
 layout: post
 date : 2020-05-09T14:55
