@@ -10,7 +10,7 @@ tags:
 
 ---
 
-ノートPCやタブレットとかについてるウェブカメラを使って、Googleマップ ストリートビューをランニングできる[Running on StreetView](https://running-on-streetview.netlify.app/)というウェブアプリを作りました。
+ノートPCやタブレットとかについてるウェブカメラを使って、Googleマップ ストリートビューでランニングできる[Running on StreetView](https://running-on-streetview.netlify.app/)というウェブアプリを作りました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Google Maps Street Viewとウェブカメラを使って、ストリートビューを走るウェブアプリを書きました。<br>走るとストリートビューが進む感じ(雑な判定なので走らなくてもいい)<a href="https://t.co/bhYq289QmS">https://t.co/bhYq289QmS</a><br><br>使い方はこちら<a href="https://t.co/kypr9Oo9JU">https://t.co/kypr9Oo9JU</a><br><br>Google MapのAPIキーは自分で取得する必要があります。 <a href="https://t.co/tmD1XNwjSa">pic.twitter.com/tmD1XNwjSa</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258705039033430016?ref_src=twsrc%5Etfw">May 8, 2020</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
