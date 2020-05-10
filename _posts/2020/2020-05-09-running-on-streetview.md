@@ -53,9 +53,12 @@ tags:
 - [Google Maps PlatformのAPIキーの取得・発行について - 株式会社ゼンリンデータコム](https://www.zenrin-datacom.net/business/gmapsapi/api_key/index.html)
 - [【要確認】Google Maps Platform APIキーの取得方法と注意点 | ワードプレステーマTCD](https://design-plus1.com/tcd-w/2018/08/google-maps-platform-api.html)
 
-発行
+発行した
 発行したAPIキーには`HTTPリファラー（ウェブサイト）`の制限で `https://running-on-streetview.netlify.app/*` を入れておくと安全です。
 APIキーには無料枠があるので、普通に使う分には無料枠で収まると思います。
+
+
+- [料金表  |  Google Maps Platform  |  Google Cloud](https://cloud.google.com/maps-platform/pricing/sheet?hl=ja)
 
 発行したAPIキーは次のようにすれば利用できます。(一度入れれば、次からキーは記憶されます)
 
