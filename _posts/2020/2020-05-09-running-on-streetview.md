@@ -88,6 +88,162 @@ Macbook Pro以外ではあんまりテストしてないので、デザイン崩
 - https://github.com/azu/running-on-streetview/blob/dee04468586ffbacfdf1d11c4ee0d596988dfcaf/package.json#L40
 - [Testing WebRTC applications](https://webrtc.org/getting-started/testing)
 
+[リポジトリ](https://github.com/azu/running-on-streetview)を見てみるとわかりますが、このアプリはJavaScriptフレームワークを使わずに書いています。
+
+そのためJavaScriptは15kbほどで済んでいます。(MapのSDKは別、一部Utilなライブラリを使ってる)
+
+![ファイルサイズ](https://efcl.info/wp-content/uploads/2020/05/10-1589073686.png)
+
+Lighthouseのスコアもこれだけ小さいアプリだとあんまり意識しなくてもちゃんとでるようでした。
+(アクセシビリティ周りは見てからちょっと直した)
+
+![Lighthouse](https://efcl.info/wp-content/uploads/2020/05/10-1589073727.png)
+
+あんまりUIない気がしたのでReactなどを使わずに書きはじめたのですが、操作ボタンやフォームとかちょっとしたUIが必要なことに書き始めてから気づきました。
+そのため、このアプリでは次のようなシグネチャでコンポーネントを書くようにしています。
+
+```js
+export type コンポーネントProps = {
+    
+}
+export const コンポーネント = (containerElemenet: HTMLElement, props: コンポーネントProps) => {
+    // 初期化処理
+    return {
+        update(props: Partial<コンポーネントProps>){
+            // 更新処理
+        },
+        unload(){
+            // 終了処理
+        }
+    }
+}
+```
+
+たとえば、動作の状態をトグルステータスボタンは次のような感じです。
+
+- [running-on-streetview/StatusButton.ts at master · azu/running-on-streetview](https://github.com/azu/running-on-streetview/blob/master/src/RunningController/StatusButton/StatusButton.ts)
+
+```js
+import "./StatusButton.css";
+
+export type LoadMapProps = {
+    onClick: () => void;
+};
+
+export function htmlToElement<T extends HTMLElement>(html: string): T {
+    const template = document.createElement("template");
+    template.innerHTML = html;
+    return template.content.firstElementChild as T;
+}
+
+export type StatusButtonProps = { onClick(): void; text: string };
+export const StatusButton = (controlContainer: HTMLElement, props: StatusButtonProps) => {
+    const button = htmlToElement(`<button type="button" class="StatusButton pure-button"/>`);
+    const onClick = (event: Event) => {
+        event.preventDefault();
+        props.onClick();
+    };
+    button.textContent = `Status: ${props.text}`;
+    button.addEventListener("click", onClick);
+    controlContainer.appendChild(button);
+    return {
+        update(props: Partial<StatusButtonProps>) {
+            // TODO: イベントの再定義はいる?
+            if (props.text) {
+                button.textContent = `Status: ${props.text}`;
+            }
+        },
+        unload() {
+            button.removeEventListener("submit", onClick);
+            controlContainer.removeChild(controlContainer);
+        },
+    };
+};
+```
+
+使うときは次のようなイメージです。
+
+```js
+const { update: updateStatusButton, unload: unloadStatusButton } = StatusButton(controlContainer, {
+    text: state.playingStatus,
+    onClick() {
+        action.togglePlayingStatus();
+    },
+});
+// なんか更新
+updateStatusButton({
+    text: "新しいテキスト"
+});
+```
+
+更新処理がないパターンは次のようにいくつか省略しています。
+たとえば、タブの表示状態を管理するコンポーネント(ここではUIじゃないけど)は次のような感じです。
+
+- [running-on-streetview/VisibleController.ts at master · azu/running-on-streetview](https://github.com/azu/running-on-streetview/blob/master/src/RunningController/VisibleController/VisibleController.ts)
+
+```js
+export type VisibleControllerProps = {
+    onVisibleChange(status: VisibilityState): void;
+};
+export const VisibleController = (props: VisibleControllerProps) => {
+    const onVisibleChange = () => {
+        // ignore on fullscreen
+        if (document.fullscreenElement) {
+            return;
+        }
+        props.onVisibleChange(document.hidden ? "hidden" : "visible");
+    };
+    document.addEventListener("visibilitychange", onVisibleChange);
+    return () => {
+        document.removeEventListener("visibilitychange", onVisibleChange);
+    };
+};
+```
+
+それぞれのコンポーネントに初期化と終了処理を書いておいて、unloadはまとめてできるようなイメージで書いています。
+実際にはunloadがまだ必要になっていないのですが、ないと後で面倒そうなので最初から書いています。
+
+```js
+    return () => {
+        return Promise.all([
+            streetViewPanorama.unbindAll(),
+            unloadStreetView(),
+            unloadLoadMap(),
+            unloadStatusButton(),
+            unloadVisibleController(),
+            unloadShareButton(),
+        ]);
+    };
+```
+
+- https://github.com/azu/running-on-streetview/blob/4e0af6b985b9fc19955f31e87919e5dda8f55af5/src/index.ts#L297-L306
+
+更新処理を行う方法が、コンポーネントの初期化処理後に取得できる都合上コントールフローを管理する`index.ts`は若干ごちゃついてる気がします。
+(多分イベントとか使ってうまくまとめてフローを一箇所で管理できるようにすると、フレームワークでよく見る流れになる気がする)
+
+- [running-on-streetview/index.ts at 4e0af6b985b9fc19955f31e87919e5dda8f55af5 · azu/running-on-streetview](https://github.com/azu/running-on-streetview/blob/4e0af6b985b9fc19955f31e87919e5dda8f55af5/src/index.ts)
+
+1000行程度のアプリ(1画面)なら、こんな感じでもまあまあ書けるものなんだなーという感想でした。
+
+```
+$ cloc src
+      15 text files.
+      15 unique files.
+       0 files ignored.
+
+github.com/AlDanial/cloc v 1.84  T=0.07 s (216.7 files/s, 14056.4 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+TypeScript                      12             32             54            872
+CSS                              3              1              0             14
+-------------------------------------------------------------------------------
+SUM:                            15             33             54            886
+-------------------------------------------------------------------------------
+```
+
+## おわりに
+
 一日でざっくりと作成したので、バグとかあったらPull Requestを送ってください。
  
 - [azu/running-on-streetview: Running on Google Street View.](https://github.com/azu/running-on-streetview)
