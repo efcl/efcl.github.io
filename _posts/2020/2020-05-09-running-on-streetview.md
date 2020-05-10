@@ -17,11 +17,15 @@ tags:
 
 動画はデバッグ用のモデルに走ってもらっていますが、ウェブカメラで走るなどのアクションに応じてストリートビューを進行できるアプリです。
 
+色々検索したのですが、単純にウェブカメラを使ってできるものを見つけることができなかったので作りました。
+同様のことをやるものは色々あるのですが、大体特別な機器が必要な感じでした。
+
 ## 必要なもの
 
 - ウェブカメラがついたデバイス
 - ブラウザ(Google Chrome + Macbook Proでテストしています)
 - [Google Maps JavaScript API Key](https://developers.google.com/maps/documentation/javascript/get-api-key) (トライアルモード以外の場合)
+
 
 ## 使い方
 
