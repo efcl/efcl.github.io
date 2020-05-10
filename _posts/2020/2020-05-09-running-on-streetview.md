@@ -26,7 +26,6 @@ tags:
 - ブラウザ(Google Chrome + Macbook Proでテストしています)
 - [Google Maps JavaScript API Key](https://developers.google.com/maps/documentation/javascript/get-api-key) (トライアルモード以外の場合)
 
-
 ## 使い方
 
 ![Screenshot](https://efcl.info/wp-content/uploads/2020/05/09-1589004025.png)
@@ -64,6 +63,9 @@ APIキーには無料枠があるので、普通に使う分には無料枠で�
 3. "Load" ボタンを押す
 3. プロンプトで出るカメラのアクセスを許可する
 4. 走る！
+
+方向転換はマウスを使って操作するか、矢印キーのショートカットで視点を変更できます。
+別デバイスのコントローラーを作ろうとしたのですが、進行方向を自動追従に絞ってシンプルにしたほうが楽しそうだったので作ってないです。
 
 ## 仕組み
 
