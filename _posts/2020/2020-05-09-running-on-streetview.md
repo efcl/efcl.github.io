@@ -97,9 +97,13 @@ Macbook Pro以外ではあんまりテストしてないので、デザイン崩
 
 [リポジトリ](https://github.com/azu/running-on-streetview)を見てみるとわかりますが、このアプリはJavaScriptフレームワークを使わずに書いています。
 
-そのためJavaScriptは15kbほどで済んでいます。(MapのSDKは別、一部Utilなライブラリを使ってる)
+そのためJavaScriptは15kbほどで済んでいます。(MapのSDKは別、一部Utilなライブラリを使っています・)
 
 ![ファイルサイズ](https://efcl.info/wp-content/uploads/2020/05/10-1589073686.png)
+
+Bundle Analyzerの結果は次のURLで見れます。
+
+- <https://running-on-streetview.netlify.app/report.html>
 
 Lighthouseのスコアもこれだけ小さいアプリだとあんまり意識しなくてもちゃんとでるようでした。
 (アクセシビリティ周りは見てからちょっと直した)
