@@ -218,7 +218,7 @@ export const VisibleController = (props: VisibleControllerProps) => {
 
 - https://github.com/azu/running-on-streetview/blob/4e0af6b985b9fc19955f31e87919e5dda8f55af5/src/index.ts#L297-L306
 
-更新処理を行う方法が、コンポーネントの初期化処理後に取得できる都合上コントールフローを管理する`index.ts`は若干ごちゃついてる気がします。
+更新処理を行う方法がコンポーネントの初期化処理後に取得できるため、コントールフローを管理する`index.ts`は若干ごちゃついてる気がします。
 (多分イベントとか使ってうまくまとめてフローを一箇所で管理できるようにすると、フレームワークでよく見る流れになる気がする)
 
 - [running-on-streetview/index.ts at 4e0af6b985b9fc19955f31e87919e5dda8f55af5 · azu/running-on-streetview](https://github.com/azu/running-on-streetview/blob/4e0af6b985b9fc19955f31e87919e5dda8f55af5/src/index.ts)
