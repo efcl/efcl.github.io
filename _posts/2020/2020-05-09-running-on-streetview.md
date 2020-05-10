@@ -266,6 +266,8 @@ SUM:                            15             33             54            886
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ブラジル走ってる🏃<a href="https://t.co/7G9t1OzNLc">https://t.co/7G9t1OzNLc</a> <a href="https://twitter.com/hashtag/RunningOnStreetView?src=hash&amp;ref_src=twsrc%5Etfw">#RunningOnStreetView</a> <a href="https://t.co/SVvxrbiRe8">pic.twitter.com/SVvxrbiRe8</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1259060030860451840?ref_src=twsrc%5Etfw">May 9, 2020</a></blockquote>
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/RunningOnStreetView?src=hash&amp;ref_src=twsrc%5Etfw">#RunningOnStreetView</a> <br>グリーンランドのカンゲルルススアークを走ってる🏃<a href="https://t.co/6c01djoeie">https://t.co/6c01djoeie</a> <a href="https://t.co/eF4sNqH8Dy">pic.twitter.com/eF4sNqH8Dy</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1259304775625003009?ref_src=twsrc%5Etfw">May 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ## 参考
