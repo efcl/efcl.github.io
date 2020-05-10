@@ -54,7 +54,7 @@ tags:
 - [【要確認】Google Maps Platform APIキーの取得方法と注意点 | ワードプレステーマTCD](https://design-plus1.com/tcd-w/2018/08/google-maps-platform-api.html)
 
 上記の記事でも書かれていますが発行したAPIキーにはGoogle Mapsでのみ利用できるように制限を入れておくと安全です。
-また、同要因`HTTPリファラー（ウェブサイト）`の制限で `https://running-on-streetview.netlify.app/*` を入れておくと安全です。
+また、同様に`HTTPリファラー（ウェブサイト）`の制限で `https://running-on-streetview.netlify.app/*` を入れておくと安全です。
 APIキーには月に10000パノラマ程度の無料枠があるので、普通に使う分には無料枠で収まると思います。
 
 - [料金表  |  Google Maps Platform  |  Google Cloud](https://cloud.google.com/maps-platform/pricing/sheet?hl=ja)
