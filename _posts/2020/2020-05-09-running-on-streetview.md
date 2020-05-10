@@ -36,7 +36,7 @@ tags:
 トライアルモードは次のようにすれば試せます。
 
 1. <https://running-on-streetview.netlify.app/> を開く
-2. "F Trial" ボタンを押す
+2. "Free Trial" ボタンを押す
 3. プロンプトで出るカメラのアクセスを許可する
 4. 走る！
 
