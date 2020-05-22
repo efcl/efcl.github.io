@@ -27,9 +27,6 @@ mumemoで記録したメモ書きは、次のようなファイルベースのMa
 
 ```
 ├── 2019
-│   ├── Agile\ Application\ Security
-│   │    ├──README.md
-│   │    └──img/
 │   ├── DevOps
 │   │    ├──README.md
 │   │    └──img/
@@ -37,9 +34,6 @@ mumemoで記録したメモ書きは、次のようなファイルベースのMa
 │   │    ├──README.md
 │   │    └──img/
 ├── 2020
-│   ├── Google-SRE-Building\ Secure\ &\ Reliable\ Systems
-│   │    ├──README.md
-│   │    └──img/
 │   ├── JavaScript-\ The\ First\ 20\ Years
 │   │    ├──README.md
 │   │    └──img/
@@ -48,7 +42,7 @@ mumemoで記録したメモ書きは、次のようなファイルベースのMa
          └──img/
 ```
 
-[mumemo](https://github.com/azu/mumemo)で記録したMarkdownはただのファイルなので、そのままGitHubのPrivateリポジトリにpushすれば、どこから共有できて検索もできます。
+[mumemo](https://github.com/azu/mumemo)で記録したMarkdownはただのファイルなので、普通にローカルで検索もできて、自分専用のPrivateリポジトリで管理もできます。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://t.co/fhVoRIJCZ9">https://t.co/fhVoRIJCZ9</a><br>numemo で技術書のメモ取れるようになってだいぶ理想形に近くなった気がする。以前より読むときのメモの量が増えた感じ。<br>これとおなじのiPadでやりたいんだけどなー <a href="https://t.co/TKFEplwGII">pic.twitter.com/TKFEplwGII</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1259500970066628608?ref_src=twsrc%5Etfw">May 10, 2020</a></blockquote>
 
