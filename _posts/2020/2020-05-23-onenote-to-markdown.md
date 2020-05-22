@@ -18,7 +18,9 @@ OneNoteを使う理由としては、自分のスクショをメモの代わり�
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-最近、[mumemo](https://github.com/azu/mumemo)というスクリーンショットベースのメモをとり、Markdownファイルとして書き出していくアプリを書きました。
+ただし、OneNoteを使うとスクリーンショットを取って貼り付けるという作業が面倒でした。
+
+そのため、[mumemo](https://github.com/azu/mumemo)というスクリーンショットベースのメモをとり、Markdownファイルとして書き出していくアプリを書きました。
 
 - [azu/mumemo: Mumemo is screenshot-driven note application.](https://github.com/azu/mumemo)
 
@@ -117,6 +119,6 @@ $ ls *.html | rargs -p '(?P<file>.*)\.(?P<ext>html)' export-onenote-to-html {fil
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-ファイルベースのメモがいいのかはまだわかってないですが、完全一致の検索はVSCodeで行って、キーワードの組み合わせ検索(AとBのAND検索)はGitHubで行う感じにできたので、まあまあいいのかなーって気がします。
+ファイルベースのメモがいいのかはまだわかってないですが、完全一致の検索はVSCodeでしたり、キーワードの組み合わせ検索(AとBのAND検索)はGitHubのPrivateリポジトリで行う形にもできたりはするはずので、まあまあいいのかなーって気がします。
 
 - [azu/export-onenote-to-html: A Toolkit that convert OneNote pages into HTML and Markdown with images.](https://github.com/azu/export-onenote-to-html)
