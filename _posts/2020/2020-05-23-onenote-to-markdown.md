@@ -22,8 +22,8 @@ OneNoteを使う理由としては、自分のスクショをメモの代わり�
 
 - [azu/mumemo: Mumemo is screenshot-driven note application.](https://github.com/azu/mumemo)
 
-[mumemo](https://github.com/azu/mumemo)は次のように、記録したい範囲を選択して(選択範囲もメモ内に埋め込まれる、OCRの代わり)、スクショ(OpenCV.jsでいい感じに加工する)を取って、必要ならメモを記録していく形になっています。
-この記録したメモ書きは、次のようなファイルベースのMarkdownと画像ファイルとして出力されます。
+[mumemo](https://github.com/azu/mumemo)は次のように、記録したい範囲を選択して(選択範囲もメモ内に埋め込まれる、OCRの代わり)、スクショ(OpenCV.jsでいい感じに加工する)を取って、必要ならメモ欄に書いていく追記型のメモアプリです。
+mumemoで記録したメモ書きは、次のようなファイルベースのMarkdownと画像ファイルとして出力されます。
 
 ```
 ├── 2019
@@ -54,7 +54,7 @@ OneNoteを使う理由としては、自分のスクショをメモの代わり�
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-この形に移行したため、今までOneNoteで取っていたメモ書きも同じ形式に移行する必要がでてきました。
+numemoに移行したため、今までOneNoteで取っていたメモ書きも同じ形式に移行する必要がでてきました。
 
 macOSのOneNoteにはPDF出力以外の手段が用意されていないため、ウェブ版の<https://www.onenote.com>からメモをダウンロードしてMarkdownに変換する仕組みを作りました。
 
