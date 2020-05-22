@@ -12,13 +12,13 @@ tags:
 ---
 
 今まで技術書のメモをOneNoteに取っていました。
-OneNoteを使う理由としては、自分のスクショをメモの代わりにしていて、OneNoteは画像が扱いやすくOCRも効くためでした。
+OneNoteを使う理由としては、自分はスクリーンショットをメモの代わりにしていて、OneNoteは画像が扱いやすくOCRも効くためでした。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">技術書読むときメモ取る代わりにスクショとって貼って書くこと多いんだけど、これできるアプリ欲しい。<br>OneNoteでやってるんだけど、もっと気軽に読みながらスクショとメモを貯められる一時置き場みたいのがほしいな。<br>最終的な貼り付け先はOCRできるOneNoteがいい気がするけど。 <a href="https://t.co/TzyRdSgMFh">pic.twitter.com/TzyRdSgMFh</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1173109647026163714?ref_src=twsrc%5Etfw">September 15, 2019</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-ただし、OneNoteを使うとスクリーンショットを取って貼り付けるという作業が面倒でした。
+ただし、OneNoteを使うとスクショを取って貼り付けるという作業が面倒でした。
 
 そのため、[mumemo](https://github.com/azu/mumemo)というスクリーンショットベースのメモをとり、Markdownファイルとして書き出していくアプリを書きました。
 
