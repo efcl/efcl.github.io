@@ -23,7 +23,7 @@ npm 1.xの時はローカルにあるディレクトリへの相対パスを`dep
 
 そのため、`npm link`や`node_modules`にそのまま追加してやるなど、微妙なハックがひつようだった。
 
-しかし、npm 2.0.0で`dependency`フィールドに[Local Paths](https://www.npmjs.org/doc/files/package.json.html#local-paths "Local Paths")の指定がサポートされた。
+しかし、npm 2.0.0で`dependency`フィールドに[Local Paths](https://docs.npmjs.com/files/package.json#local-paths "Local Paths")の指定がサポートされた。
 そのため、ローカルに置いたディレクトリをモジュールとして使うことができ、`require("local-library");`みたいな書き方が可能になる。
 
 要はプロジェクトに依存したUtilsとかを定義するのに便利という話。
@@ -122,7 +122,7 @@ module.exports = main;
 
 デメリットとしては更新したらもう一度installしないといけないので、忘れていてハマる可能性があること。
 
-npm 2.0.0からこの[Local Paths](https://www.npmjs.org/doc/files/package.json.html#local-paths "Local Paths")が指定できるようになったので、
+npm 2.0.0からこの[Local Paths](https://docs.npmjs.com/files/package.json#local-paths "Local Paths")が指定できるようになったので、
 積極的に使っていきたい気がします。
 
 - [azu/npm-localpaths-example](https://github.com/azu/npm-localpaths-example "azu/npm-localpaths-example")
