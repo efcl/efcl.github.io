@@ -29,6 +29,10 @@ JavaScript Primerの書籍版が2020年4月27日に[アスキードワンゴ](ht
 
 - [JavaScript Primer 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4048930737/)
 
+追記: 出版しました
+
+- [JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch](https://efcl.info/2020/04/27/jsprimer/)
+
 ## JavaScript Primerとは
 
 JavaScript Primer(jsprimer)は、2015年に大きく変更があったECMAScript 2015をベースにして、一からJavaScriptを学べる書籍です。
