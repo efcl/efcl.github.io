@@ -279,6 +279,8 @@ SUM:                            15             33             54            886
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/RunningOnStreetView?src=hash&amp;ref_src=twsrc%5Etfw">#RunningOnStreetView</a> グランドキャニオン走ってる<a href="https://t.co/L5PtCRITMG">https://t.co/L5PtCRITMG</a> <a href="https://t.co/k9eJPVq5io">pic.twitter.com/k9eJPVq5io</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1259414388504551424?ref_src=twsrc%5Etfw">May 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/RunningOnStreetView?src=hash&amp;ref_src=twsrc%5Etfw">#RunningOnStreetView</a><br><br>引き続きチリを走る<a href="https://t.co/qxrNkYIswn">https://t.co/qxrNkYIswn</a> <a href="https://t.co/YXpLH2ZFfY">pic.twitter.com/YXpLH2ZFfY</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1261594565472948225?ref_src=twsrc%5Etfw">May 16, 2020</a></blockquote> 
+
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ## 参考
