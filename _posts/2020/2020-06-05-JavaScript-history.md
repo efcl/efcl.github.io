@@ -18,7 +18,7 @@ JavaScript/ECMAScriptというプログラミング言語の歴史について�
 - [JavaScript: The First 20 Years | Zenodo](https://zenodo.org/record/3710954)
 
 "JavaScript: The First 20 Years"は[HOPL IV](https://hopl4.sigplan.org/) - History of Programming Languages向けに書かれたPaperです。
-JavaScriptの誕生からECMAScriptの策定、ECMAScript/JavaScript各バージョンでの違い、ブラウザ戦争、Ajax、ブラウザ間の差異を吸収するライブラリ、策定が中止されたECMAScript 4のやり取り、ECMAScript 2015、CommonJSとNode.js、CoffeeScript、narcissus/Traceur/Babel/TypeScriptなどのTranspilerが果たした役割など、「JavaScriptの歴史」について書かれた文章です。
+JavaScriptの誕生からECMAScriptの策定、ECMAScript/JavaScript各バージョンでの違い、ブラウザ戦争、Ajax、ブラウザ間の差異を吸収するライブラリ、策定が中止されたECMAScript 4のやり取り、ChromeとV8、ECMAScript 2015、CommonJSとNode.js、CoffeeScript、narcissus/Traceur/Babel/TypeScriptなどのTranspilerが果たした役割など、「JavaScriptの歴史」について書かれた文章です。
 
 ブラウザ上にスクリプト言語を作る"Mocha"というコードネームで始まったJavaScriptについて。
 10日でJavaScriptのプロトタイプ実装を作ったBrendan Eichの話や当時の動作、その背景などについてもいろいろな資料に基づいて書かれています。
