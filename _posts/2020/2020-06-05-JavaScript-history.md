@@ -45,10 +45,7 @@ ECMAScript 4はいろいろな問題があったため、TC39のTG(Task Group)�
 そして、今のJavaScriptであるECMAScript 2015(ECMAScript 6)の策定プロセスの話。
 また、ECMAScript以外にもJavaScriptのエコシステムに関わる幅広い話が出てきます。
 
-CommonJSのスタートとなった記事の紹介。
-
-- [What Server Side JavaScript needs ](https://www.blueskyonmars.com/2009/01/29/what-server-side-javascript-needs/)
-
+CommonJSのスタートとなった[What Server Side JavaScript needs ](https://www.blueskyonmars.com/2009/01/29/what-server-side-javascript-needs/)という記事についての話やNode.jsなどについても書かれています。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Node.jsがでてきた。<br>ほんとにこれJavaScriptの歴史全部やる感じっぽい。<br>Dart、GWT、CoffeeScript <a href="https://t.co/11niP6dTEF">pic.twitter.com/11niP6dTEF</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258053593103364097?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
 
