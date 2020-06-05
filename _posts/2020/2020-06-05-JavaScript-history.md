@@ -25,7 +25,7 @@ JavaScriptの誕生からECMAScriptの策定、ECMAScript/JavaScript各バージ
 
 ![Mochaについて](https://efcl.info/wp-content/uploads/2020/06/05-1591318494.png)
 
-> Mocha(JavaScriptの最初のコードネーム)についての話
+> Mocha(JavaScriptの初期コードネーム)についての話
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">10日でプロトタイプ実装されて、<br>1年後に2週間で書き直されるJavaScript <a href="https://t.co/wWQgiqsXjW">pic.twitter.com/wWQgiqsXjW</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258016898651811847?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -74,7 +74,7 @@ ECMAScriptの仕様やミーティングノートなどのアーカイブも残�
 - [JavaScript: The First 20 Years](http://www.wirfs-brock.com/allen/posts/866)
 - [JavaScript: The First 20 Years | Zenodo](https://zenodo.org/record/3710954)
 
-また同じくAllen Wirfs-Brockによって書かれたプログラミング言語標準化におけるプラクティスについて書いている"Programming Language Standardization:Patterns for Participation"という文章もおすすめです。
+また同じくAllen Wirfs-Brockによるプログラミング言語標準化におけるプラクティスについて書かれた"Programming Language Standardization:Patterns for Participation"という文章もおすすめです。
 プログラミング言語のように一定の合意が必要なものを策定する場合におけるパターンについて書かれています。
 
 - [standpats-asianplop-final.docx - standpats-asianplop2016.pdf](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
