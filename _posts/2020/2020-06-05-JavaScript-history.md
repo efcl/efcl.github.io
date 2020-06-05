@@ -12,7 +12,7 @@ tags:
 
 JavaScript/ECMAScriptというプログラミング言語の歴史について書いた文章は[Wikipedia](https://ja.wikipedia.org/wiki/JavaScript)などいろいろなものがあります。
 
-その中でも、ECMAScript 5とECMAScript 2015のSpec EditorであるAllen Wirfs-Brockによって書かれた"JavaScript: The First 20 Years"が特におすすめです。
+その中でも、ECMAScript 2015のSpec EditorであるAllen Wirfs-Brockによって書かれた"JavaScript: The First 20 Years"が特におすすめです。
 
 - [JavaScript: The First 20 Years](http://www.wirfs-brock.com/allen/posts/866)
 - [JavaScript: The First 20 Years | Zenodo](https://zenodo.org/record/3710954)
