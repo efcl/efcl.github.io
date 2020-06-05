@@ -28,18 +28,16 @@ JavaScriptの誕生からECMAScriptの策定、ECMAScript/JavaScript各バージ
 > Mocha(JavaScriptの初期コードネーム)についての話
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">10日でプロトタイプ実装されて、<br>1年後に2週間で書き直されるJavaScript <a href="https://t.co/wWQgiqsXjW">pic.twitter.com/wWQgiqsXjW</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258016898651811847?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 JavaScriptをIETFやW3Cなどではなく[Ecma International](https://www.ecma-international.org/)で標準化することなった経緯や
 その際に"ECMAScript"という名前になる前に他の名前の候補があったと話などもあります。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ECMAScriptじゃない名前の候補色々。<br>Mochaを引きずったものが多い<a href="https://t.co/lAsTBPMX01">https://t.co/lAsTBPMX01</a> <a href="https://t.co/ChhPWUkx2E">pic.twitter.com/ChhPWUkx2E</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258023056041111552?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 著者のAllenさんはMicrosoftでECMAScriptの仕様策定に関わり始めた話。
 ECMAScript 4はいろいろな問題があったため、TC39のTG(Task Group)が別れて互換性のある仕様変更(ES 3.1、ES5)に取り組んだ話、そしてECMAScript 4の策定中止の流れなどについても詳細が書かれています。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">60ページぐらい進んでやっと著者本人がでてきた。<a href="https://t.co/lAsTBPMX01">https://t.co/lAsTBPMX01</a> <a href="https://t.co/yqz1JWB2Ub">pic.twitter.com/yqz1JWB2Ub</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258042140677959680?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">60ページぐらい進んでやっと著者本人がでてきた。<a href="https://t.co/lAsTBPMX01">https://t.co/lAsTBPMX01</a> <a href="https://t.co/yqz1JWB2Ub">pic.twitter.com/yqz1JWB2Ub</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258042140677959680?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
 
 
 そして、今のJavaScriptであるECMAScript 2015(ECMAScript 6)の策定プロセスの話。
@@ -56,7 +54,6 @@ CommonJSのスタートとなった[What Server Side JavaScript needs ·](https:
 そして、なぜ今もJavaScriptが使われ続けているのかについても考察されています。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">JavaScriptは低い期待値の言語として始まった。<br>最初の20年間ではJSを再設計/置き換る試みが失敗したにもかかわらず世界で広く使われる言語となった。<br>またブラウザ以外のJSである特別な理由がない所でも使われる。<br>多くのifがあるが、ウェブを壊す事なくJSを利用/拡張する方法を見つけた人たちがいた <a href="https://t.co/LIKoK7iCa0">pic.twitter.com/LIKoK7iCa0</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258087549152530432?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ECMAScriptの仕様やミーティングノートなどのアーカイブも残っています。
 
@@ -64,7 +61,7 @@ ECMAScriptの仕様やミーティングノートなどのアーカイブも残�
 
 "JavaScript: The First 20 Years"は「JavaScriptの歴史」について書かれた文章なので、JavaScriptの歴史に興味がある人にはおすすめです。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ここまで細かいECMAScriptのタイムラインみたことない… <a href="https://t.co/3kpOGOMGxD">pic.twitter.com/3kpOGOMGxD</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258091886159425536?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ここまで細かいECMAScriptのタイムラインみたことない… <a href="https://t.co/3kpOGOMGxD">pic.twitter.com/3kpOGOMGxD</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258091886159425536?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
 
 "JavaScript: The First 20 Years"は次のページから読めます。
 
@@ -76,3 +73,7 @@ ECMAScriptの仕様やミーティングノートなどのアーカイブも残�
 
 - [standpats-asianplop-final.docx - standpats-asianplop2016.pdf](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
 - [プログラミング言語標準化のパターン](https://gist.github.com/azu/47082cbcaf7cc7b2b2f2075afad1b025)
+
+<!-- Load Twitter -->
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
