@@ -63,10 +63,16 @@ ECMAScriptの仕様やミーティングノートなどのアーカイブも残�
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ここまで細かいECMAScriptのタイムラインみたことない… <a href="https://t.co/3kpOGOMGxD">pic.twitter.com/3kpOGOMGxD</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1258091886159425536?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote>
 
+[JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)でもJavaScriptの歴史について書こうとしましたが、
+中途半端になることがわかっていたので、ECMAScript策定プロセスに関係する部分のみにしていました。
+
+- [ECMAScript · JavaScript Primer #jsprimer](https://jsprimer.net/basic/ecmascript/)
+
 "JavaScript: The First 20 Years"は次のページから読めます。
 
 - [JavaScript: The First 20 Years](http://www.wirfs-brock.com/allen/posts/866)
 - [JavaScript: The First 20 Years | Zenodo](https://zenodo.org/record/3710954)
+
 
 また同じくAllen Wirfs-Brockによるプログラミング言語標準化におけるプラクティスについて書かれた"Programming Language Standardization:Patterns for Participation"という文章もおすすめです。
 プログラミング言語のように一定の合意が必要なものを策定する場合におけるパターンについて書かれています。
