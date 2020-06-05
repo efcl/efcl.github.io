@@ -68,7 +68,8 @@ ECMAScriptの仕様やミーティングノートなどのアーカイブも残�
 
 - [ECMAScript · JavaScript Primer #jsprimer](https://jsprimer.net/basic/ecmascript/)
 
-"JavaScript: The First 20 Years"は次のページから読めます。
+"JavaScript: The First 20 Years"はホントにJavaScriptの歴史が書かれています。
+次のページから読めます。
 
 - [JavaScript: The First 20 Years](http://www.wirfs-brock.com/allen/posts/866)
 - [JavaScript: The First 20 Years | Zenodo](https://zenodo.org/record/3710954)
