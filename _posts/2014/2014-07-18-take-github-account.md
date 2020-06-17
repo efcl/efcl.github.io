@@ -77,6 +77,22 @@ Be quick, as the username is now publicly available. Glad to help!
 Cheers
 ```
 
+追記(2020-06-17): 別のプロジェクトの場合は、次のよう文章を[Contactフォーム](https://support.github.com/contact)から送った。
+
+```
+Hello, My name is azu.
+My GitHub account is https://github.com/azu/.
+
+I want to get "githon" organization for my https://github.com/azu/githon project.
+Currently, "githon" is already token, but the account looks like inactive.
+https://github.com/githon
+
+If this is correct, can Github release "githon" account by GitHub Username Policy?
+https://help.github.com/en/github/site-policy/github-username-policy
+
+Thanks.
+```
+
 ## GitHubの[Name Squatting Policy](https://help.github.com/articles/name-squatting-policy "Name Squatting Policy · GitHub Help")
 
 上記の返信にもでてきましたが、GitHubには[Name Squatting Policy](https://help.github.com/articles/name-squatting-policy "Name Squatting Policy · GitHub Help")があり、
