@@ -33,7 +33,7 @@ tags:
 元々、`GitBook`を名前を避けるために`GitHon`という名前にしていました(これも商標の問題がありそうだと思ったため)。
 同じように`Git`自体にも商標の問題がありそうなので、どちらの単語も含まない名前として`HonKit`になりました。
 
-HonKiという名前はこの辺のThreadで模索していますが、ランダム生成した単語から`Kit`という単語が良さそうだったのと、
+HonKitという名前はこの辺のThreadで模索していますが、ランダム生成した単語から`Kit`という単語が良さそうだったのと、
 元々つけていた`Hon`を足して[HonKit](https://github.com/HonKit/HonKit)になりました。
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Array.from({ length: 26 }).forEach((_, i) =&gt; console.log(`${String.fromCharCode(65 + i)}itHon`) ) <a href="https://t.co/H08ocEUBNa">pic.twitter.com/H08ocEUBNa</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1274693495320539138?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote>
