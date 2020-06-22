@@ -52,7 +52,7 @@ HonKitという名前はこの辺のThreadで模索していますが、ラン�
 
 また、npmにはリネーム機能自体がないので、単純に[`honkit`](https://www.npmjs.com/org/honkit)を作成しています。
 
-GitHonを使っていた人はまだリリースしたばかりだったので、実際に使っている人は少ないと思いますが、
+GitHonはリリースしたばかりだったので、使っている人は少ないと思いますが、
 GitHon → HonKitの移行については次を参照してください。
 
 - [Migrate from GitHon to HonKit · Issue #54 · honkit/honkit](https://github.com/honkit/honkit/issues/54)
