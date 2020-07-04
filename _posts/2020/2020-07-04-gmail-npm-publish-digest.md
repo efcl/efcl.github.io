@@ -26,7 +26,7 @@ email support@npmjs.com.
 npm loves you.
 ```
 
-一つのパッケージなら問題ないのですが、普通のパッケージをまとめてpublishするようなmonorepoを扱っているとかなり通知がうるさくなります。
+一つのパッケージなら問題ないのですが、パッケージをまとめてpublishするようなmonorepoを扱っているとかなり通知がうるさくなります。
 
 ![Mail Screenshot](https://efcl.info/wp-content/uploads/2020/07/04-1593873892.png)
 
