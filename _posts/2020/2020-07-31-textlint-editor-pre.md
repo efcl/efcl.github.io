@@ -11,6 +11,10 @@ tags:
 
 [textlint editor](https://github.com/textlint/editor)というブラウザ/ブラウザ拡張上で動く[textlint](https://github.com/textlint/textlint)を動かすプロジェクトを最近やっています。
 
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">textlint editor demo<a href="https://t.co/cOdR3MKWFn">https://t.co/cOdR3MKWFn</a> <a href="https://t.co/b2lqpqKUTl">pic.twitter.com/b2lqpqKUTl</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1288038759192174593?ref_src=twsrc%5Etfw">July 28, 2020</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 [Grammarly](https://grammarly.com/)や[Microsoft エディター](https://www.microsoft.com/ja-jp/microsoft-365/microsoft-editor)などブラウザ拡張としていろいろなサイトで使えるよくできたスペルチェッカーはあるのですが、どちらも入力したテキストをサーバに送ってそのチェック結果を返す方式になっています。
 [textlint](https://github.com/textlint/textlint)ならJavaScriptで書かれているので、サーバにデータを送らずにブラウザ内だ全ての処理ができるのではと思って[textlint editor](https://github.com/textlint/editor)を作り始めました。
 
