@@ -34,7 +34,7 @@ tags:
 *   [jsPerf][6]  
     `benchmark.js`を使った比較ツール。JavaScriptのスニペットを登録して処理時間を比較できる。  
     実行結果がサイトに記録されるので、他人がやった結果がどんどん貯まるのも良い点。
-*   [ExtendsClass Regex Tester][7]  
+*   [HiFi Regex Tester][7]  
     JavaScriptの正規表現を確認できるツール。  
     類似:[RegExpChecker.js][8]  
     正規表現関係で、正規表現をオートマトン的に図示してくれる[strfriend][9]も便利です。
@@ -70,7 +70,7 @@ tags:
  [4]: http://gist.github.com/
  [5]: http://userscripts.org/scripts/show/71914
  [6]: http://jsperf.com/
- [7]: https://extendsclass.com/regex-tester.html
+ [7]: http://www.gethifi.com/tools/regex
  [8]: http://mrgoofy.web.fc2.com/jsarcv/regexp/
  [9]: http://strfriend.com/
  [10]: http://prettydiff.com/
