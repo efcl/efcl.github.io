@@ -11,7 +11,7 @@ tags:
 
 [textlint editor](https://github.com/textlint/editor)というブラウザ/ブラウザ拡張上で動く[textlint](https://github.com/textlint/textlint)を動かすプロジェクトを最近やっています。
 
-[Grammarly](https://grammarly.com/)や[Microsoft エディター](https://www.microsoft.com/ja-jp/microsoft-365/microsoft-editor)などブラウザ拡張としていろいろなサイトで使えるよくできたスペルチェッカーはあるのですが、どちらもサーバに入力したデータを送ってそのチェック結果を返す方式になっています。
+[Grammarly](https://grammarly.com/)や[Microsoft エディター](https://www.microsoft.com/ja-jp/microsoft-365/microsoft-editor)などブラウザ拡張としていろいろなサイトで使えるよくできたスペルチェッカーはあるのですが、どちらも入力したテキストをサーバに送ってそのチェック結果を返す方式になっています。
 [textlint](https://github.com/textlint/textlint)ならJavaScriptで書かれているので、サーバにデータを送らずにブラウザ内だ全ての処理ができるのではと思って[textlint editor](https://github.com/textlint/editor)を作り始めました。
 
 詳しい経緯は次のスライドで話しています。
