@@ -206,8 +206,7 @@ BOLDフォントを使ったデザイン
 ---
 
 <script><!--
-Array.from(document.querySelectorAll("a[href^='https://www.figma.com/file/']")).map(aTag => {
-  // <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fbaa9B8NeN7pxR0RRNZOEwZ%2FDesignTraning%3Fnode-id%3D143%253A312&chrome=DOCUMENTATION" allowfullscreen></iframe>
+Array.from(document.querySelectorAll("a[href^='https://www.figma.com/file/']")).filter(aTag => aTag.href.includes("?node-id")).map(aTag => {
   return { aTag, iframe: `<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=${aTag.href}&chrome=DOCUMENTATION" allowfullscreen></iframe>` }
 }).forEach(({ aTag, iframe}) => {
 	return aTag.parentNode.parentNode.innerHTML = iframe;
