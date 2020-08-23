@@ -32,15 +32,6 @@ Greasemonkeyからフォークしてるので、Greasemonkey向けに書かれ�
     (フォルダの中のconfig.xmlや配置自体は同じなのでフォルダ名だけ変更すればOK)
 2.  `prefs.jsへスクリプトの設定の保存書式が変更された<br />これが移行時にネックになってる大きな変更で、GM_setValueなどGreasemonkeyスクリプトから値を保存するとpref.jsに書き込まれますが、そのときの書式が変わっているためGreasemonkey時に保存した値が引き継がれません。<br />一応手動での書き換え手順も書かれています。<br />greasemonkey.scriptvals から extensions.scriptish.scriptvals へ置換する<br />スクリプト名とネームスペースの間の/を@に置き換える`
 
-GreasemonkeyとScriptishのpref.jsの書式の違いを見てみると
-
-<pre>user_pref("greasemonkey.scriptvals.https://efcl.info//Post Now browsing to Twitter.GM_config", "{"defaultTag":"見てる:","isSelection":true,"removeUtm":true,"avoidLinktoMeta":true,"PostWithCtrl":true,"ShortCutKey":"C-Delete","ShortURL":"bit.ly","bitlyUserName":"remiko","bitlyAPIKey":"R_fa2240c646c07b2091c6bc6d109089ef","googlAPIKey":"AIzaSyDYer57o2GyHX_xylyaa4iGIyyjd81kGxc"}");</pre>
-
-<pre>// =&#62;</pre>
-
-<pre>user_pref("extensions.scriptish.scriptvals.PostNowbrowsingtoTwitter@httpefcl.info.GM_config",  "{"defaultTag":"Now  browsing:","isSelection":true,"removeUtm":true,"avoidLinktoMeta":true,"PostWithCtrl":true,"ShortCutKey":"C-Delete","ShortURL":"bit.ly","bitlyUserName":"remiko","bitlyAPIKey":"R_fa2240c646c07b2091c6bc6d109089ef","googlAPIKey":""}");</pre>
-
-という風にpref.jsに保存される書式が変化しています。  
 ネームスペースとスクリプト名の位置も逆転してまたスペースなど除去されてたりします。  
 手動でやっても結構手間がかかるので、大事なものだけやって、後は普通に設定し直した方が楽だと思います。  
 一応、自動的にできるように[NILScrip][5]tで[GreasemonkeyToScriptish.ng][6]というものを作ってみました。
