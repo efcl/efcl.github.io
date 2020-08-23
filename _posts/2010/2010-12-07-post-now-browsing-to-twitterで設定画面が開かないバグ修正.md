@@ -64,18 +64,6 @@ GM_configの場合
         'label': 'Post with Ctrl+Enter:',
         'type': 'checkbox',
         'default': false
-    },
-    'bitlyUserName': {
-        'section': &#91;'bit.ly'&#93;,
-        'label': 'bit.ly Username:',
-        'type': 'text',
-    'default':
-        'remiko'
-    },
-    'bitlyAPIKey': {
-        'label': 'bit.ly APIKey :',
-        'type': 'text',
-        'default': 'R_fa2240c646c07b2091x'
     }
 }, configStyle , {
     open: function () {
@@ -114,26 +102,6 @@ USConfigの場合
 			"Post Now browsing to Twitter Settings",
 			{ width: 600, height: 700 },
 
-				section(
-						"User options",
-						"Behavior/keyboard Preference",
-						grid(
-								text("Prefix:", 'defaultTag', "Now browsing: ", { size: 20 }), 'n',
-								checkbox("Use selection quote", 'isSelection', true), 'n',
-								checkbox("Post with Ctrl+Enter", 'PostWithCtrl', false), 'n',
-								text("ShortcutKey:", 'ShortCutKey', "CS-Enter", { size: 16 })
-								)
-						),
-				section(
-						"Short URL options",
-						"select used Short URL service",
-
-						grid(
-								select("Short URL Services", 'ShortURL', shortURL_opt, "bit.ly"), 'n',
-								text("bit.ly Username:", 'bitlyUserName', "remiko"), 'n',
-								text("bit.ly APIKey :", 'bitlyAPIKey', 'R_fa2240c646c07b2091c6bc6d109089ef', { size: 30 })
-								)
-						),
 				section(
 						"OAuth Authorization",
 						"Sign in with Twitter"
