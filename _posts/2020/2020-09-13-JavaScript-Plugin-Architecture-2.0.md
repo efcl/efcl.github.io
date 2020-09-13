@@ -1,5 +1,5 @@
 ---
-title: "プラグインシステムについて書いたJavaScript Plugin Architecture 2.0をリリースしました"
+title: "JSのプラグインシステムについて書くJavaScript Plugin Architecture 2.0をリリースしました"
 author: azu
 layout: post
 date : 2020-09-13T23:07
