@@ -18,13 +18,13 @@ tags:
 
 以下の形式で読むことができます。
 
-- [Web版](https://azu.gitbooks.io/javascript-plugin-architecture/content/)
-- [PDF形式](https://www.gitbook.com/download/pdf/book/azu/javascript-plugin-architecture) - [レンダリングに難あり](https://github.com/azu/JavaScript-Plugin-Architecture/issues/106)
-- [ePub形式](https://www.gitbook.com/download/epub/book/azu/javascript-plugin-architecture)
-- [Mobi形式](https://www.gitbook.com/download/mobi/book/azu/javascript-plugin-architecture)
+- [Web版](https://azu.github.io/JavaScript-Plugin-Architecture/)
+- [PDF形式](https://azu.github.io/JavaScript-Plugin-Architecture/JavaScript-Plugin-Architecture.pdf)
+- [ePub形式](https://azu.github.io/JavaScript-Plugin-Architecture/JavaScript-Plugin-Architecture.epub)
+- [Mobi形式](https://azu.github.io/JavaScript-Plugin-Architecture/JavaScript-Plugin-Architecture.mobi)
 
 [GitHub](https://github.com/azu/JavaScript-Plugin-Architecture)上にソースコードも公開されているでので直接Markdownファイルを読むこともできます。
-Markdownよりは[Web版](https://azu.gitbooks.io/javascript-plugin-architecture/content/)の方が見やすいのでそちらをオススメします。
+Markdownよりは[Web版](https://azu.github.io/JavaScript-Plugin-Architecture/)の方が見やすいのでそちらをオススメします。
 
 Twitterのハッシュタグは[#js_plugin_book](https://twitter.com/search?f=tweets&q=%23js_plugin_book&src=typd "Twitter #js_plugin_book")
 
@@ -66,29 +66,29 @@ JavaScriptの世界では1つの大きなライブラリよりも小さいなも
 - この仕組みを使っているもの
 - エコシステム
 
-### [jQuery](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/jQuery/)
+### [jQuery](https://azu.github.io/JavaScript-Plugin-Architecture/ja/jQuery/)
 
 jQueryのプラグインについて解説しています。
 `<script>`タグをベースとしたプラグインアーキテクチャについて解説しています。
 
-### [ESLint](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/)
+### [ESLint](https://azu.github.io/JavaScript-Plugin-Architecture/ja/ESLint/)
 
 ESLintのルールを拡張する仕組みについて解説しています。
 ESLintではJavaScriptのコードをパースして作成されたASTを元にコードのLintを行います。
 実際にESLintのルールを解釈できる小さな実装を作りながらプラグインの仕組みについて学びます。
 
-### [Connect](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/)
+### [Connect](https://azu.github.io/JavaScript-Plugin-Architecture/ja/connect/)
 
 Connectの **middleware** と呼ばれるプラグインアーキテクチャについて解説しています。
 Node.js以外においても_Rack_などHTTPサーバーでよく見られるプラグインを使った階層構造について学びます。
 
-### [gulp](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/gulp/)
+### [gulp](https://azu.github.io/JavaScript-Plugin-Architecture/ja/gulp/)
 
 **タスク自動化ツール**として知られるgulpのプラグインアーキテクチャについて解説しています。
 gulpではデータの流れとして既存のNode.js Streamを使い、そこで流すデータとしてvinylオブジェクトを利用します。
 実際にgulpプラグインを書きながら、gulpのプラグインの仕組みについて学びます。
 
-### [Redux](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/Redux/)
+### [Redux](https://azu.github.io/JavaScript-Plugin-Architecture/ja/Redux/)
 
 アプリケーションのStateを管理ライブラリのReduxのプラグインアーキテクチャについて解説しています。
 Reduxでは **Middleware** と呼ばれる拡張の仕組みを持っていますが、Connectとの類似点や相違点があります。
@@ -162,7 +162,7 @@ textlintで日本語の文章をチェックするために論文やRedPenなど
 
 ルールを処理する仕組みはESLintと同じですが、[パーサ](https://github.com/textlint/textlint/blob/master/docs/plugin.md)、[ルール](https://github.com/textlint/textlint/blob/master/docs/rule.md)、ルールのエラーを無視する範囲を決める[フィルタールール](https://github.com/textlint/textlint/blob/master/docs/filter-rule.md)、[フィルター実現するロジック](https://github.com/textlint/textlint/blob/master/src/messages/MessageProcessManager.js)、[出力フォーマッター](https://github.com/textlint/textlint-formatter)など大部分がプラガブルな実装です。
 
-- [ESLint · JavaScript Plugin Architecture](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/ESLint/ "ESLint · JavaScript Plugin Architecture")
+- [ESLint · JavaScript Plugin Architecture](https://azu.github.io/JavaScript-Plugin-Architecture/ja/ESLint/ "ESLint · JavaScript Plugin Architecture")
 
 そういうプラグインの実装方法についても[JavaScript Plugin Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript Plugin Architecture")では書いているので、興味がある人は見てみてください。
 
@@ -198,7 +198,7 @@ textlintで日本語の文章をチェックするために論文やRedPenなど
 JavaScriptのライブラリを書くときにいろんなプラグインの仕組みをぱっと読めるものがあると便利なので、
 他にも面白い仕組みの話を追加してくれる人も募集中です。
 
-最近、プラガブルな[ロガーライブラリ](https://github.com/azu/bellows-logger)を実装していて、[Connect · JavaScript Plugin Architecture](https://azu.gitbooks.io/javascript-plugin-architecture/content/ja/connect/index.html "Connect · JavaScript Plugin Architecture")や[Web Audio API](https://github.com/azu/JavaScript-Plugin-Architecture/issues/101)を参考にしたので、こういうのがあると便利です。
+最近、プラガブルな[ロガーライブラリ](https://github.com/azu/bellows-logger)を実装していて、[Connect · JavaScript Plugin Architecture](https://azu.github.io/JavaScript-Plugin-Architecture/ja/connect/index.html "Connect · JavaScript Plugin Architecture")や[Web Audio API](https://github.com/azu/JavaScript-Plugin-Architecture/issues/101)を参考にしたので、こういうのがあると便利です。
 
 今現在、電子書籍を書く環境は簡単に揃います。
 ブログでは収まらなそうなちょっとした内容を電子書籍という体裁でまとめてみたりすると面白いかもしれません。
