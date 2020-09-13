@@ -67,6 +67,48 @@ Reduxでは **middleware** と呼ばれる拡張の仕組みを持っていま�
 
 [CONTRIBUTING.md](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md)に[新しいプラグインの仕組みを書く](https://github.com/azu/JavaScript-Plugin-Architecture/blob/master/CONTRIBUTING.md#%E6%96%B0%E3%81%97%E3%81%84%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E6%9B%B8%E3%81%8F)場合の方法が記載されているので、[JavaScript Plugin Architecture](https://azu.github.io/JavaScript-Plugin-Architecture/)にこのライブラリやツールのプラグインの仕組みを書きたいという人はまず[Issueを作ってみてください！](https://github.com/azu/JavaScript-Plugin-Architecture/issues/new?assignees=&labels=Status%3A+Proposal&template=proposal.md&title=)
 
+次のようなテンプレートを使っているので、これを埋めるように書いていくだけです。
+
+```
+# XXXのアーキテクチャ
+
+## どう書ける?
+
+- 実際のコード例
+
+## どういう仕組み?
+
+- prototypeを拡張しているなど具体的な仕組み
+- その機構のコードへのリンク
+- その仕組みやプラグインについてドキュメントへのリンク
+
+## どういうことに向いている?
+
+- どういう用途で使われてる(ユースケース)
+- 変換する毎にファイルとして吐き出さないので、高速に複数の変換をするのに向いている等
+
+## どういうことに向いていない?
+
+- 変換の仕組み上書き換え等を行うプラグインを扱いにくい等
+
+## この仕組みを使っているもの
+
+- XXX以外にも同様の仕組みを使っているものがあるなら
+
+----
+
+## チェックリスト
+
+- [ ] どう書ける?
+- [ ] どういう仕組み?
+- [ ] どういうことに向いている?
+- [ ] どういうことに向いていない?
+- [ ] この仕組みを使っているもの
+- [ ] 実装してみよう
+- [ ] エコシステム
+
+```
+
 このプロジェクト自体が[textlint](https://github.com/textlint/textlint)の開発を進めるために作られた部分もあります。
 そのためクオリティとかはそこまで気にしないで、こういうプラグインの仕組みがあるよというのをテンプレートに沿って書いてく感じで大丈夫だと思います。
 
