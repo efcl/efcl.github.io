@@ -24,7 +24,13 @@ exclude:
   - config.rb
   - about/node_modules
   - vendor
-# Setup
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - package.json
+  - node_modules
+
+  # Setup
 author:
   name: 'azu'
   url:  https://efcl.info/
