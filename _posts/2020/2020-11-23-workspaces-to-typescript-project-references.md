@@ -57,7 +57,7 @@ Project Referencesの仕組みを使うことで、monorepoなど一つのリポ
 
 ## [@monorepo-utils/workspaces-to-typescript-project-references](https://github.com/azu/monorepo-utils/blob/master/packages/@monorepo-utils/workspaces-to-typescript-project-references/README.md)
 
-似たようなツールはすでに何個もあるのですが、自分のニーズを見たせるものがなかったので作っています。
+似たようなツールはすでに何個もあるのですが、自分のニーズを満たせるものがなかったので作っています。
 
 特徴としては次のようになっています。
 
