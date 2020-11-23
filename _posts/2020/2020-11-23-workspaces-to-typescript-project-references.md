@@ -29,8 +29,7 @@ monorepoなど一つのリポジトリ内で複数のTypeScriptで書かれた�
     └── common/
 ```
 
-この場合に[TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)で依存関係を表現するなら、
-`references`にCommonへの相対パスを指定します。
+この場合に[TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)で依存関係を表現するなら、packages/front の `references`にCommonへの相対パスを指定します。
 
 
 ```json
