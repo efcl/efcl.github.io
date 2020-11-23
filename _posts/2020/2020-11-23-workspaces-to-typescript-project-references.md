@@ -137,7 +137,7 @@ CLIツールなのでHELPを見れば大体の使い方が分かります。
 ```
 
 これで、package.jsonを変更した際に `workspaces-to-typescript-project-references` コマンドを実行するだけで、常に`tsconfig.json`の定義を維持できます。
-また、CIで [`workspaces-to-typescript-project-references --check` を実行](https://github.com/azu/monorepo-utils/blob/14153e72726ef709dbb3dd762bddff791cf06f16/package.json#L15)すれば、package.jsonとtsconfig.jsonのズレが出た場合に来づけるようになっています。
+また、CIで [`workspaces-to-typescript-project-references --check` を実行](https://github.com/azu/monorepo-utils/blob/14153e72726ef709dbb3dd762bddff791cf06f16/package.json#L15)すれば、package.jsonとtsconfig.jsonのズレが出た場合に気付けるようになっています。
 
 
 ## Plugin
