@@ -151,6 +151,7 @@ CLIツールなのでHELPを見れば大体の使い方が分かります。
 ([get-monorepo-packages](https://github.com/azz/get-monorepo-packages)というライブラリはBoltをサポートしているので、これを使うだけです。)
 
 `bolt-plugin.js`:
+
 ```js
 const getPackages = require("get-monorepo-packages");
 const plugin = (options) => {
