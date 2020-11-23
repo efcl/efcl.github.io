@@ -115,7 +115,7 @@ CLIツールなのでHELPを見れば大体の使い方が分かります。
   },
 ```
 
-このmonorepo内で[`@monorepo-utils/workspaces-to-typescript-project-references`](https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/workspaces-to-typescript-project-references)パッケージの[依存関係]((https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/workspaces-to-typescript-project-references/package.json#L71)を見てみると、[@monorepo-utils/package-utils](https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/package-utils)という別のパッケージに依存しています。
+このmonorepo内で[`@monorepo-utils/workspaces-to-typescript-project-references`](https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/workspaces-to-typescript-project-references)パッケージの[依存関係](https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/workspaces-to-typescript-project-references/package.json#L71)を見てみると、[@monorepo-utils/package-utils](https://github.com/azu/monorepo-utils/blob/39b7bacee6094096adca5ac5c9c2d2a759a38419/packages/@monorepo-utils/package-utils)という別のパッケージに依存しています。
 
 ```json
   "dependencies": {
