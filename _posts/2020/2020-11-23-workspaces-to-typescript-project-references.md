@@ -13,7 +13,7 @@ tags:
 
 [TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)は、tsconfig.json同士の依存関係を定義することで、効率的なビルドが可能になる仕組みです。
 
-monorepoなど一つのリポジトリ内で複数のTypeScriptで書かれたパッケージがある場合に効率的なインクリメンタルビルドなどができます。
+Project Referencesの仕組みを使うことで、monorepoなど一つのリポジトリ内で複数のTypeScriptで書かれたパッケージがある場合に効率的な[インクリメンタルビルド](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#faster-subsequent-builds-with-the---incremental-flag)などができます。
 また、VSCodeなどのコード補完に使われるTS-Serverなどのスキャンも効率的になります。
 
 - [Migrating Large TypeScript Codebases To Project References — Developer Tooling](https://shopify.engineering/migrating-large-typescript-codebases-project-references)
