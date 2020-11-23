@@ -51,7 +51,7 @@ monorepoなど一つのリポジトリ内で複数のTypeScriptで書かれた�
 このTypeScript Project Referencesは便利は便利なのですが、設定が手間であるという問題が知られています。
 
 多くのmonorepoでは[Lerna](https://github.com/lerna/lerna)、[Yarn's workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)、[npm's workspaces](https://github.com/npm/rfcs/blob/26e8ac6ee176943d6522d5d057fab05e37655e1c/accepted/0000-workspaces.md)などを利用していると思います。
-このworkspaceの設定と重複する`references`の設定を`tsconfig.json`に書くのはあまり現実的ではありません。
+このworkspaceの設定と重複する`references`の設定を`tsconfig.json`に手書きするのはあまり現実的ではありません。
 
 そのため、monorepoのworkspaceの設定から`tsconfig.json`の`references`の設定を更新/チェックする[@monorepo-utils/workspaces-to-typescript-project-references](https://github.com/azu/monorepo-utils/blob/master/packages/@monorepo-utils/workspaces-to-typescript-project-references/README.md)というツールを書きました。
 
