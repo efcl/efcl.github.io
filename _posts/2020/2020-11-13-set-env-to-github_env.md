@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actionsの::set-envを$GITHUB_ENVにマイグレーションツールを書いた"
+title: "GitHub Actionsの::set-envを$GITHUB_ENVにマイグレーションするツールを書いた"
 author: azu
 layout: post
 date : 2020-11-13T23:03
