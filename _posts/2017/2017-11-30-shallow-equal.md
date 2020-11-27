@@ -16,7 +16,7 @@ Shallow Equalは対象のオブジェクトのプロパティをそれぞれ1段
 
 ```js
 const object = {}, targetObject = {};
-const isEqualed = Object.keys(object).some(key => {
+const isEqualed = !Object.keys(object).some(key => {
 	return object[key] !== targetObject[key];
 });
 ```
