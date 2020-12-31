@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "efcl.info",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.32.0"
+  },
   "devDependencies": {
     "@proofdict/textlint-rule-proofdict": "^2.1.0",
     "textlint": "^10.1.4",
@@ -13,7 +15,8 @@
   },
   "scripts": {
     "textlint": "git diff --name-only --diff-filter=ACMR origin/develop | grep -a '_posts/.*.md$' | xargs textlint",
-    "test": "npm run textlint"
+    "test": "npm run textlint",
+    "build:css": "sass public/css/main.scss public/css/main.css"
   },
   "repository": {
     "type": "git",
