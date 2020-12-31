@@ -102,7 +102,7 @@ PuppeteerでもChromeを使えば[SpeechRecognition](https://developer.mozilla.o
 
 また、[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)、[VoiceIn](https://chrome.google.com/webstore/detail/voice-in-voice-typing/pjnefijmagpdjfhhkpljicbbpicelgko?hl=ja)、[Speechnotes](https://speechnotes.co/)、iOSやmacOSなどの音声入力(認識)はベースとなる文章は生成できる程度にはちゃんと認識してくれます。(それ用のマイクとか喋り方などはあるだろうけど)
 
-ただ、音声入力系は話しながら文字に起こされるため、文字起こしの細かい間違いが気になって喋りきることが大変な感じがしました。
+ただ、音声入力系は話している途中で文字としてでてくるため、文字起こしの細かい間違いが気になって喋りきることが大変な感じがしました。
 一度しゃべりきった音声ファイルを再生しながら、文字起こししてしつつ修正していくのもよさそうなのかなと思いました。
 この[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)を使った音声ファイルの文字起こしは、そういった実験にも使えそうな気がします。
 
