@@ -1,8 +1,0 @@
-id: 01BQ92YZ6NT1NACB4X0DC8XHFH
-description: ''
-expected: $1 EAP
-patterns:
-  - '/([0-9\.]+)EAP/'
-specs: []
-tags:
-  - noun
