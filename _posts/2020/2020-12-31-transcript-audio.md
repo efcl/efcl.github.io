@@ -88,8 +88,10 @@ PuppeteerでもChromeを使えば[SpeechRecognition](https://developer.mozilla.o
 
 ## おわりに
 
-[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)の仕組み的に、実際に再生している音声の文字起こしです。(文字起こしできるのは再生している部分だけなので、すべてをテキスト化する用途ではないです)
-一括で大量の音声をテキスト化したい場合は、普通にサービスを使ったほうが良いです。
+[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)の仕組み的に、実際に再生している音声の文字起こしです。
+文字起こしできるのは再生している部分だけなので、すべてをテキスト化する用途ではないです。
+
+そのため、一括で大量の音声をテキスト化したい場合は、それに特化したサービスを使ったほうが良いです。
 (どちらの場合もテキストを公開する場合は、元音声の持ち主の許可が必要なので注意)
 
 - [Speech-to-Text: 自動音声認識  |  Google Cloud](https://cloud.google.com/speech-to-text)
