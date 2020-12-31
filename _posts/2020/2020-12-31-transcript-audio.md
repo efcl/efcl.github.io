@@ -56,7 +56,7 @@ tags:
 [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) APIを触ったことがある人は、音声ファイルを認識させるという同じ発想を考えたことがあると思います。
 
 ただし、[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)にはinputを指定するAPIは用意されていません。
-常に現在のマイクがInputとして固定されています。
+常に現在のマイクがInputになっています。
 
 一つのウェブページに複数のマイクは現実的にない気がしたので、`navigator.mediaDevices.getUserMedia`で特定のデバイスを音声の入力のデバイスに設定(ビデオ会議とかで音声デバイス切り替えするのはこのAPIを使う)してみたところ、[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)の入力もこの指定したデバイスになりました。
 
