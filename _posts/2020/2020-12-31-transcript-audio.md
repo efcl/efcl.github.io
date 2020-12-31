@@ -96,7 +96,7 @@ PuppeteerでもChromeを使えば[SpeechRecognition](https://developer.mozilla.o
 - [Amazon Transcribe（音声をテキストに変換する機能を簡単に追加）| AWS](https://aws.amazon.com/jp/transcribe/)
 
 (自分自身を含め)話している音声をスキップできない状態で聞くのは拘束的な感じがして苦手なので、
-音声を再生しながらテキストにおこして、テキストを目で確認して🔈で実際に再生して音として確認したりそういう用途に使えるかもと思って作ってみました。(補助的な用途)
+音声を再生しながらテキストにおこして、テキストを目で確認して🔈で実際に再生して音として確認したりそういう用途に使えるかもと思って作ってみました。
 
 また、[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)、[VoiceIn](https://chrome.google.com/webstore/detail/voice-in-voice-typing/pjnefijmagpdjfhhkpljicbbpicelgko?hl=ja)、[Speechnotes](https://speechnotes.co/)、iOSやmacOSなどの音声入力(認識)はベースとなる文章は生成できる程度にはちゃんと認識してくれます。(それ用のマイクとか喋り方などはあるだろうけど)
 
