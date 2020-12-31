@@ -20,17 +20,17 @@ body {
 a {
   color: $link-color;
   &:hover {
-    color: $link-color + 100;
+    color: #95ade0;
   }
 }
 
 .content {
-  color: $base-color - 180;
+  color: #2c3018;
   a:visited {
     color: #551A8B;
   }
   a:hover {
-    color: $link-color + 100;
+    color: #95ade0;
   }
 }
 
