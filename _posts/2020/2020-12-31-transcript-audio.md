@@ -9,7 +9,7 @@ tags:
 
 ---
 
-[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) APIを使って、wavやmp3などの音声ファイルを再生しながら文字起こしを自動でするウェブアプリを書きました。音声ファイルをざっくりと文字に起こして、内容をざっくりと把握して聞きたい位置にジャンプする目的で作りました。
+[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) APIを使って、wavやmp3などの音声ファイルを再生しながら文字起こしをするウェブアプリを書きました。音声ファイルをざっくりと文字に起こして、内容をざっくりと把握して聞きたい位置にジャンプする目的で作りました。
 
 「Chromeの」としているのは、現時点(2020-12-31)では[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)を実装しているのがChrome系のブラウザのみだからです。
 
