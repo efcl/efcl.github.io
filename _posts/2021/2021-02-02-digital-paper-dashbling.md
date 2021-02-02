@@ -14,7 +14,7 @@ tags:
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">電子ペーパーのダッシュボードを壁に設置した。<br>likebook mars + Fully kiosk Browser + dashbling.<br>結局材料みつけられなかったので、<br>余ってたエレコムのケーブル結束クリップで貼り付けた。<br>壁にマスキングテープ⇨梱包テープ⇨結束クリップで固定してるので簡単に剥がせる。 <a href="https://t.co/LpLARCP3at">pic.twitter.com/LpLARCP3at</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1356595131055398918?ref_src=twsrc%5Etfw">February 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-旅行とかには軽いので[Likebook Mars](https://www.amazon.co.jp/dp/B07MBD7RLY/)が便利だけど、最近あまり使ってなかったので物理的?なダッシュボードとして使うことにしてみました。
+最近[Likebook Mars](https://www.amazon.co.jp/dp/B07MBD7RLY/)をあまり使ってなかったので物理的?なダッシュボードとして使うことにしてみました。
 
 きっかけは[Dashbling](https://github.com/pascalw/dashbling)の作者がKindleを使ったダッシュボードを作ってるのみてよさそうと思って、[Dashbling](https://github.com/pascalw/dashbling)をいじってたら半日ぐらいでできました。
 
