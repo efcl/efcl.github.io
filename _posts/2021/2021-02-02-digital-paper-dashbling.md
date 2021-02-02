@@ -30,7 +30,7 @@ Hot Reloadなども対応しているので、実際に[Likebook Mars](https://w
 
 最初に写真にあるような[Dashbling](https://github.com/pascalw/dashbling)のコードは、次にリポジトリにスナップショットとして置いてあります。
 
-- [azu/my-dashbling-example: undefined](https://github.com/azu/my-dashbling-example)
+- [azu/my-dashbling-example](https://github.com/azu/my-dashbling-example)
 
 今は次のような項目を表示しています。
 
@@ -99,3 +99,7 @@ curl -XPOST -H "Content-Type: application/json" \
 (OmniFocusを使ってたら多分TODOは出せなかった感じがします)
 
 <video control src="https://user-images.githubusercontent.com/19714/103011870-ffd04580-457d-11eb-9560-d69b057a97e7.mp4"></video>
+
+コード
+
+- [azu/my-dashbling-example](https://github.com/azu/my-dashbling-example)
