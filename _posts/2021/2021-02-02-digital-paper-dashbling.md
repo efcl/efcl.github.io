@@ -98,7 +98,7 @@ curl -XPOST -H "Content-Type: application/json" \
 毎日やることをGitHub Projectに入れて[sync-github-project-todo-md](https://github.com/azu/inkdrop-github-project-todo-md)で処理できるようにしてたので、ダッシュボードにもこのTODOが現実的な数で表示できるのがちょうどいい感じでした。
 (OmniFocusを使ってたら多分TODOは出せなかった感じがします)
 
-<video width="100%" control src="https://user-images.githubusercontent.com/19714/103011870-ffd04580-457d-11eb-9560-d69b057a97e7.mp4"></video>
+<video width="100%" controls src="https://user-images.githubusercontent.com/19714/103011870-ffd04580-457d-11eb-9560-d69b057a97e7.mp4"></video>
 
 コード
 
