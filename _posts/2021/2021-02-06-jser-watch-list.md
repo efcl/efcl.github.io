@@ -20,6 +20,7 @@ JSer.infoで紹介したサイトのデータをドメイン別で一覧でき�
 
 - [JSer.info](https://jser.info/)で2年以内に紹介したことがあるサイトが対象
 - 紹介した回数順
+- [GitHubやAmazon](https://github.com/jser/watch-list/blob/a287c4a10795af30622e35021bb6ea1223ab766f/src/watch-list.ts#L70-L77)など一部特殊なものは除外
 
 JSer.infoを更新するたびにこのリストも更新されます。
 そのため、鮮度を保ちつつ、JavaScriptの情報源となるサイトが一覧できるようになっています。
