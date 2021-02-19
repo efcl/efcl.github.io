@@ -519,6 +519,11 @@ NPOがミッションと整合性がある分野で収益を得るのは望ま�
     - [非営利団体の資金調達ハンドブック](https://www.amazon.co.jp/dp/B08D94MWYF/)
     - [The Science of Giving: Experimental Approaches to the Study of Charity](https://www.amazon.com/dp/B004QM9VT4/)
 
+> Social entrepreneurs are not content just to give a fish or teach how to fish. They will not rest until they have revolutionized the fishing industry.
+> -- https://en.wikipedia.org/wiki/Bill_Drayton
+
+このフレーズが面白そうで、社会起業家、社会的企業についてもう少し調べたいので、何か良い本とかないかな?
+
 # 参考
 
 - [調査研究（寄付白書）　|　日本ファンドレイジング協会](https://jfra.jp/research)
