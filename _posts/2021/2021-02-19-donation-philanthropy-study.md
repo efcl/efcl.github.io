@@ -468,7 +468,7 @@ NPOがミッションと整合性がある分野で収益を得るのは望ま�
 - この長期的な目標を満たすために、事前に決めておくプレコミットメントが有効
 - ある程度の枠を最初に決めておけば、寄付する際に苦痛が軽減される
 - これ結構実用的なので、GitHubとかSpreadSheetでプレコミットメントを管理するアプリケーションを書いてみようかなと思った
-    - [brooklynjs.github.io/budget.js](https://github.com/brooklynjs/brooklynjs.github.io/blob/master/budget.js)みたいにGitHubでbudgetを管理を思い出した
+    - [brooklynjs.github.io/budget.js](https://github.com/brooklynjs/brooklynjs.github.io/blob/master/budget.js)みたいにGitHubでbudgetを管理してるの思い出した
     - 寄付する側にも透明性があると面白いのかも知れない
 
 ## 9 ~ 11章: 感情と寄付について
