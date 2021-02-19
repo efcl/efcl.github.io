@@ -473,7 +473,7 @@ NPOがミッションと整合性がある分野で収益を得るのは望ま�
 
 ## 9 ~ 11章: 感情と寄付について
 
-- 同情は物理的な距離やその人が識別可能になったときに起きやすいが、特定可能な被害者と統計的なデータを同時に影響すると寄付に対して逆影響する可能性があるという論文
+- 同情は物理的な距離やその人が識別可能になったときに起きやすいが、特定可能な被害者と統計的なデータを同時に提供すると寄付に対して逆影響する可能性があるという論文
     - [Sympathy and callousness: The impact of deliberative thought on donations to identifiable and statistical victims - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0749597806000057)
 - 一方で慈善団体はこういった被害の論調より、前向きの概念を使っていることが多い
 - 特定可能な被害者をフロントに立たせることは寄付に対する効果があるが、類似性を伝える方法は他にもあるだろうという結論
