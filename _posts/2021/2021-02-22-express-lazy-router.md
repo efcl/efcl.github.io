@@ -20,7 +20,7 @@ tags:
 大量のファイルのコンパイルはWebアプリケーションの起動を遅くします。
 `ts-node`などは`import`したファイルをその場で同期的にコンパイルする仕組みであるため、読み込むファイルが多いほどコンパイル時間が長くなります。
 
-起動時には必要ない後でコンパイルすることで、Node.jsアプリの起動時間を短縮できます。
+起動時には必要ないものは後でコンパイルすることで、Node.jsアプリの起動時間を短縮できます。
 [express-lazy-router](https://github.com/azu/express-lazy-router)は、この不要なモジュールを遅延ロードするための仕組みです。
 
 - [Compilation is unbelievably slow · Issue #754 · TypeStrong/ts-node](https://github.com/TypeStrong/ts-node/issues/754)
