@@ -174,4 +174,4 @@ app.listen(8000, () => {
 
 そのため、TypeScriptやBabelなどのコンパイルをしていない場合でも遅延ロードは一定の効果があると思います。
 アプリケーションが巨大になるほど遅くなるだけだと問題があります。
-ルーター単位で切り出すのはクライアントサイドでもよく見る光景なので、サーバサイドでもやれるようにしたのが[express-lazy-router](https://github.com/azu/express-lazy-router)の発想です。
+ルーター単位で切り出すのはクライアントサイドでもよく見るので、サーバサイドでもやれるようにしたのが[express-lazy-router](https://github.com/azu/express-lazy-router)の発想です。
