@@ -161,7 +161,7 @@ app.listen(8000, () => {
 
 ## おわりに
 
-[Express](https://expressjs.com/)のルータ単位で遅延ロードする[express-lazy-router](https://github.com/azu/express-lazy-router)を作りました。
+[Express](https://expressjs.com/)アプリケーションをルータ単位で遅延ロードする[express-lazy-router](https://github.com/azu/express-lazy-router)を作りました。
 
 モチベーション的には、`ts-node`([ts-node-dev](https://github.com/wclr/ts-node-dev))のコンパイルがボトルネックになりそうなぐらい遅いところから来ています。
 
