@@ -84,12 +84,12 @@ Pinboardやはてなブックマークや[ソーシャルニュース][11]サイ
  [3]: https://efcl.info/2011/0117/res2229/ "世界のJavaScript情報を読もう"
  [4]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果"
  [5]: https://efcl.info/2011/0301/res2303/ "ブラウザの最新情報を知るために、Web開発者が読んでおくべきブログ"
- [6]: http://azu.github.com/slide/HowToLearn/#slide1
- [7]: http://azu.github.com/slide/offline_study/javascript_world.html#slide1
- [8]: http://azu.github.com/slide/offline_study/javascript_world.html#slide29
+ [6]: http://azu.github.io/slide/HowToLearn/#slide1
+ [7]: http://azu.github.io/slide/offline_study/javascript_world.html#slide1
+ [8]: http://azu.github.io/slide/offline_study/javascript_world.html#slide29
  [9]: http://twitter.com/tatsuoSakurai/statuses/158419082654400512
  [10]: http://twitter.com/koichik/statuses/158542707378233344
- [11]: http://azu.github.com/slide/offline_study/javascript_world.html#slide22
+ [11]: http://azu.github.io/slide/offline_study/javascript_world.html#slide22
  [12]: https://efcl.info/2010/1025/res2018/
  [13]: https://efcl.info/2010/1025/res2018/ "今からRSS購読すべきタグと検索結果 | Web scratch"
  [14]: http://userscripts.org/scripts/show/46441

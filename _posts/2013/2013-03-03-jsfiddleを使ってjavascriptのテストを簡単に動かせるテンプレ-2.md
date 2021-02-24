@@ -57,7 +57,7 @@ Chrome等のブラウザ でdebuggerとなってるリンクを開くと、
 
 Sourceパネルが無いのでJavaScriptのデバッグでできることは限られてますが、簡単にremote debugできるので便利です。
 
- [1]: http://azu.github.com/js-test-fiddle/
+ [1]: http://azu.github.io/js-test-fiddle/
  [2]: http://jsfiddle.net/ "jsFiddle"
  [3]: http://qunitjs.com/
  [4]: http://pivotal.github.com/jasmine/
