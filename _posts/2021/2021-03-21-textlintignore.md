@@ -55,7 +55,7 @@ ignored.md
 generated/**
 ```
 
-そのため、`ignored.md`と`generated/test.md`はLintの対象にならないため単純に無視されます。
+この無視の定義によって`ignored.md`と`generated/test.md`はLintの対象になりません。
 
 基本的には`.gitignore`や`.eslintignore`と同じ定義形式となっているため、
 `textlint --ignore-path .gitignore` のように別の定義ファイルを使い回すこともできると思います。
