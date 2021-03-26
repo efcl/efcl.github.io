@@ -331,7 +331,7 @@ $ create-validator-ts "src/**/api-types.ts" --check
 
 [create-validator-ts](https://github.com/azu/create-validator-ts)というTypeScriptの型からバリデーションを生成するツールを作りました。
 TypeScript → JSON Schemaの発想自体は[何年も前](https://twitter.com/azu_re/status/1139869643055566853)から持っていましたが、生成したコードも管理しないといけないのがイケてない点なのも分かっていました。
-コードを生成することで差分が生まれやすい問題は`--check`でのチェックなどを導入しています。
+コードを生成することで差分が生まれやすい問題は`--check`でのチェックなどを導入して軽減しています。
 
 別のアプローチとしては、[tRPC](https://trpc.io/)では[Yup](https://github.com/jquense/yup)、[myzod](https://github.com/davidmdm/myzod)、[Zod](https://github.com/colinhacks/zod)などを使ってバリデーションを書くことで、コード生成をしないですむアプローチを選んでいます。
 
