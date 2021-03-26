@@ -79,7 +79,7 @@ app.listen(port, () => {
 ```
 
 expressでは、`?username[$ne]=0&password[$ne]=0` のようなURLパラメータを渡すと、JSONオブジェクトとして`req.query`に渡されます。
-これらの`req.*`として受け取ったオブジェクトをMongoDBに対してクエリとして渡すことでMongo Query Injectionが発生します。
+これらの`req.*`として受け取ったオブジェクトをMongoDBに対してクエリとして渡すことNoSQL Injectionが発生します。
 
 - [Testing for NoSQL Injection](https://github.com/OWASP/wstg/blob/v4.2/document/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection.md)
 - [PayloadsAllTheThings/NoSQL Injection at master · swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection)
