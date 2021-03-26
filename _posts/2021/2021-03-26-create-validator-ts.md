@@ -231,7 +231,7 @@ const SCHEMA = {
 const ajv = new Ajv({ removeAdditional: true }).addSchema(SCHEMA, "SCHEMA");
 export function validateGetAPIRequestQuery(payload: unknown): apiTypes.GetAPIRequestQuery {
   if (!isGetAPIRequestQuery(payload)) {
-  　const error = new Error('invalid payload: GetAPIRequestQuery');
+    const error = new Error('invalid payload: GetAPIRequestQuery');
     error.name = "ValidatorError";
     throw error;
   }
@@ -246,7 +246,7 @@ export function isGetAPIRequestQuery(payload: unknown): payload is apiTypes.GetA
 
 export function validateGetAPIResponseBody(payload: unknown): apiTypes.GetAPIResponseBody {
   if (!isGetAPIResponseBody(payload)) {
-  　const error = new Error('invalid payload: GetAPIResponseBody');
+    const error = new Error('invalid payload: GetAPIResponseBody');
     error.name = "ValidatorError";
     throw error;
   }
