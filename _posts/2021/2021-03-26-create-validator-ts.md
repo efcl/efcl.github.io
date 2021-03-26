@@ -353,5 +353,9 @@ TypeScript → JSON Schemaの発想自体は[何年も前](https://twitter.com/a
 
 - [Allow "Compiler Plugins" · Issue #16607 · microsoft/TypeScript](https://github.com/microsoft/TypeScript/issues/16607)
 
+その他には、Open APIなどすでにAPIのSpecファイルが別にある人は、そのファイルからバリデーションを生成するのが良さそうです。
+
+個人的にはコードとの距離の一番近い型がTypeScriptの型定義なので、TypeScriptに寄せています。
+[create-validator-ts](https://github.com/azu/create-validator-ts)はTypeScriptを[Single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth)として扱うためのアプローチの一種です。
 [create-validator-ts](https://github.com/azu/create-validator-ts)のアプローチもまだ完璧ではないですが、
 `api-types.ts`のような型定義を持っておくこと自体は別のアプローチになった場合も移行しやすかなと思ってこのようなツールを作りました。
