@@ -24,7 +24,7 @@ expressなどでAPIを書くときに、Request/Responseが意図したものか
 
 また、Node.jsではMongoDBやORMマッパーを使うことが多いです。
 このようなDB/KVS周りのライブラリはだいたいクエリにJavaScriptのオブジェクトを指定できます。
-このとき、`req.query`などをなにもチェックせずに、クエリのオブジェクトに渡すとNoSQL Injectionという脆弱性を発生點せやすいです。
+このとき、`req.query`などをなにもチェックせずに、クエリのオブジェクトに渡すと[NoSQL Injection](https://owasp.org/www-pdf-archive/GOD16-NOSQL.pdf)という脆弱性を発生させやすいです。
 
 ### Mongo Query Injection
 
