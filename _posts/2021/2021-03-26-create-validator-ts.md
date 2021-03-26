@@ -85,7 +85,7 @@ expressでは、`?username[$ne]=0&password[$ne]=0` のようなURLパラメー�
 - [PayloadsAllTheThings/NoSQL Injection at master · swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection)
 
 
-## [全体的な対策] expressでリクエストを受け付けた段階での `$` と `.` の削除
+## [全体的な軽減策] expressでリクエストを受け付けた段階での `$` と `.` の削除
 
 Mongoのクエリでは`$`と`.`が特殊な意味を持ちます。
 これらの文字列が含まれるリクエストを強制的に排除することで、[Mongoのクエリとして特殊な意味をもつOperator](https://docs.mongodb.com/manual/reference/operator/query/)をInjection攻撃に利用できなくなります。(Injection自体が防げるわけではない)
