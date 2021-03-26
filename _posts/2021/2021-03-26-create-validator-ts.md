@@ -40,6 +40,7 @@ app.post('/user', function (req, res) {
         username: req.body.username,
         password: req.body.password
     }
+    // 任意のユーザーを取得できるNoSQL Injectionが起きている
     db.collection('users').findOne(query, function (err, user) {
         console.log(user);
     });
