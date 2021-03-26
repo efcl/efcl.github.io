@@ -271,7 +271,7 @@ express middlewareとかも書こうと思えば生成できると思うので�
 - [Code Generator Package · Issue #2 · azu/create-validator-ts](https://github.com/azu/create-validator-ts/issues/2)
 
 
-📝 生成するコードはフォーマットが多少崩れてるので、`.prettierignore`で無視するかコード生成の時点でprettierしてまうのを推奨です。
+📝 生成するコードはフォーマットが多少崩れてるので、`.prettierignore`で無視するかコード生成の時点でprettierするのを推奨です。
 
 ```
 *.validator.ts
