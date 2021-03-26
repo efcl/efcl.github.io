@@ -32,7 +32,7 @@ expressなどでAPIを書くときに、Request/Responseが意図したものか
 これはユーザーのリクエストに基づいてMongoに対してQueryを発行する時に、ユーザーが任意のMongo Queryを指定できてしまう問題です。
 
 次のようにHTTPリクエストのbodyをそのままMongooseのqueryに渡すと発生する脆弱性です。
-`req.body.password`は文字列を期待しているが、実際にはオブジェクトを渡すことができて、オブジェクトを指定できるとMongo queryの`$ne`などの演算子も指定できてしまう問題です。
+`req.query.username`や`req.query.password`は文字列を期待しているが、実際にはオブジェクトを渡すことができて、オブジェクトを指定できるとMongo queryの`$ne`などの演算子も指定できてしまう問題です。
 
 ```js
 app.post('/user', function (req, res) {
@@ -41,6 +41,7 @@ app.post('/user', function (req, res) {
         password: req.body.password
     }
     // 任意のユーザーを取得できるNoSQL Injectionが起きている
+    // Note: queryにpasswordを指定してるのもあんまりよくない
     db.collection('users').findOne(query, function (err, user) {
         console.log(user);
     });
@@ -48,7 +49,7 @@ app.post('/user', function (req, res) {
 ```
 
 このようなコードが動いている場合、次のような`$ne`を使ったリクエストをbodyを指定すれば、queryはなにか一つにマッチします。
-[`$ne`](https://docs.mongodb.com/manual/reference/operator/query/ne/)はマッチしないという意味の演算子なので、nullにマッチしない = なにか一つのモデルが取れるため、実在するユーザー名やパスワードを知らなくても、、任意の`user`モデルが取得できてしまいます。
+[`$ne`](https://docs.mongodb.com/manual/reference/operator/query/ne/)はマッチしないという意味の演算子で、nullにマッチしない = なにか一つのモデルが取れるため、実在するユーザー名やパスワードを知らなくても、、任意の`user`モデルが取得できてしまいます。
 
 ```
 {
