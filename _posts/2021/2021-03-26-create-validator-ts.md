@@ -347,7 +347,7 @@ TypeScript → JSON Schemaの発想自体は[何年も前](https://twitter.com/a
 
 - [Further Reading | tRPC](https://trpc.io/docs/further-reading)
 
-また、[ts-transformer-ajv](https://github.com/roziscoding/ts-transformer-ajv)は[create-validator-ts](https://github.com/azu/create-validator-ts)と似たアプローチですが、[ttypescript](https://www.npmjs.com/package/ttypescript)のtrasnsformプラグインとしてTypeScriptの変換時にバリデーションコードを生成しています。
+また、[ts-transformer-ajv](https://github.com/roziscoding/ts-transformer-ajv)は[create-validator-ts](https://github.com/azu/create-validator-ts)と似たアプローチですが、[ttypescript](https://www.npmjs.com/package/ttypescript)のtrasnsformプラグインとしてTypeScriptのコンパイル時にバリデーションコードを生成しています。
 (このtransformの仕組みが公式じゃないので、[create-validator-ts](https://github.com/azu/create-validator-ts)ではこのアプローチを取らなかった)
 
 [create-validator-ts](https://github.com/azu/create-validator-ts)のアプローチもまだ完璧ではないですが、
