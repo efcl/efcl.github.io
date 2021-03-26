@@ -127,7 +127,7 @@ TypeScriptでコードベースを書いている場合に、JSON Schemaは手�
 TypeScriptの型には数値の範囲や正規表現などはないためバリデーションライブラリに比べると扱える範囲は狭いです。
 しかし、stringだと思っていた箇所にobjectが入るという問題はTypeScriptの型情報だけでも十分バリデーションできます。
 
-📝 実際には[create-validator-ts](https://github.com/azu/create-validator-ts)では`@minimum 0` のようなアノテーションで細かい値の範囲もチェックできますがちゃんと確かめていません。
+📝 実際には[create-validator-ts](https://github.com/azu/create-validator-ts)では`@minimum 0` のようなアノテーションで細かい値の範囲も指定できそうですが、ちゃんとは確かめていません。
 
 - https://github.com/vega/ts-json-schema-generator/blob/eb2d930f89747b6810df3e39eb6badf623a7d395/src/AnnotationsReader/BasicAnnotationsReader.ts#L7-L54
 
