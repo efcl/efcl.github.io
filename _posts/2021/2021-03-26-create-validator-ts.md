@@ -26,10 +26,10 @@ expressなどでAPIを書くときに、Request/Responseが意図したものか
 このようなDB/KVS周りのライブラリはだいたいクエリにJavaScriptのオブジェクトを指定できます。
 このとき、`req.query`などをなにもチェックせずに、クエリのオブジェクトに渡すと[NoSQL Injection](https://owasp.org/www-pdf-archive/GOD16-NOSQL.pdf)という脆弱性を発生させやすいです。
 
-### Mongo Query Injection
+### NoSQL Injection: MongoDB
 
-[Mongoose](https://github.com/Automattic/mongoose)を使ったMongo Query Injectionを例に説明してみます。
-Mongo Query InjectionとはNoSQL Injectionの一種で、ユーザーのリクエストに基づいてMongoに対してQueryを発行する時に、ユーザーが任意のMongo Queryを指定できてしまう問題です。
+[Mongoose](https://github.com/Automattic/mongoose)を使ったNoSQL Injectionを例に説明してみます。
+これはユーザーのリクエストに基づいてMongoに対してQueryを発行する時に、ユーザーが任意のMongo Queryを指定できてしまう問題です。
 
 次のようにHTTPリクエストのbodyをそのままMongooseのqueryに渡すと発生する脆弱性です。
 `req.body.password`は文字列を期待しているが、実際にはオブジェクトを渡すことができて、オブジェクトを指定できるとMongo queryの`$ne`などの演算子も指定できてしまう問題です。
