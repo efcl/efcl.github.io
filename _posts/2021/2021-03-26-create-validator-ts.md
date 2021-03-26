@@ -35,6 +35,7 @@ expressなどでAPIを書くときに、Request/Responseが意図したものか
 `req.query.username`や`req.query.password`は文字列を期待しているが、実際にはオブジェクトを渡すことができて、オブジェクトを指定できるとMongo queryの`$ne`などの演算子も指定できてしまう問題です。
 
 ```js
+// これはわざと脆弱性にしてるサンプルコードなので使えません
 app.post('/user', function (req, res) {
     const query = {
         username: req.body.username,
@@ -49,7 +50,7 @@ app.post('/user', function (req, res) {
 ```
 
 このようなコードが動いている場合、次のような`$ne`を使ったリクエストをbodyを指定すれば、queryはなにか一つにマッチします。
-[`$ne`](https://docs.mongodb.com/manual/reference/operator/query/ne/)はマッチしないという意味の演算子で、nullにマッチしない = なにか一つのモデルが取れるため、実在するユーザー名やパスワードを知らなくても、、任意の`user`モデルが取得できてしまいます。
+[`$ne`](https://docs.mongodb.com/manual/reference/operator/query/ne/)はマッチしないという意味の演算子で、nullにマッチしない = なにか一つのモデルが取れるため、実在するユーザー名やパスワードを知らなくても、任意の`user`モデルが取得できてしまいます。
 
 ```
 {
@@ -349,6 +350,8 @@ TypeScript → JSON Schemaの発想自体は[何年も前](https://twitter.com/a
 
 また、[ts-transformer-ajv](https://github.com/roziscoding/ts-transformer-ajv)は[create-validator-ts](https://github.com/azu/create-validator-ts)と似たアプローチですが、[ttypescript](https://www.npmjs.com/package/ttypescript)のtrasnsformプラグインとしてTypeScriptのコンパイル時にバリデーションコードを生成しています。
 (このtransformの仕組みが公式じゃないので、[create-validator-ts](https://github.com/azu/create-validator-ts)ではこのアプローチを取らなかった)
+
+- [Allow "Compiler Plugins" · Issue #16607 · microsoft/TypeScript](https://github.com/microsoft/TypeScript/issues/16607)
 
 [create-validator-ts](https://github.com/azu/create-validator-ts)のアプローチもまだ完璧ではないですが、
 `api-types.ts`のような型定義を持っておくこと自体は別のアプローチになった場合も移行しやすかなと思ってこのようなツールを作りました。
