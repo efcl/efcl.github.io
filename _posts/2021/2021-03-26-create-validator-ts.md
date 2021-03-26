@@ -60,7 +60,7 @@ app.post('/user', function (req, res) {
 このようなNoSQL Injection/Mongo Query Injectionはexpress + ORMマッパーの組み合わせて特に起きやすい問題です。
 これは、`req.body`だけではなく、`req.query`でも同様に発生します。
 
-次のような`req.query`を参照する`/check`というGET APIがある場合に、`req.query.user`や`req.query.password`にもオブジェクトを渡せます。
+次のような`req.query`を参照する`/check`というGET APIがある場合に、`req.query.username`や`req.query.password`にもオブジェクトを渡せます。
 
 ```js
 import express from "express";
