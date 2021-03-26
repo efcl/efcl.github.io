@@ -322,7 +322,7 @@ import type { GetUserResponseBody, UserResponseObject } from "../pages/api/user/
 [create-validator-ts](https://github.com/azu/create-validator-ts)では、TypeScriptからJSON Schemaを使ったバリデーションコードを生成していますが、コードジェネレーターには欠点があります。
 コードジェネレーターはコードを生成しないといけないので、TypeScriptの型定義を変更したらコードを生成する必要があるという点です。
 
-生成したコードをGitで管理している場合は、場合によっては生成し忘れて差分が出てしまうかもしれません。
+生成したコードをGitで管理している場合は、コードを生成し忘れて差分が出てしまうかもしれません。
 そのようなケースを避けるために[create-validator-ts](https://github.com/azu/create-validator-ts)では、`--check`というフラグで差分があるかをチェックできます。
 これをCIで回せば差分がでるという問題は起きなくなります。(差分がでたら再生成すれば良いだけです)
 
