@@ -41,7 +41,7 @@ app.post('/user', function (req, res) {
         password: req.body.password
     }
     // 任意のユーザーを取得できるNoSQL Injectionが起きている
-    // Note: queryにpasswordを指定してるのもあんまりよくない
+    // Note: queryにpasswordを指定してる状況もあんまりよくない
     db.collection('users').findOne(query, function (err, user) {
         console.log(user);
     });
@@ -62,6 +62,8 @@ app.post('/user', function (req, res) {
 これは、`req.body`だけではなく、`req.query`でも同様に発生します。
 
 次のような`req.query`を参照する`/check`というGET APIがある場合に、`req.query.username`や`req.query.password`にもオブジェクトを渡せます。
+
+- サンプルコード: [azu/express-query-object-example: pass object via express query example](https://github.com/azu/express-query-object-example/tree/main)
 
 ```js
 import express from "express";
