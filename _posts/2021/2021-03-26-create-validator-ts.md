@@ -285,7 +285,7 @@ express middlewareとかも書こうと思えば生成できると思うので�
 [create-validator-ts](https://github.com/azu/create-validator-ts)は、TypeScriptの型定義からJSON Schemaを生成するために[ts-json-schema-generator](https://github.com/vega/ts-json-schema-generator)を使っています。
 どうしても複雑なTypeScriptのコードからJSON Schemaを生成すると時間がかかったり、パースに失敗するケースがあります。(パースの失敗はかなりレアな感じなぐらいには安定している)
 
-`api-types.ts` のように型定義だけをファイルとして分けているのは、このような問題を避けやすくするためですです。
+`api-types.ts` のように型定義だけをファイルとして分けているのは、このような問題を避けやすくするためです。
 TypeScriptの実装を含むコードからもJSON Schemaを生成はできますが、基本的には型だけをファイルとして分けることを推奨しています。
 
 これは、型だけを分けておけば`import type` を使ってサーバのReqest/Responseの型定義をクライアントサイドからも利用できためです。
