@@ -36,8 +36,8 @@ tags:
 「[オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)」のスライドでは、寄付する側での話が中心になっていますが、
 自分は[寄付される側](https://github.com/sponsors/azu)でも[ある](https://blog.cybozu.io/entry/2021/03/19/110000)ため、この辺についてもどうあるのといいのかは考えていきたいなと思いました。
 
-後、スライドでも書いていたCharityとPhilanthropyのアプローチの違いについて
-普段からPhilanthropy的な方法を意識はしていました。(単純に情報を出すんじゃなくて、調べ方とかやり方みたいな問題の解決の仕方を書くみたいな意識)
+後、スライドでも書いていたCharityとPhilanthropyのアプローチの違いについても、普段からPhilanthropy的な方法を意識はしていました。
+(単純に情報を出すんじゃなくて、調べ方とかやり方みたいな問題の解決の仕方を書くみたいな意識)
 
 ![CharityとPhilanthropy](https://efcl.info/wp-content/uploads/2021/03/31-1617197611.png)
 
