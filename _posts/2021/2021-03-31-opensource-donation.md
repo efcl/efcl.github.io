@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)というタイトルで、寄付するために[philan.net](https://philan.net/)という予算をつけて寄付の記録するサービスを作った話をしました。
+「[オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)」というタイトルで、寄付するために[philan.net](https://philan.net/)という予算をつけて寄付の記録するサービスを作った話をしました。
 
 - スライド: [オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)
 
