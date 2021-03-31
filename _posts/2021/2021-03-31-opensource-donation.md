@@ -39,13 +39,15 @@ tags:
 後、スライドでも書いていたCharityとPhilanthropyのアプローチの違いについても、普段からPhilanthropy的な方法を意識はしていました。
 (単純に情報を出すんじゃなくて、調べ方とかやり方みたいな問題の解決の仕方を書くみたいな意識)
 
-![CharityとPhilanthropy](https://efcl.info/wp-content/uploads/2021/03/31-1617197611.png)
+[![CharityとPhilanthropy](https://efcl.info/wp-content/uploads/2021/03/31-1617197611.png)](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)
 
-今まで、そういう記事とかどれぐらい書いていたのかをさかのぼってみている、そこまで書けてない気もします。
+今まで、そういう記事とかどれぐらい書いていたのかをさかのぼってみても、そこまで書けてない気もします。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今まで書いてきた探し方、見つけた方的な方法論的な記事がどれぐらいあるか発掘してみる。</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1376097317124669441?ref_src=twsrc%5Etfw">March 28, 2021</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+> スレッドに方法論的な記事をまとめている
 
 [JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch](https://efcl.info/2020/04/27/jsprimer/)でも「学び方」という話で書いていたけど、ここを具体的に書くと何かのツールやリソースの使い方になって、抽象的に書くとふんわりした方法論になってしまう感じがしました。
 この辺の「学び方」的な話は複雑で、やっぱり単発でどうこうできる情報ではないのかなとも思いました。
