@@ -58,6 +58,6 @@ tags:
 - いくつか書籍([多分この辺?](https://www.amazon.co.jp/dp/B07KZMKKHK/))読んでいて、される側はレポーティングが重要みたいな話があって、GitHub Sponsorsのレポーティングの仕組みをちょっと整備してた
 - [寄付研究ブログー「寄付」を科学してみませんか？: 寄付を科学的に考えるための洋書リスト](https://watanabefumitaka.blogspot.com/p/blog-page_12.html)あたりを参考に色々な英語の書籍を読む
 - [Pragmatic Philanthropy Asian Charity Explained](https://www.palgrave.com/gp/book/9789811071188)はリストに載ってなかったけど、無料で読めてとても参考になった。
-- [The Science of Giving](https://www.amazon.com/dp/B004QM9VT4/)を読んでいて、予算を管理する寄付するときにPainが減るかも的な研究の話がでてきた
+- [The Science of Giving](https://www.amazon.com/dp/B004QM9VT4/)を読んでいて、予算を管理すると寄付するときにPainが減るかも的な研究の話がでてきた
   - 読んでいて[BrooklynJS](https://github.com/brooklynjs/brooklynjs.github.io)の[budget.js](https://github.com/brooklynjs/brooklynjs.github.io/blob/master/budget.js)みたいな誰もが見える形で予算を管理するのが良さそうというアイデアが浮かんだ
   - これを[philan.net](https://philan.net/)として実装した
