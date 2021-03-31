@@ -58,7 +58,7 @@ Cons
 
 ----
 
-FixedからIndenpendent への移行は簡単なので、Fixedで問題ない場合はFixedでスタートした方が楽だと思います。(`lerna.json`の`version`を`independent`に変更するだけです)
+FixedからIndenpendent への移行は簡単なので、Fixedで問題ない場合はFixedでスタートした方が楽だと思います。(Independentへの移行は`lerna.json`の`version`を`independent`に変更するだけです)
 
 それぞれのパターンにおけるmonorepoのパッケージリリースフローや`CHANGELOG.md`などのリリースノートの扱い方について書いていきます。
 
