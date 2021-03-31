@@ -33,7 +33,7 @@ tags:
 慈善活動や寄付の勉強をしていて、同じように具体的/代表的なものは社会的な話になりやすいですが、
 この中で出てくる概念は他の分野でも活用できそうだなと思って調べていました。
 
-[オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)のスライドでは、寄付する側での話が中心になっていますが、
+「[オープンソースと寄付と慈善活動と](https://azu.github.io/slide/2021/open-philanthropy/open-philanthropy.html)」のスライドでは、寄付する側での話が中心になっていますが、
 自分は[寄付される側](https://github.com/sponsors/azu)でも[ある](https://blog.cybozu.io/entry/2021/03/19/110000)ため、この辺についてもどうあるのといいのかは考えていきたいなと思いました。
 
 後、スライドでも書いていたCharityとPhilanthropyのアプローチの違いについて
