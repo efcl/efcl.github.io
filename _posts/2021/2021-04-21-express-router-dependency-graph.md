@@ -25,27 +25,7 @@ MarkdownのTableとJSONでそれぞれ出力できます。
 
 `format:markdown`
 
-- File: file path
-- Method: get | post | put | delete | `use`(express's use)
-- Routing: routing path name
-- Middlewares: used middlewares
-- FilePath: source code position
-
-| File         | Method | Routing         | Middlewares  | FilePath           |
-| ------------ | ------ | --------------- | ------------ | ------------------ |
-| src/game.ts  |        |                 |              |                    |
-|              | get    | /getGameById    | requireRead  | src/game.ts#L11-12 |
-|              | get    | /getGameList    | requireRead  | src/game.ts#L13-14 |
-|              | post   | /updateGameById | requireWrite | src/game.ts#L15-16 |
-|              | delete | /deleteGameById | requireWrite | src/game.ts#L17-18 |
-| src/index.ts |        |                 |              |                    |
-|              | use    | /user           | user         | src/index.ts#L8-8  |
-|              | use    | /game           | game         | src/index.ts#L9-9  |
-| src/user.ts  |        |                 |              |                    |
-|              | get    | /getUserById    | requireRead  | src/user.ts#L10-11 |
-|              | get    | /getUserList    | requireRead  | src/user.ts#L12-13 |
-|              | post   | /updateUserById | requireWrite | src/user.ts#L14-15 |
-|              | delete | /deleteUserById | requireWrite | src/user.ts#L16-17 |`
+![img](https://efcl.info/wp-content/uploads/2021/04/21-1618977924.png)
 
 `format: json`:
 
