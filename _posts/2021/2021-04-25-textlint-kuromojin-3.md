@@ -91,7 +91,7 @@ kuromoji.jsの最新バージョンは[0.1.2](https://github.com/takuyaa/kuromoj
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-[textlint editor](https://github.com/textlint/editor)には、以前記事などでも紹介しています。
+[textlint editor](https://github.com/textlint/editor)は、以前記事などでも紹介しています。
 
 - [textlint editor - ブラウザでも動くPrivacy Firstの文章校正ツールを作る話](https://azu.github.io/slide/2020/textlint-editor/textlint-editor.html)
 - [サーバにデータを送る必要がない文章の校正ツール、スペルチェッカーを作っている | Web Scratch](https://efcl.info/2020/07/31/textlint-editor-pre/)
