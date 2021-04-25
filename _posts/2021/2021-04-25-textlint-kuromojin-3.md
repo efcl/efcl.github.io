@@ -31,9 +31,7 @@ kuromoji.jsの最新バージョンは[0.1.2](https://github.com/takuyaa/kuromoj
 いろいろな方に協力してもらってアップデートしています。
 
 - [textlint-ja/textlint-rule-max-ten: textlint rule that limit maxinum ten(、) count of sentence.](https://github.com/textlint-ja/textlint-rule-max-ten) @azu 
-  - https://github.com/textlint-ja/textlint-rule-max-ten/releases/tag/v4.0.0
 - [textlint-ja/textlint-rule-no-double-negative-ja: 二重否定をチェックするtextlint rule](https://github.com/textlint-ja/textlint-rule-no-double-negative-ja) @azu
-  - https://github.com/textlint-ja/textlint-rule-no-double-negative-ja/releases/tag/v2.0.0
 - [textlint-ja/analyze-desumasu-dearu: 文の敬体(ですます調)、常体(である調)を解析するJavaScriptライブラリ](https://github.com/textlint-ja/analyze-desumasu-dearu) @azu
     - [textlint-ja/textlint-rule-no-mix-dearu-desumasu: textlint rule that check no mix である and ですます.](https://github.com/textlint-ja/textlint-rule-no-mix-dearu-desumasu) @azu
 - [textlint-ja/textlint-rule-morpheme-match: 形態素解析結果のTokenベースの辞書でマッチするtextlintルール](https://github.com/textlint-ja/textlint-rule-morpheme-match) @azu
