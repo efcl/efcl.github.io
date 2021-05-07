@@ -66,7 +66,7 @@ Markdownエディタと作図ツールを行き来しないで、同じアプリ
 適当な図を描くのにそっちを使うのは面倒でした。
 また、[plantuml](https://plantuml.com/)、[nomnoml](https://nomnoml.com/)、[Mermaid](https://mermaid-js.github.io/mermaid/)などのテキストで書けるツールはメンテナンス性はいいのですが、記法を覚えられないという問題がありました。
 
-[Excalidraw](https://excalidraw.com/)は機能的にはそこまで多いわけではないですが、描いてて楽しいのと[@excalidraw/excalidraw](https://www.npmjs.com/package/@excalidraw/excalidraw)というライブラリのようなアプリで簡単に組み込めるので、[Inkdrop](https://www.inkdrop.app/)に組み込んでみました。
+[Excalidraw](https://excalidraw.com/)は機能的にはそこまで多いわけではないですが、描いてて楽しいのと[@excalidraw/excalidraw](https://www.npmjs.com/package/@excalidraw/excalidraw)というライブラリで簡単にアプリケーションに組み込めるので、[Inkdrop](https://www.inkdrop.app/)に組み込んでみました。
 Excalidrawで描いたら自動で`.excalidraw` と png ファイルを生成するというのがこだわりポイントです。(ノートアプリで保存を意識したくなかった)
 
 VSCodeでも次のような拡張を使えば `.excalidraw` ファイルを編集できるので、他のエディタともうまく連携できるような気もします。
