@@ -1,5 +1,5 @@
 ---
-title: "excalidrawをinkdropでインライン編集できるプラグイン"
+title: "excalidrawをinkdropでインライン編集できるプラグインを作った"
 author: azu
 layout: post
 date : 2021-05-07T17:32
