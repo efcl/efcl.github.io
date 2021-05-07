@@ -95,7 +95,7 @@ VSCodeでも次のような拡張を使えば `.excalidraw` ファイルを編�
 
 Inkdropは、CodeMirror、React、Redux、Remark、Electron、CouchDBみたいな構成になっていて、
 APIも大体そのままな感じなので、ハックして遊ぶには結構便利な感じです。
-(たまにAPIがなかったらドキュメント探しても分からないことあるけど、特殊な構成じゃないからなんとかできるみたいな感じ)
+(たまにAPIがなかったり、ドキュメント探しても分からないことあるけど、特殊な構成じゃないからなんとかできるみたいな感じ)
 
 - [Table of Contents | Inkdrop Documentation](https://docs.inkdrop.app/)
 
