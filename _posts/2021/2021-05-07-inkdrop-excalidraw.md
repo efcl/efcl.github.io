@@ -19,13 +19,13 @@ tags:
 Inkdropのノートに次の記法で `.excalidraw` ファイルへのリンク か `.exalidraw.png` を画像として埋め込みます。
 
 ```
-[!Excalidraw](/path/to/file.excalidraw)
+[!Excalidraw](file:///path/to/file.excalidraw)
 ```
 
 OR
 
 ```markdown
-![Excalidraw](/path/to/file.excalidraw.png)
+![Excalidraw](file:///path/to/file.excalidraw.png)
 ```
 
 このノートをプレビューすると、プレビュー画面に[@excalidraw/excalidraw](https://www.npmjs.com/package/@excalidraw/excalidraw)を使ったexcalidrawのエディタが表示されるので、そのまま編集できます。
