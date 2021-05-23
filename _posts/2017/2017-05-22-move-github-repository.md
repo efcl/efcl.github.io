@@ -28,7 +28,8 @@ GitHubのリポジトリを別の場所に移す場合、リポジトリまる�
 [move-github-repository](https://github.com/azu/move-github-repository "azu/move-github-repository: Move GitHub repository(Update description &amp;&amp; URL &amp;&amp; default branch).")は、コマンド一発で次のようなことをします。
 
 
-- リポジトリのdescription && homepageを更新する
+- リポジトリのdescriptionを更新する
+- リポジトリhomepageを移動先のURLに更新する
 - `301_moved_permanently`ブランチを作る
 	- このブランチは移転してことを書いたREADME.mdのみがある
 - `301_moved_permanently`をデフォルトブランチにする
