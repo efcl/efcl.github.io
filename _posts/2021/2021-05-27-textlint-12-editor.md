@@ -244,7 +244,7 @@ textlint editorの目的は次の記事やスライドで話しています。
 - [textlint editor - ブラウザでも動くPrivacy Firstの文章校正ツールを作る話](https://azu.github.io/slide/2020/textlint-editor/textlint-editor.html)
 - [サーバにデータを送る必要がない文章の校正ツール、スペルチェッカーを作っている | Web Scratch](https://efcl.info/2020/07/31/textlint-editor-pre/)
 
-textlint editorはテキストエリア上で赤線を出して修正したりするWordとかgrammarlyみたいな感じのものです。
+textlint editorはテキストエリア上で赤線を出して修正したりするWordとかgrammarlyみたいなものです。
 自分のtextlintの設定を使えるようにしているので、カスタマイズ性は維持しています。
 
 CIとかコマンドラインで継続的に回してチェックとして使う[textlint](https://github.com/textlint/textlint)と違って、
