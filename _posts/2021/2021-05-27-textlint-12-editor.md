@@ -40,7 +40,8 @@ textlint 12ではこのビルトインで含まれていているMarkdownプラ�
 - [feat(markdown-to-ast): update to remark-parse@9 by azu · Pull Request #767 · textlint/textlint](https://github.com/textlint/textlint/pull/767)
 - [Release 13.0.0 (micromark) · remarkjs/remark](https://github.com/remarkjs/remark/releases/tag/13.0.0)
 
-これによって、今まで上手く認識できていなかった箇所も認識されるようになることで、新しいエラーが見つかるようになるかもしれません。
+このアップデートで、今まで上手く認識できていなかった箇所も認識されるようにある場合があります。
+その場合は、文章を変更してなくても新しいエラーが見つかるようになるかもしれません。（メジャーアップデートの主な理由です）
 
 また、textlint 12からNode.js 12以上が必須となっています。
 Node.js 10以下はサポートが終了しているので、Node.js 12、14、16などへアップデートしてください。
