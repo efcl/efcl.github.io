@@ -29,7 +29,7 @@ Markdownプラグインのアップデートと各パッケージのバージョ
 
 textlintは、文章の構文を認識してLintすることで誤検知を減らしています。
 たとえば、MarkdownのCodeBlockの中のコードを単純にスペルチェックしてしまうと赤線だらけになってしまいます。
-textlintの各ルールには、CodeBlockの中はチェックしないといったように各ルールごとに、文章のどの構文（リンクやテキスト、リスト、コードなど）を対象にチェックするかといった実装を含んでいます。
+textlintの各ルールには、CodeBlockの中はチェックしないといったように、各ルールごとに文章のどの構文（リンクやテキスト、リスト、コードなど）を対象にチェックするかといった実装を含んでいます。
 
 この構文を認識するために、textlintでは各ファイルフォーマットごとにプラグインが用意してあって、ビルトインではテキストとMarkdownが含まれています。
 外部のプラグインとして[HTML](https://github.com/textlint/textlint-plugin-html)、[Re:VIEW](https://github.com/orangain/textlint-plugin-review)、[LaTeX2](https://github.com/textlint/textlint-plugin-latex2e)などがあります。
