@@ -126,23 +126,109 @@ textlintの日本語のGitterでも話したりしているので、プラグイ
 
 一つのプロダクトを扱うmonorepoでバージョンがバラバラだとやっぱりわかりにくくあつかいにくいので、textlint 12ですべてのパッケージのバージョンを`12.0.0`へと統一しました。
 
-| Breaking Changes | Package | Previous version | Current version |
-| ----  | ---- | ---- | ---- |
-| ✔ | textlint | 11.9.1 | 12.0.0 |
-| ✔ | textlint-tester | 5.3.5 | 12.0.0 |
-| ✔ | textlint-scripts | 3.0.0 | 12.0.0 |
-| 　| @textlint/ast-node-types | 4.4.3 | 12.0.0 |
-| 　| @textlint/ast-traverse | 2.3.5 | 12.0.0 |
-| 　| @textlint/ast-tester | 2.3.5 | 12.0.0 |
-| 　| @textlint/feature-flag | 3.3.5 | 12.0.0 |
-| 　| @textlint/fixer-formatter | 3.3.5 | 12.0.0 |
-|    | @textlint/kernel | 3.4.5 | 12.0.0 |
-| 　| @textlint/linter-formatter | 3.3.5 | 12.0.0 |
-| 　| @textlint/module-interop | 1.2.5 | 12.0.0 |
-| ✔ | @textlint/textlint-plugin-markdown | 5.3.5 | 12.0.0 |
-| 　| @textlint/textlint-plugin-text | 4.3.5 | 12.0.0 |
-| ✔ | @textlint/types | 1.5.5 | 12.0.0 |
-|  | @textlint/utils | 1.2.5 | 12.0.0 |
+<table>
+<thead>
+<tr>
+<th>Breaking Changes</th>
+<th>Package</th>
+<th>Previous version</th>
+<th>Current version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✔</td>
+<td>textlint</td>
+<td>11.9.1</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>✔</td>
+<td>textlint-tester</td>
+<td>5.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>✔</td>
+<td>textlint-scripts</td>
+<td>3.0.0</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/ast-node-types</td>
+<td>4.4.3</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/ast-traverse</td>
+<td>2.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/ast-tester</td>
+<td>2.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/feature-flag</td>
+<td>3.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/fixer-formatter</td>
+<td>3.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td></td>
+<td>@textlint/kernel</td>
+<td>3.4.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/linter-formatter</td>
+<td>3.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/module-interop</td>
+<td>1.2.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>✔</td>
+<td>@textlint/textlint-plugin-markdown</td>
+<td>5.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>　</td>
+<td>@textlint/textlint-plugin-text</td>
+<td>4.3.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td>✔</td>
+<td>@textlint/types</td>
+<td>1.5.5</td>
+<td>12.0.0</td>
+</tr>
+<tr>
+<td></td>
+<td>@textlint/utils</td>
+<td>1.2.5</td>
+<td>12.0.0</td>
+</tr>
+</tbody>
+</table>
+
 
 この過程で`textlint-scripts`もmonorepoへ追加しました。
 
