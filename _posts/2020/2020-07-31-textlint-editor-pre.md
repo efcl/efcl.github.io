@@ -11,6 +11,12 @@ tags:
 
 [textlint editor](https://github.com/textlint/editor)というブラウザ/ブラウザ拡張上で動く[textlint](https://github.com/textlint/textlint)を動かすプロジェクトを最近やっています。
 
+追記: FirefoxとChrome拡張をそれぞれ公開しています。
+
+- [textlint editor - Firefox](https://addons.mozilla.org/firefox/addon/textlint-editor/)
+- [textlint editor - Chrome](https://chrome.google.com/webstore/detail/textlint-editor/gfhlfpnpjokocfohicmfbgjneiipfeil)
+
+
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">textlint editor demo<a href="https://t.co/cOdR3MKWFn">https://t.co/cOdR3MKWFn</a> <a href="https://t.co/b2lqpqKUTl">pic.twitter.com/b2lqpqKUTl</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1288038759192174593?ref_src=twsrc%5Etfw">July 28, 2020</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
