@@ -34,6 +34,10 @@ textlintの各ルールには、CodeBlockの中はチェックしないといっ
 この構文を認識するために、textlintでは各ファイルフォーマットごとにプラグインが用意してあって、ビルトインではテキストとMarkdownが含まれています。
 外部のプラグインとして[HTML](https://github.com/textlint/textlint-plugin-html)、[Re:VIEW](https://github.com/orangain/textlint-plugin-review)、[LaTeX2](https://github.com/textlint/textlint-plugin-latex2e)などがあります。
 
+プラグインの一覧は次のページにまとまっています。
+
+- [Collection of textlint rule · textlint/textlint Wiki](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule#plugin-list)
+
 textlint 12ではこのビルトインで含まれていているMarkdownプラグインが大きく変更されています。
 内部的に使っているMarkdownのパーサが大きく変わっています。
 
