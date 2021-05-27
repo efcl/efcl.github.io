@@ -275,4 +275,4 @@ CIとかコマンドラインで継続的に回してチェックとして使う
 自分のGitHub Sponsorsのページは <https://github.com/sponsors/azu> です。
 興味がある人は見てください。
 
-<iframe src="https://github.com/sponsors/azu/card" title="Sponsor azu" height="225" width="600" style="border: 0; background: #FFFFFF;"></iframe>
+<iframe src="https://github.com/sponsors/azu/card" title="Sponsor azu" height="225" width="600" style="border: 0; background: #000000;"></iframe>
