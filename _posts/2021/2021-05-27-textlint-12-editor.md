@@ -5,7 +5,7 @@ layout: post
 date : 2021-05-27T06:51
 category: textlint
 tags:
-    - textlin
+    - textlint
     - JavaScript
 
 ---
