@@ -47,12 +47,27 @@ Node.jsでは、LTSとしてMaintenanceとActive LTSの2種類があり、2021-0
 $ npx github-actions-node-versions
 ```
 
+実行結果の例
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">$ npx github-actions-node-versions<br><br>でGitHub Actionsのnode_versionsのmatrixを<br>`[Maintenance_LTS, Current_LTS, Active]` に更新するツール書きました<a href="https://t.co/2oVSq0KnR8">https://t.co/2oVSq0KnR8</a> <a href="https://t.co/RLUGGAPBkP">pic.twitter.com/RLUGGAPBkP</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1397564415105323009?ref_src=twsrc%5Etfw">May 26, 2021</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 [node-version-alias](https://github.com/ehmicky/node-version-alias)を使っているので、<https://nodejs.org/dist/>の状態によって自動的に結果が変わります。
 
 Node.js 17が出たときは、まだUnstableなので入ってほしくなくて奇数バージョンは除外しています。
 なので、`node-version: [14, 16]` となる気がします。(テストしてないので、テストと修正のPR待ってます！)
 
 - <https://github.com/azu/github-actions-node-versions/blob/724c31a7f671e6d6dda0776d823003ff896a8f30/src/github-actions-node-versions.ts#L19-L29>
+
+## 内部的な仕組み
+
+コメントを維持しながらYAMLを変換したかったため[js-yaml](https://github.com/nodeca/js-yaml)が使えませんでした。
+[eemeli/yaml: JavaScript parser and stringifier for YAML](https://github.com/eemeli/yaml)を使って、Yamlをパースしてtraverseしながら、位置情報を取得しています。
+
+この位置情報を元に `node-version` だけを書き換えることで、コメントを維持しながらYAMLのマイグレーションをしています。
+
+- [github-actions-node-versions/github-actions-node-versions.ts at main · azu/github-actions-node-versions](https://github.com/azu/github-actions-node-versions/blob/main/src/github-actions-node-versions.ts#L31-L53)
 
 ## おわりに
 
