@@ -19,28 +19,7 @@ GitHubでのCIは[Actions | GitHub](https://github.co.jp/features/actions)を使
 
 そのため、GitHub ActionsでNode.jsのテストを書くには、次のように`node-version`にそれぞれのバージョンを指定する必要があります。
 
-```yaml
-name: "test"
-on: [ push, pull_request ]
-
-jobs:
-  test:
-    strategy:
-      matrix:
-        os: [ ubuntu-latest, windows-latest ]
-        node-version: [ 10, 12, 14 ]
-    name: Test(Node ${{ matrix.node }} on ${{ matrix.os }})
-    runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install
-        run: npm install
-      - name: Test
-        run: npm test
-```
+<script src="https://gist.github.com/azu/38fb9c00cf514ef453fef4bf9c2c35cb.js"></script>
 
 Travis CIでは[nvm](https://github.com/nvm-sh/nvm)が使われていたので `lts/*` などをLTSを指定できたので、
 `node_js: stable` とだけ書いていることが多かったです。
