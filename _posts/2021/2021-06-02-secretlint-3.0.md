@@ -80,12 +80,14 @@ Secretlintは、プロジェクトと個人どちらでも同じように使え�
 個人的にはGit 2.9+から`git config --global core.hooksPath`でグローバルなコミットフックが書けるようになったで、
 リポジトリ関係なく間違えて機密情報、`/Users/user-name`のような[ユーザーパスが入ったファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-homedir)、[`.env`ファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-dotenv)などコミットするべきじゃないものをチェックできて便利です。
 
-こういうLintみたいのはとにかく使いやすくないと使わない気がするので、自動的にどこでも使えるグローバルなコミットフックとして入れておくのが楽なのかなと思いました。
+こういうLintみたいのは使いやすくないと使わない気がするので、自動的にどこでも使えるグローバルなコミットフックとして入れておくのが楽なのかなと思いました。
 あわせてチーム開発するようなリポジトリには、間違えて追加されないようにするためにチェックとしてCIに入れるのが良いのかなと思っています。
 
 自分のコミットフックの設定(Zsh連携もの含む)は次のリポジトリに公開してあります。
 
 - [azu/git-hooks: @azu's global git hooks](https://github.com/azu/git-hooks)
+
+チェックするだけなら今も設定は不要ですが、コミットフックする場合も設定不要で使えるようにしたいですね。
 
 その他の類似するツールとの比較は次の記事にまとまっている気がします。
 
