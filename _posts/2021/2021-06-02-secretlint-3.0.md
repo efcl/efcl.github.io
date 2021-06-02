@@ -9,7 +9,7 @@ tags:
 
 ---
 
-コミットないようにトークンやSSHの秘密鍵など機密情報が入ってないかをチェックできる[Secretlint](https://github.com/secretlint/secretlint) 3.0をリリースしました。
+コミット内容にトークンやSSHの秘密鍵など機密情報が入ってないかをチェックできる[Secretlint](https://github.com/secretlint/secretlint) 3.0をリリースしました。
 
 - [Release v3.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v3.0.0)
 - [secretlint v3.0 support GitHub’s new authentication token detection - DEV Community 👩‍💻👨‍💻](https://dev.to/azu/secretlint-v3-0-support-github-token-detection-57eg)
@@ -35,7 +35,7 @@ Node.jsが入ってる人は、`@secretlint/quick-start`が簡易版のチェッ
     npx @secretlint/quick-start "**/*"
 
 secretlintは[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようにJavaScriptでルールを書いて拡張できるようになっています。
-この辺をもっとしりたい人は、[Configuration](https://github.com/secretlint/secretlint#configuration)や[secretlint/secretlint-rule.md](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)を読んでください。
+この辺をもっと知りたい人は、[Configuration](https://github.com/secretlint/secretlint#configuration)や[secretlint/secretlint-rule.md](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)を読んでください。
 
 ## GitHub Tokenの対応
 
@@ -82,7 +82,7 @@ Secretlintは、プロジェクトと個人どちらでも同じように使え�
 
 - [secretlint を使って機密情報を git commit できない環境を作る | DevelopersIO](https://dev.classmethod.jp/articles/dont-allow-commiting-secrets-by-secretlint/)
 
-個人的にはGit 2.9+から`git config --global core.hooksPath`でグローバルなコミットフックが書けるようになったで、
+個人的にはGit 2.9+から`git config --global core.hooksPath`でグローバルなコミットフックが書けるようになったので、
 リポジトリ関係なく間違えて機密情報、`/Users/user-name`のような[ユーザーパスが入ったファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-homedir)、[`.env`ファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-dotenv)などコミットするべきじゃないものをチェックできて便利です。
 
 こういうLintみたいのは使いやすくないと使わない気がするので、自動的にどこでも使えるグローバルなコミットフックとして入れておくのが楽なのかなと思いました。
