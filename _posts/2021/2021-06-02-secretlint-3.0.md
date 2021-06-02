@@ -33,7 +33,7 @@ Node.jsが入ってる人は、`@secretlint/quick-start`が簡易版のチェッ
     npx @secretlint/quick-start "**/*"
 
 secretlintは[ESLint](https://eslint.org/)や[textlint](https://textlint.github.io/)のようにJavaScriptでルールを書いて拡張できるようになっています。
-この辺をもっとしりたい人は、[Configuration](https://github.com/secretlint/secretlint#configuration)を読んでください。
+この辺をもっとしりたい人は、[Configuration](https://github.com/secretlint/secretlint#configuration)や[secretlint/secretlint-rule.md](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)を読んでください。
 
 ## GitHub Tokenの対応
 
