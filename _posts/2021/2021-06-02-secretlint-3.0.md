@@ -39,13 +39,15 @@ secretlintは[ESLint](https://eslint.org/)や[textlint](https://textlint.github.
 
 2021年4月ごとから新しく発行されたGitHub Tokenは次のようなルールで、トークン自体にprefixが作るのでトークンをみてGitHub Tokenか分かるようになっています。
 
-> The character set changed from [a-f0-9] to [A-Za-z0-9_]
-> The format now includes a prefix for each token type:
-> ghp_ for Personal Access Tokens
-> gho_ for OAuth Access tokens
-> ghu_ for GitHub App user-to-server tokens
-> ghs_ for GitHub App server-to-server tokens
-> ghr_ for GitHub App refresh tokens
+```
+The character set changed from [a-f0-9] to [A-Za-z0-9_]
+The format now includes a prefix for each token type:
+ghp_ for Personal Access Tokens
+gho_ for OAuth Access tokens
+ghu_ for GitHub App user-to-server tokens
+ghs_ for GitHub App server-to-server tokens
+ghr_ for GitHub App refresh tokens
+```
 
 - [Authentication token format updates are generally available | GitHub Changelog](https://github.blog/changelog/2021-03-31-authentication-token-format-updates-are-generally-available/)
 - [Behind GitHub's new authentication token formats | The GitHub Blog](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
