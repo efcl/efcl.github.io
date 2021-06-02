@@ -14,6 +14,8 @@ tags:
 - [Release v3.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v3.0.0)
 - [secretlint v3.0 support GitHub’s new authentication token detection - DEV Community 👩‍💻👨‍💻](https://dev.to/azu/secretlint-v3-0-support-github-token-detection-57eg)
 
+![secretlint 3.0](https://efcl.info/wp-content/uploads/2021/06/02-1622595685.png)
+
 secretlint 3.0では、GitHubの新しくなったトークン形式の検出に対応する[@secretlint/secretlint-rule-github](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-github)のルールが追加されました。
 
 - [Behind GitHub's new authentication token formats | The GitHub Blog](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
