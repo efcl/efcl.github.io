@@ -66,6 +66,9 @@ ghr_ for GitHub App refresh tokens
 ## ドキュメントの更新
 
 Secretlint 3.0にあわせてREADMEの[Husky + lint-staged](https://github.com/secretlint/secretlint#husky--lint-staged)を最新のバージョンに更新しました。
+セットアップ済みのサンプルは次のリポジトリとして置いてあります。
+
+- [azu/secretlint-husky-lint-staged-example](https://github.com/azu/secretlint-husky-lint-staged-example)
 
 また、トークン検出についてはGitHub自体に[secret scanning](https://docs.github.com/en/code-security/secret-security/about-secret-scanning)という検出の仕組みが最近利用できるようになっています。
 [secret scanning](https://docs.github.com/en/code-security/secret-security/about-secret-scanning)は、リポジトリにpushした後にトークンがあるかをスキャンして知らせてくれる機能です。対応しているトークンプロバイダも多く、実際にトークンがvalidかも検証するの正確です。
