@@ -39,7 +39,7 @@ secretlintは[ESLint](https://eslint.org/)や[textlint](https://textlint.github.
 
 ## GitHub Tokenの対応
 
-2021年4月ごとから新しく発行されたGitHub Tokenは次のようなルールで、トークン自体にprefixが作るのでトークンをみてGitHub Tokenか分かるようになっています。
+2021年4月ごろから新しく発行されたGitHub Tokenは次のようなルールで、トークン自体にprefixが作るのでトークンをみてGitHub Tokenか分かるようになっています。
 
 ```
 The character set changed from [a-f0-9] to [A-Za-z0-9_]
