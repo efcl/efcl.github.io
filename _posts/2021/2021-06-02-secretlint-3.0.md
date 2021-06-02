@@ -24,7 +24,7 @@ secretlint 3.0では、GitHubの新しくなったトークン形式の検出に
 secretlintでは[@secretlint/secretlint-rule-preset-recommend](https://github.com/secretlint/secretlint/tree/master/packages/@secretlint/secretlint-rule-preset-recommend)という、ESLintのような推奨ルールプリセットも提供しています。
 そのため、プリセットを使っている人や[Docker版](https://github.com/secretlint/secretlint/tree/master/publish/docker)を使ってる人は自動的にGitHubトークンも対応できます。
 
-とりあえず、今あるディレクトリにsecretlintの推奨プリセットで検出できる機密情報がないかは次のコマンドを実行するだけでもチェックできます。
+とりあえず、今あるディレクトリにsecretlintの推奨プリセットで検出できる機密情報がないかは、次のコマンドでチェックできます。
 
 Dockerが入ってる人は`docekr run`を使えます。
 
