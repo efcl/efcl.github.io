@@ -76,7 +76,7 @@ Secretlintは、プロジェクトと個人どちらでも同じように使え�
 - [secretlint を使って機密情報を git commit できない環境を作る | DevelopersIO](https://dev.classmethod.jp/articles/dont-allow-commiting-secrets-by-secretlint/)
 
 個人的にはGit 2.9+から`git config --global core.hooksPath`でグローバルなコミットフックが書けるようになったで、
-リポジトリ関係なく間違えて機密情報、`/Users/azu`のような[ユーザーパスが入ったファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-homedir)、[`.env`ファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-dotenv)などコミットするべきじゃないものをチェックできて便利です。
+リポジトリ関係なく間違えて機密情報、`/Users/user-name`のような[ユーザーパスが入ったファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-homedir)、[`.env`ファイル](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-no-dotenv)などコミットするべきじゃないものをチェックできて便利です。
 
 自分の設定(Zsh連携もの含む)は次のリポジトリに公開してあります。
 
