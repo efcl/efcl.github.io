@@ -30,7 +30,7 @@ tags:
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-仕組みとしてはS3に全てのツイートをまとめた`tweet.json`を保存し、
+仕組みとしてはS3に全てのツイートをまとめた`tweets.json`を保存し、
 そのJSONファイルを[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)を使って全文検索します。
 
 検索するサイト自体は、[Next.js](https://nextjs.org/)を[serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)を使って動かします。
