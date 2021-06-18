@@ -125,7 +125,7 @@ READMEではGitHub Actionsを使ったレシピを公開しています。
 ## まとめ
 
 Twitterの自分のログをPC、モバイルどっちでもインクリメンタルに検索できるものが欲しくなったので[mytweets](https://github.com/azu/mytweets)を作りました。
-[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)は、上から順番にスキャンするという感じの予想通りな動きをしてくれてかつ30万ツイート(30万行)ぐらいなら1~2秒で完了するので、結構便利でした。
+[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)は、上から順番にスキャンするという感じの予想通りな動きをしてくれて、かつ30万ツイート(30万行)ぐらいなら1~2秒で完了するので、結構便利でした。
 
 LambdaだとStreamでレスポンスを上手く返せなかったので、[Fetch with Streamで取得しつつ検索結果を表示](https://twitter.com/azu_re/status/1403380808845455362)というのは諦めましたが、コスパは良い感じのものができてよかった気がします。
 
