@@ -135,3 +135,4 @@ LambdaだとStreamでレスポンスを上手く返せなかったので、[Fetc
 「寝る」とか単語一つみたいなものとかもそういう事情でかかりやすいですが、こういうTweetsは検索結果にでてきてもあまり意味はないので、デフォルトでは検出されるようになっています。
 
 [delete-tweets](https://github.com/azu/delete-tweets)は機械的にやるだけの仕組みなので、ちゃんとやりたい人は外部サービスを使うのがよさそうです。
+TwitterのAPIには3200件までしか遡れないという制限があるので、外部サービスを使う場合も[Twitterのデータアーカイブ](https://help.twitter.com/ja/managing-your-account/how-to-download-your-twitter-archive)が必要になります。
