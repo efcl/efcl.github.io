@@ -1,5 +1,5 @@
 ---
-title: "自分のTweetsをインクリメンタル検索できるサービス作成キットとまとめてTweetsを削除するツールを書いた"
+title: "自分のTweetsをインクリメンタル検索できるサービス作成キット と Tweetsをまとめて削除するツールを書いた"
 author: azu
 layout: post
 date : 2021-06-18T19:16
