@@ -117,7 +117,7 @@ READMEではGitHub Actionsを使ったレシピを公開しています。
 
 - https://github.com/azu/delete-tweets#debug
 
-[delete-tweets](https://github.com/azu/delete-tweets)もTwitter V2 APIのクライアント情報が必要になるので、詳しい使い方はRAEDMEを参照してください。
+[delete-tweets](https://github.com/azu/delete-tweets)はwrite権限を持ったTwitter V2 APIのクライアント情報が必要になるので、詳しい使い方はRAEDMEを参照してください。
 
 - [azu/delete-tweets: Twitterのアーカイブから削除候補のTweetsを自動的に抽出する日本語の補助ツールと削除するツール。](https://github.com/azu/delete-tweets)
 
