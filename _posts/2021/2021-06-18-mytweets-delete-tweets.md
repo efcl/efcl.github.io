@@ -132,6 +132,6 @@ LambdaだとStreamでレスポンスを上手く返せなかったので、[Fetc
 
 [mytweets](https://github.com/azu/mytweets)の仕組みを応用して、Tweetsの削除をする[delete-tweets](https://github.com/azu/delete-tweets)も作りました。
 ネガティブポジティブの判定には[単語感情極性対応表](http://www.lr.pi.titech.ac.jp/~takamura/pndic_ja.html)と[negaposi-analyzer-ja](https://github.com/azu/negaposi-analyzer-ja)でやっていますが、ネガティブな単語のほうが辞書として多いので、普通に書くと大体0未満のスコア(ネガティブより)になると思います。
-「寝る」とか単語一つみたいなものとかもそういう事情でかかりやすいですが、こういうTweetsは検索ででてきてもあまり意味はないので、デフォルトでは検出されるようになっています。
+「寝る」とか単語一つみたいなものとかもそういう事情でかかりやすいですが、こういうTweetsは検索結果にでてきてもあまり意味はないので、デフォルトでは検出されるようになっています。
 
 [delete-tweets](https://github.com/azu/delete-tweets)は機械的にやるだけの仕組みなので、ちゃんとやりたい人は外部サービスを使うのがよさそうです。
