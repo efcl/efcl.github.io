@@ -40,7 +40,7 @@ tags:
 
 そのため、[mytweets](https://github.com/azu/mytweets)を動かすには次のものが必要です。
 
-- `tweet.json`を保存するS3のBucket
+- `tweets.json`を保存するS3のBucket
 - S3のBucketを読み書きするAWSのトークン
 - TwitterからTweetsを読み込むのTwitterクライアント情報
 
