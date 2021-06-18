@@ -1,5 +1,5 @@
 ---
-title: "自分のTweetsをインクリメンタル検索できるサービス作成キットとまとめてTweetsを削除するツールを書いた"
+title: "自分のTweetsをインクリメンタル検索できるサービス作成キット と Tweetsをまとめて削除するツールを書いた"
 author: azu
 layout: post
 date : 2021-06-18T19:16
@@ -103,9 +103,11 @@ READMEではGitHub Actionsを使ったレシピを公開しています。
 
 2のDetect Tweetsでは次の仕組みで削除候補を抽出できるようになっています。
 
-- [x] textlintでの[放送禁止用語](https://github.com/hata6502/textlint-rule-no-hoso-kinshi-yogo)、[不適切表現](https://github.com/textlint-ja/textlint-rule-ja-no-inappropriate-words)のチェック
-- [x] ポジティブ、ネガティブ([単語感情極性対応表](http://www.lr.pi.titech.ac.jp/~takamura/pndic_ja.html))ベースの推定
-- [x] ユーザー定義の許可リスト、不許可リスト
+- 抽出する範囲を `--fromDate` と `--toDate` で指定
+- textlintでの[放送禁止用語](https://github.com/hata6502/textlint-rule-no-hoso-kinshi-yogo)、[不適切表現](https://github.com/textlint-ja/textlint-rule-ja-no-inappropriate-words)のチェック
+- ポジティブ、ネガティブベースの推定
+  - [単語感情極性対応表](http://www.lr.pi.titech.ac.jp/~takamura/pndic_ja.html)は各自でダウンロードする形式にしています
+- ユーザー定義の許可リスト、不許可リスト
 
 ⚠ 基本的に過剰に抽出するようにデザインされているので、細かいところは辞書などで調整してください。たとえば "寝る" とか 超短文なTweetsもデフォルトでは結構かかるようになってるので、その辺は調整できる人が使って下さい。
 また、Tweetsの削除をすると復元はできないので、自己責任で削除してください。
@@ -119,13 +121,12 @@ READMEではGitHub Actionsを使ったレシピを公開しています。
 
 - [azu/delete-tweets: Twitterのアーカイブから削除候補のTweetsを自動的に抽出する日本語の補助ツールと削除するツール。](https://github.com/azu/delete-tweets)
 
-⚠ 削除の仕組み上、TwitterのAPIを大量に叩きます。0.5sごとにAPIを叩いたり、エラーがでたら自動で止まるようにしたり、エラーが起きた箇所から再開できるようにしてはいますが、
-削除は自己責任でやってください。
+⚠ 削除の仕組み上、TwitterのAPIを大量に叩きます。0.5sごとにAPIを叩いたり、エラーがでたら自動で止まるようにしたり、エラーが起きた箇所から再開できるようにしてはいますが、削除は自己責任でお願いします。
 
 ## まとめ
 
 Twitterの自分のログをPC、モバイルどっちでもインクリメンタルに検索できるものが欲しくなったので[mytweets](https://github.com/azu/mytweets)を作りました。
-[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)は、上から順番にスキャンするという感じの予想通りな動きをしてくれてかつ30万ツイート(30万行)ぐらいなら1~2秒で完了するので、結構便利でした。
+[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)は、上から順番にスキャンするという感じの予想通りな動きをしてくれて、かつ30万ツイート(30万行)ぐらいなら1~2秒で完了するので、結構便利でした。
 
 LambdaだとStreamでレスポンスを上手く返せなかったので、[Fetch with Streamで取得しつつ検索結果を表示](https://twitter.com/azu_re/status/1403380808845455362)というのは諦めましたが、コスパは良い感じのものができてよかった気がします。
 
