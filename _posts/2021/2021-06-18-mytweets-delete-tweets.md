@@ -35,6 +35,9 @@ tags:
 仕組みとしてはS3に全てのツイートをまとめた`tweets.json`を保存し、
 そのJSONファイルを[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)を使って全文検索します。
 
+S3 SelectはS3に置いてあるJSONやCSVのファイルに対してSQLでファイル内検索ができる仕組みです。
+複数ファイルの検索はできないので、複数ファイルの場合は[Amazon Athena](https://aws.amazon.com/jp/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc)などが必要です。[philan.net](https://github.com/azu/philan.net)ではAthenaを使って集計しています。
+
 検索するサイト自体は、[Next.js](https://nextjs.org/)を[serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)を使って動かします。
 [serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)は、Cloudfront + S3 + Lambda@Edgeを使ってNext.jsを動かす[Serverless Framework](https://www.serverless.com/framework/docs/providers/aws/guide/installation/)のプラグインです。
 
