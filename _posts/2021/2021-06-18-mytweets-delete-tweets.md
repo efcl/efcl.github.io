@@ -70,6 +70,8 @@ TWITTER_ACCESS_SECRET="x"
 
 - <https://github.com/azu/mytweets#private-page>
 
+📝 デフォルトでは中間ファイルをGitHubにも保存しているので、Privateにしたい場合はリポジトリもPrivateにしてください。
+
 コストの方は、S3 + S3 Selectが一番かかると思いますが、月$1以下になると思います。
 `tweets.json` のサイズ次第ですが、自分の場合30万ツイートで20MB(gzip後)なので、そこまで大きくはならない感じもします。
 
