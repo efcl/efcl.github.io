@@ -30,6 +30,8 @@ tags:
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+追記: IMEが確定してから検索できるように[Composition Event](https://github.com/azu/mytweets/commit/ae41b1b92b6eede5f097b0c0a06a8d92b3c0902d)に対応しました。
+
 仕組みとしてはS3に全てのツイートをまとめた`tweets.json`を保存し、
 そのJSONファイルを[S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)を使って全文検索します。
 
