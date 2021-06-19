@@ -47,7 +47,7 @@ S3 SelectはS3に置いてあるJSONLDやCSVのファイルに対してSQLでフ
 
 - `tweets.json`を保存するS3のBucket
 - S3のBucketを読み書きするAWSのトークン
-- TwitterからTweetsを読み込むのTwitterクライアント情報
+- TwitterからTweetsを読み込むためTwitter APIトークン
 
 これらの情報を`.env`ファイルに渡すことで、`yarn fetch-tweets`や`yarn upload-tweets`などができるようになっています。
 
