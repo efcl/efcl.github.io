@@ -10,7 +10,7 @@ tags:
 
 ---
 
-GitHubリポジトリにはスポンサーボタンを表示する機能がありますが、これをまとめて設定ツールを書きました。
+GitHubリポジトリにはスポンサーボタンを表示する機能がありますが、これをまとめて設定するツールを書きました。
 
 [![GitHub Sponsorship button](https://efcl.info/wp-content/uploads/2019/10/27-1572152741.png)](https://github.com/azu/github-funding-yml-updater)
 
