@@ -11,7 +11,7 @@ tags:
 
 # GitHub Sponsors
 
-## GitHub Sponsorsの開始
+## GitHub Sponsorsを始めた理由
 
 2020年10月からGitHub Sponsorsのページを公開して、スポンサーを募集を開始しました。
 
@@ -24,14 +24,16 @@ GitHub Sponsorsを始めた理由はいくつかあります。
 - オープンソースに対して金銭的にContributeする方法を用意しておきたかった
   - [Promise本](https://azu.github.io/promises-book/)のときもそうでしたが、オープンソースに対する支払い方法がないのも問題であるため、この問題を解決する場所が欲しかった
   - Promise本の場合はGumroadで任意の値段で購入できる付録などで代用していました
-- Feeがないこと
-  - 基本的に継続することを考えているので、継続することにコストがないのは重要でした
+- 手数料がないこと
+  - 基本的に継続することを考えているので、継続することにコストがないのは重要です
   - [About GitHub Sponsors for open source contributors - GitHub Docs](https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/about-github-sponsors-for-open-source-contributors)
 - 同じ年に書籍を書いていて、確定申告することが決まっていたので
   - [JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch](https://efcl.info/2020/04/27/jsprimer/)
 
 GitHub Sponsorsには、月額とワンタイムの支払い方法があり、それぞれに対して最大10種類のTierが設定できます。
 （開始当初は、月額のみで、[2021年の4月](https://github.blog/changelog/2021-04-06-custom-amounts-and-one-time-payments-rolling-out-to-github-sponsors/)からスポンサー側が任意の金額を指摘できるCustom Amountsとワンタイムの支払いが追加されています。）
+
+## GitHub SponsorsのTierの設計
 
 このTier設計は、Issue(privateなので見れない)や他の人のTierを参考にしながら作った記憶があります。
 
@@ -52,7 +54,7 @@ Tierの種類自体は、最初に作ったものから今も特に変わって�
 - 💚 JSer.info Sponsor $100 a month
 - ❤️ Open Source Sponsor $300 a month
 
-Tierの説明文を読んだことがある人は分かると思いますが、基本的に個人向けのTierは見返り的なものは設定していません。
+Tierの説明文を読んだことがある人は分かると思いますが、基本的に個人向けのTierに見返り的なものは設定していません。
 なんとなくイメージしやすいものを設定している感じです。
 
 JSer.info SponsorやOpen Source Sponsorについては金額的に企業になると想定していたので、簡単な見返りは設定していますが、
@@ -65,6 +67,12 @@ GitHub Sponsorsのスポンサーになるのをコストとして考えてほ�
 
 そのため、Tierの見返りはかなりシンプルな感じにしています。
 
+- 多くの寄付者はデフォルトを選択する
+- デフォルトを自分の認識に合わせる
+
 ----
 
-##
+## 信用と信頼
+
+基本的にはTrustベースで考えている。
+安全装置としてのSponsorsはあんまり求められない
