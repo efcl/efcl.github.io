@@ -46,7 +46,7 @@ $ secretlint --maskSecrets .credential
 - [Option or formatter to not echo the actual secret to stdout · Issue #176 · secretlint/secretlint](https://github.com/secretlint/secretlint/issues/176)
 
 色々実装方法は悩みましたが、最終的にはGitHub ActionsやTravis CIのように、ルールがレポートしたデータを単純に文字列置換するという方法を取りました。
-secretlintのルールはエラーメッセージを作るときに、テンプレートとなる関数にデータオブジェクトとして機密情報などのトークンを渡します。
+[secretlintのルールはエラーメッセージを作るときに、テンプレートとなる関数にデータオブジェクト](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)として機密情報などのトークンを渡します。
 この渡されたデータと一致する文字列を自動的に `***` に置き換えるようにしました。
 
 単純な文字列置換なので、機密情報とは関係ないけど同じ文字列だった場合も`***`にマスクされるのはGitHub Actionsなどと同様です。
