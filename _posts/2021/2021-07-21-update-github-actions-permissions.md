@@ -48,7 +48,7 @@ GitHub Actionsのデフォルトのパーミッションは`write-all`です。
 つまり、リポジトリの読み書き、IssueやPRの読み書きなど全部の権限がデフォルトでついています。
 そのため、`uses: actions/checkout@v2` のようにread onlyでよいGitHub Actionsも、実際にはリポジトリやIssueへの書き込みできる権限も持ってしまっています。
 
-このデフォルト値は、リポジトリごと または Organization単位で、"Read repository contents permission" へと変更もできます。
+このパーミッションのデフォルト値は、リポジトリごと または Organization単位で、"Read repository contents permission" へと変更もできます。
 "Read repository contents permission" は次のパーミッションと同じ意味なので、リポジトリのコンテンツを読み取りのみできるというパーミッションです。
 
 ```
@@ -62,7 +62,12 @@ permissions:
 - [Disabling or limiting GitHub Actions for a repository - GitHub Docs](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/disabling-or-limiting-github-actions-for-a-repository#setting-the-permissions-of-the-github_token-for-your-repository)
 - [Security hardening for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions)
 
-しかし、必要な`permissions`を書いているActionをREADMEに書いてるものはとても少ないので、必要な`permissions`を定義するのはかなり面倒です。
+つまり、GitHub ActionsのWorkflowのパーミッションを必要最小限にするには次のステップが必要です。
+
+- リポジトリ or Organizationのデフォルトパーミッションを "Read repository contents permission"　にする
+- Workflow(yamlファイル)ごとに`permissions`を設定する
+
+しかし、必要な`permissions`をREADMEに書いてるActionはとても少ないので、必要な`permissions`を定義するのはかなり面倒です。
 そのため、`permissions`の設定を自動的にやるツールを書きました。
 
 ## [@pkgdeps/update-github-actions-permissions](https://github.com/pkgdeps/update-github-actions-permissions)
