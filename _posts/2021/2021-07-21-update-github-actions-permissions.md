@@ -65,8 +65,8 @@ permissions:
 - Workflow(yamlファイル)ごとに`permissions`を設定する
 - リポジトリ or Organizationのデフォルトパーミッションを "Read repository contents permission"　にする
 
-しかし、必要な`permissions`をREADMEに書いてるActionはとても少ないので、必要な`permissions`を定義するのはかなり面倒です。
-そのため、`permissions`の設定を自動的にやるツールを書きました。
+しかし、必要な`permissions`をREADMEに書いてるActionはとても少ないので、Workflowファイルに`permissions`を定義するのはかなり面倒です。
+そのため、`permissions`の設定を自動的に追加ツールを書きました。
 
 ## [@pkgdeps/update-github-actions-permissions](https://github.com/pkgdeps/update-github-actions-permissions)
 
