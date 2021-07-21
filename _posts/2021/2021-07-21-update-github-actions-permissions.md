@@ -26,7 +26,7 @@ permissions:
   contents: read
 jobs:
   test:
-    name: "Test on Node.js ${{ matrix.node-version }}"
+    name: "Test on Node.js"
     runs-on: ubuntu-18.04
 
     steps:
