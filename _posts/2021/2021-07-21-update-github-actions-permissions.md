@@ -97,7 +97,7 @@ npx @pkgdeps/update-github-actions-permissions ".github/workflows/*.{yaml,yml}"
 
 全てのWorkflowファイルの`permissions`が設定できたら、リポジトリのデフォルトパーミッションを"Read repository contents permission"にできます。
 
-- Workflow(yamlファイル)ごとに`permissions`を設定する　→ [@pkgdeps/update-github-actions-permissions](https://github.com/pkgdeps/update-github-actions-permissions)
+- Workflow(yamlファイル)ごとに`permissions`を設定する → [@pkgdeps/update-github-actions-permissions](https://github.com/pkgdeps/update-github-actions-permissions)
 - リポジトリ or Organizationのデフォルトパーミッションを "Read repository contents permission"　にする → 手動で設定
 
 将来的には、GitHub ActionsもGitHub Appのように、Actionを提供する側で必要な`permissions`のリストを定義するようになるんじゃないかなと思います。(今はソースコードを読んだりしないと必要な`permissions`がわからない状態になっている)
