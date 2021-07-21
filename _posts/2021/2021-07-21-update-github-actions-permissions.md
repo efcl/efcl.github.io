@@ -56,8 +56,8 @@ permissions:
   contents: read
 ```
 
-`contents: read`のみあれば、リポジトリをcloneしてテストをするには十分なので、
-それ以外の権限はyamlファイルに`permissions`として付け足していくという形になります。
+`contents: read`があれば、リポジトリをcloneしてテストをするには十分です。
+この場合は、それ以外の権限をyamlファイルに`permissions`として付け足していくという形になります。
 
 - [Disabling or limiting GitHub Actions for a repository - GitHub Docs](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/disabling-or-limiting-github-actions-for-a-repository#setting-the-permissions-of-the-github_token-for-your-repository)
 - [Security hardening for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions)
