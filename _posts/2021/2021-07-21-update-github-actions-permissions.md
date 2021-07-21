@@ -95,6 +95,6 @@ npx @pkgdeps/update-github-actions-permissions ".github/workflows/*.{yaml,yml}"
 ## Related
 
 `contents: read`のパーミッションでも問題あるケースは、リポジトリに機密情報がコミットされている状態だと思います。
-そのようなケースは[シークレットスキャンニング](https://docs.github.com/ja/code-security/secret-security/about-secret-scanning)や[secretlint](https://github.com/secretlint/secretlint)を使って、そもそも機密情報をコミットしない状態を目指すのが良さそうです。
+そのようなケースは[シークレットスキャンニング](https://docs.github.com/ja/code-security/secret-security/about-secret-scanning)や[secretlint](https://github.com/secretlint/secretlint)などを使って、そもそも機密情報をコミットしない状態を目指すのが良さそうです。
 
 - [secretlint 3.0リリース、GitHubの新しいトークンの検出に対応 | Web Scratch](https://efcl.info/2021/06/02/secretlint-3.0/)
