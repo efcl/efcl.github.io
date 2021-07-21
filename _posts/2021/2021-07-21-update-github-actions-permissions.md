@@ -28,16 +28,14 @@ jobs:
   test:
     name: "Test on Node.js ${{ matrix.node-version }}"
     runs-on: ubuntu-18.04
-    strategy:
-      matrix:
-        node-version: [ 14, 16 ]
+
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: setup Node.js ${{ matrix.node-version }}
+      - name: setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
       - name: Install
         run: yarn install
       - name: Test
