@@ -44,7 +44,7 @@ jobs:
         run: yarn test
 ```
 
-GitHub Actionsのデフォルトのパーミッションは`write-all`です。
+GitHub Actionsのデフォルトパーミッションは`write-all`です。
 つまり、リポジトリの読み書き、IssueやPRの読み書きなど全部の権限がデフォルトでついています。
 そのため、`uses: actions/checkout@v2` のようにread onlyでよいGitHub Actionsも、実際にはリポジトリやIssueへの書き込みできる権限も持ってしまっています。
 
