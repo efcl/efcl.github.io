@@ -10,8 +10,8 @@ tags:
 
 ---
 
-GitHub Actionsには`permissions`というフィールドがあり、それぞれのWorkflowでの`secrets.GITHUB_TOKEN`の権限を設定できるようになっています。
-`secrets.GITHUB_TOKEN`はGitHub Actionsの実行ごとに発行されるGitHubのTokenで、多くのGitHub Actionsはこのトークンを使ってリポジトリをgit cloneしたり、Issueにコメントを書いたりしていｒます。
+GitHub Actionsには`permissions`というフィールドがあり、それぞれのWorkflow/Jobでの`secrets.GITHUB_TOKEN`の権限を設定できるようになっています。
+`secrets.GITHUB_TOKEN`はGitHub Actionsの実行ごとに発行されるGitHubのTokenで、多くのGitHub Actionsはこのトークンを使ってリポジトリをgit cloneしたり、Issueにコメントを書いたりしています。
 
 - [GitHub Actions: Control permissions for GITHUB_TOKEN | GitHub Changelog](https://github.blog/changelog/2021-04-20-github-actions-control-permissions-for-github_token/)
 - [Workflow syntax for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#permissions)
