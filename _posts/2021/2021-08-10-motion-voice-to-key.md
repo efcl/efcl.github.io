@@ -16,7 +16,7 @@ tags:
 
 ## きっかけ
 
-この記事を書いたきっかけは、t_wadaさんが老眼について書いていたがきっかけの一つです。
+t_wadaさんが老眼について書いていたのが、この記事を書いたきっかけの一つです。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">プログラマ35歳定年説はとっくに過去のもので、35歳を過ぎても能力も報酬も伸び続けるし、生涯現役プログラマのロールモデルとなる方も増えてきた。ただ諸先輩方から聞いた話をまとめると、ベテランプログラマの前に立ち塞がるのは「老眼」で、こればかりは本当に恐ろしい。何か対策はあるだろうか……</p>&mdash; Takuto Wada (@t_wada) <a href="https://twitter.com/t_wada/status/1217979511892934657?ref_src=twsrc%5Etfw">January 17, 2020</a></blockquote>
 
@@ -131,7 +131,7 @@ Stack OverflowのDeveloper Surveyでも毎年大体1~2%ぐらいの人が視聴�
 
 スクリーンリーダに関しては、プログラミングでも[JAWS](https://www.freedomscientific.com/products/software/jaws/)や[NVDA](https://www.nvaccess.org/download/)を使っている人が多そうな感じでした。
 
-逆に、音声入力でプログラミングをするアプリケーションを調べてみると、次の2つが最近はよく見る感じなっているようです。
+逆に、音声入力でプログラミングをするアプリケーションを調べてみると、次の2つが最近は見つかりました。
 
 - [Talon](https://talonvoice.com/)
     - Pythonで音声認識に対して処理をかける
@@ -140,7 +140,6 @@ Stack OverflowのDeveloper Surveyでも毎年大体1~2%ぐらいの人が視聴�
 - [Serenade | Code with voice](https://serenade.ai/)
     - エディタに組み込む形になっていて、構文を認識したりプログラミングに特化してる
 
-こういった音声アクセシビリティー的な感じなアプリケーションでロフクリーンローブの理論と同じように健全な所でも全然役に立つ機能がいっぱいあるんでそれをちょっと掘ってみ。
 両方触ってみて[Talon](https://talonvoice.com/)がかなりよくできていたので簡単に紹介します。
 
 ## [Talon](https://talonvoice.com/)
