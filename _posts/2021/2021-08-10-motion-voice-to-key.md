@@ -395,6 +395,8 @@ Talonの設定をやっていくと、VimとかEmacsの設定などに近い感�
 
 - [VSCodeで音声読み上げでの文章デバッグする拡張 - vscode-read-aloud-text | Web Scratch](https://efcl.info/2019/01/05/vscode-read-aloud-text/)
 
+[motion-key](https://github.com/azu/motion-key)を作ったり[Talon](https://talonvoice.com/)のデバッグすると普段のプログラミングとは違う筋肉を使うので疲れました。
+
 参考
 
 - [azu/motion-key: A keyboard config app for your motion.](https://github.com/azu/motion-key)
