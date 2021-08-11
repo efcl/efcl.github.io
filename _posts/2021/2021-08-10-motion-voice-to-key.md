@@ -147,8 +147,6 @@ Stack OverflowのDeveloper Surveyでも毎年大体1~2%ぐらいの人が視聴�
 [Talon](https://talonvoice.com/)は、クロスプラットフォームで動くアプリケーションです。
 作者のPatreonになるとearly accessや新しい音声認識モデルのテストもできるそうですが、無料でも利用できます。
 
-音声認識自体は現在英語とノイズ音だけですが、意外とアルファベット読みの日本語でも反応したりします。
-
 - [lunixbochsはsoftwareのクリエイター | Patreon](https://www.patreon.com/lunixbochs)
 
 Talonはサイトの説明にあるように、ハンズフリーで殆どのことができるようなアプリケーションになっています。
@@ -165,6 +163,8 @@ Talonはサイトの説明にあるように、ハンズフリーで殆どのこ
 Voice Controlは、そのまま音声をコマンドとして扱ったり(コマンドはPythonで実装できる)、認識した音声をそのままテキストにするDictationなどのことです。
 
 Noise Controlは、ｼｭとかﾊﾟｯみたいなノイズ的な音をコマンドとして扱えます。具体的にはノイズでクリックしたり、Eye Trackingと組み合わせて見てる場所を拡大したりできます。
+音声認識自体は現在英語とノイズ音だけですが、意外とアルファベット読みの日本語でも反応したりします。
+
 
 Eye Trackingは、[Tobii Eye Tracker](https://gaming.tobii.com/product/eye-tracker-5/)というハードが必要ですが、見ている箇所をトラッキングして見てる場所をクリックしたりとか拡大できます。
 
