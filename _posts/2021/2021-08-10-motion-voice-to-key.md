@@ -314,6 +314,8 @@ not mode: sleep
 最後に`input mode`といってinputフラグが立っているときのみ処理されるtalonファイルを用意して、
 そこにコマンドを定義しています。
 
+`input-mode.talon`:
+
 ```
 # input mode
 mode: user.input # inputフラグが有効のときだけ動くという意味
