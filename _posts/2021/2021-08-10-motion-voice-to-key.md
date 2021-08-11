@@ -50,6 +50,8 @@ tags:
 
 設定ファイルをJavaScriptでかけるようにしていて、どのぐらいのpixelの変化で反応するかやどのキーを送るかなどを設定できます。
 
+ちゃんとした設定方法はREADMEを読んでください。
+
 ```js
 module.exports = ({ type, activeWindow, payload }) => {
     if (type === "PixelChangeAction") {
