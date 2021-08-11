@@ -131,7 +131,7 @@ Stack OverflowのDeveloper Surveyでも毎年大体1~2%ぐらいの人が視聴�
 
 スクリーンリーダに関しては、プログラミングでも[JAWS](https://www.freedomscientific.com/products/software/jaws/)や[NVDA](https://www.nvaccess.org/download/)を使っている人が多そうな感じでした。
 
-逆に、音声入力でプログラミングをするアプリケーションを調べてみると、次の2つが最近はよく見る感じなっているようです。
+逆に、音声入力でプログラミングをするアプリケーションを調べてみると、次の2つが最近は見つかりました。
 
 - [Talon](https://talonvoice.com/)
     - Pythonで音声認識に対して処理をかける
