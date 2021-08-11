@@ -252,7 +252,7 @@ git clone https://github.com/knausj85/knausj_talon knausj_talon
 そのためTalonのSpeech RecognitionがEnableなのを確認して`help active`っていればなにかヘルプを出してくれます。
 ヘルプを閉じるには`help close`といえば閉じてくれます。
 
-このリポジトリで特に参考になるはmodesというディレクトリにあるモードの実装です。
+このリポジトリで特に参考になるのはmodesというディレクトリにあるモードの実装です。
 
 - [knausj_talon/modes at master · knausj85/knausj_talon](https://github.com/knausj85/knausj_talon/tree/master/modes)
 
