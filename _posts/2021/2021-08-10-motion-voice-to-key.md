@@ -260,7 +260,7 @@ Vimなどのようにモード切り替えするイメージで、ショート�
 
 ### Talonで日本語入力
 
-dictation modeはネイティブな英語が必要なので、自分にはちょっと難しかったので、[macOSの音声入力](https://support.apple.com/ja-jp/guide/mac-help/mh40584/mac)を使う`input mode`というのを実装しています。
+dictation modeはネイティブな英語が必要で、自分にはちょっと難しかったので、[macOSの音声入力](https://support.apple.com/ja-jp/guide/mac-help/mh40584/mac)を使う`input mode`というのを実装しています。
 
 実装といってもとてもシンプルで、[`Module`](https://talonvoice.com/docs/#talon.Module)が一種のKVS的な状態を保持するAPIとなっています。
 `input mode`と発音したら、`input`という状態のフラグを立てて、そのフラグが立っているときのみ反応する`.talon`ファイルを用意しているだけです。
