@@ -13,6 +13,7 @@ tags:
 この記事には、実用性があるものと現実的に使うにはトレーニングが必要なものが混在しています。そのため、そこまで期待してはいけません。
 
 この記事は、[Talon](https://talonvoice.com/)と[macOSの音声入力](https://support.apple.com/ja-jp/guide/mac-help/mh40584/mac)で書いたものを手作業で修正しています。
+マイクは[Blue Microphones Yeticaster](https://www.amazon.co.jp/dp/B0822PDJK5/)を使いました。
 
 ## きっかけ
 
