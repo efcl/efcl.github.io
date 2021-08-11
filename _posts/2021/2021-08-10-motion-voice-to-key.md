@@ -140,7 +140,6 @@ Stack OverflowのDeveloper Surveyでも毎年大体1~2%ぐらいの人が視聴�
 - [Serenade | Code with voice](https://serenade.ai/)
     - エディタに組み込む形になっていて、構文を認識したりプログラミングに特化してる
 
-こういった音声アクセシビリティー的な感じなアプリケーションでロフクリーンローブの理論と同じように健全な所でも全然役に立つ機能がいっぱいあるんでそれをちょっと掘ってみ。
 両方触ってみて[Talon](https://talonvoice.com/)がかなりよくできていたので簡単に紹介します。
 
 ## [Talon](https://talonvoice.com/)
