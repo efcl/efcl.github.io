@@ -402,3 +402,4 @@ Talonの設定をやっていくと、VimとかEmacsの設定などに近い感�
 - [azu/motion-key: A keyboard config app for your motion.](https://github.com/azu/motion-key)
 - [On Voice Coding | Hacker News](https://news.ycombinator.com/item?id=22404264)
 - [Talon](https://talonvoice.com/)
+- [Speaking in code: how to program by voice](https://www.nature.com/articles/d41586-018-05588-x)
