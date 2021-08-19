@@ -101,4 +101,4 @@ Manifest v3への対応がいまいちだったりしますが、[Create React A
 
 - [infoType 検出器リファレンス  |  データ損失防止（DLP）のドキュメント  |  Google Cloud](https://cloud.google.com/dlp/docs/infotypes-reference?hl=ja)
 
-しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されても、そこまで大きく問題にならない(CIで動かすツールと人間向けのチェックツールの違い)ので、DLP的なものを実装してみるのも面白そうだなーと思いました。
+しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されても、そこまで大きく問題にならない(CIで動かすツールと人間向けのチェックツールの違い)ので、DLP的なものをオプションで実装してみるのも面白そうだなーと思いました。
