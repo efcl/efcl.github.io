@@ -21,7 +21,7 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 このような場合にも、コードのミスなどによって環境変数や公開するべきではない情報(秘密鍵、APIトークン、SlackのIncoming WebHook URLなど)が、APIレスポンスやレンダリングされたHTMLにJSONとして埋め込まれてしまうような一種の事故をたまに見かけます。
 （本来はサーバからAPIトークンを使って叩くべきところを、フロントから叩くような実装になってしまっているケースなども同様です）
 
-これらの情報には、パスワードやAPIトークンのような機密情報だけではなく、本来出すべきではなかった個人情報など（IPアドレス、氏名など)も含まれるため結構複雑です。
+これらの情報には、パスワードやAPIトークンのような機密情報だけではなく、本来出すべきではなかった個人情報（IPアドレス、氏名など）も含まれるため結構複雑です。
 
 いつも見ているサイトに、表示はされていないが公開するべきではない情報がHTMLやAPIのレスポンスに入っているイメージです。
 これらの情報は実際には表示されないので、漏れていることに気づきにくいという特徴もあります。
@@ -96,3 +96,9 @@ Manifest v3への対応がいまいちだったりしますが、[Create React A
 この辺はもっと改善できると良い気がします。良いアイデアがあってIssueを作ってください。
 
 - Repository: [Secretlint WebExtension](https://github.com/secretlint/webextension)
+
+[Codecovの問題](https://about.codecov.io/security-update/)からSecretlintで個人情報の検知もやりたかったけど、GCPのDLPもfalse positiveがかなり多いので、あんまりモチベーションがなくてやれてなかったです。
+
+- [infoType 検出器リファレンス  |  データ損失防止（DLP）のドキュメント  |  Google Cloud](https://cloud.google.com/dlp/docs/infotypes-reference?hl=ja)
+
+しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されてもそこまで大きく問題にならない(CIで動かすツールとチェックツールの違い)ので、DLP的なものを実装してみるのも面白そうだなーと思いました。
