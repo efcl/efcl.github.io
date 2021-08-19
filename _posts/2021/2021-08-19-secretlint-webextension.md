@@ -91,3 +91,8 @@ Manifest v3への対応がいまいちだったりしますが、[Create React A
 一方でデザインとかはほぼ何もしてないReactで書いたUIなので、その辺を改善してくれる人を待っています！
 
 - [Design · Issue #2 · secretlint/webextension](https://github.com/secretlint/webextension/issues/2)
+
+[Secretlint](https://github.com/secretlint/secretlint)と違って[Secretlint WebExtension](https://github.com/secretlint/webextension)は見つけることが主な目的なので、少しヒューリスティックな過剰検知しやすいパターンも含んでいます。
+この辺はもっと改善できると良い気がします。良いアイデアがあってIssueを作ってください。
+
+- Repository: [Secretlint WebExtension](https://github.com/secretlint/webextension)
