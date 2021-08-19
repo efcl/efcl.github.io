@@ -18,7 +18,7 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 
 一方で、実際のウェブサービスなどは機密情報がファイルにハードコードされているわけではなく(Secrelint自体がこういうハードコードを防ぐツールです)、環境変数やDatabaseに保存していると思います。
 
-このような場合にも、コードのミスなどによって環境変数や公開するべきではない情報(秘密鍵、APIトークン、SlackのIncoming WebHook URLなど)が、APIレスポンスやレンダリングされたHTMLにJSONとして埋め込まれてしまうような一種の事故をたまに見かけます。
+このような場合にも、コードのミスなどによって公開するべきではない情報(秘密鍵、APIトークン、SlackのIncoming WebHook URLなど)が、APIレスポンスやレンダリングされたHTMLにJSONとして埋め込まれてしまうような一種の事故をたまに見かけます。
 （本来はサーバからAPIトークンを使って叩くべきところを、フロントから叩くような実装になってしまっているケースなども同様です）
 
 これらの情報には、パスワードやAPIトークンのような機密情報だけではなく、本来出すべきではなかった個人情報（IPアドレス、氏名など）も含まれるため結構複雑です。
@@ -101,4 +101,4 @@ Manifest v3への対応がいまいちだったりしますが、[Create React A
 
 - [infoType 検出器リファレンス  |  データ損失防止（DLP）のドキュメント  |  Google Cloud](https://cloud.google.com/dlp/docs/infotypes-reference?hl=ja)
 
-しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されてもそこまで大きく問題にならない(CIで動かすツールとチェックツールの違い)ので、DLP的なものを実装してみるのも面白そうだなーと思いました。
+しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されても、そこまで大きく問題にならない(CIで動かすツールと人間向けのチェックツールの違い)ので、DLP的なものを実装してみるのも面白そうだなーと思いました。
