@@ -32,7 +32,7 @@ The Missing READMEはコード、設計、テスト、リファクタリング�
 全体的な雰囲気のメモとして、気になった章ごとの軽い感想をメモっておきます。
 
 ## The Missing READMEの主な章ごとの感想
-A 
+
 ### 4章: Writing Operable Code
 
 [Chapter 4: Writing Operable Code](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c04.xhtml)は結構良かったです。
