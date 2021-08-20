@@ -41,7 +41,7 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 
 ![Secretlint WebExtension](https://raw.githubusercontent.com/secretlint/webextension/main/docs/screenshot.png)
 
-[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を使った拡張なので、ブラウザの開発者ツールを開いて見ているページのリクエスト/レスポンスのみをチェックします。開発者ツールを開かずに見ているページなどは何もチェックしません。
+[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を使った拡張なので、ブラウザの開発者ツールを開いて見ているページのリクエスト/レスポンスのみをチェックします。開発者ツールを開かずに見ているページはリクエスト/レスポンスのチェックしません。
 
 開発者ツールのネットワークパネルに表示される内容がチェックの対象となっています。
 
