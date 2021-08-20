@@ -1,5 +1,5 @@
 ---
-title: "The Missing READMEを読んだ"
+title: "The Missing README: A Guide for the New Software Engineerを読んだ"
 author: azu
 layout: post
 date : 2021-08-20T23:59
