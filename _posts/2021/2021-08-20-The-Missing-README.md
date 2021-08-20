@@ -80,6 +80,6 @@ The Missing READMEは章末の"Level Up"というセクションで参考書籍�
 ## その他
 
 扱ってる内容はかなり幅広いですが、章ごとの依存関係はほとんどないように書かれている気がするので、どこから読んでも大丈夫な気がしました。
-300ページぐらいでこれまとめたのは素直にすごいと思ったので、どこからか翻訳とか出版されるといいなーと思いました。（ちゃんと外部リソースにリンクにして説明しすぎないことに気を配ってる気がしました）
+300ページぐらいでこれまとめたのは素直にすごいと思ったので、どこからか翻訳が出版されるといいなーと思いました。（ちゃんと外部リソースにリンクにして説明しすぎないことに気を配ってる気がしました）
 
 自分は[ACM会員のO'Reilly Learning Platformを利用できる仕組み](https://learning.acm.org/e-learning/oreilly)を使って、[オライリー上のThe Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/)を読みました(Thanks to [📖 Book Supporter](https://github.com/sponsors/azu))
