@@ -75,6 +75,7 @@ FirefoxとChromeでそれぞれストアからインストールできます。
 ### 技術的なこと
 
 [Secretlint WebExtension](https://github.com/secretlint/webextension)のソースコードはGitHubに公開しています。
+READMEにはビルド方法も書いてあるので、自分で拡張をビルドして利用もできます。
 
 - <https://github.com/secretlint/webextension>
 
