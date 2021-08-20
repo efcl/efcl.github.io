@@ -73,14 +73,14 @@ The Missing READMEは章末の"Level Up"というセクションで参考書籍�
 
 ### 8章と9章: デプロイとオンコール
 
-[Chapter 8: Delivering Software](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c08.xhtml#h1-501836c08-0001)は"Delivery consists of steps such as release, deployment, and rollout."という話で、それぞれのステップを一個ずつ見ています。
-[Chapter 9: Going On-Call](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c09.xhtml#h1-501836c09-0005)は、オンコールの仕組み、サポートチケットの切り方(P1からP4)、インシデントマネージメントにかかれています。
+[Chapter 8: Delivering Software](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c08.xhtml)は"Delivery consists of steps such as release, deployment, and rollout."という話で、それぞれのステップを一個ずつ見ています。
+[Chapter 9: Going On-Call](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c09.xhtml)は、オンコールの仕組み、サポートチケットの切り方(P1からP4)、インシデントマネージメントにかかれています。
 この２つの章を"A Guide for the New Software Engineer"に入れてるのは結構すごいなーと思いつつ、一番混乱しそうなところでもあるのでガイドがあるのは良い気がしました。
 
 ### 10章と11章: 設計
 
-[Chapter 10: Technical Design Process](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c10.xhtml#h1-501836c10-0001)は、仕様やデザインドキュメントの話(実験的なコードに執着しすぎない、それは変わる)、[デザイン批評](https://www.amazon.co.jp/dp/B01J2OEYLU/)的なコミュニケーションの話。
-[Chapter 11: Creating Evolvable Architectures | The Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c11.xhtml#h1-501836c11-0001)は、後方互換性と先方互換性の話です。
+[Chapter 10: Technical Design Process](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c10.xhtml)は、仕様やデザインドキュメントの話(実験的なコードに執着しすぎない、それは変わる)、[デザイン批評](https://www.amazon.co.jp/dp/B01J2OEYLU/)的なコミュニケーションの話。
+[Chapter 11: Creating Evolvable Architectures | The Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c11.xhtml)は、後方互換性と先方互換性の話です。
 
 他にも、Agile、マネージメント、キャリア的な話もあったりします。
 
