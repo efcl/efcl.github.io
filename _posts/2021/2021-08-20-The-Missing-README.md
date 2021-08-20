@@ -33,6 +33,8 @@ The Missing READMEはコード、設計、テスト、リファクタリング�
 
 ## The Missing READMEの主な章ごとの感想
 
+### 4章: Writing Operable Code
+
 [Chapter 4: Writing Operable Code](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c04.xhtml)は結構良かったです。
 特に"Throw Exceptions Early, Catch Exceptions Late"というセクションが良かったです。
 
@@ -45,7 +47,6 @@ Catch Exceptions Lateは、例外は正しくハンドリングできる処理�
 
 4章は他にもログの出し方の話でログレベル、機密情報をログしない、設定ファイルを賢くしすぎない、設定ファイルの完全な状態をログとして残す、設定ファイルはロードしたタイミングで検証するといった話が書かれています。それぞれはどこかで見たことがあるけど、こういう感じでまとまってると読みやすくていいなーと思いました。
 
-
 あと、The Missing READMEは章ごとのまとめにDo and Do notの形でまとめがあるので、これもわかりやすかったと思います。
 次の図は[Chapter 3: Working with Code | The Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c03.xhtml)のまとめです。
 
@@ -53,10 +54,14 @@ Catch Exceptions Lateは、例外は正しくハンドリングできる処理�
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+### 5章: Managing Dependencies
+
 [Chapter 5: Managing Dependencies](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c05.xhtml)では、パッケージマネージャの話ですが、特定の言語に依存はしてないのが面白い切り口でした。
 [セマンティック バージョニング](https://semver.org/lang/ja/)やバージョン番号としてGitハッシュ値は適していない話、依存関係地獄の話、依存関係のレポーティングの話など。
 
-[Chapter 7: Code Reviews | The Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c07.xhtml)のコードレビューの話も結構良かったです。
+### 7章: Code Reviews
+
+[Chapter 7: Code Reviews](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c07.xhtml)のコードレビューの話も結構良かったです。
 いわゆるコードレビューのする側、される側の作法的な話ですが、[Google Engineering Practices Documentation | eng-practices](https://google.github.io/eng-practices/)も例にだして、どこまでレビューするべきか(どこでApproveするべきか)話が書かれています。
 
 これ自体は、[Google Engineering Practices Documentation](https://google.github.io/eng-practices/)の話ですが、そのPull Requestがシステム全体の健全度を向上させる状態に一度でも達したらならば、そのコード/PRが完全ではなくても、レビューアは承認(Approve)するべきという基準の話は良かったです。
@@ -66,9 +71,13 @@ Catch Exceptions Lateは、例外は正しくハンドリングできる処理�
 
 The Missing READMEは章末の"Level Up"というセクションで参考書籍は次に読むべきリソースへの誘導も入ってるのも結構いいところです。
 
+### 8章と9章: デプロイとオンコール
+
 [Chapter 8: Delivering Software](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c08.xhtml#h1-501836c08-0001)は"Delivery consists of steps such as release, deployment, and rollout."という話で、それぞれのステップを一個ずつ見ています。
 [Chapter 9: Going On-Call](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c09.xhtml#h1-501836c09-0005)は、オンコールの仕組み、サポートチケットの切り方(P1からP4)、インシデントマネージメントにかかれています。
 この２つの章を"A Guide for the New Software Engineer"に入れてるのは結構すごいなーと思いつつ、一番混乱しそうなところでもあるのでガイドがあるのは良い気がしました。
+
+### 10章と11章: 設計
 
 [Chapter 10: Technical Design Process](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c10.xhtml#h1-501836c10-0001)は、仕様やデザインドキュメントの話(実験的なコードに執着しすぎない、それは変わる)、[デザイン批評](https://www.amazon.co.jp/dp/B01J2OEYLU/)的なコミュニケーションの話。
 [Chapter 11: Creating Evolvable Architectures | The Missing README](https://learning.oreilly.com/library/view/the-missing-readme/9781098129064/c11.xhtml#h1-501836c11-0001)は、後方互換性と先方互換性の話です。
