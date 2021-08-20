@@ -30,7 +30,7 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 これらの情報が意図せず公開されているかを判断できるのはそれを作っているウェブエンジニアなので、
 ウェブエンジニアがよく使うデバッグツールであるブラウザの開発ツールに[Secretlint](https://github.com/secretlint/secretlint)を組み込む[Secretlint WebExtension](https://github.com/secretlint/webextension)を作りました。
 
-📝 意図せずに公開されているのが問題となる情報を見つけるのが目的のブラウザ拡張機能です。[secretlint](https://github.com/secretlint/secretlint)の判定処理はJavaScriptで書かれているので、拡張の内部でのみ処理されます。
+📝 意図せずに公開されているのが問題となる情報を見つけるのが目的のブラウザ拡張機能です。[secretlint](https://github.com/secretlint/secretlint)の判定処理はJavaScriptで書かれているので、拡張の内部でのみ処理されます。[ソースコードをGitHubで公開している](https://github.com/secretlint/webextension)ので、ソースコードからビルドして利用もできます。
 
 ## [Secretlint WebExtension](https://github.com/secretlint/webextension)
 
@@ -105,3 +105,4 @@ Manifest v3への対応がいまいちだったりしますが、[Create React A
 - [infoType 検出器リファレンス  |  データ損失防止（DLP）のドキュメント  |  Google Cloud](https://cloud.google.com/dlp/docs/infotypes-reference?hl=ja)
 
 しかし、[Secretlint WebExtension](https://github.com/secretlint/webextension)ならこういった誤検知が表示されても、そこまで大きく問題にならない(CIで動かすツールと人間向けのチェックツールの違い)ので、DLP的なものをオプションで実装してみるのも面白そうだなーと思いました。
+」
