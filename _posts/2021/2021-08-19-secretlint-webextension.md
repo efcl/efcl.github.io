@@ -30,6 +30,8 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 これらの情報が意図せず公開されているかを判断できるのはそれを作っているウェブエンジニアなので、
 ウェブエンジニアがよく使うデバッグツールであるブラウザの開発ツールに[Secretlint](https://github.com/secretlint/secretlint)を組み込む[Secretlint WebExtension](https://github.com/secretlint/webextension)を作りました。
 
+:memo: そもそも公開されているのが問題となる情報を見つけるブラウザの拡張機能です。判定処理はJavaScriptで書かれているので、拡張内でのみ処理されます。
+
 ## [Secretlint WebExtension](https://github.com/secretlint/webextension)
 
 [Secretlint WebExtension](https://github.com/secretlint/webextension)は、[Secretlint](https://github.com/secretlint/secretlint)をブラウザ上で動かして、リクエストとレスポンスに含まれている機密情報や問題ありそうなパターンを検知するブラウザ拡張です。
