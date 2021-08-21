@@ -63,7 +63,7 @@ echo "it is hooks!"
 
 - [azu/githook-lint-staged-example: Git 2.9+(`core.hooksPath`) + Lint Staged without extra dependencies.](https://github.com/azu/githook-lint-staged-example)
 
-このサンプルプロジェクトでは、[husky](https://github.com/typicode/husky)などとよく組み合わせて利用される[lint-staged](https://github.com/okonet/lint-staged)を使って、実際にコミットに含まれる差分のファイルだけを[Prettier](https://prettier.io/)で整形をしています。
+このサンプルプロジェクトでは、[husky](https://github.com/typicode/husky)などとよく組み合わせて利用される[lint-staged](https://github.com/okonet/lint-staged)を使って、実際にコミットに含まれる差分のファイルだけを[Prettier](https://prettier.io/)で整形しています。
 [husky](https://github.com/typicode/husky)の代わりに、Gitの`core.hooksPath`を直接使うイメージになっています。
 
 具体的な[.githooks/pre-commit](https://github.com/azu/githook-lint-staged-example/blob/master/.githooks/pre-commit)の内容は、インストールされている`lint-staged`コマンドを`pre-commit`フックで叩いているだけです。
@@ -108,7 +108,8 @@ git commit -m up
 
 [pre-commit](https://pre-commit.com/)、[simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)は独自のGitフックディレクトリを作るのではなく、`.git/hooks`のディレクトリにフックファイルを書き込む仕組みになっています。(husukyもv4まではこの挙動でしたが、[v5](https://blog.typicode.com/husky-5/)で`core.hooksPath`を使う方法に変わりました)
 
-このアプローチのメリットは、グローバルのGitフックとローカル(プロジェクト)のGitフックを両立しやすい点です。
+`.git/hooks`を直接変更するメリットは、グローバルのGitフックとローカル(プロジェクト)のGitフックを両立しやすい点です。
+
 Gitでは、`git config --global core.hooksPath ~/.githooks`のようにすれば、Gitフックが設定されてない場合のグローバルなGitフックを設定できます。
 
 - [globalなgit-hooksを設定して、すべてのリポジトリで共有のhooksを使う - Qiita](https://qiita.com/ik-fib/items/55edad2e5f5f06b3ddd1)
