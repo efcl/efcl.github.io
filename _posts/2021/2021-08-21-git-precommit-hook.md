@@ -26,7 +26,7 @@ Node.jsのプロジェクトでは[Prettier](https://prettier.io/)や[ESLint](ht
 具体的には次のような手順でGitフックファイルを作成していきます。
 
 - 1. `.githooks`ディレクトリを作成する
-- 2. `.githooks/pre-commit`を作成して次のように、コミットフックの処理を書く
+- 2. `.githooks/pre-commit`を作成して、コミットフックの処理を書く
 
 `.githooks/pre-commmit`:
 
