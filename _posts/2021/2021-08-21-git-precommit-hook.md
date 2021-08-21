@@ -68,6 +68,8 @@ echo "it is hooks!"
 
 具体的な[.githooks/pre-commit](https://github.com/azu/githook-lint-staged-example/blob/master/.githooks/pre-commit)の内容は、インストールされている`lint-staged`コマンドを`pre-commit`フックで叩いているだけです。
 
+`.githooks/pre-commit`:
+
 ```
 #!/bin/sh
 npx --no-install lint-staged
