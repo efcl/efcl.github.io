@@ -118,7 +118,15 @@ Gitでは、`git config --global core.hooksPath ~/.githooks`のようにすれ�
 これを利用すると、プロジェクト関係なくグローバルフックを使って[secretlint](https://github.com/secretlint/secretlint)でコミット内容をチェックして、ローカルのGitフックも実行するのが簡単にできます。
 
 しかし、Git(2.29.2で確認)では、`core.hooksPath`のローカルのフックが設定されていると、グローバルのフックは実行されないという挙動になります。
-そのため、グローバルのフックとローカルのフックを同時に実行にするには、ちょっとしたハックが必要になります。
+
+```sh
+git config --global core.hooksPath ~/.githooks
+cd path/to/project
+git config --local core.hooksPath ./.githooks
+# このプロジェクトではローカルのGitフックが常に優先されるため、グローバルのGitフックは実行されない
+```
+
+この制限があるため、グローバルのフックとローカルのフックを同時に実行にするには、ちょっとしたハックが必要になります。
 
 自分の[グローバルフックのリポジトリ](https://github.com/azu/git-hooks#zsh-integration)の[Zsh Integration](https://github.com/azu/git-hooks#zsh-integration)に書いていますが、Zshでコマンド実行前にプロジェクトの`core.hooksPath`をグローバルの方を参照し直すように書き換えるという無理やりな手順がひつようになります。
 
