@@ -114,7 +114,7 @@ Gitでは、`git config --global core.hooksPath ~/.githooks`のようにすれ�
 
 - [globalなgit-hooksを設定して、すべてのリポジトリで共有のhooksを使う - Qiita](https://qiita.com/ik-fib/items/55edad2e5f5f06b3ddd1)
 
-これを利用すると、プロジェクト関係なくグローバルフックでは[secretlint](https://github.com/secretlint/secretlint)でコミット内容をチェックして、ローカルのGitフックも実行するのが簡単にできます。
+これを利用すると、プロジェクト関係なくグローバルフックを使って[secretlint](https://github.com/secretlint/secretlint)でコミット内容をチェックして、ローカルのGitフックも実行するのが簡単にできます。
 
 しかし、Git(2.29.2で確認)では、`core.hooksPath`のローカルのフックが設定されていると、グローバルのフックは実行されないという挙動になります。
 そのため、グローバルのフックとローカルのフックを同時に実行にするには、ちょっとしたハックが必要になります。
