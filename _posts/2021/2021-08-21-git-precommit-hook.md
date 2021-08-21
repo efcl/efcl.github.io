@@ -100,11 +100,13 @@ git commit -m up
 
 ## メリット
 
-### 依存が少ない
+### 依存が少なくなる
 
-プロジェクトにGitフックを設定するために追加の依存が不要になる点です。
+プロジェクトにGitフックを設定するために追加の依存(husky、simple-git-hooks)が不要になる点です。
 
 [husky](https://github.com/typicode/husky)も内部的には`core.hooksPath`を使っているので、huskyは`core.hooksPath`をラップしているツールになっています。
+
+`pre-commit`フックなどは差分ファイルのみを対象としたいため、引き続き[lint-staged](https://github.com/okonet/lint-staged)などと組み合わせて利用すると思います。
 
 ## デメリット
 
