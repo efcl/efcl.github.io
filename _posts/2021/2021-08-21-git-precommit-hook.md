@@ -61,12 +61,12 @@ echo "it is hooks!"
 
 もっと具体的なサンプルプロジェクトは、次のリポジトリに作成してあります。
 
-サンプルプロジェクトでは、[husky](https://github.com/typicode/husky)などとよく組み合わせて利用される[lint-staged](https://github.com/okonet/lint-staged)を使って、実際にコミットに含まれる差分のファイルだけを[Prettier](https://prettier.io/)で整形をしています。
-[husky](https://github.com/typicode/husky)の代わりにGitの`core.hooksPath`を直接使うイメージになっています。
-
 - [azu/githook-lint-staged-example: Git 2.9+(`core.hooksPath`) + Lint Staged without extra dependencies.](https://github.com/azu/githook-lint-staged-example)
 
-具体的な[.githooks/pre-commit](https://github.com/azu/githook-lint-staged-example/blob/master/.githooks/pre-commit)の内容は、次のようにインストールされている`lint-staged`コマンドを`pre-commit`フックで叩いているだけです。
+このサンプルプロジェクトでは、[husky](https://github.com/typicode/husky)などとよく組み合わせて利用される[lint-staged](https://github.com/okonet/lint-staged)を使って、実際にコミットに含まれる差分のファイルだけを[Prettier](https://prettier.io/)で整形をしています。
+[husky](https://github.com/typicode/husky)の代わりに、Gitの`core.hooksPath`を直接使うイメージになっています。
+
+具体的な[.githooks/pre-commit](https://github.com/azu/githook-lint-staged-example/blob/master/.githooks/pre-commit)の内容は、インストールされている`lint-staged`コマンドを`pre-commit`フックで叩いているだけです。
 
 ```
 #!/bin/sh
