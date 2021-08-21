@@ -51,14 +51,14 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
     - [devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)と"Console Integration"のため利用しています
     - 実際には、ブラウザの開発者ツールを開いて見ているページにおいてのみチェックされます
     - 開発者ツールを開かずに見ているページは、リクエスト/レスポンスのチェックはされません
-    - これは[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)の仕様です
+    - 開発者ツールを開いているときのみ動作するのは、[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を利用しているため仕様です
 - `"webNavigation"`
     - ページの移動したを際に"Secretlint"パネルのログをクリアするために利用しています
     - 開発者ツールの独自パネル("Secretlint"パネル)に描画した内容は自動では消えないため、ページを移動した場合に表示されてるログをリセットするために利用します
 - `"storage"`
     - 拡張の設定情報を保存するために利用しています
 
-📝 [devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を利用するためには、Host Permissionsと呼ばれる[content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)を動かすための権限が必要となるようです。
+📝 [devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を利用するためには、[Host Permissions](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#host_permissions)と呼ばれる[content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)などを動かすための権限が必要となるようです。
 開発者ツールはどのページでも開けるため、このような仕様になってるのかもしれません(アクション起因じゃないからか`activeTab`では動きませんでした）。
 
 - [webextensions-examples/devtools-panels at master · mdn/webextensions-examples](https://github.com/mdn/webextensions-examples/tree/master/devtools-panels)
