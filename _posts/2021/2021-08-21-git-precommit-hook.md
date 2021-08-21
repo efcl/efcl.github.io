@@ -187,3 +187,7 @@ Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)オプシ�
 サンプルプロジェクトは次のリポジトリにおいてあります。
 
 - [azu/githook-lint-staged-example: Git 2.9+(`core.hooksPath`) + Lint Staged without extra dependencies.](https://github.com/azu/githook-lint-staged-example)
+
+参考: 
+
+- [Git Hooks without extra dependencies like Husky in Node.js project - DEV Community 👩‍💻👨‍💻](https://dev.to/azu/git-hooks-without-extra-dependencies-like-husky-in-node-js-project-jjp)
