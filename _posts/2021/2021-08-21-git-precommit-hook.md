@@ -137,7 +137,7 @@ autoload -Uz add-zsh-hook
 add-zsh-hook preexec preexec_git_global_hooks
 ```
 
-`.githooks`というディレクトリ名に依存しているのと余計な処理という感じがあるので、もっとクリーンな方法あるといいなと思います。
+この方法は`.githooks`というディレクトリ名に依存しているのと余計な処理という感じがあるので、もっとクリーンな方法あるといいなと思います。
 
 このデメリット?は、`core.hooksPath`によるものなのでhuskyも同様です。
 
