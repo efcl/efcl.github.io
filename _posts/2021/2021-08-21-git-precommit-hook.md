@@ -11,7 +11,7 @@ tags:
 ---
 
 Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)というオプションでグローバルまたはローカルの[Gitフック](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF)のディレクトリを指定できるようになっています。
-`core.hooksPath`オプションを利用すると[husky](https://github.com/typicode/husky)、[pre-commit](https://pre-commit.com/)、[simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)、[Lefthook](https://github.com/evilmartians/lefthook)のような追加の依存がなくても、Gitの機能だけでGitフックのコードをバージョン管理して、プロジェクトのセットアップ時に自動でGitフックを設定できます。
+`core.hooksPath`オプションを利用すると[husky](https://github.com/typicode/husky)、[pre-commit](https://pre-commit.com/)、[simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)、[Lefthook](https://github.com/evilmartians/lefthook)のような追加の依存がなくても、Gitの機能だけでGitフックのコードをバージョン管理して、プロジェクトのセットアップ時にプロジェクトごとのGitフックを設定できます。
 
 ## Node.jsプロジェクトの例
 
