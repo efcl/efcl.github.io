@@ -34,7 +34,8 @@ Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)という�
 echo "it is hooks!"
 ```
 
-このままでは、この`.githooks`ディレクトリがGitフックのディレクトリとして扱わないので、次のように`npm install`や`yarn install`でプロジェクトのインストール時のlife cyleで`core.hooksPath`オプションを設定します。
+このままでは、この`.githooks`ディレクトリがGitフックのディレクトリとして扱われません。
+そのため、次のように`npm install`などのプロジェクトのインストール時のlife cycle hookで`core.hooksPath`オプションを設定します。
 
 - 3. `package.json`の[`scripts.prepare`](https://docs.npmjs.com/cli/v7/using-npm/scripts#prepare-and-prepublish)ライフサイクルスクリプトで`core.hooksPath`を設定する
 
