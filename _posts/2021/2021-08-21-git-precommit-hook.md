@@ -24,7 +24,7 @@ Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)という�
 
 具体的には次のような手順でGitフックファイルを作成していきます。
 
-- 1. `mkdir .githooks`
+- 1. `.githooks`ディレクトリを作成する
 - 2. `.githooks/pre-commit`を作成して次のように、コミットフックの処理を書く
 
 `.githooks/pre-commmit`:
