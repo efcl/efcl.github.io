@@ -13,7 +13,7 @@ tags:
 Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)というオプションでグローバルまたはローカルの[Gitフック](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF)のディレクトリを指定できるようになっています。
 Gitの`core.hooksPath`オプションを利用すると[husky](https://github.com/typicode/husky)、[simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)のような追加の依存がなくても、Gitの機能だけでGitフックのコードをバージョン管理して、プロジェクトのセットアップ時にプロジェクトごとのGitフックを設定できます。
 
-📝 類似するGitフックを管理するツールとして[pre-commit](https://pre-commit.com/)や[Lefthook](https://github.com/evilmartians/lefthook)もあります。これらのツールはGitフックの管理だけではなく、差分のどのファイルの対象にするかも分けて書けるようになっています。
+📝 類似するGitフックを管理するツールとして[pre-commit](https://pre-commit.com/)や[Lefthook](https://github.com/evilmartians/lefthook)もあります。これらのツールはGitフックの管理だけではなく、ファイルの種類ごとに実行するコマンドをわけて書けるようになっています。
 つまり、[lint-staged](https://github.com/okonet/lint-staged)のような機能も含むので、この記事で紹介するアプローチ以上の機能も同梱されています。
 
 ## Node.jsプロジェクトの例
