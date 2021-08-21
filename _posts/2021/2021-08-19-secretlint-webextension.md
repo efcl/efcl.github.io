@@ -43,9 +43,27 @@ Secretlintはコマンドラインツールとして動くので、主にCIやGi
 
 ![Secretlint WebExtension](https://raw.githubusercontent.com/secretlint/webextension/main/docs/screenshot.png)
 
-[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を使った拡張なので、ブラウザの開発者ツールを開いて見ているページのリクエスト/レスポンスのみをチェックします。開発者ツールを開かずに見ているページはリクエスト/レスポンスのチェックしません。
+### Permissions
 
-開発者ツールのネットワークパネルに表示される内容がチェックの対象となっています。
+2021-08-20時点で、この拡張が利用するPermissionsは次の通りです。
+
+- `"<all_urls>"`
+    - [devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)と"Console Integration"のため利用しています
+    - 実際には、ブラウザの開発者ツールを開いて見ているページにおいてのみチェックされます
+    - 開発者ツールを開かずに見ているページは、リクエスト/レスポンスのチェックはされません
+    - これは[devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)の仕様です
+- `"webNavigation"`
+    - ページの移動したを際に"Secretlint"パネルのログをクリアするために利用しています
+    - 開発者ツールの独自パネル("Secretlint"パネル)に描画した内容は自動では消えないため、ページを移動した場合に表示されてるログをリセットするために利用します
+- `"storage"`
+    - 拡張の設定情報を保存するために利用しています
+
+📝 [devtools API](https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools)を利用するためには、Host Permissionsと呼ばれる[content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)を動かすための権限が必要となるようです。
+開発者ツールはどのページでも開けるため、このような仕様になってるのかもしれません(アクション起因じゃないからか`activeTab`では動きませんでした）。
+
+- [webextensions-examples/devtools-panels at master · mdn/webextensions-examples](https://github.com/mdn/webextensions-examples/tree/master/devtools-panels)
+- [react/packages/react-devtools-extensions at main · facebook/react](https://github.com/facebook/react/tree/main/packages/react-devtools-extensions)
+- [vuejs/devtools: ⚙️ Browser devtools extension for debugging Vue.js applications.](https://github.com/vuejs/devtools)
 
 ### インストール
 
@@ -53,6 +71,7 @@ FirefoxとChromeでそれぞれストアからインストールできます。
 
 - Firefox: <https://addons.mozilla.org/ja/firefox/addon/secretlint/>
 - Chrome: <https://chrome.google.com/webstore/detail/secretlint/hidpojbnemkajlnibhmeilpgoddkjjkf>
+- ソースコードからインストールする場合は[Development](https://github.com/secretlint/webextension#development)を参照してください
 
 ### 使い方
 
