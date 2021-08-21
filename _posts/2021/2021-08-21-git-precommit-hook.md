@@ -170,7 +170,6 @@ fatal: Not a git repository
 
 ## おわりに
 
-
 Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)オプションでグローバルまたはローカルの[Gitフック](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF)のディレクトリを指定できるので、Huskyなど使わなくてGitフックを管理しやすくなっています。
 また、言語ではなくGitの機能なので、別の言語でも同じアプローチが使えて良い気はしています。
 
