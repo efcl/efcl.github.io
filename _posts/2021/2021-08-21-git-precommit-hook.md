@@ -110,7 +110,7 @@ git commit -m up
 
 `.git/hooks`を直接変更するメリットは、グローバルのGitフックとローカル(プロジェクト)のGitフックを両立しやすい点です。
 
-Gitでは、`git config --global core.hooksPath ~/.githooks`のようにすれば、Gitフックが設定されてない場合のグローバルなGitフックを設定できます。
+Gitでは、`git config --global core.hooksPath ~/.githooks`のようにすれば、Gitフックが設定されてない場合に実行されるグローバルなGitフックを設定できます。
 
 - [globalなgit-hooksを設定して、すべてのリポジトリで共有のhooksを使う - Qiita](https://qiita.com/ik-fib/items/55edad2e5f5f06b3ddd1)
 
