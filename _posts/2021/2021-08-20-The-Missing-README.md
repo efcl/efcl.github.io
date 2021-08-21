@@ -72,7 +72,7 @@ Catch Exceptions Lateは、例外は正しくハンドリングできる処理�
 > In general, reviewers should favor approving a CL once it is in a state where it definitely improves the overall code health of the system being worked on, even if the CL isn’t perfect.
 > https://google.github.io/eng-practices/review/reviewer/standard.html
 
-The Missing READMEは章末の"Level Up"というセクションで参考書籍は次に読むべきリソースへの誘導も入ってるのも結構いいところです。
+The Missing READMEは章末の"Level Up"というセクションで参考書籍や次に読むべきリソースへの誘導も入ってるのも結構いいところです。
 
 ### 8章と9章: デプロイとオンコール
 
