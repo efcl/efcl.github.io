@@ -175,6 +175,6 @@ Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)オプシ�
 
 最近の自分のプロジェクトでは、この記事で書いたような方法でGit `core.hooksPath` + [lint-staged](https://github.com/okonet/lint-staged)で、Gitフックの処理を動かしています。
 
-サンプルプロジェクト
+サンプルプロジェクトは次のリポジトリにおいてあります。
 
 - [azu/githook-lint-staged-example: Git 2.9+(`core.hooksPath`) + Lint Staged without extra dependencies.](https://github.com/azu/githook-lint-staged-example)
