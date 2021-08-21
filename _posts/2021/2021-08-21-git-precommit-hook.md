@@ -15,7 +15,8 @@ Git 2.9以降は[`core.hooksPath`](https://git-scm.com/docs/githooks)という�
 
 ## Node.jsプロジェクトの例
 
-ここでは具体例として、Node.jsのプロジェクトでは[Prettier](https://prettier.io/)や[ESLint](https://eslint.org/)などをpre-commitフックで実行するパターンをよく扱うため、Node.jsプロジェクトを例にします。
+ここでは具体例として、Node.jsのプロジェクトでの設定方法を書いています。
+Node.jsのプロジェクトでは[Prettier](https://prettier.io/)や[ESLint](https://eslint.org/)などをpre-commitフックで実行するパターンをよく扱うためです。
 `core.hooksPath`は、Gitの機能なので特にNode.js(どちらかというnpmといったパッケージマネージャ)に依存した話ではありません。
 
 ### Node.jsプロジェクトでの設定方法
