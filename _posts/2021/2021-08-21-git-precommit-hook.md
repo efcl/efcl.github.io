@@ -177,8 +177,8 @@ fatal: Not a git repository
 
 ```diff
   "scripts": {
--    "prepare": "git config --local core.hooksPath .githook"
-+    "prepare": "git config --local core.hooksPath .githook || echo 'Can not set git hooks'"
+-    "prepare": "git config --local core.hooksPath .githooks"
++    "prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
   },
 ```
 
