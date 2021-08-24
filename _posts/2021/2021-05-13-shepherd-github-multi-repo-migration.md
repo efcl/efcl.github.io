@@ -129,12 +129,14 @@ hooks:
 shepherd apply "$PROJECT"
 ```
 
-
 ここで変更を試して、上手く行ってない場合は`shepherd reset`でやり直せます。
 
 ```
 shepherd reset "$PROJECT"
 ```
+
+変更を確認する方法としては、`shepherd checkout`で各リポジトリが `~/.shepherd/$PROJECT/repos/` にcloneされているので、
+そのリポジトリ内で `git diff`などすれば変更を確認できます。
 
 ### shepherd commit
 
