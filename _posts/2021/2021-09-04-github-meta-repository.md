@@ -43,7 +43,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 
 ![sponsor](https://efcl.info/wp-content/uploads/2021/09/04-1630732741.png)
 
-リポジトリごとに設定が異なる場合は、リポジトリの`.github/`ディレクトリに同名のファイルをコミットすればこちらが優先されます。
+リポジトリごとに設定が異なる場合は、リポジトリの`.github/`ディレクトリに同名のファイルをコミットすれば`.github/`ディレクトリが優先されます。
 
 - [リポジトリコントリビューターのためのガイドラインを定める - GitHub Docs](https://docs.github.com/ja/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
 - [リポジトリにスポンサーボタンを表示する - GitHub Docs](https://docs.github.com/ja/github/administering-a-repository/managing-repository-settings/displaying-a-sponsor-button-in-your-repository)
