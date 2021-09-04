@@ -39,7 +39,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 `.github` リポジトリを使うことで、自分が持っているリポジトリ全てに一括で設定できるので便利です。
 
 たとえば、`.github`リポジトリに[FUNDING.yml](https://github.com/azu/.github/blob/main/FUNDING.yml)を置くと、
-個別のリポジトリの`.github/FUNDING.yml`を作らなくてもスポンサーボタンが表示できます。
+個別のリポジトリに`.github/FUNDING.yml`を作らなくてもスポンサーボタンが表示できます。
 
 [![sponsor](https://efcl.info/wp-content/uploads/2021/09/04-1630732741.png)](https://github.com/azu/safe-marked)
 
