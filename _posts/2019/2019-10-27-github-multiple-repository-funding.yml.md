@@ -10,6 +10,12 @@ tags:
 
 ---
 
+追記(2021-09-04): `username/.github`リポジトリを作ることで一括でSponsorボタンが設定できるようになっています。
+また、現在はデフォルトで`FUNDING.yml`が認識されてSponsorボタンがでるため、"Sponsorship"の✔を入れる作業は不要となりました。
+詳細は[user/.githubリポジトリを使い一括でFUNDING.ymlやCODE_OF_CONDUCT.mdなどを設定する | Web Scratch](https://efcl.info/2021/09/04/github-meta-repository/)を参照
+
+---
+
 GitHubリポジトリにはスポンサーボタンを表示する機能がありますが、これをまとめて設定するツールを書きました。
 
 [![GitHub Sponsorship button](https://efcl.info/wp-content/uploads/2019/10/27-1572152741.png)](https://github.com/azu/github-funding-yml-updater)
