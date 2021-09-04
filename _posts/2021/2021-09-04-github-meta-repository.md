@@ -27,7 +27,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 2021-09-04時点では、次のようなファイルが認識されます。
 最新のサポート対象は[Creating a default community health file - GitHub Docs](https://docs.github.com/ja/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)を参照してください。
 
-- `CODE_OF_CONDUCT.md`: プロジェクトへの行動規範について書かれたファイル
+- `CODE_OF_CONDUCT.md`: プロジェクトの行動規範について書かれたファイル
 - `CONTRIBUTING.md`: プロジェクトのコントリビュートガイド
   - プロジェクトごとに普通は異なるので、個人アカウントの共通ファイルとしては使いにくいかもしれません
 - `FUNDING.yml`: GitHub Sponsorsなどのスポンサー支援を促すボタンの定義ファイル
