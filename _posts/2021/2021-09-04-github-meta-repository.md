@@ -1,5 +1,5 @@
 ---
-title: "user/.githubリポジトリを使い一括でFUNDING.ymlやCODE_OF_CONDUCT.mdなどを設定する"
+title: "user/.githubリポジトリを使い、FUNDING.ymlやCODE_OF_CONDUCT.mdなどを一括設定する"
 author: azu
 layout: post
 date : 2021-09-04T14:03
@@ -12,7 +12,7 @@ tags:
 GitHubには `username/.github` というように `.github` リポジトリというメタファイルを置くリポジトリが作れます。
 たとえば、 `username/.github` リポジトリに `CODE_OF_CONDUCT.md` ファイルを置くと、`username`のすべてのリポジトリにそのファイルが反映されます。
 
-`CODE_OF_CONDUCT.md`をおいた場合は、次のようにIssueを作る際になどにHelpful resourcesにリンクが表示されるようになります。
+`CODE_OF_CONDUCT.md`をおいた場合は、次のようにIssueを作る際になどに*Helpful resources*にリンクが表示されるようになります。
 
 ![image](https://efcl.info/wp-content/uploads/2021/09/04-1630731959.png)
 
