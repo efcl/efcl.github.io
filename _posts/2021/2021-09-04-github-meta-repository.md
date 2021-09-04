@@ -1,5 +1,5 @@
 ---
-title: "user/.githubリポジトリで一括でFUNDING.ymlやCODE_OF_CONDUCT.mdを設定する"
+title: "user/.githubリポジトリを使い一括でFUNDING.ymlやCODE_OF_CONDUCT.mdなどを設定する"
 author: azu
 layout: post
 date : 2021-09-04T14:03
@@ -18,7 +18,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 
 もともとこの機能はOrganization(個人アカウントではない)のみで動いていたと思いますが、いつのまにか個人アカウントでも`.github`リポジトリが機能するようになっていました。
 
-次のページのOrganizationの場合ですが`.github`リポジトリで特別な意味があるファイルがまとめられています。
+次のページのOrganizationの場合ですが`.github`リポジトリで特別な意味のあるファイルがまとめられています。
 
 - [Creating a default community health file - GitHub Docs](https://docs.github.com/ja/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
 
