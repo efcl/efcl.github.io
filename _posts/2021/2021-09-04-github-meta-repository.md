@@ -43,6 +43,10 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 
 ![sponsor](https://efcl.info/wp-content/uploads/2021/09/04-1630732741.png)
 
+自分の`.github`リポジトリは次のようになっています。
+
+- [azu/.github: .github meta repo](https://github.com/azu/.github)
+
 リポジトリごとに設定が異なる場合は、リポジトリの`.github/`ディレクトリに同名のファイルをコミットすれば`.github/`ディレクトリが優先されます。
 
 - [リポジトリコントリビューターのためのガイドラインを定める - GitHub Docs](https://docs.github.com/ja/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
