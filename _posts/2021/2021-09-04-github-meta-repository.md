@@ -14,7 +14,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 
 `CODE_OF_CONDUCT.md`をおいた場合は、次のようにIssueを作る際になどに*Helpful resources*にリンクが表示されるようになります。
 
-![image](https://efcl.info/wp-content/uploads/2021/09/04-1630731959.png)
+[![image](https://efcl.info/wp-content/uploads/2021/09/04-1630733751.png)](https://github.com/azu/browser-resources/issues/new)
 
 もともとこの機能はOrganization(個人アカウントではない)のみで動いていたと思いますが、いつのまにか個人アカウントでも`.github`リポジトリが機能するようになっていました。
 
@@ -41,7 +41,7 @@ GitHubには `username/.github` というように `.github` リポジトリと�
 たとえば、`.github`リポジトリに[FUNDING.yml](https://github.com/azu/.github/blob/main/FUNDING.yml)を置くと、
 個別のリポジトリの`.github/FUNDING.yml`を作らなくてもスポンサーボタンが表示できます。
 
-![sponsor](https://efcl.info/wp-content/uploads/2021/09/04-1630732741.png)
+[![sponsor](https://efcl.info/wp-content/uploads/2021/09/04-1630732741.png)](https://github.com/azu/safe-marked)
 
 自分の`.github`リポジトリは次のようになっています。
 
