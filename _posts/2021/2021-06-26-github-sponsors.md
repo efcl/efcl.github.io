@@ -9,7 +9,7 @@ tags:
 
 ---
 
-# GitHub Sponsors
+この記事は、GitHub Sponsorsを募集開始してから、2年経ったのでそれを振り返った記事です。
 
 ## GitHub Sponsorsを始めた理由
 
@@ -41,11 +41,12 @@ GitHubは一番使っているサービスなので、新しい機能(GitHub Spo
 
 自分は自分向け(開発者向け)のプロダクトをオープンソースとして公開することが多いため、GitHub Sponsorsはその選択肢を作る方法としてちょうど良かったため利用しています。
 
+## GitHub SponsorsのTierの設計
+
 GitHub Sponsorsには、月額とワンタイムの支払い方法があります。
 月額とワンタイムの支払い方法に対してそれぞれ最大10種類のTierが設定できます。
 （開始当初は、月額のみで、[2021年の4月](https://github.blog/changelog/2021-04-06-custom-amounts-and-one-time-payments-rolling-out-to-github-sponsors/)からスポンサー側が任意の金額を指摘できるCustom Amountsとワンタイムの支払いが追加されています。）
 
-## GitHub SponsorsのTierの設計
 
 [自分自身のTier設計](https://github.com/sponsors/azu)は、Issue(privateなので見れない)や他の人のTierを参考にしながら作った記憶があります。
 
@@ -70,8 +71,22 @@ Tierの種類自体は、最初に作ったものから今も特に変わって�
 
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
 
-自分のTierの説明文を読んだことがある人は分かると思いますが、基本的に個人向けのTierに見返り的なものは設定していません。
+[Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)のページでTierの説明文を読むとわかりますが、基本的に個人向けのTierに見返り的なものは設定していません。
 なんとなくイメージしやすいものを設定している感じです。
+
+継続的に支援し続けるのは勇気があることだし実際すごいことだと思います。
+GitHub Sponsorをする/してくれる人は継続的に活動を続けてほしいから、継続的に支援しようと思えるのだと考えています。
+そのため、自分のTier設計は目先のメリットを多く明示しないようにしています。
+
+これは、主に2つ理由があります。
+
+- 長期的な活動を目的としたため: 継続的に支援してうこと、継続的に活動することをイメージしていたため
+- 特定のプロジェクトに紐付けるのを避けるため: 特定のメリットは特定のプロジェクトに直結しやすい性質があるため、それを避ける目的
+
+目先のメリットは行動しやすいという利点がありますが、長期化が難しいという点があります。
+
+
+---
 
 JSer.info SponsorやOpen Source Sponsorについては金額的にSponsorが企業になると想定していました。
 そのため、ロゴやThanks Tweetsをするという簡単な見返りは設定しています。
@@ -86,6 +101,8 @@ JSer.infoは最初からコストを最小化することを目的にしてい�
 GitHub Sponsponsorのあるなしで、自分の意識はあんまり変わらないなと思ったので別枠にしています。
 (もちろん、コミュニティ的に盛り上がったほうがいいので、スポンサー自体はいつでも募集しています。)
 
+
+
 ----
 
 ## 信用と信頼
@@ -97,7 +114,40 @@ GitHub Sponsponsorのあるなしで、自分の意識はあんまり変わら�
 
 ## GitHub Sponsorの募集をしてみての結果
 
+現時点(2021-09-05)では、約80人ほどの人がGitHub Sponsorsで支援してくれています。
+
+具体的なスポンサーの数とMonthly Estimated Incomeは、次のような推移で変化してきました。
+
+- [ ] Reportの画像
+
+このレポートは、[github-sponsor-report](https://github.com/azu/github-sponsor-report)というツールを作って、おおよそのスポンサーの数とMonthly Estimated Incomeの推移のCSV/JSONデータとSVGでの図を生成しています。
+
+---
+
+### [github-sponsor-report](https://github.com/azu/github-sponsor-report)の使い方
+
+[github-sponsor-report](https://github.com/azu/github-sponsor-report)は次の手順で利用できます。
+テンプレートリポジトリをforkして自分用のリポジトリを作って、GitHub Actionsの設定をするだけです。
+一度設定すれば、GitHub Actionsで自動的に更新する仕組みになっています。
+
+1. [Create a report repository using this Template](https://github.com/azu/github-sponsor-report-template/generate)
+    - GitHub Sponsorsの募集ページには公開されていないデータも含まれるので`private`リポジトリとして作ることを推奨します
+    - もし、Publicなリポジトリとして作る場合は`GENERATE_ONLY_IMAGE=true`をenvに設定して、画像のみの更新にしてsnapshotsデータをコミットしないことを推奨します
+2. GitHub Actionsのsecretsの`PERSONAL_GITHUB_TOKEN`にGitHub Tokenをする
+    - [New personal access token](https://github.com/settings/tokens/new)から`read:org` and `user` を選択したトークンを作ってください
+    - 作成したトークンは、<https://github.com/{yourname}/{repo}/settings/secrets/actions> から `PERSONAL_GITHUB_TOKEN` という名前で設定します
+3. 初回は何もデータがないので、手動で更新してください
+    1. <https://github.com/{yourname}/{repo}/actions/workflows/update-data.yml>へアクセス
+    2. "Run workflow"を実行すると、画像とsnapshotsデータが更新されます
+
+一度設定すれば、GitHub Actionsのcronの設定で自動的に更新されるようになります。
+
+----
+
 ### Thanks
 
 ## GitHub Sponsorをやってみての変化
 
+- 新しいサービスを作った
+- 家計簿管理、ファイナンシャルプランナーについて学んだ
+- 本を読む量が増えた

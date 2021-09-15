@@ -12,12 +12,12 @@ tags:
 ---
 
 [secretlint](https://github.com/secretlint/secretlint) 4.0.0をリリースしました。
-[secretlint](https://github.com/secretlint/secretlint)はSSH private key, GCP Access token, AWS Access Token, Slack Token, npm auth tokenなどの機密情報のコミットを防いだり、ブラウザ拡張として動かしてサイト上に意図せず露出してしまっている情報を見つけるツールです。
+[secretlint](https://github.com/secretlint/secretlint)はSSH private key, GCP Access token, AWS Access Token, Slack Token, and npm auth tokenなどの機密情報のコミットを防いだり、ブラウザ拡張として動かしてサイト上に意図せず露出してしまっている情報を見つけるツールです。
 
 - [見ているサイト上に露出している機密情報(APIトークン、IPアドレスなど)を見つけるブラウザ拡張を作りました | Web Scratch](https://efcl.info/2021/08/19/secretlint-webextension/)
 
 ESLintのようにプラグイン構造を持っていて、ルールなどを自由に追加、実装できます。
-ルールを追加したい場合は、次のドキュメントと、TypeScriptの型定義が`@secretlint/types`で利用できるのでそれを参考にしてください。
+ルールを追加したい場合は、次のドキュメントと、TypeScriptの型定義が`@secretlint/types`で利用できるのでそれを参考にしださい。
 
 - [secretlint/secretlint-rule.md at master · secretlint/secretlint](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)
 
@@ -88,7 +88,7 @@ console.log(mod.default.default); // => export defaultされた値
 Secretlintでは、読み込まれる側のモジュール = Secretlintルールをどう書くのかは、ユーザーによって異なるので制御できません。
 このinteropの問題がずっと起きると大変なので、Secretlintルールでは`export default`ではなく、`export { creator }` のようなnamed exportを使うように変更しました。
 
-named exportなら、transpileされたコード/素のCommonJS/Native ESMでの扱い方にそこまで差がでないためです。
+named exportなら、`.default.default`のようなtranspileされたコード/素のCommonJS/Native ESMでの扱い方にそこまで差がでないためです。
 
 具体的には次のIssueにまとめてあります。
 
@@ -172,8 +172,6 @@ Secretlint自体はまだ[Pure ESM package](https://gist.github.com/sindresorhus
 [textlint](https://github.com/textlint/textlint)でも同様のESMで書かれたルールを読み込めるサポートをしていきたいので、興味がある人は<https://gitter.im/textlint-ja/textlint-ja>あたりで話してたりするので、聞いてみてください。
 (textlintはSecretlintより変更する必要がある箇所が多い予感がするので、色々手伝ってくれる人がほしい。まずは把握してIssue作るところから)
 
-## 雑感
-
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Dynamic Importを使えば、CommonJSで書かれたモジュールもESMなモジュールを読み込むことはできるけど、<br>ESLintとかtextlintとかみたいなプラガブルなツールはこれによって必ず非同期ロードを使わないといけないという制約ができちゃったなーって気がする<br>(require相当の同期+動的はESMでは存在しない)</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1438064207090442250?ref_src=twsrc%5Etfw">September 15, 2021</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -183,9 +181,3 @@ ESLintやtextlintなどプラグイン機構を持ったツールは多いと思
 プラグイン機構を作る予定がある人は、この辺を最初から考慮した設計にしておくとよさそうです。
 
 Secretlintはtextlintの経験からモジュール化と非同期の対応が最初からほぼできていたので、[@secretlint/config-loader](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/config-loader)を変更するぐらいでできましたが、後からこれをやるのは結構大変そうです。
-
-SecretlintでESMの対応が必要となったのは、[pkgdeps/unverified-checksum-checker](https://github.com/pkgdeps/unverified-checksum-checker)というチェックサムをチェックしているかをチェックするツールを書いていて、[Packemon](https://github.com/milesj/packemon)を使ってESMなSecretlintルールを書いてみたらなんか動かなかったためです。
-
-TypeScript + ESM + Node.jsはまだハマりどころがたくさんありますが、その辺の話は[pkgdeps/unverified-checksum-checker](https://github.com/pkgdeps/unverified-checksum-checker)を公開するときにでも書きます。
-
-- [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
