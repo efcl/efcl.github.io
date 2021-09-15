@@ -172,6 +172,8 @@ Secretlint自体はまだ[Pure ESM package](https://gist.github.com/sindresorhus
 [textlint](https://github.com/textlint/textlint)でも同様のESMで書かれたルールを読み込めるサポートをしていきたいので、興味がある人は<https://gitter.im/textlint-ja/textlint-ja>あたりで話してたりするので、聞いてみてください。
 (textlintはSecretlintより変更する必要がある箇所が多い予感がするので、色々手伝ってくれる人がほしい。まずは把握してIssue作るところから)
 
+## 雑感
+
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Dynamic Importを使えば、CommonJSで書かれたモジュールもESMなモジュールを読み込むことはできるけど、<br>ESLintとかtextlintとかみたいなプラガブルなツールはこれによって必ず非同期ロードを使わないといけないという制約ができちゃったなーって気がする<br>(require相当の同期+動的はESMでは存在しない)</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1438064207090442250?ref_src=twsrc%5Etfw">September 15, 2021</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -181,3 +183,9 @@ ESLintやtextlintなどプラグイン機構を持ったツールは多いと思
 プラグイン機構を作る予定がある人は、この辺を最初から考慮した設計にしておくとよさそうです。
 
 Secretlintはtextlintの経験からモジュール化と非同期の対応が最初からほぼできていたので、[@secretlint/config-loader](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/config-loader)を変更するぐらいでできましたが、後からこれをやるのは結構大変そうです。
+
+SecretlintでESMで書かれたルールの対応が必要となったのは、[pkgdeps/unverified-checksum-checker: Checks if checking checksum in shellscript.](https://github.com/pkgdeps/unverified-checksum-checker)というチェックサムをチェックしているかをチェックするツールを書いていて、[Packemon](https://github.com/milesj/packemon)を使ってESMなSecretlintルールを書いてみたらなんか動かなかったためです。
+
+TypeScript + ESM + Node.jsはまだハマりどころがたくさんありますが、その辺の話は[pkgdeps/unverified-checksum-checker](https://github.com/pkgdeps/unverified-checksum-checker)を公開するときにでも書きます。
+
+- [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
