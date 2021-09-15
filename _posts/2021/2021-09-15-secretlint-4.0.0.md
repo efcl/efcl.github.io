@@ -12,7 +12,7 @@ tags:
 ---
 
 [secretlint](https://github.com/secretlint/secretlint) 4.0.0をリリースしました。
-[secretlint](https://github.com/secretlint/secretlint)はSSH private key, GCP Access token, AWS Access Token, Slack Token, and npm auth tokenなどの機密情報のコミットを防いだり、ブラウザ拡張として動かしてサイト上に意図せず露出してしまっている情報を見つけるツールです。
+[secretlint](https://github.com/secretlint/secretlint)はSSH private key, GCP Access token, AWS Access Token, Slack Token, npm auth tokenなどの機密情報のコミットを防いだり、ブラウザ拡張として動かしてサイト上に意図せず露出してしまっている情報を見つけるツールです。
 
 - [見ているサイト上に露出している機密情報(APIトークン、IPアドレスなど)を見つけるブラウザ拡張を作りました | Web Scratch](https://efcl.info/2021/08/19/secretlint-webextension/)
 
