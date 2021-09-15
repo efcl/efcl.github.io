@@ -184,7 +184,7 @@ ESLintやtextlintなどプラグイン機構を持ったツールは多いと思
 
 Secretlintはtextlintの経験からモジュール化と非同期の対応が最初からほぼできていたので、[@secretlint/config-loader](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/config-loader)を変更するぐらいでできましたが、後からこれをやるのは結構大変そうです。
 
-SecretlintでESMの対応が必要となったのは、[pkgdeps/unverified-checksum-checker: Checks if checking checksum in shellscript.](https://github.com/pkgdeps/unverified-checksum-checker)というチェックサムをチェックしているかをチェックするツールを書いていて、[Packemon](https://github.com/milesj/packemon)を使ってESMなSecretlintルールを書いてみたらなんか動かなかったためです。
+SecretlintでESMの対応が必要となったのは、[pkgdeps/unverified-checksum-checker](https://github.com/pkgdeps/unverified-checksum-checker)というチェックサムをチェックしているかをチェックするツールを書いていて、[Packemon](https://github.com/milesj/packemon)を使ってESMなSecretlintルールを書いてみたらなんか動かなかったためです。
 
 TypeScript + ESM + Node.jsはまだハマりどころがたくさんありますが、その辺の話は[pkgdeps/unverified-checksum-checker](https://github.com/pkgdeps/unverified-checksum-checker)を公開するときにでも書きます。
 
