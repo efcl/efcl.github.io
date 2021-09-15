@@ -88,7 +88,7 @@ console.log(mod.default.default); // => export defaultされた値
 Secretlintでは、読み込まれる側のモジュール = Secretlintルールをどう書くのかは、ユーザーによって異なるので制御できません。
 このinteropの問題がずっと起きると大変なので、Secretlintルールでは`export default`ではなく、`export { creator }` のようなnamed exportを使うように変更しました。
 
-named exportなら、`.default.default`のようなtranspileされたコード/素のCommonJS/Native ESMでの扱い方にそこまで差がでないためです。
+named exportなら、transpileされたコード/素のCommonJS/Native ESMでの扱い方にそこまで差がでないためです。
 
 具体的には次のIssueにまとめてあります。
 
