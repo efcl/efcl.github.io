@@ -17,7 +17,7 @@ tags:
 - [見ているサイト上に露出している機密情報(APIトークン、IPアドレスなど)を見つけるブラウザ拡張を作りました | Web Scratch](https://efcl.info/2021/08/19/secretlint-webextension/)
 
 ESLintのようにプラグイン構造を持っていて、ルールなどを自由に追加、実装できます。
-ルールを追加したい場合は、次のドキュメントと、TypeScriptの型定義が`@secretlint/types`で利用できるのでそれを参考にしださい。
+ルールを追加したい場合は、次のドキュメントと、TypeScriptの型定義が`@secretlint/types`で利用できるのでそれを参考にしてください。
 
 - [secretlint/secretlint-rule.md at master · secretlint/secretlint](https://github.com/secretlint/secretlint/blob/master/docs/secretlint-rule.md)
 
