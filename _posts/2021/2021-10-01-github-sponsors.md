@@ -329,7 +329,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 - [2021年のOSSRAレポートから読み解く、商用ソフトウェアにおけるオープンソースの状況 - ソフトウェア・インテグリティ](https://www.synopsys.com/blogs/software-security/ja-jp/open-source-trends-ossra-report/)
 - [The State of Enterprise Open Source: A Red Hat Report](https://www.redhat.com/en/enterprise-open-source-report/2021)
 
-企業として何かしらのオープンソースを利用していることを考えて、ソフトウェアサプライチェーンの一部分としてのオープンソースに興味がある人は、次のレポートやドキュメントがおすすめです。
+企業として何かしらのオープンソースを利用していて、ソフトウェアサプライチェーンの一部分としてのオープンソースに興味がある人は、次のレポートやドキュメントがおすすめです。
 オープンソースのメンテナー不足の問題やリスクなどについて書かれています。逆を言えば、何を支援したら安全にオープンソースを利用できるかを見つけられる可能性があります。
 
 - [Threats, Risks, and Mitigations in the Open Source Ecosystem · Open-Source-Security-Coalition/Open-Source-Security-Coalition](https://github.com/Open-Source-Security-Coalition/Open-Source-Security-Coalition/tree/master/publications/threats-risks-mitigations)
