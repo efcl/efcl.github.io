@@ -306,7 +306,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 [GitHub Sponsors](https://github.blog/jp/2020-05-19-github-sponsors-is-out-of-beta-for-sponsored-organizations/)や[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースを支援できるようになっています。
 
 日本でも、いろいろな企業がGitHub Sponsorsなどを使ってオープンソースを支援しています。
-具体的な、支援の設定方法や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
+具体的な支援の設定方法や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
 
 - [GitHub Sponsorsを使って「企業」として寄付をした話 - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2021/03/19/110000)
 - [企業として Github Sponsors になる](https://kazamori.jp/blogs/2021/01/09/github-sponsors/)
