@@ -311,10 +311,12 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 - [GitHub Sponsorsを使って「企業」として寄付をした話 - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2021/03/19/110000)
 - [企業として Github Sponsors になる](https://kazamori.jp/blogs/2021/01/09/github-sponsors/)
 - [時雨堂として GitHub Sponser を利用して OSS 開発者のスポンサーになりました - shiguredo - Medium](https://medium.com/shiguredo/%E6%99%82%E9%9B%A8%E5%A0%82%E3%81%A8%E3%81%97%E3%81%A6-github-sponser-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6-oss-%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F-845396b93f7d)
+  - [企業で OSS のスポンサーや災害支援の寄付をする意味 - V - Medium](https://voluntas.medium.com/%E4%BC%81%E6%A5%AD%E3%81%A7-oss-%E3%81%AE%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E3%82%84%E7%81%BD%E5%AE%B3%E6%94%AF%E6%8F%B4%E3%81%AE%E5%AF%84%E4%BB%98%E3%82%92%E3%81%99%E3%82%8B%E6%84%8F%E5%91%B3-d41ec6a45774)
 - [会社（ヴェルク）としてGithub Sponsorsになりました - ヴェルク - IT起業の記録](https://tamukai.blog.velc.jp/entry/2021/05/18/091040)
 - [PLAIDはGitHub Sponsorsを利用してOSSのスポンサーになりました](https://tech.plaid.co.jp/github-sponsors/)
 - [スタディプラスはRSpecに寄付しました - Studyplus Engineering Blog](https://tech.studyplus.co.jp/entry/2021/08/26/085121)
 - [株式会社キューブ・ソフトは企業として GitHub Sponsors を開始しました - Life like a clown](https://clown.cube-soft.jp/entry/2021/09/08/github-sponsors)
+- [スタートアップだからこそ OSS に寄付をする理由 | Yuku Kotani](https://yuku.dev/articles/2021-05-26/donate-to-oss)
 
 もしあなたが従業員で、会社に対してオープンソースのスポンサーになる理由を説明する必要があるなら、次の記事にいろいろな支援のアプローチが書かれているので参照してみてください。
 
