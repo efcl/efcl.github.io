@@ -126,7 +126,7 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 
 > GitHub Sponsorsでの月ごとのスポンサー数の推移
 
-![Monthly Estimated Income](/wp-content/uploads/2021/09/estimated_income_dollar.svg)
+[![Monthly Estimated Income](/wp-content/uploads/2021/09/estimated_income_dollar.svg)](/wp-content/uploads/2021/09/estimated_income_dollar.svg)
 
 > GitHub Sponsorsでの月ごとの推定収入の推移（単位はアメリカドル）
 
@@ -143,8 +143,7 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 - [GitHub Sponsorsを使って「企業」として寄付をした話 - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2021/03/19/110000)
 - [会社（ヴェルク）としてGithub Sponsorsになりました - ヴェルク - IT起業の記録](https://tamukai.blog.velc.jp/entry/2021/05/18/091040)
 
-📝 ここで利用したレポート画像は、[github-sponsor-report](https://github.com/azu/github-sponsor-report)というツールを作って、おおよそのスポンサーの数とMonthly Estimated Incomeの推移のCSV/JSONデータとSVGでの図を生成しています。
-このレポートは現時点(2021-09-05)にAPIを叩いた結果を元にしているので、実際のその時点のデータとはずれています(APIの結果にはスポンサーをやめた人のデータは入らないため、実際は上下してるはずです)。そのため、雰囲気で見てください。
+📝 ここで利用したレポート画像は、[github-sponsor-report](https://github.com/azu/github-sponsor-report)というツールを作って作成しています。このレポートは途中でやめた人のデータは入らないため、実際はもっと上下してるはずです。そのため、雰囲気で見てください。
 [github-sponsor-report](https://github.com/azu/github-sponsor-report)はオープンソースとして公開しているので、自分用のダッシュボードを作りたい方は使ってみてください。
 
 <details>
@@ -172,15 +171,19 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 
 まず最初にGitHub Sponsorsしてくれている方に感謝します！
 
-GitHub Sponsorsを開始してからの変化としては、継続的な維持コストへの負担が緩和されている部分があると思います。
+GitHub Sponsorsを開始してからの変化としては、継続的な維持コストへの金銭的/心理的負担が緩和されたと思います。
 
 もともと、自分は維持コストが増えることに対してかなり慎重な考えもっています。
 特にドメインやサブスクリプションといった金銭的なコストが増えること対しても慎重でしたが、ここへの負担はGitHub Sponsorsがかなり減らしてくれたと思っています。
 
-具体的には、ドメインはよっぽどのことがない限り取らない方針でしたが、"🌐 Domain Supporter"の存在のおかげで、[philan.net](https://philan.net/)を作るときに迷わずドメインを取得できました。
+具体的には、ドメインはよっぽどのことがない限り取らない方針でしたが、🌐 Domain Supporterの存在のおかげで、[philan.net](https://philan.net/)を作るときに迷わずドメインを取得できました。
 （今[philan.net](https://philan.net/)のバックエンドをVercelからAWSに移そうとしているので結果的にドメインを取ったことは正解でした）
 
-また、Oreillyのサブスクリプションで読むために[ACM会員](https://dl.acm.org/)となっているのですが、本体よりは安いとはいえ99$/yearが躊躇なく払えるのは、"📖 Book Supporter"の存在のおかげです。
+また、Oreillyのサブスクリプションで読むために[ACM会員](https://dl.acm.org/)となっていますが、本体よりは安いとはいえ99$/yearが躊躇なく払えるのは、📖 Book Supporterの存在のおかげです。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年もGitHub Sponsorsのおかげて、ACMアカウント更新できました。<br>ありがとうございます。<a href="https://t.co/YpSPfMPxjU">https://t.co/YpSPfMPxjU</a><br><br>ACMアカウントは <a href="https://t.co/bGbCwsLjJC">https://t.co/bGbCwsLjJC</a> 読むのに使ってて、今年はOreilly以外も含めると100冊以上は読んでるきがするので助かります。 <a href="https://t.co/SvMZ4N5WCa">pic.twitter.com/SvMZ4N5WCa</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1425750513094516742?ref_src=twsrc%5Etfw">August 12, 2021</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 - [ACM会員になってオライリーの本が読み放題 | たむたむの日記](https://blog.orz.at/2021/04/08/acm-student/)
 
@@ -234,7 +237,7 @@ GitHub Sponsorsそのものについて考えていて、寄付の歴史や仕�
 dependabotなどのbotによるコミットも含まれているため、あまり正確ではありませんが、それでも新しいものへとコミットする量は増えていると思います。
 その中から、何割かは継続してコミットしているという形になってるようです。
 
-色々と書きましたが、まとめるとGitHub Sponsorsを開始した後もコミット数は増えていて、公開したリポジトリも増えています！
+色々と書きましたが、まとめるとGitHub Sponsorsを開始した後もコミット数は増えていて、公開したリポジトリも増えています。
 自分のTier設計もそうですが、新しいものをどんどん作ってみることに挑戦できていて、その中から何かしらの需要があったものはメンテナンスが続いてるという形になっています。
 
 ## これからGitHub Sponsorsについて考える人へ
@@ -296,7 +299,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 特にMontlyなどの継続的な支援は、金額以上の意味があると感じました（少なくても自分にとってはそう感じました）。
 
 この記事も、自分を支援してくれている人に対して、支援されることについてどう感じているかを説明するために書き始めました。
-自分のTierは明確なリターンを設定していないため、このような記事や年末のレポートなどを書いていますが、支援してくれていること感謝しています。
+自分のTierは明確なリターンを設定していないため、このような記事や年末のレポートなどを書いていますが、支援してくれていることに感謝しています。
 
 ## For Company
 
