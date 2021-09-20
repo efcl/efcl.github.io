@@ -460,6 +460,7 @@ NPOがミッションと整合性がある分野で収益を得るのは望ま�
 
 - [寄付に関する既存研究の紹介](https://www.mof.go.jp/pri/publication/research_paper_staff_report/research04.pdf)
 - [寄付研究ブログー「寄付」を科学してみませんか？: ファンドレイザーは「収益の最大化」を目指さない](https://watanabefumitaka.blogspot.com/2021/02/blog-post.html)
+- [【エッセイ】幸福を善意の行動につなげる - Ylab 東京大学 山内研究室](https://fukutake.iii.u-tokyo.ac.jp/ylab/2009/08/post-184.html)
 
 ## 3章: 寄付の苦痛を軽減するプレコミットメントの手法
 
