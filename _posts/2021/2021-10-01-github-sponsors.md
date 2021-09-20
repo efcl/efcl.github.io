@@ -2,19 +2,22 @@
 title: "GitHub Sponsorsの募集を開始してから2年の振り返り。始めた理由、Tierの設計、結果、変化"
 author: azu
 layout: post
-date : 2021-06-26T20:53
+date : 2021-10-01T12:00
 category: 雑記
 tags:
     - OSS
     - GitHub
+    - Donation
 
 ---
 
-この記事は、GitHub Sponsorsを募集開始してから、2年経ったのでGitHub Sponsorsについて振り返った記事です。
+この記事は、[GitHub Sponsors](https://github.com/sponsors)を募集開始してから、2年経ったのでGitHub Sponsorsについて振り返った記事です。
+
+この記事では、GitHub Sponsorsを始めた理由、Tierの設計、やってみた結果と感謝、やったことによる変化、これからやる方へのアドバイスなどを書いています。
 
 ## GitHub Sponsorsを始めた理由
 
-2019年10月からGitHub Sponsorsのページを公開して、スポンサーを募集を開始しました。
+2019年10月から[GitHub Sponsors](https://github.com/sponsors)のページを公開して、スポンサーを募集を開始しました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">GitHub Sponsorの募集ページを公開しました。<a href="https://t.co/YpSPfMPxjU">https://t.co/YpSPfMPxjU</a><a href="https://twitter.com/hashtag/Promise%E6%9C%AC?src=hash&amp;ref_src=twsrc%5Etfw">#Promise本</a> や <a href="https://twitter.com/hashtag/jsprimer?src=hash&amp;ref_src=twsrc%5Etfw">#jsprimer</a> を書いたり、textlintを作ったり色々OSSを作ってます。<br>後は <a href="https://t.co/CXy3hOXJ8q">https://t.co/CXy3hOXJ8q</a> を8年ぐらい毎週更新してたりもします。<a href="https://twitter.com/jser_info?ref_src=twsrc%5Etfw">@jser_info</a> Sponsorとかもあるのでので、興味がある人は見てみてください</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1186972124180701184?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote>
 
@@ -44,7 +47,7 @@ GitHubは一番使っているサービスなので、新しい機能(GitHub Spo
 
 この考え自体は[JavaScript Promiseの本](https://azu.github.io/promises-book/)をオープンソースな書籍としてリリースした際に、読者が本に対する[支払い手段がないというバグ](https://github.com/azu/promises-book/releases/tag/1.0.1)を修正した際に思ったことです。
 
-自分は自分向け(開発者向け)のプロダクトをオープンソースとして公開することが多いため、GitHub Sponsorsはその選択肢を作る方法としてちょうど良かったため利用しています。
+自分は自分向け(開発者向け)のプロダクトをオープンソースとして公開することが多いため、GitHub Sponsorsは支援の選択肢を作る方法としてちょうど良かったため利用しています。
 
 ## GitHub SponsorsのTierの設計
 
@@ -70,6 +73,8 @@ Tierの種類自体は、最初に作ったものから今も特に変わって�
 - 📖 Book Supporter $30 a month
 - 💚 JSer.info Sponsor $100 a month
 - ❤️ Open Source Sponsor $300 a month
+
+基本的にはMontlyの支援を優先しているため、One-timeのTierについては特に設定していません。
 
 実際のページは次のリンクから見れます。
 
@@ -111,11 +116,15 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 
 ## GitHub Sponsorを募集してみての結果
 
+- [ ] 現時点の日付を更新する
+
 現時点(2021-09-05)では、約80人ほどの人がGitHub Sponsorsで支援してくれています。（ありがとうございます！）
 
-具体的なスポンサー数とMonthly Estimated Incomeは、次のような推移で変化してきました。
+具体的なスポンサー数とMonthly Estimated Income($)は、次のような推移で変化してきました。
 
-- [ ] Reportの画像
+![スポンサー数](/wp-content/uploads/2021/09/sponsors_count.svg)
+
+![Monthly Estimated Income](/wp-content/uploads/2021/09/estimated_income_dollar.svg)
 
 約20名の方が、GitHub Sponsorsを開始当初から支援を継続してくれていて、その後は一定のペースで増えてきている形になっています。
 
@@ -135,7 +144,7 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 [github-sponsor-report](https://github.com/azu/github-sponsor-report)はオープンソースとして公開しているので、自分用のダッシュボードを作りたい方は使ってみてください。
 
 <details>
-    <summary>[github-sponsor-report](https://github.com/azu/github-sponsor-report)の使い方</summary>
+    <summary>github-sponsor-reportの使い方</summary>
 
 [github-sponsor-report](https://github.com/azu/github-sponsor-report)は次の手順で利用できます。
 テンプレートリポジトリをforkして自分用のリポジトリを作って、GitHub Actionsの設定をするだけです。
@@ -164,7 +173,8 @@ GitHub Sponsorsを開始してからの変化としては、継続的な維持�
 もともと、自分は維持コストが増えることに対してかなり慎重な考えもっています。
 特にドメインやサブスクリプションといった金銭的なコストが増えること対しても慎重でしたが、ここへの負担はGitHub Sponsorsがかなり減らしてくれたと思っています。
 
-具体的には、ドメインはよっぽどのことがない限り取らない方針でしたが、"🌐 Domain Supporter"の存在のおかげで、[philan.net](https://philan.net/)を作るときに迷わずドメインを取得できました。（今[philan.net](https://philan.net/)のバックエンドをVercelからAWSに移そうとしているので結果的にドメインを取ったことは正解でした）
+具体的には、ドメインはよっぽどのことがない限り取らない方針でしたが、"🌐 Domain Supporter"の存在のおかげで、[philan.net](https://philan.net/)を作るときに迷わずドメインを取得できました。
+（今[philan.net](https://philan.net/)のバックエンドをVercelからAWSに移そうとしているので結果的にドメインを取ったことは正解でした）
 
 また、Oreillyのサブスクリプションで読むために[ACM会員](https://dl.acm.org/)となっているのですが、本体よりは安いとはいえ99$/yearが躊躇なく払えるのは、"📖 Book Supporter"の存在のおかげです。
 
@@ -227,7 +237,7 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 
 ### For Developer
 
-これからGitHub Sponsorsの登録しようと考えている人は、次を手順を参考してください。
+これからGitHub Sponsorsに開発者登録しようと考えている人は、次を手順を参考してください。
 税金のためのW8BENの記入など面倒な部分もありますが、ほぼフォームに手順どおり入れていくだけなので、そういう機会だと思えば悪くないものです。
 
 - [GitHub Sponsors 登録手順](https://zenn.dev/kawarimidoll/articles/4fbfa878a0a004)
@@ -278,10 +288,11 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 
 自分に限らず既に誰かのSponsorsとなっている人はすごいことです。
 
-その支援している金額の大きさに関係なく、支援することには大きな意味があります。（少なくても自分にとってはそう感じました）
+その支援している金額の大小に関係なく、支援することには大きな意味があります。
+特にMontlyなどの継続的な支援は、金額以上の意味があると感じました（少なくても自分にとってはそう感じました）。
 
 この記事も、自分を支援してくれている人に対して、支援されることについてどう感じているかを説明するために書き始めました。
-自分のTierは明確なリターンを設定していないため、こういう記事や年末のレポートなどを書いていますが、支援してくれていること感謝します。
+自分のTierは明確なリターンを設定していないため、このような記事や年末のレポートなどを書いていますが、支援してくれていること感謝しています。
 
 ## For Company
 
@@ -315,19 +326,32 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 - [Threats, Risks, and Mitigations in the Open Source Ecosystem · Open-Source-Security-Coalition/Open-Source-Security-Coalition](https://github.com/Open-Source-Security-Coalition/Open-Source-Security-Coalition/tree/master/publications/threats-risks-mitigations)
 - [The rise of few-maintainer projects – Increment: Open Source](https://increment.com/open-source/the-rise-of-few-maintainer-projects/)
 
-もっと規模の大きなオープンソースの経済効果について見たいかたは、EUのオープンソースに関するレポートが詳細でおすすめです。
+もっと規模の大きなオープンソースの経済効果について知りたい方は、EUのオープンソースに関するレポートが詳細でおすすめです。
 
 - [Study about the impact of open source software and hardware on technological independence, competitiveness and innovation in the EU economy | Shaping Europe’s digital future](https://digital-strategy.ec.europa.eu/en/library/study-about-impact-open-source-software-and-hardware-technological-independence-competitiveness-and)
 
-## その他
+## まとめ
 
-GitHub SponsorsやOpen Collectiveなど、Open Sourceに対する支援として金銭的に支援する方法が増えて浸透してきたと思います。
-そのためアンケートなどいろいろなデータとしても増えてきていて、それらについても紹介しても良かったのですが、
-一般化しても意味はない気がしたので、個人的な感想という感じで。
+2019年10月からGitHub Sponsorsの募集をはじめてから約2年経ったので、改めてGitHub Sponsorsについてまとめてみました。
+GitHub Sponsorsの募集をどういう理由で始めて、どういう考えでやっていて、その結果どうだったのかについて書きました。
+また、自分を支援してくれてる人に対してその影響や価値について説明することも記事の目的の一つです。
 
-- [How to talk to your company about sponsoring an open source project - Human Who Codes](https://humanwhocodes.com/blog/2021/05/talk-to-your-company-sponsoring-open-source/)
-- [The 2021 Tidelift open source maintainer survey](https://tidelift.com/subscription/the-tidelift-maintainer-survey)
-- [Study about the impact of open source software and hardware on technological independence, competitiveness and innovation in the EU economy | Shaping Europe’s digital future](https://digital-strategy.ec.europa.eu/en/library/study-about-impact-open-source-software-and-hardware-technological-independence-competitiveness-and)
-- [Getting Paid for Open Source Work | Open Source Guides](https://opensource.guide/getting-paid/)
-- [I'm thankful for GitHub, Patreon, and my sponsors this year | Jeff Geerling](https://www.jeffgeerling.com/blog/2020/im-thankful-github-patreon-and-my-sponsors-year)
-- [企業のためのオープンソース ガイド – The Linux Foundation](https://www.linuxfoundation.jp/resources/open-source-guides/)
+この記事では、一人の個人としてのオープンソース活動の持続可能性について書きました。
+
+オープンソースにおける持続可能性については、昔から話題となるテーマだと思います。
+最近も、[Open-core model](https://en.wikipedia.org/wiki/Open-core_model)ではカバーできてなかった部分をカバーしようと[新しい種類のライセンス](https://blog.kengo-toda.jp/entry/2021/01/20/234622)が生まれたり、[Deno](https://deno.com/blog/the-deno-company)/[Excalidraw](https://blog.excalidraw.com/introducing-excalidraw-plus/)/[Rome](https://rome.tools/blog/announcing-rome-tools-inc/)などオープンソースから始まっている会社なども増えています。
+このテーマについては、まだまだ議論は続くと思いますが、実際やってみないと分からない部分も多いです。
+そのため、自分もGitHub Sponsorsやってみての話を書くことにしました。
+
+最近はGitHub SponsorsやOpen Collectiveなど、オープンソースに対して金銭的に支援する方法が増えてきていて、既に利用できる状態です。
+[GitHub Sponsors](https://github.com/sponsors)/[Open Collective](https://opencollective.com/)/[Patreon](https://www.patreon.com/)などのサービスは、Montlyでの支援がデフォルトの選択肢としてあるのが、いわゆる[投銭](https://ja.wikipedia.org/wiki/%E6%8A%95%E3%81%92%E9%8A%AD#%E3%83%8D%E3%83%83%E3%83%88%E6%8A%95%E9%8A%AD)とは少し異なるような感じがしました。
+そのため、オープンソースにおける活動でも、これらの支援形態によって今までは見なかったら新しい動きが見られるようになるかもしれません。
+
+---
+
+自分のGitHub Sponsorsは、次のページから登録できます。
+もしよろしければ、支援してくれると嬉しいです！
+
+<iframe src="https://github.com/sponsors/azu/button" title="Sponsor azu" height="35" width="116" style="border: 0;"></iframe>
+
+- [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
