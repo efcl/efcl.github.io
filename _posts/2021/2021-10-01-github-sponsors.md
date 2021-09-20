@@ -1,5 +1,5 @@
 ---
-title: "GitHub Sponsorsの募集を開始してから2年の振り返り。始めた理由、Tierの設計、結果、変化"
+title: "GitHub Sponsorsの募集を開始してから2年の振り返り。始めた理由、Tierの設計、結果、変化について"
 author: azu
 layout: post
 date : 2021-10-01T12:00
@@ -81,7 +81,7 @@ Tierの種類自体は、最初に作ったものから今も特に変わって�
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
 
 JSer.info SponsorとOpen Source Sponsor以外はなんとなくイメージしやすいものを設定している感じです。
-個人的のSupporterの推奨Tierは、$5/monthの☕️ Coffee Supporterとしています（GitHub Sponsorsは並び順が変更できないので特に意味はないですが）
+推奨Tierは、$5/monthの☕️ Coffee Supporterとしています（GitHub Sponsorsは並び順が変更できないので特に意味はないですが）
 
 GitHub Sponsorsをしてくれる人は継続的に活動を続けてほしいから、継続的に支援するのだと考えています。
 継続的に支援し続けるのは勇気があることだし、実際すごいことだと思います。
