@@ -122,9 +122,13 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 
 具体的なスポンサー数とMonthly Estimated Income($)は、次のような推移で変化してきました。
 
-![スポンサー数](/wp-content/uploads/2021/09/sponsors_count.svg)
+[![スポンサー数のグラフ](/wp-content/uploads/2021/09/sponsors_count.svg)](/wp-content/uploads/2021/09/sponsors_count.svg)
+
+> GitHub Sponsorsでの月ごとのスポンサー数の推移
 
 ![Monthly Estimated Income](/wp-content/uploads/2021/09/estimated_income_dollar.svg)
+
+> GitHub Sponsorsでの月ごとの推定収入の推移（単位はアメリカドル）
 
 約20名の方が、GitHub Sponsorsを開始当初から支援を継続してくれていて、その後は一定のペースで増えてきている形になっています。
 
