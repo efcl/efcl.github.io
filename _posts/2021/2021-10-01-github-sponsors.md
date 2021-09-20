@@ -11,7 +11,7 @@ tags:
 
 ---
 
-この記事は、[GitHub Sponsors](https://github.com/sponsors)を募集開始してから、2年経ったのでGitHub Sponsorsについて振り返った記事です。
+この記事は、[GitHub Sponsors](https://github.com/sponsors)を募集開始してから、約2年経つのでGitHub Sponsorsについて振り返った記事です。
 
 この記事では、GitHub Sponsorsを始めた理由、Tierの設計、やってみた結果と感謝、やったことによる変化、これからやる方へのアドバイスなどを書いています。
 
