@@ -315,6 +315,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 - [スタディプラスはRSpecに寄付しました - Studyplus Engineering Blog](https://tech.studyplus.co.jp/entry/2021/08/26/085121)
 - [株式会社キューブ・ソフトは企業として GitHub Sponsors を開始しました - Life like a clown](https://clown.cube-soft.jp/entry/2021/09/08/github-sponsors)
 - [スタートアップだからこそ OSS に寄付をする理由 | Yuku Kotani](https://yuku.dev/articles/2021-05-26/donate-to-oss)
+- [ゼンアーキテクツは GitHub Sponsors を通じて OSS をサポートしています | ZEN ARCHITECTS](https://zenarchitects.co.jp/posts/zen-github-sponsors)
 
 もしあなたが従業員で、会社に対してオープンソースのスポンサーになる理由を説明する必要があるなら、次の記事にいろいろな支援のアプローチが書かれているので参照してみてください。
 
