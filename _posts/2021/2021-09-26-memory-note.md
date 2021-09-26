@@ -240,7 +240,7 @@ curl https://example-memory-note.worker.dev/notes/1111111?token=<MEMORY_NOTE_TOK
 また、`https://{your worker url}/notes/:listId/widget?token={memory note token}` というURLにアクセスすれば、シンプルなTODOリストのHTML表示を返してくれます。
 
 iOSでは、[Web Widget](https://apps.apple.com/jp/app/web-widget-webpage-screenshot/id1561605396)などを使えば、ホーム画面に任意のURLをWidgetsとして配置できるので、
-ReminderのようのWidgets表示もできます。
+ReminderのようにWidgets表示もできます。
 
 ![iOS Widget](https://raw.githubusercontent.com/azu/memory-note/master/docs/img/ios-widget.jpeg)
 
