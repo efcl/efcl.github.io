@@ -19,7 +19,7 @@ tags:
 
 自分の場合は、iOSの[ショートカット](https://support.apple.com/ja-jp/guide/shortcuts/welcome/ios)から音声入力で、メモをGitHub ProjectのボードにCardとして記録しています。
 この記録したメモを、iOSのWidgetsとしてホーム画面に出したり、[Alfred](https://www.alfredapp.com/)のHotKeyでワンタッチで表示したり、部屋に[電子ペーパーを使った物理的なダッシュボード](https://efcl.info/2021/02/02/digital-paper-dashbling/)があるので、そこに表示しています。
-また、この仕組みで買い物っぽいメモは買い物リストに自動的に整理して、"買い物メモリー"とSiriに言えば、その内容を音声で教えてくれるような形にしています。
+また、GitHub Actionsで買い物っぽいメモは買い物リストに自動的に整理して、"買い物メモリー"とSiriに言えば、その内容を音声で教えてくれるような形にしています。
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Memory Noteに<a href="https://t.co/ZEFEcaOBsS">https://t.co/ZEFEcaOBsS</a>(Siri)で、音声でメモを記録してる様子<a href="https://t.co/fkEdsWNPoK">https://t.co/fkEdsWNPoK</a> <a href="https://t.co/8pEGBbi6Q1">pic.twitter.com/8pEGBbi6Q1</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1442114839522930688?ref_src=twsrc%5Etfw">September 26, 2021</a></blockquote>
 
