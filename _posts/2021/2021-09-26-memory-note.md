@@ -168,6 +168,11 @@ export type StorageAdapter = {
 
 思いついたことをすぐメモとして追加するので、GitHub Project BoardにCardがどんどん溜まっていきますが、Cardはまとめてアーカイブできるので邪魔になったらアーカイブする形にできそうです。（GitHub Project Boardのアーカイブはイベントとして残るので、Revertして復活もできるので気にせずアーカイブできる）
 
+GitHub Project Boardにメモがたまるため、メモが追加されるたびに[GitHub Actions](https://github.co.jp/features/actions)(`on: project_card`に反応できる)を実行して、メモを自動的に分類したりIssueにしたりなどの自動化もできます。
+メモに対してコードで自動化処理をかけるのが自由度が高くていい感じです。
+
+他のサービスだとZapierを使ったり、ClickUpなどは[Automations](https://docs.clickup.com/en/articles/3904901-automations)などの機能を持ってるので、これを利用する感じな気はします。
+
 ## Memory Noteの参考したもの
 
 [Memory Note](https://github.com/azu/memory-note)を作っていて、記憶障害のリハビリでメモリーノートブックという仕組みがあることを知りました。
