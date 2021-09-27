@@ -125,7 +125,7 @@ Memory Noteは単純化すれば、一つの配列にpushとpopするAPIがあ�
 - リストにアイテムを追加
 - リストからアイテムを削除
 
-##　バックエンドをGitHub Projectにする
+## バックエンドをGitHub Projectにする
 
 先ほどの3つのAPIをTypeScriptのインターフェイスで書いてみると次のようになりました。
 
