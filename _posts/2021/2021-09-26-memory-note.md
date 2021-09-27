@@ -13,6 +13,8 @@ tags:
 
 [Memory Note](https://github.com/azu/memory-note)というプログラマブルなTodoアプリのミドルウェアを書きました。
 ややこしいですが、大雑把に言えばReminder的なTodoリストを扱うREST APIをCloudflare Workersで動かす仕組みです。
+[Headless Todo App](https://twitter.com/tokifujp/status/1442272253824028672)という単語がしっくりくるのかもしれません。
+
 
 単体だと何ができるのかよくわからないものですが、Todoサービスを自分用に作れる仕組みです。
 対象ユーザーは主に自分ですが、[Memory NoteのREADME](https://github.com/azu/memory-note)にセットアップ方法や関連するクライアントの実装も公開しています。
