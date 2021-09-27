@@ -261,5 +261,5 @@ ReminderのようにWidgets表示もできます。
 
 Todoアプリを実装したのは、[JavaScript Primer](https://jsprimer.net/)の[Todoアプリ](https://jsprimer.net/use-case/todoapp/)以来な感じがします。（JavaScript Primerはフロントエンドで、Memory Noteはバックエンドに近いのでちょっと違いますが）
 
-Memory Noteを作ったことで短期的なメモも、タスク管理も同じGitHubリポジトリにまとまったので、GTDでいうところのInboxができた感じがして結構満足ではあります。
+Memory Noteを作ったことで短期的なメモも、タスク管理と同じGitHubリポジトリにまとまったので、GTDでいうところのInboxができた感じがして結構満足ではあります。
 しかし、なんかもっと良い仕組みはありそうな気はしますが、こういう忘れると嫌な短期的なメモをみんなどうやって管理してるんだろ?というのが気になります。
