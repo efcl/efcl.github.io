@@ -256,6 +256,7 @@ ReminderのようにWidgets表示もできます。
 ## おわりに
 
 [Memory Note](https://github.com/azu/memory-note)をなぜ作ったかを大雑把にまとめてみると、忘れる前にメモしたいので、アプリを開く必要がないとにかく早いメモが欲しいという理由でした。
+
 [Cloudflare Workers](https://workers.cloudflare.com/)を使うことで、主な処理をCDN Edgeで動かして、できるだけ体感がいいAPIを作ったり、音声コマンド/入力を使うことで1ステップでメモが開始できるようにしています。
 パフォーマンス的には、バックエンドが[Cloudflare Workers KV](https://www.cloudflare.com/ja-jp/products/workers-kv/)の場合はレスポンスが50msぐらいで、バックエンドが[GitHub Project](https://github.com/azu/memory-note/blob/master/src/note/adapters/GitHubProject.ts)の場合は500msぐらいで収まっています。
 
