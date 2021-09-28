@@ -19,7 +19,7 @@ tags:
 単体だと何ができるのかよくわからないものですが、Todoサービスを自分用に作れる仕組みです。
 対象ユーザーは主に自分ですが、[Memory NoteのREADME](https://github.com/azu/memory-note)にセットアップ方法や関連するクライアントの実装も公開しています。
 
-自分の場合は、iOSの[ショートカット](https://support.apple.com/ja-jp/guide/shortcuts/welcome/ios)から音声入力で、メモをGitHub ProjectのボードにCardとして記録しています。
+自分の場合は、iOSの[ショートカット](https://support.apple.com/ja-jp/guide/shortcuts/welcome/ios)から音声入力で、メモをGitHub Projectのボードにカードして記録しています。
 この記録したメモを、iOSのWidgetsとしてホーム画面に出したり、[Alfred](https://www.alfredapp.com/)のHotKeyでワンタッチで表示したり、部屋に[電子ペーパーを使った物理的なダッシュボード](https://efcl.info/2021/02/02/digital-paper-dashbling/)があるので、そこに表示しています。
 また、GitHub Actionsで買い物っぽいメモは買い物リストに自動的に整理して、"買い物メモリー"とSiriに言えば、その内容を音声で教えてくれるような形にしています。
 
@@ -166,9 +166,9 @@ export type StorageAdapter = {
 
 これで、短期的なメモはMemory Note経由でGitHub ProjectsにCardとして記録され、そこから作業が必要なら[CardをIssueにして](https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/tracking-work-with-project-boards/adding-notes-to-a-project-board)長期的なメモ書きを加えていくみたいな運用ができました。
 
-思いついたことをすぐメモとして追加するので、GitHub Project BoardにCardがどんどん溜まっていきますが、Cardはまとめてアーカイブできるので邪魔になったらアーカイブする形にできそうです。（GitHub Project Boardのアーカイブはイベントとして残るので、Revertして復活もできるので気にせずアーカイブできる）
+思いついたことをすぐメモとして追加するので、GitHub Projectのボードにカードがどんどん溜まっていきますが、カードはまとめてアーカイブできるので邪魔になったらアーカイブする形にできそうです。（GitHub Projectのアーカイブはイベントとして残るので、Revertして復活もできるので気にせずアーカイブできる）
 
-GitHub Project Boardにメモがたまるため、メモが追加されるたびに[GitHub Actions](https://github.co.jp/features/actions)(`on: project_card`に反応できる)を実行して、メモを自動的に分類したりIssueにしたりなどの自動化もできます。
+GitHub Projectのボードにメモ（カード）がたまるため、メモが追加されるたびに[GitHub Actions](https://github.co.jp/features/actions)(`on: project_card`に反応できる)を実行して、メモを自動的に分類したりIssueにしたりなどの自動化もできます。
 メモに対してコードで自動化処理をかけるのが自由度が高くていい感じです。
 
 他のサービスだとZapierを使ったり、ClickUpなどは[Automations](https://docs.clickup.com/en/articles/3904901-automations)などの機能を持ってるので、これを利用する感じな気はします。
