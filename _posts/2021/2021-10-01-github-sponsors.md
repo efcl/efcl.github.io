@@ -1,5 +1,5 @@
 ---
-title: "GitHub Sponsorsの募集を開始してから2年の振り返り。始めた理由、Tierの設計、結果、変化について"
+title: "GitHub Sponsorsの募集をはじめてから2年が経ったので振り返る"
 author: azu
 layout: post
 date : 2021-10-01T12:00
@@ -90,7 +90,7 @@ GitHub Sponsorsをしてくれる人は継続的に活動を続けてほしい�
 
 これは、主に2つ理由があります。
 
-- 長期的な活動を目的としたいため: 継続的に支援してもらうこと、継続的に活動することをイメージしていたため
+- 長期的な活動を目的としているため: 継続的に支援してもらうこと、継続的に活動することをイメージしているため
 - 特定のプロジェクトに紐付けるのを避けるため: 特定のメリットは特定のプロジェクトに直結しやすい性質があるため、それを避ける目的
 
 目先のメリット（Issueの優先サポートなどの特典）は行動を促しやすいという利点がありますが、長期的にどうなるかを考えるのが難しいという点があります。
@@ -111,8 +111,8 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 人によってどのようなTierにするかは自由で、考え方が異なる部分だと思います。
 そのため、これが正解ではないですが、改めて自分のTier設計について書いてみました。
 
-📝 このような意図だと[Jamie Brandon](https://github.com/sponsors/jamii)のように、Custom Amountと推奨Tier 1つだけにした方がわかりやすいのかもしれません。
-ただ、Custom Amountは最初なかったのと、後からAmountを変更はできないので今のようなTier設計になっています。
+📝 もし今からTierを設計するなら、Custom Amount（ユーザーが自由に金額を決められる）があるため、Tierの数を減らしたほうがわかりやすくなる気はします。
+ただし、Custom Amountは最初なかったのと、後からAmountを変更はできないので今のようなTier設計になっています。
 
 ## GitHub Sponsorを募集してみての結果
 
@@ -177,9 +177,9 @@ GitHub Sponsorsを開始してからの変化としては、継続的な維持�
 特にドメインやサブスクリプションといった金銭的なコストが増えること対しても慎重でしたが、ここへの負担はGitHub Sponsorsがかなり減らしてくれたと思っています。
 
 具体的には、ドメインはよっぽどのことがない限り取らない方針でしたが、🌐 Domain Supporterの存在のおかげで、[philan.net](https://philan.net/)を作るときに迷わずドメインを取得できました。
-（今[philan.net](https://philan.net/)のバックエンドをVercelからAWSに移そうとしているので結果的にドメインを取ったことは正解でした）
+（今、[philan.net](https://philan.net/)のバックエンドをVercelからAWSに移そうとしているので結果的にドメインを取ったことは正解でした）
 
-また、Oreillyのサブスクリプションで読むために[ACM会員](https://dl.acm.org/)となっていますが、本体よりは安いとはいえ99$/yearが躊躇なく払えるのは、📖 Book Supporterの存在のおかげです。
+また、Oreillyの書籍をサブスクリプションで読むために[ACM会員](https://dl.acm.org/)となっていますが、本体よりは安いとはいえ$99/yearが躊躇なく払えるのは、📖 Book Supporterの存在のおかげです。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年もGitHub Sponsorsのおかげて、ACMアカウント更新できました。<br>ありがとうございます。<a href="https://t.co/YpSPfMPxjU">https://t.co/YpSPfMPxjU</a><br><br>ACMアカウントは <a href="https://t.co/bGbCwsLjJC">https://t.co/bGbCwsLjJC</a> 読むのに使ってて、今年はOreilly以外も含めると100冊以上は読んでるきがするので助かります。 <a href="https://t.co/SvMZ4N5WCa">pic.twitter.com/SvMZ4N5WCa</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1425750513094516742?ref_src=twsrc%5Etfw">August 12, 2021</a></blockquote>
 
@@ -187,13 +187,13 @@ GitHub Sponsorsを開始してからの変化としては、継続的な維持�
 
 - [ACM会員になってオライリーの本が読み放題 | たむたむの日記](https://blog.orz.at/2021/04/08/acm-student/)
 
-今年は寄付について調べていて海外の学術書も読んでいたのですが、
-この辺の妙に高い($50とか超えてくる)本を読もうと思ったのは、GitHub Sponsorsの存在が大きい気はしました。
+その他にも、今年は寄付について調べていて海外の学術書も読んでいたのですが、
+この辺の妙に高い($50とか超えてくる)本を読もうと思ったのは、GitHub Sponsorsの存在が大きいです。
 
 - [寄付研究や慈善活動について研究するために色々な書籍や論文を読んだメモ書き | Web Scratch](https://efcl.info/2021/02/19/donation-philanthropy-study/)
 - [慈善活動や寄付やオープンソースについて発表した | Web Scratch](https://efcl.info/2021/03/31/opensource-donation/)
 
-金銭的な負担が相殺されることで、心理的な負担が減っていると感じました。
+金銭的な負担が相殺されることで、開発や学習における心理的な負担が減っていると感じました。
 
 ## GitHub Sponsors募集後に新しく始めたこと
 
@@ -213,24 +213,28 @@ GitHub Sponsorsそのものについて考えていて、寄付の歴史や仕�
 > 2019: 81  
 > [今年のオープンソース活動振り返り @ 2020 | Web Scratch](https://efcl.info/2020/12/31/open-source-in-2020/)
 
-既存のリポジトリへのコミットした量(メンテナンスや機能追加など)と新しく作成したリポジトリへコミットした量の比率を調べてみました。
+GitHub Sponsorsを始める前(2019年)に作成したリポジトリと始めた後(2020年)に作成したリポジトリへコミットした量の比率を調べてみました。
+ここで扱っているリポジトリはPublicリポジトリのみであるため、Privateリポジトリは含みません。
 
-次の図は、2019年と2020年までの2つの期間で、コミットした数をリポジトリごとに出したものです。
+次の図は、2019年と2020年のそれぞれの一年間で、コミットした数をリポジトリごとに出したものです。
 
 [![2019年と2020年のコミット数をリポジトリごとにだしたもの](/wp-content/uploads/2021/09/20-1632125268.png)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSdSg2t8ORPGhjjWttuk8MOtnUQQwK4nsmyut97ttfj0iwbew1bnXW1v_tFKKysnZMufbbszzY0NbuT/pubhtml?gid=153014883&single=true)
 
+> クリックすると拡大したグラフが見れます  
 > Spreadsheet: <https://docs.google.com/spreadsheets/d/1OZz4GvORzt2YORbiJPX_QzjggoviJAV2vNDJeubQfE4/edit?usp=sharing>  
 > Source Code: <https://github.com/azu/github-commit-count-per-repository> 
 
 それぞれの期間でコミットしたリポジトリの数を出してみると、次のようになっていました。
 
-- 2019年と2020年の2つの期間でコミットがあったリポジトリの数は、322コ
+- 2019年と2020年の2つの期間でコミットがあったリポジトリの総数は、322コ
 - そのうち、2つの期間でどちらの期間でも継続的にコミットがあったリポジトリは、92コ
 - どちらか片方の期間でしかコミットがなかったリポジトリは、230コ
-  - 一時的なリポジトリ(テストやサンプル)、新規リポジトリなどを含む
+  - 一時的なリポジトリ(テストなど)や新規リポジトリなどを含む
+- 2019年の合計コミット数は8073
+- 2020年の合計コミット数は10656
 
 継続的にコミットしているリポジトリとしては、[JSer.info](https://jser.info/)、[textlint](https://github.com/textlint/textlint)、[JavaScript Primer](https://jsprimer.net/)などがあります。
-一方で、GitHub Sponsors開始後に作られたものとしては、[HonKit](https://github.com/honkit/honkit)や[Secretlint](https://github.com/secretlint/secretlint)などがあります。
+一方で、GitHub Sponsors開始後に新しく作られたものとしては、[HonKit](https://github.com/honkit/honkit)や[Secretlint](https://github.com/secretlint/secretlint)などがあります。
 
 dependabotなどのbotによるコミットも含まれているため、あまり正確ではありませんが、それでも新しいものへとコミットする量は増えていると思います。
 その中から、何割かは継続してコミットしているという形になってるようです。
@@ -246,11 +250,12 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 税金のためのW8BENの記入など面倒な部分もありますが、ほぼフォームに手順どおり入れていくだけなので、そういう機会だと思えば悪くないものです。
 
 - [GitHub Sponsors 登録手順](https://zenn.dev/kawarimidoll/articles/4fbfa878a0a004)
+- [GitHub Sponsors の DocuSign で提出する W-8BEN の書き方 - 猫でもわかるWebプログラミングと副業](https://www.utakata.work/entry/2021/09/21/142248)
 - [GitHub スポンサーを通じてスポンサーシップを獲得する - GitHub Docs](https://docs.github.com/ja/sponsors/receiving-sponsorships-through-github-sponsors)
 
 オープンソース活動で金銭を受け取りたくないという人もいると思います。
 お金を受け取ることで義務感や責任を持ちたくないなどの理由があると思いますが、
-自分のようにTier設計を工夫してみることで気持ちへの負担が減ることもあるので検討してみてください。
+自分のようにTier設計を工夫してみることで、気持ちへの負担が減ることもあるので検討してみてください。
 もちろん、すべての人がGitHub Sponsorsをやるべきという話ではないため、必要になったら再検討してみてください。
 
 - [オープンソースで金銭を得る | Open Source Guides](https://opensource.guide/ja/getting-paid/)
@@ -264,12 +269,12 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 > For other maintainers: Don't feel guilty asking people to support you. Whether they'll admit it or not, if they're using your project, they are getting value out of it. And in the case of organizations building on top of your projects, usually a lot. Don't get all spammy (there's a reason we distrust salespeople...), but definitely ask people to assist you financially.
 > [I'm thankful for GitHub, Patreon, and my sponsors this year | Jeff Geerling](https://www.jeffgeerling.com/blog/2020/im-thankful-github-patreon-and-my-sponsors-year)
 
-最後に、オープンソースに対する金銭的な支援をする仕組みができたのはまだ最近の話なので、実際にやってみないとわからないことも多いはずです。
+最後に、オープンソースに対して簡単に金銭的な支援ができるようになったのはまだ最近の話なので、実際にやってみないとわからないことも多いはずです。
 
 2021年に[Tidelift(オープンソースの開発者に対して対価を分配するプラットフォーム)が取ったアンケート](https://tidelift.com/subscription/the-tidelift-maintainer-survey)(対象は378人)では、
 約半数がオープンソース活動に対して何かしらの対価をもらっていて、その中で5万ドル以上もらっているのは5 + 1で6%程度です。
 
-![Tidelift](/wp-content/uploads/2021/09/20-1632117537.png)
+![Tideliftのアンケート結果より抜粋](/wp-content/uploads/2021/09/20-1632117537.png)
 
 > How much total income do you receive per year for your open source maintenance work from all sources?  
 > [The 2021 Tidelift open source maintainer survey](https://tidelift.com/subscription/the-tidelift-maintainer-survey)
@@ -279,8 +284,9 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 
 ![IncomeをOpen Source Incomeで置き換えるのは難しい](/wp-content/uploads/2021/09/20-1632125123.png)
 
-置き換えることを目標に置くことは悪くありませんが、最初は既存の収入に対してオープンソースの収入をプラスするイメージでTierを設計するのが良いかもしれません。
-オープンソースで得た利益を元により多く学び、より多くのものを作ることで、このバランスは変化してくるかもしれません。
+置き換えることを目標に置くことは悪くないと思います。
+ただ、最初は既存の収入に対してオープンソースの収入をプラスするイメージで、Tierを設計するのが良いかもしれません。
+オープンソースで得た利益や活動などから学ぶことで、このバランスは変化してくるかもしれません。
 
 ![IncomeにOpen Source Incomeを足すイメージ](/wp-content/uploads/2021/09/20-1632125180.png)
 
@@ -291,7 +297,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 
 ## For Sponsors
 
-自分に限らず既に誰かのSponsorsとなっている人はすごいことです。
+（自分以外を含む）誰かのSponsorsとなっている人はすごいことです。
 
 その支援している金額の大小に関係なく、支援することには大きな意味があります。
 特にMontlyなどの継続的な支援は、金額以上の意味があると感じました（少なくても自分にとってはそう感じました）。
@@ -304,7 +310,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 [GitHub Sponsors](https://github.blog/jp/2020-05-19-github-sponsors-is-out-of-beta-for-sponsored-organizations/)や[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースを支援できるようになっています。
 
 日本でも、いろいろな企業がGitHub Sponsorsなどを使ってオープンソースを支援しています。
-具体的な支援の設定方法や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
+具体的な支援の仕方や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
 
 - [GitHub Sponsorsを使って「企業」として寄付をした話 - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2021/03/19/110000)
 - [企業として Github Sponsors になる](https://kazamori.jp/blogs/2021/01/09/github-sponsors/)
@@ -344,16 +350,16 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 GitHub Sponsorsの募集をどういう理由で始めて、どういう考えでやっていて、その結果どうだったのかについて書きました。
 また、自分を支援してくれてる人に対してその影響や価値について説明することも記事の目的の一つです。
 
-この記事では、一人の個人としてのオープンソース活動の持続可能性について書きました。
+この記事では、個人のオープンソース活動の持続可能性について書きました。
 
 オープンソースにおける持続可能性については、昔から話題となるテーマだと思います。
 最近も、[Open-core model](https://en.wikipedia.org/wiki/Open-core_model)ではカバーできてなかった部分をカバーしようと[新しい種類のライセンス](https://blog.kengo-toda.jp/entry/2021/01/20/234622)が生まれたり、[Deno](https://deno.com/blog/the-deno-company)/[Excalidraw](https://blog.excalidraw.com/introducing-excalidraw-plus/)/[Rome](https://rome.tools/blog/announcing-rome-tools-inc/)などオープンソースから始まっている会社なども増えています。
 このテーマについては、まだまだ議論は続くと思いますが、実際やってみないと分からない部分も多いです。
-そのため、自分もGitHub Sponsorsやってみての話を書くことにしました。
+そのため、自分もGitHub Sponsorsをやってみての話を書くことにしました。
 
 最近はGitHub SponsorsやOpen Collectiveなど、オープンソースに対して金銭的に支援する方法が増えてきていて、既に利用できる状態です。
-[GitHub Sponsors](https://github.com/sponsors)/[Open Collective](https://opencollective.com/)/[Patreon](https://www.patreon.com/)などのサービスは、Montlyでの支援がデフォルトの選択肢としてあるのが、いわゆる[投銭](https://ja.wikipedia.org/wiki/%E6%8A%95%E3%81%92%E9%8A%AD#%E3%83%8D%E3%83%83%E3%83%88%E6%8A%95%E9%8A%AD)とは少し異なるような感じがしました。
-そのため、オープンソースにおける活動でも、これらの支援形態によって今までは見なかったら新しい動きが見られるようになるかもしれません。
+[GitHub Sponsors](https://github.com/sponsors)/[Open Collective](https://opencollective.com/)/[Patreon](https://www.patreon.com/)などのサービスは、Montlyでの支援（継続的な支援）がデフォルトの選択肢としてあるのが、いわゆる[投銭](https://ja.wikipedia.org/wiki/%E6%8A%95%E3%81%92%E9%8A%AD#%E3%83%8D%E3%83%83%E3%83%88%E6%8A%95%E9%8A%AD)とは少し異なるような感じがしました。
+そのため、オープンソースにおける活動でも、これらの支援形態によって今までは見なかった新しい動きが見られるようになるかもしれません。
 
 ---
 
