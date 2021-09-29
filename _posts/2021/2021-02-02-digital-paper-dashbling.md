@@ -83,9 +83,6 @@ curl -XPOST -H "Content-Type: application/json" \
 ![ダッシュボード](https://efcl.info/wp-content/uploads/2021/02/dashboard.jpg)
 
 壁紙があるので[マスキングテープ](https://www.amazon.co.jp/dp/B00U2CNKYO/)を貼って、その上に[梱包テープ](https://www.amazon.co.jp/dp/B00777WWLE/)を貼って、[ケーブル結束クリップ](https://www.amazon.co.jp/dp/B00021847I/)をつけて固定しています。
-
-![壁](https://efcl.info/wp-content/uploads/2021/02/IMG_8906.JPG)
-
 この手法は[壁にホワイトボードを設置する方法](https://www.amazon.co.jp/gp/customer-reviews/R21A4XG5P81QG7/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B001MSQWM4)を参考にしています。
 
 ## おわり
