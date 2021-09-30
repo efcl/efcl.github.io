@@ -1,5 +1,5 @@
 ---
-title: "GitHub Sponsorsの募集をはじめてから2年が経ったので振り返る"
+title: "GitHub Sponsorsの募集を始めてから2年が経ったので振り返る"
 author: azu
 layout: post
 date : 2021-10-01T12:00
@@ -17,7 +17,7 @@ tags:
 
 ## GitHub Sponsorsを始めた理由
 
-2019年10月から[GitHub Sponsors](https://github.com/sponsors)のページを公開して、スポンサーを募集を開始しました。
+2019年10月から[GitHub Sponsors](https://github.com/sponsors)のページを公開して、スポンサーの募集を開始しました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">GitHub Sponsorの募集ページを公開しました。<a href="https://t.co/YpSPfMPxjU">https://t.co/YpSPfMPxjU</a><a href="https://twitter.com/hashtag/Promise%E6%9C%AC?src=hash&amp;ref_src=twsrc%5Etfw">#Promise本</a> や <a href="https://twitter.com/hashtag/jsprimer?src=hash&amp;ref_src=twsrc%5Etfw">#jsprimer</a> を書いたり、textlintを作ったり色々OSSを作ってます。<br>後は <a href="https://t.co/CXy3hOXJ8q">https://t.co/CXy3hOXJ8q</a> を8年ぐらい毎週更新してたりもします。<a href="https://twitter.com/jser_info?ref_src=twsrc%5Etfw">@jser_info</a> Sponsorとかもあるのでので、興味がある人は見てみてください</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1186972124180701184?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote>
 
@@ -52,17 +52,13 @@ GitHubは一番使っているサービスなので、新しい機能(GitHub Spo
 ## GitHub SponsorsのTierの設計
 
 GitHub Sponsorsには、月額とワンタイムの支払い方法があります。
-月額とワンタイムの支払い方法に対してそれぞれ最大10種類のTierが設定できます。
+月額とワンタイムの支払い方法に対してそれぞれ最大10種類のTier（10種類の金額）が設定できます。
 （開始当初は、月額のみで、[2021年の4月](https://github.blog/changelog/2021-04-06-custom-amounts-and-one-time-payments-rolling-out-to-github-sponsors/)からスポンサー側が任意の金額を指摘できるCustom Amountsとワンタイムの支払いが追加されています。）
 
 [自分自身のTier設計](https://github.com/sponsors/azu)は、Issue(privateなので見れない)や他の人のTierを参考にしながら作った記憶があります。
 
 - [Brainstorm ideas for tiers · Issue #12 · github/github-sponsors-beta](https://github.com/github/github-sponsors-beta/issues/12)
   - beta版の参加者が招待されてたprivate repositoryのissue
-
-現在のSponsonsor DashboardにはこういったTierのアイデアなども表示されています。
-
-![Tier Tips](/wp-content/uploads/2021/06/27-1624721656.png)
 
 最終的に、[自分のSponsorsのTier](https://github.com/sponsors/azu)は次のように設定しています。
 Tierの種類自体は、最初に作ったものから今も特に変わっていません。
@@ -81,7 +77,7 @@ Tierの種類自体は、最初に作ったものから今も特に変わって�
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
 
 JSer.info SponsorとOpen Source Sponsor以外はなんとなくイメージしやすいものを設定している感じです。
-推奨Tierは、$5/monthの☕️ Coffee Supporterとしています（GitHub Sponsorsは並び順などは変更できないため、特にそういう表示はありません）
+推奨Tierは、$5/monthの☕️ Coffee Supporterとしていますが、GitHub Sponsors上の並び順などは変更できないため、特に意味はありません。
 
 GitHub Sponsorsをしてくれる人は継続的に活動を続けてほしいから、継続的に支援するのだと考えています。
 継続的に支援し続けるのは勇気があることだし、実際すごいことだと思います。
@@ -114,15 +110,18 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 📝 もし今からTierを設計するなら、Custom Amount（ユーザーが自由に金額を決められる）があるため、Tierの数を減らしたほうがわかりやすくなる気はします。
 ただし、Custom Amountは最初なかったのと、後からAmountを変更はできないので今のようなTier設計になっています。
 
+また、現在のSponsonsor Dashboardには、次のようなTierのアイデアなども表示されています。
+これからTierを設定する人は、これも参考にすると良いかもしれません。
+
+![Tier Tips](/wp-content/uploads/2021/06/27-1624721656.png)
+
 ## GitHub Sponsorを募集してみての結果
 
-- [ ] 現時点の日付を更新する
+現時点(2021-10-01)では、約80名以上の人がGitHub Sponsorsで支援してくれています。（ありがとうございます！）
 
-現時点(2021-09-05)では、約80人ほどの人がGitHub Sponsorsで支援してくれています。（ありがとうございます！）
+具体的なスポンサー数とMonthly Estimated Income(単位は$)は、次のような推移で変化してきました。
 
-具体的なスポンサー数とMonthly Estimated Income($)は、次のような推移で変化してきました。
-
-[![スポンサー数のグラフ](/wp-content/uploads/2021/09/sponsors_count.svg)](/wp-content/uploads/2021/09/sponsors_count.svg)
+[![GitHubスポンサー数の推移グラフ](/wp-content/uploads/2021/09/sponsors_count.svg)](/wp-content/uploads/2021/09/sponsors_count.svg)
 
 > GitHub Sponsorsでの月ごとのスポンサー数の推移
 
@@ -143,8 +142,8 @@ GitHub Sponsorsのあるなしで、自分の意識はあんまり変わらな�
 - [GitHub Sponsorsを使って「企業」として寄付をした話 - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2021/03/19/110000)
 - [会社（ヴェルク）としてGithub Sponsorsになりました - ヴェルク - IT起業の記録](https://tamukai.blog.velc.jp/entry/2021/05/18/091040)
 
-📝 ここで利用したレポート画像は、[github-sponsor-report](https://github.com/azu/github-sponsor-report)というツールを作って作成しています。このレポートは途中でやめた人のデータは入らないため、実際はもっと上下してるはずです。そのため、雰囲気で見てください。
-[github-sponsor-report](https://github.com/azu/github-sponsor-report)はオープンソースとして公開しているので、自分用のダッシュボードを作りたい方は使ってみてください。
+📝 ここで利用したレポート画像は、[github-sponsor-report](https://github.com/azu/github-sponsor-report)というツールで作成しています。このレポートは途中でやめた人のデータは入らないため、実際はもっと上下してるはずです。そのため、雰囲気で見てください。
+[github-sponsor-report](https://github.com/azu/github-sponsor-report)はオープンソースとして公開しているので、自分用のGitHub Sponsorsダッシュボードを作りたい方は使ってみてください。
 
 <details>
     <summary>github-sponsor-reportの使い方</summary>
@@ -201,7 +200,7 @@ GitHub Sponsorsのおかげで負担が減っただけではなく、新しい�
 
 [philan.net](https://philan.net/)は、まさにその典型例です。
 GitHub Sponsorsそのものについて考えていて、寄付の歴史や仕組みについて調べていました。
-その中で、寄付の仕組みをもっと知るためには、寄付をしてみるのが一番実践的なので、寄付をするために管理する仕組みを作って実践してみようとしたのが始まりです。
+その中で、寄付の仕組みをもっと知るためには、寄付をしてみるのが一番実践的なので、寄付をするために管理する仕組みを作って実践してみようと思って始めたプロジェクトです。
 
 - [寄付をするために、寄付の予算と寄付の記録をSpreadSheetベースでつける philan.net というサービスを作った | Web Scratch](https://efcl.info/2021/03/10/philan.net/)
 - [Next.js + Vercel + Cloudflare Workers KV + Googleスプレットシートで寄付管理サービスを作った | Web Scratch](https://efcl.info/2021/03/12/next.js-vercel-cloudflare-workers-kv/)
@@ -224,7 +223,7 @@ GitHub Sponsorsを始める前(2019年)に作成したリポジトリと始め�
 > Spreadsheet: <https://docs.google.com/spreadsheets/d/1OZz4GvORzt2YORbiJPX_QzjggoviJAV2vNDJeubQfE4/edit?usp=sharing>  
 > Source Code: <https://github.com/azu/github-commit-count-per-repository> 
 
-それぞれの期間でコミットしたリポジトリの数を出してみると、次のようになっていました。
+それぞれの期間でコミットしたリポジトリの数を出してみると、次のようになっていました。(Publicリポジトリのみが対象)
 
 - 2019年と2020年の2つの期間でコミットがあったリポジトリの総数は、322コ
 - そのうち、2つの期間でどちらの期間でも継続的にコミットがあったリポジトリは、92コ
@@ -233,14 +232,14 @@ GitHub Sponsorsを始める前(2019年)に作成したリポジトリと始め�
 - 2019年の合計コミット数は8073
 - 2020年の合計コミット数は10656
 
-継続的にコミットしているリポジトリとしては、[JSer.info](https://jser.info/)、[textlint](https://github.com/textlint/textlint)、[JavaScript Primer](https://jsprimer.net/)などがあります。
-一方で、GitHub Sponsors開始後に新しく作られたものとしては、[HonKit](https://github.com/honkit/honkit)や[Secretlint](https://github.com/secretlint/secretlint)などがあります。
+継続的にコミットしているリポジトリとしては、[JSer.info](https://github.com/jser)、[textlint](https://github.com/textlint/textlint)、[JavaScript Primer](https://jsprimer.net/)などがあります。
+一方で、GitHub Sponsors開始後に新しく作られたものとしては、[philan.net](https://github.com/azu/philan.net)、[HonKit](https://github.com/honkit/honkit)、[Secretlint](https://github.com/secretlint/secretlint)などがあります。
 
 dependabotなどのbotによるコミットも含まれているため、あまり正確ではありませんが、それでも新しいものへとコミットする量は増えていると思います。
 その中から、何割かは継続してコミットしているという形になってるようです。
 
 色々と書きましたが、まとめるとGitHub Sponsorsを開始した後もコミット数は増えていて、公開したリポジトリも増えています。
-自分のTier設計もそうですが、新しいものをどんどん作ってみることに挑戦できていて、その中から何かしらの需要があったものはメンテナンスが続いてるという形になっています。
+新しいものを色々と作ってみることに挑戦できていて、その中から何かしらの需要があったものはメンテナンスが続いてるという形になっています。
 
 ## これからGitHub Sponsorsについて考える人へ
 
@@ -259,6 +258,7 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 もちろん、すべての人がGitHub Sponsorsをやるべきという話ではないため、必要になったら再検討してみてください。
 
 - [オープンソースで金銭を得る | Open Source Guides](https://opensource.guide/ja/getting-paid/)
+  - なぜ金銭的サポートを探している人がいるのか？なぜオープンソース活動で金銭を受け取りたくないと思う人がいるのか？などオープンソースとお金について色々と書かれている文章
 
 また、人に「GitHub Sponsorsでサポートしてください！」というようにサポートを頼むことに対して、必要以上に罪悪感をもたないことをおすすめします。
 実際にあなたが作ったライブラリを利用したり、あなたが書いたものを参照したりしている人は、そこに対して価値を感じているはずです。
@@ -272,20 +272,21 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 最後に、オープンソースに対して簡単に金銭的な支援ができるようになったのはまだ最近の話なので、実際にやってみないとわからないことも多いはずです。
 
 2021年に[Tidelift(オープンソースの開発者に対して対価を分配するプラットフォーム)が取ったアンケート](https://tidelift.com/subscription/the-tidelift-maintainer-survey)(対象は378人)では、
-約半数がオープンソース活動に対して何かしらの対価をもらっていて、その中で5万ドル以上もらっているのは5 + 1で6%程度です。
+約半数がオープンソース活動に対して何かしらの金銭をもらっていて、その中で5万ドル以上もらっているのは5 + 1で6%程度です。
+(回答者のうち[Tidelift](https://tidelift.com)を利用しているのは27%ほどであるため、データはあくまで参考程度です)
 
 ![Tideliftのアンケート結果より抜粋](/wp-content/uploads/2021/09/20-1632117537.png)
 
 > How much total income do you receive per year for your open source maintenance work from all sources?  
 > [The 2021 Tidelift open source maintainer survey](https://tidelift.com/subscription/the-tidelift-maintainer-survey)
 
-これは、Tideliftでのアンケートなので、オープンソース全体ではもっと比率は小さいと思います。
-これからもわかるように、仕事の収入をオープンソース活動の収入で置き換えることは簡単ではありません。
+このデータからもわかるように、仕事の収入をGitHub Sponsorsのような支援で置き換えることは、簡単ではありません。
+（置き換える簡単な方法は、仕事としてオープンソースに関わる事ですが、これは本題ではないため扱いません）
 
 ![IncomeをOpen Source Incomeで置き換えるのは難しい](/wp-content/uploads/2021/09/20-1632125123.png)
 
 置き換えることを目標に置くことは悪くないと思います。
-ただ、最初は既存の収入に対してオープンソースの収入をプラスするイメージで、Tierを設計するのが良いかもしれません。
+ただ、最初は既存の収入に対してGitHub Sponsorsの支援をプラスするイメージで、Tierを設計するのが良いかもしれません。
 オープンソースで得た利益や活動などから学ぶことで、このバランスは変化してくるかもしれません。
 
 ![IncomeにOpen Source Incomeを足すイメージ](/wp-content/uploads/2021/09/20-1632125180.png)
@@ -307,7 +308,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 
 ## For Company
 
-[GitHub Sponsors](https://github.blog/jp/2020-05-19-github-sponsors-is-out-of-beta-for-sponsored-organizations/)や[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースを支援できるようになっています。
+[GitHub Sponsors](https://github.blog/jp/2020-05-19-github-sponsors-is-out-of-beta-for-sponsored-organizations/)や[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースプロジェクトを支援できるようになっています。
 
 日本でも、いろいろな企業がGitHub Sponsorsなどを使ってオープンソースを支援しています。
 具体的な支援の仕方や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
@@ -328,8 +329,8 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 - [How to talk to your company about sponsoring an open source project - Human Who Codes](https://humanwhocodes.com/blog/2021/05/talk-to-your-company-sponsoring-open-source/)
   - ESLintの著者によって書かれた、オープンソースのスポンサーについて会社に話す方法についての記事
 
-90%以上の企業がなにかしらのオープンソースソフトウェアを利用しているという話があります。
-何をサポートすればいいのか分からない場合は、開発者などのオープンソースを利用している人と話しあってみてください。
+90%以上の企業がなにかしらのオープンソースソフトウェア/ライブラリを利用しているという話があります。
+何をサポートすればいいのか分からない場合は、ソフトウェアエンジニアといったオープンソースを利用している人と話しあってみてください。
 
 - [2021年のOSSRAレポートから読み解く、商用ソフトウェアにおけるオープンソースの状況 - ソフトウェア・インテグリティ](https://www.synopsys.com/blogs/software-security/ja-jp/open-source-trends-ossra-report/)
 - [The State of Enterprise Open Source: A Red Hat Report](https://www.redhat.com/en/enterprise-open-source-report/2021)
@@ -350,7 +351,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 GitHub Sponsorsの募集をどういう理由で始めて、どういう考えでやっていて、その結果どうだったのかについて書きました。
 また、自分を支援してくれてる人に対してその影響や価値について説明することも記事の目的の一つです。
 
-この記事では、個人のオープンソース活動の持続可能性について書きました。
+この記事では、個人的なオープンソース活動の持続可能性について書きました。
 
 オープンソースにおける持続可能性については、昔から話題となるテーマだと思います。
 最近も、[Open-core model](https://en.wikipedia.org/wiki/Open-core_model)ではカバーできてなかった部分をカバーしようと[新しい種類のライセンス](https://blog.kengo-toda.jp/entry/2021/01/20/234622)が生まれたり、[Deno](https://deno.com/blog/the-deno-company)/[Excalidraw](https://blog.excalidraw.com/introducing-excalidraw-plus/)/[Rome](https://rome.tools/blog/announcing-rome-tools-inc/)などオープンソースから始まっている会社なども増えています。
