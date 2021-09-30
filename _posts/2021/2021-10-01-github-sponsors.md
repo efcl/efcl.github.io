@@ -271,9 +271,9 @@ dependabotなどのbotによるコミットも含まれているため、あま�
 
 最後に、オープンソースに対して簡単に金銭的な支援ができるようになったのはまだ最近の話なので、実際にやってみないとわからないことも多いはずです。
 
-2021年に[Tidelift(オープンソースの開発者に対して対価を分配するプラットフォーム)が取ったアンケート](https://tidelift.com/subscription/the-tidelift-maintainer-survey)(対象は378人)では、
+2021年に[Tideliftが取ったアンケート](https://tidelift.com/subscription/the-tidelift-maintainer-survey)(対象は378人)では、
 約半数がオープンソース活動に対して何かしらの金銭をもらっていて、その中で5万ドル以上もらっているのは5 + 1で6%程度です。
-(回答者のうち[Tidelift](https://tidelift.com)を利用しているのは27%ほどであるため、データはあくまで参考程度です)
+([Tidelift](https://tidelift.com)はオープンソース開発者によるサブスクリプションサポートを提供するプラットフォームで、回答者のうち[Tidelift](https://tidelift.com)を利用しているのは27%ほど。そのためデータはあくまで参考程度です)
 
 ![Tideliftのアンケート結果より抜粋](/wp-content/uploads/2021/09/20-1632117537.png)
 
