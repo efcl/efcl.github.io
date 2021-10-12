@@ -110,9 +110,9 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 あとは、SpreadSheetのデータは、次の流れで毎日サイトへ反映する仕組みになっています。
 
 1. SpreadSheetが更新される
-2. [update-data.yml](./.github/workflows/update-data.yml)が1日1回起動する
-3. [Sheetson](https://sheetson.com/)を使ってSpreadSheetの中身を取得して、[pages/company.json](./pages/company.json)を更新する
-4. [pages/company.json](./pages/company.json)が更新されたらVercelにデプロイされる
+2. [update-data.yml](https://github.com/azu/company-introduction-jp/blob/main/.github/workflows/update-data.yml)が1日1回起動する
+3. [Sheetson](https://sheetson.com/)を使ってSpreadSheetの中身を取得して、[pages/company.json](https://github.com/azu/company-introduction-jp/blob/main/pages/company.json)を更新する
+4. [pages/company.json](https://github.com/azu/company-introduction-jp/blob/main/pages/company.json)が更新されたらVercelにデプロイされる
 
 そのため、不正なデータだったり、データ更新に失敗したときの処理などもこれから足す必要がありますが、これも興味がある人いたらIssueかPRに書いてください。
 
