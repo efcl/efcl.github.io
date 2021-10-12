@@ -45,7 +45,7 @@ SpredSheetはデータ管理には便利ですが、閲覧するには楽しく�
 
 おそらく[SmartHR社の会社紹介資料](https://blog.shojimiyata.com/entry/2019/02/28/115119)が元ネタにあたると思いますが、120社以上が類似するスライドをだしていました。
 
-これ系のスライドは結構作るのに大変だったり、メンテナンスコストがかかるので、想像より多かった感じはします。(多分見つけられてないスライドもあるので、その場合は[SpreadSheet](https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc/edit)に追加してください)
+これ系のスライドは結構作るのに大変だったり、メンテナンスコストがかかるので、想像より多くのスライドがあった感じはします。(多分見つけられてないスライドもあるので、その場合は[SpreadSheet](https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc/edit)に追加してください)
 
 - [そんなに甘くない、面接用スライド公開の裏側 - 宮田昇始のブログ](https://blog.shojimiyata.com/entry/2019/03/11/163452)
 - [「採用スライド」の作り方を、反省点とともにすべて公開します。｜やまもとはなか｜note](https://note.com/hanahanayaman/n/n9e4f690ca173)
