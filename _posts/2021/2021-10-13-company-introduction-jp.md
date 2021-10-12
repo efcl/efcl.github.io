@@ -107,7 +107,7 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 
 - [会社紹介スライドの追加方法](https://github.com/azu/company-introduction-jp#%E4%BC%9A%E7%A4%BE%E7%B4%B9%E4%BB%8B%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95)
 
-あとは、SpreadSheetのデータは、次の流れで毎日サイトへ反映する仕組みになっています。
+SpreadSheetのデータは、次の流れで毎日サイトへ反映する仕組みになっています。
 
 1. SpreadSheetが更新される
 2. [update-data.yml](https://github.com/azu/company-introduction-jp/blob/main/.github/workflows/update-data.yml)が1日1回起動する
