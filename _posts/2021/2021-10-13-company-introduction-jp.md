@@ -11,7 +11,7 @@ tags:
 
 ---
 
-日本の会社が会社紹介スライドをよく出しているのを見かけたので、そのスライドを会社ごとにまとめてみました。
+日本の会社が会社紹介スライドを出しているのをよく見たので、そのスライドを会社ごとにまとめてみました。
 
 - サイト: [日本の会社紹介スライドのまとめ](https://company-introduction-jp.vercel.app/)
 - SpreadSheet: <https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc/edit>
