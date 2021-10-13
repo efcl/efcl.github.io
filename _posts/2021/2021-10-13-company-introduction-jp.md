@@ -83,7 +83,7 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 
 また、iframeを一つのページに100以上置くとおもすぎてダメだったので、スライドの表示は独自の実装に書き換えました。
 
-細かいところだと[Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)を使って見えてないスライドは読み込まないようにしたり(このためにHeightとWidthは事前に計算している)、[next/image](https://nextjs.org/docs/api-reference/next/image)で画像の最適化などをしています。
+細かいところだと[Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)を使って見えてないスライドは読み込まないようにしたり(このためにHeightとWidthは事前に計算している)、<del>[next/image](https://nextjs.org/docs/api-reference/next/image)で画像の最適化などをしています</del><ins>Vercelの[Image Optimization Source Images](https://vercel.com/docs/concepts/limits/overview)のLimitが想像より低かったのでやめました</ins>。
 
 その他だとVoiceOverの対応したりしていて、今回は特に意識してなかったですが、Lighthouseのスコアもちゃんとでてるみたいです。(フレームワークってよくできているんだなー)
 
