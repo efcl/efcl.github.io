@@ -89,8 +89,9 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 
 ![Lighthouse](https://efcl.info/wp-content/uploads/2021/10/12-1634045282.png)
 
-## メンテナンスについて
+TODO: SpeakerDeckしかちゃんと対応できてないので、SlideShareへの対応とか興味がある人はPull Request待ってます。
 
+## メンテナンスについて
 
 [スプレッドシートの通知](https://support.google.com/docs/answer/91588)で一応変更は見ていますが、このスライドデータのメンテナンスしたいーとかこういう管理方法した方が良いとかのアドバイスあったら、[Twitter](https://twitter.com/azu_re/)か[GitHubのIssue](https://github.com/azu/company-introduction-j)などで連絡ください。
 (SpreadSheetじゃなくても問題はないですが、SpredSheet以上に誰でも編集しやすいプラットフォームは思いつかなかった)
