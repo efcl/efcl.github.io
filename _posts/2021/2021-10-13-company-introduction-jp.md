@@ -103,7 +103,7 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 - メンテナー欄: <https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc/edit#gid=2115650125>
 
 スライド自体は、誰でも自由に追加して問題ありません！
-古かったり新しいスライド見つけたら追加してみてください(自社スライドとかも歓迎)
+古かったり新しいスライド見つけたら追加してみてください(自社スライドとかも歓迎)。
 細かい編集方針についてはREADMEに書いています。
 
 - [会社紹介スライドの追加方法](https://github.com/azu/company-introduction-jp#%E4%BC%9A%E7%A4%BE%E7%B4%B9%E4%BB%8B%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95)
