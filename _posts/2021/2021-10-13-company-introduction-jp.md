@@ -91,9 +91,8 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 
 ## メンテナンスについて
 
-[スプレッドシートの通知](https://support.google.com/docs/answer/91588)で一応変更は見ていますが、このスライドデータのメンテナンスしたいーとかこういう管理方法した方が良いとかのアドバイスあったら、[Twitter](https://twitter.com/azu_re/)かGitHubのIssueなどで連絡ください。
 
-- [azu/company-introduction-jp: 日本の会社紹介スライドのまとめです。](https://github.com/azu/company-introduction-jp)
+[スプレッドシートの通知](https://support.google.com/docs/answer/91588)で一応変更は見ていますが、このスライドデータのメンテナンスしたいーとかこういう管理方法した方が良いとかのアドバイスあったら、[Twitter](https://twitter.com/azu_re/)か[GitHubのIssue](https://github.com/azu/company-introduction-j)などで連絡ください。
 
 [SpreadSheet](https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc)は誰でも編集できる設定にしているのですが、メンテナーはたくさんいた方がいいなーと思いますが、どうするのがいいのかなーと思ってイマイチわかってないです。
 採用スライド全部見てるみたいな人がメンテナンスすると、一番良さそうな気はします。
@@ -102,7 +101,8 @@ List表示も内部的には[CSS グリッド](https://developer.mozilla.org/ja/
 
 - メンテナー欄: <https://docs.google.com/spreadsheets/d/1y1pqQhBIV_uGCp-AzxSQwLDOV4v_tIPobnQJmFMJVDc/edit#gid=2115650125>
 
-スライド自体は、誰でも追加して問題ないので、古かったり新しいスライド見つけたら追加してみてください(自社スライドとかも歓迎)
+スライド自体は、誰でも自由に追加して問題ありません！
+古かったり新しいスライド見つけたら追加してみてください(自社スライドとかも歓迎)
 細かい編集方針についてはREADMEに書いています。
 
 - [会社紹介スライドの追加方法](https://github.com/azu/company-introduction-jp#%E4%BC%9A%E7%A4%BE%E7%B4%B9%E4%BB%8B%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95)
