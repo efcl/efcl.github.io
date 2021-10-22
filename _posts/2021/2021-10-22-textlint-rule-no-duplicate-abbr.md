@@ -38,9 +38,9 @@ tags:
 
 [![Screenshot](https://efcl.info/wp-content/uploads/2021/10/22-1634900616.png)](https://azu.github.io/textlintrc/)
 
-「VRリアリティ」の「VR」は「Virtual Reality」なので、「Reality」と「リアリティ」は同じ意味だとしてエラーにしています。
+「BGPプロトコル」の「BGP」は「Border Gateway Protocol」なので、「Protocol」と「プロトコル」は同じ意味だとしてエラーにしています。
 
-> "VRリアリティ " has duplicated suffix word. "VR" stands for "Virtual Reality".
+>"BGPプロトコル" has duplicated suffix word. "BGP" stands for "Border Gateway Protocol".
 
 日本語と英単語間で同じ意味合いかどうかの判定には、[Sudachi 同義語辞書](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md)を利用しています。
 
