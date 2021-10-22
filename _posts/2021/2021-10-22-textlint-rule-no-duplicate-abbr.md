@@ -44,6 +44,8 @@ tags:
 
 日本語と英単語間で同じ意味合いかどうかの判定には、[Sudachi 同義語辞書](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md)を利用しています。
 
+- [azu/sudachi-synonyms-dictionary: Sudachi's synonyms dictionary](https://github.com/azu/sudachi-synonyms-dictionary)
+
 ## 使い方
 
 [textlint](https://github.com/textlint/textlint)のルールなので、「textlint ルール 設定」で検索したり次のページを参照してください。
