@@ -308,7 +308,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 
 ## For Company
 
-[GitHub Sponsors](https://github.blog/jp/2020-05-19-github-sponsors-is-out-of-beta-for-sponsored-organizations/)や[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースプロジェクトを支援できるようになっています。
+GitHub Sponsorsや[Open Collective](https://opencollective.com/)では、企業が特定の人やオープンソースプロジェクトを支援できるようになっています。
 
 日本でも、いろいろな企業がGitHub Sponsorsなどを使ってオープンソースを支援しています。
 具体的な支援の仕方や何を理由にオープンソースを支援しているのかについても紹介されているので、参照してみてください。
@@ -348,6 +348,7 @@ Custom Amountの推奨値だけを設定して、細かいTierは後回しにす
 ## まとめ
 
 2019年10月からGitHub Sponsorsの募集をはじめてから約2年経ったので、改めてGitHub Sponsorsについてまとめてみました。
+
 GitHub Sponsorsの募集をどういう理由で始めて、どういう考えでやっていて、その結果どうだったのかについて書きました。
 また、自分を支援してくれてる人に対してその影響や価値について説明することも記事の目的の一つです。
 
