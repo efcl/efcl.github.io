@@ -23,7 +23,7 @@ tags:
 
 前のMacbook ProではTouchbarがあったのですが、MacBook Pro (14", 2021)に変えたらTouchbarがありませんでした。
 
-Touchbarでは、[Mutify for Mac](https://mutify.app/)を使って、マイクをON/OFF + マイクの状態を表示するために使っていました。
+Touchbarでは、[Mutify for Mac](https://mutify.app/)を使って、マイクをON/OFF + マイクの状態を表示していました。
 代わりとなるアプリが見つけられなかったので[mic-mutebar](https://github.com/azu/mic-mutebar)というアプリを書きました。
 
 ## インストール方法
