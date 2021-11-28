@@ -1,5 +1,5 @@
 ---
-title: "Node.jsでUnhandled RejectionsのときにExit Statusが0となる問題について"
+title: "Node.jsでUnhandled Rejectionsのときにexis statusが0となる問題を回避する"
 author: azu
 layout: post
 date : 2020-03-20T15:51
@@ -46,7 +46,7 @@ main();
 
 ブラウザではUnhandled Rejectionsは自動的にコンソールエラーとして表示されるためあまり問題には感じないかもしれません。
 
-![Unhandled Rejections on Browser](https://efcl.info/wp-content/uploads/2020/03/20-1584691170.png)
+![Unhandled Rejections on Browser](https://efcl.info/wp-content/uploads/2020/03/20-1584687893.png)
 
 Node.jsではこのコードを実行するとUnhandled Rejectionsとなりエラー表示はでますが、その際のExit Statusは`0`であるため正常終了となります。
 
@@ -97,7 +97,7 @@ main().then(() => {
 ```
 
 この場合は、`main()`関数でエラーが発生([Async Function内でエラーをthrowするとRejectedなPromiseを返す](https://jsprimer.net/basic/async/#async-function-return-promise))した場合に`catch`メソッドのコールバックが呼び出されます。
-`catch`内で`process.exit(1)`を使い明示的にExit Statusを`1`にしてプロセスを終了させているため安全です。
+`catch`内で`process.exit(1)`で明示的にExit Statusを`1`にしてプロセスを終了させているため安全です。
 
 ```bash
 $ node fixed-main.js
@@ -111,7 +111,7 @@ $ echo $?
 
 ## [`unhandledRejection`](https://nodejs.org/api/process.html#process_event_unhandledrejection)イベントで明示的にエラー終了する
 
-Node.jsでは`process.on("unhandledRejection", (reason, promise) => {})`というイベントをサポートしています。
+Nopde.jsでは`process.on("unhandledRejection", (reason, promise) => {})`というイベントをサポートしています。
 
 - [Process | Node.js v13.11.0 Documentation](https://nodejs.org/api/process.html#process_event_unhandledrejection)
 
@@ -158,59 +158,6 @@ $ echo $?
 
 まずは`Promise#catch`で管理することが重要ですが、書き忘れた際にUnhandled Rejectionsが発生してしまうので、それを防止する役割として利用できます。
 
-似た問題として、テストフレームワークの[Mocha](https://mochajs.org/)はデフォルトではUnhandled Rejectionsが発生してもテストを成功として扱ってしまいます。
-
-そのため、次のようなテストケースはMochaではパスしてしまいます。
-
-```js
-async function fail() {
-    throw new Error("FAIL!!");
-}
-
-it("unhandled rejection", () => {
-    fail();
-});
-```
-
-これも`unhandledRejection`を使って例外を投げるようにすることで、テストケースを失敗させられます。
-
-```js
-process.on("unhandledRejection", reason => {
-    throw reason;
-});
-
-async function fail() {
-    throw new Error("FAIL!!");
-}
-
-it("unhandled rejection, but throw it", () => {
-    fail();
-});
-```
-
-Mochaで実行すると、少なくてもテストは通らなくなって安全です。(ただし結果の表示はおかしいときがあります)
-
-```
-$ mocha *.js
-
-
-
-  ✓ unhandled rejection
-  1) unhandled rejection, but throw it
-
-  1 passing (4ms)
-  1 failing
-
-  1) is unhandled rejection:
-     Uncaught Error: FAIL!!
-      at fail (fixed-test.js:6:11)
-      at Context.<anonymous> (fixed-test.js:10:5)
-      at processImmediate (internal/timers.js:439:21)
-```
-
-- Example: [azu/mocha-unhandled-rejections-example](https://github.com/azu/mocha-unhandled-rejections-example)
-- Issue: [unhandled promise rejection in async tests · Issue #2797 · mochajs/mocha](https://github.com/martin-ayvazyan13)
-
 ## `--unhandled-rejections=strict`でエラー終了させる
 
 Node.js 12から[`--unhandled-rejections=mode`](https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode)というコマンドライン引数が追加されています。
@@ -235,14 +182,10 @@ $ echo $?
 基本的にはUnhandled Rejectionが発生しないように`Promise#catch`などをしてちゃんとエラーハンドリングしたコードを書くことが大切です。
 それでも、意図しない例外などは発生するので、[unhandledRejection](https://nodejs.org/api/process.html#process_event_unhandledrejection)や[uncaughtException](https://nodejs.org/api/process.html#process_event_uncaughtexception)でのエラー時の処理を入れておくのが良い気がします。
 
-Async Functionを使って簡単にPromiseを扱えるようになって、このUnhandled Rejectionsの問題をよく見るようになった気がするのでこの記事を書きました。
+Async Functionを使って簡単にPromiseを扱えるようになったので、このUnhandled Rejectionsの問題をよく見るようになった気がするのでこの記事を書きました。
 
 サンプルリポジトリ:
 
 - [azu/unhandled-rejections-example: Example wrong usage of Unhandled Rejections. Make exit status 1.](https://github.com/azu/unhandled-rejections-example)
 
 Node.jsでは[`EventEmitter.captureRejections`](https://nodejs.org/api/events.html#events_capture_rejections_of_promises)など新しいオプションが増えたりしているので、興味がある人はこの辺も見てみると良い気がします。
-
-追記: Node.js側でのデフォルトの挙動を変更するPR
-
-- [process: Throw exception on --unhandled-rejections=default by dfabulich · Pull Request #33021 · nodejs/node](https://github.com/nodejs/node/pull/33021)
