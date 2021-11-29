@@ -88,7 +88,7 @@ return micVolume
 
 on toggleMic()
 	set inputVolume to input volume of (get volume settings)
-	if inputVolume = 0 then
+	if inputVolume <= 5 then
 		set inputVolume to 100
 		set micVal to "🔈"
 	else
@@ -99,6 +99,9 @@ on toggleMic()
 	return micVal
 end toggleMic
 ```
+
+メモ: なぜかミュート状態で `navigator.mediaDevices.getUserMedia` を呼ぶと、マイクのvolumeが5となってしまう。
+けど、`muted`は`true`となっていて、おかしいのでこのscriptは5以下はmuteとして扱ってる
 
 ## ソースコード
 
