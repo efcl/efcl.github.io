@@ -19,3 +19,5 @@ tags:
 - <https://forms.gle/Uzs3wgSrkUgYxWdr5>
 
 5問ぐらいのアンケートなので、JSer.infoを見たことある人など是非答えてみてください！
+
+このアンケートの目的は、JSer.infoを2025年までに交換可能にするために、現状のJSer.infoがどう見られているかを把握する目的で実施しています。
