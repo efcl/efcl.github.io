@@ -25,6 +25,9 @@ JavaScriptだとnpm auditとかはこのデータベースを参照したりし�
 
 - [GitHub Advisory Database now powers npm audit | The GitHub Blog](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/)
 
+[RSS Feeds for GitHub Advisory Database](https://azu.github.io/github-advisory-database-rss/)では言語(エコシステム)ごとそれぞれフィードを作っています。
+また、[OPMLフィード](https://azu.github.io/github-advisory-database-rss/index.opml)に対応してるRSSリーダならまとめて購読できます。(inoreaderなど)
+
 ## 余談
 
 GraphQLで[GitHub Advisory Database](https://github.com/advisories)のデータを取得しているのですが、
