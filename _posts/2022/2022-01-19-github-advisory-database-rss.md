@@ -36,3 +36,5 @@ GraphQLで[GitHub Advisory Database](https://github.com/advisories)のデータ�
 仕組み的にはGitHub Actionsで毎日RSSファイルを出力しているだけです。
 
 - [azu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.](https://github.com/azu/github-advisory-database-rss)
+
+現在[GitHub Advisory Database](https://github.com/advisories)にある言語は個別でフィードを出力していますが、言語が増えたらPull Requestください！
