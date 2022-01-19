@@ -31,7 +31,7 @@ JavaScriptだとnpm auditとかはこのデータベースを参照したりし�
 ## 余談
 
 GraphQLで[GitHub Advisory Database](https://github.com/advisories)のデータを取得しているのですが、
-アドバイザリーをpublishした人を取る方法がよくわからなくて現在固定値になっています。
+アドバイザリーをpublishした人を取る方法がよくわからなくてauthorが現在固定値になっています。
 この辺わかる人Pull Requestください！
 
 - https://github.com/azu/github-advisory-database-rss/blob/030a7bf9ab3fcc864bd0705ad4afa1f0601d7cbd/src/generate-rss.ts#L57-L81
