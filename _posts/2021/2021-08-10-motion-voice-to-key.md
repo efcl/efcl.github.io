@@ -183,7 +183,7 @@ Python Scriptsが一番特徴的なもので、Talonは認識したVoiceやNoise
 現在は音声認識モデルが同梱されていないので、Talonをインストールしてから[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)という音声認識モデルをインストールする必要があります。
 
 1. [Talon](https://talonvoice.com/)からTalonをダウンロード
-2. <https://talonvoice.com/dl/talon-w2l-small3-dslm-en_US.zip>から[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)をダウンロード
+2. <del><https://talonvoice.com/dl/talon-w2l-small3-dslm-en_US.zip>から[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)をダウンロード</del><ins>Sppech Recognition メニューから選ぶだけで良くなった</ins>
 3. Talonを起動して、`Scripting -> Open ~/.talon`を開く
 4. ダウンロードした[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)の中身を次のような配置になるようにコピーする
 
