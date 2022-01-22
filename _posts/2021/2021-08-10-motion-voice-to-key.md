@@ -185,7 +185,7 @@ Python Scriptsが一番特徴的なもので、Talonは認識したVoiceやNoise
 1. [Talon](https://talonvoice.com/)からTalonをダウンロード
 2. <del><https://talonvoice.com/dl/talon-w2l-small3-dslm-en_US.zip>から[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)をダウンロード</del><ins>Sppech Recognition メニューから選ぶだけで良くなった</ins>
 3. Talonを起動して、`Scripting -> Open ~/.talon`を開く
-4. ダウンロードした[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)の中身を次のような配置になるようにコピーする
+4. <del>ダウンロードした[wav2letter](https://talonvoice.com/docs/#wav2letter-setup)の中身を次のような配置になるようにコピーする</del> <ins>Menu → Sppech Recognition  → Conformerを選択</ins>
 
 ```
 ~/.talon/w2l/en_US/*
