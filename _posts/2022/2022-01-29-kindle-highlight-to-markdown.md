@@ -41,3 +41,31 @@ DOMの中身を見てJSONにして、それをMarkdownに変換してるだけ�
 macOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。
 
 - [スクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch](https://efcl.info/2021/05/06/mumemo/)
+
+## メモ `kindle://` protocol
+
+macOSでは`kindle://` というprotocolが予約されていて、次のパラメータで書籍の任意の場所を開けます。
+
+```
+kindle://book?action=open&asin=${asinValue}&location=${locationNumber}
+```
+
+この`kindle://`みたいな未知のProtocolはGitHub Markdownだとリンクになりません。(`javascript:`とかのXSSを防ぐための処置だと思います)
+
+そのため、次のようなCloudflare WorkerでProxyを書いて、`https://xxx.workers.dev/book?action=open&asin=${asinValue}&location=${locationNumber}` を `kindle://` にリダイレクトしています。
+これで、GitHub Markdownなど`kindle://`がサニタイズされる場所からも、Kindleのページをリンクできます。
+
+```js
+const statusCode = 301
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+  const { pathname, search } = url;
+  const destinationURL = "kindle://" + pathname + search;
+  return Response.redirect(destinationURL, statusCode);
+}
+
+addEventListener("fetch", async event => {
+  event.respondWith(handleRequest(event.request))
+})
+```
