@@ -37,3 +37,7 @@ DOMの中身を見てJSONにして、それをMarkdownに変換してるだけ�
 
 - [azu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON](https://github.com/azu/kindle-highlight-to-markdown)
 
+モバイル端末とかでKindle読んで、ハイライトを回収したいことがあったので書きました。
+macOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。
+
+- [スクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch](https://efcl.info/2021/05/06/mumemo/)
