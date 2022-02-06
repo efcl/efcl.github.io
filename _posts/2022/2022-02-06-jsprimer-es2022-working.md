@@ -69,7 +69,7 @@ jsprimerは、主に文章のプロジェクトですが、[Contribution Guide](
 
 > <https://github.com/asciidwango/js-primer/issues/1337#issuecomment-1003675326>
 
-もし、「このProposalの対応を書いてみたい」という人がいたら、上記のIssueにコメントください。(もちろんレビューします)
+もし、「このProposalの対応を書いてみたい」という人がいたら、上記のIssueにコメントください(もちろんレビューします)。
 [ES2022: StringとArrayの `.at()`](https://github.com/asciidwango/js-primer/issues/1367)は追加するだけなので比較的書きやすい部類かなと思います。(セクションの追加になるので[CLA](https://github.com/asciidwango/js-primer/blob/master/CLA.md)への同意が必要になります)
 
 また、ES2022の対応をリアルタイムにレビューしたいという人がいたら、[このコメント](https://github.com/asciidwango/js-primer/issues/1337#issuecomment-1003675326)にリアクションしてください。
