@@ -75,7 +75,7 @@ jsprimerは、主に文章のプロジェクトですが、[Contribution Guide](
 また、ES2022の対応をリアルタイムにレビューしたいという人がいたら、[このコメント](https://github.com/asciidwango/js-primer/issues/1337#issuecomment-1003675326)にリアクションしてください。
 Pull Requestを出すときに、mentionします。
 
-また、直接ES2022の変更とは直接関係はないですが、次のようなIssueもあります。
+また、直接ES2022の変更とは直接関係はないですが、近いIssueとしては次のようなIssueもあります。
 
 - [Node.js ESMの対応 · Issue #1355 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1355)
 - [ES2022: prototypeを表すのに # を使うべきかどうか · Issue #1368 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1368)
@@ -84,6 +84,13 @@ Node.jsのNative ESM対応はどうするか(まだデファクトがない)は�
 
 後者のIssueは、`Array#includes`のように`#`をprototypeの短縮記号として使うと、ES2022で導入されるPrivate Fieldsを表す[#](https://github.com/tc39/proposal-class-fields/blob/main/PRIVATE_SYNTAX_FAQ.md)構文と衝突してしまう問題です。
 既にjsprimerでは、[prototypeを表すのに # を使わないように](https://github.com/asciidwango/js-primer/pull/1382)したので、この漏れがないかのチェックなども募集しています。
+
+その他にも、書籍をもっとわかりやすくするためのIssueなどがあるので、興味があるIssueがあったらアイデアを出したり、Pull Requestを出してくれると嬉しいです！
+
+- [todo: ulが抜けている · Issue #1316 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1316)
+- [falsyな値の一覧の不足 · Issue #1378 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1378)
+- [Array#sliceの説明について · Issue #1163 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1163)
+- [ループと反復処理の章について · Issue #1172 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1172)
 
 以上、[JavaScript Primer](https://jsprimer.net/)(jsprimer)の進捗記事でした
 
