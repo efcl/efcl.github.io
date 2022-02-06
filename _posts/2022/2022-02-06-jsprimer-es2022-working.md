@@ -37,7 +37,7 @@ ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の�
 
 具体的には、次のProposalがES2022で入る予定です。
 
-- Class Fields
+- Class
   - [tc39/proposal-private-methods: Private methods and getter/setters for ES6 classes](https://github.com/tc39/proposal-private-methods)
   -  [tc39/proposal-class-fields: Orthogonally-informed combination of public and private fields proposals](https://github.com/tc39/proposal-class-fields)
   -  [tc39/proposal-static-class-features: The static parts of new class features, in a separate proposal](https://github.com/tc39/proposal-static-class-features)
