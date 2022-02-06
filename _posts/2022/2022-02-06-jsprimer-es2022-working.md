@@ -51,7 +51,7 @@ ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の�
 
 `class`にPrivate/Public Feildsが入ったり、Top-level `await`などが入ります。
 
-jsprimerは[リファレンスを目指すことは目的ではないため](https://jsprimer.net/intro/#do-not)、全てのProposalに対応する訳ではないですが、ES2022に関連するIssueとして次の対応をする予定です。
+jsprimerは[リファレンスを目指すことは目的ではないため](https://jsprimer.net/intro/#do-not)、全てのProposalに対応はしないですが、ES2022に関連するIssueとして次の対応する予定です。
 
 - [ES2022: Class Fields · Issue #1364 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1364)
 - [ES2022: Top-level await proposal · Issue #1365 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1365)
