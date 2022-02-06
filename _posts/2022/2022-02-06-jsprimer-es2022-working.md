@@ -33,7 +33,7 @@ jsprimerでES2022の対応予定については、次のMeta Issueで管理し�
 
 - [ECMAScript 2022対応 · Issue #1337 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1337)
 
-ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入った感じがします。
+ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入る気がします。
 
 具体的には、次のProposalがES2022で入る予定です。
 
