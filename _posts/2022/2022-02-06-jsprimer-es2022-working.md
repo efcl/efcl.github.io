@@ -33,7 +33,7 @@ jsprimerでES2022の対応予定については、次のMeta Issueで管理し�
 
 - [ECMAScript 2022対応 · Issue #1337 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1337)
 
-ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入る気がします。
+ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入った感じがします。
 
 具体的には、次のProposalがES2022で入る予定です。
 
@@ -51,7 +51,7 @@ ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の�
 
 `class`にPrivate/Public Feildsが入ったり、Top-level `await`などが入ります。
 
-jsprimerは[リファレンスを目指すことは目的ではないため](https://jsprimer.net/intro/#do-not)、全てのProposalに対応はしないですが、ES2022に関連するIssueとして次の対応する予定です。
+jsprimerは[リファレンスを目指すことは目的ではないため](https://jsprimer.net/intro/#do-not)、全てのProposalに対応する訳ではないですが、ES2022に関連するIssueとして次の対応をする予定です。
 
 - [ES2022: Class Fields · Issue #1364 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1364)
 - [ES2022: Top-level await proposal · Issue #1365 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1365)
@@ -69,13 +69,13 @@ jsprimerは、主に文章のプロジェクトですが、[Contribution Guide](
 
 > <https://github.com/asciidwango/js-primer/issues/1337#issuecomment-1003675326>
 
-もし、「このProposalの対応を書いてみたい」という人がいたら、上記のIssueにコメントください(もちろんレビューします)。
+もし、「このProposalの対応を書いてみたい」という人がいたら、上記のIssueにコメントください。(もちろんレビューします)
 [ES2022: StringとArrayの `.at()`](https://github.com/asciidwango/js-primer/issues/1367)は追加するだけなので比較的書きやすい部類かなと思います。(セクションの追加になるので[CLA](https://github.com/asciidwango/js-primer/blob/master/CLA.md)への同意が必要になります)
 
 また、ES2022の対応をリアルタイムにレビューしたいという人がいたら、[このコメント](https://github.com/asciidwango/js-primer/issues/1337#issuecomment-1003675326)にリアクションしてください。
 Pull Requestを出すときに、mentionします。
 
-また、直接ES2022の変更とは直接関係はないですが、近いIssueとしては次のようなIssueもあります。
+また、直接ES2022の変更とは直接関係はないですが、次のようなIssueもあります。
 
 - [Node.js ESMの対応 · Issue #1355 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1355)
 - [ES2022: prototypeを表すのに # を使うべきかどうか · Issue #1368 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1368)
@@ -85,14 +85,7 @@ Node.jsのNative ESM対応はどうするか(まだデファクトがない)は�
 後者のIssueは、`Array#includes`のように`#`をprototypeの短縮記号として使うと、ES2022で導入されるPrivate Fieldsを表す[#](https://github.com/tc39/proposal-class-fields/blob/main/PRIVATE_SYNTAX_FAQ.md)構文と衝突してしまう問題です。
 既にjsprimerでは、[prototypeを表すのに # を使わないように](https://github.com/asciidwango/js-primer/pull/1382)したので、この漏れがないかのチェックなども募集しています。
 
-その他にも、書籍をもっとわかりやすくするためのIssueなどがあるので、興味があるIssueがあったらアイデアを出したり、Pull Requestを出してくれると嬉しいです！
-
-- [todo: ulが抜けている · Issue #1316 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1316)
-- [falsyな値の一覧の不足 · Issue #1378 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1378)
-- [Array#sliceの説明について · Issue #1163 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1163)
-- [ループと反復処理の章について · Issue #1172 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1172)
-
-取り掛かりやすいIssueは[good first issue](https://github.com/asciidwango/js-primer/labels/good%20first%20issue)ラベルがついています。
+- [fix: prototypeを表すのに # を使わないようにする by azu · Pull Request #1382 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/pull/1382)
 
 以上、[JavaScript Primer](https://jsprimer.net/)(jsprimer)の進捗記事でした
 
