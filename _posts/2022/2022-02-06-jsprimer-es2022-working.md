@@ -92,6 +92,8 @@ Node.jsのNative ESM対応はどうするか(まだデファクトがない)は�
 - [Array#sliceの説明について · Issue #1163 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1163)
 - [ループと反復処理の章について · Issue #1172 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1172)
 
+取り掛かりやすいIssueは[good first issue](https://github.com/asciidwango/js-primer/labels/good%20first%20issue)ラベルがついています。
+
 以上、[JavaScript Primer](https://jsprimer.net/)(jsprimer)の進捗記事でした
 
 - [asciidwango/js-primer: JavaScript Primer - 迷わないための入門書](https://github.com/asciidwango/js-primer)
