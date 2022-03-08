@@ -58,7 +58,7 @@ Espreeがリリースされた頃(2014年12月6日) Esprimaは動きが遅かっ
 
 ESLintはASTだけではなく少し細かい単位のtokenなどにも依存したLintを行っているため、acornなど別のパーサへ移行することが難しいのでforkした感じでした。
 
-なぜforkしたのかは[espreeのREADME](https://github.com/eslint/espree "eslint/espree")や[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html "最近のASTパーサの動き")などを見てみるといいかと思います。
+なぜforkしたのかは[espreeのREADME](https://github.com/eslint/espree "eslint/espree")や[[2015-01] 最近のASTパーサの動き](https://azu.github.io//slide/crosushi/shift-ast.html "最近のASTパーサの動き")などを見てみるといいかと思います。
 
 基本的にはEsprimaが吐き出すASTと互換性を持ちながら、ES6のサポートなどを追加していってます。
 Esprimaと相互参照するIssueも多く、ライブラリとしては別ですがAST的には大体同じです。
@@ -98,7 +98,7 @@ SpiderMonkey ASTはもともとFirefoxのJavaScriptエンジンであるSpiderMo
 
 Esprimaのプロジェクトリーダは変わらずAriyaです。
 
-## [[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)
+## [[2015-01] 最近のASTパーサの動き](https://azu.github.io//slide/crosushi/shift-ast.html)
 
 ここまでのASTの話をパーサ中心にまとめたスライドです。
 
@@ -106,7 +106,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 
 -----
 
-ここまでが[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)のスライドの振り返りです。
+ここまでが[[2015-01] 最近のASTパーサの動き](https://azu.github.io//slide/crosushi/shift-ast.html)のスライドの振り返りです。
 
 -----
 
@@ -126,7 +126,7 @@ EsprimaがjQuery Foundationに移譲されたばかりの時でまだはっき�
 	- Be open to contributions from the community
 	- Do work and make decisions in public
 
-[[2015-01] 最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html)でも登場していたJavaScriptパーサが色々あることからわかるように、2015年1月をピークにパーサ周りでは労力が分散していました。(同じ機能について各パーサで考えて実装したり、[estools/escodegen](https://github.com/estools/escodegen "estools/escodegen")がその分散を吸収してたり)
+[[2015-01] 最近のASTパーサの動き](https://azu.github.io//slide/crosushi/shift-ast.html)でも登場していたJavaScriptパーサが色々あることからわかるように、2015年1月をピークにパーサ周りでは労力が分散していました。(同じ機能について各パーサで考えて実装したり、[estools/escodegen](https://github.com/estools/escodegen "estools/escodegen")がその分散を吸収してたり)
 
 実際にjQuery Foundationが間に入ったことで開発速度は大幅に改善されていて、後述するESTreeなどのAST標準化作業も始まり、jQuery Foundationがやったことは大きかったと思います。
 

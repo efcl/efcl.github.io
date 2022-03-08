@@ -25,7 +25,7 @@ vivaldi_sushiとe2e_sushiと隣でやってた`template_literal_sushi`に[参加
 
 ## Testium - azu
 
-自分は[TestiumとPageObjectパターンの話](http://azu.github.io/slide/e2e_sushi/testium.html "Testium")をしました。
+自分は[TestiumとPageObjectパターンの話](https://azu.github.io//slide/e2e_sushi/testium.html "Testium")をしました。
 
 - Testiumって何？
 - 同期的なWebDriver API

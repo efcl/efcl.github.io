@@ -80,6 +80,6 @@ NSDateを操作する方法は色々ありますが、和暦、24時間表示等
 できるだけシンプルな実装で、NSDate関連で大抵のことはできるようなライブラリにしたい感じです。
 
  [1]: http://partake.in/events/54f3c547-5ffa-4fd4-8de6-d95788cb3915 "Objective-C勉強会＠東京 ６月 - PARTAKE"
- [2]: http://azu.github.io/slide/OCStudy/2013_June/nsdate_a_live.html#/ "NSDate A Live"
+ [2]: https://azu.github.io//slide/OCStudy/2013_June/nsdate_a_live.html#/ "NSDate A Live"
  [3]: https://github.com/azu/NSDateALive "azu/NSDateALive · GitHub"
  [4]: https://github.com/azu/NSDate-escort "azu/NSDate-escort · GitHub"

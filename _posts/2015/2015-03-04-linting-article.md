@@ -102,7 +102,7 @@ $ npm run lint:spell -- path/to/file.md
 
 [jser/jser.info](https://github.com/jser/jser.info/ "jser/jser.info")の記事の元データの方はほぼ自分しか更新しないので、Travis CIで辞書Lintがパスするかどうかのテストしてますが、記事のMarkdownファイルがある[jser.github.io](https://github.com/jser/jser.github.io "jser.github.io")は自分以外もpull requestで更新がきたりするので、テストでパスするかどうかだとちょっと不親切です。
 
-- [JSer.info 200 回目記念イベント](http://azu.github.io/slide/jser200/ "JSer.info 200 回目記念イベント") (記事の元データうんぬんはこちら参照)
+- [JSer.info 200 回目記念イベント](https://azu.github.io//slide/jser200/ "JSer.info 200 回目記念イベント") (記事の元データうんぬんはこちら参照)
 
 というのも、使ってる辞書のLintはそこまで正確ではないので、Warning的な扱いがちょうどいいと思ってます(最悪無視してもいいし、辞書の方を直したほうがいい時も多い)
 

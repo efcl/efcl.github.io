@@ -65,7 +65,7 @@ OS X, Windows, Linuxで多分動くはずです
 
 最後に書いてありますが、[azu/pdf-markdown-annotator](https://github.com/azu/pdf-markdown-annotator "azu/pdf-markdown-annotator")はブラウザ上でも動くように作ったので(read onlyですが)以下にES5仕様の読書メモを公開してあります。
 
-- [ECMAScript 5 読書メモ](http://azu.github.io/annotation-memo/es5/ "ECMAScript 5 読書メモ")
+- [ECMAScript 5 読書メモ](https://azu.github.io//annotation-memo/es5/ "ECMAScript 5 読書メモ")
 	- アプリ版と全く同じソースコードで、`fs`とか一部動かないのはfallback書いた感じです
 	- ブラウザはプレビューモードなので、リンクをクリックするとページにジャンプできるのは便利で気に入ってます
 

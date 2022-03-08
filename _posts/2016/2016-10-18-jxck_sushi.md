@@ -19,7 +19,7 @@ tags:
 
 - [CROSS 2015 アウトラインメモ | Web Scratch](https://efcl.info/2015/01/30/cross-2015/ "CROSS 2015 アウトラインメモ | Web Scratch")
 
-今回は[Serverlessを使った匿名でGitHub Issueを立てるAPIを作った](http://azu.github.io/slide/2016/jxck_sushi/serverless.html "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った")という話をしてきた。
+今回は[Serverlessを使った匿名でGitHub Issueを立てるAPIを作った](https://azu.github.io//slide/2016/jxck_sushi/serverless.html "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った")という話をしてきた。
 
 [jser/ping: ping! your issus](https://github.com/jser/ping "jser/ping: ping! your issus")を作ったときに必要だったのAPI Gatewayとlambdaを使ってAPIとして作った話。
 
@@ -50,7 +50,7 @@ tags:
 内容は :sushi: 
 
 ## Serverless FrameworkでのAPI作成
-> スライド: [Serverlessを使った匿名でGitHub Issueを立てるAPIを作った](http://azu.github.io/slide/2016/jxck_sushi/serverless.html "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った")
+> スライド: [Serverlessを使った匿名でGitHub Issueを立てるAPIを作った](https://azu.github.io//slide/2016/jxck_sushi/serverless.html "Serverlessを使った匿名でGitHub Issueを立てるAPIを作った")
 
 - [jser/ping: ping! your issus](https://github.com/jser/ping "jser/ping: ping! your issus")
 - API Gatewayとlambdaを使ってブラウザから叩けるAPIを作る話

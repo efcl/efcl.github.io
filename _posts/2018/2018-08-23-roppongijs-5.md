@@ -11,9 +11,9 @@ tags:
 
 ---
 
-[Roppongi.js #5](https://roppongi-js.connpass.com/event/95936/)で[Webpagetestから始める継続的パフォーマンス改善](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)について発表してきました。
+[Roppongi.js #5](https://roppongi-js.connpass.com/event/95936/)で[Webpagetestから始める継続的パフォーマンス改善](https://azu.github.io//slide/2018/roppongijs/webpagetest-performance.html)について発表してきました。
 
-[![Webpagetestから始める継続的パフォーマンス改善](https://efcl.info/wp-content/uploads/2018/08/23-1535030051.png)](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)
+[![Webpagetestから始める継続的パフォーマンス改善](https://efcl.info/wp-content/uploads/2018/08/23-1535030051.png)](https://azu.github.io//slide/2018/roppongijs/webpagetest-performance.html)
 
 ## スポンサーLT: Firebase + Nuxt.js
 
@@ -90,7 +90,7 @@ tags:
 
 ## WebPagetestから始める継続的パフォーマンス改善 by azu
 
-> スライド: [Webpagetestから始める継続的パフォーマンス改善](http://azu.github.io/slide/2018/roppongijs/webpagetest-performance.html)
+> スライド: [Webpagetestから始める継続的パフォーマンス改善](https://azu.github.io//slide/2018/roppongijs/webpagetest-performance.html)
 
 - 継続的なパフォーマンス改善をするために継続的に計測する話
 - パフォーマンス改善と計測の関係

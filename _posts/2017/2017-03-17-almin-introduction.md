@@ -18,7 +18,7 @@ AlminはいわゆるFluxライブラリ的なものですが、ドメイン駆�
 この辺の経緯については以前スライドやドキュメントにまとめてあるので、以下を参照してください。
 
 - [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript)
-- [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html)
+- [複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html)
 
 
 この記事では、実際のサンプルコードを見ていきながら、Flux的なデータフローについて見ていきます。
@@ -545,5 +545,5 @@ Alminは元々ある程度複雑になるであろうアプリケーションの
 
 この辺の話は、次のスライドやリポジトリを見てみるとよいかもしれません。
 
-- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
+- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
 - [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")

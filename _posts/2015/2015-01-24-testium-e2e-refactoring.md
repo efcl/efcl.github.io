@@ -120,7 +120,7 @@ describe("app-test", function () {
 - [azu/testium-seed](https://github.com/azu/testium-seed/ "azu/testium-seed")
 - READMEにも同じ解説が書いてあります。
 
-[![site](https://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](http://azu.github.io/testium-seed/)
+[![site](https://gyazo.com/1b73573394ce9fa9e674c2f10d82943a.gif)](https://azu.github.io//testium-seed/)
 
 ![screenshot-error](https://monosnap.com/image/FA1NZW9vzQilkGMOLOBSrkp9ZdA56H.png)
 

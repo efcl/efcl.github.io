@@ -103,12 +103,12 @@ WebStormとブラウザを連携するような機能は、[LiveEdit][7]やJavaS
 こういう実行環境と連携する機能が色々出ていてワクワクしますが、こういう機能がどうしたら安定(動作自体や仕様的な面、色んなエディタに普及)するのかが最近の考えどころです。
 
  [1]: http://blog.jetbrains.com/webstorm/2013/05/webstorm-7-eap/ "WebStorm 7 EAP"
- [2]: http://blog.jetbrains.com/webide/2011/10/javascript-unit-testing-support/#comments "JsTestDriver"
+ [2]: https://blog.jetbrains.com/webide/2011/10/javascript-unit-testing-support/#comments "JsTestDriver"
  [3]: https://github.com/karma-runner/karma "karma-runner/karma · GitHub"
  [4]: http://wiki.netbeans.org/NewAndNoteworthyNB73#Unit_Testing "NetBeans 73"
  [5]: http://yeti.cx/ "Yeti"
  [6]: http://www.slideshare.net/teppeis/javascript-testwhywhathow "JavaScript Unit Test Why? What? How?"
- [7]: http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/ "LiveEdit"
+ [7]: https://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/ "LiveEdit"
  [8]: http://download.brackets.io/ "Brackets"
  [9]: http://veadardiary.blog29.fc2.com/blog-entry-4489.html "ライブプレビューで編集している部分がハイライトされるHTML・CSSエディタ『Brackets』 - Macの手書き説明書"
  [10]: https://github.com/adobe-research/theseus "adobe-research/theseus · GitHub"

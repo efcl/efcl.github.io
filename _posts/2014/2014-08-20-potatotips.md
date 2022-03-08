@@ -17,7 +17,7 @@ tags:
 [【第8回】potatotips (iOS/Android開発Tips共有会) - connpass](http://connpass.com/event/7729/ "【第8回】potatotips (iOS/Android開発Tips共有会) - connpass") に
 参加してきました。
 
-自分は[Objective-CでのPromiseと非同期処理](http://azu.github.io/slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")について発表しました。
+自分は[Objective-CでのPromiseと非同期処理](https://azu.github.io//slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")について発表しました。
 
 ----
 
@@ -282,7 +282,7 @@ tags:
 
 ## Objective-CでのPromiseと非同期処理 - azu
 
-> [Objective-CでのPromiseと非同期処理](http://azu.github.io/slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")
+> [Objective-CでのPromiseと非同期処理](https://azu.github.io//slide/potatotips/promisekit.html "Objective-CでのPromiseと非同期処理")
 
 - PromiseKitとPromiseについて
 - Boltsは中でロックをしていて、Promiseは基本的にロックしない

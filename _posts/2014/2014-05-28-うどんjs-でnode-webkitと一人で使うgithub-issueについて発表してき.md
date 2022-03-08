@@ -74,10 +74,10 @@ Travis CIが通る間にもう一度軽くチェックしたり、書いてて�
 
  [1]: http://laiso.hatenablog.com/entry/2014/04/07/%E5%B0%B1%E6%B4%BB%E6%97%A5%E8%A8%98_(10)_%E3%83%88%E3%83%AC%E3%82%BF%E8%A8%AA%E5%95%8F "就活日記 (11) トレタ訪問 - laiso"
  [2]: http://togetter.com/li/673082 "#うどんJS - Togetterまとめ"
- [3]: http://azu.github.io/slide/udonjs/node-webkit.html "node-webkitとは何か"
- [4]: http://azu.github.io/slide/udonjs/github-issue.html "一人で使えるGithub Issue"
+ [3]: https://azu.github.io//slide/udonjs/node-webkit.html "node-webkitとは何か"
+ [4]: https://azu.github.io//slide/udonjs/github-issue.html "一人で使えるGithub Issue"
  [5]: https://efcl.info/2014/0430/res3872/ "Githubのタイムラインや通知を見るアプリをnode-webkitで作った | Web scratch"
- [6]: http://azu.github.io/promises-book/ "JavaScript Promiseの本"
+ [6]: https://azu.github.io//promises-book/ "JavaScript Promiseの本"
  [7]: https://gitter.im/ "Gitter"
  [8]: https://gitter.im/azu/promises-book "azu/promises-book - Gitter"
  [9]: https://efcl.info/2014/0521/res3908/ "Githubのissueをオフライン環境で見る | Web scratch"

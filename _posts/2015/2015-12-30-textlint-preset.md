@@ -143,4 +143,4 @@ module.exports = {
 [Greenkeeper](http://greenkeeper.io/ "Greenkeeper")と[semantic-release](https://github.com/semantic-release/semantic-release "semantic-release")を使うと依存するルールモジュールが更新されたら自動でPull Requestがきて、マージしたら自動的にnpm publishすることができて便利です。
 
 - [JavaScript - 自動でnpmライブラリをアプデ&プルリクしてくれるサービスのgreenkeeperがすごく便利だった - Qiita](http://qiita.com/itkrt2y/items/c0e77a4e3cda173917bb "JavaScript - 自動でnpmライブラリをアプデ&amp;プルリクしてくれるサービスのgreenkeeperがすごく便利だった - Qiita")
-- [npmで成果物をsemantic-release :rocket:](http://azu.github.io/slide/niku_sushi/npm-semantic-release.html "npmで成果物をsemantic-release :rocket:")
+- [npmで成果物をsemantic-release :rocket:](https://azu.github.io//slide/niku_sushi/npm-semantic-release.html "npmで成果物をsemantic-release :rocket:")

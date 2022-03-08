@@ -35,7 +35,7 @@ npm からインストールできます。
 `waitForElement(selector, [timeout])` という感じで使います。
 `waitForElement()`はPromiseを返すので、見つかった`then`で登録したコールバックが呼ばれて、見つからなかったら`catch`が呼ばれるという感じです。
 
-Promiseについて詳しくは[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")を見てください
+Promiseについて詳しくは[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")を見てください
 
 ```js
 /**

@@ -133,7 +133,7 @@ State管理には、[Almin](https://github.com/almin/almin "almin")を使って�
 
 Alminでは、やりたいこと(ユースケース)を1ファイル1ユースケースで書いていきます。
 
-- [The Concept of Almin](http://azu.github.io/slide/2017/almin/concept-of-almin.html "The Concept of Almin")
+- [The Concept of Almin](https://azu.github.io//slide/2017/almin/concept-of-almin.html "The Concept of Almin")
 
 なので、このアプリでは次のようなユースケースを書きました。
 

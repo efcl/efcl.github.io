@@ -18,7 +18,7 @@ tags:
 <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 <h2>前菜</h2>
 <p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" title="Array.prototype.reduce">Array.prototype.reduce</a> について発表しました。</p>
-<p>スライド: <a href="http://azu.github.io/slide/JSGohan/reduce.html">Array.prototype.reduce Dance</a></p>
+<p>スライド: <a href="https://azu.github.io//slide/JSGohan/reduce.html">Array.prototype.reduce Dance</a></p>
 <p>サンプルコードとテストは<a href="https://github.com/azu/ReduceDance" title="azu/ReduceDance">azu/ReduceDance</a>にあります。</p>
 <ul>
 <li>reduce 単体だとイマイチ良さがわからない</li>

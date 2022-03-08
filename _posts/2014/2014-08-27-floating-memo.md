@@ -33,7 +33,7 @@ node-webkitで最前面なアプリが書けることに気づいたので簡単
 
 [floating-memo.app](https://github.com/azu/floating-memo "floating-memo.app")はnode-webkitで書かれています。
 
-node-webkitは[node-webkitとは何か](http://azu.github.io/slide/udonjs/node-webkit.html "node-webkitとは何か")でも書いていましたが、ブラウザのcontextとnode.jsのcontextの2つを持っています。
+node-webkitは[node-webkitとは何か](https://azu.github.io//slide/udonjs/node-webkit.html "node-webkitとは何か")でも書いていましたが、ブラウザのcontextとnode.jsのcontextの2つを持っています。
 
 このアプリでは、表示やエディタ部分はブラウザのcontextで、DayOneに保存するところだけnode.jsのcontextで動いています。(ブラウザじゃできないところをnode.jsで処理するという形ですね)
 

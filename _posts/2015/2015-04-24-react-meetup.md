@@ -14,15 +14,15 @@ tags:
 [React.js meetup #1 - connpass](http://reactjs-meetup.connpass.com/event/11232/ "React.js meetup #1 - connpass")に参加して、[Flux](http://facebook.github.io/flux/ "Flux")アーキテクチャについて話してきました。
 
 
-# [10分で実装するFlux](http://azu.github.io/slide/react-meetup/flux.html "10分で実装するFlux") - @azu
+# [10分で実装するFlux](https://azu.github.io//slide/react-meetup/flux.html "10分で実装するFlux") - @azu
 
-[10分で実装するFlux](http://azu.github.io/slide/react-meetup/flux.html "10分で実装するFlux") というタイトルで発表してきました。
+[10分で実装するFlux](https://azu.github.io//slide/react-meetup/flux.html "10分で実装するFlux") というタイトルで発表してきました。
 
 以前実装した[material-flux](https://github.com/voronianski/flux-comparison/tree/master/material-flux "material-flux")をより小さくただのEventEmitterだけで実装したような内容になっています。
 
 Fluxは図が複雑だったり、複雑そうな文章が出てきたりしますが、ミニマムな実装をするとやってることはよく見るようなものをある程度形式化しただけのように見えてきます。(Dispatcherが色々複雑な制御していますが)
 
-そういうのを理解するために実際に作って見るとわかりやすいかもなーと思って[10分で実装するFlux](http://azu.github.io/slide/react-meetup/flux.html "10分で実装するFlux")というスライドを書きました。
+そういうのを理解するために実際に作って見るとわかりやすいかもなーと思って[10分で実装するFlux](https://azu.github.io//slide/react-meetup/flux.html "10分で実装するFlux")というスライドを書きました。
 
 発表では触れなかったおまけでFluxライブラリの比較やよくある疑問とかもちょっと書いてました。
 

@@ -14,11 +14,11 @@ tags:
 
 [#t_wada_sushi](https://twitter.com/search?q=%23t_wada_sushi&src=typd "#t_wada_sushi")で[Open Collective](https://opencollective.com/ "Open Source Collective is on Open Collective")の話をしてきました。
 
-[![open](https://monosnap.com/file/JNTadjsjcWbTuHYcJY2Zdgd14R77Oe.png)](http://azu.github.io/slide/2017/t_wada_sushi/OpenCollective.html)
+[![open](https://monosnap.com/file/JNTadjsjcWbTuHYcJY2Zdgd14R77Oe.png)](https://azu.github.io//slide/2017/t_wada_sushi/OpenCollective.html)
 
-- スライド: [Open Collective](http://azu.github.io/slide/2017/t_wada_sushi/OpenCollective.html "Open Collective")
+- スライド: [Open Collective](https://azu.github.io//slide/2017/t_wada_sushi/OpenCollective.html "Open Collective")
 
-最近webpackなども利用し始めた[Open Collective](http://azu.github.io/slide/2017/t_wada_sushi/OpenCollective.html "Open Collective")というウェブサービスについての話をしてきました。
+最近webpackなども利用し始めた[Open Collective](https://azu.github.io//slide/2017/t_wada_sushi/OpenCollective.html "Open Collective")というウェブサービスについての話をしてきました。
 いわゆる寄付サービスや[Patreon](https://www.patreon.com/ "Patreon")に近いものです。
 オープンソースプロジェクトなどの小さなコミュニティが法人格を持たないで、透明性を持ってお金をやり取り出来るような状況を作ることを目的にしたサービスです。
 

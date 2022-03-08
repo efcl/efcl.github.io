@@ -14,7 +14,7 @@ tags:
 
 [#child_process_sushi](https://twitter.com/search?f=tweets&vertical=default&q=%20%23child_process_sushi "#child_process_sushi")で最近やってたJavaScriptの設計の話をしてきた。
 
-- [Almin.js | JavaScriptアーキテクチャ](http://azu.github.io/slide/2016/child_process_sushi/almin-javascript-architecture.html "Almin.js | JavaScriptアーキテクチャ")
+- [Almin.js | JavaScriptアーキテクチャ](https://azu.github.io//slide/2016/child_process_sushi/almin-javascript-architecture.html "Almin.js | JavaScriptアーキテクチャ")
 
 Fluxとかで上半分は皆やるようになったけど、ドメインモデルとかFluxの場合にビジネスロジックとかをどこに書くとかはまだ未成熟な気がしているので、そのパターンを考えてて[Almin.js](https://github.com/almin/almin "Almin.js")というのを書いたという話をした。
 
@@ -89,7 +89,7 @@ JavaScriptでもウェブアプリやElectronでのアプリのような、API�
 
 -----
 
-# [Almin.js | JavaScriptアーキテクチャ](http://azu.github.io/slide/2016/child_process_sushi/almin-javascript-architecture.html "Almin.js | JavaScriptアーキテクチャ") - azu
+# [Almin.js | JavaScriptアーキテクチャ](https://azu.github.io//slide/2016/child_process_sushi/almin-javascript-architecture.html "Almin.js | JavaScriptアーキテクチャ") - azu
 
 
 - Fluxとかで上半分は皆できるようになったけどドメインモデルについてはまだ未成熟

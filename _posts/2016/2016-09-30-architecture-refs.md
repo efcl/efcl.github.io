@@ -13,7 +13,7 @@ tags:
 
 タイトルに特に意味はありませんが、[Almin](https://github.com/almin/almin "Almin")を作る参考にしたものをまとめた感じの記事です。
 
-- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
+- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
 - リポジトリ: [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
 
 主に書籍を並べていますがその他のスライドなどの参考資料は以下にまとめてあります。
@@ -57,7 +57,7 @@ Kindleで買ってたので、スクリーンショットをOneNoteに貼ると�
 この辺の構造はパターン・ランゲージとかいろんな文脈でてくるので、最初に知っといてよかった気がする。
 アーキテクチャの話を見ていて、それは何を整理したいのかという視点から見ることが多くなった感じ。
 
-[How to work as a Team](http://azu.github.io/slide/2016/reject-sushi/how-to-work-team.html "How to work as a Team")のスライド書いていたあたりで読んでいたはずなので、スライドにも影響がでてる。
+[How to work as a Team](https://azu.github.io//slide/2016/reject-sushi/how-to-work-team.html "How to work as a Team")のスライド書いていたあたりで読んでいたはずなので、スライドにも影響がでてる。
 
 ## [情報アーキテクチャについて | IAAJ: Information Architecture Association Japan](http://iaaj.org/about_ia/ "情報アーキテクチャについて | IAAJ: Information Architecture Association Japan")
 

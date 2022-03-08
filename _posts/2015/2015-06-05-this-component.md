@@ -44,7 +44,7 @@ x.bind(this) !== x.bind(this)
 
 ### サンプル
 
-<iframe src="http://azu.github.io/component-event-binding/" width="100%" height="400"></iframe>
+<iframe src="https://azu.github.io//component-event-binding/" width="100%" height="400"></iframe>
 
 この記事では上記のような、ボタンでカウントアップするだけのものを
 
@@ -269,7 +269,7 @@ min.jsが10kb程度でReactに比べて大分小さいことなど特徴はい�
 
 ### おわりに
 
-[![example](https://gyazo.com/f46c61f95c54c61ebca063997d420329.gif)](http://azu.github.io/component-event-binding/)
+[![example](https://gyazo.com/f46c61f95c54c61ebca063997d420329.gif)](https://azu.github.io//component-event-binding/)
 
 今回作ったサンプルはReactとDekuのコンポーネントをそれぞれ作って、StoreとActionは同じものを共有して使っています。
 

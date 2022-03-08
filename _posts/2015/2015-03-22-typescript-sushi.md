@@ -23,7 +23,7 @@ tags:
 
 ---
 
-## [Decorators進捗](http://azu.github.io/slide/typescript-sushi/decorators.html "Decorators進捗") - azu
+## [Decorators進捗](https://azu.github.io//slide/typescript-sushi/decorators.html "Decorators進捗") - azu
 
 <blockquote class="twitter-tweet" lang="en"><p>LTきた <a href="https://twitter.com/hashtag/typescript_sushi?src=hash">#typescript_sushi</a> <a href="http://t.co/GgwszUebUg">pic.twitter.com/GgwszUebUg</a></p>&mdash; armorik83 (@armorik83) <a href="https://twitter.com/armorik83/status/579567280423452673">March 22, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -32,7 +32,7 @@ TypeScript 1.5で実装予定、ECMAScript 7に提案される予定のそれぞ
 
 行きの電車で書いたの資料なので、大分適当ですが基本的にはどちらも共通するところはあって、一種の糖衣構文的な扱いというところがありそうという話をしました。
 
-- スライド: [Decorators進捗](http://azu.github.io/slide/typescript-sushi/decorators.html "Decorators進捗")
+- スライド: [Decorators進捗](https://azu.github.io//slide/typescript-sushi/decorators.html "Decorators進捗")
 
 また構文として`@`を使うのですが、それが[zenparsing/es-private-fields](https://github.com/zenparsing/es-private-fields "zenparsing/es-private-fields")とかぶってる問題があって、それは今度のTC30 ミーティングで話されるという話などをしました。
 

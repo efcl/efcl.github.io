@@ -119,10 +119,10 @@ CommonJS -> ブラウザ用のJS といえば、[browserify][2]や[CommonJS Ever
 <span class="kd">var</span> <span class="nx">getURL</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"../../Ch1_WhatsPromises/src/xhr-promise"</span><span class="p">).</span><span class="nx">getURL</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">comment</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">getComment</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;http://azu.github.io/promises-book/json/comment.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;https://azu.github.io//promises-book/json/comment.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
     <span class="p">},</span>
     <span class="nx">people</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">getPeople</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;http://azu.github.io/promises-book/json/people.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;https://azu.github.io//promises-book/json/people.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">};</span>
 <span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
@@ -163,10 +163,10 @@ CommonJS -> ブラウザ用のJS といえば、[browserify][2]や[CommonJS Ever
 <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="p">{</span>
         <span class="nx">comment</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">getComment</span><span class="p">()</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;http://azu.github.io/promises-book/json/comment.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;https://azu.github.io//promises-book/json/comment.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
         <span class="p">},</span>
         <span class="nx">people</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">getPeople</span><span class="p">()</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;http://azu.github.io/promises-book/json/people.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">getURL</span><span class="p">(</span><span class="s1">&#39;https://azu.github.io//promises-book/json/people.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">};</span>
 <span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>

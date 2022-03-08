@@ -87,7 +87,7 @@ assert<span class="o">(</span><span class="nv">total</span> <span class="o">===<
 
 面倒な人は以下のスライドに簡略化された概要が載ってるので、そちらをみるといいかもしれません。
 
-- <a href="http://azu.github.io/slide/okonomi.js/">power-doctest @ okonomi.js</a>
+- <a href="https://azu.github.io//slide/okonomi.js/">power-doctest @ okonomi.js</a>
 
 ## 目的
 

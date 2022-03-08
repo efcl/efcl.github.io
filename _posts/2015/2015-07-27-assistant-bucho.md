@@ -18,7 +18,7 @@ tags:
 
 -----
 
-[ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト](http://azu.github.io/slide/assistant-bucho/test-everything.html "ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト")というタイトルで発表してきました。
+[ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト](https://azu.github.io//slide/assistant-bucho/test-everything.html "ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト")というタイトルで発表してきました。
 タイトル通り、最近やったようなテスト事例をひたすら書いてる感じです。
 
 自分の中で結構気に入ってるのがNodeライブラリなどをexampleテスト(勝手に付けた)をするというパターン。
@@ -39,7 +39,7 @@ tags:
 
 -----
 
-もう一つ、[Visualize TC39 Process](http://azu.github.io/slide/assistant-bucho/visual-tc39-process.html "Visualize TC39 Process")というのも発表しました。
+もう一つ、[Visualize TC39 Process](https://azu.github.io//slide/assistant-bucho/visual-tc39-process.html "Visualize TC39 Process")というのも発表しました。
 
 これは[ES nextの策定プロセスを分かりやすくまとめた記事 · Issue #57 · azu/azu](https://github.com/azu/azu/issues/57 "ES nextの策定プロセスを分かりやすくまとめた記事 · Issue #57 · azu/azu")の調査中に出来た副産物のようなものでおまけ的な感じです。
 

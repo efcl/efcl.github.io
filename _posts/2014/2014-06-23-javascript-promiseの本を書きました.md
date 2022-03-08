@@ -13,8 +13,8 @@ tags:
   - Promises
   - まとめ
 ---
-<h1><a href="http://azu.github.io/promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a></h1>
-<p><a href="http://azu.github.io/promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a>という無料で読める電子書籍を書きました。</p>
+<h1><a href="https://azu.github.io//promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a></h1>
+<p><a href="https://azu.github.io//promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a>という無料で読める電子書籍を書きました。</p>
 <p>タイトルそのままで、JavaScriptのPromiseについて書いた書籍です。</p>
 <h2>書籍の目的</h2>
 <p>この書籍を読むことで学べる事として、次の3つを目標にして書きました。</p>
@@ -30,8 +30,8 @@ tags:
 <p>また、今後ブラウザに実装されるAPIとして<a href="http://www.w3.org/TR/2014/WD-service-workers-20140508/" title="Service Workers">Service Workers</a>や<a href="http://www.w3.org/TR/streams-api/" title="Streams API">Streams API</a>等、Promiseをベースしたものも出てきています。<br />
 JavaScriptの非同期処理の一つのパラダイムであるため、この機会に学んでおくと他のAPIを学ぶときにも役立つかもしれません。</p>
 <h2>書籍の閲覧方法</h2>
-<p>この書籍は、スマートフォンも含めブラウザで見られる<a href="https://azu.github.io/promises-book/" title="JavaScript Promiseの本">HTML版</a> と <a href="http://azu.github.io/promises-book/javascript-promise-book.pdf" title="JavaScript Promiseの本 - javascript-promise-book.pdf">PDF版</a>を公開しています。</p>
-<p><a href="http://azu.github.io/promises-book/" title="JavaScript Promiseの本">HTML版</a>には、表示されているサンプルコードをそのまま実行して試せる機能があるため、Promiseをサポートしてるブラウザで見るのをオススメします。<br />
+<p>この書籍は、スマートフォンも含めブラウザで見られる<a href="https://azu.github.io/promises-book/" title="JavaScript Promiseの本">HTML版</a> と <a href="https://azu.github.io//promises-book/javascript-promise-book.pdf" title="JavaScript Promiseの本 - javascript-promise-book.pdf">PDF版</a>を公開しています。</p>
+<p><a href="https://azu.github.io//promises-book/" title="JavaScript Promiseの本">HTML版</a>には、表示されているサンプルコードをそのまま実行して試せる機能があるため、Promiseをサポートしてるブラウザで見るのをオススメします。<br />
 ブラウザがPromiseをサポートしてなくてもPolyfillが使われるので大抵の環境で実行出来ます。</p>
 <p><a href="https://azu.github.io/promises-book/"><img src="https://efcl.info/wp-content/uploads/2014/06/promise-editor.png" alt="JavaScript Promiseの本 2014 06 23 00 46 57 2014 06 23 00 47 03" title="promise-editor.png" border="0" width="600" height="335" /><br />
 </a></p>
@@ -113,7 +113,7 @@ Github IssueやPull Requestの活用方法について自分なりに感じた�
 </pre>
 <h2>書籍へのリンク</h2>
 <ul>
-<li><a href="http://azu.github.io/promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a></li>
+<li><a href="https://azu.github.io//promises-book/" title="JavaScript Promiseの本">JavaScript Promiseの本</a></li>
 <li><a href="https://github.com/azu/promises-book/" title="azu/promises-book">azu/promises-book</a></li>
 </ul>
 <p>おまけに書いてたような書籍を作るにあたってやったことはまた別の記事で書くと思います。</p>

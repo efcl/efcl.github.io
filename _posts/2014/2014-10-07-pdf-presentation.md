@@ -19,7 +19,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 
 ## どういうもの
 
-<iframe src="https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
+<iframe src="https://azu.github.io/slide-pdf.js/?slide=https://azu.github.io//slide/DOMQuery/sourcemap.pdf"
 scrolling="no"
 width="100%"
 height="500"
@@ -30,7 +30,7 @@ https://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを�
 
 普通のHTMLスライドのようにウェブページとして公開することも出来ます。
 
-例) http://azu.github.io/slide/DOMQuery/ 
+例) https://azu.github.io//slide/DOMQuery/ 
 
 ## 作った経緯
 
@@ -42,7 +42,7 @@ https://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを�
 	- Deckset自体は便利なので使いたい
 - でもSlideShareやSpeaker Deckにロックインされたくない
     - そもそもSpeaker Deckは素のPDFを見たほうがましという状況がよくあるのが問題…
-    -  今までGitHubにスライドおいてきた - [今まで発表したスライド一覧 azu/slide @ GitHub](http://azu.github.io/slide/ "今まで発表したスライド一覧 azu/slide @ GitHub")
+    -  今までGitHubにスライドおいてきた - [今まで発表したスライド一覧 azu/slide @ GitHub](https://azu.github.io//slide/ "今まで発表したスライド一覧 azu/slide @ GitHub")
 - GitHub Pagesにスライドを置くという同じスタイルを取れる
    - 直接PDFだとはやっぱり避けられる所がある + ブラウザによって表示形態がスライドに適してない
 - PDFを出力できるアプリは多いので、意外と汎用的に対応できる気がする
@@ -54,17 +54,17 @@ https://azu.github.io/slide/DOMQuery/sourcemap.pdf というPDFファイルを�
 
 [slide-pdf.js](https://github.com/azu/slide-pdf.js "slide-pdf.js") がpdf.jsを使ってpdfスライドを読み込んでスライド的に表示する本体。
 
-https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf
+https://azu.github.io/slide-pdf.js/?slide=https://azu.github.io//slide/DOMQuery/power-assert-in-browser.pdf
 
 という感じURLにpdfファイルを指定するとスライド表示してくれるようにした。same originでpdfファイルを読み込めるなら何でも行ける。
 
 pdf.jsは自動でpdfファイルをちょっとづつ取得して表示するので意外大きなファイルでも大丈夫そうだった。
 
-これを`<iframe>`を使って埋め込んだページ公開するのを意図した感じで作ってあります。(なので http://azu.github.io/slide-pdf.js/ 単体は画面ピッタリ)
+これを`<iframe>`を使って埋め込んだページ公開するのを意図した感じで作ってあります。(なので https://azu.github.io//slide-pdf.js/ 単体は画面ピッタリ)
 
 ```html
 <iframe id="main-slide"
-    src="https://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
+    src="https://azu.github.io/slide-pdf.js/?slide=https://azu.github.io//slide/DOMQuery/sourcemap.pdf"
     scrolling="no"
     allowtransparency="true"
     width="100%"
@@ -75,7 +75,7 @@ pdf.jsは自動でpdfファイルをちょっとづつ取得して表示する�
 
 という感じですね。
 
-埋め込み例: http://azu.github.io/slide/DOMQuery/ 
+埋め込み例: https://azu.github.io//slide/DOMQuery/ 
 
 埋め込み例をスクロールしてみるとHTMLとしても読めるようになっています。(検索等がしやすくなる)
 
@@ -107,10 +107,10 @@ Usage:pdf-slide-html [options]
 ```
 
 
-`--base-url`には、iframeで埋め込むURLのベースを指定しますが ( `http://azu.github.io/slide-pdf.js/` )、same origin policyがあるため使う場合は自分でcloneして、pdfがsame origin的に読み込める位置に配置する必要があります。
+`--base-url`には、iframeで埋め込むURLのベースを指定しますが ( `https://azu.github.io//slide-pdf.js/` )、same origin policyがあるため使う場合は自分でcloneして、pdfがsame origin的に読み込める位置に配置する必要があります。
 
 ```
-pdf-slide-html --pdf-url https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf --base-url http://azu.github.io/slide-pdf.js/ --markdown power-assert-in-browser.md -o index.html
+pdf-slide-html --pdf-url https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf --base-url https://azu.github.io//slide-pdf.js/ --markdown power-assert-in-browser.md -o index.html
 ```
 
 という感じの長い指定をすれば、自動的に先ほどのindex.htmlを作ってくれます。

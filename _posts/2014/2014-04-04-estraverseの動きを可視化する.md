@@ -50,7 +50,7 @@ JavaScript ASTについては以下を参照して下さい。
 
 [azu/visualize_estraverse][6]にソースコードが置いてあります。
 
-*   [http://azu.github.io/visualize_estraverse/][7]
+*   [https://azu.github.io//visualize_estraverse/][7]
 
 
 
@@ -63,10 +63,10 @@ ASTそのもの(JSON)も同じように可視化できると良さそうな気�
 *   [azu/visualize_estraverse][6]
 
  [1]: https://github.com/Constellation/estraverse "Estraverse"
- [2]: http://azu.github.io/slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
- [3]: http://azu.github.io/slide/JSojisan/ "カジュアルJavaScript AST"
+ [2]: https://azu.github.io//slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
+ [3]: https://azu.github.io//slide/JSojisan/ "カジュアルJavaScript AST"
  [4]: http://ja.wikipedia.org/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0) "木構造"
  [5]: http://orgachem.hatenablog.com/entry/2013/06/19/013527 "estraverseの仕様意訳 - 若き JavaScripter の悩み"
  [6]: https://github.com/azu/visualize_estraverse/ "azu/visualize_estraverse"
- [7]: http://azu.github.io/visualize_estraverse/ "visualize estraverse step"
+ [7]: https://azu.github.io//visualize_estraverse/ "visualize estraverse step"
  [8]: http://codemirror.net/ "CodeMirror"

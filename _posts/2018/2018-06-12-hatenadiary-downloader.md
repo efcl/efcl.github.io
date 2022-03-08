@@ -87,7 +87,7 @@ Examples
 
 Windowsじゃないから似たようなものを作るかと思って`hatenadiary-downloader`というプロジェクト名を[mkdev](https://gist.github.com/azu/09dd6f27f52e2e8d9978)しました。
 
-- [JavaScriptの素振りする技術](http://azu.github.io/slide/2015/year-end/javascript-swing.html)
+- [JavaScriptの素振りする技術](https://azu.github.io//slide/2015/year-end/javascript-swing.html)
 
 [neue cc - はてなダイアリー to HTML](http://neue.cc/2010/03/09_246.html)から`Program.cs`をダウンロードして、`hatenadiary-downloader`のなかにいれて、`Program.cs`をみながらどういうメソッドにするかを考えました。
 
@@ -354,7 +354,7 @@ module.exports.cli = cli;
 
 こういう思考の流れを書き出すことはたまにやってる。
 
-- [power-assertの記事が出来るまで](http://azu.github.io/slide/hasakurajs/power-assert.html)
+- [power-assertの記事が出来るまで](https://azu.github.io//slide/hasakurajs/power-assert.html)
 - [JavaScriptライブラリの気になる実装をどうやって見ていくか | Web Scratch](https://efcl.info/2014/0209/res3658/)
 - [ECMAScriptの仕様/プロポーザルの調べ方を知る | Web Scratch](https://efcl.info/2018/03/07/ecmascript-usage/)
 

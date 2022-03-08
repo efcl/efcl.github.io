@@ -15,9 +15,9 @@ tags:
 
 この文章は[asciidwango/js-primer: JavaScriptの入門書](https://github.com/asciidwango/js-primer "asciidwango/js-primer: JavaScriptの入門書")で書いた[ECMAScript](https://jsprimer.net/basic/ecmascript/ "ECMAScript · JavaScriptの入門書 #jsprimer")の章が元となっています。
 
-また、[ECMAScriptの使い方](http://azu.github.io/slide/2018/node/ecmascript39.html "ECMAScriptの使い方")というスライドでどのようの話をしているのであわせて参照してみてください。
+また、[ECMAScriptの使い方](https://azu.github.io//slide/2018/node/ecmascript39.html "ECMAScriptの使い方")というスライドでどのようの話をしているのであわせて参照してみてください。
 
-> スライド: [ECMAScriptの使い方](http://azu.github.io/slide/2018/node/ecmascript39.html "ECMAScriptの使い方")
+> スライド: [ECMAScriptの使い方](https://azu.github.io//slide/2018/node/ecmascript39.html "ECMAScriptの使い方")
 
 ## ECMAScript
 
@@ -522,7 +522,7 @@ Arrow Functionにおける`this`は外側のスコープの`this`を参照しま
 
 これはES2015以前ではなかった事例の１つです。なぜならES2015以前は策定プロセスが現在と異なるため、個別のプロポーザルのステータスを知る意味は殆どなかったためです。
 
-これは[JavaScript情報ってなんだっけ?](http://azu.github.io/slide/2016/jser5years/javascript-information.html "JavaScript情報ってなんだっけ?")でも触れています、比較的新しい悩みの一種となります。
+これは[JavaScript情報ってなんだっけ?](https://azu.github.io//slide/2016/jser5years/javascript-information.html "JavaScript情報ってなんだっけ?")でも触れています、比較的新しい悩みの一種となります。
 
 プロポーザルの置き場所は決まっているため、ステータスの数値やTranspilerの実装は次のページを見ると確認できます。
 

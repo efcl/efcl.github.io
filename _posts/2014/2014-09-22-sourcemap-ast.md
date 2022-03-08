@@ -31,7 +31,7 @@ ConstさんがWebKitにコミットしてたCSS JIT入りのiOS8リリースが�
 
 - [多段SourceMapの対応方法とライブラリ | Web Scratch](https://efcl.info/2014/09/03/multi-stage-sourcemap/ "多段SourceMapの対応方法とライブラリ | Web Scratch")
 
-発表に使ったスライドは [https://azu.github.io/slide/DOMQuery/sourcemap.pdf](http://azu.github.io/slide/DOMQuery/sourcemap.pdf "sourcemap.pdf") です。
+発表に使ったスライドは [https://azu.github.io/slide/DOMQuery/sourcemap.pdf](https://azu.github.io//slide/DOMQuery/sourcemap.pdf "sourcemap.pdf") です。
 
 
 ![basic-sourcemap.png](https://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
@@ -120,9 +120,9 @@ GulpやBroserifyでは、Gruntからファイルの読み込みと書き出し�
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/DOMQuery%E5%AF%BF%E5%8F%B8?src=hash">#DOMQuery寿司</a> power-assert デモについて <a href="http://t.co/vep82qnyEJ">pic.twitter.com/vep82qnyEJ</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/514007886825938944">September 22, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-一昨日ぐらいに[power-assert playground](http://azu.github.io/power-assert-demo/ "power-assert playground")というクライアントサイドで、power-assertのテストを動かせるデモサイトを作った話を軽くしました。(立ち話レベル)
+一昨日ぐらいに[power-assert playground](https://azu.github.io//power-assert-demo/ "power-assert playground")というクライアントサイドで、power-assertのテストを動かせるデモサイトを作った話を軽くしました。(立ち話レベル)
 
-発表に使ったスライドは[https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf](http://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf "power-assert-in-browser.pdf")です。
+発表に使ったスライドは[https://azu.github.io/slide/DOMQuery/power-assert-in-browser.pdf](https://azu.github.io//slide/DOMQuery/power-assert-in-browser.pdf "power-assert-in-browser.pdf")です。
 
 
 これは以下のような構成で作られているサイトです。

@@ -16,7 +16,7 @@ tags:
 
 ## ASTとは
 
-[![AST](https://efcl.info/wp-content/uploads/2016/03/06-1457240557.png)](http://azu.github.io/slide/JSojisan/#8)
+[![AST](https://efcl.info/wp-content/uploads/2016/03/06-1457240557.png)](https://azu.github.io//slide/JSojisan/#8)
 
 AST(Abstract Syntax Tree)はコードをパースした抽象構文木のこと。
 JavaScriptの場合はJavaScriptオブジェクト(JSON)として表現されます。
@@ -76,8 +76,8 @@ AST:
 }
 ```
 
-- [カジュアルJavaScript AST](http://azu.github.io/slide/JSojisan/)
-- [JavaScript AST Walker](http://azu.github.io/slide/tkbjs/js-ast-walker.html)
+- [カジュアルJavaScript AST](https://azu.github.io//slide/JSojisan/)
+- [JavaScript AST Walker](https://azu.github.io//slide/tkbjs/js-ast-walker.html)
 
 ## ASTのコミュニティ標準
 
@@ -97,7 +97,7 @@ ESTreeというデファクトスタンダードがあります(ES6までは定�
 
 - [Babylon](https://github.com/babel/babylon "babylon")
 	- Babelで使われてるAcorn派生のパーサ
-	- まだ[仕様として入るか分からないStage](http://azu.github.io/slide-what-is-ecmascript/slide/12.html "TC39 Process: Stage | ECMAScriptとは何か？")の構文も対応している
+	- まだ[仕様として入るか分からないStage](https://azu.github.io//slide-what-is-ecmascript/slide/12.html "TC39 Process: Stage | ECMAScriptとは何か？")の構文も対応している
 	- 注意: 逆にESTree仕様外の拡張もしているため、ESTree互換ではないです。
 - [Esprima](http://esprima.org/ "Esprima")
 	- [ast-types](https://github.com/benjamn/ast-types "ast-types")

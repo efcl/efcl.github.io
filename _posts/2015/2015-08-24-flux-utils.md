@@ -18,7 +18,7 @@ tags:
 今回Flux Utilsを使って、指定したアカウントのはてなブックマークを検索するウェブアプリを書いてみました。
 
 - [azu/hatebu-mydata-search](https://github.com/azu/hatebu-mydata-search "azu/hatebu-mydata-search")
-- [azu.github.io/hatebu-mydata-search/](http://azu.github.io/hatebu-mydata-search/)
+- [azu.github.io/hatebu-mydata-search/](https://azu.github.io//hatebu-mydata-search/)
 - mydataのAPIがCORS対応してないので[JSONProxy](https://jsonp.afeld.me/ "JSONProxy")を挟んでます。(なのでブックマークデータが多いアカウント名は避けたほうが…)
 
 ![はてなブックマーク検索](https://monosnap.com/file/KPhJNSpqHIVUsqFOd5cHzFw3yEyCeH.png)

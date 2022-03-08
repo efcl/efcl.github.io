@@ -12,7 +12,7 @@ tags:
 ---
 SlideShareやSpeakerDeck等で現在表示してるページのパーマネントにURLを書き換えるブックマークレットを書きました。
 
-- [where-page-in-slide](http://azu.github.io/where-page-in-slide/ "where-page-in-slide")
+- [where-page-in-slide](https://azu.github.io//where-page-in-slide/ "where-page-in-slide")
 
 においてあります。
 
@@ -35,7 +35,7 @@ SlideShareやSpeakerDeck等で現在表示してるページのパーマネン�
 
 - https://github.com/github/markup/tree/master#html-sanitization
 
-そのため、ブックマークレットは[azu.github.io/where-page-in-slide](http://azu.github.io/where-page-in-slide/ "where-page-in-slide") のようにGitHub Pagesに公開しています。
+そのため、ブックマークレットは[azu.github.io/where-page-in-slide](https://azu.github.io//where-page-in-slide/ "where-page-in-slide") のようにGitHub Pagesに公開しています。
 
 更新する度にGitHub Pagesを書き換えるのは面倒だったので、ブックマークレット自体をファイルとして置いて、それをXHRで読み込んでリンクに埋め込むライブラリを書きました。
 
@@ -44,7 +44,7 @@ SlideShareやSpeakerDeck等で現在表示してるページのパーマネン�
 [azu/embed-bookmarklets](https://github.com/azu/embed-bookmarklets "azu/embed-bookmarklets")は大したことはやっていなくて、以下のように読み込んで使います。
 
 ```html
-<script src="http://azu.github.io/embed-bookmarklets/embed-bookmarklets.js"></script>
+<script src="https://azu.github.io//embed-bookmarklets/embed-bookmarklets.js"></script>
 ```
 
 このスクリプトを読み込んだページに`<a href="ブックマークレットファイルのURL" rel="bookmarklets">`という属性を持つHTMLを書いておきます。
@@ -53,7 +53,7 @@ SlideShareやSpeakerDeck等で現在表示してるページのパーマネン�
 
 ```html
 <p>Drop & Drop <a href="./where-page-in-slide.js" rel="bookmarklets">where-page-in-slide</a> to bookmark toolbar.</p>
-<script src="http://azu.github.io/embed-bookmarklets/embed-bookmarklets.js"></script>
+<script src="https://azu.github.io//embed-bookmarklets/embed-bookmarklets.js"></script>
 ```
 
 そうすると、hrefで指定したファイルを読み込んで`href`の中に埋め込んでくれます。

@@ -22,7 +22,7 @@ tags:
 	- ©年号を見る感じ結構前から実装してそう
 
 	
-## [How to work as a Team](http://azu.github.io/slide/2016/reject-sushi/how-to-work-team.html "How to work as a Team") @ azu
+## [How to work as a Team](https://azu.github.io//slide/2016/reject-sushi/how-to-work-team.html "How to work as a Team") @ azu
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/reject_sushi?src=hash">#reject_sushi</a> で発表したReact+Flux的な何かの意思決定と情報設計の話。  &quot;How to work as a Team&quot;  <a href="https://t.co/qM4iyipRFS">https://t.co/qM4iyipRFS</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/702138441681637376">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -112,6 +112,6 @@ tags:
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/reject_sushi?src=hash">#reject_sushi</a> で発表しなかった「3分でわかるtextlint」のスライドです。自然言語Lintツールの現状  &quot;3分でわかるtextlint&quot;  <a href="https://t.co/wtHBxxIOok">https://t.co/wtHBxxIOok</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/702133285934145536">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-発表しなかった[3分でわかるtextlint](http://azu.github.io/slide/2016/reject-sushi/textlint.html "3分でわかるtextlint")のスライド。
+発表しなかった[3分でわかるtextlint](https://azu.github.io//slide/2016/reject-sushi/textlint.html "3分でわかるtextlint")のスライド。
 
 [textlint - pluggable linting tool for text and markdown](http://textlint.github.io/ "textlint - pluggable linting tool for text and markdown")のサイトがDeku v2 + Reduxで動いていて、Reduxを最初に試す場合はDekuと組み合わせたほうがわかりやすよという話をした。

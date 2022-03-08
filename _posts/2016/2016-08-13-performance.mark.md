@@ -48,7 +48,7 @@ polyfillとして以下のライブラリを使うと、このAPIをサポート
 
 次の形態素解析をするサイトを例にしてみましょう。
 
-- [azu.github.io/morpheme-match/](http://azu.github.io/morpheme-match/)
+- [azu.github.io/morpheme-match/](https://azu.github.io//morpheme-match/)
 
 このサイトは、[kuromojin](https://github.com/azu/kuromojin)([kuromoji.js](https://github.com/takuyaa/kuromoji.js))を使うため、最初に形態素解析用の辞書をダウンロードして、ダウンロードが終わったら初回の画面が表示されます。
 

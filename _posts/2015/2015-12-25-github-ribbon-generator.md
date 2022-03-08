@@ -16,9 +16,9 @@ tags:
 
 ## GitHub Ribbon Generator
 
-[GitHub Ribbon Generator](http://azu.github.io/github-ribbon-generator/ "GitHub Ribbon Generator")というツールを作りました。
+[GitHub Ribbon Generator](https://azu.github.io//github-ribbon-generator/ "GitHub Ribbon Generator")というツールを作りました。
 
-[![github ribbon](https://efcl.info/wp-content/uploads/2015/12/25-1451045310.png)](http://azu.github.io/github-ribbon-generator/)
+[![github ribbon](https://efcl.info/wp-content/uploads/2015/12/25-1451045310.png)](https://azu.github.io//github-ribbon-generator/)
 
 [GitHub Ribbons](https://github.com/blog/273-github-ribbons "GitHub Ribbons")というのは、右上にあるFork Meボタンのことです。
 

@@ -75,7 +75,7 @@ GitBookの`book.json`に設定を追加します。
 GitHubのPRレビューだとMarkdownのままなので、GitBook上で見たときなどに違和感がある部分が見つかることが多いです。
 こういう問題を見つけたらすぐにIssueを切れるようにするのために[gitbook-plugin-github-issue-feedback](https://github.com/azu/gitbook-plugin-github-issue-feedback "gitbook-plugin-github-issue-feedback")を作りました。
 
-[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")のときも同じような仕組みを入れてました。
+[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")のときも同じような仕組みを入れてました。
 こういう仕組みがあるとスマートフォンからIssueが簡単に切れるので、Issueだけ先に切っておいて後から直すということがしやすいです。
 
 - [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](https://efcl.info/2015/01/06/ebook-env/ "Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch")

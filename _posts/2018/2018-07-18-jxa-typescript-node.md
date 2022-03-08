@@ -15,7 +15,7 @@ JXA(JavaScript for Automation)を書いて実行するためにいろいろな�
 
 この記事で紹介する内容は次のスライドで発表したものと大体同じです。
 
-- スライド: [JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)
+- スライド: [JXA for TypeScript/Node.js](https://azu.github.io//slide/2018/laco_sushi/jxa-for-typescript.html)
 - リポジトリ: [JXA-userland/JXA: JavaScript for Automation(JXA) packages for TypeScript/Node.js.](https://github.com/JXA-userland/JXA)
 
 JXAはAppleScriptのJavaScript版(WebKit)のようなもので、macOSにはビルトインされています。
@@ -120,4 +120,4 @@ JXAはマイナー感があるので必要なAPIがよくわからないとい�
 
 次のスライドでもいろいろ苦戦した話を書いています。
 
-- [JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)
+- [JXA for TypeScript/Node.js](https://azu.github.io//slide/2018/laco_sushi/jxa-for-typescript.html)

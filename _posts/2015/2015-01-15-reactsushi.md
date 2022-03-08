@@ -46,7 +46,7 @@ tags:
 
 -----
 
-## [textlintから学んだこと](http://azu.github.io/slide/reactsushi/textlint.html "textlintから学んだこと")
+## [textlintから学んだこと](https://azu.github.io//slide/reactsushi/textlint.html "textlintから学んだこと")
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/reactsushi?src=hash">#reactsushi</a> LT! <a href="http://t.co/2HRAShqJEp">pic.twitter.com/2HRAShqJEp</a></p>&mdash; Toru Kobayashi (@koba04) <a href="https://twitter.com/koba04/status/555328205922369536">January 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

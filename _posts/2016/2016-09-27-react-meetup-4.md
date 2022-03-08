@@ -15,7 +15,7 @@ tags:
 
 その中で、複雑なJavaScriptアプリケーションを考えながら作る話という話をしました。
 
-- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
+- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
 - 補足資料: [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
 
 クライアントサイドJavaScriptでも.NETとかサーバサイドでの知見とかを取り入れて考えてみましょう的な話です。
@@ -43,7 +43,7 @@ tags:
 
 複雑なJavaScriptアプリケーションを考えながら作る話という話をしました。
 
-- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
+- スライド: [複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")
 - 補足資料: [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
 	- 実際に作ったガイドラインとか参考資料とかをまとめたリポジトリ
 

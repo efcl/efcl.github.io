@@ -12,11 +12,11 @@ tags:
 
 ---
 
-[Node学園 21時限目 -ES Modules Meetup-](http://nodejs.connpass.com/event/34104/ "Node学園 21時限目 -ES Modules Meetup-")で[ECMAScript as a Living Standard](http://azu.github.io/slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")という発表をしてきました。
+[Node学園 21時限目 -ES Modules Meetup-](http://nodejs.connpass.com/event/34104/ "Node学園 21時限目 -ES Modules Meetup-")で[ECMAScript as a Living Standard](https://azu.github.io//slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")という発表をしてきました。
 
-[![ECMAScript as a Living Standard](https://monosnap.com/file/sWmJQbTd7YAKkFvPog7xozpPtHMOKF.png)](http://azu.github.io/slide/2016/node-es/ecmascript.html)
+[![ECMAScript as a Living Standard](https://monosnap.com/file/sWmJQbTd7YAKkFvPog7xozpPtHMOKF.png)](https://azu.github.io//slide/2016/node-es/ecmascript.html)
 
-- スライド: [ECMAScript as a Living Standard](http://azu.github.io/slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")
+- スライド: [ECMAScript as a Living Standard](https://azu.github.io//slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")
 
 ECMAScriptの仕様策定は大きなプロジェクトですが、
 大部分の作業がGitHub上で見られる形でやり取りされています。
@@ -69,4 +69,4 @@ ECMAScriptのニュースは以下のサイトでやっているので、Proposa
 
 - [ECMAScript Daily](https://ecmascript-daily.github.io/ "ECMAScript Daily")
 
-[ECMAScript as a Living Standard](http://azu.github.io/slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")では、ECMAScriptを見ていくことは大きなGitHubプロジェクトを見るのとそこまで変わらないよという話をしました。
+[ECMAScript as a Living Standard](https://azu.github.io//slide/2016/node-es/ecmascript.html "ECMAScript as a Living Standard")では、ECMAScriptを見ていくことは大きなGitHubプロジェクトを見るのとそこまで変わらないよという話をしました。

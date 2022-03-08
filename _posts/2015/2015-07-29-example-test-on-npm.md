@@ -26,7 +26,7 @@ Go言語のExampleと近いような気がします。
 
 以下のスライドでも簡単に解説してますが、この記事はExampleテストのメリットやNodeモジュールでのやり方について書いていきます。
 
-- <a href="http://azu.github.io/slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a>
+- <a href="https://azu.github.io//slide/assistant-bucho/test-everything.html">ロジック、E2E、描画、音、動画、Example、文章 - 色々なJSテスト</a>
 
 ## Exampleテストの利点
 

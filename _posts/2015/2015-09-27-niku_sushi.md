@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[#niku_sushi](https://twitter.com/search?q=%23niku_sushi "#niku_sushi")で[Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")について発表してきました。
+[#niku_sushi](https://twitter.com/search?q=%23niku_sushi "#niku_sushi")で[Markdownで書く電子書籍開発環境](https://azu.github.io//slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")について発表してきました。
 
 - [#niku_sushi - Togetterまとめ](http://togetter.com/li/879455 "#niku_sushi - Togetterまとめ")
 
@@ -47,9 +47,9 @@ tags:
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">名もなき高級生ハム <a href="https://twitter.com/hashtag/niku_sushi?src=hash">#niku_sushi</a> <a href="http://t.co/Meo3GmktgA">pic.twitter.com/Meo3GmktgA</a></p>&mdash; Yosuke FURUKAWA (@yosuke_furukawa) <a href="https://twitter.com/yosuke_furukawa/status/648075403588820992">September 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## [Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境") - azu
+## [Markdownで書く電子書籍開発環境](https://azu.github.io//slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境") - azu
 
-[Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")という話をした。
+[Markdownで書く電子書籍開発環境](https://azu.github.io//slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")という話をした。
 
 [GitBook](https://www.gitbook.com/)とMarkdownで電子書籍を書いて、[textlint](https://github.com/azu/textlint "textlint")や[ESLint](http://eslint.org/ "ESLint")などを使って文章やコードのチェックをしながら技術書を書く環境について。
 
@@ -165,7 +165,7 @@ tags:
 - http://jser.info/2014/11/02/jser200/
 
 
-## [npmで成果物をsemantic-release :rocket:](http://azu.github.io/slide/niku_sushi/npm-semantic-release.html "npmで成果物をsemantic-release :rocket:")  - azu
+## [npmで成果物をsemantic-release :rocket:](https://azu.github.io//slide/niku_sushi/npm-semantic-release.html "npmで成果物をsemantic-release :rocket:")  - azu
 
 - 辞書などのリソースをnpmで配布する方法についての話
 

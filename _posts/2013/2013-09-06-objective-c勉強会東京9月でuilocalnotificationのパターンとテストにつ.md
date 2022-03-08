@@ -19,7 +19,7 @@ tags:
 
 ## UILocalNotificationのパターンとテスト &#8211; azu
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide1">UILocalNotificationのパターンとテスト</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_September/UILocalNotification.html#slide1">UILocalNotificationのパターンとテスト</a>
 
 自分が発表したUILocalNotificationのパターンについてのスライドです。
 
@@ -110,7 +110,7 @@ ViewObjects は ViewObjectの配列とする
 
 ## instacetype と typeof(self)
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_September/instancetype_self.html#slide1">instacetype と typeof(self)</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_September/instancetype_self.html#slide1">instacetype と typeof(self)</a>
 
 もう一個発表した、instancetype型とtypeofなどについてです。
 
@@ -118,6 +118,6 @@ ViewObjects は ViewObjectの配列とする
 
  [1]: http://ocstudy.doorkeeper.jp/events/5336 "Objective-C勉強会@東京 ９月 - Objective-C勉強会＠東京 | Doorkeeper"
  [2]: http://ios-practice.readthedocs.org/en/latest/docs/notification/ "UILocalNotificationを使った通知の設定について — ios-practice 0.1 documentation"
- [3]: http://azu.github.io/slide/OCStudy/2013_September/UILocalNotification.html#slide17 "バックグランド移行時に登録"
+ [3]: https://azu.github.io//slide/OCStudy/2013_September/UILocalNotification.html#slide17 "バックグランド移行時に登録"
  [4]: http://d.hatena.ne.jp/akuraru/20130708/p1 "TableViewAgentを作りました。 - いつもあさって!!"
  [5]: https://github.com/akuraru/TableViewAgent "akuraru/TableViewAgent · GitHub"

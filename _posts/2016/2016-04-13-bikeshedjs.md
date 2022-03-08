@@ -46,8 +46,8 @@ tags:
 
 自分は設計においてこういうどっちでもいいような議論が多くあると思ってるので、JavaScriptとCSSの設計についてのスライドを用意したけど使わなかったので忘れる。
 
-- [Read/Write Stack | JavaScriptアーキテクチャ](http://azu.github.io/slide/2016/bikeshedjs/javascript-read-write-stack.html)
-- [コンポーネントとCSSのアーキテクチャ](http://azu.github.io/slide/2016/bikeshedjs/component-css-architecture.html)
+- [Read/Write Stack | JavaScriptアーキテクチャ](https://azu.github.io//slide/2016/bikeshedjs/javascript-read-write-stack.html)
+- [コンポーネントとCSSのアーキテクチャ](https://azu.github.io//slide/2016/bikeshedjs/component-css-architecture.html)
 
 ------
 

@@ -57,7 +57,7 @@ textlintのルールの大体は本文を対象としているので、[Collecti
 
 ## 例
 
-[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")は[Asciidoctorで書かれてる](https://github.com/azu/promises-book/search?l=asciidoc&q=&type=Code&utf8=%E2%9C%93)で試しに[textlint](http://textlint.github.io/ "textlint")でLintしてみたら、エラー位置も正しく普通に動きました。
+[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")は[Asciidoctorで書かれてる](https://github.com/azu/promises-book/search?l=asciidoc&q=&type=Code&utf8=%E2%9C%93)で試しに[textlint](http://textlint.github.io/ "textlint")でLintしてみたら、エラー位置も正しく普通に動きました。
 
 ![textlint with asciidoc](https://efcl.info/wp-content/uploads/2016/05/08-1462706748.png)
 

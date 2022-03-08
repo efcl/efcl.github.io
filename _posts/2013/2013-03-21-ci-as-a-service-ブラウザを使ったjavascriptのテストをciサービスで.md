@@ -41,7 +41,7 @@ JavaScriptのブラウザテスト(ブラウザ上でJavaScriptを走らせて�
 <p>この一連の流れをCIサービス上で実行して、Githubにpushするたびに自動でテストを行うようにするのが今回の目的です。</p>
 <p>どのCIサービスも裏側ではUbuntu上で動いていて、apt-getやnpmを使ってテスト環境を事前に準備する必要があります。<br />
 また、<a href="https://travis-ci.org/" title="Travis CI - Free Hosted Continuous Integration Platform for the Open Source Community">Travis CI</a>や<a href="https://drone.io/" title="Hosted Continuous Integration and Deployment for your Github, Bitbucket and Google Code projects. Supports 12+ languages including Node, Scala, Dart, and Golang.">drone.io</a>には最初からNode.js環境なども用意されているので、<a href="https://buildhive.cloudbees.com/" title="BuildHive: Cloud Continuous Integration">BuildHive</a>に比べると事前の準備は簡潔に済みます。</p>
-<h2><img src="http://www.google.com/s2/favicons?domain=travis-ci.org" alt="travis-ci.org" /> <a href="https://travis-ci.org/" title="Travis CI - Free Hosted Continuous Integration Platform for the Open Source Community">Travis CI</a></h2>
+<h2><img src="https://www.google.com/s2/favicons?domain=travis-ci.org" alt="travis-ci.org" /> <a href="https://travis-ci.org/" title="Travis CI - Free Hosted Continuous Integration Platform for the Open Source Community">Travis CI</a></h2>
 <p>Travis CIでは<a href="http://about.travis-ci.org/docs/user/build-configuration/" title=".travis.yml">.travis.yml</a>という設定ファイルを書くことで、テスト環境を揃えることができます。</p>
 <p>サンプルプロジェクトは以下においてあります。</p>
 <ul>
@@ -153,7 +153,7 @@ sleep 5
 <li><a href="http://the-little-book-of-busterjs.readthedocs.org/en/latest/doc/column/TravisCI/" title="Travis CIでブラウザテスト — The little book of Buster.JS 1.0 documentation">Travis CIでブラウザテスト — The little book of Buster.JS 1.0 documentation</a></li>
 <li><a href="http://karma-runner.github.com/0.8/plus/Travis-CI.html" title="Karma - Travis CI">Karma &#8211; Travis CI</a></li>
 </ul>
-<h2><img src="http://www.google.com/s2/favicons?domain=drone.io" alt="drone.io" /> <a href="https://drone.io/" title="Hosted Continuous Integration and Deployment for your Github, Bitbucket and Google Code projects. Supports 12+ languages including Node, Scala, Dart, and Golang.">drone.io</a></h2>
+<h2><img src="https://www.google.com/s2/favicons?domain=drone.io" alt="drone.io" /> <a href="https://drone.io/" title="Hosted Continuous Integration and Deployment for your Github, Bitbucket and Google Code projects. Supports 12+ languages including Node, Scala, Dart, and Golang.">drone.io</a></h2>
 <p>次は、 <a href="https://drone.io/" title="Hosted Continuous Integration and Deployment for your Github, Bitbucket and Google Code projects. Supports 12+ languages including Node, Scala, Dart, and Golang.">drone.io</a> でのテスト環境を揃える方法についてです。</p>
 <p>drone.ioではGithub/Bitbucket/Google Codeと連携できますが、今回は先ほどと同様のレポジトリを使うのでGithubの場合です。</p>
 <p>また、drone.ioもNode.js環境が用意されていますが、PhantomJSとGoogle Chromeを追加でインストールして、<br />
@@ -203,7 +203,7 @@ PhantomJS(バイナリでインストールしたかったのでnpm経由)とGoo
 <li><a href="https://github.com/azu/Browser_CI_as_a_Service" title="example of JavaScript Unit Test at CI Service. Contribute to Browser_CI_as_a_Service development by creating an account on GitHub.">azu/Browser_CI_as_a_Service · GitHub</a>の実行結果</li>
 </ul>
 <p>drone.io はTravisCIよりスマートな感じなので、初めてCIサービスを試す場合はこちらのほうが試行錯誤しやすいかもしれません。</p>
-<h2><img src="http://www.google.com/s2/favicons?domain=buildhive.cloudbees.com" alt="buildhive.cloudbees.com" /> <a href="https://buildhive.cloudbees.com/" title="BuildHive: Cloud Continuous Integration">BuildHive</a></h2>
+<h2><img src="https://www.google.com/s2/favicons?domain=buildhive.cloudbees.com" alt="buildhive.cloudbees.com" /> <a href="https://buildhive.cloudbees.com/" title="BuildHive: Cloud Continuous Integration">BuildHive</a></h2>
 <p>基本的にJenkinsの画面なので、人によっては馴染みやすいかもしれません。<br />
 BuildHiveもdrone.ioと同じく、ウェブ上でビルドスクリプトを書いてテスト環境を揃えます。</p>
 <p>デフォルトでNode.js環境がないため、そこから環境を揃えていく必要があります。<br />
@@ -247,7 +247,7 @@ npm <span class="nb">test</span>
 <p>正直、ちゃんとした書き方がよくわからなかったので、適当な部分が多いです。<br />
 (Node.jsのアップデートとかも対応したい… <a href="https://gist.github.com/azu/5204113" title="buildhive for node">buildhive for node</a>)</p>
 <p>毎回リセットされない前提で書く必要があるので、どなたかがもう少し良いものを書いてくれるはず。</p>
-<h2><img src="http://www.google.com/s2/favicons?domain=jepso-ci.com" alt="jepso-ci.com" /> <a href="https://jepso-ci.com/" title="JEPSO CI">Jepso CI</a></h2>
+<h2><img src="https://www.google.com/s2/favicons?domain=jepso-ci.com" alt="jepso-ci.com" /> <a href="https://jepso-ci.com/" title="JEPSO CI">Jepso CI</a></h2>
 <p>最後は <a href="https://jepso-ci.com/" title="JEPSO CI">Jepso CI</a> についてです。<br />
 他のCIサービスが特にJavaScriptに限定されないのに対して、Jepso CIはHTMLとJavaScriptというものに限定される作りになっているので全く別の仕組みです。</p>
 <p><a href="https://saucelabs.com/docs/javascript-unit-tests-integration" title="Sauce">Sauce</a> や <a href="https://ci.testling.com/" title="testling-ci">testling-ci</a> の方に近いジャンルのCIサービスです。</p>

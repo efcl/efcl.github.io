@@ -14,7 +14,7 @@ tags:
 
 ## 電子書籍開発環境
 
-[Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")というスライドで、GitBookとMarkdownで技術書(電子書籍)を書く話を紹介しました。
+[Markdownで書く電子書籍開発環境](https://azu.github.io//slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")というスライドで、GitBookとMarkdownで技術書(電子書籍)を書く話を紹介しました。
 
 文章は[textlint](https://github.com/azu/textlint "textlint")で、コードは[ESLint](http://eslint.org/ "ESLint")とテストでチェックして、サンプルコードに対してテストを書けるプロジェクト構造について書かれています。
 
@@ -118,7 +118,7 @@ travis init node.js
 
 ## 表記揺れのテスト
 
-[Markdownで書く電子書籍開発環境](http://azu.github.io/slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")でもプロジェクト固有のルールで表記揺れのチェックが必要になる話を書いています。
+[Markdownで書く電子書籍開発環境](https://azu.github.io//slide/niku_sushi/ebook_development.html "Markdownで書く電子書籍開発環境")でもプロジェクト固有のルールで表記揺れのチェックが必要になる話を書いています。
 
 gitbook-starter-kitでは[prh.yml](https://github.com/azu/gitbook-starter-kit/blob/master/prh.yml)に辞書を追加することで表記揺れをチェックすることができます。
 詳しい設定方法については以下を参照して下さい。

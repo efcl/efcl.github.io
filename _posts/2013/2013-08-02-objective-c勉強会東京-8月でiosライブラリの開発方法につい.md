@@ -150,7 +150,7 @@ iOSのライブラリ開発、テスト、コードカバレッジ、ライセ�
 
 スライドは以下に置いてあります。
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_August/devlop_ios_library.html#/">Devlop iOS Library</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_August/devlop_ios_library.html#/">Devlop iOS Library</a>
 
 スライド中でも触れていますが、
 

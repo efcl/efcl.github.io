@@ -194,7 +194,7 @@ postMessageを使った場合は以下が大体同様の内容になると思い
  [11]: https://developer.mozilla.org/ja/docs/DOM/document.createEvent "document.createEvent"
  [12]: https://developer.mozilla.org/ja/docs/XPCOM_Interface_Reference/NsIWorkerMessageEvent#initMessageEvent() "nsIWorkerMessageEvent - XPCOM インタフェースリファレンス | MDN"
  [13]: https://developer.mozilla.org/ja/docs/Mozilla/Firefox/Releases/26 "Firefox 26 for developers - Mozilla | MDN"
- [14]: http://azu.github.io/MessageEvent-testing/test/ "Mocha Spec Runner"
+ [14]: https://azu.github.io//MessageEvent-testing/test/ "Mocha Spec Runner"
  [15]: https://github.com/azu/MessageEvent-testing "azu/MessageEvent-testing"
  [16]: https://github.com/azu/MessageEvent-testing/blob/gh-pages/test/spec/messageevent.test.js "messageevent.test.js"
  [17]: http://javascript.g.hatena.ne.jp/edvakf/20100227/1267246371 "非同期パフォーマンス - JavaScriptで遊ぶよ - g:javascript"

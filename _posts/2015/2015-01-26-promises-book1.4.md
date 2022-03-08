@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")の[1.4.0](https://github.com/azu/promises-book/releases/tag/1.4.0 "1.4.0")をリリースしたので、
+[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")の[1.4.0](https://github.com/azu/promises-book/releases/tag/1.4.0 "1.4.0")をリリースしたので、
 前回書いたVer 1.2から変更点を簡単にまとめたものです。
 
 - [JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch](https://efcl.info/2014/08/19/promises-book-1.2.0/ "JavaScript Promiseの本Ver1.2とAsciidoctor | Web Scratch")
@@ -24,7 +24,7 @@ tags:
 
 ## 変更履歴
 
-一番変化が大きいのは[3.1. 基本的なテスト](http://azu.github.io/promises-book/#basic-tests "3.1. 基本的なテスト")だと思います。
+一番変化が大きいのは[3.1. 基本的なテスト](https://azu.github.io//promises-book/#basic-tests "3.1. 基本的なテスト")だと思います。
 
 細かい変更は以下の通りです。
 
@@ -41,14 +41,14 @@ tags:
 
 **Chapter 2**
 
-- [2.5. Promise#catch](http://azu.github.io/promises-book/#ch2-promise-catch "2.5. Promise#catch")にて`.catch(fn)`がIE8以下で問題がある事について触れていますが、多くの圧縮ツール等を介した場合この問題は自動的に回避されるケースがあることについて追記しました
+- [2.5. Promise#catch](https://azu.github.io//promises-book/#ch2-promise-catch "2.5. Promise#catch")にて`.catch(fn)`がIE8以下で問題がある事について触れていますが、多くの圧縮ツール等を介した場合この問題は自動的に回避されるケースがあることについて追記しました
 	- [Ch2: `catch` プロダクトではあまり気にする必要ない · Issue #201 · azu/promises-book](https://github.com/azu/promises-book/issues/201 "Ch2: `catch` プロダクトではあまり気にする必要ない · Issue #201 · azu/promises-book")
 
 **Chapter 3**
 
 - [Mocha](http://mochajs.org/ "Mocha")の公式サイトのURLが変更されたのを修正
 	- [fix(asciidoc): 誤字とリンク先修正 by misahot · Pull Request #191 · azu/promises-book](https://github.com/azu/promises-book/pull/191 "fix(asciidoc): 誤字とリンク先修正 by misahot · Pull Request #191 · azu/promises-book")
-- [3.1. 基本的なテスト](http://azu.github.io/promises-book/#basic-tests "3.1. 基本的なテスト")の全体的な流れを変更して、Mochaのインストール方法についての記述を追加しました
+- [3.1. 基本的なテスト](https://azu.github.io//promises-book/#basic-tests "3.1. 基本的なテスト")の全体的な流れを変更して、Mochaのインストール方法についての記述を追加しました
 	- Mochaの導入方法、実行方法を追加
 	- power-assertについての記述を削除し、代わりにassertをそのまま使うように変更
 	- 3.1の全体的な流れを変更

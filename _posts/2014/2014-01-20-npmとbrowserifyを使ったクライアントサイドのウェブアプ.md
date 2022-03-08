@@ -301,7 +301,7 @@ shim は利用した機能の分だけが自動でビルド時に含まれてる
 以上です。
 
  [1]: https://efcl.info/2014/0119/res3594/ "YoutubeとVimeoの検索結果のRSSをまとめてOPMLで取得できるサイトを作った | Web scratch"
- [2]: http://azu.github.io/tech-video-rss-searcher/ "Tech Video RSS Searcher"
+ [2]: https://azu.github.io//tech-video-rss-searcher/ "Tech Video RSS Searcher"
  [3]: https://github.com/substack/node-browserify "substack/node-browserify"
  [4]: http://browserify.org/
  [5]: http://nodejs.org/api/modules.html#modules_core_modules "Core Modules#"

@@ -50,9 +50,9 @@ tags:
 
 またそういう技術的負債を解消するタイミングは普通はあんまりこないよねって話とどうやってそれに付き合うべきかという話に続きました。
 
-## [QUnit 2.xで変わること](http://azu.github.io/slide/chatwork/qunit2.html "QUnit 2.xで変わること")
+## [QUnit 2.xで変わること](https://azu.github.io//slide/chatwork/qunit2.html "QUnit 2.xで変わること")
 
-> スライド: [azu.github.io/slide/chatwork/qunit2.html](http://azu.github.io/slide/chatwork/qunit2.html "QUnit 2.xで変わること")
+> スライド: [azu.github.io/slide/chatwork/qunit2.html](https://azu.github.io//slide/chatwork/qunit2.html "QUnit 2.xで変わること")
 
 QUnit 2.xで変更されることについて話をしました。
 最近、QUnit 1.16.0がリリースされてこの変更が既に入っています。
@@ -68,9 +68,9 @@ QUnit 2.xで変更されることについて話をしました。
 
 JavaScriptからセキュリティ、オススメ情報など色々な話
 
-## [TC39 MTG Notes 第43回 報告会](http://azu.github.io/slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")
+## [TC39 MTG Notes 第43回 報告会](https://azu.github.io//slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")
 
-> スライド: [azu.github.io/slide/chatwork/tc39-mtg-notes.html](http://azu.github.io/slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")
+> スライド: [azu.github.io/slide/chatwork/tc39-mtg-notes.html](https://azu.github.io//slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")
 
 [ECMA, TC39 Meeting Notes 第43回目を読む - TC39 MTG Notes MTG | Doorkeeper](http://tc39-mtg.doorkeeper.jp/events/18001 "ECMA, TC39 Meeting Notes 第43回目を読む - TC39 MTG Notes MTG | Doorkeeper") でやった[ECMA, TC39 Meeting Notes](https://github.com/rwaldron/tc39-notes "ECMA, TC39 Meeting Notes")を読んでの報告会をしました。
 
@@ -78,7 +78,7 @@ TC39というECMAScriptの仕様策定コミュニティのミーティングノ
 
 次のミーティングノートが来た時もやると思うので[TC39 MTG Notes MTG | Doorkeeper](http://tc39-mtg.doorkeeper.jp/ "TC39 MTG Notes MTG | Doorkeeper")にイベントを建てる予定です。
 
-[TC39 MTG Notes 第43回 報告会](http://azu.github.io/slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")ではES6の互換性のための変更の話が主だった気がします。またtc39-notesへは[2番目にcommits](https://github.com/rwaldron/tc39-notes/graphs/contributors "commits")してるのでその話もしてました(もちろん一番はミーティングノートを書いてくれている[rwaldron](https://github.com/rwaldron "rwaldron")さん)
+[TC39 MTG Notes 第43回 報告会](https://azu.github.io//slide/chatwork/tc39-mtg-notes.html "TC39 MTG Notes 第43回 報告会")ではES6の互換性のための変更の話が主だった気がします。またtc39-notesへは[2番目にcommits](https://github.com/rwaldron/tc39-notes/graphs/contributors "commits")してるのでその話もしてました(もちろん一番はミーティングノートを書いてくれている[rwaldron](https://github.com/rwaldron "rwaldron")さん)
 
 ## E2Eテスト
 
@@ -91,7 +91,7 @@ TravisCI + saucelabs とProxyを使ったE2Eテストを試みた話。
 
 ## パズルCanvasと擬似DRM
 
-> [Canvasを使ったDRM?について](http://azu.github.io/slide/nodefest2014/index.html "Canvasを使ったDRM?について")
+> [Canvasを使ったDRM?について](https://azu.github.io//slide/nodefest2014/index.html "Canvasを使ったDRM?について")
 
 スライドは中途半端で未完成なアレです。(オチが書いてない)
 

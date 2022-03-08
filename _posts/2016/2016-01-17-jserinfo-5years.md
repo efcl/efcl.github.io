@@ -20,7 +20,7 @@ tags:
 
 以下メモ書きです。
 
-## [JSer.info 5周年](http://azu.github.io/slide/2016/jser5years/jser.info.html "JSer.info 5周年") - @azu_re
+## [JSer.info 5周年](https://azu.github.io//slide/2016/jser5years/jser.info.html "JSer.info 5周年") - @azu_re
 
 5年間での総計は以下のような感じになりました。
 
@@ -29,7 +29,7 @@ tags:
 - 合計紹介URL数: 6312
 
 
-## [JavaScript情報って何だっけ?](http://azu.github.io/slide/2016/jser5years/javascript-information.html) - @azu_re
+## [JavaScript情報って何だっけ?](https://azu.github.io//slide/2016/jser5years/javascript-information.html) - @azu_re
 
 そもそもなんでJavaScriptについて知りたいのという話。
 後で別記事書くかも
@@ -374,11 +374,11 @@ ElectronでXSSが起きると、任意のコード実行ができてしまう問
 	- Node/ES6 どっちからも読めるようにするという
 	- JSのレイヤーじゃなくて、C++のレイヤーでfallbackさせてtryする
 
-## [SC22 ECMAScript Ad hoc委員会](http://azu.github.io/slide/2016/jser5years/sc22-ecmascript-ahodc.html "SC22 ECMAScript Ad hoc委員会") - @azu_re
+## [SC22 ECMAScript Ad hoc委員会](https://azu.github.io//slide/2016/jser5years/sc22-ecmascript-ahodc.html "SC22 ECMAScript Ad hoc委員会") - @azu_re
 
 ISO/IEC 16262であるECMASCript仕様の策定プロセスやどういう活動をしてるかという話。
 
-[Introduction | ECMAScriptとは何か？](http://azu.github.io/slide-what-is-ecmascript/ "Introduction | ECMAScriptとは何か？")とはまた違う話です。
+[Introduction | ECMAScriptとは何か？](https://azu.github.io//slide-what-is-ecmascript/ "Introduction | ECMAScriptとは何か？")とはまた違う話です。
 
 
 ## AVA - @t_wada

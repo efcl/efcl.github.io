@@ -127,4 +127,4 @@ AppCodeで標準サポートされてるテストフレームワーク
 
  [1]: http://www.zusaar.com/event/1807003 "12/17(火) AppCode Night - AppCodeの勉強会 #ACNight #jbugj on Zusaar"
  [2]: https://itunes.apple.com/jp/app/sakenowa/id725541484?mt=8&ign-mpt=uo%3D4 "iTunes の App Store で配信中の iPhone、iPod touch、iPad 用 さけのわ - 日本酒体験共有アプリ"
- [3]: http://azu.github.io/slide/ACNight/acnight.html#1 "AppCode speeedy - OCNight"
+ [3]: https://azu.github.io//slide/ACNight/acnight.html#1 "AppCode speeedy - OCNight"

@@ -58,7 +58,7 @@ tags:
 
 - PhantomJS 2.0はリリースされたはずなのに、未だに安定してない
 - ASTの話がごちゃごちゃしてたのもこの頃
-- [最近のASTパーサの動き](http://azu.github.io/slide/crosushi/shift-ast.html "最近のASTパーサの動き")
+- [最近のASTパーサの動き](https://azu.github.io//slide/crosushi/shift-ast.html "最近のASTパーサの動き")
 
 ### [2015-02-09のJS: Node v0.12.0、Esprima 2.0、CSS Reference - JSer.info](http://jser.info/2015/02/09/nodejs-0.12-esprima2.0-css-reference/ "2015-02-09のJS: Node v0.12.0、Esprima 2.0、CSS Reference - JSer.info")
 
@@ -126,7 +126,7 @@ RxJSそのものについての話もちょっと見かけるようになって�
 
 自分があまりBowerを使ってないというのもありますが、Bowerとnpmを言及数を比較してみると結構差がある感じです。
 
-npmの言及数が多いのは、[われわれは、いかにして変更点を追うか](http://azu.github.io/slide/cto/changelog.html "われわれは、いかにして変更点を追うか")でも書かれたようなわかりやすいChangeLogや[The npm Blog](http://blog.npmjs.org/ "The npm Blog")にて情報の発信を積極的に行ってるのが要因の一つでもあります。
+npmの言及数が多いのは、[われわれは、いかにして変更点を追うか](https://azu.github.io//slide/cto/changelog.html "われわれは、いかにして変更点を追うか")でも書かれたようなわかりやすいChangeLogや[The npm Blog](http://blog.npmjs.org/ "The npm Blog")にて情報の発信を積極的に行ってるのが要因の一つでもあります。
 
 ### [2015-04-14のJS: 初代jQueryをコードリーディング、npmのエコシステムとプロトタイピング - JSer.info](http://jser.info/2015/04/14/jQuery-origin/ "2015-04-14のJS: 初代jQueryをコードリーディング、npmのエコシステムとプロトタイピング - JSer.info")
 

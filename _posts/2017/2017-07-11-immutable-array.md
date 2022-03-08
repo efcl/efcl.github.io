@@ -130,7 +130,7 @@ Reactなどで作るアプリケーションは、配列などを作るよりも
 次のスライドでもそういう話をしてます。
 
 - [azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript: 複雑なJavaScriptアプリケーションを作るために考えること")
-- [Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")
+- [Faao - ドメイン駆動設計で作るGitHub Issue Client -](https://azu.github.io//slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")
 
 
 Immutable.jsのような速度も兼ね備えたものを使うと便利ですが、通常の配列とは使い方やサイズも大きいので使うのに躊躇します。

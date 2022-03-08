@@ -22,7 +22,7 @@ tags:
 
 ## 自分が発表したスライド
 
-- <a href="http://azu.github.io/slide/potatotips/mogenerator.html">mogenerator &#8211; potate tips</a>
+- <a href="https://azu.github.io//slide/potatotips/mogenerator.html">mogenerator &#8211; potate tips</a>
 
 CoreDataのモデルクラスを生成するmogeneratorについてのスライド
 

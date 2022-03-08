@@ -15,7 +15,7 @@ tags:
 ---
 [Objective-C勉強会＠東京 &#8211; PARTAKE][1] に参加して、iOSのユニットテストについて話をして来ました。
 
-- <a href="http://azu.github.io/slide/OCStudy/ios_unit_test.html#slide1">iOS Unit Test</a>
+- <a href="https://azu.github.io//slide/OCStudy/ios_unit_test.html#slide1">iOS Unit Test</a>
 
 スライドは上記に置いてあります。
 

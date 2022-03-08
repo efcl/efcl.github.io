@@ -13,7 +13,7 @@ tags:
 
 ---
 
-[#忘年_sushi](https://twitter.com/search?q=%23%E5%BF%98%E5%B9%B4_sushi "#忘年_sushi")で[JavaScriptの素振りする技術](http://azu.github.io/slide/2015/year-end/javascript-swing.html "JavaScriptの素振りする技術")について話してきました。
+[#忘年_sushi](https://twitter.com/search?q=%23%E5%BF%98%E5%B9%B4_sushi "#忘年_sushi")で[JavaScriptの素振りする技術](https://azu.github.io//slide/2015/year-end/javascript-swing.html "JavaScriptの素振りする技術")について話してきました。
 
 - [#忘年_sushi - Togetterまとめ](http://togetter.com/li/910679 "#忘年_sushi - Togetterまとめ")
 
@@ -150,7 +150,7 @@ tags:
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E5%BF%98%E5%B9%B4_sushi?src=hash">#忘年_sushi</a> 「結論はケースバイケース」 <a href="https://t.co/Qc2vIdnlhP">https://t.co/Qc2vIdnlhP</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/674568622187020288">December 9, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## [JavaScriptの素振りする技術](http://azu.github.io/slide/2015/year-end/javascript-swing.html "JavaScriptの素振りする技術")
+## [JavaScriptの素振りする技術](https://azu.github.io//slide/2015/year-end/javascript-swing.html "JavaScriptの素振りする技術")
 
 JavaScriptのトレンドというのは半分ぐらい主張なので、それを確認する術を身につけようと言う話でした。
 

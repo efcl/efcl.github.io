@@ -23,7 +23,7 @@ tags:
 * * *
 
 <div class="kwout" style="text-align: center;">
-  <p><a href="http://azu.github.io/slide/JSojisan/">カジュアルJavaScript AST</a><p>
+  <p><a href="https://azu.github.io//slide/JSojisan/">カジュアルJavaScript AST</a><p>
       自分はJavaScript ASTについて発表してきた。
     </p>
     
@@ -518,7 +518,7 @@ tags:
     </h2>
     
     <p>
-      <a href="http://azu.github.io/slide/JSojisan/" title="カジュアルJavaScript AST">カジュアルJavaScript AST</a>
+      <a href="https://azu.github.io//slide/JSojisan/" title="カジュアルJavaScript AST">カジュアルJavaScript AST</a>
     </p>
     
     <p>

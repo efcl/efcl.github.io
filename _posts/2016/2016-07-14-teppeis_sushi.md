@@ -18,7 +18,7 @@ tags:
 
 - Karma 1.0について
 - [karma/CHANGELOG.md at v1.0.0 · karma-runner/karma](https://github.com/karma-runner/karma/blob/v1.0.0/CHANGELOG.md "karma/CHANGELOG.md at v1.0.0 · karma-runner/karma")
-- [Buster.JS](http://docs.busterjs.org/en/latest/ "Buster.JS")の[testbed](http://azu.github.io/slide/Kamakura/busterJS.html#slide22 "testbed")みたいな機能
+- [Buster.JS](http://docs.busterjs.org/en/latest/ "Buster.JS")の[testbed](https://azu.github.io//slide/Kamakura/busterJS.html#slide22 "testbed")みたいな機能
 - 実際の環境を読み込ませたうえでテストファイルを読み込ませてテストできる
 - E2Eテストみたいなものを簡単に書ける
 - さらにmiddlewareで[proxy](https://github.com/karma-runner/karma/blob/master/lib/middleware/proxy.js "proxy")を扱える
@@ -94,7 +94,7 @@ tags:
 
 ## 最近のtextlint - azu
 
-スライド: [最近のtextlint !](http://azu.github.io/slide/2016/honbucho/textlint.html "最近のtextlint !")
+スライド: [最近のtextlint !](https://azu.github.io//slide/2016/honbucho/textlint.html "最近のtextlint !")
 
 最近のtextlintに入れた変更点の話
 

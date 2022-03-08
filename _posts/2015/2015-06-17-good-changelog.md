@@ -12,7 +12,7 @@ tags:
 
 ---
 
-以前、[われわれは、いかにして変更点を追うか](http://azu.github.io/slide/cto/changelog.html "われわれは、いかにして変更点を追うか")という内容で発表しましたが、
+以前、[われわれは、いかにして変更点を追うか](https://azu.github.io//slide/cto/changelog.html "われわれは、いかにして変更点を追うか")という内容で発表しましたが、
 その時書き忘れてたことの補足的な記事です。
 
 GitHubでのChangeLogの扱いについての話

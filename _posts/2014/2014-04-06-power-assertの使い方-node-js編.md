@@ -31,7 +31,7 @@ Assert失敗時(テストが通らなかった時)に分かりやすい情報を
 このNode.js編とブラウザ編で分けるぐらい長い記事となってるので、  
 お忙しい方は[5分ぐらいで分かるpower-assert][6]というスライドもあるので、そちらを読んでざっくり把握してみるのもいいでしょう。
 
-- <a href="http://azu.github.io/slide/sakurajs/power-assert.html#/">5minで分かるpower-assert</a>
+- <a href="https://azu.github.io//slide/sakurajs/power-assert.html#/">5minで分かるpower-assert</a>
 
 ブラウザ編はこちらです。
 
@@ -268,14 +268,14 @@ ES6で書いてpower-assertでテストしたい場合はこちらを参照す�
  [3]: http://chaijs.com/ "Chai"
  [4]: http://nodejs.org/api/assert.html "assert"
  [5]: https://github.com/twada/power-assert "twada/power-assert"
- [6]: http://azu.github.io/slide/sakurajs/power-assert.html#/
+ [6]: https://azu.github.io//slide/sakurajs/power-assert.html#/
  [7]: https://github.com/twada/power-assert-formatter "twada/power-assert-formatter"
  [8]: https://github.com/twada/empower "twada/empower"
  [9]: http://nodejs.org/api/assert.html "Assert"
  [10]: https://www.youtube.com/watch?v=aDoQxqO_6rI "▶ 新しいテストライブラリのご提案 #tng10 @t_wada - YouTube"
  [11]: http://www.slideshare.net/t_wada/powerassert-in-javascript "power-assert in JavaScript"
- [12]: http://azu.github.io/slide/JSojisan/ "カジュアルJavaScript AST"
- [13]: http://azu.github.io/slide/JSojisan/resources/power-assert.gif
+ [12]: https://azu.github.io//slide/JSojisan/ "カジュアルJavaScript AST"
+ [13]: https://azu.github.io//slide/JSojisan/resources/power-assert.gif
  [14]: https://efcl.info/2014/0411/res3820/ "power-assertでJavaScriptのテストをする ブラウザ編 | Web scratch"
  [15]: https://github.com/twada/power-assert#how-to-use " HOW TO USE"
  [16]: http://visionmedia.github.io/mocha/ "Mocha"

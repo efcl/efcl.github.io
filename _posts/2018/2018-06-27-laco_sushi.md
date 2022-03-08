@@ -15,7 +15,7 @@ tags:
 
 - [laco_sushi - Togetter](https://togetter.com/li/1241434)
 
-[JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)というタイトルで、JXAというAppleScriptのJavaScript版についての話しをしました。
+[JXA for TypeScript/Node.js](https://azu.github.io//slide/2018/laco_sushi/jxa-for-typescript.html)というタイトルで、JXAというAppleScriptのJavaScript版についての話しをしました。
 
 [JXA-userland/JXA: JavaScript for Automation(JXA) packages for TypeScript/Node.js.](https://github.com/JXA-userland/JXA)というリポジトリに作ったものをまとめています。
 
@@ -356,7 +356,7 @@ tags:
 
 
 
-[JXA for TypeScript/Node.js](http://azu.github.io/slide/2018/laco_sushi/jxa-for-typescript.html)というタイトルで、JXAというAppleScriptのJavaScript版についての話しをしました。
+[JXA for TypeScript/Node.js](https://azu.github.io//slide/2018/laco_sushi/jxa-for-typescript.html)というタイトルで、JXAというAppleScriptのJavaScript版についての話しをしました。
 
 [JXA-userland/JXA: JavaScript for Automation(JXA) packages for TypeScript/Node.js.](https://github.com/JXA-userland/JXA)というリポジトリに作ったものをまとめています。
 

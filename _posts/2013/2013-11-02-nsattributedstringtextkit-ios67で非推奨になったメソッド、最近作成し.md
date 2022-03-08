@@ -18,20 +18,20 @@ tags:
 
 * * *
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1">NSAttributedString と TextKit</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_November/nsattributedstring.html#slide1">NSAttributedString と TextKit</a>
 
 [NSAttributedString と TextKit][2] ではiOS6から入ったNSAttributedStringでどのような事ができるのかと、iOS7からその辺の仕組みが一新されてTextKitになったので、TextKitはどのような構造になってるのかを紹介しています。
 
 実際に中身まで調べる時間がなかったので、[Getting to Know TextKit – #5 – iOS 7][3]をかなり参考にして書いています。
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1">deprecated! deprecated!</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1">deprecated! deprecated!</a>
 
 [deprecated! deprecated!][4] では、iOS6や7でどのようなメソッドが非推奨になってるかを書いています。
 
 基本的には `NS_DEPRECATED_IOS(5_0,6_0);` のようなマクロで定義されるのですが、  
 `UIButtonTypeRoundedRect` のようにコメントで書いてあるだけというものもあるので調べて見ると色々出てきます。
 
-- <a href="http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1">最近作ったiOSのライブラリ紹介</a>
+- <a href="https://azu.github.io//slide/OCStudy/2013_November/mylibrary.html#slide1">最近作ったiOSのライブラリ紹介</a>
 
 最後の[最近作ったiOSのライブラリ紹介][5]はiOS6はあんまり関係なく、最近作って公開したiOSのライブラリについてまとめています。
 
@@ -94,10 +94,10 @@ akuraru
 * * *
 
  [1]: http://ocstudy.doorkeeper.jp/events/6543 "Objective-C勉強会@東京 １１月"
- [2]: http://azu.github.io/slide/OCStudy/2013_November/nsattributedstring.html#slide1 "NSAttributedString と TextKit"
+ [2]: https://azu.github.io//slide/OCStudy/2013_November/nsattributedstring.html#slide1 "NSAttributedString と TextKit"
  [3]: http://www.objc.io/issue-5/getting-to-know-textkit.html "Getting to Know TextKit – #5 – iOS 7"
- [4]: http://azu.github.io/slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1 "deprecated! deprecated!"
- [5]: http://azu.github.io/slide/OCStudy/2013_November/mylibrary.html#slide1 "最近作ったiOSのライブラリ紹介"
+ [4]: https://azu.github.io//slide/OCStudy/2013_November/deprecated_ios6_7.html#slide1 "deprecated! deprecated!"
+ [5]: https://azu.github.io//slide/OCStudy/2013_November/mylibrary.html#slide1 "最近作ったiOSのライブラリ紹介"
  [6]: https://github.com/azu/NSDate-Escort "azu/NSDate-Escort · GitHub"
  [7]: https://github.com/azu/AZDateBuilder "azu/AZDateBuilder · GitHub"
  [8]: https://github.com/azu/SimpleUserDefaults "azu/SimpleUserDefaults · GitHub"

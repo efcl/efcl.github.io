@@ -33,7 +33,7 @@ Twitterのハッシュタグは[#js_plugin_book](https://twitter.com/search?f=tw
 ## v1.0.0
 
 最初に[書くと決めたプラグインアーキテクチャ](https://github.com/azu/JavaScript-Plugin-Architecture/issues?q=label%3Aproposal+is%3Aclosed)が揃ったので[1.0.0](https://github.com/azu/JavaScript-Plugin-Architecture/releases/tag/1.0.0 "1.0.0")としてリリースしました。
-[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")の時と同じく、継続的に更新できる仕組みを色々入れてあるので新しいプラグインアーキテクチャのProposalが出たら書いていく感じになると思います。
+[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")の時と同じく、継続的に更新できる仕組みを色々入れてあるので新しいプラグインアーキテクチャのProposalが出たら書いていく感じになると思います。
 
 - [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
@@ -135,7 +135,7 @@ MIT/CC BY-NC © azu
 - [今すぐ電子書籍(技術書)を書き始める方法と文章の自動チェック | Web Scratch](https://efcl.info/2015/09/28/easy-to-create-ebook/)
 - [Introduction | 技術文書をソフトウェア開発する話](https://azu.gitbooks.io/nodefest-technical-writing/content/)
 
-いつもどおり[手段と目的が逆転](http://azu.github.io/promises-book/#about-author)しているので、
+いつもどおり[手段と目的が逆転](https://azu.github.io//promises-book/#about-author)しているので、
 [textlint](https://github.com/textlint/textlint "textlint")の開発を進めるためにこの書籍を開発していた部分も大きいです。
 
 textlintで日本語の文章をチェックするために論文やRedPenなど既存のLinterを参考に色々なルールを実装しましたが、ルールの実験場として[JavaScript Plugin Architecture](https://github.com/azu/JavaScript-Plugin-Architecture "JavaScript Plugin Architecture")を使っていました。

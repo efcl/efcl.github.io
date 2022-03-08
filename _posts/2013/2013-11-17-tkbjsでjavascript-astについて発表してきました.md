@@ -13,7 +13,7 @@ tags:
 ---
 [オフラインJavaScript勉強会 &#8211; Online Study TokyoBouldering.js | Doorkeeper][1]でJavaScript ASTについて発表してきました。
 
-- <a href="http://azu.github.io/slide/tkbjs/js-ast-walker.html">JavaScript AST Walker</a>
+- <a href="https://azu.github.io//slide/tkbjs/js-ast-walker.html">JavaScript AST Walker</a>
 
 JavaScript ASTがどんなものかや、どのようなツールで使われてるか、ASTを編集するのにどういうライブラリがあるかなどについて書いてあります。  
 (中でかなり重たいものを読み込んでるのでロードが終わるまで適応に待ったほうがいいです)
@@ -25,4 +25,4 @@ ASTをセレクタで選択したり、変更したりするのがもっと楽�
 
  [1]: http://tkbjs.doorkeeper.jp/events/6786 "オフラインJavaScript勉強会 - Online Study TokyoBouldering.js | Doorkeeper"
  [2]: https://github.com/azu/reQUnit "reQUnit"
- [3]: http://azu.github.io/slide/tkbjs/jser_info_2013.html#2 "ここ最近のJSer.infoについて"
+ [3]: https://azu.github.io//slide/tkbjs/jser_info_2013.html#2 "ここ最近のJSer.infoについて"

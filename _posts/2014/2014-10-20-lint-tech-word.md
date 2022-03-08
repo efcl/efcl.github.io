@@ -31,9 +31,9 @@ WZ EDITORの用語統一辞書をスペルチェックとして使えるCodeMirr
 
 以下から試すことが出来ます。(DEMOにはWZ EDITORの用語統一辞書の記号周りを取り除いたものが入ってます)
 
-[![gif](https://i.gyazo.com/fe26a3fa4e194bafb72be12ca551d947.gif)](http://azu.github.io/codemirror-spellckecker/)
+[![gif](https://i.gyazo.com/fe26a3fa4e194bafb72be12ca551d947.gif)](https://azu.github.io//codemirror-spellckecker/)
 
-- [azu.github.io/codemirror-spellckecker/](http://azu.github.io/codemirror-spellckecker/ "CodeMirror + Spell Check + Quick Fix")
+- [azu.github.io/codemirror-spellckecker/](https://azu.github.io//codemirror-spellckecker/ "CodeMirror + Spell Check + Quick Fix")
 
 マッチした部分は赤下線がでて、行番号の所に表示される警告マークをクリックするとおそらく期待する単語に置換をしてくれます。
 
@@ -83,7 +83,7 @@ Markdownで書いても記法やリンクなどがLintに引っかかってく�
 
 ## 目的
 
-元々は[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")で確認に使おうと思ってWZ EDITORの辞書のパーサを書きましたが大して使ってなかったです。
+元々は[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")で確認に使おうと思ってWZ EDITORの辞書のパーサを書きましたが大して使ってなかったです。
 
 最近、[JSer.info](http://jser.info/ "JSer.info")をGitHubに移してから`fix typos`の[Pull Requests](https://github.com/jser/jser.github.io/pulls?q=is%3Apr+is%3Aclosed "Pull Requests · jser/jser.github.io")を何度ももらっていて、書いてる時はあんまりtypoとか気にしてないのもあって同じ単語の表記のズレとかの修正とかをもらっていました。
 

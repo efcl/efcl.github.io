@@ -17,7 +17,7 @@ tags:
 
 - [azu/codemirror-console: Web Console UI for JavaScript.](https://github.com/azu/codemirror-console)
 
-実際に動いてる例としては、[JavaScript Promiseの本](http://azu.github.io/promises-book/)や[JavaScriptの入門書 #jsprimer](https://jsprimer.net/)で見れます。
+実際に動いてる例としては、[JavaScript Promiseの本](https://azu.github.io//promises-book/)や[JavaScriptの入門書 #jsprimer](https://jsprimer.net/)で見れます。
 あと、GitBookで動いてるサンプルは次のページで見れます。
 
 - <https://codemirror-console.netlify.com/>
@@ -52,7 +52,7 @@ Docusaurusなど他の環境向けのプラグインも必要になったら追�
 
 ## おわりに
 
-このような書籍などのサンプルコードを実行する試みは結構色々なところでも見かけるようになったと思います。([codemirror-console][]は元々[JavaScript Promiseの本](http://azu.github.io/promises-book/)を書いてた時に、そういうものがなくて作りました)
+このような書籍などのサンプルコードを実行する試みは結構色々なところでも見かけるようになったと思います。([codemirror-console][]は元々[JavaScript Promiseの本](https://azu.github.io//promises-book/)を書いてた時に、そういうものがなくて作りました)
 
 たとえば、CodeMirrorの作者である[Marijn Haverbeke](https://github.com/marijnh)の[Eloquent JavaScript](https://eloquentjavascript.net/)という書籍でも同じような仕組みがあります。
 またJavaScript以外でもRustの[The Rust Programming Language](https://doc.rust-lang.org/book/)なども同様の機能をもっています(こちらは実行サーバと通信します)

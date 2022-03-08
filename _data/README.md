@@ -1,7 +1,7 @@
 # イベントの追加方法
 
 ```js
-var slide = document.querySelector(`a[href^="http://azu.github.io/slide/"]`);
+var slide = document.querySelector(`a[href^="https://azu.github.io//slide/"]`);
 var slideTitle = slide.title || slide.textContent;
 var slideURL = slide.href;
 var postDate = document.querySelector(".post-date").textContent;

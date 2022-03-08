@@ -33,7 +33,7 @@ async function countUp() {
 Babelなどの変換ツールでECMAScriptのProposalな機能などが身近になりました。
 しかし、それがまだ仕様に入ってないもの(Proposal段階であるもの)ということを意識しないで書いてる人もよく見かけるようになりました。
 
-そのため、まだProposalの段階である標準化されてない機能/構文を標準化される[前提](https://medium.com/@jayphelps/please-stop-referring-to-proposed-javascript-features-as-es7-cad29f9dcc4b)[にして](http://www.2ality.com/2016/01/ecmascript-2016.html)[話すな](http://teppeis.hatenablog.com/entry/2016/01/es2016-feature-freeze)という[話](http://jser.info/2015/11/16/ecmascript-7-ms-node-js/)が[あった](http://azu.github.io/slide-what-is-ecmascript/)りします。
+そのため、まだProposalの段階である標準化されてない機能/構文を標準化される[前提](https://medium.com/@jayphelps/please-stop-referring-to-proposed-javascript-features-as-es7-cad29f9dcc4b)[にして](http://www.2ality.com/2016/01/ecmascript-2016.html)[話すな](http://teppeis.hatenablog.com/entry/2016/01/es2016-feature-freeze)という[話](http://jser.info/2015/11/16/ecmascript-7-ms-node-js/)が[あった](https://azu.github.io//slide-what-is-ecmascript/)りします。
 
 例えば、次のコードは既に仕様に入ってる(ES2015)構文で書かれたコードでしょうか?
 

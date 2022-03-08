@@ -189,38 +189,38 @@ PhpStormはWebStormの上位製品で、IntelliJはPhpStormも含んでいるUlt
  [1]: http://www.jetbrains.com/webstorm/
  [2]: https://efcl.info/2010/1027/res2023/ "最強のJavaScript IDE 「WebStorm」を使ってみた | Web scratch"
  [3]: https://efcl.info/2012/0226/res3015/ "横浜JSTDDハンズオンでWebStormについて発表してきた | Web scratch"
- [4]: http://azu.github.io/slide/webstorm/webstorm.html#slide1 "WebStorm指南書"
- [5]: http://blog.jetbrains.com/webide/
+ [4]: https://azu.github.io//slide/webstorm/webstorm.html#slide1 "WebStorm指南書"
+ [5]: https://blog.jetbrains.com/webide/
  [6]: http://blog.jetbrains.com/blog/2012/09/03/back-to-school-sale-jetbrains-tools-for-up-to-50-off/ "Back To School sale: JetBrains tools for up to 50% OFF! | JetBrains Company Blog"
  [7]: http://vpc.lifecard.co.jp/
- [8]: http://blog.jetbrains.com/webide/2012/03/new-in-4-0-javascript-completion-variants-ordering/ "New in 4.0: Smarter ordering of JavaScript completion options | WebStorm & PhpStorm Blog"
- [9]: http://blog.jetbrains.com/webide/2012/08/tips-on-jquery-development-in-webstorm/ "Tips on jQuery development in WebStorm | WebStorm & PhpStorm Blog"
+ [8]: https://blog.jetbrains.com/webide/2012/03/new-in-4-0-javascript-completion-variants-ordering/ "New in 4.0: Smarter ordering of JavaScript completion options | WebStorm & PhpStorm Blog"
+ [9]: https://blog.jetbrains.com/webide/2012/08/tips-on-jquery-development-in-webstorm/ "Tips on jQuery development in WebStorm | WebStorm & PhpStorm Blog"
  [10]: http://utweb.jp/blog/archives/1501 "今さらながら知ったWebStormとJSDocの深〜い関係 | 宇都宮ウエブ制作所"
  [11]: http://d.hatena.ne.jp/yuichi_katahira/20120329/1333029233 "WebStorm:追加した独自のコード補完候補をプロジェクトで使用可能にする - 仙台 Ruby Vim JavaScript社長"
  [12]: https://efcl.info/2010/1203/res2152/ "WebStormのコード補完に新しく候補を追加する方法 | Web scratch"
- [13]: http://blog.jetbrains.com/webide/2010/11/working-with-javascript-libraries-in-phpstorm-webstorm/ "Working with JavaScript Libraries in PhpStorm & WebStorm | WebStorm & PhpStorm Blog"
- [14]: http://blog.jetbrains.com/webide/2012/08/closure-syntax/ "New in 5.0: Google Closure Compiler JSDoc annotations | WebStorm & PhpStorm Blog"
- [15]: http://blog.jetbrains.com/webide/2012/03/phpstorm-webstorm-4-0-eap-117-65/ "PhpStorm & WebStorm 4.0 EAP 117.65 | WebStorm & PhpStorm Blog"
- [16]: http://azu.github.io/slide/webstorm/webstorm.html#slide28 "Code Inspections, JSLint, JSHint"
+ [13]: https://blog.jetbrains.com/webide/2010/11/working-with-javascript-libraries-in-phpstorm-webstorm/ "Working with JavaScript Libraries in PhpStorm & WebStorm | WebStorm & PhpStorm Blog"
+ [14]: https://blog.jetbrains.com/webide/2012/08/closure-syntax/ "New in 5.0: Google Closure Compiler JSDoc annotations | WebStorm & PhpStorm Blog"
+ [15]: https://blog.jetbrains.com/webide/2012/03/phpstorm-webstorm-4-0-eap-117-65/ "PhpStorm & WebStorm 4.0 EAP 117.65 | WebStorm & PhpStorm Blog"
+ [16]: https://azu.github.io//slide/webstorm/webstorm.html#slide28 "Code Inspections, JSLint, JSHint"
  [17]: https://img.skitch.com/20120909-xcj2uwdkc25pxw4rg57ddd69y9.png
  [18]: http://plugins.intellij.net/plugin/?webide&pluginId=6971 "JetBrains Plugin Repository :: AngularJS"
- [19]: http://azu.github.io/slide/webstorm/webstorm.html#slide36 "ECMAScript 6 (Harmony)"
+ [19]: https://azu.github.io//slide/webstorm/webstorm.html#slide36 "ECMAScript 6 (Harmony)"
  [20]: https://developer.mozilla.org/en-US/docs/E4X "E4X | MDN"
- [21]: http://azu.github.io/slide/webstorm/webstorm.html#slide30 "バージョン管理連携"
- [22]: http://blog.jetbrains.com/webide/2011/10/javascript-unit-testing-support/ "JavaScript unit testing support | WebStorm & PhpStorm Blog"
+ [21]: https://azu.github.io//slide/webstorm/webstorm.html#slide30 "バージョン管理連携"
+ [22]: https://blog.jetbrains.com/webide/2011/10/javascript-unit-testing-support/ "JavaScript unit testing support | WebStorm & PhpStorm Blog"
  [23]: http://c-brains.jp/blog/wsg/12/01/11-220443.php "PhpStormでjsTestDriverを使ったテストを実行する | バシャログ。"
  [24]: http://code.google.com/p/js-test-driver/wiki/HtmlDoc "Html Doc"
- [25]: http://blog.jetbrains.com/webide/files/2012/04/editor-covered-lines-2.png
- [26]: http://blog.jetbrains.com/webide/2012/04/javascript-unit-testing-with-code-coverage/ "Code Coverage for JavaScript Unit Testing | WebStorm & PhpStorm Blog"
- [27]: http://azu.github.io/slide/Kamakura/busterJS.html#slide27 "JavaScript Testing FrameworkのBusterJSを使う"
- [28]: http://blog.jetbrains.com/webide/2011/04/debugging-javascript-in-google-chrome/ "Debugging JavaScript in Google Chrome | WebStorm & PhpStorm Blog"
- [29]: http://blog.jetbrains.com/webide/2011/11/webstorm-your-node-app/ "WebStorm your Node app! | WebStorm & PhpStorm Blog"
- [30]: http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/ "LiveEdit plugin features in detail | WebStorm & PhpStorm Blog"
+ [25]: https://blog.jetbrains.com/webide/files/2012/04/editor-covered-lines-2.png
+ [26]: https://blog.jetbrains.com/webide/2012/04/javascript-unit-testing-with-code-coverage/ "Code Coverage for JavaScript Unit Testing | WebStorm & PhpStorm Blog"
+ [27]: https://azu.github.io//slide/Kamakura/busterJS.html#slide27 "JavaScript Testing FrameworkのBusterJSを使う"
+ [28]: https://blog.jetbrains.com/webide/2011/04/debugging-javascript-in-google-chrome/ "Debugging JavaScript in Google Chrome | WebStorm & PhpStorm Blog"
+ [29]: https://blog.jetbrains.com/webide/2011/11/webstorm-your-node-app/ "WebStorm your Node app! | WebStorm & PhpStorm Blog"
+ [30]: https://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/ "LiveEdit plugin features in detail | WebStorm & PhpStorm Blog"
  [31]: http://www.youtube.com/watch?v=wCVwdvufTds "WebStorm 5.0 - Live Edit with Google Chrome - YouTube"
  [32]: http://confluence.jetbrains.net/display/WI/Web+IDE+EAP
  [33]: http://d.hatena.ne.jp/masanobuimai/20110420#1303311446
  [34]: http://d.hatena.ne.jp/masanobuimai/20101227#1293454205
- [35]: http://azu.github.io/slide/webstorm/webstorm.html#slide38
+ [35]: https://azu.github.io//slide/webstorm/webstorm.html#slide38
  [36]: http://www.activestate.com/komodo-ide/features
  [37]: https://efcl.info/2010/0920/res1952/
  [38]: http://www.microsoft.com/visualstudio/11/ja-jp/downloads

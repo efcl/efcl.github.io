@@ -80,9 +80,9 @@ Pull RequestなりIssueは日本語でOKなので適当にコミットしてく�
  [1]: http://javascriptweekly.com/ "JavaScript Weekly"
  [2]: http://jser.info/ "JSer.info"
  [3]: http://jser.info/post/15883533195 "オフライン勉強会でJSer.info一周年について発表してきた | JSer.info"
- [4]: http://azu.github.io/slide/offline_study/javascript_world.html#slide25 "乱立するまとめサイト"
- [5]: http://azu.github.io/Meta-Weekly/ "Meta Weekly"
- [6]: http://azu.github.io/Meta-Weekly/
+ [4]: https://azu.github.io//slide/offline_study/javascript_world.html#slide25 "乱立するまとめサイト"
+ [5]: https://azu.github.io//Meta-Weekly/ "Meta Weekly"
+ [6]: https://azu.github.io//Meta-Weekly/
  [7]: https://github.com/azu/Meta-Weekly/blob/master/data.json "data.json"
  [8]: https://travis-ci.org/azu/Meta-Weekly "Travis CI - Free Hosted Continuous Integration Platform for the Open Source Community"
  [9]: https://gist.github.com/bewest/6100033 "using travis-ci to build using docpad, and publish to github pages"

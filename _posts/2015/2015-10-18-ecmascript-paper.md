@@ -21,7 +21,7 @@ ECMAScript関係についてざっとみるカンニングペーパー。
 
 追記: 縦に長い記事読むのが面倒な人向けにスライド形式にしたものも置いておきます。
 
-- <a href="http://azu.github.io/slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a>
+- <a href="https://azu.github.io//slide-what-is-ecmascript/">Introduction | ECMAScriptとは何か？</a>
 
 ## ECMAScriptとは?
 
@@ -140,9 +140,9 @@ Stage 4となったプロポーザルは次期ECMAScriptに取り込まれ、正
 
 言いかたを変えると、次期ECMAScriptは1年ごとに出るので、その時までにStage 4となったものが次期ECMAScriptに入る。
 
-<iframe src="http://azu.github.io/tc39-svg/" height="600px" width="100%"></iframe>
+<iframe src="https://azu.github.io//tc39-svg/" height="600px" width="100%"></iframe>
 
-- [TC39 Process](http://azu.github.io/tc39-svg/ "TC39 Process")
+- [TC39 Process](https://azu.github.io//tc39-svg/ "TC39 Process")
 
 ![ecmascript-timeline](https://monosnap.com/file/XqpEfoMeWxcLw92Jx1UOQ8EWe1e37m.png)
 
@@ -343,7 +343,7 @@ Babelの作者である@[sebmck](https://github.com/sebmck "sebmck")もTranspile
 ![slide](https://azu.github.io/slide/nodejs-es6/img/JavaScript_transformation.png)
 
 - [JavaScript Transformation - JSConf 2015 // Speaker Deck](https://speakerdeck.com/sebmck/javascript-transformation-jsconf-2015)
-- [どうやってECMAScript 6を学び始めるか](http://azu.github.io/slide/nodejs-es6/how-to-learn.html)
+- [どうやってECMAScript 6を学び始めるか](https://azu.github.io//slide/nodejs-es6/how-to-learn.html)
 
 ## Polyfillって何?
 
@@ -401,7 +401,7 @@ Transpilerがあると、策定中の仕様をウェブ開発者が試すこと�
 
 > フィードバック側は最新の情報に気づかないとフィードバックする機会を失う
 
-- [世界のJavaScriptを読もう @ 2014](http://azu.github.io/slide/jser200/javascript-2014.html "世界のJavaScriptを読もう @ 2014")
+- [世界のJavaScriptを読もう @ 2014](https://azu.github.io//slide/jser200/javascript-2014.html "世界のJavaScriptを読もう @ 2014")
 
 ES.nextでも _Stage 1: Proposal_ あたりで、TranspilerやPolyfillを仕様と共に提供して、より多くの人が試せるようにしているケースが多い(TranspilerやPolyfillはStage 4となるのに必要な実装数にはカウントされない)。
 

@@ -32,7 +32,7 @@ tags:
 
 ## 内容
 
-[azu/large-scale-javascript](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript")は、同じ趣旨の[複雑なJavaScriptアプリケーションを考えながら作る話](http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")というスライドと合わせて読む感じの内容になっています。
+[azu/large-scale-javascript](https://github.com/azu/large-scale-javascript "azu/large-scale-javascript")は、同じ趣旨の[複雑なJavaScriptアプリケーションを考えながら作る話](https://azu.github.io//slide/2016/react-meetup/large-scale-javascript.html "複雑なJavaScriptアプリケーションを考えながら作る話")というスライドと合わせて読む感じの内容になっています。
 
 [コーディングガイド](./docs)的なドキュメントや[小さな実装例](https://github.com/azu/presentation-annotator "azu/presentation-annotator: viewing presentation and annotate.")などがおいてあります。
 また[Almin](https://github.com/almin/almin "Almin")でCQRS的な実装するための[参考にした書籍/スライド/記事](https://github.com/azu/large-scale-javascript/blob/master/refs.md)や[ポエム](https://github.com/azu/large-scale-javascript)みたいなやつも書いてあります。

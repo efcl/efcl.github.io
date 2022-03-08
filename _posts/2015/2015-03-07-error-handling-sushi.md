@@ -13,7 +13,7 @@ tags:
 
 `#error_handling_sushi` でJavaScriptのエラーハンドリングについて議論した。
 
-自分はPromiseのエラーハンドリングの握りつぶしの問題を見つけやすくするイベントの実装について、[Promise Error Handling](http://azu.github.io/slide/error-handling/promise-error-handling.html "Promise Error Handling")という話をした。
+自分はPromiseのエラーハンドリングの握りつぶしの問題を見つけやすくするイベントの実装について、[Promise Error Handling](https://azu.github.io//slide/error-handling/promise-error-handling.html "Promise Error Handling")という話をした。
 
 - ログ: [#error_handling_sushi - Togetterまとめ](http://togetter.com/li/791762 "#error_handling_sushi - Togetterまとめ")
 
@@ -172,7 +172,7 @@ tags:
 
 ## Promiseのエラー
 
-- スライド : [Promise Error Handling](http://azu.github.io/slide/error-handling/promise-error-handling.html "Promise Error Handling")
+- スライド : [Promise Error Handling](https://azu.github.io//slide/error-handling/promise-error-handling.html "Promise Error Handling")
 - サンプル: [azu/Unhandled-Rejection-Tracking](https://github.com/azu/Unhandled-Rejection-Tracking "azu/Unhandled-Rejection-Tracking")
 
 
@@ -337,4 +337,4 @@ tags:
 - 特にJavaScriptはcatchの処理が弱い
 - Promiseでのエラーハンドリングはやっぱり皆悩んでる
 	- deferredを使うのはひとつの選択肢なのではと思う
-	- [4.4. DeferredとPromise](http://azu.github.io/promises-book/#deferred-and-promise "4.4. DeferredとPromise")
+	- [4.4. DeferredとPromise](https://azu.github.io//promises-book/#deferred-and-promise "4.4. DeferredとPromise")

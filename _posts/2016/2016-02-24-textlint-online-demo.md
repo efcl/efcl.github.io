@@ -35,7 +35,7 @@ Deku v2は最小限のAPIでReduxと合わせて使いやすい作りなので�
 
 最近のtextlintを3分で把握できるスライドも書いたので、どんな感じのものをかをぱっと知りたい方は見ると面白いかもしれません。
 
-- [3分でわかるtextlint](http://azu.github.io/slide/2016/reject-sushi/textlint.html "3分でわかるtextlint")
+- [3分でわかるtextlint](https://azu.github.io//slide/2016/reject-sushi/textlint.html "3分でわかるtextlint")
 
 ## デザイン
 

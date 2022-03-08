@@ -11,9 +11,9 @@ tags:
 
 ---
 
-[#teppeis_sushi](https://twitter.com/search?f=realtime&q=%20%23teppeis_sushi "#teppeis_sushi")というイベントで、[Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")という話をしました。
+[#teppeis_sushi](https://twitter.com/search?f=realtime&q=%20%23teppeis_sushi "#teppeis_sushi")というイベントで、[Faao - ドメイン駆動設計で作るGitHub Issue Client -](https://azu.github.io//slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -")という話をしました。
 
-[![image](https://efcl.info/wp-content/uploads/2017/07/05-1499182533.png)](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html)
+[![image](https://efcl.info/wp-content/uploads/2017/07/05-1499182533.png)](https://azu.github.io//slide/2017/teppeis-sushi/client-side-ddd-on-github.html)
 
 Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")というGitHubクライアントを書いていてそれの技術的な話です。
 クライアントサイドでDDDを取り入れた設計になっていて、その設計や規約の作り方やそれを守る方法についての話をしました。
@@ -114,7 +114,7 @@ Electronやブラウザなどで動く[faao](https://github.com/azu/faao "faao")
 
 ----
 
-## [Faao - ドメイン駆動設計で作るGitHub Issue Client -](http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -") - azu
+## [Faao - ドメイン駆動設計で作るGitHub Issue Client -](https://azu.github.io//slide/2017/teppeis-sushi/client-side-ddd-on-github.html "Faao - ドメイン駆動設計で作るGitHub Issue Client -") - azu
 
 
 - クライアントサイドでTypeScript + [Almin](https://github.com/almin/almin "Almin") + DDDでの開発

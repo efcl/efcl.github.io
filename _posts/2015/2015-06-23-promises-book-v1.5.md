@@ -13,12 +13,12 @@ tags:
 ---
 
 
-## [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") 
+## [JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本") 
 <iframe src="http://ghbtns.com/github-btn.html?user=azu&repo=promises-book&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
 
 
-去年の6月23日に[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") Ver 1.0をリリースしてから今日でちょうど一年になります。
+去年の6月23日に[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本") Ver 1.0をリリースしてから今日でちょうど一年になります。
 
 - [JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")
 
@@ -82,7 +82,7 @@ tags:
 
 Ver 1.4 - 1.5までは翻訳版のリリースやECMAScript 6正式版への対応などが中心なので、文章の構成自体は変化ないと思います。
 
-[ECMAScript 2015](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript 2015")も正式に出たことなので、Promiseについてまだ知らない人は[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")を読んでみるといいかもしれません。
+[ECMAScript 2015](http://www.ecma-international.org/publications/standards/Ecma-262.htm "ECMAScript 2015")も正式に出たことなので、Promiseについてまだ知らない人は[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")を読んでみるといいかもしれません。
 
 また、O'Reillyの方からPromiseについて扱う[JavaScript with Promises](http://shop.oreilly.com/product/0636920032151.do)という書籍が出るようです。(最初は2014年5月22日発売とかでこれに合わせてPromise本を出す目標にしていましたが、実際に出たのは一年後…)
 
@@ -113,7 +113,7 @@ ECMAScriptは[ISO/IEC 16262](http://www.iso.org/iso/iso_catalogue/catalogue_tc/c
 - [Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)](http://www.slideshare.net/takesako/devsumi2010-ecmascript5-isoiec-jtc1sc22 "Devsumi2010 Ecmascript5 (ISO/IEC JTC1/SC22)")
 - [OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1210/23/news153.html "OSSコミュニティの“中の人”（4）：できないことは全部やる。できる依頼は断る――竹迫氏竹迫良範氏インタビュー【後編】 (1/2) - ＠IT")
 
-その過程で何か見つけたらPromise本の方へと反映したり、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺を見ていく感じだったり、[unhandled rejectionへの対応](http://azu.github.io/slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")等の話を追加していくかもしれません。
+その過程で何か見つけたらPromise本の方へと反映したり、まだ[Issues](https://github.com/azu/promises-book/issues "Issues · azu/promises-book")があるのでそれをやっていったり、[Cancelable Promise](https://github.com/whatwg/fetch/issues/27)の話が未だに終結してないのでその辺を見ていく感じだったり、[unhandled rejectionへの対応](https://azu.github.io//slide/error-handling/promise-error-handling.html "unhandled rejectionへの対応")等の話を追加していくかもしれません。
 
 という感じです。
 

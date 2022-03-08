@@ -15,7 +15,7 @@ tags:
 
 JavaScriptにおけるPromiseの仕様といえば、次期ECMAScriptの[ECMAScript Language Specification ECMA-262 6th Edition – DRAFT](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects "ECMAScript Language Specification ECMA-262 6th Edition – DRAFT")で策定されています。
 
-このES6 Promisesについて詳しくは[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")という無料の電子書籍で書いたのでこちらを参照して下さい。
+このES6 Promisesについて詳しくは[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")という無料の電子書籍で書いたのでこちらを参照して下さい。
 
 以前、Promiseについて紹介した時に以下のように書いてました。
 
@@ -118,7 +118,7 @@ via [CSS Font Loading Module Level 3を試してみた - console.blog(self);](ht
 このように、策定中の仕様も多いですが、色々な仕様がPromiseを使っています。
 そのため、今後出てくるAPIを使う際にはPromiseの基本的な知識は必要になってくると思います。
 
-- [JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")
+- [JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")
 
 ## どうやって調べたか
 

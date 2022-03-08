@@ -14,7 +14,7 @@ tags:
 ---
 
 
-タイトル通り[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本")の中国語と韓国語の翻訳がそれぞれリリースされました。
+タイトル通り[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本")の中国語と韓国語の翻訳がそれぞれリリースされました。
 
 ## 中国語版
 

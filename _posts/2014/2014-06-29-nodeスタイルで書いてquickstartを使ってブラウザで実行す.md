@@ -79,7 +79,7 @@ QuickStartは自身をローダとして使うことが出来ます。
 
 どういう事かというと、以下のURLにChromeでアクセスしてChrome Dev Toolsを開いて見ると`require`で読み込むモジュールを読み込んでいる様子が分かると思います。(このローダはローカルで使うことを想定してるはずなので、プロダクトはビルドしてものを使うと思います)
 
-<http://azu.github.io/quickstart-example/>
+<https://azu.github.io//quickstart-example/>
 
 ワザといらないものも大量に読み込んでるのでかなり遅いですが…
 
@@ -140,8 +140,8 @@ transforms系の機能に依存しなければ、BrowserifyとQuickStartどち�
  [4]: https://github.com/azu/quickstart-example "azu/quickstart-example"
  [5]: https://github.com/spotify/quickstart#entry-point "Entry Point"
  [6]: https://github.com/spotify/quickstart#command-line-interface "command line interface"
- [7]: http://azu.github.io/slide/JSojisan/ "カジュアルJavaScript AST"
- [8]: http://azu.github.io/slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
+ [7]: https://azu.github.io//slide/JSojisan/ "カジュアルJavaScript AST"
+ [8]: https://azu.github.io//slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
  [9]: http://i.gyazo.com/ba484c31e8389bf0d90ce778c1fe8c79.gif
  [10]: https://efcl.info/2014/0622/res3933/ "Source Mapを扱う関連ライブラリのまとめ | Web scratch"
  [11]: http://kybernetikos.github.io/jsSandbox/srcmaps/dynamic.html "Dynamic Source Maps"

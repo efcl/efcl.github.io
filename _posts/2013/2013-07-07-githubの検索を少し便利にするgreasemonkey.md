@@ -91,7 +91,7 @@ JSDoc + Google Closure Compiler拡張の記法なら大体の事は書けるの�
  [19]: http://www.2ality.com/2011/08/jsdoc-intro.html "An introduction to JSDoc"
  [20]: https://sites.google.com/site/jsdoc3manualjp/home "JsDoc3-manual-jp"
  [21]: http://utweb.jp/blog/archives/1501 "今さらながら知ったWebStormとJSDocの深〜い関係 | 宇都宮ウエブ制作所"
- [22]: http://blog.jetbrains.com/webide/2012/08/closure-syntax/ "New in 5.0: Google Closure Compiler JSDoc annotations | WebStorm & PhpStorm Blog"
+ [22]: https://blog.jetbrains.com/webide/2012/08/closure-syntax/ "New in 5.0: Google Closure Compiler JSDoc annotations | WebStorm & PhpStorm Blog"
  [23]: https://github.com/Constellation/doctrine "Constellation/doctrine"
  [24]: http://engineer.dena.jp/2013/05/migration-from-jsdoc2-to-jsdoc3.html "JSDoc Toolkit→JSDoc 3移行ガイド - Technology of DeNA"
  [25]: http://brackets.io/ "Brackets"

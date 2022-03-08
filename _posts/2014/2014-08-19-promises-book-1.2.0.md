@@ -18,7 +18,7 @@ tags:
 以前[JavaScript Promiseの本を書きました | Web Scratch](https://efcl.info/2014/0623/res3943/ "JavaScript Promiseの本を書きました | Web Scratch")でも書いていましたが、
 電子版である意味は常に書籍が更新できるという点が大きいです。
 
-そのため、[JavaScript Promiseの本](http://azu.github.io/promises-book/ "JavaScript Promiseの本") も
+そのため、[JavaScript Promiseの本](https://azu.github.io//promises-book/ "JavaScript Promiseの本") も
 semverな感じでアップデートしていっています。
 
 どのような変更があったかはGitHub Releaseにかかれているのでそちらを参考にして下さい。(RSSで購読も出来ます)
@@ -35,7 +35,7 @@ semverな感じでアップデートしていっています。
 
 ### 1.1.0 (2014-06-25)
 
-[コラム: Promiseは常に非同期?](http://azu.github.io/promises-book/#promise-is-always-async "コラム: Promiseは常に非同期?") への加筆
+[コラム: Promiseは常に非同期?](https://azu.github.io//promises-book/#promise-is-always-async "コラム: Promiseは常に非同期?") への加筆
 
 * **column-promise-resolve:**
   * 同期と非同期の混在の問題についてを追加 ([de5f8208](https://github.com/azu/promises-book/commit/de5f82082909484155d8aa94005b676a9f65c2e2))

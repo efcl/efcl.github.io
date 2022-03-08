@@ -14,13 +14,13 @@ tags:
 GitHubにブックマークをコミットして管理できるはてなブックマークみたいなブックマークシステムを書きました。
 詳しいモチベーションなどについては次のスライドで発表しています。
 
-- スライド: [ブックマーク管理システム: 動くアプリをとにかく早く安く作ろう](http://azu.github.io/slide/2019/tech-link/asocial-bookmark.html)
+- スライド: [ブックマーク管理システム: 動くアプリをとにかく早く安く作ろう](https://azu.github.io//slide/2019/tech-link/asocial-bookmark.html)
 
 はてなブックマークのAPIが2019/5/31ぐらいエラーを返すようになって困ったので自分用のブックマークの仕組みを突貫で作りました。
 （はてなブックマーク APIは2019/6/3には直ってました。）
 逆にじっくり開発していくアプリについては次のスライドで話しています。
 
-- スライド: [考えながらクライアントサイドのウェブアプリケーションを作る話](http://azu.github.io/slide/2019/tech-link/develop-app-with-thinking.html)
+- スライド: [考えながらクライアントサイドのウェブアプリケーションを作る話](https://azu.github.io//slide/2019/tech-link/develop-app-with-thinking.html)
 
 ## [azu/asocial-bookmark: Personal Bookmark System.](https://github.com/azu/asocial-bookmark)
 

@@ -69,8 +69,8 @@ RSSを購読しようとしたのですが、キーワードごとにやるの�
 
 => [npmとbrowserifyを使ったクライアントサイドのウェブアプリ開発 | Web scratch][14]
 
- [1]: http://azu.github.io/tech-video-rss-searcher/ "Tech Video RSS Searcher"
- [2]: http://azu.github.io/tech-video-rss-searcher/
+ [1]: https://azu.github.io//tech-video-rss-searcher/ "Tech Video RSS Searcher"
+ [2]: https://azu.github.io//tech-video-rss-searcher/
  [3]: https://github.com/azu/tech-video-rss-searcher/
  [4]: http://caniuse.com/#feat=download
  [5]: https://github.com/azu/tech-video-rss-searcher/tree/gh-pages "azu/tech-video-rss-searcher"

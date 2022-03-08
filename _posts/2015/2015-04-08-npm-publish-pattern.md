@@ -151,7 +151,7 @@ npm publishに対するグローバルなホックは書けないので、こう
 
 あと細かな工夫として　`npm-patch` の方はPublicで公開される可能性があるので、最初に確認を出すようにしてます。(ただEnter押せばいいだけ)
 
-![npm-patch](http://efcl.info/wp-content/uploads/2015/04/09-1428537317.png)
+![npm-patch](https://efcl.info/wp-content/uploads/2015/04/09-1428537317.png)
 
 間違ってEnterおしても、installやtestなどが走るのでその間にCtrl+Cとかでキャンセルできるので数秒は猶予があります。
 

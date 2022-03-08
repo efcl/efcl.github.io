@@ -140,8 +140,8 @@ DOM APIのように全てをカバーするわけではありませんが、最�
 </pre>
 </div>
 
- [1]: http://azu.github.io/slide/JSojisan/ "カジュアルJavaScript AST"
- [2]: http://azu.github.io/slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
+ [1]: https://azu.github.io//slide/JSojisan/ "カジュアルJavaScript AST"
+ [2]: https://azu.github.io//slide/tkbjs/js-ast-walker.html "JavaScript AST Walker"
  [3]: https://github.com/square/es6-module-transpiler "ES6 Module Transpiler"
  [4]: https://github.com/square "Square"
  [5]: https://github.com/square/esnext "esnext"

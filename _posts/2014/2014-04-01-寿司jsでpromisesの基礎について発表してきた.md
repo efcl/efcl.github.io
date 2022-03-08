@@ -18,8 +18,8 @@ tags:
 <li><a href="http://togetter.com/li/649498" title="#寿司js - Togetterまとめ">#寿司js &#8211; Togetterまとめ</a></li>
 </ul>
 <hr />
-<p><a href="http://azu.github.io/slide/sushijs/">Promises Starter</a></p>
-<p><a href="http://azu.github.io/slide/sushijs/" title="Promises Starter">Promises Starter</a>ではPromiseの基本的な部分だけなので、<code>Pormise.all</code>等実際に使うと便利的な話は入れてないです。</p>
+<p><a href="https://azu.github.io//slide/sushijs/">Promises Starter</a></p>
+<p><a href="https://azu.github.io//slide/sushijs/" title="Promises Starter">Promises Starter</a>ではPromiseの基本的な部分だけなので、<code>Pormise.all</code>等実際に使うと便利的な話は入れてないです。</p>
 <p>PromiseのAPIの概要、Promiseの状態の種類、基本的なresolve/rejectの流れ、XHRの例、エラーハンドリングについてがメインな感じです。</p>
 <p>続きはウェブで ということで、今<a href="https://github.com/azu/Promises-book" title="azu/promises-book">azu/promises-book</a>というものを書いているので、<br />
 ここが分かりにくいとかここが間違ってるとか、こういうこと書いたほうがいいとかあったらフィードバックお願いします。</p>
@@ -31,9 +31,9 @@ tags:
 <blockquote class="twitter-tweet" lang="en"><p>この雰囲気でLTするのか。。<a href="https://twitter.com/search?q=%23%E5%AF%BF%E5%8F%B8JS&amp;src=hash">#寿司JS</a> <a href="http://t.co/90D5DAx8JD">pic.twitter.com/90D5DAx8JD</a></p>
 <p>&mdash; Kazuhito Hokamura (@hokaccha) <a href="https://twitter.com/hokaccha/statuses/450573522016813056">March 31, 2014</a></p></blockquote>
 <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<h2><a href="http://azu.github.io/slide/sushijs/" title="Promises Starter">Promises Starter</a> &#8211; azu</h2>
+<h2><a href="https://azu.github.io//slide/sushijs/" title="Promises Starter">Promises Starter</a> &#8211; azu</h2>
 <blockquote>
-<p><a href="http://azu.github.io/slide/sushijs/" title="Promises Starter">Promises Starter</a>
+<p><a href="https://azu.github.io//slide/sushijs/" title="Promises Starter">Promises Starter</a>
 </p></blockquote>
 <p>最初に自分がPromiseについて発表しました</p>
 <blockquote class="twitter-tweet" lang="en"><p>これが寿司js <a href="https://twitter.com/search?q=%23%E5%AF%BF%E5%8F%B8js&amp;src=hash">#寿司js</a> <a href="http://t.co/9Go3dzMZvL">pic.twitter.com/9Go3dzMZvL</a></p>

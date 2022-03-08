@@ -18,7 +18,7 @@ tags:
 ---
 [横浜JSTDDハンズオン][1]に参加してきて、WebStormというIDEはどういうものなのかについて発表してきました。
 
-- <a href="http://azu.github.io/slide/webstorm/webstorm.html#slide1">WebStorm指南書</a>
+- <a href="https://azu.github.io//slide/webstorm/webstorm.html#slide1">WebStorm指南書</a>
 
 発表してきた資料置いておきます。
 
@@ -26,11 +26,11 @@ tags:
 また、最近出たばかりの[WebStorm 4.0 Early Access Program][2]についても書いてあるので興味がある人はどうぞ。
 
  
-- <a href="http://azu.github.io/slide/webstorm/webstorm.html#slide12">スライドの見方</a>
+- <a href="https://azu.github.io//slide/webstorm/webstorm.html#slide12">スライドの見方</a>
 
 スライドは上記のように機能の紹介がベースで、それの利用方法やこういう機能があって便利という感じのスライドになってます。
 
-- <a href="http://azu.github.io/slide/webstorm/webstorm.html#slide39">WebStormの楽しさ</a>
+- <a href="https://azu.github.io//slide/webstorm/webstorm.html#slide39">WebStormの楽しさ</a>
 
 Web開発等JavaScript周りの環境も変化してきているので、それにあわせてエディタやIDEももっと変化するといいなーと思う部分にいろいろ挑戦してる感じがしてるのがWebStormが好きな所でもあります。  
 とりあえず、[WebStorm][3]は[30-day trial][4]なので、試してみるといいかもしれません。他のエディタ等もいろいろ競争して質が上がっていくといいなー。
@@ -116,7 +116,7 @@ Seleniumとかの話
  
 
  [1]: http://atnd.org/events/25519
- [2]: http://blog.jetbrains.com/webide/2012/02/phpstorm-webstorm-4-0-early-access-program-started/
+ [2]: https://blog.jetbrains.com/webide/2012/02/phpstorm-webstorm-4-0-early-access-program-started/
  [3]: http://www.jetbrains.com/webstorm/index.html
  [4]: http://www.jetbrains.com/webstorm/download/index.html
  [5]: https://yukar.in/note/ckFoT5

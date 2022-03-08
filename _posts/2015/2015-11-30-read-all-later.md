@@ -43,7 +43,7 @@ ElectronアプリじゃなくてNode.jsのCLIでも良かったのですが面�
 ## 目的
 
 [JavaScript Weekly](http://javascriptweekly.com/ "JavaScript Weekly")のようなWeekly系のメルマガを購読しててもやっぱり単位がでかいのでちょっと読みにくいなと思ったため作りました。
-([Meta Weekly](http://azu.github.io/Meta-Weekly/ "Meta Weekly")というサイトにWeekly系のメルマガをまとめています)
+([Meta Weekly](https://azu.github.io//Meta-Weekly/ "Meta Weekly")というサイトにWeekly系のメルマガをまとめています)
 
 最初はPocketのようなアプリを作ろうとしましたが、Pocketのアプリが悪くなかったのでもっと使うためにまとめて突っ込めるアプリを書きました。
 
