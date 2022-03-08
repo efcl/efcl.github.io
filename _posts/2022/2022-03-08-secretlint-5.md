@@ -59,7 +59,7 @@ Secretlint 5は、機能追加的な変更はありません。
 
 ## SARIF形式の対応
 
-5.0.0の変更ではないですが、、SecretlintでSARIF形式の出力に対応しました。
+5.0.0の変更ではないですが、SecretlintでSARIF形式の出力に対応しました。
 
 - [Release v4.2.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v4.2.0)
 
