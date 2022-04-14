@@ -82,7 +82,7 @@ Yarn v1 + Lernaから、Yarn v1 + Turborepoに移行していくつか異なる�
 
 ```
 yarn remove lerna -W
-yarn add @lerna-lite/cli -d -W
+yarn add @lerna-lite/cli --dev -W
 ```
 
 `@lerna-lite/cli`を入れると`lerna`コマンドが利用できるので、他に変更する必要はありません。
