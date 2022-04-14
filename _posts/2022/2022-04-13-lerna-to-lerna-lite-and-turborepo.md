@@ -62,7 +62,7 @@ Bazelなどもこれらの機能を持っていますが、設定が複雑にな
 
 - [perf: introduce turborepo by azu · Pull Request #215 · secretlint/secretlint](https://github.com/secretlint/secretlint/pull/215)
 
-Yarn v1 + Lernaでした、Turborepoに移行していくつか異なる点はありました。(Turborepo v1.1)
+Yarn v1 + Lernaから、Yarn v1 + Turborepoに移行していくつか異なる点はありました。(Turborepo v1.1)
 
 - Turborepoの方が厳密なので、入れ忘れていたdevDependenciesがエラーになった
 - `ENV_A=1 turbo run build` と実行して、各パッケージの`npm run build`には`ENV_A`が渡されなかった
