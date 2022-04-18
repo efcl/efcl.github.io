@@ -181,6 +181,11 @@ pre {
   background-color: #f9f9f9;
 }
 
+video {
+  object-fit: fill;
+  max-width: 100%;
+}
+
 pre code {
   padding: 0;
   font-size: 100%;

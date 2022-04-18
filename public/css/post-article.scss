@@ -1,5 +1,7 @@
 @import "color-map";
+
 $toolbar-background-color: rgb(202, 197, 190);
+
 .github-left-icon {
   left: 0;
   top: 0;
@@ -10,6 +12,7 @@ $toolbar-background-color: rgb(202, 197, 190);
 
 .pre-post-toolbar {
   margin-bottom: 1em;
+
   .edit-on-github {
     @extend .github-left-icon
   }
@@ -18,6 +21,7 @@ $toolbar-background-color: rgb(202, 197, 190);
 .post-post-toolbar {
   background: $toolbar-background-color;
   margin-top: 1em;
+
   .edit-on-github {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -49,11 +53,12 @@ $toolbar-background-color: rgb(202, 197, 190);
   padding: 1em;
 }
 
-.announce-area{
+.announce-area {
   border-top: 2px dotted $accent-color;
   border-bottom: 2px dotted $accent-color;
   padding-bottom: 1em;
-  .announce-text{
+
+  .announce-text {
     padding-left: 1em;
     padding-right: 1em;
   }

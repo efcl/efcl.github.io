@@ -246,6 +246,11 @@ pre {
   background-color: #f9f9f9;
 }
 
+video {
+  object-fit: fill;
+  max-width: 100%;
+}
+
 pre code {
   padding: 0;
   font-size: 100%;
@@ -354,7 +359,7 @@ tbody tr:nth-child(odd) th {
  * Center the page content.
  */
 .container {
-  max-width: 60rem;
+  max-width: 72rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -1086,8 +1091,8 @@ a.sidebar-nav-item:focus {
 }
 .search .search-box input[type=search]:focus {
   box-sizing: border-box;
-  box-shadow: 0 0 5px #51cbee;
-  border: 1px solid #51cbee;
+  box-shadow: 0 0 5px rgb(81, 203, 238);
+  border: 1px solid rgb(81, 203, 238);
 }
 .search .search-box input[type=submit] {
   text-indent: -9999px;
@@ -1099,7 +1104,7 @@ a.sidebar-nav-item:focus {
   position: absolute;
   width: 1.5rem;
   height: 1.5rem;
-  background: #cac5be url("../svg/search.svg") no-repeat center top;
+  background: rgb(202, 197, 190) url("../svg/search.svg") no-repeat center top;
   background-size: 100% auto;
 }
 .search .search-box input[type=search]:focus + input[type=submit] {
@@ -1114,7 +1119,7 @@ a, code {
 .github-left-icon, .post-post-toolbar .edit-on-github, .pre-post-toolbar .edit-on-github {
   left: 0;
   top: 0;
-  background: #cac5be url("../svg/github.svg") no-repeat left center;
+  background: rgb(202, 197, 190) url("../svg/github.svg") no-repeat left center;
   background-size: 1em 1em;
   padding-left: 1em;
 }
@@ -1123,7 +1128,7 @@ a, code {
   margin-bottom: 1em;
 }
 .post-post-toolbar {
-  background: #cac5be;
+  background: rgb(202, 197, 190);
   margin-top: 1em;
 }
 .post-post-toolbar .edit-on-github {
