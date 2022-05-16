@@ -15,6 +15,12 @@ tags:
 
 - [Lerna is largely unmaintained · Issue #2703 · lerna/lerna](https://github.com/lerna/lerna/issues/2703)
 
+追記: NxによってLernaがメンテナンスされるそうです。
+
+- [Announcement: Passing the torch · Issue #3121 · lerna/lerna](https://github.com/lerna/lerna/issues/3121)
+- [Lerna is dead — Long Live Lerna. If you’re in a hurry, here’s the TL;DR: | by Juri Strumpflohner | May, 2022 | Nrwl](https://blog.nrwl.io/lerna-is-dead-long-live-lerna-61259f97dbd9)
+
+
 次の記事で書いていますが、Lernaはもともとall-in-one的なツールでしたが、それぞれの分野でメジャーなものが各機能と同等のものを実装しています。
 一番大きな所としては、Workspaces機能を各パッケージマネージャーが実装したため、Lerna独自でこの機能を持つ必要性がかなり薄くなりました。
 
