@@ -75,7 +75,7 @@ Bibiには`?book=url`で指定したリモートURLのepubファイルを開く�
 
 6月は[Maintainer Month](https://maintainermonth.github.com/)ということで、[bi-epub-reader](https://github.com/azu/bi-epub-reader)のメンテナンス性を高める工夫について書いてみました。
 
-> Maintainer Month is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.
+> Maintainer Month is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.  
 > -- [Maintainer Month](https://maintainermonth.github.com/)
 
 [Maintainer Month](https://maintainermonth.github.com/)はGitHubが主催していて、オープンソースのメンテナーが集まって情報共有したり、祝ったりするイベントらしいです。
