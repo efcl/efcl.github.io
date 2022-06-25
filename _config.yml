@@ -46,7 +46,7 @@ lsi: false
 # Build settings
 markdown: CommonMark
 commonmark:
-  options: ["FOOTNOTES", "UNSAFE"]
+  options: ["SMART", "FOOTNOTES", "UNSAFE"]
   extensions: ["strikethrough", "autolink", "table"]
 highlighter: rouge
 plugins:
