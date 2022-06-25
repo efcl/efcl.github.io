@@ -100,17 +100,25 @@ tags:
     </td>
     
     <td width="324" valign="top">
+{% raw %}
       変数名の定義はコンテンツ、テンプレートどちらでもできる。 <br />変数名に入れたものはテンプレートから参照して使う。 <br />{{変数名|プレースホルダ}} で参照できて、プレースホルダ部分は変数が定義されてないときの初期値を決められる。
+{% endraw %}
     </td>
   </tr>
   
   <tr>
     <td width="200" valign="top">
+
+{% raw %}
       @Titleや@Bodyなど <br />{{PrimaryNavigation}} <br />{{SecondaryNavigation}} <br />{{Navigation}} <br />{{Breadcrumbs}}
+{% endraw %}
     </td>
     
     <td width="324" valign="top">
+{% raw %}
+
       最初から決められてる特殊な変数がある。 <br /><a href="http://droppages.com/Getting+started/Managing+templates">Managing templates | DropPages.com</a> <br />テンプレートを書くときに、子のコンテンツを列挙する{{SecondaryNavigation}}やサイトマップ的な{{Navigation}}やパンくずリスト的な{{Breadcrumbs}}などは結構工夫すればブログみたいになる
+{% endraw %}
     </td>
   </tr>
   
@@ -120,7 +128,11 @@ tags:
     </td>
     
     <td width="324" valign="top">
+{% raw %}
+
       _drafts という名前でコンテンツ内にフォルダを作れば、それはドラフト扱いになり公開されない。 <br />フォルダじゃなくても_と先頭につければ{{Navigation}} <br />などの列挙対象にはならない気がする。(直接URLたたくとアクセスできるけど)
+
+{% endraw %}
     </td>
   </tr>
 </table>

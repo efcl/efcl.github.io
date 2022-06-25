@@ -58,7 +58,7 @@ function hello(name) {
  * @param {*} object
  * @param {string} propertyName
  * @param {string} propertyValue
- * @param {{force: boolean}} options
+ * @param { {force: boolean} } options
  * @example
  * const object = {};
  * update(object, "key", "value", { force: true })

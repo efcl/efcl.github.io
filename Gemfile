@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 2.1'
-gem 'redcarpet', '3.3.3'
-gem 'jemoji'
-gem 'jekyll-sitemap'
+gem 'jekyll', '~> 3.6.1'
 gem 'rake'
 gem 'rake-jekyll'
 gem 'rouge'
+group :jekyll_plugins do
+  gem 'jemoji'
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-commonmark'
+end

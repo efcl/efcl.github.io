@@ -15,6 +15,7 @@ title: Home
     </article>
     {% endfor %}
     <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
         <a href="/page/{{ paginator.previous_page }}/" class="previous">新しい記事へ</a>
@@ -24,4 +25,5 @@ title: Home
         <a href="/page/{{ paginator.next_page }}/" class="next" rel="next">古い記事へ</a>
         {% endif %}
     </div>
+    {% endif %}
 </div>

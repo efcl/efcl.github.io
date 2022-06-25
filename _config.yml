@@ -5,10 +5,10 @@ description: "ブラウザ/JavaScript等についてのブログ"
 keywords:
   - "JavaScript"
   - "ブラウザ"
+  - "Browser"
   - "ECMAScript"
-  - "Objective-C"
-  - "Firefox"
   - "拡張機能"
+  - "Security"
 url: "https://efcl.info"
 baseurl: ""
 production_url : "https://efcl.info"
@@ -44,10 +44,12 @@ permalink: /:year/:month/:day/:title/
 safe: true
 lsi: false
 # Build settings
-markdown: redcarpet
+markdown: CommonMark
+commonmark:
+  options: ["FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 highlighter: rouge
-redcarpet:
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "with_toc_data"]
-gems:
+plugins:
+  - jekyll-paginate
   - jekyll-sitemap
   - jemoji

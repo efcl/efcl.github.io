@@ -52,6 +52,8 @@ testem自体は特にmatcher等は持ってなくて、[adapter][4] を書いて
 
 [testem-custom-test-page / tests.html][9]
 
+{% raw %}
+
     < !doctype html>
     <html>
     <head>
@@ -65,6 +67,7 @@ testem自体は特にmatcher等は持ってなくて、[adapter][4] を書いて
     <body></body>
     </html>
     
+{% endraw %}
 
 直接HTMLにテストしたいファイルを並べても問題はありませんが、せっかくなので `testem.json` と連動した動きにしたいと思います  
 HTMLを見ると気付きますが、 `testem.json` の `src_files` に対応する部分を展開するテンプレートが使えます。
