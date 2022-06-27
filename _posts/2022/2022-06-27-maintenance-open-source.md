@@ -53,7 +53,7 @@ GitHubが[GitHub社が依存してるオープンソースのメンテナー900�
 
 - [Thank you to our maintainers | The GitHub Blog](https://github.blog/2022-06-24-thank-you-to-our-maintainers/)
 
-後、1週間もないですが、[Maintainer Month](https://maintainermonth.github.com/)に乗っかる形でオープンソースのメンテナンスとかGitHub Sponsorsとかについて書けるといいなーと思います。せっかくのイベントだし、色々な人が色々書くと良さそうと思って、オープンソースをメンテナンスについて書いています。
+後、1週間もないですが、[Maintainer Month](https://maintainermonth.github.com/)に乗っかる形で、オープンソースのメンテナンスについて書きます。
 
 ## オープンソースをメンテナンスするコツ
 
