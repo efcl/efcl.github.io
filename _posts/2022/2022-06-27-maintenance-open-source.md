@@ -25,7 +25,7 @@ tags:
 - [今年のOSS活動振り返り @ 2014 | Web Scratch](https://efcl.info/2014/12/31/oss-in-2014/)
 
 pushしたものの中にはただのサンプルコードなども多くありますが、作った[GitHubリポジトリ](https://github.com/search?q=user%3Aazu+user%3Aefcl+user%3Ajser+user%3Aalmin+user%3Atextlint+user%3Atextlint-ja+user%3Atextlint-rule+user%3AJXA-userland+user%3Ajs-primer+user%3Aecmascript-daily+user%3Aasciidwango+user%3Asecretlint+user%3Ahonkit+user%3Asecurity-alert&type=Repositories)は1000コ(forkを除く)ほどあり、
-ここ数年はJavaScript関係が多かったため、[npm](https://www.npmjs.com/)へ公開しているパッケージは654コありました。
+ここ数年はJavaScript関係が多かったため、[npm](https://www.npmjs.com/)へ[公開しているパッケージ](https://npms.io/search?q=maintainer%3Aazu)は600コほどありました。
 
 また、[JSer.info](https://jser.info/)というJavaScriptの情報サイトを10年以上やっていて、このサイトもMITライセンスとCC-BYで記事やデータを公開しているのでオープンソースです(継続して集めたデータを[jser/dataset](https://github.com/jser/dataset)として公開もしています)。
 
@@ -181,14 +181,14 @@ npx migrate-travis-ci-to-github-actions
 ## 主語を持つ
 
 次のトピックは、「主語を持つ」ということですが、これはオープンソースをやるときにそのプロダクト/ライブラリは誰のために作ってるかを意識するという話です。
-これは、主に他の人からIssueやPull Requestなどで機能追加などの要望を受けたときにどうするという話に関係しています。
+このトピックは、主に他の人からIssueやPull Requestなどで機能追加などの要望を受けたときにどうするという話に関係しています。
 
 主語が"I"だったら無理して機能を受け入れる必要がないし、主語が"We"だったら他の人の意見を聞いて判断するのが良いと思います。
 
 自分用に作ったに対して(主語がIの場合)、別の人から要望とかPRがきても、それが大変だったりメンテナンスを大変にするものであるなら断っていいはずです。
 オープンソースなので、そのリポジトリをForkして機能を追加できるので、モチベーションが湧かない要望などをはForkを推奨したり、実装を考えてもらったりします。
 
-たとえば、vscode-read-aloud-textをVSCode拡張を作ったりしていたのですが、結構Proof of Concept的な拡張だったのであんまり開発を続ける気はありませんでした。
+たとえば、vscode-read-aloud-textというVSCode拡張を作ったりしていたのですが、結構Proof of Concept的な拡張だったのであんまり開発を続ける気はありませんでした。
 ですが、いくつかIssueなどで要望が来たので、実装できそうなやり方などを教えてForkを推奨していました。
 
 - [VSCodeで音声読み上げでの文章デバッグする拡張 - vscode-read-aloud-text | Web Scratch](https://efcl.info/2019/01/05/vscode-read-aloud-text/)
@@ -207,7 +207,17 @@ npx migrate-travis-ci-to-github-actions
 ルールは全て外部のプラグインにすることで、あらゆる言語や構文にも対応できるような仕組みにしています。
 これは、textlint自体が全ての言語(英語、日本語、中国語、絵文字語?)などに対応するのは不可能だから、プラガブルな構成をとったという現実的な話でもあります。
 
-自分は主語が"I"のプロダクトを作ることが多いですが、"We"なプロダクトの方が継続性はあると思ってるので、複数人で開発できるように1人で作ってる段階でもドキュメントだったりワークフローを少しずつ足していくことが多いです。
+プラグインの仕組みを明確に用意しなくても、内部的にパッケージが分かれているだけでも、拡張性が上がります。
+これは、JavaScriptのような実行環境ごとに利用できるAPIが異なるような環境でも役立つ方法で、コア部分をパッケージとして分けていくと、別の環境(ブラウザ、Cloudflare Workers、Denoなど)にも対応しやすいです。
+今は[monorepo向けのツール](https://monorepo.tools/)がたくさんあるので、パッケージを分けてもmonorepoにしておけば開発の負荷は大きくは増えません。
+
+プラグインの仕組みを明示的には持ってないけど、パッケージを分けてmonorepoにしているケース:
+
+- [azu/power-doctest: JavaScript Doctest for JavaScript, Markdown and Asciidoc.](https://github.com/azu/power-doctest)
+- [Markdownで年表的なタイムラインを管理するツール | Web Scratch](https://efcl.info/2019/01/23/mdline/)
+
+自分は主語が"I"のプロダクトを作ることが多いですが、"We"なプロダクトの方が継続性はあると思っています。
+そのため、複数人で開発できるように1人で作ってる段階でもドキュメントだったりワークフローを少しずつ足していくことが多いです。
 
 ## やる事で場所を変える
 
@@ -216,3 +226,113 @@ npx migrate-travis-ci-to-github-actions
 - [ ] 場所を移動することで進める
 - [ ] textlintの例
 - [ ] jsprimerの例
+
+## PRのレビューを丁寧にやる
+
+Pull Requestのレビューは丁寧にやることを心がけています。
+利用者やContributorとの接点はIssueやPRが大部分を占めているため、PRのレビューを丁寧にやることは重要です。
+
+PRのレビューを丁寧にやるというのはレビュー自体のことだけではなく、レビューする前 → レビュー → マージ後を丁寧にやるという話です。
+「ここ直せばいい」とわかっていても、その修正をPRまで出してくれる人は意外と多くはありません。
+そのため、PRを受け付けているよという意思表示から始まります。
+
+### PR歓迎の意思表示をする
+
+たとえば、Issueでバグを報告してもらったらときに、その問題の原因が明確なら、感謝と共にPRも歓迎してるよって返すのもいいと思います。
+
+> Thanks for finding this error, a PR is welcome!
+> ... Bugの原因、修正方法 をかく ...
+
+自分は[Saved replies](https://github.com/settings/replies)に、このパターンが入ったりしていました。
+
+また、GitHubには"good first issue"や"help wanted"などの少し特別な意味を持ったラベルもあります。
+こういったラベルを付けることで意思表示することも大事だと思います。実際にこのラベルを見てPRをしてくれる人もいます。
+
+- [Good First Issue: Issues for your first open-source contribution](https://goodfirstissue.dev/)
+- [OSS 貢献における GitHub の Issue 探しについて手始めに調べてみた - Qiita](https://qiita.com/gotchane/items/69c332b2e67b9e20c378)
+
+自分の場合は、いつも使ってるラベルセットを持っていて、この中の一つに`Status: PR Welcome`というそのままのラベルがあるので、これもよく使っています。
+
+- [GitHubのラベルをいい感じにセットアップするツール | Web Scratch](https://efcl.info/2017/05/17/github-label/)
+- [azu/github-label-setup: 📦 Setup GitHub label without configuration.](https://github.com/azu/github-label-setup)
+
+### PRの方法を教える
+
+プロジェクトによっては、PRをあんまりしたことがない人がユーザーとして多い場合もあります。
+たとえば、[jsprimer](https://jsprimer.net/)は、GitHubを始めて触るような人も多くいるようなプロジェクトです。
+
+- [JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)
+- [asciidwango/js-primer: JavaScript Primer - 迷わないための入門書](https://github.com/asciidwango/js-primer)
+
+この場合、PRを出したことない人も読者だったりするので、どうやってPRを出せるかを説明して、PRを出してもらったりしていることが多いです。
+いまのGitHubはウェブ上で文章を変更やtypoを直す程度ならウェブのエディタでも十分できるので、やり方さえわかればほとんどの人ができます。
+
+- [入力内容をコンソールに表示する：　助詞の使われ方 · Issue #983 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/983#issuecomment-545273628)
+
+初めて触るUIはボタンが押したら何が起きるかが分かりにくいので、スクリーンショットやGitHubのドキュメントのリンクなどを貼って説明したりしています。
+多少コストがあっても、自分はIssueを作ってくれた人にPRまで出してもらうように誘導しています。
+一度体験すれば、次から一人でできるようになる人も多いので、同じ人が他にも修正をしてくれることが期待できます。
+
+実際にjsprimerのリポジトリは、同じ人が複数回コミットしてくれることが多いと思っています。
+今までのjsprimerにContributeした人は99人いて、その内2回以上コミットしている人は45人います。
+
+- [Contributors to asciidwango/js-primer](https://github.com/asciidwango/js-primer/graphs/contributors)
+
+原体験としては、ESLintのPRを投げたときに、当時はGitのコミットメッセージだけを修正する方法がよくわかっていませんでしたが、
+ESLintの作者の[@nzakas](https://github.com/nzakas)さんにやり方をPR上で教えてもらったというのがあります。
+
+- [Fix Markdown link by azu · Pull Request #1389 · eslint/eslint](https://github.com/eslint/eslint/pull/1389)
+
+ContributorのContributeするのをメンテナーが手伝ってあげると、そのプロジェクトのメンテナンス性に繋がると思います。
+(ContributeしやすいようにGONTRIBUTING.mdのようなガイドラインを用意するのもこれと同じです)
+
+### PRのレビューをする
+
+Pull Requestを出す人が必ずしもその技術が得意じゃないことはよくあるので、コードレビューで補助します。
+また、TypeScripのような型チェックやESLintなどのLintツールで、ある程度良いコードが書けるように機械的にチェックを入れることでレビューする側/される側の負荷が減ります。
+
+しかし、どうしても人間がレビューしないといけない部分はあるので、そこは丁寧にレビューします。
+PRのコードの質がどの程度になったらマージするかは人次第な気はします。
+自分の場合はそのPRのアプローチに大きな問題がなくて、そのPRがプロジェクトの問題や健全性を改善する状態になったら完璧じゃなくてもマージします。
+
+- [The Missing README: A Guide for the New Software Engineerを読んだ | Web Scratch](https://efcl.info/2021/08/20/the-missing-readme/)
+- [The Standard of Code Review | eng-practices](https://google.github.io/eng-practices/review/reviewer/standard.html)
+
+完璧を求めるとどうしてもPRが長期化して、互いに疲れます。
+ある程度目処がついたらマージして、続きのIssueを作るなどして、次へ進むようにしています。
+これの目的は、小さなリズムを作るのと同じ話で、1週間、1ヶ月と長引くと大体停滞するためです。
+
+### PRをマージしてリリースして伝える
+
+PRをマージするときにやっていることは大体次の通りです。
+
+- main/masterブランチが壊れた状態でPRはマージしない
+- PRをマージしたら、すぐにリリースする
+- リリースしたら、PR出してくれた人へリリースと感謝を伝える
+
+前提としては、メインブランチが壊れるものはマージしないですが、
+大体のケースではPRをマージしたら、すぐにリリースしています。(リリースがないものは、感謝を伝えるだけで終わり)
+
+特にライブラリのようなものはマージしてすぐリリースして、そのPRを出してくれた人に動作などを確認してもらうのがスムーズです。
+PRを出してくれた人のモチベーションが減らないうちに、次のアクションへ繋げるのがいいと思います。
+ライブラリなどは新しいバージョン出しても、既存のユーザーはアップデートしなければ問題ないので、ある程度早く回す方を優先しています。
+(ものによってはテストで確認するのが難しい。PR出した人も、すぐリリースして欲しいと思ってるのが大半だと思うため)
+
+マージしたら、大体次のようなコメントをしている気がします。
+
+```
+@user Thanks!
+
+I've released https://github.com/{owner}/{name}/releases/tag/{version} 🎉
+```
+
+続きのIssueがあるなら、続きのIssueを知らせたりします。
+確認してほしいことがあるなら、コメントで依頼したりします。
+
+このように、レビューする前 → レビュー → マージ後を丁寧にやること意識しています。
+結局、それがContributorを増やすことにも繋がると考えているし、確認の手間を分散できてメンテナンスコストが下がることにつながると考えています。
+
+自分は、コードを書くときは気分でのムラは出ますが、レビューするときはあんまり気分のムラが出にくい気はします。
+それはそういう訓練をしたからなのかもしれないので、人によってやりやすいやり方は違うのかもしれません。
+ただ、Contributorに対して丁寧に接するのは、必要なことだとは思います。
+
