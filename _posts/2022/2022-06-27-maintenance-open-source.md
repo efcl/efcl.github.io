@@ -468,7 +468,7 @@ PRを積極的に募集するのではなく、Issueだけ立ててもらって�
 この記事では、メンテナー視点で色々と書きました。
 何か参考になることがあったら嬉しいです。
 
-また、メンテナーを支援する人はContributeすることで自分自身がメンテナーになったり、[GitHub Sponsors](https://github.com/sponsors)のような支援方法を考えるなどしてみてください
+また、メンテナーを支援する人はContributeすることで自分自身がメンテナーになったり、[GitHub Sponsors](https://github.com/sponsors)のような支援方法を考えるなどしてみてください。
 支援のやり方や受け取り方も人それぞれですが、自分の[GitHub Sponsors](https://github.com/sponsors)への考え方は次の記事で書いています。
 
 - [GitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch](https://efcl.info/2021/10/01/github-sponsors/)
