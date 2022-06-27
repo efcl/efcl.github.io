@@ -320,14 +320,14 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #515151;
   border-collapse: collapse;
 }
 
 td,
 th {
   padding: 0.25rem 0.5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #515151;
 }
 
 tbody tr:nth-child(odd) td,
