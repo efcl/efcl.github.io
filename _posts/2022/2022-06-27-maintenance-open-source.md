@@ -40,7 +40,7 @@ pushしたものの中にはただのサンプルコードなども多くあり�
 > Maintainer Month is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.  
 > -- [Maintainer Month](https://maintainermonth.github.com/)
 
-[Maintainer Month](https://maintainermonth.github.com/)は、オープンソースのメンテナーが集まって情報共有したり、祝ったりするイベントらしいです。
+[Maintainer Month](https://maintainermonth.github.com/)は、オープンソースのメンテナーが集まって情報共有したり、メンテナーを祝ったり、支援したりするイベントです。
 
 - [Welcome to Maintainer Month! 🎉 | The GitHub Blog](https://github.blog/2022-06-01-welcome-to-maintainer-month/)
 
