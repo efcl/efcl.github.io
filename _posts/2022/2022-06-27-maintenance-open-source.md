@@ -458,7 +458,7 @@ PRを積極的に募集するのではなく、Issueだけ立ててもらって�
 - [The 2021 Tidelift open source maintainer survey](https://tidelift.com/subscription/the-tidelift-maintainer-survey)
 
 メンテナーがどういう支援を求めてるかは人によって考え方が異なります。
-また、Contributorがどのような支援をできるのかは、技術的なスキルだったり、ドキュメントだったり、デザインだったりと人それぞれです。
+また、Contributorがどのような支援をできるのかは、技術的なスキルだったり、ドキュメントだったり、デザインだったり、金銭的な支援だったりと人それぞれです。
 
 メンテナーがどういうサポートを求めているかを知る、負荷が特定の箇所に集中するエコシステムはバランスが悪いのでそれを支援する方法を知るといったことを思い出すのがMaintainer Monthの目的です。
 
