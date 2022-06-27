@@ -472,3 +472,7 @@ PRを積極的に募集するのではなく、Issueだけ立ててもらって�
 支援のやり方や受け取り方も人それぞれですが、自分の[GitHub Sponsors](https://github.com/sponsors)への考え方は次の記事で書いています。
 
 - [GitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch](https://efcl.info/2021/10/01/github-sponsors/)
+
+[GitHub Sponsors](https://github.com/sponsors)で支援してくれる人は、[Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)から行えます。
+
+<iframe src="https://github.com/sponsors/azu/card" title="Sponsor azu" height="225" width="600" style="border: 0;"></iframe>
