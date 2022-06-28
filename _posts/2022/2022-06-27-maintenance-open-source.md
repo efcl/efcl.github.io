@@ -149,7 +149,7 @@ JavaScript周りは顕著ですが、ライブラリが細かく分かれてい�
     - [@azu/migrate-travis-ci-to-github-actions](https://github.com/azu/migrate-travis-ci-to-github-actions)
     - これもコマンド叩くだけで移行できるようにしている(特定の環境向けになるので、ほぼ自分用)
 - 複数リポジトリに対して一括で変更を加える
-    - リポジトリ自体が別れてるときに、変更をまとめてやりたいときはそういうツールを使う
+    - リポジトリ自体が分かれてるときに、変更をまとめてやりたいときはそういうツールを使う
     - [shepherdを使って複数のリポジトリに一括でPRを出してまとめてマイグレーションする | Web Scratch](https://efcl.info/2021/05/13/shepherd-github-multi-repo-migration/)
     - 最近は、ある程度意味あるまとまりでmonorepoを作ることが多い
 - リポジトリをTransferする:
@@ -280,12 +280,12 @@ ESLintの作者の[@nzakas](https://github.com/nzakas)さんにやり方をPR上
 - [Fix Markdown link by azu · Pull Request #1389 · eslint/eslint](https://github.com/eslint/eslint/pull/1389)
 
 ContributorのContributeするのをメンテナーが手伝ってあげると、そのプロジェクトのメンテナンス性に繋がると思います。
-(ContributeしやすいようにGONTRIBUTING.mdのようなガイドラインを用意するのもこれと同じです)
+(ContributeしやすいようにCONTRIBUTING.mdのようなガイドラインを用意するのもこれと同じです)
 
 ### PRのレビューをする
 
 Pull Requestを出す人が、必ずしもその技術を得意としていないことはよくあるので、コードレビューで補助します。
-また、TypeScripのような型チェックやESLintなどのLintツールで、ある程度良いコードとするために機械的なチェックを入れることでレビューする側/される側の負荷が減ります。
+また、TypeScriptのような型チェックやESLintなどのLintツールで、ある程度良いコードとするために機械的なチェックを入れることでレビューする側/される側の負荷が減ります。
 
 しかし、どうしても人間がレビューしないといけない部分はあるので、そこは丁寧にレビューします。
 PRのコードの質がどの程度になったらマージするかは人次第な気はします。
