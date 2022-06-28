@@ -25,6 +25,11 @@ tags:
 
 - [Welcome to Maintainer Month! 🎉 | The GitHub Blog](https://github.blog/2022-06-01-welcome-to-maintainer-month/)
 
+Maintainer Month関係の記事
+
+- [Maintainer Month: オープンソースをメンテナンスするコツ | Web Scratch](https://efcl.info/2022/06/27/maintenance-open-source/)
+- [Maintainer Month: epubリーダーアプリ bi-epub-readerを作った | Web Scratch](https://efcl.info/2022/06/25/bi-epub-reader/)
+
 ## textlintの誕生…の前に
 
 2014年2月ごろに、JSer.infoで[あなたが読むべきJavaScript Promises - JSer.info](https://jser.info/post/77696682011/es6-promises)という記事を書いて、Promisesについてもっと知らないといけなさそうだなと考えました。
