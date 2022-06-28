@@ -415,7 +415,13 @@ PRを積極的に募集するのではなく、Issueだけ立ててもらって�
     - 今年もES2022への対応するためにアップデートしていました
 
 [jsprimer](https://jsprimer.net/)は、1年間隔という間隔の大きさもあって、最初の一歩が重たくなりやすいプロジェクトです。
-そのため、[ES2021](https://efcl.info/2021/06/28/jsprimer-3.0/)の対応は湯河原でやっていた部分もありますし、[ES2022](https://efcl.info/2022/06/19/jsprimer-4/)の対応は一ノ関や宮古島でやっていた部分があります。
+そのため、[ES2021](https://efcl.info/2021/06/28/jsprimer-3.0/)の対応は湯河原でやっていた部分もありますし、[ES2022](https://efcl.info/2022/06/19/jsprimer-4/)の対応は一ノ関や宮古島でやっていた部分があります。[fz-browse](https://github.com/azu/fz-browse)は松江で書いていました。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">fz-browseはここで仕上げました。<br>無料で借りれて便利でした。 <a href="https://t.co/HnNNd68VDe">https://t.co/HnNNd68VDe</a> <a href="https://t.co/6rmY7fBrts">pic.twitter.com/6rmY7fBrts</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1515889157582692356?ref_src=twsrc%5Etfw">April 18, 2022</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 移動する前にやることを決めておくと、移動中も移動先でも最初の一歩が踏み出しやすいです。
 また、こういう開発合宿みたいなことをする場合は、一日の最初に軽いタスクを作って済ませておくと、少し大きめなタスクも手が出しやすいです(一日何もできなかったみたいなことを避けるため)。
 
