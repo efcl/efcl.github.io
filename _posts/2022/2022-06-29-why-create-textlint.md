@@ -205,6 +205,6 @@ BabelでTSからスキーマを生成するか、ESLintの`meta`のように手�
 > オープンソースにContributeする方法として、バグ報告/修正、機能追加、ドキュメントを書く、IssueやDiscussionのトリアージ、デザイン、マーケティングなど色々な関わり方があります。 その関わり方の一つとして、金銭的な支援をするという選択肢は、Contributorが選べるようになっているのが望ましいと思っています。  
 > [GitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch](https://efcl.info/2021/10/01/github-sponsors/)
 
-GitHub Sponsorsでの支援は次のページからできます。
+GitHub Sponsorsでの支援は次のページからできます。GitHub Sponsorsは個人だけではなく会社単位でもできるようになっています。
 
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
