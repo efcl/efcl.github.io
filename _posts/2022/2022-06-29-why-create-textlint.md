@@ -89,7 +89,7 @@ Promise本は最終的に100ページを越える書籍になっているので�
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-その日のうちに、[CommonMark](https://github.com/commonmark/commonmark.js)を使って日本語Lintを作るアイデアを思いついきました。
+その日のうちに、[CommonMark](https://github.com/commonmark/commonmark.js)を使って日本語Lintを作るアイデアを思いつきました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/todo?src=hash&amp;ref_src=twsrc%5Etfw">#todo</a> CommonMark AST + 日本語Lint</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/547751724417425408?ref_src=twsrc%5Etfw">December 24, 2014</a></blockquote>
 
