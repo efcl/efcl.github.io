@@ -55,7 +55,7 @@ Promise本は最終的に100ページを越える書籍になっているので�
 - [Promise本で取り組んだ電子書籍の開発ツール、CI、継続的リリースについて | Web Scratch](https://efcl.info/2015/01/06/ebook-env/)
     - > 用語統一チェックの自動化 → 結局は目視チェックのみだった
 
-少し日にちが経って、全く別のところで[JSer.info](https://jser.info/)の記事紹介文でtypoや表記揺れが多くあることに気づいきました。
+少し日にちが経って、全く別のところで[JSer.info](https://jser.info/)の記事紹介文でtypoや表記揺れが多くあることに気づきました。
 これを減らそうと思って、CodeMirrorの拡張として[codemirror-spellckecker](https://github.com/azu/codemirror-spellckecker/)というものを書きました。
 このスペルチェックには、先ほど登場した[WEB+DB PRESS用語統一ルール ](https://gist.github.com/inao/f55e8232e150aee918b9)をベースにした[technical-word-rules](https://github.com/azu/technical-word-rules)という独自の辞書を使っています。
 
