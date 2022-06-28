@@ -30,7 +30,7 @@ tags:
 2014年2月ごろに、JSer.infoで[あなたが読むべきJavaScript Promises - JSer.info](https://jser.info/post/77696682011/es6-promises)という記事を書いて、Promisesについてもっと知らないといけなさそうだなと考えました。
 調べてもPromiseについてまとまったものはなかったので、ないなら書くかーと思って[JavaScript Promiseの本](https://azu.github.io/promises-book/)を書き始めました。
 
-Promise本の最初のコミットは、2014年3月だったのでこの頃に描き始めたのだと思います。
+Promise本の最初のコミットは、2014年3月だったのでこの頃に書き始めたのだと思います。
 
 - https://github.com/azu/promises-book/commit/883538b2a5fab5846d415fe0ef1abc1f125217dc
 - 細かい書籍開発の流れはPromise本のおまけにも書かれていました
