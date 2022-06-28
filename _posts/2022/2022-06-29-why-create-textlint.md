@@ -167,7 +167,7 @@ ESLintは結構モノリシックな作りであったため、textlintはそれ
 
 - [🛡🔑 Secretlint 4.0.0: ESMで書かれたルールのサポート、secretlint-disableコメントのサポート | Web Scratch](https://efcl.info/2021/09/15/secretlint-4.0.0/)
 
-また、ルールのオプションのスキーマを書けるするという長年のIssueもどうにかしたいです。
+また、ルールのオプションのスキーマを書けるようにするという長年のIssueもどうにかしたいです。
 BabelでTSからスキーマを生成するか、ESLintの`meta`のように手書きでJSON Schemaを書くかという部分で止まっています。
 これも、textlintのルールからオプションをGUIで設定するなどの利用方法がありますが、やっぱりユースケースがある人を中心に進めるのが良いです。
 
