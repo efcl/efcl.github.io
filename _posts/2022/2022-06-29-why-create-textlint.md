@@ -126,6 +126,7 @@ ESLintは結構モノリシックな作りであったため、textlintはそれ
 - [textlintのコアをTypeScriptで書き直した、textlintの今後について | Web Scratch](https://efcl.info/2017/11/06/textlint-core-refactoring/)
 
 2015年はひたすらtextlintの安定化と色々なルールを書いていました。
+[RedPen](https://redpen.cc/)を参考にしたり、色々日本語の論文とか参考にしてルール書いてた気がします。
 
 - [今年のOSS活動振り返り @ 2015 | Web Scratch](https://efcl.info/2015/12/31/oss-in-2015/)
 
