@@ -183,8 +183,8 @@ BabelでTSからスキーマを生成するか、ESLintの`meta`のように手�
 - Translation: [Angular](https://github.com/angular/angular-ja)、[React](https://github.com/reactjs/ja.reactjs.org)、[Vue](https://github.com/vuejs/jp.vuejs.org)、[Nuxt.js](https://github.com/vuejs-jp/ja.docs.nuxtjs), [Next.js](https://github.com/Nextjs-ja-translation/Nextjs-ja-translation-docs)、[Gatsby](https://github.com/gatsbyjs/gatsby-ja)
 - Book: [JavaScript Primer](https://github.com/asciidwango/js-primer)、[SurviveJS - Webpack](https://github.com/survivejs/webpack-book)
 - Documentaion: [VuePress](https://github.com/vuejs/vuepress)、[Cypress](https://github.com/cypress-io/cypress-documentation)、[Microsoft Azure Identity(ja)](https://github.com/jpazureid/blog)、[OWASP Cheat Sheet Series](https://github.com/OWASP/CheatSheetSeries)
-- 小説: [「Visual Studio Code」で執筆するSF作家　藤井太洋氏が作る物書きのための拡張機能 - ログミーTech](https://logmi.jp/tech/articles/325715)
-- Compnay: [弁護士ドットコム](https://www.bengo4.com/)、[ソラコム](https://soracom.jp/)、[ヴェルク](https://www.velc.co.jp/)、[SmartHR](https://smarthr.jp/)、[Retty](https://retty.me/)
+- 小説: [「Visual Studio Code」で執筆するSF作家　藤井太洋氏が作る物書きのための拡張機能](https://logmi.jp/tech/articles/325715)
+- Company: [弁護士ドットコム](https://www.bengo4.com/)、[ソラコム](https://soracom.jp/)、[ヴェルク](https://www.velc.co.jp/)、[SmartHR](https://smarthr.jp/)、[Retty](https://retty.me/)
     - [textlintを使っている企業の事例・ルールをまとめてみた](https://zenn.dev/kgsi/articles/a88273d293abe07c5acb)
 
 [textlint](https://textlint.github.io/)は文章向けに作り始めたものではありますが、最近はプロダクトの表記揺れとかに使っているケースも増えているようです。
