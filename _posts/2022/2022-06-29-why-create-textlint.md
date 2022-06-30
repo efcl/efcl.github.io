@@ -69,7 +69,7 @@ Promise本は最終的に100ページを越える書籍になっているので�
 
 この[codemirror-spellckecker](https://github.com/azu/codemirror-spellckecker/)は、[CodeMirror](https://codemirror.net/)なのでブラウザ上でしか動きません。しかし、Travis CIのようなCI上でも同じ辞書を使ってチェックしたいと考えるようになってきました。
 
-なぜなら、この少し前にJSer.infoのデータ管理もGitHubに全て移したため、紹介記事のデータも[jser/jser.info: JSer.infoデータリポジトリ](https://github.com/jser/jser.info)とへコミットされるようになり、コミットしたら辞書で表記揺れを見つけたいと思ったためです。
+なぜなら、この少し前にJSer.infoのデータ管理もGitHubに全て移したため、紹介記事のデータも[jser/jser.info: JSer.infoデータリポジトリ](https://github.com/jser/jser.info)とへコミットされるようになり、コミットしたら辞書でCI上で表記揺れを見つけたいと思ったためです。
 
 - [JSer.infoをTumblrからGitHub Pagesに移行しました - JSer.info](https://jser.info/2014/08/03/renewal/)
 
