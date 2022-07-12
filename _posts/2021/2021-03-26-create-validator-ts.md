@@ -28,7 +28,7 @@ expressなどでAPIを書くときに、Request/Responseが意図したものか
 
 ### NoSQL Injection: MongoDB
 
-[Mongoose](https://github.com/Automattic/mongoose)を使ったNoSQL Injectionを例に説明してみます。
+express + [Mongoose](https://github.com/Automattic/mongoose)を使ったNoSQL Injectionを例に説明してみます。
 これはユーザーのリクエストに基づいてMongoに対してQueryを発行する時に、ユーザーが任意のMongo Queryを指定できてしまう問題です。
 
 次のようにHTTPリクエストのbodyをそのままMongooseのqueryに渡すと発生する脆弱性です。
