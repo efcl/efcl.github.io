@@ -97,6 +97,9 @@ await cache.reconcile();
   - trueの場合は、結果はキャッシュせずに、常に`changed: true`を返します
   - `--cache`フラグがあるときだけキャッシュするような実装に便利です
 
+[file-entry-cache](https://github.com/royriojas/file-entry-cache)もそうですが、キャッシュファイルに実際に書き込みが行われるのは`reconcile()`を呼び出したタイミングです。
+これは、書き込まれるまではメモリ上で管理していて、I/Oへのアクセスを減らしてパフォーマンスを安定させるためです。
+
 デフォルトでは、キャッシュファイルは`node_modules/.cache/`の下に保存されます。
 `cacheDirectory`オプションで保存先を変更できます。
 
