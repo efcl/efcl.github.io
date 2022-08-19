@@ -106,3 +106,7 @@ npx @pkgdeps/update-github-actions-permissions ".github/workflows/*.{yaml,yml}"
 そのようなケースは[シークレットスキャンニング](https://docs.github.com/ja/code-security/secret-security/about-secret-scanning)や[secretlint](https://github.com/secretlint/secretlint)などを使って、そもそも機密情報をコミットしない状態を目指すのが良さそうです。
 
 - [secretlint 3.0リリース、GitHubの新しいトークンの検出に対応 | Web Scratch](https://efcl.info/2021/06/02/secretlint-3.0/)
+
+Edit(2022-08-19): 類似ツール
+
+- [step-security/secure-workflows: Automated security fixes that get you a higher OpenSSF Scorecard score](https://github.com/step-security/secure-workflows)
