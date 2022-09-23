@@ -16,6 +16,7 @@ tags:
 
 - [1Password/1password-teams-open-source: Get a free 1Password Teams membership for your open source project](https://github.com/1Password/1password-teams-open-source#membership-details)
 - [チームのための手間いらずで安全なパスワード管理 | 1Password](https://1password.com/jp/teams/)
+- [1Password Teamsを使ったパスワード管理・運用 - ヴェルク - IT起業の記録](https://tamukai.blog.velc.jp/entry/2017/03/15/201551)
 
 申請できるプロジェクトの要件は、オープンソースに関わるもので非営利なら、柔軟に対応してくれるそうです。
 オープンソースソフトウェアのプロジェクトだったり、コミュニティやイベントの主催してる場合でも良いらしいです。
