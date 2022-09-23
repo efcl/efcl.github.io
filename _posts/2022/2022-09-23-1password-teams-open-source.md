@@ -39,7 +39,7 @@ READMEの[How to apply](https://github.com/1Password/1password-teams-open-source
   - この段階では試用期間なので14日以内に申請する
   - この段階で他の人を招待しなくてもOKだった
 2. <https://github.com/1Password/1password-teams-open-source> をForkして、申請するプロジェクトの情報をREADMEに足してPRを出す
-  - <https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed> を参考にすれば良さそう
+  - PRに書く内容は <https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed> を参考にすれば良さそう
 3. マージされるのを待つ
 
 マージされると、申請した1Passwordのアカウント(チーム)がTeamプランになります。
