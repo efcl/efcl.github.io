@@ -11,7 +11,7 @@ tags:
 
 [1Password](https://1password.com/)は、オープンソースプロジェクトの開発者が無料で1Passwordを利用できる[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)というものをやっています。
 
-[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)で申請が通ると、Teamプラン相当が無料で利用できるようになります。
+[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)で申請が通ると、Teamプラン相当が無料(無期限)で利用できるようになります。
 1PasswordのAccount(組織/チームのこと)に所属してるMemberは、それぞれ個人のパスワード管理機能とAccount(チーム)で共有するパスワード管理機能が利用できるようになります。
 
 - [1Password/1password-teams-open-source: Get a free 1Password Teams membership for your open source project](https://github.com/1Password/1password-teams-open-source#membership-details)
