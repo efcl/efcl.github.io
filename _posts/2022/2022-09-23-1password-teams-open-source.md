@@ -1,5 +1,5 @@
 ---
-title: "1Password for Open Source Projectsを申請した"
+title: "1Password for Open Source Projectsの申請をした"
 author: azu
 layout: post
 date : 2022-09-23T21:18
