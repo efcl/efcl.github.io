@@ -42,8 +42,10 @@ READMEの[How to apply](https://github.com/1Password/1password-teams-open-source
   - <https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed> を参考にすれば良さそう
 3. マージされるのを待つ
 
-マージされると、申請した1Passwordのアカウント(チーム)がTeamプランに正式になります。
+マージされると、申請した1Passwordのアカウント(チーム)がTeamプランになります。
 そうしたら、プロジェクトで関連する他の人を招待すればOKだと思います。
+
+📝 textlintのcollaborators向けの情報
 
 [textlint](https://github.com/textlint)のcollaboratorsの方は、次のDiscussionsに詳細を書いてあるので、1Passwordを利用したい場合はコメントしてください。
 
