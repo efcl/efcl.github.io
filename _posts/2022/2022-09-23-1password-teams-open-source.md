@@ -55,7 +55,7 @@ READMEの[How to apply](https://github.com/1Password/1password-teams-open-source
 
 ## おわりに
 
-[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)という1Passwordをオープンソース向けに無料できるプランについて紹介しました。
+[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)という1Passwordをオープンソースの開発者などが無料できるプランについて紹介しました。
 申請してから結構すぐ承認されたのでよかったです。
 
 [textlint](https://github.com/textlint)では、npmにpublishする向けのマシンアカウントとかがあるので、その管理に利用しようかなと思っています。
