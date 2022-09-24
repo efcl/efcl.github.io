@@ -18,7 +18,7 @@ tags:
 - [チームのための手間いらずで安全なパスワード管理 | 1Password](https://1password.com/jp/teams/)
 - [1Password Teamsを使ったパスワード管理・運用 - ヴェルク - IT起業の記録](https://tamukai.blog.velc.jp/entry/2017/03/15/201551)
 
-申請できるプロジェクトの要件は、オープンソースに関わるもので非営利なら、柔軟に対応してくれるそうです。
+申請できるプロジェクトの要件は、作ってから30日以上経っていてアクティブにメンテされていて、オープンソースに関わるもので非営利なら、柔軟に対応してくれるそうです。
 オープンソースソフトウェアのプロジェクトだったり、コミュニティやイベントの主催してる場合でも良いらしいです。
 
 - [Requirements](https://github.com/1Password/1password-teams-open-source#requirements)
