@@ -46,16 +46,16 @@ READMEの[How to apply](https://github.com/1Password/1password-teams-open-source
 マージされると、申請した1Passwordのアカウント(チーム)がTeamプランになります。
 そうしたら、プロジェクトで関連する他の人を招待すればOKだと思います。
 
-📝 textlintのcollaborators向けの情報
-
-[textlint](https://github.com/textlint)のcollaboratorsの方は、次のDiscussionsに詳細を書いてあるので、1Passwordを利用したい場合はコメントしてください。
-
-- <https://github.com/orgs/textlint/teams/collaborator/discussions/1>
-  - textlintのcollaboratorsとなっている人なら見えるページ
-
 ## おわりに
 
 [1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)という1Passwordをオープンソースの開発者などが無料できるプランについて紹介しました。
 申請してから結構すぐ承認されたのでよかったです。
 
 [textlint](https://github.com/textlint)では、npmにpublishする向けのマシンアカウントとかがあるので、その管理に利用しようかなと思っています。
+
+ℹ️ textlintのcollaborators向けの情報
+
+[textlint](https://github.com/textlint)のcollaboratorsの方は、次のDiscussionsに詳細を書いてあるので、1Passwordを利用したい場合はコメントしてください。
+
+- <https://github.com/orgs/textlint/teams/collaborator/discussions/1>
+  - textlintのcollaboratorsとなっている人なら見えるページ
