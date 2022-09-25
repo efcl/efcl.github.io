@@ -39,6 +39,7 @@ READMEの[How to apply](https://github.com/1Password/1password-teams-open-source
   - アカウントの設定をしてアプリをダウンロードしたり、2要素認証などをセットアップする
   - この段階では試用期間なので14日以内に申請する
   - この段階で他の人を招待しなくてもOKだった
+  - 特にクレジットカードとかの情報はなくても登録できます
 2. <https://github.com/1Password/1password-teams-open-source> をForkして、申請するプロジェクトの情報をREADMEに足してPRを出す
   - PRに書く内容は <https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed> を参考にすれば良さそう
 3. マージされるのを待つ
