@@ -81,7 +81,7 @@ Notionのアプリは `notion://<userid>/<pageid>` で特定のページを開�
 
 あとは、このスクリプトを実行するたびに、Quick Cameraの映像を `2022/10/08` のようなページにアップロードできます。
 
-📝 仕組み的に実行するたびにNotionにフォーカスが移動してしまうので、[Quick Camera](https://github.com/simonguest/quick-camera)のスクショを撮って、Notionにアップロードするスクリプトに常に最前面で表示するオプションを実装しています。
+📝 仕組み的に実行するたびにNotionにフォーカスが移動してしまうので、[Quick Camera](https://github.com/simonguest/quick-camera)に対して"常に最前面で表示する"オプションを実装しています。
 
 - [feat: add alwaysOnTop menu by azu · Pull Request #40 · simonguest/quick-camera](https://github.com/simonguest/quick-camera/pull/40)
 
