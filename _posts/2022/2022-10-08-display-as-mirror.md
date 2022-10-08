@@ -63,7 +63,7 @@ tags:
 
 - [azu/quickcamera-to-notion-example: Upload webcamera image to Notion.](https://github.com/azu/quickcamera-to-notion-example)
 
-このスクリプトは、Notionの特定のデータベースに `YYYY/MM/DD` のタイトルのページにQuick Cameraで移してる映像のスクショをアップロードします。
+このスクリプトは、Notionの特定のデータベースに `YYYY/MM/DD` のタイトルのページにQuick Cameraで映してる映像のスクショをアップロードします。
 `YYYY/MM/DD`というタイトルのページは事前に作っておく前提となっています。(やろうと思えば、該当ページがないなら作るのもNotion APIでできると思います。)
 
 一方でNotionのAPIには画像をアップロードするAPIは公開されていません。
