@@ -17,7 +17,7 @@ tags:
 ちょうど、普段あんまり使えてないmac miniがあったので、これをディスプレイと繋いで作ってみることにしました。
 
 あと、せっかくディスプレイに表示するので、そのディスプレイ(鏡)に写した内容を半自動的に記録できるといいなと思いました。
-こういうストック的なメモには[Notion](https://www.notion.so/ja-jp)に、撮影した画像を自動的にアップロードする仕組みも作りました。
+こういうストック的なメモには[Notion](https://www.notion.so/ja-jp)を使ってたので、撮影した画像を自動的にNotionへアップロードする仕組みも作りました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ボタン一つ押すだけで、ウェブカメラのキャプチャして、Notionに画像アップロードする仕組みできた。<br><br>ボタンはカメラについてたシャッター(Bluetooth)使ってるので、離れたところから起動、シャッター、スリープできる<br><br>mac mini+ウェブカメラ+リモコン+ディスプレイで、<br>鏡 兼 自動記録できる仕組み</p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1578598818450264064?ref_src=twsrc%5Etfw">October 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
