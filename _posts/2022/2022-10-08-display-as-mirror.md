@@ -50,7 +50,8 @@ tags:
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Stable Diffusionで雑コラ作れた。<br>こんな感じの構成ではある。 <a href="https://t.co/Y3qCtoVIHW">pic.twitter.com/Y3qCtoVIHW</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1578735807505932288?ref_src=twsrc%5Etfw">October 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ロジクールStreamCamは、ちゃんと2mぐらいの距離とかもフォーカス合わせてくれるので全身をみるにも十分でした。
-ただ、明るさの変更とかでちょっと自動で調整が入るのですが、1秒ぐらいかかることがあるので実際の鏡よりは遅いです。
+ただ、明るさの変更とかで自動で調整が入るのですが、1秒ぐらいかかることがあるので実際の鏡よりフォーカスや明るさの変化に弱いです(目の性能による)。
+静止している状態 や 左右に揺れてるぐらいなら(距離の変化には弱い)、反応や画質も悪くなく十分かなという感じでした。
 
 ### ディスプレイ(鏡)に写った映像をNotionに記録する仕組み
 
