@@ -22,7 +22,7 @@ issue: https://github.com/efcl/efcl.github.io/issues/35
 <iframe src="https://azu.github.io/slide-pdf.js/?slide=https://azu.github.io//slide/DOMQuery/sourcemap.pdf"
 scrolling="no"
 width="100%"
-height="500"
+height="800"
 style="border:0; background-color:white;">
 </iframe>
 
