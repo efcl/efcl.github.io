@@ -143,7 +143,7 @@ GitHubアカウントを持ってなくてもRSSやWebhookなどの連携を使�
   - 任意のRSSリーダやSlack(`/feed subscribe https://github.com/azu/book-review/releases.atom`)などで購読できます
 
 また、GitHubリリースノートにはリアクションボタンやDiscussions連携もできるので、ホスティングのブログサービスとそこまで機能差はないのかなという感じもします。
-著者のGitHub自体をフォローできたり、[GitHub Sponsors](https://github.com/sponsors)の機能で著者を支援することもできます。
+著者のGitHubアカウントをフォローできたり、[GitHub Sponsors](https://github.com/sponsors)の機能で著者を支援することもできます。
 
 ## おわりに
 
