@@ -12,14 +12,18 @@ tags:
   - Heroku
 ---
 
-# [Voting Badge](https://azu.github.io//voting-badge/ "Voting Badge")
+Herokuを使わなくなったので現在利用できません。
 
+# [Voting Badge](https://azu.github.io/voting-badge/ "Voting Badge")
+
+```
 [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+```
 
 GitHub Issueで賛成などを `:+1:` と書いてコメントすることが良くあります。
 投票ボタン的な機能としてそういうのが欲しかったので、Travis CIのバッジのように表示+投票できるボタンを作りました。
 
-- [:+1: Voting Badge](https://azu.github.io//voting-badge/ ":1: Voting Badge")
+- [:+1: Voting Badge](https://azu.github.io/voting-badge/ ":1: Voting Badge")
 
 上記にアクセスしてURL(実はキーなら何でもいい)を書くとバッジのURLを作ってくれます。
 
@@ -139,6 +143,8 @@ Herokuで動かす設定も載っていたので、自分でバッジを作成�
     * そのためレイアウトが怪しい感じ
     * 👍を表示したいけどsvgだと表示環境依存になって不便
 
+```
 サンプルボタン => [![Vote++](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+```
 
 ソースコードは[azu/voting-badge](https://github.com/azu/voting-badge/ "azu/voting-badge")に公開してあるので、修正等送ってくださると嬉しいです。
