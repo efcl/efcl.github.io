@@ -25,7 +25,7 @@ textlintでは、パーサ、ルール、フォーマッターが全てプラグ
 - [textlint plugin ownership · Discussion #1 · textlint](https://github.com/orgs/textlint/discussions/1)
 - [1Password for Open Source Projectsの申請をした | Web Scratch](https://efcl.info/2022/09/23/1password-teams-open-source/)
 
-最後にLinterなどを開発するために使わないと作れないという話をしています。
+最後にLinterなどを開発するためには、使わないと作れないという話をしています。
 自分が作ってるもう一つのLinterdである[Secretlint](https://secretlint.github.io/)などの事例も一緒に紹介しています。
 
 懇親会では、プラグインアーキテクチャの話が多い感じでした。
