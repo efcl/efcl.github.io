@@ -34,6 +34,8 @@ textlintでは、パーサ、ルール、フォーマッターが全てプラグ
 - [JSのプラグインシステムについて書くJavaScript Plugin Architecture 2.0をリリースしました | Web Scratch](https://efcl.info/2020/09/13/javascript-plugin-architecture-2.0/)
 - [この書籍について · JavaScript Plugin Architecture](https://azu.github.io/JavaScript-Plugin-Architecture/)
 
+この書籍自体がtextlintを実践的に試すために書かれたやつだった気もします。
+
 ## おわりに
 
 [Lint Night #1 - connpass](https://lintnight.connpass.com/event/263931/) 運営ありがとうございました。
