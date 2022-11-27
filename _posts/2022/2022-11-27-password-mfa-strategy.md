@@ -61,7 +61,7 @@ tags:
 
 アカウントごとにどの方法でMFAを管理するかを分けています。
 
-YubikeyのようなセキュリティキーでMFAを管理すると、[WebAuthN API](https://developer.mozilla.org/ja/docs/Web/API/Web_Authentication_API)はキーが登録済みのOriginでしか動かないので、[MFA Fatigue](https://www.bleepingcomputer.com/news/security/mfa-fatigue-hackers-new-favorite-tactic-in-high-profile-breaches/)攻撃や[2FAリレー攻撃](https://pixmsecurity.com/blog/phish/coinbase-attacks-bypass-2fa/)(フィッシング)などを防げて安全です。
+YubikeyのようなセキュリティキーでMFAを管理すると、[WebAuthN API](https://developer.mozilla.org/ja/docs/Web/API/Web_Authentication_API)はキーが登録済みのOriginでしか動かないので、[MFA Fatigue攻撃](https://www.bleepingcomputer.com/news/security/mfa-fatigue-hackers-new-favorite-tactic-in-high-profile-breaches/)や[2FAリレー攻撃](https://pixmsecurity.com/blog/phish/coinbase-attacks-bypass-2fa/)(フィッシング)などを防げて安全です。
 
 - [Creating the Unphishable Security Key - Yubico](https://www.yubico.com/blog/creating-unphishable-security-key/)
 
