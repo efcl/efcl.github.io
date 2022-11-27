@@ -71,7 +71,7 @@ YubikeyのようなセキュリティキーでMFAを管理すると、[WebAuthN 
 - [MFA 疲れを狙う攻撃：フィッシングで根負けさせ Microsoft／Cisco／Uber などを陥落 – IoT OT Security News](https://iototsecnews.jp/2022/09/20/mfa-fatigue-hackers-new-favorite-tactic-in-high-profile-breaches/)
 - [Scatter Swineの検出：執拗なフィッシングキャンペーンへの洞察 | Okta](https://www.okta.com/jp/blog/2022/08/scatterswine/)
 
-一方で、同じ攻撃がCloudflare社に対しても行われていましたが、Cloudflare社員は全員セキュリティキーを利用していたため、突破されなかったことも報告されています。
+一方で、同じ攻撃がCloudflare社に対しても行われていましたが、Cloudflare社員はセキュリティキーを利用していたため、突破されなかったことも報告されています。
 
 - [高度なフィッシング詐欺のからくりと、それを当社がどう阻止したか](https://blog.cloudflare.com/ja-jp/2022-07-sms-phishing-attacks-ja-jp/)
 - [Phishing-resistant MFA | Zero Trust | Cloudflare | Cloudflare](https://www.cloudflare.com/products/zero-trust/phishing-resistant-mfa/)
