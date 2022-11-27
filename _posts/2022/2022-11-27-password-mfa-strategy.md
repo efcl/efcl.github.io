@@ -65,7 +65,7 @@ YubikeyのようなセキュリティキーでMFAを管理すると、[WebAuthN 
 
 - [Creating the Unphishable Security Key - Yubico](https://www.yubico.com/blog/creating-unphishable-security-key/)
 
-実際に最近はSMS、TOTP、アプリの2段階認証を行っていても、フィッシングサイトで入力したOne-time tokenをそのまま正規のサイトにリレーしながら不正ログインする2FAリレー攻撃などが行われています。
+実際にSMS、TOTP、アプリの2段階認証を行っていても、フィッシングサイトで入力したOne-time tokenをそのまま正規のサイトにリレーしながら不正ログインする2FAリレー攻撃などが行われています。
 
 - [GTA新作リークに使われた“多要素認証疲れ”攻撃とは　1時間以上通知攻め、従業員の根負け狙う：この頃、セキュリティ界隈で - ITmedia NEWS](https://www.itmedia.co.jp/news/articles/2209/28/news050.html)
 - [MFA 疲れを狙う攻撃：フィッシングで根負けさせ Microsoft／Cisco／Uber などを陥落 – IoT OT Security News](https://iototsecnews.jp/2022/09/20/mfa-fatigue-hackers-new-favorite-tactic-in-high-profile-breaches/)
