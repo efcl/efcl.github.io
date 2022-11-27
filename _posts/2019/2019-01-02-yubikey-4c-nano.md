@@ -11,6 +11,10 @@ tags:
 
 結構前に[YubiKey 4C Nano](https://www.yubico.com/product/yubikey-4-series/#yubikey-4c-nano)を買って使ってるので、その設定や使い道についてのメモ。
 
+追記(2022/11/27): より実践的なYubikeyの運用方法については次の記事を参照してください。Yubikey 2枚ないと実用は難しかった。
+
+- [パスワード管理/MFA管理の戦略 | Web Scratch](https://efcl.info/2022/11/27/password-mfa-strategy/)
+
 ## Macbook Pro/AirとYubiKeyの運用
 
 Macbook系はUSB Cなので、[YubiKey 4C Nano](https://www.yubico.com/product/yubikey-4-series/#yubikey-4c-nano)を買った。
