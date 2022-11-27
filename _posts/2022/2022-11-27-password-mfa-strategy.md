@@ -49,7 +49,7 @@ tags:
 [YubiKey 5C Nano](https://www.yubico.com/jp/product/yubikey-5c-nano/)がMacbook Proに挿しっぱなしのメインとなるセキュリティキーで、[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)はバックアップ用のスペアキーです。
 自分の場合は、モバイルでセキュリティキーが定常的に必要となるアカウントがほとんどなかったので、Nanoをメインにしています。
 
-[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)は、Cloudflare経由で1本$10程度で販売してくれていたキャンペーンを利用して書いました。
+[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)は、Cloudflare経由で1本$10程度で販売してくれていたキャンペーンを利用して購入しました。
 
 - [Cloudflare Zero TrustとYubicoでシームレスなフィッシング対策を実現する（ハードウェア）キー](https://blog.cloudflare.com/ja-jp/making-phishing-defense-seamless-cloudflare-yubico-ja-jp/)
 
