@@ -25,13 +25,9 @@ tags:
 <!--more-->
 
 <div id="__ss_6580879" style="width: 425px;">
-  <strong style="display: block; margin: 12px 0 4px;"><a title="世界のJavaScript情報を読もう" href="http://www.slideshare.net/efcl/javascript-6580879">世界のJavaScript情報を読もう</a></strong><br /> </p> <p>
+  <strong style="display: block; margin: 12px 0 4px;"><a title="世界のJavaScript情報を読もう" href="https://azu.github.io/slide/2011/mozilla-5th/jserinfo.html">世界のJavaScript情報を読もう</a></strong><br /> </p> <p>
     <br class="spacer_" />
   </p>
-  
-  <div style="padding: 5px 0 12px;">
-    View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/efcl">azu </a>.
-  </div>
 </div>
 
 途中でリンクの羅列が出てきますが、それらのサイトの詳細は以下の記事にまとめてあるため興味を持った方は見てください。
