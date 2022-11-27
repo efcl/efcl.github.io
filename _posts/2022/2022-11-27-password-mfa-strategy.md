@@ -116,7 +116,7 @@ MFAとしてTOTPやSMSに対応しているサイトは多いですが、セキ�
 自分の場合は、一部の例外を除いてこのフローで管理方法を決めています。
 その例外となるのは、[1Password](https://1password.com/jp/)自体のMFAです。
 
-1Password自体のMFAはセキュリティキーのみを登録はできなくて、Authenticator App(TOTPのこと)が必須になっています。
+1Password自体のMFAはセキュリティキーのみにはできないため、Authenticator App(TOTPのこと)が必須になっています。
 
 - [Can I turn off authenticator app and only use security key for 1password login? : 1Password](https://www.reddit.com/r/1Password/comments/r3x6hu/can_i_turn_off_authenticator_app_and_only_use/)
 
