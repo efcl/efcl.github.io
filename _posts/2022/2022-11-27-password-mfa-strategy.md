@@ -159,7 +159,7 @@ Yubikey自体に、TOTPのコードを保存し、このコードはハード的
 
 TOTPとバックアップコードを同じ1Passwordに保存する意味ですが、仮に1Passwordのアカウントが侵害された場合にTOTPが見れれば、バックアップコードが漏れることで影響がより大きくなることはほとんどありません（アカウントが乗っ取られるという結果は同じ）。
 また、サイト側の問題でTOTPではアクセスできなくても、バックアップコードでアクセスできるような救済処置がされるケースがあります。
-これはサイト側の実装を知らないとどうにもならないので、利用者が意識して管理方法を分けるのはとても難しくさせます。
+これはサイト側の実装を知らないとどうにもならないので、利用者が意識して管理方法を分けることをとても難しくさせます。
 
 - [Do you store your 2FA recovery codes in 1Password or Physically or not at all? — 1Password Support Community](https://1password.community/discussion/77240/do-you-store-your-2fa-recovery-codes-in-1password-or-physically-or-not-at-all)
 
