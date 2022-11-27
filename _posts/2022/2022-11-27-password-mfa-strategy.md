@@ -70,6 +70,8 @@ YubikeyのようなセキュリティキーでMFAを管理すると、[WebAuthN 
 - [GTA新作リークに使われた“多要素認証疲れ”攻撃とは　1時間以上通知攻め、従業員の根負け狙う：この頃、セキュリティ界隈で - ITmedia NEWS](https://www.itmedia.co.jp/news/articles/2209/28/news050.html)
 - [MFA 疲れを狙う攻撃：フィッシングで根負けさせ Microsoft／Cisco／Uber などを陥落 – IoT OT Security News](https://iototsecnews.jp/2022/09/20/mfa-fatigue-hackers-new-favorite-tactic-in-high-profile-breaches/)
 - [Scatter Swineの検出：執拗なフィッシングキャンペーンへの洞察 | Okta](https://www.okta.com/jp/blog/2022/08/scatterswine/)
+- [Microsoft Authenticator の MFA 疲労攻撃対策 | Japan Azure Identity Support Blog](https://jpazureid.github.io/blog/azure-active-directory/defend-your-users-from-mfa-fatigue-attacks/)
+  - MFA Fatigue対策として、番号一致の検証するAuthenticator Appもあるが、これは一部のみ
 
 一方で、同じ攻撃がCloudflare社に対しても行われていましたが、Cloudflare社員はセキュリティキーを利用していたため、突破されなかったことも報告されています。
 
