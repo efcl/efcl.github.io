@@ -120,7 +120,7 @@ MFAとしてTOTPやSMSに対応しているサイトは多いですが、セキ�
 
 - [Can I turn off authenticator app and only use security key for 1password login? : 1Password](https://www.reddit.com/r/1Password/comments/r3x6hu/can_i_turn_off_authenticator_app_and_only_use/)
 
-1Passwordは、他のサイトのパスワードやTOTPも管理しているため、明らかに漏れた場合の影響が高いです。
+1Passwordは、他のサイトのパスワードやTOTPも管理しているため、明らかに漏れた場合の影響が大きいです。
 そのため、1Password自体はTOTPはなしにして、セキュリティキーのみで扱いたいサイトです。
 
 実はYubikey自体も[Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)と組み合わせるとTOTPを扱えます。
