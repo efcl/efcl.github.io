@@ -215,22 +215,22 @@ Yubikeyで管理している場合は、バックアップコードをオンラ�
 - [[テンプレート] MFAの管理方法](https://efcl.notion.site/MFA-d7f9bfab757149d5a9da2da1b10a52c8)
 
 いくつか実際にサイトを見てみます。
-この**重要アカウント**や**キーを必須にできるか**は個人の指標なので、各自で判断してみてください。
+この"**重要アカウント**"や"**キーを必須にできるか**"は個人の指標なので、各自で判断してみてください。
 
-1Passwordは先ほども出した例外なので、MFAは**Yubikey1を登録 + Yubikey2にTOTPを保存**して、バックアップコードはオフラインに保存します。
+1Passwordは先ほども出した例外なので、MFAは"**Yubikey1を登録 + Yubikey2にTOTPを保存**"して、バックアップコードはオフラインに保存します。
 GitHubは自分の中では特殊で、漏れた場合の影響範囲が広いので、1Passwordと同じく例外として扱っています。
 
-Googleアカウントは、セキュリティキーのみで運用できるサイトなので、MFAは**Yubikey2枚で管理**して、バックアップコードはオフラインに保存します。
+Googleアカウントは、セキュリティキーのみで運用できるサイトなので、MFAは"**Yubikey2枚で管理**"して、バックアップコードはオフラインに保存します。
 さらにセキュアな[高度な保護機能プログラム](https://landing.google.com/intl/ja/advancedprotection/)というものもあります。
 
 npmは、セキュリティキーのみで運用できるサイトですが、[`--auth-type=web`](https://github.blog/2022-07-26-introducing-even-more-security-enhancements-to-npm/)の体験があまり良くなかったり、[lernaがセキュリティキーに対応してなかったり](https://github.com/lerna/lerna/issues/3273)など利便性の部分でちょっと問題がありました。
-そのため、まだキーを必須にするのが難しかったので、MFAとバックアップコードは**1Passwordに保存**して管理しています。
+そのため、まだキーを必須にするのが難しかったので、MFAとバックアップコードは"**1Passwordに保存**"して管理しています。
 
 1Passwordなら、[`op`](https://1password.com/jp/downloads/command-line/)コマンドで、TOTPのトークンをコマンドラインから取得できます。
 そのため、`npm publish`する際にMFAが必須になる"✅ Require two-factor authentication for write actions"を有効化していても、`npm publish --otp $(op item get --otp npm)`のように書けば、MFAありなしの体験はほぼ変わりません。
 
 Amazon.co.jpは、セキュリティキーに対応していません。
-そのため、**1Passwordで管理 or その他対応**となり、TOTPとSMSのMFA管理になっています。
+そのため、"**1Passwordで管理 or その他対応**"となり、TOTPとSMSのMFA管理になっています。
 
 ## 結果
 
