@@ -146,7 +146,7 @@ Yubikey自体に、TOTPのコードを保存し、このコードはハード的
 
 ### 📝補足: 1PasswordとTOTP
 
-1PasswordにTOTPも保存するのは、2要素認証ではなく、2段階認証です。
+1PasswordにTOTPも保存するのは、2要素認証ではなく、2段階認証と言えます。
 
 - [TOTP for 1Password users | 1Password](https://blog.1password.com/totp-for-1password-users/)
 
