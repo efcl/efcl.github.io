@@ -36,6 +36,7 @@ tags:
     - FIDOという規格がありそれをサポートしているデバイス
     - [YubiKey](https://www.yubico.com/yubikey/?lang=ja)や[Titan Security Key](https://store.google.com/jp/product/titan_security_key?hl=ja)などがある
     - ウェブブラウザとウェブサイトがこの仕組みに対応してると、2要素認証などにセキュリティキーが使えるという仕組みがFIDO認証と呼ばれる
+    - 家にパスワードだけで入られても困る(パスワードは漏洩することがあるため)ので、もう一つ物理的な鍵(セキュリティキー)を組み合わせて入れるようにするという仕組みに使われる
 
 ## パスワード管理方法のNotionテンプレート
 
