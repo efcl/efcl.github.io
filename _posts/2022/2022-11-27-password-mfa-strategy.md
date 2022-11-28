@@ -18,9 +18,24 @@ tags:
 パスワード管理と[TOTP](https://ja.wikipedia.org/wiki/Time-based_One-time_Password)(Time-based One-time Password)の管理として[1Password](https://1password.com/jp/)を使い、MFA(多要素認証)の2要素目として[YubiKey](https://www.yubico.com/yubikey/)を2枚使っています。
 
 パスワード管理とMFA管理を安全で使いやすくするのはかなり複雑で難しいため、完璧にやるのが難しいです。
-そのため、その難しさから二要素認証を設定するべきアカウントも手間などから設定を省いてしまったり、管理方法に一貫性がないことがありました。
+そのため、その難しさから二要素認証を設定するべきアカウントも手間などから設定を省いてしまったり、管理方法に一貫性がありませんでした。
 
 この記事では、パスワード管理/MFA管理の戦略を決めることで、どのサイトのどのアカウントのパスワード管理をあまり頭を使わなくてもできるようにするのが目的です。利便性と安全性のバランスを意識はしていますが、この記事のやり方が正解ではないので、各自の目的に合わせて読み替えると良いと思います。
+
+**用語**
+
+- MFA: 多要素認証のこと
+    - 2要素認証といった場合は2つの要素で認証(ログイン)する
+    - 1つ目の要素はほとんどの場合はパスワードなので、大体2つ目の要素のことを言ってる
+    - もう少し抽象的にいう場合は複数の要素で認証するので、MFAという
+    - TOTPとかセキュリティキーなどは、多要素認証を構成する要素の1種
+- [TOTP](https://ja.wikipedia.org/wiki/Time-based_One-time_Password): 2要素認証でメジャーなワンタイムパスワードを生成する仕組みのこと
+    - Google Authenticator、Microsoft Authenticator、AuthyなどでQRコード読んで登録すると、ワンタイムパスワードを生成できる
+    - 1Password、Appleのキーチェーンのようにパスワード管理アプリ自体がサポートしてることもある
+- セキュリティキー: Yubikeyなどの物理的なデバイスのこと
+    - FIDOという規格がありそれをサポートしているデバイス
+    - [YubiKey](https://www.yubico.com/yubikey/?lang=ja)や[Titan Security Key](https://store.google.com/jp/product/titan_security_key?hl=ja)などがある
+    - ウェブブラウザとウェブサイトがこの仕組みに対応してると、2要素認証などにセキュリティキーが使えるという仕組みがFIDO認証と呼ばれる
 
 ## パスワード管理方法のNotionテンプレート
 
