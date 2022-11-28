@@ -129,7 +129,7 @@ MFAとしてTOTPやSMSに対応しているサイトは多いですが、セキ�
 そのため、1Password自体はTOTPはなしにして、セキュリティキーのみで扱いたいサイトです。
 
 実はYubikey自体も[Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)と組み合わせるとTOTPを扱えます。
-Yubikey自体に、TOTPのコードを保存し、このコードはハード的には取り出せないので安全です(これはコード自体のバックアップは取れないということ)。
+Yubikeyを刺した状態でYubico Authenticatorを立ち上げると、Yubikeyに保存した情報を元にTOTPのOne-Time Passwordを生成できる仕組みです。
 そのため、1Password自体のMFAは、1つはYubikeyのセキュリティキーを登録し、もう一つのYubikeyにTOTPを保存しています。
 
 実際にフローチャートにすると次のようになります。
