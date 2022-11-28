@@ -47,9 +47,9 @@ tags:
 
 自分の場合は、[1Password](https://1password.com/jp/)、[YubiKey 5C Nano](https://www.yubico.com/jp/product/yubikey-5c-nano/)、[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)を利用しています。
 [YubiKey 5C Nano](https://www.yubico.com/jp/product/yubikey-5c-nano/)がMacbook Proに挿しっぱなしのメインとなるセキュリティキーで、[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)はバックアップ用のスペアキーです。
-自分の場合は、モバイルでセキュリティキーが定常的に必要となるアカウントがほとんどなかったので、Nanoをメインにしています。
+モバイルでセキュリティキーが定常的に必要となるアカウントがほとんどなかったので、Nanoをメインにしています。
 
-[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)は、Cloudflare経由で1本$10程度で販売してくれていたキャンペーンを利用して購入しました。
+[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)は、Cloudflare経由だと1本$10程度で販売してくれていたキャンペーンを利用して購入しました。
 
 - [Cloudflare Zero TrustとYubicoでシームレスなフィッシング対策を実現する（ハードウェア）キー](https://blog.cloudflare.com/ja-jp/making-phishing-defense-seamless-cloudflare-yubico-ja-jp/)
 
@@ -126,18 +126,18 @@ MFAとしてTOTPやSMSに対応しているサイトは多いですが、セキ�
 - [Can I turn off authenticator app and only use security key for 1password login? : 1Password](https://www.reddit.com/r/1Password/comments/r3x6hu/can_i_turn_off_authenticator_app_and_only_use/)
 
 1Passwordは、他のサイトのパスワードやTOTPも管理しているため、漏れた場合の影響が明らかに大きいです。
-そのため、1Password自体はTOTPはなしにして、セキュリティキーのみで扱いたいサイトです。
+そのため、1Password自体はTOTPをなしにして、セキュリティキーのみで扱いたいサイトです。
 
 実はYubikey自体も[Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)と組み合わせるとTOTPを扱えます。
 Yubikeyを刺した状態でYubico Authenticatorを立ち上げると、Yubikeyに保存した情報を元にTOTPのOne-Time Passwordを生成できる仕組みです。
 そのため、1Password自体のMFAは、1つはYubikeyのセキュリティキーを登録し、もう一つのYubikeyにTOTPを保存しています。
 
-実際にフローチャートにすると次のようになります。
+フローチャートにすると次のようになります。
 
 ![MFA Actual Flow](https://efcl.info/wp-content/uploads/2022/11/27-1669554658.png)
 
 1Passwordで、MFAが必要となるは新規ログインぐらいで、頻度は多くないので特別対応をしています。
-(Yubikey1枚につきにTOTPを保存できるのが32コと多くなかったり、コードのバックアップはハード的にできないので、あまり数を増やしたくない方法です)
+(Yubikey1枚につきTOTPを保存できるのが32コと多くなかったり、コードのバックアップはハード的にできないので、あまり数を増やしたくない方法です)
 
 このフローチャートで大まかに次のどちらでMFAを管理するかを決めています。
 
