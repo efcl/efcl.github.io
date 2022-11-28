@@ -53,7 +53,7 @@ tags:
 
 - [Cloudflare Zero TrustとYubicoでシームレスなフィッシング対策を実現する（ハードウェア）キー](https://blog.cloudflare.com/ja-jp/making-phishing-defense-seamless-cloudflare-yubico-ja-jp/)
 
-また、[1Password](https://1password.com/jp/)はオープンソース開発などが無料で利用できる[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)を申請して利用しています。
+また、[1Password](https://1password.com/jp/)はオープンソースソフトウェア開発者などが無料で利用できる[1Password for Open Source Projects](https://github.com/1Password/1password-teams-open-source)を申請して利用しています。
 
 - [1Password for Open Source Projectsの申請をした | Web Scratch](https://efcl.info/2022/09/23/1password-teams-open-source/)
 
