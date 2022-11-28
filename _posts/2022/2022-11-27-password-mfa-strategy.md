@@ -157,6 +157,7 @@ Yubikey自体に、TOTPのコードを保存し、このコードはハード的
 
 TOTPに1Password以外を使って、パスワードとTOTPのコードを別の場所に保存する方法もあります。
 この場合、TOTPを扱うAuthenticator Appsが、サイトのOriginとTOTPを紐付けて管理できないと、2FAリレー攻撃などのフィッシングに対応できません。
+(1Passwordの場合は、サイトのURLに紐づいています)
 
 サイトのOriginとOne-Time Passwordの紐付けの問題は、SMSでOne-Time Passwordを受け取り自動入力する[`<input autocomplete="one-time-code" />`](https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete)でも発生します。
 
@@ -167,6 +168,8 @@ TOTPに1Password以外を使って、パスワードとTOTPのコードを別の
 
 また、[Authy](https://authy.com/)を使う場合は、Authy自体の2要素認証としてYubikeyを使えない問題もあります。
 他の方法として、Yubikey自体にTOTPを保存して、YubikeyをTOTPとして扱うフローも考えましたが、管理が複雑になって最初の問題が解決できないので避けました。
+
+2FAリレー攻撃などは実際には難しい(パスワード自体はOriginに紐づくパスワードマネージャーで入れるため)ので、TOTPを分けるフローにしなかったのは、どちらかというと管理の複雑性を減らすのが主な目的です。
 
 ## MFAのバックアップコード
 
