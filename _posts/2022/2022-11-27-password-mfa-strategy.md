@@ -144,6 +144,30 @@ Yubikey自体に、TOTPのコードを保存し、このコードはハード的
 - 1PasswordのTOTP
 - Yubikey 2枚
 
+### 📝補足: 1PasswordとTOTP
+
+1PasswordにTOTPも保存するのは、2要素認証ではなく、2段階認証です。
+
+- [TOTP for 1Password users | 1Password](https://blog.1password.com/totp-for-1password-users/)
+
+そのため、この管理方法は次のように言い換えられます。
+
+- 重要ではないアカウント: 1Passwordを使って2段階認証
+- 重要なアカウント: Yubikeyを使って2要素認証
+
+TOTPに1Password以外を使って、パスワードとTOTPのコードを別の場所に保存する方法もあります。
+この場合、TOTPを扱うAuthenticator Appsが、サイトのOriginとTOTPを紐付けて管理できないと、2FAリレー攻撃などのフィッシングに対応できません。
+
+サイトのOriginとOne-Time Passwordの紐付けの問題は、SMSでOne-Time Passwordを受け取り自動入力する[`<input autocomplete="one-time-code" />`](https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete)でも発生します。
+
+- [SMS OTPの自動入力によるリスクとその対策 - Akaki I/O](https://akaki.io/2021/sms_otp_autofill)
+- [Risk to Japanese-speaking World posed by SMS OTP Autofill in iOS - Akaki I/O](https://akaki.io/2022/risk_to_japanese-speaking_world_posed_by_sms_otp_autofill_in_ios)
+
+このSMSのOne-Time PasswordとOriginを紐付ける[Web OTP API](https://developer.chrome.com/blog/cross-device-webotp/)もありますが、対応してないサイトは多いです。
+
+また、[Authy](https://authy.com/)を使う場合は、Authy自体の2要素認証としてYubikeyを使えない問題もあります。
+他の方法として、Yubikey自体にTOTPを保存して、YubikeyをTOTPとして扱うフローも考えましたが、管理が複雑になって最初の問題が解決できないので避けました。
+
 ## MFAのバックアップコード
 
 多くのサイトはMFAを登録するとバックアップコードを発行しています。
@@ -220,6 +244,6 @@ Amazon.co.jpは、セキュリティキーに対応していません。
 
 1Passwordはソフトウェア的な良さがあり、Yubikeyはハード的な良さがあるので、それぞれをいい感じに組み合わせ行けるのが良いと思いました。
 
-テンプレートのライセンス: [CC 0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) ©️ azu
 
 - [[テンプレート] MFAの管理方法](https://efcl.notion.site/MFA-d7f9bfab757149d5a9da2da1b10a52c8)
+  - テンプレートのライセンス: [CC 0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) ©️ azu
