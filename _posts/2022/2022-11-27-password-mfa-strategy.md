@@ -157,7 +157,7 @@ Yubikey自体に、TOTPのコードを保存し、このコードはハード的
 
 TOTPに1Password以外を使って、パスワードとTOTPのコードを別の場所に保存する方法もあります。
 この場合、TOTPを扱うAuthenticator Appsが、サイトのOriginとTOTPを紐付けて管理できないと、2FAリレー攻撃などのフィッシングに対応できません。
-(1Passwordの場合は、サイトのURLに紐づいています)
+(1Passwordの場合は、パスワードと同じサイトのURLに紐づいているはずです)
 
 サイトのOriginとOne-Time Passwordの紐付けの問題は、SMSでOne-Time Passwordを受け取り自動入力する[`<input autocomplete="one-time-code" />`](https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete)でも発生します。
 
