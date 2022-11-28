@@ -30,7 +30,7 @@ tags:
 
 右上の[複製](https://efcl.notion.site/MFA-d7f9bfab757149d5a9da2da1b10a52c8?duplicate=true)ボタンから、Notionにコピーして利用できます。
 
-テンプレートでは、アカウントが重要アカウントかサイトがセキュリティキーに対応していかなどにチェックを入れると、自動的に管理方法を出してくれます。
+テンプレートでは、アカウントが重要アカウントかサイトがセキュリティキーに対応しているかなどにチェックを入れると、自動的に管理方法を出してくれます。
 
 [![Template](https://efcl.info/wp-content/uploads/2022/11/27-1669555287.png)](https://efcl.notion.site/MFA-d7f9bfab757149d5a9da2da1b10a52c8)
 
