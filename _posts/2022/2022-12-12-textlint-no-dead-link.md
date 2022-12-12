@@ -90,6 +90,7 @@ GitHub Issuesを作るような仕組みだとこのチェックは自前で書�
 確実に落ちる落ちないがはっきりしているものは、PRを出すときにCIを回すのが良いですが、不安定なものはPR時に回すとノイズとなります。
 そのため、時間がかかりすぎたり確実性が低い処理を毎日定時で回して、その結果を[code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)に載せるだけでもカバーできる範囲が広がります。
 
+- jsprimerの例: https://github.com/asciidwango/js-primer/blob/ca6a7d8adbaee6661b6c69f849023e50ea406524/.textlintrc.js#L102-L115
 
 このように[code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)は、セキュリティ以外の用途でも結構便利です。
 [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)はPublicリポジトリなら無料で利用できますが、Privateリポジトリだと[GitHub Advanced Security](https://docs.github.com/ja/get-started/learning-about-github/about-github-advanced-security)がないと利用できないのが残念なポイントです。
