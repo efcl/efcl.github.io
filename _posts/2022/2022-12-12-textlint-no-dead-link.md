@@ -9,7 +9,7 @@ tags:
 
 ---
 
-[textlint](https://textlint.github.io/)のルールにリンク先のURLがアクセスできなくなってないかをチェックする[textlint-rule-no-dead-link](https://github.com/textlint-rule/textlint-rule-no-dead-link)というルールがあります。
+[textlint](https://textlint.github.io/)のルールには、リンク先のURLがアクセスできなくなってないかをチェックする[textlint-rule-no-dead-link](https://github.com/textlint-rule/textlint-rule-no-dead-link)というルールがあります。
 
 [textlint-rule-no-dead-link](https://github.com/textlint-rule/textlint-rule-no-dead-link)は実際にURLにリクエストを送ることでアクセスできるかをチェックするため、URLの数が多くなるとものすごく時間がかかります。
 また、GitHubのように同一IPからのアクセスが連続すると`429 too many requests`などのエラーを返すサイトもあります。
