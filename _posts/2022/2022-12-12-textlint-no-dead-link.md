@@ -16,7 +16,7 @@ tags:
 [textlint-rule-no-dead-link](https://github.com/textlint-rule/textlint-rule-no-dead-link)は[Retry-After](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After)ヘッダを見てリトライにも対応していますが、このリトライの間隔が長いサイトもあるため、リンク切れのチェックはコミット時にやるのには向いてない作業と言えます。
 
 GitHubでは、GitHub Actionsを使って[schedule](https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows#schedule)実行に対応しています。
-一方で、[schedule](https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows#schedule)で毎日特定の時間に実行しても、その結果を保存先をどうするかという問題がありました。
+一方で、[schedule](https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows#schedule)で毎日特定の時間に実行しても、その結果の保存先をどうするかという問題がありました。
 
 最近のGitHubでは[code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)という機能があります。
 [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)は[Dependabot](https://github.com/dependabot)などのセキュリティアラートとほぼ同じ仕組みとなっていて、アラートをServerityやコミットに紐付けて管理できます。
