@@ -71,8 +71,8 @@ console.log("https://example.com?" + params); // => "https://example.com/?q=%3Cu
 
 ## URLを扱うときは[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)を使う
 
-先ほども書いていたように、URLに対して何か処理するときは、URLを構造的なオブジェクトとして扱うないと問題が起きやすいです。
-今は、ウェブブラウザ/Node.js/Deno/Bun/Cloudflare Workersも、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL) APIと[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)　APIというウェブ標準を実装しています。
+先ほども書いていたように、URLに対して何か処理するときは、URLを構造的なオブジェクトとして扱わないと問題が起きやすいです。
+現在のウェブブラウザ/Node.js/Deno/Bun/Cloudflare Workersなどは、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL) APIと[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams) APIというウェブ標準を実装しています。
 
 そのため、URLから特定の部分を取得したい、特定のパラメータを変更したいなどURL処理を行う際には、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)を使います。
 
