@@ -96,7 +96,7 @@ console.log(new URL("https://example.com/path/to/page?q=query&page=1#main"));
 } */
 ```
 
-このURLを文字列操作して正しくパースするのは至難の技で、URLパーサを脆弱性なしに実装できる人は限られています。
+URLを正しくパースするのは至難の技で、URLパーサを脆弱性なしに実装できる人は限られています。
 毎年、独自のURLパーサーの脆弱性、URLを単純にreplace/splitで処理したことによる問題がいろいろなところで見つかっています。
 
 - [Incorrect returned href via an '@' sign but no user info and hostname · CVE-2022-0639 · GitHub Advisory Database](https://github.com/advisories/GHSA-8v38-pw62-9cw2)
