@@ -74,7 +74,7 @@ console.log("https://example.com?" + params); // => "https://example.com/?q=%3Cu
 先ほども書いていたように、URLに対して何か処理するときは、URLを構造的なオブジェクトとして扱わないと問題が起きやすいです。
 現在のウェブブラウザ/Node.js/Deno/Bun/Cloudflare Workersなどは、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL) APIと[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams) APIというウェブ標準を実装しています。
 
-そのため、URLから特定の部分を取得したい、特定のパラメータを変更したいなどURL処理を行う際には、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)を使います。
+そのため、URLから特定の部分を取得したい、特定のパラメータを変更したいなどURL処理を行う際には、[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)を使います。
 
 たとえば、`new URL("https://example.com/path/to/page?q=query&page=1#main")`をしてみると、URL文字列からURLオブジェクトを作成して構造的なURLが見れます。
 
@@ -103,7 +103,7 @@ URLを正しくパースするのは至難の技で、URLパーサを脆弱性�
 - [What Bypassing Razer's DOM-based XSS Patch Can Teach Us - EdOverflow](https://edoverflow.com/2022/bypassing-razers-dom-based-xss-filter/)
 - [A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages! - us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
 
-せっかく実行環境にビルトインされててよくテストされた[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)というAPIがあるので、ぜひこれを使いましょう。
+せっかく実行環境にビルトインされててよくテストされた[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)というAPIがあるので、ぜひこれを使いましょう。
 
 というのが、[url-cheatsheet](https://github.com/azu/url-cheatsheet)を書いた理由です。
 
