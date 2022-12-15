@@ -287,7 +287,7 @@ URLを文字列結合や文字列置換で処理してる大部分は、`URL`と
 - [MarkdownやAsciidoc中に書いたJavaScriptのサンプルコードをdoctestするツールを作った | Web Scratch](https://efcl.info/2019/09/02/power-doctest-markdown-asciidoc/)
 - [azu/power-doctest: JavaScript Doctest for JavaScript, Markdown and Asciidoc.](https://github.com/azu/power-doctest)
 
-[JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)でもこの仕組みを使って、ほとんど全てのサンプルコードはテストされています。
+[JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)でもこの仕組みを使って、ほとんどのサンプルコードは自動テストされています。
 
 - [js-primer/CONTRIBUTING.md at master · asciidwango/js-primer](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md#doctest)
 
