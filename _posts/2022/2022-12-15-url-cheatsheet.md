@@ -14,7 +14,7 @@ URLを文字列結合で組み立てると色々問題が起きやすいので�
 
 - [azu/url-cheatsheet: URL manipulation cheatsheet for JavaScript](https://github.com/azu/url-cheatsheet)
 
-## URLにユーザーが入力した文字列を含めるときは`[encodeURIComponent](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)でエスケープする
+## URLにユーザーが入力した文字列を含めるときは[encodeURIComponent](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)でエスケープする
 
 URLはプレーンな文字列ではなく構造化された文字列(文字の並びに意味がある文字列)として扱わないと、さまざまな問題を抱えやすいです。
 
