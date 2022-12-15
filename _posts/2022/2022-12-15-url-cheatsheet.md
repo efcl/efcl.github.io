@@ -10,7 +10,7 @@ tags:
 
 ---
 
-URLを文字列結合で組み立てると色々問題が起きやすいので、それを避けるために[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL) APIや[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams) APIでURLを組み立てるパターンをまとめたチートシートを作りました。
+URLを文字列結合で組み立てると色々問題が起きやすいので、それを避けるために[URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)や[URLSearchParams API](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)でURLを組み立てるパターンをまとめたチートシートを作りました。
 
 - [azu/url-cheatsheet: URL manipulation cheatsheet for JavaScript](https://github.com/azu/url-cheatsheet)
 
