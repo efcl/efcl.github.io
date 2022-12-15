@@ -1,5 +1,5 @@
 ---
-title: "JavaScriptでURLを文字列操作しないために、url-cheatsheetを作った"
+title: "JavaScriptでURLを文字列結合で組み立てないために、url-cheatsheetを作った"
 author: azu
 layout: post
 date : 2022-12-15T21:26
@@ -10,7 +10,7 @@ tags:
 
 ---
 
-URLを文字列結合で組み立てると色々問題が起きやすいので、それを避けルために[URL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)や[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)でURLを組み立てるパターンをまとめたチートシートを作りました。
+URLを文字列結合で組み立てると色々問題が起きやすいので、それを避けるために[URL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)や[URLSearchParams()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)でURLを組み立てるパターンをまとめたチートシートを作りました。
 
 - [azu/url-cheatsheet: URL manipulation cheatsheet for JavaScript](https://github.com/azu/url-cheatsheet)
 
