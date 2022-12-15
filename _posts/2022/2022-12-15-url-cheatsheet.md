@@ -48,7 +48,7 @@ const url = `https://example.com?q=${query}`;
 console.log(url); // => "https://example.com?q=<user input>"
 ```
 
-このパラメータの問題も同じく、ユーザー入力をパラメータに使う場合は[encodeURIComponent()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponentする必要があります。
+このパラメータの問題も同じく、ユーザー入力をパラメータに使う場合は[encodeURIComponent()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)する必要があります。
 
 ```js
 // DO
