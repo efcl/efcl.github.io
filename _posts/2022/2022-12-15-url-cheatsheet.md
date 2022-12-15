@@ -232,7 +232,7 @@ console.log(url.toString()); // => "https://example.com/?page=1"
 
 Allow only `a` and `d` parameters.
 
-解説: `searchParams`はIteratorなので、`Array.from(searchParams)`すると `[key, value]` の配列へと変換できます。あとはフィルター指定して結果から新しいsearchParamsを作成しています。
+解説: `searchParams`はIteratorなので、`Array.from(searchParams)`すると `[key, value]` の配列へと変換できます。あとはフィルターした結果から新しいsearchParamsを作成しています。
 
 ```js
 const base = "https://example.com/?a=1&b=2&c=3&d=4";
