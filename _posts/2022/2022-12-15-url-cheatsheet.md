@@ -1,5 +1,5 @@
 ---
-title: "JavaScriptでURLを文字列結合で組み立てないために、url-cheatsheetを作った"
+title: "[JavaScript] URLを文字列結合で組み立てないために、url-cheatsheetを作った"
 author: azu
 layout: post
 date : 2022-12-15T21:26
