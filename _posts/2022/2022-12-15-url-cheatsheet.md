@@ -107,8 +107,7 @@ URLを正しくパースするのは至難の技で、URLパーサを脆弱性�
 
 というのが、[url-cheatsheet](https://github.com/azu/url-cheatsheet)を書いた理由です。
 
-いろいろなレシピを書いているので、詳細は
-を参照してください。
+いろいろなレシピを書いているので、詳細はリポジトリを参照してください。
 また、こういうパターンがあるといいとかあったらPull Requestを送ってください。
 
 - [azu/url-cheatsheet: URL manipulation cheatsheet for JavaScript](https://github.com/azu/url-cheatsheet)
