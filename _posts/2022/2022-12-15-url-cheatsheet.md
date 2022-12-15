@@ -178,7 +178,7 @@ const params = new URLSearchParams({
 console.log(url + "?" + params); // => "https://example.com/?q=query&page=1"
 ```
 
-or 
+または、`url.search`プロパティに代入すると、URLオブジェクトのパラメータを上書きできるので、`?`を手書きしなくてもよくなります。
 
 ```js
 const q = "query";
