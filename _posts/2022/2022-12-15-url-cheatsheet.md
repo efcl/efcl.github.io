@@ -27,7 +27,7 @@ const url = `https://example.com/user/${name}`;
 ```
 
 `name` に `../../admin`のような文字列が入ると、`https://example.com/admin`というURLとして解釈されます。
-URLの場合は、`../`や`/`などを文字列結合してもoriginは変更できないので、そこまで深刻にはなりにくいですが、サイト上にオープンリダイレクタがあると、別のドメインのURLとして解釈させられるようなケースもあります
+URLの場合は、`../`や`/`などを文字列結合してもoriginは変更できないので、そこまで深刻にはなりにくいですが、サイト上にオープンリダイレクタがあると、別のドメインのURLとして解釈させられるようなケースもあります。
 URLは、攻撃者が被害者に特定のURLを踏ませることが簡単(DMなどで誘導すればいいだけであるため、短縮URLなどもあり偽装はしやすい)であるため、いろいろな攻撃の開始点となりやすい部分です。
 
 そのため、ユーザー入力を使ってURLを組み立てる場合は、そのユーザー入力は[encodeURIComponent()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)でURLエスケープする必要があります。
