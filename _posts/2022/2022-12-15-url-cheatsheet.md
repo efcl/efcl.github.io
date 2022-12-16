@@ -270,7 +270,7 @@ console.log(isValidURL("https/example.com")); // => false
 ## おわりに
 
 [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)と[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)は便利です。
-URL文字列をそのまま文字列結合や文字列置換で処理してる大部分は、`URL`と`URLSearchParams`で置き換えることができると思います。
+URL文字列をそのままの文字列結合、文字列置換、正規表現で処理してる場合、大部分は`URL`と`URLSearchParams`に置き換えられると思います。
 
 特にパラメータは[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)の方が、安全で分かりやすいコードになるはずなので、文字列処理でやる必要がほぼありません。
 (同様のことをするものとしてNode.jsの`querystring`や[qs](https://www.npmjs.com/package/qs)がありますが、ほとんどの人は[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams)で十分だと思います。)
