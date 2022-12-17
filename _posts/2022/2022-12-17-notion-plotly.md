@@ -35,6 +35,14 @@ NotionのデータベースからNotion Plotly]に渡すパラメータを作っ
 
 - [azu/notion-plotly: Create embed graph page from Notion Database.](https://github.com/azu/notion-plotly)
 
+自分用にとりあえず書いただけなので、そこまで複雑なパラメータは今のところないです。
+渡せる`x`や`y`などの値と`&sortBy=x` (どの値でソートする)ぐらいです。
+グラフの描画には、Plotlyを使ってるので、次のページあるグラフは追加しようと思えばできるはずです(グラフの種類ごとにHTMLを分けています)。
+
+- [Plotly javascript graphing library in JavaScript](https://plotly.com/javascript/)
+
+欲しいグラフとかあったらPull Requestを送ってください。
+
 ## NotionのデータベースからグラフURLを作る
 
 Notionの実際のデータベースなどは、次のテンプレートを参照してみてください。
