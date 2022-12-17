@@ -88,3 +88,7 @@ NotionからCSVにしてSpreadSheetにしてビジュアライズとかは流石
 詳しい使い方はテンプレートページを参照してください。
 
 - テンプレート: [Notion Plotly](https://efcl.notion.site/Notion-Plotly-f38a5b4fafb342b6b9b3dea6e7de102c)
+
+ソースコードは次のリポジトリにあります。シンプルな静的なページなので、ForkしてGitHub Pagesでも動くと思います。
+
+- [azu/notion-plotly: Create embed graph page from Notion Database.](https://github.com/azu/notion-plotly)
