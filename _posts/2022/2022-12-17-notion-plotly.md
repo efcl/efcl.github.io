@@ -83,4 +83,8 @@ Notionの、埋め込みでこのURLを埋め込めばグラフ自体をNotion�
 個人的には、Notionでビジュアル化したダッシュボード的なのはあまり作ってないので、これぐらいで十分かなと思いました。
 (今のところ、埋め込みの方はオマケ要素という感じです)
 
-NotionからCSVにしてSpreadSheetにしてビジュアライズとかは流石に遠かったので、それを簡略化するイメージで[Notion Plotly](https://efcl.notion.site/Notion-Plotly-f38a5b4fafb342b6b9b3dea6e7de102c)は作っています。
+NotionからCSVにしてSpreadSheetにしてビジュアライズとかは流石に遠かったので、それを簡略化するイメージで[Notion Plotly](https://notion-plotly.netlify.app/)は作っています。
+
+詳しい使い方はテンプレートページを参照してください。
+
+- テンプレート: [Notion Plotly](https://efcl.notion.site/Notion-Plotly-f38a5b4fafb342b6b9b3dea6e7de102c)
