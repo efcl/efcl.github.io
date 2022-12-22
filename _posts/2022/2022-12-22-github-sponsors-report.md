@@ -119,9 +119,14 @@ GitHub Sponsorsでの月ごとの推定収入の推移（単位はUSドル）を
 
 今は[GitHub Sponsors](https://github.com/sponsors)や[Open Collective](https://opencollective.com/)など、個人や組織がオープンソースを金銭的にも支援する仕組みがあります。支援する人/支援される人どちらも活用を検討してみてください。
 
-GitHub Sponsorsの使い方については、次の記事も参照してみてください。
+GitHub Sponsorsの使って支援する方法については、次の記事も参照してみてください。
 
 - [初めてでもわかる、GitHub Sponsorsでオープンソースを支援する方法](https://zenn.dev/azu/articles/c48ad63e20ad75)
+
+GitHub Sponsorsを受け入れる際のプロフィールやTierの設定については、次の記事も参照してみてください。
+
+- [How to Create a Great GitHub Sponsors Profile - DEV Community 👩‍💻👨‍💻](https://dev.to/github/how-to-create-the-perfect-sponsors-profile-for-your-open-source-project-3747)
+- [GitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch](https://efcl.info/2021/10/01/github-sponsors/)
 
 ## 謝辞
 
