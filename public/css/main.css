@@ -330,9 +330,14 @@ th {
   border: 1px solid #515151;
 }
 
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
+tr td,
+tr th {
   background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td,
+tr:nth-child(even) th {
+  background-color: #ffffff;
 }
 
 /*
