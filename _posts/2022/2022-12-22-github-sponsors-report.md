@@ -70,6 +70,10 @@ GitHub Sponsorsで支援する際にはUSドルで支払いますが、振込時
 |2022/11 |  ¥145,152 |
 |2022/12 |  ¥135,072 |
 
+月毎の金額をグラフにすると次のようになります。
+
+![月毎のGitHub Sponsorsの金額](/wp-content/uploads/2022/12/github-montly-yen.png)
+
 月毎の金額に振れ幅があるのは、サポートしてる人の支払いのタイミングが日毎に分かれているため、振込のタイミングで金額のブレがあるようです。
 また、One-Timeでのサポートがある月は、Monthlyのサポートにプラスされる形です。
 2022年7月だけ大きく増えているのは、GitHubの[Maintainer Month](https://maintainermonth.github.com/)で$500ほどOne-Timeサポートをもらったためです。
