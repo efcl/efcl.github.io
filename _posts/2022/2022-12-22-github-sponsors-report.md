@@ -12,7 +12,7 @@ tags:
 2022年に得た[GitHub Sponsors](https://github.com/sponsors)の収入[^1]をまとめたものです。
 GitHub Sponsorsは、主にオープンソース活動に対して金銭的に支援をする仕組みです。
 
-GitHub Sponsorsは個人と組織の支援がありますが、ここでは自分個人に対するGitHub Sponsorsについてまとめています。
+GitHub Sponsorsは個人と組織への支援がありますが、ここでは自分個人に対するGitHub Sponsorsについてまとめています。
 自分([@azu](https://github.com/azu))のGitHub Sponsorsは、次のページに公開されています。
 
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
