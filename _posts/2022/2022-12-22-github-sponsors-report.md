@@ -140,4 +140,4 @@ GitHub Sponsorsで支援をしてくれている方々に感謝します。
 
 - [2022年に OSS 活動によって得た報酬を公開](https://sosukesuzuki.dev/advent/2022/14/)
 
-[^1]: 📝 [報酬](https://ja.wikipedia.org/wiki/%E5%A0%B1%E9%85%AC)にしなかったのは定義が難しいのと、見返りを設定してるわけでないため。"所得"は税を引いた後の金額で、GitHub Sponsorsの振込額には源泉徴収はなくて[確定申告](https://github.com/azu/github-sponsors-tax)がいるため不適当そう。[IncomeやRevenue](https://english.chicken168.com/uriage/)が妥当な表現と思ったため"収入"と表記した。
+[^1]: 📝 [報酬](https://ja.wikipedia.org/wiki/%E5%A0%B1%E9%85%AC)にしなかったのは定義が難しいのと、見返りを設定してるわけでないため。"所得"は税を引いた後の金額で、GitHub Sponsorsの振込額には源泉徴収はなくて[確定申告](https://github.com/azu/github-sponsors-tax)するまで実際の金額が決まらないので不適当そう。[IncomeやRevenue](https://english.chicken168.com/uriage/)が妥当な表現と思ったため"収入"と表記した。
