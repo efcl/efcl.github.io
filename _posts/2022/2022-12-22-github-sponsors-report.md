@@ -77,7 +77,7 @@ GitHub Sponsorsで支援する際にはUSドルで支払いますが、振込時
 
 月毎の金額に振れ幅があるのは、サポートしてる人の支払いのタイミングが日毎に分かれているため、振込のタイミングで金額のブレがあるようです。
 また、One-Timeでのサポートがある月は、Monthlyのサポートにプラスされる形です。
-2022年7月だけ大きく増えているのは、GitHubの[Maintainer Month](https://maintainermonth.github.com/)で$500ほどOne-Timeサポートをもらったためです。
+2022年7月だけ大きく増えているのは、GitHubの[Maintainer Month](https://maintainermonth.github.com/)で$500ほどOne-TimeサポートをGitHub社からもらったためです。
 
 - [Thank you to our maintainers | The GitHub Blog](https://github.blog/2022-06-24-thank-you-to-our-maintainers/)
 - [Maintainer Month: オープンソースのメンテナーがやっている仕事 | Web Scratch](https://efcl.info/2022/07/01/maintainer-month/)
