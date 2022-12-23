@@ -192,12 +192,12 @@ ${new Date().toLocaleString()} ${replyTo}
 気軽にアーカイブしていくので、Action Requiredなメールをすっ飛ばすこともありそうです。
 なので次のようなフィルターを書いてました。
 
-> 条件: subject:(Action required)
+> 条件: subject:(Action required)  
 > 処理: ラベル「Action Required」を付ける
 
 ## まとめ
 
-結構シンプルな設定できるInbox Zeroができていそうです。
+結構シンプルな設定で、Inbox Zeroができていそうです。
 
 `e`でアーカイブが気軽にできるようになって、メールがRSSリーダ(RSSリーダは[Irodr](https://github.com/azu/irodr)を使ってます)にちょっと近くなりました。
 以前よりはメールを開くまでに気合を入れる時間が減った気はします。
