@@ -23,6 +23,8 @@ Gmailをメーラーとして使ってますが、メールを開くのがいま
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/al1QXFQjq1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+
 ##　Inbox Zeroの設定方法
 
 細かい設定は参考にした動画や記事の方に任せます。
