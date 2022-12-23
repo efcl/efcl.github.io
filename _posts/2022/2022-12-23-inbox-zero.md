@@ -209,6 +209,8 @@ ${new Date().toLocaleString()} ${replyTo}
 - `Action Required` とかのラベルをショートカット一発でつけたい
 - マルチカラムだとラベルをつけても、右カラムにリロードするまで反映されない
 - 次に移動するメールがわかってた方がRSSリーダの感覚に違いので、そうしたい
+- `T` 押したときにGoogle Taskにメールを入れられるけど、これをNotionとか自作のエンドポイントに送りたい
+  - [Google Workspace アドオンを使用して Gmail を拡張する  |  Apps Script  |  Google Developers](https://developers.google.com/apps-script/add-ons/gmail)だとショートカットに乗せるのはできない?
 
 自分は受け取るメールの総量がそんな多くないのでなんとかなってますが、この辺もっと軽い感じにできるといいなーと思いました。
 (そういうクライアントとかあるのかなー)
