@@ -215,4 +215,4 @@ ${new Date().toLocaleString()} ${replyTo}
   - [Google Workspace アドオンを使用して Gmail を拡張する  |  Apps Script  |  Google Developers](https://developers.google.com/apps-script/add-ons/gmail)だとショートカットに乗せるのはできない?
 
 自分は受け取るメールの総量がそんな多くないのでなんとかなってますが、この辺もっと軽い感じにできるといいなーと思いました。
-(そういうクライアントとかあるのかなー)
+(そういうクライアントとかあるのかなー、でも大体Gmailレベルのフィルターができるものがなくて止まってる気がする)
