@@ -115,8 +115,8 @@ GitHubリポジトリのセキュリティアップデートのみはdependabot�
 - [azu/renovate-config: Shareable config for Renovate (renovatebot.com)](https://github.com/azu/renovate-config)
 
 dependabotはautomergeをしてくれないので、メールに対して `@dependabot merge` という返信をしています。
-PRやIssueの[メールに返信するとGitHubのコメント](https://github.blog/2011-03-10-reply-to-comments-from-email/)として扱えるので、`@dependabot merge`を受け取ってCIが通ってるならマージされます。
-PRのマージボタンを押してマージしないのは、悪意ある攻撃者dependabotと偽装して`package-lock.json`とかに細工したPRを送られると気付けないからです。
+PRやIssueの[メールに返信するとGitHubのコメント](https://github.blog/2011-03-10-reply-to-comments-from-email/)として扱えるので、`@dependabot merge`を送ってCIが通ってるならマージされます。
+PRのマージボタンを押してマージしないのは、悪意ある攻撃者がdependabotと偽装して`package-lock.json`とかに細工したPRを送られると気付けないからです。
 
 - [Why npm lockfiles can be a security blindspot for injecting malicious modules | Snyk](https://snyk.io/blog/why-npm-lockfiles-can-be-a-security-blindspot-for-injecting-malicious-modules/)
 
