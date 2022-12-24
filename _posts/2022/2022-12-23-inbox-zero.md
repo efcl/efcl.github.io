@@ -210,7 +210,8 @@ ${new Date().toLocaleString()} ${replyTo}
 - `y`で `Action Required` とかつけたラベルが消えてくれない(処理が終わったら外したい)
 - `Action Required` とかのラベルをショートカット一発でつけたい
 - マルチカラムだとラベルをつけても、右カラムにリロードするまで反映されない
-- 次に移動するメールがわかってた方がRSSリーダの感覚に違いので、そうしたい
+- 次に移動するメールがわかってた方がRSSリーダの感覚に近いので、そうしたい
+  - 現状はキーを押すまでわからないから、キーが押しにくい
 - `T` 押したときにGoogle Taskにメールを入れられるけど、これをNotionとか自作のエンドポイントに送りたい
   - [Google Workspace アドオンを使用して Gmail を拡張する  |  Apps Script  |  Google Developers](https://developers.google.com/apps-script/add-ons/gmail)だとショートカットに乗せるのはできない?
 
