@@ -88,7 +88,7 @@ $ rm ~/.zsh_history.bak
 
 ## モチベーション
 
-先月に、PyTorchのPyTorch-nightlyに対してDependency Confusionを使ったサプライチェーン攻撃がありました。
+先月、PyTorchのPyTorch-nightlyに対してDependency Confusionを使ったサプライチェーン攻撃がありました。
 
 - [Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch](https://pytorch.org/blog/compromised-nightly-dependency/)
 
