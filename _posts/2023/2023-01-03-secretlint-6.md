@@ -89,7 +89,7 @@ npmなどでも同様の問題があります。
 
 - [Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies | by Alex Birsan | Medium](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
 
-JFrog ArtifactoryなどのPrivateなレジストリとPublicなレジストリを併用すると、名前は同じだけどレジストリによって中身が異なるものが発生しやすいです。このDependency Confusionへの対応は次の記事にまとまっていますが、レジストリを混在させない、パッケージ名に名前空間を使う、ロックファイルを使うなどの対策があります。
+JFrog ArtifactoryなどのPrivateなレジストリとPublicなレジストリを併用すると、名前は同じだけどレジストリによって中身が異なるものが発生しやすいです。このDependency Confusionへの対応は次の記事にまとまっていますが、レジストリを混在させない、パッケージ名に名前空間を使う、ロックファイルを使うなどの対策を組み合わせる話があります。
 
 - [3 Ways to Mitigate Risk When Using Private Package Feeds](https://azure.microsoft.com/ja-jp/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
 
