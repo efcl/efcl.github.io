@@ -60,6 +60,11 @@ $ cp ~/.zsh_history ~/.zsh_history.bak
 
 ```bash
 $ npx @secretlint/quick-start ~/.zsh_history --format=mask-result
+
+...
+: 1672748457:0;GITHUB_TOKEN="****************************************" gh issue list
+...
+
 ```
 
 問題なかったら、`--output`オプションを使って、マスキングした結果で`~/.zsh_history`を上書きします。
