@@ -112,4 +112,4 @@ JFrog ArtifactoryなどのPrivateなレジストリとPublicなレジストリ�
 
 [Secretlint](https://github.com/secretlint/secretlint)には`--fix`のような自動修正の仕組みはありませんが、エラー結果を表示するフォーマッターの実装を工夫すれば、疑似的な自動修正が実装できるなと思って`--format=mask-result`というフォーマッターを実装しました。
 
-実際にやってみたら何個か見つかったので、マスキングして履歴から消しました。
+実際にやってみたら何個か見つかったので、マスキングして履歴から消しました(revoke済みのトークンやBasic認証のURLなど)。
