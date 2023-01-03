@@ -81,7 +81,8 @@ $ rm ~/.zsh_history.bak
 
 - [Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch](https://pytorch.org/blog/compromised-nightly-dependency/)
 
-`pip`は社内リポジトリ(レジストリ)とPyPIに同じパッケージ名があった場合に、PyPIを優先してインストールします。そのため、PyTorch-nightlyが依存していてPyPIにはまだなかったパッケージと同じ名前で、悪意あるコード仕込んでPyPIにアップロードしておくと、PyTorch-nightlyをインストール時にそのマルウェアを自動でインストールさせられる問題です。
+`pip`は社内リポジトリ(レジストリ)とPyPIに同じパッケージ名があった場合に、PyPIを優先してインストールします(厳密には`index-url`を`extra-index-url`よりも優先する)。
+そのため、PyTorch-nightlyが依存していてPyPIにはまだなかったパッケージと同じ名前で、悪意あるコード仕込んでPyPIにアップロードしておくと、PyTorch-nightlyをインストール時にそのマルウェアを自動でインストールさせられる問題です。
 この問題は、Dependency Confusionと呼ばれています。
 
 npmなどでも同様の問題があります。
