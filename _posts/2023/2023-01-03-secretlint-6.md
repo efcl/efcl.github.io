@@ -111,6 +111,7 @@ JFrog ArtifactoryなどのPrivateなレジストリとPublicなレジストリ�
 - [1Password for SSH & Git | 1Password Developer Documentation](https://developer.1password.com/docs/ssh/)
 
 `.config/`や`~/.aws`などにcredentialが生のテキストとして保存されてることが多いです。
+また、HOMEディレクトリではありませんが、`.env`には機密情報が入ってる可能性が高いので、こういったマルウェアには狙われやすいと思います。
 これらは[1Password Shell Plugins](https://github.com/1Password/shell-plugins)や[op run](https://developer.1password.com/docs/cli/reference/commands/run)、[zenv](https://github.com/m-mizutani/zenv)、[envchain](https://github.com/sorah/envchain)などを使って、ファイルに生のトークンなどを保存しないようにできます(これについてはまた今後書きます) 。
 
 それ以外にも、HOMEディレクトリにcredentialが入りやすいものとして、`.zsh_history`や`.bash_history`などのシェルの履歴ファイルがあります。
