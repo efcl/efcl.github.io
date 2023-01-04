@@ -29,8 +29,9 @@ Secretlintは `secretlint "**/*"`のようにglobやファイルを指定して�
 ## 使い方: `.zsh_history`の機密情報をマスキングする
 
 `secretlint`パッケージ自体にはルールは含まれていませんが、`@secretlint/quick-start`パッケージには推奨ルールが同梱されているので、`@secretlint/quick-start`を使ったやり方を紹介します。
-HOMEディレクトリのファイルは、Dockerでは扱いにくいので、Node.js版を利用します。
 推奨ルールには、GitHub、Stripe、Slack(webhookも含む)、AWS、GCP、npm、SendGrid、秘密鍵、Basic認証などの検出ルールが含まれています。
+
+Dockerでも利用できますが、HOMEディレクトリのファイルはDockerでは扱いにくいので、Node.js版を利用します。
 
 - 詳細: [SecretlintでAPIトークンや秘密鍵などのコミットを防止する | Web Scratch](https://efcl.info/2020/03/24/secretlint/)
 
