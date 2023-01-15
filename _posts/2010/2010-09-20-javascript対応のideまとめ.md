@@ -101,7 +101,7 @@ IDE全般としては、クロスプラットフォームに対応している�
  [13]: http://netbeans.org/kb/65/ide/javascript-editor.html
  [14]: http://wiki.netbeans.org/JavaScript
  [15]: http://wiki.eclipse.org/index.php/ATF/JSDT
- [16]: http://kompozer.net/
+ [16]: https://kompozer-web.de/
  [17]: http://journal.mycom.co.jp/articles/2010/08/05/dwcs5rchu/index.html
  [18]: http://help.adobe.com/ja_JP/Dreamweaver/10.0_API_Ref/index.html
  [19]: http://help.adobe.com/ja_JP/Dreamweaver/10.0_Extending/WS0B37FCCA-DE3C-4a52-86F6-DEF43170EBA3.html
