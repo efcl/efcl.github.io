@@ -1,5 +1,5 @@
 ---
-title: "eslint-cjs-to-esm: CJSをESMへとマイグレーション補助するツールを書いた"
+title: "eslint-cjs-to-esm: CJSをESMへとマイグレーションするツールを書いた"
 author: azu
 layout: post
 date : 2023-01-18T22:13
