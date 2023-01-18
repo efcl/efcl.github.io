@@ -14,6 +14,16 @@ tags:
 その際に、ESMでは`__dirname`や`require`などCommonJS特有の機能は使えなくなっています。
 また、TypeScriptやBabelなど多くのツールはCJSでは`import`時に拡張子はなくても大丈夫ですが、ESMの場合は`import`時に拡張子が必要になります。
 
+
+```diff
+import url from "node:url";
+- import { mdEscape } from "./mdEscape";
++ import { mdEscape } from "./mdEscape.js";
++ const __filename = url.fileURLToPath(import.meta.url); // __filenameはESMにはないためimport.meta.urlから取得する
++ const __dirname = path.dirname(__filename);　// __dirnameはESMにはない
+
+console.log(__filename, __dirname)
+```
 具体的にAPIや構文などでCJSからESMへと移行する際に気を付けるNode.jsのAPIは次にまとめてあります。
 
 - [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
