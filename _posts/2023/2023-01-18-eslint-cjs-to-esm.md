@@ -18,7 +18,7 @@ tags:
 ```diff
 import url from "node:url";
 - import { mdEscape } from "./mdEscape";
-+ import { mdEscape } from "./mdEscape.js";
++ import { mdEscape } from "./mdEscape.js"; // ESMでは相対パスに拡張子は省略できない
 + const __filename = url.fileURLToPath(import.meta.url); // __filenameはESMにはないためimport.meta.urlから取得する
 + const __dirname = path.dirname(__filename);　// __dirnameはESMにはない
 
