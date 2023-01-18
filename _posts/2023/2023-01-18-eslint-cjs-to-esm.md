@@ -97,7 +97,7 @@ ESLintのオプションは次のページを参照してください。
 > NG: `npx eslint-cjs-to-esm "src/**/*.ts"`  
 > OK: `npx eslint-cjs-to-esm "./src/**/*.ts"`  
 
-具体的にこのツールのコマンド叩くだけでコーの9割ぐらいはESMへと移行できました。
+具体的にこのツールのコマンド叩くだけでコードの9割ぐらいはESMへと移行できました。
 面倒な`.js`を追加する作業もほとんどやってくれます。
 
 - [refactor: migrate to dual package by azu · Pull Request #4 · azu/markdown-function](https://github.com/azu/markdown-function/pull/4)
