@@ -76,7 +76,7 @@ ESLint自体を同梱しているため、別途ESLintの設定をせずにル�
 
 ## 使い方
 
-使い方は単純で、次のようにESLintと同じ引数を渡すことが対象のファイルをLintと修正できます。
+使い方は単純で、次のようにESLintと同じ引数を渡して対象のファイルをLintと修正できます。
 
     npx eslint-cjs-to-esm [ESLint Arguments!]
 
