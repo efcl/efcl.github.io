@@ -96,3 +96,32 @@ Dual Packageといった場合には2と3のことを大体言っています。
 
 そのため、主に2と3の方法を使ってDual Packageを作っていきます。
 
+## 1. Pure ESM
+
+- CLIなどのツールを作るならこれでいい
+- CLIならパッケージがESMであっても、CJSであってもCLIユーザーには関係ない
+
+## 2 index.mjsラッパーのアプローチ
+
+[Packemon](https://packemon.dev/)が対応してる
+
+- やや保守的なアプローチ
+- CJSがソースになる、ESMはCJSをimportしているラッパーになる
+
+## 3 dual source packageのアプローチ
+
+[tsconfig-to-dual-package](https://github.com/azu/tsconfig-to-dual-package)で対応したパターン
+
+- [Dual package hazard](https://nodejs.org/api/packages.html#dual-package-hazard)という問題がある
+    - ただし、実際にこれのhazardはそこまで問題ないとは思ってる
+    - シングルトンとかステートフルなものは書かないようにする。今時のライブラリは大体そうなってる感じもする
+    - Symbolはちょっと気をつける必要があるが、そこまで登場頻度が高いわけでもない
+- 実際の問題はパッケージ自体から `__dirname` や別のESMライブラリは参照するのが難しくなる
+    - →　そのため向いているのは、依存が不要でロジックが入ってるようなライブラリ
+
+## 4 dynamic import proxyのアプローチ
+
+- これはViteぐらいしか知らない
+- textlintでやってみようとしたけど、互換性を作るにはインターフェースが全部asyncになってないと厳しい
+- これは、ESMがソースになる、CJSはESMをDynamic Importしているラッパーになる
+- 作りが特殊なので、ある程度形がはっきりしてないとできない
