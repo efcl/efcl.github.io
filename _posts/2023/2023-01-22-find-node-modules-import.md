@@ -69,6 +69,11 @@ importしてるモジュールの抽出には[ES Module Lexer](https://github.co
 普通のコマンドと同じようにストリーム処理できるように、見つけるたびに標準出力に出してるので、パイプ処理と相性良いと思います。
 
 ```
+# textlintっぽいやつだけ出す
+$ npx find-node-modules-import "**/*.{js,ts}" | grep "textlint"
+```
+
+```
 # モジュール名だけを取り出す
 $ npx find-node-modules-import "**/*.{js,ts}" | cut -f 2
 ```
