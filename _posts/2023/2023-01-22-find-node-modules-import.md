@@ -46,7 +46,7 @@ JavaScriptとTypeScriptどちらも対応しています。
 
       $ npx find-node-modules-import "src/**/*.{js,ts}"
 
-次のコマンドで、`node:fs`や`assert`のようなNode.jsのコアモジュールを検出できる
+次のコマンドで、`node:fs`や`assert`のようなNode.jsのコアモジュールを検出できます。
 
       $ npx find-node-modules-import "src/**/*.{js,ts}" --builtinModules
 
