@@ -63,3 +63,7 @@ webpackやViteなどはもうNode.jsのコアモジュールを自動でpolyfill
 
 - [Migrate assert to invariant function · Issue #985 · textlint/textlint](https://github.com/textlint/textlint/issues/985)
 - [Remove `events` modules from @textlint/kernel · Issue #996 · textlint/textlint](https://github.com/textlint/textlint/issues/996)
+
+importしてるモジュールの抽出には[ES Module Lexer](https://github.com/guybedford/es-module-lexer)を使っています。
+最初は、[Dependency cruiser](https://github.com/sverweij/dependency-cruiser)を使ってやろうと思いましたがそこまでリッチじゃなくていいと思ったので、かなりシンプルな実装になってます。
+普通のコマンドと同じようにストリーム処理できるように、見つけるたびに標準出力に出してるので、パイプ処理と相性良いと思います。
