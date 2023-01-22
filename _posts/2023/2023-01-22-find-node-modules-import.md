@@ -67,3 +67,8 @@ webpackやViteなどはもうNode.jsのコアモジュールを自動でpolyfill
 importしてるモジュールの抽出には[ES Module Lexer](https://github.com/guybedford/es-module-lexer)を使っています。
 最初は、[Dependency cruiser](https://github.com/sverweij/dependency-cruiser)を使ってやろうと思いましたがそこまでリッチじゃなくていいと思ったので、かなりシンプルな実装になってます。
 普通のコマンドと同じようにストリーム処理できるように、見つけるたびに標準出力に出してるので、パイプ処理と相性良いと思います。
+
+```
+# モジュール名だけを取り出す
+$ npx find-node-modules-import "**/*.{js,ts}" | cut -f 2
+```
