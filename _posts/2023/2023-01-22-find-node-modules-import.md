@@ -44,15 +44,15 @@ JavaScriptとTypeScriptどちらも対応しています。
 
 使い方はシンプルで、次のコマンドでインポートしてる全てのモジュール名を検出できます。
 
-      $ find-node-modules-import "src/**/*.{js,ts}"
+      $ npx find-node-modules-import "src/**/*.{js,ts}"
 
 次のコマンドで、`node:fs`や`assert`のようなNode.jsのコアモジュールを検出できる
 
-      $ find-node-modules-import "src/**/*.{js,ts}" --builtinModules
+      $ npx find-node-modules-import "src/**/*.{js,ts}" --builtinModules
 
 次のコマンドで、特定のパッケージ名を検出できます。
 
-      $ find-node-modules-import "src/**/*.{js,ts}" --module "lodash"
+      $ npx find-node-modules-import "src/**/*.{js,ts}" --module "lodash"
 
 ## 作った理由
 
