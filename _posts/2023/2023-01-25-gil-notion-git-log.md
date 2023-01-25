@@ -39,7 +39,8 @@ GIL_NOTION_GIL_API_TOKEN='xxx'
 そして、`post-commit`に次のようなスクリプトを書きます。
 
 ```bash
-# Require 1Password: "GIL_NOTION"
+# .env にNotionの情報を入れる必要があります
+# 中で.envを読み込んでいます。
 declare scriptDir
 declare DOT_ENV
 # GIL: Git CommitをNotionに記録する仕組み
