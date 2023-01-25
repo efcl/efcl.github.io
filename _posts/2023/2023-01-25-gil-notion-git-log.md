@@ -116,6 +116,7 @@ Convential Commitとかバージョンのコミットなんか規則性がある
 
 実際に使ってるコミットフックは[git-hooks/post-notion-gil.sh at master · azu/git-hooks · GitHub](https://github.com/azu/git-hooks/blob/master/hooks/post-notion-gil.sh)にあります。
 もうちょっと色々やっていて、じぶんのNotionはDailyのページがあるので、それぞれのコミットが自動的にそこに紐づくのようになっています。
+日次のページにコミットが紐づくので、その日に何をしたかがわかりやすくなったのは結構よかったです。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">GILでGitコミットとデイリーのNotionページに紐づくようになった。<br>これで、その日に何をコミットしてたかが自動で紐づく <a href="https://t.co/QAZf92n8IX">pic.twitter.com/QAZf92n8IX</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1615341003959074817?ref_src=twsrc%5Etfw">January 17, 2023</a></blockquote>
 
