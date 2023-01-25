@@ -101,7 +101,7 @@ curl -s -X POST https://api.notion.com/v1/pages \
 
 ## 作った理由
 
-- [https://ctzn.network/dev-vlog](https://ctzn.network/dev-vlog)をみてて、コミット動画の時間が紐づいてて面白かった。
+- [https://ctzn.network/dev-vlog](https://ctzn.network/dev-vlog)をみてて、コミットと動画の時間が紐づいてて面白かった。
 - リポジトリを横断で、コミットと時間軸だけでそれを一覧できると面白そうと思って作ってみた
 - postcommitでコミットメッセージとリポジトリを取得して、それをNotionに記録するという感じ
 
