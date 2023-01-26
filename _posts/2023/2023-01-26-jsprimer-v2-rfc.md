@@ -55,6 +55,8 @@ tags:
 
 ## レビュアーの方へ
 
+レビューする方は、JavaScriptに詳しくなくても問題ありません。
+
 - レビューをしてくれる方は、[第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/discussions/1546)にコメント または [info@jsprimer.net](mailto:info@jsprimer.net) にメール または [@azu_re](https://twitter.com/azu_re) にMentionしてください。
 - レビュアーの方は、ウェブと書籍両方の[謝辞](https://jsprimer.net/intro/#thanks)に掲載させていただきます
 - 出版準備が完了したら、書籍を献本させていただきます(希望者のみ)
