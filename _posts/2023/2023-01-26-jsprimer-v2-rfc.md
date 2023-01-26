@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Primer 第二版のレビューアーを募集"
+title: "JavaScript Primer 第二版のレビュアーを募集"
 author: azu
 layout: post
 date: 2023-01-26T20:52
