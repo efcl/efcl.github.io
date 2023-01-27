@@ -11,7 +11,7 @@ tags:
 ---
 
 今、[JavaScript Primer - 迷わないための入門書 #jsprimer](https://jsprimer.net/)の第二版の出版に向けて準備しています。
-そこで、第二版のレビュアーをしてくれる方を募集しています。次のDisucssionで募集しています。
+そこで、~~第二版のレビュアーをしてくれる方を募集しています。次のDisucssionで募集しています。~~ <ins>ひとまず集まりました。ありがとうございます！</ins>
 
 - [第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/discussions/1546)
 
@@ -56,6 +56,8 @@ tags:
 ## レビュアーの方へ
 
 レビューする方は、JavaScriptに詳しくなくても問題ありません。
+
+<ins>Edit: ひとまず集まりました。ありがとうございます！</ins>
 
 - レビューをしてくれる方は、[第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/discussions/1546)にコメント または [info@jsprimer.net](mailto:info@jsprimer.net) にメール または [@azu_re](https://twitter.com/azu_re) にMentionしてください。
 - レビュアーの方は、ウェブと書籍両方の[謝辞](https://jsprimer.net/intro/#thanks)に掲載させていただきます
