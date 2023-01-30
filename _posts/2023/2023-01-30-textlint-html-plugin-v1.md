@@ -60,6 +60,9 @@ textlintでHTMLファイルを扱う[textlint-plugin-html](https://github.com/te
 [textlint-util-to-string](https://github.com/textlint/textlint-util-to-string)は、Nodeから可視要素のテキストを取り出すためのユーティリティです。
 そのため、`<p><span>xxx</span></p>`というNodeの場合は、`xxx`のみを取り出せます(取り出した文字列から元のNodeの位置も取得できます)。
 
+仕組み的には`type: span`のnodeは`value`として`xxx`というテキストを持ってるので、その`value`だけをつなげる仕組みになっています。
+そのため、実際に画面に表示されてない`<span>`という文字列を省いたテキストを扱いたい時に使えるユーティリティです。(パラグラフの長さなど)
+
 ## Testings
 
 HTMLプラグインの開発をしやすくするために、スナップショットテストの仕組みを作り直しました。
