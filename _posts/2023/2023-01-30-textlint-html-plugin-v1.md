@@ -746,7 +746,7 @@ Document(root)
 - [Looking for new maintainer · Issue #21 · textlint/textlint-plugin-html](https://github.com/textlint/textlint-plugin-html/issues/21)
 
 今 `example/` に実際のルールとHTMLを使ってサンプルを置いていますが、これは自動テストにはなってません。
-Lintエラーも含めた結果をスナップショットテストにすれば、textlintの[Integration test](https://github.com/textlint/textlint/tree/master/test/integration-test)と同じように自動テストを許可できます。
+Lintエラーも含めた結果をスナップショットテストにすれば、textlintの[Integration test](https://github.com/textlint/textlint/tree/master/test/integration-test)と同じように自動テストになると思います。
 
 - [Make example test to snapshot testing · Issue #24 · textlint/textlint-plugin-html](https://github.com/textlint/textlint-plugin-html/issues/24)
 
