@@ -87,7 +87,7 @@ HTMLプラグインの開発をしやすくするために、スナップショ�
 しかし、このASTはでかいので目視でチェックするスナップショットとは相性が悪いこともあります。
 
 <details>
-<sumary>AST(JSON)</sumary>
+<summary>AST(JSON)</summary>
 
 
 ```json
