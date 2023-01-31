@@ -1,5 +1,5 @@
 ---
-title: "1Passwordを使って、ローカルにファイル(.envなど)として置かれてる生のパスワードなどを削除した"
+title: "1Passwordを使って、ローカルにファイル(.envや~/.config)として置かれてる生のパスワードなどを削除した"
 author: azu
 layout: post
 date : 2023-01-31T17:31
