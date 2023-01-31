@@ -96,7 +96,7 @@ $ op plugin init gh
 - [1Password for VS Code | 1Password Developer](https://developer.1password.com/docs/vscode/)
 - [1Password - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/19698-1password)
 
-`.env`の中身を1つのアイテムにまとめるには`op item create`コマンドをなどを使ってまとめる必要がありました。
+`.env`の中身を1つのアイテムにまとめるには`op item create`コマンドなどを使ってまとめる必要がありました。
 
 例えば、次のような`.env`ファイルがあったとします。
 
