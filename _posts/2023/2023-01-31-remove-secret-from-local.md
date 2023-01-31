@@ -214,9 +214,9 @@ opr () {
 ZshやBashなどのシェルに使ってるような、dotfileにパスワードが書かれているものがあったので、それも1Passwordに移行しました。
 
 よく使う環境変数(`GITHUB_TOKEN`のような決まり文句があるもの)は、グローバル用の`.env`を用意し`opr`で実行しています。
-そのほかのトークンは、1Passwordに保存して、`op item get`で取得して利用しています。
+そのほかのトークンは、1Passwordに保存して、`op item get`や`op item read`で取得して利用しています。
 
-たとえば、npm publishの必要なTOTPは次のように取得したりしています(npmのセキュリテキーのフローがまだ使いにくいため。[パスワード管理/MFA管理の戦略 | Web Scratch](https://efcl.info/2022/11/27/password-mfa-strategy/))
+たとえば、npm publishに必要なTOTPは次のように取得できます(npmのセキュリテキーのフローがまだ使いにくいため。[パスワード管理/MFA管理の戦略 | Web Scratch](https://efcl.info/2022/11/27/password-mfa-strategy/))。
 
 ```
 alias npm-get-otp='op item get --otp xxxxxxxxid'
