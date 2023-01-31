@@ -77,7 +77,7 @@ $ op plugin init gh
 - [Get started with 1Password CLI | 1Password Developer](https://developer.1password.com/docs/cli/get-started)
 - [Use 1Password to securely authenticate GitHub | 1Password Developer](https://developer.1password.com/docs/cli/shell-plugins/github)
 
-これで、`~/.aws/credentials`などのトークンは不要となるため、単純に削除できます。
+これで、`~/.aws/credentials`などに置かれているトークンは不要となるため、単純に削除できます。
 
 ## `.env`に入っているCredentialを1Passwordに移行する
 
