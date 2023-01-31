@@ -70,7 +70,7 @@ $ op plugin init gh
 
 ## `.env`に入っているCredentialを1Passwordに移行する
 
-`.env`には名前のパスワードが入ってることが多いです。
+`.env`には生のパスワードやトークンが入ってることが多いです。
 
 `.env`は普通はコミットしませんが([Secretlint](https://github.com/secretlint/secretlint)にも検知ルールがあります)、`.env`からパスワードなどが消えれば、コミットしても大丈夫な状態まで持っていけます。(実際にはコミットはしてないですが)
 
