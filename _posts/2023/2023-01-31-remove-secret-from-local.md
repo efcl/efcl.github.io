@@ -40,6 +40,11 @@ tags:
 
 - [Sign your Git commits with 1Password | 1Password](https://blog.1password.com/git-commit-signing/)
 
+ブラウザに1Passwordの拡張が入ってるなら、<https://github.com/settings/keys>にアクセスして、ポチポチするだけで終わるので、`~/.ssh`に秘密鍵を置くのはやめましょう。
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hTwIsFKfjIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## CLIが利用するCredentialを1Passwordに移行する
 
 GitHub CLIは`~/.config/gh/`に、AWS CLIは `~/.aws/credentials` にCredentialをデフォルトで配置します。
