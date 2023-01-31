@@ -45,6 +45,10 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hTwIsFKfjIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Bitwardenでも同様のことができます。
+
+- [Bitwarden SSH Agent](https://github.com/joaojacome/bitwarden-ssh-agent)
+
 ## CLIが利用するCredentialを1Passwordに移行する
 
 GitHub CLIは`~/.config/gh/`に、AWS CLIは `~/.aws/credentials` にCredentialをデフォルトで配置します。
