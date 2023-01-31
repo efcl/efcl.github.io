@@ -247,3 +247,10 @@ op inject --in-file .env.local.template --out-file .env.local
 - [1Password CLIで.env.localを作る - cockscomblog?](https://cockscomb.hatenablog.com/entry/dotenv-managed-by-1password)
 
 この辺の頻度が高くプロセスが変わるものをいい感じに扱える方法がほしいです。
+
+また、このローカルディレクトリからデータを盗むのはどちらかという無差別なサプライチェーン攻撃に多いような気もします。
+標的型攻撃になるとCricle CIのインシデントのように、ブラウザのセッションを盗むことでMFA自体を回避する攻撃が増えています。
+これらにも何かしらの対策が必要になっている気がします。
+
+- [CircleCI incident report for January 4, 2023 security incident](https://circleci.com/blog/jan-4-2023-incident-report/)
+- [Cookie stealing: the new perimeter bypass – Sophos News](https://news.sophos.com/en-us/2022/08/18/cookie-stealing-the-new-perimeter-bypass/)
