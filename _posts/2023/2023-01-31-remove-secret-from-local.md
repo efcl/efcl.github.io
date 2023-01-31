@@ -32,7 +32,8 @@ tags:
 
 ## SSHの秘密鍵を1Passwordに移行する
 
-1Passwordには、SSH Agentがあり、これを使うと`~/.ssh/`から秘密鍵を削除できます。
+1Passwordには、SSH Agentがあります。
+これを使うとSSHの秘密鍵を1Passwordに保存できるため、`~/.ssh`から秘密鍵を削除できます。
 
 - [1Password for SSH & Git | 1Password Developer](https://developer.1password.com/docs/ssh/)
 
