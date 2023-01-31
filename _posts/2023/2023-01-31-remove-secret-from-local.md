@@ -205,7 +205,7 @@ opr () {
 	then
 		op run --env-file=$PWD/.env -- $@
 	else
-		op run --env-file=${グローバルのenv}/.env.1password -- $@
+		op run --env-file=${グローバルのenv置き場}/.env.1password -- $@
 	fi
 }
 ```
