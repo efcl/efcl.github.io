@@ -17,7 +17,6 @@ tags:
 - [Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch](https://pytorch.org/blog/compromised-nightly-dependency/)
 - [What's Really Going On Inside Your node_modules Folder? - Socket](https://socket.dev/blog/inside-node-modules)
 - [Microsoft spots malicious npm package stealing data from UNIX systems | ZDNET](https://www.zdnet.com/article/microsoft-spots-malicious-npm-package-stealing-data-from-unix-systems/)
-- [CircleCI incident report for January 4, 2023 security incident](https://circleci.com/blog/jan-4-2023-incident-report/)
 
 これは、次の記事とも関係しています。
 
