@@ -211,6 +211,11 @@ opr () {
 }
 ```
 
+類似ツール:
+
+- [zenv](https://github.com/m-mizutani/zenv)
+- [envchain](https://github.com/sorah/envchain)
+
 ## dotfileにかかれたパスワードを1Passwordに移行する
 
 ZshやBashなどのシェルに使ってるような、dotfileにパスワードが書かれているものがあったので、それも1Passwordに移行しました。
