@@ -70,7 +70,7 @@ GitHub Actionsを狙ったサプライチェーン攻撃はまだ知らないで
 
 そういった問題が起きた時に影響範囲が小さくなるように`permissions`を設定することは重要だと思います。
 まずは、RepositoryやOrganizationレベルで"Read repository contents permission"をデフォルトにすることから始めてみてください。
-Codecovのような無差別のサプライチェーン攻撃なら`permissions`を設定するだけで防げる可能性が上がります。
+Codecovのような無差別のサプライチェーン攻撃なら`permissions`を設定するだけで、影響範囲が小さくなる可能性が上がります。
 
 GitHub Actionsの継続的なチェックは、OSSFのScoorecardなど色々なツールが出てきています。
 
