@@ -158,7 +158,7 @@ APP_PROD_GOOGLE_OAUTH_CLIENT_ID="op://Private/My Example/Section_azkwev6t5djujcf
 APP_PROD_GOOGLE_OAUTH_CLIENT_SECRET="op://Private/My Example/Section_azkwev6t5djujcfqbb6hpmyk3m/APP_PROD_GOOGLE_OAUTH_CLIENT_SECRET"
 ```
 
-これで、`.env`の中身は次のようになりました。
+これで、`.env`の中身は次のようになりました(SectionでProductionとDevelopを同じアイテム内で分けて保存とかもできます)。
 
 ```
 APP_CF_NAMESPACE_USER="op://Private/My Example/Section_azkwev6t5djujcfqbb6hpmyk3m/APP_CF_NAMESPACE_USER"
