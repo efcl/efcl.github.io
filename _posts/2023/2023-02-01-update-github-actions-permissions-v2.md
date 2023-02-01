@@ -76,3 +76,4 @@ GitHub Actionsの継続的なチェックは、OSSFのScoorecardなど色々な�
 
 - [ossf/scorecard: OpenSSF Scorecard - Security health metrics for Open Source](https://github.com/ossf/scorecard)
 - [Secure Workflows](https://github.com/step-security/secure-workflows)
+- [actionlint](https://github.com/rhysd/actionlint)
