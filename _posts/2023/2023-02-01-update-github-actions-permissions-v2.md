@@ -54,7 +54,7 @@ update-github-actions-permissions v2では、500種類以上のGitHub Actionsの
 
 一方で、update-github-actions-permissionsはシンプルに`permissions`を自動で設定するだけのツールです。
 そのため、[Secure Workflows](https://github.com/step-security/secure-workflows)のように色々な機能は持っていません。
-どちらかというと、"Read repository contents permission”をデフォルトにするために、移行するためのツールという位置付けです。
+どちらかというと、"Read repository contents permission”をデフォルトにするために、移行するツールという位置付けです。
 
 update-github-actions-permissions v2では[Secure Workflows](https://github.com/step-security/secure-workflows)の定義ファイルを取り込むことで、500種類以上のActionの`permissions`をサポートできるようになりました。
 [Secure Workflows](https://github.com/step-security/secure-workflows)はAGPLなので、
