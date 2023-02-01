@@ -38,7 +38,7 @@ tags:
 
 - [1Password for SSH & Git | 1Password Developer](https://developer.1password.com/docs/ssh/)
 
-ついでに、GitHubのSigning Keyも追加すると、GitHubでコミット時に自動的に署名してくれます。
+ついでに、GitHubのSigning Keyも追加すると、Gitでのコミット時に自動的に署名してくれます。
 
 - [Sign your Git commits with 1Password | 1Password](https://blog.1password.com/git-commit-signing/)
 
