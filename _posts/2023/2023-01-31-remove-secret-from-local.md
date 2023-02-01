@@ -187,6 +187,8 @@ op run --env-file="./.env" -- npm start
 ```
 
 - [run | 1Password CLI | 1Password Developer](https://developer.1password.com/docs/cli/reference/commands/run/)
+- [Go Ahead, Delete Your .env.example File | 1Password](https://blog.1password.com/delete-your-example-env-file/)
+- [1Password の CLI で環境変数を管理する](https://zenn.dev/lambdasawa/articles/op-cli-and-environment-variables)
 
 これでファイルとして永続的に生のパスワードなどが`.env`に残らないようにできます。
 この移行が一番大変だったので、`.env` to 1Passwordの移行スクリプトを誰か作ってほしいです。
