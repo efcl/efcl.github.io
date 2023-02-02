@@ -25,6 +25,10 @@ GitHub Actionsのデフォルトパーミッションは`write-all`です。 つ
 - Workflow(yamlファイル)ごとに必要な`permissions`を設定する
 - リポジトリ or Organizationのデフォルトパーミッションを “Read repository contents permission”　にする
 
+追記(2023-02-03): GitHub側で“Read repository contents permission”がデフォルトとなるようです
+
+- [GitHub Actions - Updating the default GITHUB_TOKEN permissions to read-only | GitHub Changelog](https://github.blog/changelog/2023-02-02-github-actions-updating-the-default-github_token-permissions-to-read-only/)
+
 詳しくは次の記事で解説しています。
 
 - [GitHub Actionsの`permissions`を自動で設定するツールを書いた | Web Scratch](https://efcl.info/2021/07/21/update-github-actions-permissions/)
