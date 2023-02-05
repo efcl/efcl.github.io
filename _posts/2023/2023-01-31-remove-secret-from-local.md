@@ -51,6 +51,10 @@ Bitwardenでも似たようなことができます(仕組みは違うけど。
 
 - [Bitwarden SSH Agent](https://github.com/joaojacome/bitwarden-ssh-agent)
 
+macOSだとsecretiveも同様のことができます。
+
+- [maxgoedjen/secretive: Store SSH keys in the Secure Enclave](https://github.com/maxgoedjen/secretive)
+
 ## CLIが利用するCredentialを1Passwordに移行する
 
 GitHub CLIは`~/.config/gh/`に、AWS CLIは `~/.aws/credentials` にCredentialをデフォルトで配置します。
