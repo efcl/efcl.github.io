@@ -51,7 +51,7 @@ Bitwardenでも似たようなことができます(仕組みは違うけど。
 
 - [Bitwarden SSH Agent](https://github.com/joaojacome/bitwarden-ssh-agent)
 
-macOSだとsecretiveも同様のことができます。
+macOSだとsecretiveも同様のことができます。ただし、仕組み的にキーをバックアップはできないため、マシンを変更する場合はSSHキーの再発行が必要です。
 
 - [maxgoedjen/secretive: Store SSH keys in the Secure Enclave](https://github.com/maxgoedjen/secretive)
 
