@@ -47,7 +47,7 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hTwIsFKfjIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Bitwardenでも似たようなことができます(仕組みは違うけど。
+Bitwardenでも似たようなことができます(仕組みは違います)。
 
 - [Bitwarden SSH Agent](https://github.com/joaojacome/bitwarden-ssh-agent)
 
