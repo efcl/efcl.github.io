@@ -56,7 +56,7 @@ tags:
 
 このパスワード管理/MFA管理をするには、次の2つのものが必要です。
 
-- [1Password](https://1password.com/jp/)、[LastPass](https://www.lastpass.com/)、[Bitwarden](https://bitwarden.com/ja-JP/)のような[TOTP](https://ja.wikipedia.org/wiki/Time-based_One-time_Password)に対応したパスワードマネジャー
+- [1Password](https://1password.com/jp/)、[Bitwarden](https://bitwarden.com/ja-JP/)のような[TOTP](https://ja.wikipedia.org/wiki/Time-based_One-time_Password)に対応したパスワードマネジャー
 - [Yubikey](https://www.yubico.com/yubikey/?lang=ja) などのセキュリティキー を **2枚**
     - セキュリティーキーを2枚使うのは、紛失対策で片方はバックアップ用途です
     - iOSやAndroidなどのモバイル端末で使う場合は、NFCに対応したものを1枚用意
