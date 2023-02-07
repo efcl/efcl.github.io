@@ -59,7 +59,7 @@ tags:
 - [1Password](https://1password.com/jp/)、[Bitwarden](https://bitwarden.com/ja-JP/)のような[TOTP](https://ja.wikipedia.org/wiki/Time-based_One-time_Password)に対応したパスワードマネジャー
 - [Yubikey](https://www.yubico.com/yubikey/?lang=ja) などのセキュリティキー を **2枚**
     - セキュリティーキーを2枚使うのは、紛失対策で片方はバックアップ用途です
-    - iOSやAndroidなどのモバイル端末で使う場合は、NFCに対応したものを1枚用意
+    - iOSやAndroidなどのモバイル端末で使う場合は、NFCに対応したものが便利です(Yubikey NFC)
 
 自分の場合は、[1Password](https://1password.com/jp/)、[YubiKey 5C Nano](https://www.yubico.com/jp/product/yubikey-5c-nano/)、[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)を利用しています。
 [YubiKey 5C Nano](https://www.yubico.com/jp/product/yubikey-5c-nano/)がMacbook Proに挿しっぱなしのメインとなるセキュリティキーで、[YubiKey 5C NFC](https://www.yubico.com/jp/product/yubikey-5c-nfc/)はバックアップ用のスペアキーです。
