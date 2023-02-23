@@ -45,7 +45,7 @@ tags:
 ## 文、センテンスとは
 
 textlintでは、MarkdownやHTMLなどのテキストをパースして、AST(抽象構文木)を作ります。
-このASTでは、テキストをパラグラフに分解して`Paragraph` nodeを作成します。
+ASTには色々なNodeがありますが、文章のテキストはパラグラフに分解して`Paragraph` nodeになります。
 
 たとえば、次のようなテキストをパースすると、できるのは1つの`Paragraph` nodeです。
 
