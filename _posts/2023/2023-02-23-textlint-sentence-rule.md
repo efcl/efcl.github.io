@@ -1,5 +1,5 @@
 ---
-title: "textlintでセンテンスを扱うルールを書く方法"
+title: "textlintでセンテンスを扱うルールの書き方"
 author: azu
 layout: post
 date : 2023-02-23T22:34
