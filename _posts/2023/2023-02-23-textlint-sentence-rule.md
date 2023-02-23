@@ -45,6 +45,7 @@ tags:
 ## 文、センテンスとは
 
 textlintでは、MarkdownやHTMLなどのテキストをパースして、AST(抽象構文木)を作ります。
+ASTは、Nodeというオブジェクトの集合体で、Nodeは親子関係を持っていてASTを構築しています。
 ASTには色々なNodeがありますが、文章のテキストはパラグラフに分解して`Paragraph` nodeになります。
 
 たとえば、次のようなテキストをパースすると、できるのは1つの`Paragraph` nodeです。
