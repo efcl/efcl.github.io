@@ -115,8 +115,8 @@ I could relate to that statement.
 1. Paragraph nodeを受け取り、[sentence-splitter](https://github.com/textlint-rule/sentence-splitter)でセンテンス情報を追加したASTを取得する
 2. センテンスノードからテキストを取得する
     - [TxtAST](https://github.com/textlint/textlint/blob/master/docs/txtnode.md)を含むASTから、視覚的なテキストを取得するには[textlint-util-to-string](https://github.com/textlint/textlint-util-to-string)を使います
-    - たとえば `[text](http://example.com)` はソースコードでは色々な記号がありますが、視覚的には `text` のみです
-    - [textlint-util-to-string](https://github.com/textlint/textlint-util-to-string)は、ASTから視覚的なテキストを取得するためのユーティリティです
+    - たとえば `[text](http://example.com)` はソースコードでは色々な記号がありますが、表示されるのは `text` のみです
+    - [textlint-util-to-string](https://github.com/textlint/textlint-util-to-string)は、ASTから表示されるテキストを取得するためのユーティリティです
 3. センテンスごとのテキストに含まれる `,`の数を数える
 4. `,`の数が許容範囲を超えていたらエラーを報告する
 
