@@ -141,7 +141,7 @@ export default function (context, options = defaultOptions) {
             // ASTをパースして、センテンス情報を追加したASTを取得する
             const paragraphSentence = splitAST(node)
             // センテンスノードのみを取り出す
-            const sentences = paragraphSentence.children.filter(node => node.type === SentenceSplitterSyntax.Sentence) ?? [];
+            const sentences = paragraphSentence.children.filter(node => node.type === SentenceSplitterSyntax.Sentence);
             // センテンスごとにチェックしていく
             sentences.forEach(sentence => {
                 // センテンスからCode nodeをマスキングしてから、センテンスをテキスト（表示と一致するテキスト）に変換する
