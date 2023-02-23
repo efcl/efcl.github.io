@@ -61,7 +61,7 @@ This is second line.
 - AST Explorer: <https://textlint.github.io/astexplorer/#/snippet/woXCqHBhcnNlcklEwrh0ZXh0bGludDptxINrZG93bi10by1hc3TCqMSFdHTEkGdzwoHEisSMxI7EkMSSxJRyxJbEmMSaxJzEnsSgw4DCqHbEhnNpb27EqMSqxI3Ej8SRxJPElcSXxJnEm8SdxJ90wqYxMy4xLjTCqGZpbGVuYW1lwrBzb3VyY2UudW5kZcWUbmVkwqRjb8Wmw5koVGhpcyDFtCDFlMSEdCDFgsWiCsWyxbfFt8SFxa3FpcW8xJDFog}>
 
 これからもわかるように、textlint自体はパラグラフまでのパースしか行いません。
-これは、文やセンテンスといったように言葉が異なる違うことからも分かりますが、言語によって異なる可能性があるためです。
+文やセンテンスといったように言葉が異なる違うことからも分かりますが、言語によって異なる可能性があるためです。
 
 パラグラフはHTMLの`<p>`相当で、多くのマークアップ言語がサポートしているため、textlintも扱っています。
 一方で、HTMLにはセンテンスに相当するタグはないので、書かれている自然言語によって解釈は異なる可能性があります。
