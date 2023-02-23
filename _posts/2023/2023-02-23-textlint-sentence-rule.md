@@ -94,7 +94,7 @@ I could relate to that statement.
 
 `split()`と`splitAST()`という2つのパースメソッドを提供しています。
 `split(text)`はテキストからASTを作成するメソッドです。
-もう一方の`splitAST(ast)`は、textlintのASTである`Paragraph` node内をパースして、センテンス情報を追加したASTを返します。
+もう一方の`splitAST(ast)`は、textlintの`Paragraph` node内をパースして、センテンス情報を追加した`Paragraph` nodeを返します。
 
 基本的には、元のASTの位置情報（Pargraph nodeは何行目から何行目までかなど）を保持したまま、センテンス情報を取得できる`splitAST(ast)`を利用します。
 
