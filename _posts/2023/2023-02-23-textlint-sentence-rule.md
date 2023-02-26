@@ -88,7 +88,7 @@ I could relate to that statement.
 ![Sentence Node](https://github.com/textlint-rule/sentence-splitter/raw/master/docs/img/sentence-result.png)
 
 この例文では、3つのセンテンスにパースして、それをASTとして返します。
-2行目のセンテンスは、`"`で囲まれているため、1つのセンテンスとして扱っています。
+2行目のセンテンスは、`"`で囲まれているため、2行目全体で1つのセンテンスとして扱っています。
 （この`"`に囲まれている位置情報も`contexts`という形でASTに含まれています）
 
 - Sentence SplitterのAST: <https://sentence-splitter.netlify.app/#We%20are%20talking%20about%20pens.%0AHe%20said%20%22This%20is%20a%20pen.%20I%20like%20it%22.%0AI%20could%20relate%20to%20that%20statement.>
