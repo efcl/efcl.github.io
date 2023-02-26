@@ -103,8 +103,8 @@ I could relate to that statement.
 
 ## [textlint-rule-max-comma](https://github.com/textlint-rule/textlint-rule-max-comma)の実装
 
-[textlint-rule-max-comma](https://github.com/textlint-rule/textlint-rule-max-comma)は、1つのセンテンスに含まれる`、`の数を制限するルールです。
-デフォルトでは、1つのセンテンスに含まれる`、`は3つまでに制限しています。
+[textlint-rule-max-comma](https://github.com/textlint-rule/textlint-rule-max-comma)は、1つのセンテンスに含まれる`,`の数を制限するルールです。
+デフォルトでは、1つのセンテンスに含まれる`,`は3つまでに制限しています。
 
 - Note: textlintのルールを全く触ったことない人は、[Creating Rules · textlint](https://textlint.github.io/docs/rule.html)を参照してください。
 
