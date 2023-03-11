@@ -89,7 +89,7 @@ then
   git commit -m "CI: add .github/release.yml"
 fi
 echo "✓ Enable auto-branch-delete/auto-merge/discussions"
-op plugin run -- gh repo edit --delete-branch-on-merge --enable-auto-merge --enable-discussions
+gh repo edit --delete-branch-on-merge --enable-auto-merge --enable-discussions
 ```
 
 `gh repo edit --enable-discussions`はなかったので実装して[v2.22.0](https://github.com/cli/cli/releases/tag/v2.22.0)で追加されています。
