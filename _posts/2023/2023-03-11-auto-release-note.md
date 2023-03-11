@@ -183,9 +183,9 @@ $ npx lerna version && npx lerna publish from-package && gh release create --gen
 
 ## CIから公開するmonorepoなパッケージを扱うリポジトリ
 
-先ほどの例はどちらも、ローカルからコマンドを叩いて公開する方法として、
+先ほどの例はどちらも、ローカルからコマンドを叩いて公開する方法でした。
 
-CIから公開する場合には、どのバージョン(patch, minor, major)にアップデートするかをどう選ぶかが難しい問題になります。
+しかしCIから公開する場合には、どのバージョン(patch, minor, major)にアップデートするかをどう選ぶかが難しい問題になります。
 [Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)の場合は、コミットによって決まりますが、[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ではその仕組みはありません。
 
 そのため、リリース時に選ぶ形 or ラベルによって決めるかという選択肢があります。
