@@ -377,7 +377,7 @@ monorepo用の`npm-monorepo-release`やprivate package用の`private-npm-{patch,
 
 GitHubの[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ベースのリリースフローについて紹介しました。
 
-最初に書いていたように既存のリポジトリを全て移行する予定はないので、必要になったらその都度 **`.github/release.yml`の設定**で書いていたスクリプトで移行しています。
+最初に書いていたように既存のリポジトリを全て移行する予定はないので、必要になったらその都度 **`.github/release.yml`の設定**で書いていたスクリプトで移行しています(冪等性のあるマイグレーションコマンドを実装して、何も考えずにコマンドを叩くようにしてる)。
 実際に使ってるスクリプトで実装していましたが[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)と[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)は共存できます。
 そのため、実際にはリポジトリごとにどちらの方法を使うかを選択しています。
 
