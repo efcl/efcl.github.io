@@ -214,7 +214,11 @@ CIから公開する場合には、どのバージョン(patch, minor, major)に
 
 5のpublishはnpm registryやパッケージのビルド時に失敗することがあります。
 その場合は、[.github/workflows/release.yml](https://github.com/azu/monorepo-github-releases/actions/workflows/release.yml)ワークフローをDispatchすることで、5だけを再実行できます。
-また、緊急時には`npm run versionup && npm run release && gh release create --generate-notes "$(git describe --tags --abbrev=0)"`でローカルからも同じように公開できます。
+また、緊急時にはローカルからも次のコマンドで公開できます(これもリリースノートは自動生成されます)。
+
+```
+$ npm run versionup && npm run release && gh release create --generate-notes "$(git describe --tags --abbrev=0)"
+```
 
 実装は、先ほどのステップからもわかるように2つのワークフローになっています。
 
