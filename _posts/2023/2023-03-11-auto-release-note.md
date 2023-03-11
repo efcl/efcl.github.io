@@ -26,7 +26,7 @@ GitHub の[Automatically generated release notes](https://docs.github.com/en/rep
 
 - Convential commit でやっているものを[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ベースに移行する
 
-自分は[大量のリポジトリ](https://efcl.info/surl//github-activity)を持っているので、段階的に移行できるようにしました。
+自分は[大量のリポジトリ](https://efcl.info/surl/github-activity)を持っているので、段階的に移行できるようにしました。
 Convential commitと[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)は同時に使っても競合はしないので、実際には[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)でコミットしながら、リリースするときに Convential commit か[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)どちらを使うかを選択できるようにしています。
 (たまに、PR を経由せずにコミットしちゃうことがあるので、それをリリースするときは[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)ベースに切り替える)
 
