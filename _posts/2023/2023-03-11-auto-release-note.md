@@ -381,6 +381,8 @@ GitHubの[Automatically generated release notes](https://docs.github.com/en/repo
 実際に使ってるスクリプトで実装していましたが[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)と[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)は共存できます。
 そのため、実際にはリポジトリごとにどちらの方法を使うかを選択しています。
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">npmパッケージの公開するときのリリースノートを、GitHubのリリースノート自動生成機能で書くための仕組みを解説した記事を書きました。<br><br>- 単体のパッケージ<br>- monorepoパッケージ<br>- CIから公開するフロー<br><br>&quot;GitHubのリリースノートを自動化する仕組み | Web Scratch&quot;<a href="https://t.co/M2JIBaAYkd">https://t.co/M2JIBaAYkd</a> <a href="https://t.co/VSDzL6eOa5">pic.twitter.com/VSDzL6eOa5</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1634532583194394625?ref_src=twsrc%5Etfw">March 11, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ベースはPRを経由しないとリリースノートに入らないという問題があるので、mainブランチにpushしまくっているようなリポジトリだと[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)の方が適切だったりします。
 
 将来、npmのOICD連携などがきたらまた変わる気がします。
