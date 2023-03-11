@@ -40,14 +40,14 @@ npm パッケージなどを CI からリリースするにはまだトークン
 
 ## GitHubの[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
 
-GitHubには[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)と言う、Pull Requestから自動的にリリースノートを生成する機能があります。
+GitHubには[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)という、Pull Requestから自動的にリリースノートを生成する機能があります。
 
 この機能は、次のような手順で利用できます。
 
 0. リポジトリに `.github/release.yml` というラベルをカテゴライズする設定ファイルを追加する
 1. PR にラベルを貼る
 2. GitHub Releaseで"Generate release notes"を実行 or `gh release create --generate-notes` コマンドを実行する
-3. リリースノードにPRのラベルに基づいたカテゴライズされたリリースノートが生成される
+3. リリースノートにPRのラベルに基づいたカテゴライズされたリリースノートが生成される
 
 実際に生成されるリリースノートは、次のような感じです。
 
