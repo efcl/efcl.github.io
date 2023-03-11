@@ -30,7 +30,7 @@ GitHub の[Automatically generated release notes](https://docs.github.com/en/rep
 Convential commitと[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)は同時に使っても競合はしないので、実際には[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)でコミットしながら、リリースするときに Convential commit か[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)どちらを使うかを選択できるようにしています。
 (たまに、PR を経由せずにコミットしちゃうことがあるので、それをリリースするときは[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)ベースに切り替える)
 
-また、今回は CI から自動リリースへと切り替えるのは、目的にしませんでした。
+また、今回は CI からの自動リリースへと切り替えるのは、目的にしませんでした。
 npm パッケージなどを CI からリリースするにはまだトークン管理が必要になってしまうので、npm <-> GitHub 間の OICD が実装されてから考えることにしました。
 
 - [RFC for linking packages to their source and build by feelepxyz · Pull Request #626 · npm/rfcs](https://github.com/npm/rfcs/pull/626)
