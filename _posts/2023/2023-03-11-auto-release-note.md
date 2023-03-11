@@ -31,7 +31,7 @@ Convential commitと[Automatically generated release notes](https://docs.github.
 (たまに、PR を経由せずにコミットしちゃうことがあるので、それをリリースするときは[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)ベースに切り替える)
 
 また、今回は CI からの自動リリースへと切り替えるのは、目的にしませんでした。
-npm パッケージなどを CI からリリースするにはまだトークン管理が必要になってしまうので、npm <-> GitHub 間の OICD が実装されてから考えることにしました。
+npm パッケージなどを CI からリリースするにはまだトークン管理が必要になってしまうので、npm <-> GitHub 間の OIDC が実装されてから考えることにしました。
 
 - [RFC for linking packages to their source and build by feelepxyz · Pull Request #626 · npm/rfcs](https://github.com/npm/rfcs/pull/626)
 - [Automated publishing of npm packages from CI/CD · Issue #625 · npm/statusboard](https://github.com/npm/statusboard/issues/625)
@@ -385,5 +385,5 @@ GitHubの[Automatically generated release notes](https://docs.github.com/en/repo
 
 [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ベースはPRを経由しないとリリースノートに入らないという問題があるので、mainブランチにpushしまくっているようなリポジトリだと[Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)の方が適切だったりします。
 
-将来、npmのOICD連携などがきたらまた変わる気がします。
+将来、npmのOIDC連携などがきたらまた変わる気がします。
 そのため変更に対応しやすように、基本的にはコマンドを`&&`で繋いで実装できるようなものを書いて使っています。
