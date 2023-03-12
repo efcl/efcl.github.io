@@ -97,7 +97,7 @@ gh repo edit --delete-branch-on-merge --enable-auto-merge --enable-discussions
 ## ラベルのカテゴライズ
 
 `.github/release.yml`の設定ファイルは、次のような感じです。
-`Type: *` のラベルを基本的にPRの変更内容に合わせてつけていくことで、リリースノートのカテゴライズができます。
+`Type: *` のラベルをPRの変更内容に合わせてつけていくことで、リリースノートのカテゴライズができます。
 
 ```yaml
 changelog:
@@ -141,7 +141,7 @@ changelog:
 
 ## リポジトリの種類
 
-[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)ベースはGitHubのリリースノートの機能なのでリポジトリの中身は関係ないです。
+[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)はGitHubのリリースノートの機能なのでリポジトリの中身は関係ないです。
 しかし、リリースと同時にnpmパッケージも公開するため、扱うパッケージによって微妙にリリースフローが変わってきます。
 
 自分が扱うリポジトリは大きく分けて、2 種類のリポジトリがあります。
