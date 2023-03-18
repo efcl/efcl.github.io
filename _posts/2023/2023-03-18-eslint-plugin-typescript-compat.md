@@ -25,7 +25,7 @@ JavaScriptではメソッドの静的解析は難しい(メソッド名が同じ
 - [ ] DOM API
 
 基本的にメソッドのみを使っています。
-他のオブジェクトなどもお原理的には実装できるはずですが、実装していません。
+他のオブジェクトなども原理的には実装できるはずですが、実装していません。
 
 オブジェクトに関しては[amilajack/eslint-plugin-compat: Check the browser compatibility of your code](https://github.com/amilajack/eslint-plugin-compat)があるので、併用するのが良さそうです。ルール的にマージしてしまうのが良い気はしますが、特に動きはないです。
 
