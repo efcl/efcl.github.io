@@ -125,7 +125,7 @@ items.includes(2);
 
 このルールでは、次のようなエラーを表示します。
 
-> Array.included is not supported in ie 11. https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+> Array.includes is not supported in ie 11. https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
 
 ## オプション
 
