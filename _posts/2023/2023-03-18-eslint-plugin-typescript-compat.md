@@ -149,7 +149,7 @@ polyfillが定義されている場合は、ブラウザがそのメソッドを
 ## まとめ
 
 [eslint-plugin-typescript-compat](https://github.com/azu/eslint-plugin-typescript-compat)は、サポートされていないメソッドを検出するためのESLintプラグインです。
-メソッドのみしか対応してないので、[eslint-plugin-es](https://github.com/mysticatea/eslint-plugin-es)や[eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)などと併用するのが良さそうです。
+メソッドのみしか対応してないので、[eslint-plugin-es-x](https://github.com/eslint-community/eslint-plugin-es-x)や[eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)などと併用するのが良さそうです。
 
 [eslint-plugin-typescript-compat](https://github.com/azu/eslint-plugin-typescript-compat)は結構前に作ったのですが、記事を書き忘れていました。
 TypeScript 5のリリースに合わせてv1.0.0を公開したので、記事を書きました。
