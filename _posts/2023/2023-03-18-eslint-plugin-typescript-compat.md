@@ -106,6 +106,8 @@ ES2016+の機能を検知したい場合は、`"lib": ["ESNext"]`など適切な
 
 詳細は[browserslist](https://github.com/browserslist/browserslist)のドキュメントを参照してください。
 
+Firefox 100以上で使えないメソッドを検知するなら `firefox 100` を指定するイメージです。
+
 ## サンプル
 
 ブラウザのターゲットがIE 11の場合は、次のように`browserslist`を設定します。
