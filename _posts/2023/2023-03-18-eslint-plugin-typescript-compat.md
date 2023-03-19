@@ -1,5 +1,5 @@
 ---
-title: "TypeScriptの型情報を使ったサポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール"
+title: "TypeScriptの型情報を使って、サポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール"
 author: azu
 layout: post
 date : 2023-03-18T10:18
