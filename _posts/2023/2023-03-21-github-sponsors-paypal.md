@@ -10,7 +10,7 @@ tags:
 
 ---
 
-タイトル通りですが、GitHub Sponsorsで誰かをスポンサーするときにPayPalが利用できなくなっています。
+タイトル通りですが、GitHub SponsorsでスポンサーするときにPayPalが利用できなくなっています。
 2023年2月23日にPayPalの支払いができなっているので、スポンサーを継続したい場合は支払い方法をクレジットカードに切り替える必要があります。
 
 - [GitHub Sponsors will stop supporting PayPal | GitHub Changelog](https://github.blog/changelog/2023-01-23-github-sponsors-will-stop-supporting-paypal/)
