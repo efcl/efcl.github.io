@@ -25,7 +25,7 @@ tags:
 2. Payment methodsから"Credit or debit card"を選択
 3. クレジットカード情報を入力して保存
 
-![](https://efcl.info/wp-content/uploads/2023/03/21-1679387557.png)
+![Credit or debit card](https://efcl.info/wp-content/uploads/2023/03/21-1679387557.png)
 
 このときにPayment Informationとして、クレジットカードに対応する名前や住所などを入れる必要があります。
 この情報は、GitHub社以外は見ることはできないため、スポンサーされた人にも通知されません。
