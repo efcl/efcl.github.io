@@ -28,7 +28,7 @@ tags:
 ![Credit or debit card](https://efcl.info/wp-content/uploads/2023/03/21-1679387557.png)
 
 このときにPayment Informationとして、クレジットカードに対応する名前や住所などを入れる必要があります。
-この情報は、GitHub社以外は見ることはできないため、スポンサーされた人にも通知されません。
+この情報は、GitHub社以外は知ることはできないため、スポンサーされた人にも通知されません。
 
 - [初めてでもわかる、GitHub Sponsorsでオープンソースを支援する方法](https://zenn.dev/azu/articles/c48ad63e20ad75)
 - [支払い方法を追加または編集する - GitHub Docs](https://docs.github.com/ja/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)
