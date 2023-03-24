@@ -64,3 +64,11 @@ GitHub SponsorsではPayPalを使った支払いはできなくなったので�
 - [GitHub Sponsors will stop supporting PayPal | GitHub Changelog](https://github.blog/changelog/2023-01-23-github-sponsors-will-stop-supporting-paypal/)
 
 意図せずにスポンサーをキャンセルしてしまった場合は、再度スポンサーになってみてください。喜ばれます。
+
+影響を受けているケース
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Github sponsors pulled the plug on PayPal support. <br><br>Even for past recurring sponsorships.<br><br>So I now make $4k less per month. Womp.<br><br>Guess it matters which basket your put your eggs in...</p>&mdash; Caleb Porzio (@calebporzio) <a href="https://twitter.com/calebporzio/status/1638560981121921029?ref_src=twsrc%5Etfw">March 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Lost about 100 active sponsors recently (~35%)<br><br>While on the other hand, the maintenance work I have to do daily gets heavier than ever.<br><br>If you are relying on my work, I would be appreciated it if you could convince your company to sponsor 💖 <br><br>Thank you!<a href="https://t.co/kSZKA3iTBs">https://t.co/kSZKA3iTBs</a></p>&mdash; Anthony Fu (@antfu7) <a href="https://twitter.com/antfu7/status/1639056186665320448?ref_src=twsrc%5Etfw">March 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve lost about 10% of my income from the whole GitHub dropping paypal thing, and it&#39;s still trending down, so if you&#39;d like to sponsor me that would be awesome 💜<a href="https://t.co/TZJVnwWZon">https://t.co/TZJVnwWZon</a></p>&mdash; Louis Pilfold (@louispilfold) <a href="https://twitter.com/louispilfold/status/1636459390092865538?ref_src=twsrc%5Etfw">March 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
