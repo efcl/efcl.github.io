@@ -14,6 +14,8 @@ tags:
 
 leanpubで$0から購入できて、任意の値段で購入できるドキュメンテーションとDDDについての書籍。
 
+追記: 書籍版 [Amazon.co.jp: Living Documentation: Continuous Knowledge Sharing by Design (English Edition) 電子書籍: Martraire, Cyrille: 洋書](https://www.amazon.co.jp/dp/B07S7671FW/)
+
 ドキュメンテーションもソフトウェア開発のように設計やテストといったパターンやアプローチがあります。
 これは以前書いた技術文書をソフトウェア開発する話と似ているところがあります。
 
