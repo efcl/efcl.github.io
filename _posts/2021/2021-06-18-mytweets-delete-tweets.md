@@ -38,7 +38,7 @@ tags:
 S3 SelectはS3に置いてあるJSONLDやCSVのファイルに対してSQLでファイル内検索ができる仕組みです。
 複数ファイルの検索はできないので、複数ファイルの場合は[Amazon Athena](https://aws.amazon.com/jp/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc)などが必要です。[philan.net](https://github.com/azu/philan.net)ではAthenaを使って集計しています。
 
-検索するサイト自体は、[Next.js](https://nextjs.org/)を[serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)を使って動かします。
+検索するサイト自体は、[Next.js](https://nextjs.org/)を[serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)を使って動かします(普通に[Vercel](https://vercel.com)でNext.jsを動かすのも可能です。こっちをデフォルトにするかも)。
 [serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js)は、Cloudfront + S3 + Lambda@Edgeを使ってNext.jsを動かす[Serverless Framework](https://www.serverless.com/framework/docs/providers/aws/guide/installation/)のプラグインです。
 
 ![大まかなmytweetsのアーキテクチャ](https://efcl.info/wp-content/uploads/2021/06/18-1624021862.png)
