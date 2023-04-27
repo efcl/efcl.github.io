@@ -12,6 +12,10 @@ tags:
 
 Node.jsでUnhandled Rejectionsが発生してprocessが終了すると、Exit Statusが`0`となる問題とその対策についてのメモです。
 
+- 追記： Node.js 15+からUnhandle Rejectionが発生するとプロセスがExit Status 1で終了する動作がデフォルトとなりました
+- [Node.js v15ではunhandled rejectionでプロセスがエラー終了する](https://zenn.dev/kimamula/articles/b32d11d52c2b7a733119)
+
+
 事前知識: Async FunctionはPromiseを返す関数定義です。
 その辺について詳しくは次のサイトを読んでください。
 
