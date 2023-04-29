@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 3.6.1'
+gem 'jekyll'
 gem 'rake'
 gem 'rake-jekyll'
 gem 'rouge'
