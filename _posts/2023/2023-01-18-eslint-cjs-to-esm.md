@@ -110,7 +110,7 @@ Dual Packageについては[tsconfig-to-dual-package](https://github.com/azu/tsc
 
 ## まとめ
 
-ESLintとルールをラップしてCJSからESMへと移行する[eslint-cjs-to-esm](https://github.com/azu/eslint-cjs-to-esm)といツールを作りました。
+ESLintとルールをラップしてCJSからESMへと移行する[eslint-cjs-to-esm](https://github.com/azu/eslint-cjs-to-esm)というツールを作りました。
 
 - [azu/eslint-cjs-to-esm: ESLint wrapper for migration from CJS to ESM.](https://github.com/azu/eslint-cjs-to-esm)
 
