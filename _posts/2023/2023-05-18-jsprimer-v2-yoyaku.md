@@ -69,6 +69,19 @@ ECMAScriptの変更への対応だけではなく、読みやすくするため�
 - [Todoアプリ · JavaScript Primer #jsprimer](https://jsprimer.net/use-case/todoapp/)
   - [クラス](https://jsprimer.net/basic/class/)でパブリック/プライベートフィールドが増えたので、コードベースを変更
 
+第2版では、次の方々にレビューをしていただきました。ありがとうございました。
+
+- haruguchi（池奥 悠馬）
+- 2nofa11（ツノ）
+- staticWagomU（林 永遠）
+- kakts（阿久津 恵太）
+- keisuke kudo（工藤佳祐）
+- r-shirasu
+- 藤野慎也（morinokami）
+- kobakazu0429（小畠 一泰）
+- 滝谷修
+
+
 ## jsprimer 改訂2版が予約できます
 
 2020年から3年分の変更が含まれた「[JavaScript Primer(jsprimer)](https://jsprimer.net/)」の改訂2版の予約はもうできます！
