@@ -69,7 +69,7 @@ ECMAScriptの変更への対応だけではなく、読みやすくするため�
 - [Todoアプリ · JavaScript Primer #jsprimer](https://jsprimer.net/use-case/todoapp/)
   - [クラス](https://jsprimer.net/basic/class/)でパブリック/プライベートフィールドが増えたので、コードベースを変更
 
-第2版では、次の方々にレビューをしていただきました。ありがとうございました。
+また改訂2版では、次の方々にレビューをしていただきました。ありがとうございました。
 
 - haruguchi（池奥 悠馬）
 - 2nofa11（ツノ）
