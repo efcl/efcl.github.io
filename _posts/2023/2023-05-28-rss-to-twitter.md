@@ -41,6 +41,7 @@ RSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログ�
   - ![Twitter ACCESS TOKEN](https://raw.githubusercontent.com/azu/rss-to-twitter/main/docs/accesstoken.png)
   - `TWITTER_ACCESS_TOKEN` と `TWITTER_ACCESS_TOKEN_SECRET`
   - ⚠️ ちゃんと "**Read and Write** permissions" になってることを確認してからトークンを作ってください
+  - Twitter v1 APIを作ってる場合はProjectがないこともあるので、そこからやってください
 
 ### Twitter API KeyをGitHub Actionsに設定する
 
