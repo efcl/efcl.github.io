@@ -138,12 +138,12 @@ jobs:
 ```
 
 
-注意事項として、GitHub Actionsで `{% raw %}${{ secrets. GITHUB_TOKEN }}{% endraw %}` を使ってGitHub Pagesにデプロイしている場合 `page_build` イベントは発火しません。これは、GitHub Actionsで無限ループを防ぐための仕様になってます。
+注意事項として、GitHub Actionsで `{% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}` を使ってGitHub Pagesにデプロイしている場合 `page_build` イベントは発火しません。これは、GitHub Actionsで無限ループを防ぐための仕様になってます。
 
 - [Automatic token authentication - GitHub Docs](https://docs.github.com/en/enterprise-server@2.22/actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow)
 - [github actions - Push event doesn't trigger workflow on push paths - Stack Overflow](https://stackoverflow.com/questions/67550727/push-event-doesnt-trigger-workflow-on-push-paths)
 
-`{% raw %}${{ secrets. GITHUB_TOKEN }}{% endraw %}`の代わりにPersonal Access Tokenを使うと`page_build`イベントが発火されるので、PATを使ってください。
+`{% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}`の代わりにPersonal Access Tokenを使うと`page_build`イベントが発火されるので、PATを使ってください。
 
 - Example:
   - Deploy Workflow: https://github.com/jser/jser.github.io/blob/a0fcfc6ef3829055ee10807009d04fb6431a4daf/.github/workflows/deploy.yml#L26-L35
