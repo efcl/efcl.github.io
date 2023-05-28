@@ -148,6 +148,9 @@ jobs:
   - RSS to Twitter Workflow:https://github.com/jser/jser.github.io/blob/a0fcfc6ef3829055ee10807009d04fb6431a4daf/.github/workflows/rss-to-twitter.yml
   - Twitter:https://twitter.com/jser_info
 
+PATの代わりにGitHub Appsからトークンを作成しても良いです。
+
+- [GitHub Appsトークン解体新書：GitHub ActionsからPATを駆逐する技術](https://zenn.dev/tmknom/articles/github-apps-token)
 
 ## TWEET_TEMPLATE
 
