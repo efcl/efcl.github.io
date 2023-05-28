@@ -42,6 +42,7 @@ RSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログ�
   - `TWITTER_ACCESS_TOKEN` と `TWITTER_ACCESS_TOKEN_SECRET`
   - ⚠️ ちゃんと "**Read and Write** permissions" になってることを確認してからトークンを作ってください
   - Twitter v1 APIを作ってる場合はProjectがないこともあるので、そこからやってください
+  - トークンがあってない時、V1のトークンの場合は403エラーになります
 
 ### Twitter API KeyをGitHub Actionsに設定する
 
