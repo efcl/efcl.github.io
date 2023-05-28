@@ -20,6 +20,8 @@ IFTTTでRSSをTwitterに投稿していたのですが、2023年に無料プラ�
 
 - [Updates to IFTTT free tier - IFTTT](https://ifttt.com/explore/updates-to-free-tier-2023)
 
+RSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログだけだったのでGitHub ActionsでRSSをチェックしてTwitterに投稿するアクションを作りました。
+
 ## 準備
 
 ### Twitter API Keyの取得
@@ -153,3 +155,8 @@ jobs:
 一応勝手に280文字(140文字)に切り詰めています。
 テンプレートは既存の処理を使い回していて、あんまり必要なものを考えて作ってないので、必要ならPRください。
 
+## おわりに
+
+正直同じことをやってる人はいると思って、作るのは避けてたんですが、調べてみても見つからなかったので作りました。
+
+- [azu/rss-to-twitter: GitHub Actions: RSS to Twitter](https://github.com/azu/rss-to-twitter)
