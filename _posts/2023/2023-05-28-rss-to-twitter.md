@@ -180,3 +180,5 @@ PATの代わりにGitHub Appsからトークンを作成しても良いです。
 - [azu/rss-to-twitter: GitHub Actions: RSS to Twitter](https://github.com/azu/rss-to-twitter)
 
 GitHub Actionsのリリースが面倒だったり、Node.jsだとbundleの問題があるので、DenoかBunを使いたかったけどテンプレートがなくて諦めました。
+
+- Issue: [Twitterに更新を通知できない · Issue #1084 · jser/jser.github.io](https://github.com/jser/jser.github.io/issues/1084)
