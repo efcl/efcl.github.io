@@ -158,5 +158,6 @@ jobs:
 ## おわりに
 
 正直同じことをやってる人はいると思って、作るのは避けてたんですが、調べてみても見つからなかったので作りました。
+(リポジトリ自体をCloneしてやるパターンなどはあったのですが、欲しいのはGitHub Actionsでシンプルなものだった。リポジトリと投稿を紐づけたかった)
 
 - [azu/rss-to-twitter: GitHub Actions: RSS to Twitter](https://github.com/azu/rss-to-twitter)
