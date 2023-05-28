@@ -161,3 +161,5 @@ jobs:
 (リポジトリ自体をCloneしてやるパターンなどはあったのですが、欲しいのはGitHub Actionsでシンプルなものだった。リポジトリと投稿を紐づけたかった)
 
 - [azu/rss-to-twitter: GitHub Actions: RSS to Twitter](https://github.com/azu/rss-to-twitter)
+
+GitHub Actionsのリリースが面倒だったり、Node.jsだとbundleの問題があるので、DenoかBunを使いたかったけどテンプレートがなくて諦めました。
