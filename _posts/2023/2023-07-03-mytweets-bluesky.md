@@ -42,7 +42,7 @@ tags:
 - [azu/mytweets: Search all your tweets.](https://github.com/azu/mytweets)
 
 おそらく基本的には、一度ローカルでTwitterのアーカイブを一度インポートして、
-その後はGitHub Actionde定期的に更新していくという流れになると思います。
+その後はGitHub Actionで定期的に更新していくという流れになると思います。
 
 ここでは、GitHub Actionsでのデータの更新とVercelにウェブフロントエンドをデプロイする方法を紹介します。
 
