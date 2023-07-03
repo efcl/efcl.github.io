@@ -167,6 +167,13 @@ Next.jsが動くところならどこでも問題ないですが、ここでは[
 [mytweets](https://github.com/azu/mytweets)をBlueskyに対応しました。
 [投稿専用クライアントのpostemとpost-tweetをBlueskyに対応した | Web Scratch](https://efcl.info/2023/06/18/bluesky-post/)でも書きましたが、BlueskyのAPIは比較的シンプルです。(did周りは癖がある)
 
+<https://bsky.app/profile/azu.bsky.social/post/3jzlbbvchu52m> というのが個別のポストのURLです。
+実はこのポストは、did:plcを使ってAuthorを指定してもアクセスできます。
+
+- <https://bsky.app/profile/did:plc:niluiwex7fsnjak2wxs4j47y/post/3jzlbbvchu52m>
+
+mytweetsだと`at://`なuriのみしか保存してないので、この辺の仕組みがあってよかった(適当にガチャガチャしてて気づいた)
+
 [mytweets](https://github.com/azu/mytweets)はデータの取得と変換を追加すれば、任意のサービスに対応できると思うので、興味がある方はぜひPRを送ってください。
 データ量が多いので、保存するデータはものすごくシンプルにしています。
 
