@@ -1,5 +1,5 @@
 ---
-title: "Tweetsの全文検索できるmytweetsをBlueskyに対応した。自分用Twilogみたいなもの"
+title: "Tweetsを全文検索できるmytweetsをBlueskyに対応した。自分用Twilogみたいなもの"
 author: azu
 layout: post
 date : 2023-07-03T13:49
