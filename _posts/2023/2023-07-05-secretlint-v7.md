@@ -189,6 +189,6 @@ Secretllintは元からブラウザで動いていたので、ESMにしたこと
 
 - [CommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか](/2023/07/05/convert-to-esm/)
 
-CJSからESMへと移行しました、ベンチマーク的にはほとんど変わらなかったです。
+Secretlint v7でCJSからESMへと移行しましたが、ベンチマーク的にはほとんど変わらなかったです。
 
 - [Benchmarks](https://secretlint.github.io/secretlint/dev/bench/)
