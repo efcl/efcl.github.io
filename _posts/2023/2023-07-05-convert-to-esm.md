@@ -372,7 +372,7 @@ RollupはモジュールをESMとして扱います。
 この挙動の違いによって、Node.jsでESMとして実行できても、rollupでbundleするとNode.jsで実行するとエラーになるという現象が起きます。
 (`.default.default`の問題といえばわかる人はわかると思います)
 
-この挙動の違いをなくすには、[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)の`commonjs({ defaultIsModuleExports: true })`オプションを有効かする必要があります。
+この挙動の違いをなくすには、[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)の`commonjs({ defaultIsModuleExports: true })`オプションを有効化する必要があります。
 
 `defaultIsModuleExports`を`true`にするとNode.js ESMからCJSを読み込んだ時と同じ動作になります。
 
