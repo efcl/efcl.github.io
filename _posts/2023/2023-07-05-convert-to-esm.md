@@ -153,7 +153,7 @@ Dual PackageはCJSとESMどちらのパッケージからも読み込めるた�
 `@secretlint/tester`とMochaを使ってスナップショットテストをするためのUtility的なものになっています。
 
 そのため`@secretlint/tester`をESMにすると、全てのルールをESMにしないとルールのテストが動かなくなります。
-まとめてルールのテストを移行するのは大変そうであったため、まずはCJSのまま`@secretlint/tester`を使うように移行しました。
+まとめてルールのテストを移行するのは大変そうであったため、まずはCJSのままESM化した`@secretlint/tester`を使うように移行しました。
 
 ここで利用したのは、CJSからはESMのパッケージをDynamic Importで読むという方法です。
 
