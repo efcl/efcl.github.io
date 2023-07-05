@@ -233,7 +233,7 @@ Mochaの`describe`はAsyncに対応していないため、非同期処理が必
 
 ESMへの移行とは具体的にどういうことをやるのかを紹介します。
 
-CJSでは使えて、ESMでは使えない機能というがいくつかあります。
+CJSでは使えて、ESMでは使えない機能がいくつかあります。
 コード的にはそれを書き換えることと、`package.json`に`type=module`を設定するこでESMなパッケージとして配布できます。
 
 - [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
