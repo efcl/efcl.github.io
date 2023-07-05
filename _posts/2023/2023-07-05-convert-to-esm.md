@@ -172,7 +172,7 @@ const pkg = require("esm-pkg");
 })();
 ```
 
-Dynamic Importを利用することで、ルールのテストコードはCJSのままでESMのパッケージに変更した`@secretlint/tester`を利用できるにしました。
+Dynamic Importを利用することで、ルールのテストコードはCJSのままでESMのパッケージに変更した`@secretlint/tester`を利用できるようにしました。
 
 具体的なDiffは次のようになります。
 
