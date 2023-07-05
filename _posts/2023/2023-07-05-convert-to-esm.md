@@ -263,11 +263,22 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 ```
 
+また、Node.jsの`node:fs`などは`URL`オブジェクトそのものに対応してるケースも多いため、
+`URL`オブジェクトを引数として受け取るように変更するといった変更も可能です。
+
+```diff
+- path.join(__dirname, "./fixtures/");
+// pathモジュールを使わなくても良くなる
++ new URL("./fixtures/", import.meta.url);
+```
+
 これらの書き換えは機械的に検知でき、書き換えも大部分は可能です。
 実際に次のツールを使って検知と書き換えを行いました。
 
 - [azu/eslint-cjs-to-esm: ESLint wrapper for migration from CJS to ESM.](https://github.com/azu/eslint-cjs-to-esm)
 - [eslint-cjs-to-esm: CJSをESMへとマイグレーションするツールを書いた | Web Scratch](https://efcl.info/2023/01/18/eslint-cjs-to-esm/)
+
+
 
 ## CJSからESMのパッケージに変換する
 
