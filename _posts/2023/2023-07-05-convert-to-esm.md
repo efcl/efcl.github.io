@@ -272,7 +272,7 @@ const __dirname = path.dirname(__filename);
 ## CJSからESMのパッケージに変換する
 
 CJSからESMのパッケージにするには、`package.json`の書き換えや`tsconfig.json`の出力の書き換えなども必要です。
-[Secretlintのリポジトリ](https://github.com/secretlint/secretlint)では、それzのパッケージはほぼ同じ構成だったので、次のようなスクリプを回して変換しました。
+[Secretlintのリポジトリ](https://github.com/secretlint/secretlint)では、それぞれのパッケージはほぼ同じ構成だったので、次のようなスクリプを回して変換しました。
 
 ```bash
 #!/bin/bash
