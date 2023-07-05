@@ -229,7 +229,7 @@ Mochaの`describe`はAsyncに対応していないため、非同期処理が必
 
 - [refactor!: Convert all rules to ESM by azu · Pull Request #535 · secretlint/secretlint](https://github.com/secretlint/secretlint/pull/535)
 
-## CJSからESMへのコードを書き換える
+## CJSからESMへコードを書き換える
 
 ESMへの移行とは具体的にどういうことをやるのかを紹介します。
 
