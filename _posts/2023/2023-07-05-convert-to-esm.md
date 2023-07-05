@@ -130,7 +130,7 @@ SecretlintのルールはAWS/GCP/npmのクレデンシャルの検知などさ�
 この境界線となるパッケージをどうにかすれば、コアの移行とルールの移行を分離できそうです。
 
 基本的にはESMのパッケージはESMのコードからしか読み込ません。
-例外として、[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)(ESMとCJSどちらの形式も出力する)か先Dynamic Importがあります。
+例外として、[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)(ESMとCJSどちらの形式も出力する)かDynamic Importがあります。
 
 ここでは、この境界線となるパッケージの読み込みに、[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)とDynamic Importを使うことで、コアとルールの移行を切り離しました。
 
