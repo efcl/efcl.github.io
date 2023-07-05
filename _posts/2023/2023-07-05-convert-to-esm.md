@@ -242,7 +242,7 @@ CJSでは使えて、ESMでは使えない機能というがいくつかあり�
 
 CJSでは、`require`するファイルの拡張子は省略可能でしたが、ESMは`import`するファイルの拡張子が必須になります。
 
-```Js
+```js
 import assert from "assert"; // モジュール
 import foo from "./foo.js"; // 相対パス
 import type Foo from "./foo"; // import type - typeは省略可能
@@ -250,7 +250,7 @@ import type Foo from "./foo"; // import type - typeは省略可能
 
 CJSでは、`__dirname`や`__filename`が利用可能でした。
 
-```
+```js
 __dirname; // スクリプトのディレクトリパス
 __filename; // スクリプトのファイルパス
 ```
