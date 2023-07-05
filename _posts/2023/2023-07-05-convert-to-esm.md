@@ -360,6 +360,24 @@ ESMへのパッケージに影響が連鎖しやすいので、全体のテス�
 SecretlintではTurborepoを使っていたので、元からその仕組みがありましたが、今回の移行ではかなりこの仕組みがスピードに貢献したと思います。
 実際に40コぐらいパッケージがありましたが、1日とちょっとで全て移行し終わっています。
 
+## Tips: Rollup `commonjs`プラグインとNode.js ESMのCJSの挙動は異なる
+
+RollupはモジュールをESMとして扱います。
+そのためデフォルトではCJSを扱えません。
+そのため、bundle依存のどこかにCJSがある場合は[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)を使う必要があります。
+
+しかし、この[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)とNode.js ESMからCJSを読み込む挙動は互換性がデフォルトではありません。
+どういう違いがあるかというと[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)は、[`__esModule`フラグ](https://github.com/esnext/es6-module-transpiler/issues/86)という歴史的なフラグを考慮するのに対して、Node.js ESMは`__esModule`フラグを考慮しません。
+
+この挙動の違いによって、Node.jsでESMとして実行できても、rollupでbundleするとNode.jsで実行するとエラーになるという現象が起きます。
+(`.default.default`の問題といえばわかる人はわかると思います)
+
+この挙動の違いをなくすには、[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)の`commonjs({ defaultIsModuleExports: true })`オプションを有効かする必要があります。
+
+`defaultIsModuleExports`を`true`にするとNode.js ESMからCJSを読み込んだ時と同じ動作になります。
+
+Secretlintでは[@secretlint/secretlint-rule-preset-recommend](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-preset-recommend)をRollupでbundleすることで、I/Oを減らすという最適化をしているので、この問題を踏みました。
+
 ## おわりに
 
 ESMへの移行は、現時点だと面倒で直接的なメリットが少なく、そして面倒臭いです。
