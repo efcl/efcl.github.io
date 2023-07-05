@@ -177,7 +177,7 @@ Dynamic Importを利用することで、ルールのテストコードはCJSの
 具体的なDiffは次のようになります。
 
 ```diff
-- const { snapshot } = require()"@secretlint/tester");
+- const { snapshot } = require("@secretlint/tester");
 const path = require("path");
 const { creator: rule } = require("../src/index");
 + const test = require("node:test");
@@ -215,7 +215,7 @@ const { creator: rule } = require("../src/index");
 APIはそこまで大きく変わらないので、文字列置換だけで変更できました。
 
 Mochaではなく`node:test`に変更したのは、非同期で初期化処理を行う必要があったためです。
-Mochaの`describe`はAsyncに対応していないため、非同期処理が必要な動的なテスト生成ができませんでした。
+Mochaの`describe`はAsyncに対応していないため、非同期処理が必要な動的なテスト生成はできませんでした。
 
 - [Describe block with async function behaving weirdly · Issue #2975 · mochajs/mocha](https://github.com/mochajs/mocha/issues/2975)
 
@@ -238,7 +238,7 @@ CJSでは使えて、ESMでは使えない機能がいくつかあります。
 
 - [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
 
-変更の9割ぐらいは、`import`するファイルパスに`.js`を追加するのと、`__dirname`を`import.meta.url`に変更になると思います。
+変更の9割ぐらいは、`import`するファイルパスに`.js`を追加するのと、`__dirname`を`import.meta.url`へ変更になると思います。
 
 CJSでは、`require`するファイルの拡張子は省略可能でしたが、ESMは`import`するファイルの拡張子が必須になります。
 
@@ -272,7 +272,7 @@ const __dirname = path.dirname(__filename);
 ## CJSからESMのパッケージに変換する
 
 CJSからESMのパッケージにするには、`package.json`の書き換えや`tsconfig.json`の出力の書き換えなども必要です。
-[Secretlintのリポジトリ](https://github.com/secretlint/secretlint)では、それぞれのパッケージはほぼ同じ構成だったので、次のようなスクリプを回して変換しました。
+[Secretlintのリポジトリ](https://github.com/secretlint/secretlint)では、それぞれのパッケージはほぼ同じ構成だったので、次のようなスクリプトを回して変換しました。
 
 ```bash
 #!/bin/bash
@@ -355,7 +355,7 @@ git add .
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="ja" dir="ltr">monorepoで1ファイル変更するたびにmonorepo全体のテストを実行するのはこんな感じです。<br>これはsecretlintな のでturborepoのキャッシュが効いてて、全体のテストを実行してもそのファイルだけテストが実行される<a href="https://t.co/PPy73bz3ND">https://t.co/PPy73bz3ND</a> <a href="https://t.co/pCMNm3mn3X">pic.twitter.com/pCMNm3mn3X</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1675008702171213824?ref_src=twsrc%5Etfw">July 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 これによって、全体のテストを実行するという1つの方法で、パッケージを徐々に書き換えていくことが簡単になります。
-ESMへのパッケージに影響が連鎖しやすいので、全体のテストを常に走らせるというのは問題が起きた時にすぐ気づけるので重要です。
+ESMへのパッケージに影響が連鎖しやすいので、全体のテストを常に走らせるというのは、問題が起きた時にすぐ気付けるので重要です。
 
 SecretlintではTurborepoを使っていたので、元からその仕組みがありましたが、今回の移行ではかなりこの仕組みがスピードに貢献したと思います。
 実際に40コぐらいパッケージがありましたが、1日とちょっとで全て移行し終わっています。
@@ -366,7 +366,7 @@ RollupはモジュールをESMとして扱います。
 そのためデフォルトではCJSを扱えません。
 そのため、bundle依存のどこかにCJSがある場合は[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)を使う必要があります。
 
-しかし、この[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)とNode.js ESMからCJSを読み込む挙動は互換性がデフォルトではありません。
+しかし、この[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)とNode.js ESMからCJSを読み込む挙動はデフォルトでは互換性がありません。
 どういう違いがあるかというと[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)は、[`__esModule`フラグ](https://github.com/esnext/es6-module-transpiler/issues/86)という歴史的なフラグを考慮するのに対して、Node.js ESMは`__esModule`フラグを考慮しません。
 
 この挙動の違いによって、Node.jsでESMとして実行できても、rollupでbundleするとNode.jsで実行するとエラーになるという現象が起きます。
