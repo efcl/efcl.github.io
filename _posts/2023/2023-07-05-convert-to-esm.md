@@ -92,7 +92,8 @@ ESMへの移行は、影響が依存元へと連鎖します。
 ボトムアップ、トップダウンどちらの方法でやるにしても、依存ツリーの把握は必須です。
 monorepoではnpmやyarnなどの`workspaces`機能を使っていることがほとんどだと思います。
 
-Nxの[nx graph](https://nx.dev/packages/nx/documents/dep-graph)コマンドを使うことで、`workspaces`の依存関係から依存ツリーの図を作成できます。
+[Nx](https://nx.dev/)の[nx graph](https://nx.dev/packages/nx/documents/dep-graph)コマンドを使うことで、`workspaces`の依存関係から依存ツリーの図を作成できます。
+図もインタラクティブに触れるのと、JSONなども取得できるので、Nxを使ってなくても`nx graph`コマンドは便利です。
 
 ```
 # nxを使ってなくてもworkspacesの設定があれば動きます
