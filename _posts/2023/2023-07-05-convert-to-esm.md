@@ -146,7 +146,7 @@ SecretlintのルールはAWS/GCP/npmのクレデンシャルの検知などさ�
 `@secretlint/types`は、monorepo内で共有する型定義を配布するパッケージです。
 中身は型定義だけです。
 
-普通のパッケージを[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)にすることはビルドツールでTranspileしないと難しいですが、型定義だけならESMの出力とCJSの出力のtsconfig.jsonを用意するだけで可能です。
+普通のパッケージを[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)にするにはビルドツールでTranspileしないと難しいですが、型定義だけならESMの出力とCJSの出力のtsconfig.jsonを用意するだけで可能です。
 
 ESMとCJSの型定義をそれぞれ出力して、[tsconfig-to-dual-package](https://github.com/azu/tsconfig-to-dual-package)を使うことでDual Pacakgeとして配布できます。
 
