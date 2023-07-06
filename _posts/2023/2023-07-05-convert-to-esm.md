@@ -385,7 +385,7 @@ RollupはモジュールをESMとして扱います。
 しかし、この[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)とNode.js ESMからCJSを読み込む挙動はデフォルトでは互換性がありません。
 どういう違いがあるかというと[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)は、[`__esModule`フラグ](https://github.com/esnext/es6-module-transpiler/issues/86)という歴史的なフラグを考慮するのに対して、Node.js ESMは`__esModule`フラグを考慮しません。
 
-この挙動の違いによって、Node.jsでESMとして実行できても、rollupでbundleするとNode.jsで実行するとエラーになるという現象が起きます。
+この挙動の違いによって、Node.jsでESMとして実行できても、rollupでbundleしたものをNode.jsで実行するとエラーになるという現象が起きます。
 (`.default.default`の問題といえばわかる人はわかると思います)
 
 この挙動の違いをなくすには、[@rollup/plugin-commonjs](https://www.npmjs.com/package/@rollup/plugin-commonjs)の`commonjs({ defaultIsModuleExports: true })`オプションを有効化する必要があります。
