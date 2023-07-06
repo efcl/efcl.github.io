@@ -111,7 +111,7 @@ $ npx nx graph
 4. formatter/node/config-creator/messages-to-markdown/config-loader/core (ここはどれからでもOK)
 5. types/profile
 
-それぞれのステップでのパッケージをESMにした状態で、それぞれ全体のテストが通る(Secretlintとして配布できる)状態でマイグレーションしていきました。
+それぞれのステップでのパッケージをESMにした時点で、全体のテストが通る(Secretlintとして配布できる)状態でマイグレーションしていきました。
 
 ## ESMの段階的な移行の境界線
 
