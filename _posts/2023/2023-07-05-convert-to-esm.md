@@ -148,7 +148,7 @@ SecretlintのルールはAWS/GCP/npmのクレデンシャルの検知などさ�
 
 普通のパッケージを[Dual packages](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)にするにはビルドツールでTranspileしないと難しいですが、型定義だけならESMの出力とCJSの出力のtsconfig.jsonを用意するだけで可能です。
 
-ESMとCJSの型定義をそれぞれ出力して、[tsconfig-to-dual-package](https://github.com/azu/tsconfig-to-dual-package)を使うことでDual Pacakgeとして配布できます。
+ESMとCJSのtsconfigを用意し、[tsconfig-to-dual-package](https://github.com/azu/tsconfig-to-dual-package)を使うことでDual Pacakgeとして配布できます。
 
 Dual PackageはCJSとESMどちらのパッケージからも読み込めるため、Dual Package化した`@secretlint/types`はESMに移行する前のルールからも読み込めるようになりました。
 
