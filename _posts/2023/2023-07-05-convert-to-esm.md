@@ -94,6 +94,11 @@ monorepoではnpmやyarnなどの`workspaces`機能を使っていることが�
 
 Nxの[nx graph](https://nx.dev/packages/nx/documents/dep-graph)コマンドを使うことで、`workspaces`の依存関係から依存ツリーの図を作成できます。
 
+```
+# nxを使ってなくてもworkspacesの設定があれば動きます
+$ npx nx graph
+```
+
 ![Secretlint Dependencies Tree](/wp-content/uploads/2023/07/05-1688559947.png)
 
 この依存ツリーから、トップダウンアプローチではどういう順番で書き換えていけば、1つのパッケージを書き換えた時点で動作する状態になるのか作業順を作成します。
