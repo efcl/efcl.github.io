@@ -243,7 +243,7 @@ CJSでは使えて、ESMでは使えない機能がいくつかあります。
 
 - [Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]](https://zenn.dev/azu/scraps/8251dab75562c8)
 
-変更の9割ぐらいは、`import`するファイルパスに`.js`を追加するのと、`__dirname`を`import.meta.url`へ変更になると思います。
+変更の9割ぐらいは、`import`するファイルパスに`.js`を追加するのと、`__dirname`を`import.meta.url`に変更だと思います。
 
 CJSでは、`require`するファイルの拡張子は省略可能でしたが、ESMは`import`するファイルの拡張子が必須になります。
 
