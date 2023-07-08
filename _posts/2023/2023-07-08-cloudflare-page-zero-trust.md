@@ -63,6 +63,9 @@ Cloudflare Pagesにカスタムドメインを設定する場合は、さらに�
 Cloudflare Zero Trust で Identity Provider を設定することで、設定されたGoogleアカウントでログインした時のみページが見れるようになるといったアクセス制御を設定できます。
 
 - [Cloudflare Zero Trust で Identity Provider](https://egashira.dev/blog/uses-google-oauth-for-cloudflare-pages)
+- [Cloudflare Access + Pagesで自分のみアクセスできるようにする - notebook](https://swfz.hatenablog.com/entry/2022/09/30/193552)
+- [Cloudflare Access の認証に Google アカウントを使用してみる | DevelopersIO](https://dev.classmethod.jp/articles/use-google-account-for-cloudflare-access-authentication/)
+
 
 記事を参考にIdentity Providerを作成したら、先ほど作成した、`*.{name}.pages.dev` と `{name}.pages.dev`のポリシーにどのIdentity Providerを使うかを設定します。
 
