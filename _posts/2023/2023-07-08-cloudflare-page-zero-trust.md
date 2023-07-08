@@ -73,9 +73,9 @@ Cloudflare Zero Trust で Identity Provider を設定することで、設定さ
 1. ポリシーの一覧から `{name}.pages.dev` の右側にある … からConfigureを開く
 2. Authenticationのタブを開く
 3. 作成したIdentity Providerあるので、チェックを入れる
-  - 使うIdentity Providerを複数にしたり、どれか一つにしたりできます
-  - ⚠️ この状態では保存できないので、次のステップへ
-  - ![Authentication](https://efcl.info/wp-content/uploads/2023/07/08-1688813931.png)
+    - 使うIdentity Providerを複数にしたり、どれか一つにしたりできます
+    - ⚠️ この状態では保存できないので、次のステップへ
+    - ![Authentication](https://efcl.info/wp-content/uploads/2023/07/08-1688813931.png)
 4. Overviewのタブを開く
 5. 再び Domain(Required)に対して `{name}.pages.dev` を選択する
 6. Saveをクリックする
