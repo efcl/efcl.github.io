@@ -35,7 +35,7 @@ Cloudflare Pagesの `{name}.pages.dev` ドメインに自分だけアクセス�
     - ![Zero Trust List](https://efcl.info/wp-content/uploads/2023/07/08-1688812728.png)
     - 先ほど追加された`*.{name}.pages.dev`のポリシーがあるのを確認できます
 2. `*.{name}.pages.dev`の右にある … から　Configureをクリックする
-    - Add an applicationからは`{name}.pages.dev`に対するポリシーは追加できません
+    - ⚠️ Add an applicationからは`{name}.pages.dev`に対するポリシーは追加できません
 3. Overviewのタブを開く
 4. Domain(Required)となっているところで `{name}.pages.dev` を選択する
     - Subdomainのところは何も入れなくて問題ありません
