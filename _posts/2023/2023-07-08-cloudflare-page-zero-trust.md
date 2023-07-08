@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare Pagesの　{name}.pages.dev ドメインに自分だけアクセスできるようにアクセス制限をつける手順"
+title: "Cloudflare Pagesの`{name}.pages.dev`ドメインに自分だけアクセスできるようにアクセス制限をつける手順"
 author: azu
 layout: post
 date : 2023-07-08T19:32
