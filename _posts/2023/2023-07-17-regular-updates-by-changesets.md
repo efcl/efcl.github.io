@@ -192,7 +192,7 @@ jobs:
 これで、PRをマージするたびに`0.0.0-next-20230716010722`のようなバージョンでnpmへリリースできます。
 npmの[dist-tag](https://docs.npmjs.com/cli/v9/commands/npm-dist-tag)という仕組みを使い、通常の`npm install`した時に参照される`@latest`ではなく、適当な`@next`のようなタグをつけてパッケージを公開できます。
 
-```
+```bash
 # @latestのdist-tagがインストールされる
 npm install textlint-rule-preset-ja-technical-writing
 # 次と意味は同じ
