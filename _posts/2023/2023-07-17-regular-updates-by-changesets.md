@@ -253,7 +253,7 @@ jobs:
 - [Release v8.0.0 · textlint-ja/textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing/releases/tag/v8.0.0)
 
 自分が管理する大部分のパッケージは、マージのたびにリリースしています。
-それのパッケージのリリースには、GitHub Releasesを使った方法を利用しています。
+この場合のパッケージのリリースには、GitHub Releasesを使った方法を利用しています。
 詳細は次の記事を参照してください。
 
 - [GitHubのリリースノートを自動化する仕組み | Web Scratch](https://efcl.info/2023/03/11/auto-release-note/)
