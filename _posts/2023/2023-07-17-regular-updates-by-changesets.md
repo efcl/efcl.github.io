@@ -245,7 +245,7 @@ jobs:
 
 ## おわりに
 
-[Changesets](https://github.com/changesets/changesets)はリリースまで間隔が開くようなプロジェクトにはとても便利です。
+[Changesets](https://github.com/changesets/changesets)はリリースまでの間隔をあけるようなプロジェクトにはとても便利です。
 
 これらの仕組みを使って、それぞれのパッケージのメジャーアップデートをリリースしています。
 
