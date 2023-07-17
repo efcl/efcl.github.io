@@ -97,6 +97,7 @@ CIからnpmにリリースするにはNPMのtokenが必要ですが、次のよ�
 - https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing/blob/2c6c5b1164f0afc4149933954d888b3f7133aee8/.github/workflows/release.yml
 
 ```yaml
+{% raw %}
 name: Release
 
 on:
@@ -132,6 +133,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.SHARED_BOT_NPM_TOKEN }}
+{% endraw %}
 ```
 
 ここまで設定できると、PRをマージするたびにそこまでの変更履歴をまとめたVersion PackagesというPRを作ってくれます。
@@ -153,6 +155,7 @@ jobs:
 - https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing/blob/2c6c5b1164f0afc4149933954d888b3f7133aee8/.github/workflows/snapshot-release.yml
 
 ```yaml
+{% raw %}
 name: "Snapshot Release@next"
 
 on:
@@ -187,6 +190,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.SHARED_BOT_NPM_TOKEN }}
+{% endraw %}
 ```
 
 これで、PRをマージするたびに`0.0.0-next-20230716010722`のようなバージョンでnpmへリリースできます。
@@ -211,6 +215,7 @@ npm install textlint-rule-preset-ja-technical-writing@next
 - https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing/blob/2c6c5b1164f0afc4149933954d888b3f7133aee8/.github/workflows/prepare-release.yml
 
 ```yaml
+{% raw %}
 name: Create ReleaseIssue
 on:
   schedule:
@@ -241,6 +246,7 @@ jobs:
           close-previous: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+{% endraw %}
 ```
 
 ## おわりに
