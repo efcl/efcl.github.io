@@ -205,7 +205,7 @@ npm install textlint-rule-preset-ja-technical-writing@next
 
 ## 定期的なリリースのタイミングをGitHub Actionsで通知する
 
-半年に一回りリースしますが、リリース自体は手動でVersion PackagesのPRをマージする必要があります。
+半年に一回リリースしますが、リリース自体は手動でVersion PackagesのPRをマージする必要があります。
 このタイミングを忘れてしまう問題もあるので、次のようなGitHub Actionsを半年に一回リリース用のIssueを作成して通知しています。
 
 - https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing/blob/2c6c5b1164f0afc4149933954d888b3f7133aee8/.github/workflows/prepare-release.yml
