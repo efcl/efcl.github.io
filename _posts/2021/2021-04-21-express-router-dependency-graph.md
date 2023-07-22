@@ -137,8 +137,9 @@ MarkdownのTableとJSONでそれぞれ出力できます。
 
 ## 仕組み
 
-[Dependency cruiser](https://github.com/sverweij/dependency-cruiser)を使ってモジュール間の依存関係を取得して、
+~~[Dependency cruiser](https://github.com/sverweij/dependency-cruiser)を使ってモジュール間の依存関係を取得して~~
 expressをimportしているソースコードを[Babelでパース](https://babeljs.io/docs/en/babel-parser)して、ルーティングなどを取り出しています。
+[v3.0.0](https://github.com/azu/express-router-dependency-graph/releases/tag/v3.0.0)では、モジュール依存関係、ルーティング部分どちらもBabelでパースして分析しています。
 
 静的に解析する都合上、特殊な書き方をすると取れない場合があるので、そういうケースを見つけたらPull Requestお願いします。
 
