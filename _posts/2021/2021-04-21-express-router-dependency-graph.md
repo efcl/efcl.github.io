@@ -14,11 +14,11 @@ tags:
 
 - [azu/express-router-dependency-graph: A static code analysis tool that creates a dependency graph for express routing.](https://github.com/azu/express-router-dependency-graph)
 
-次のように `--rootDir`に`package.json`があるディレクトリを指定することで、
+次のように globでexpressを含むソースコードを指定することで、
 そのディレクトリ以下にあるソースコードからexpressの`use`,`get`,`post`,`delete`,`put`などでのルーティングの一覧を作成します。
 
 ```
-npx express-router-dependency-graph --rootDir=./
+npx express-router-dependency-graph "src/**/*.{js,ts}"
 ```
 
 MarkdownのTableとJSONでそれぞれ出力できます。
