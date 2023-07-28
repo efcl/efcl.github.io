@@ -11,6 +11,10 @@ tags:
 
 ---
 
+今はできなくなっています。
+
+- Edit: [GitHubの不使用アカウント開放申請が申請できなくなっているみたい](https://zenn.dev/dove/articles/ee5f1770afd5da)
+
 ## 非活性なGitHubアカウント
 
 [Githubでpecoのアカウントを融通してもらった件 : D-7 &lt;altijd in beweging&gt;](http://lestrrat.ldblog.jp/archives/39456399.html "Githubでpecoのアカウントを融通してもらった件 : D-7 &lt;altijd in beweging&gt;")
