@@ -84,7 +84,7 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 
 **Notionの設定**
 
-1. このテンプレートを複製する
+1. [このテンプレート](https://efcl.notion.site/mubook-hon-addce6c324d44d749a73748f92e3a1a6)を複製する
 2. https://www.notion.so/my-integrations から新しいインテグレーションを作成
     - 📝 作成したら表示されるAPI Tokenをコピーしておく(このAPI Tokenは公開してはいけません)
     - 名前: `mubook-hon` (好きな名前)
