@@ -78,6 +78,8 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 1. https://mubook-hon.vercel.app/ にアクセス
 2. “Authorize”ボタンを押し、Dropboxにログインして、mubook-honアプリのアクセスを許可する
 3. `~/Dropbox/アプリ/mubook-hon` に 拡張子が `.epub` または `.pdf` のファイルを配置する
+  - 今のmacだと `/Users/{user}/Library/CloudStorage/Dropbox/アプリ/mubook-hon` かもしれません
+  - 英語の場合は `/Users/{user}/Library/CloudStorage/Dropbox/Apps/mubook-hon` かもしれません
 4. https://mubook-hon.vercel.app/ に本が表示されて読めるようになる
 
 **Notionの設定**
