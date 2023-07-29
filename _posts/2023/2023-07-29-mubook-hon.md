@@ -102,7 +102,7 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
     - Notion API Key: 作成したインテーグレーションのAPI Key
     - Book List Database Id: Book ListデータベースのID
         - ビューのリンクをコピーする
-        - [`https://www.notion.so/{name}/123456asdfg?v=xxx`](https://www.notion.so/e24f39003e8149c6a2b07c008b99c58f?pvs=21) の[`123456asdfg`](https://www.notion.so/e24f39003e8149c6a2b07c008b99c58f?pvs=21) 部分
+        - `https://www.notion.so/{name}/123456asdfg?v=xxx` の`123456asdfg` 部分
         - [[作成済みDBへの連携 2] データベースIDの取得と設定](https://booknotion.site/setting-databaseid)
     - Book Memo Database Id: Book MemoデータベースのID
 4. 設定完了！ https://mubook-hon.vercel.app/ から本を読めます
