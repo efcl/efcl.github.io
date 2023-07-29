@@ -39,7 +39,7 @@ tags:
 
 ![notion-database.png](https://efcl.info/wp-content/uploads/2023/07/notion-database.png)
 
-> Notionのデータベースで本が自動で記録されます
+> Notionのデータベースに本が自動で記録されます
 
 ![Notion Book Page](https://efcl.info/wp-content/uploads/2023/07/notion-book-page.png)
 
