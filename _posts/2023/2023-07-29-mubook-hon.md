@@ -43,7 +43,7 @@ tags:
 
 ![Notion Book Page](https://efcl.info/wp-content/uploads/2023/07/notion-book-page.png)
 
-> Notionにメモを追加できる
+> Notionにメモを追加できる、メモは本に自動的に紐づきます
 
 Notionに書籍ごとのページが自動的に作られ、その書籍のページに対してメモ(引用)が自動的にRelationとして追加されます。
 書籍に紐づくメモをデータベースとして管理できるようになってるので、メモの自由度がかなり高いのが特徴です。
