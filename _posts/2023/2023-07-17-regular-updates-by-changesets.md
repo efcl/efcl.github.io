@@ -133,7 +133,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.SHARED_BOT_NPM_TOKEN }}
-{% endraw %}
+{}
 ```
 
 ここまで設定できると、PRをマージするたびにそこまでの変更履歴をまとめたVersion PackagesというPRを作ってくれます。
