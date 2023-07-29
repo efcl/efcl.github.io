@@ -31,6 +31,9 @@ tags:
 
 ## イメージ
 
+![viewer: Ruth A. Shapiro, Manisha Mirchandani and Heesu Jang Pragmatic Philanthropy Asian Charity Explained - CC BY](https://efcl.info/wp-content/uploads/2023/07/epub.png)
+
+
 > epub viewer by [Bibi](https://bibi.epub.link/)
 
 ![viewer: Pro Git book - CC BY-NC-SA 3.0](https://efcl.info/wp-content/uploads/2023/07/pdf.png)
