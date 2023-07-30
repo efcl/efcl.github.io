@@ -202,3 +202,10 @@ Notionのデータベースを読書の記録に使うというアイデアを�
 最近のbook-reviewなんかはこれを元にしていますが、Notionから直接公開できるような手法があってもいいのかもしれないですね。
 
 - [azu/book-review: 本を読んだ感想を書くブログです。](https://github.com/azu/book-review)
+
+書籍を読むためにビューアーを書こうと思ったの、これで4回目ぐらいなのですが、やっといい感じになったかなーという気がします。
+今まではビューアーとメモは分けていたけど、そこをシームレスに繋いだことで、読むのに集中できるようになった感じはあります。
+
+- [azu/mu-epub-reader: Epub viewer on Electron that support text translation.](https://github.com/azu/mu-epub-reader)
+- [azu/mu-pdf-viewer: PDF viewer on electron.](https://github.com/azu/mu-pdf-viewer)
+- [azu/bi-epub-reader: Standalone Epub reader using Bibi.](https://github.com/azu/bi-epub-reader)
