@@ -137,6 +137,15 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 
 - [Memo UI · Issue #2 · azu/mubook-hon](https://github.com/azu/mubook-hon/issues/2)
 
+## アプリっぽく使う
+
+<https://mubook-hon.vercel.app/>はPWAに対応しているので、Chromeのショートカット作成やiOSのホームに追加をすると、アプリっぽく利用できます。
+
+- [Add & open Chrome apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/3060053?hl=en)
+- [Add to Home screen - Progressive web apps (PWAs) | MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
+
+
+
 ## Privacy Notice
 
 NotionのAPIを利用していますが、NotionのAPIは[CORS](https://developer.mozilla.org/ja/docs/Web/HTTP/CORS)をサポートしていません。
