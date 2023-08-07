@@ -114,6 +114,8 @@ JFrog ArtifactoryなどのPrivateなレジストリとPublicなレジストリ�
 また、HOMEディレクトリではありませんが、`.env`には機密情報が入ってる可能性が高いので、こういったマルウェアには狙われやすいと思います。
 これらは[1Password Shell Plugins](https://github.com/1Password/shell-plugins)や[op run](https://developer.1password.com/docs/cli/reference/commands/run)、[zenv](https://github.com/m-mizutani/zenv)、[envchain](https://github.com/sorah/envchain)などを使って、ファイルに生のトークンなどを保存しないようにできます(これについてはまた今後書きます) 。
 
+- 追記: [1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した | Web Scratch](https://efcl.info/2023/01/31/remove-secret-from-local/)
+
 それ以外にも、HOMEディレクトリにcredentialが入りやすいものとして、`.zsh_history`や`.bash_history`などのシェルの履歴ファイルがあります。
 履歴ファイルを全部消すのは抵抗があったり、一方で目視チェックするのも面倒なので、`secretlint`を使って自動でチェックするようにすれば良さそうと思ったのがきっかけです。
 
