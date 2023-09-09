@@ -126,4 +126,71 @@ jobs:
 
 - [Advanced Usage](https://github.com/azu/bluenotiondb#advanced-usage)
 
+## 作った理由
 
+Notionに発生したイベントや予定などをまとめようとして使えるものが見つからなかったので作りました。
+Blueskyの投稿やGitHubのアクティビティなどを記録しておくと、その日に何をしたかを振り返るのに役立ちます。
+
+![timeline](https://efcl.info/wp-content/uploads/2023/09/09-1694230548.png)
+
+また、自分の場合は作成したリポジトリを記録するようにして、ブログを書くときに参考にしています。
+
+```
+BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx", "github_token":"ghp_xxxx","github_search_query":"user:@me created:>={{-1day}}","github_search_type":"REPOSITORY","notion_extra":{"Type":{"select":{"name":"My GitHub Repository"}}}}]'
+```
+
+![作成したリポジトリ](https://efcl.info/wp-content/uploads/2023/09/09-1694230642.png)
+
+他にも色々な情報をNotionが自動的に集まるようにしています。
+
+- Gitコミット
+    - GitコミットHooksでのコミットメッセージを記録してる
+    - [GitコミットをNotionに記録してみてる | Web Scratch](https://efcl.info/2023/01/25/gil-notion-git-log/)
+- 📝 Notes
+    - VSCodeで書いた一時的なメモを保存する際に、自動的にNotionへ同期
+- [Bluesky](https://bsky.app/)
+    - [bluenotiondb](https://github.com/azu/bluenotiondb)で同期
+- [GitHub](https://github.com)
+    - [bluenotiondb](https://github.com/azu/bluenotiondb)で同期
+    - アクティビティ(作成したリポジトリ、Issue、PR、push、Release)などが記録される
+- Gmail
+    - https://github.com/azu/gmail-to-notionで、`GmailのGTD/*` 系を取り込んでいる
+    - メールで特定のラベルをつけたものをNotionに同期
+- メモリーノート: 突発的なメモ
+    - https://github.com/azu/memory-note で作成
+    - [記憶に残らないものをメモするためにMemory Noteという仕組みを書いた | Web Scratch](https://efcl.info/2021/09/26/memory-note/)
+    - 音声でメモできるので、忘れないうちに追加できる
+- 買い物
+    - https://github.com/azu/memory-note の worker
+    - [記憶に残らないものをメモするためにMemory Noteという仕組みを書いた | Web Scratch](https://efcl.info/2021/09/26/memory-note/)
+    - 音声でメモできるので、忘れないうちに追加できる
+    - iOSのダッシュボードでwidgetとしても見れる
+- カレンダー
+    - [bluenotiondb](https://github.com/azu/bluenotiondb)でGoogleカレンダーの予定を同期
+- ブログ候補
+    - 新しく作ったものをブログとして書くので、[bluenotiondb](https://github.com/azu/bluenotiondb)でGitHubの検索結果を同期してる
+
+自分の場合はタスク管理とデータベース、あとはストック的なドキュメント置き場としてNotionを使っています。
+毎日見るデイリーページが日付毎にあるので、[bluenotiondb](https://github.com/azu/bluenotiondb)で作成したアイテムは、そのデイリーページにRelationで紐づけています。
+
+最近でた[データベースオートメーション](https://www.notion.so/ja-jp/help/database-automations)で、データベース間のRelationもNotion側で自動化できるようになりました。
+これによって、デイリーページを見るだけで、やること(タスク/カレンダー)とやったこと(Bluesky/GitHub)などが一覧できるようになったのが便利です。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">NotionのDatabase Automationを使えば、<br>DB同士のRelationも自動化できることがわかった(ページを追加した時に、Relation先のDBをフィルターで特定のページだけになるようにして追加する)ので、<br><br>日付ごとに作ってるダッシュボード的なページに、今日作成したものを紐付けるようにしたらだいぶ便利。 <a href="https://t.co/b4QWnHkmnI">pic.twitter.com/b4QWnHkmnI</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1700108926325600420?ref_src=twsrc%5Etfw">September 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[bluenotiondb](https://github.com/azu/bluenotiondb)で色々な情報を取り込もうと思った理由として、NotionのMentionで参照できるようにするためです。
+たとえば、Blueskyに投稿して、それをタスクとしてやろうと思ったときに同じことタスクに書くのは面倒ですが、自動的に同期されているならmentionするだけで参照できます。
+
+![mention](https://efcl.info/wp-content/uploads/2023/09/09-1694231484.png)
+
+### bunでのバイナリ配布
+
+[bluenotiondb](https://github.com/azu/bluenotiondb)は[Bun](https://bun.sh/)を使って書かれていますが、
+[Bun](https://bun.sh/)を使って良かったのは、[`bun build`](https://bun.sh/docs/bundler)で単一実行バイナリを作成できる点です。
+
+GitHub Actionsで実行する場合は、Linux向けのバイナリを[リリースページ](https://github.com/azu/bluenotiondb/releases)にアップロードしておけば、それをcurlで取得して実行するだけの簡単な設定で済みます。
+また、これによって余計なものをダウンロードしなくてよくなるので、実行時間も短くなります。
+
+ちょうどBun 1.0もリリースされたので、こういうバイナリだけのツール用途はNode.jsやDenoよりもBunの方が楽だった感じはします。
+
+- [Bun 1.0 | Bun Blog](https://bun.sh/blog/bun-v1.0)
