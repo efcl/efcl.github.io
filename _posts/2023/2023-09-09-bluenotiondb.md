@@ -154,7 +154,7 @@ BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx",
     - [bluenotiondb](https://github.com/azu/bluenotiondb)で同期
     - アクティビティ(作成したリポジトリ、Issue、PR、push、Release)などが記録される
 - Gmail
-    - https://github.com/azu/gmail-to-notionで、`GmailのGTD/*` 系を取り込んでいる
+    - https://github.com/azu/gmail-to-notion で、`GmailのGTD/*` 系を取り込んでいる
     - メールで特定のラベルをつけたものをNotionに同期
 - メモリーノート: 突発的なメモ
     - https://github.com/azu/memory-note で作成
