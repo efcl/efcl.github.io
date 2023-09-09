@@ -181,7 +181,7 @@ BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx",
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">NotionのDatabase Automationを使えば、<br>DB同士のRelationも自動化できることがわかった(ページを追加した時に、Relation先のDBをフィルターで特定のページだけになるようにして追加する)ので、<br><br>日付ごとに作ってるダッシュボード的なページに、今日作成したものを紐付けるようにしたらだいぶ便利。 <a href="https://t.co/b4QWnHkmnI">pic.twitter.com/b4QWnHkmnI</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1700108926325600420?ref_src=twsrc%5Etfw">September 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [bluenotiondb](https://github.com/azu/bluenotiondb)で色々な情報を取り込もうと思った理由として、NotionのMentionで参照できるようにするためです。
-たとえば、Blueskyに投稿して、それをタスクとしてやろうと思ったときに同じことタスクに書くのは面倒ですが、自動的に同期されているならmentionするだけで参照できます。
+たとえば、Blueskyに投稿して、それをタスクとしてやろうと思ったときに同じことをタスクに書くのは面倒ですが、自動的に同期されているならmentionするだけで参照できます。
 
 ![mention](https://efcl.info/wp-content/uploads/2023/09/09-1694231484.png)
 
