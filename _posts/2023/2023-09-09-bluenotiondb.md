@@ -141,7 +141,7 @@ BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx",
 
 ![作成したリポジトリ](https://efcl.info/wp-content/uploads/2023/09/09-1694230642.png)
 
-他にも色々な情報をNotionが自動的に集まるようにしています。
+他にも色々な情報がNotionへと自動的に集まるようにしています。
 
 - Gitコミット
     - GitコミットHooksでのコミットメッセージを記録してる
