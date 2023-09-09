@@ -86,6 +86,7 @@ GitHub Actionsでは定期的な実行をサポートしてるので、GitHub Ac
 バージョンやタスクによって設定は異なりますが、次のようなWorkflowを書くことで定期的に同期できます。
 
 ```yml
+{% raw %}
 name: Update
 on:
   push:
@@ -113,6 +114,7 @@ jobs:
         run: ./bluenotiondb > /dev/null 2>&1
         env:
           BLUENOTION_ENVS: ${{ secrets.BLUENOTION_ENVS }}
+{% endraw %}
 ```
 
 ## 細かい設定
