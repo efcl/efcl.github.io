@@ -116,7 +116,8 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 
 ドメインを移管すると1年分のコストを先に支払う必要があって、すでに10年分買った直後だと無駄になるので注意(10年以上は切り捨てという注意書きが出てた) 。
 
-> f I registered my domain for 10 years at another registrar, will I gain another year if I transfer it to Cloudflare?
+> If I registered my domain for 10 years at another registrar, will I gain another year if I transfer it to Cloudflare?
+> 
 > No. A domain cannot have more than 10 years on the term. If you registered your domain for 10 years, you will get 10 years upon transferring it to Cloudflare.
 > 
 > -- https://developers.Cloudflare.com/registrar/faq/#if-i-registered-my-domain-for-10-years-at-another-registrar-will-i-gain-another-year-if-i-transfer-it-to-Cloudflare
