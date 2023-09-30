@@ -19,12 +19,12 @@ tags:
 
 ## 手順
 
-1. Googleの移行準備
+1. Google Domainsの移行準備
 2. Cloudflareのname serverを使うように移行する
 3. ドメインの移管
 4. メールの転送設定
 
-### Googleの移行準備
+### Google Domainsの移行準備
 
 Google Domainで移管する前に、ドメインの設定を変更しておく。
 それぞれONになってると移管時に問題が発生する。
