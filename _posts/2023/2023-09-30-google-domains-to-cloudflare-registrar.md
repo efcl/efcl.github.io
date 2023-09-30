@@ -108,7 +108,7 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
         - [Cloudflareの「Email Routing」とGmailで独自ドメインメールを完全無料で運用する方法 | SERVERSUS](https://www.serversus.work/topics/qkf8sh2jusl8u6sjm5v5/)
     - アプリパスワードは [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) から取得できる
 - 送受信のテスト
-    - [ ] 送信ができる
+    - [ ] 受信ができる
     - [ ] 返信ができる
 
 ## おわりに
