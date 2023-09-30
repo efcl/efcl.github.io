@@ -9,9 +9,9 @@ tags:
 
 ---
 
-[Google Domains](https://domains.google/)がSquarespaceに買収されるので、持っているドメインとカスタムドメインのメールアドレスを[Cloudflare Registrar](https://www.cloudflare.com/ja-jp/products/registrar/)に移管した。
+[Google Domains](https://domains.google/)がSquarespaceに買収されるので、持っているドメインとカスタムドメインのメールアドレスを[Cloudflare Registrar](https://www.Cloudflare.com/ja-jp/products/registrar/)に移管した。
 
-- [Cloudflare Registrar · Cloudflare Registrar docs](https://developers.cloudflare.com/registrar/)
+- [Cloudflare Registrar · Cloudflare Registrar docs](https://developers.Cloudflare.com/registrar/)
 
 基本的にはCloudflare Registrarに表示される手順でやっておけば、問題は起きなかったので、よくできてると思った。
 
@@ -20,7 +20,7 @@ tags:
 ## 手順
 
 1. Googleの移行準備
-2. CloudFlareのname serverを使うように移行する
+2. Cloudflareのname serverを使うように移行する
 3. ドメインの移管
 4. メールの転送設定
 
@@ -37,9 +37,9 @@ Google Domainで移管する前に、ドメインの設定を変更しておく�
 
 ![Google側ドメインロックを解除](/wp-content/uploads/2023/09/Untitled%201.png)
 
-### CloudFlareのname serverを使うように移行する
+### Cloudflareのname serverを使うように移行する
 
-CloudFlare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
+Cloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
 
 - CloudfalreでWebSite → Add Siteからドメインを取り込む
     - この時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる
@@ -80,7 +80,7 @@ CloudFlare registrarは、ドメインが参照するname serverを変更 → �
 
 ### メールの転送設定
 
-カスタムドメインのメールアドレスがある場合は、[Cloudflare Email Routing](https://www.cloudflare.com/ja-jp/developer-platform/email-routing/)を使うと無料で送受信ができる。
+カスタムドメインのメールアドレスがある場合は、[Cloudflare Email Routing](https://www.Cloudflare.com/ja-jp/developer-platform/email-routing/)を使うと無料で送受信ができる。
 
 - サイトを選んで、”Email Routing”を開く
 
@@ -119,11 +119,11 @@ CloudFlare registrarは、ドメインが参照するname serverを変更 → �
 > f I registered my domain for 10 years at another registrar, will I gain another year if I transfer it to Cloudflare?
 > No. A domain cannot have more than 10 years on the term. If you registered your domain for 10 years, you will get 10 years upon transferring it to Cloudflare.
 > 
-> -- https://developers.cloudflare.com/registrar/faq/#if-i-registered-my-domain-for-10-years-at-another-registrar-will-i-gain-another-year-if-i-transfer-it-to-cloudflare
+> -- https://developers.Cloudflare.com/registrar/faq/#if-i-registered-my-domain-for-10-years-at-another-registrar-will-i-gain-another-year-if-i-transfer-it-to-Cloudflare
 
 `efcl.info`とか`jser.info`は`info`ドメインの値上げ時にまとめて10年分買っていたけど、ギリギリ1年消費してたので無駄はなかった気がする。
 あまり細かいことは気にせずに移管できたのは、[🌐 Domain Supporter](https://github.com/sponsors/azu)のおかげなので、ありがとうございます。
 
 ## 参考
 
-- [GoogleドメインからCloudFlareに移管する。 - Qiita](https://qiita.com/napspans/items/3e4030ea54948295c53e)
+- [GoogleドメインからCloudflareに移管する。 - Qiita](https://qiita.com/napspans/items/3e4030ea54948295c53e)
