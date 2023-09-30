@@ -6,6 +6,7 @@ date : 2023-09-30T13:59
 category: 雑記
 tags:
     - Domain
+    - DNS
 
 ---
 
