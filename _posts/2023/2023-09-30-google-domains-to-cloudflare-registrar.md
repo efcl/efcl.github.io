@@ -74,6 +74,8 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 - 移管のためのコードが手に入るので、Cloudflareの画面に入力
     - ドメインの持ち主の名前とか住所を入れる
     - Cloudflare registrarはデフォルトでwhoisをREDACTED FOR PRIVACYでマスクしてくれるので、whois代行的な設定はない
+    - [WHOIS redaction · Cloudflare Registrar docs](https://developers.cloudflare.com/registrar/account-options/whois-redaction/)
+      - ICANNポリシーに従って都道府県レベル(COUNTRY、STATEのみ)はマスクされない
 - しばらくすると、Googleから移管しますか?のメールが届くので承認
 - 1年分の支払いがされて移管される
     - 10年以上あると無駄になる
