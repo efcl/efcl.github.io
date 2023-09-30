@@ -61,7 +61,7 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
     - サイトにアクセスして正しく動いてるかを確認する
         - “ページの自動転送設定が正しくありません” が出た場合は、CloudflareのSSL設定で”Full”になっているかを確認する
 
-:memo: 次のドメインの移管が完了すると元のGoogle Domains側のname serverも停止される。
+:memo: 次のドメインの移管が完了すると、元のGoogle Domains側のname serverも停止される。
 
 - [Google Domains から別の登録事業者に移管する - Google Domains ヘルプ](https://support.google.com/domains/answer/3251178)
 
