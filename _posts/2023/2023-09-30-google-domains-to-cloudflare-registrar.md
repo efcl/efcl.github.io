@@ -134,3 +134,4 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 ## 参考
 
 - [GoogleドメインからCloudflareに移管する。 - Qiita](https://qiita.com/napspans/items/3e4030ea54948295c53e)
+- [ドメインをCloudflareに移管するためのステップバイステップガイド](https://blog.cloudflare.com/ja-jp/a-step-by-step-guide-to-transferring-domains-to-cloudflare-ja-jp/)
