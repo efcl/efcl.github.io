@@ -114,7 +114,7 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 ## おわりに
 
 遭遇した問題は“ページの自動転送設定が正しくありません”が出るぐらいだった。
-これは、CloudflareのSSLのモードを"Full"に変更することで解決した。
+これは、CloudflareのSSLのモードを"Full"に変更することで解決した(デフォルトはFlexible)。
 
 - [Cloudflare + Vercelでのリダイレクトループエラーの解消メモ - Qiita](https://qiita.com/n0bisuke/items/ebdace6abf4423197373)
 
