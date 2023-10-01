@@ -34,7 +34,7 @@ tags:
 
 ![DNSSECを無効化する](/wp-content/uploads/2023/09/Untitled.png)
 
-- Google側ドメインロックを解除
+- ドメインロックを解除
 
 ![Google側ドメインロックを解除](/wp-content/uploads/2023/09/Untitled%201.png)
 
