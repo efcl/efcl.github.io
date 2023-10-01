@@ -42,7 +42,7 @@ tags:
 
 Cloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
 
-- CloudfalreでWebSite → Add Siteからドメインを取り込む
+- CloudflareでWebSite → Add Siteからドメインを取り込む
     - この時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる
 
 ![nameser](/wp-content/uploads/2023/09/Untitled%202.png)
@@ -51,7 +51,8 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 
 ![SSLを Full](/wp-content/uploads/2023/09/Untitled%203.png)
 
-- Google Domains側でドメインのネームサーバに先ほどの Cloudflareの nameserver を指定する。
+- Google Domains側でドメインのネームサーバに先ほどの Cloudflareの nameserver を指定する
+  - 指定するべき name server は、ドメインを取り込んだCloudflareの画面に出てくるので、それをコピーしてGoogle Domains側に入れる
 
 ![Cloudflareの nameserver を指定](/wp-content/uploads/2023/09/Untitled%204.png)
 
