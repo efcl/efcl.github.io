@@ -99,7 +99,7 @@ Cloudflare registrarは、ドメインが参照するname serverを変更 → �
 ![Routingを追加](/wp-content/uploads/2023/09/Untitled%207.png)
 
 - すでにMXレコードがあると衝突するので、Add records and enableでCloudflareの設定を追加する
-    - これでCloudflare経由でカスタムドメインの受信ができるようになる
+    - これでCloudflare経由でカスタムドメインのメールが受信ができるようになる
 
 ![MXレコード](/wp-content/uploads/2023/09/Untitled%208.png)
 
