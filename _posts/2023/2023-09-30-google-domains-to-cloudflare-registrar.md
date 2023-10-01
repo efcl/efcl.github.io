@@ -27,7 +27,7 @@ tags:
 
 ### Google Domainsの移行準備
 
-Google Domainで移管する前に、ドメインの設定を変更しておく。
+移管する前に、Google Domainに登録しているドメインの設定を変更しておく。
 それぞれONになってると移管時に問題が発生する。
 
 - DNSSECを無効化する
