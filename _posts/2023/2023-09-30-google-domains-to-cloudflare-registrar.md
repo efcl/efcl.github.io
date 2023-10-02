@@ -143,7 +143,7 @@ Cloudflareがサポートしてないドメインなどは移行できない場�
 > 
 > https://blog.cloudflare.com/ja-jp/a-step-by-step-guide-to-transferring-domains-to-cloudflare-ja-jp/
 
-
+TXTレコード、サブドメイン用のNSレコードが移行時にコピーされてないことがあるので、移行するときには元のDNSが全部コピーされているかを確認しておくと良さそう。
 
 ## 参考
 
