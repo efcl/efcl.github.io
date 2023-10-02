@@ -42,7 +42,8 @@ tags:
 
 Cloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
 
-- CloudflareでWebSite → Add Siteからドメインを取り込む
+- <https://dash.cloudflare.com/> Cloudflareの管理画面にアクセス
+- WebSites → Add Siteから移管したいドメインを取り込む
     - この時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる
 
 ![nameser](/wp-content/uploads/2023/09/Untitled%202.png)
