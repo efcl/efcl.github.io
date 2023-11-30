@@ -15,6 +15,11 @@ Secretlint 8をリリースしました。
 - [Release v8.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v8.0.0)
 
 Secretlintは、ソースコードや設定ファイルから機密情報を見つけて報告するLintツールです。
+
+ブラウザでは、次のURLから試すことができます。
+
+- [secretlint.github.io](https://secretlint.github.io/)
+
 次のコマンドで、推奨ルールセットでの検証を実行できます。
 
 Docker:
