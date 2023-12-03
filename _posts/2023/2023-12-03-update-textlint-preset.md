@@ -36,9 +36,9 @@ AsciiDocのAdmonitionsという機能とよく似た機能です。
 textlintのルールには、`[`と`]`の対応があるかをチェックする[@textlint-rule/textlint-rule-no-unmatched-pair](https://github.com/textlint-rule/textlint-rule-no-unmatched-pair)というルールがありますが、このルールがこの新しい構文で壊れるケースがありました。
 
 - [`Not found pair character for [.` when using new highlight blockquote syntax · Issue #16 · textlint-rule/textlint-rule-no-unmatched-pair](https://github.com/textlint-rule/textlint-rule-no-unmatched-pair/issues/16)
-    - `!` をセンテンスの区切り文字として扱ってしまっていてため、`[!NOTE]` が `[` と `!` に分割されてしまう問題があった
+    - `!` をセンテンスの区切り文字として扱ってしまっていてため、`[!NOTE]` が `[` と `]` が別々のセンテンスに分割されてしまう問題があった
 
-内部的には[sentence-splitter](https://github.com/textlint-rule/sentence-splitter)という文章をセンテンスに分化するライブラリを使っていて、このライブラリが古いと起きる問題でした。
+内部的には[sentence-splitter](https://github.com/textlint-rule/sentence-splitter)という文章をセンテンスに分割するライブラリを使っていて、このライブラリが古いと起きる問題でした。
 
 そのため、[sentence-splitter](https://github.com/textlint-rule/sentence-splitter)を使ってるルールを更新して、GitHubの新しい強調構文でも問題が起きないように修正しました。
 
