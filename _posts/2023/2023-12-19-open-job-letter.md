@@ -176,7 +176,7 @@ Open Job Letterのテンプレートページも公開しています。
 - [Notion + Wraptas + Tally で作るカジュアル面談募集ページ｜宮本 純弥｜LayerX](https://note.com/mjunya/n/n03c477713472)
   - Tallyはここで知りました
 - [【2023年版】Notion最新料金プランは？無料・有料版の違いを解説 - Notionラボ](https://notion-lab.jp/2023-10-21-price/)
-  - Notionの料金プランの違いをまとめ
+  - Notionの料金プランの違いのまとめ
   - 昔から使ってる人は"パーソナル Pro プラン"がプラスプランに置き換わった謎のプランになってる
 - [【Notion】同期ブロックとアクセス権について](https://info.nextmode.co.jp/blog/notion-synced-blocks)
   - 同期ブロックと権限を組み合わせると色々できる
