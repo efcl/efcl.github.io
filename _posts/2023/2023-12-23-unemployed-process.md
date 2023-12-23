@@ -128,11 +128,9 @@ tags:
 
 厚生年金から国民年金へ切り替えは、マイナポータルから申請できます。
 
-<aside>
 ⚠️ [動作環境について ｜ マイナポータル](https://img.myna.go.jp/html/dousakankyou.html)
 PCのブラウザでも動作するが、結構マイナンバーカードを読み取るのでスマホでやった方が楽でした。
 住所なども情報もマイナンバーカードから読み取れるので選択していくだけです。
-</aside>
 
 1. [マイナポータル](https://myna.go.jp/)にログインする
 2. 年金 → 年金関係 → 国民年金に加入する方・加入中の方の手続き
@@ -155,9 +153,7 @@ PCのブラウザでも動作するが、結構マイナンバーカードを読
 
 厚生年金から国民年金に変わった場合、無職の場合は[第1号被保険者](https://www.nenkin.go.jp/service/yougo/tagyo/dai1hihokensha.html)になります。この被保険者種別によって、iDeCoの掛金の上限が異なるため、種別の変更が必要になります。
 
-<aside>
-⚠️ 各自が加入している、iDeCoのサイトによって変更方法が異なる。ここでは[個人型確定拠出年金：iDeCo（イデコ）｜SBI証券](https://go.sbisec.co.jp/prd/ideco/ideco_top.html)を使ってるケースを書いています。
-</aside>
+⚠️ 各自が加入している、iDeCoのサイトによって変更方法が異なる。ここでは[SBIの個人型確定拠出年金：iDeCo](https://go.sbisec.co.jp/prd/ideco/ideco_top.html)を使ってるケースを書いています。
 
 SBIの場合
 
