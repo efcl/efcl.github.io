@@ -170,6 +170,8 @@ SBIの場合
 - 2 → 1 への変更
 - 23000円: 会社員における個人型確定拠出年金と同じにする場合は23000円のままにする
 
+参考: 
+
 - https://www.ideco-koushiki.jp/library/pdf/simplified_chart.pdf
 - [年金の被保険者には、1号・2号・3号の種類がありますが、どう違うのです|よくある質問|吉岡町ホームページ](https://www.town.yoshioka.gunma.jp/faq/hoken-nenkin/kokumin-nenkin/001905.html)
 
