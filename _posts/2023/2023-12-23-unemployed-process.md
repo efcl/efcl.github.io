@@ -176,7 +176,9 @@ SBIの場合
 
 - https://www.ideco-koushiki.jp/library/pdf/simplified_chart.pdf
 - [年金の被保険者には、1号・2号・3号の種類がありますが、どう違うのです|よくある質問|吉岡町ホームページ](https://www.town.yoshioka.gunma.jp/faq/hoken-nenkin/kokumin-nenkin/001905.html)
-
+- [失業したらiDeCoの落とし穴にハマった件 - 35歳からの中二病エンジニア](https://aikawame.hateblo.jp/entry/2021/10/29/%E5%A4%B1%E6%A5%AD%E3%81%97%E3%81%9F%E3%82%89iDeCo%E3%81%AE%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4%E3%81%AB%E3%83%8F%E3%83%9E%E3%81%A3%E3%81%9F%E4%BB%B6)
+    - 国民年金の納付免除などを申請している場合はiDeCoの手続きは異なります
+    - 自分は特にこういった免除の申請はしてないです
 
 ## まとめ
 
