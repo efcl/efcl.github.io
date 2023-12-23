@@ -102,6 +102,7 @@ tags:
 3. [Webゆうびん｜日本郵便](https://webyubin.jpi.post.japanpost.jp/webyubin/snt/DYFR900.do)にアクセス
     - 99円でウェブからPDFを郵送できるサービス
 4. WebゆうびんでWebレターを開く
+      - 特に色はいらないので白黒でOK
 5. 作成したPDFをアップロードして、文字化けしてないことをプレビューで確認
 6. 宛先を入力して、送付する
 
