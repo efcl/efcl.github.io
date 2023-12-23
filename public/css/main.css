@@ -192,6 +192,11 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
+/* nested list - no margin bottom */
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
 dt {
   font-weight: bold;
 }
