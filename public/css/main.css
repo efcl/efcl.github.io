@@ -178,7 +178,8 @@ p {
   margin-bottom: 1rem;
 }
 
-ul p {
+/* nested paragraphs - no margin bottom */
+ul p, ol p {
   margin-bottom: 0;
 }
 
