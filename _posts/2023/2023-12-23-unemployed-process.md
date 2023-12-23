@@ -11,7 +11,7 @@ tags:
 
 転職する際に空白期間がない場合は会社側で手続きがほとんど終わりますが、一旦無職を挟んで転職する場合は、保険証、年金、iDeCoなどの手続きが必要になります。
 
-今回の[転職活動](https://efcl.info/2023/12/19/open-job-letter/)するにあたって、
+今回の[転職活動](https://efcl.info/2023/12/19/open-job-letter/)にあたって、
 この手続きをするのに市役所やプリンターを使いたくないので、インターネットだけで完結できるかにトライしました。
 
 - [Open Job Letterを公開しました | Web Scratch](https://efcl.info/2023/12/19/open-job-letter/)
