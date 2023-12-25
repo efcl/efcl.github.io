@@ -136,7 +136,7 @@ GitHub Sponsorsでの月ごとの推定収入の推移（単位はUSドル）を
 
 最初に書いていますが、この記事を公開している理由としては、オープンソースの活動をする人/オープンソースの活動を支援する人どちらの人も[GitHub Sponsors](https://github.com/sponsors)などの金銭的な支援の仕組みに興味を持ってもらうためです。
 
-EU Cyber Resilience Actとの問題や人によっては確定申告が必要になったり面倒なことはあるので、全ての人がやるべきものとは思っていませんが、選択肢として知っておくのは良いと思っています。
+EU Cyber Resilience Actの問題や人によっては確定申告が必要になったり面倒なことはあるので、全ての人がやるべきものとは思っていませんが、選択肢として知っておくのは良いと思っています。
 
 - [Are the Fears about the EU Cyber Resilience Act Justified?](https://blog.gitguardian.com/are-the-fears-about-the-eu-cyber-resilience-act-justified/)
 - [EU Cyber Resilience Act · Issue #10 · github/developer-policy](https://github.com/github/developer-policy/issues/10)
