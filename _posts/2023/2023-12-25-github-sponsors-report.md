@@ -187,6 +187,8 @@ Special Thanks!
 
 [SponsorKit](https://github.com/antfu/sponsorkit)を使ってGitHub Sponsorsの一覧を生成しています。
 
+<iframe src="https://github.com/sponsors/azu/button" title="Sponsor azu" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+
 ## 参考
 
 - [GitHub Sponsorsの収入 @ 2022 | Web Scratch](https://efcl.info/2022/12/22/github-sponsors-report/)
