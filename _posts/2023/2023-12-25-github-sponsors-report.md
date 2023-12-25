@@ -165,7 +165,7 @@ Sentryのように[thanks.dev](https://thanks.dev/home)というサービスを�
 
 ## 謝辞
 
-GitHub Sponsorsで支援をしてくれている方々に感謝します。
+GitHub Sponsorsなどで支援をしてくれている方々に感謝します。
 
 Special Thanks!
  
