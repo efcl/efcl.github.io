@@ -42,7 +42,7 @@ GitHub Sponsorsは個人と組織への支援がありますが、ここでは�
 
 - ソフトウェア開発: [textlint](https://github.com/textlint/textlint)、[Secretlint](https://github.com/secretlint/secretlint)、[HonKit](https://github.com/HonKit/HonKit)などの開発やメンテナンス
 - ウェブサービス開発: [philan.net](https://philan.net/)、[Komesan](https://komesan.pages.dev/)、[Irodr](https://irodr.netlify.app/)、[日本の会社紹介スライドのまとめ](https://company-introduction-jp.vercel.app/)などの開発やメンテナンス
-- ブログ: [JSer.info](https://jser.info/)や[ECMAScript Daily](https://ecmascript-daily.github.io/)のブログの投稿
+- ブログ: [JSer.info](https://jser.info/)や[ECMAScript Daily](https://ecmascript-daily.github.io/)のブログの更新
 - 書籍: [JavaScript Primer](https://jsprimer.net/)や[JavaScript Promiseの本](https://azu.github.io/promises-book/)の執筆
 
 基本的には趣味でやっているものです。
