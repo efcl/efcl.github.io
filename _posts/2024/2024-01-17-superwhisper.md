@@ -136,7 +136,7 @@ open superwhisper://record
 他にも入力中にモード(設定)を切り替えられるのですが、これに対応するURLスキーマもあります。
 
 自分の場合は、[Karabiner-Elements](https://karabiner-elements.pqrs.org/)でFnキーを押すとSuperwhisperを起動するようにしています。
-先ほどの作業ログも余ってるFキーとかで起動できるようにしています。
+先ほどの作業ログも余ってる`F<num>`キーとかで起動できるようにしています。
 
 ## まとめ
 
