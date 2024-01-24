@@ -17,6 +17,7 @@ tags:
 - [Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch](https://pytorch.org/blog/compromised-nightly-dependency/)
 - [What's Really Going On Inside Your node_modules Folder? - Socket](https://socket.dev/blog/inside-node-modules)
 - [Microsoft spots malicious npm package stealing data from UNIX systems | ZDNET](https://www.zdnet.com/article/microsoft-spots-malicious-npm-package-stealing-data-from-unix-systems/)
+- [GitGot: GitHub leveraged by cybercriminals to store stolen data](https://www.reversinglabs.com/blog/gitgot-cybercriminals-using-github-to-store-stolen-data)
 
 これは、次の記事とも関係しています。
 
