@@ -1,5 +1,5 @@
 ---
-title: "textlint week: 2024-01-29 - 2024-02-04"
+title: "textlint week: 2024-01-29 〜 2024-02-04"
 author: azu
 layout: post
 date : 2024-01-29T22:24
