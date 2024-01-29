@@ -18,9 +18,9 @@ v14では、今後に向けて古いAPIに非推奨のメッセージを出す�
 
 textlint weekで時間があれば、次のようなことをやっていきたいです。
 
-- Open Officeをやる?
+- Office Hoursをやる?
 - editorのアップデート?
-- deprecatedを使った非推奨アプローチについての記事を書く
+- [process.emitWarning(warning[, options])](https://nodejs.org/api/process.html#processemitwarningwarning-options)を使った非推奨アプローチについての記事を書く
 
 v14のリリース後に新しい機能改善などにもしていきたいのでフィードバックをお待ちしています。
 [次のフォーム](https://tally.so/r/w2P92M)からフィードバックを送ることができるので、是非お願いします！
