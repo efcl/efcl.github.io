@@ -19,6 +19,7 @@ v14では、今後に向けて古いAPIに非推奨のメッセージを出す�
 textlint weekで時間があれば、次のようなことをやっていきたいです。
 
 - Office Hoursをやる?
+  - 聞きたいこととか、質問したいこととか、相談したいこととか話す場所
 - editorのアップデート?
 - [process.emitWarning(warning[, options])](https://nodejs.org/api/process.html#processemitwarningwarning-options)を使った非推奨アプローチについての記事を書く
 
