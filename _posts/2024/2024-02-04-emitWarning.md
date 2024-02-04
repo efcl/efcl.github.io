@@ -168,7 +168,7 @@ Node.js v20.8.1
 
 ![process.emitWarningに挙動を制御](https://efcl.info/wp-content/uploads/2024/02/04-1707022460.png)
 
-`console.warn`との違いは、非推奨のAPIを利用する側はその警告の動作を制御できる標準的な方法が提供されていることです。
+`console.warn`との違いは、非推奨のAPIを利用する側に、その警告の動作を制御できる標準的な方法が提供されていることです。
 そのほかにも`process.on("warning", (warning) => {})`を使うことで、非推奨の警告を受け取ることができます。
 
 詳細はドキュメントを参照してください。
