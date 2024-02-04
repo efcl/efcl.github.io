@@ -178,6 +178,7 @@ Node.js v20.8.1
 textlint v14では、古いAPIの実行時警告にこの`process.emitWarning()`を使っています。
 
 - [textlint v14.0.0 · textlint](https://textlint.github.io/blog/2024/02/03/textlint-14#add-deprecation-warning-to-old-apis)
+- [textlint v14をリリースしました | Web Scratch](https://efcl.info/2024/02/04/textlint-v14/)
 
 ## まとめ
 
