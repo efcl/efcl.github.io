@@ -23,6 +23,11 @@ textlint weekで時間があれば、次のようなことをやっていきた�
 - editorのアップデート?
 - [process.emitWarning(warning[, options])](https://nodejs.org/api/process.html#processemitwarningwarning-options)を使った非推奨アプローチについての記事を書く
 
+Edit: textlint weekの結果
+
+- [textlint v14をリリースしました | Web Scratch](https://efcl.info/2024/02/04/textlint-v14/)
+- [Node.jsで機能やパッケージの非推奨メッセージを通知する方法 | Web Scratch](https://efcl.info/2024/02/04/emitwarning/)
+
 v14のリリース後に新しい機能改善などもしていきたいので、フィードバックをお待ちしています。
 [次のフォーム](https://tally.so/r/w2P92M)からフィードバックを送ることができるので、是非お願いします！
 
