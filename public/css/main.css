@@ -756,7 +756,8 @@ a.pagination-item:hover {
   .site-header {
     height: 120px;
   }
-} /*
+}
+/*
  * Sidebar
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
@@ -905,9 +906,15 @@ a.sidebar-nav-item:focus {
   border: 1px solid #5b5b5b;
 }
 .social a.twitter {
-  background: skyblue;
+  background: #1da1f2;
 }
 .social a.twitter:hover {
+  background: #4db5f5;
+}
+.social a.bluesky {
+  background: skyblue;
+}
+.social a.bluesky:hover {
   background: #b3e0f2;
 }
 .social a.github {

@@ -150,6 +150,12 @@ a.sidebar-nav-item:focus {
   a {
     &.twitter {
       &:hover {
+        background: lighten(#1da1f2, 10%);
+      }
+      background: #1da1f2;
+    }
+    &.bluesky {
+      &:hover {
         background: lighten(skyblue, 10%);
       }
       background: skyblue;

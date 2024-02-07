@@ -138,8 +138,11 @@ Blueskyの投稿やGitHubのアクティビティなどを記録しておくと�
 また、自分の場合は作成したリポジトリを記録するようにして、ブログを書くときに参考にしています。
 
 ```
+{% raw %}
 BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx", "github_token":"ghp_xxxx","github_search_query":"user:@me created:>={{-1day}}","github_search_type":"REPOSITORY","notion_extra":{"Type":{"select":{"name":"My GitHub Repository"}}}}]'
+{% endraw %}
 ```
+
 
 ![作成したリポジトリ](https://efcl.info/wp-content/uploads/2023/09/09-1694230642.png)
 
@@ -148,7 +151,7 @@ BLUENOTION_ENVS='[{"notion_database_id":"xxxxxx","notion_api_key":"secret_xxxx",
 - Gitコミット
     - GitコミットHooksでのコミットメッセージを記録してる
     - [GitコミットをNotionに記録してみてる | Web Scratch](https://efcl.info/2023/01/25/gil-notion-git-log/)
-- 📝 Notes
+- 📝Notes
     - VSCodeで書いた一時的なメモを保存する際に、自動的にNotionへ同期
 - [Bluesky](https://bsky.app/)
     - [bluenotiondb](https://github.com/azu/bluenotiondb)で同期
