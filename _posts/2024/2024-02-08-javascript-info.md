@@ -120,7 +120,7 @@ https://github.com/azu/watch-rss/releases.atom
 そのため、リリースを追いたいなーと思ったリポジトリはWatchしておくと、自動的にリリースノートをRSSとして購読できるようになります。
 
 欠点としては、GitHubのAPIでは全てを"Watch"してるリポジトリしか取得できないので、Customで"Releases"のみのWatchだと動きません。
-そのため、Notificationは崩壊するので、Notificationを使ってる人は注意が必要です。
+Watch島くとNotificationは崩壊するので、Notificationを使ってる人は注意が必要です。
 
 ![Release](https://efcl.info/wp-content/uploads/2024/02/08-1707381006.png)
 
