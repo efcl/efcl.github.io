@@ -307,3 +307,6 @@ JSer.infoスポンサーも募集しています。
 これを使うことで、RSSを購読するという操作を意識しなくても、RSSを購読できるようにしています。
 
 [github-search-rss](https://github.com/azu/github-search-rss)や[RSS Feeds for GitHub Advisory Database](https://azu.github.io/github-advisory-database-rss/)などはこの仕組み(OPMLを生成してる)を利用して購読しています。購読するかどうかを考えるのは結構大変なので、その辺を自動化/他の操作に置き換えることで、情報の鮮度が保ちやすいのかなと思いました。
+
+フォローしたら自動的に購読できるというのは、SNSやYoutubeなどではあると思うので、それをRSSリーダに持ってきてるという感覚です。
+今だと[Bluesky](https://bsky.app/)上のフィードで似たような仕組みを作れたりしそうなので、試し見ると面白いかもしれません。
