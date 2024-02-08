@@ -291,6 +291,9 @@ https://b.hatena.ne.jp/{user}/favorite.rss
     - [Node Weekly](https://nodeweekly.com/)
 
 PR: [JSer.info](https://jser.info/)も1週間に1度のページでJavaScriptの情報をまとめています。
+JSer.infoスポンサーも募集しています。
+
+- [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
 
 ## まとめ
 
