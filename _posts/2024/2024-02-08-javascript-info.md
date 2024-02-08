@@ -279,7 +279,7 @@ GitHubでフォローしてる人は興味が似ていると思うので、そ�
 
 ### アグリゲーションサイト
 
-[Menthas](https://menthas.com/)ははてなブックマークを元にしたアグリゲーションサイトです。
+[Menthas](https://menthas.com/)は、はてなブックマークを元にしたアグリゲーションサイトです。
 
 - [約3年かけてプログラマ向けニュース推薦アプリを作り直した話 #アルゴリズム - Qiita](https://qiita.com/ytanaka/items/6cfad69a4c000c05be40)
 
