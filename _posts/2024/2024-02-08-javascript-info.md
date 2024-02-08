@@ -73,7 +73,7 @@ NewsLetterをメールで見ていないのは、Inbox Zeroでメールを管理
 
 <iframe src="https://notion-plotly.netlify.app/line?Feed.x=2012,2017,2021,2023,2024&Feed.y=2000,3212,2604,3528,3626" width="800" height="600" loading="lazy"></iframe>
 
-2023年から増えているのは、[GitHubリポジトリのリリースノートを自動的にRSSフォードとして購読する仕組み](https://github.com/azu/watch-rss)を作ったためです。
+2023年から増えているのは、[GitHubリポジトリのリリースノートを自動的にRSSフィードとして購読する仕組み](https://github.com/azu/watch-rss)を作ったためです。
 2024年2月時点での全てのRSSフィード数は3626に対して、GitHubリポジトリのRSSフィード数は1382なので、実際のブログとかのフィード数は2000前後という感じです。
 
 RSSフィードは特に気にせずに購読することにしていて、手動で購読解除することはかなり少ないです(乗っ取りとか完全に興味がないものを外す程度)。
@@ -104,7 +104,7 @@ GitHubを除いたサイトを1つのRSSフィードとしてまとめたもの�
 
 ### GitHubリポジトリのリリースノート
 
-先程も紹介しましたが、GitHubリポジトリのリリースノートを自動的にRSSフォードとして購読する仕組みを作っています。
+先程も紹介しましたが、GitHubリポジトリのリリースノートを自動的にRSSフィードとして購読する仕組みを作っています。
 
 - [azu/watch-rss: Subscribe your watched GitHub Repository's releases as RSS feeds on Inoreader](https://github.com/azu/watch-rss)
 
