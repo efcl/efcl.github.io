@@ -252,7 +252,7 @@ https://b.hatena.ne.jp/{user}/favorite.rss
 
 #### GitHubでフォローしてる人がStarしたリポジトリ
 
-[starseeker](https://starseeker.so/)は、GitHubのフォロワーがStarしたリポジトリを購読できるサービスです。
+[starseeker](https://starseeker.so/)は、GitHubでフォローしてる人がStarしたリポジトリを購読できるサービスです。
 
 GitHubでフォローしてる人は興味が似ていると思うので、そういったリポジトリを発見できます。
 
