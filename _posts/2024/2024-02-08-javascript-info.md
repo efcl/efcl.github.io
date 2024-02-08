@@ -104,7 +104,7 @@ GitHubを除いたサイトを1つのRSSフィードとしてまとめたもの�
 
 ### GitHubリポジトリのリリースノート
 
-先程も紹介しましたGitHubリポジトリのリリースノートを自動的にRSSフォードとして購読する仕組みを作っています。
+先程も紹介しましたが、GitHubリポジトリのリリースノートを自動的にRSSフォードとして購読する仕組みを作っています。
 
 - [azu/watch-rss: Subscribe your watched GitHub Repository's releases as RSS feeds on Inoreader](https://github.com/azu/watch-rss)
 
