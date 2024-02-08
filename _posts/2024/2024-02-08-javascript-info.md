@@ -201,7 +201,7 @@ export const SEARCH_ITEMS: RSSItem[] = [
 これらを見てると、ウェブの仕様の具体的な流れが見えたりします。
 たとえば、ブラウザや仕様にちゃんとした変更を入れようと思うと、2つの実装者が必要です。
 今はChromeの人がかなり仕様を追加してるので、新しい機能を作った時にMozilla/WebKitに対して仕様の意見を聞くIssueを作っています。
-あとW3C Tagのデザインレビューも行うので、次のリポジトリにIssueが作られrます。
+またW3C Tagのデザインレビューも行うので、新しい仕様を検討するときは次のリポジトリにIssueが作成されます。
 
 - https://github.com/search?q=repo%3Amozilla%2Fstandards-positions+is%3Aissue&type=issues
 - https://github.com/search?q=repo%3AWebKit%2Fstandards-positions+is%3Aissue&type=issues
