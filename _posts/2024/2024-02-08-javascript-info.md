@@ -250,7 +250,7 @@ https://b.hatena.ne.jp/{user}/favorite.rss
 
 これによって、自分が気になる情報をブクマしてる人をフォローしておけば、その人がブックマークした記事を購読できます。
 
-#### GitHubでフォローしてる人ががStarしたリポジトリ
+#### GitHubでフォローしてる人がStarしたリポジトリ
 
 [starseeker](https://starseeker.so/)は、GitHubのフォロワーがStarしたリポジトリを購読できるサービスです。
 
