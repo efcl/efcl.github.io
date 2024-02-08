@@ -265,7 +265,7 @@ GitHubでフォローしてる人は興味が似ていると思うので、そ�
 - [javascriptの最新人気記事 - はてなブックマーク](https://b.hatena.ne.jp/q/javascript?safe=on&target=tag&users=1&sort=recent)
     - <https://b.hatena.ne.jp/q/javascript?mode=rss&users=1&target=tag&sort=recent&date_range=5y&safe=on>
 
-他にも、ブログサービスには似たような仕組みがあります。
+他にも、ブログサービスに似たような仕組みがあります。
 
 - [Zenn](https://zenn.dev/)
     - [JavaScriptの記事一覧 | Zenn](https://zenn.dev/topics/javascript)
