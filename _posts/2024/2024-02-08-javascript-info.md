@@ -51,7 +51,7 @@ RSSリーダーには[Inoreader](https://www.inoreader.com/)を利用してい�
 
 RSSフィードをまとめるフォルダは、LDRのレート分類をそのまま使っていて、レートに加えて一部特殊なフォルダのみで管理しています。
 
-- GitHubReleases: GitHubでWatchshしてるリポジトリのリリース情報
+- GitHubReleases: GitHubでWatchしてるリポジトリのリリース情報
 - ★★★★★ 重要なフィード、Pocketなどもここに入る
 - ★★★★☆ 興味がある情報が書かれているフィード
 - ★★★☆☆ デフォルト
