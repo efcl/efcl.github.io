@@ -199,6 +199,7 @@ export const SEARCH_ITEMS: RSSItem[] = [
 - [🔎](https://github.com/search?q=lightweight%20language%3Ajavascript%20language%3Atypescript%20sort%3Aupdated-desc)`lightweight language:javascript language:typescript sort:updated-desc`: https://azu.github.io/github-search-rss/lightweight-javascript-repo.json
 
 これらを見てると、ウェブの仕様の具体的な流れが見えたりします。
+
 たとえば、ブラウザや仕様にちゃんとした変更を入れようと思うと、2つの実装者が必要です。
 今はChromeの人がかなり仕様を追加してるので、新しい機能を作った時にMozilla/WebKitに対して仕様の意見を聞くIssueを作っています。
 またW3C Tagのデザインレビューも行うので、新しい仕様を検討するときは次のリポジトリにIssueが作成されます。
