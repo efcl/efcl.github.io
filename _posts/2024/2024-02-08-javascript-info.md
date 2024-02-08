@@ -120,7 +120,7 @@ https://github.com/azu/watch-rss/releases.atom
 そのため、リリースを追いたいなーと思ったリポジトリはWatchしておくと、自動的にリリースノートをRSSとして購読できるようになります。
 
 欠点としては、GitHubのAPIでは全てを"Watch"してるリポジトリしか取得できないので、Customで"Releases"のみのWatchだと動きません。
-Watch島くとNotificationは崩壊するので、Notificationを使ってる人は注意が必要です。
+WatchしまくるとNotificationは崩壊するので、Notificationを使ってる人は注意が必要です。
 
 ![Release](https://efcl.info/wp-content/uploads/2024/02/08-1707381006.png)
 
@@ -129,7 +129,7 @@ APIで、Customで"Releases"のみのリポジトリを取得する方法を知�
 ### GitHubでStarしたリポジトリのリリースノート
 
 [Bandito.re](https://bandito.re/)では、GitHub Starしたリポジトリのリリースノートをまとめて購読できます。
-自分はとりあえずGitHub Starしてることが多いのです。
+自分はとりあえずGitHub Starしてることが多いです。
 ただ、Watchするかは意識しないと忘れるので、そういった見逃しがたまに回収できます。
 
 ### GitHub Issue/PRの検索結果
