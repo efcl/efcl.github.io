@@ -48,6 +48,7 @@ RSSリーダーには[Inoreader](https://www.inoreader.com/)を利用してい�
 
 自分の[情報収集はメモまでがセット](https://jser.info/2021/01/16/jser-10th/)なので、RSSは基本的にPCでしか見ていません。
 スマホで見つけたものに関しては、[Pocket](https://getpocket.com)にあとで読む登録して、PocketのRSSフィードを購読しているので、それをPCで見るようにしています。
+（最近音声メモも結構やり始めたので、この辺は変わるかも。ref [superwhisperでの音声入力を試す | Web Scratch](https://efcl.info/2024/01/17/superwhisper/))
 
 RSSフィードをまとめるフォルダは、LDRのレート分類をそのまま使っていて、レートに加えて一部特殊なフォルダのみで管理しています。
 
