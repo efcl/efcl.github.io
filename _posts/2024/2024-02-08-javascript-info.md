@@ -307,6 +307,9 @@ JSer.infoスポンサーも募集しています。
 これによって、情報の新陳代謝ができるので、新しい情報を見つけることできるのではないかなと思いました。
 
 細かいテクニック的な話だと、[Inoreader](https://www.inoreader.com/ja/)はOPMLを購読できる仕組みがあります。
+
+- [OPML subscriptions | Inoreader blog](https://www.inoreader.com/blog/2014/05/opml-subscriptions.html)
+
 これは、OPMLのURLを指定することで、OPMLの中身が変わったら自動的に購読しているフィードが増減するという仕組みです。
 これを使うことで、RSSを購読するという操作を意識しなくても、RSSを購読できるようにしています。
 
