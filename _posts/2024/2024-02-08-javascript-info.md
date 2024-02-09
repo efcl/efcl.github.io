@@ -293,6 +293,7 @@ GitHubでフォローしてる人は興味が似ていると思うので、そ�
 - [cooperpress](https://cooperpress.com/publications/)
     - [JavaScript Weekly](https://javascriptweekly.com/)
     - [Node Weekly](https://nodeweekly.com/)
+- [Cybozu Frontend Weeklyの記事一覧 | Zenn](https://zenn.dev/topics/cybozufrontendweek)
 
 PR: [JSer.info](https://jser.info/)も1週間に1度のページでJavaScriptの情報をまとめています。
 JSer.infoスポンサーも募集しています。
