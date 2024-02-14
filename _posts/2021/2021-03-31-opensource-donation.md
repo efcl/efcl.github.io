@@ -17,10 +17,6 @@ tags:
 寄付や慈善活動といった話と[philan.net](https://philan.net/)の仕組みなどの技術的な話が半々といった感じになっています。
 細かいデータとか歴史の話も最初はスライドに書いていたのですが、スペースが足りなかったのでばっさりと削りました。（バランスを取るのが難しそうと思ったのもあります）
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">慈善活動におけるCharityとPhilanthropyのアプローチの話、オープンソースの問題との類似点、 <a href="https://t.co/fp8ZHwnvXw">https://t.co/fp8ZHwnvXw</a> の話とか、CDN Edge Workersの話とか結構色々と混ざった感じの話になってる <a href="https://t.co/3uEZlBJ5aO">pic.twitter.com/3uEZlBJ5aO</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1377081957121585152?ref_src=twsrc%5Etfw">March 31, 2021</a></blockquote>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
 既に関連する記事をいくつか書いていますが、現状の所感をまとめた感じのスライドです。
 
 - [寄付研究や慈善活動について研究するために色々な書籍や論文を読んだメモ書き | Web Scratch](https://efcl.info/2021/02/19/donation-philanthropy-study/)
