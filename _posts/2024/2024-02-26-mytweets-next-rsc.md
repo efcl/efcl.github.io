@@ -364,7 +364,9 @@ Page Router の場合は、最初はそこまでなんでもできるという�
 
 ### Client Component 間のデータのやり取り
 
-[Islands Architecture](https://www.patterns.dev/vanilla/islands-architecture/)と同じ話ですが、Client ComponentとRSCの境界を切っていくと、Client Component同志が離れた位置にあるけど、状態は同期したいというケースが出てきます。
+[Islands Architecture](https://www.patterns.dev/vanilla/islands-architecture/)と同じ話ですが、Client ComponentとRSCの境界を切っていくと、Client Component同士が離れた位置にあるけど、状態は同期したいというケースが出てきます。
+入力中の表示を別の場所に出すとか、ロード中は色々なところにあるボタンをdisabledにしたとか、大枠をまたいで状態を共有したいというケースです。
+
 この場合は、Client Component間で状態を共有する方法が必要です。
 
 やったこと
