@@ -519,6 +519,7 @@ const handlers = useMemo(
   - proxyman では見える、Chromium 側で起きるエラーメッセージがでてる
   - https://twitter.com/azu_re/status/1761243872712380890
 - [Next.js で Server Components がちょっとだけテストできるようになってた](https://zenn.dev/cybozu_frontend/articles/next-rsc-testing)
+- [React Server Component のテストと Container / Presentation Separation | by Yosuke Kurami | Medium](https://quramy.medium.com/react-server-component-%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8-container-presentation-separation-7da455d66576)
   - RSC のテスト
   - 現実的には Unit Test はロジックのテストだけしたいので、
     - RSC → ロジックだけを関数に切り出してテスト
@@ -529,7 +530,7 @@ const handlers = useMemo(
     - Component のテスト
       - これが要求されるのはライブラリの品質を求めるコンポーネントなので、
       - それは Storybook とか持つようなコンポーネントな気がするので、
-      - アプリケーションレイヤーのコンポーネントに向けて書くのは厳しい気がうる
+      - アプリケーションレイヤーのコンポーネントに向けて書くのは厳しい気がする
     - E2E → ブラウザテスト
   - という感じなのではという気はする。
   - E2E は重たいし安定させるのはとても難しい。
