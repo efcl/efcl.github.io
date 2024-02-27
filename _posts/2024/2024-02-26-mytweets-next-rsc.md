@@ -297,7 +297,7 @@ RSC だと
   - [Data Fetching with React Server Components - YouTube](https://www.youtube.com/watch?v=TQQPAU21ZUw&t=2449s)
 - 遅延ロード: Suspense を使って[Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)でコンポーネントをロードする
 
-パフォーマンスの悪化を避ける方法として、必要になるまでいらない処理を別のところに逃すというのは良くあることで、
+パフォーマンスの悪化を避ける方法として、いらない処理を別のところに逃すというのは良くあることで、
 RSC だと、この逃す場所として RSC と Server Action が増えたという感じがする。
 必要になるまで読み込まないという考え方をなんでも取り込んでるのは[Qwik](https://qwik.dev/)で、RSC の場合は[シリアライズできる範囲](https://react.dev/reference/react/use-client#serializable-types)としてコンポーネントと Promise ぐらいになっている。
 
