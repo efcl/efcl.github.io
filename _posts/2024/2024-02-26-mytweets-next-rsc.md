@@ -293,7 +293,7 @@ export const App = ({ searchParams }) => {
 RSC だと
 
 - 必要なものだけ読み込む: RSC は必要なものだけを持ったコンポーネントをシリアライズしてクライアントに渡す仕組みになってる
-  - Note: RSC は GraphQL を使わなくても GraphQL のようなことができる Alternative という考え方もある
+  - Note: RSC は GraphQL を使わなくても GraphQL のようなことができる Alternative という考え方
   - [Data Fetching with React Server Components - YouTube](https://www.youtube.com/watch?v=TQQPAU21ZUw&t=2449s)
 - 遅延ロード: Suspense を使って[Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)でコンポーネントをロードする
 
