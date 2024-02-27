@@ -17,7 +17,7 @@ mytweets は Twitter のアーカイブや Bluesky の API を使って自分の
 - [自分の Tweets をインクリメンタル検索できるサービス作成キット と Tweets をまとめて削除するツールを書いた | Web Scratch](https://efcl.info/2021/06/18/mytweets-delete-tweets/)
 - [過去の Tweets を全文検索できる mytweets を Bluesky に対応した。自分用 Twilog みたいなもの | Web Scratch](https://efcl.info/2023/07/03/mytweets-bluesky/)
 
-最初は CloudFront + Lambda@Edge で作成していましたが、Next.js Pages Router に移行しました。
+最初は CloudFront + Lambda@Edge + Next.js Pages Router で動かしていました。
 その後、Next.js App Router が Stable になったので、App Router + React Server Components(RSC)で書きなおしました。
 
 この記事では、Next.js Pages Router から Next.js App Router(RSC)に書きなおした話を紹介します。
