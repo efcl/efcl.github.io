@@ -521,7 +521,7 @@ const handlers = useMemo(
 - [Next.js で Server Components がちょっとだけテストできるようになってた](https://zenn.dev/cybozu_frontend/articles/next-rsc-testing)
 - [React Server Component のテストと Container / Presentation Separation | by Yosuke Kurami | Medium](https://quramy.medium.com/react-server-component-%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8-container-presentation-separation-7da455d66576)
   - RSC のテスト
-  - 現実的には Unit Test はロジックのテストだけしたいので、
+  - Unit Test はロジックのテストだけしたいので、
     - RSC → ロジックだけを関数に切り出してテスト
       - これは Node.js のテストとして普通に書く
     - Client Component → Custom Hooks をテスト
