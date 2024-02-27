@@ -67,7 +67,7 @@ mytweets は、次のような動作をします。
 
 - <https://github.com/azu/mytweets/blob/3235481d12f88de7e763439e705322499496d255/web/pages/index.tsx>
 
-そのため、この`index.tsx`に"use client"をつけたて Client Component として移行すれば App Router でも動きます。
+そのため、この`index.tsx`に"use client"をつけて Client Component として移行すれば App Router でも動きます。
 
 `/pages/api`に定義する[API Routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes)は、App Router でも動くのでサーバ側の処理はそのままに`index.tsx`を`pages/`から`app/`に移動して、`use client`をつけた Client Component に変更しました。
 
@@ -283,7 +283,7 @@ export const App = ({ searchParams }) => {
 
 ## 感想
 
-よく作られたサイトは CSR だけでもほぼ RSC と同じことはできるけど、RSC はコンポーネントを分割する一種の規約なのでそれが強制される。
+よく作られたサイトは CSR(クライアントサイドレンダリング) だけでもほぼ RSC と同じことはできるけど、RSC はコンポーネントを分割する一種の規約なのでそれが強制される。
 これは言い換えると、サイトが複雑化してきたときでもパフォーマンス影響が指数関数的にはなりにくいという形になってる。
 一般的に、CSR だと開発が進んで複雑化してきたときに、同じパフォーマンスを維持するのはかなり難しくなる。
 
