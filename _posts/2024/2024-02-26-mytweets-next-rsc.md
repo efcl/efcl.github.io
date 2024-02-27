@@ -312,6 +312,7 @@ Next.js の App Router を見たときに、Client と Server で話を分けた
 - [React Client Components](https://nextjs.org/docs/app/building-your-application/rendering/client-components): React クライアントのコンポーネント
 - [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components): React サーバのコンポーネント
 - [React Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations): React サーバの API
+  - [Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)もレイヤー的には同じ
 
 [Why do Client Components get SSR'd to HTML? · reactwg/server-components · Discussion #4](https://github.com/reactwg/server-components/discussions/4)を見ると、クライアントとサーバというのは物理的なクライアントサーバの話ではないのがわかる。
 React の元々あった Tree のことを Client Tree と呼んで、React Server Component と一緒にできたのを Server Tree と呼んでる。 (HTML を生成するものを"Client"と呼んで、"Client"にシリアライズしたデータを処理して渡すやつを"Server"と呼んでるだけ)
