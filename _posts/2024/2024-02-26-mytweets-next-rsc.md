@@ -131,7 +131,7 @@ mytweets でも入力して検索中の opacity を下げることでロード�
 </ClientComponent>
 ```
 
-逆に RSC の中に Client Component のは単純にインポートして使うだけです。
+逆に RSC の中に Client Component を入れるには単純にインポートして使うだけです。
 
 多くの場合は、この形になって大枠を RSC に書いていき、部分的に Client Component を使うという形になります。
 原理的には[Islands Architecture](https://www.patterns.dev/vanilla/islands-architecture/)と同じで、大枠は静的な表示(RSC)にして、インタラクティブな部分(Client Component)を小さくしていくという形になります。
