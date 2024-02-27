@@ -446,11 +446,29 @@ const handlers = useMemo(
 
 この辺が、はっきりと Next.js のドキュメントには書かれてなくてかなりわかりにくいと思った。
 
-### 問題
+## 問題
 
-- input の状態ルーティングと同期できない
+### フォーカス管理とルーティング
+
+- input の状態とルーティングと同期できていない
+  - 戻るで戻ったときにinputの値が残ったままになる
 - Vercel の公式サンプルもルーティングと input の同期するために `<input key={key}/>`という感じで key を変えて破棄している
-- これをやると input のフォーカスも無くなるので、体験が悪い
+  - [Search | Acme Store](https://demo.vercel.store/search)
+  - 検索するとinputのフォーカスを失っているのがわかる
+- `key` で破棄すると input のフォーカスも無くなるので、体験が悪い
+
+### Failed to load response data: No data found for resource with given identifier
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Next.js RSCのpayloadが&quot;Failed to load response data: No data found for resource with given identifier&quot;のエラーで見えないの、<br><br>Chrome DevToolsでChrome DevToolsにdebuggerを入れてみると、<a href="https://t.co/U9fdVQBLNs">https://t.co/U9fdVQBLNs</a><a href="https://t.co/UZB1AsycaT">https://t.co/UZB1AsycaT</a><br>ここでエラーとなってる。 <a href="https://t.co/Jmh2J2Fwkk">pic.twitter.com/Jmh2J2Fwkk</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/1761243872712380890?ref_src=twsrc%5Etfw">February 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+- RSC PayloadがChrome DevToolsで読み込めない
+- 実際には読み込めているが表示されない問題
+- おそらくはChromeのバグを踏んでいるのだと思うけど、Next.js側とかで何かワークアラウンドで回避してほしい
+  - [Error: No data found for resource with given identifier · Issue #260 · cyrus-and/chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface/issues/260)
+  - [Network.getResponseBody fails sporadically [41367044] - Chromium](https://issues.chromium.org/issues/41367044)
+  - [Fail to load response data: No resource with given identifier found [40267158] - Chromium](https://issues.chromium.org/issues/40267158)
+  - [DevTools: XHR (and other resources) content not available after navigation. [40254754] - Chromium](https://issues.chromium.org/issues/40254754)
+- [RSC Devtools](https://chromewebstore.google.com/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn)を使って見るというのもなんか微妙な話
 
 ## 参考
 
