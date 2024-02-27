@@ -1,5 +1,5 @@
 ---
-title: "Twitter/Blueskyの自己ポストの全文検索サービスをNext.js App Router(RSC)で書きなおした方法/感想/戦略"
+title: "Twitter/Blueskyの自己ポストの全文検索サービスをNext.js App Router(RSC)で書きなおした方法/設計/感想"
 author: azu
 layout: post
 date: 2024-02-26T16:18
