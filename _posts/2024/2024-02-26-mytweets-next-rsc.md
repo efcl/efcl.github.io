@@ -374,6 +374,7 @@ Page Router の場合は、最初はそこまでなんでもできるという�
 やったこと
 
 - Context と引数を持たない Provider のラッパーを作る
+- Source: <https://github.com/azu/mytweets/blob/efd1281ea3936a5794712d39d8be81bc04284a96/web/app/client/TransitionContext.tsx>
 - RSC の中で Client Component を呼べるが、RSC の中で useState などは使えない
 - `<Provider value={ setState } />` みたいな技は使えない
 - 代わりにこれをラップした Provider の Client コンポーネントを作って使うことで、任意の初期値を入れた Context を RSC の中でも埋め込める
@@ -416,6 +417,7 @@ export const useTransitionContext = () => {
 
 - Server では引数に setState を渡すということができないので、初期値を持たない Context Provider を作るにはラッパーが必要となる
 - RSC では、Client Component の境界のためにこういったラッパーコンポーネントを作るケースが結構ある
+- ここではContextを作っているけど、state管理のライブラリを使う場合も大体似た話になります
 
 参考
 
