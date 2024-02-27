@@ -277,6 +277,8 @@ export const App = ({ searchParams }) => {
 これで、検索中もページが表示されるようになりました。
 この変更により、検索が遅い場合でもページ自体は安定してすぐに表示されるようになりました。
 
+📝 最良パターンは2より若干悪くなる(CLSもあるため)。最悪パターンは2よりかなり改善される
+
 実際の Pull Request は、次の URL から見れます。
 
 - [refactor(web): Suspense + Streaming by azu · Pull Request #6 · azu/mytweets](https://github.com/azu/mytweets/pull/6)
