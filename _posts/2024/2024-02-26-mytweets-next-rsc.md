@@ -194,9 +194,9 @@ RSC はルーティングを移動すれば、もう一度 RSC の処理がよ�
 | ベースの仕組み     | Pages Router + api/                                                                                                         | App Router                                                                                                                                                                                         |
 | API サーバ         | api/ で Rest API を作り、クライントから呼び出す                                                                             | RSC から関数としてサーバの処理を書いて呼ぶだけ                                                                                                                                                     |
 | S3 Select の取得   | api/ で S3 Select を叩いて、Stream として返して、クライアントから Fetch with Stream で取得しながら表示                      | pages.tsx で、S3 Select から取得して props で各コンポーネントに配るだけ                                                                                                                            |
-| 更新処理           | 入力欄が変更されたら、useEffect で Fetch して取得 → State を更新して描画し直す                                              | 入力欄が変更されたら、 router.push("/?q={検索]") へ移動するだけ(取得は pages.tsx に書かれてる仕組みがそのまま使われる)                                                                             |
+| 更新処理           | 入力欄が変更されたら、useEffect で Fetch して取得 → State を更新して描画し直す                                              | 入力欄が変更されたら、 `router.push("/?q={検索]")` へ移動するだけ(取得は pages.tsx に書かれてる仕組みがそのまま使われる)                                                                             |
 | 初期ロード中の表示 | Client 側で取得する。取得中は、isLoading の state(useState)を更新して、取得が終わったら state を更新する                    | pages.tsx で、S3 Select から取得してし終わったらレンダリングするので、初期ロードはなし(ただし、S3 から取得できるまでページが表示されない)                                                          |
-| 更新中の表示       | (初期ロードと同じ) Client 側で取得する。取得中は、isLoading の state(useState)を更新して、取得が終わったら state を更新する | startTransition(() => router.push(...)) で更新中かの状態(state)を得て、更新中の表示を行う。この state を Context を通して、Client Component 間で共有して、いろいろな場所のローディング表示を行う。 |
+| 更新中の表示       | (初期ロードと同じ) Client 側で取得する。取得中は、isLoading の state(useState)を更新して、取得が終わったら state を更新する | `startTransition(() => router.push(...))` で更新中かの状態(state)を得て、更新中の表示を行う。この state を Context を通して、Client Component 間で共有して、いろいろな場所のローディング表示を行う。 |
 | URL                | 特に変化しない                                                                                                              | 入力に合わせて `?q=<クエリ>` を更新していく                                                                                                                                                          |
 
 実際の Pull Request は、次の URL から見れます。
@@ -278,6 +278,16 @@ export const App = ({ searchParams }) => {
 この変更により、検索が遅い場合でもページ自体は安定してすぐに表示されるようになりました。
 
 📝 最良パターンは2より若干悪くなる(CLSもあるため)。最悪パターンは2よりかなり改善される
+
+| 内容 | 変更前 | 変更後 |
+| --- | --- | --- |
+| ベースの仕組み | Pages Router + api/ | App Router |
+| APIサーバ | api/ でRest APIを作り、クライントから呼び出す | RSCから関数としてサーバの処理を書いて呼ぶだけ |
+| S3 Selectの取得 | api/ でS3 Selectを叩いて、Streamとして返して、クライアントからFetch with Streamで取得しながら表示 | pages.tsx で、S3 Selectから取得してpropsで各コンポーネントに配るだけ |
+| 更新処理 | 入力欄が変更されたら、useEffectでFetchして取得 → Stateを更新して描画し直す | 入力欄が変更されたら、 router.push("/?q={検索]") へ移動するだけ(取得は pages.tsx に書かれてる仕組みがそのまま使われる) |
+| 初期ロード中の表示 | Client側で取得する。取得中は、isLoadingのstate(useState)を更新して、取得が終わったらstateを更新する | **更新点**: [`<Suspense>`](https://nextjs.org/docs/app/building-your-application/rendering/server-components#streaming-with-suspense) を使う。`<Suspense>` と use を使うことで、部分的にローディング表示を組み込む。S3からの取得が完了する前からページは表示される。 |
+| 更新中の表示 | (初期ロードと同じ) Client側で取得する。取得中は、isLoadingのstate(useState)を更新して、取得が終わったらstateを更新する | `startTransition(() => router.push(...))` で更新中かの状態(state)を得て、更新中の表示を行う。このstateを Contextを通して、Client Component間で共有して、いろいろな場所のローディング表示を行う。 |
+| URL | 特に変化しない | 入力に合わせて `?q=<クエリ>` を更新していく |
 
 実際の Pull Request は、次の URL から見れます。
 
