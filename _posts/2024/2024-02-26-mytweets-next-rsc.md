@@ -590,6 +590,7 @@ const handlers = useMemo(
     return <C a={a} />
   }
   ```
+  - Edit: Ref <https://twitter.com/koichik/status/1762403998609678773>
 - [Client Components で Suspense+use 使用時のエラー(Not implemented)の解決方法](https://zenn.dev/ojin/articles/8b383b0ac98eb9)
 - ['use server' directive – React](https://react.dev/reference/react/use-server)
   - Client Component から `"use server"` でマークされたサーバの関数を RPC 的に呼ぶのは、Server Action と言うらしい
