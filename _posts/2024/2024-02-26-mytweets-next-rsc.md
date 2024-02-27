@@ -27,7 +27,7 @@ mytweets は Twitter のアーカイブや Bluesky の API を使って自分の
 
 ## mytweets の動作
 
-mytweets は、次のような動作をします。
+[mytweets ](https://github.com/azu/mytweets) は、次のような動作をします。
 
 - クエリがない場合は、S3 Select から最新のポストを取得して表示
 - クエリを入力したら、S3 Select の API を使って全文検索を行い、結果を表示
