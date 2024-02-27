@@ -25,6 +25,8 @@ mytweets は Twitter のアーカイブや Bluesky の API を使って自分の
 
 あまりにも長くなったので、あんまり読みやすくは書けませんでした。
 
+📝 [キャッシュとメモ化](https://nextjs.org/docs/app/building-your-application/caching)については特に[触れていません](https://twitter.com/azu_re/status/1762404180990492867)。
+
 ## mytweets の動作
 
 [mytweets ](https://github.com/azu/mytweets) は、次のような動作をします。
