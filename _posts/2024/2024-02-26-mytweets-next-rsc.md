@@ -260,16 +260,15 @@ export const SearchResultContentStream = (props: {
 ```tsx
 export const App = ({ searchParams }) => {
   const searchResults = fetchS3Select(query); // waitしないでpromiseのまま扱う
-  <TransitionContextProvider>
-    {" "}
+  {/* Client */}
+  return <TransitionContextProvider>
     {/* Client */}
-    <SearchBox /> {/* Client */}
+    <SearchBox />
     <SearchResultContentWrapper>
-      {" "}
       {/* Client */}
       <Suspense fallback={"Loading ..."}>
-        <SearchResultContentStream retPromise={searchResults} />{" "}
         {/* Server 中で use を使う*/}
+        <SearchResultContentStream retPromise={searchResults} />
       </Suspense>
     </SearchResultContentWrapper>
   </TransitionContextProvider>;
