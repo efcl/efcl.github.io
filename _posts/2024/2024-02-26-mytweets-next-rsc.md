@@ -255,6 +255,21 @@ export const SearchResultContentStream = (props: {
 };
 ```
 
+もしくは、サーバ側のみで動くコンポーネントなら、`async`/`await`が利用できるので次のように書いても良いかもしれません。
+
+- 📝 `use`はClient Component/RSCどちらでも動くが、Async/AwaitはRSCのみで動く
+- [RFC: First class support for promises and async/await by acdlite · Pull Request #229 · reactjs/rfcs](https://github.com/reactjs/rfcs/pull/229)
+
+```tsx
+export const SearchResultContentStream = async (props: {
+  retPromise: Promise<FetchS3SelectResult>;
+  screenName: string;
+}) => {
+  const ret = await props.retPromise;
+  return <SearchResultContent ret={ret} {...other} />;
+};
+```
+
 この Suspense と use を使ったラッパーコンポーネントを使った擬似的なアプリの構造は、次のようになりました。
 
 ```tsx
