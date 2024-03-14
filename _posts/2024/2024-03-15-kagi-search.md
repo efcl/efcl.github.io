@@ -101,6 +101,7 @@ tags:
 Googleは賢いので、検索クエリに対してそれっぽい検索結果を出してしまうことがあります。1単語で検索した場合とかはこれが便利ですが、複数のクエリを組み合わせたような検索結果は求めてない結果が混ざることが多いです。
 
 一方でKagiは素直な感じの検索エンジンなので、素直に書いたクエリの通りの検索結果になるというイメージです。
+検索のデータとしてGoogleのものなども使っているので、Kagiでは見つからなかったけどGoogleでは見つかるというケースもあまりない印象です（特に思いつかなかった）。
 
 - [Search Quality | Kagi's Docs](https://help.kagi.com/kagi/search-details/search-quality.html)
 - [Search Sources | Kagi's Docs](https://help.kagi.com/kagi/search-details/search-sources.html)
