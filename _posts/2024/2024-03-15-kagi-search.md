@@ -103,7 +103,7 @@ Googleは賢いので、検索クエリに対してそれっぽい検索結果�
 - [Search Quality | Kagi's Docs](https://help.kagi.com/kagi/search-details/search-quality.html)
 - [Search Sources | Kagi's Docs](https://help.kagi.com/kagi/search-details/search-sources.html)
 
-これに加えて、LensやSort、Verbatimなども素直に扱えるので扱いやすく感じます。
+これに加えて、LensやSort、Verbatimなども絞り込み系がアクセスしやすいので、扱いやすく感じます。
 また、Kagiは https://kagi.com/settings?p=user_ranked どのドメインを出すか出さないかというパーソナライズも自分でちゃんと管理できます。
 
 Googleは検索をちゃんとやろうとするほど余計な結果(もしかして)が混ざってくるのが不便でした。Kagiでは素直な検索が返ってくるので、ちゃんと検索したいことを検索しやすいです。
