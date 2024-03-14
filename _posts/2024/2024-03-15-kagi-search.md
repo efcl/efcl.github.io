@@ -59,7 +59,7 @@ tags:
     - [Filtering Results | Kagi's Docs](https://help.kagi.com/kagi/features/filtering-results.html)
     - Order By: recentで検索のソート順を新しいもの順にできる
     - Timeで24時間以内の結果にできる(ここはGoogleでもできる)
-    - **Verbatim mode**を使うと、クエリの文字列が含まれているサイトだけが表示される(Googleでよく見る変な正規化を無効化できる)
+    - **Verbatim mode**を使うと、クエリの文字列が含まれているサイトだけが表示される
     - 全体的に素直な検索結果を扱える
 
 ## だめなところ
