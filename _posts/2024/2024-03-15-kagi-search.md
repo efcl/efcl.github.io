@@ -49,7 +49,8 @@ tags:
         - kagiのブラウザ拡張を使うと見ているページのサマリも表示できる(自分はそこまで使ってない)
         - https://addons.mozilla.org/en-US/firefox/addon/kagi-search-for-firefox/
         - https://chrome.google.com/webstore/detail/cdglnehniifkbagbbombnjghhcihifij
-- Lensで特定のサイトからの検索結果だけにフィルターできるのが便利
+- [Lenses](https://help.kagi.com/kagi/features/lenses.html)で特定のサイトからの検索結果だけにフィルターできるのが便利
+    - プログラミング関係(GitHubやStackoverflowなど)のサイトだけに絞ったりが、1 clickで切り替えできる
     - 日本の主要なブログだけを検索するLens
         - `*.hatenablog.com, *.hatenablog.jp, *.hateblo.jp, *.hatenadiary.com, *.hatenadiary.jp, note.com, ameblo.jp, sizu.me, zenn.com, qiita.com`
     - https://kagi.com/lenses/0Q9bHFmidnH3TfNAR3OYQKb0gyqDEzM7
