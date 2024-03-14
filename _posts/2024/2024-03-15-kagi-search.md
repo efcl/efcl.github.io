@@ -109,6 +109,8 @@ Googleは賢いので、検索クエリに対してそれっぽい検索結果�
 Googleは検索をちゃんとやろうとするほど余計な結果(もしかして)が混ざってくるのが不便でした。Kagiでは素直な検索が返ってくるので、ちゃんと検索したいことを検索しやすいです。
 また、曖昧な検索結果が欲しい時(何を調べればいいのかもまだわかってないことを調べる時)は[Quick Answer](https://help.kagi.com/kagi/ai/quick-answer.html)を使うといった使い分けをしています。
 
+使っていて曖昧な検索と正確な検索を意識的に使い分けやすい作りになってるのかなと思いました。
+
 最近では[Wolfram](https://www.wolframalpha.com/)のFounderの人がKagiに入ったり、検索のフロントエンドとしてのKagiは結構面白いと思うので、それに期待して使ってる部分もあります。
 
 - [Kagi + Wolfram | Kagi Blog](https://blog.kagi.com/kagi-wolfram)
