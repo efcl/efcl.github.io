@@ -83,7 +83,7 @@ tags:
 
 ## その他のTips
 
-- [「Kagi for Safari」をApp Storeで](https://apps.apple.com/jp/app/kagi-for-safari/id1622835804)を入れるとiOSでもKagiを使える
+- [「Kagi for Safari」](https://apps.apple.com/jp/app/kagi-for-safari/id1622835804)を入れるとiOSでもKagiを使える
     - Google検索とかの代わりにKagiを表示してくれるSafari拡張になってる
     - ブロックの共有とかもされてるので、uBlacklistみたいな拡張をわざわざ入れなくてもPCと同じ検索体験になる
 - [Bangs | Kagi's Docs](https://help.kagi.com/kagi/features/bangs.html#bangs) という機能で `!g` でGoogleにジャンプしたりできる
