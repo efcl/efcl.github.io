@@ -69,7 +69,7 @@ tags:
     - 漢字1つだけのケースは辞書的な検索な気はしてて、Wikipedia(`!w` bang)を指定したり、Googleに行ったり、もう少し明確なクエリにすることで回避してる
     - ここを自動でやるのは検索的にかなり面倒そうな問題な気はしている。たとえば、ca-enとus-enでは求めてるものが違う、ca-frとca-enがあるとか
     - 自動でやり切るにはエッジケースが結構多そう(Googleはそれをやってるイメージだけど、丸まりすぎてしまう)
-    - 人によって最適だと思う結果が結構違うので、クエリでその人を表現できるような方向だと良い気はする
+    - 人によって最適だと思う結果が結構違うので、クエリでその人の意図を表現できるような方向だと良い気はする
     - Ideaがある人はここに投稿すると良いと思う
     - [Ideas for improving local/international/english search modalities - Kagi Feedback](https://kagifeedback.org/d/3022-ideas-for-improving-localinternationalenglish-search-modalities)
 - 検索結果がGoogleより遅い
