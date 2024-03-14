@@ -64,8 +64,13 @@ tags:
 
 - 漢字だけのクエリだと中国語の結果が混ざることがある
     - [Japanese / Chinese - Kagi Feedback](https://kagifeedback.org/d/2118-japanese-chinese/7) をVoteしてください
-    - RegionとLanguageの区別がまだ実装されてないので、漢字だけだと両方出てくることがある
+    - RegionとLanguageの区別が部分的的にしか実装されてないので、漢字だけだと両方出てくることがある
     - そこまで漢字の単語 一つだけ検索することは少ないので、数百回に1回ぐらいのイメージ
+    - ここは検索的にかなり面倒そうな問題な気はしている。たとえば、ca-enとus-enでは求めてるものが違う、ca-frとca-enがあるとか
+    - 自動でやり切るのはエッジケースが結構多そう(Googleはそれをやってるイメージだけど、丸まりすぎてしまう)
+    - 人によって最適だと思う結果が結構違うので、クエリでその人を表現できるような方向だと良い気はする
+    - Ideaがある人はここに投稿すると良いと思う
+    - [Ideas for improving local/international/english search modalities - Kagi Feedback](https://kagifeedback.org/d/3022-ideas-for-improving-localinternationalenglish-search-modalities)
 - 検索結果がGoogleより遅い
     - 大体1秒弱ぐらいかかるイメージ
     - データセンターがHong Kongになってるので、日本にサーバがあればもうちょっとマシになると思う
