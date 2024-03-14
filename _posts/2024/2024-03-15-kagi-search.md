@@ -38,6 +38,7 @@ tags:
         - スパムっぽいサイトとかを表示する回数は減った感覚がある
         - 後述するBlockやQuickAnswerを活用しているのもある
     - また、ビルトインでBlockや検索結果の優先度を変更する機能が入ってる
+        - [Website Info & Personalized Results | Kagi's Docs](https://help.kagi.com/kagi/features/website-info-personalized-results.html)
         - [Kagi Search Stats](https://kagi.com/stats?stat=leaderboard)で統計データも公開されている
         - pinterestのような表示したくないサイトをブロックしたり、逆にMDNのようなサイトを優先度を上げるといったことができる
     - [Redirects (URL Rewrites) | Kagi's Docs](https://help.kagi.com/kagi/features/redirects.html) という機能で、検索結果のURLを書き換える機能も持っている
