@@ -36,7 +36,7 @@ tags:
         - たとえば、Googleだと英語で検索して"英語のページを検索"を選択にしても、日本語のサイトが出てくる(おそらくRegionが日本だと、日本語訳があったらそっちを出すみたいな感じになったりして、これが嫌なこと多い)
         - https://www.google.com/search?q=javascript&lr=lang_en
         - Kagiの場合、こういうケースでは検索結果の画面でregionを"International" や "US" に切り替えると基本的に素直に感じる結果が出てくる
-        - https://kagi.com/search?q=javascript&r=no_region
+        - <https://kagi.com/search?q=javascript&r=no_region> や <https://kagi.com/search?q=javascript&r=us>
         - GoogleではRegionの切り替えが設定画面になって遠い
     - [uBlacklist](https://github.com/iorate/ublacklist)を使ってなくても、いかがでしたか?状態にはならない
         - スパムっぽいサイトとかを表示する回数は減った感覚がある
