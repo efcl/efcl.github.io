@@ -16,7 +16,7 @@ tags:
 広告モデルではない検索エンジンなので、有料のサブスクリプションモデルとなっています。
 
 - [Plan Types | Kagi's Docs](https://help.kagi.com/kagi/plans/plan-types.html)
-  - いくつかプランがあり、検索し放題は$10/monthからです
+  - いくつかプランがあり、検索し放題のProfessionalプランが$10/monthです
   - [Ultimate Plan ](https://help.kagi.com/kagi/plans/ultimate-plan.html)($25/month)だとOpenAIのGPT 4とかClaude 3との連携とかも入ってきます
 
 月に1-2万回ぐらいは検索することを考えると、 `(108 / (10000 * 12)) * 150` で大体1検索が0.1円ぐらいのイメージですが、LLMを使ったサマライズも含まれた料金なので、実質もう少しコスパは良いと思います。
