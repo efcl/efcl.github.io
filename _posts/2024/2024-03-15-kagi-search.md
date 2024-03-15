@@ -121,6 +121,17 @@ Googleは検索をちゃんとやろうとするほど余計な結果(もしか�
 使っていると、曖昧な検索と正確な検索?(絞り込んでいくような検索)を意識的に使い分けやすい作りになってるのかなと思いました。
 前者はGoogleの方が考えずに使えると思いますが、後者になるとKagiの方が扱いやすい部分が多いと感じました。
 
+Kagi Searchを使おうと思った理由としては
+
+- Google検索で絞り込んで行ったときに、意図してない結果が出てくるケースが最近多かったのでどうにかしたかった
+- 使ってみて、よくある懸念の「Googleで見つかるけどKagiでは見つからない」というケースはほとんどないと思った
+- [Kagi search features | Kagi Blog](https://blog.kagi.com/kagi-features)とか基礎機能が細かくできてて良いと思った(設定画面をみるとわかる)
+  - 過去にGoogleにあった機能もあるけど、Googleは機能を消してしまうので
+  - LensとかBlockとかこういう機能は検索エンジン側に実装された方が管理が楽なので
+- [Kagi Blog](https://blog.kagi.com/blog)を読んでて方向性が結構面白いと思った
+- 試用期間(100回/month)だと機能を使いきれてなかったけど、まあ悪くなさそうと思って課金した
+  - 最悪Googleとかに戻ればいいだけだし
+
 最近では[Wolfram](https://www.wolframalpha.com/)のFounderの人がKagiに入ったり、検索のフロントエンドとしてのKagiは結構面白いと思うので、それに期待して使ってる部分もあります。
 
 - [Kagi + Wolfram | Kagi Blog](https://blog.kagi.com/kagi-wolfram)
