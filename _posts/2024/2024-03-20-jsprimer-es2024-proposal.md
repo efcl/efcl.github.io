@@ -153,5 +153,5 @@ jsprimerは、[2015年12月17日](https://github.com/asciidwango/js-primer/tree/
 ## まとめ
 
 - jsprimerをES2024対応する[マイルストーン](https://github.com/asciidwango/js-primer/milestone/5)を切りました
-- ES2024の対応などを手伝ってくれるContributorを募集しています！
+- ES2024の対応などを手伝ってくれる[Contributorを募集](https://github.com/asciidwango/js-primer/discussions/1727)しています！
 - [Open Collective](https://opencollective.com/jsprimer)を始めたので、jsprimerを支援してくれる[Sponsor](https://jsprimer.net/intro/sponsors/)を募集しています！
