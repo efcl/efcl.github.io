@@ -2,7 +2,7 @@
 title: "JavaScript PrimerのES2024対応を手伝ってくれるContributorとSponsorを募集しています"
 author: azu
 layout: post
-date : 2024-03-21T10:00
+date : 2024-03-20T10:00
 category: JavaScript
 tags:
     - jsprimer
