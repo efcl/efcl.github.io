@@ -87,12 +87,15 @@ jsprimerは文章のプロジェクトですが、[textlint](https://textlint.gi
 Node.jsのユースケースの更新は、Node.jsの新しい機能を使うように変更するというのが主なので、そこに興味がある方は特に歓迎です。
 こちらは、文章の意味合いはあまり変える必要はないので(コードが変わるのでそれに合わせた変更や流れの調整は必要です)、比較的やりやすいかと思います。
 
-ただし、タスク間の依存関係がちょっとややこしいところが複数人だとちょっとやりにくいかもれないです。
+ただし、Node.jsはタスク間の依存関係がちょっとややこしいところが複数人だとちょっとやりにくいかもれないです。
 (文章を自然に読めるようにするために未知のことに依存させないという方針なので、文章の並び替えが必要になります)
 
 - [Meta: Node.jsのユースケースの更新 · Issue #1719 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1719)
 
 もし、やってみたい方とかがいれば、一度認識合わせのためにMTGしたり、レビューとかは当然やるのでコメントなどでお知らせください。
+募集スレッドとして次のDiscussionを立てていますので、そちらでコメントしてもらえると嬉しいです。
+
+- [ES2024に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1727](https://github.com/asciidwango/js-primer/discussions/1727)
 
 ## jsprimerのSponsorを募集しています
 
@@ -146,3 +149,9 @@ jsprimerは、[2015年12月17日](https://github.com/asciidwango/js-primer/tree/
 - 新しいContributorを増やしてプロジェクトを継続的に更新していく形を模索する
 
 最適な方法はまだわかりませんが、継続的にアップデートする形を模索していくためにも、支援を募集しています！
+
+## まとめ
+
+- jsprimerのES2024の対応をする[マイルストーン](https://github.com/asciidwango/js-primer/milestone/5)を切りました
+- ES2024の対応などを手伝ってくれるContributorを募集しています！
+- [Open Collective](https://opencollective.com/jsprimer)を始めたので、jsprimerを支援してくれる[Sponsor](https://jsprimer.net/intro/sponsors/)を募集しています！
