@@ -118,6 +118,17 @@ Open CollectiveはGitHub Sponsorsと似たサービスですが、特定の個�
 毎月、ページビューは5-6万程度で、アクティブユーザーは2-3万程度いて、そのうち「読者」(3ページ以上読んだ人)は10%程度の2000人ぐらいになっています。
 書籍なので、何度も見にくる人も多いという特性があります。
 
+<iframe class="iframe-looker" width="600" height="337" src="https://lookerstudio.google.com/embed/reporting/5079dfdf-681c-4db7-a216-77c842fdae45/page/p_ajx9imd6zc" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+<!-- モバイルではiframeを非表示 -->
+<style>
+@media (max-width: 600px) {
+    .iframe-looker {
+        display: none;
+    }
+}
+</style>
+
 - [JavaScript Primer Dashboard](https://lookerstudio.google.com/u/0/reporting/5079dfdf-681c-4db7-a216-77c842fdae45/page/p_ajx9imd6zc)
 
 詳細は[JavaScript Primerスポンサー · JavaScript Primer #jsprimer](https://jsprimer.net/intro/sponsors/)も参照してください。
