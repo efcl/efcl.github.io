@@ -51,8 +51,11 @@ ES2024ではいくつか機能が増えているので、それに対応する�
 - [ES2024: Well-Formed Unicode Strings · Issue #1715](https://github.com/asciidwango/js-primer/issues/1715)
 - [ES2022: Error Cause · Issue #1714](https://github.com/asciidwango/js-primer/issues/1714)
 
-Array Groupingは恐らく対応が必須ですが、他の2つは可能なら対応する形になると思います。
-これはjsprimerはリファレンスを作ることは、[目的ではないこと](https://jsprimer.net/intro/#do-not)だからです。
+Array Groupingは恐らく対応が必須ですが、他の2つは必要なら対応する形になると思います。
+実際に内容や入れる場所を考えてみて、それが読む人にとってほんとに必要な情報なのかどうかを考えて判断する形になると思います。
+
+jsprimerでは、必ずしも新しい機能を網羅的に解説はしていません。
+これはjsprimerでは、リファレンスを作ることは、[目的ではないこと](https://jsprimer.net/intro/#do-not)だからです。
 
 ### Stgae 2.7の追加
 
