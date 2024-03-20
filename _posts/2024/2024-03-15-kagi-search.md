@@ -97,7 +97,9 @@ tags:
     - [Surfingkeys shortcut: kagi.com to google](https://gist.github.com/azu/2f0d47d4d800fb02fda0ba64c2f076dd)
     - 検索結果がダメだったら `g` をおして、Google検索をする
 
-## Examples
+## ユースケース
+
+Kagi Searchの機能を使ったユースケースの紹介をいくつか書いています。
 
 ### AmazonのURLをシンプルする
 
