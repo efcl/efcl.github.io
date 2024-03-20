@@ -96,7 +96,22 @@ tags:
     - 自分はショートカットでGoogleに行きたかったので別の方法使ってる
     - [Surfingkeys shortcut: kagi.com to google](https://gist.github.com/azu/2f0d47d4d800fb02fda0ba64c2f076dd)
     - 検索結果がダメだったら `g` をおして、Google検索をする
-    
+
+## Examples
+
+### AmazonのURLをシンプルする
+
+[Redirects (URL Rewrites) ](https://help.kagi.com/kagi/features/redirects.html)を使って、検索結果のAmazonのURLをシンプルにする。
+
+```
+^https://www.amazon.co.jp/([^/]+)/dp/(.*)|https://www.amazon.co.jp/dp/$2
+```
+
+### 日本の主要なブログだけを検索する
+
+次の[Lenses](https://help.kagi.com/kagi/features/lenses.html)を使って、日本のブログだけに絞り込める
+
+- <https://kagi.com/lenses/0Q9bHFmidnH3TfNAR3OYQKb0gyqDEzM7>
 
 ## 感想
 
