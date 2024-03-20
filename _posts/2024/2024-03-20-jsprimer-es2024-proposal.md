@@ -56,11 +56,11 @@ Array Groupingは恐らく対応が必須ですが、他の2つは可能なら�
 
 ### Stgae 2.7の追加
 
-ECMAScriptの仕様策定プロセス自体が変更されているので、それを解説する[ECMAScript · JavaScript Primer #jsprimer](https://jsprimer.net/basic/ecmascript/)を更新する予定です。
+ECMAScriptの仕様策定プロセス自体が変更されているので、それを解説してる[ECMAScript · JavaScript Primer #jsprimer](https://jsprimer.net/basic/ecmascript/)を更新する予定です。
 
 - [Stage 2.7を追加する · Issue #1713](https://github.com/asciidwango/js-primer/issues/1713)
 
-多分これは自分がやると思います。
+多分これは自分がやるような気もしますが、やりたい人がいればコメントください。
 
 ### Node.jsのユースケースの更新
 
