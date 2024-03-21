@@ -100,6 +100,8 @@ Node.jsのユースケースの更新は、Node.jsの新しい機能を使うよ
 
 - [ES2024に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1727](https://github.com/asciidwango/js-primer/discussions/1727)
 
+皮算用になるため、まだやり方は決めていませんが、後述するOpen Collectiveの機能を使ってContributeに対して返せる仕組みも作っていく予定です。
+
 ## jsprimerのSponsorを募集しています
 
 jsprimerでは、jsprimer自体が変化をし続け、読んだ人が「変化に対応できる基礎を身につけること」を目的としています。
