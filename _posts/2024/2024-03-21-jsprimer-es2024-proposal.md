@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[JavaScript Primer](https://jsprimer.net/)のES2024の対応をそろそろ進めていく予定なので、
+[JavaScript Primer](https://jsprimer.net/)のES2024の対応を進めていく予定なので、
 対応を手伝ってくれるContributorとjsprimerというプロジェクトを支援してくれるSponsorを募集しています。
 
 ## 3行サマリー
