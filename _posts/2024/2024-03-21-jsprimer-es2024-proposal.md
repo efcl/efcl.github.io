@@ -2,7 +2,7 @@
 title: "JavaScript PrimerのES2024対応を手伝ってくれるContributorとSponsorを募集しています"
 author: azu
 layout: post
-date : 2024-03-20T10:00
+date : 2024-03-21T10:00
 category: JavaScript
 tags:
     - jsprimer
@@ -124,11 +124,11 @@ Open CollectiveはGitHub Sponsorsと似たサービスですが、特定の個�
 毎月、ページビューは5-6万程度で、アクティブユーザーは2-3万程度いて、そのうち「読者」(3ページ以上読んだ人)は10%程度の2000人ぐらいになっています。
 書籍なので、何度も見にくる人も多いという特性があります。
 
-<iframe class="iframe-looker" width="600" height="337" src="https://lookerstudio.google.com/embed/reporting/5079dfdf-681c-4db7-a216-77c842fdae45/page/p_ajx9imd6zc" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe class="iframe-looker" width="840" height="472" src="https://lookerstudio.google.com/embed/reporting/5079dfdf-681c-4db7-a216-77c842fdae45/page/p_ajx9imd6zc" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 
 <!-- モバイルではiframeを非表示 -->
 <style>
-@media (max-width: 600px) {
+@media (max-width: 840px) {
     .iframe-looker {
         display: none;
     }
