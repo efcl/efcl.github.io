@@ -16,7 +16,8 @@ tags:
 対応を手伝ってくれるContributorとjsprimerというプロジェクトを支援してくれるSponsorを募集しています。
 
 追記(2024-03-22): Contributorを希望する方は集まりました。ありがとうございます！
-[JavaScript Primerスポンサー · JavaScript Primer #jsprimer](https://jsprimer.net/intro/sponsors/)は引き続き募集しています！
+
+[JavaScript Primerスポンサー](https://jsprimer.net/intro/sponsors/)は引き続き募集しています！
 
 ## 3行サマリー
 
