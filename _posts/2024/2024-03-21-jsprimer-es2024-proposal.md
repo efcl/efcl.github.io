@@ -15,6 +15,9 @@ tags:
 [JavaScript Primer](https://jsprimer.net/)のES2024の対応を進めていく予定なので、
 対応を手伝ってくれるContributorとjsprimerというプロジェクトを支援してくれるSponsorを募集しています。
 
+追記(2024-03-22): Contributorを希望する方は集まりました。ありがとうございます！
+[JavaScript Primerスポンサー · JavaScript Primer #jsprimer](https://jsprimer.net/intro/sponsors/)は引き続き募集しています！
+
 ## 3行サマリー
 
 - ES2024の対応を6月末までにやる[マイルストーン](https://github.com/asciidwango/js-primer/milestone/5)を切りました
@@ -98,7 +101,7 @@ Node.jsのユースケースの更新は、Node.jsの新しい機能を使うよ
 もし、やってみたい方とかがいれば、一度認識合わせのためにMTGしたり、レビューとかは当然やるのでコメントなどでお知らせください。
 募集スレッドとして次のDiscussionを立てていますので、そちらでコメントしてもらえると嬉しいです。
 
-- [ES2024に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1727](https://github.com/asciidwango/js-primer/discussions/1727)
+- ~~[ES2024に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1727](https://github.com/asciidwango/js-primer/discussions/1727)~~
 
 皮算用になるため、まだやり方は決めていませんが、後述するOpen Collectiveの機能を使ってContributeに対して返せる仕組みも作っていく予定です。
 
