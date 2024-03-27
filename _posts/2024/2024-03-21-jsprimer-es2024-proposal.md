@@ -19,6 +19,16 @@ tags:
 
 [JavaScript Primerスポンサー](https://jsprimer.net/intro/sponsors/)は引き続き募集しています！
 
+**Gold Sponsors**
+
+[![jsprimer sponsors](https://opencollective.com/jsprimer/sponsors.svg?width=890&avatarHeight=80)](https://opencollective.com/jsprimer#sponsors)
+
+**Supporters**
+
+[![jsprimer backers](https://opencollective.com/jsprimer/backers.svg?width=890&avatarHeight=40)](https://opencollective.com/jsprimer#backers)
+
+
+
 ## 3行サマリー
 
 - ES2024の対応を6月末までにやる[マイルストーン](https://github.com/asciidwango/js-primer/milestone/5)を切りました
