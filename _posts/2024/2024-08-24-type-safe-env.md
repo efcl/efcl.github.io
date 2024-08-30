@@ -271,7 +271,7 @@ node --import=./env.local.js node_modules/.bin/vite
 [NODE_OPTIONS=options](https://nodejs.org/docs/latest/api/cli.html#node_optionsoptions)を使うことで、Node.jsプロセスにオプションを渡すことができます。
 
 ```bash
-NODE_OPTIONS='--import ./env.local.js' node node_modules/.bin/vite
+NODE_OPTIONS='--import ./env.local.js' node_modules/.bin/vite
 # これなら動く
 ```
 
