@@ -1,5 +1,5 @@
 ---
-title: "BunでNode.jsのツールのSingle-file executable binaryにしてバイナリを配布する"
+title: "BunでNode.jsのツールをSingle-file executable binaryにしてバイナリを配布する"
 author: azu
 layout: post
 date : 2024-10-06T20:25
