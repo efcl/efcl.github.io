@@ -351,7 +351,7 @@ deno compile --target "x86_64-unknown-linux-gnu" --output dist/secretlint src/en
 `npm:` というspecifierを指定してることからもわかるように、npm registryからパッケージをダウンロードしたものをバイナリにしています。
 
 そのため、CIでバイナリをビルドしてそのままテストするには、ローカルのNode.js向けのコードを参照してバイナリにする方法が必要です。
-`deno compile`で、ローカルのNode.js向けのパッケージを参照してそれをバイナリにする方法は、試してみましたがよくわかりませんでした。
+`deno compile`で、ローカルのNode.js向けのパッケージを参照して、それをバイナリにする方法を試してみましたがよくわかりませんでした。
 
 Denoはnpmのworkspacesもサポートしているので、これを利用するとローカルのNode.js向けのパッケージをDenoで使うことはできます。
 
