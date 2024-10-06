@@ -475,6 +475,9 @@ onResolve {
 
 Bun内部の[Loaders](https://bun.sh/docs/bundler/loaders)もこの仕組みで実装しているそうですが、挙動がイマイチよくわからない感じでした。すでに登録されているものがあると、呼ばれないとかそういうことがあったりするのかなと思いました。
 
+ファイルパスではなく、パッケージのみを対象にする場合は、[build.module](https://bun.sh/docs/runtime/plugins#virtual-modules)という[Virtual Modules](https://bun.sh/docs/runtime/plugins#virtual-modules)を扱うAPIを使うことで対応できます。
+Secretlintだと`require.resolve`したパスをimportしていたため、この方式は諦めました。
+
 ## まとめ
 
 Node.jsのツールをSingle-file executable binaryにする方法を紹介しました。
