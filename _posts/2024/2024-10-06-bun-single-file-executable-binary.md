@@ -57,7 +57,7 @@ Docker経由に比べて、Dockerを必要としないのと実行までの時�
 デメリットとしては、単体のバイナリはルールも同梱しないと配布できないので、ルールの追加が難しい点です。
 (一応 node_modules 以下にルールがあれば参照できますが、それは実質npmに依存してるので素直にnpm使ったほうが良いです)
 
-この `secretlint` バイナリは、[Bun](https://bun.sh/)を使ってRunTimeも含んだSingle-file executable binaryとして配布しています。
+この `secretlint` バイナリは、[Bun](https://bun.sh/)を使ってランタイムも含んだSingle-file executable binaryとして配布しています。
 この記事では、Bunを使ってNode.jsのツールのSingle-file executable binaryを配布する方法を紹介します。
 
 ## Bunとは
