@@ -15,7 +15,7 @@ tags:
 
 - [Release v8.3.3 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v8.3.3)
 
-どういうことができるようになるかというか、Node.jsをインストールしなくても`secretlint`コマンドを使えるようになります。
+どういうことができるようになるかと、Node.jsをインストールしなくても`secretlint`コマンドを使えるようになります。
 次のようにCurlでダウンロードして実行するだけで、機密情報の検出ができるようになります。
 
 ```bash
