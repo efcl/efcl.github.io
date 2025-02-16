@@ -18,11 +18,14 @@ title: Home
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
-        <a href="/page/{{ paginator.previous_page }}/" class="previous">新しい記事へ</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">新しい記事へ</a>
+        {% else %}
+        <span class="previous">新しい記事へ</span>
         {% endif %}
-        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
         {% if paginator.next_page %}
-        <a href="/page/{{ paginator.next_page }}/" class="next" rel="next">古い記事へ</a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next" rel="next">古い記事へ</a>
+        {% else %}
+        <span class="next">古い記事へ</span>
         {% endif %}
     </div>
     {% endif %}
