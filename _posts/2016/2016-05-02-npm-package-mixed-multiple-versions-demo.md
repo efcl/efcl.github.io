@@ -14,6 +14,8 @@ tags:
 追記: [npm@6.9.0](https://npm.community/t/release-npm-6-9-0/5911)で別のパッケージを特定のパッケージ名で指定できるpackage aliasesが追加されました。
 
 - [rfcs/0001-package-aliases.md at latest · npm/rfcs](https://github.com/npm/rfcs/blob/latest/implemented/0001-package-aliases.md)
+- https://docs.npmjs.com/cli/v11/using-npm/package-spec#aliases
+- https://andrewevans.dev/blog/2021-12-06-creating-aliases-with-npm/
 
 ---
 
