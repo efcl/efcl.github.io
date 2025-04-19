@@ -48,7 +48,7 @@ djay Proは、iOS/Android/Mac/Windowsで動くDJアプリで、かなりちゃ�
 djay Proは有料ではあるけど、DJControl Mix Ultraと接続するとHardware modeが有効になって、必要な機能が自由に使えるようになる。
 ハードウェアのデバイスごとにこういったUnlock機能が実装されているらしく、デバイスごとに有効になる機能はバラバラだけど、大体デバイスで操作できるものは全部有効になるイメージ。
 
-DJControl Mix Ultraなら、Hot Cure/Loop/Fx/Neural Mixとか遊ぶのに必要な機能は大体使えるようになる。
+DJControl Mix Ultraなら、Hot Cue/Loop/Fx/Neural Mixとか遊ぶのに必要な機能は大体使えるようになる。
 (Auto Mixとかそういう、ソフトウェアのPro的な機能は使えないけど、DJコントローラーとしての機能は全部使える)
 なので、デバイスだけで、アプリは特に課金しなくても普通に使える。
 
