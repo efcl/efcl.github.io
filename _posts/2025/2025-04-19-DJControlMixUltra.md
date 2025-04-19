@@ -88,6 +88,8 @@ Androidも大体同じように使える
 
 ![djay Pro macOS](/wp-content/uploads/2025/04/19-1745063096.png)
 
+![djay Pro macOS](/wp-content/uploads/2025/04/DJControl_Mix_Ultra_mac.jpg)
+
 そのため、macOSでもDJControl Mix Ultraと接続するだけで、必要な機能が全部無料で使えるようになってる。
 
 ## 遅延
