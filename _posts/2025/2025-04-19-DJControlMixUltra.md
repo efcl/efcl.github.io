@@ -38,6 +38,7 @@ DJControl Mix Ultraという、モバイル向けのDJコントローラーを�
 ![ケース](/wp-content/uploads/2025/04/ultra-case.jpeg)
 
 ケースが、スマホのスタンドにもなるというデザインも良い。
+Macbook Airより一回り小さくて軽いぐらいな感じで、持ち運びもかなり安定してて良い。
 
 ## [djay Pro](https://www.algoriddim.com/apps)
 
