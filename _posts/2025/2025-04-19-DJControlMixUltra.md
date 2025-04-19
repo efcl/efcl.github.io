@@ -78,6 +78,8 @@ iPhoneのdjay Proを起動して、DJControl Mix Ultra をBluetoothで接続す�
 
 ![DJControl Mix Ultra](/wp-content/uploads/2025/04/djcontrol-mix-ultra-2.jpg)
 
+ブラウズのノブで曲も選べるので、基本的にDJControl Mix Ultraだけで、曲を流し続けられる。
+
 Androidも大体同じように使える
 
 ### macOS版のdjay Pro
