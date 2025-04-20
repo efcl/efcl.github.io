@@ -22,7 +22,7 @@ DJControl Mix Ultraという、モバイル向けのDJコントローラーを�
 [DJControl Mix Ultra - Hercules](https://www.hercules.com/en/product/djcontrol-mix-ultra/)は、普通のDJコントローラーと違って、iOSやAndroidのスマホやタブレットとBluetoothで接続して使う目的で作られているデバイス。
 なので、LINE INやLINE OUTもないし、スマホとの接続はBluetooth LEでのみ行うような作りになってる。
 
-一方で、USB Cで充電できてバッテリー駆動なので、Bluetoothでスマホと繋いで動作する。
+一方で、USB Cで充電できてバッテリー駆動なので、Bluetoothでスマホと繋いで動作するので、ワイヤレスで動く。
 
 ![DJControl Mix Ultra](/wp-content/uploads/2025/04/19-1745061533.png)
 
