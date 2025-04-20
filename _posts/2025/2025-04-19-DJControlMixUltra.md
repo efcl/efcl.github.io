@@ -104,7 +104,7 @@ USBでmacOSと繋いでる場合と、BluetoothでiPhone繋いでる場合はほ
 > Bluetooth LE adds less than 7ms of latency (similar to a USB controller's latency)
 > [DJControl Mix Ultra – Technical FAQs – Hercules](https://support.hercules.com/en/kb/1806-en/)
 
-さらに面白いのが、DJControl Mix Ultra  → iPhone → AirPods Pro2に流してる場合でもほぼ遅延感じなかった。
+さらに面白いのが、DJControl Mix Ultra  → iPhone → AirPods Pro2に流してる場合でもあんまり遅延を感じなかった。
 AirPods Pro2はBluetooth LE/LE Audioを使ってるらしいので、ここの遅延もかなり小さいんだなーと思った。
 (他のBluetoothスピーカーだと、明らかにわかるレベルの遅延は発生する)
 
