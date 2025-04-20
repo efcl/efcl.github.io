@@ -99,6 +99,7 @@ Androidも大体同じように使える
 
 基本的にモバイル端末との接続はBluetooth LEで行うけど、実際にデバイス触ってみて遅延を感じることがなかった。
 公式によると大体7ms以下の遅延で、ほとんどわからなかった。
+USBでmacOSと繋いでる場合と、BluetoothでiPhone繋いでる場合はほぼ同じ感覚ではあった。
 
 > Bluetooth LE adds less than 7ms of latency (similar to a USB controller's latency)
 > [DJControl Mix Ultra – Technical FAQs – Hercules](https://support.hercules.com/en/kb/1806-en/)
