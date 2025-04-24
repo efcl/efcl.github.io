@@ -15,8 +15,7 @@ tags:
 
 JavaScript Primer ([https://jsprimer.net/](https://jsprimer.net/)) では、毎年ECMAScriptの新しい仕様への追従を行っています。
 
-ES2025はもうすでにリリース候補が公開されていて、2024年6月に正式リリースされる予定です。
-
+ES2025はもうすでにリリース候補が公開されていて、2025年6月に正式リリースされる予定です。
 - [Release ES2025 Candidate April 23rd 2025 · tc39/ecma262](https://github.com/tc39/ecma262/releases/tag/es2025-candidate-2025-04-23)
 
 今年もES2025で追加される機能についての対応Issueを作成しました。
