@@ -66,7 +66,7 @@ JavaScript Primerの執筆、レビュー、サンプルコード作成、仕様
 
 今年のIssueは、1人 1Issueで綺麗に分けられると思うので、それぞれのIssueに興味がある人を募集しています。
 
-- Issueの一覧: [v7(ES2025) Milestone](https://github.com/asciidwango/js-primer/milestone/6)
+- 募集しているDiscussion: [ES2025に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1789](https://github.com/asciidwango/js-primer/discussions/1789)
 
 去年のES2024対応 ([JavaScript PrimerのES2024対応を手伝ってくれるContributorとSponsorを募集しています | Web Scratch](https://efcl.info/2024/03/21/jsprimer-es2024-proposal/)) の反省を踏まえ、今年はもう少しオンボーディングやコミュニケーションを丁寧に行いたいと考えています。
 IssueにAssignはすると思うのですが、どういうイメージで書いていくかをやり取りしながら進めていければいいかなと思っています。
@@ -75,6 +75,10 @@ IssueにAssignはすると思うのですが、どういうイメージで書い
 特に、[Iterator Helpers](https://github.com/asciidwango/js-primer/issues/1782)のように難易度が高いものは、事前にオンラインミーティングなどで進め方や認識合わせをする機会を設けたいと思っています。
 Iterator Helpersは正直かなり難易度が高いので、実際に手を動かせるレベルになるまではもうちょっとかかりそうな気がします。
 (一応募集はしていますが、これは結構な気合いが必要なIssueだと思っています。)
+
+Contributeしたい人は、次のDiscussionに参加してみてください。
+
+- [ES2025に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1789](https://github.com/asciidwango/js-primer/discussions/1789)
 
 ### Open Collectiveによる報酬
 
@@ -121,13 +125,11 @@ JavaScript Primerは技術書であるため、次の点に気をつけて書い
 
 ## 参加方法
 
-Contributorとして参加してみたい方は、以下のいずれかの方法でご連絡ください。
+Contributorとして参加してみたい方は、次のDiscussionにコメントしてみてください。
 
-- 各GitHub Issueにコメントする
-- [GitHub Discussions](https://github.com/asciidwango/js-primer/discussions)で声をかける
-- X(Twitter)で [@azu_re](https://twitter.com/azu_re) にメンションする
+- [ES2025に対応するIssueへのContributorを募集しています · asciidwango/js-primer · Discussion #1789](https://github.com/asciidwango/js-primer/discussions/1789)
 
-ご興味のある方、ぜひコメントやメンションをお待ちしています！
+ご興味のある方、ぜひ参加してみてください！
 
 ## Sponsorを募集しています
 
@@ -135,7 +137,7 @@ JavaScript Primerの活動は、個人や企業のSponsorからの支援によ�
 書籍の継続的なメンテナンスや改善活動を支援してくださるSponsorを随時募集しています！
 
 今年の更新に関する費用は、次の方々の支援によって成り立っています。
-ありがとうございます！
+ご支援ありがとうございます！
 
 **Gold Sponsors**
 
