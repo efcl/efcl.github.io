@@ -2,7 +2,7 @@
 title: "JavaScript PrimerのES2025対応を手伝ってくれるContributorとSponsorを募集しています"
 author: azu
 layout: post
-date : 2025-04-25T09:00
+date : 2025-04-25T09:00+09:00
 category: JavaScript
 tags:
     - JavaScript
