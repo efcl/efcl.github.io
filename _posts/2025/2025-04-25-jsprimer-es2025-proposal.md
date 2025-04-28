@@ -82,7 +82,7 @@ Contributeしたい人は、次のDiscussionに参加してみてください。
 
 ### Open Collectiveによる報酬
 
-JavaScript Primerは[Open Collective](https://opencollective.com/js-primer)を通じて、活動資金の支援を受け付けています。
+JavaScript Primerは[Open Collective](https://opencollective.com/jsprimer)を通じて、活動資金の支援を受け付けています。
 Contributorとして参加していただいた方には、この予算から[Contributing Expenses Policy](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING_EXPENSE.md)に基づき、作業量に応じた報酬を請求できます。
 
 報酬額は、Issueごとに設定された`point`に基づいて計算されます。
