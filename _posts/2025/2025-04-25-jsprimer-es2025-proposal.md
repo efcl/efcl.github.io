@@ -30,11 +30,11 @@ ES2025のMeta Issueとして次のIssueがあります
 
 具体的に対応するものとして次のIssueを作成しています。
 
-- [ES2025: import attributes · Issue #1783 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1783)
+- ✅[ES2025: import attributes · Issue #1783 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1783)
     - 見積もり: 1 or 2 point
 - [ES2025: `RegExp.escape` · Issue #1781 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1781)
     - 見積もり: 2 or 3 point
-- [ES2025: Set Methods for JavaScript · Issue #1784 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1784)
+- ✅[ES2025: Set Methods for JavaScript · Issue #1784 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1784)
     - 見積もり: 3 or 5 point
 - [ES2025: Iterator Helpers · Issue #1782 · asciidwango/js-primer](https://github.com/asciidwango/js-primer/issues/1782)
     - 見積もり: 8+ point の可能性あり
