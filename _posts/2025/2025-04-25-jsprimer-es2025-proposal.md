@@ -163,7 +163,7 @@ jsprimerの更新を金銭的にサポートしたいという方は、是非検
 [TSKaigi 2025](https://2025.tskaigi.org/)の2日目に、JavaScript Primerの取り組みについて発表する予定です。
 
 > 技術書をソフトウェア開発する - jsprimerの10年から学ぶ継続的メンテナンスの技術
-> https://2025.tskaigi.org/talks?day=2
+> https://2025.tskaigi.org/talks/azu_re
 
 JavaScript Primerという書籍が作られ、どのようにメンテナンスされているかといった内容について話す予定です。
 発表は一ヶ月後なので、その頃にはES2025対応もある程度進んでいる（または始めている）状態になっていると思います。
