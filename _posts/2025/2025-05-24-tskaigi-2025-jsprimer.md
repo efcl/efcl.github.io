@@ -45,3 +45,5 @@ jsprimerの目的の一つに「変化に対応できるようにする」とい
 GitHub Sponnsorなどでの支援も大歓迎です。
 
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
+
+TSKaigiお疲れ様でした！
