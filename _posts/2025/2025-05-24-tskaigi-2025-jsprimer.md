@@ -20,6 +20,12 @@ TSKaigi 2025で「技術書をソフトウェア開発する」というタイ�
 基本的には[JavaScript Primer](https://jsprimer.net/)というJavaScriptの入門書の話になっています。
 どうやって作っていて、どうやって10年近くも更新を続けているのか、オープンソースとしての継続性などについて話しています。
 
+関連:
+
+- [JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch](https://efcl.info/2020/04/27/jsprimer/)
+- [JavaScript Primer 改訂2版をリリースしました！/JavaScript Primerはなぜ更新され続けるのか？ | Web Scratch](https://efcl.info/2023/06/09/jsprimer-v2/)
+
+
 JavaScript/TypeScript以外での通じる話が多いので、技術書や何かを伝える文章を書く人にとっても参考になるかなと思います。
 今だと、LLMとかに投げる文章でも同様のことが言える場面も多いとは思います。
 
@@ -35,5 +41,7 @@ jsprimerの目的の一つに「変化に対応できるようにする」とい
 そのため、入門書としての目的としてオープンソースに関わってもらうために、jsprimerに対してContributeしやすくするといった目的もオープンソースとして開発している目的の一つです。
 
 オープンソースとの関わり方は色々な形があるので、jsprimerに限らずに何かしらの形で関わってみると面白いんじゃないかと思います。
+
+GitHub Sponnsorなどでの支援も大歓迎です。
 
 - [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
