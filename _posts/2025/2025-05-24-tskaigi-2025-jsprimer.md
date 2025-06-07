@@ -16,6 +16,7 @@ TSKaigi 2025で「技術書をソフトウェア開発する」というタイ�
 
 - 技術書をソフトウェア開発する - jsprimer の 10 年から学ぶ継続的メンテナンスの技術 -
 - スライド: <https://azu.github.io/slide/2025/tskaigi/jsprimer.html>
+- 動画: <https://www.youtube.com/live/vP2vuObMKSY?feature=shared&t=12948>
 
 基本的には[JavaScript Primer](https://jsprimer.net/)というJavaScriptの入門書の話になっています。
 どうやって作っていて、どうやって10年近くも更新を続けているのか、オープンソースとしての継続性などについて話しています。
