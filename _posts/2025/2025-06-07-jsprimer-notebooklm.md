@@ -1,5 +1,5 @@
 ---
-title: "JavaScript PrimerのNotebookLMで利用可能になりました！"
+title: "JavaScript PrimerのNotebookLMが利用可能になりました！"
 author: azu
 layout: post
 date : 2025-06-07T18:06
