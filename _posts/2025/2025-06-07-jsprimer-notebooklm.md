@@ -13,6 +13,7 @@ tags:
 
 [JavaScript Primer](https://jsprimer.net/)の[NotebookLM](https://notebooklm.google.com/)が利用可能になりました。
 NotebookLMは、Googleが提供するAIを活用したノートブック環境で、登録したソースに対して質問をしたり、情報を検索したりすることができます。
+
 次のリンクから、JavaScript PrimerのNotebookLMにアクセスできます。
 
 - [📖 JavaScript Primer - 迷わないための入門書 - NotebookLM](https://notebooklm.google.com/notebook/99f77ebb-4c13-411d-9474-ec18b2278098)
