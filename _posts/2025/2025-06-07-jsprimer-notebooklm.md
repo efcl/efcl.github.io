@@ -26,6 +26,7 @@ NotebookLMを活用することで、JavaScript Primerを読み進める中で�
 
 たとえば、NotebookLMでは次のような質問をしたりできます。あと、Podcastにするのがなんだかんだ便利です。
 
+- 「`=>`はどういう意味?」
 - 「JavaScriptのクロージャーとは何ですか？」
 - 「Promiseとasync/awaitの違いは何ですか？」
 - 「オブジェクトの章の内容を要約してください」
