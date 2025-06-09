@@ -37,7 +37,7 @@ NotebookLM上のJavaScript Primerへは、以下のリンクからアクセス�
 
 ## JavaScript Primerとは?
 
-JavaScript Primerは、ECMAScript 2015以降をベースにしたJavaScriptの入門書として、常に最新の情報を提供すべく継続的なメンテナンスが行っている書籍です。
+JavaScript Primerは、ECMAScript 2015以降をベースにしたJavaScriptの入門書として、常に最新の情報を提供すべく継続的なメンテナンスを行っている書籍です。
 この継続的なメンテナンスの取り組みについては、TSKaigi 2025で「技術書をソフトウェア開発する」というタイトルで発表しました。
 
 *   [TSKaigi 2025で「技術書をソフトウェア開発する」という発表をしました | Web Scratch](https://efcl.info/2025/05/24/tskaigi-2025-jsprimer/)
