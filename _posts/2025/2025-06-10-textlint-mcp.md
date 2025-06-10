@@ -24,11 +24,11 @@ textlint v14.8.0では、新しい`--mcp`フラグを追加しました。この
 
 ### MCPとは
 
-[Model Context Protocol（MCP）](https://modelcontextprotocol.io/)は、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携できるオープンスタンダードです。これにより、AIアシスタントがtextlintの機能を直接利用して、文章のチェックや修正を行えるようになります。
+[Model Context Protocol（MCP）](https://modelcontextprotocol.io/)は、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携するためのプロトコルです。これにより、AIアシスタントがtextlintの機能を直接利用して、文章のチェックや修正を行えるようになります。
 
 ### 前提条件
 
-MCPサーバーを使用するには、以下が必要です：
+MCPサーバーを使用するには、次の条件を満たす必要があります。
 
 - textlint v14.8.0以降
 - MCPサポートを持つAI搭載のコードエディタ（VS Code with Copilot Chat、Cursor、Windsurf）
