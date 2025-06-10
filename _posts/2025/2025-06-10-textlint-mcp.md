@@ -63,7 +63,7 @@ npx textlint --init
 
 設定が動くかは、`textlint`コマンドを実行して確認できます。
 
-```
+```bash
 npx textlint README.md
 ```
 
