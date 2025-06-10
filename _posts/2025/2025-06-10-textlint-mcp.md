@@ -153,6 +153,10 @@ src/README.mdのすべてのtextlintの問題を修正してください
 docs/ディレクトリのすべてのファイルにtextlintの自動修正を適用してください
 ```
 
+次のような感じで、textlintのlint結果をみながら修正までやってくれます。
+
+![利用例](https://efcl.info/wp-content/uploads/2025/06/10-1749514447.png)
+
 ## トラブルシューティング
 
 textlint MCPサーバーで問題が発生した場合：
