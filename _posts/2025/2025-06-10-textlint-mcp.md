@@ -2,7 +2,7 @@
 title: "textlint v14.8.0をリリースしました - 実験的なMCP(Model Context Protocol)サポート"
 author: azu
 layout: post
-date : 2025-06-10T10:00
+date : 2025-06-10T09:00
 category: textlint
 tags:
     - textlint
