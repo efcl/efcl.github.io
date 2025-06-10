@@ -194,6 +194,8 @@ textlint v14.8.0では、実験的な機能としてMCP（Model Context Protocol
 この機能は実験的なものですが、AI Agentとtextlintの連携が簡単になります。
 ぜひお試しいただき、フィードバックをお寄せください。
 
+`textlint --mcp`は、[＠chick-p](https://github.com/chick-p)さんが実装してくれました。
+
 textlintでは、Contributionを歓迎しています。
 
 - [Issues · textlint/textlint](https://github.com/textlint/textlint/issues)
