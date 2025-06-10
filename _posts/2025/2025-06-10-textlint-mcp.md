@@ -137,7 +137,7 @@ VS CodeでtextlintのMCPサーバーを設定するには、プロジェクト�
 
 ## 利用可能なツール
 
-textlint MCPサーバーでは、txtlintを使った文章のチェックや修正するツールを提供しています。
+textlint MCPサーバーでは、textlintを使った文章のチェックや修正するツールを提供しています。
 
 ## 使用例
 
