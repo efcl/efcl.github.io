@@ -157,6 +157,19 @@ docs/ディレクトリのすべてのファイルにtextlintの自動修正を�
 
 ![利用例](https://efcl.info/wp-content/uploads/2025/06/10-1749514447.png)
 
+## サンプルリポジトリ
+
+次のリポジトリは、VSCodeでtextlint MCPサーバーを設定したサンプルです。
+
+- [azu/textlint-mcp-example](https://github.com/azu/textlint-mcp-example)
+
+```
+git clone https://github.com/azu/textlint-mcp-example.git
+cd textlint-mcp-example
+npm ci
+code .
+```
+
 ## トラブルシューティング
 
 textlint MCPサーバーで問題が発生した場合：
