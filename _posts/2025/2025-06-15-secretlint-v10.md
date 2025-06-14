@@ -2,8 +2,8 @@
 title: "Secretlint v10.0.0リリース: デフォルトでシークレットをマスク表示するように変更、Node.js 20+のサポート"
 author: azu
 layout: post
-date : 2025-06-15T12:00
-category: secretlint
+date : 2025-06-15T09:00
+category: JavaScript
 tags:
     - secretlint
     - security
