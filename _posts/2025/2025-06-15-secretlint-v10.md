@@ -3,7 +3,7 @@ title: "Secretlint v10.0.0リリース: デフォルトでシークレットを�
 author: azu
 layout: post
 date : 2025-06-15T09:00
-category: JavaScript
+category: secretlint
 tags:
     - secretlint
     - security
