@@ -11,7 +11,7 @@ tags:
 
 ---
 
-機密情報をLintできるSecretlintのv10.0.0をリリースしました！
+機密情報を検出するCLIであるSecretlintのv10.0.0をリリースしました！
 
 - [Release v10.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v10.0.0)
 
