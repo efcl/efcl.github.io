@@ -58,7 +58,7 @@ tags:
 - [Lenses](https://help.kagi.com/kagi/features/lenses.html)で特定のサイトからの検索結果だけにフィルターできるのが便利
     - プログラミング関係(GitHubやStackoverflowなど)のサイトだけに絞ったりが、1 clickで切り替えできる
     - 日本の主要なブログだけを検索するLens
-        - `*.hatenablog.com, *.hatenablog.jp, *.hateblo.jp, *.hatenadiary.com, *.hatenadiary.jp, note.com, ameblo.jp, sizu.me, zenn.com, qiita.com`
+        - `*.hatenablog.com, *.hatenablog.jp, *.hateblo.jp, *.hatenadiary.com, *.hatenadiary.jp, note.com, ameblo.jp, sizu.me, zenn.dev, qiita.com`
     - https://kagi.com/lenses/0Q9bHFmidnH3TfNAR3OYQKb0gyqDEzM7
     - レビューとか検索したいときに個人のブログを検索したい といった感じの用途でよく使う
 - 検索結果のOrder ByとTimeが素直な感じ
