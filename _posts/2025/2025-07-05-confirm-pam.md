@@ -117,7 +117,7 @@ git() {
 Claude Code のような AI Agent は`git commit --no-verify`で pre-commit Hooks を回避してきます。
 Touch ID などの人間の認証を挟むことで、Hook を無視したコミットを防げます。
 
-![claude-code](/wp-content/uploads/2025/07/05-1751708268.png)
+![claude-code](/wp-content/uploads/2025/07/confirm-pam.jpeg)
 
 あと、人間がズルして `--no-verify` をつけてコミットするときに、確認の意味としてダイアログを出す方法としても使えます。
 
