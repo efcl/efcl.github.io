@@ -117,6 +117,8 @@ git() {
 Claude Code のような AI Agent は`git commit --no-verify`で pre-commit Hooks を回避してきます。
 Touch ID などの人間の認証を挟むことで、Hook を無視したコミットを防げます。
 
+あと、人間がズルして `--no-verify` をつけてコミットするときに、確認の意味としてダイアログを出す方法としても使えます。
+
 ### スクリプト内での使用
 
 本番環境へのデプロイなど、影響範囲が大きい操作の確認ダイアログを表示する例です。
@@ -159,7 +161,7 @@ macOS では FFI（Foreign Function Interface）を使用して、Rust から Sw
 実装の詳細は次の通りです。
 
 - Swift 実装: `src/platform/macos/auth_helper.swift` で LocalAuthentication フレームワークを使用
-- ビルドシステム: `build.rs` で Swift コードをコンパイル
+- ビルドシステム: `build.rs` で `swiftc` を使って Swift コードをコンパイル
 - 認証処理: Touch ID による生体認証を同期的に処理
 
 #### LocalAuthentication フレームワーク
