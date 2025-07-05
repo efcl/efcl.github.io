@@ -1,5 +1,5 @@
 ---
-title: "macOSで生体認証を使ったセキュリティ確認ツール confirm-pam を作った"
+title: "AI Agentのコマンド実行にTouch IDを使った「人間の確認」を挟むCLIツール confirm-pam を作った"
 author: azu
 layout: post
 date: 2025-07-05T15:30
