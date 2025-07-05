@@ -203,7 +203,7 @@ context.evaluatePolicy(policy, localizedReason: message) { success, error in
 ## まとめ
 
 confirm-pam は、macOS で Touch ID を使った生体認証確認を簡単に追加できる CLI ツールです。
-AI が回避できないような、**人間による確認**を挟むためのツールとしてご活用ください。
+AI が回避しにくい、人間による確認を挟むためのツールとして使ってみてください。
 
 - リポジトリ: [azu/confirm-pam](https://github.com/azu/confirm-pam)
 - crates.io: [confirm-pam](https://crates.io/crates/confirm-pam)
