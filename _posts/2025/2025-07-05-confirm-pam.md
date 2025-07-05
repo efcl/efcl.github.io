@@ -11,11 +11,11 @@ tags:
   - Rust
 ---
 
-macOS で Touch ID を使った生体認証を提供する CLI ツール [confirm-pam](https://github.com/azu/confirm-pam) を作りました。
+macOS で Touch ID を使った「人間の確認」ができるシンプルな CLI ツール [confirm-pam](https://github.com/azu/confirm-pam) を作りました。
 
 - [azu/confirm-pam: CLI tool for biometric authentication confirmation prompts](https://github.com/azu/confirm-pam)
 
-このツールを使うことで、任意のコマンドやスクリプトの実行前に、Touch IDによる生体認証を要求できます。
+このツールを使うことで、AI Agent が任意のコマンドやスクリプトの実行する前に、Touch ID による生体認証を要求できます。
 コマンドラインから実行される処理に対して、人間による明示的な確認ステップを追加する仕組みを提供します。
 
 ## confirm-pam とは
@@ -26,11 +26,12 @@ confirm-pam は、macOS の Touch ID を使った生体認証による確認プ�
 
 - Touch ID 認証をサポート
 - 認証ダイアログに任意のメッセージを表示
-- 0（成功）、1（失敗）、2（エラー）の3つの終了コードで結果を判定
-- 最小限の依存関係で高速起動
-- Rust製で高速なネイティブ実行とメモリ安全性を実現
+- 0（成功）、1（失敗）、2（エラー）の 3 つの終了コードで結果を判定
+- Rust で書かれていて、現時点だと macOS のみ対応
 
 基本的な使い方は次のようになります。
+
+![image](https://efcl.info/wp-content/uploads/2025/07/05-1751706673.png)
 
 ```bash
 # 基本的な認証プロンプト
@@ -76,8 +77,10 @@ confirm-pam [メッセージ]
 
 メッセージを指定すると、Touch ID の認証ダイアログにそのメッセージが表示されます。
 
+![image](https://efcl.info/wp-content/uploads/2025/07/05-1751706845.png)
+
 ```bash
-# カスタムメッセージで認証
+# 渡したメッセージが認証ダイアログに表示されます
 confirm-pam "重要な変更をコミットしようとしています。続行しますか？"
 ```
 
@@ -89,9 +92,9 @@ confirm-pam "重要な変更をコミットしようとしています。続行�
 
 ## 実用例
 
-confirm-pam は様々な場面で活用できます。ここでは代表的な使用例を紹介します。
+confirm-pam は次のようなユースケースを想定して作成しています。
 
-### Git hook での活用
+### `git commit --no-verify`の回避の確認
 
 危険な git コマンドを実行する前に確認を挟む例です。`--no-verify` オプションのような、通常の安全チェックを回避するコマンドの実行前に認証を要求します。
 
@@ -102,7 +105,7 @@ git() {
     if confirm-pam "git commit --no-verifyを実行します。続行しますか？"; then
       command git "$@"
     else
-      echo "認証に失敗しました。操作をキャンセルします。"
+      echo "認証に失敗しました。操作をキャンセルします。人間による確認が必要です。"
       return 1
     fi
   else
@@ -111,24 +114,12 @@ git() {
 }
 ```
 
-### 機密ファイルの操作前確認
-
-機密情報を含むファイルの編集前に認証を要求することで、誤操作や不正アクセスを防ぐことができます。
-
-```bash
-# 機密ファイルを編集する前の確認
-edit_secrets() {
-  if confirm-pam "機密ファイルを編集しようとしています。続行しますか？"; then
-    $EDITOR ~/.secrets
-  else
-    echo "アクセスが拒否されました"
-  fi
-}
-```
+Claude Code のような AI Agent は`git commit --no-verify`で pre-commit Hooks を回避してきます。
+Touch ID などの人間の認証を挟むことで、Hook を無視したコミットを防げます。
 
 ### スクリプト内での使用
 
-本番環境へのデプロイなど、影響範囲が大きい操作の前に人間による確認を挟むことで、自動化と安全性を両立できます。
+本番環境へのデプロイなど、影響範囲が大きい操作の確認ダイアログを表示する例です。
 
 ```bash
 #!/bin/bash
@@ -142,6 +133,8 @@ else
   exit 1
 fi
 ```
+
+`y`を入力しないと進めないようにする方法もありますが AI Agent は `echo "y" | コマンド` のような pipe で回避するので、人間の確認を挟みたい時に利用できます。
 
 ## 技術的な仕組み
 
@@ -159,26 +152,19 @@ platform/mod.rs (プラットフォーム固有実装)
 各OS実装 (macos/linux/windows)
 ```
 
-### macOS実装
+### macOS 実装
 
 macOS では FFI（Foreign Function Interface）を使用して、Rust から Swift コードを呼び出しています。
 
 実装の詳細は次の通りです。
-- Swift実装: `src/platform/macos/auth_helper.swift` で LocalAuthentication フレームワークを使用
-- ビルドシステム: `build.rs` で Swift コードをコンパイル  
+
+- Swift 実装: `src/platform/macos/auth_helper.swift` で LocalAuthentication フレームワークを使用
+- ビルドシステム: `build.rs` で Swift コードをコンパイル
 - 認証処理: Touch ID による生体認証を同期的に処理
 
-#### LocalAuthenticationフレームワーク
+#### LocalAuthentication フレームワーク
 
-Swift実装では、AppleのLocalAuthenticationフレームワークを使用しています。
-
-**主要なコンポーネント**:
-
-| コンポーネント | 役割 |
-|:---|:---|
-| `LAContext` | 認証コンテキストを管理するメインクラス |
-| `LAPolicy` | 認証ポリシーを定義（`.deviceOwnerAuthenticationWithBiometrics` でTouch ID認証を指定） |
-| `evaluatePolicy` | 実際の生体認証を行うメソッド |
+Swift 実装では、Apple の LocalAuthentication フレームワークを使用しています。
 
 ```swift
 // 概念的な実装例
@@ -207,24 +193,17 @@ context.evaluatePolicy(policy, localizedReason: message) { success, error in
 ## 今後のロードマップ
 
 現在は macOS の Touch ID のみサポートしていますが、他のプラットフォームへの対応も予定しています。
+しかし、自分は macOS しか使ってないので、他のプラットフォームの実装を追加したい人は PR を待ってます。
 
-### 計画中の機能
-
-- Linux 対応: PAM + fprintd を使った指紋認証
-- Windows 対応: Windows Hello を使った生体認証
-- 高度なオプション: タイムアウト設定、リトライ回数制限など
+- [Add Linux fingerprint authentication support using PAM + fprintd · Issue #1 · azu/confirm-pam](https://github.com/azu/confirm-pam/issues/1)
+- [Add Windows biometric authentication support using Windows Hello · Issue #2 · azu/confirm-pam](https://github.com/azu/confirm-pam/issues/2)
 
 ## まとめ
 
 confirm-pam は、macOS で Touch ID を使った生体認証確認を簡単に追加できる CLI ツールです。
-
-### 使用をおすすめする理由
-
-1. **セキュリティの向上**: AI エージェントや自動化ツールが一般的になった現在、人間による明示的な確認ステップが重要
-2. **誤操作防止**: 危険なコマンドの実行前に確認を挟むことで、不正な操作を防ぐ
-3. **簡単な組み込み**: 既存のスクリプトやワークフローに簡単に組み込み可能
-
-危険な操作や機密情報を扱う処理の前に、**人間による確認**を挟むためのツールとしてご活用ください。
+AI が回避できないような、**人間による確認**を挟むためのツールとしてご活用ください。
 
 - リポジトリ: [azu/confirm-pam](https://github.com/azu/confirm-pam)
 - crates.io: [confirm-pam](https://crates.io/crates/confirm-pam)
+
+Note: 認証をたくさん出すと無意識的に OK してしまうので、この辺をもっと工夫する必要が出てくるかもしれません。
