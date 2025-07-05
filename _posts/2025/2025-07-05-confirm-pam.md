@@ -31,7 +31,7 @@ confirm-pam は、macOS の Touch ID を使った生体認証による確認プ�
 
 基本的な使い方は次のようになります。
 
-![image](https://efcl.info/wp-content/uploads/2025/07/05-1751706673.png)
+![image](/wp-content/uploads/2025/07/05-1751706673.png)
 
 ```bash
 # 基本的な認証プロンプト
@@ -77,7 +77,7 @@ confirm-pam [メッセージ]
 
 メッセージを指定すると、Touch ID の認証ダイアログにそのメッセージが表示されます。
 
-![image](https://efcl.info/wp-content/uploads/2025/07/05-1751706845.png)
+![image](/wp-content/uploads/2025/07/05-1751706845.png)
 
 ```bash
 # 渡したメッセージが認証ダイアログに表示されます
