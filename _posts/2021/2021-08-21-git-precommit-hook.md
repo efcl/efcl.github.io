@@ -136,7 +136,7 @@ git config --local core.hooksPath ./.githooks
 自分の[グローバルフックのリポジトリ](https://github.com/azu/git-hooks#zsh-integration)の[Zsh Integration](https://github.com/azu/git-hooks#zsh-integration)に書いていますが、Zshでコマンド実行前にプロジェクトの`core.hooksPath`をグローバルの方を参照し直すように書き換えるという無理やりな手順がひつようになります。
 
 ```sh
-# Source: https://github.com/azu/git-hooks
+# Source: https://qiita.com/yoshiakih/items/68b0406653d792c09d8b
 # Override <project>/.githook → <global>/git-hooks/hooks/
 function preexec_git_global_hooks() {
   inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
