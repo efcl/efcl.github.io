@@ -43,6 +43,9 @@ jobs:
 ```
 
 GitHub Actionsのデフォルトパーミッションは`write-all`です。
+
+- **追記**: [GitHub Actions - Updating the default GITHUB_TOKEN permissions to read-only - GitHub Changelog](https://github.blog/changelog/2023-02-02-github-actions-updating-the-default-github_token-permissions-to-read-only/) でやっと `read-only`がデフォルトになりました
+
 つまり、リポジトリの読み書き、IssueやPRの読み書きなど全部の権限がデフォルトでついています。
 そのため、`uses: actions/checkout@v2` のようにread onlyでよいGitHub Actionsも、実際にはリポジトリやIssueへの書き込みできる権限も持ってしまっています。
 
