@@ -64,6 +64,10 @@ YAPC::Fukuoka 2025で「読む技術・書く技術・伝える技術 - 15年続
 バーンアウトは期待と現実のギャップから生じます。心理的負荷はコントロールが難しく、バーンアウトのリスクを高めます。
 一方で、技術的依存は自動化が可能で、継続することで改善が加速し、コントロールがしやすいです。
 
+![burnout](https://azu.github.io/slide/2025/yapc/img/burnout-spectrum.png)
+
+> [The End of Burnout by Jonathan Malesic - Paper - University of California Press](https://www.ucpress.edu/books/the-end-of-burnout/paper)
+
 そもそも持続可能性を気にしているのは、それぞれのプロジェクトがアウトプット（作ったもの）ではなくアウトカム（実際の影響・信頼・教育）を目指してやっているからです。長期的な視点でプロジェクトを継続するにコントロールが難しい心理的負荷を意識的に減らす工夫について話しました。
 
 ## スライド作成プロセス
