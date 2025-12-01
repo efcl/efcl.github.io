@@ -10,14 +10,14 @@ tags:
 
 ---
 
-[Do you know MDN APIs?](https://mdn-browser-compat-data-learning-level.netlify.com/)というクイズ?アプリを作りました。
+[Do you know MDN APIs?](https://mdn-browser-compat-data-learning-level.netlify.app/)というクイズ?アプリを作りました。
 次のURLから実際に試せます。
 
-- https://mdn-browser-compat-data-learning-level.netlify.com/
+- https://mdn-browser-compat-data-learning-level.netlify.app/
 
 [MDN Web Docs](https://developer.mozilla.org/ja/)(MDN)に掲載されているHTTP、HTML、CSS、JavaScript、MathML、SVG、WebDriver、WebExtensions、XPath、XSLTのAPIを知っているかをYES or NOでひらすら答えるだけのアプリです。
 
-[![image](https://efcl.info/wp-content/uploads/2019/01/17-1547691324.png)](https://mdn-browser-compat-data-learning-level.netlify.com/)
+[![image](https://efcl.info/wp-content/uploads/2019/01/17-1547691324.png)](https://mdn-browser-compat-data-learning-level.netlify.app/)
 
 知っている(YES)なら←キーを、知らない(NO)なら→キーを押していく耐久アプリです。
 
@@ -40,5 +40,5 @@ tags:
 
 Nuxt.jsでこのデータを含めたページとしてgenerateして作成しています。(静的サイトみたいな感じ)
 
-- サイト: [Do you know MDN APIs?](https://mdn-browser-compat-data-learning-level.netlify.com/)
+- サイト: [Do you know MDN APIs?](https://mdn-browser-compat-data-learning-level.netlify.app/)
 - リポジトリ: [azu/mdn-browser-compat-data-learning-level: Test your learning level by MDN APIs](https://github.com/azu/mdn-browser-compat-data-learning-level)
