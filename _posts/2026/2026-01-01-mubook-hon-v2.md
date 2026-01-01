@@ -40,9 +40,9 @@ Bibiと比較して、次の点が改善されました。
 - メモリ消費の削減 - メモリ管理の改善により、メモリ使用量が減少
 - 仕組みの簡素化 - Bibiの時は[MSWでService Workerプロキシを実装してBibiの求める形式/URLのパスで返す](https://github.com/azu/mubook-hon/blob/d68d690477cca9adaf07da8ca8127921da6308b8/app/viewer/bibi-epub/BibiReader.tsx#L118-L202)必要があり複雑だった。foliate-jsではこの回り道が不要になりシンプルに
 
-![mubook-hon on PC](https://efcl.info/wp-content/uploads/2026/01/X.jpeg)
+![mubook-hon on PC](https://efcl.info/wp-content/uploads/2026/01/20260101-222846_optimized.jpg)
 
-![mubook-hon on Mobile](https://efcl.info/wp-content/uploads/2026/01/mobile-mubookhon.jpeg)
+![mubook-hon on Mobile](https://efcl.info/wp-content/uploads/2026/01/20260101-222826_optimized.jpg)
 
 ### 9ゾーンタップ設定
 
@@ -53,7 +53,7 @@ Bibiと比較して、次の点が改善されました。
 設定画面から、各ゾーンに「次ページ」「前ページ」「メニュー」「閉じる」「なし」を割り当てられます。
 プリセットとして「Default」「Right Hand」「Left Hand」を用意しています。
 
-![Tap Zones](https://efcl.info/wp-content/uploads/2026/01/tapzone.jpeg)
+![Tap Zones](https://efcl.info/wp-content/uploads/2026/01/20260101-222817_optimized.jpg)
 
 ## VercelからCloudflare Workersへ移行
 
