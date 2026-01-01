@@ -11,10 +11,10 @@ tags:
 
 ---
 
-[mubook-hon](https://mubook-hon.vercel.app/)という読書用のウェブアプリを作りました。
+[mubook-hon](https://mubook-hon.jser.workers.dev/)という読書用のウェブアプリを作りました。
 特徴として、Dropboxに保存しているepubやPDFをそのままブラウザで読むことができ、メモやどこまで読んだかをNotionに記録できます。
 
-- ウェブサイト: <https://mubook-hon.vercel.app/>
+- ウェブサイト: <https://mubook-hon.jser.workers.dev/>
 - ソースコード: [azu/mubook-hon: epub/PDF reader + Notion Sync + Memo](https://github.com/azu/mubook-hon)
 - ドキュメント and サンプルデータベース: <https://efcl.notion.site/mubook-hon-addce6c324d44d749a73748f92e3a1a6>
 
@@ -78,12 +78,12 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 
 **Dropboxの設定**
 
-1. https://mubook-hon.vercel.app/ にアクセス
+1. https://mubook-hon.jser.workers.dev/ にアクセス
 2. “Authorize”ボタンを押し、Dropboxにログインして、mubook-honアプリのアクセスを許可する
 3. `~/Dropbox/アプリ/mubook-hon` に 拡張子が `.epub` または `.pdf` のファイルを配置する
   - 今のmacだと `/Users/{user}/Library/CloudStorage/Dropbox/アプリ/mubook-hon` かもしれません
   - 英語の場合は `/Users/{user}/Library/CloudStorage/Dropbox/Apps/mubook-hon` かもしれません
-4. https://mubook-hon.vercel.app/ に本が表示されて読めるようになる
+4. https://mubook-hon.jser.workers.dev/ に本が表示されて読めるようになる
 
 **Notionの設定**
 
@@ -99,8 +99,8 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 
 **アプリ上の設定**
 
-1. 好きなブラウザで https://mubook-hon.vercel.app/ にアクセス
-2. [Settings ページ](https://mubook-hon.vercel.app/settings) にアクセス
+1. 好きなブラウザで https://mubook-hon.jser.workers.dev/ にアクセス
+2. [Settings ページ](https://mubook-hon.jser.workers.dev/settings) にアクセス
 3. 次の項目を設定してリロードして確認
     - Notion API Key: 作成したインテーグレーションのAPI Key
     - Book List Database Id: Book ListデータベースのID
@@ -108,7 +108,7 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
         - `https://www.notion.so/{name}/123456asdfg?v=xxx` の`123456asdfg` 部分
         - [[作成済みDBへの連携 2] データベースIDの取得と設定](https://booknotion.site/setting-databaseid)
     - Book Memo Database Id: Book MemoデータベースのID
-4. 設定完了！ https://mubook-hon.vercel.app/ から本を読めます
+4. 設定完了！ https://mubook-hon.jser.workers.dev/ から本を読めます
 
 ⚠️ それぞれのテーブルには予約された名前があります。それらのカラム名を変更すると動かなくなります。詳細はテーブルをフルページで開くと説明が書いてあります。
 
@@ -139,7 +139,7 @@ mubook-honで予約してるキーはデータベースの説明に書いてあ�
 
 ## アプリっぽく使う
 
-<https://mubook-hon.vercel.app/>はPWAに対応しているので、Chromeのショートカット作成やiOSのホームに追加をすると、アプリっぽく利用できます。
+<https://mubook-hon.jser.workers.dev/>はPWAに対応しているので、Chromeのショートカット作成やiOSのホームに追加をすると、アプリっぽく利用できます。
 
 - [Add & open Chrome apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/3060053?hl=en)
 - [Add to Home screen - Progressive web apps (PWAs) | MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
@@ -199,7 +199,7 @@ Notionのデータベースを読書の記録に使うというアイデアを�
 
 この方法だとメモをとって満足して終わりという感じでした。
 
-[mubook-hon](https://mubook-hon.vercel.app/)では、Notionの書籍に紐づくメモ一覧できるようになりました。
+[mubook-hon](https://mubook-hon.jser.workers.dev/)では、Notionの書籍に紐づくメモ一覧できるようになりました。
 メモの一覧から気になるものをピックアップしたり、メモを好きな位置に貼り付ける(Mentionする)ことができて、メモの整理ができるようになりました。
 これによって、書籍全体を通してのメモというか感想が書きやすくなった気がします。
 
