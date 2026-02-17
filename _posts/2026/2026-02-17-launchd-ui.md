@@ -29,7 +29,7 @@ Claude Code on the webで実行することで、自動で処理が走りつつ�
 こういった定期処理をlaunchdで管理しているのですが、launchdの操作は基本的にCLIです。
 `launchctl load`や`launchctl unload`といったコマンドを毎回調べながら打つのは面倒で、今どのエージェントが動いているか、次回いつ実行されるかといった情報も確認しにくいです。
 
-GUIツールを探すのも面倒だったので、自分で作ることにしました。
+GUIツールは[LaunchControl](https://www.soma-zone.com/LaunchControl/)などの有料ツールが多く、探すのも面倒だったので自分で作ることにしました。
 
 ## 主な機能
 
