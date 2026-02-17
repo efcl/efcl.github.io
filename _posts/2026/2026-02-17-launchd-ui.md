@@ -1,5 +1,5 @@
 ---
-title: "launchd-ui: macOSのlaunchdエージェントをGUIで管理するアプリを作った"
+title: "launchd-ui: macOSのlaunchdを使ったcron処理をGUIで管理するアプリを作った"
 author: azu
 layout: post
 date: 2026-02-17T12:00
