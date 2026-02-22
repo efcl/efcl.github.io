@@ -59,35 +59,6 @@ v1.3.0で、ブラウザ上でページを直接編集できるDesign Modeを追
 
 要素の選択モード（Select Element）とDesign Modeは排他的で、同時には使えません。選択モードは「Claude Codeに何を変えるか伝える」ためのもので、Design Modeは「自分で変更してClaude Codeにコードへ反映させる」ためのものです。
 
-### Design Modeのアーキテクチャ
-
-GUIでの変更をどうやってClaude Codeに伝えるかが設計上のポイントです。Design Modeでは、変更を構造化されたコマンドとして蓄積し、バッチでClaude Codeに送る方式を採用しています。
-
-変更の種類は`text-edit`（テキスト書き換え）と`move`（要素の移動）の2つです。iframe内の注入スクリプトが変更を検出すると、`postMessage`で親フレームに通知します。
-
-```typescript
-// テキスト編集の変更
-{ type: "text-edit", selector: "h1.title", before: "旧タイトル", after: "新タイトル" }
-// 要素の移動
-{ type: "move", selector: ".card", oldIndex: 2, newIndex: 0 }
-```
-
-「Apply Changes」を押すと、蓄積された変更に正規化処理が走ります。同じ要素への複数回の編集は最初のbeforeと最後のafterに圧縮され、元の位置に戻った移動は削除されます。正規化後、変更をテキストにフォーマットしてClaude Codeに送信します。
-
-```
-[Design Mode Changes]
-1. Text edited
-   selector: h1.title (React: Header - src/components/Header.tsx:12)
-   before: "旧タイトル"
-   after: "新タイトル"
-2. Element reordered
-   selector: .card (React: ProductCard)
-   moved from: .grid, index 2
-   moved to: .grid, index 0
-```
-
-このテキストはBracketed Paste（`\x1b[200~...\x1b[201~`）でPTYに書き込みます。Claude Code TUIはBracketed Pasteを受け取ると自動的にコンテキストを折り畳んで表示するため、ターミナル上では長いコンテキストが邪魔になりません。その後にユーザーの指示テキストとEnterキーを送信することで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
-
 ## 作った背景
 
 Claude CodeでWebサイトやアプリの見た目を調整するとき、次のような作業フローを繰り返します。
@@ -226,6 +197,35 @@ Bun.spawn([shell, "-l", "-c", "claude"], { terminal, cwd });
 ブラウザ側のターミナルエミュレータには[ghostty-web](https://github.com/ghostty-org/ghostty)を使っています。GhosttyはGPUレンダリングを使った高性能なターミナルアプリで、そのWebAssembly版（ghostty-web）をxterm.jsの代わりに採用しています。
 
 再接続時のため、128KBのリングバッファでPTYの出力を保持しています。ブラウザがリロードされてもターミナルの表示内容を再生できます。
+
+### Design Mode: GUIの変更をコマンドにしてバッチで送る
+
+Design Modeの設計上のポイントは、GUIでの変更をどうやってClaude Codeに伝えるかです。変更を構造化されたコマンドとして蓄積し、バッチでClaude Codeに送る方式を採用しています。
+
+変更の種類は`text-edit`（テキスト書き換え）と`move`（要素の移動）の2つです。iframe内の注入スクリプトが変更を検出すると、`postMessage`で親フレームに通知します。
+
+```typescript
+// テキスト編集の変更
+{ type: "text-edit", selector: "h1.title", before: "旧タイトル", after: "新タイトル" }
+// 要素の移動
+{ type: "move", selector: ".card", oldIndex: 2, newIndex: 0 }
+```
+
+「Apply Changes」を押すと、蓄積された変更に正規化処理が走ります。同じ要素への複数回の編集は最初のbeforeと最後のafterに圧縮され、元の位置に戻った移動は削除されます。正規化後、変更をテキストにフォーマットしてClaude Codeに送信します。
+
+```
+[Design Mode Changes]
+1. Text edited
+   selector: h1.title (React: Header - src/components/Header.tsx:12)
+   before: "旧タイトル"
+   after: "新タイトル"
+2. Element reordered
+   selector: .card (React: ProductCard)
+   moved from: .grid, index 2
+   moved to: .grid, index 0
+```
+
+このテキストはBracketed Paste（`\x1b[200~...\x1b[201~`）でPTYに書き込みます。Claude Code TUIはBracketed Pasteを受け取ると自動的にコンテキストを折り畳んで表示するため、長いコンテキストが邪魔になりません。その後にユーザーの指示テキストとEnterキーを送信することで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
 
 ## Claude Code DesktopのPreview機能との類似点と違い
 
