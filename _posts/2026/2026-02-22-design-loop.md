@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/azu/design-loop/main/install.sh | s
 
 ## 使い方
 
-開発サーバーがすでに起動している場合は、`--url`でURLを指定するだけで起動できます。
+ソースコードがあるディレクトリで、開発サーバーがすでに起動している場合は、`--url`でURLを指定するだけで起動できます。
 
 ```bash
 design-loop --url http://localhost:3000
