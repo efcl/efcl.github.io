@@ -225,7 +225,7 @@ Design Modeの設計上のポイントは、GUIでの変更をどうやってCla
    moved to: .grid, index 0
 ```
 
-このテキストをユーザーの指示と一緒にClaude Codeに渡すことで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
+このテキストをユーザーの指示と一緒にClaude Codeへ渡すことで、変更内容を解釈してソースコードを書き換えます。
 
 ## Claude Code DesktopのPreview機能との類似点と違い
 
