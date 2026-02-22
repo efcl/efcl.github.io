@@ -225,7 +225,7 @@ Design Modeの設計上のポイントは、GUIでの変更をどうやってCla
    moved to: .grid, index 0
 ```
 
-このテキストはBracketed Paste（`\x1b[200~...\x1b[201~`）でPTYに書き込みます。Claude Code TUIはBracketed Pasteを受け取ると自動的にコンテキストを折り畳んで表示するため、長いコンテキストが邪魔になりません。その後にユーザーの指示テキストとEnterキーを送信することで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
+このテキストをユーザーの指示と一緒にClaude Codeに渡すことで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
 
 ## Claude Code DesktopのPreview機能との類似点と違い
 
