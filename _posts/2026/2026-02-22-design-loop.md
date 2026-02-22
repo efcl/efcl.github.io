@@ -13,7 +13,7 @@ tags:
 
 ---
 
-[design-loop](https://github.com/azu/design-loop)は、Claude Code用のブラウザベースのフロントエンドです。
+Claude Code用のブラウザベースのフロントエンドとして、[design-loop](https://github.com/azu/design-loop)を作りました。
 
 - GitHub: <https://github.com/azu/design-loop>
 
