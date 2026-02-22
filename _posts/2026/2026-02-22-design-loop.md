@@ -43,7 +43,7 @@ design-loop --url http://localhost:3000 --command "npm run dev"
 
 起動すると、プレビューとClaude Codeのターミナルを統合したブラウザUIが開きます。プレビュー上の要素をクリックすると、コンポーネント名やファイルパス、スタイルなどのコンテキストがClaude Codeへの指示に含まれます。
 
-<video src="https://github.com/user-attachments/assets/02cf182e-9d43-488f-ac57-787dbb228d9e" controls muted loop playsinline width="100%"></video>
+<video src="/wp-content/uploads/2026/02/design-loop.mp4" controls muted loop playsinline width="100%"></video>
 
 ## Design Mode
 
