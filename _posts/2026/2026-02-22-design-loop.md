@@ -45,6 +45,49 @@ design-loop --url http://localhost:3000 --command "npm run dev"
 
 <video src="https://github.com/user-attachments/assets/02cf182e-9d43-488f-ac57-787dbb228d9e" controls muted loop playsinline width="100%"></video>
 
+## Design Mode
+
+v1.3.0で、ブラウザ上でページを直接編集できるDesign Modeを追加しました。
+
+<video src="/wp-content/uploads/2026/02/design-loop-design-mode.mp4" controls muted loop playsinline width="100%"></video>
+
+要素をクリックして「どこを変えたい」と伝えるだけでなく、テキストを直接書き換えたり、要素をドラッグ&ドロップで並べ替えたりできます。変更はログとして蓄積され、「Apply Changes」ボタンでまとめてClaude Codeに送信します。Claude Codeが変更内容を解釈し、実際のソースコードに反映します。
+
+- テキスト編集: 見出し・段落・ボタンなどのテキストをクリックして直接編集（IME対応）
+- ドラッグ&ドロップ: 要素を親コンテナ内でドラッグして並び替え
+- アンドゥ: Cmd+Z / Ctrl+Zで変更を取り消し
+
+要素の選択モード（Select Element）とDesign Modeは排他的で、同時には使えません。選択モードは「Claude Codeに何を変えるか伝える」ためのもので、Design Modeは「自分で変更してClaude Codeにコードへ反映させる」ためのものです。
+
+### Design Modeのアーキテクチャ
+
+GUIでの変更をどうやってClaude Codeに伝えるかが設計上のポイントです。Design Modeでは、変更を構造化されたコマンドとして蓄積し、バッチでClaude Codeに送る方式を採用しています。
+
+変更の種類は`text-edit`（テキスト書き換え）と`move`（要素の移動）の2つです。iframe内の注入スクリプトが変更を検出すると、`postMessage`で親フレームに通知します。
+
+```typescript
+// テキスト編集の変更
+{ type: "text-edit", selector: "h1.title", before: "旧タイトル", after: "新タイトル" }
+// 要素の移動
+{ type: "move", selector: ".card", oldIndex: 2, newIndex: 0 }
+```
+
+「Apply Changes」を押すと、蓄積された変更に正規化処理が走ります。同じ要素への複数回の編集は最初のbeforeと最後のafterに圧縮され、元の位置に戻った移動は削除されます。正規化後、変更をテキストにフォーマットしてClaude Codeに送信します。
+
+```
+[Design Mode Changes]
+1. Text edited
+   selector: h1.title (React: Header - src/components/Header.tsx:12)
+   before: "旧タイトル"
+   after: "新タイトル"
+2. Element reordered
+   selector: .card (React: ProductCard)
+   moved from: .grid, index 2
+   moved to: .grid, index 0
+```
+
+このテキストはBracketed Paste（`\x1b[200~...\x1b[201~`）でPTYに書き込みます。Claude Code TUIはBracketed Pasteを受け取ると自動的にコンテキストを折り畳んで表示するため、ターミナル上では長いコンテキストが邪魔になりません。その後にユーザーの指示テキストとEnterキーを送信することで、Claude Codeが変更内容を解釈してソースコードを書き換えます。
+
 ## 作った背景
 
 Claude CodeでWebサイトやアプリの見た目を調整するとき、次のような作業フローを繰り返します。
@@ -198,7 +241,7 @@ design-loopは逆で「プレビューが主体で、Claude Codeのプロンプ�
 
 非エンジニアがAIツールを使っている様子を見ていると、複数のウィンドウやアプリを行き来すると混乱する人がとても多いです。SaaSの画面のように1つの画面で完結することに慣れていると、ファイラーやターミナルなど知らないものが同時に出てくると難しく感じます。プレビューとターミナルを1つの画面で見られること自体に価値があると、作っていて感じました。
 
-Claude Code DesktopもCoworkやPreviewで同じ方向へ進んでいます。[Pencil](https://www.pencil.dev/)のようなデザインとコード生成を統合するツールも登場しており、こうした統合ツールは今後増えていくのではないかと考えています。
+Claude Code DesktopもCoworkやPreviewで同じ方向へ進んでいます。[Pencil](https://www.pencil.dev/)や[Layrr](https://www.layrr.dev/)のようなデザインとコード生成を統合するツールも登場しており、こうした統合ツールは今後増えていくのではないかと考えています。
 
 作ってみて、Bun.Terminalとghostty-webの組み合わせでClaude CodeのUIをブラウザに持ってくるのは意外と簡単にできることがわかりました。PTYの出力をWebSocketで流してターミナルエミュレータに表示するだけなので、Claude Code向けのカスタムUIを作りたい場合の参考になれば幸いです。
 
