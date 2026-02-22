@@ -1,5 +1,5 @@
 ---
-title: "design-loop: Claude Code用のブラウザベースのビジュアル編集ツール"
+title: "design-loop: Claude Codeを使ったブラウザベースのビジュアル編集ツール"
 author: azu
 layout: post
 render_with_liquid: false
@@ -13,7 +13,7 @@ tags:
 
 ---
 
-Claude Code用のブラウザベースのフロントエンドとして、[design-loop](https://github.com/azu/design-loop)を作りました。
+Claude Codeを使ったブラウザベースのビジュアル編集ツールとして、[design-loop](https://github.com/azu/design-loop)を作りました。
 
 - GitHub: <https://github.com/azu/design-loop>
 
