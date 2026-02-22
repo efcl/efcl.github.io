@@ -176,7 +176,7 @@ export async function getInjectScript(): Promise<string> {
 
 Bunはランタイムとバンドラーが統合されているため、このようなツール開発に向いています。TypeScriptをそのまま実行でき、必要なら`Bun.Transpiler`でブラウザ向けのJSを生成でき、PTYやHTTPサーバーも標準APIとして使えます。
 
-同じ方向として、[Electrobun v1](https://blackboard.sh/blog/electrobun-v1/)もBunをベースにしたデスクトップアプリフレームワークです。ElectronのようにWebViewとバックエンドを統合しますが、Bunのエコシステムに乗ることで「外部ツールなしにTypeScriptとネイティブAPIを組み合わせられる」点が共通しています。
+同じ方向として、[Electrobun v1](https://blackboard.sh/blog/electrobun-v1/)もBunをベースにしたデスクトップアプリフレームワークです。ElectronのようにWebViewとバックエンドを統合しますが、Bunのエコシステムに乗ることで「外部ツールなしにTypeScriptとネイティブAPIを組み合わせられる」点が共通しています。こういうツールを作るのに便利かもしれません（今回は使っていません）。
 
 ### PTYとGhostty Webでブラウザにターミナルを統合
 
