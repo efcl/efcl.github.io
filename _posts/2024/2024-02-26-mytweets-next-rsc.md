@@ -413,6 +413,7 @@ Page Router の場合は、最初はそこまでなんでもできるという�
 具体的には次のような`TransitionContextProvider`という Provider のラッパーコンポーネントを用意してる。
 このコンポーネントは RSC からもインポートして埋め込むことができる。
 
+{% raw %}
 ```tsx
 "use client";
 import { createContext, ReactNode, useContext, useState } from "react";
@@ -445,6 +446,7 @@ export const useTransitionContext = () => {
   return context;
 };
 ```
+{% endraw %}
 
 - Server では引数に setState を渡すということができないので、初期値を持たない Context Provider を作るにはラッパーが必要となる
 - RSC では、Client Component の境界のためにこういったラッパーコンポーネントを作るケースが結構ある
