@@ -52,7 +52,7 @@ DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://git
 
 そのため、[pinact](https://github.com/suzuki-shunsuke/pinact)のDockerfile版をイメージして、[craneライブラリ](https://github.com/google/go-containerregistry)（Googleが管理、メンテナンスが活発）をベースに`dockerfile-pin`として自作しました。
 
-作った後に気づきましたが、[frizbee](https://github.com/stacklok/frizbee)がGitHub ActionsとDockerの両方に対応した近いツールとして存在しています。dockerfile-pinはdigestの付与に加えて、CIで新しくdigestなしのイメージが入るのを防ぐ`check`コマンドがあるので、目的が少し異なります。
+作った後に気づきましたが、[frizbee](https://github.com/stacklok/frizbee)がGitHub ActionsとDockerの両方に対応した近いツールとして存在しています。dockerfile-pinはdigestの付与に加えて、CIで新しくdigestなしのイメージが入るのを防ぐ`check`コマンドがあるので、目的が少し異なる気がします。(おそらく似たことはできるはず?)
 
 ## 使い方
 
