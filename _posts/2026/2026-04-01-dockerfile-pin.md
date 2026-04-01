@@ -2,7 +2,7 @@
 title: "dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った"
 author: azu
 layout: post
-date: 2026-04-01T20:00
+date: 2026-04-01T20:00+09:00
 category: Security
 tags:
     - Docker
