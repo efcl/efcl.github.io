@@ -58,8 +58,10 @@ DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://git
 
 ### インストール
 
+📝 主にCIとかで使いたい目的で作ったので[aqua](https://aquaproj.github.io/)などのチェックサムをチェックしてインストールできる方法を推奨しています。
+
 ```bash
-# Homebrew/curl
+# curl
 curl -sL "https://github.com/azu/dockerfile-pin/releases/latest/download/dockerfile-pin_darwin_arm64.tar.gz" | tar xz
 sudo mv dockerfile-pin /usr/local/bin/
 
@@ -72,7 +74,8 @@ go install github.com/azu/dockerfile-pin@latest
 
 ### `run` コマンド: digestの追加
 
-`run`コマンドで、DockerfileやComposeファイルのイメージ参照にSHA256 digestを追加します。
+`run --write`コマンドで、DockerfileやComposeファイルのイメージ参照にSHA256 digestを追加します。
+デフォルトではDry-Runになっているので `--write` フラグを使うと実際にファイルを書き換えます。
 
 ```bash
 # ドライラン（プレビュー）
@@ -168,12 +171,12 @@ curlでインストールする場合:
 - run: dockerfile-pin check
 ```
 
-aquaでインストールする場合:
+aqua経由で利用する場合は、`aqua.yaml`に `dockerfile-pin`を入れてインストールします。
 
 ```yaml
-- uses: aquaproj/aqua-installer@v3
+- uses: aquaproj/aqua-installer@d1fe50798dbadd4eb5b98957290ca175f6b4870f # v4.0.2
   with:
-    aqua_version: v2.45.0
+    aqua_version: v2.57.1
 - run: dockerfile-pin check
 ```
 
