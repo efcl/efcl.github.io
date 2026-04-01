@@ -153,7 +153,9 @@ SKIP  Dockerfile:5    FROM scratch                     scratch image
 
 ### CI/CDでの利用
 
-GitHub Actionsでの利用例です。
+GitHub Actionsでの利用例です。[aqua](https://aquaproj.github.io/)を使うと、dockerfile-pin自体のチェックサムを検証してインストールできます。
+
+なお、dockerfile-pinのリリースでは[GitHub Releases Immutability](https://github.blog/changelog/2025-08-26-releases-now-support-immutability-in-public-preview/)を有効にしています。
 
 ```yaml
 - uses: aquaproj/aqua-installer@v3
