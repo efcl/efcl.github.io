@@ -198,7 +198,5 @@ npmのlockfileやGitHub ActionsのSHA pinと同様に、Dockerfileでも`@sha256
 ## 参考
 
 - [azu/dockerfile-pin](https://github.com/azu/dockerfile-pin)
-- [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
-- [Immutable tags - Docker Hub](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)
-- [pinact - GitHub Actions版SHA pin](https://github.com/suzuki-shunsuke/pinact)
-- [crane (go-containerregistry)](https://github.com/google/go-containerregistry)
+- [suzuki-shunsuke/pinact](https://github.com/suzuki-shunsuke/pinact)
+- [google/go-containerregistry](https://github.com/google/go-containerregistry)
