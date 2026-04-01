@@ -86,6 +86,12 @@ dockerfile-pin run -f Dockerfile --write
 
 # globパターンで複数ファイルを対象にする
 dockerfile-pin run --glob '**/{Dockerfile,docker-compose.yml}' --write
+
+# 引数なしだと **/{Dockerfile,Dockerfile.*,docker-compose*.yml,docker-compose*.yaml,compose.yml,compose.yaml} を対象にします
+# ドライラン
+dockerfile-pin run
+# Docker関係のファイルを自動的に書き換える
+dockerfile-pin run --write
 ```
 
 たとえば、次のようにタグのみの指定にdigestが追加されます。
