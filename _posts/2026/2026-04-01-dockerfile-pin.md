@@ -1,0 +1,203 @@
+---
+title: "dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った"
+author: azu
+layout: post
+date: 2026-04-01T20:00
+category: Security
+tags:
+    - Docker
+    - Security
+    - CLI
+
+---
+
+DockerfileやComposeファイルのイメージ参照に`@sha256:<digest>`を自動で追加するCLIツール [dockerfile-pin](https://github.com/azu/dockerfile-pin) を作りました。
+
+- GitHub: [azu/dockerfile-pin](https://github.com/azu/dockerfile-pin)
+
+## なぜ作ったか
+
+trivyなどのセキュリティスキャンツールの事件を見ていると、次に狙われるのはDocker Hubかなと思ったのがきっかけです。
+これはただの直感的なものですが、需給のバランスの悪さ（攻撃の容易さに対して防御が薄い）と、侵入された場合に本番環境に直接影響する可能性が高い点が気になっていました。
+
+Dockerイメージのタグ（例：`node:20`）はデフォルトで可変（mutable）です。同じタグ名で中身を上書きできるため、悪意ある第三者がレジストリへのアクセスを得た場合、既存タグに対して改竄されたイメージをpushできます。
+
+- [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
+
+ユーザーはDockerイメージに対してなんとなくの安心感を持っていますが、レジストリは別に安全ではありません。
+Docker Hubには[Immutable tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)という機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
+
+`@sha256:<digest>`を付与することでイメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄の検知が可能になります。
+
+```dockerfile
+# Before: タグのみ（可変）
+FROM node:20.11.1
+
+# After: タグ + digest（不変）
+FROM node:20.11.1@sha256:e06aae17c40c7a6b5296ca6f942a02e6737ae61bbbf3e2158624bb0f887991b5
+```
+
+タグとdigestを両方残す形式が推奨されます。タグは人間の可読性のため、digestは不変性の保証のために必要です。Renovate/Dependabotもこの形式をパースできます。
+
+npmの場合はlockfileでパッケージのintegrity(ハッシュ)を固定しますが、Dockerfileでは明示的にSHA256 digestを指定しないと同じことができません。これはGitHub Actionsの`uses:`においてコミットSHAでpin留めしていないのと同じ状態であり、サプライチェーン攻撃に対して脆弱な構成です。
+
+GitHub Actionsについては[pinact](https://github.com/suzuki-shunsuke/pinact)で自動化できますが、DockerfileのFROM行については同様のシンプルなツールがありませんでした。
+
+### 既存ツールが不十分だった
+
+DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://github.com/Jille/dockpin)や[docker-lock](https://github.com/michaelperel/docker-lock)があります。しかし、dockpinは2023年以降メンテナンスが停滞しており、docker-lockはREADMEに「動作を期待すべきでない」と記載されています。
+
+また、[hadolint](https://github.com/hadolint/hadolint)にはdigest pin強制ルールがなく（[hadolint#773](https://github.com/hadolint/hadolint/issues/773)、2022年2月〜OPEN）、プラグイン機構もありません（[hadolint#1001](https://github.com/hadolint/hadolint/issues/1001)）。CIでdigestのpin漏れをチェックできるlintツールが存在しない状態でした。
+
+そのため、[craneライブラリ](https://github.com/google/go-containerregistry)（Googleが管理、メンテナンスが活発）をベースに`dockerfile-pin`として自作しました。
+
+## 使い方
+
+### インストール
+
+```bash
+# Homebrew/curl
+curl -sL "https://github.com/azu/dockerfile-pin/releases/latest/download/dockerfile-pin_darwin_arm64.tar.gz" | tar xz
+sudo mv dockerfile-pin /usr/local/bin/
+
+# aqua
+aqua generate -i azu/dockerfile-pin
+
+# Go
+go install github.com/azu/dockerfile-pin@latest
+```
+
+### `run` コマンド: digestの追加
+
+`run`コマンドで、DockerfileやComposeファイルのイメージ参照にSHA256 digestを追加します。
+
+```bash
+# ドライラン（プレビュー）
+dockerfile-pin run -f Dockerfile
+
+# 実際にファイルを書き換える
+dockerfile-pin run -f Dockerfile --write
+
+# globパターンで複数ファイルを対象にする
+dockerfile-pin run --glob '**/{Dockerfile,docker-compose.yml}' --write
+```
+
+たとえば、次のようにタグのみの指定にdigestが追加されます。
+
+**変換前:**
+
+```dockerfile
+FROM node:20.11.1
+FROM python:3.12 AS builder
+```
+
+**変換後:**
+
+```dockerfile
+FROM node:20.11.1@sha256:e06aae17c40c7a6b5296ca6f942a02e6737ae61bbbf3e2158624bb0f887991b5
+FROM python:3.12@sha256:... AS builder
+```
+
+すでにdigestが付いているイメージはスキップされます。`--update`オプションをつけると既存のdigestも更新します。
+
+### `check` コマンド: CIでのdigest検証
+
+CIで使うことを想定した`check`コマンドもあります。チェックは2段階です。
+
+1. **構文チェック**: FROM行に`@sha256:`が含まれているか
+2. **存在チェック**: 記載されたdigestがレジストリに実際に存在するか（HEADリクエストで検証）
+
+存在チェックにより、typoや削除済みdigestが`docker build`時まで発覚しない問題を防げます。
+また、HEADリクエストを使うことでDocker Hubのpull rate limitを消費しません。
+
+```bash
+# すべてのDockerfileをチェック（git ls-filesから自動検出）
+dockerfile-pin check
+
+# 構文チェックのみ（レジストリへのアクセスなし）
+dockerfile-pin check --syntax-only
+
+# JSON形式で出力
+dockerfile-pin check --format json
+
+# 特定のイメージを無視
+dockerfile-pin check --ignore-images scratch
+```
+
+出力例:
+
+```
+FAIL  Dockerfile:1    FROM node:20.11.1                missing digest
+OK    Dockerfile:3    FROM python:3.12@sha256:abc123...
+SKIP  Dockerfile:5    FROM scratch                     scratch image
+```
+
+### 対応しているパターン
+
+**Dockerfile:**
+
+- `FROM image:tag` — digestを追加
+- `FROM image:tag AS stagename` — `AS`付きも対応
+- `FROM --platform=linux/amd64 image:tag` — `--platform`付きも対応
+- `ARG VERSION=1.0` + `FROM image:${VERSION}` — ARGにデフォルト値がある場合は展開して解決
+- `ARG BASE_IMAGE` + `FROM ${BASE_IMAGE}` — デフォルト値がない場合はwarningでスキップ
+- `FROM scratch` — スキップ
+- `FROM <stagename>` — マルチステージビルドの参照はスキップ
+- プライベートレジストリ（ghcr.io, GCR, ECRなど）にも対応
+
+**docker-compose.yml:**
+
+- `image: node:20` — digestを追加
+- `build:`ディレクティブがあるサービス — スキップ
+
+### CI/CDでの利用
+
+GitHub Actionsでの利用例です。
+
+```yaml
+- uses: aquaproj/aqua-installer@v3
+  with:
+    aqua_version: v2.45.0
+- run: dockerfile-pin check
+```
+
+CIで`dockerfile-pin check`を実行することで、digestが付いていないイメージをプルリクエスト時に検出できます。
+
+### Renovateとの併用
+
+初回のdigest付与は`dockerfile-pin run --write`で行い、その後の継続的な更新は[Renovate](https://docs.renovatebot.com/)に委譲します。
+
+Renovateの`docker:pinDigests`プリセットを有効にすると、`image:tag@sha256:digest`形式のdigestを自動更新するPRを生成してくれます。
+
+```json
+{
+  "extends": ["config:best-practices"]
+}
+```
+
+`config:best-practices`に`docker:pinDigests`が含まれています。digest更新のみ自動マージしたい場合は`default:automergeDigest`も利用できます。
+
+運用の流れとしては次のようになります。
+
+1. `dockerfile-pin run --write`で既存ファイルにdigestを一括付与
+2. CIに`dockerfile-pin check`を組み込み、digest未指定のFROM行がマージされないようにする
+3. Renovateの`docker:pinDigests`で継続的にdigestを最新に保つ
+
+## まとめ
+
+Dockerイメージのタグはデフォルトでmutableなので、タグだけの指定ではサプライチェーン攻撃のリスクがあります。
+npmのlockfileやGitHub ActionsのSHA pinと同様に、Dockerfileでも`@sha256:<digest>`でイメージを固定すべきです。
+
+既存ツール（dockpin、docker-lock）はメンテナンスが停滞しており、hadolintにもdigest pinのルールがないため、シンプルにpin付与とCIチェックを行う[dockerfile-pin](https://github.com/azu/dockerfile-pin)を作りました。
+
+- `dockerfile-pin run --write` で既存ファイルにdigestを一括追加
+- `dockerfile-pin check` でCIでdigestの付け忘れを検出
+- Renovateと組み合わせて継続的にdigestを最新に保つ
+
+## 参考
+
+- [azu/dockerfile-pin](https://github.com/azu/dockerfile-pin)
+- [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
+- [Immutable tags - Docker Hub](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)
+- [pinact - GitHub Actions版SHA pin](https://github.com/suzuki-shunsuke/pinact)
+- [crane (go-containerregistry)](https://github.com/google/go-containerregistry)
