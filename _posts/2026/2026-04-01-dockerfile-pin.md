@@ -25,10 +25,10 @@ Dockerイメージのタグ（例：`node:20`）はデフォルトで可変（mu
 - [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
 
 Docker Hubといったレジストリは別に安全ではありません。
-npmのように[トークンの制限が厳しくなっていたり](https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/)、デフォルトでタグがimmutableな場所であっても、axiosのように問題が起きることはあります。一方で、npmなどはロックファイルを利用するのが一般的なので、パッケージのintegrityがハッシュで固定されています。
+npmのように[トークンの制限が厳しくなっていたり](https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/)、デフォルトでタグがimmutableな場所であっても、[axiosのように問題が起きる](https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan)ことはあります。
 Docker Hubには[Immutable tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)という機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
 
-`@sha256:<digest>`を付与することでイメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄の検知が可能になります。
+`@sha256:<digest>`を付与することでイメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄の検知が可能になります。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。
 
 ```dockerfile
 # Before: タグのみ（可変）
@@ -40,7 +40,7 @@ FROM node:20.11.1@sha256:e06aae17c40c7a6b5296ca6f942a02e6737ae61bbbf3e2158624bb0
 
 タグとdigestを両方残す形式が推奨されます。タグは人間の可読性のため、digestは不変性の保証のために必要です。Renovate/Dependabotもこの形式をパースできます。
 
-Dockerfileでは明示的にSHA256 digestを指定しないとnpmのlockfileのようなハッシュ固定ができません。これはGitHub Actionsの`uses:`においてコミットSHAでpin留めしていないのと同じ状態であり、サプライチェーン攻撃に対して脆弱な構成です。
+Dockerfileでは明示的にSHA256 digestを指定しないとハッシュ固定ができません。これはGitHub Actionsの`uses:`においてコミットSHAでpin留めしていないのと同じ状態であり、サプライチェーン攻撃に対して脆弱な構成です。
 
 GitHub Actionsについては[pinact](https://github.com/suzuki-shunsuke/pinact)で自動化できますが、DockerfileのFROM行については同様のシンプルなツールがありませんでした。
 
