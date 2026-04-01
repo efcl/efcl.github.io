@@ -24,11 +24,11 @@ Dockerイメージのタグ（例：`node:20`）はデフォルトで可変（mu
 
 - [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
 
-Docker Hubといったレジストリは別に安全ではありません。
+Docker Hubなどのレジストリが安全とは限りません。
 npmのように[トークンの制限が厳しくなっていたり](https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/)、デフォルトでタグがimmutableな場所であっても、[axiosのように問題が起きる](https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan)ことはあります。
 Docker Hubには[Immutable tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)という機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
 
-`@sha256:<digest>`を付与することでイメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄の検知が可能になります。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。
+`@sha256:<digest>`を付与することで、イメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄を検知できます。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。
 
 ```dockerfile
 # Before: タグのみ（可変）
@@ -38,9 +38,9 @@ FROM node:20.11.1
 FROM node:20.11.1@sha256:e06aae17c40c7a6b5296ca6f942a02e6737ae61bbbf3e2158624bb0f887991b5
 ```
 
-タグとdigestを両方残す形式が推奨されます。タグは人間の可読性のため、digestは不変性の保証のために必要です。[Renovate](https://docs.renovatebot.com/docker/)はこの形式でタグとdigestの両方を更新できます。Dependabotもdigestが既に付いている場合は[タグとdigestを同時に更新](https://github.com/dependabot/dependabot-core/issues/14065)できます。
+タグとdigestを両方残す形式にしておくと便利です。タグは人間が読むため、digestは不変性の保証のために残します。[Renovate](https://docs.renovatebot.com/docker/)はこの形式でタグとdigestの両方を更新できます。Dependabotもdigestが既に付いている場合は[タグとdigestを同時に更新](https://github.com/dependabot/dependabot-core/issues/14065)できます。
 
-Dockerfileでは明示的にSHA256 digestを指定しないとハッシュ固定ができません。これはGitHub Actionsの`uses:`においてコミットSHAでpin留めしていないのと同じ状態であり、サプライチェーン攻撃に対して脆弱な構成です。
+Dockerfileでは明示的にSHA256 digestを指定しないとハッシュ固定ができません。これはGitHub Actionsの`uses:`をコミットSHAでpin留めしていないのと同じ状態で、サプライチェーン攻撃のリスクがあります。
 
 GitHub Actionsについては[pinact](https://github.com/suzuki-shunsuke/pinact)で自動化できますが、DockerfileのFROM行については同様のシンプルなツールがありませんでした。
 
@@ -48,7 +48,7 @@ GitHub Actionsについては[pinact](https://github.com/suzuki-shunsuke/pinact)
 
 DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://github.com/Jille/dockpin)や[docker-lock](https://github.com/michaelperel/docker-lock)があります。しかし、dockpinは2023年以降メンテナンスが停滞しており、docker-lockはREADMEに「動作を期待すべきでない」と記載されています。
 
-また、[hadolint](https://github.com/hadolint/hadolint)にはdigest pin強制ルールがなく（[hadolint#773](https://github.com/hadolint/hadolint/issues/773)、2022年2月〜OPEN）、プラグイン機構もありません（[hadolint#1001](https://github.com/hadolint/hadolint/issues/1001)）。CIでdigestのpin漏れをチェックできるlintツールが存在しない状態でした。
+また、[hadolint](https://github.com/hadolint/hadolint)にはdigest pin強制ルールがなく（[hadolint#773](https://github.com/hadolint/hadolint/issues/773)、2022年2月〜OPEN）、プラグイン機構もありません（[hadolint#1001](https://github.com/hadolint/hadolint/issues/1001)）。CIでdigestのpin漏れをチェックできるシンプルなlintツールが見当たりませんでした。
 
 そのため、[pinact](https://github.com/suzuki-shunsuke/pinact)のDockerfile版をイメージして、[craneライブラリ](https://github.com/google/go-containerregistry)（Googleが管理、メンテナンスが活発）をベースに`dockerfile-pin`として自作しました。
 
@@ -108,8 +108,8 @@ CIで使うことを想定した`check`コマンドもあります。チェッ�
 1. **構文チェック**: FROM行に`@sha256:`が含まれているか
 2. **存在チェック**: 記載されたdigestがレジストリに実際に存在するか（HEADリクエストで検証）
 
-存在チェックにより、typoや削除済みdigestが`docker build`時まで発覚しない問題を防げます。
-また、HEADリクエストを使うことでDocker Hubのpull rate limitを消費しません。
+存在チェックがあることで、typoや削除済みdigestが`docker build`時まで発覚しないという問題を防げます。
+HEADリクエストを使っているため、Docker Hubのpull rate limitを消費しません。
 
 ```bash
 # すべてのDockerfileをチェック（git ls-filesから自動検出）
