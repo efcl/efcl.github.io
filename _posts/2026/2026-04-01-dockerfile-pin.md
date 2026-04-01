@@ -46,11 +46,13 @@ GitHub Actionsについては[pinact](https://github.com/suzuki-shunsuke/pinact)
 
 ### 既存ツールが不十分だった
 
-DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://github.com/Jille/dockpin)や[docker-lock](https://github.com/michaelperel/docker-lock)があります。しかし、dockpinは2023年以降メンテナンスが停滞しており、docker-lockはREADMEに「動作を期待すべきでない」と記載されています。
+DockerfileのSHA pinを補助する既存ツールとして[dockpin](https://github.com/Jille/dockpin)がありますが、2023年以降メンテナンスが停滞しています。
 
 また、[hadolint](https://github.com/hadolint/hadolint)にはdigest pin強制ルールがなく（[hadolint#773](https://github.com/hadolint/hadolint/issues/773)、2022年2月〜OPEN）、プラグイン機構もありません（[hadolint#1001](https://github.com/hadolint/hadolint/issues/1001)）。CIでdigestのpin漏れをチェックできるシンプルなlintツールが見当たりませんでした。
 
 そのため、[pinact](https://github.com/suzuki-shunsuke/pinact)のDockerfile版をイメージして、[craneライブラリ](https://github.com/google/go-containerregistry)（Googleが管理、メンテナンスが活発）をベースに`dockerfile-pin`として自作しました。
+
+作った後に気づきましたが、[frizbee](https://github.com/stacklok/frizbee)がGitHub ActionsとDockerの両方に対応した近いツールとして存在しています。ただ、その分スコープが広く、Dockerfileに特化したシンプルなツールとしてはdockerfile-pinの方が扱いやすいと思います。
 
 ## 使い方
 
