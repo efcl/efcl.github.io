@@ -24,7 +24,7 @@ Dockerイメージのタグ（例：`node:20`）はデフォルトで可変（mu
 
 - [Can a Docker Hub tag have its content changed? - Docker Community Forums](https://forums.docker.com/t/can-a-docker-hub-tag-have-its-content-changed/139358)
 
-Docker Hubなどのレジストリが安全とは限りません。
+Docker Hubなどのレジストリは安全とは限りません。
 npmのように[トークンの制限が厳しくなっていたり](https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/)、デフォルトでタグがimmutableな場所であっても、[axiosのように問題が起きる](https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan)ことはあります。
 Docker Hubには[Immutable tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/)という機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
 
@@ -125,7 +125,7 @@ dockerfile-pin check --format json
 dockerfile-pin check --ignore-images scratch
 ```
 
-出力例:
+出力例は次のとおりです。
 
 ```
 FAIL  Dockerfile:1    FROM node:20.11.1                missing digest
@@ -189,7 +189,7 @@ Renovateの`docker:pinDigests`プリセットを有効にすると、`image:tag@
 Dockerイメージのタグはデフォルトでmutableなので、タグだけの指定ではサプライチェーン攻撃のリスクがあります。
 npmのlockfileやGitHub ActionsのSHA pinと同様に、Dockerfileでも`@sha256:<digest>`でイメージを固定した方が良いでしょう。
 
-既存ツール（dockpin、docker-lock）はメンテナンスが停滞しており、hadolintにもdigest pinのルールがないため、シンプルにpin付与とCIチェックを行う[dockerfile-pin](https://github.com/azu/dockerfile-pin)を作りました。
+既存ツール（dockpin、docker-lock）はメンテナンスが停滞しており、hadolintにもdigest pinのルールがありません。そのため、シンプルにpin付与とCIチェックを行う[dockerfile-pin](https://github.com/azu/dockerfile-pin)を作りました。
 
 - `dockerfile-pin run --write` で既存ファイルにdigestを一括追加
 - `dockerfile-pin check` でCIでdigestの付け忘れを検出
