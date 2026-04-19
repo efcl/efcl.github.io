@@ -2,7 +2,7 @@
 title: "SecureClipboard: クリップボードに入った機密情報を自動でマスクするmacOSアプリ"
 author: azu
 layout: post
-date: 2026-04-19T12:00
+date: 2026-04-19T11:00+09:00
 category: macOS
 tags:
     - macOS
