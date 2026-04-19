@@ -155,6 +155,9 @@ Unix Domain Socket経由で常駐アプリにテキストを送り、アプリ�
 secretlintのルールを指定します。
 デフォルトの`@secretlint/secretlint-rule-preset-recommend`にはAWS、GitHub、Slack、GCP、Azure、npm、Dockerなどの[検出ルール](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-preset-recommend#rules)が含まれています。
 
+preset内の一部のルールを無効化することはできますが、基本的にはデフォルトのままで問題ないと思います。
+SecureClipboardはsecretlintをpre-buildされたバイナリとして同梱しているため、独自のルールを読み込ませるような仕組みは用意していません。
+
 ### patterns
 
 カスタムの正規表現パターンを定義できます。`action`は次の2種類があります。
