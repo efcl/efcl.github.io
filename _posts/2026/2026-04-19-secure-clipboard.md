@@ -84,7 +84,6 @@ Slack Token is *********************************************************
 ![画像マスキング After](/wp-content/uploads/2026/04/secure-clipboard-image-after.png)
 
 画像全体にぼかしをかけてしまうと使い物にならないため、Vision frameworkで取得したテキストの矩形位置を使って、シークレットがあった部分だけをマスクするようになっています。
-これは [v1.1.0](https://github.com/secretlint/secure-clipboard/releases/tag/v1.1.0) で改善した部分で、それ以前は粗めに領域を取っていましたが、今は実際にシークレットがマッチした領域だけが自然にマスクされます。
 
 ## "Copy Original Text"とConcealedClipboard
 
