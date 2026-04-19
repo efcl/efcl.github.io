@@ -216,6 +216,9 @@ SecureClipboardは、クリップボードに入った機密情報をsecretlint�
 ただ、サービスから発行されたAPIキーを1Passwordに入れる場面など、どうしても一度クリップボードを経由する瞬間があります。
 クリップボード自体はデフォルトでセキュアな設計とはいえないので、SecureClipboardはこの隙間を補う仕組みとして使えます。
 
+また、カスタムパターンを使えば、社内のコードネームのようなスクリーンショットにうっかり紛れ込みやすい文字列を自動的にマスクするレイヤーとしても利用できます。
+確実なブロックはVision frameworkのOCR精度に依存するので100%ではありませんが、検出時に通知が出るので気づきやすくなり、うっかり流出する確率を減らせます。
+
 ---
 
 - GitHub: [secretlint/secure-clipboard](https://github.com/secretlint/secure-clipboard)
