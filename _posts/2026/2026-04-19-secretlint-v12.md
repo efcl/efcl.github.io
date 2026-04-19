@@ -2,7 +2,7 @@
 title: "Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応"
 author: azu
 layout: post
-date : 2026-04-19T14:00+09:00
+date : 2026-04-19T22:00+09:00
 category: secretlint
 tags:
     - secretlint
