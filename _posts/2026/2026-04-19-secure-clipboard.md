@@ -212,7 +212,7 @@ secretlint本体はNode.js製のCLIですが、SecureClipboardは[secretlintの�
 SecureClipboardは、クリップボードに入った機密情報をsecretlintで検出して自動的にマスクするmacOSアプリです。
 テキストだけでなく画像にも対応していて、スクリーンショットに写り込んだトークンなどもVision frameworkでOCRしてマスクできます。
 
-クリップボードを介した意図しないシークレットの流出を防ぎたい場合に使ってみてください。
+クリップボード経由のうっかりミスをデフォルトで防ぎたいときに使ってみてください。
 
 ---
 
