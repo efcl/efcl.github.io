@@ -24,7 +24,7 @@ tags:
 
 ## なぜ作ったか
 
-API Tokenをコピーして`.env`に貼り付けたあと、そのトークンがクリップボードに残ったままになることがあります。
+API Tokenをコピーして`.env`へ貼り付けたあと、そのトークンがクリップボード上に残り続けることがあります。
 そのまま別のウィンドウで⌘+Vしてしまい、Slackのメッセージ欄やLinearのIssueタイトル、ブラウザの検索バーなどに意図せずペーストしてしまう事故が起きやすいです。
 ペーストするまでクリップボードに何が入っているかは目に見えないので、気づきにくいというのも問題です。
 
@@ -39,8 +39,8 @@ SecureClipboardはコピーされた瞬間にマスクするため、誤って�
 
 SecureClipboardの主な機能は次のとおりです。
 
-- 500ms間隔でクリップボードの変更を監視
-- テキスト：secretlintでスキャンして、検出した機密情報を`***`に置換
+- クリップボードを監視して、自動的にマスキング
+- テキスト：[secretlint](https://github.com/secretlint/secretlint)でスキャンして、検出した機密情報を`***`に置換
 - 画像：Vision frameworkでOCRして、検出した領域だけをcrystallize + blurでマスク
 - 検出時はメニューバーアイコンが赤くなり、macOSの通知を表示
 - "Copy Original Text"で生の値を取得（90秒後に自動消去）
@@ -68,9 +68,9 @@ rm -f /usr/local/bin/secure-pbpaste /usr/local/bin/secure-pbcopy
 
 ## テキストへのマスキング
 
-クリップボードに入ったテキストにシークレットが含まれていれば、その部分を`***`に置き換えます。
+クリップボード上のテキストにシークレットが含まれていれば、その部分を`***`で置き換えます。
 
-たとえばSlackトークンを含む次のようなテキストをコピーすると、
+たとえばSlackトークンを含む次のようなテキストをコピーすると、このようになります。
 
 <!-- secretlint-disable -->
 ```
@@ -113,7 +113,7 @@ Slack Token is *********************************************************
 
 このとき、クリップボードには[`org.nspasteboard.ConcealedType`](https://nspasteboard.org/)というUTIが付与されます。
 これはNSPasteboardの慣習で、「このクリップボードの内容は機密情報なので、履歴に残さないでほしい」という意思表示です。
-[v1.4.0](https://github.com/secretlint/secure-clipboard/releases/tag/v1.4.0)からこのUTIに対応していて、AlfredやGrammarlyなどnspasteboard.orgの規約に従っているクリップボードマネージャーは、この値を履歴に保存しないようになります。
+[v1.4.0](https://github.com/secretlint/secure-clipboard/releases/tag/v1.4.0)からこのUTIに対応しており、AlfredやGrammarlyなどnspasteboard.orgの規約に従っているクリップボードマネージャーは、この値を履歴へ保存しないようになります。
 
 さらに90秒後にクリップボードから自動で消えるため、生の値が手元に残り続けることもありません。
 
@@ -126,8 +126,8 @@ secure-pbpaste              # クリップボードのテキストをマスク�
 echo "text" | secure-pbcopy # テキストをマスクしてからクリップボードにコピー
 ```
 
-`secure-pbcopy`の特徴として、生のテキストを一度もクリップボードに触れさせない設計になっています。
-Unix Domain Socket経由で常駐アプリにテキストを送り、アプリ側でスキャン・マスクしてからクリップボードに書き込みます。
+`secure-pbcopy`は、生のテキストを一度もクリップボードへ触れさせない設計になっています。
+Unix Domain Socket経由で常駐アプリへテキストを送り、アプリ側でスキャン・マスクしてからクリップボードへ書き込みます。
 通常の`pbcopy`だと、書き込んだ瞬間に他のクリップボードマネージャーが拾ってしまう可能性がありますが、`secure-pbcopy`ならその心配がありません。
 
 メニューバーから"Install CLI Tools"を選ぶと、`/usr/local/bin/`にsymlinkが作成されます。
@@ -153,9 +153,9 @@ Unix Domain Socket経由で常駐アプリにテキストを送り、アプリ�
 ### rules
 
 secretlintのルールを指定します。
-デフォルトの`@secretlint/secretlint-rule-preset-recommend`にはAWS、GitHub、Slack、GCP、Azure、npm、Dockerなどの[検出ルール](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-preset-recommend#rules)が含まれています。
+デフォルトの`@secretlint/secretlint-rule-preset-recommend`には、AWSやGitHub、Slack、GCPなどの[検出ルール](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-preset-recommend#rules)が含まれています。
 
-preset内の一部のルールを無効化することはできますが、基本的にはデフォルトのままで問題ないと思います。
+preset内の一部のルールを無効化できますが、基本的にはデフォルトのままで問題ありません。
 SecureClipboardはsecretlintをpre-buildされたバイナリとして同梱しているため、独自のルールを読み込ませるような仕組みは用意していません。
 
 ### patterns
@@ -192,7 +192,8 @@ Bundle Identifierを指定して、特定のアプリからのコピーをスキ
 
 ## アーキテクチャ
 
-SecureClipboardの主要なコンポーネントは次のとおりです。
+SecureClipboardはSwiftで書かれたネイティブのmacOSアプリです。
+主要なコンポーネントは次のとおりです。
 
 - `ClipboardMonitor` … `NSPasteboard`をポーリングしてクリップボードの変更を検出
 - `SecretScanner` … secretlintのバイナリをsubprocessで呼び出してスキャン
