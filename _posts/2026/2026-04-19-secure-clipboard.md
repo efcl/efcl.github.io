@@ -101,7 +101,8 @@ Slack Token is *********************************************************
 
 ![画像マスキング After](/wp-content/uploads/2026/04/secure-clipboard-image-after.png)
 
-画像全体にぼかしをかけてしまうと使い物にならないため、Vision frameworkで取得したテキストの矩形位置を使って、シークレットがあった部分だけをマスクするようになっています。
+デフォルトでは、Vision frameworkで取得したテキストの矩形位置を使って、シークレットがあった部分だけをマスクするようになっています。
+カスタムパターンで`"action": "discard"`を指定した場合は、画像全体を警告画像に置き換えるといった挙動も選べます。
 
 ## "Copy Original Text"とConcealedClipboard
 
