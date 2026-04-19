@@ -15,8 +15,13 @@ tags:
 
 - [Release v12.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v12.0.0)
 
-このバージョンでは、10個のサービスに対応する検出ルールを`@secretlint/secretlint-rule-preset-recommend`に追加しました。
-あわせてpresetのパッケージサイズを約80%削減しています。
+Secretlintは、ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけて報告するLintツールです。
+
+- [secretlint/secretlint: Pluggable linting tool to prevent committing credential.](https://github.com/secretlint/secretlint)
+
+このバージョンでは、10個のサービスに対応する検出ルールを追加しました。
+対応サービスは、Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaです。
+あわせて、`@secretlint/secretlint-rule-preset-recommend`のパッケージサイズを約80%削減しています。
 
 ## 新しく追加された検出ルール
 
@@ -52,7 +57,10 @@ p12ファイルの判定に必要なのはMACの検証だけなので、パー�
 
 - [Replace node-forge with native PKCS#12 MAC verification by azu · Pull Request #1497](https://github.com/secretlint/secretlint/pull/1497)
 
-Web Crypto APIを使うため、Node.js 20+の環境が前提となります。
+## Breaking Change: Node.js 22+のサポート
+
+v12.0.0では、Node.js 20のサポートを終了し、Node.js 22以上が必要になりました。
+Node.js 20は2026-04-30でActive LTSが終了するため、少し前倒しでサポートを切っています。
 
 ## Breaking Change: CommonJSビルドの削除
 
@@ -60,7 +68,7 @@ v12.0.0では、各パッケージのCommonJSビルドと、CJS/ESMのdual packa
 ESMのみの配布になります。
 
 Secretlint自体は[v7.0.0でESMへ移行済み](https://efcl.info/2023/07/05/secretlint-v7/)でしたが、互換性のためCJS向けのビルドも残していました。
-Node.js 20+でESMの利用が一般化したため、dual packageの保守コストを削減するためにCJSビルドを削除しています。
+Node.js 22+でESMの利用が一般化したため、dual packageの保守コストを削減するためにCJSビルドを削除しています。
 
 SecretlintをCLIとして利用している場合、特に影響はありません。
 プログラムから`@secretlint/node`や`@secretlint/core`などを`require()`で読み込んでいる場合は、`import`に書き換える必要があります。
