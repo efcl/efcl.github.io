@@ -21,6 +21,7 @@ tags:
 
 テキストだけでなく画像にも対応していて、スクリーンショットに写り込んだトークンなどもVision frameworkでOCRしてマスクします。
 内部では[secretlint](https://github.com/secretlint/secretlint)を使って、AWS、GitHub、Slack、GCP、Azure、npm、Dockerなどのトークンを検出します。
+スキャン処理はすべてローカルで完結するmacOSアプリケーションなので、クリップボードの内容が外部に送信されることはありません。
 
 ## なぜ作ったか
 
