@@ -56,14 +56,14 @@ SecureClipboardの主な機能は次のとおりです。
 
 <!-- secretlint-disable -->
 ```
-Slack Token is xoxb-EXAMPLE-EXAMPLE-EXAMPLE
+Slack Token is xoxb-1234567890123-1234567890123-AbCdEfGhIjKlMnOpQrStUvWx
 ```
 <!-- secretlint-enable -->
 
 実際にクリップボードに入るのは、トークン部分だけがマスクされた次のようなテキストになります。
 
 ```
-Slack Token is ****************************
+Slack Token is *********************************************************
 ```
 
 スクリーンショットの中にテキストとして含まれているシークレットも、Vision frameworkでOCRしてからスキャンするため、同じようにマスクされます。
