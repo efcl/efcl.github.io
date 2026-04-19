@@ -94,13 +94,13 @@ Slack Token is *********************************************************
 
 画像をクリップボードにコピーした場合は、Vision frameworkでOCRしてテキストを抽出し、検出されたシークレットの矩形領域だけにマスクをかけます。
 
-たとえば次のスクリーンショットには`ghp_`から始まるGitHub Personal Access Tokenが写り込んでいます。
+たとえば次のスクリーンショットには`xoxp-`から始まるSlackのUser Tokenが写り込んでいます。
 
-![画像マスキング Before](/wp-content/uploads/2026/04/secure-clipboard-image-before.png)
+![画像マスキング Before](/wp-content/uploads/2026/20260419-105159.png)
 
 これをコピーすると、トークンが写っていた矩形領域だけにcrystallize + blur効果が適用されます。
 
-![画像マスキング After](/wp-content/uploads/2026/04/secure-clipboard-image-after.png)
+![画像マスキング After](/wp-content/uploads/2026/20260419-105207.png)
 
 デフォルトでは、Vision frameworkで取得したテキストの矩形位置を使って、シークレットがあった部分だけをマスクするようになっています。
 カスタムパターンで`"action": "discard"`を指定した場合は、画像全体を警告画像に置き換えるといった挙動も選べます。
