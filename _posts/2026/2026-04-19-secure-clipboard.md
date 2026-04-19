@@ -17,7 +17,7 @@ tags:
 
 - GitHub: [secretlint/secure-clipboard](https://github.com/secretlint/secure-clipboard)
 
-![SecureClipboardのメニューバー](/wp-content/uploads/2026/04/secure-clipboard-menu.png)
+![SecureClipboardのメニューバー](/wp-content/uploads/2026/20260419-110128.png)
 
 テキストだけでなく画像にも対応していて、スクリーンショットに写り込んだトークンなどもVision frameworkでOCRしてマスクします。
 内部では[secretlint](https://github.com/secretlint/secretlint)を使って、AWS、GitHub、Slack、GCP、Azure、npm、Dockerなどのトークンを検出します。
@@ -88,7 +88,7 @@ Slack Token is *********************************************************
 スクリーンショットの中にテキストとして含まれているシークレットも、Vision frameworkでOCRしてからスキャンするため、同じようにマスクされます。
 たとえば下のスクリーンショットでは、cmuxの通知メニューに含まれていたユーザー情報がOCR経由で検出され、その矩形領域だけがblurされています。
 
-![テキストマスクの例](/wp-content/uploads/2026/04/secure-clipboard-text-mask.png)
+![テキストマスクの例](/wp-content/uploads/2026/20260419-105552.png)
 
 ## 画像へのマスキング
 
@@ -110,7 +110,7 @@ Slack Token is *********************************************************
 マスクしたあとに本物の値が必要になることもあります。
 そのときはメニューバーから"Copy Original Text"を選ぶと、元のテキストをクリップボードにコピーし直せます。
 
-![SecureClipboardのメニュー](/wp-content/uploads/2026/04/secure-clipboard-menu.png)
+![SecureClipboardのメニュー](/wp-content/uploads/2026/20260419-110128.png)
 
 このとき、クリップボードには[`org.nspasteboard.ConcealedType`](https://nspasteboard.org/)というUTIが付与されます。
 これはNSPasteboardの慣習で、「このクリップボードの内容は機密情報なので、履歴に残さないでほしい」という意思表示です。
@@ -182,7 +182,7 @@ SecureClipboardはsecretlintをpre-buildされたバイナリとして同梱し�
 
 このパターンを有効にした状態でメニューバーをスクリーンショットに撮ると、メニュー内の`secretlint v11.7.1`というテキストもOCR経由で検出されて、その部分だけがマスクされます。
 
-![カスタムパターンでメニュー内のテキストがマスクされた例](/wp-content/uploads/2026/04/secure-clipboard-custom-pattern.png)
+![カスタムパターンでメニュー内のテキストがマスクされた例](/wp-content/uploads/2026/20260419-103913.png)
 
 ### skipScanAppIdentifiers
 
