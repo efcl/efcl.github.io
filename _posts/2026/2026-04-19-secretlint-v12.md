@@ -67,7 +67,8 @@ Secretlint自体は[v7.0.0でESMへ移行済み](https://efcl.info/2023/07/05/se
 Node.js 22+でESMの利用が一般化したため、dual packageの保守コストを削減するためにCJSビルドを削除しています。
 
 SecretlintをCLIとして利用している場合、特に影響はありません。
-プログラムから`@secretlint/node`や`@secretlint/core`などを`require()`で読み込んでいる場合は、`import`に書き換える必要があります。
+Node.js 22+では[`require(esm)`](https://nodejs.org/api/modules.html#loading-ecmascript-modules-using-require)がサポートされています。
+そのため、`@secretlint/node`や`@secretlint/core`などを`require()`しているコードもそのまま動作します。
 
 ## 使っているプロジェクト: SecureClipboard
 
