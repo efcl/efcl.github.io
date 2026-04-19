@@ -48,6 +48,24 @@ SecureClipboardの主な機能は次のとおりです。
 - `secure-pbpaste` / `secure-pbcopy` のCLIツール同梱
 - secretlintのバイナリはGitHub Releasesから自動更新
 
+## インストール
+
+```bash
+curl -fSL https://github.com/secretlint/secure-clipboard/releases/latest/download/SecureClipboard.app.zip -o /tmp/SecureClipboard.app.zip
+unzip -o /tmp/SecureClipboard.app.zip -d /Applications
+xattr -cr /Applications/SecureClipboard.app
+open /Applications/SecureClipboard.app
+```
+
+コード署名はしていないので、`xattr -cr`でquarantine属性を解除してから起動します。
+
+アンインストールは次のとおりです。
+
+```bash
+rm -rf /Applications/SecureClipboard.app
+rm -f /usr/local/bin/secure-pbpaste /usr/local/bin/secure-pbcopy
+```
+
 ## テキストへのマスキング
 
 クリップボードに入ったテキストにシークレットが含まれていれば、その部分を`***`に置き換えます。
@@ -177,24 +195,6 @@ SecureClipboardの主要なコンポーネントは次のとおりです。
 
 secretlint本体はNode.js製のCLIですが、SecureClipboardは[secretlintの単一バイナリ版](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/binary)をsubprocessで呼び出しています。
 そのため、ホストマシンにNode.jsがインストールされていなくても動作します。
-
-## インストール
-
-```bash
-curl -fSL https://github.com/secretlint/secure-clipboard/releases/latest/download/SecureClipboard.app.zip -o /tmp/SecureClipboard.app.zip
-unzip -o /tmp/SecureClipboard.app.zip -d /Applications
-xattr -cr /Applications/SecureClipboard.app
-open /Applications/SecureClipboard.app
-```
-
-コード署名はしていないので、`xattr -cr`でquarantine属性を解除してから起動します。
-
-アンインストールは次のとおりです。
-
-```bash
-rm -rf /Applications/SecureClipboard.app
-rm -f /usr/local/bin/secure-pbpaste /usr/local/bin/secure-pbcopy
-```
 
 ## まとめ
 
