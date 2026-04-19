@@ -11,13 +11,9 @@ tags:
 
 ---
 
-機密情報を検出するSecretlintのv12.0.0をリリースしました。
+ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つける[Secretlint](https://github.com/secretlint/secretlint)のv12.0.0をリリースしました。
 
 - [Release v12.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v12.0.0)
-
-Secretlintは、ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけて報告するLintツールです。
-
-- [secretlint/secretlint: Pluggable linting tool to prevent committing credential.](https://github.com/secretlint/secretlint)
 
 このバージョンでは、10個のサービスに対応する検出ルールを追加しました。
 対応サービスは、Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaです。
