@@ -179,6 +179,10 @@ SecureClipboardはsecretlintをpre-buildされたバイナリとして同梱し�
 }
 ```
 
+このパターンを有効にした状態でメニューバーをスクリーンショットに撮ると、メニュー内の`secretlint v11.7.1`というテキストもOCR経由で検出されて、その部分だけがマスクされます。
+
+![カスタムパターンでメニュー内のテキストがマスクされた例](/wp-content/uploads/2026/04/secure-clipboard-custom-pattern.png)
+
 ### skipScanAppIdentifiers
 
 Bundle Identifierを指定して、特定のアプリからのコピーをスキャン対象外にできます。
