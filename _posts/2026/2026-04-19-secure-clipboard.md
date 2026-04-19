@@ -63,7 +63,7 @@ Slack Token is xoxb-EXAMPLE-EXAMPLE-EXAMPLE
 実際にクリップボードに入るのは、トークン部分だけがマスクされた次のようなテキストになります。
 
 ```
-Slack Token is ***
+Slack Token is ****************************
 ```
 
 スクリーンショットの中にテキストとして含まれているシークレットも、Vision frameworkでOCRしてからスキャンするため、同じようにマスクされます。
