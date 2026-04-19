@@ -60,7 +60,7 @@ open /Applications/SecureClipboard.app
 
 コード署名はしていないので、`xattr -cr`でquarantine属性を解除してから起動します。
 
-アンインストールは次のとおりです。
+アンインストールは次のコマンドでできます。
 
 ```bash
 rm -rf /Applications/SecureClipboard.app
