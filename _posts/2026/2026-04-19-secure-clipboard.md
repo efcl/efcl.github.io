@@ -106,10 +106,10 @@ Slack Token is *********************************************************
 デフォルトでは、Vision frameworkで取得したテキストの矩形位置を使って、シークレットがあった部分だけをマスクするようになっています。
 カスタムパターンで`"action": "discard"`を指定した場合は、画像全体を警告画像に置き換えるといった挙動も選べます。
 
-## "Copy Original Text"とConcealedClipboard
+## "Copy Original"とConcealedClipboard
 
 マスクしたあとに本物の値が必要になることもあります。
-そのときはメニューバーから"Copy Original Text"を選ぶと、元のテキストをクリップボードにコピーし直せます。
+そのときはメニューバーから"Copy Original Text"（画像なら"Copy Original Image"）を選ぶと、元の内容をクリップボードにコピーし直せます。
 
 ![SecureClipboardのメニュー](/wp-content/uploads/2026/20260419-110128.webp)
 
