@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v12.0.0リリース: 10個の新しい検出ルール追加とPresetサイズを80%削減"
+title: "Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応"
 author: azu
 layout: post
 date : 2026-04-19T14:00+09:00
