@@ -18,6 +18,7 @@ tags:
 このバージョンでは、次のように追加で検知できるようになったサービスが10個あります。
 
 - Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma
+
 あわせて、`@secretlint/secretlint-rule-preset-recommend`のパッケージサイズを約80%削減しています。
 
 ## 新しく追加された検出ルール
