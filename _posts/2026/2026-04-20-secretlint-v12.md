@@ -37,6 +37,9 @@ tags:
 
 `@secretlint/secretlint-rule-preset-recommend`を使っている場合は、v12.0.0にアップデートすると自動的にこれらのルールも有効になります。
 
+今回追加したトークンは、[GitHubのSecret scanning partner](https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns)のリストを参照することで、確度の高いパターンを持つトークンに絞り込んでまとめて実装しました。
+誤検知が少ないトークンフォーマットを持つサービスを優先したため、検出精度を保ったままカバー範囲を広げられています。
+
 ## Presetのパッケージサイズを約80%削減
 
 `@secretlint/secretlint-rule-preset-recommend`のパッケージサイズを、v11と比べて約82%削減しました。
