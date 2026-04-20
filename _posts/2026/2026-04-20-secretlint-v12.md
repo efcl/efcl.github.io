@@ -15,8 +15,9 @@ tags:
 
 - [Release v12.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v12.0.0)
 
-このバージョンでは、10個のサービスに対応する検出ルールを追加しました。
-対応サービスは、Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaです。
+このバージョンでは、次のように追加で検知できるようになったサービスが10個あります。
+
+- Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma
 あわせて、`@secretlint/secretlint-rule-preset-recommend`のパッケージサイズを約80%削減しています。
 
 ## 新しく追加された検出ルール
