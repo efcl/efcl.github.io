@@ -909,19 +909,19 @@ a.sidebar-nav-item:focus {
   background: #1da1f2;
 }
 .social a.twitter:hover {
-  background: #4db5f5;
+  background: rgb(77.2259414226, 181.0585774059, 244.7740585774);
 }
 .social a.bluesky {
   background: skyblue;
 }
 .social a.bluesky:hover {
-  background: #b3e0f2;
+  background: rgb(178.7142857143, 223.85, 242.2857142857);
 }
 .social a.github {
   background: black;
 }
 .social a.github:hover {
-  background: #4d4d4d;
+  background: rgb(76.5, 76.5, 76.5);
 }
 .social a.rss {
   background: orange;
@@ -1002,6 +1002,16 @@ a.sidebar-nav-item:focus {
 /* 幅が狭いと横にスクロール出来てしまう問題 */
 a, code {
   word-wrap: break-word;
+}
+
+/* マスクされたトークン等、空白を含まない連続文字列が折り返されずに横スクロールする問題 */
+.post-content {
+  overflow-wrap: break-word;
+}
+
+.post-content pre,
+.post-content pre code {
+  overflow-wrap: anywhere;
 }
 
 .github-left-icon, .post-post-toolbar .edit-on-github, .pre-post-toolbar .edit-on-github {
