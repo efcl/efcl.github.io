@@ -99,7 +99,11 @@ Contributorとして参加していただいた方には、この予算から[Co
 | 5     | かなり難しい、調査や広範な変更が必要         |
 | 8     | 難易度がとても高く、できる人が限られるレベル |
 
-過去のIssueに対応するpointの参考値やOpen Collectiveの利用方法については次のページを参照してください。
+なお、報酬は自分で受け取るほかに、**他のOpen Collectiveに同じ金額を寄付する**という選択肢もあります。
+たとえば[Babel](https://opencollective.com/babel)など、Open Collective上の任意のCollectiveを寄付先に指定できます。
+jsprimerから直接、指定されたCollectiveへ同額が寄付される仕組みです。
+
+過去のIssueに対応するpointの参考値やOpen Collectiveの利用方法、寄付先の指定方法については次のページを参照してください。
 
 - [Contributing Expenses Policy](https://github.com/js-primer/js-primer/blob/master/CONTRIBUTING_EXPENSE.md)
 
