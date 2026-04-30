@@ -134,10 +134,14 @@ Contributorとして参加してみたい方は、次のDiscussionにコメン�
 JavaScript Primerの活動は、個人や企業のSponsorからの支援によって支えられています。
 書籍の継続的なメンテナンスや改善活動を支援してくださるSponsorを随時募集しています！
 
-今年の更新に関する費用は、Sponsorの方々の支援によって成り立っています。
-ご支援ありがとうございます！
+現在のGold Sponsorは次の通りです。ご支援ありがとうございます！
 
-<!-- TODO: 今年のGold Sponsorsを記載 -->
+**Gold Sponsors**
+
+<a href="https://being-i.sh/" title="being-ish Inc."><img src="https://images.opencollective.com/being-ish/66099a1/logo/256.png?height=166" height="166" alt="" loading="lazy"></a>
+
+
+- [being-ish Inc.](https://being-i.sh/)
 
 **Supporters**
 
