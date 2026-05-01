@@ -2,7 +2,7 @@
 title: "JavaScript PrimerのES2026対応を手伝ってくれるContributorとSponsorを募集しています"
 author: azu
 layout: post
-date : 2026-04-25T12:00+09:00
+date : 2026-05-01T12:00+09:00
 category: JavaScript
 tags:
     - JavaScript
@@ -23,6 +23,10 @@ TC39ではすでにFeature Freezeが行われ、ES2026に入る予定の機能�
 今年もES2026で追加される機能についての対応Issueを作成しました。
 
 これらのIssueを一緒に進めてくれるContributorと、JavaScript Primerの活動を支援してくれるSponsorを募集しています。
+
+次のDiscussionにコメントをください
+
+- 募集しているDiscussion: [ES2026に対応するIssueへのContributorを募集しています · js-primer/js-primer · Discussions](https://github.com/js-primer/js-primer/discussions/1884)
 
 ## ES2026対応のIssue
 
@@ -70,11 +74,7 @@ JavaScript Primerの執筆、レビュー、サンプルコード作成、仕様
 
 今年のIssueは1人1Issueで分担しやすい粒度なので、それぞれのIssueに興味がある人を募集しています。
 
-- 募集しているDiscussion: [ES2026に対応するIssueへのContributorを募集しています · js-primer/js-primer · Discussions](https://github.com/js-primer/js-primer/discussions)
-
-去年のES2025対応の振り返りを踏まえ、今年もオンボーディングやコミュニケーションを丁寧に行いたいと考えています。
-IssueにAssignしたあと、どういうイメージで書いていくかをやり取りしながら進めていく形をベースにします。
-LLMが下書きレベルなら出してくれるので、具体に近いものを見ながら方向性を合わせていけると進めやすいと思います。
+- 募集しているDiscussion: [ES2026に対応するIssueへのContributorを募集しています · js-primer/js-primer · Discussions](https://github.com/js-primer/js-primer/discussions/1884)
 
 Contributeしたい人は、次のDiscussionに参加してみてください。
 
@@ -129,7 +129,7 @@ JavaScript Primerは技術書であるため、次の点に気をつけて書い
 
 Contributorとして参加してみたい方は、次のDiscussionにコメントしてみてください。
 
-- [ES2026に対応するIssueへのContributorを募集しています · js-primer/js-primer · Discussions](https://github.com/js-primer/js-primer/discussions)
+- [ES2026に対応するIssueへのContributorを募集しています · js-primer/js-primer · Discussions](https://github.com/js-primer/js-primer/discussions/1884)
 
 ご興味のある方、ぜひ参加してみてください！
 
@@ -143,7 +143,6 @@ JavaScript Primerの活動は、個人や企業のSponsorからの支援によ�
 **Gold Sponsors**
 
 <a href="https://being-i.sh/" title="being-ish Inc."><img src="https://images.opencollective.com/being-ish/66099a1/logo/256.png?height=166" height="166" alt="" loading="lazy"></a>
-
 
 - [being-ish Inc.](https://being-i.sh/)
 
