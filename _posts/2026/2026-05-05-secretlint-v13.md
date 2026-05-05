@@ -24,7 +24,7 @@ tags:
 ## Breaking Change: `.gitignore`をデフォルトで尊重
 
 v13.0.0では、ファイル探索時に`.gitignore`の内容をデフォルトで尊重するようになりました。
-ripgrepと同じ挙動で、ネストされた`.gitignore`ファイルもサブディレクトリへカスケードして適用されます。深い階層のネガティブルール（`!`）で上位の判定を上書きすることもできます。
+ripgrepと同じ挙動で、ネストされた`.gitignore`ファイルもサブディレクトリへカスケードして適用されます。深い階層のネガティブルール（`!`）で上位の判定を上書きできます。
 
 - [feat!: respect .gitignore by default via @secretlint/walker by azu · Pull Request #1530](https://github.com/secretlint/secretlint/pull/1530)
 
@@ -51,20 +51,20 @@ v13.0.0では、ファイル探索の実装を[`globby`](https://github.com/sind
 
 - [docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md](https://github.com/secretlint/secretlint/blob/v13.0.0/docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md)
 
-Rustエコシステムには[ripgrep](https://github.com/BurntSushi/ripgrep)の[`ignore` crate](https://docs.rs/ignore/)があり、[oxc](https://github.com/oxc-project/oxc)などはこれを使うことで`.gitignore`のカスケードを安価に再利用できます。
-JavaScriptエコシステムにも、ネストされた`.gitignore`に対応するウォーカーが全く無いわけではありません（[`tiny-readdir-glob-gitignore`](https://github.com/fabiospampinato/tiny-readdir-glob-gitignore)、[`ignore-walk`](https://github.com/npm/ignore-walk)など）。
+Rustには[ripgrep](https://github.com/BurntSushi/ripgrep)の[`ignore` crate](https://docs.rs/ignore/)があり、[oxc](https://github.com/oxc-project/oxc)などはこれを使うことで`.gitignore`のカスケードを安価に再利用できます。
+JavaScript側にも、ネストされた`.gitignore`に対応するwalkerが全く無いわけではありません（[`tiny-readdir-glob-gitignore`](https://github.com/fabiospampinato/tiny-readdir-glob-gitignore)、[`ignore-walk`](https://github.com/npm/ignore-walk)など）。
 ただし、ripgrepの`ignore` crateほど枯れた実績や仕様の網羅度を持つものは見当たりませんでした。
 また、後述する「グロブメタ文字を含むパスが実在する場合はリテラル扱いにする」のように、走査・マッチ側に独自の制御を入れたい要件もあります。
-依存ライブラリも`node-ignore`と`picomatch`まで分解すれば`fs.readdir`の上に薄く書ける範囲だったため、Secretlint側でウォーカーを実装することにしました。
+依存ライブラリも`node-ignore`と`picomatch`まで分解すれば`fs.readdir`の上に薄く書ける範囲だったため、Secretlint側でwalkerを実装することにしました。
 
-`@secretlint/walker`は、ネストされた`.gitignore`のカスケードに対応するPromiseベースのファイルシステムウォーカーです。
-依存ライブラリは`ignore`（node-ignore）と`picomatch`の2つだけで、インクルード側とイグノア側でセマンティクスを分離しています。
+`@secretlint/walker`は、ネストされた`.gitignore`のカスケードに対応するPromiseベースのファイルシステムwalkerです。
+依存ライブラリは`ignore`（node-ignore）と`picomatch`の2つだけで、含めるパターン（include）と除外するパターン（ignore）でセマンティクスを分離しています。
 
-- インクルードパターン: [`picomatch`](https://github.com/micromatch/picomatch)を使ったグロブマッチ。`**/*.{ts,js}`のようなブレース展開やドットファイルのマッチに対応する
-- イグノアパターン: [`node-ignore`](https://github.com/kaelzhang/node-ignore)を使った`.gitignore`セマンティクスのマッチ。`.gitignore`の挙動に合わせるため、ブレース展開は意図的に対応しない
+- 含めるパターン（include）: [`picomatch`](https://github.com/micromatch/picomatch)を使ったグロブマッチ。`**/*.{ts,js}`のようなブレース展開やドットファイルのマッチに対応する
+- 除外するパターン（ignore）: [`node-ignore`](https://github.com/kaelzhang/node-ignore)を使った`.gitignore`セマンティクスのマッチ。`.gitignore`の挙動に合わせるため、ブレース展開は意図的に対応しない
 
 Node.js本体にも[`fs.glob`](https://nodejs.org/api/fs.html#fsglobpattern-options-callback)や[`path.matchesGlob`](https://nodejs.org/api/path.html#pathmatchesglobpath-pattern)が用意されていますが、これらにはドットファイルをマッチに含める`dot`オプションが存在しません。
-ドットファイル（`.env`など）のスキャンが要件として外せないため、インクルード側は`picomatch`にしています。
+ドットファイル（`.env`など）のスキャンが要件として外せないため、include側は`picomatch`にしています。
 
 走査自体は`fs.readdir(dir, { withFileTypes: true })`をベースにしたシンプルな再帰で、各ディレクトリのエントリを`Promise.all`で並列処理します。
 ディレクトリ単位でignoreを判定し、無視対象に該当したディレクトリはサブツリーごとプルーニングして`readdir`を呼ばないことで、大きな`node_modules`配下などをスキップしています。
@@ -73,7 +73,8 @@ Node.js本体にも[`fs.glob`](https://nodejs.org/api/fs.html#fsglobpattern-opti
 親ディレクトリの`ignore`インスタンスに対して、現在のディレクトリの`.gitignore`を読み込んで`extendIgnore()`で重ねるという形でレイヤーを積みます。
 `.gitignore`がそのディレクトリに存在しない場合は親のインスタンスをそのまま返すため、不要なallocationが起きません。
 深い階層のネガティブルール（`!pattern`）が浅い階層のルールを上書きする挙動も、このスタック上で自然に表現されます。
-ネストされた`.gitignore`内のパターンはそのファイルの置かれたディレクトリにアンカーされ、`packages/foo/.gitignore`の`src/**/*.ts`はリポジトリルートではなく`packages/foo/src/`配下にだけ適用されます。
+ネストされた`.gitignore`内のパターンはそのファイルの置かれたディレクトリにアンカーされます。
+そのため、`packages/foo/.gitignore`の`src/**/*.ts`はリポジトリルートではなく`packages/foo/src/`配下にだけ適用されます。
 
 クロスプラットフォーム対応として、`node-ignore`へ渡すパスはWindowsでも`/`区切りに正規化（`toPosix()`）した上でマッチングします。
 返すパスはOSネイティブの区切り文字に戻します。
@@ -102,7 +103,8 @@ walker単体の実行時間で見ると、globbyからの置き換えによる�
 一方で、`.gitignore`のカスケードは「親のルールに子のルールを正しく重ねる」ことを満たさないと挙動が壊れる部分なので、ここはripgrepの実装を参考にしながら書いています。
 
 実際のSecretlintの実行時間で見ると、`.gitignore`を尊重することで`node_modules/`や`dist/`などをそもそもスキャンしなくなるため、Lint対象のファイル数が減ります。
-スキャン+ルール評価のコストはファイル数に比例して効いてくるので、ウォーカー自体のコストよりもLint対象が減ることによる実行時間の削減のほうが支配的になり、結果としてv12より速く終わるケースが多くなる想定です。
+スキャン+ルール評価のコストはファイル数に比例して効いてくるため、walker自体のコストよりもLint対象が減ることによる削減のほうが支配的になります。
+結果として、v12より速く終わるケースが多くなる想定です。
 
 ## グロブメタ文字を含むパスが実在する場合はリテラル扱いに
 
@@ -128,7 +130,7 @@ v13.0.0では、グロブメタ文字（`()`、`[]`、`{}`、`?`）を含むパ�
 - [Stripe](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-stripe) - Stripe APIキー（新規追加）
 - [Cloudflare](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/secretlint-rule-cloudflare) - Cloudflare APIトークン（canaryから昇格）
 
-関連PR:
+関連PRは次のとおりです。
 
 - [Add Tailscale API key detection rule by azu · Pull Request #1536](https://github.com/secretlint/secretlint/pull/1536)
 - [feat(secretlint-rule-stripe): add Stripe API key detection rule by azu · Pull Request #1537](https://github.com/secretlint/secretlint/pull/1537)
@@ -142,7 +144,8 @@ Secretlint v13.0.0では、ファイル探索の挙動を`.gitignore`をデフ�
 これに加えて、グロブメタ文字を含む実在パスをリテラルとして扱うよう調整し、Route Groupなどのディレクトリ構成でもオプションなしに動作します。
 検出ルールにはTailscaleとStripeを新規追加し、CloudflareをrecommendへPromoteしています。
 
-`.gitignore`の尊重はBreaking Changeのため、`dist/`などをスキャンしていたプロジェクトでは`--no-gitignore`への切り替えや`.secretlintignore`の見直しが必要です。
+`.gitignore`の尊重はBreaking Changeです。
+`dist/`などをスキャンしていたプロジェクトでは、`--no-gitignore`への切り替えや`.secretlintignore`の見直しが必要になります。
 
 フィードバックがあればGitHubのIssueでお知らせください。
 
