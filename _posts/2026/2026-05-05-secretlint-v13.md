@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v13.0.0リリース: デフォルトで.gitignoreに従う、Tailscale/Stripe/Cloudflareの検出に対応"
+title: "Secretlint v13.0.0リリース: .gitignore済みをデフォルトで無視、Tailscale/Stripe/Cloudflareの検出に対応"
 author: azu
 layout: post
 date : 2026-05-05T10:00+09:00
@@ -67,7 +67,8 @@ Node.js本体にも[`fs.glob`](https://nodejs.org/api/fs.html#fsglobpattern-opti
 ドットファイル（`.env`など）のスキャンが要件として外せないため、include側は`picomatch`にしています。
 
 走査自体は`fs.readdir(dir, { withFileTypes: true })`をベースにしたシンプルな再帰で、各ディレクトリのエントリを`Promise.all`で並列処理します。
-ディレクトリ単位でignoreを判定し、無視対象に該当したディレクトリはサブツリーごとプルーニングして`readdir`を呼ばないことで、大きな`node_modules`配下などをスキップしています。
+ディレクトリ単位でignoreを判定し、無視対象に該当したディレクトリはサブツリーごと走査をやめます。
+`readdir`自体を呼ばないため、大きな`node_modules`配下などをまるごとスキップできます。
 
 `.gitignore`のカスケードは`IgnoreStack`という構造で扱います。
 親ディレクトリの`ignore`インスタンスに対して、現在のディレクトリの`.gitignore`を読み込んで`extendIgnore()`で重ねるという形でレイヤーを積みます。
