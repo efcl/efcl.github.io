@@ -43,6 +43,56 @@ secretlint --no-gitignore "**/*"
 
 - [Issues · secretlint/secretlint](https://github.com/secretlint/secretlint/issues)
 
+### 実装: `@secretlint/walker`
+
+v13.0.0では、ファイル探索の実装を[`globby`](https://github.com/sindresorhus/globby)から、新しく追加した[`@secretlint/walker`](https://github.com/secretlint/secretlint/tree/master/packages/%40secretlint/walker)へ置き換えました。
+
+設計はplanドキュメントとしてリポジトリにコミットされています。
+
+- [docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md](https://github.com/secretlint/secretlint/blob/v13.0.0/docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md)
+
+Rustエコシステムには[ripgrep](https://github.com/BurntSushi/ripgrep)の[`ignore` crate](https://docs.rs/ignore/)があり、[oxc](https://github.com/oxc-project/oxc)などはこれを使うことで`.gitignore`のカスケードを安価に再利用できます。
+JavaScriptエコシステムには同等の汎用ライブラリが存在しないため、Secretlint側で薄いウォーカーを実装することにしました。
+
+`@secretlint/walker`は、ネストされた`.gitignore`のカスケードに対応するPromiseベースのファイルシステムウォーカーです。
+依存ライブラリは`ignore`（node-ignore）と`picomatch`の2つだけで、インクルード側とイグノア側でセマンティクスを分離しています。
+
+- インクルードパターン: [`picomatch`](https://github.com/micromatch/picomatch)を使ったグロブマッチ。`**/*.{ts,js}`のようなブレース展開やドットファイルのマッチに対応する
+- イグノアパターン: [`node-ignore`](https://github.com/kaelzhang/node-ignore)を使った`.gitignore`セマンティクスのマッチ。`.gitignore`の挙動に合わせるため、ブレース展開は意図的に対応しない
+
+Node.js本体にも[`fs.glob`](https://nodejs.org/api/fs.html#fsglobpattern-options-callback)や[`path.matchesGlob`](https://nodejs.org/api/path.html#pathmatchesglobpath-pattern)が用意されていますが、これらにはドットファイルをマッチに含める`dot`オプションが存在しません。
+ドットファイル（`.env`など）のスキャンが要件として外せないため、インクルード側は`picomatch`にしています。
+
+走査自体は`fs.readdir(dir, { withFileTypes: true })`をベースにしたシンプルな再帰で、各ディレクトリのエントリを`Promise.all`で並列処理します。
+ディレクトリ単位でignoreを判定し、無視対象に該当したディレクトリはサブツリーごとプルーニングして`readdir`を呼ばないことで、大きな`node_modules`配下などをスキップしています。
+
+`.gitignore`のカスケードは`IgnoreStack`という構造で扱います。
+親ディレクトリの`ignore`インスタンスに対して、現在のディレクトリの`.gitignore`を読み込んで`extendIgnore()`で重ねるという形でレイヤーを積みます。
+`.gitignore`がそのディレクトリに存在しない場合は親のインスタンスをそのまま返すため、不要なallocationが起きません。
+深い階層のネガティブルール（`!pattern`）が浅い階層のルールを上書きする挙動も、このスタック上で自然に表現されます。
+ネストされた`.gitignore`内のパターンはそのファイルの置かれたディレクトリにアンカーされ、`packages/foo/.gitignore`の`src/**/*.ts`はリポジトリルートではなく`packages/foo/src/`配下にだけ適用されます。
+
+クロスプラットフォーム対応として、`node-ignore`へ渡すパスはWindowsでも`/`区切りに正規化（`toPosix()`）した上でマッチングします。
+返すパスはOSネイティブの区切り文字に戻します。
+また、`ENOENT`や`EACCES`は探索全体を止めずにスキップする方針で、ファイル削除・パーミッションエラーに対して頑健になっています。
+
+入力パターンは静的なプレフィックス（walk root）と動的なサフィックス（マッチパターン）に分割し、同じrootを持つパターンはグループ化して1度のwalkで処理します。
+グロブメタ文字を含む入力でも、それが実際のファイル/ディレクトリとして存在する場合は`noGlob`相当の扱いにフォールバックさせるロジックもwalker側に入っています。
+
+主なAPIは`walk(options)`で、パッケージ単独でも利用できます。
+
+| オプション | 型 | デフォルト | 説明 |
+|---|---|---|---|
+| `cwd` | `string` | 必須 | 探索の起点ディレクトリ |
+| `patterns` | `string[]` | `undefined` | インクルードのグロブパターン |
+| `ignoreFiles` | `string[]` | `[]` | カスケード対象のignoreファイル名（`.gitignore`など） |
+| `extraIgnorePatterns` | `string[]` | `[]` | コードから渡す追加のignoreパターン |
+| `noGlob` | `boolean` | `false` | `patterns`をリテラルとして扱う |
+| `followSymlinks` | `boolean` | `true` | シンボリックリンクを追従するか |
+
+CLI側の`secretlint`では、`--no-gitignore`が指定された場合は`ignoreFiles`から`.gitignore`を外し、それ以外の場合はカスケード有効でwalkします。
+`.secretlintignore`は別経路の`extraIgnorePatterns`相当で従来通り適用されるため、`.gitignore`との共存に影響はありません。
+
 ## グロブメタ文字を含むパスが実在する場合はリテラル扱いに
 
 Secretlintはコマンドライン引数をデフォルトでグロブパターンとして解釈します。
