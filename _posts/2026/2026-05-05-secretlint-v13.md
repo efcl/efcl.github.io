@@ -93,6 +93,14 @@ Node.js本体にも[`fs.glob`](https://nodejs.org/api/fs.html#fsglobpattern-opti
 CLI側の`secretlint`では、`--no-gitignore`が指定された場合は`ignoreFiles`から`.gitignore`を外し、それ以外の場合はカスケード有効でwalkします。
 `.secretlintignore`は別経路の`extraIgnorePatterns`相当で従来通り適用されるため、`.gitignore`との共存に影響はありません。
 
+### パフォーマンス
+
+walker単体の実行時間で見ると、globbyからの置き換えによるパフォーマンスの大きな劣化はありません。
+一方で、`.gitignore`のカスケードは「親のルールに子のルールを正しく重ねる」ことを満たさないと挙動が壊れる部分なので、ここはripgrepの実装を参考にしながら書いています。
+
+実際のSecretlintの実行時間で見ると、`.gitignore`を尊重することで`node_modules/`や`dist/`などをそもそもスキャンしなくなるため、Lint対象のファイル数が減ります。
+スキャン+ルール評価のコストはファイル数に比例して効いてくるので、ウォーカー自体のコストよりもLint対象が減ることによる実行時間の削減のほうが支配的になり、結果としてv12より速く終わるケースが多くなる想定です。
+
 ## グロブメタ文字を含むパスが実在する場合はリテラル扱いに
 
 Secretlintはコマンドライン引数をデフォルトでグロブパターンとして解釈します。
