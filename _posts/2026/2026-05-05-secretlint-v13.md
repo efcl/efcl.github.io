@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v13.0.0リリース: .gitignoreをデフォルトで尊重、Tailscale/Stripe/Cloudflareの検出に対応"
+title: "Secretlint v13.0.0リリース: デフォルトで.gitignoreに従う、Tailscale/Stripe/Cloudflareの検出に対応"
 author: azu
 layout: post
 date : 2026-05-05T10:00+09:00
