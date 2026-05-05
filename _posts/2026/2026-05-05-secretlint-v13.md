@@ -144,7 +144,7 @@ Secretlint v13.0.0では、ファイル探索の挙動を`.gitignore`をデフ�
 これに加えて、グロブメタ文字を含む実在パスをリテラルとして扱うよう調整し、Route Groupなどのディレクトリ構成でもオプションなしに動作します。
 検出ルールにはTailscaleとStripeを新規追加し、CloudflareをrecommendへPromoteしています。
 
-`.gitignore`の尊重はBreaking Changeです。
+この変更はBreaking Changeです。
 `dist/`などをスキャンしていたプロジェクトでは、`--no-gitignore`への切り替えや`.secretlintignore`の見直しが必要になります。
 
 フィードバックがあればGitHubのIssueでお知らせください。
