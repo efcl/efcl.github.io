@@ -52,7 +52,10 @@ v13.0.0では、ファイル探索の実装を[`globby`](https://github.com/sind
 - [docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md](https://github.com/secretlint/secretlint/blob/v13.0.0/docs/superpowers/plans/2026-05-03-walker-gitignore-cascade-plan.md)
 
 Rustエコシステムには[ripgrep](https://github.com/BurntSushi/ripgrep)の[`ignore` crate](https://docs.rs/ignore/)があり、[oxc](https://github.com/oxc-project/oxc)などはこれを使うことで`.gitignore`のカスケードを安価に再利用できます。
-JavaScriptエコシステムには同等の汎用ライブラリが存在しないため、Secretlint側で薄いウォーカーを実装することにしました。
+JavaScriptエコシステムにも、ネストされた`.gitignore`に対応するウォーカーが全く無いわけではありません（[`tiny-readdir-glob-gitignore`](https://github.com/fabiospampinato/tiny-readdir-glob-gitignore)、[`ignore-walk`](https://github.com/npm/ignore-walk)など）。
+ただし、ripgrepの`ignore` crateほど枯れた実績や仕様の網羅度を持つものは見当たりませんでした。
+また、後述する「グロブメタ文字を含むパスが実在する場合はリテラル扱いにする」のように、走査・マッチ側に独自の制御を入れたい要件もあります。
+依存ライブラリも`node-ignore`と`picomatch`まで分解すれば`fs.readdir`の上に薄く書ける範囲だったため、Secretlint側でウォーカーを実装することにしました。
 
 `@secretlint/walker`は、ネストされた`.gitignore`のカスケードに対応するPromiseベースのファイルシステムウォーカーです。
 依存ライブラリは`ignore`（node-ignore）と`picomatch`の2つだけで、インクルード側とイグノア側でセマンティクスを分離しています。
