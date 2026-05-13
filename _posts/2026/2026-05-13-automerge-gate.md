@@ -75,7 +75,8 @@ GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用�
 | `ubuntu-slim` | Linux 1-core (x64) | $0.002 / 分 |
 
 [merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto MergeがONかどうかに関わらず、PRが開かれた時点から他のチェックが揃うまでポーリングを続ける設計です。
-そのため、CI全体が完了するのにかかる時間(例: 10分)とほぼ同じだけポーリングジョブが走り続けて、その分の課金が発生します。
+そのため、1回のポーリングはCI全体が完了するのにかかる時間(例: 10分)とほぼ同じだけ走り続けます。
+さらにpushするたびに同じポーリングが起きるので、`push数 × ポーリング時間`の課金が発生します。
 さらにmerge-gatekeeperは内部でDockerコマンドを使うため、Dockerが使えない`ubuntu-slim`では動きません。
 そのため、$0.006/分の`ubuntu-latest`を選ぶ必要がありました。
 
