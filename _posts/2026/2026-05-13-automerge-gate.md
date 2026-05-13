@@ -81,7 +81,10 @@ GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用�
 
 automerge-gateの場合、本体はNode.js製のActionでDockerに依存していないため、`ubuntu-slim`(1-core, $0.002/分)でも動かせます。
 加えてPrivate modeでは、Auto Mergeが有効化されていないPRはポーリングをスキップするので、課金時間そのものが発生しません。
-自分の用途ではプライベートリポジトリでもAuto Mergeまで進むPRは一部なので、「ランナーが安い」「マージ意図がないPRはスキップする」の両方が効いてきます。
+
+ただし、merge-gatekeeperとは視覚的な違いがあります。
+Auto MergeボタンかApproveが発火するまでは、必須チェック`automerge-gate/all-passed`が`pending`のままです。
+GitHubの表示上は`Expected — Waiting for status to be reported`と出ます。
 
 Commit statusは`(SHA, context)`の組をキーにしてGitHubが評価するので、新しいコミットがpushされても自動的に新しいSHAに対して再評価が走ります。Auto Mergeを一度有効にしたら、その後はpush毎に有効/無効を切り替える必要はありません。
 
