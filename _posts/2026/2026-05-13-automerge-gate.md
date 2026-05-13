@@ -1,0 +1,311 @@
+---
+title: "automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action"
+author: azu
+layout: post
+render_with_liquid: false
+date: 2026-05-13T20:00+09:00
+category: GitHub
+tags:
+    - GitHub
+    - GitHub Actions
+    - CI/CD
+
+---
+
+GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action [automerge-gate](https://github.com/pkgdeps/automerge-gate) を作ったので紹介します。
+
+- GitHub: [pkgdeps/automerge-gate](https://github.com/pkgdeps/automerge-gate)
+
+## 背景: GitHubの必須チェック設定はPRごとの揺らぎに弱い
+
+前提として、GitHubの[Auto Merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)を使うには、必須チェック未達成のPRをマージできない状態にする[Branch protection ruleやRuleset](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)の設定が必要です。
+これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
+逆に言うと、Auto Mergeを使うには何かしらのステータスチェックを必ず必須に入れる必要があります。
+
+そして、Branch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
+この方式は次のような場面で壊れやすいという問題があります。
+
+- RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
+- monorepoでパスフィルタを使っていると、ワークフローがPRによってスキップされたりされなかったりする
+- 新しいワークフローを追加する度に、Rulesetを書き換える必要がある
+
+GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功すること)しか表現できないため、「チェック群のうちどれかが走っていればよい」みたいな条件は書けません。
+そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
+
+この問題への対処として、必須チェックを1つのステータスに集約する[upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)を使っているケースも多いです。
+自分も[textlint](https://github.com/textlint/textlint)などのオープンソースプロジェクトや、プライベートリポジトリで使っていました。
+
+- [CI: add Merge Gatekeeper workflow for pull requests by azu · Pull Request #1577 · textlint/textlint](https://github.com/textlint/textlint/pull/1577)
+
+最近はmerge-gatekeeperからautomerge-gateに入れ替えて使っています。
+automerge-gateも同じ「集約された1つの必須チェック」というアプローチですが、GitHubのAuto Mergeと組み合わせて使うことを前提に作られています。
+必須チェックとして登録するのは`automerge-gate/all-passed`の1つだけで、ワークフローやGitHub App由来のチェックをこのアクションが集約してくれます。
+
+## 仕組み
+
+automerge-gateには2つのモードがあります。
+
+- Private mode — フォークPRを受け取らないリポジトリ向けのコスト最適化モード。マージ意図のないPRではアクション自体が早期returnして、ランナー時間を消費しない
+- Public mode — フォークPRを受け取るリポジトリ向け。フォークPRでは`GITHUB_TOKEN`が読み取り専用になるため、ジョブ自身の`check_run`の終了コードがゲート信号になる
+
+メインのユースケースはPrivate modeで、Public modeはオープンソースプロジェクトのようなフォークPR対応用です。
+
+### Private mode (メインのユースケース)
+
+Private modeでは、アクションがREST APIで集約結果をcommit statusとして書き込みます。
+重要なのは、PRが開かれただけでマージ意図がない状態(Auto Merge未有効 & write権限のApproveなし)では、アクション側はポーリングをせずに何も書き込まずにすぐに終了する点です。
+
+このとき、必須チェック`automerge-gate/all-passed`はGitHubのデフォルトの`Expected — Waiting for status to be reported`のままです。
+そのため、マージはブロックされた状態が維持されます。
+メンテナがAuto Mergeを有効化したタイミング、またはwrite権限を持つレビュアーがApproveしたタイミングで、初めてアクションがポーリングを開始してチェックを集約しにいきます。
+
+![automerge-gate Private modeのシーケンス](https://mermaid.ink/svg/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBVIGFzIOODoeODs-ODhuODigogICAgcGFydGljaXBhbnQgQSBhcyBhdXRvbWVyZ2UtZ2F0ZSAoYWN0aW9uKQogICAgcGFydGljaXBhbnQgUFIgYXMgUHVsbCBSZXF1ZXN0CgogICAgVS0-PlBSOiBvcGVuIC8gcHVzaAogICAgTm90ZSBvdmVyIEE6IGFjdGlvbiDjga_jgrnjgq3jg4Pjg5cgKOODnuODvOOCuOaEj-Wbs-OBquOBlykKICAgIE5vdGUgb3ZlciBQUjog5b-F6aCI44OB44Kn44OD44Kv44GvICJFeHBlY3RlZCIg44Gu44G-44G-PGJyLz7jg57jg7zjgrjkuI3lj68KCiAgICBVLT4-UFI6IEVuYWJsZSBBdXRvIE1lcmdlIC8gQXBwcm92ZQogICAgQS0-PkE6IFBSIOS4iuOBruS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-UFI6IGNvbW1pdCBzdGF0dXMg44KSIHN1Y2Nlc3Mg44GnIFBPU1QKICAgICAgICBQUi0-PlBSOiBHaXRIdWIgYXV0by1tZXJnZSDihpIg44Oe44O844K4CiAgICBlbHNlIOOBhOOBmuOCjOOBi-WkseaVlwogICAgICAgIEEtPj5QUjogY29tbWl0IHN0YXR1cyDjgpIgZmFpbHVyZSDjgacgUE9TVAogICAgICAgIE5vdGUgb3ZlciBQUjog44Oe44O844K45LiN5Y-vCiAgICBlbmQK?bgColor=FFFFFF)
+
+ジョブ自体は軽量で、PRの`check_run`を一定間隔(デフォルト30秒)でポーリングして集約結果を計算するだけです。
+依存関係のビルドもなく、`runs-on: ubuntu-latest`の標準ランナーで十分動きます。
+ポーリングしない場合のジョブは数秒で終わるので、Auto MergeがONになる前のPRではランナー時間をほぼ消費しません。
+
+このスキップ動作によって、プライベートリポジトリでのコスト効率が改善できます。
+GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用できるランナー](https://docs.github.com/en/actions/reference/runners/github-hosted-runners)ごとに[単価](https://docs.github.com/en/billing/reference/actions-runner-pricing)が異なります。
+代表的なものを抜粋すると次のとおりです。
+
+| `runs-on:` | スペック | 料金 |
+|------|--------|------|
+| `ubuntu-latest` | Linux 2-core (x64) | $0.006 / 分 |
+| `ubuntu-24.04-arm` | Linux 2-core (arm64) | $0.005 / 分 |
+| `ubuntu-slim` | Linux 1-core (x64) | $0.002 / 分 |
+
+[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto MergeがONかどうかに関わらず、PRが開かれた時点から他のチェックが揃うまでポーリングを続ける設計です。
+そのため、1回のポーリングはCI全体が完了するのにかかる時間(例: 10分)とほぼ同じだけ走り続けます。
+さらにpushするたびに同じポーリングが起きるので、`push数 × ポーリング時間`の課金が発生します。
+さらにmerge-gatekeeperは内部でDockerコマンドを使うため、Dockerが使えない`ubuntu-slim`では動きません。
+そのため、$0.006/分の`ubuntu-latest`を選ぶ必要がありました。
+
+automerge-gateの場合、本体はNode.js製のActionでDockerに依存していないため、`ubuntu-slim`(1-core, $0.002/分)でも動かせます。
+加えてPrivate modeでは、Auto Mergeが有効化されておらずwrite権限ありのApproveもないPRに対してはポーリング自体を開始しません。
+ジョブはトリガーされるので1分切り上げの最低課金(`ubuntu-slim`なら$0.002)は発生しますが、CI完了までポーリングし続けることはなくなります。
+
+ただし、merge-gatekeeperとは視覚的な違いがあります。
+merge-gatekeeperの場合、常にポーリングしているので、すべてのチェックが揃えば集約チェックがグリーンになります。
+一方automerge-gateのPrivate modeでは、Auto MergeまたはApproveまで`automerge-gate/all-passed`は`pending`のままです。
+GitHubの表示上は`Expected — Waiting for status to be reported`と出ます。
+
+Commit statusは`(SHA, context)`の組をキーにしてGitHubが評価するので、新しいコミットがpushされても自動的に新しいSHAに対して再評価が走ります。Auto Mergeを一度有効にしたら、その後はpush毎に有効/無効を切り替える必要はありません。
+
+## 設定方法
+
+設定は次の5ステップです。
+
+1. モードを選ぶ(Private / Public)
+2. `.github/workflows/automerge-gate.yaml`を追加
+3. Ruleset(またはBranch protection)で`automerge-gate/all-passed`を必須チェックに登録
+4. リポジトリ設定で「Allow auto-merge」を有効化
+5. PRで「Enable Auto Merge」をクリック
+
+### ワークフローファイル (Private mode)
+
+`.github/workflows/automerge-gate.yaml`は次のような内容になります。
+
+```yaml
+name: automerge-gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, auto_merge_enabled]
+  pull_request_review:
+    types: [submitted]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    if: >-
+      github.event_name != 'pull_request_review' ||
+      github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      statuses: write
+      checks: read
+      pull-requests: read
+      actions: read
+    steps:
+      - uses: pkgdeps/automerge-gate@v4.0.0
+        with:
+          gate-mode: 'private'
+          context: 'automerge-gate/all-passed'
+```
+
+ポイントは次のとおりです。
+
+- `pull_request_review`の`if:`で`approved`のみを通している。GitHubの`on:`はレビューのstateで絞り込めないので、ジョブの`if:`で弾いて空振りでもrunnerが立ち上がらないようにしている
+- `timeout-minutes: 10`がポーリングループの唯一のタイムアウト。アクション側に独立した`timeout-seconds`入力はあえて用意されておらず、設定箇所を二重化しない方針になっている
+- 権限は`statuses: write`(commit status書き込み)と`checks: read`(チェックの集約読み取り)で十分
+
+Approveをマージ意図として扱いたくないチームは、`on:`から`pull_request_review`を外せば、Auto Mergeを明示的に有効化したときだけポーリングが走るようになります。
+
+### 必須チェックの登録
+
+Settings → Rules → Rulesetsを開いて、`automerge-gate/all-passed`を必須チェックに追加します。
+
+📝 必須チェックのドロップダウンは、過去にそのリポジトリで実行されたチェック名しかオートコンプリートしないので、初回設定時は候補に出てきません。手入力で`automerge-gate/all-passed`と入れる必要があります。
+
+### Auto Mergeの有効化
+
+Settings → General → Pull Requestsで「Allow auto-merge」をチェックします。これをしないとPRに「Enable Auto Merge」ボタンが出ないので、ステップ5が動きません。
+
+## 除外パターンの指定
+
+CodecovやNetlifyのプレビュー、Renovateなど特定のチェック/Appをゲートから外したい場合は、`ignore-apps`または`ignore-checks`で除外できます。
+
+```yaml
+- uses: pkgdeps/automerge-gate@v4.0.0
+  with:
+    gate-mode: 'private'
+    ignore-apps: |
+      dependabot
+      renovate
+```
+
+`ignore-checks`はglob(`*` / `?`)が使えます。
+
+```yaml
+- uses: pkgdeps/automerge-gate@v4.0.0
+  with:
+    gate-mode: 'private'
+    ignore-checks: |
+      optional-*
+      docs-only
+```
+
+`ignore-checks`がチェックするのはGitHub APIの`check_run.name`(=`jobs.<key>.name`)です。
+GitHubのUIで見える`<workflow> / <job>`形式ではない点に注意してください。
+実際にどの名前で記録されているかは、次のコマンドで確認できます。
+
+```bash
+gh api "repos/{owner}/{repo}/commits/{sha}/check-runs" \
+  --jq '.check_runs[] | {name, app: .app.slug, conclusion}'
+```
+
+## Public modeについて
+
+オープンソースプロジェクトのようにフォークPRを受け付けるリポジトリでは、フォークPRに対して`GITHUB_TOKEN`が読み取り専用になります。
+そのため、Private modeのようにcommit statusをPOSTする方法は使えません。
+書き込みできないと「待機中(=ステータス未設定)」の状態も表現できないため、Private modeでやっている「マージ意図がなければスキップ」もそのままでは成り立ちません。
+
+そこでPublic modeでは、ジョブ自身の`check_run`(GitHub Actionsが自動で作るもの)の終了コードをゲート信号として扱います。
+ジョブの`name:`を必須チェックの名前(`automerge-gate/all-passed`)に揃えておくことで、ジョブの結果がそのまま必須チェックの結果になります。
+この点は[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)とほぼ同じ仕組みです。
+代わりに「スキップで節約」はできなくなるため、Public modeでは全イベントで常にポーリングする形になります。
+
+代替案として`pull_request_target`で`GITHUB_TOKEN`に書き込み権限を持たせるアプローチもあります。
+しかし、フォーク由来のコードを書き込み権限付きで動かすことになり、セキュリティ上の問題が大きいです。
+そのため、この方式は採らずに「ジョブ自身の終了コードを信号にする」形に落ち着きました。
+詳しい設計の背景は、[architecture.md](https://github.com/pkgdeps/automerge-gate/blob/main/docs/architecture.md)にまとまっています。
+
+![automerge-gate Public modeのシーケンス](https://mermaid.ink/svg/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBQUiBhcyBQdWxsIFJlcXVlc3QKICAgIHBhcnRpY2lwYW50IEogYXMgZ2F0ZSBqb2IKICAgIHBhcnRpY2lwYW50IEEgYXMgYXV0b21lcmdlLWdhdGUgKGFjdGlvbikKCiAgICBQUi0-Pko6IHdvcmtmbG93IHRyaWdnZXIgKOW4uOaZgikKICAgIE5vdGUgb3ZlciBKOiBqb2Ig44GuIGNoZWNrX3J1biA9IOW_hemgiOODgeOCp-ODg-OCrzxici8-KGpvYiDlkI3jgajkuIDoh7QpCiAgICBKLT4-QTogYWN0aW9uIOOBjOS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-SjogZXhpdCAwCiAgICAgICAgSi0-PlBSOiBqb2Ig44GuIGNoZWNrX3J1biDihpIgc3VjY2VzcwogICAgICAgIFBSLT4-UFI6IEdpdEh1YiBhdXRvLW1lcmdlIOKGkiDjg57jg7zjgrgKICAgIGVsc2Ug44GE44Ga44KM44GL5aSx5pWXCiAgICAgICAgQS0-Pko6IGV4aXQgbm9uLXplcm8KICAgICAgICBKLT4-UFI6IGpvYiDjga4gY2hlY2tfcnVuIOKGkiBmYWlsdXJlCiAgICAgICAgTm90ZSBvdmVyIFBSOiDjg57jg7zjgrjkuI3lj68KICAgIGVuZAo?bgColor=FFFFFF)
+
+ワークフローは次のようになります。
+
+```yaml
+name: automerge-gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, auto_merge_enabled]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: automerge-gate/all-passed # ruleset側の必須チェック名と一致させる
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      checks: read
+      pull-requests: read
+      actions: read
+    steps:
+      - uses: pkgdeps/automerge-gate@v4.0.0
+        with:
+          gate-mode: 'public'
+```
+
+Private modeとの違いは次のとおりです。
+
+- 権限は`checks: read`のみでよい(commit statusを書き込まないため)
+- 「マージ意図がないPRはスキップ」というコスト最適化は行わない。常にトリガーごとにポーリングする(`GITHUB_TOKEN`が読み取り専用だと"待機中"の信号を書き込めないため)
+- ジョブの`name:`が必須チェック名そのものになる
+
+実際のPublic modeでの実行例として、[secretlint/secretlint#1557](https://github.com/secretlint/secretlint/pull/1557)のログを見てみます。
+`ubuntu-24.04`の標準ランナー上で、17個のチェックを集約している様子です。
+
+```
+##[group][00:05] Poll #1 — pending, 14/15 completed
+  🟡 Agent (in_progress)
+  ✅ Analyze (javascript-typescript) (success)
+  ✅ Analyze (javascript) (success)
+  ✅ binary-test (success)
+  ✅ CodeQL (success)
+  ...
+##[group][00:38] Poll #2 — success, 17/17 completed
+  ✅ Agent (success)
+  ...
+✅ Passed (17):
+```
+
+CodeQL、hadolint、secretlint、各OS/Node.jsのテストなど複数ワークフロー由来のチェックが、`automerge-gate/all-passed`の1つに集約されています。
+ジョブ自体はチェック結果を読んで待つだけなので、約38秒で集約完了しています。
+
+オープンソースプロジェクトのようにフォークPRを受け付ける環境でなければ、Private modeを使うのが基本になります。
+
+## merge-gatekeeperとの細かな違い: GitHub Actionsが作ったPRのデッドロック
+
+GitHub ActionsがPRを作る場合、`secrets.GITHUB_TOKEN`で作成されたPRに対しては、無限ループ防止のために他のGitHub Actionsワークフローが発火しません。
+
+- 参考: [Triggering a workflow from a workflow - GitHub Docs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/trigger-a-workflow#triggering-a-workflow-from-a-workflow)
+
+このとき、ゲート用のワークフローも発火しないため、必須チェックがいつまでも報告されません。
+merge-gatekeeperの場合は、PRイベントでしか動かないため、このPRはマージできないままデッドロックします。
+
+automerge-gateはPrivate/Publicどちらのモードでも、`pull_request`の`auto_merge_enabled`イベントをトリガーに含めています。
+さらにPrivate modeではApprove(`pull_request_review`の`submitted`)もトリガーに含まれます。
+そのため、手動でAuto Mergeを有効化するかApproveすれば、人手起点でゲートを動かせます。
+完全な自動化はできませんが、デッドロック状態からは一応抜け出せる構造になっています。
+
+## 制限事項
+
+automerge-gateには次の制限があります。
+
+- Merge Queue非対応 — GitHubの`merge_group`イベントには非対応
+- ジョブのタイムアウト — `timeout-minutes`に達するとジョブが`failure` / `cancelled`で終わり、必須チェックは赤のまま残る。GitHub Actionsの「Re-run failed jobs」でリトライするか、Auto Mergeを一度無効化して有効化し直す
+- Legacy commit status APIのみのCI — AtlantisやJenkinsの一部のような、legacy commit status APIだけを使うCIは集約対象にならない
+    - 該当するCIはRulesetに直接必須チェックとして追加し、`automerge-gate/all-passed`と並列に置く必要がある
+
+## バージョニング
+
+automerge-gateのリリースは、`v4.0.0`のような不変のSemVerタグで公開されます。
+`v4`のように移動するメジャータグは意図的に作っていないので、ワークフロー側では固定バージョンを指定して、RenovateやDependabotで更新するスタイルが推奨されています。これは、移動するタグが書き換えられるサプライチェーンリスクを避けるための設計です。
+
+## まとめ
+
+[automerge-gate](https://github.com/pkgdeps/automerge-gate)は、GitHubのAuto Mergeとあわせて使う集約チェックのGitHub Actionです。
+
+- Rulesetに登録する必須チェックは`automerge-gate/all-passed`の1つだけで済む
+- Renovate/DependabotやmonorepoのパスフィルタによってPRごとにチェックが増減しても、自動的に集約される
+- Private modeでは、マージ意図のないPRではポーリングをスキップするためrunner時間をほぼ消費しない
+- フォークPRを受け取るオープンソースプロジェクトなどはPublic modeで対応できる
+
+merge-gatekeeperと似たコンセプトですが、Auto Merge前提でコストを最適化している点が違います。
+また、Private/Publicの2モードに分けて`GITHUB_TOKEN`の権限差に対応している点も異なります。
+
+## 参考
+
+- [pkgdeps/automerge-gate](https://github.com/pkgdeps/automerge-gate)
+- [upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)
+- [About protected branches - GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
+- [Automatically merging a pull request - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)
