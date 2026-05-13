@@ -20,14 +20,14 @@ GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitH
 GitHubのBranch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
 この方式は次のような場面で壊れやすいという問題があります。
 
-- RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとに増減する
+- RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
 - monorepoでパスフィルタを使っていると、ワークフローがPRによってスキップされたりされなかったりする
 - 新しいワークフローを追加する度に、Rulesetを書き換える必要がある
 
 GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功すること)しか表現できないため、「チェック群のうちどれかが走っていればよい」みたいな条件は書けません。
 そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
 
-この問題への対処として、必須チェックを集約する[upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)を使っているケースも多いです。
+この問題への対処として、必須チェックを1つのステータスに集約する[upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)を使っているケースも多いです。
 自分も[textlint](https://github.com/textlint/textlint)などのOSSや、プライベートリポジトリで使っていました。
 
 - [CI: add Merge Gatekeeper workflow for pull requests by azu · Pull Request #1577 · textlint/textlint](https://github.com/textlint/textlint/pull/1577)
