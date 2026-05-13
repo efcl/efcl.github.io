@@ -65,15 +65,15 @@ Private modeでは、アクションがREST APIで集約結果をcommit status�
 GitHub Actionsの[runner料金](https://docs.github.com/en/billing/reference/actions-runner-pricing)は、ジョブ単位の1分未満切り上げです。
 ランナーごとの料金は次のとおりです。
 
-| SKU | runner | 料金 |
+| `runs-on:` | スペック | 料金 |
 |------|--------|------|
-| `actions_linux` | Linux 2-core (`ubuntu-latest`) | $0.006 / 分 |
-| `actions_linux_arm` | Linux 2-core arm64 | $0.005 / 分 |
-| `actions_linux_slim` | Linux 1-core slim | $0.002 / 分 |
+| `ubuntu-latest` | Linux 2-core (x64) | $0.006 / 分 |
+| `ubuntu-24.04-arm` | Linux 2-core (arm64) | $0.005 / 分 |
+| `ubuntu-slim` | Linux 1-core (x64) | $0.002 / 分 |
 
 毎PR・毎pushでポーリングジョブが走ると、ジョブが数秒で終わっても1分切り上げで課金されていきます。
 [merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto Mergeを使わないPRでも常にポーリングを始める設計です。
-さらに安価な`actions_linux_slim` (1-core) では動かないため、$0.006/分の`ubuntu-latest`系ランナーで毎回1分課金されていました。
+さらに安価な`ubuntu-slim` (1-core) では動かないため、$0.006/分の`ubuntu-latest`で毎回1分課金されていました。
 自分の用途ではプライベートリポジトリでも、Auto Mergeまで進むPRは一部です。
 「マージ意図がないPRはスキップする」というautomerge-gateの設計のほうが、無駄なポーリング費用を抑えられて都合がよいです。
 
