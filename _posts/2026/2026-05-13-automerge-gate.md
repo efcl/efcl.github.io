@@ -21,7 +21,7 @@ GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitH
 これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
 逆に言うと、Auto Mergeを使うには何かしらのステータスチェックを必ず必須に入れる必要があります。
 
-そのBranch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
+そして、Branch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
 この方式は次のような場面で壊れやすいという問題があります。
 
 - RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
@@ -36,9 +36,8 @@ GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功す
 
 - [CI: add Merge Gatekeeper workflow for pull requests by azu · Pull Request #1577 · textlint/textlint](https://github.com/textlint/textlint/pull/1577)
 
-ただ、最近はmerge-gatekeeperから後述する[automerge-gate](https://github.com/pkgdeps/automerge-gate)に入れ替えて使っています。
-
-[automerge-gate](https://github.com/pkgdeps/automerge-gate)は、同じ「集約された1つの必須チェック」というアプローチを採用しつつ、GitHubのAuto Mergeと組み合わせて使うことを前提に作られています。
+最近はmerge-gatekeeperからautomerge-gateに入れ替えて使っています。
+automerge-gateも同じ「集約された1つの必須チェック」というアプローチですが、GitHubのAuto Mergeと組み合わせて使うことを前提に作られています。
 必須チェックとして登録するのは`automerge-gate/all-passed`の1つだけで、ワークフローやGitHub App由来のチェックをこのアクションが集約してくれます。
 
 ## 仕組み
@@ -48,7 +47,7 @@ automerge-gateには2つのモードがあります。
 - Private mode — フォークPRを受け取らないリポジトリ向けのコスト最適化モード。マージ意図のないPRではアクション自体が早期returnして、ランナー時間を消費しない
 - Public mode — フォークPRを受け取るリポジトリ向け。フォークPRでは`GITHUB_TOKEN`が読み取り専用になるため、ジョブ自身の`check_run`の終了コードがゲート信号になる
 
-メインのユースケースはPrivate modeです。Public modeはOSSのようにフォークPRを受け付けるリポジトリ向けに用意されています。
+メインのユースケースはPrivate modeで、Public modeはOSSのようなフォークPR対応用です。
 
 ### Private mode (メインのユースケース)
 
@@ -188,16 +187,17 @@ gh api "repos/{owner}/{repo}/commits/{sha}/check-runs" \
 
 OSSのようにフォークPRを受け付けるリポジトリでは、フォークPRに対して`GITHUB_TOKEN`が読み取り専用になります。
 そのため、Private modeのようにcommit statusをPOSTする方法は使えません。
-書き込みできないと「待機中(=ステータス未設定)」という状態も外に出せないので、Private modeでやっている「マージ意図がなければスキップ」もそのままでは表現できないことになります。
+書き込みできないと「待機中(=ステータス未設定)」の状態も表現できないため、Private modeでやっている「マージ意図がなければスキップ」もそのままでは成り立ちません。
 
 そこでPublic modeでは、ジョブ自身の`check_run`(GitHub Actionsが自動で作るもの)の終了コードをゲート信号として扱います。
 ジョブの`name:`を必須チェックの名前(`automerge-gate/all-passed`)に揃えておくことで、ジョブの結果がそのまま必須チェックの結果になります。
-代わりに「スキップで節約」はできなくなるため、全イベントで常にポーリングを回す形になります。
-このトレードオフについては、[architecture.md](https://github.com/pkgdeps/automerge-gate/blob/main/docs/architecture.md)に背景がまとまっています。
+この点は[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)とほぼ同じ仕組みです。
+代わりに「スキップで節約」はできなくなるため、Public modeでは全イベントで常にポーリングする形になります。
+
 代替案として`pull_request_target`で`GITHUB_TOKEN`に書き込み権限を持たせるアプローチもあります。
 しかし、フォーク由来のコードを書き込み権限付きで動かすことになり、セキュリティ上の問題が大きいです。
-そのため、この方式は採らずに「ジョブ自身の終了コードを信号にする」形に落ち着いた、という設計のようです。
-この点は[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)とほぼ同じ仕組みです。
+そのため、この方式は採らずに「ジョブ自身の終了コードを信号にする」形に落ち着いたとのことです。
+詳しい設計の背景は、[architecture.md](https://github.com/pkgdeps/automerge-gate/blob/main/docs/architecture.md)にまとまっています。
 
 ![automerge-gate Public modeのシーケンス](https://mermaid.ink/img/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBQUiBhcyBQdWxsIFJlcXVlc3QKICAgIHBhcnRpY2lwYW50IEogYXMgZ2F0ZSBqb2IKICAgIHBhcnRpY2lwYW50IEEgYXMgYXV0b21lcmdlLWdhdGUgKGFjdGlvbikKCiAgICBQUi0-Pko6IHdvcmtmbG93IHRyaWdnZXIgKOW4uOaZgikKICAgIE5vdGUgb3ZlciBKOiBqb2Ig44GuIGNoZWNrX3J1biA9IOW_hemgiOODgeOCp-ODg-OCrzxici8-KGpvYiDlkI3jgajkuIDoh7QpCiAgICBKLT4-QTogYWN0aW9uIOOBjOS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-SjogZXhpdCAwCiAgICAgICAgSi0-PlBSOiBqb2Ig44GuIGNoZWNrX3J1biDihpIgc3VjY2VzcwogICAgICAgIFBSLT4-UFI6IEdpdEh1YiBhdXRvLW1lcmdlIOKGkiDjg57jg7zjgrgKICAgIGVsc2Ug44GE44Ga44KM44GL5aSx5pWXCiAgICAgICAgQS0-Pko6IGV4aXQgbm9uLXplcm8KICAgICAgICBKLT4-UFI6IGpvYiDjga4gY2hlY2tfcnVuIOKGkiBmYWlsdXJlCiAgICAgICAgTm90ZSBvdmVyIFBSOiDjg57jg7zjgrjkuI3lj68KICAgIGVuZAo?type=png)
 
@@ -229,7 +229,7 @@ jobs:
           gate-mode: 'public'
 ```
 
-Private modeとの違いはPublic modeの場合は次のような点です。
+Private modeとの違いは次のとおりです。
 
 - 権限は`checks: read`のみでよい(commit statusを書き込まないため)
 - 「マージ意図がないPRはスキップ」というコスト最適化は行わない。常にトリガーごとにポーリングする(`GITHUB_TOKEN`が読み取り専用だと"待機中"の信号を書き込めないため)
@@ -260,7 +260,8 @@ OSSのようにフォークPRを受け付ける環境でなければ、Private m
 ## merge-gatekeeperとの細かな違い: GitHub Actionsが作ったPRのデッドロック
 
 GitHub ActionsがPRを作る場合、`secrets.GITHUB_TOKEN`で作成されたPRに対しては、無限ループ防止のために他のGitHub Actionsワークフローが発火しません。
-- [Triggering a workflow from a workflow - GitHub Docs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/trigger-a-workflow#triggering-a-workflow-from-a-workflow)
+
+- 参考: [Triggering a workflow from a workflow - GitHub Docs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/trigger-a-workflow#triggering-a-workflow-from-a-workflow)
 
 このとき、ゲート用のワークフローも発火しないため、必須チェックがいつまでも報告されません。
 merge-gatekeeperの場合は、PRイベントでしか動かないため、このPRはマージできないままデッドロックします。
@@ -293,8 +294,8 @@ automerge-gateのリリースは、`v4.0.0`のような不変のSemVerタグで�
 - Private modeでは、マージ意図のないPRではポーリングをスキップするためrunner時間をほぼ消費しない
 - フォークPRを受け取るOSSなどはPublic modeで対応できる
 
-merge-gatekeeperと似たコンセプトですが、Auto Merge前提でコストを最適化している点が特徴です。
-また、Public/Privateの2モードを明示的に分けて、`GITHUB_TOKEN`の権限差に対応している点もmerge-gatekeeperとは異なります。
+merge-gatekeeperと似たコンセプトですが、Auto Merge前提でコストを最適化している点が違います。
+また、Private/Publicの2モードに分けて`GITHUB_TOKEN`の権限差に対応している点も異なります。
 
 ## 参考
 
