@@ -272,8 +272,8 @@ GitHub ActionsがPRを作る場合、`secrets.GITHUB_TOKEN`で作成されたPR�
 このとき、ゲート用のワークフローも発火しないため、必須チェックがいつまでも報告されません。
 merge-gatekeeperの場合は、PRイベントでしか動かないため、このPRはマージできないままデッドロックします。
 
-automerge-gateのPrivate modeでは、Auto MergeボタンとApproveもワークフローのトリガーに含めています。
-具体的には`auto_merge_enabled`と`pull_request_review`のイベントです。
+automerge-gateはPrivate/Publicどちらのモードでも、`pull_request`の`auto_merge_enabled`イベントをトリガーに含めています。
+さらにPrivate modeではApprove(`pull_request_review`の`submitted`)もトリガーに含まれます。
 そのため、手動でAuto Mergeを有効化するかApproveすれば、人手起点でゲートを動かせます。
 完全な自動化はできませんが、デッドロック状態からは一応抜け出せる構造になっています。
 
