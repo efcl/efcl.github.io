@@ -11,7 +11,7 @@ tags:
 
 ---
 
-GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action [automerge-gate](https://github.com/pkgdeps/automerge-gate) があったので紹介します。
+GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action [automerge-gate](https://github.com/pkgdeps/automerge-gate) を作ったので紹介します。
 
 - GitHub: [pkgdeps/automerge-gate](https://github.com/pkgdeps/automerge-gate)
 
