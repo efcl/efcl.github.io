@@ -275,7 +275,7 @@ automerge-gateのPrivate modeでは、Auto MergeボタンとApproveもワーク�
 automerge-gateには次の制限があります。
 
 - Merge Queue非対応 — GitHubの`merge_group`イベントには非対応
-- ジョブのタイムアウト — `timeout-minutes`に達するとジョブが`failure` / `cancelled`で終わり、必須チェックは赤のまま残る。再試行するにはAuto Mergeを一度無効化して有効化し直す
+- ジョブのタイムアウト — `timeout-minutes`に達するとジョブが`failure` / `cancelled`で終わり、必須チェックは赤のまま残る。GitHub Actionsの「Re-run failed jobs」でリトライするか、Auto Mergeを一度無効化して有効化し直す
 - Legacy commit status APIのみのCI — AtlantisやJenkinsの一部のような、legacy commit status APIだけを使うCIは集約対象にならない
     - 該当するCIはRulesetに直接必須チェックとして追加し、`automerge-gate/all-passed`と並列に置く必要がある
 
