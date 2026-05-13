@@ -80,7 +80,7 @@ GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用�
 そのため、$0.006/分の`ubuntu-latest`を選ぶ必要がありました。
 
 automerge-gateの場合、本体はNode.js製のActionでDockerに依存していないため、`ubuntu-slim`(1-core, $0.002/分)でも動かせます。
-加えてPrivate modeでは、Auto Mergeが有効化されていないPRはポーリングをスキップするので、課金時間そのものが発生しません。
+加えてPrivate modeでは、Auto Mergeが有効化されておらずwrite権限ありのApproveもないPRに対してはポーリングをスキップするので、無駄なポーリング課金が発生しません。
 
 ただし、merge-gatekeeperとは視覚的な違いがあります。
 Auto MergeボタンかApproveが発火するまでは、必須チェック`automerge-gate/all-passed`が`pending`のままです。
