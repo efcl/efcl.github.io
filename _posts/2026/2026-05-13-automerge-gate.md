@@ -77,9 +77,12 @@ GitHub Actionsの[runner料金](https://docs.github.com/en/billing/reference/act
 
 毎PR・毎pushでポーリングジョブが走ると、ジョブが数秒で終わっても1分切り上げで課金されていきます。
 [merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto Mergeを使わないPRでも常にポーリングを始める設計です。
-さらに安価な`ubuntu-slim` (1-core) では動かないため、$0.006/分の`ubuntu-latest`で毎回1分課金されていました。
-自分の用途ではプライベートリポジトリでも、Auto Mergeまで進むPRは一部です。
-「マージ意図がないPRはスキップする」というautomerge-gateの設計のほうが、無駄なポーリング費用を抑えられて都合がよいです。
+さらにmerge-gatekeeperは内部でDockerコマンドを使うため、Dockerが使えない`ubuntu-slim`では動きません。
+そのため、$0.006/分の`ubuntu-latest`を選ぶ必要がありました。
+
+automerge-gateの場合、本体はNode.js製のActionでDockerに依存していないため、`ubuntu-slim`(1-core, $0.002/分)でも動かせます。
+加えてPrivate modeでは、Auto Mergeが有効化されていないPRはポーリングをスキップするので、課金時間そのものが発生しません。
+自分の用途ではプライベートリポジトリでもAuto Mergeまで進むPRは一部なので、「ランナーが安い」「マージ意図がないPRはスキップする」の両方が効いてきます。
 
 Commit statusは`(SHA, context)`の組をキーにしてGitHubが評価するので、新しいコミットがpushされても自動的に新しいSHAに対して再評価が走ります。Auto Mergeを一度有効にしたら、その後はpush毎に有効/無効を切り替える必要はありません。
 
@@ -172,7 +175,7 @@ CodecovやNetlifyのプレビュー、Renovateなど特定のチェック/Appを
       docs-only
 ```
 
-`ignore-checks`が照合するのはGitHub APIの`check_run.name`(=`jobs.<key>.name`)です。
+`ignore-checks`がチェックするのはGitHub APIの`check_run.name`(=`jobs.<key>.name`)です。
 GitHubのUIで見える`<workflow> / <job>`形式ではない点に注意してください。
 実際にどの名前で記録されているかは、次のコマンドで確認できます。
 
@@ -253,6 +256,19 @@ CodeQL、hadolint、secretlint、各OS/Node.jsのテストなど複数ワーク�
 ジョブ自体はチェック結果を読んで待つだけなので、約38秒で集約完了しています。
 
 OSSのようにフォークPRを受け付ける環境でなければ、Private modeを使うのが基本になります。
+
+## merge-gatekeeperとの細かな違い: GitHub Actionsが作ったPRのデッドロック
+
+GitHub ActionsがPRを作る場合、`secrets.GITHUB_TOKEN`で作成されたPRに対しては、無限ループ防止のために他のGitHub Actionsワークフローが発火しません。
+- [Triggering a workflow from a workflow - GitHub Docs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/trigger-a-workflow#triggering-a-workflow-from-a-workflow)
+
+このとき、ゲート用のワークフローも発火しないため、必須チェックがいつまでも報告されません。
+merge-gatekeeperの場合は、PRイベントでしか動かないため、このPRはマージできないままデッドロックします。
+
+automerge-gateのPrivate modeでは、Auto MergeボタンとApproveもワークフローのトリガーに含めています。
+具体的には`auto_merge_enabled`と`pull_request_review`のイベントです。
+そのため、手動でAuto Mergeを有効化するかApproveすれば、人手起点でゲートを動かせます。
+完全な自動化はできませんが、デッドロック状態からは一応抜け出せる構造になっています。
 
 ## 制限事項
 
