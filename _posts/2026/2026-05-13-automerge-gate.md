@@ -17,7 +17,10 @@ GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitH
 
 ## 背景: GitHubの必須チェックは"名前で列挙する"のがつらい
 
-GitHubのBranch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
+前提として、GitHubの[Auto Merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)を使うには、必須チェック未達成のPRをマージできない状態にする[Branch protection ruleやRuleset](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)の設定が必要です。
+これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
+
+そのBranch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
 この方式は次のような場面で壊れやすいという問題があります。
 
 - RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
