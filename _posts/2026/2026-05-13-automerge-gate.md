@@ -15,7 +15,7 @@ GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitH
 
 - GitHub: [pkgdeps/automerge-gate](https://github.com/pkgdeps/automerge-gate)
 
-## 背景: GitHubの必須チェックは"名前で列挙する"のがつらい
+## 背景: GitHubの必須チェック設定はPRごとの揺らぎに弱い
 
 前提として、GitHubの[Auto Merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)を使うには、必須チェック未達成のPRをマージできない状態にする[Branch protection ruleやRuleset](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)の設定が必要です。
 これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
