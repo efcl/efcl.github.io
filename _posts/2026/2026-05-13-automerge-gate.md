@@ -85,7 +85,8 @@ automerge-gateの場合、本体はNode.js製のActionでDockerに依存して�
 ジョブはトリガーされるので1分切り上げの最低課金(`ubuntu-slim`なら$0.002)は発生しますが、CI完了までポーリングし続けることはなくなります。
 
 ただし、merge-gatekeeperとは視覚的な違いがあります。
-Auto MergeボタンかApproveが発火するまでは、必須チェック`automerge-gate/all-passed`が`pending`のままです。
+merge-gatekeeperの場合、常にポーリングしているので、すべてのチェックが揃えば集約チェックがグリーンになります。
+一方automerge-gateのPrivate modeでは、Auto MergeまたはApproveまで`automerge-gate/all-passed`は`pending`のままです。
 GitHubの表示上は`Expected — Waiting for status to be reported`と出ます。
 
 Commit statusは`(SHA, context)`の組をキーにしてGitHubが評価するので、新しいコミットがpushされても自動的に新しいSHAに対して再評価が走ります。Auto Mergeを一度有効にしたら、その後はpush毎に有効/無効を切り替える必要はありません。
@@ -201,7 +202,7 @@ OSSのようにフォークPRを受け付けるリポジトリでは、フォー
 
 代替案として`pull_request_target`で`GITHUB_TOKEN`に書き込み権限を持たせるアプローチもあります。
 しかし、フォーク由来のコードを書き込み権限付きで動かすことになり、セキュリティ上の問題が大きいです。
-そのため、この方式は採らずに「ジョブ自身の終了コードを信号にする」形に落ち着いたとのことです。
+そのため、この方式は採らずに「ジョブ自身の終了コードを信号にする」形に落ち着きました。
 詳しい設計の背景は、[architecture.md](https://github.com/pkgdeps/automerge-gate/blob/main/docs/architecture.md)にまとまっています。
 
 ![automerge-gate Public modeのシーケンス](https://mermaid.ink/svg/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBQUiBhcyBQdWxsIFJlcXVlc3QKICAgIHBhcnRpY2lwYW50IEogYXMgZ2F0ZSBqb2IKICAgIHBhcnRpY2lwYW50IEEgYXMgYXV0b21lcmdlLWdhdGUgKGFjdGlvbikKCiAgICBQUi0-Pko6IHdvcmtmbG93IHRyaWdnZXIgKOW4uOaZgikKICAgIE5vdGUgb3ZlciBKOiBqb2Ig44GuIGNoZWNrX3J1biA9IOW_hemgiOODgeOCp-ODg-OCrzxici8-KGpvYiDlkI3jgajkuIDoh7QpCiAgICBKLT4-QTogYWN0aW9uIOOBjOS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-SjogZXhpdCAwCiAgICAgICAgSi0-PlBSOiBqb2Ig44GuIGNoZWNrX3J1biDihpIgc3VjY2VzcwogICAgICAgIFBSLT4-UFI6IEdpdEh1YiBhdXRvLW1lcmdlIOKGkiDjg57jg7zjgrgKICAgIGVsc2Ug44GE44Ga44KM44GL5aSx5pWXCiAgICAgICAgQS0-Pko6IGV4aXQgbm9uLXplcm8KICAgICAgICBKLT4-UFI6IGpvYiDjga4gY2hlY2tfcnVuIOKGkiBmYWlsdXJlCiAgICAgICAgTm90ZSBvdmVyIFBSOiDjg57jg7zjgrjkuI3lj68KICAgIGVuZAo?bgColor=FFFFFF)
