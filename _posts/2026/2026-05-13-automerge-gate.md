@@ -64,7 +64,7 @@ Private modeでは、アクションがREST APIで集約結果をcommit status�
 依存関係のビルドもなく、`runs-on: ubuntu-latest`の標準ランナーで十分動きます。
 ポーリングしない場合のジョブは数秒で終わるので、Auto MergeがONになる前のPRではランナー時間をほぼ消費しません。
 
-このスキップ動作は、プライベートリポジトリでの課金面で効いてきます。
+このスキップ動作によって、プライベートリポジトリでのコスト効率が改善できます。
 GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用できるランナー](https://docs.github.com/en/actions/reference/runners/github-hosted-runners)ごとに[単価](https://docs.github.com/en/billing/reference/actions-runner-pricing)が異なります。
 代表的なものを抜粋すると次のとおりです。
 
