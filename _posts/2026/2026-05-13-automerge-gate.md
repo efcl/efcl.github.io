@@ -2,6 +2,7 @@
 title: "automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action"
 author: azu
 layout: post
+render_with_liquid: false
 date: 2026-05-13T20:00+09:00
 category: GitHub
 tags:
@@ -32,7 +33,7 @@ GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功す
 そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
 
 この問題への対処として、必須チェックを1つのステータスに集約する[upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)を使っているケースも多いです。
-自分も[textlint](https://github.com/textlint/textlint)などのOSSや、プライベートリポジトリで使っていました。
+自分も[textlint](https://github.com/textlint/textlint)などのオープンソースプロジェクトや、プライベートリポジトリで使っていました。
 
 - [CI: add Merge Gatekeeper workflow for pull requests by azu · Pull Request #1577 · textlint/textlint](https://github.com/textlint/textlint/pull/1577)
 
@@ -47,7 +48,7 @@ automerge-gateには2つのモードがあります。
 - Private mode — フォークPRを受け取らないリポジトリ向けのコスト最適化モード。マージ意図のないPRではアクション自体が早期returnして、ランナー時間を消費しない
 - Public mode — フォークPRを受け取るリポジトリ向け。フォークPRでは`GITHUB_TOKEN`が読み取り専用になるため、ジョブ自身の`check_run`の終了コードがゲート信号になる
 
-メインのユースケースはPrivate modeで、Public modeはOSSのようなフォークPR対応用です。
+メインのユースケースはPrivate modeで、Public modeはオープンソースプロジェクトのようなフォークPR対応用です。
 
 ### Private mode (メインのユースケース)
 
@@ -190,7 +191,7 @@ gh api "repos/{owner}/{repo}/commits/{sha}/check-runs" \
 
 ## Public modeについて
 
-OSSのようにフォークPRを受け付けるリポジトリでは、フォークPRに対して`GITHUB_TOKEN`が読み取り専用になります。
+オープンソースプロジェクトのようにフォークPRを受け付けるリポジトリでは、フォークPRに対して`GITHUB_TOKEN`が読み取り専用になります。
 そのため、Private modeのようにcommit statusをPOSTする方法は使えません。
 書き込みできないと「待機中(=ステータス未設定)」の状態も表現できないため、Private modeでやっている「マージ意図がなければスキップ」もそのままでは成り立ちません。
 
@@ -260,7 +261,7 @@ Private modeとの違いは次のとおりです。
 CodeQL、hadolint、secretlint、各OS/Node.jsのテストなど複数ワークフロー由来のチェックが、`automerge-gate/all-passed`の1つに集約されています。
 ジョブ自体はチェック結果を読んで待つだけなので、約38秒で集約完了しています。
 
-OSSのようにフォークPRを受け付ける環境でなければ、Private modeを使うのが基本になります。
+オープンソースプロジェクトのようにフォークPRを受け付ける環境でなければ、Private modeを使うのが基本になります。
 
 ## merge-gatekeeperとの細かな違い: GitHub Actionsが作ったPRのデッドロック
 
@@ -297,7 +298,7 @@ automerge-gateのリリースは、`v4.0.0`のような不変のSemVerタグで�
 - Rulesetに登録する必須チェックは`automerge-gate/all-passed`の1つだけで済む
 - Renovate/DependabotやmonorepoのパスフィルタによってPRごとにチェックが増減しても、自動的に集約される
 - Private modeでは、マージ意図のないPRではポーリングをスキップするためrunner時間をほぼ消費しない
-- フォークPRを受け取るOSSなどはPublic modeで対応できる
+- フォークPRを受け取るオープンソースプロジェクトなどはPublic modeで対応できる
 
 merge-gatekeeperと似たコンセプトですが、Auto Merge前提でコストを最適化している点が違います。
 また、Private/Publicの2モードに分けて`GITHUB_TOKEN`の権限差に対応している点も異なります。
