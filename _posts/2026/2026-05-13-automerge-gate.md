@@ -28,9 +28,11 @@ GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功す
 そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
 
 この問題への対処として、必須チェックを集約する[upsidr/merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)を使っているケースも多いです。
-自分も[textlint](https://github.com/textlint/textlint)などで使っています。
+自分も[textlint](https://github.com/textlint/textlint)などのOSSや、プライベートリポジトリで使っていました。
 
 - [CI: add Merge Gatekeeper workflow for pull requests by azu · Pull Request #1577 · textlint/textlint](https://github.com/textlint/textlint/pull/1577)
+
+ただ、最近はmerge-gatekeeperから後述する[automerge-gate](https://github.com/pkgdeps/automerge-gate)に入れ替えて使っています。
 
 [automerge-gate](https://github.com/pkgdeps/automerge-gate)は、同じ「集約された1つの必須チェック」というアプローチを採用しつつ、GitHubのAuto Mergeと組み合わせて使うことを前提に作られています。
 必須チェックとして登録するのは`automerge-gate/all-passed`の1つだけで、ワークフローやGitHub App由来のチェックをこのアクションが集約してくれます。
@@ -56,7 +58,24 @@ Private modeでは、アクションがREST APIで集約結果をcommit status�
 ![automerge-gate Private modeのシーケンス](https://mermaid.ink/img/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBVIGFzIOODoeODs-ODhuODigogICAgcGFydGljaXBhbnQgQSBhcyBhdXRvbWVyZ2UtZ2F0ZSAoYWN0aW9uKQogICAgcGFydGljaXBhbnQgUFIgYXMgUHVsbCBSZXF1ZXN0CgogICAgVS0-PlBSOiBvcGVuIC8gcHVzaAogICAgTm90ZSBvdmVyIEE6IGFjdGlvbiDjga_jgrnjgq3jg4Pjg5cgKOODnuODvOOCuOaEj-Wbs-OBquOBlykKICAgIE5vdGUgb3ZlciBQUjog5b-F6aCI44OB44Kn44OD44Kv44GvICJFeHBlY3RlZCIg44Gu44G-44G-PGJyLz7jg57jg7zjgrjkuI3lj68KCiAgICBVLT4-UFI6IEVuYWJsZSBBdXRvIE1lcmdlIC8gQXBwcm92ZQogICAgQS0-PkE6IFBSIOS4iuOBruS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-UFI6IGNvbW1pdCBzdGF0dXMg44KSIHN1Y2Nlc3Mg44GnIFBPU1QKICAgICAgICBQUi0-PlBSOiBHaXRIdWIgYXV0by1tZXJnZSDihpIg44Oe44O844K4CiAgICBlbHNlIOOBhOOBmuOCjOOBi-WkseaVlwogICAgICAgIEEtPj5QUjogY29tbWl0IHN0YXR1cyDjgpIgZmFpbHVyZSDjgacgUE9TVAogICAgICAgIE5vdGUgb3ZlciBQUjog44Oe44O844K45LiN5Y-vCiAgICBlbmQK?type=png)
 
 ジョブ自体は軽量で、PRの`check_run`を一定間隔(デフォルト30秒)でポーリングして集約結果を計算するだけです。
+依存関係のビルドもなく、`runs-on: ubuntu-latest`の標準ランナーで十分動きます。
 ポーリングしない場合のジョブは数秒で終わるので、Auto Mergeを使わないPRが大半を占めるリポジトリでは、ランナー時間をほぼ消費せずに済みます。
+
+このスキップ動作は、プライベートリポジトリでの課金面で効いてきます。
+GitHub Actionsの[runner料金](https://docs.github.com/en/billing/reference/actions-runner-pricing)は、ジョブ単位の1分未満切り上げです。
+ランナーごとの料金は次のとおりです。
+
+| SKU | runner | 料金 |
+|------|--------|------|
+| `actions_linux` | Linux 2-core (`ubuntu-latest`) | $0.006 / 分 |
+| `actions_linux_arm` | Linux 2-core arm64 | $0.005 / 分 |
+| `actions_linux_slim` | Linux 1-core slim | $0.002 / 分 |
+
+毎PR・毎pushでポーリングジョブが走ると、ジョブが数秒で終わっても1分切り上げで課金されていきます。
+[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto Mergeを使わないPRでも常にポーリングを始める設計です。
+さらに安価な`actions_linux_slim` (1-core) では動かないため、$0.006/分の`ubuntu-latest`系ランナーで毎回1分課金されていました。
+自分の用途ではプライベートリポジトリでも、Auto Mergeまで進むPRは一部です。
+「マージ意図がないPRはスキップする」というautomerge-gateの設計のほうが、無駄なポーリング費用を抑えられて都合がよいです。
 
 Commit statusは`(SHA, context)`の組をキーにしてGitHubが評価するので、新しいコミットがpushされても自動的に新しいSHAに対して再評価が走ります。Auto Mergeを一度有効にしたら、その後はpush毎に有効/無効を切り替える必要はありません。
 
@@ -160,9 +179,15 @@ gh api "repos/{owner}/{repo}/commits/{sha}/check-runs" \
 
 ## Public modeについて
 
-OSSのようにフォークPRを受け付けるリポジトリでは、`GITHUB_TOKEN`がフォークPRで読み取り専用になるため、commit statusを書き込めません。
-そこでPublic modeでは、ジョブ自身の`check_run`(GitHub Actionsが自動で作るもの)の結果をゲート信号として使います。
-ジョブの`name:`を必須チェックの名前(`automerge-gate/all-passed`)に揃えるのがポイントです。
+OSSのようにフォークPRを受け付けるリポジトリでは、フォークPRに対して`GITHUB_TOKEN`が読み取り専用になります。
+そのため、Private modeのようにcommit statusをPOSTする方法は使えません。
+書き込みできないと「待機中(=ステータス未設定)」という状態も外に出せないので、Private modeでやっている「マージ意図がなければスキップ」もそのままでは表現できないことになります。
+
+そこでPublic modeでは、ジョブ自身の`check_run`(GitHub Actionsが自動で作るもの)の終了コードをゲート信号として扱います。
+ジョブの`name:`を必須チェックの名前(`automerge-gate/all-passed`)に揃えておくことで、ジョブの結果がそのまま必須チェックの結果になります。
+代わりに「スキップで節約」はできなくなるため、全イベントで常にポーリングを回す形になります。
+このトレードオフについては、[architecture.md](https://github.com/pkgdeps/automerge-gate/blob/main/docs/architecture.md)に背景がまとまっています。
+他のアプローチもいくつか試したうえで、ややヒューリスティックなこの形に落ち着いた、という設計のようです。
 
 ![automerge-gate Public modeのシーケンス](https://mermaid.ink/img/c2VxdWVuY2VEaWFncmFtCiAgICBwYXJ0aWNpcGFudCBQUiBhcyBQdWxsIFJlcXVlc3QKICAgIHBhcnRpY2lwYW50IEogYXMgZ2F0ZSBqb2IKICAgIHBhcnRpY2lwYW50IEEgYXMgYXV0b21lcmdlLWdhdGUgKGFjdGlvbikKCiAgICBQUi0-Pko6IHdvcmtmbG93IHRyaWdnZXIgKOW4uOaZgikKICAgIE5vdGUgb3ZlciBKOiBqb2Ig44GuIGNoZWNrX3J1biA9IOW_hemgiOODgeOCp-ODg-OCrzxici8-KGpvYiDlkI3jgajkuIDoh7QpCiAgICBKLT4-QTogYWN0aW9uIOOBjOS7luOBruODgeOCp-ODg-OCr-OCkuODneODvOODquODs-OCsAoKICAgIGFsdCDjgZnjgbnjgabmiJDlip8KICAgICAgICBBLT4-SjogZXhpdCAwCiAgICAgICAgSi0-PlBSOiBqb2Ig44GuIGNoZWNrX3J1biDihpIgc3VjY2VzcwogICAgICAgIFBSLT4-UFI6IEdpdEh1YiBhdXRvLW1lcmdlIOKGkiDjg57jg7zjgrgKICAgIGVsc2Ug44GE44Ga44KM44GL5aSx5pWXCiAgICAgICAgQS0-Pko6IGV4aXQgbm9uLXplcm8KICAgICAgICBKLT4-UFI6IGpvYiDjga4gY2hlY2tfcnVuIOKGkiBmYWlsdXJlCiAgICAgICAgTm90ZSBvdmVyIFBSOiDjg57jg7zjgrjkuI3lj68KICAgIGVuZAo?type=png)
 
@@ -199,6 +224,26 @@ Private modeとの違いはPublic modeの場合は次のような点です。
 - 権限は`checks: read`のみでよい(commit statusを書き込まないため)
 - 「マージ意図がないPRはスキップ」というコスト最適化は行わない。常にトリガーごとにポーリングする(`GITHUB_TOKEN`が読み取り専用だと"待機中"の信号を書き込めないため)
 - ジョブの`name:`が必須チェック名そのものになる
+
+実際のPublic modeでの実行例として、[secretlint/secretlint#1557](https://github.com/secretlint/secretlint/pull/1557)のログを見てみます。
+`ubuntu-24.04`の標準ランナー上で、17個のチェックを集約している様子です。
+
+```
+##[group][00:05] Poll #1 — pending, 14/15 completed
+  🟡 Agent (in_progress)
+  ✅ Analyze (javascript-typescript) (success)
+  ✅ Analyze (javascript) (success)
+  ✅ binary-test (success)
+  ✅ CodeQL (success)
+  ...
+##[group][00:38] Poll #2 — success, 17/17 completed
+  ✅ Agent (success)
+  ...
+✅ Passed (17):
+```
+
+CodeQL、hadolint、secretlint、各OS/Node.jsのテストなど複数ワークフロー由来のチェックが、`automerge-gate/all-passed`の1つに集約されています。
+ジョブ自体はチェック結果を読んで待つだけなので、約38秒で集約完了しています。
 
 OSSのようにフォークPRを受け付ける環境でなければ、Private modeを使うのが基本になります。
 
