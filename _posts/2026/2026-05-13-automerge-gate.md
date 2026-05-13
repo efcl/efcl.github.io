@@ -62,7 +62,7 @@ Private modeでは、アクションがREST APIで集約結果をcommit status�
 
 ジョブ自体は軽量で、PRの`check_run`を一定間隔(デフォルト30秒)でポーリングして集約結果を計算するだけです。
 依存関係のビルドもなく、`runs-on: ubuntu-latest`の標準ランナーで十分動きます。
-ポーリングしない場合のジョブは数秒で終わるので、Auto Mergeを使わないPRが大半を占めるリポジトリでは、ランナー時間をほぼ消費せずに済みます。
+ポーリングしない場合のジョブは数秒で終わるので、Auto MergeがONになる前のPRではランナー時間をほぼ消費しません。
 
 このスキップ動作は、プライベートリポジトリでの課金面で効いてきます。
 GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用できるランナー](https://docs.github.com/en/actions/reference/runners/github-hosted-runners)ごとに[単価](https://docs.github.com/en/billing/reference/actions-runner-pricing)が異なります。
@@ -74,8 +74,8 @@ GitHub Actionsの料金はジョブ単位の1分未満切り上げで、[利用�
 | `ubuntu-24.04-arm` | Linux 2-core (arm64) | $0.005 / 分 |
 | `ubuntu-slim` | Linux 1-core (x64) | $0.002 / 分 |
 
-毎PR・毎pushでポーリングジョブが走ると、ジョブが数秒で終わっても1分切り上げで課金されていきます。
-[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto Mergeを使わないPRでも常にポーリングを始める設計です。
+[merge-gatekeeper](https://github.com/upsidr/merge-gatekeeper)は同等の集約処理をしてくれますが、Auto MergeがONかどうかに関わらず、PRが開かれた時点から他のチェックが揃うまでポーリングを続ける設計です。
+そのため、CI全体が完了するのにかかる時間(例: 10分)とほぼ同じだけポーリングジョブが走り続けて、その分の課金が発生します。
 さらにmerge-gatekeeperは内部でDockerコマンドを使うため、Dockerが使えない`ubuntu-slim`では動きません。
 そのため、$0.006/分の`ubuntu-latest`を選ぶ必要がありました。
 
