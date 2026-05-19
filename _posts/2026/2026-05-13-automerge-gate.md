@@ -162,6 +162,10 @@ CodecovやNetlifyのプレビュー、Renovateなど特定のチェック/Appを
 v5から`ignore-checks`はJSONC形式の配列で記述し、`app` / `name` / `workflow`の各フィールドで条件を指定します。
 v4までの`ignore-apps`入力と改行区切りリスト形式は廃止されました。
 
+v4までは`ignore-apps`と`ignore-checks`の2つの入力に除外条件が分かれており、まとめて指定しにくい問題がありました。
+また、同じジョブ名(`check_run.name`)でもワークフローごとに区別したいケースを表現できませんでした。
+v5では1箇所のJSONC配列にまとめ、`app` / `name` / `workflow`のAND組み合わせで指定できるようにすることでこれらを解消しています。
+
 ```yaml
 - uses: pkgdeps/automerge-gate@v5.0.0
   with:
