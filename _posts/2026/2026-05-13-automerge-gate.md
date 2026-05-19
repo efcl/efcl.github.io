@@ -132,7 +132,7 @@ jobs:
       pull-requests: read
       actions: read
     steps:
-      - uses: pkgdeps/automerge-gate@v4.0.0
+      - uses: pkgdeps/automerge-gate@v5.0.0
         with:
           gate-mode: 'private'
           context: 'automerge-gate/all-passed'
@@ -142,7 +142,7 @@ jobs:
 
 - `pull_request_review`の`if:`で`approved`のみを通している。GitHubの`on:`はレビューのstateで絞り込めないので、ジョブの`if:`で弾いて空振りでもrunnerが立ち上がらないようにしている
 - `timeout-minutes: 10`がポーリングループの唯一のタイムアウト。アクション側に独立した`timeout-seconds`入力はあえて用意されておらず、設定箇所を二重化しない方針になっている
-- 権限は`statuses: write`(commit status書き込み)と`checks: read`(チェックの集約読み取り)で十分
+- 権限は`statuses: write`(commit status書き込み)と`checks: read`(チェックの集約読み取り)が必須。`ignore-checks`で`workflow`フィールドを使う場合は`actions: read`も必要
 
 Approveをマージ意図として扱いたくないチームは、`on:`から`pull_request_review`を外せば、Auto Mergeを明示的に有効化したときだけポーリングが走るようになります。
 
@@ -158,35 +158,42 @@ Settings → General → Pull Requestsで「Allow auto-merge」をチェック�
 
 ## 除外パターンの指定
 
-CodecovやNetlifyのプレビュー、Renovateなど特定のチェック/Appをゲートから外したい場合は、`ignore-apps`または`ignore-checks`で除外できます。
+CodecovやNetlifyのプレビュー、Renovateなど特定のチェック/Appをゲートから外したい場合は、`ignore-checks`で除外できます。
+v5から`ignore-checks`はJSONC形式の配列で記述し、`app` / `name` / `workflow`の各フィールドで条件を指定します。
+v4までの`ignore-apps`入力と改行区切りリスト形式は廃止されました。
+
+v4までは`ignore-apps`と`ignore-checks`の2つの入力に除外条件が分かれており、まとめて指定しにくい問題がありました。
+また、同じジョブ名(`check_run.name`)でもワークフローごとに区別したいケースを表現できませんでした。
+v5では1箇所のJSONC配列にまとめ、`app` / `name` / `workflow`のAND組み合わせで指定できるようにすることでこれらを解消しています。
 
 ```yaml
-- uses: pkgdeps/automerge-gate@v4.0.0
-  with:
-    gate-mode: 'private'
-    ignore-apps: |
-      dependabot
-      renovate
-```
-
-`ignore-checks`はglob(`*` / `?`)が使えます。
-
-```yaml
-- uses: pkgdeps/automerge-gate@v4.0.0
+- uses: pkgdeps/automerge-gate@v5.0.0
   with:
     gate-mode: 'private'
     ignore-checks: |
-      optional-*
-      docs-only
+      [
+        { "app": "dependabot" },
+        { "app": "renovate" },
+        { "name": "optional-*" },
+        { "app": "xcode-cloud", "name": "Build *" },
+        { "workflow": "ci-go.yaml", "name": "lint" }
+      ]
 ```
 
-`ignore-checks`がチェックするのはGitHub APIの`check_run.name`(=`jobs.<key>.name`)です。
+評価ルールは次のとおりです。
+
+- 同一ルール内の複数フィールドはAND、異なるルール間はORで評価される
+- 省略したフィールドはワイルドカード扱いになる
+- 各フィールドはglob(`*` / `?`)対応
+- `workflow`はGitHub Actions由来のチェックにのみ有効で、ジョブの`name:`が同じでも別ワークフローのものだけを除外できる(`actions: read`権限が必須)
+
+`name`がマッチするのはGitHub APIの`check_run.name`(=`jobs.<key>.name`)です。
 GitHubのUIで見える`<workflow> / <job>`形式ではない点に注意してください。
-実際にどの名前で記録されているかは、次のコマンドで確認できます。
+実際にどの名前・App slug・ワークフローで記録されているかは、次のコマンドで確認できます。
 
 ```bash
 gh api "repos/{owner}/{repo}/commits/{sha}/check-runs" \
-  --jq '.check_runs[] | {name, app: .app.slug, conclusion}'
+  --jq '.check_runs[] | {name, app: .app.slug, workflow: .check_suite.workflow_id, conclusion}'
 ```
 
 ## Public modeについて
@@ -230,7 +237,7 @@ jobs:
       pull-requests: read
       actions: read
     steps:
-      - uses: pkgdeps/automerge-gate@v4.0.0
+      - uses: pkgdeps/automerge-gate@v5.0.0
         with:
           gate-mode: 'public'
 ```
@@ -288,8 +295,8 @@ automerge-gateには次の制限があります。
 
 ## バージョニング
 
-automerge-gateのリリースは、`v4.0.0`のような不変のSemVerタグで公開されます。
-`v4`のように移動するメジャータグは意図的に作っていないので、ワークフロー側では固定バージョンを指定して、RenovateやDependabotで更新するスタイルが推奨されています。これは、移動するタグが書き換えられるサプライチェーンリスクを避けるための設計です。
+automerge-gateのリリースは、`v5.0.0`のような不変のSemVerタグで公開されます。
+`v5`のように移動するメジャータグは意図的に作っていないので、ワークフロー側では固定バージョンを指定して、RenovateやDependabotで更新するスタイルが推奨されています。これは、移動するタグが書き換えられるサプライチェーンリスクを避けるための設計です。
 
 ## まとめ
 
