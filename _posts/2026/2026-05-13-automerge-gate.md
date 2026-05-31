@@ -284,6 +284,14 @@ automerge-gateはPrivate/Publicどちらのモードでも、`pull_request`の`a
 そのため、手動でAuto Mergeを有効化するかApproveすれば、人手起点でゲートを動かせます。
 完全な自動化はできませんが、デッドロック状態からは一応抜け出せる構造になっています。
 
+## コスト
+
+月に5000回以上merge-gatekeeperが動いていた大きめなmonorepoでmerge-gatekeeperからautomerge-gateから切り替えてみました。
+実測ベースで、実行時間は平均が1/5、原価がubuntu-latestからubuntu-slimで1/3となり、金額ベースでは$150/monthは節約できるようになりました。
+
+これは、gate処理を実行するタイミングが異なるため、無駄なポーリングが減ったことによるコスト削減が大きいです。
+また、gate処理自体の失敗率(9割以上は上限のtimeout)も減っているので、より安定したような感覚もあります。
+
 ## 制限事項
 
 automerge-gateには次の制限があります。
