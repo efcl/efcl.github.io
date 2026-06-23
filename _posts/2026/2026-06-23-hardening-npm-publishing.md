@@ -44,7 +44,7 @@ npmパッケージの公開フローでは、開発者のローカル環境、Gi
 
 `.env`、`~/.npmrc`、`~/.aws/credentials`、`gh auth token`のようなcredentialは、開発環境に残りがちです。npmパッケージのマルウェアは、`postinstall`などのライフサイクルスクリプトや、インストール後に実行されるCLIを通じて、ローカルファイルや環境変数を読みにいくことがあります。
 
-ローカルの生トークンを減らしておけば、仮にローカルで悪性コードが実行されても、盗まれる権限の範囲を小さくできます。自分の場合は、GitHubやAWSのようなCLI認証は1Password Shell Pluginsに寄せ、npm publishに使うような強い長期トークンは常用しないようにしています。
+ローカルの生トークンを減らしておけば、仮にローカルで悪性コードが実行されても、盗まれる権限の範囲を小さくできます。自分の場合は、GitHubやAWSのようなCLI認証は1Password に寄せ、npm publishに使えるトークンはローカルにはない状態にしています。
 
 また、利用する側では、パッケージを入れる前の防御として[Socket Firewall](https://socket.dev/blog/introducing-socket-firewall)や[Takumi Guard](https://flatt.tech/takumi/features/guard)を使っています。
 
