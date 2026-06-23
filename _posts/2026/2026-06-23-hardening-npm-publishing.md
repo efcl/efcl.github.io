@@ -41,7 +41,7 @@ npmパッケージの公開フローでは、開発者のローカル環境、Gi
 3. GitHub Actionsからnpmへ権限が広がる手前にGitHub EnvironmentsのDeployment protection rulesを置く
 4. npm staged publishingでregistry公開前にもう一度止める
 
-重要なのは、それぞれの対策を単体で見るのではなく、公開までの経路として見ることです。ローカルのcredentialを減らしても、workflowを書き換えられるならCIからpublishできます。Trusted Publishingでnpmトークンを消しても、そのworkflowへ進む条件が緩いなら、別の形で公開権限に近づけます。
+重要なのは、それぞれの対策を単体で見るのではなく、公開までの経路として見ることです。ローカルのcredentialを減らしても、workflowを書き換えられるならCIからpublishできます。Trusted Publishingでnpmトークンを消しても、そのworkflowへ進む条件が緩いなら、別の形で攻撃できます。
 
 ## ローカルに強いトークンを置かない
 
