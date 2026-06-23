@@ -57,7 +57,7 @@ npmパッケージの公開フローでは、開発者のローカル環境、Gi
 
 CIからnpmへ公開する場合、以前は`NPM_TOKEN`のような長期トークンをGitHub Actions Secretsに入れるのが普通でした。しかし、長期トークンは漏れると無効化するまで使われ続けます。また、monorepoではパッケージごとの細かい権限制御が難しく、広い権限を持つトークンになりがちです。
 
-この問題に対して、npm Trusted Publishingを使うと、GitHub ActionsなどのCI/CD環境からOIDCでnpmに認証できます。Trusted Publishingは、長期npmトークンを使わず、workflowごとの短命credentialでパッケージを公開する仕組みです。
+この問題に対して、npm Trusted Publishingを使うと、GitHub ActionsなどのCI/CD環境からOIDCでnpmにpublishできるtokenを発行できます。Trusted Publishingは、長期npmトークンを使わず、workflowごとの短命credentialでパッケージを公開する仕組みです。
 
 - [Trusted publishing for npm packages | npm Docs](https://docs.npmjs.com/trusted-publishers/)
 - [npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する](https://efcl.info/2025/09/07/npm-oidc/)
