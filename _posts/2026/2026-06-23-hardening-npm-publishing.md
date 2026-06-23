@@ -158,7 +158,7 @@ npm側では、Staged Publishingを使ってMFAがないとpublishできなく�
 
 ## 関連リンク
 
-- 登壇資料: [Hardening npm Publishing](https://azu.github.io/slide/2026/hardening-npm-publishing/slide.html)
+- スライド: [Hardening npm Publishing](https://azu.github.io/slide/2026/hardening-npm-publishing/slide.html)
 - イベント: [OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える - connpass](https://flatt.connpass.com/event/395359/)
 - [npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する](https://efcl.info/2025/09/07/npm-oidc/)
 - [1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した](https://efcl.info/2023/01/31/remove-secret-from-local/)
