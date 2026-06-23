@@ -20,6 +20,11 @@ render_with_liquid: false
 - スライド: [Hardening npm Publishing](https://azu.github.io/slide/2026/hardening-npm-publishing/slide.html)
 
 ローカルのトークン管理やnpm Trusted Publishingについては、以前の記事で書きました。
+
+- [1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した | Web Scratch](https://efcl.info/2023/01/31/remove-secret-from-local/)
+- [パスワード管理/MFA管理の戦略 | Web Scratch](https://efcl.info/2022/11/27/password-mfa-strategy/)
+- [npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する](https://efcl.info/2025/09/07/npm-oidc/)
+
 この記事ではそれらを前提に、GitHub Environmentsとnpm staged publishingをどこに入れるかの話をスライドベースでかいています。
 
 サプライチェーン攻撃をすべての侵害を防ぐのは難しいです。
