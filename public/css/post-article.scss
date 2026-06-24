@@ -30,6 +30,73 @@ $toolbar-background-color: rgb(202, 197, 190);
   }
 }
 
+.sponsor-callout {
+  border-left: 4px solid $accent-color;
+  margin: 2em 0 1em;
+  padding: .75em 1em;
+  background: rgba(255, 255, 255, .35);
+
+  p {
+    margin: .35em 0;
+  }
+
+  .sponsor-callout-title {
+    font-weight: bold;
+  }
+
+  .sponsor-callout-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    padding: .3em .7em;
+    border: 2px solid $link-color;
+    border-radius: .313em;
+    background: rgba(255, 255, 255, .25);
+    color: $link-color;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:visited {
+      color: $link-color;
+    }
+
+    &:hover,
+    &:focus {
+      background: $link-color;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .sponsor-callout-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em 1em;
+    align-items: center;
+  }
+
+  .sponsor-callout-help {
+    display: inline-flex;
+    gap: .3em;
+    align-items: center;
+    font-size: .9em;
+  }
+
+  .sponsor-callout-help-icon {
+    display: inline-flex;
+    width: 1.25em;
+    height: 1.25em;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    font-size: .85em;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
 .content .tags {
   li {
     display: inline;
