@@ -1,5 +1,5 @@
 ---
-title: "Quick Input Translator: 入力欄で書いた文章をその場で翻訳するmacOSアプリ"
+title: "Quick Input Translator: 入力欄で書いた文章をインライン翻訳するmacOSアプリ"
 author: azu
 layout: post
 date: 2026-10-23T10:00+09:00
@@ -19,6 +19,36 @@ tags:
 
 翻訳にはmacOSの[Translation framework](https://developer.apple.com/documentation/translation)を使っていて、翻訳はMac上（オンデバイス）で行われます。
 外部の翻訳APIを呼び出さないので、APIキーは不要で、言語モデルを一度ダウンロードしておけばオフラインでも素早く翻訳できます。
+
+## インストール
+
+動作環境は**Apple SiliconのMac + macOS 26以降**です。
+
+すでに起動している場合は終了してから、ターミナルで次のコマンドを実行します。
+
+```sh
+curl -fL https://github.com/azu/quick-input-translator/releases/latest/download/quick-input-translator-macos-arm64.zip -o "$TMPDIR/quick-input-translator.zip" &&
+ditto -x -k "$TMPDIR/quick-input-translator.zip" /Applications &&
+xattr -dr com.apple.quarantine "/Applications/Quick Input Translator.app" &&
+open "/Applications/Quick Input Translator.app"
+```
+
+アプリは自己署名で、Appleの公証（notarization）はしていないため、`xattr`でquarantine属性を解除してから起動しています。
+v1.1.1以降は[Sparkle](https://sparkle-project.org/)による自動アップデートに対応しているので、2回目以降はアプリ内で更新できます。
+
+### 初回の設定と言語モデルのダウンロード
+
+アプリを起動すると設定画面が開きます。
+翻訳には言語モデルが必要なので、最初に設定画面からダウンロードしておきます。
+
+1. **From**と**To**に翻訳元と翻訳先の言語を設定する（たとえば Japanese → English）
+2. **Prepare Languages**ボタンを押す
+3. macOSの言語モデルのダウンロードダイアログが表示されるので、ダウンロードを完了させる
+4. 設定画面に"Ready for translation"と表示されれば準備完了
+5. 設定画面の**Try it**欄で翻訳を試す（この欄はアクセシビリティの許可がなくても動作する）
+6. 他のアプリで使うために、**Allow Access**ボタンを押して、システム設定 → プライバシーとセキュリティ → アクセシビリティでQuick Input Translatorを許可する
+
+冒頭の動画は、この**Try it**欄で行翻訳と全翻訳を試しているものです。
 
 ## なぜ作ったか
 
@@ -86,49 +116,17 @@ Translation frameworkは、Macにダウンロードした言語モデルを使�
 - 言語モデルを準備しておけば、ネットワークがなくても翻訳できる
 - ネットワーク越しのリクエストを待たないので、素早く翻訳できる
 
-言語モデルは初回に設定画面の"Prepare Languages"からダウンロードします。
+言語モデルは、インストール時に設定画面の**Prepare Languages**からダウンロードしておきます。
 他のアプリで文章を入力している最中に、モデルのダウンロードが始まることはありません。
 
-## インストール
+## どこの入力欄で使えるか
 
-動作環境は**Apple SiliconのMac + macOS 26以降**です。
+Quick Input Translatorは、入力欄に`...`などのトリガーが入力されたことを検知して翻訳します。
+そのため、ブラウザの入力欄やMacアプリの入力欄など、普段文章を書いている入力欄でそのまま使えます。
+ただし、パスワード欄や読み取り専用の領域では動作しません。
 
-すでに起動している場合は終了してから、ターミナルで次のコマンドを実行します。
-
-```sh
-curl -fL https://github.com/azu/quick-input-translator/releases/latest/download/quick-input-translator-macos-arm64.zip -o "$TMPDIR/quick-input-translator.zip" &&
-ditto -x -k "$TMPDIR/quick-input-translator.zip" /Applications &&
-xattr -dr com.apple.quarantine "/Applications/Quick Input Translator.app" &&
-open "/Applications/Quick Input Translator.app"
-```
-
-アプリは自己署名で、Appleの公証（notarization）はしていないため、`xattr`でquarantine属性を解除してから起動しています。
-v1.1.1以降は[Sparkle](https://sparkle-project.org/)による自動アップデートに対応しているので、2回目以降はアプリ内で更新できます。
-
-## 初回の設定
-
-アプリを起動すると設定画面が開きます。
-
-1. **From**と**To**に翻訳元と翻訳先の言語を設定する（たとえば Japanese → English）
-2. 言語モデルが必要な場合は**Prepare Languages**をクリックしてダウンロードする
-3. 設定画面の**Try it**欄で翻訳を試す（この欄はアクセシビリティの許可がなくても動作する）
-4. 他のアプリで使うために、**Allow Access**をクリックして、システム設定 → プライバシーとセキュリティ → アクセシビリティでQuick Input Translatorを許可する
-
-冒頭の動画は、この**Try it**欄で行翻訳と全翻訳を試しているものです。
-
-## 対応している入力欄と注意点
-
-Quick Input Translatorは、macOSのアクセシビリティ機能を使って、入力欄のテキストと選択位置を読み取っています。
-そのため、テキストと選択位置をアクセシビリティ経由で公開している入力欄でのみ動作します。
-パスワード欄や読み取り専用の領域、これらの情報を公開していないエディタには対応していません。
-ターミナルの入力にも、まだ十分には対応できていません。
-
-READMEに書いているとおり、行翻訳はアプリ内の入力欄とArcの標準的な複数行入力欄で動作を確認しています。
-一方で、Chrome、Slack、VS Codeではまだ動作確認ができていません。
-
-また、他のアプリで置き換えるときは、訳文を一時的にクリップボードに入れてペーストしています。
-ペーストを確認できたら元のクリップボードの内容に戻します。ただし、この一時的な内容をクリップボードマネージャーが記録する可能性はあります。
-ログには操作IDや処理の段階などを記録しています。一方で、原文や訳文、クリップボードの内容、キー入力の履歴は記録しません。
+なお、他のアプリで置き換えるときは、訳文を一時的にクリップボードに入れてペーストしています。
+ペーストを確認できたら、元のクリップボードの内容に戻します。
 
 ## まとめ
 
@@ -139,5 +137,7 @@ Quick Input Translatorは、入力欄で書いた文章の末尾に`...`や`:::`
 翻訳ツールと入力欄を行き来せずに済むので、日本語で考えながら英語の文章を書くときに便利です。
 
 ---
+
+ソースコードはGitHubで公開しています。
 
 - GitHub: [azu/quick-input-translator](https://github.com/azu/quick-input-translator)
