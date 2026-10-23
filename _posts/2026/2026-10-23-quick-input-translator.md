@@ -22,9 +22,11 @@ tags:
 
 ## インストール
 
-動作環境は**Apple SiliconのMac + macOS 26以降**です。
+動作環境
 
-すでに起動している場合は終了してから、ターミナルで次のコマンドを実行します。
+- Apple SiliconのMac + macOS 26以降
+
+次のコマンドでインストールできます。署名はしてないので自己判断でインストールしてください。
 
 ```sh
 curl -fL https://github.com/azu/quick-input-translator/releases/latest/download/quick-input-translator-macos-arm64.zip -o "$TMPDIR/quick-input-translator.zip" &&
