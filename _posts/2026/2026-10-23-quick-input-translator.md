@@ -26,7 +26,7 @@ tags:
 
 - Apple SiliconのMac + macOS 26以降
 
-次のコマンドでインストールできます。署名はしてないので自己判断でインストールしてください。
+次のコマンドでインストールできます。notarizationはしてないので自己判断でお願いします。
 
 ```sh
 curl -fL https://github.com/azu/quick-input-translator/releases/latest/download/quick-input-translator-macos-arm64.zip -o "$TMPDIR/quick-input-translator.zip" &&
