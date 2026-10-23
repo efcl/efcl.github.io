@@ -1,5 +1,5 @@
 ---
-title: "Quick Input Translator: 入力欄で書いた文章をインライン翻訳するmacOSアプリ"
+title: "Quick Input Translator: 書いた文章を入力欄中でインライン翻訳するmacOSアプリ"
 author: azu
 layout: post
 date: 2026-10-23T10:00+09:00
