@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v14.0.0リリース: 公式ルールを本体に同梱、リポジトリ全体のチェックを7〜24倍高速化"
+title: "Secretlint v14.0.0リリース: 公式ルールを本体に同梱、10万ファイルのリポジトリも約2秒でチェック"
 author: azu
 layout: post
 date : 2026-11-15T16:00+09:00
@@ -16,7 +16,17 @@ tags:
 
 - [Release v14.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)
 
-v14では、大きなリポジトリ全体のチェックがv13.1.0より7〜24倍速くなりました。
+このバージョンの主な変更点は次の3つです。
+
+- 公式ルールとプリセットを`secretlint`本体に同梱
+- 設定ファイルがないときは、recommendプリセットで実行
+- 約10万ファイルあるリポジトリ全体のチェックが約2秒で終わるように高速化
+
+v13からのアップデート方法は、移行ガイドにまとめています。
+
+- [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
+
+速さについては、約10万ファイルあるlinuxのリポジトリ全体のチェックが、v13.1.0の56.5秒から2.31秒になりました。
 RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
 
 この記事では、どういう考え方でパフォーマンスを改善したかを主に書きます。
@@ -220,7 +230,7 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 
 主な変更は次のとおりです。
 
-- 大きなリポジトリのチェックが7〜24倍、1ファイルのチェックが1.6倍の速さ
+- 約10万ファイルのリポジトリ全体のチェックが56.5秒から2.31秒、1ファイルのチェックが246msから153msに短縮
 - 公式ルールとプリセットを`secretlint`に同梱（[#1798](https://github.com/secretlint/secretlint/pull/1798), [#1832](https://github.com/secretlint/secretlint/pull/1832)）
 - 設定ファイルがないときは、recommendプリセットで実行（[#1835](https://github.com/secretlint/secretlint/pull/1835)）
 - `keywords`付きの`patterns`というデータで書ける、宣言的なルール（[#1794](https://github.com/secretlint/secretlint/pull/1794), [#1826](https://github.com/secretlint/secretlint/pull/1826)）
@@ -283,7 +293,7 @@ Bunの`bun build --compile`で作る単一実行バイナリには、ワーカ�
 
 ## まとめ
 
-Secretlint v14では、JavaScriptのまま大きなリポジトリのチェックを7〜24倍速くしました。
+Secretlint v14では、JavaScriptのまま、約10万ファイルのリポジトリを約2秒でチェックできるようにしました。
 ネイティブの実装と1スレッドで比べて差を埋め、残りの並列化は、ルールを読み込まない軽いワーカースレッドに絞り込みだけを任せています。
 ブラウザでそのまま動くことと、ルールを宣言的なデータとして書けることは保ったままです。
 
