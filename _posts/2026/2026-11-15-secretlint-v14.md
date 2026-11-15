@@ -26,11 +26,82 @@ v13からのアップデート方法は、移行ガイドにまとめていま�
 
 - [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
-速さについては、約10万ファイルあるlinuxのリポジトリ全体のチェックが、v13.1.0の56.5秒から2.31秒になりました。
-RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
+この記事では、次の3つを順番に書きます。
 
-この記事では、どういう考え方でパフォーマンスを改善したかを主に書きます。
-後半で、リリースノートの要約と技術的な詳細を紹介します。
+- v14の変更点と、公式ルールを本体に同梱した理由
+- どういう考え方でパフォーマンスを改善したか
+- 最終的な処理の流れと技術的な詳細
+
+## v14の変更点
+
+詳しい変更点は、リリースノートと移行ガイドを参照してください。
+ここでは主な変更点を紹介します。
+
+### 公式ルールを本体に同梱
+
+公式ルールとプリセットを、`@secretlint/core`へ含めました（[#1798](https://github.com/secretlint/secretlint/pull/1798), [#1832](https://github.com/secretlint/secretlint/pull/1832)）。
+インストールは`secretlint`だけで済みます。
+
+```bash
+# v13
+npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
+# v14
+npm install secretlint --save-dev
+```
+
+ルールのidは変わらないため、今の`.secretlintrc.json`はそのまま動きます。
+これまでインストールしていたルールのパッケージは使われなくなるので、`package.json`から削除できます。
+
+同梱した主な理由は、npmへのパッケージ公開がボトルネックになり、新しいルールを追加するコストが高くなっていたためです。
+v13までは、公式ルールが1つずつ別のnpmパッケージでした。
+新しいルールを追加するには、新しいnpmパッケージを作る必要があります。
+
+近年のサプライチェーン攻撃への対策として、npmパッケージを公開するときの工程は増えています。
+SecretlintはOIDCを使うTrusted Publishingでパッケージを公開していますが、新しいパッケージは`npm publish`だけでは作れません。
+Trusted Publishingは、一度公開されたパッケージにしか設定できないためです。
+そのため、まず設定用の空のパッケージを公開し、Trusted Publishingを設定してから、本来のパッケージを公開するという2段階の流れになります。
+この流れについては、次の記事に書いています。
+
+- [npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する](https://efcl.info/2025/09/07/npm-oidc/)
+
+この手間があるため、新しいルールを気軽に追加できなくなっていました。
+v14からは、新しいルールは`@secretlint/core`の中のファイルとして追加します。
+新しいnpmパッケージを作る必要がなく、ルールのバージョンは常にSecretlint本体と同じです。
+
+あわせて、`secretlint`のサードパーティの実行時依存は69パッケージから16パッケージに減りました。
+
+### 設定ファイルなしで実行
+
+設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（[#1835](https://github.com/secretlint/secretlint/pull/1835)）。
+recommendプリセットが本体に同梱されたので、設定を必須にする理由がなくなりました。
+次のコマンドだけで試せます。
+
+```bash
+npx secretlint "**/*"
+```
+
+### 宣言的なルール
+
+ルールを、`create()`関数ではなく`keywords`付きの`patterns`というデータで書けるようになりました（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
+`@secretlint/secretlint-rule-pattern`に書いた独自のパターンも、同じ仕組みで動きます（[#1826](https://github.com/secretlint/secretlint/pull/1826)）。
+これは、次に書くパフォーマンス改善の土台になっています。
+
+### 破壊的変更
+
+多くの利用者は、何も変えずにアップデートできます。
+主な破壊的変更は次のとおりです。
+
+- 結果と`--format json`から`sourceContent`を削除し、フォーマッターには`getSource(filePath)`を渡す（[#1797](https://github.com/secretlint/secretlint/pull/1797)）
+- `--secretlintignore`はカレントディレクトリからのパスとして読み、`.secretlintignore`に加えて使う（[#1834](https://github.com/secretlint/secretlint/pull/1834)）
+- ファイルをlintする順序は保証せず、ファイルをまたいで状態を持つルールはサポートしない
+- `--profile`は、lintの結果の代わりにサマリーを出力
+
+v14がサポートするNode.jsは、22以上です。
+
+## パフォーマンス改善の進め方
+
+約10万ファイルあるlinuxのリポジトリ全体のチェックが、v13.1.0の56.5秒から2.31秒になりました。
+RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
 
 ![Secretlint v13.1.0とv14の実行時間の比較](/wp-content/uploads/2026/secretlint-v14-performance.png)
 
@@ -43,8 +114,6 @@ RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは�
 
 recommendプリセット、実行時間の中央値、Node.js 24.22、4 vCPUのLinuxで計測した結果です。
 vscodeでは、どちらのバージョンも同じ37件を報告します。
-
-## パフォーマンス改善の進め方
 
 まずネイティブの実装と1スレッド同士で比べて、その差を埋めました。
 1スレッドでほぼ同じ速さになれば、残る差は並列化だけです。
@@ -209,65 +278,6 @@ v14の`secretlint "**/*"`は、次のように動きます。
 - ワーカーはルールを読み込まないので、起動は小さく一定
 - coreはワーカーを始めず、並列化するのはNode.jsのエンジン、CLI、単一実行バイナリの層だけ
 
-## 書いてみて思ったこと
-
-自分で実装してみると、ほかのツールと大体同じことをやっていました。
-
-[Hyperscan](https://www.usenix.org/conference/nsdi19/presentation/wang-xiang)は、正規表現から固定の文字列を取り出して先に探し、見つかった場所だけで正規表現を確かめます。
-Secretlintの、キーワードで絞り込んでから正規表現を動かす流れと同じ考え方です。
-
-[Betterleaks](https://github.com/betterleaks/betterleaks)は、Aho-Corasickによるキーワードの絞り込みと並列化を、速さの理由として挙げています。
-キーワードの後ろの文字が満たすべき条件を確かめる仕組み（[assignment_guard.go](https://github.com/betterleaks/betterleaks/blob/main/scan/assignment_guard.go)）も持っています。
-Betterleaksはこの条件を正規表現から推測します。
-Secretlintは、ルールを書く人がガードを明示的に書き、書き間違いはテストで落とします。
-
-ripgrepも、ignore crateで探索したファイルを複数のスレッドで検索します。
-
-最初からこれらを真似したわけではありません。
-計測してボトルネックを1つずつ潰していくと、結果として似た形になりました。
-みんな大体同じようなことをやっているんだな、と書いていて思いました。
-
-## リリースノートの要約
-
-詳しくは、リリースノートと移行ガイドを参照してください。
-
-- [Release v14.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)
-- [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
-
-主な変更は次のとおりです。
-
-- 約10万ファイルのリポジトリ全体のチェックが56.5秒から2.31秒、1ファイルのチェックが246msから153msに短縮
-- 公式ルールとプリセットを`secretlint`に同梱（[#1798](https://github.com/secretlint/secretlint/pull/1798), [#1832](https://github.com/secretlint/secretlint/pull/1832)）
-- 設定ファイルがないときは、recommendプリセットで実行（[#1835](https://github.com/secretlint/secretlint/pull/1835)）
-- `keywords`付きの`patterns`というデータで書ける、宣言的なルール（[#1794](https://github.com/secretlint/secretlint/pull/1794), [#1826](https://github.com/secretlint/secretlint/pull/1826)）
-- サードパーティの実行時依存を69パッケージから16パッケージに削減
-
-公式ルールが同梱されたので、インストールは`secretlint`だけで済みます。
-ルールのidは変わらないため、今の`.secretlintrc.json`はそのまま動きます。
-
-```bash
-# v13
-npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
-# v14
-npm install secretlint --save-dev
-```
-
-設定ファイルを作らなくても、次のコマンドだけで試せます。
-
-```bash
-npx secretlint "**/*"
-```
-
-多くの利用者は、何も変えずにアップデートできます。
-主な破壊的変更は次のとおりです。
-
-- 結果と`--format json`から`sourceContent`を削除し、フォーマッターには`getSource(filePath)`を渡す（[#1797](https://github.com/secretlint/secretlint/pull/1797)）
-- `--secretlintignore`はカレントディレクトリからのパスとして読み、`.secretlintignore`に加えて使う（[#1834](https://github.com/secretlint/secretlint/pull/1834)）
-- ファイルをlintする順序は保証せず、ファイルをまたいで状態を持つルールはサポートしない
-- `--profile`は、lintの結果の代わりにサマリーを出力
-
-v14がサポートするNode.jsは、22以上です。
-
 ## 技術的な詳細
 
 ワーカースレッドの設計は、リポジトリの設計ドキュメントにまとめています。
@@ -296,6 +306,24 @@ coreには、`@secretlint/core/keyword-scan`という入口があります。
 
 Bunの`bun build --compile`で作る単一実行バイナリには、ワーカーを2つ目のエントリーとして同梱しています。
 そのため、バイナリでも同じ仕組みで動きます。
+
+## 書いてみて思ったこと
+
+自分で実装してみると、ほかのツールと大体同じことをやっていました。
+
+[Hyperscan](https://www.usenix.org/conference/nsdi19/presentation/wang-xiang)は、正規表現から固定の文字列を取り出して先に探し、見つかった場所だけで正規表現を確かめます。
+Secretlintの、キーワードで絞り込んでから正規表現を動かす流れと同じ考え方です。
+
+[Betterleaks](https://github.com/betterleaks/betterleaks)は、Aho-Corasickによるキーワードの絞り込みと並列化を、速さの理由として挙げています。
+キーワードの後ろの文字が満たすべき条件を確かめる仕組み（[assignment_guard.go](https://github.com/betterleaks/betterleaks/blob/main/scan/assignment_guard.go)）も持っています。
+Betterleaksはこの条件を正規表現から推測します。
+Secretlintは、ルールを書く人がガードを明示的に書き、書き間違いはテストで落とします。
+
+ripgrepも、ignore crateで探索したファイルを複数のスレッドで検索します。
+
+最初からこれらを真似したわけではありません。
+計測してボトルネックを1つずつ潰していくと、結果として似た形になりました。
+みんな大体同じようなことをやっているんだな、と書いていて思いました。
 
 ## まとめ
 
