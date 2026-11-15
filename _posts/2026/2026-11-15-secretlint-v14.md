@@ -200,7 +200,7 @@ vscodeのファイル探索は158msから53msになり、ignore crateの1スレ�
 ここでは、[Yuku](https://yuku.fyi/)などを参考にして、data-oriented design（データ指向設計）の考え方を使いました。
 処理の都合ではなく、データの形とその変換のコストから設計を決める考え方です。
 
-- [Engineering High Performance Parsers (with Zig) - Ziggit](https://ziggit.dev/t/engineering-high-performance-parsers-with-zig/16761)
+- [Data-Oriented Design in Yuku's Parser - Arshad Yaseen](https://www.arshad.fyi/posts/yuku-parser.html)
 
 この考え方で見ると、大きなコストはファイルの読み込みとデータの変換でした。
 たとえば14,430ファイルを`utf8`の文字列として読むと614msかかります。
