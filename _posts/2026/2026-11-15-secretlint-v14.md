@@ -103,20 +103,20 @@ v14がサポートするのは、Node.js 22+です。
 
 ## パフォーマンス改善の進め方
 
-約10万ファイルある[linux](https://github.com/torvalds/linux)のリポジトリ全体のチェックは、v13.1.0では56.5秒かかっていました。
+約10万ファイルある[torvalds/linux](https://github.com/torvalds/linux)リポジトリ全体のチェックは、v13.1.0では56.5秒かかっていました。
 v14では2.31秒です。
 RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
 
 ![Secretlint v13.1.0とv14の実行時間の比較](/wp-content/uploads/2026/secretlint-v14-performance.png)
 
-| `secretlint "**/*"` | ファイル数 | v13.1.0 | v14 | 速度比 |
+| 対象のリポジトリ | ファイル数 | v13.1.0 | v14 | 速度比 |
 | --- | ---: | ---: | ---: | ---: |
 | 1ファイル（pre-commitフックのような使い方） | 1 | 246 ms | 153 ms | 1.6倍 |
-| [react](https://github.com/facebook/react) | 7,275 | 2.82 s | 405 ms | 7.0倍 |
-| [vscode](https://github.com/microsoft/vscode) | 21,442 | 13.9 s | 758 ms | 18.3倍 |
-| [linux](https://github.com/torvalds/linux) | 97,265 | 56.5 s | 2.31 s | 24.5倍 |
+| [facebook/react](https://github.com/facebook/react) | 7,275 | 2.82 s | 405 ms | 7.0倍 |
+| [microsoft/vscode](https://github.com/microsoft/vscode) | 21,442 | 13.9 s | 758 ms | 18.3倍 |
+| [torvalds/linux](https://github.com/torvalds/linux) | 97,265 | 56.5 s | 2.31 s | 24.5倍 |
 
-recommendプリセット、実行時間の中央値、Node.js 24.22、4 vCPUのLinuxで計測した結果です。
+`secretlint "**/*"`をrecommendプリセットで実行した時間の中央値で、Node.js 24.22、4 vCPUのLinuxで計測した結果です。
 CPUのコア数が多いマシンではもっと並列化されるので、ファイル数が多いリポジトリでの改善率はもう少し良くなるはずです。
 
 まず1スレッドのネイティブ実装とJavaScriptの実装を比べて、その差を埋めました。
@@ -139,7 +139,7 @@ CPUのコア数が多いマシンではもっと並列化されるので、フ�
 PRごとにbaseとheadのプロファイルとベンチマークを比べるCIも入れています（[#1828](https://github.com/secretlint/secretlint/pull/1828)）。
 これで、改善と劣化がPRの時点で見えます。
 
-たとえば、[vscode](https://github.com/microsoft/vscode)のリポジトリで`secretlint --profile "**/*"`を実行すると、次のような出力になります。
+たとえば、約2万ファイルある[microsoft/vscode](https://github.com/microsoft/vscode)リポジトリで`secretlint --profile "**/*"`を実行すると、次のような出力になります。
 フェーズ、スレッド、ルール、パターン、ファイルごとの時間が出ます。
 パターンの正規表現は、途中で省略しています。
 
@@ -204,7 +204,7 @@ Time(ms)  File (top 10 of 21442)
 比べたのは、ファイル探索、読み込み、キーワード検索の3つです。
 ファイル探索にはripgrepが使っている[ignore crate](https://docs.rs/ignore/latest/ignore/)、キーワード検索には[aho-corasick crate](https://docs.rs/aho-corasick/latest/aho_corasick/)を使っています。
 
-vscodeのリポジトリでは、ファイルの読み込みはRustが275〜290ms、Secretlintが約270msでほぼ同じでした。
+microsoft/vscodeリポジトリでは、ファイルの読み込みはRustが275〜290ms、Secretlintが約270msでほぼ同じでした。
 同じ66個のキーワードを探す時間も、どちらも約660msでした。
 差があったのはファイル探索で、ignore crateの50〜55msに対してSecretlintは約180msでした。
 ほかの差は、起動やGCなどJavaScriptのランタイムにかかる時間です。
@@ -219,7 +219,7 @@ V8が十分に速い正規表現エンジンを持っているためです。
 
 ファイル探索では、Gitと同じ挙動のignoreのマッチャーを自前で実装しました。
 ignoreのルールは、エントリーの名前から引きます（[#1818](https://github.com/secretlint/secretlint/pull/1818), [#1822](https://github.com/secretlint/secretlint/pull/1822)）。
-vscodeのファイル探索は158msから53msになり、ignore crateの1スレッド（32〜36ms）に近づいています。
+microsoft/vscodeリポジトリのファイル探索は158msから53msになり、ignore crateの1スレッド（32〜36ms）に近づいています。
 
 検索は、データの形から考え直しました。
 ルールを宣言的なデータにして、ファイルのバイト列を1回だけ走査し、すべてのルールのキーワードをまとめて探します（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
@@ -281,7 +281,7 @@ Secretlintのルールはほとんどが宣言的なデータなので、あえ�
 ### ルールをワーカーで動かさない理由
 
 プロファイルを見ると、時間を使っていたのはキーワード検索とファイルの読み込みでした。
-たとえば[linux](https://github.com/torvalds/linux)のリポジトリでは、全体の4,459msのうちキーワード検索が2,927ms、読み込みが838msです。
+たとえば[torvalds/linux](https://github.com/torvalds/linux)リポジトリでは、全体の4,459msのうちキーワード検索が2,927ms、読み込みが838msです。
 ルールの実行には、あまり時間がかかっていません。
 ルールが動くのは、キーワードで絞り込んだファイルだけだからです。
 
