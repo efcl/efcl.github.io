@@ -418,10 +418,6 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 
 [Secretlint v14.0.0](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)では、公式ルールを本体に同梱し、JavaScriptのままファイル数が多いリポジトリでのチェックを速くしました。
 
-- [公式ルールを本体に同梱（#1798）](https://github.com/secretlint/secretlint/pull/1798)
-- [宣言的なルールと、バイト列を1回だけ走査する検索（#1794）](https://github.com/secretlint/secretlint/pull/1794)
-- [ワーカースレッドでのファイルの読み込みとキーワード検索（#1824）](https://github.com/secretlint/secretlint/pull/1824)
-- [ブラウザでのテスト（#1803）](https://github.com/secretlint/secretlint/pull/1803)
 - [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
 ぜひ`npx secretlint "**/*"`で試してみてください。
