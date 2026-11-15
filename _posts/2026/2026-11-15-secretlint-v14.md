@@ -2,7 +2,7 @@
 title: "Secretlint v14.0.0リリース: JavaScriptのまま7〜24倍速くした考え方"
 author: azu
 layout: post
-date : 2026-11-15T20:00+09:00
+date : 2026-11-15T16:00+09:00
 category: secretlint
 tags:
     - secretlint
