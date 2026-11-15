@@ -139,36 +139,64 @@ CPUのコア数が多いマシンではもっと並列化されるので、フ�
 PRごとにbaseとheadのプロファイルとベンチマークを比べるCIも入れています（[#1828](https://github.com/secretlint/secretlint/pull/1828)）。
 これで、改善と劣化がPRの時点で見えます。
 
-たとえば、textlintのリポジトリで`secretlint --profile "**/*"`を実行すると、次のような出力になります。
-パターンとファイルの一覧は省略しています。
+たとえば、[vscode](https://github.com/microsoft/vscode)のリポジトリで`secretlint --profile "**/*"`を実行すると、次のような出力になります。
+フェーズ、スレッド、ルール、パターン、ファイルごとの時間が出ます。
+パターンの正規表現は、途中で省略しています。
 
 ```
-secretlint profile: 290.82ms, 1472 files
+secretlint profile: 798.45ms, 21442 files
 
 Phase                                Time(ms)      %  Count
-secretlint>cli                         290.82  100.0      1
-  @node>load-config                      3.91    1.3      1
-    @config-loader>load-config-file      2.64    0.9      1
-    @config-loader>load-packages         1.16    0.4      1
-  secretlint>search-files              121.23   41.7      1
-  @node>execute                        165.22   56.8      1
-    @node>read-file                    109.09   37.5   1024
-    @core>lint                          31.88   11.0   1024
-      @core>setup-rules                  2.24    0.8      1
-      @core>keyword-scan                15.73    5.4   1003
-      @core>line-check                   6.17    2.1    206
-      @core>rule-handler                 0.03    0.0     21
-    @node>format                         2.62    0.9      1
+secretlint>cli                         798.45  100.0      1
+  @node>load-config                      8.39    1.1      1
+    @config-loader>load-config-file      6.95    0.9      1
+    @config-loader>load-packages         1.26    0.2      1
+  secretlint>search-files              110.96   13.9      1
+  @node>execute                        678.51   85.0      1
+    @node>read-file                    156.44   19.6   5024
+    @core>lint                         364.49   45.6   5346
+      @core>setup-rules                  2.93    0.4      1
+      @core>keyword-scan               267.79   33.5   5057
+      @core>line-check                  23.41    2.9    877
+      @core>rule-handler                19.76    2.5   2498
+    @node>format                        25.45    3.2      1
 
-Time(ms)  Files  Thread (2)
-  155.43   1024  main
-   69.63    448  worker 1
+Time(ms)  Files  Thread (4)
+  627.45   5024  main
+  499.42   4544  worker 1
+  507.85   6400  worker 2
+  477.69   5474  worker 3
 
-Time(ms)  Files  Rule
-    0.03     21  @secretlint/secretlint-rule-gcp
+Time(ms)  Files  Rule (top 10 of 28)
+    5.61     84  @secretlint/secretlint-rule-basicauth
+    3.14     84  @secretlint/secretlint-rule-github
+    2.49     84  @secretlint/secretlint-rule-notion
+    1.68      2  @secretlint/secretlint-rule-filter-comments
+    1.64     84  @secretlint/secretlint-rule-npm
+    1.31     84  @secretlint/secretlint-rule-privatekey
+    1.16     84  @secretlint/secretlint-rule-aws
+    0.82     84  @secretlint/secretlint-rule-database-connection-string
+    0.61     84  @secretlint/secretlint-rule-huggingface
+    0.42     84  @secretlint/secretlint-rule-databricks
+
+Time(ms)  Run(ms)  Runs  Matches  LineTest(ms)  LineTests  Pattern (top 10 of 16)
+   19.18     5.06  2006       48         14.13      18087  @secretlint/secretlint-rule-basicauth#0 /(?<protocol>(?:https?|ftp|ftps)):.../
+   11.62     0.00     0        0         11.62        713  @secretlint/secretlint-rule-sendgrid#0 /(?<!\p{L})SG\.\w{1,128}\.\w{1,128}.../gu
+    3.13     0.37     9        0          2.76       1509  @secretlint/secretlint-rule-databricks#0 /(?<!\p{L})dapi[A-Fa-f0-9]{32}.../gu
+    2.78     1.10     5        2          1.67        391  @secretlint/secretlint-rule-npm#2 /(?<!\p{L})npm_[A-Za-z0-9_]{36}.../gu
+    2.47     1.60     2        1          0.88          7  @secretlint/secretlint-rule-github#1 /(?<!\p{L})(?<type>github_pat)_.../gu
+
+Time(ms)  File (top 10 of 21442)
+   11.46  <cwd>/extensions/copilot/test/prompts/fixtures/devcontainer/devContainerIndex.json
+    8.19  <cwd>/src/vs/platform/agentHost/node/copilot/copilotAgentSession.ts
+    7.84  <cwd>/src/vs/platform/agentHost/test/node/protocolServerHandler.test.ts
 ```
 
-1,472ファイルのうち、ルールの実行（`@core>rule-handler`）まで進んだのは21ファイルだけです。
+この出力から、次のことが読み取れます。
+
+- 21,442ファイルを、メインスレッドと3つのワーカーが分担して処理
+- いちばん時間を使っているのはキーワード検索（`@core>keyword-scan`）と、ファイルの読み込み（`@node>read-file`）
+- ルールの実行（`@core>rule-handler`）は19.76msで、ルールが動いたのは84ファイルだけ
 
 ### 1スレッドのネイティブ実装とJSの実装を比較
 
@@ -262,7 +290,7 @@ Secretlintのルールはほとんどが宣言的なデータなので、あえ�
 ルールまでワーカーで実行すると、各ワーカーが設定とすべてのルールを読み込みます。
 カスタムルールの大きさは決まっていないので、ワーカーの起動時間が一定になりません。
 
-![ルールもワーカーで実行する場合と、Secretlint v14の比較](https://mermaid.ink/svg/Zmxvd2NoYXJ0IExSCiAgICBzdWJncmFwaCBBWyLjg6vjg7zjg6vjgoLjg6_jg7zjgqvjg7zjgaflrp_ooYzjgZnjgovloLTlkIgiXQogICAgICAgIEExWyLjg6_jg7zjgqvjg7zotbfli5UiXSAtLT4gQTJbIuioreWumuOBqOOBmeOBueOBpuOBruODq-ODvOODq-OCkuiqreOBv-i-vOOCgCJdIC0tPiBBM1si6Kqt44G_6L6844G_ICsg44Kt44O844Ov44O844OJ5qSc57SiICsg44Or44O844Or5a6f6KGMIl0KICAgIGVuZAogICAgc3ViZ3JhcGggQlsiU2VjcmV0bGludCB2MTQiXQogICAgICAgIEIxWyLjg6_jg7zjgqvjg7zotbfli5UiXSAtLT4gQjJbIuOCreODvOODr-ODvOODieOBqOato-imj-ihqOePvuOCkjxici8-44OH44O844K_44Gn5Y-X44GR5Y-W44KLIl0gLS0-IEIzWyLoqq3jgb_ovrzjgb8gKyDjgq3jg7zjg6_jg7zjg4nmpJzntKIiXSAtLT4gQjRbIuODoeOCpOODs-OCueODrOODg-ODieOBp-ODq-ODvOODq-Wun-ihjDxici8-77yI5q6L44Gj44Gf44OV44Kh44Kk44Or44Gg44GR77yJIl0KICAgIGVuZAo?bgColor=FFFFFF)
+![ルールもワーカーで実行する場合と、Secretlint v14の比較](https://mermaid.ink/svg/JSV7aW5pdDogeyJmbG93Y2hhcnQiOiB7IndyYXBwaW5nV2lkdGgiOiA2MDB9fX0lJQpmbG93Y2hhcnQgVEQKICAgIHN1YmdyYXBoIEJbIlNlY3JldGxpbnQgdjE0Il0KICAgICAgICBkaXJlY3Rpb24gVEIKICAgICAgICBCMVsi44Ov44O844Kr44O844KS6LW35YuVIl0gLS0-IEIyWyLjgq3jg7zjg6_jg7zjg4njgajmraPopo_ooajnj77jgpLlj5fjgZHlj5bjgosiXSAtLT4gQjNbIuODleOCoeOCpOODq-OCkuiqreOCk-OBp-OCreODvOODr-ODvOODieOCkuaOouOBmSJdIC0tPiBCNFsi44Oh44Kk44Oz44K544Os44OD44OJ44Gn44Or44O844Or44KS5a6f6KGMIl0KICAgIGVuZAogICAgc3ViZ3JhcGggQVsi44Or44O844Or44KC44Ov44O844Kr44O844Gn5a6f6KGM44GZ44KL5aC05ZCIIl0KICAgICAgICBkaXJlY3Rpb24gVEIKICAgICAgICBBMVsi44Ov44O844Kr44O844KS6LW35YuVIl0gLS0-IEEyWyLoqK3lrprjgajjgZnjgbnjgabjga7jg6vjg7zjg6vjgpLoqq3jgb_ovrzjgoAiXSAtLT4gQTNbIuODleOCoeOCpOODq-OCkuiqreOCk-OBp-OCreODvOODr-ODvOODieOCkuaOouOBmSJdIC0tPiBBNFsi44Ov44O844Kr44O844Gn44Or44O844Or44KS5a6f6KGMIl0KICAgIGVuZAo?bgColor=FFFFFF)
 
 ESLintはv9.34.0でマルチスレッドのlintを入れています。
 その紹介記事には、スレッドを増やすとかえって遅くなる場合があると書かれています。
@@ -329,7 +357,7 @@ macOSではファイルの読み込みが1ファイルあたり約96µsと重く
 
 v14の`secretlint "**/*"`は、次のように動きます。
 
-![Secretlint v14の処理の流れ](https://mermaid.ink/svg/Zmxvd2NoYXJ0IFRECiAgICBBWyLjg5XjgqHjgqTjg6vmjqLntKLvvIhHaXTkupLmj5vjga5pZ25vcmXvvIkiXSAtLT4gQlsi44OV44Kh44Kk44Or44Gu5LiA6Kan44KS5YWo44K544Os44OD44OJ44Gn5YWx5pyJIl0KICAgIEIgLS0-IENbIuODoeOCpOODs-OCueODrOODg-ODiTogMzLjg5XjgqHjgqTjg6vjgZrjgaTlj5bjgaPjgaZsaW50Il0KICAgIEMgLS0-IER7IuaFo-OCieOBlzIwbXMgKyDoqIjmuKwyMG1z44GnPGJyLz7mrovjgormmYLplpPjgpLopovnqY3jgoLjgosifQogICAgRCAtLSAi5q6L44KK44GM6ZW344GEIiAtLT4gRVsi44Ov44O844Kr44O844KS5aeL44KB44KLPGJyLz7mlbAgPSDmrovjgormmYLplpMgLyAxMDBtcyJdCiAgICBEIC0tICLmrovjgorjgYznn63jgYQiIC0tPiBMCiAgICBFIC0tPiBGWyLjg6_jg7zjgqvjg7w6IDMy44OV44Kh44Kk44Or44Ga44Gk5Y-W44KLIl0KICAgIEYgLS0-IEdbIuODkOOCpOODiOWIl-OBqOOBl-OBpuiqreOCgCJdCiAgICBHIC0tPiBIWyLjgq3jg7zjg6_jg7zjg4nmpJzntKLjgajooYzjga7norroqo08YnIvPu-8iOODq-ODvOODq-OBr-iqreOBv-i-vOOBvuOBquOBhO-8iSJdCiAgICBIIC0tPiBJeyLjg6vjg7zjg6vjgYzli5XjgY88YnIvPuWPr-iDveaAp-OBjOOBguOCiz8ifQogICAgSSAtLSAi44GE44GE44GIIiAtLT4gSlsi44Oh44OD44K744O844K444Gq44GX44Go6KiY6YyyIl0KICAgIEkgLS0gIuOBr-OBhCIgLS0-IEtbIuODkOOCpOODiOWIl-OBqOaknOe0oue1kOaenOOCkjxici8-44Oh44Kk44Oz44K544Os44OD44OJ44G456e744GZIl0KICAgIEsgLS0-IExbIuODoeOCpOODs-OCueODrOODg-ODiTog44Or44O844Or44KS5a6f6KGMIl0KICAgIEwgLS0-IE1bIue1kOaenOOCkuODleOCoeOCpOODq-OBrumghuOBq-WHuuWKmyJdCiAgICBKIC0tPiBNCg?bgColor=FFFFFF)
+![Secretlint v14の処理の流れ](https://mermaid.ink/svg/JSV7aW5pdDogeyJmbG93Y2hhcnQiOiB7IndyYXBwaW5nV2lkdGgiOiA2MDB9fX0lJQpmbG93Y2hhcnQgVEQKICAgIEFbIuODleOCoeOCpOODq-aOoue0ou-8iEdpdOS6kuaPm-OBrmlnbm9yZe-8iSJdIC0tPiBCWyLjg5XjgqHjgqTjg6vjga7kuIDopqfjgpLlhajjgrnjg6zjg4Pjg4njgaflhbHmnIkiXQogICAgQiAtLT4gQ1si44Oh44Kk44Oz44K544Os44OD44OJOiAzMuODleOCoeOCpOODq-OBmuOBpOWPluOBo-OBpmxpbnQiXQogICAgQyAtLT4gRHsi5oWj44KJ44GXMjBtcyArIOioiOa4rDIwbXPjgac8YnIvPuaui-OCiuaZgumWk-OCkuimi-epjeOCguOCiyJ9CiAgICBEIC0tICLmrovjgorjgYzplbfjgYQiIC0tPiBFWyLjg6_jg7zjgqvjg7zjgpLlp4vjgoHjgos8YnIvPuaVsCA9IOaui-OCiuaZgumWkyAvIDEwMG1zIl0KICAgIEQgLS0gIuaui-OCiuOBjOefreOBhCIgLS0-IEwKICAgIEUgLS0-IEZbIuODr-ODvOOCq-ODvDogMzLjg5XjgqHjgqTjg6vjgZrjgaTlj5bjgosiXQogICAgRiAtLT4gR1si44OQ44Kk44OI5YiX44Go44GX44Gm6Kqt44KAIl0KICAgIEcgLS0-IEhbIuOCreODvOODr-ODvOODieaknOe0ouOBqOihjOOBrueiuuiqjTxici8-77yI44Or44O844Or44Gv6Kqt44G_6L6844G-44Gq44GE77yJIl0KICAgIEggLS0-IEl7IuODq-ODvOODq-OBjOWLleOBjzxici8-5Y-v6IO95oCn44GM44GC44KLPyJ9CiAgICBJIC0tICLjgYTjgYTjgYgiIC0tPiBKWyLjg6Hjg4Pjgrvjg7zjgrjjgarjgZfjgajoqJjpjLIiXQogICAgSSAtLSAi44Gv44GEIiAtLT4gS1si44OQ44Kk44OI5YiX44Go5qSc57Si57WQ5p6c44KSPGJyLz7jg6HjgqTjg7Pjgrnjg6zjg4Pjg4njgbjnp7vjgZkiXQogICAgSyAtLT4gTFsi44Oh44Kk44Oz44K544Os44OD44OJOiDjg6vjg7zjg6vjgpLlrp_ooYwiXQogICAgTCAtLT4gTVsi57WQ5p6c44KS44OV44Kh44Kk44Or44Gu6aCG44Gr5Ye65YqbIl0KICAgIEogLS0-IE0K?bgColor=FFFFFF)
 
 この流れのポイントは次のとおりです。
 
@@ -340,6 +368,7 @@ v14の`secretlint "**/*"`は、次のように動きます。
 
 ## 技術的な詳細
 
+この辺の設計は、[sdev](https://github.com/azu/sdev)で仕様を詰めながら実装しています。
 ワーカースレッドの設計は、リポジトリの設計ドキュメントにまとめています。
 
 - [secret-scanningの設計ドキュメント（Looking for keywords on several threads）](https://github.com/secretlint/secretlint/blob/HEAD/docs/products/secretlint/features/secret-scanning/design.md)
