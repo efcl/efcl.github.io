@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v14.0.0リリース: 公式ルールを本体に同梱、10万ファイルのリポジトリも約2秒でチェック"
+title: "Secretlint v14.0.0リリース: 公式ルールを本体に同梱、大規模リポジトリのチェックを高速化"
 author: azu
 layout: post
 date : 2026-11-15T16:00+09:00
@@ -20,9 +20,11 @@ tags:
 
 - 公式ルールとプリセットを`secretlint`本体に同梱
 - 設定ファイルがないときは、recommendプリセットで実行
-- 約10万ファイルあるリポジトリ全体のチェックが約2秒で終わるように高速化
+- ファイル数が多いリポジトリでのチェックを高速化
 
-v13からのアップデート方法は、移行ガイドにまとめています。
+v13からv14へは、基本的に設定や使い方を変えなくてもアップデートできます。
+公式ルールが本体に入ったので、不要になったルールのパッケージを取り除くことを推奨します。
+詳しくは移行ガイドを参照してください。
 
 - [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
@@ -50,7 +52,8 @@ npm install secretlint --save-dev
 ```
 
 ルールのidは変わらないため、今の`.secretlintrc.json`はそのまま動きます。
-これまでインストールしていたルールのパッケージは使われなくなるので、`package.json`から削除できます。
+これまでインストールしていた公式ルールのパッケージ（例: `@secretlint/secretlint-rule-preset-recommend`）は、使われなくなります。
+`package.json`から削除できます。
 
 同梱した主な理由は、npmへのパッケージ公開がボトルネックになり、新しいルールを追加するコストが高くなっていたためです。
 v13までは、公式ルールが1つずつ別のnpmパッケージでした。
@@ -73,7 +76,7 @@ v14からは、新しいルールは`@secretlint/core`の中のファイルと�
 ### 設定ファイルなしで実行
 
 設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（[#1835](https://github.com/secretlint/secretlint/pull/1835)）。
-recommendプリセットが本体に同梱されたので、設定を必須にする理由がなくなりました。
+recommendプリセットが本体に同梱されたので、`.secretlintrc.json`の設定ファイルを必須にする理由がなくなりました。
 次のコマンドだけで試せます。
 
 ```bash
@@ -96,16 +99,17 @@ npx secretlint "**/*"
 - ファイルをlintする順序は保証せず、ファイルをまたいで状態を持つルールはサポートしない
 - `--profile`は、lintの結果の代わりにサマリーを出力
 
-v14がサポートするNode.jsは、22以上です。
+v14がサポートするのは、Node.js 22+です。
 
 ## パフォーマンス改善の進め方
 
-約10万ファイルあるlinuxのリポジトリ全体のチェックが、v13.1.0の56.5秒から2.31秒になりました。
+約10万ファイルある[linux](https://github.com/torvalds/linux)のリポジトリ全体のチェックは、v13.1.0では56.5秒かかっていました。
+v14では2.31秒です。
 RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
 
 ![Secretlint v13.1.0とv14の実行時間の比較](/wp-content/uploads/2026/secretlint-v14-performance.png)
 
-| `secretlint "**/*"` | ファイル数 | v13.1.0 | v14 | |
+| `secretlint "**/*"` | ファイル数 | v13.1.0 | v14 | 速度比 |
 | --- | ---: | ---: | ---: | ---: |
 | 1ファイル（pre-commitフックのような使い方） | 1 | 246 ms | 153 ms | 1.6倍 |
 | [react](https://github.com/facebook/react) | 7,275 | 2.82 s | 405 ms | 7.0倍 |
@@ -113,21 +117,21 @@ RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは�
 | [linux](https://github.com/torvalds/linux) | 97,265 | 56.5 s | 2.31 s | 24.5倍 |
 
 recommendプリセット、実行時間の中央値、Node.js 24.22、4 vCPUのLinuxで計測した結果です。
-vscodeでは、どちらのバージョンも同じ37件を報告します。
+CPUのコア数が多いマシンではもっと並列化されるので、ファイル数が多いリポジトリでの改善率はもう少し良くなるはずです。
 
-まずネイティブの実装と1スレッド同士で比べて、その差を埋めました。
+まず1スレッドのネイティブ実装とJavaScriptの実装を比べて、その差を埋めました。
 1スレッドでほぼ同じ速さになれば、残る差は並列化だけです。
 その並列化は、ルールを読み込まない軽いワーカースレッドで、キーワードを探す処理だけに入れました。
 
 進めた順番は次のとおりです。
 
 1. `--profile`とCIで、どこに時間がかかるかを計測できる状態にする
-2. 同じ処理をRustで書き、1スレッド同士で比較
+2. 同じ処理をRustで書き、1スレッドのネイティブ実装とJavaScriptの実装を比較
 3. 1スレッドでの差（ファイル探索、起動、文字列への変換）を解消
 4. 残った差である並列化の方法を比較
 5. ワーカースレッドで、ファイルの読み込みとキーワード検索だけを並列化
-6. ワーカーの数を、ファイル数ではなく計測した時間から決定
-7. ガード付きキーワードで、メインスレッドのルールまで届くファイルを削減
+6. Worker数を、ファイル数ではなく処理時間から決定
+7. 短いキーワードには後ろに続く文字の条件を付けて、ルールを実行する量を削減
 
 ### 計測できる状態にする
 
@@ -135,7 +139,38 @@ vscodeでは、どちらのバージョンも同じ37件を報告します。
 PRごとにbaseとheadのプロファイルとベンチマークを比べるCIも入れています（[#1828](https://github.com/secretlint/secretlint/pull/1828)）。
 これで、改善と劣化がPRの時点で見えます。
 
-### ネイティブの実装と1スレッドで比べる
+たとえば、textlintのリポジトリで`secretlint --profile "**/*"`を実行すると、次のような出力になります。
+パターンとファイルの一覧は省略しています。
+
+```
+secretlint profile: 290.82ms, 1472 files
+
+Phase                                Time(ms)      %  Count
+secretlint>cli                         290.82  100.0      1
+  @node>load-config                      3.91    1.3      1
+    @config-loader>load-config-file      2.64    0.9      1
+    @config-loader>load-packages         1.16    0.4      1
+  secretlint>search-files              121.23   41.7      1
+  @node>execute                        165.22   56.8      1
+    @node>read-file                    109.09   37.5   1024
+    @core>lint                          31.88   11.0   1024
+      @core>setup-rules                  2.24    0.8      1
+      @core>keyword-scan                15.73    5.4   1003
+      @core>line-check                   6.17    2.1    206
+      @core>rule-handler                 0.03    0.0     21
+    @node>format                         2.62    0.9      1
+
+Time(ms)  Files  Thread (2)
+  155.43   1024  main
+   69.63    448  worker 1
+
+Time(ms)  Files  Rule
+    0.03     21  @secretlint/secretlint-rule-gcp
+```
+
+1,472ファイルのうち、ルールの実行（`@core>rule-handler`）まで進んだのは21ファイルだけです。
+
+### 1スレッドのネイティブ実装とJSの実装を比較
 
 次に、同じ処理をRustで書いて、1スレッドの時間を比べました。
 比べたのは、ファイル探索、読み込み、キーワード検索の3つです。
@@ -148,6 +183,10 @@ vscodeのリポジトリでは、ファイルの読み込みはRustが275〜290m
 
 つまり、読み込みと検索そのものはJavaScriptでもネイティブとほぼ同じ速さでした。
 
+正規表現については、特に差がありませんでした。
+V8が十分に速い正規表現エンジンを持っているためです。
+同じパターンをGoの正規表現で試すと、キーワードで絞り込んだあとの実行はV8の17msに対して988msでした。
+
 ### 1スレッドでの差を埋める
 
 ファイル探索では、Gitと同じ挙動のignoreのマッチャーを自前で実装しました。
@@ -158,15 +197,23 @@ vscodeのファイル探索は158msから53msになり、ignore crateの1スレ�
 ルールを宣言的なデータにして、ファイルのバイト列を1回だけ走査し、すべてのルールのキーワードをまとめて探します（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
 キーワードがないファイルは文字列に変換せず、ルールも動かしません。
 
-データ指向で見ると、大きなコストはファイルの読み込みとデータの変換でした。
+ここでは、[Yuku](https://yuku.fyi/)などを参考にして、data-oriented design（データ指向設計）の考え方を使いました。
+処理の都合ではなく、データの形とその変換のコストから設計を決める考え方です。
+
+- [Engineering High Performance Parsers (with Zig) - Ziggit](https://ziggit.dev/t/engineering-high-performance-parsers-with-zig/16761)
+
+この考え方で見ると、大きなコストはファイルの読み込みとデータの変換でした。
 たとえば14,430ファイルを`utf8`の文字列として読むと614msかかります。
-使い回すバッファにバイト列として読むと82msで済みました。
+1つの`Buffer`を使い回して、`fs.readSync`でバイト列として読むと82msで済みました。
+v14の実装も、`Buffer.allocUnsafe`で確保した1つの`Buffer`を使い回しています。
+ワーカーからメインスレッドへは、`Uint8Array`にまとめたバイト列をコピーせずに移します。
 
 起動も、依存を減らすことで短くしています（[#1813](https://github.com/secretlint/secretlint/pull/1813), [#1814](https://github.com/secretlint/secretlint/pull/1814), [#1816](https://github.com/secretlint/secretlint/pull/1816)）。
 
 ### 並列化の方法を選ぶ
 
-1スレッドでほぼ同じ速さになったので、ネイティブの実装との差はスレッドの数の分だけです。
+Rustのignore crateでの探索やaho-corasick crateでの検索と、1スレッドではほぼ同じ速さになりました。
+残るネイティブの実装との差は、スレッドの数の分だけです。
 並列化の方法として、ネイティブのプログラム、WebAssembly、Node.jsのワーカースレッドを比べました。
 
 キーワードの絞り込みをRustの子プロセスで並列に行うプロトタイプでは、4スレッドでの読み込みと検索は207msでした。
@@ -180,19 +227,20 @@ coreはブラウザでも動かすので、どこでも使えるスレッドの�
 
 ### JavaScriptのままにした理由
 
-JavaScriptのままにすること自体へのこだわりは、あまりありませんでした。
+JavaScriptのままにすること自体へのこだわりは、そこまでありませんでした。
 測ってみるとJavaScriptのままでも十分速くなったので、書き直す理由がなくなったという形です。
 
-理由の1つは、ブラウザで動かしたいことです。
+一方で、ブラウザでもSecretlintを動かしたいという要件はあります。
 `@secretlint/core`とrecommendプリセットはブラウザでそのまま動き、PlaywrightとChromiumでのテストを変更ごとに実行しています（[#1803](https://github.com/secretlint/secretlint/pull/1803)）。
 ネイティブのバイナリにすると、ブラウザで動かすのが面倒です。
 
-もう1つは、ルールの性質です。
+もう1つの理由は、ルールの性質です。
 Secretlintのルールを整理すると、ほとんどは「キーワード」と「正規表現」で書ける宣言的なルールでした。
 調べた時点では、recommendプリセットの28ルールのうち27ルールがこの形で書けました。
 
-Parcel 3のように、coreをネイティブで書き直して、プラグインはネイティブとJavaScriptの両方で書けるようにする構成も考えられます。
-Parcel 3は、Rustで全体を書き直したバージョンです。
+Parcel 3のように、coreをネイティブで書き直す構成も考えられます。
+Parcel 3はRustで全体を書き直していて、プラグインもRustなどのネイティブの言語で書くようになっています。
+（AIでコードを書くので、以前よりプラグインをJavaScriptにする理由は減ってきていそうです）
 
 - [Announcing Parcel 3 alpha](https://v3.parceljs.org/blog/v3-alpha/)
 
@@ -205,7 +253,7 @@ Secretlintのルールはほとんどが宣言的なデータなので、あえ�
 ### ルールをワーカーで動かさない理由
 
 プロファイルを見ると、時間を使っていたのはキーワード検索とファイルの読み込みでした。
-たとえばlinuxのリポジトリでは、全体の4,459msのうちキーワード検索が2,927ms、読み込みが838msです。
+たとえば[linux](https://github.com/torvalds/linux)のリポジトリでは、全体の4,459msのうちキーワード検索が2,927ms、読み込みが838msです。
 ルールの実行には、あまり時間がかかっていません。
 ルールが動くのは、キーワードで絞り込んだファイルだけだからです。
 
@@ -213,6 +261,8 @@ Secretlintのルールはほとんどが宣言的なデータなので、あえ�
 
 ルールまでワーカーで実行すると、各ワーカーが設定とすべてのルールを読み込みます。
 カスタムルールの大きさは決まっていないので、ワーカーの起動時間が一定になりません。
+
+![ルールもワーカーで実行する場合と、Secretlint v14の比較](https://mermaid.ink/svg/Zmxvd2NoYXJ0IExSCiAgICBzdWJncmFwaCBBWyLjg6vjg7zjg6vjgoLjg6_jg7zjgqvjg7zjgaflrp_ooYzjgZnjgovloLTlkIgiXQogICAgICAgIEExWyLjg6_jg7zjgqvjg7zotbfli5UiXSAtLT4gQTJbIuioreWumuOBqOOBmeOBueOBpuOBruODq-ODvOODq-OCkuiqreOBv-i-vOOCgCJdIC0tPiBBM1si6Kqt44G_6L6844G_ICsg44Kt44O844Ov44O844OJ5qSc57SiICsg44Or44O844Or5a6f6KGMIl0KICAgIGVuZAogICAgc3ViZ3JhcGggQlsiU2VjcmV0bGludCB2MTQiXQogICAgICAgIEIxWyLjg6_jg7zjgqvjg7zotbfli5UiXSAtLT4gQjJbIuOCreODvOODr-ODvOODieOBqOato-imj-ihqOePvuOCkjxici8-44OH44O844K_44Gn5Y-X44GR5Y-W44KLIl0gLS0-IEIzWyLoqq3jgb_ovrzjgb8gKyDjgq3jg7zjg6_jg7zjg4nmpJzntKIiXSAtLT4gQjRbIuODoeOCpOODs-OCueODrOODg-ODieOBp-ODq-ODvOODq-Wun-ihjDxici8-77yI5q6L44Gj44Gf44OV44Kh44Kk44Or44Gg44GR77yJIl0KICAgIGVuZAo?bgColor=FFFFFF)
 
 ESLintはv9.34.0でマルチスレッドのlintを入れています。
 その紹介記事には、スレッドを増やすとかえって遅くなる場合があると書かれています。
@@ -228,7 +278,7 @@ textlintでも、v11.4.0で`--parallel`を実験的に入れたことがあり�
 Secretlintのワーカーは、coreのキーワードマッチャーと行の確認だけを読み込み、キーワードと正規表現はデータとして受け取ります。
 このコードは、ルールが増えても大きくなりません。
 
-### ワーカーの数は時間で決める
+### Worker数を処理時間で決める
 
 ワーカーを始めるかどうかは、ファイル数ではなく時間で決めています。
 メインスレッドが1つでlintを始めて、実際にlintできた速さから残りの時間を見積もります。
@@ -238,27 +288,37 @@ Secretlintのワーカーは、coreのキーワードマッチャーと行の確
 走査の時間はファイルの大きさやディスクの速さで変わります。
 ファイル数を定数で割る方法だと、あるリポジトリに合う定数が別のリポジトリには合いません。
 
-### メインスレッドに届く量を減らす
+### ルールを実行する量を減らす
 
-ルールを実行するメインスレッドは1つですが、Secretlintではそこまで届くファイルが少ないので困りません。
-キーワードがあり、さらにその行がパターンの正規表現に一致したファイルだけが届きます。
+ルールを実行するメインスレッドは1つです。
+そのため、ルールへ来る前の段階でファイルを減らす実装をしています。
+ルールが動くのは、キーワードがあり、さらにその行がパターンの正規表現に一致したファイルだけです。
 
-ただし、`00`や`SK`のような短い接頭辞は多くのファイルに当たるので、キーワードとして役に立ちません。
-そこで、キーワードの後ろに続く文字の種類と数を書ける「ガード付きキーワード」を入れました（[#1827](https://github.com/secretlint/secretlint/pull/1827)）。
+Secretlintは誤検知（false positive）を減らす方針なので、形式が決まっているcredentialだけを検出します。
+一方で、接頭辞の形式は決まっていても、Oktaのトークンの`00`のように、短くてほかの場所にも登場する接頭辞を使うサービスがあります。
+こういう接頭辞は多くのファイルに当たるので、キーワードとして役に立ちません。
+その対策として、キーワードの後ろに続く文字の種類と数を、`after`という条件で書けるようにしました（[#1827](https://github.com/secretlint/secretlint/pull/1827)）。
 
 ```js
 keywords: ["sk-ant-", { keyword: "00", after: "[A-Za-z0-9_-]{40,}" }]
 ```
 
-ガードはキーワード検索のループの中で確かめるので、ガードを満たさない場所は記録もしません。
-ガードを正規表現ではなく文字の集合と数だけにしたのは、後戻りがなく、コストの上限が決まるためです。
+この例では、`00`の後ろに指定した文字が40文字以上続く場所だけが、キーワードとして扱われます。
+この条件はキーワード検索のループの中で確かめるので、条件を満たさない場所は記録もしません。
+条件を正規表現ではなく文字の集合と数だけにしたのは、後戻りがなく、コストの上限が決まるためです。
 
 ### 試して採用しなかったこと
 
 WebAssemblyのSIMD命令でふるいをかけてからキーワードを探す方法も実装しました（[#1823](https://github.com/secretlint/secretlint/pull/1823)）。
-今のキーワードでは速くなりました。
-しかし、キーワードを100個足すとふるいが66%のブロックを残し、仕事を増やすだけになります。
-キーワードは今後も増えるので、採用しませんでした。
+ふるいは、ファイルを16バイトずつまとめて見て、どのキーワードも含まれえないブロックを捨てる処理です。
+残ったブロックだけを、これまでのキーワード検索で確かめます。
+
+今の65個のキーワードでは、ふるいが残すブロックは5%で、キーワード検索は速くなりました。
+しかし、ふるいは各キーワードの一部の3バイトを目印にしています。
+キーワードが増えると目印も増えるので、捨てられるブロックが減ります。
+キーワードを100個足すと、ふるいは66%のブロックを残しました。
+残ったブロックはふるいとキーワード検索の両方を通るので、ふるいの分だけ仕事が増えます。
+ルールの追加でキーワードは今後も増えるので、採用しませんでした。
 
 ワーカーの最初の版は、先に全ファイルを走査して、キーワードのあるファイルをメインスレッドが読み直す作りでした。
 この作りは、キーワードを持たないルールがある設定で、すべてのファイルを2回読んでしまいます。
@@ -317,7 +377,7 @@ Secretlintの、キーワードで絞り込んでから正規表現を動かす�
 [Betterleaks](https://github.com/betterleaks/betterleaks)は、Aho-Corasickによるキーワードの絞り込みと並列化を、速さの理由として挙げています。
 キーワードの後ろの文字が満たすべき条件を確かめる仕組み（[assignment_guard.go](https://github.com/betterleaks/betterleaks/blob/main/scan/assignment_guard.go)）も持っています。
 Betterleaksはこの条件を正規表現から推測します。
-Secretlintは、ルールを書く人がガードを明示的に書き、書き間違いはテストで落とします。
+Secretlintは、ルールを書く人が条件を明示的に書き、書き間違いはテストで落とします。
 
 ripgrepも、ignore crateで探索したファイルを複数のスレッドで検索します。
 
@@ -327,8 +387,12 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 
 ## まとめ
 
-Secretlint v14では、JavaScriptのまま、約10万ファイルのリポジトリを約2秒でチェックできるようにしました。
-ネイティブの実装と1スレッドで比べて差を埋め、残りの並列化は、ルールを読み込まない軽いワーカースレッドに絞り込みだけを任せています。
-ブラウザでそのまま動くことと、ルールを宣言的なデータとして書けることは保ったままです。
+[Secretlint v14.0.0](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)では、公式ルールを本体に同梱し、JavaScriptのままファイル数が多いリポジトリでのチェックを速くしました。
+
+- [公式ルールを本体に同梱（#1798）](https://github.com/secretlint/secretlint/pull/1798)
+- [宣言的なルールと、バイト列を1回だけ走査する検索（#1794）](https://github.com/secretlint/secretlint/pull/1794)
+- [ワーカースレッドでのファイルの読み込みとキーワード検索（#1824）](https://github.com/secretlint/secretlint/pull/1824)
+- [ブラウザでのテスト（#1803）](https://github.com/secretlint/secretlint/pull/1803)
+- [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
 ぜひ`npx secretlint "**/*"`で試してみてください。
