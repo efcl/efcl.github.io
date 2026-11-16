@@ -2,7 +2,7 @@
 title: "Secretlint v14.0.0リリース: 設定なしで動作するように変更、大規模リポジトリのチェックを高速化"
 author: azu
 layout: post
-date : 2026-11-16T16:00+09:00
+date : 2026-11-16T15:50+09:00
 category: secretlint
 tags:
     - secretlint
