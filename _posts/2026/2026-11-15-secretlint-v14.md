@@ -25,7 +25,7 @@ v13からv14へは、基本的に設定や使い方を変えなくてもアッ�
 公式ルールが本体に入ったので、不要になったルールのパッケージを取り除くことを推奨します。
 詳しくは移行ガイドを参照してください。
 
-- [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
+- [移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
 この記事では、次の3つを順番に書きます。
 
@@ -305,7 +305,6 @@ Secretlintのルールを整理すると、ほとんどは「キーワード」�
 
 Parcel 3のように、coreをネイティブで書き直す構成も考えられます。
 Parcel 3はRustで全体を書き直していて、プラグインもRustなどのネイティブの言語で書くようになっています。
-（AIでコードを書くので、以前よりプラグインをJavaScriptにする理由は減ってきていそうです）
 
 - [Announcing Parcel 3 alpha](https://v3.parceljs.org/blog/v3-alpha/)
 
@@ -464,6 +463,6 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 
 [Secretlint v14.0.0](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)では、公式ルールを本体に同梱し、JavaScriptのままファイル数が多いリポジトリでのチェックを速くしました。
 
-- [v13からv14への移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
+- [移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
 ぜひ`npx secretlint "**/*"`で試してみてください。
