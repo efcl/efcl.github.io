@@ -82,6 +82,12 @@ Trusted Publishingは、一度公開されたパッケージにしか設定で�
 
 - [npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する](https://efcl.info/2025/09/07/npm-oidc/)
 
+この2段階の流れは、[setup-npm-trusted-publish](https://github.com/azu/setup-npm-trusted-publish)というツールを書いて、対話的に進められるようにしています。
+`npm login`、設定用のパッケージの公開、Trusted Publishingの設定、`npm logout`までを順番に実行できます。
+
+- [setup-npm-trusted-publishにinteractive modeを追加したときのポスト](https://x.com/azu_re/status/2121972456806346757)
+
+それでも、新しいパッケージを作るたびにローカルでの作業が増えることは変わりません。
 この手間があるため、新しいルールを気軽に追加できなくなっていました。
 v14からは、新しいルールは`@secretlint/core`の中のファイルとして追加します。
 新しいnpmパッケージを作る必要がなく、ルールのバージョンは常にSecretlint本体と同じです。
