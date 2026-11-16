@@ -466,3 +466,8 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 - [移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
 ぜひ`npx secretlint "**/*"`で試してみてください。
+
+Secretlintの開発を支援したい方向けに、GitHub Sponsorsも募集しています。
+ご支援いただけると嬉しいです。
+
+- [Sponsor @azu on GitHub Sponsors](https://github.com/sponsors/azu)
