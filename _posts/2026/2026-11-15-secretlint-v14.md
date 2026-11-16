@@ -95,7 +95,7 @@ v14からは、新しいルールは`@secretlint/core`の中のファイルと�
 
 ### 宣言的なルール
 
-ルールを、`create()`関数ではなく`keywords`付きの`patterns`というデータで書けるようになりました（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
+ルールを、`create()`関数ではなく`keywords`付きの`patterns`で宣言的に書けるようになりました（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
 `@secretlint/secretlint-rule-pattern`に書いた独自のパターンも、同じ仕組みで動きます（[#1826](https://github.com/secretlint/secretlint/pull/1826)）。
 これは、次に書くパフォーマンス改善の土台になっています。
 
