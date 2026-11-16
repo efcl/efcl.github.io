@@ -120,18 +120,18 @@ v14がサポートするのは、Node.js 22+です。
 
 ## パフォーマンス改善の進め方
 
-約10万ファイルある[torvalds/linux](https://github.com/torvalds/linux)リポジトリ全体のチェックは、v13.1.0では56.5秒かかっていました。
-v14では2.31秒です。
+約10万ファイルある[torvalds/linux](https://github.com/torvalds/linux)リポジトリ全体のチェックは、v13.1.0では42.1秒かかっていました。
+v14では1.74秒です。
 RustなどのネイティブコードやWebAssemblyは使わず、Secretlintは今もJavaScriptだけで動いています。
 
 ![Secretlint v13.1.0とv14の実行時間の比較](/wp-content/uploads/2026/secretlint-v14-performance.png)
 
 | 対象のリポジトリ | ファイル数 | v13.1.0 | v14 | 速度比 |
 | --- | ---: | ---: | ---: | ---: |
-| 1ファイル（pre-commitフックのような使い方） | 1 | 246 ms | 153 ms | 1.6倍 |
-| [facebook/react](https://github.com/facebook/react) | 7,275 | 2.82 s | 405 ms | 7.0倍 |
-| [microsoft/vscode](https://github.com/microsoft/vscode) | 21,442 | 13.9 s | 758 ms | 18.3倍 |
-| [torvalds/linux](https://github.com/torvalds/linux) | 97,265 | 56.5 s | 2.31 s | 24.5倍 |
+| 1ファイル（pre-commitフックのような使い方） | 1 | 191 ms | 105 ms | 1.8倍 |
+| [facebook/react](https://github.com/facebook/react) | 7,275 | 2.18 s | 274 ms | 7.9倍 |
+| [microsoft/vscode](https://github.com/microsoft/vscode) | 21,444 | 11.0 s | 634 ms | 17.4倍 |
+| [torvalds/linux](https://github.com/torvalds/linux) | 97,265 | 42.1 s | 1.74 s | 24.2倍 |
 
 `secretlint "**/*"`をrecommendプリセットで実行した時間の中央値で、Node.js 24.22、4 vCPUのLinuxで計測した結果です。
 CPUのコア数が多いマシンではもっと並列化されるので、ファイル数が多いリポジトリでの改善率はもう少し良くなるはずです。
@@ -238,16 +238,19 @@ ignoreのパターンは、ファイルやディレクトリの名前と拡張�
 すべてのパターンを順番に試す必要がなくなりました（[#1818](https://github.com/secretlint/secretlint/pull/1818), [#1822](https://github.com/secretlint/secretlint/pull/1822)）。
 microsoft/vscodeリポジトリのファイル探索は158msから53msになり、ignore crateの1スレッド（32〜36ms）に近づいています。
 
-検索は、データの形から考え直しました。
-ルールを宣言的なデータにして、ファイルのバイト列を1回だけ走査し、すべてのルールのキーワードをまとめて探します（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
-キーワードがないファイルは文字列に変換せず、ルールも動かしません。
-
-ここでは、[Yuku](https://yuku.fyi/)などを参考にして、data-oriented design（データ指向設計）の考え方を使いました。
-処理の都合ではなく、データの形とその変換のコストから設計を決める考え方です。
+検索では、[Yuku](https://yuku.fyi/)などを参考にして、data-oriented design（データ指向設計）の考え方を使いました。
+Yukuのパーサーは、ノードごとにオブジェクトを作らず、1つの配列とその中の位置（インデックス）でASTを表します。
+文字列もソースの中の位置として持ち、必要になるまで取り出しません。
 
 - [Data-Oriented Design in Yuku's Parser - Arshad Yaseen](https://www.arshad.fyi/posts/yuku-parser.html)
 
-この考え方で見ると、大きなコストはファイルの読み込みとデータの変換でした。
+Secretlintでも同じように、最初の段階ではファイルごとのオブジェクトや文字列を作りません。
+ルールを宣言的なデータにして、ファイルのバイト列を1回だけ走査し、すべてのルールのキーワードをまとめて探します（[#1794](https://github.com/secretlint/secretlint/pull/1794)）。
+この走査で記録するのは、キーワードがあった位置だけです。
+文字列に変換するのは、キーワードがあった行だけです。
+キーワードがないファイルは文字列に変換せず、ルールも動かしません。
+
+こうすると、ファイルごとに行うデータの変換とメモリの確保が減ります。
 たとえば14,430ファイルを`utf8`の文字列として読むと614msかかります。
 1つの`Buffer`を使い回して、`fs.readSync`でバイト列として読むと82msで済みました。
 v14の実装も、`Buffer.allocUnsafe`で確保した1つの`Buffer`を使い回しています。
@@ -259,17 +262,15 @@ v14の実装も、`Buffer.allocUnsafe`で確保した1つの`Buffer`を使い回
 
 | 対象のリポジトリ | ファイル数 | v13.1.0 | v14（1スレッド） | v14 |
 | --- | ---: | ---: | ---: | ---: |
-| facebook/react | 7,275 | 2.59 s | 335 ms | 354 ms |
-| microsoft/vscode | 21,444 | 13.5 s | 1.26 s | 754 ms |
-| torvalds/linux | 97,265 | 53.7 s | 5.00 s | 1.97 s |
+| facebook/react | 7,275 | 2.18 s | 332 ms | 274 ms |
+| microsoft/vscode | 21,444 | 11.0 s | 1.05 s | 634 ms |
+| torvalds/linux | 97,265 | 42.1 s | 4.26 s | 1.74 s |
 
-4 vCPUのLinuxで計測した実行時間の中央値です。
-冒頭の表とは別の日にNode.js 22.23で計測したので、数値は少し違います。
+冒頭の表と同じ計測で、v13.1.0とv14の値は同じものです。
 「v14（1スレッド）」は、v14.0.0でワーカースレッドを起動しないようにして計測した値です。
 
-v13.1.0からの改善の大部分は、1スレッドの段階で出ています。
-次に書く並列化は、そこからさらにmicrosoft/vscodeで約1.7倍、torvalds/linuxで約2.5倍にするものです。
-ファイル数が少ないfacebook/reactでは、ワーカースレッドによる差はほとんどありません。
+torvalds/linuxリポジトリでは、1スレッドのままでも42.1秒が4.26秒になりました。
+シングルスレッドの改善がある程度できたところで、次はファイル数が多いときの並列化の方法を考えていきました。
 
 ### 並列化の方法を選ぶ
 
