@@ -43,7 +43,7 @@ v13からv14へは、基本的に設定や使い方を変えなくてもアッ�
 v14では、事前のインストールや設定ファイルなしで、次のコマンドだけで動きます。
 
 ```bash
-npx secretlint "**/*"
+npx secretlint@14 "**/*"
 ```
 
 設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（[#1835](https://github.com/secretlint/secretlint/pull/1835)）。
@@ -465,7 +465,7 @@ ripgrepも、ignore crateで探索したファイルを複数のスレッドで�
 
 - [移行ガイド](https://github.com/secretlint/secretlint/blob/HEAD/docs/migrations/v13-to-v14.md)
 
-ぜひ`npx secretlint "**/*"`で試してみてください。
+ぜひ`npx secretlint@14 "**/*"`で試してみてください。
 
 Secretlintの開発を支援したい方向けに、GitHub Sponsorsも募集しています。
 ご支援いただけると嬉しいです。
