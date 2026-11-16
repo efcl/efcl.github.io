@@ -1,5 +1,5 @@
 ---
-title: "Secretlint v14.0.0リリース: 公式ルールを本体に同梱、大規模リポジトリのチェックを高速化"
+title: "Secretlint v14.0.0リリース: 設定なしで動作するように変更、大規模リポジトリのチェックを高速化"
 author: azu
 layout: post
 date : 2026-11-15T16:00+09:00
@@ -16,10 +16,9 @@ tags:
 
 - [Release v14.0.0 · secretlint/secretlint](https://github.com/secretlint/secretlint/releases/tag/v14.0.0)
 
-このバージョンの主な変更点は次の3つです。
+このバージョンの主な変更点は次の2つです。
 
-- 公式ルールとプリセットを`secretlint`本体に同梱
-- 設定ファイルがないときは、recommendプリセットで実行
+- 設定ファイルなしで動作（公式ルールとプリセットを`secretlint`本体に同梱）
 - ファイル数が多いリポジトリでのチェックを高速化
 
 v13からv14へは、基本的に設定や使い方を変えなくてもアップデートできます。
@@ -30,7 +29,7 @@ v13からv14へは、基本的に設定や使い方を変えなくてもアッ�
 
 この記事では、次の3つを順番に書きます。
 
-- v14の変更点と、公式ルールを本体に同梱した理由
+- v14の変更点と、設定なしで動作する仕組み
 - どういう考え方でパフォーマンスを改善したか
 - 最終的な処理の流れと技術的な詳細
 
@@ -39,10 +38,22 @@ v13からv14へは、基本的に設定や使い方を変えなくてもアッ�
 詳しい変更点は、リリースノートと移行ガイドを参照してください。
 ここでは主な変更点を紹介します。
 
-### 公式ルールを本体に同梱
+### 設定なしで動作
 
-公式ルールとプリセットを、`@secretlint/core`へ含めました（[#1798](https://github.com/secretlint/secretlint/pull/1798), [#1832](https://github.com/secretlint/secretlint/pull/1832)）。
-インストールは`secretlint`だけで済みます。
+v14では、事前のインストールや設定ファイルなしで、次のコマンドだけで動きます。
+
+```bash
+npx secretlint "**/*"
+```
+
+設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（[#1835](https://github.com/secretlint/secretlint/pull/1835)）。
+v13までは、`secretlint`とは別にルールのパッケージをインストールして、`.secretlintrc.json`にそのルールを書く必要がありました。
+
+### 仕組み: 公式ルールを本体に同梱
+
+設定なしで動作するのは、公式ルールとプリセットを`@secretlint/core`へ含めたためです（[#1798](https://github.com/secretlint/secretlint/pull/1798), [#1832](https://github.com/secretlint/secretlint/pull/1832)）。
+recommendプリセットが本体に入ったので、`.secretlintrc.json`の設定ファイルを必須にする理由がなくなりました。
+インストールも`secretlint`だけで済みます。
 
 ```bash
 # v13
@@ -54,6 +65,10 @@ npm install secretlint --save-dev
 ルールのidは変わらないため、今の`.secretlintrc.json`はそのまま動きます。
 これまでインストールしていた公式ルールのパッケージ（例: `@secretlint/secretlint-rule-preset-recommend`）は、使われなくなります。
 `package.json`から削除できます。
+
+あわせて、`secretlint`のサードパーティの実行時依存は69パッケージから16パッケージに減りました。
+
+### 同梱した理由
 
 同梱した主な理由は、npmへのパッケージ公開がボトルネックになり、新しいルールを追加するコストが高くなっていたためです。
 v13までは、公式ルールが1つずつ別のnpmパッケージでした。
@@ -70,18 +85,6 @@ Trusted Publishingは、一度公開されたパッケージにしか設定で�
 この手間があるため、新しいルールを気軽に追加できなくなっていました。
 v14からは、新しいルールは`@secretlint/core`の中のファイルとして追加します。
 新しいnpmパッケージを作る必要がなく、ルールのバージョンは常にSecretlint本体と同じです。
-
-あわせて、`secretlint`のサードパーティの実行時依存は69パッケージから16パッケージに減りました。
-
-### 設定ファイルなしで実行
-
-設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（[#1835](https://github.com/secretlint/secretlint/pull/1835)）。
-recommendプリセットが本体に同梱されたので、`.secretlintrc.json`の設定ファイルを必須にする理由がなくなりました。
-次のコマンドだけで試せます。
-
-```bash
-npx secretlint "**/*"
-```
 
 ### 宣言的なルール
 
@@ -237,6 +240,22 @@ v14の実装も、`Buffer.allocUnsafe`で確保した1つの`Buffer`を使い回
 ワーカーからメインスレッドへは、`Uint8Array`にまとめたバイト列をコピーせずに移します。
 
 起動も、依存を減らすことで短くしています（[#1813](https://github.com/secretlint/secretlint/pull/1813), [#1814](https://github.com/secretlint/secretlint/pull/1814), [#1816](https://github.com/secretlint/secretlint/pull/1816)）。
+
+ここまでの改善で、ワーカースレッドを使わない1スレッドの状態でも、次の速さになりました。
+
+| 対象のリポジトリ | ファイル数 | v13.1.0 | v14（1スレッド） | v14 |
+| --- | ---: | ---: | ---: | ---: |
+| facebook/react | 7,275 | 2.59 s | 335 ms | 354 ms |
+| microsoft/vscode | 21,444 | 13.5 s | 1.26 s | 754 ms |
+| torvalds/linux | 97,265 | 53.7 s | 5.00 s | 1.97 s |
+
+4 vCPUのLinuxで計測した実行時間の中央値です。
+冒頭の表とは別の日にNode.js 22.23で計測したので、数値は少し違います。
+「v14（1スレッド）」は、v14.0.0でワーカースレッドを起動しないようにして計測した値です。
+
+v13.1.0からの改善の大部分は、1スレッドの段階で出ています。
+次に書く並列化は、そこからさらにmicrosoft/vscodeで約1.7倍、torvalds/linuxで約2.5倍にするものです。
+ファイル数が少ないfacebook/reactでは、ワーカースレッドによる差はほとんどありません。
 
 ### 並列化の方法を選ぶ
 
