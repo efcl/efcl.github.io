@@ -234,7 +234,8 @@ microsoft/vscodeリポジトリでは、ファイルの読み込みはRustが275
 ### 1スレッドでの差を埋める
 
 ファイル探索では、Gitと同じ挙動のignoreのマッチャーを自前で実装しました。
-ignoreのルールは、エントリーの名前から引きます（[#1818](https://github.com/secretlint/secretlint/pull/1818), [#1822](https://github.com/secretlint/secretlint/pull/1822)）。
+ignoreのパターンは、ファイルやディレクトリの名前と拡張子をキーにした表から引きます。
+すべてのパターンを順番に試す必要がなくなりました（[#1818](https://github.com/secretlint/secretlint/pull/1818), [#1822](https://github.com/secretlint/secretlint/pull/1822)）。
 microsoft/vscodeリポジトリのファイル探索は158msから53msになり、ignore crateの1スレッド（32〜36ms）に近づいています。
 
 検索は、データの形から考え直しました。
