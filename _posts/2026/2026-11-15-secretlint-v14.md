@@ -85,7 +85,8 @@ Trusted Publishingは、一度公開されたパッケージにしか設定で�
 この2段階の流れは、[setup-npm-trusted-publish](https://github.com/azu/setup-npm-trusted-publish)というツールを書いて、対話的に進められるようにしています。
 `npm login`、設定用のパッケージの公開、Trusted Publishingの設定、`npm logout`までを順番に実行できます。
 
-- [setup-npm-trusted-publishにinteractive modeを追加したときのポスト](https://x.com/azu_re/status/2121972456806346757)
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">setup-npm-trusted-publishにinteractive modeを追加しました。<br>これでポチポチするだけで、npm loginしてplaceholder packageをpublishして、Trusted Publishingの設定をして、npm logoutするというのができる。<a href="https://t.co/954kn24lfP">https://t.co/954kn24lfP</a> <a href="https://t.co/vZnWZHLgOB">pic.twitter.com/vZnWZHLgOB</a></p>&mdash; azu (@azu_re) <a href="https://x.com/azu_re/status/2121972456806346757?ref_src=twsrc%5Etfw">November 15, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 それでも、新しいパッケージを作るたびにローカルでの作業が増えることは変わりません。
 この手間があるため、新しいルールを気軽に追加できなくなっていました。
