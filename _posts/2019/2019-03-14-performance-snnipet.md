@@ -210,8 +210,8 @@ copy(temp1)
 ]
 ```
 
-後は[JSON To CSV](http://convertcsv.com/json-to-csv.htm)するなりして、SpreadSheetで可視化したりすると良いです。
-可視化には<https://plot.ly/>などを使うとJavaScriptで処理もできるので便利です
+<p>後は<a href="http://convertcsv.com/json-to-csv.htm">このツール</a>（または<a href="https://data.page/json/csv">このツール</a>）でJSON To CSVするなりして、SpreadSheetで可視化したりすると良いです。
+可視化には<a href="https://plot.ly/">https://plot.ly/</a>などを使うとJavaScriptで処理もできるので便利です</p>
 
 ## おわりに
 
