@@ -2,7 +2,7 @@
 title: "Claude Projectsを使って、複数のリポジトリにまたがるtextlintとルールのパフォーマンスを改善した"
 author: azu
 layout: post
-date : 2026-11-23T16:20+09:00
+date : 2026-11-24T09:00+09:00
 category: textlint
 tags:
     - textlint
