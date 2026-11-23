@@ -14,9 +14,10 @@ tags:
 この2週間で、[textlint](https://github.com/textlint/textlint)と、よく使われているルールやライブラリのパフォーマンスを改善しました。
 lintにかかる時間は、約10分の1になっています。
 
-![インストールした日付ごとのtextlintのCLIの実行時間](/wp-content/uploads/2026/textlint-performance.png)
+![textlintのバージョンごとのCLIの実行時間](/wp-content/uploads/2026/textlint-performance.png)
 
-グラフは、その日に`npm install`した状態での実行時間です。
+グラフは、textlintの各バージョンが出た日に`npm install`した状態での実行時間です。
+ルールとライブラリも、その日の時点のバージョンです。
 設定やルールは変えずに、textlintとルールをアップデートすると速くなります。
 
 ```sh
