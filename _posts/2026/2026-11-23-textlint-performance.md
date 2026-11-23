@@ -1,5 +1,5 @@
 ---
-title: "textlintのパフォーマンスを改善した: 複数のリポジトリをまたいで、計測しながら進める"
+title: "Claude Projectsを使って複数のリポジトリに分かれたtextlintのパフォーマンスを改善した"
 author: azu
 layout: post
 date : 2026-11-23T16:20+09:00
@@ -122,7 +122,7 @@ textlintやSecretlintの開発でも使っている[sdev](https://github.com/azu
 ## 複数のリポジトリをまたいで進める
 
 textlintは、本体、ルール、ルールが使うライブラリを、別々のリポジトリで管理しています。
-今回は、[textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などのリポジトリを、1つの[Claude Project](https://support.claude.com/en/articles/9517075-what-are-projects)にまとめて進めました。
+今回は、[textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などのリポジトリを、[Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)の1つのプロジェクトにまとめて進めました。
 
 ![textlintのプロジェクト。調査や修正ごとにスレッドが分かれている](/wp-content/uploads/2026/textlint-performance-claude-project.png)
 
