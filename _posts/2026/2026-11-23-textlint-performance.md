@@ -142,6 +142,11 @@ kuromojinは、この流れで進めました。
 やると決めたものは、[sdev](https://github.com/azu/sdev)で要件を定義して、デザインを起こしてから、その仕様をもとに実装します。
 kuromojinの[解析器、辞書のフォーマット、辞書のバージョン](https://github.com/textlint/kuromojin/tree/master/docs/products/kuromojin)は、どれも仕様が先です。
 
+仕様を読んでも理解しきれない部分は、同じプロジェクトの中で、実際のデータを図にした解説を書いてもらって確かめています。
+次の画面は、kuromojinの辞書のフォーマットを解説してもらったときのものです。
+
+![kuromojinの辞書のフォーマットを解説したスレッド。左に辞書ファイルの構造を図にした解説、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-spec.png)
+
 仕様を先に書くと、互換性に関わる判断を実装の前に決められます。
 辞書に単語を追加すると、形態素解析の結果が変わり、lintの結果も変わります。
 そのため、メジャーバージョンの中では辞書を変えず、`dictionaryVersion`オプションで日付を指定したときだけ新しい辞書を使う仕様にしました。
