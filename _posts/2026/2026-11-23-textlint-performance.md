@@ -137,7 +137,6 @@ vCPUが4つの環境で、変更の前と後を同じ条件で測りながら直
 
 - textlint本体（Markdownパーサーを含む）: `--profile`と、CIでの比較
 - kuromojin（解析器と辞書の読み込み）: `pnpm run profile`と、CIでの比較
-- sentence-splitter: ベンチマークのスクリプト
 
 リポジトリをローカルにチェックアウトしなくてよく、ローカルの権限も渡さなくてよいので、分かれたリポジトリをまとめて触る作業に向いていました。
 kuromojinを使っているtextlint-jaのルールでは、npmへの公開を[OIDCを使ったフロー](https://efcl.info/2025/09/07/npm-oidc/)にそろえる作業も、同じプロジェクトでまとめてしています。
