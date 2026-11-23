@@ -119,6 +119,29 @@ textlintやSecretlintの開発でも使っている[sdev](https://github.com/azu
 辞書に単語を追加すると、形態素解析の結果が変わり、lintの結果も変わります。
 そのため、メジャーバージョンの中では辞書を変えず、`dictionaryVersion`オプションで日付を指定したときだけ新しい辞書を使うようにしました。
 
+## 複数のリポジトリをまたいで進める
+
+textlintは、本体、ルール、ルールが使うライブラリを、別々のリポジトリで管理しています。
+今回は、[textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などのリポジトリを、Claudeの1つのプロジェクトにまとめて進めました。
+
+![textlintのプロジェクト。調査や修正ごとにスレッドが分かれている](/wp-content/uploads/2026/textlint-performance-claude-project.png)
+
+プロジェクトでは、調査や修正ごとにスレッドが分かれていて、別々のリポジトリの作業を並行して進められます。
+あるスレッドでkuromojinの辞書の読み込みを直し、別のスレッドでそのkuromojinをtextlintのベンチマークで確かめる、といった進め方です。
+
+計測も、基本的にはこのプロジェクトが動かしている[Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web)の環境でしています。
+vCPUが4つの環境で、変更の前と後を同じ条件で測りながら直しました。
+冒頭のグラフも、この環境で測ったものです。
+
+多くのルールの土台になるリポジトリには、それぞれ計測の仕組みを入れています。
+
+- textlint本体（Markdownパーサーを含む）: `--profile`と、CIでの比較
+- kuromojin（解析器と辞書の読み込み）: `pnpm run profile`と、CIでの比較
+- sentence-splitter: ベンチマークのスクリプト
+
+リポジトリをローカルにチェックアウトしなくてよく、ローカルの権限も渡さなくてよいので、分かれたリポジトリをまとめて触る作業に向いていました。
+kuromojinを使っているtextlint-jaのルールでは、npmへの公開を[OIDCを使ったフロー](https://efcl.info/2025/09/07/npm-oidc/)にそろえる作業も、同じプロジェクトでまとめてしています。
+
 ## 今考えていること
 
 ### スケール
