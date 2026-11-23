@@ -147,6 +147,8 @@ kuromojinの[解析器、辞書のフォーマット、辞書のバージョン]
 
 ![kuromojinの辞書のフォーマットを解説したスレッド。左に辞書ファイルの構造を図にした解説、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-spec.png)
 
+解説でわかりやすかった図や説明は、[辞書のデザイン](https://github.com/textlint/kuromojin/blob/master/docs/products/kuromojin/features/dictionary/design.ja.md)にも反映しています。
+
 仕様を先に書くと、互換性に関わる判断を実装の前に決められます。
 辞書に単語を追加すると、形態素解析の結果が変わり、lintの結果も変わります。
 そのため、メジャーバージョンの中では辞書を変えず、`dictionaryVersion`オプションで日付を指定したときだけ新しい辞書を使う仕様にしました。
