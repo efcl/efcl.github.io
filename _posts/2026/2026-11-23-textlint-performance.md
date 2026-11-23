@@ -12,16 +12,19 @@ tags:
 ---
 
 この2週間で、[textlint](https://github.com/textlint/textlint)と、よく使われているルールやライブラリのパフォーマンスを改善しました。
-設定やルールは変えずに、textlintとルールをアップデートするだけで速くなります。
+lintにかかる時間は、約10分の1になっています。
 
-| ルールと文書 | 2026-11-08 | 2026-11-23 |
-| --- | ---: | ---: |
-| `preset-jtf-style`でMDN Web Docsの日本語版（10,452ファイル） | 75.5 s、1,022 MB | 7.17 s、475 MB |
-| `preset-ja-technical-writing`でjs-primer（105ファイル） | 40.6 s、905 MB | 4.10 s、290 MB |
+![インストールした日付ごとのtextlintのCLIの実行時間](/wp-content/uploads/2026/textlint-performance.png)
 
-それぞれの列は、その日に`npm install`した状態での、CLIの実行時間とメモリの最大値です。
-2026-11-08はtextlint 15.8.0、2026-11-23はtextlint 16.1.3になります。
+グラフは、その日に`npm install`した状態での実行時間です。
+設定やルールは変えずに、textlintとルールをアップデートすると速くなります。
 
+```sh
+npm install --save-dev textlint@latest
+npm update
+```
+
+textlint v16はNode.js 22.12.0以降が必要です。
 変更の一覧と計測方法は、textlintのブログに英語で書いています。
 
 - [Performance improvements in textlint and its rules](https://textlint.org/blog/2026/11/23/textlint-performance/)
@@ -41,7 +44,7 @@ textlintはルールをすべて外から追加するlinterで、ルールは辞
 lintは、同じ文章には同じ結果を返す決定的な処理です。
 編集のたびに実行して直すことを積み重ねるには、自然言語のlintにもある程度の速さが必要です。
 
-## Secretlintとの違い
+## 互換性を保つ: Secretlintとの違い
 
 textlintの前に、[Secretlint](https://github.com/secretlint/secretlint)のパフォーマンスを改善していました。
 
@@ -62,7 +65,7 @@ textlintでは、次の条件で進めました。
 
 Secretlintほどの最適化ではなく、既存のルールをそのまま速くする改善です。
 
-## 進め方
+## 計測してから直す
 
 進め方はSecretlintと同じで、計測して、時間がかかっている場所を直します。
 
@@ -87,12 +90,7 @@ Pull Requestごとにbaseとheadを比べるCIも入れて、small、medium、la
 
 そのため、先に本体を改善して、次にルールが共有しているライブラリを改善しました。
 
-![インストールした日付ごとのtextlintのCLIの実行時間](/wp-content/uploads/2026/textlint-performance.png)
-
-11-15はtextlint 16.0.0とsentence-splitter 5.1.0が入った日です。
-11-16はpreset-jtf-style 3.1.0、11-21はkuromojin 3.1.0が入っています。
-
-## 本体
+### 本体
 
 本体では、Markdownパーサーを自前のものに書き直し、ルールを呼び出すときのノードごとの処理を減らしました。
 ほかに、フォーマッター、起動時間、ファイルの読み込み方、GC、`--fix`を直しています。
@@ -101,7 +99,7 @@ GCは、コードを読んでもわからず、計測してわかった原因で
 コンストラクタの中でプロパティに代入した関数は、V8のold領域に確保されます。
 ルールのコンテキストはルールとファイルごとに作るので、この関数が次のメジャーGCまで各ファイルのASTを生かし続けていました。
 
-## ルール
+### ルール
 
 文を分割する[sentence-splitter](https://github.com/textlint-rule/sentence-splitter)は、5.1.0でパーサーを書き直しました。
 `preset-jtf-style`は3.1.0で、正規表現を毎回作り直すといった無駄を減らしています。
@@ -120,19 +118,6 @@ textlintやSecretlintの開発でも使っている[sdev](https://github.com/azu
 
 辞書に単語を追加すると、形態素解析の結果が変わり、lintの結果も変わります。
 そのため、メジャーバージョンの中では辞書を変えず、`dictionaryVersion`オプションで日付を指定したときだけ新しい辞書を使うようにしました。
-
-## アップデート方法
-
-textlintを16.1.3以降にして、ルールとプリセットもアップデートします。
-textlint v16はNode.js 22.12.0以降が必要です。
-
-```sh
-npm install --save-dev textlint@latest
-npm update
-npm ls kuromojin sentence-splitter
-```
-
-`kuromojin`が3.1.0以降、`sentence-splitter`が5.1.0以降になっていればOKです。
 
 ## 今考えていること
 
