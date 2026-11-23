@@ -1,5 +1,5 @@
 ---
-title: "Claude Projectsを使って複数のリポジトリに分かれたtextlintのパフォーマンスを改善した"
+title: "textlintとルールのパフォーマンス改善をClaude Projectsで進めた"
 author: azu
 layout: post
 date : 2026-11-23T16:20+09:00
