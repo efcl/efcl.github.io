@@ -203,6 +203,9 @@ textlintによる本文のチェックは、アウトラインと本文を行き
 
 ## おわりに
 
+この2週間で、既存のルールと設定の互換性を保ったまま、textlintとルールのパフォーマンスを改善しました。
+textlint本体、ルール、ライブラリは別々のリポジトリに分かれていますが、1つのプロジェクトの中で計測、調査、仕様、実装を繰り返すことで進められました。
+
 文書の数が多くて遅いという場合は、`textlint --profile`の出力を[GitHub Discussions](https://github.com/textlint/textlint/discussions)で教えてください。
 
 また、textlintの開発を支援してくれる方やスポンサーを募集しています。
