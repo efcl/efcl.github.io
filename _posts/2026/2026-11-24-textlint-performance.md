@@ -171,10 +171,11 @@ kuromojinの[解析器、辞書のフォーマット、辞書のバージョン]
 トークンはkuromoji.jsと互換性があります。
 
 textlint本体のMarkdownパーサーも、自前のものに書き直しました（[#2188](https://github.com/textlint/textlint/pull/2188)）。
-こちらは順番が逆で、すでに完成している実装に対して、後から要件とデザインを書いています（[#2192](https://github.com/textlint/textlint/pull/2192)）。
+こちらは、実装と仕様を行き来しながら書いています（[#2192](https://github.com/textlint/textlint/pull/2192)）。
 sdevの[既存コードのあるプロジェクトで仕様を起点にした開発を始める](https://github.com/azu/sdev/blob/df49074960f9bbba4bf2a2ff3355851e4de188f5/docs/guidelines/brownfield.ja.md)手順をベースにして、すでにある実装をドキュメントにしていきました。
 コードに残っていない部分は、ドキュメントを見ながら意思決定しています。
-この中で、ノードの名前のように曖昧に決まっていた部分があったので、ドキュメントとして定義していきました。
+その途中で、意図していなかった仕様も出てきました。
+ノードの名前のように曖昧に決まっていた部分は、ドキュメントとして定義していきました。
 [新しいMarkdownパーサー](https://textlint.org/blog/2026/11/15/textlint-16#new-markdown-parser)には一部Breaking Changeもありますが、これも実際に影響があるのかをスレッドで調査しながら固めていきました。
 
 ## 今後
