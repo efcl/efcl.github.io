@@ -39,6 +39,11 @@ AIエージェントが書くものは、コードだけではなくドキュメ
 一方で、textlintはこれまでパフォーマンスを目標に入れていませんでした。
 ルールはすべてtextlint本体の外から追加するもので、辞書を読み込んだり、形態素解析をしたりと自由に書けます。
 実行時間のほとんどはルールが使うので、速さよりも、ルールを自由に書けることを優先していました。
+自然言語は英語や日本語といった言語ごとに異なり、同じ日本語でも文体がかなり異なるので、コアに持つルールを決めるのが難しいためです。
+これは次のスライドでも書いています。
+
+- [textlint - Linterの作り方](https://azu.github.io/slide/2022/lint-night/textlint.html)
+- [読む技術・書く技術・伝える技術 - 15年続けて分かった持続可能なオープンソース開発](https://azu.github.io/slide/2025/yapc/opensource-15years.html)
 
 先に改善したSecretlintは、公式ルールが実質的にコアのルールでした。
 そのため、ルールの書き方ごと変えるような最適化ができました。
@@ -61,29 +66,32 @@ textlint本体、ルール、ルールが使うライブラリは別々のリポ
 まず、textlint本体とルールのリポジトリを1つのプロジェクトにまとめました。
 [textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などのリポジトリを、[Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)の1つのプロジェクトで扱っています。
 これによって、textlint本体とルールをまとめて扱えます。
+Claude Projectsでは、最初にプロジェクトへ入れるリポジトリを選びますが、それ以外のリポジトリもスレッドの中でアドホックに追加できるのが良いところです。
+この2週間でPull Requestを出したリポジトリは、合わせて30以上ありました。
 
 ![textlintのプロジェクト。調査や修正ごとにスレッドが分かれている](/wp-content/uploads/2026/textlint-performance-claude-project.png)
 
 このプロジェクトで、主に次の2点をチェックしながら改善を進めました。
 
 - textlint本体の変更がルールの結果に影響していないかを見る、互換性のチェック
-- textlint本体とルールの全体を通したプロファイル
+- textlint本体とルールの全体を通した、End to Endなプロファイル
 
 プロジェクトでは、調査や修正ごとにスレッドが分かれていて、別々のリポジトリの作業を並行して進められます。
 あるスレッドで[kuromojin](https://github.com/textlint/kuromojin)の辞書の読み込みを直し、別のスレッドでそのkuromojinをtextlintのベンチマークで確かめる、といった進め方です。
 あるスレッドで計測した結果は、別のスレッドがコンテキストとして使えます。
 そのため、計測して、直して、また計測するという繰り返しを、リポジトリをまたいで続けられました。
 
-やることがほぼ決まっている作業はOpus、検討が必要なものはFable、というようにモデルも使い分けていました。
+やることがほぼ決まっている作業はOpus、探索が必要なものはFable、というようにモデルも使い分けていました。
 リポジトリをローカルにチェックアウトしなくてよく、ローカルの権限も渡さなくてよいので、分かれたリポジトリをまとめて触る作業に向いていました。
 kuromojinを使っているtextlint-jaのルールでは、npmへの公開を[OIDCを使ったフロー](https://efcl.info/2025/09/07/npm-oidc/)にそろえる作業も、同じプロジェクトでまとめてしています。
 
 ### 計測
 
-計測は主に、このプロジェクトが動かしている[Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web)の環境でしています。
+計測は主に、Claude Projectsが動かしている[Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web)の環境でしています。
 vCPUが4つの環境で、変更の前と後を同じ条件で測りながら直しました。
 冒頭のグラフも、この環境で測ったものです。
-この環境だけではなく、Pull RequestごとのCIでも比べていて、ローカルでもときどき測っています。
+この環境だけではなく、Pull RequestごとのCIでも比べています。
+スレッド数が重要になるケースなどは、ローカルでも計測しています。
 
 最初に、`textlint` CLIに`--profile`フラグを入れました（[#2206](https://github.com/textlint/textlint/pull/2206)）。
 フェーズ、ルール、ファイルごとの時間を出力します。
@@ -103,7 +111,7 @@ textlint本体を直していくと、実行時間に占めるルールの割合
 ![約10万ファイルでの、ファイル読み込み、パース、カーネル、ルールの時間の割合を、ルールの重さごとの箱ひげ図](/wp-content/uploads/2026/textlint-performance-phase-share.png)
 
 約10万ファイルで測ると、正規表現のルールが1個だけならルールの割合は15%ですが、`preset-jtf-style`では63%でした。
-形態素解析をするルールでは、ほとんどがルールの時間です。
+形態素解析をするルールでは、ほとんどがルールの時間で、その多くはルールが呼び出すkuromojinの処理時間です。
 
 そこから、どのルールとライブラリが時間を使っているのかを見て、割合の大きいものから直しました。
 
@@ -163,6 +171,12 @@ kuromojinの[解析器、辞書のフォーマット、辞書のバージョン]
 この仕様をもとに、[kuromojin 3.1.0](https://github.com/textlint/kuromojin/releases/tag/v3.1.0)は[kuromoji.js](https://github.com/takuyaa/kuromoji.js)の処理を含む形にして、自前の解析器と辞書ファイルに変えています。
 トークンはkuromoji.jsと互換性があります。
 textlint本体のMarkdownパーサーも、同じように仕様を書いてから、自前のものに書き直しました（[#2188](https://github.com/textlint/textlint/pull/2188)）。
+
+Markdownパーサーの場合は、すでに完成している実装があり、それに対して後から要件とデザインを書いています。
+sdevの[既存コードのあるプロジェクトで仕様を起点にした開発を始める](https://github.com/azu/sdev/blob/df49074960f9bbba4bf2a2ff3355851e4de188f5/docs/guidelines/brownfield.ja.md)手順をベースにして、すでにある実装をドキュメントにしていきました。
+コードに残っていない部分は、ドキュメントを見ながら意思決定しています。
+この中で、ノードの名前のように曖昧に決まっていた部分があったので、ドキュメントとして定義していきました。
+[新しいMarkdownパーサー](https://textlint.org/blog/2026/11/15/textlint-16#new-markdown-parser)には一部Breaking Changeもありますが、これも実際に影響があるのかをスレッドで調査しながら固めていきました。
 
 ## 今後
 
