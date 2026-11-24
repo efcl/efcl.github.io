@@ -38,8 +38,8 @@ AIエージェントが書くものは、コードだけではなくドキュメ
 
 一方で、textlintはこれまでパフォーマンスを目標に入れていませんでした。
 ルールはすべてtextlint本体の外から追加するもので、辞書を読み込んだり、形態素解析をしたりと自由に書けます。
-実行時間のほとんどはルールが使うので、速さよりも、ルールを自由に書けることを優先していました。
 自然言語は英語や日本語といった言語ごとに異なり、同じ日本語でも文体がかなり異なるので、コアに持つルールを決めるのが難しいためです。
+実行時間のほとんどはルールが使うので、速さよりも、ルールを自由に書けることを優先していました。
 これは次のスライドでも書いています。
 
 - [textlint - Linterの作り方](https://azu.github.io/slide/2022/lint-night/textlint.html)
@@ -63,8 +63,7 @@ textlint本体、ルール、ルールが使うライブラリは別々のリポ
 
 ## Claude Projectsでどう進めたか
 
-まず、textlint本体とルールのリポジトリを1つのプロジェクトにまとめました。
-[textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などのリポジトリを、[Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)の1つのプロジェクトで扱っています。
+まず、[textlint](https://github.com/textlint)、[textlint-ja](https://github.com/textlint-ja)、[textlint-rule](https://github.com/textlint-rule)などにあるtextlint本体とルールのリポジトリを、[Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)の1つのプロジェクトにまとめました。
 これによって、textlint本体とルールをまとめて扱えます。
 Claude Projectsでは、最初にプロジェクトへ入れるリポジトリを選びますが、それ以外のリポジトリもスレッドの中でアドホックに追加できるのが良いところです。
 この2週間でPull Requestを出したリポジトリは、合わせて30以上ありました。
@@ -110,8 +109,8 @@ textlint本体を直していくと、実行時間に占めるルールの割合
 
 [![約10万ファイルでの、ファイル読み込み、パース、カーネル、ルールの時間の割合を、ルールの重さごとの箱ひげ図](/wp-content/uploads/2026/textlint-performance-phase-share.png)](/wp-content/uploads/2026/textlint-performance-phase-share.png)
 
-約10万ファイルで測ると、正規表現のルールが1個だけならルールの割合は15%ですが、`preset-jtf-style`では63%でした。
-形態素解析をするルールでは、ほとんどがルールの時間で、その多くはルールが呼び出すkuromojinの処理時間です。
+MDNの日本語版を10回繰り返した約10万ファイルで測ると、正規表現のルールが1個だけならルールの割合は15%ですが、`preset-jtf-style`では63%でした。
+`preset-ja-technical-writing`では、ほとんどがルールの時間です。
 
 そこから、どのルールとライブラリが時間を使っているのかを見て、割合の大きいものから直しました。
 
@@ -149,7 +148,7 @@ textlintのルールの中でkuromojin（形態素解析）の処理の割合が
 
 [![kuromoji.jsをkuromojinに取り込む案を調査したスレッド。左に調査結果のレポート、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-research.png)](/wp-content/uploads/2026/textlint-performance-kuromojin-research.png)
 
-最初のプロトタイプで60%ぐらいは削れていて、形態素解析のコストを0にした場合の時間も測って、削れる上限を先に出しました。
+最初のプロトタイプで実行時間の60%ぐらいは削れていて、形態素解析のコストを0にした場合の時間も測って、削れる上限を先に出しました。
 そして、大まかな目標値として80%削ることを設定して進めていきました。
 
 ### 仕様と実装
@@ -168,11 +167,11 @@ kuromojinの[解析器、辞書のフォーマット、辞書のバージョン]
 例えば、辞書に単語を追加すると、形態素解析の結果が変わり、lintの結果も変わります。
 そのため、メジャーバージョンの中では辞書を変えず、`dictionaryVersion`オプションで日付を指定したときだけ新しい辞書を使う[仕様](https://github.com/textlint/kuromojin/blob/master/docs/products/kuromojin/features/dictionary-versions/requirements.ja.md)にしました。
 
-この仕様をもとに、[kuromojin 3.1.0](https://github.com/textlint/kuromojin/releases/tag/v3.1.0)は[kuromoji.js](https://github.com/takuyaa/kuromoji.js)の処理を含む形にして、自前の解析器と辞書ファイルに変えています。
+これらの仕様をもとに、[kuromojin 3.1.0](https://github.com/textlint/kuromojin/releases/tag/v3.1.0)は[kuromoji.js](https://github.com/takuyaa/kuromoji.js)の処理を含む形にして、自前の解析器と辞書ファイルに変えています。
 トークンはkuromoji.jsと互換性があります。
-textlint本体のMarkdownパーサーも、同じように仕様を書いてから、自前のものに書き直しました（[#2188](https://github.com/textlint/textlint/pull/2188)）。
 
-Markdownパーサーの場合は、すでに完成している実装があり、それに対して後から要件とデザインを書いています。
+textlint本体のMarkdownパーサーも、自前のものに書き直しました（[#2188](https://github.com/textlint/textlint/pull/2188)）。
+こちらは順番が逆で、すでに完成している実装に対して、後から要件とデザインを書いています（[#2192](https://github.com/textlint/textlint/pull/2192)）。
 sdevの[既存コードのあるプロジェクトで仕様を起点にした開発を始める](https://github.com/azu/sdev/blob/df49074960f9bbba4bf2a2ff3355851e4de188f5/docs/guidelines/brownfield.ja.md)手順をベースにして、すでにある実装をドキュメントにしていきました。
 コードに残っていない部分は、ドキュメントを見ながら意思決定しています。
 この中で、ノードの名前のように曖昧に決まっていた部分があったので、ドキュメントとして定義していきました。
