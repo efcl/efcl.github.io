@@ -28,7 +28,7 @@ textlint v16はNode.js 22.12.0以降が必要です。
 
 - [Performance improvements in textlint and its rules](https://textlint.org/blog/2026/11/23/textlint-performance/)
 
-この記事では、複数のリポジトリに分かれたtextlintの改善を、どう進めたのかを書きます。
+この記事では、複数のリポジトリに分かれたtextlintの改善を、Claude Projectsを使ってどう進めたのかを書きます。
 
 ## 背景
 
