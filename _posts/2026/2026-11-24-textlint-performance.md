@@ -69,7 +69,7 @@ textlint本体、ルール、ルールが使うライブラリは別々のリポ
 Claude Projectsでは、最初にプロジェクトへ入れるリポジトリを選びますが、それ以外のリポジトリもスレッドの中でアドホックに追加できるのが良いところです。
 この2週間でPull Requestを出したリポジトリは、合わせて30以上ありました。
 
-![textlintのプロジェクト。調査や修正ごとにスレッドが分かれている](/wp-content/uploads/2026/textlint-performance-claude-project.png)
+[![textlintのプロジェクト。調査や修正ごとにスレッドが分かれている](/wp-content/uploads/2026/textlint-performance-claude-project.png)](/wp-content/uploads/2026/textlint-performance-claude-project.png)
 
 このプロジェクトで、主に次の2点をチェックしながら改善を進めました。
 
@@ -108,7 +108,7 @@ Markdownパーサーや、ルールを呼び出すときのノードごとの処
 textlint本体を直していくと、実行時間に占めるルールの割合が大きくなります。
 わかってはいたことですが、プロファイルの結果をプロジェクトの中で可視化しながら、次に何を改善していくかを決めていきました。
 
-![約10万ファイルでの、ファイル読み込み、パース、カーネル、ルールの時間の割合を、ルールの重さごとの箱ひげ図](/wp-content/uploads/2026/textlint-performance-phase-share.png)
+[![約10万ファイルでの、ファイル読み込み、パース、カーネル、ルールの時間の割合を、ルールの重さごとの箱ひげ図](/wp-content/uploads/2026/textlint-performance-phase-share.png)](/wp-content/uploads/2026/textlint-performance-phase-share.png)
 
 約10万ファイルで測ると、正規表現のルールが1個だけならルールの割合は15%ですが、`preset-jtf-style`では63%でした。
 形態素解析をするルールでは、ほとんどがルールの時間で、その多くはルールが呼び出すkuromojinの処理時間です。
@@ -147,7 +147,7 @@ textlint本体を直していくと、実行時間に占めるルールの割合
 kuromojinは、この流れで進めました。
 textlintのルールの中でkuromojin（形態素解析）の処理の割合が高いことはわかっていたので、これをどう改善するかのプロトタイプを何パターンか書いて、どこまで削れるのかを見ました。
 
-![kuromoji.jsをkuromojinに取り込む案を調査したスレッド。左に調査結果のレポート、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-research.png)
+[![kuromoji.jsをkuromojinに取り込む案を調査したスレッド。左に調査結果のレポート、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-research.png)](/wp-content/uploads/2026/textlint-performance-kuromojin-research.png)
 
 最初のプロトタイプで60%ぐらいは削れていて、形態素解析のコストを0にした場合の時間も測って、削れる上限を先に出しました。
 そして、大まかな目標値として80%削ることを設定して進めていきました。
@@ -160,7 +160,7 @@ kuromojinの[解析器、辞書のフォーマット、辞書のバージョン]
 仕様を読んでも理解しきれない部分は、同じプロジェクトの中で、実際のデータを図にした解説を書いてもらって確かめています。
 次の画面は、kuromojinの辞書のフォーマットを解説してもらったときのものです。
 
-![kuromojinの辞書のフォーマットを解説したスレッド。左に辞書ファイルの構造を図にした解説、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-spec.png)
+[![kuromojinの辞書のフォーマットを解説したスレッド。左に辞書ファイルの構造を図にした解説、右にスレッドのやり取りがある](/wp-content/uploads/2026/textlint-performance-kuromojin-spec.png)](/wp-content/uploads/2026/textlint-performance-kuromojin-spec.png)
 
 解説してもらって理解しつつ、[辞書のデザイン](https://github.com/textlint/kuromojin/blob/master/docs/products/kuromojin/features/dictionary/design.ja.md)にもそれを反映していっています。
 
